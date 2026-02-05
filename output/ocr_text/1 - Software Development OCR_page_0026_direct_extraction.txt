@@ -1,0 +1,38 @@
+Software  Development )
+Item Structural  methodology eet  eels eee CBD methodology
+- Domain  analysis  report ~ Business  process/
+~ Domain  analysis  report ERD - Business  process/ conceptual  diagram
+Major - Data flow di gram  Pe - Function chart conceptual  diagram - Diagrams  (use case,
+deliverables - Structural  drawings Pica  structure - Diagrams  (use case, sequence,  class,
+- Program  specification iagram a sequence,  class, component,  etc.)
+- Program  specification component,  etc.) - Reuse plan
+- Table definition/list - ent, EJB
+Supporting Teamwork,  SA Cool Gen, SA Rose, SA, Palstic Cool Joe, Together
+Major In principle,  the choice of
+supported § COBOL,  C, VB, PASCAL COBOL,  C, VB, PASCAL C++, JAVA, VB development  language  is
+language unimportant.
+C) Software  development  phases
+Software  development  activities  are defined  by the software  lifecycle.
+@ Requirements  analysis
++ The hardest  thing in software  development  is deciding  exactly  what to develop.
++ Software  requirements  analysis is practically  the first step in software  development  and is the phase of
+understanding  what the user needs.
++ Itis a critical phase that can reduce the development  costs in the entire development  phase.
++ If investment  is channeled  into analyzing,  defining  and managing  the requirements  well in the early stages,
+the entire software  development  period can be shortened  and excessive  costs and quality deterioration  can
+be prevented  in advance.
+@ Design
++ The software  requirements  analysis  process  is a conceptual  step, whereas  the design process  is the first step
+in physical  realization.
++ When designing  a system,  the structure  of a system,  which is composed  of sub-systems,  is determined,  and
+sub-systems  are allocated  to the components,  such as hardware  or software.
++ Design directly  affects  quality.
++ If a system  is not designed  properly,  its stability  deteriorates.
++ Unstable  systems  are difficult  to maintain
+@® Implementation
++ The goal of the software  implementation  phase is to program it in a way that the requirements  can be
+satisfied based on the design specification.
++ The program  should be written according  to the description  in the detailed  design and user’s guide.
+* One of the most important  tasks in the implementation  phase is to decide on a coding standard  and write
+the code clearly based on that standard.
+M1 Software  development  25

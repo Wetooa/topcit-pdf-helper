@@ -1,0 +1,42 @@
+Information  security )
++ When data is stored in plain text
+If passwords  are stored in plain text and the hash cipher algorithm  is applied only to passwords,  they may
+be vulnerable to  dictionary  attacks, such as Rainbow  attacks.  Therefore, the SALT value, which is a random
+string, should be added to the user's password,  and the hash cipher algorithm  should be applied. Then, the
+SALT value should be stored in a safe place.
+If the password  is stored in plain text
+EmpNum LastName meses) Password(plain  text)
+10001 KIM NAMIL 1234
+10002 LEE YOUNGPYO god
+10003 CHA DORI angel
+Scola  aug oe LaInput : Password Paice
+SHA-256
+Ciphertext  (hash value)
+EmpNum LastName aN  CIS Password(SHA-256)
+KIM NAMIL 03ac674216..
+10002 LEE YOUNGPYO, 11043a8795..
+10003, CHA DORI C9d75iala..
+[Figure  45] When data is stored in plain text
++ If an insecure  hash cipher  algorithm  is used
+If an insecure  hash cipher  algorithm,  such as MD5 or SHA~1, is used, the previously  stored hash value should
+first be converted  into a double hashed value, by applying  the SHA-256  hash cipher algorithm,  before storing
+it. Then, the data of the successfully  logged-in  user should be gradually  converted  into a single hash value,
+using SHA-256,  before storing it. At this time, the login success  time should be used, or a separate  column
+should be added in order to check whether  the data has a single hash value or a double hash value.
+Hila acrel0  Mars aKel FeZolt ATA MU s=Le)
+EmpNum LastName FirstName Password(MD5)
+10001 KIM. NAMIL 930e1c89..
+10002 LEE YOUNGPYO 347ed2f4..
+10003, CHA DORI ed6f836d..
+rl Converting  into a
+. Sioa
+input: RG Weer  echo
+successfully  logged-
+iS n/a 0h} in users only
+Ciphertext  (hash value)
+[=iin) oD ela) (TN lcd FirstName Password(SHA-256)
+10001 KIM NAMIL 03ac674216..
+10002 LEE YOUNGPYO, 11043a8795..
+10003 CHA DORI C9d75iala..
+[Figure  46] If an insecure  hash cipher  algorithm  is used
+M4 Understanding  Information  Security 93

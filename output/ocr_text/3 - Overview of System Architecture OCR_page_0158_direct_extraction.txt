@@ -1,0 +1,39 @@
+Overview  of System  Architecture
++ Preview  for practical  business Network  layer and routing  protocol
+Operating  path of the network  layer
+Application  Layer
+Transport  Layer
+Network  Layer
+Datalink Layer
+Physical LayerZ
+14.32.172.0
+Switching  Hub D
+Router,my.server.com
+Network Layer 20.17.2315
+Datalink  Layer Datalink  Layer
+Physical Layer Network  Layer Physical Layer
+Daainklayer|| 220.17.23.0
+pees Physical Layerespe 192.168.11.0 o——...
+Network Layer
+Datalink  Layer
+Physical Layer
+[Figure 112] Router  Conceptual  Diagram
+The above sections  described  the network  layer operation  and related scenarios,  as shown in [Figure 112].
+(52) Information  created  by the TCP protocol  is capsulized  in order to be routed to the 220.17.23.0
+network,  in which my.server.com  is present,  through  several hops (IP).
+An initial packet that contains  the information  for routing between  networks  is created.
+However,  it must be further  modified  to be transferred  between  networks.  The IPv4 address  of
+user A’s computer  is 192.168.11.5  and cannot  be transmitted  to my.server.com  directly.  It must
+be transmitted  to the computer's  gateway  wired/wireless  router B (192.168.11.1).  However,  an
+IP address  cannot  be used for data transfer  in a network,  so the MAC address  is needed.  After
+finding  the MAC address  that corresponds  to 192.168.11.1,  the gateway’s  IP address,  the packet
+is transmitted  to wired/wireless  router B, through  network  broadcasting.
+Upon receiving  the packet  from user A’s computer,  wired/wireless  router B, aware that the
+packet  is not sent to the router  as the final destination,  examines  to which address  the packet
+must be transmitted.  The IP header  indicates  that the packet's  final destination  is my.server.
+com, and since it does not belong  to network  192.168.11.0  or 14.32.172.0,  to which wired/
+wireless  router  B belongs,  it transmits  the packet  to router  C, to which it belongs.
+Upon receiving  the packet, my.server.com  examines  the IP address  and recognizes  that
+the packet was sent to it. It removes  the header  data, such as the IP address,  and sends the
+remaining  data up to a higher layer.
+M3 Overview  of System  Architecture  157

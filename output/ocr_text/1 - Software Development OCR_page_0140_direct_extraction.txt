@@ -1,0 +1,37 @@
+Software  Development )
+- Supports  program  logic and the backend  binding  function,  and is not a simple static  web page.
+@ Reacts
+React is a JavaScript  library created  by Facebook  to develop  the Facebook  web. Like Backbone,js  and Angular,
+React provides  a web front framework  needed for developing  an app. React is useful when building  a large-
+scale application  that changes  web pages frequently.
++ Key features  of React
+- Supports  the writing  of the markup  code in JavaScript  using extended  JavaScript  syntax,  which enables  the
+existing  XML called JSX (JavaScript  XML).
+- Supports  components  in individual  view units that constitute  the user interface.
+- Allows  data processing  using the Virtual DOM.
+@ Express,s
+Express  is the web application  framework  of Nodejs,  which is small and flexible and provides  optimal  features
+needed to develop  a web or application.  Express  supports  fast web development  for Node  js.
+Node js is a back-end  server development  language  based on events, which uses the JavaScript  engine of
+Google’s  Chrome  V8.
++ Key features  of Express
+- Enables processing  of the dynamic  view of HTML pages depending  on the parameters  passed to the
+template.
+- Combines  necessary  functions  only by supporting  a middleware  structure  written  in JavaScript  code.
+B) Technology  trends  of software  architecture
+@ Microservice  architecture
+The microservice  architecture  allows  independent  development,  build, test, deployment,  monitoring,  routing,
+and extension  for each service, by dividing  one large application  into several small services  and creating  an
+individual  data repository,  and by creating  an independent  execution  environment.
+Prompt  response  to rapid business  changes,  deployment  within a short period of time, easy improvement  and
+modification  are all possible.
++ Key features  of the microservice  architecture
+- Development  productivity  is high as a service is divided into small units and developed  independently.
+- Flexible  deployment  in units rather  than deployment  of the whole set.
+- Asystem  can be expanded  elaborately  by expanding  the units independently.
+@ Docker
+Docker is an open-source  platform  that automates  the Linux container  (LXC) technology,  which provides
+an independent  and isolated space like a virtual machine,  for ease of use. A company  called Dot Cloud
+(now Docker) has started providing  technical  support  for the first time, while Google is preparing  Docker
+configuration  for enterprises  by implementing  an open source project  called “Kubernetes”.
+M1 Software  development  139

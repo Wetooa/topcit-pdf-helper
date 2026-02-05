@@ -1,0 +1,68 @@
+ESSENCE
++ Purchase  management
++ Distribution  management + HR management,
+. education  management,
++ Customer  management Delivery management Supply Chain & attendance  management,
+* Promotion  management Vender  Management salary management,
++ Cost estimation  management 3 A absenteeism  and tardiness
+Custonen management
+Relationship r
+Management  _A Enterprise a
+—_ Resour ce *_ HR ManagementPlanning .
+\, ff .
+aa
+Finance , Manufacturing
+\ and Accounting Production  & Service
+, Management  &— _ Delivery
++ Bond rights, fund
+management,  cost
+management,  general  account
+ledger, profitability  analysisq .
+een Production  management,
+material  management,
+price management,  sales
+management,  order
+management,  service
+management
+[Fig.30]  Configuration  of ERP
+@© ERP deployment  procedureIntegrated  business  process
++ Diverse  business  process  support:
++ Dynamic  interlinking  of different
+operational  modules
+Integrated  database
++ Integrated  database  of
+enterprise-wide  resources
++ Shared  by business  processes  of
+several  different  areas
+BI a Mees  Nal
+EOS EleE Ie}
++ Adoption  of different  business
+Management  techniques
++ Based on standard  operating
+process
++ Business  process  redesign  (BPR)
+function
+The deployment  of ERP should be approached  as a concept  of enterprise  business innovation,  and not just as the
+simple introduction  of a system. The legacy operating  procedures  of the enterprise  must be analyzed,  and any
+problems  and improvement  points must be identified.  Through  process  innovation  (PI) activities,  the enterprise  must
+undergo  a radical transformation.  Job activities  must be innovated  so that they can be performed  by employees  from
+a common  perspective  and handled  using standardized  procedures  that are integrated  across the enterprise.  To this
+end, the ERP implementation  project must be wholeheartedly  supported  by the CEO and pursued  at the company
+level in order for it to be successful.  The typical ERP implementation  process  includes  the following:
+<Table 36> ERP deployment  process
+Deployment  steps Description
++ Write the project  plan.
+Project launch + Write the quality assurance  plan.
++ Analyze  the current  process.
++ Analyze  the future process.
++ Conduct  a gap analysis.
+Analysis + Draw up the gap response  plan.
++ Provide  package  education,  i.e. module  education,  supported  language  education.
++ Process  setting,  function  setting,  master  data setting.
++ Define the interface  and prototyping.
++ Additional  development  design
++ Data code design
++ Test plan establishment
++ Interface  design
++ ImplementDesign
+86 TOPCIT  ESSENCE

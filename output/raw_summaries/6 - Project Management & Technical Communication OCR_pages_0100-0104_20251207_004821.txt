@@ -1,0 +1,201 @@
+LEARNING GUIDE: Pages 100-104
+Generated: 2025-12-07 00:48:21
+PDF: 6 - Project Management & Technical Communication OCR
+
+================================================================================
+LEARNING GUIDE
+================================================================================
+
+Here is a simplified, easy-to-read learning guide based on the provided text:
+
+---
+
+# Project Management & Cost Control Learning Guide
+
+## I. Project Scheduling Techniques
+
+### A. Backward Scheduling (Calculating Late Dates)
+*   **Purpose:** Determine the latest possible start (LS) and finish (LF) dates for activities without delaying the project.
+*   **Late Finish (LF) Calculation:**
+    *   For the last activity in a path, its LF is the project's target finish date.
+    *   For an activity with successors: Its LF is the *earliest* Late Start (LS) of all its direct successor activities, minus one unit of time.
+    *   *Example (Activity D):* If Activity C can start latest on day 12 (LS=12) and Activity E can start latest on day 8 (LS=8), then Activity D must finish by day 7 (LF = min(12, 8) - 1 = 7).
+*   **Late Start (LS) Calculation:** LS = LF - Duration + 1
+
+### B. Critical Path Method (CPM)
+*   **Total Float (TF):** The amount of time an activity can be delayed without delaying the project finish date.
+    *   **Formula:** TF = LF - EF (Late Finish - Early Finish) OR TF = LS - ES (Late Start - Early Start)
+*   **Critical Path:**
+    *   A sequence of activities where the Total Float for *all* activities along that path is **zero**.
+    *   Any delay in an activity on the critical path will directly delay the entire project.
+    *   **Importance:** Critical path activities are the primary focus for schedule management to ensure the project finishes on time.
+
+### C. Critical Chain Method (CCM)
+*   **Purpose:** A scheduling method that extends CPM by accounting for limited resources and activity duration uncertainty.
+*   **Key Concept: Buffering**
+    *   **Project Buffer:** A time buffer added at the very end of the critical chain to protect the overall project finish date from delays.
+    *   **Feeding Buffer:** Time buffers placed where non-critical paths (feeding chains) merge into the critical chain. These protect the critical chain from delays in the feeding paths.
+*   **Management Focus:** Instead of tracking Total Float, CCM focuses on managing the remaining durations of buffers against the remaining durations of activity chains.
+
+## II. Schedule Compression Techniques
+
+*   **Goal:** Shorten the project schedule, often due to requirement changes or fixed deadlines.
+
+### A. Crashing
+*   **Definition:** Shortening the schedule by adding extra resources to activities.
+*   **Application:** Primarily effective for activities on the critical path where adding resources can reduce duration.
+*   **Examples:** Approving overtime, hiring more staff, paying for faster completion.
+*   **Trade-offs:**
+    *   **Pros:** Can effectively shorten the schedule.
+    *   **Cons:** Almost always increases project costs; can increase risk due to new resources or complex communication.
+
+### B. Fast Tracking
+*   **Definition:** Performing activities in parallel (simultaneously) that would normally be done sequentially.
+*   **Application:** Only possible when activities can be overlapped.
+*   **Example:** Starting construction (foundations) before all detailed architectural drawings are fully complete.
+*   **Trade-offs:**
+    *   **Pros:** Can shorten the schedule without necessarily increasing direct costs (though rework costs might arise).
+    *   **Cons:** Significantly increases the risk of rework or errors, as decisions for later activities are made before earlier ones are fully finalized.
+
+## III. Project Cost Management
+
+### A. Overview
+*   **Definition:** The processes of planning, estimating, budgeting, and controlling costs to complete a project within an approved financial budget.
+*   **Importance:** Projects operate with limited resources, making efficient cost management crucial.
+
+### B. Core Processes
+1.  **Cost Management Planning:** Defining how costs will be planned, structured, and controlled.
+2.  **Cost Estimation:** Developing an approximation of the monetary resources needed to complete project activities.
+3.  **Budgeting:** Aggregating the estimated costs of individual activities or work packages to establish an authorized cost baseline.
+4.  **Cost Control:** Monitoring project status to update project costs and managing changes to the cost baseline.
+
+### C. Cost Estimation Techniques
+*   **One-Point Estimating:** A single, most likely estimate.
+*   **Three-Point Estimating:** Uses optimistic, pessimistic, and most likely estimates to calculate a range or weighted average.
+*   **Analogous Estimating:** Uses actual costs from previous, similar projects as a basis.
+*   **Parametric Estimating:** Uses statistical relationships between historical data and other variables (e.g., cost per line of code, cost per square foot).
+*   **Expert Judgment:** Estimates based on the expertise of individuals or groups with relevant experience.
+*   **M/M (Man/Month):** Estimates effort based on the number of people and months.
+*   **Function Point:** A method to estimate software development size based on functionality.
+
+### D. Earned Value Management (EVM) Terminology
+*   **Purpose:** A project management technique to objectively measure project performance and progress by integrating scope, schedule, and cost.
+*   **Measurement:**
+    *   **BAC (Budget At Completion):** Total planned budget for the project.
+    *   **Planned Value (PV):** The authorized budget assigned to scheduled work.
+    *   **Earned Value (EV):** The value of the work actually performed (measured against the budget).
+    *   **Actual Cost (AC):** The total cost incurred for the work performed.
+*   **Analysis (Performance Indicators):**
+    *   **Schedule Variance (SV):** EV - PV (measures schedule performance).
+    *   **Cost Variance (CV):** EV - AC (measures cost performance).
+    *   **Schedule Performance Index (SPI):** EV / PV (efficiency of time utilization).
+    *   **Cost Performance Index (CPI):** EV / AC (efficiency of budget utilization).
+*   **Estimation (Forecasting):**
+    *   **EAC (Estimate At Completion):** The projected total cost of the project at completion.
+    *   **ETC (Estimate To Complete):** The estimated cost needed to finish the remaining work.
+
+## IV. Practical Application: SW Engineer Wage Data (Example)
+
+*   **Context:** Software engineer wage surveys (e.g., from the Korea Software Industry Association) are important for project cost estimation.
+*   **Purpose:**
+    *   Identify wage trends for SW engineers.
+    *   Provide basic data for policy making.
+    *   Help companies determine unit wages for engineers in software projects.
+*   **Key Notes for Using Wage Data:**
+    *   Survey results are typically **not mandatory** for software businesses.
+    *   Wages often include base pay, allowances, bonuses, and benefits.
+    *   Daily, monthly, and hourly rates are usually provided, with clear calculation methodologies (e.g., monthly = daily * avg. working days).
+    *   Surveys may evolve to focus on broader IT professions rather than just specific ranks.
+
+================================================================================
+ORIGINAL TEXT (First 5000 chars)
+================================================================================
+
+--- Page 100 ---
+Project Management  and Technical  Communication  )
+<Table 45> Result  of Backward  Scheduling  by Activity
+Activity  Name LS (Late Start) Duration LF (Late Finish)
+: 9(10-1)A 13-3 + 1) 3 3(4-1)
+B 10(11-2 +  1) 2 11(12-1)
+G 12(13-2 + 1) 2 13(14-1)
+_ 11(12-1)D 4(7-4 + 1) 4 7(8-1)
+E 8(13-6 + 1) 6 13(14-1)
+F 14(16-3  + 1) 3 16
+For Activity  “F’, there is no LS of successor  activity,  so LF starts with 16.
+In the case of Activity  “D’, there are two successor  activities:  “C” and “E”. In this case, the “C’” and “E” activities
+can start only after the “D’ activity  ends. The “C’ activity  must start on the 12th at the latest (LS, Late Start),
+and the “E” activity  must start on the 8th at the latest.
+Therefore,  Activity  “D’ must finish on the 7th at the latest (Late Finish), and the faster “E” of the two activities
+can start normally  on the 8th. So, the LF of Activity  “D’ becomes  8 (LS of Activity  “E”) - 1 = 7. Subsequently,
+the LS of Activity  “D’ also becomes  7 - 4 + 1 = 4. After calculating  both the LS and LF of the individual
+activities,  write them as shown in the figure below.
+4 2 5 8 9
+B }——_—__> Cc
+10 a 12 13
+1 3 3 14 3 16
+A F
+1 3 / 14 16
+4 7 8 6 13
+D [>_> E
+4 7 8 13
+[Figure  32] Critical Path Method@  (Example)
+@ Total Float, Critical Path Calculation
+The formula  for calculating  Total Float for each activity  is as follows:
++ TF = LF - EF or
++ TF=LS-ES
+The reason for calculating  Total Float is to determine  the critical path. In other words, the critical path is a path
+that connects  activities  whose Total Float is “zero”. Therefore,  the critical path in this example  becomes  “A-D-
+E-F’ indicated  in red as shown in the figure below.
+M6 Project  Management  and Technical  Communication  99
+
+
+--- Page 101 ---
+ESSENCE
+4 2 5 8 2 9
+B [> c
+10 6 1 12 4 13 \
+1 3 3 14 3 16
+A F
+1 0 3 / 14 0 16
+4 7 8 6 13
+[->-———_——>
+4 0 7 8 0 13
+[Figure 33] Critical Path Method@  (Example)
+Any delay in activities  on the critical path will result in a delay in the overall project  schedule.  Hence, activities
+on the critical path become  intensive  targets  of schedule  management.
+B) Schedule  development  technique  - critical chain method  (CCM)
+Critical Chain Technique  or Critical Chain Method  is a scheduling  method  that allows the project  team to buf-
+fer the project  schedule  in consideration  of limited resources  and uncertainty.
+In order to consider  the effects  of resource  allocation,  optimization  and leveling,  and activity duration  un-
+certainty  on the critical path determined  by the Critical Path Method,  the concept  of buffering  and buffering
+management  is added to the CPM.
+The figure below shows how Buffer is added to the example  of the CPM assuming  the uncertainty  of the du-
+ration of the activities.
+[Figure  34] Critical  Chain Method  (Example)
+The buffer  added at the end of the critical chain is called Project  Buffer, and it its to prevent  the target finish date from
+slippage  along the critical chain.
+An additional  buffer, called Feeding  Buffer, is placed at each point at which non-critical  activities which don’t belong to
+the critical chain (red line in the figure) merges into the critical chain. The size of the feeding  buffer should be deter-
+mined by taking into account  the uncertainty  over the duration  of the feeding  chain linked up to that buffer.
+After determining  the buffer schedule,  the activities scheduled  for the latest possible  start and finish dates should be
+scheduled.  As a result, the critical chain method  focuses  on managing  remaining  buffer durations  against  the remaining
+durations  of chains of activities,  instead  of the total float of network  paths.
+100 TOPCIT  ESSENCE
+
+
+--- Page 102 ---
+Project Management  and Technical  Communication  )
+C) Schedule  compression  technique  - crashing  and fast tracking
+The most common  cause of schedule  compression  in a typical project is requirements  change. Despite
+frequent  changes  in the requirements,  the project  finish date cannot be changed  in reality, so there are many
+cases where it is necessary  to shorten  the development  schedule  or test schedule  at the end of the project.
+Here are some typical schedule  compression  techniques.
+@ Crashing
+Crashing  is a technique  that compresses  the schedule  by adding extra resources  at minimum  cost. Examples
+of crashing  include approval  of overtime  work, replenishment  of resources,  and payment  for activities  in the
+critical path. Crashing  is effective  only for activities  of which duration  is shortened  by replenishing  resources  in
+the critical path. However,  crashing  may lead to an increase  in cost. It can also lead to an increase  in the risk
+due to sharing  the contents  of an existing  project  for new human resources  or many communication  channels,
+@ Fast Tracking
+Fast Tracking  is a method  of shortening  a certain period  of time in which activities  or steps that are performed
+sequentially  are ...

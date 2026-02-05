@@ -1,0 +1,30 @@
+Database )
+04 Query Optimization  and Optimizer
+Query optimization  refers to the process  of making  a DBMS select one optimal strategy  by systematically  evaluating
+several strategies  for executing  query statements.  It is used by systems  that support  advanced  relational  query
+languages.
+A) Query optimization  process
+@ For query optimization,  the intermediate  query statement  created  by the parser is converted  into a certain form of
+sub-expression  and represented  as a query tree.
+@ Then, an internal expression  is rewritten  into an efficient  query statement  using logical conversion  rules. Multiple
+conditions  are combined  into one condition,  and projection  is performed  as early as possible  to remove any
+unnecessary  attributes.  Selection  is also performed  as early as possible.
+© Access  plans are created  and specified  by the join procedure,  selection  procedure,  etc.
+@ The most efficient  access plan is selected  by evaluating  them. The evaluation  criteria to consider  include the disk
+access cost, storage  cost, calculation  cost, and communication  cost.
+B) Optimizer
+An optimizer,  as the core engine of the DBMS, checks for grammatical  errors in SQL statements  according  to the
+various requests  of the user, and then finds an optimal path or a processing  procedure  by creating  and adopting  the
+fastest  data access path. When SQL specifies  the desired data (what) in a relational  database,  the DBMS optimizer
+automatically  decides  and handles how to get the data. As such, the optimizer,  which guarantees  the physical data
+independence  of the database  and finds the method of executing  the user's SQL queries efficiently,  is making a
+significant  contribution  to the commercial  success  of the relational  database.
+C) Roles of the optimizer  in each query processing  phase
+Query processing  is divided into 5 phases - parsing,  query rewriting,  query optimization,  QEP generation,  and query
+execution.  The optimizer  acts in the query rewriting  and query optimization  phase. QEP (Query  Execution  Plan) refers
+to a query execution  plan, which is the detailed  information  necessary  to execute  a query.
+Query Optimizer
+we
+QueryQuery Optimization QeP QueryParse D rowie | D Tos D ceneration | Execution | Resut
+[Figure  34] Five phases  of handling  RDBMS  queries
+M2 Database  117

@@ -1,0 +1,29 @@
+Project Management  and Technical  Communication  )
++ Customer  collaboration  over contract  negotiation
++ Responding  to change  over following  a plan
+According  to this agile spirit, various methodologies  such as Scrum, XP, and Kanban emerged.  Scrum, the
+most representative  agile method,  first appeared  in 1995 when it was adopted  in software  development  by
+Ken Schwaber  and Jeff Sutherland.  It is a mutually  progressive  development  methodology  for project  manage-
+ment.
+The Scrum process  consists  of sprint planning,  daily scrum, sprint review, and sprint retrospective,  and the
+main deliverables  include  product  backlog,  sprint backlog,  and burndown  charts.
+Daily scrum meetings  or sprint-level  reviews are held to manage  project quality through repetitive  reviews.
+One of the most common  deliverables  is burndown  charts.
+C) Project  management  area
+The PMBOK and ISO 21500 methodology  is a framework  of project management,  which is divided  into five
+process  groups, 10 knowledge  areas, and 49 detailed  processes.  The ten knowledge  areas are shown in the
+figure below.
+Project  Integration  Management
+Communication Quality Procurement Risk Stakeholders
+Management Management Management Management Management
+[Figure  25] Project  Knowledge  Areas
+In addition  to brief explanations  for each knowledge  area, the main knowledge  areas such as scope manage-
+ment, schedule  management,  cost management,  quality management,  and risk management  will be examined
+in detail from the next chapter.
+<Table 35> Description  of Knowledge  Areas
+Knowledge  Area Description
+Project age : AIntegration A key  knowledge  area that manages  the processes  and activities  necessary  to identify, define,  and
+M coordinate  the processes  and management  activities  within the project  management  process  group.lanagement
+Sc Akey knowledge  area that manages  the initiation  activities  of project planning  and controlling,  such asope a . a : . .Management defining  customer  requirements  with the sum of products  and services  provided  through  the project  and
+designing  WBS (Work Breakdown  Structure)
+M6 Project  Management  and Technical  Communication  81

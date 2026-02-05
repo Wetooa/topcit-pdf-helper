@@ -1,0 +1,57 @@
+@® Comparison  of ITIL v2 and v3
+<Table 51> Comparison  of ITIL v2 and v3Understanding  the IT Business  and Ethics )
+Item compared Version  2
+Library + 8 volumes  (Core Service Support,
+Delivery)
+Process + 1 function  + 10processes
+Usage + Best Practice
+ei + ISO20000  Guideline(Part  II)
++ IT Service  Management  Library
+Key Points + Book of best practices
++ Service  management  system  centered  on
+service  level management
++ Support  is lacking  across the entire area
+of the IT service.
++ Alignment  with the business  is weak
+(performance,  indicator,  process).
++ Inadequate  coverage  of IT governance
+(alignment,  model).
++ Gap with current  process  (SOA, BSM).Restrictions  & ITIL
+Version  3 ImprovementVersion  3
++ 5 volumes  and additional  volumes
+* (Introduction  & Dic)
++ 5 major  processes
++ Best practice
++ Framework  + standard  expansion
++ [SO20000  revision
++ More libraries,  book of best practices
++ Provides  business  value-centered  IT service  asset (IT
+Governance)
++ Lifecycle  Approach
++ Continual  Service  Improvement
++ Presents  an IT service  lifecycle.
++ Presents  an IT service  driven by business  values.
++ Design, execution  and improvement  model of IT
+strategy  and IT service.
++ Links to SOA, BRM, IT operation  process  currently  in
+use.
+C) Understanding  the SLA
+The quality-of-service  issue between  a company  that supplies  IT services  and its customers  can become  a sensitive
+subject  during the servicing  period. Therefore,  there is a need for clear guidelines  on the level of service between  the
+party supplying  an IT service  and the party using that service.
+The agreement  between  an IT service provider  and its customers  on the scope, item, form, performance,
+measurement  methods,  and price of the provided  service is called the SLA. The framework  for continuously
+monitoring  and changing/managing  the SLA (Service  Level Agreement)  is called SLM (Service  Level Management).
+SOW SLM
+(Service  Level Management)
++ Agreement  which covers the
+level of IT service.
++ Defines  quantitative  indicators  for
+service  levels.+ Creat a statement  of work
++ Statement  which defines
+the scope of the service.
+[Fig. 43] Chart showing  the flow between  SLA and SLM
+Statement  of Work (SOW) is a work statement  that specifies  the details of a service or the work described  in
+the SLA that must be performed.  It is also used in project management  as a work statement  that describes  the
+requirements  of the project.
+M5 Understanding  the IT Business  and Ethics 107

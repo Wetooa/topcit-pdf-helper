@@ -1,0 +1,28 @@
+ESSENCE
++ Preview  for practical  business
+Problems  with practical  business  that occur when data quality  deteriorates
+Deterioration  in data quality  brings about confusion  and distrust,  as follows.
++ The result value becomes  different  depending  on the requesting  department  (supervisory  authority,  etc.).
++ The information  provided  by IT cannot  be fully trusted.
++ It takes time and money  to improve  or adjust inaccurate  data.
++ Data reliability  cannot  be guaranteed  even with an additional  budget.
++ Decisions  cannot  be made quickly  due to inaccurate  data.
++ It is difficult  to understand  the exact number  for a specific  situation.
+Effects  of data quality  control
+If data quality  is managed  well, it can positively  affect an entire business  including  its information  system.
++ Sales increase,  productivity  improves,  and the market  share increases.
++ Customer  satisfaction  increases,  service  quality  improves,  and product  competitiveness  increases.
++ Business  costs decrease,  IT costs are reduced,  and rework  costs are reduced.
++ Accident  prevention,  compliance  with government  regulations,  maintenance  of market  confidence.
+What if database  quality  control  and standardization  are not understood?
+The importance  of quality control and standardization,  which constitute  the basis of information  systems,
+is being increasingly  emphasized  as information  systems  become  larger and more complex.  If database
+quality control is not clearly understood,  the information  provided by IT cannot be fully trusted because
+the result value will differ depending  on the requesting  department.  In addition,  decisions  cannot be made
+quickly  because  it takes a lot of time and money  to improve  and adjust inaccurate  data. On the other hand,
+an inappropriate  understanding  of data standardization  can cause data duplication  and data inconsistency
+for each organization,  work, and system. In addition,  information  cannot be provided  in time as it takes
+more time to understand  the meaning  of data. Also, data integration,  information  system change, and
+maintenance  become  very difficult  if data are not properly  standardized.  Therefore,  it is very important  to
+understand  the concept  and process  of database  quality  control  and standardization.
+94 TOPCIT  ESSENCE

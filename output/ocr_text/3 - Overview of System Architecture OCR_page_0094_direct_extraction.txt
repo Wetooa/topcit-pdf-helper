@@ -1,0 +1,33 @@
+Overview  of System Architecture )
+@ RAID-6  (Stripe set with dual distributed  parity)
+RAID-6 is similar to RAID-5, except that while RAID-5 stores one parity, RAID-6  redundantly  stores a parity in two
+drives. The configuration  is more durable  than RAID-5  and can store data safely. In a RAID-5  configuration,  the rebuild
+time restores  data to the new drive when  a drive fails and is replaced. The rebuilding  takes a long time in a storage
+system  with a large storage  capacity.  If another  drive fails during  this rebuilding  time, there is a possibility  of data loss.
+Therefore,  RAID-6 is recommended.
+RAID 6
+striping  with dual parity across drives
+BLOCK  1b Tova)
+orn Naor PEIN
+PENAees es
+Ola Si9 PENAL
+drive 1 drive 2 drive 3 drive 4parity b3
+reniaaery
+[Figure  67] RAID-6
+© RAID-10(Striping  & Mirroring)
+RAID-10  requires  at least four drives and is a combination  of RAID-O and RAID-1 to improve  |/O speed while
+providing  data stability.  It eliminates  the concern  with stability,  which is an important  drawback  of RAID-O, and it
+can significantly  improve  performance,  which is the biggest  drawback  of RAID-1. However,  its disadvantage  is that
+the cost is high. RAID 1+0 configures  two drives in mirroring  first, then RAID-1 drives, configured  of two drives, are
+configured  in RAID-0.  RAID 0+1 divides  the drives to be configured  in half, configures  them in RAID-O,  and reconfigures
+Ys of the drives and the remaining  1/2 of the drives in RAID-1. The RAID-10  configuration  features  better stability  and
+generally  uses RAID-10  more than RAID-O+1.
+RAID 10
+RAID 0
+RAID 1 RAID 1
+LV) ame ry a2
+Mi wy BS
+Disk 1 Disk 2 Disk 3 Disk 4q
+it
+[Figure  68] RAID-10
+M3 Overview  of System  Architecture  93

@@ -1,0 +1,220 @@
+LEARNING GUIDE: Pages 151-155
+Generated: 2025-12-05 14:06:47
+PDF: 5 - Understanding the IT Business and Ethics OCR
+
+================================================================================
+LEARNING GUIDE
+================================================================================
+
+Here's a simplified, easy-to-read learning guide based on the provided text:
+
+---
+
+## Learning Guide: Modern IT Concepts
+
+### I. Blockchain
+
+**What is Blockchain?**
+A decentralized system where transaction ledger data is recorded, managed, and verified in "blocks" across all network participants (nodes). Unlike traditional methods, there's no central server.
+
+**Key Characteristics:**
+
+*   **Decentralized:** No central server. All network nodes work together to prove and guarantee data integrity.
+*   **Improved Security:** Transactions are accepted only after consent from over half of the network nodes, making modification/manipulation impossible.
+*   **Transparency of Transactions:** All participants share ledgers, disclosing transaction details.
+*   **Enhanced Safety:** The distributed nature means the network can recover even if some nodes experience errors or abnormalities.
+*   **Improved Economics:** Reduces centralized management and financial transaction costs by removing the need for a central server.
+*   **Protection of Personal Data:** Lessens the risk of data collection burdens, security issues, or leaks from central system errors or hacking.
+
+**How Blockchain Transactions Work (Concept):**
+1.  **Initiation:** User A wants to transfer money to User B.
+2.  **Block Creation:** Transaction data is generated as a "block."
+3.  **Sharing:** The block is shared with all network participants.
+4.  **Validation:** Participants cross-validate the transaction data.
+5.  **Registration:** Once validated (by >50% of nodes), the block is registered onto the blockchain.
+6.  **Completion:** Money transfer from A to B is complete.
+
+### II. Smart Infrastructure
+
+#### A. Smart City
+
+**Definition:** An urban model that solves city problems and improves quality of life by adopting new technologies like ICT (Information and Communication Technology) and Big Data.
+
+**Purpose:** Addresses issues such as:
+*   Aging infrastructure
+*   Energy shortages
+*   Environmental pollution
+*   Crime
+
+**Technologies Used:** AI (Artificial Intelligence), Big Data, 5G mobile technologies.
+
+**Service Areas:** Smart traffic, smart environment, public safety, public welfare, smart energy.
+
+#### B. Smart Grid
+
+**Definition:** A next-generation power system that integrates IT technologies with existing power grids to monitor and control power supply and demand in real-time, matching production and consumption.
+
+**Key Differences: Traditional Grid vs. Smart Grid**
+
+| Feature              | Traditional Electric Power Grid      | Smart Grid                                         |
+| :------------------- | :----------------------------------- | :------------------------------------------------- |
+| **Generation**       | Centralized power generation         | Distributed power generation                       |
+| **Control System**   | Analog                               | Digital                                            |
+| **Blackout Diagnosis** | Impossible                           | Self-diagnosis                                     |
+| **Blackout Recovery** | Manual recovery                      | Semi-automated recovery and automatic repair       |
+| **Facility Inspection** | Manual                               | Remote                                             |
+| **Communication**    | One-way                              | Bi-directional (two-way)                           |
+| **Power Source**     | Centralized (fossil fuel, nuclear)   | Distributed (renewable energy expansion)           |
+| **Control System**   | Local area control                   | Wide area control                                  |
+| **Pricing Info**     | Limited (monthly total cost)         | Real-time information available                    |
+| **Pricing System**   | Fixed price                          | Real-time varying price                            |
+| **Electricity Use**  | Fluctuating (demand-dependent)       | Almost uniform (price-dependent)                   |
+
+**Benefits:**
+*   Reduces greenhouse gases.
+*   Induces voluntary energy savings.
+*   Improves electricity quality and reliability through efficiency and distributed energy sources (e.g., renewables).
+
+**Characteristics:**
+*   Consumers can actively participate in energy management.
+*   Supports diverse ways of generating and storing electricity.
+*   Leads to new products, services, and markets.
+*   Provides high-quality electricity.
+*   Enables connection to both centralized and distributed power generation sources (e.g., renewable energy).
+
+**Smart Grid Components:**
+1.  **Smart Grid Platform:**
+    *   **Core:** Intelligent devices, bi-directional communication, sophisticated control systems.
+    *   **Function:** Manages distributed and intelligent power grids.
+    *   **Operations:** Supports renewable energy applications, intelligent electric vehicle charging stations, smart metering, power grid monitoring, demand response.
+    *   **Intelligent Devices:** Have electronic sensors and meters to monitor the grid state, capable of basic autonomous decisions.
+2.  **Smart Grid Applications:** Utilize the platform for specific functions (e.g., monitoring, managing electricity grid, smart metering, V2G - Vehicle-to-Grid).
+
+**IT Infrastructure Role:**
+*   Optimizes energy efficiency.
+*   Encourages consumption changes through real-time, bi-directional information exchange.
+*   Requires open system networks and protocols to foster new products, services, and markets.
+*   Communication infrastructure must provide reliable end-to-end services between intelligent devices.
+*   Development must adhere to standards for interoperability across various interfaces.
+
+#### C. Micro Grid
+
+**Definition:** An extension of a smart grid. A group of interconnected consumers and Distributed Energy Resources (DERs) that can operate as a single controllable entity. It can connect to the main grid or function independently.
+
+**Simplified View:** A local power grid connecting electricity users with distributed energy resources (like wind and solar). It can be self-sufficient but also connect to the regular grid when needed.
+
+**Examples (South Korea):** Pilot testing in Jeju Island's smart grid complex, Gapado, Marado, and Ulleungdo.
+
+#### D. Smart Water Grid
+
+**Definition:** A smart technology that leverages ICT to manage water, including the essential substance itself, water supply, and sewage water.
+
+**Purpose:** Addresses water management challenges caused by climate change.
+
+**How ICT is Used:** Informatizes the entire water handling process:
+*   Production of drinkable water.
+*   Transportation of water.
+*   Processing and reuse of water.
+*   Integrates traditional and diverse water resources (underground, rainwater, reclaimed sewage, saline water).
+
+---
+
+================================================================================
+ORIGINAL TEXT (First 5000 chars)
+================================================================================
+
+--- Page 151 ---
+ESSENCE
++ Characteristics  of blockchain
+Unlike traditional  trading  methods,  transaction  ledger  data are recorded  and managed  and verified in block units on all
+nodes in the network.
+Traditional Blockchain
+trading trading
+aN AA Ror R)
+Fh ws?
+Q ‘ares 2 cy A)
+[Fig.63]  Blockchain  trading
++ Decentralized
+A system  that by itself proves and guarantees  the integrity  of data by having all the nodes on the network  working
+together  without  the presence  of a central server (a central aggregator).
++ Improved  security
+Security  is greatly improved  because  a transaction  is accepted  only after the consent  of more than half of all nodes
+on the network  is obtained.
++ Transparency  of transactions
+The details  of transaction  record are disclosed  because  all nodes participating  in a network  share their ledgers.
++ Enhanced  safety
+Because  of the distributive  nature of the network,  even if an error or abnormality  appears  on some participating
+nodes, the network  can easily recover  itself
++ Improved  economics
+Because  there is no central server, centralized  management  costs and financial  transaction  costs can be reduced.
++ Protection  of personal  data
+The burden of collecting,  security  and leaking  of development  related data caused by system error or hacking  of the
+central system  is reduced.
+1. Awants  to transfer  money  to B 2. The transaction  data are generated 3. The block is shared  with network
+online as a block participantsB a,9B a ;
+Oo =
+4 Participants  conduct  cross-validation  | { 5. The block with validated  transaction 6. Money transfer  from A to B is
+on the transaction  data data is registered  on the chain completeBAoe  | ee Be
+[Fig.64]  Concept  diagram  of Blockchain  transactions
+150 TOPCIT  ESSENCE
+
+
+--- Page 152 ---
+Understanding  the IT Business  and Ethics )
+Since all nodes in the blockchain  network  are responsible  for block creation  and verification,  and a transactions  is
+accepted  only when more than half of the nodes approve  the transaction,  it is impossible  to modify  or manipulate  the
+transaction  arbitrarily.
+B) Smart  infrastructure
+@ Smart  city
+There is much news and interest  around the concept  of smart cities. A smart city can be defined as an "urban
+model that can solve various urban problems  and improve  the quality of life in a city through  the adoption  of new
+technologies  like ICT and Big Data."?
+Smart cities are seen as an answer  to the problems  of aging infrastructures,  energy shortages,  environmental
+pollution  and crime faced by cities around the world. To build such a smart city, the latest technologies  like Al, Big
+Data, 5G mobile technologies  are employed  in the development  of “smart  traffic’, “smart  environment’,  “public safety’,
+“public  welfare”  and “smart energy”  services.  Smart city concept  is the leading  example  of smart infrastructure.
+as
+anenu [5]Lz
+vaiggeay P')
+Bu ast | Gey)
+ADE Naat
+seaeea | <5)
+Maas asiawastes  ses £3}
+(6) a"
+os) same og,{s >| gas
+{>} awe
+AMI7IMt  ADEEseer oma Bey
+anes }
+4SH2  118EMS Wet
+ge oni] 2)
+hemes  0
+AD}ET2IE(CHP)
+gongose | one
+Y) obatatetoL
+@ Smart grid
+Smart grid refers to a next-generation  power system that combines  IT technologies  with existing  power grids to
+monitor  and control the supply & demand  of power supplies  in real time to match the production  and consumption
+of electric  power. In traditional  power systems  the generation  of power is centralized  which means power producers
+unilaterally  supply power to consumers.  Power plants are built to meet the estimated  maximum  consumption  level,
+12 Reference,  Ministry  of Land, Infrastructure  and Transport.
+M5 Understanding  the IT Business  and Ethics 151
+
+
+--- Page 153 ---
+ESSENCE
+but they are less efficient  because  they cannot  flexibly  handle  fluctuations  in demand.  However,  in a smart  grid, power
+suppliers are able to flexible set the power prices and control the supply and consumers  can check their cumulative
+power usage levels and the power prices. These two aspects  result in efficient  consumptions  of power. A smart grid
+can also benefit producers  of renewable  energy sources  whose supply of power can often be unpredictable  because
+power  from renewable  energy  sources  can be sold at high prices when the demand  for power  is at its peak.
+A comparison  of traditional  electric  power grid and the Smart Grid reveals  the following  differences.
+<Table 79> Comparison  of traditional  electric power  grid and the Smart Grid
+Area Traditional  Electric  Power  Grid Smart  Grid
+Generation Centralized  power  generation Distributive  power generation
+Control  System Analog Digital
+Blackout  diagnosis Impossible Self-diagnosis
+Blackout  recovery Manual recovery Semi-automated  recovery  and automatic  repair
+Facility inspection Manual Remote
+Communication One way Bi-directional
+Power source Centralized  source Distributed  source /
+(fossil fuel, nuclear  power) (renewable...

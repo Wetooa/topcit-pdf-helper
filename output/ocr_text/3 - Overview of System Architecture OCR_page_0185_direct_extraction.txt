@@ -1,0 +1,36 @@
+ESSENCE
++ ACK: The acknowledged  response  field is meaningful.
++ PSH: Push function
++ RST: Connection  reset
++ SYN: Sequence  number  synchronization
++ FIN: No more data from the sender
+@ TCP connection  setting
+The basic way to establish  a TCP connection  is with a three-way  handshake  procedure.  This procedure  begins by
+sending  an SYN segment  with a sequence  number  (SEQ) 100, from one TCP endpoint,  to another  TCP end, as shown
+in the second step of [Figure 132]. The SYN segment  means that the SYN control flag of the TCP header is set to 1.
+The ACK segment  means that the ACK control  flag is set to 1. The SYN and ACK segments  mean that both the SYN
+control  flag and the ACK control  flag are set to 1.
+Upon receiving  the SYN segment,  TCP B sets the SYN control flag (SEQ=300),  requesting  connection  establishment
+with TCP A from TCP B, along with acknowledgment  number  (ACK) 101'°, and sends the SYN and ACK segments,  as
+shown in step 3 in [Figure 132]. Upon receiving  it, TCP A confirms  the ACK control  flag and ACK=101  to recognize  that
+the connection  request  has been properly  delivered.
+The SYN control flag set together  indicates that TCP B sent the connection  request.  The three-way  handshake  is
+complete  when the ACK segment  (ACK=301)  is sent to TCP B, and the bidirectional  connection,  between  TCP A and
+TCP B, is established.
+As described  above, the three-way  handshake  for TCP connection  confirms  that the SYN segment,  the SYN and ACK
+segment,  and the ACK segment  are transferred  between  TCP terminals.  At the same time, the sequence  number  (SEQ)
+that is transferred  between  TCP terminals  plays an important  role in flow and error controls  to check whether  the
+data streams  are transferred  properly  in byte units.
+TCP  A TCP  B
+1, CLOSED LISTEN
+2, SYN-SENT — (SEQ=100)(CTL=SYN) =- SYN-RECEIVED
+3, ESTABLISHED  — (SEQ=300)(ACK=101)(CTL=SYN,ACK)  -  — SYN-RECEIVED
+4, ESTABLISHED  > — <SEQ=101)(ACK=301)(CTL=ACK)  => ESTABLISHED
+5, ESTABLISHED  — (SEQ=101)(ACK=301){CTL=ACK)(DATA)  — ESTABLISHED
+[Figure 132] Three-way  Handshake  for Connection  Establishment  [1]
+TCP manages  connection  by allocating  a system  resource,  TCB (Transmission  Control Block), upon receiving  the SYN
+segment  for connection.  If a large number  of SYN segments  are sent in a short time for malicious  purposes,  the TCP
+end-host  that has received  it may not be able to allocate  any more TCBs, resulting  in the service being unavailable.
+This attack is called SYN flooding,  and it can be referred  to as a type of denial-of-service  attack.
+10 According  to the TCP flow control method,  the next desired byte sequence  number  101 is sent as the acknowledgment  number.
+184 TOPCIT  ESSENCE

@@ -1,0 +1,236 @@
+LEARNING GUIDE: Pages 25-29
+Generated: 2025-12-05 14:34:32
+PDF: 4 - Understanding Information Security OCR
+
+================================================================================
+LEARNING GUIDE
+================================================================================
+
+Here's a simplified, easy-to-read learning guide based on the provided text:
+
+---
+
+# Information Security: Cryptographic Basics
+
+## 1. Cryptographic Protocols
+
+*   **Definition:** Protocols that use cryptographic techniques to achieve secure communication.
+*   **Purpose:** Ensure specific goals like:
+    *   Authentication (verifying identity)
+    *   Confidentiality (keeping info secret)
+    *   Integrity (ensuring info hasn't been tampered with)
+    *   Non-repudiation (preventing denial of actions)
+*   **Key Requirement:** Prevent repudiation by participants or third parties.
+
+## 2. Cryptographic Techniques: Classification & Applications
+
+*   **Underlying Mathematical Problems:**
+    *   Factoring Problem (e.g., used in RSA)
+    *   Discrete Logarithm Problem (e.g., used in ElGamal)
+    *   Elliptic Curve Problem (e.g., used in ECC)
+*   **Applications:**
+    *   Individual Identification & Authentication
+    *   Electronic Signature
+    *   Electronic Payment
+    *   Electronic Money
+    *   Electronic Election
+
+## 3. Cryptographic Algorithms & Cryptosystems
+
+### 3.1. Cryptographic Algorithm
+
+*   **Core Idea:** Uses an encryption key to transform plaintext into ciphertext.
+*   **Process:**
+    1.  **Encryption:** Plaintext (P) + Encryption Key (KE) + Encryption Function (E) → Ciphertext (C)
+    2.  **Decryption:** Ciphertext (C) + Decryption Key (KD) + Decryption Function (D) → Plaintext (P)
+*   **Keys:**
+    *   **Symmetric (Private Key):** KE and KD are the *same* key.
+    *   **Asymmetric (Public Key):** KE and KD are *different* keys.
+*   **Goal:** Ensure confidentiality when transmitting data over insecure networks.
+*   **Computational Impossibility:** It should be practically impossible to decrypt ciphertext without the correct decryption key, even if given unlimited time (though attackers will always try various methods).
+
+### 3.2. Cryptosystem
+
+*   **Definition:** All necessary elements for the entire encryption and decryption process.
+*   **Requirements:**
+    *   Efficient encryption and decryption using the key.
+    *   Easy to use.
+    *   Security should primarily rely on the **strength of the key**, not just the secrecy or complexity of the algorithm itself.
+
+## 4. Private Key (Symmetric) Cryptographic Algorithms
+
+*   **Key Relationship:** The encryption key and decryption key are **identical**.
+*   **Process:**
+    *   Sender encrypts with Key.
+    *   Receiver decrypts with the *same* Key.
+*   **Terminology:** Also known as Secret Key Encryption, Conventional Encryption, or Symmetric Encryption.
+*   **Advantages:**
+    *   Fast encryption and decryption speed.
+    *   Relatively short key lengths.
+*   **Disadvantages:**
+    *   **Key Distribution:** Difficult to securely share the secret key, especially over long distances or with many users.
+    *   **Key Management:** Burdensome to generate and maintain separate keys for every pair of communicating parties.
+*   **Why still used:** Its speed, due to its composition of substitution and transposition operations.
+*   **Types:**
+    *   **Block Cipher:** Processes data in fixed-size blocks.
+    *   **Stream Cipher:** Processes data bit by bit.
+
+### 4.1. Block Cipher
+
+*   **Method:** Transforms fixed-size input blocks into fixed-size output blocks using a secret key.
+*   **Examples:** Feistel Network, DES, AES, IDEA, SEED, ARIA.
+*   **Common Attack Techniques:**
+    *   **Differential Attack:** Analyzes bit differences between plaintext and corresponding ciphertext blocks to find the key.
+    *   **Linear Attack:** Linearizes internal non-linear structures of the algorithm to deduce the key.
+    *   **Brute Force Attack:** Tries every possible key until the correct one is found (plaintext matches ciphertext).
+    *   **Statistical Analysis:** Uses statistical properties (e.g., letter frequency) of ciphertext to decrypt.
+    *   **Mathematical Analysis:** Applies mathematical theories to break the cipher.
+
+### 4.2. Stream Cipher
+
+*   **Method:** Creates ciphertext by performing a bitwise XOR operation between plaintext bits and a generated key stream.
+*   **Examples:** RC4 (representative), A5/1, A5/2.
+
+### 4.3. Comparison: Block Cipher vs. Stream Cipher
+
+| Item                | Block Cipher                                      | Stream Cipher                                   |
+| :------------------ | :------------------------------------------------ | :---------------------------------------------- |
+| **Operating Method**| Encrypts data in fixed-size blocks                | Encrypts plaintext bit by bit                   |
+| **Strengths**       | Easy to implement                                 | Easy to implement in mobile environments        |
+| **Shortcomings**    | Slow execution time (compared to stream)          | Malicious attackers can easily modify content   |
+|                     | High risk of error spread (in certain modes)      | Requires careful management of initial values   |
+
+## 5. Public Key (Asymmetric) Cryptographic Algorithms
+
+*   **Origin:** Concept introduced by Diffie and Hellman (1976), RSA developed (1978).
+*   **Key Relationship:** Uses **different keys** for encryption and decryption.
+*   **Key Pair:** Each user has:
+    *   **Public Key:** Disclosed and used by others to encrypt data *for* that user.
+    *   **Private Key:** Kept secret by the user and used to decrypt data encrypted *with their public key*.
+*   **Process:**
+    1.  Sender encrypts data using the **receiver's public key**.
+    2.  Receiver decrypts the data using **their own private key**.
+*   **Key Mechanism:** Anyone can encrypt information using a public key, but only the owner of the corresponding private key can decrypt it.
+*   **Key Management (for 'n' users):**
+    *   Total keys in network: 2n (each user has one public, one private).
+    *   Keys managed *by each person*: Each user primarily manages their own private key, and their own public key (which is shared).
+*   **Advantages:**
+    *   **Key Distribution:** Simple and secure key distribution, as public keys can be openly shared.
+    *   **Authentication:** Useful for verifying identities because only the private key owner can decrypt specific messages.
+    *   **Key Exchange:** Facilitates secure exchange of secret keys for symmetric encryption.
+    *   Fewer total *unique* keys to manage for N communicating parties compared to symmetric systems (2N vs. N(N-1)/2).
+
+### 5.1. Representative Public Key Algorithms
+
+*   **RSA (Rivest, Shamir, Adleman):**
+    *   **Purpose:** Encryption and authentication.
+    *   **Security Basis:** Difficulty of **factoring large integers**.
+    *   **Characteristic:** Produces the *same ciphertext* for the same message because it doesn't use random numbers during encryption.
+    *   **Key Importance:** Security heavily depends on the selection of large prime numbers (p and q).
+*   **ElGamal:**
+    *   **Proposed:** 1984.
+    *   **Security Basis:** Difficulty of the **discrete logarithm problem**.
+    *   **Characteristic:** Ciphertext length is doubled. Importantly, it produces *different ciphertext* each time for the same message because it uses random numbers, enhancing security.
+*   **ECC (Elliptic Curve Cryptosystem):**
+    *   **Security Basis:** Discrete logarithm problem on **elliptic curves**.
+    *   **Advantages:** High security and fast speed.
+    *   **Efficiency:** A 160-bit ECC key offers comparable security to a 1024-bit RSA key.
+    *   **Suitability:** Ideal for mobile devices and environments with limited power (e.g., mobile phones).
+
+## 6. Comparison: Private Key vs. Public Key Algorithms
+
+| Item                          | Private Key Cipher (Symmetric)                  | Public Key Cipher (Asymmetric)                    |
+| :---------------------------- | :---------------------------------------------- | :------------------------------------------------ |
+| **Key Relationship**          | Encryption key = Decryption key                 | Encryption key ≠ Decryption key                   |
+| **Encryption Key**            | Private (secret)                                | Public                                            |
+| **Decryption Key**            | Private (secret)                                | Private (secret)                                  |
+| **Algorithm**                 | Publicly known                                  | Publicly known                                    |
+| **Number of Keys (N users)**  | N(N-1)/2 (for pairwise communication)           | 2N (each user has 1 public, 1 private)            |
+| **Keys Managed per Person**   | N-1 (one secret key for each partner)           | 2 (their own private and public key pair)         |
+| **Encryption Speed**          | High speed                                      | Low speed (slower than private key ciphers)       |
+| **Key Distribution**          | Complex (requires secure prior agreement)       | Simple (public keys can be freely shared)         |
+| **Strengths**                 | High speed; relatively simple algorithm.        | Easy key distribution; supports authentication; fewer total unique keys to manage for the network. |
+
+---
+
+================================================================================
+ORIGINAL TEXT (First 5000 chars)
+================================================================================
+
+--- Page 25 ---
+Information  security )
+@ Cryptographic  protocols
+Cryptographic  protocols  refer to the protocols  that use cryptographic  techniques.  As a protocol  means a series
+of finite phases in which more than 2 persons participate  to achieve a certain purpose,  the cryptographic
+protocol  should prevent repudiation  by  a participant,  or a third party, to ensure a certain purpose  of the
+concerned  cryptographic  protocol  (authentication,  confidentiality,  integrity,  and non-repudiation,  etc.), as well
+as the meaning  of each message.
+Cryptographic  technique
+|
+; + Factoring  problem * Individuals  identification  |  | » Electronic  payment
+7 inolapelgeolec  ieee + Discrete algebra problem and authentication + Electronic money
+Typuon sys| * Elliptical curve problem + Electronic  signature + Electronic  election
+[Figure  4] Classification  of cryptographic  techniques
+D) Cryptographic  algorithm  and cryptosystem
+® Cryptographic  algorithm
+The cryptographic  algorithm  that uses an encryption  key can be described  as [Figure 5]. In the figure, P is plain
+text, E is the cryptographic  function,  and K(KE, KD) is the key value. As in the public key method,  the encryption
+key and the decryption  key can be different.  In that case, keys are expressed  KE and KD respectively.  Since
+ciphertext  is generally  transmitted  over the communication  line or network  that is not secure, the sender  and
+receiver  can ensure  confidentiality  by transmitting  the result of encrypting  the plaintext.
+Encryption  key Decryption  key
+| i
+C=E(K,,  P) P= D(K,, C)
+[Figure  5] Cryptographic  algorithm
+M4 Understanding  Information  Security  25
+
+
+--- Page 26 ---
+ESSENCE
+The receiver  tries to send plaintext  P, which can be seen by anyone,  to the other party. The sender  generates
+ciphertext  C from plaintext  P using the encryption  key KE and the cryptographic  algorithm  E,then delivers  it to
+the receiver.  In general,  we cannot  understand  ciphertext  C without  knowing  the decryption  key, which is called
+computational  impossibility.  Here, the computational  impossibility  means that we can understand  the contents
+of the plaintext,  even though  we don’t know the decryption  key, if infinite time is used. The attacker  attempts
+to understand  the contents  of the plaintext  using various methods.  The legitimate  receiver  can understand
+plain text P that the sender has initially intended  to send, by receiving  ciphertext  C sent by the sender and
+converting  it using the decryption  key KD and decryption  algorithm  D.
+@ Cryptosystem
+All the elements  that are needed  for a series of encryption  and decryption  processes  are called a “cryptosystem”.
+The cryptosystem  should generally  meet the following  requirements:
++ Encryption  and decryption  should be effectively  performed  by the encryption  key.
++ A cryptosystem  should be easy to use.
++ Security  should be performed  by the encryption  key, rather  than by a cryptographic  algorithm.
+E) Private key encryption  and public key cryptographic  algorithm
+@ Private key cryptographic  algorithm
+The secret key encryption  algorithm  has the advantage  that the encryption  key used for encryption  and the
+decryption  key used for decryption  are the same, and that the length of the key may be short, and the speed
+of encryption  and decryption  operations  is fast.
+Encryption Decryption
+key Same key
+: Cryptographic . Cryptographic :
+| Plain text b> algorithm ——  >| Ciphertext algorithm Plain text
+[Figure  6] Private key cryptographic  algorithm
+However,  it is difficult to share the key if the distance  between  the sender  and the receiver  is long. If there are
+many other parties who require encrypted  communication,  it is quite burdensome  to generate  and maintain
+different  keys. It is called a private key encryption  system, in the sense that the key should be kept and
+managed  in secret.It  is also called a conventional  encryption  system,  in the sense that it is commonly  used.
+The private key encryption  system is still widely used, even though it is difficult  to share the key, because
+the cryptographic  algorithm  is composed  of a combination  of substitution  and transposition,  enabling  fast
+operations.  In addition,  this system is divided into the block cipher and the stream cipher, as shown in Table 2,
+depending  on the plaintext  processing  method.
+26 TOPCIT  ESSENCE
+
+
+--- Page 27 ---
+<Table 2> Comparison  ofInformation  security )
+the block cipher  and the stream  cipher
+Item Block encryption Stream  encryption
+Operating  method ihe bacon.  called Plaintext is encrypted  in bits.
+Low risk of error spread
+Strengths Easy to implement Easy to implement  in a mobile communication
+environment
+High risk of error spread Slow execution  timeShortcomings 8 im Malicious  attackers  can easily modify the
+Initial values should be set.content.
++ Block cipher algorithm
+The block cipher algorithm  performs  the encryption  and decryp...

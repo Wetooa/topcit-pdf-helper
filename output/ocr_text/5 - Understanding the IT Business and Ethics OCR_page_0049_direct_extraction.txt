@@ -1,0 +1,45 @@
+ESSENCE
+Application
+Architecture- Stage of extracting  information  needed  on the job, and of
+identifying  and defining  the activities  for processing  and managing
+such information. Service  Component  Reference
+- Create standards  that define the functions  needed  for developing Model (SRM)
+an application,  and the characteristics  and the environment  of the
+application  task.
+- Finds which documents  are needed  for the activities  defined  in
+the business model. Data Reference  Model
+Dota ane este - Design data model by understanding  the interrelationships (ORM)
+between  all information,  data, and data structures.
+- Defines  the criteria  for selecting  the infrastructure  that supports
+Technology the business  and data application  and other technologies.- Technology  Reference  Model
+Architecture - Technology  architecture  also defines the technical support (TRM)
+services  for the above.
+- Defines  the detailed  technology  list for the technology
+Standard  Profile architecture  (TA).
+- Example)  JAVA architecture  version: JDK 2.0
+There is a reference  model for each individual  architecture,  namely  the performance  reference  model (PRM), service
+component  reference  model, data reference  model, and technology  reference  model, respectively.  The reference
+model provides  early reference  cases in an identical  business sector  or similar industries  that a company  could use
+as a guide when it seeks to deploy an EA. There is also a government  EA reference  model for government-wide  EA,
+which is used as a reference  when EAs are deployed  at the departmental  level.
+As a side note, the government-wide  EA includes  security  architecture  in addition  to the four abovementioned
+architectures.
+C) The EA framework
+The Zachman  Framework,  TOGAF (The Open Group Architecture),  and FEAF (Federal  Enterprise Architecture
+Framework)  are some of the leading EA frameworks  in use today. The Zachmann  Framework  is the one used
+most often when estab!
+interoperability  between
+help of the Jacquesmanishing an EA. TOGAF, created by The Open Group, is an open framework  that focuses  on
+companies.  FEAF is also a framework  developed  in 1998 by the U.S. CIO Council with the
+Framework  and Spewak.
+<Table8>Types  of EA framework
+EA framework Description
++ This is the framework  used most often when establishing  an EA. It is defined  as a matrix using
+Zachmann view and perspective.
+Framework + 5perspectives:  Planner, Owner, Designer,  Builder,  Subcontractor.
++ 6 ways of describing  each perspective:  Data, Function,  Network,  People,  Time, Motivation.
++ This framework  consists  of an architecture  development  method  (ADM) cycle, a technology
+TOGAE reference  model(TRM),  and an SIP (standards  information  point), which is a DB containing
+summarized  standards  information.  It is structured  to resolve  problems  at the component  unit
+level by employing  an approach  that uses the concept  of building  blocks.
+48 TOPCIT  ESSENCE

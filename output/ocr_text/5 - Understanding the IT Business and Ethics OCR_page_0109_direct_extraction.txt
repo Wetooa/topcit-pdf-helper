@@ -1,0 +1,36 @@
+ESSENCE
+@ Effects  of SLA deployment
++ Seamless  communication:  Used as a communication  tool between  consumers  and suppliers  of services.
++ Prevention  of conflicts:  Narrows  the expectation  gap (vs reality) for service levels and lays the foundation  for
+resolving  the gap.
+* Objective  evaluation:  An objective  and quantitative  evaluation  of service  quality is possible.
++ Continuous  control: Provides  a control  system  for managing  services.
+@ Component  elements  of the SLA and the metric  for each item
+An SLA sets the service target levels for service level management  metrics, provides  performance measurement
+standards  for the objectives  of the service,  and has a system  for reporting  service levels.
+<Table 52> Component  elements  of the SLA
+Component  elements Description
+Provides  performance  metrics  for quantitatively  judging a service  levels (i.e. each serviceService  Level Metrics
+area).
+Establishes  the standards  of the service. For example,  the target level and the minimum
+level of the service  level management  metric. Imposes  penalties  when the service  level
+falls short of the target, and provides  incentives  when the service  level exceeds  the
+target.Service  Level Objectives
+Method  of quantitatively  measuring  the pre-defined  service  level metrics  (includesService  Level Measurements ae ‘imeasuring  interval,  measuring  team, frequency  of measurement,  etc.)
+Service  Level Reports Format  and method  of reporting  the service level used in the communication  system
+Some examples  of metrics  defined in the SLA are shown in the table below. In particular,  the items described  using
+metrics  are also called “service  level items” or “configuration  items’ (Cl).
+<Table 53> Examples  of SLA metrics
+Item Examples  of metrics
+On-time  CSR processing  rate, program  revision  and increase  rate, system  response  speed and time,
+Application  system number of malfunctions,  etc.
+System  operation  rate, backup  compliance  rate, malfunction  handling  rate, number  of system
+HW malfunctions,  malfunction  handling  procedure  compliance  rate, number  of transactions  for each type of
+transaction,  monthly  disk usage data management,  etc.
+Line failure rate, network  equipment  and line availability,  network  utilization  rate, network
+Network troubleshooting  compliance  rate, etc.
+. Call processing  rate, number  of calls handled  for each type of call/job,  call waiting  rate, help deskService  desksystem availability,  call desk employee  absenteeism,  etc
+. User IT request  immediate  processing  rate, customer  profile accuracy,  number  of security  trainingSecurity ; ; . isessions,  number  of inspections  for protecting  personal  information,  etc.
+Strategy Number  of suggestions  and recommendations  received,  compliance  with the informatization  training
+planning plan, etc.
+108 TOPCIT  ESSENCE

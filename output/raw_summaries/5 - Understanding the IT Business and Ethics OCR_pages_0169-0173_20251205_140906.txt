@@ -1,0 +1,266 @@
+LEARNING GUIDE: Pages 169-173
+Generated: 2025-12-05 14:09:06
+PDF: 5 - Understanding the IT Business and Ethics OCR
+
+================================================================================
+LEARNING GUIDE
+================================================================================
+
+Here's your simplified, easy-to-read learning guide for Pages 169-173:
+
+---
+
+## Learning Guide: IT Business & Emerging Technologies
+
+### I. Virtual Currencies
+
+Virtual currencies are digital or virtual forms of money.
+
+**Key Virtual Currencies:**
+
+*   **Bitcoin (2009)**
+    *   **First distributed ledger-based virtual currency.**
+    *   **Structure:** Closed blockchain, blocks woven in a row.
+    *   **Transaction Time:** ~10 minutes.
+    *   **Primary Use:** Transaction book.
+*   **Ripple (2009)**
+    *   **Purpose:** Primarily for bank transfers.
+    *   **Advantage:** Low-cost payment service, immediate settlement reduces risk.
+    *   **Currency Conversion:** Uses best rates, reducing fees.
+    *   **Users:** Many banks and companies involved in foreign trade.
+*   **Litecoin (2011)**
+    *   **Similarity:** Technically similar to Bitcoin.
+    *   **Improvement:** Addresses Bitcoin's slow computing speed.
+    *   **Performance:** Up to 4x faster transaction speed and higher maximum mining volume.
+*   **Ethereum (2014)**
+    *   **Structure:** Improved from closed to an organic blockchain.
+    *   **Beyond Currency:** Expandable to **smart contracts** and various services.
+    *   **Transaction Time:** ~10 seconds.
+
+### II. Linked Data
+
+**Linked data** is a structured data model that creates an interconnected Web. It identifies data on the Web using **URIs** (Uniform Resource Identifiers) and assigns linking information to each URI.
+
+**4 Rules of Linked Data:**
+
+1.  **Use of URI:** Each individual object in a document gets its own URI, moving beyond a URL-centered system.
+2.  **Use of HTTP URI:** Proposes URIs accessible via HTTP protocol to enhance data access.
+3.  **Use of RDF:** Uses data structured in a **triple model** (like RDF) for formalized representation and linking.
+4.  **Assignment of Linked Information:** Makes linking existing Web data easier by assigning specific link information.
+
+**Usefulness of Linked Data:**
+
+*   **Reusable Data:** Data can be used via URI even if it's not one's own.
+*   **Reduced Data Redundancy:** Helps identify and eliminate duplicate data.
+*   **Maximize Interoperability & Consolidate Data Value:** Acts as a semantic web standard, can be queried like a database, enables "mash-ups" using data.
+*   **Network Effects:** Data expansion through linking leads to network effects and acceleration.
+
+### III. Open Data
+
+**Open data** is data that anyone can freely use, reuse, and redistribute, provided it meets specific conditions.
+
+**Conditions for Open Data:**
+
+1.  **Availability and Access:**
+    *   Must be downloadable over the Internet.
+    *   Original data can be transformed, and new works produced, at reasonable cost.
+    *   Provided in a convenient, modifiable format.
+2.  **Reuse and Redistribution:**
+    *   Data must be reusable and redistributable, including combinations with other datasets.
+3.  **Universal Participation:**
+    *   Everyone must be able to use, reuse, and redistribute the data.
+    *   No restrictions on commercial/non-commercial use or specific purposes (e.g., education).
+
+### IV. Latest H/W-Centered IT Business Services
+
+#### A. 3D Printing
+
+**3D Printing (Additive Manufacturing):** A method of creating 3-dimensional physical objects from 3D digital data by stacking layers of material (powder, liquid, solid).
+
+**Why Manufacturers are Interested:**
+
+*   **Customized Production:** Suitable for small batches of diverse, customized products.
+*   **Consumer Needs:** Improves manufacturing to satisfy diverse consumer needs quickly and easily.
+*   **One-Person Manufacturing:** Enables individuals to make their own products.
+*   **Collapsing Boundaries:** Blurs the line between consumption and manufacturing.
+
+**Comparison with Traditional Manufacturing:**
+
+*   **Traditional:** Advantageous for mass production of simple-shaped products (economies of scale, low labor costs).
+*   **3D Printing:** Advantageous for **small-volume, large-variety production**. One equipment can produce many product types.
+
+**3D Printing Process Steps:**
+
+1.  **Modeling:** Creating the product design digitally.
+    *   Data can be from a 3D scanner or a 3D modeling program.
+    *   **Slicer Program:** Converts 3D model data into thin layers.
+2.  **Printing:** Stacking or hardening thin layers of material based on the digitized model.
+3.  **Post-processing:** Polishing, dyeing, removing supports, solidifying the object.
+
+**Core Component Technologies:**
+
+*   **Modeling Process:** Object scanning/designing, design-to-data conversion.
+*   **Printing Process:** Precise raw material spraying, energy source control for hardening.
+*   **Materials:** Development of materials compatible with printing technology and product requirements (e.g., alloys, bio-materials for high value).
+
+**Future Outlook:**
+Current performance is limited, but rapid development is expected due to new technologies, material advancements, and expiring critical patents.
+
+#### B. Wearable Devices
+
+**Wearable Devices:** Electronic devices designed to be attached to the human body to improve convenience. They communicate with users from close proximity, offering differentiated functions in portability, ease of use, and adaptability.
+
+**Context:** Considered the next-generation mobile technology to replace maturing smartphones.
+
+**Applications:** Fitness, well-being, healthcare, medical care, manufacturing, military, infotainment.
+
+**Evolution of Forms:**
+
+*   **Accessory Type:** (e.g., smartwatches)
+*   **Body Attachment Type:** (e.g., skin patches)
+*   **Apparel-Integrated Type:** (e.g., smart clothing)
+*   **Body Transplants:** (e.g., implanted devices)
+
+**Types of Wearable Devices & Core Technology:**
+
+1.  **Accessory (e.g., watches):**
+    *   **Characteristics:** Ultra-small/low power systems, ergonomic design.
+    *   **Core Tech:** Ultra-small sensors, high-capacity battery, low power/high-performance SoC, flexible/thin/transparent display, interaction technology.
+2.  **Apparel (e.g., smart clothing):**
+    *   **Characteristics:** Integrated with fabric, circuits printed on flexible fabric.
+    *   **Core Tech:** Conductive thread/textile/fabric technology, fabric circuit boards, packaging, adhesive battery components.
+3.  **Body Attachment (e.g., skin patches):**
+    *   **Characteristics:** Systems attached to skin, using biocompatible polymers.
+    *   **Core Tech:** Polymer circuit boards, electronic component packaging, antenna/communication technology, material attach/detach technology.
+4.  **Body Transplant (e.g., implants):**
+    *   **Characteristics:** Electronic devices inserted into the human body, biocompatible circuit boards.
+    *   **Core Tech:** Biometric sensor technology, electronic tattoo/capsule development, integration with human body, low power/miniaturization technology.
+
+**Growing Importance (due to IoT):**
+
+*   Always connected to user's network.
+*   Frees up users' hands.
+*   Always close to user's view and position.
+*   Enables collection of previously difficult-to-gather data.
+*   Leads to customized personal content and new services.
+
+**Challenges:**
+
+*   Short battery life.
+*   Limited content for small screens.
+*   Lack of "killer content" or game-changing functions.
+
+**Future Value & Convergence:**
+Wearables will create core value by converging with IoT, cloud computing, Big Data, and mobile devices.
+
+*   **Sensing:** Wearables gather Big Data.
+*   **Cloud Analysis:** Big Data analyzed via cloud.
+*   **Customized Services:** Analysis results used for personalized user services.
+*   **New Business Models:** Smart home, O2O (Online to Offline) commerce, smart car services.
+
+#### C. Self-Driving Cars
+
+**Self-Driving Cars (Autonomous Vehicles):** Automobiles that can drive safely on their own, recognizing their environment and risks without driver intervention. They incorporate ICT (software, AI, communication, sensors) to minimize human control.
+
+**Reasons for Emergence:**
+
+*   **Collaboration:** IT companies and carmakers are partnering to integrate latest ICT into cars.
+*   **Market Growth:** Rapid growth in electrical parts and telematics due to demand for safety and convenience.
+*   **Tech Improvements:** Advanced network/internet technology allows cars to be viewed as new mobile spaces, offering new user experiences (UXs).
+
+**Levels of Autonomous Driving:**
+
+1.  **No Automation:**
+    *   **Description:** Driver fully monitors and controls all safety-sensitive functions (brakes, speed, steering).
+    *   **Sub-Functions:** Traditional car; driver must be fully aware, judge, and control driving.
+2.  **Function-Specific Automation:**
+    *   **Description:** Driver controls vehicle except for some functions during normal driving or imminent collision.
+    *   **Sub-Functions:** Driving assistant systems that provide info, warn, and support safe driving/parking.
+3.  **Combined-Specific Automation:**
+    *   **Description:** Two or more controls operate harmoniously in specific driving environments. Driver retains control rights and responsibility for monitoring/safety.
+    *   **Sub-Functions:** Similar to Function-Specific but with more integrated control, still requiring driver oversight.
+4.  **Limited Self-Driving Automation:**
+    *   **Description:** Vehicle controls all safety functions under specific traffic environments. Vehicle has monitoring authority. Driver takes over intermittently when an alarm sounds (requiring driver control).
+    *   **Sub-Functions:** Infrastructure-linked autonomous driving where cars operate on roads equipped for automatic driving.
+
+---
+
+================================================================================
+ORIGINAL TEXT (First 5000 chars)
+================================================================================
+
+--- Page 169 ---
+ESSENCE
+<Table 89> Current  status of virtual currencies
+Virtual Date of
+Currency introduction Desc puol
++ First distributed  ledger-based  virtual currency.
+ae + Bitcoin  can only be used as transaction  book because  of closed structure  in which blocks areBitcoin 2009 .
+woven  in a row.
++ 10 minutes  required  for a transaction.
+* Closed blockchain  structure  is improved  to an organic  structure.
++ In addition  to virtual currency,  this currency  can also be expanded  to smart contracts  andEthereum 2014
+services.
+* 10 seconds  required  for a transaction.
++ Developed  mainly  for handling  bank transfers.
++ Provides  a low cost payment  service  and risk is lowered  thanks  to its immediate  settlement
+Ripple 2009 system.
++ When converting  currency,  it uses the best currency  conversion  rate it can find, reducing
+fees. Used by many banks and companies  that do a lot of foreign  trades.
+* Technically  similar  to Bitcoins
+Litecoin 2011 + Improves  the slow computing  speed of Bitcoins  (its major disadvantage)  to achieve
+maximum  mining  volume  and increase  transaction  speed by up to 4 times.
+© Linked data
+Linked data is structured  data model that supports  an interconnected  Web by identifying  data existing  on the Web
+as individual  URI (Uniform  Resource  Identifier)  and assigning  linked information  to each URI.
+<Table 90> 4 rules of linked data
+Rule Description
++ Linked data avoids a URL centered  identification  system  for showing  the location  of a
+Use of URI web document.
++ In other words, each individual  object present  in an individual  document  has its own URI.
++ Proposes  URI that could be accessed  through  HTTP protocol.
+Use of HTTP URI + The objective  is to enhance access to linked data
+Use of RDF + Uses data that is structured  in a triple model, as in RDF.
++ The objective  is to represent  and link up web data in a formalized  structure
+Assignment  of linke + The objective  is to make the job of linking data existing  on the Web a lot easier by
+information assigning  link information.
++ Usefulness  of linked data
+Linked data can be reused, reduce redundancy,  and maximize  interoperability  to achieve data integration.
+Furthermore,  added value can be created  through  linked data and network  effects  will result in data expansion.
+<Table 91> Usefulness  of linked data
+Usefulness Description
+Reusable  data + Data can be used with URI, even if the data is not one’s own.
++ The existence  of data sought  by a user can be checked.  The problem  of redundant  data canReduced  data redundancy be eliminated
+168 TOPCIT  ESSENCE
+
+
+--- Page 170 ---
+Understanding  the IT Business  and Ethics )
+Maximize  data
+interoperability  and + Issued as a semantic  web standard.  It can be queried  and used like a database.
+consolidate  dataa  value + Because  data can be accessed  and used freely, mesh-up using data is possible.
+Network  effects + Network  effects and network  acceleration  can be expected  since data can be expanded
+through  data linking.
++ Open Data
+Open data refers to data that anyone  can freely use, reuse, and redistribute,  and shall meet the following  conditions:
+<Table  92> Description  of open data
+Category Description
++ Data should be downloadable  over the Internet.
+Availability  and Access + Transformation  of original  data/production  of new works should be possible  at reasonable  cost.
++ Data should be provided  in a convenient,  modifiable  form
++ Data should be reusable  and redistributable,  including  those used in combination  with otherReuse and Redistributiondatasets.
++ Everyone  must be able to use, reuse, and redistribute  the data.
+Universal  Participation + For example,  there should be no restrictions  on “commercial”  or “non-commercial”  use or
+restrictions  on use for specific  purposes  (such as education).
+Source: Open Knowledge  Foundation,  2012
+B) Latest  IT business  services  that are H/W centered
+@ 3D Printing
+A 3D printing  is a way of printing  3-dimensional  objects  using 3D data. The 3D data that is used as input is generated
+from  a digital drawing, It is also known as additive  manufacturing,  since it builds three-dimensional  structures  by
+stacking  layers of materials  that could be in powder,  liquid, or solid (threads,  wires, pellets)  state.
+The reason why manufacturers  are paying attention  to 3D printing is that 3D printing is suitable  for customized
+production  of small batches  of diverse range of products.  3D printing  improves  the manufacturing  environment
+to satisfy consumers’  diverse needs, making it easy to customize  the product  quickly and easily to the needs of
+consumers,  and providing  a one-person  manufacturing  environment  where consumers  can make their own products
+In addition,  as the principal  of product  manufacturing  becomes  diverse  and the share of the manufacturing/
+distribution  businesses  generated  by individuals  and small manufacturers  increases,  the reproce...

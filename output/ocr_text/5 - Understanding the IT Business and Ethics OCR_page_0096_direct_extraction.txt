@@ -1,0 +1,34 @@
+Understanding  the IT Business  and Ethics )
+Product  planning  stage Development  planning  stage
+Request  approval Groupware
+_ Product  develop-
+ment plan
+Product  develop- Newly  registered EDMSment plan document
+Product  planning  9 f-----=---~* Product  develop ERPmeni ce lu
+| Development  implement  stage ITEM = MBOM
+Model Code t
+|
+1 MES
+Product  Code '
+y ECR
+ITEM MBOM
+CAD System
+PLM System Ze
+[Fig. 36] Diagram  of the configuration  of PLM
+The main components  of the process presented  in the PLM configuration  diagram shown above are derived and
+described  in the table below.
+<Table  43> PLM components
+Component Description
+Project  management  Schedule  management,  output  management  and task management  for product  development.
+Drawing : i . , os amanagement Drawing  approval/information  management,  drawing  revision management,  drawing  viewer.
+Design  change 7 .management ECR/ECN  process  management,  management  of revision by type, component  revision  management.
+BOM management Link to CAD, BOM revision  management,  EBOM/MBOM  generation/approval.
+Technology Listing/correction  of technology  document, revision management,  link to document  and related
+management information,  approval.
+Product  informationmanagement Model/product/goods  code management,  product  spec management,  management  of related output.
+Securitymanagement Document/drawing  encryption,  leakage  prevention,  security  level setting,  DRM/DLP.
+@® PLM trends
+Product  development  was always a collaboration-centered  effort. To more effectively  manage  product  development
+activities,  beginning  in the 1990s, enterprises  began to operate storages  in which they kept the system design
+information  of their engineering  teams.
+M5 Understanding  the IT Business  and Ethics 95

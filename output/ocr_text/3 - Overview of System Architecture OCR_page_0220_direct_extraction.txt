@@ -1,0 +1,37 @@
+Overview  of System Architecture )
+@ Background  of NFV
+With the increase  in network speed and the emergence  of various services,  securing  space and power to
+accommodate  the rapidly increasing  network  equipment  has become  a crucial issue for Internet  service providers.
+Moreover,  the lifespan of network  equipment  is shortened,  making  it increasingly  difficult  to secure profits after
+introducing  new equipment.  NFV was introduced  to solve these problems  through  virtualization  technology.
+@ Concept  of NFV
+NFV runs on a high-performance  x86 platform  and allows users to activate  the necessary  network  functions  as
+needed.  It creates  a VM (Virtual Machine)  or service profile and implements  virtualization  on the network  by utilizing
+the x86 capabilities,
+@® NFV architecture  framework  structure
+As shown in <Table 76>, the NFV architecture  framework  consists of  three function  groups: VNF group, NFV
+infrastructure,  and management  and orchestration.
+NFV Managam  ent and Orchestration
+NFV
+Orchestrator
+Or-Vnim
+VNF
+Manager(s)
+Virtual Virtual
+Computing Storage Network
+( VirtualisatisationLayer ) Virtualisedaaa = Infrastructure
+> Manager(s)
+Hardwareresources
+Computing Storage Network
+Hardware Hardware Hardware
+e@—e Execution  reference  points ----{---- Other reference  points —— Main NFV reference  points
+[Figure 153] NFV Architecture  Framework  (Five VNF Interface  Types) [7]
+(Table 76) NFV Architecture  Framework  Configuration
+Type Description
++ Virtual network  functions
++ Network  feature  set software  to support  multiple  application  programs
++ NFV infrastructure
+NFVI + Provides  physical hardware  resources  to support  computing,  storage,  and network  functions  as well as
+functions  to support  virtualization  and VNF executionVNFs
+Management  &ORenCaTion + Provides  hardware  and software  resource  management,  delivery,  and VFN management  functions
+M3 Overview  of System  Architecture  219

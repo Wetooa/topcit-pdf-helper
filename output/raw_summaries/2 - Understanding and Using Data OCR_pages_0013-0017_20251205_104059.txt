@@ -1,0 +1,420 @@
+LEARNING GUIDE: Pages 13-17
+Generated: 2025-12-05 10:40:59
+PDF: 2 - Understanding and Using Data OCR
+
+================================================================================
+LEARNING GUIDE
+================================================================================
+
+This guide simplifies the provided database topics, focusing on essential information for quick learning and review.
+
+---
+
+## Database Learning Guide
+
+### VII. Database Quality and Standardization
+
+**01. Data Quality Control Framework**
+*   **Purpose:** Ensures data is fit for its intended use, reliable, and accurate.
+*   **Key Aspects:**
+    *   **A) Data Value:** Focuses on the accuracy, completeness, and consistency of the data itself.
+    *   **B) Data Structure:** Ensures data is stored in appropriate formats, types, and adheres to predefined relationships.
+    *   **C) Data Management Process:** Involves the policies, procedures, and tools used to manage data throughout its lifecycle to maintain quality.
+    *   **D) Data Quality Management Maturity Model:** Evaluates an organization's capability to manage data quality across different levels (e.g., initial, repeatable, defined, managed, optimized).
+
+**02. Data Standardization**
+*   **A) Overview:** The process of ensuring data follows a uniform format, definition, and set of rules across systems and organizations.
+*   **B) Necessity:**
+    *   Ensures consistency and interoperability.
+    *   Improves data accuracy and reliability.
+    *   Facilitates data integration and sharing.
+    *   Reduces errors and confusion.
+*   **C) Components:** Includes standardized data definitions, data formats, naming conventions, and validation rules.
+*   **D) Defining Data Standards:** Involves identifying common data elements, establishing clear definitions, and specifying formats and permissible values.
+*   **E) Confirming Data Standards:** Involves reviewing, validating, and gaining consensus on the defined standards, often through a formal approval process, to ensure widespread adoption.
+
+### VIII. Relational Operations (Relational Algebra)
+
+**01. Understanding the Concept of Relational Algebra**
+*   **Definition:** A procedural query language for relational databases that takes relations (tables) as input and returns relations as output. It forms the theoretical basis for SQL.
+*   **Purpose:** Describes *how* to retrieve data by performing a sequence of operations on relations.
+
+**02. Set Operations and Relation Operations**
+*   **A) Set Operations (Binary Operations on Relations):**
+    *   **Union (∪):** Combines rows from two relations (must be union-compatible).
+    *   **Intersection (∩):** Returns rows common to both relations (must be union-compatible).
+    *   **Difference (-):** Returns rows in the first relation that are not in the second (must be union-compatible).
+    *   **Cartesian Product (x):** Combines every row of the first relation with every row of the second.
+*   **B) Relational Operations (Unary/Binary Operations Specific to Relations):**
+    *   **Select (σ):** Filters rows based on a specified condition (predicate).
+    *   **Project (π):** Selects specific columns from a relation, removing duplicates.
+    *   **Join (⋈):** Combines rows from two relations based on a common attribute's value.
+    *   **Divide (÷):** Used for queries involving "for all" or "contains" conditions.
+
+**03. Extended Relational Algebra Operations**
+*   Additional operations like Outer Joins (Left, Right, Full), Aggregate Functions (SUM, COUNT, AVG, MIN, MAX), and Grouping, which enhance the expressiveness of basic relational algebra.
+
+### IX. Relational Database Language (SQL)
+
+**01. Types of Relational Database Languages**
+*   SQL (Structured Query Language) is the most prominent and widely used language for managing and manipulating relational databases.
+*   **B) Changes in SQL and Characteristics of SQL3 (SQL:1999):** SQL has evolved over time. SQL3 introduced features like object-relational capabilities (user-defined types, methods), recursion, triggers, and improved control statements, bridging the gap between relational and object-oriented paradigms.
+
+**02. Data Definition Language (DDL)**
+*   **Purpose:** Defines, modifies, and deletes database objects (schemas, tables, indexes, views, etc.).
+*   **A) Types of DDL Commands:**
+    *   **CREATE:** To create database objects (e.g., `CREATE TABLE`, `CREATE INDEX`).
+    *   **ALTER:** To modify the structure of existing database objects (e.g., `ALTER TABLE ADD COLUMN`).
+    *   **DROP:** To delete database objects (e.g., `DROP TABLE`).
+    *   **TRUNCATE:** To remove all records from a table, effectively resetting it (faster than DELETE for all rows).
+
+**03. Data Control Language (DCL)**
+*   **A) Roles of DCL:** Manages user permissions and access control to the database.
+*   **B) Types of DCL Commands:**
+    *   **GRANT:** To give users specific privileges on database objects (e.g., `GRANT SELECT ON table_name TO user`).
+    *   **REVOKE:** To remove privileges from users (e.g., `REVOKE DELETE ON table_name FROM user`).
+
+**04. Data Manipulation Language (DML)**
+*   **Purpose:** Used for managing data within database objects (inserting, retrieving, modifying, deleting data).
+*   **A) Basic DML Operations:**
+    *   **SELECT:** Retrieves data from the database.
+    *   **INSERT:** Adds new rows of data into a table.
+    *   **UPDATE:** Modifies existing data within a table.
+    *   **DELETE:** Removes rows of data from a table.
+*   **B) Aggregate DML Operations:** Used with `SELECT` to perform calculations on sets of rows.
+    *   `COUNT()`: Number of rows.
+    *   `SUM()`: Sum of values.
+    *   `AVG()`: Average of values.
+    *   `MIN()`: Minimum value.
+    *   `MAX()`: Maximum value.
+    *   Often used with `GROUP BY` to apply aggregations to specific groups of data.
+*   **C) Advanced DML Join Operations:** Combine rows from two or more tables based on related columns.
+    *   **INNER JOIN:** Returns rows when there is a match in both tables.
+    *   **LEFT (OUTER) JOIN:** Returns all rows from the left table, and the matched rows from the right table.
+    *   **RIGHT (OUTER) JOIN:** Returns all rows from the right table, and the matched rows from the left table.
+    *   **FULL (OUTER) JOIN:** Returns all rows when there is a match in either the left or right table.
+    *   **CROSS JOIN:** Produces the Cartesian product of the two tables.
+    *   **SELF JOIN:** A table joined with itself.
+
+### X. Database Query Application
+
+**01. Stored Procedure**
+*   **A) Definition:** A pre-compiled collection of SQL statements (and potentially control flow logic) stored in the database.
+*   **B) Strengths:**
+    *   **Performance:** Executed faster due to pre-compilation.
+    *   **Security:** Users can be granted permission to execute procedures without direct table access.
+    *   **Reusability:** Can be called multiple times by different applications.
+    *   **Reduced Network Traffic:** Multiple SQL statements can be executed with a single call.
+*   **C) Shortcomings:**
+    *   **Portability:** Syntax can vary between different database systems.
+    *   **Debugging:** Can be more challenging to debug than simple SQL statements.
+    *   **Maintenance:** Changes require recompilation and redeployment.
+
+**02. Embedded SQL**
+*   **A) Definition:** SQL statements incorporated directly within a host programming language (e.g., C, Java, Python).
+*   **B) Characteristics:**
+    *   **Static SQL:** Statements are fixed and known at compile-time.
+    *   Requires a precompiler to convert SQL into host language calls.
+*   **C) Embedded SQL Cursor:** Used for processing multiple rows returned by a `SELECT` statement one by one within the host program.
+
+**03. Dynamic SQL**
+*   **A) Comparison with Dynamic and Static SQL:**
+    *   **Static SQL:** SQL statements are fully defined and optimized at compile-time.
+    *   **Dynamic SQL:** SQL statements are constructed as strings at runtime and then executed.
+*   **B) Processing Methods:** Dynamic SQL involves parsing, optimizing, and executing the SQL statement string each time it runs.
+*   **C) Example:** Useful for building flexible applications where queries depend on user input or runtime conditions.
+
+**04. Query Optimization and Optimizer**
+*   **A) Query Optimization Process:** The process of finding the most efficient way to execute a given SQL query, minimizing resource usage (CPU, I/O) and execution time.
+*   **B) Optimizer:** A component of the Database Management System (DBMS) responsible for analyzing queries and generating an optimal execution plan.
+*   **C) Roles of the Optimizer:**
+    *   **Parsing:** Validates syntax and transforms the query into an internal representation.
+    *   **Plan Generation:** Explores various execution strategies (e.g., index usage, join order, join algorithms).
+    *   **Cost Estimation:** Assigns a cost to each potential plan based on statistics about data and indexes.
+    *   **Plan Selection:** Chooses the plan with the lowest estimated cost.
+*   **D) Classification of Optimizers:**
+    *   **Rule-based Optimizer (RBO):** Uses a set of predefined rules or heuristics to choose an execution plan.
+    *   **Cost-based Optimizer (CBO):** Uses statistical information (e.g., table size, index selectivity) to estimate the cost of different plans and selects the cheapest one. (Most modern optimizers are CBO).
+
+**05. Linking the Web and Database**
+*   Methods for web applications to interact with databases.
+*   **A) Server Expansion Methods:** Involve middleware (e.g., application servers) that mediate between web servers and database servers, often using APIs like JDBC (Java) or ODBC (general).
+*   **B) Browser Extension Method:** Typically refers to technologies where client-side code (e.g., JavaScript) interacts with a web server, which then interacts with the database. Direct browser-to-database connections are generally avoided for security and performance reasons.
+
+### XI. Concurrency Control
+
+**01. What is a Transaction**
+*   **A) Concept of a Transaction:** A logical unit of work that performs a series of operations (reads, writes) on the database. It must be executed entirely or not at all to maintain database consistency.
+*   **B) ACID Properties of the Transaction:** Fundamental properties ensuring data integrity:
+    *   **Atomicity:** All operations within a transaction are completed successfully, or none of them are (all or nothing).
+    *   **Consistency:** A transaction brings the database from one valid state to another.
+    *   **Isolation:** Concurrent transactions execute independently without interfering with each other. Results are the same as if transactions ran sequentially.
+    *   **Durability:** Once a transaction is committed, its changes are permanent and survive system failures.
+*   **C) When Finishing a Transaction:**
+    *   **COMMIT:** Makes all changes made by the transaction permanent in the database.
+    *   **ROLLBACK:** Undoes all changes made by the transaction, restoring the database to its state before the transaction began.
+*   **D) Considerations when Executing a Transaction:** Ensures that data remains correct and consistent even with multiple users accessing it simultaneously.
+
+**02. Concurrency Control**
+*   **A) Definition of Serializable Schedule:** A schedule of concurrent transactions where the final result is equivalent to some serial (non-concurrent) execution of the same transactions. This is the goal of concurrency control.
+*   **B) Definition of Concurrency Control:** Mechanisms used to manage simultaneous access to the database by multiple transactions, ensuring data integrity and consistency while maximizing throughput.
+*   **C) Purposes of Concurrency Control:**
+    *   Maintain data consistency and integrity.
+    *   Prevent undesirable effects of concurrent execution (e.g., lost updates, dirty reads).
+    *   Allow multiple users to access data concurrently.
+*   **D) Problems that Occur when Concurrency is Not Controlled:**
+    *   **Lost Update Problem:** One transaction's update is overwritten by another.
+    *   **Dirty Read Problem (Uncommitted Dependency):** A transaction reads data written by another uncommitted transaction.
+    *   **Unrepeatable Read Problem:** A transaction rereads data and finds that another committed transaction has modified it.
+    *   **Phantom Read Problem:** A transaction rereads data and finds new rows inserted by another committed transaction that satisfy the query condition.
+*   **E) Concurrency Control Techniques:**
+    *   **Locking:** Transactions acquire locks on data items to prevent other transactions from accessing them simultaneously.
+    *   **Timestamping:** Assigns a unique timestamp to each transaction, and operations are ordered based on these timestamps.
+    *   **Optimistic Concurrency Control (Validation):** Transactions proceed without locks, then validate changes at commit time.
+    *   **Multi-Version Concurrency Control (MVCC):** Maintains multiple versions of data items, allowing readers to access older versions without blocking writers.
+
+**03. Transaction Isolation Level**
+*   **Definition:** Defines the degree to which one transaction's changes are visible to other concurrent transactions. SQL standard defines four levels:
+    *   **A) Read Uncommitted:** Allows transactions to read uncommitted changes made by other transactions. (Most problems possible: dirty reads, unrepeatable reads, phantom reads).
+    *   **B) Read Committed:** Only allows transactions to read committed changes made by other transactions. Prevents dirty reads. (Still allows unrepeatable reads, phantom reads).
+    *   **C) Repeatable Read:** Ensures that if a transaction reads a row multiple times, it will always see the same value (unless the transaction itself modifies it). Prevents dirty reads and unrepeatable reads. (Still allows phantom reads).
+    *   **D) Serializable Read:** The highest isolation level. Guarantees that the concurrent execution of transactions produces the same result as if they were executed serially. Prevents dirty reads, unrepeatable reads, and phantom reads. (Achieved via strict two-phase locking or similar).
+
+**04. Deadlock**
+*   **A) Definition of Deadlock:** A situation where two or more transactions are indefinitely waiting for each other to release a resource (typically a lock) that the other transaction needs.
+*   **B) Causes of Deadlock:** Occurs when four conditions are met (Coffman conditions):
+    1.  **Mutual Exclusion:** Resources are used by only one transaction at a time.
+    2.  **Hold and Wait:** A transaction holds at least one resource and is waiting to acquire additional resources.
+    3.  **No Preemption:** Resources cannot be forcibly taken from a transaction holding them.
+    4.  **Circular Wait:** A circular chain of transactions exists, where each transaction in the chain is waiting for a resource held by the next transaction.
+*   **C) Solutions to Deadlock:**
+    *   **Deadlock Prevention:** Design the system to prevent one of the four deadlock conditions from occurring (e.g., acquire all locks at once).
+    *   **Deadlock Detection and Recovery:** Allow deadlocks to occur, then detect them (e.g., using a wait-for graph) and resolve them by aborting one or more transactions (victim selection).
+    *   **Deadlock Avoidance:** Dynamically allocate resources such that a safe state (no deadlock) is always maintained (e.g., using a resource allocation graph or Banker's algorithm).
+
+### XII. Database Recovery
+
+**01. Concept of Database Failure and Recovery**
+*   **A) Definition of Data Recovery:** The process of restoring a database to a consistent and correct state after a failure has occurred.
+*   **B) Types of Database Failures:**
+    *   **Transaction Failure:** Errors within a transaction (e.g., arithmetic overflow, invalid input, logical errors).
+    *   **System Failure (Soft Crash):** Hardware or software errors that cause the system to crash but do not damage disk contents (e.g., power failure, OS crash).
+    *   **Media Failure (Hard Crash):** Non-recoverable disk damage (e.g., head crash, disk controller failure).
+*   **C) Basic Principles of Database Recovery: Principle of Information Redundancy:** Recovery relies on storing redundant information (logs, backups) to reconstruct the database's state.
+*   **D) Types of Database Recovery Actions:**
+    *   **Rollback (Undo):** Undoing uncommitted transactions (or partial transactions) to remove their changes.
+    *   **Rollforward (Redo):** Applying the committed changes of completed transactions from the log to restore the database to a consistent state after a system crash, or to a more recent point in time from a backup.
+
+**02. Database Troubleshooting Method**
+*   **A) Database Recovery Technique:**
+    *   **Logging:** Maintaining a log file of all database operations (updates, inserts, deletes, commits, rollbacks) to facilitate undo/redo operations.
+    *   **Checkpointing:** Periodically forcing all dirty pages from the buffer to stable storage and recording a checkpoint in the log, reducing the amount of log to process during recovery.
+*   **B) Recovering from a Distributed Database: 2-Phase Commit Protocol:** A protocol used to ensure atomicity of transactions across multiple distributed databases.
+    *   **Phase 1 (Prepare):** The coordinator asks all participants to prepare to commit.
+    *   **Phase 2 (Commit/Abort):** If all participants prepare successfully, the coordinator tells them to commit; otherwise, it tells them to abort.
+
+**03. Database Backup**
+*   **A) Database Backup Overview:** Creating copies of the database to protect against data loss due to various failures, forming the foundation of any recovery strategy.
+*   **B) Database Backup Requirements and Main Tasks:**
+    *   **Requirements:** Data integrity, minimal downtime, efficient storage, fast recovery time.
+    *   **Tasks:** Scheduling backups, validating backups, storing backups securely (offsite), restoring data when needed.
+*   **C) Types and Characteristics of Database Backup Methods:**
+    *   **Full Backup:** Copies all data in the database. Simplest to restore, but takes the longest and requires the most storage.
+    *   **Differential Backup:** Copies only the data that has changed since the *last full backup*. Faster than full backup, less storage, but recovery requires the last full + last differential.
+    *   **Incremental Backup:** Copies only the data that has changed since the *last full or incremental backup*. Fastest to create, uses least storage, but recovery can be complex (last full + all subsequent incrementals).
+
+### XIII. Understanding Database Analytics
+
+**01. Concept and Characteristics of the Data Warehouse (DW)**
+*   **A) Concept of the Data Warehouse:** A large, centralized repository of integrated data from various operational sources, designed specifically for reporting and analysis (decision support), not for transaction processing.
+*   **B) Characteristics of the Data Warehouse (Kimball's Definition):**
+    *   **Subject-Oriented:** Organized around major subjects (e.g., customer, product) rather than operational processes.
+    *   **Integrated:** Data from disparate sources is combined and made consistent.
+    *   **Time-Variant:** Data is historical, stored over time, and time-stamped.
+    *   **Non-Volatile:** Data once stored in the DW is stable and not updated or deleted (except for periodic refreshes).
+
+**02. Data Warehouse Modeling**
+*   **A) Definition of Data Warehouse Modeling:** The process of designing the logical and physical structure of a data warehouse to optimize for analytical queries.
+*   **B) Data Warehouse Modeling Techniques:**
+    *   **Star Schema:** A simple, widely used model consisting of a central "fact" table (containing measurements/metrics) and multiple "dimension" tables (containing descriptive attributes) connected to the fact table.
+    *   **Snowflake Schema:** An extension of the star schema where dimension tables are normalized into multiple related tables, forming a snowflake-like structure. Offers better data integrity but potentially complex queries.
+
+**03. Concept of ETL (Extraction, Transformation, Loading)**
+*   **Definition:** The core process of populating a data warehouse.
+    *   **Extraction:** Reading data from various source systems.
+    *   **Transformation:** Cleaning, standardizing, reformatting, aggregating, and applying business rules to the extracted data.
+    *   **Loading:** Writing the transformed data into the data warehouse or data mart.
+
+**04. Concept and Search Technique of OLAP (Online Analytical Processing)**
+*   **A) Concept of OLAP:** A technology that enables fast, interactive analysis of multi-dimensional data, typically stored in data warehouses or specialized OLAP cubes. It allows users to view data from different perspectives.
+*   **B) OLAP Search Techniques (Cube Operations):**
+    *   **Slice:** Selecting a single dimension value from a cube (e.g., sales for a specific month).
+    *   **Dice:** Selecting a subset of the cube by choosing multiple dimension values (e.g., sales for specific products in specific regions).
+    *   **Drill Down:** Navigating from summarized data to more detailed data (e.g., year -> quarter -> month).
+    *   **Drill Up (Roll Up):** Navigating from detailed data to more summarized data.
+    *   **Pivot (Rotate):** Changing the dimensional orientation of a report or view (e.g., swapping rows and columns).
+
+**05. Concept and Algorithm of Data Mining**
+*   **Concept:** The process of discovering patterns, insights, and hidden relationships from large datasets using statistical and machine learning techniques. It aims to predict future trends and behaviors.
+*   **Algorithms:** Include classification (e.g., decision trees, support vector machines), clustering (e.g., k-means), association rule mining (e.g., Apriori), regression, and anomaly detection.
+
+### XIV. Understanding Big Data and NoSQL
+
+**01. Big Data Overview**
+*   **Definition:** Extremely large and complex datasets that cannot be easily processed or analyzed using traditional data processing applications.
+*   **Characteristics (The 4 Vs):**
+    *   **Volume:** The immense amount of data generated.
+    *   **Velocity:** The speed at which data is generated, collected, and processed.
+    *   **Variety:** The diverse types and formats of data (structured, semi-structured, unstructured).
+    *   **Veracity:** The trustworthiness and accuracy of the data.
+*   **Challenges:** Storage, processing, analysis, visualization, security, and governance.
+
+**NoSQL (Not Only SQL) Databases**
+*   **Definition:** A class of non-relational database management systems that offer flexible schemas, horizontal scalability, and high performance for specific data models, often used for big data and real-time web applications. They typically sacrifice some ACID properties (especially consistency) for availability and partition tolerance (CAP theorem).
+*   **Types of NoSQL Databases:**
+    *   **Key-Value Stores:** Simple data model where data is stored as a collection of key-value pairs (e.g., Redis, DynamoDB).
+    *   **Document Databases:** Store data in semi-structured "documents," often JSON or BSON, allowing flexible schemas (e.g., MongoDB, Couchbase).
+    *   **Column-Family Stores:** Store data in columns grouped into "column families," optimized for sparse data and high write throughput (e.g., Cassandra, HBase).
+    *   **Graph Databases:** Store data in nodes and edges, representing relationships, optimized for highly interconnected data (e.g., Neo4j, Amazon Neptune).
+*   **Advantages:** Scalability, flexibility (schema-less), high performance for specific use cases, handling large volumes of unstructured/semi-structured data.
+*   **Disadvantages:** Lack of standardization, often weaker consistency models, limited querying capabilities compared to SQL, less mature tooling and community support for some types.
+
+================================================================================
+ORIGINAL TEXT (First 5000 chars)
+================================================================================
+
+--- Page 13 ---
+VII. Database  Quality  and Standardization 93
+01 Data Quality  Control  Framework 95
+A) Data value 95
+B) Data structure 96
+C)Data management  process 96
+D) Data quality management  maturity  model 96
+02 Data Standardization 97
+A) Overview  of data standardization 97
+B) Necessity  of data standardization 97
+C) Components  of data standardization 98
+D) Defining  data standards 98
+E) Confirming  data standards 99
+VIII. Relational  Operation  (relational  algebra) 100
+01 Understanding  the Concept  of Relational  Algebra 101
+02 Set Operation  and Relation  Operation 101
+A) Set operation 101
+B) Relation  operation 101
+03 Extended  Relational  Algebra  Operations 102
+IX, Relational  Database  Language  (SQL) 103
+01 Types of Relational  Database  Languages 105
+12 TOPCIT  ESSENCE
+
+
+--- Page 14 ---
+B) Changes  in SQL and the characteristics  of SQL3 105
+02 Data Definition  Language  (DDL) 106
+A) Types of data definition  language 106
+03 Data Control  Language  (DCL) 107
+A) Roles of the data control language 107
+B) Types of data control languages 107
+04 Data Manipulation  Language  (DML) 108
+A) Basic DML operations 108
+B) Aggregate  DML operations 108
+C) Advanced  DML join operations 109
+X. Database  Query  Application 111
+01 Stored Procedure 113
+A) Definition  of the stored procedure 113
+B) Strengths  and weaknesses  of the stored procedure 113
+C) Strengths  of the stored procedure 113
+D) Shortcomings  of the stored procedure 113
+02 Embedded  SQL 113
+A) Definition  of embedded  SQL 113
+B) Characteristics  of embedded  SQL 113
+C) Embedded  SQL cursor 114
+03 Dynamic  SQL 115
+M2 Database  13
+
+
+--- Page 15 ---
+ESSENCE
+A) Comparison  between  dynamic  and static SQL 115
+B) Processing  methods  of dynamic  SQL and static SQL 116
+C) Example  of dynamic  SQL and static SQL code 116
+04 Query Optimization  and Optimizer 117
+A) Query optimization  process 117
+B) Optimizer 117
+C) Roles of the optimizer  in each query processing  phase 117
+D) Classification  of optimizers  according  to criteria 118
+05 Linking  the Web and Database 118
+A) Server expansion  methods 118
+B) Browser  extension  method 119
+XI. Concurrency  Control 121
+01 What is a Transaction 123
+A) Concept  of a transaction 123
+B) ACID properties  of the transaction 123
+C) when finishing  a transaction 123
+D) Considerations  when executing  a transaction 124
+02 Concurrency  Control 124
+A) Definition  of the serializable  schedule  of the transaction 24
+B)  Definition  of concurrency  control 24|
+|
+C) Purposes  of concurrency  control 124
+D) Problems  that occur when concurrency  is not controlled 1
+| E) Concurrency  control  techniques
+14 TOPCIT  ESSENCE
+
+
+--- Page 16 ---
+03 Transaction  Isolation  Level 126
+A) Read uncommitted:  Allows other transactions  to read the data that are still being
+processed  by the transaction (not yet completed), 126
+B) Read committed:  Allows other transactions  to read the data that are confirmed  by
+the completed  transaction  only. 126
+C) Repeatable  read: When a query is executed  more than twice in a transaction,  the
+record in the first query does not disappear  or the value is not changed. 126
+D) Serializable  read: When a query is executed  more than twice in a transaction,  the
+record in the first query does not disappear  or the value is not changed,  and no
+new record appears  either. 126
+04 Deadlock 126
+A) Definition  of deadlock 126
+B) Causes  of deadlock 127
+C) Solutions  to deadlock 127
+XII. Database  Recovery 129
+01 Concept  of Database  Failure and Recovery 131
+A) Definition  of data recovery 131
+B)  Types of database  failures 131
+C) Basic principles  of database  recovery:  Principle  of information  redundancy 131
+D)  Types of database  recovery  actions 131
+02 Database  Troubleshooting  Method 132
+A) Database  recovery  technique 182
+M2 Database  15
+
+
+--- Page 17 ---
+ESSENCE
+B) Recovering  from a distributed  database  2—phase  commit protocol
+03 Database  Backup
+A) Database  backup  overview
+B) Database  backup  requirements  and main tasks
+C) Types and characteristics  of database  backup methods
+XII. Understanding  Database  Analytics
+01 Concept  and Characteristics  of the Data Warehouse  (DW)
+A) Concept  of the data warehouse
+B) Characteristics  of the data warehouse
+02 Data Warehouse  Modeling
+A) Definition  of data warehouse  modeling
+B) Data warehouse  modeling  technique
+03 Concept  of ETL (Extraction,  Transformation,  Loading)
+04 Concept  and Search  Technique  of OLAP (Online  Analytical  Processing)
+A) Concept  of OLAP
+B) OLAP search technique
+05 Concept  and Algorithm  of Data Mining
+XIV. Understanding  Big Data and NoSQL
+01 Big Data Overview
+16 TOPCIT  ESSENCE182
+133
+183
+183
+134
+136
+143
+145
+
+

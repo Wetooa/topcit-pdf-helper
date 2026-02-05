@@ -1,0 +1,33 @@
+ESSENCE
+common  modules  that are additionally  required  to apply encryption,  as well as application  logic that needs to
+be changed  should be analyzed.  Then, the application  module  that needs to be optimized  should be selected.
+© Testing  database  encryption
+Business  tests, such as applications,  are conducted  in this phase, after applying  encryption,  by creating the
+same test environment  as the database  application  operating  environment.  The problems  that can occur when
+migrating  to an operating  environment,  should be identified  by running  tests. Migration  to the operational
+environment  should be prepared  by resolving  all issues. All applications  and all query statements  should be
+tested.
+@® Applying  and monitoring  database  encryption
+Database  application  security  should be applied to the operating  environment  in this phase, by synthesizing
+the items verified in the test phase. Encryption  should be applied to data, and source code that was
+modified  in the test and verification  phase, and optimized  query statements  should be reflected.  Issues that
+were identified  in the test phase should be resolved  and applied to the operating  environment.  It should
+be continuously  monitored  and checked  whether  any errors occur in the applied applications  and query
+statements,  and whether  applications  are running  properly.
+04 Database  encryption  key management
+A) Type of database  encryption  keys
+If the encryption/decryption  key is leaked, the encryption  is not effective.  Therefore,  the encryption  key should
+be redundant  (encryption/decryption  key and the master  key), according  to the principle  of key redundancy,  so
+that only authorized  persons  can access it.
+<Table 32> Database  encryption  key
+Type Description
+Encryption/decryption  key A key used to encrypt  data, and to decrypt  the already  encrypted  data.
+Master  key A key used to store and distribute  the encryption  and decryption  key after encryption.
+B) Management  methods  by encryption  key lifecycle
+@ Key generation  stage
+An encryption/decryption  key should be generated  using a safe random number  generator,  and an algorithm
+with proven stability  should be used for the encryption  key derived  from user input.
+@ Key distribution  stage
+Security  should be maintained  when distributing  keys, by encrypting  the encryption  keys using an asymmetric
+key cipher algorithm,  so that only the authorized  person can access  the keys.
+96 TOPCIT  ESSENCE

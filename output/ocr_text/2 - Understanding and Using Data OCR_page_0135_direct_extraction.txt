@@ -1,0 +1,44 @@
+ESSENCE
+<Table 57> Requirements  by item
+Item
+Business  requirements+ Mean-Time-To-Recovery  (MTTR)
++ Mean-Time-Between-Failures  (MTBF)Requirement
+Operational  requirements+ Service  operation  requirements  (e.g, 24x365).
++ Backup  requirements  at the test and verification  level.
+Technical  requirements+ Physical  copy of the OS image.
++ Logical  copy of database  objects.
++ Database  configuration  backup.
+of transactions  that occur.+ Considers  how frequently  the database  should be backed  up depending  on the number
+Matters  related to disaster
+recovery
+@ Contents  of database  backup  management
+<Table 58> Contents  of backup  management
+Item Contents+ Analyzes  how much a business  is affected  by a disaster.
++ When computer  equipment  is completely  lost due to earthquake,  flood, fire, etc.
+Example
+Backup  policy+ The backup policy describes  the backup  cycle
+(daily, weekly,  or monthly)  and scope of backup (e.g.
+considers  scattering  to the outside).
++ The policy mentions  concrete  backup  strategies,
+technologies,  and equipment.
++ The policy describes  the backup  strategy  forDaily: Database  archive  information
+Weekly:  OS/user  data backup
+Full backup: DB/AP/CM  full backup
+minimizing  recovery  time.
+Back + A technical  backup  architecture  that can provide Technologies  apply to disk, tape, VTIaD effective  backup according  to the backup policy is backup method, internal, LAN, SAN, mirrorconfigurationconfigured backup,  etc.
+Performing  backup  | + Performs  backup.
+and managing  the + The backup result is recorded  in the backup  log and
+history analyzed  on a regular basis.
++ The amount  of backup  data is estimated  to determine if the amount  of original data is 000 GB,
+Estimating  backup the number  of disks or tapes to be introduced, 2,000 GB is expected  for mirror backup,capacity + As backup has the characteristic  of data duplication, 3,000 GB for disk backup,  and 5,000 GB for
+the volume  of data can increase  by anywhere  from
+two to six times its original  size.
+C) Types and characteristics  of database  backup  methods
+<Table 59> Types and characteristics  of database  methodsdisaster  recovery,
+Item Backup  method Description Advantages/disadvantages
+ificati + Backup after stopping a * SimpleClassification  | Offline backup cataboes PINE + Database  is unavailable  during backup
+_by service : (service  interruption).
+interruption - -
+status Online backup + Backup while operating  a + No service disruption
+database. + Increased  CPU/memory  usage
+134 TOPCIT  ESSENCE

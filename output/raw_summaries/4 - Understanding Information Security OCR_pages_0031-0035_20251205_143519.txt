@@ -1,0 +1,220 @@
+LEARNING GUIDE: Pages 31-35
+Generated: 2025-12-05 14:35:19
+PDF: 4 - Understanding Information Security OCR
+
+================================================================================
+LEARNING GUIDE
+================================================================================
+
+This learning guide summarizes the key concepts from the original text (Pages 31-35) on information security, focusing on hash functions and authentication.
+
+---
+
+## Information Security: Hash Functions & Authentication
+
+### 1. Hash Functions
+
+**What is a Hash Function?**
+*   A mathematical algorithm that converts an input (data of any size) into a fixed-size output, called a **hash value** or **message digest**.
+*   **Key Property:** It's a **one-way function**. You cannot restore the original text from its hash value.
+
+**Main Uses:**
+*   **Safely store sensitive data:** Primarily passwords. Instead of storing the password itself, its hash value is stored.
+*   **Integrity verification:** Check if data has been tampered with.
+
+**Vulnerability:**
+*   **Hash Collision:** Two different input values produce the same hash output. This can lead to bypass attacks.
+
+**Types of Hash Functions:**
+
+*   **MD5 (Message Digest Algorithm 5)**
+    *   **Output Size:** 128-bit hash value.
+    *   **Purpose:** Historically used for testing program/file integrity and saving passwords.
+    *   **Status:** **Not recommended for security purposes** due to significant defects and known vulnerabilities. Safer algorithms like SHA-2 should be used.
+    *   **Password Use:** Stores the MD5 hash of a password. When a user logs in, the entered password is hashed, and the result is compared to the stored hash.
+
+*   **SHA (Secure Hash Algorithm)**
+    *   **Origin:** First designed by the NSA in 1993 (SHA-0).
+    *   **Evolution:**
+        *   **SHA-0:** The original 160-bit function.
+        *   **SHA-1:** A variant of SHA-0, also 160-bit.
+        *   **SHA-2:** A group of more secure variants, including SHA-224, SHA-256, SHA-384, and SHA-512, with corresponding hash value lengths.
+        *   **SHA-3:** A completely different algorithm confirmed in 2012, designed to be distinct from SHA-1/SHA-2.
+    *   **Recommendation:** For safety, **use SHA-256 or higher** (from the SHA-2 family).
+    *   **Security Note:** While no attacks on SHA-2 are reported, its similarity to SHA-1 suggests a potential future vulnerability.
+
+**Supplementing Hash Functions with Salt**
+
+*   **Salt:** An arbitrary, random bit string added to a password/message *before* hashing.
+*   **Salting Process:** `hash(password + salt)`
+*   **Benefits:**
+    *   **Prevents password recognition attacks:** Even if an attacker finds a hash, they can't directly verify the original password without the salt.
+    *   **Differentiates identical passwords:** If different salts are used for each user, users with the same password will have different hash values, preventing dictionary attacks (e.g., rainbow tables) that pre-calculate common password hashes.
+*   **Implementation:** The hash value of the password and its corresponding salt are stored in the database. When a user logs in, the input password is combined with the stored salt, hashed, and then compared to the stored hash.
+*   **Best Practices:**
+    *   Each password should have its own unique salt.
+    *   Salt length should be 32 bytes or more.
+
+### 2. Utilizing Hash Functions
+
+**A. Integrity Verification Methods**
+*   **Purpose:**
+    1.  Detect errors during data transmission.
+    2.  Prevent unauthorized modification of data.
+*   **For Data Transmission Errors:**
+    *   **Checksum:** A simple integrity test where data is added, converted to a bit value, and appended to the message. Receiver recalculates and compares.
+    *   **CRC (Cyclic Redundancy Check):** Used in communication systems. A checksum is calculated based on polynomials and appended to the data. Receiver recalculates and compares to detect errors.
+*   **For Preventing Unauthorized Modification:** Hash functions (MD5, SHA-1, SHA-2) are primarily used for this.
+
+**B. File Integrity Checks**
+*   **Method:**
+    1.  Calculate and store the hash values of important files (e.g., server source files).
+    2.  Periodically recalculate the hash of the current files.
+    3.  Compare the current hashes with the stored original hashes. Any mismatch indicates alteration.
+*   **Limitations of Periodic Checks:**
+    *   Cannot detect security incidents that occur *between* check periods.
+    *   Frequent checks increase server load, especially with many files.
+*   **Better Alternative:** **Real-time, kernel-level integrity checks.** Instead of periodic scanning, check file alteration whenever a file is executed or loaded into memory. This prevents tampered files from loading without constant CPU overhead.
+
+**C. Integrity During Transmission**
+*   **Problem:** Messages transmitted over a network can be intercepted and altered by hackers.
+*   **Solution:**
+    1.  **Sender:** Creates a hash of the message and transmits *both* the message and its hash.
+    2.  **Receiver:** Receives the message and hash. Recalculates the hash of the received message.
+    3.  **Verification:** Compares the calculated hash with the received hash. If they don't match, the message has been tampered with and should be ignored.
+*   **Message Authentication Code (MAC):** A hash function can serve as a MAC when only data integrity (no tampering) is needed, not sender authentication. The sender's calculated hash acts as the MAC.
+
+**D. Password-Based Encryption (PBE)**
+*   **Hash vs. Encryption:**
+    *   **Hash:** One-way; cannot recover original data.
+    *   **Encryption:** Two-way; can encrypt plaintext and decrypt ciphertext back to original.
+*   **How PBE Works:** A hash value, obtained by combining a password and a salt (random number), is used as an encryption key. This method helps prevent password attacks by making the key derived from a salted hash.
+
+**E. Electronic Signatures (Digital Signatures)**
+*   **Purpose:** Provides both **data integrity** (proof of no tampering) and **signer authentication** (proof of sender's identity).
+*   **Mechanism:**
+    1.  **Sender:** Calculates a hash value of the message/document.
+    2.  **Signing:** Uses their private key to encrypt (sign) *only the hash value* (not the entire message).
+    3.  **Transmission:** Sends the original message along with the signed hash.
+    4.  **Receiver:** Uses the sender's public key to decrypt the signed hash, revealing the original hash value. They also calculate a hash of the received message.
+    5.  **Verification:** Compares the two hash values. If they match, the message is authentic and untampered, and the sender's identity is verified.
+*   **Efficiency:** Signing the hash value is much more efficient than signing the entire message, especially for large documents, as public key operations are computationally intensive.
+
+### 3. Authentication Technology
+
+**A. Concept of Authentication**
+*   **Definition:** The process of verifying:
+    1.  That information exchanged between sender and receiver has not been altered or deleted (message integrity).
+    2.  That the sender and receiver are legitimate (identity verification).
+*   **Types:**
+    *   Message Authentication
+    *   User Authentication
+
+**B. User Authentication**
+*   **Definition:** A function that allows a user to prove their identity to another party (e.g., a server) over a network, preventing impersonation.
+*   **Purpose:** To verify a user's identity for logging in, and to grant appropriate access privileges to information services.
+*   **Importance:** Strict authentication procedures are crucial for remote users, as once authenticated, they gain full privileges.
+
+**C. Message Authentication**
+*   **Definition:** Checks whether the transmitted message content is the original information and has not been altered or modified.
+*   **Method:** Electronic signatures are commonly used to verify both message integrity and sender identity.
+
+**D. Types of Authentication Methods**
+Authentication can be categorized based on *what the user provides* for verification:
+
+*   **1. Knowledge-Based Authentication ("What you know")**
+    *   Relies on information only the user should know.
+    *   **Examples:** PIN (Personal Identification Number), password, account number.
+
+*   **2. Ownership-Based Authentication ("What you have")**
+    *   Relies on physical objects the user possesses.
+    *   **Examples:** OTP (One-Time Password) device/token, smart card, card key.
+
+*   **3. Presence-Based Authentication ("What you are" / Biometrics)**
+    *   Relies on the user's unique physical or behavioral characteristics.
+    *   **Examples:** Iris recognition, fingerprint recognition, voice recognition, face recognition.
+
+================================================================================
+ORIGINAL TEXT (First 5000 chars)
+================================================================================
+
+--- Page 31 ---
+Information  security )
+restored  using the hash  value. That is, the original  text cannot be restored  through computation  using the hash
+value.
+Therefore,  the hash function  is mainly used to safely store sensitive  data, such as the password,  buta bypass
+attack can be made using hash collision, which outputs  the same output  for two different  input values.
+© Types of hash functions
++ MD5(Message  Digest Algorithm  5)
+MD5 is a 128-bit hash function  used for testing the integrity  of the program  or file. It was designated  as
+RFC 1321 of the IETF. However,  it is recommended  to use a safer algorithm  like SHA-2 for hashing  purposes,
+because  several important  defects  were found.
+MDS is frequently  used for saving  a password.  The result  of hashing  a password  with MDS is saved. Therefore,
+a server operator  or a third party cannot know the original password  using the hash result value of the
+password  only stored in the system. If the user correctly  inputs the password,  the same hash value is
+returned,  confirming  that the password  is correct.
++ SHA (Secure  Hash Algorithm)
+MD5, which was developed  from SHA, means  a set of interlinked  hash functions.  It was first designed  by the
+National  Security  Agency  (NSA) in 1993,and  it was designated  as the national standard  in the U.S. It is also
+called SHA-O to distinguish  the first function  from the functions  designed  later. SHA-1, a variant of SHA-O,
+was announced  two years later. Subsequently,  four more variants  were released,  such as SHA-224,  SHA-256,
+SHA-384,  and SHA-512.  These are called SHA-2 as a group. Currently,  SHA-3, which is completely  different
+from SHA-1 and SHA-2, is under development,  and it was confirmed  as SHA-3 in 2012.
+SHA-0 and SHA-1 have a hash value of 160 bits, and SHA-224/256/384/512  provide a hash value of
+224/256/384/512  bits, respectively.  In addition,  it is recommended  to use a hash function  of SHA-256  or
+higher for safety. On the other hand, an attack on SHA-2 has not yet been reported,  but there is a possibility
+of an attack because  SHA-2 functions  use a method  similar  to that of SHA-1.
+@® Supplementing  hash functions
+Salt is an arbitrary  bit string that is added when  a hash function  generates  a hash value. Salting  is to generate
+a hash value by adding  a bit string to the original message.  For example,  a hash value can be created by adding
+salt “topcit”  to the password  “@Kr5792cc’.
+as shown in [Figure 11].
+Password
+@kr5792ccHash
+value Hash
+function
+[Figure 11] Hash function  and saltSalt
+topcit
+When the salting method is used, an attacker  cannot check whether  the password  matches  the salted hash
+M4 Understanding  Information  Security  34
+
+
+--- Page 32 ---
+ESSENCE
+value, even though  the attacker  finds the hash value of the password  “@Kr5792cc’.  In addition,  if different  salts
+are used for each user, the hash values of the users who use the same password  are generated  differently,
+which significantly  improves  the problem  of the possibility  of recognition.
+The hash values of the salt and password  can be stored in the server database,  then, when the user logs in,
+the input password  can be checked  by hashing  it. It is known that to make salt and digest difficult  to guess, all
+passwords  should have their own salt, and the salt length should be 32 bytes or more.
+© Utilizing  hash functions
++ Integrity  verification  method
+Integrity  verification  methods  in servers or network  security,  are divided into the method of detecting  an
+error that occurs  while transmitting  data, and the method  of preventing  unauthorized  modification,  as shown
+in <Table 6>. A checksum  and cyclic redundancy  check (CRC) are used to test integrity  when an error occurs
+during data transmission.  The checksum  method,  a type of duplicate  test, tests integrity  by adding data to
+obtain a checksum,  converting  it into a certain bit value, then adding it to the message.
+CRC is mainly used as a method of verifying  transmission  data errors in the communication  system, such
+as the Internet.  A checksum  is calculated  at the sending  side, based on polynomials  that are easy to detect
+and corrected  errors, and it is sent after adding it to the header. Then, the receiving  side verifies integrity  by
+calculating  the checksum  again, based on the same polynomial  and comparing  it with the received  checksum.
+<Table  6> Integrity  verification  method
+Cause of change Solution
++ Checksum
+* CRC
+Vv Used for verifying  data
+Vv Generating  numeric  values  with fixed lengthData transmission  error
++ Hash function
+v MD5
+- Expansion  of CRC
+- Supplementing  MD2~4
+~ 128-bit  hash function
+- Recommended  to use SHA
+Vv SHA-1
+- MDS replacement  and extension
+- Security  protocol,  used by programs
+Vv SHA-2
+- Commonly  referred  to as SHA265~512
+- Attack methods  are available  against  SHA1Unauthorized  change
++ File integrity
+To ensure integrity  when sending  ...

@@ -1,0 +1,27 @@
+ESSENCE
+03 Access  control  technology
+A) Overview  of access  control
+@® Concept  of access  control
+Access control refers to the task of controlling  who can access a system,  and which task the user can perform
+when the user interacts  with the system. Specifically,  access control consists  of three parts: identification,
+authentication,  and authorization.
++ Identification
+A process  of identifying  a subject using its unique token, that is, a process  where the system identifies  the
+subject.  (e.g., ID, employee  card, biometrics)
++ Authentication
+A process  where the subject verifies its identity  to the system,  that is, a process  where the system
+acknowledges  the user who claims his/her  identity  (e.g., password  (knowledge-based),  certificate  (ownership-
+based), OTP (ownership-based),  biometrics  (presence-based)).
++ Authorization
+A process  when the system controls  the task and object, which can be performed  and accessed  by the
+authenticated  user (e.g., mandatory  access control, discretionary  access control, role-based  access control).
+@ Access  control performing  procedure
+An object can be accessed  only when the right to access is obtained  through  the authorization process  after
+identification and authentication.
++)  Identification
+Wi  C's) Certification
+Subject Object
+og SSMS)  Authorization
+Access
+[Figure  22] Procedure  for performing  access  control
+44 TOPCIT  ESSENCE

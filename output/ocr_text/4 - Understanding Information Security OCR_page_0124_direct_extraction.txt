@@ -1,0 +1,33 @@
+ESSENCE
++ Operating  procedure  of the SSL protocol
+[Figure 65] shows the main operating  procedure  of the SSL protocol,  and <Table 38> shows the operating
+details of each phase.
+Client 4@ Send a “Hello” message  for a SSL connection  request.
+@® Send s server hello message, server certificate,  and public key.
+e Create a session  key and encrypt  and send it with the session
+key after verifying  the validity  of server  certification.
+Gt  1nX Mla alms  ocr
+Send signals  for exchanging  encrypted  data using the
+algorithm  and key that were defined  through  security
+negotiation.
+Exchange  encrypted  data according  to the security  negotiated
+cipher specification.
+[Figure  65] Operating  procedure  of the SSL protocolServer
+<Table 38> Operation  by phase of the SSL protocol
+Sequence Description
+Phase 1 The client sends a “Hello” message  to the server.
+The server  sends a Server Hello message,  server  certificate,  and public key to the client, together  with a clientPhase 2certificate  request  if it is needed.
+The client verifies  the validity  of the server's  certificate, creates  a session  for encryption,  and encrypts  it
+Phase 3 with the server's  public key. If the cipher specification  and server  request  the client's  certificate, the client's
+certificate  is also sent.
+The client sends signals  to exchange  encrypted  data, using the algorithm, and the key is defined  in cipherPhase  4 paaane . -
+specification  through  security  negotiation.
+Phase 5 Encrypted  data is exchanged  according  to the cipher specification  for which security  negotiation  is performed.
+® Utilization
++ Installing  an SSL certificate  in the server
+An SSL certificate  should be installed  in the web server to apply SSL.  A certificate  signature  request
+document,  called CSR (Certificate  Signing Request)  should be created and requested  to the certification
+authority  after creating  a private key in the running  web server. Then, an SSL certificate  should be received
+from the certification  authority  and installed  in the web server in order to set the web server. If the SSL
+accelerator  is used, the certificate  can also be installed  in the SSL accelerator.
+124 TOPCIT  ESSENCE

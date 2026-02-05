@@ -1,0 +1,23 @@
+Overview  of System Architecture )
++ Ceilometer:  Mirroring  support
++ HoriZone:  Self-service  portal
++ Heat: Restoration  and system recovery
++ Neutron:  Network  service
++ Trove: Delivery  of database  services
++ Sahara: Support  for Spark/data  process  and Hadoop
+C) CloudStack
+- CloudStack  is the cloud computing  open-source  project developed  by cloud.com  and managed  by the Apache
+Foundation  by Citrix.
+D) Kubernetes
+Kubernetes  is an orchestration  platform  for container  management  and operation.  Google open-sourced  the
+operation  know-how  that was developed  for its services.  Developers  can manage  and schedule  multiple containers
+from a node with declarative  programming.  When a specific  configuration  is specified  through  the Kubernetes  Control
+Plane, Kubernetes  automatically  maintains  the state.
+E) Mesos
+Mesos is a resource  management  project  that enables  that integrated  management  of cloud infrastructure  resources
+and computing  engine resources.  It provides  a function  to group distributed  computing  resources  connected  by a
+network  into a resource  pool and make it look like single computing  resources.  When a user requests  the execution
+of an application  program,  it allocates an instance  and allows the application program  to run. Mesos consists  of the
+Marathon  and Chronos  frameworks.  Marathon  allocates  resources  and creates  jobs, while Chronos  is responsible  for
+scheduling.
+M3 Overview  of System  Architecture  137

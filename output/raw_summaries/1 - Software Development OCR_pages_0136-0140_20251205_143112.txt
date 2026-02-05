@@ -1,0 +1,210 @@
+LEARNING GUIDE: Pages 136-140
+Generated: 2025-12-05 14:31:12
+PDF: 1 - Software Development OCR
+
+================================================================================
+LEARNING GUIDE
+================================================================================
+
+Here's a simplified learning guide based on the provided text:
+
+---
+
+# Software Development: Recent Trends & Key Technologies
+
+## 1. Introduction & Overview
+
+**Goal:** Understand recent technology trends in software development to improve quality and productivity amidst increasing demand and resource efficiency needs.
+
+**Key Areas:**
+*   Development Tools
+*   Programming Languages
+*   Development Frameworks
+*   Software Architecture (e.g., Microservices)
+
+**Keywords:** Software development tool, programming language, development framework, software architecture.
+
+---
+
+## 2. The Drive for Efficiency in Software Development
+
+*   **Problem:** Low productivity in the IT industry, increasing system complexity.
+*   **Solution:** Continuous development of tools and methods to enhance efficiency.
+*   **Objective of Efficiency:** Higher productivity, improved quality, on-time project completion.
+*   **Historical Impact:** Led to the release of various platforms and frameworks like RAD, Agile, CBD, OOP, and CASE tools.
+
+---
+
+## 3. Technology Trends: Software Development Tools & Programming Languages
+
+### A) Software Development Tools
+
+1.  **Cloud-based Integrated Development Environment (IDE)**
+    *   **What is an IDE?** Software that supports all program development tasks (coding, debugging, compilation, deployment) in one unified environment.
+    *   **Trend:** Evolving to cloud-based platforms (e.g., Codenvy, GoormIDE, Cloud9).
+    *   **Benefit:** Enables development regardless of location and doesn't require local installation.
+
+2.  **Integrating Software Development Tools with ALM (Application Lifecycle Management)**
+    *   **Traditional:** Separate tools for specific steps/purposes (performance, requirements, issue management).
+    *   **Trend:** Tools are integrating into comprehensive ALM solutions due to complex infrastructure and demand for faster IT services.
+    *   **ALM Scope:** Encompasses development, testing, and operation.
+    *   **Example:** Performance management tools now integrate with ALM to detect code changes and support build/distribution processes.
+
+### B) Programming Languages
+
+1.  **TypeScript (Extended JavaScript)**
+    *   **Context:** JavaScript is a widely used, powerful language for front-end web development.
+    *   **What it is:** An open-source project by Microsoft (2012), extending JavaScript. It's the base language for Angular.
+    *   **Key Features:**
+        *   Includes all JavaScript functionalities.
+        *   **Static Type Language:** Checks types during compilation, improving reliability.
+        *   Easy compilation across all browsers and environments.
+        *   Class/component-based for easier coding and learning.
+        *   Applicable to large-scale applications.
+
+2.  **Java 9 Release**
+    *   **Context:** An object-oriented programming language, highly popular in web development.
+    *   **Key Features (approx. 90 new features):**
+        *   **Increased Modularization:** Optimizes for small devices, improves scalability and performance.
+        *   **Ahead of Time (AOT) Compilation:** Compiles code before execution, reducing application startup time.
+        *   **REPL (Read Eval Print Loop) Support:** Allows receiving immediate feedback on code before full compilation.
+
+3.  **Kotlin**
+    *   **What it is:** A functional programming language developed by JetBrains (creator of Android Studio).
+    *   **Significance:** Adopted by Google as the official programming language for Android in 2017.
+    *   **Key Features:**
+        *   Optimized for Android application development, simple yet high-performing.
+        *   Compatible with existing Android APIs; enables concise syntax for app development.
+        *   Very similar to Java, making it easy for Java developers to adopt.
+
+4.  **Swift**
+    *   **What it is:** Developed by Apple.
+    *   **Purpose:** Supports application development for Apple's ecosystem (iOS, macOS, watchOS, tvOS).
+    *   **Key Features:**
+        *   Simple coding process for easier and faster app development.
+        *   Excellent performance.
+        *   Interactive and easy to understand.
+
+---
+
+## 4. Technology Trends: Development Frameworks & Software Architecture
+
+### A) Development Frameworks
+
+1.  **Angular 4**
+    *   **What it is:** A JavaScript framework developed by Google.
+    *   **Use Case:** Primarily for **Single-Page Application (SPA)** programs.
+    *   **SPA Definition:** A web application that loads a single HTML page and dynamically updates that page as the user interacts with the app, without requiring full page reloads.
+    *   **Key Features:**
+        *   Built using TypeScript 2.1.
+        *   Supports program logic and backend binding, enabling dynamic rather than static web pages.
+
+2.  **React**
+    *   **What it is:** A JavaScript library created by Facebook (used for Facebook's web interface).
+    *   **Use Case:** A web front-end framework especially useful for building large-scale applications with frequent page changes.
+    *   **Key Features:**
+        *   **JSX (JavaScript XML):** Allows writing markup code within JavaScript using an extended syntax.
+        *   Supports **components:** Individual, reusable units for building user interfaces.
+        *   Uses the **Virtual DOM** for efficient data processing and UI updates.
+
+3.  **Express.js**
+    *   **What it is:** A small, flexible web application framework for Node.js.
+    *   **Node.js Context:** A back-end server development language based on events, using Google's Chrome V8 JavaScript engine.
+    *   **Use Case:** Provides optimal features for fast web or application development with Node.js.
+    *   **Key Features:**
+        *   Enables processing of dynamic HTML pages based on parameters passed to templates.
+        *   Supports a middleware structure (JavaScript code) to combine only necessary functions.
+
+### B) Software Architecture
+
+1.  **Microservice Architecture**
+    *   **Concept:** Divides a large application into several small, independent services. Each service has its own data repository and execution environment.
+    *   **Benefits:**
+        *   **High Development Productivity:** Services are developed independently in small units.
+        *   **Flexible Deployment:** Services can be deployed unit-by-unit, not just the whole application.
+        *   **Elaborate Scalability:** System units can be expanded independently as needed.
+        *   Prompt response to business changes, faster deployment, easier improvements and modifications.
+
+2.  **Docker**
+    *   **What it is:** An open-source platform that automates **Linux Container (LXC)** technology.
+    *   **LXC Purpose:** Provides an independent and isolated space, similar to a virtual machine, but more lightweight and efficient.
+    *   **Benefit:** Simplifies the packaging and deployment of applications and their dependencies in isolated environments.
+    *   **Significance:** Widely adopted; companies like Docker (formerly DotCloud) and Google (with Kubernetes) provide significant support.
+
+---
+
+================================================================================
+ORIGINAL TEXT (First 5000 chars)
+================================================================================
+
+--- Page 136 ---
+Software  Development
+>> Recent  trends and major issues
+Recently,  new technologies  for improving  quality and development  productivity  have been released
+continuously  in the software  industry due to the increase  in demand  for business  reading based
+on the rapid development  and efficient  use of resources.  To understand  this trend, we need
+to understand  the latest trends in development  tools, programming  languages,  development
+frameworks, and software  architecture  - like the micro-services  that support  independent
+deployment  and excellent  scalability.
+>> Learning  objectives
+1. To be able to explain the technology  trends of software  development  and programming  languages.
+2 To be able to explain the technology  trends of the development  framework  and software
+architecture.
+>> Keywords
+- Software  development  tool, programming  language,  development  framework,  software  architecture
+M1 Software  development  135
+
+
+--- Page 137 ---
+ESSENCE
+* Preview  for practical  business Do you need to make software
+development  more efficient?
+It has been reported  that the work productivity  of Korea is very low compared  to that of other
+advanced  countries  in the global labor market.  The Korean IT industry  is no exception  to the rule. The
+IT industry has been making efforts to increase  efficiency  in its own way. Development  productivity
+should have been improved  to develop  a system that became  vaster and more complex  in line with
+technological  advances.  As a result of these efforts, numerous  platforms  and frameworks,  such as
+RAD, agile, CBD, and OOP, and various  CASE tools have been released.
+Tools that can be used appropriately  by keeping  pace with the current  era of rapid change  have been
+continuously  developed.  The “issue of efficiency”  is the main driver behind countless  tools. Efficiency
+became  important  in terms of securing  higher productivity,  improving  quality, and completing  a given
+project within  a set period. As the tools described  above were released,  higher productivity  and
+quality in software  development  could be secured  to some degree.
+[{Source: IT Daily, “Necessity  of efficient  development  methods  for SI projects  with the
+implementation  of the 52-hour  workweek  policy”]
+136 TOPCIT  ESSENCE
+
+
+--- Page 138 ---
+Software  Development )
+01 Technology  Trends  of Software  Development  Tools and Programming
+Languages
+A) Technology  trends  of software  development  tools
+@ Highlighting  the cloud-based  integrated  development  environment
+Integrated  development  environment  software  supports  all tasks related to programs  and development,  such
+as coding, debugging,  compilation,  and deployment,  in one unified program  development  environment.  It has
+been highlighted  as a development  tool capable  of meeting  the calls of open source and global IT companies
+for rapid development.  This environment  is evolving  into a cloud-based  one, such as Codenvy,  GoormIDE,
+and Cloud9,  which enables  development  regardless  of the location  and does not require the installation  of an
+integrated  development  program.
+@ Integrating  software  development  tools and ALM (Application  Lifecycle  Management)
+Performance  management  tools, requirements  management  tools, issue management  tools, etc. that support
+development  were designed  to manage  specific purposes  and specific steps. Since the introduction  of the
+cloud, it has been evolving  into a tool that encompasses  development/test/operation  due to the complexity
+of the infrastructure  and the market environment,  which demands  ever faster IT services.  The main purpose
+of the performance  management  tool was to prevent  application  delays and improve  performance.  Recently,
+such tools have been integrated  with ALM, which detects  changed  codes and manages  the changes,  and
+supports  build/distribution  comprehensively.
+B) Technology  trends  of programming  languages
+® TypeScript,  an extended  version  of JavaScript
+JavaScript  is one of the most popular  and powerful  programming  languages  in the world. It is often used to
+make an interactive  web page by adding some effects to a web page, creating  a game, animation,  or drop-
+down menu, and effectively  controlling  the web interface.  This programming  language  is basically  useful for
+front-end  development  and is used by 88% of all websites.
+Recently,  TypeScript  has been highlighted  as an extended  version  of JavaScript.  TypeScript  is an open source
+project  created  by Microsoft  in 2012, and is used as the base language  of Angular.
++ Key features  of TypeScript
+- It includes  the functions  of JavaScript  as it is based on JavaScript.
+- Itis a “static type” language  that checks types at the time of compilation.
+- It offers ease of compilation  in all browsers  and environments,  making  it highly useful.
+- It enables  easy coding  and learning  because  everything  is a class...

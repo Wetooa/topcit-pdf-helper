@@ -1,0 +1,26 @@
+Overview  of System Architecture )
+Parent  Process Parent  Process Resume =  @®“*-@  —-
+Child Process
+[Figure 18] Process  Creation  and Termination  in the UNIX OS
+C) Thread
+@® Concept  of thread
+A thread is a basic unit for using a CPU and is all called a lightweight  process.  As shown in [Figure 19], a process
+generally  has one or more threads.  A thread shares the memory  unit, such as codes, data, and files, and creates
+its own register and stack. While processes  use more CPU time than threads  for context  exchange,  threads  can
+exchange  context  more economically  because  threads  share the memory  unit.
+Process
+Information  accessible Address Space
+by all threads  of the Other Global Process  Data
+process :
+Register Register Register
+Information Stack Stack Stack
+accessible  only by
+each thread Mask Mask Mask
+[Figure 19] Relationship  between  Thread  and Process
+@ Multi-thread
+As shown in [Figure  20], a single-thread  process  is a case in which a thread exists for a process,  and a process,  having
+multiple  threads,  is called a multi-threaded  process.  A thread operates  with the status of “ready”, “blocked”,  “running”,
+and “terminated”.  A CPU can occupy  only one thread at a time. In other words, only one thread runs at a time, and the
+status of the other threads  is “blocked.”  When a thread is blocked,  other threads  can run. There are certain benefits
+to using multi-threads.
+M3 Overview  of System  Architecture  47

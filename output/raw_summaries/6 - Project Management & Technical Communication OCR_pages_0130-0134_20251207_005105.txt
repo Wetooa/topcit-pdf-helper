@@ -1,0 +1,261 @@
+LEARNING GUIDE: Pages 130-134
+Generated: 2025-12-07 00:51:05
+PDF: 6 - Project Management & Technical Communication OCR
+
+================================================================================
+LEARNING GUIDE
+================================================================================
+
+Here is a simplified, easy-to-read learning guide based on the provided text, focusing on essential information for studying.
+
+---
+
+## Project Risk Management Learning Guide
+
+This guide covers the core concepts and processes of project risk management.
+
+### Key Definitions
+
+*   **Contingency:** A financial or time reserve calculated to address potential risks. It can be based on:
+    *   The expected value of a risk's probability and impact.
+    *   A percentage of the total project budget.
+*   **Countermeasure:** A specific action or plan established and executed on an ad-hoc basis to respond to a identified risk.
+
+### The Risk Management Process
+
+Risk management involves four main stages:
+
+1.  **Risk Identification:** Recognizing and documenting potential risks.
+2.  **Risk Analysis/Evaluation:** Assessing the probability and impact of identified risks.
+3.  **Risk Response:** Developing and planning actions to address risks.
+4.  **Risk Control:** Monitoring risks, implementing responses, and evaluating effectiveness.
+
+---
+
+### 1. Risk Identification
+
+**Goal:** To find and document all potential risks that could affect the project as early as possible.
+
+**Key Point:** Prioritize reviewing contractual obligations, proposals, and project execution plans. Any omission in the plan that is specified in the contract can lead to acceptance criteria violations.
+
+**Methods for Risk Identification:**
+
+*   **Documentation Reviews:** Examine project plans, assumptions, previous project files, contracts, and other project documents.
+*   **Information Gathering Techniques:**
+    *   **Brainstorming:** Group idea generation.
+    *   **Delphi Technique:** Expert opinions gathered anonymously to reach a consensus.
+    *   **Interviews:** Discussions with project stakeholders and experts.
+    *   **Root Cause Analysis:** Identifying the underlying reasons for potential problems.
+*   **Checklist Analysis:** Using pre-existing lists from similar projects or knowledge bases. A Risk Breakdown Structure (RBS) can serve as a checklist.
+*   **Assumption Analysis:** Reviewing project assumptions to identify inaccuracies, instability, inconsistencies, or incompleteness.
+*   **Diagramming Techniques:** Visual tools to identify relationships and potential risks:
+    *   **Cause and Effect Diagrams (Fishbone):** Identify potential causes for a specific effect.
+    *   **System or Process Flow Diagrams:** Illustrate how system elements interact.
+    *   **Interrelationship Diagrams:** Show relationships between various factors.
+*   **SWOT Analysis:** Investigating project Strengths, Weaknesses, Opportunities, and Threats to broaden the scope of identified risks (including internal risks).
+*   **Expert Judgment:** Direct identification of risks by experts with relevant project or business experience.
+
+**Output: The Risk Register**
+
+*   A document used to record, track, and manage identified risks.
+*   It typically includes:
+    *   **ID:** Unique identifier for the risk.
+    *   **Risk Item:** Description of the risk.
+    *   **Probability:** Likelihood of occurrence.
+    *   **Impact:** Severity of the effect.
+    *   **Exposure:** Calculated risk level (e.g., Probability x Impact).
+    *   **Priority:** Rank of the risk.
+    *   **Countermeasure:** Planned response action.
+    *   **Manager:** Person responsible for the risk.
+*   The Risk Register is updated throughout the project with analysis results and control information.
+
+---
+
+### 2. Risk Analysis
+
+This stage assesses identified risks to prioritize them for response planning.
+
+#### A) Qualitative Risk Analysis
+
+**Goal:** To prioritize risks by qualitatively evaluating their probability of occurrence and potential impact on project objectives.
+
+**Technique: Probability-Impact Matrix**
+
+*   A matrix that plots risks based on their qualitative probability and impact ratings.
+*   **Risk Level Calculation:** Risk Level = Probability of Occurrence (P) × Degree of Impact (I).
+*   **Rating Scales (Examples):**
+    *   **Probability:** Very Low (0.1) to Very High (0.9).
+    *   **Impact:** Very Low (0.1) to Very High (0.8) on project objectives.
+*   Risks are then ranked (e.g., Low, Moderate, High) to help prioritize response planning.
+
+#### B) Quantitative Risk Analysis
+
+**Goal:** To numerically estimate the overall effect of prioritized risks on project objectives (e.g., cost, schedule). This typically follows qualitative analysis.
+
+**Methods for Quantitative Risk Analysis:**
+
+*   **Interviews:** Experts quantify probability and impact based on experience and precedents.
+*   **Probability Distributions:** Used in modeling to measure the uncertainty of values like activity durations or cost components.
+*   **Tornado Diagrams:** Show how sensitive project outcomes are to changes in individual risk factors. Results are displayed as a bar graph, ordered by sensitivity.
+*   **Scenario Analysis:** Describes hypothetical future situations based on assumptions, then analyzes the impact of each assumption on project results.
+*   **Monte Carlo Simulation:**
+    *   Repeatedly substitutes a range of random values for parameters in a probability model.
+    *   Generates a cumulative distribution of possible outcomes to predict a specific variable.
+    *   Provides a probabilistic model by analyzing these cumulative results.
+*   **Expected Monetary Value (EMV) Analysis:**
+    *   Calculates the expected financial outcome by considering risks.
+    *   Requires a "risk-neutral" assumption (neither avoiding nor seeking risk).
+    *   Multiplies each possible outcome by its probability and sums these values.
+    *   Often used in conjunction with decision tree analysis.
+
+---
+
+### 3. Risk Response
+
+**Goal:** To develop and implement actions that reduce negative threats and enhance positive opportunities for project objectives.
+
+**Strategies for Negative Risks (Threats):** These aim to minimize negative impacts.
+
+*   **Avoid:** Eliminate the risk completely by changing the project plan, scope, or strategy. Examples: extending schedule, altering strategy, reducing scope.
+*   **Transfer:** Shift the impact and responsibility of the risk to a third party. This doesn't eliminate the risk, but shifts who handles it. Effective for financial risks. Tools include insurance, performance bonds, warranties, and guarantees.
+*   **Mitigate:** Reduce the probability of the risk occurring or its impact to an acceptable level. Examples: early preventive measures, extensive testing, selecting simpler processes.
+*   **Acceptance:** Adopted when eliminating the risk isn't possible.
+    *   **Passive Acceptance:** No active steps are taken other than documenting the risk. The project team deals with the risk if it occurs.
+    *   **Active Acceptance:** Proactively building contingency reserves (time, capital, resources) to deal with the risk if it occurs.
+
+**Strategies for Positive Risks (Opportunities):** These aim to maximize positive impacts.
+
+*   **Exploit:** Take actions to ensure the opportunity happens and its benefits are realized. Examples: dedicating skilled resources, reducing costs to make an opportunity more viable.
+*   **Share:** Partner with other organizations or teams to realize an opportunity, sharing the benefits and risks. Examples: forming partnerships.
+*   **Enhance:** Increase the probability or impact of an opportunity. Identifies main causes and takes actions to maximize effectiveness.
+*   **Acceptance:** Choose to take advantage of an opportunity if it arises, but without actively pursuing it.
+
+---
+
+### 4. Risk Control
+
+**Goal:** To implement the risk response plan, track identified risks, monitor new and residual risks, and evaluate the effectiveness of risk management activities.
+
+**Methods for Risk Control:**
+
+*   **Risk Reassessment:** Regularly perform activities to:
+    *   Identify new risks that emerge.
+    *   Reassess the status and impact of current risks.
+    *   Terminate risks that are no longer relevant or have passed.
+*   **Risk Audits:** Investigate and document:
+    *   The effectiveness of chosen risk countermeasures.
+    *   The effectiveness of the overall risk management process.
+*   **Variance and Trend Analysis:**
+    *   Compare planned project outputs with actual outputs.
+    *   Review trends in project execution using performance information to identify potential issues or successes.
+*   **Technical Performance Measurement:**
+    *   Compare the project's technical performance against the technical performance schedule in the project plan.
+    *   Measures can include weight, number of transactions, defective deliveries, storage capacity, etc.
+
+---
+
+### Recent Trends in Project Evaluation
+
+*   **Past Criteria:** Project success was measured by completion on schedule, within budget, and meeting original objectives.
+*   **Current Criteria:** Project success is now increasingly measured by its quantitative and qualitative contribution to:
+    *   Achieving the company's management goals.
+    *   Improving the company's competitiveness.
+
+### Project Evaluation Overview
+
+*   **Evaluation Stages:**
+    *   **Ex-ante Evaluation:** Conducted before the project starts.
+    *   **Interim Evaluation:** Conducted during the project's execution.
+    *   **Ex-post Evaluation:** Conducted after the project is completed.
+*   **Evaluation Types:**
+    *   IT Investment Performance Management.
+    *   General Performance Evaluation.
+
+---
+
+================================================================================
+ORIGINAL TEXT (First 5000 chars)
+================================================================================
+
+--- Page 130 ---
+Project Management  and Technical  Communication  )
+Contingency .
+Reserve Calculated  as expected  value of probability  and | Calculated  as a percentage  of the total budget
+: impactCalculation
+Countermeasure  | Establish  and execute  a risk response  plan On an ad-hoc  basis
+02 Risk Management  Process
+Risk management  is generally  carried out over the following  four stages:
+Risk Identification ish Aurel  ys) Risk Response Risk control
+Evaluation
++ Primary  risk + Evaluation  based + Risk avoid, mitigate, + Observation  of risk
+recognition on probability  and transfer, acceptance response
++ Risk categorization impact + Financial/ + Risk assessment
++ Risk profiling Organizational + Early warning
+* response system
+[Figure  44] Risk Management  Process
+A) Risk identification
+It is important  to find the risks in the right time as possible.  Risk identification  involves  identifying  and docu-
+menting  risks that may affect the project. A commonly  used risk identification  method is documentation  re-
+view. The scope and schedule  of tasks specified  in the contract  are legally valid and should be prioritized.  The
+contract,  proposal,  and project  execution  plan should be cross-checked  and double-checked  for any omission.
+If something  omitted  from the project  execution  plan is specified  in the contract  or proposal,  even if it is not
+actually  implemented,  it violates  the acceptance  criteria.
+<Table 64> Risk Identification  Method
+Risk Identification Explanation
+Method
+Documentation  Reviews | Review  plans, assumptions,  previous  related project  files, contracts  and project  documents
+Information  Gathering  | Use techniques  such as brainstorming,  Delphi Technique, interviews,  and root cause analysis  to
+Techniques identify  risks.
+Create a checklist  based on precedents  and knowledge  accumulated  in similar projects  or
+Checklist  Analysis other sources  of information.  The lowest level of RBS (Risk Breakdown  Structure)  can be used
+as a risk checklist
+Examine  the validity  of assumptions  and identify  inaccuracy,  instability,  inconsistency  or
+Assumption  Analysis incompleteness  of assumptions  as project risks
+Use diagramming  techniques  to identify  risks, such as a Cause and Effect Diagram,  a
+Diagramming  Techniques  | System  or Process  Flow Diagram  that expresses  how various  elements  of the system are
+interconnected,  an Interrelationship  Diagram  that depicts  the relationship  among  factors,  etc.
+M6 Project  Management  and Technical  Communication  129
+
+
+--- Page 131 ---
+ESSENCE
+Risk Identification Explanation
+Method
+. Investigate  the project  in terms of SWOT so that the scope of the identified  risks can be
+SWOT Analysis expanded  to include internal risks.
+Expert  Judgment Activities  in which experts  with similar project  or business  experience  directly  identify  risks
+Risk, which is a key output of risk identification,  is described  as initially identified  in the Risk Register.  The
+identified  risks are registered  in the risk register,  and qualitative/quantitative  analysis  is performed  to prioritize
+the risks for risk response  planning.  The results of these activities  are recorded  in the risk register  so that
+risks can be systematically  tracked/managed.
+<Table 65> Example  of Risk Register
+ID Risk Item Probability  | Impact  | Exposure Priority Countermeasure Manager
+RoOI Unclarified 9 9 81 1 Documentation  and periodic Hong
+~ requirements management  of requirements Gildong
+Non-verified  new Selection  and introduction HongBoe software 8 7 56 2 through BMT Gilsoon
+Resource  leveling  for HongR003 | Tight schedule 8 6 48 3 scheduling Gildong
+B) Risk analysis:  qualitative  risk analysis
+Qualitative  risk analysis means qualitatively  analyzing  how much impact the risk has on the project at the
+beginning.  Qualitative  risk analysis  refers to a method of prioritizing  risks by evaluating  the probability  and
+impact  of risks after risk identification  is complete.  Probability-Impact  Matrix is a technique  that qualitatively
+evaluates  the probability  of a risk and its impact  on the objective  and analyzes  it in a matrix form.
+0.9 0.09 0.18 0.36 0.54 0.72
+> 07 0.07 0.14 0.28 0.42 0.56
+2 0.5 0.05 0.10 0.20 0.30 0.40
+3 03 0.03 0.06 0.12 0.18 0.24
+a 0.1 0.01 0.02 0.04 0.06 0.08
+0.1 0.2 0.4 0.6 0.8
+Impact
+| | Low [| | Moderate aa High
+[Figure  45] Probability-Impact  Matrix (Example)
+The risk level is “F(probability,  impact)  = probability  of occurrence  (P) X degree of impact  (I)’.
+The probability  of occurrence  ranges from very low (0.1) to very high (0.9).
+The impact  on the objective  ranges  from very low (0.1) to very high (0.8).
+The risk level is calculated  by “probability  of occurrence  X impact” and the ratings are ranked as low, moder-
+ate, and high for risk prioritization.
+130 TOPCIT  ESSENCE
+
+
+--- Page 132 ---
+Project Management  and Technical  Communication  )
+C) Risk analysis:  quantitative ...

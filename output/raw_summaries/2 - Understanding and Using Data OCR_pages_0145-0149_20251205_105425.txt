@@ -1,0 +1,250 @@
+LEARNING GUIDE: Pages 145-149
+Generated: 2025-12-05 10:54:25
+PDF: 2 - Understanding and Using Data OCR
+
+================================================================================
+LEARNING GUIDE
+================================================================================
+
+Here's a simplified learning guide based on the provided text:
+
+---
+
+# Big Data Essentials: A Learning Guide
+
+## 1. Introduction: Why Big Data Matters
+
+**Problem:** Traditional database systems struggle with the massive volume, high speed, and diverse types of data generated today (e.g., from multimedia, social media, sensors, IoT). They face limitations in processing speed and performance.
+
+**Solution:** Big Data technologies are designed to analyze these large volumes of **unstructured data** generated at high speeds.
+
+**Real-world Impact:**
+*   **Early examples:** Crime prediction systems (like in "Minority Report"), Google's flu map, US presidential election analysis, ZARA's fashion trends, DHL logistics, demand forecasting.
+*   Big Data is rapidly evolving and integrated into daily life and business.
+
+**Why IT Professionals Need to Understand Big Data:**
+*   Big Data terms (e.g., crawler, Hadoop, MapReduce, R, NoSQL, the "3Vs") are now common.
+*   IT workers frequently encounter Big Data systems.
+*   Understanding these concepts is crucial for adapting to modern workplaces and technologies.
+
+---
+
+## 2. Big Data Overview
+
+### 2.1. Definition of Big Data
+Big Data refers to:
+*   Data that exceeds the capabilities of traditional database management tools for capture, storage, and analysis.
+*   Next-generation technologies and architectures designed to extract value from large-scale data cost-effectively, supporting rapid collection, discovery, and analysis.
+
+### 2.2. Characteristics of Big Data (The 3 Vs)
+
+The core characteristics are:
+
+*   **Volume:**
+    *   Refers to extremely large amounts of data (tens of terabytes, petabytes, or more).
+    *   Exceeds the processing limits of commonly used software.
+*   **Velocity:**
+    *   Data is generated and collected very quickly.
+    *   Requires real-time or near real-time processing, storage, and analysis.
+*   **Variety:**
+    *   Refers to the diverse kinds of data.
+    *   Includes structured, semi-structured, and unstructured data.
+
+*(Note: Other Vs sometimes mentioned include Veracity, Visualization, and Value, expanding to "6Vs".)*
+
+### 2.3. Data Types
+
+*   **Structured Data:**
+    *   Data stored in a fixed, predefined field (e.g., traditional relational databases).
+    *   Example: Tables with rows and columns.
+*   **Semi-structured Data:**
+    *   Data not stored in a fixed field but contains metadata or schema.
+    *   Examples: XML, HTML, CSV, XLS, RDF.
+*   **Unstructured Data:**
+    *   Data not stored in a fixed field and lacks a predefined schema.
+    *   Examples: Documents, pictures, videos, audio files.
+
+---
+
+## 3. Big Data Life Cycle & Key Technologies
+
+Big Data processing involves several stages, each with specific technologies:
+
+| Stage                 | Description                                                                 | Detailed Technologies                                             |
+| :-------------------- | :-------------------------------------------------------------------------- | :---------------------------------------------------------------- |
+| **Collection**        | Gathers data from various devices and systems.                              | Crawling (web robots), ETL (Extract, Transform, Load), CEP (Complex Event Processing) |
+| **Storage/Processing** | Stores and processes large-scale data using distributed systems.            | Distributed File System (DFS), NoSQL, MapReduce                   |
+| **Analysis**          | Methods to extract insights and assist in decision-making.                  | Natural language processing, Machine learning, Data mining algorithms |
+| **Visualization**     | Represents analyzed results in an easy-to-understand visual format.         | R, Graphs, Drawings, Dashboards                                   |
+
+---
+
+## 4. Key Big Data Technologies
+
+### 4.1. Collection Technologies
+
+*   **Purpose:** To gather vast amounts of data efficiently.
+*   **Examples:** ETL, Web Crawling, RSS Feeding, Open API, CEP.
+*   **Web Crawling:**
+    *   Automatically collects documents and data from the web (e.g., SNS, blogs, news).
+    *   Works by copying entire web pages or extracting data based on specific HTML tags after collecting URLs.
+
+| Technology              | Description                                          | Solutions/Examples                  |
+| :---------------------- | :--------------------------------------------------- | :---------------------------------- |
+| **DBMS SQL Collection** | Collects data using SQL functions.                    | Oracle, MariaDB, MS SQL, Tibero     |
+| **Sensor Collection**   | Gathers data when specific conditions are met.       | CQL, Kafka                          |
+| **FTP Collection**      | Collects data via File Transfer Protocol.            | (Standard FTP clients)              |
+| **HTTP Collection**     | Collects data by reading HTML tags.                  | Scraper (tool)                      |
+
+### 4.2. Storage & Processing Technologies
+
+*   **Purpose:** Efficiently store and process large, fast, and often unstructured data.
+*   **Key Technologies:** Distributed File System (DFS), NoSQL, MapReduce.
+
+**A. Distributed File System (DFS)**
+*   **Definition:** A file system architecture that allows access to files shared across multiple host computers in a network.
+*   **Characteristics:**
+    *   Composed of inexpensive servers.
+    *   **Scale-out:** Capacity and performance increase almost linearly as more equipment is added.
+    *   **High Availability:** System usability is minimally affected even if some servers fail.
+    *   **Optimized for Throughput:** Suitable for batch processing of large-scale data.
+*   **Examples:** GFS (Google File System), HDFS (Hadoop Distributed File System).
+
+**B. NoSQL (Not Only SQL)**
+*   **Definition:** A new type of data storage and retrieval system that uses a less restrictive consistency model (often BASE — Basically Available, Soft state, Eventually consistent) compared to traditional relational databases.
+*   **Purpose:** Designed for flexibility, scalability, and handling various data models, especially unstructured and semi-structured data.
+*   **Examples:** HBase, Cassandra, MongoDB, CouchBase, Redis, Neo4J.
+
+**C. MapReduce**
+*   **Definition:** A programming model for parallel distributed processing of Big Data using clusters of inexpensive machines.
+*   **How it works:** Processes large data volumes in parallel using two main procedures:
+    *   **Map:** Filters and sorts data.
+    *   **Reduce:** Aggregates and summarizes the filtered data.
+*   **Characteristics:**
+    *   Processes data distributed across multiple machines.
+    *   Primarily batch-based processing.
+    *   Ensures data safety by copying, distributing, and storing execution results, accounting for device failures.
+
+### 4.3. Visualization Technologies
+
+*   **Purpose:** To effectively transfer insights, numbers, statistics, and valuable meanings from analyzed data to users. It classifies data for easy understanding and allows information transfer without requiring direct data analysis by the user.
+
+| Visualization Method    | Description                                                     | Examples/Use Case                        |
+| :---------------------- | :-------------------------------------------------------------- | :--------------------------------------- |
+| **Time Visualization**  | Shows data trends or events over a period.                      | Line charts (continuous), Bar charts (segmented) |
+| **Distribution Visualization** | Displays relationships between a whole and its parts, or ratios. | Pie charts, Treemaps                     |
+| **Relationship Visualization** | Illustrates connections between two or more variables.          | Bubble charts, Histograms                |
+| **Comparison Visualization** | Compares data points, often showing spatial relationships.      | Heatmaps, Star charts                    |
+| **Spatial Visualization** | Maps information onto geographical maps.                        | Including Point of Interest (POI) data on maps |
+
+---
+
+## 5. Big Data Analytics
+
+### 5.1. Definition of Big Data Analytics
+The process of "discovering meaningful patterns from big data."
+
+### 5.2. Classification of Data Analysis
+
+| Classification         | Goal/Focus                                                | Applied Techniques                                                 |
+| :--------------------- | :-------------------------------------------------------- | :----------------------------------------------------------------- |
+| **Descriptive Modeling** | Finds patterns that describe the given data.              | Association rules, Clustering, Segmentation, Visualization         |
+| **Predictive Modeling**  | Creates models to predict future events or new inputs.    | Regression, Time series analysis, Neural networks, SVM, Decision trees |
+| **Supervised Data**    | Used when a specific target variable is defined.          | Neural networks, Case-based reasoning                              |
+| **Unsupervised Data**  | Used when there is no target variable; focuses on finding correlations or similarities within input variables. | Association rule discovery, Market basket analysis, K-means clustering |
+
+### 5.3. Main Methods of Big Data Analysis
+
+*   **Regression Analysis:**
+    *   A statistical technique.
+    *   Predicts the probability of an event's occurrence using a linear combination of independent variables.
+*   **Decision Tree Analysis:**
+    *   A method for quantitative analysis.
+    *   Classifies groups or makes predictions by creating a tree-like model of decisions and their consequences.
+*   **Neural Network Analysis:**
+    *   Inspired by the human brain and nerve cells.
+    *   Handles problems using parallel, distributed, and probabilistic calculations, rather than deterministic binary models.
+*   **Text Mining:**
+    *   Extracts and processes useful information from unstructured and semi-structured text data.
+    *   Applies Natural Language Processing (NLP) and document processing technologies.
+    *   **Core Technologies:** Document summarization, document classification, document clustering, feature extraction.
+
+---
+
+================================================================================
+ORIGINAL TEXT (First 5000 chars)
+================================================================================
+
+--- Page 145 ---
+ESSENCE
++ Preview  for practical  business Why do we need to understand  big data
+technology?
+Although  interest in data analysis has increased,  the existing  system architecture  and DBMS face
+limitations  in terms of processing  speed and performance  when an existing  analysis  system  processes  tens
+of PBs of unstructured  data generated  by multimedia,  SNS, sensors,  loT, etc., due to the advancement  of IT
+technologies.  As a result, solutions  are being developed  that are suitable  for analyzing  the large volume  of
+unstructured  data (variety)  generated  at high speed (velocity).  Technologies  related to big data, which was
+still in its infancy  only a few years ago, have developed  rapidly and are now being used directly in our real
+life.
+There are many examples  of this. For instance,  the US movie Minority  Report,  which was released  in 2002,
+portrayed  futuristic  crime prediction  by “precogs’  in the year 2054, yet something  akin to this technology
+was actually  realized as a crime prevention  system in San Francisco  as early as 2009. (However,  the
+concept  of “big data” had only been introduced  at that time for the study of genomes,  and prediction  based
+on big data analytics  had not yet been thought  of) Other commonly  known examples  include Google's  flu
+map, the US presidential  election  case, ZARA, the DHL case, and distribution  demand  forecasting.
+Furthermore  big data technology  was unfamiliar  to IT workers  until relatively  recently  to the extent that
+they only needed to know the definition  of big data. However,  with the rapid development  of big data
+technology,  terms such as crawler, Hadoop,  MapReduce,  R, and NoSQL, as well as the 3V characteristics
+of big data, have become  familiar  technical  terms, and IT workers  now experience  big data systems
+more frequently  in the workplace.  Therefore,  IT workers  need to understand  at least the concepts  of the
+technical  terms for each phase of big data analytics,  if not the detailed  technical  principles,  in order to
+quickly  adapt to the changed  workplace.
+144 TOPCIT  ESSENCE
+
+
+--- Page 146 ---
+Database )
+01 Big Data Overview
+A) Definition  and characteristics  of big data
+@ Definition  of big data
+Big data generally  refers to either data that exceed  the ability of database  management  tools used to capture,  store,
+and analyze  data (McKinsey,  2011), or to next-generation  technologies  and architectures  designed  to extract  value
+from large-scale  data at low cost and support  the rapid collection,  discovery,  and analysis  of data (IDC, 2011).
+@ Characteristics  of big data (3V)
+The characteristics  of big data can be explained  by the three elements  (3V) of big data, namely,  volume,  velocity,  and
+variety. Each element  has the following  characteristics.
+<Table  66> Characteristics  of the three elements  of big data (3 Vs)
+Three elements Description
+- Refers to a volume  of data of tens of terabytes,  petabytes  or more, thus exceeding  theVolume : : : :processing  limit of commonly  used software  when collecting,  storing,  and processing  data.
+Velocit: - ‘Big data’ is created  very quickly.
+y - Data collection,  processing,  storage, and analysis  need to be processed  in real time.
+Variet - Diverse kinds of data
+y - Big data can be classified  into structured,  semi-structured,  and unstructured  data.
+> 6V of big data = Volume,  Variety, Velocity,  Veracity,  Visualization,  Value.
+© Structured  data vs. unstructured  data
+<Table  67> Description  of structured,  semi-structured,  and unstructured  data
+Data type Description
+Structured - Data to be stored in a fixed field.
+- Data not stored in a fixed field, but which contain  metadata  or schema,  such as XML or HTML.
+- XML, CVS, XLS, RDF, etc.
+- Data not to be stored in a fixed  field.
+- Document,  picture,  video, and audio data, etc.Semi-structured
+Unstructured
+B) Detailed  technology  by big data life cycle
+<Table  68> Detailed  technology  by big data life cycle
+Item Description Detailed  technology
+. - A technology  that can collect  data from all devices - Crawling  (web robot), ETL, CEP (Complexoer and systems. Event Processing),  etc
+Storage/ - A technology  that can store and process  collected - Distributed  file system, NoSQL, MapReduce,
+processing large-scale  data using a distributed  processing  system. processing
+Analysis -A method  of analysis that can assist companies  and - Natural language  processing,  machine
+the public with using big data in business  and daily life. learning,  data mining  algorithms,  etc.
+Visualization - patil  that can visualize analyzed results - Visualization  such as R, graphs, drawings, etc.
+M2 Database 145
+
+
+--- Page 147 ---
+ESSENCE
+02 Technologies  Related  to Big Data
+A) Collection  technology
+Various  technologies  can be used for data collection,  such as ETL, web crawling,  RSS Feeding,  Open API, and CEP
+(Complex  Event Processing).  Among them, the web craw...

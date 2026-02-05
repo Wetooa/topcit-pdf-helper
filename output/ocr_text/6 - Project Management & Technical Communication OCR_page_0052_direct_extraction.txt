@@ -1,0 +1,41 @@
+Project Management  and Technical  Communication  )
+4. Implementation  and
+test output
+F) Analysis
+Analysis  is a document  specifying  detailed  conditions  required  when designing  or manufacturing  SW products.
+In other words, it is a document  to be made to understand  the requirements  for SW in order to develop  SW.
+It can be said to be a document  that understands  the nature and scope of the requirements  for software  and
+clearly  describes  the constraints.
+The analysis  document should include  the overall details of the implemented  SW including  the items to be ref-
+erenced  in the design.
+<Table 15> Composition  of Analysis  (example)
+Classification Content
+1. General  information Definition and overview .
+Product  features
+User characteristics
+Assumptions  and dependencies2. General  technical
+information.
+Functional  requirements
+Input
+« Processing
+« Output
+3. Detailed + Performance  requirements
+information + Design limitations
+External  interface  requirements
++ User interface
++ Hardware  interface
++ Software  interface
+<Table 16> Principles  for writing  analysis
+Classification Content
+Clarity * Clearly describe  all the functions  the system will perform and the constraints  that will affect
+the system.
+Conciseness * Specifications  are written  concisely  and easy to understand  for both customers  and developers.
++ All the stated requirements  are verifiable,  so the desired system quality, relative  importance,
+verneb  ity quality measurement  and verification  methods and standards  are specified,
+on fi + The requirements  specification  describes  the external behavior  of the system and should not
+Dear be designed  using a specific structure  or algorithm.
+en + It is organized  hierarchically  for participants  to understand  the function  of the system or toModifiability
+analyze  the impact  of changes.
+Availabilty + Requirements  are numbered  with a unique identifier  for easy reference  and prioritized  as not all
+requirements  are equivalent.
+M6 Project  Management  and Technical  Communication  51

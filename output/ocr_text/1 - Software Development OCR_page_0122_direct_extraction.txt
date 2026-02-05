@@ -1,0 +1,37 @@
+Software  Development )
+B) Components  of configuration  management
+The table below describes  the major items of configuration  management.
+<Table  40> Components  of configuration  management
+Component Contents
+BaselineTechnical  control points of each configuration  item. The standard  point in time
+that controls  all changes.
+Configuration  itemThe default  target  that is formally  defined  and described  in the software  life
+cycle.
+The tangible  and realized  target  of configuration  management  that is formally
+Configuration  product implemented  in the software  development  life cycle.
+Technical  documents,  hardware  products,  software  products.
+Configuration  information Configuration  information  = configuration  item + configuration  product.
+03 Configuration  Management  Activity
+A) Configuration  management  activity
+Configuration  management  activities  are composed  of configuration  identification,  control, audit, and recording.
+The table below exp!ains the details.
+<Table  41> Configuration  management  activities
+Activity Contents
+Shape identification+ Identifying  a configuration  management  target  and numbering  the management  items.
++ Goal of identifying  a configuration  item: To define a document  structure  in a clear and predictable
+way, and to facilitate  tracking  and management  by recording  information.
++ Contents  of configuration  item identification:  Product/Various  documents/Configuration  item number.
++ Reviewing  and approving  a software  configuration  change  request  and controlling  it so that it can be
+reflected  in the defined  baselineSoren + Managing  change requests/Controlling  change/Supporting  the operation  of the configuration
+management  organization  and configuration  control over development  companies  and outsourcing
+companies.
++ Means of determining  the integrity  of the software  baseline.
+Configuration  audit | Setting  a software  baseline  successfully  with a successful  configuration  audit.
+eu + When changing  the baseline, checking  whether it matches  the requirement.
++ Verification,  validation.
+Configuration + A function  of recording  the various statuses  and execution  results of software  configuration  and
+recording change management,  and creating  reports by managing  the database.
+B) Effects  of configuration  management
+The effects shown in the table below can be achieved  when configuration  management  activities  are applied
+to software  development  and management.
+M1 Software  development  121

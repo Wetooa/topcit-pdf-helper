@@ -1,0 +1,32 @@
+Information  security
+(sender  and receiver)  is legitimate.  That is, authentication  can be divided into message  authentication  and user
+authentication.
+@ User  authentication
+User authentication  refers to a function  that enables  the user to prove their identity  to the other party over
+the network.  Given this, a third party should not be able to disguise  as the user.
+Proving  that the information  accessing  subject  is
+the identified  person
+Recognizing  the use who
+claim his/her  identity
+[Figure 14] User authentication
+User authentication,  also known as identification,  is used to verify the identity  of a user when logging in to a
+server, and to grant the authority  of using information  services.  Servers should require the remote user to go
+through  a strict authentication  procedure  because  the remote user can perform  all the privileges  as the user in
+question,  once authenticated.
+@ Message  authentication
+Message  authentication  is to check whether  the contents  of the transmitted  message  have the original
+information  and are not altered or modified.  An electronic  signature  can be used to verify that the transmitted
+message  has not be altered,  and to identify  the sender  at the same time.
+B) Type of authentication  methods
+Authentication can be performed  by using the user’s knowledge,  the user's object, or the user’s physical
+characteristics.
+@® Knowledge-based  authentication
+This method  is based on the user's information  (“What  you know’), and uses various means, such as a PIN
+(Personal Identification  Number),  password,  account  number,  etc.
+@ Ownership-based  authentication
+This method  is based on the user’s possessions  (“What  you have’), and uses various means, such as anOTP (One
+Time Password),  smart card, card key, etc.
+® Presence-based  authentication
+This method is based on the user’s body or characteristics  of their body ("What you are”), and uses various
+means, such as iris recognition,  fingerprint  recognition,  voice recognition,  and face recognition.
+M4 Understanding  Information  Security  35

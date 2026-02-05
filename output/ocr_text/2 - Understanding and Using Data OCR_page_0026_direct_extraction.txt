@@ -1,0 +1,42 @@
+Database )
+Internal
+schemaPhysical  storage
+structure
+@ Data independence  of two areas
+As the concept  of data independence  can be separated  into these three phases, there are two terms that specify
+the independence  of each area, namely  ‘logical independence’  and ‘physical independence’.
+<Table  6> Types of independence
+Type Contents Characteristics
++ When a concept  schema  is changed,  an external  schema  | +» Changeable  according  to the users’
+Logical is not affected characteristics.
+independence  | + Anapplication  program  is not affected  by a change  in the | + The integrated  structure  can be
+logical structure. changed.
++ When an internal  schema  is changed,  an external/ + Aconceptual  structure  can be changed
+Physical conceptual  schema is not affected. without  affecting  a physical  structure.
+independence  | + Anapplication  program  and a conceptual  schema  arenot  | » A physical  structure  can be changed
+affected  by a structural  change  of the storage  device. without  affecting  a conceptual  structure.
+@ Relationship  between  mapping  and independence
+The English  word “mapping”  can be translated  into “sasang”  in Korean,  which can be defined  as a “bridge  that connects
+independent  concepts”.  Broadly  speaking,  there are two types of mapping  in data independence.
+<Table  7> Types of mapping
+Finishing Contents Example
+External/conceptual  The correlation  between  the A view can have different  types of fields depending  on the
+mapping
+(logical thought)external  view and the conceptual
+view is defined. changed.user's access  type. The field type of a conceptual  view is not
+The correlation  between  the Conceptual/internal If the structure  of the stored database  changes,  conceptual/
+mapping conceptual  view and the stored internal mapping  should change to keep the conceptual
+(physical  mapping)  _| database  is defined. schema intact.
+C) Definition  and key roles of the database  administrator  (DBA) and data architect  (DA)
+@ Roles of the database administrator  (DBA)
+The DBA takes responsibility  for the configuration  and overall administration  of the database  to ensure that the
+functions  of the database  system  are performed  properly.
+<Table 8> Tasks and roles of the DBA
+Functional  tasks Technology  details Role
+Data modelingData modeling  according  to business.
+Physical  data modeling  according  to a storage
+environment.
+Semi-normalization,  performance  modeling.Plays the role of a physical  model for
+analysis/design  when implementing  a
+project.
+M2 Database  25

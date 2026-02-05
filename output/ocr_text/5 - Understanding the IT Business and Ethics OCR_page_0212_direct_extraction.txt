@@ -1,0 +1,53 @@
+ESSENCE
++ If the source code is modified,  information  on the modification,  such as who modified  the code and when, should be
+included.
++ When distributing  software,  attach a copy of the license  to provide license information  on open source.
+Depending  on the type of open source license, some licenses  require a copyleft  to redistribute  under the same
+license. If the copyleft  clause is included,  the source code is also distributed  when the software  is distributed.
+The characteristics  of each open source license are as follows.
+<Table 108> Comparison  of open source licenses  by features
+Obligation — Writing
+Attach  a oa andrange Larger
+copy of notices  of
+license copyright
+upon orRights to
+License reproduce,
+name distribute,
+anal eth distribution attribution na a had
+distribution  _ licenses
+BSD O Oo 0
+Apache
+License 0 0 0 O
+2.0
+All ;GPL 2.0 0 0 0 Conditional
+code
+GPL 3.0 0 0 0 7
+code
+* Derivative
+LGPL 0 0 0
+Work
+21
+MPL 0 0 0 File unit O
+© Works not protected  by copyright  lawtoprovide  Works  and Notice  of
+source distributing revisionThe end of
+alicense Restrictions
+Explicit upona onuse Disclaimer
+patent patent | ofname, of otucbin
+license litigation tradename. warranty y
+bythe trademark
+licensee
+O 0 O
+0 O ) 0 0
+0 0
+0 O 0 0
+0 0 0 0
+0 0 ) 0 0
+No work which falls under any of the following  subparagraphs  shall be protected  under this Act:
++ Constitution,  Acts, treaties,  decrees,  and municipal  ordinances  and rules:
++ Bulletins,  public notifications,  directives  and others similar thereto which are issued by the central or local
+government;  Compilations  or translations  of works which are produced  by the central or local government:
++ Judgments,  decisions,  orders, or adjudications  of courts, as well as rulings and decisions  made by the administrative
+appeals  procedures,  or other similar  procedures;
++ Current  news reporting  which delivers  simple facts.
+39 Korea Copyright  Commission,  OpensourceSW  License  Information  Systems,  https:  /www.0lis.orkr/license/compareGuide.do
+210 TOPCIT  ESSENCE

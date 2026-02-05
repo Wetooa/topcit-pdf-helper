@@ -1,0 +1,35 @@
+ESSENCE
+The following  graph is an example  of earned  value management.  As of August 1, the planned  value (PV), actual
+cost (AC), and earned value (EV) are measured,  and schedule  variance  (SV) and cost variance  (CV) are ana-
+lyzed, for  project  value estimation.  The AC, which is costs actually  incurred,  was spent more than the PV, and
+the EV, which indicates  the actual amount  of work completed,  was less than the PV.
+To analyze the project cost, schedule  variance  (SV) = earned value (EV) - planned value (PV) is negative,
+meaning  behind schedule,  and cost difference  (CV) = earned value (EV) - actual cost (AC) is also negative,
+meaning  over budget.
+Cumulative  Cost
+Actual Cost
+(AC)/ Planned  Value (PV)
+J
+CV (Cost Difference)
+=EV-AC
+7 Earned Value (EV)
+! >
+As of Aug 1 Project  Schedule
+[Figure 39] Graph of Earned  Value Management  (EVM) (Example)
+Estimate  At Completion  (EAC) is “estimated  total cost at project completion’.  An important  advantage  of
+the EVM is that the total cost of the project can be estimated  reasonably.  EAC is calculated  as the sum of
+the actual cost (AC) incurred  from work completed  up to the point of performance  measurement  and the
+estimated  cost of the remaining  work, or Estimate  To Completion  (ETC). Since the actual cost (AC) can be
+known as the result of the performance  measurement,  only the Estimate  to Complete  (ETC) is calculated  to
+come up with the EAC.
+There are three methods  to calculate  the ETC according  to the results of performance  analysis.
+How to apply the previously  approved  budget  for the remaining  work divided by the cost performance  index (CPI)
++ Estimate  to Complete  (ETC) = (Budget  at Completion  (BAC) - Earned Value (EV)) / Cost Performance  Index
+(CPI)
+How to apply the previously  approved  budget  for the remaining  work without  change
++ Estimate  to Complete  (ETC) = (Budget  at Completion  (BAC) - Earned Value (EV))
+How to create a new budget  overriding  the previously  approved  budget  for the remaining  work
++ Estimate  to Complete  (ETC)= New estimate  for the remaining  work
+By adding  the ETC calculated  as above with the AC, the EAC can be estimated  as follows:
++ Estimate  At Completion  (EAC) = Actual Cost (AC) + Estimate  to Complete  (ETC)
+112 TOPCIT  ESSENCE

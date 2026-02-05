@@ -1,0 +1,198 @@
+LEARNING GUIDE: Pages 85-89
+Generated: 2025-12-05 14:25:32
+PDF: 1 - Software Development OCR
+
+================================================================================
+LEARNING GUIDE
+================================================================================
+
+Here is a simplified, easy-to-read learning guide based on the provided text:
+
+---
+
+# Learning Guide: UI/UX Design & Programming Languages
+
+## Section VII: User Interface (UI) / User Experience (UX) Design
+
+### Introduction to UI/UX
+
+*   **Core Importance:** UI/UX are critical for a computer system's success, directly impacting user satisfaction and system effectiveness.
+*   **Recent Trends:** Growing focus on user-centric planning and design, especially in mobile business, to secure customers and increase sales.
+*   **Learning Objectives:**
+    1.  Understand and apply UI design principles.
+    2.  Explain Human Computer Interaction (HCI).
+    3.  Understand and use Graphic User Interface (GUI).
+*   **Keywords:** UI/UX, HCI (Human Computer Interaction), GUI (Graphic User Interface)
+
+### The Critical Role of UX: A Real-World Example
+
+*   **Poor UX Dangers:** Bad user experience can have severe consequences, even leading to harm or death, especially in fields like medical devices.
+*   **Therac-25 Case Study:**
+    *   **Device:** A radiation therapy machine from the 1970s.
+    *   **Problem:** An upgrade introduced a poorly designed error message.
+    *   **Outcome:** A patient died due to excessive radiation exposure, caused by the therapist misinterpreting the unclear error message.
+    *   **Lesson:** User mistakes, often triggered by complex or non-intuitive design, can pose a greater risk than physical device defects. **UX is paramount.**
+
+### 01. User Interface (UI) Overview
+
+*   **Definition of "Interface":** A device that connects two objects for smooth interaction.
+*   **Definition of User Interface (UI):** The device or software that facilitates smooth information exchange between a user and a system. It's like the "window" through which a user interacts (e.g., keyboard input, mouse clicks, menu selections).
+*   **Key UI Design Principles:**
+    *   **A) Consistency:** UIs should look and behave consistently across the system. Establish standards early in development.
+    *   **B) User-Centered Design:** Design with the user in mind, making it easy to learn and control.
+    *   **C) Feedback:** Provide clear and meaningful feedback for user actions, including mistakes, to help users understand what happened.
+    *   **D) Confirming Destructive Behavior:** Always ask for confirmation before executing irreversible actions (e.g., deleting data). The "Undo" function is a useful tool to prevent critical errors.
+
+### 02. User Experience (UX) Overview
+
+*   **Definition of UX:** The overall experience a user has when interacting with a system or service to achieve a goal. It encompasses feelings, emotions, perceptions, attitudes, and responses. UX design focuses on creating a convenient and effective environment for users.
+*   **Key Differences: UX vs. UI**
+    *   **UX:**
+        *   Focuses on the *invisible* aspects (feelings, attitudes, behavior).
+        *   Represents the *process* or *planning* phase.
+        *   Deals with *emotions* and comprehensive *experience*.
+        *   Studies improvements based on user statistics.
+        *   *Analogy:* The "dish" (overall dining experience).
+    *   **UI:**
+        *   Focuses on the *concrete, visible* elements (the interface itself).
+        *   Represents the *result* or *design* phase.
+        *   Deals with *reason* and the direct environment the user faces.
+        *   Is the *realization* of UX improvement studies.
+        *   *Analogy:* The "food" (what is physically presented).
+
+| Feature      | UX (User Experience)                               | UI (User Interface)                               |
+| :----------- | :------------------------------------------------- | :------------------------------------------------ |
+| **Concept**  | Process, Planning, Emotion, Overall Experience     | Result, Design, Reason, Direct Interface          |
+| **Focus**    | Why, What, and How a user feels when using a product | How the product's interface looks and functions |
+
+### 03. UI/UX Design Tools
+
+These tools help designers organize ideas, visualize concepts, analyze services, and test user experiences.
+
+*   **A) MAKE - Turning Ideas into Products:**
+    *   **Organizing Information:** GitHub, Trello
+    *   **Wire-frames:** Microsoft Visio, Moqups (for structural blueprints)
+    *   **Prototyping:** Adobe Photoshop, Sketch3 (for creating interactive models)
+*   **B) Check - Checking User Analysis and Response Methods:**
+    *   **Visual Analytics:** Beusable, Clicktale (to see user interaction visually)
+    *   **Analytics & Metrics:** Google Analytics, Mixpanel (for quantitative data)
+    *   **A/B Testing:** Google Optimize, Optimizely (to compare different versions of a design)
+    *   **Record Users:** Beusable, Hotjar (to watch how users interact)
+*   **C) Think - Checking Market Feedback Continuously:**
+    *   **Recruiting Users:** Pivot Planet, Clarity (to find testers)
+    *   **Online Surveys:** Polldaddy, Hotjar (to gather user opinions)
+    *   **Capture In-site Feedback:** LiveChat, Mouseflow (for real-time feedback)
+    *   **Testing Layouts Remotely:** Chalkmark, UsabilityHub (for remote usability testing)
+
+---
+
+## Section VIII: Programming Language and the Development Environment
+
+### Recent Trends & Importance
+
+*   **Popularity:** Java and C-like languages (like C, C++) are increasingly popular, especially for mobile and cloud software/app development.
+*   **Foundation:** These languages are fundamental for learning other programming languages and are widely used across various business fields.
+*   **Developer Choice:** They are frequently selected by developers as major programming languages.
+
+### Learning Objectives
+
+1.  Describe characteristics of different programming language types:
+    *   Unstructured language
+    *   Structured language
+    *   Object-Oriented Language (OOL)
+2.  Compare major programming languages: C, C++, Java, Python, JavaScript.
+3.  Understand software development frameworks and their types.
+4.  Understand and explain the Integrated Development Environment (IDE).
+
+### Keywords
+
+*   **Programming Language:** Instructions given to a computer.
+*   **Compiler:** Software that translates source code into machine code before execution.
+*   **Interpreter:** Software that translates and executes source code line by line.
+*   **Code Reuse:** Using existing code in new programs or contexts.
+*   **Software Development:** The process of creating software.
+*   **Spring and Standard e-Government Frameworks:** Examples of software development frameworks.
+*   **Integrated Development Environment (IDE):** A software application that provides comprehensive facilities to computer programmers for software development.
+
+---
+
+================================================================================
+ORIGINAL TEXT (First 5000 chars)
+================================================================================
+
+--- Page 85 ---
+Prk
+VII. User Interface  (Ul)/User  Experience  (UX) Design
+>> Recent  trends and major issues
+The user interface  is one of the most important  elements  of a computer  system. Recently,  the
+important  of the user interface  as an important  factor in improving  user satisfaction,  such as user-
+centric planning  and design, has been increasing  daily.
+1. To be able to understand  and apply the principles  of user interface  design.
+2. To be able to explain Human Computer  Interaction  (HCI).
+3. To be able to understand  and use the GUI (Graphic  User Interface)  properly.
+>> Keywords
+- UI/UX
+- HCI (Human  Computer  Interaction)
+- GUI (Graphic  User Interface)
+84 TOPCIT  ESSENCE
+
+
+--- Page 86 ---
+Software  Development )
+* Preview  for practical business Even human life can be harmed  by a
+poorly  designed  UX.
+In the medical  device field, where software  directly  impacts  human life, people are more sensitive  than
+in any other field since minor defects in a medical  device can have devastating  consequences  for a
+patient,  even including  death. So which of the following  could have more catastrophic  consequences,
+a faulty in a physical  device or a user’s mistake  during an operation?  Most people answer  the former:
+however,  user mistakes  resulting  from complex  operational methods  and such like can pose a greater
+risk. For example,  if the pad attachment  position  of a cardiac  defibrillator  is not intuitively  described,
+emergency  measures  will not have any effect, and the result is likely to be the opposite.  The following
+examples  show how important  UX is.
+Therac 25, a radiation  therapy  device developed  in the early ’70s,
+was upgraded  to address the inconvenience  caused by the
+separation  of physical device setting  and prescription  processing  by
+the administrator  console. In July 1985, an accident  occurred  during
+radiation  therapy  at the Ontario (Canada)  Cancer  Foundation,  where
+a patient died from excessive  exposure  to radiation  in November  of
+the same year. A report on the analysis  of medical  accidents  revealedvy
+that the accident  was caused by a wrongly  designed  error message
+during the upgrade.  In the end, the accident  was attributed to the
+fact that the radiation  therapist  was insensitive  to the unknown  error—message  of Therac  25. (Similar  error messages  were distinguished  by
+the number  at the end of each message,  which cannot be clearly identified.)  Because  of this, the
+device was abnormally  interrupted  five times, exposing  the patient  to excessive  radiation  during
+treatment.
+Recently,  many companies  have striver to maximize  the use of the customers  using the information
+on the limited size screen to secure more customers  and increase  sales in the field of mobile business
+using smartphones.  Moreover,  a growing  number  of companies  are contemplating  using UI/UX to
+provide  customer-oriented  valuable  services  and forming  expert  organizations.
+M1 Software  development  85
+
+
+--- Page 87 ---
+ESSENCE
+01 User Interface  Overview
+The word “Interface”  refers to a device that faces each other between  two objects as the composition  of the
+word (“inter’+’face’)  implies. The user interface  refers to a device or software  that ensures  a smooth  exchange
+of information  between  user and system. It acts like a window for software.  For example,  if a user inputs/
+outputs  commands  or selects a menu using a keyboard  or mouse to use a specific software,  it belongs  to the
+user interface. The interface  should be designed  with a focus on the following  points.
+A) Consistency
+The user interface  should be created consistently.  However,  it is generally  difficult  to maintain  consistency
+when developing  a large system,  since several people design and implement  user interfaces.  User interface
+standards  should be established  before development  to make user interfaces  consistent,  and user interfaces
+should also be checked  after their development  to correct  any errors.
+B) User-centered  design
+The user interface  should be designed  with a focus on the user because  it is for the user, who should be able
+to control it effectively.  Therefore, it is essential  to design the user interface  in such a way that users can learn
+“input and output  language’  easily.
+C) Feedback
+The user interface  should provide meaningful  feedback.  When a user presses  a wrong button or tries to
+perform an operation  incorrectly,  the user interface  should enable the user to easily understand  his or her
+mistakes.
+D) Confirming  destructive  behavior
+When a user tries to delete data or files, the user interface  should confirm  it before executing  it. If possible,  the
+user interface  should be designed  in such a way that the user cannot  cause critical errors. The Undo function is
+also a useful method in this regard.
+O2 User Experience  Overview
+User experience  comprises  the ideas and actions of the designer  who ...

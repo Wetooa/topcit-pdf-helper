@@ -1,0 +1,30 @@
+Software  Development )
+work to make invisible  things  visible. In addition,  UX is the feeling, attitude,  and behavior  of the user, whereas
+Ulis the environment  in which the user faces the interface  directly.  UX is also a study on improvements  based
+on statistics  relating  to user experience,  while UI is the realization  of such improvement  studies. That is, UX
+refers to experience  of what is visible, whereas  UI refers to the interface  itself that is shown to the user. The
+main differences  between  UI/UX can be briefly summarized  as follows.
+UX UI
+Process. Result
+Dish Food
+Planning Design
+Emotion Reason
+03 UI/UX Design  Tools
+The following  summarizes  the representative  UI/UX tools that can be used to organize  and visualize  the
+thoughts  and ideas of users and designers,  analyze  developed  services  and run user tests, and can improve  or
+accelerate  their work.
+A) MAKE - Turning  ideas into products
+@ Organizing  information  - GitHub,  Trello
+@ Wire-frames  - Microsoft  Visio, Moqups
+@ Prototyping  - Adobe Photoshop,  ketch3
+B) Check  - Checking  user analysis  and response  methods
+@ Visual analytics  - Beusable,  Clicktale
+@ Analytics  & metrics  - Google  Analytics,  Mixpanel
+@ AB testing  - Google  Optimize,  Optimizely
+@ Record users - Beusable,  hotjar
+C) Think - Checking  market  feedback  continuously
+@ Recruiting  users - Pivot Planet, Clarity
+@ Online surveys  - Polldaddy,  hotjar
+© Capture  in-site feedback  - LiveChat,  mouseflow
+@ Testing  layouts  remotely  - Chalkmark,  UsabilityHub
+M1 Software  development  87

@@ -1,0 +1,28 @@
+Overview  of System Architecture )
+@ TCP connection  termination
+The TCP connection  is terminated  in the following  sequence.  The terminal  TCP A that intends to terminate  the
+connection,  sends the FIN segment  (SEQ=100,  ACK=300)  to TCP B, as in step 2. Here, the ACK control  flag is set and
+sent as an acknowledgment  response  to the previous  transmission.  Upon receiving  it, TCP B sends an ACK segment
+(SEQ=300,  ACK=101)  in response,  as in step 3. In response  to SEQ=100  of the FIN segment,  the ACK segment
+increased  by increments  of 1 to 101 is transmitted.
+TCP B then sends the FIN segment  (SEQ=300,  ACK=101)  to TCP A to terminate  the connection,  as in step 4. As in
+step 2, ACK is sent together  for acknowledgment  of previous  data transmission.  Then, TCP A completely  terminates
+the TCP connection  by sending  an ACK segment  (SEQ=101,  ACK=301),  as in step 5.
+TCP  A TCP B
+1, ESTABLISHED ESTABLISHED
+2. (Close)
+FIN—WAIT-1 ae «SEQ=100){ACK=300)<{CTL=FIN,ACK)  = CLOSE-WAIT
+3, FIN-WAIT—2 = «SEQ=300){ACK=101){CTL=ACK)  = CLOSE-WAIT
+4. TIME—WAIT = «(SEQ=300){ACK=101){CTL=FIN,ACK)  (Close)
+LAST-ACK
+5, TIME—WAIT aa «(SEQ=101)(ACK=301)<CTL=ACK)  = CLOSED
+6. (2 MSL)
+CLOSED
+[Figure 133] Typical Termination  Sequence  [1]
+In the virtual TCP operation  scenario  shown in [Figure 133], steps @ and @ through ®@ correspond  to TCP connection
+termination.
+@ Flow control
+The flow control balances  the rate of data creation  and use. TCP uses the sliding window  protocol.  The receiving  TCP.
+notifies it by designating  the number  of octets (1 byte) prepared  in advance.  The sending  TCP may refer to it and
+adjust  the number  of sliding  windows.  Since this field is 16 bits long, the maximum  size of the window  is 65,535  bytes.
+M3 Overview  of System  Architecture  185

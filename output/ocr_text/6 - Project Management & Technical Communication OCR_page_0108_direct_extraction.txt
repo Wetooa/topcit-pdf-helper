@@ -1,0 +1,33 @@
+Project Management  and Technical  Communication  )
+Data Function
+Point
+Transaction
+Function
+[Figure 36] Types of Functions
+The calculation  process  of the function  point method  is as follows:
+@ Determine  the Type of Count
++ Choose  among Development  Project  / Enhancement  Project/  Application  FP count
+@ Identify  Scope and Boundary  of the Count
++ Determine  the full scope of software
++ Separate  the boundaries  of individual  applications
+© Measure  Data Functions
++ Identify  the internal logical files (ILF) and the external  interface  files (EIF), determine  complexity  and
+contribution,  respectively,  to derive data function  points
+* Complexity  and contribution are determined  by dividing  into Data Element  Types (DET) and Record Element
+Types (RET). DET is calculated  as the number  of attributes  and RET is calculated  as the number  of subgroups.
+@ Transaction  function  measurement
++ Identify  units of activity,  separate  El (External  Input), EO (External  Output),  and EQ (External  Query) for each
+unit of activity, and then determine  the complexity  and contribution,  respectively,  to derive transaction
+function  points
+* Complexity  and contribution  are determined  by dividing into data element  types (DET) and file transfer
+reference  types (FTR).
+© Determination  of Unadjusted  Function  Points
++ Unadjusted  function  points are the sum of data function  points and transaction  function  points.
+© Determination  of Value Adjustment  Factor
++ Total Degree of Influence  (TDI) is calculated  by determining  and summing  the values of 14 General System
+Characteristics  (GSCs)  weighted  on a scale from 0 to 5
++ The 14 GSCs are: Data communications,  Distributed  data processing,  Performance,  Heavily  used configuration,
+Transaction  rate, On-Line  data entry, End-user  efficiency,  On-Line  update, Complex  processing,  Reusability,
+Installation  ease, Operational  ease, Multiple  sites, Facilitate  change.
++ Value Adjustment  Factor  (VAF) = (TDI * 0.01) + 0.65
+Mé6 Project  Management  and Technical  Communication  107

@@ -1,0 +1,33 @@
+ESSENCE
+B) Framework  of IT governance
+Due to the alignment  of IT with the business  goals of a company,  in IT governance,  the value of IT contributes  to the
+attainment  of good business  performance  and results. Through  the management  of risks and core IT resources  for
+the efficient  operation  of IT, the roles and responsibilities  related to IT resources  are clearly defined. IT governance  is
+structured  to ensure reliability  and transparency.
+The following  figure shows the governance  framework  reference  model of COBIT 5 (Control Objects  for Information
+and Related  Technology  5). This framework  is widely known as the “IT governance  framework”.  In the reference  model,
+the governance  and management  processes  of a company  are kept separate.
+Business  needsre
+: Governance
+EvaluationJ Supervisor feedback \
+Instruction | Monitoring
+Planning(APO)  1»  Deployment(BA!)  ——»  Operations(DSS)  ——»  Monitoring(MEA)
+(link, plan,organize) (deploy, acquire,configure)  (relocate,  service,support) (monitor, evaluate,review)  i
+[Fig.17]  COBIT 5, a reference  model for IT governance
+@ Governance  area
+The governance  area consists  of 5 processes  (evaluation  (E), directive  (D), monitoring  (M), etc.), each of which comes
+with its own work procedures.
++ EDM 1. Establish  the measurement  standard  with the governance  framework.
++ EDM 2. Provide  profits.
++ EDM 3. Minimize  risks.
++ EDM 4. Optimize  risks.
++ EDM 5. Ensure the transparency  of stakeholders.
+@ Management  area
+The management  are consists  of 4 process phases:  planning  (APO), deployment  (BAI), operation  (DSS), monitoring
+(MEA)
++ Planning  (APO) phase: linking, planning
++ Deployment  (BAI) phase: deploying,  acquiring,  configuring
++ Operation  (DSS)phase:  transferring,  service,  support
++ Monitoring  (MEA)phase:  monitoring,  evaluations,  review
+The IT governance  framework  is linked to the international  standard  ISO/IEC 38500, which simultaneously  provides
+44 TOPCIT  ESSENCE

@@ -1,0 +1,32 @@
+Overview  of System Architecture )
++ Preview  for practical  business
+Gartner, which annually publishes strategic  technologies  for the year, began including  virtualization  in
+“Gartner's  Top Ten Strategic  Technologies’  in 2006 and added cloud computing  in 2009. AWS started its
+service in 2006, achieved  annual sales of 5 trillion won in 2014, and generated  tremendous  sales growth
+every year. Now, cloud services  are becoming  a necessity, not an option. Most of the technologies,  such as
+Al, big data, and blockchain,  which have recently  become  the subject  of conversation,  operate  based on
+cloud services  that basically  provide scalability  and speed. It is why most cloud service providers  provide
+platforms  for new technologies.  The server virtualization  is changing.  In the past, server virtualization
+was performed  using a hypervisor.  In recent  years, container-type  virtualization  has emerged.  It is quickly
+establishing  a position  in the cloud service market because  it is lighter and faster than the existing
+methods.  Typical  container  technologies  include Linux Containers  (LxC), Docker,  Kubernetes,  and Openshift.
+01 Definition  of Cloud Computing
+Cloud computing  was developed  to efficiently  utilize the surplus computer  capacity  of each server  and to flexibly
+respond  to the demand  of uncertain  services  at enterprises.  While users had to own and manage  resources  in order
+to use computer  resources  before the advent of cloud computing,  cloud computing  allows them to use computing
+resources,  provided  through  the Internet,  in a virtualized  form when they need them.
+The key to cloud computing  is that computer  resources  are available  through  the network  and are provided  in an
+invisible  state so that users can work anywhere  using the computer  resources  they need, even without  knowing  the
+complex  interior.  Around 2008, various  services  that utilize computing  resources  on the Internet  were launched,  and
+“cloud computing”  began to be used as a comprehensive  term. Users could access  desired  services  from the Internet
+without  requiring  expertise  in the technology  infrastructure  they support.
+The following  benefits  are expected  from cloud services.
+* Costs: CAPEX® reduction,  OPEX’ increase,  and TCO® reduction
++ Period: Reduced  development  time and product  development  cycle
+* Operation:  Reduced  operating  personnel  and strengthened  resource  efficiency
++ Product:  Improved  product  integration
+Although  the terms “cloud service”  and “cloud computing”  are generally  used interchangeably,  the Korea
+6 CAPEX (Capital  expenditure):  Expenditures  spent to generate  future profits
+7 OPEX: Operating  expenditure
+8 TCO (Total Cost of Ownership):  Total cost of owning  a system,  including  the initial investment  and maintenance  costs
+M3 Overview  of System  Architecture  129

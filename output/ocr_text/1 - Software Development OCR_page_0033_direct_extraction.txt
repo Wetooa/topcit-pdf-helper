@@ -1,0 +1,23 @@
+ESSENCE
++ Preview  for practical  business Establishing  a system for creating  a
+reuse culture
+Development  teams need to change their perception  and culture in order to incorporate  software
+reuse into the development  process.  To reuse software,  developers  are required  to change  their way
+of thinking,  and a new culture should be created  from the organization  and policy perspectives.  The
+following  should be performed  to fully establish  the system.
+- Composition  of the reuse management  organization:  The reuse management  organization  is
+needed to establish  the reuse-based  method of software  development.  This organization  should
+introduce  and establish  procedures  and standards  related  to reuse and enact and implement  a policy
+for increasing  reusability.
+- Training  on reuse: Training  on software  reuse should be conducted  on a regular basis to create an
+atmosphere  or culture conducive  to software  reuse within the organization.  The training  should be
+also provided  to project  managers  and organization  managers,  in addition  to developers.  In terms of
+content,  the training  for managers  should differ from that intended  for developers.
+- Introduction  of a reward system to increase  reusability:  Reuse may be perceived  with extreme
+discomfort  when first introduced. Therefore,  a method should be devised  to increase reusability  by
+policy. Introducing  an incentive  system  for reuse is the representative  method  in this regard.
+- Securing  reliability  for reused components:  To make developers  trust reused components,  the
+reliability  of the components  managed  in the reuse library should be sufficiently  guaranteed  and
+measures  to help them find suitable  components  should be prepared,  in addition  to the change of
+developer's  awareness.
+32 TOPCIT  ESSENCE

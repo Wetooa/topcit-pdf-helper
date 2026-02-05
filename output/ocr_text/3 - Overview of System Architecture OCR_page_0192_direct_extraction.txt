@@ -1,0 +1,37 @@
+Overview  of System Architecture )
+Full duplex  communication + Full duplex communication  to deliver  data to both directions  simultaneously
+Connection-oriented + SCTP is a connection-oriented  protocol  and is called association.
+Reliability + The reliable transmission  protocol uses acknowledgment  to confirm  the arrival of data.
+The number  systems  used by the SCTP include the transmission  sequence  number  (TSN), the stream identifier  (SI),
+and the stream sequence  number  (SSN). The data units in TCP are bytes, whereas  data chunks  are data units in
+SCTP. A transmission  sequence  number  (TSN) is used to number  data chunks. The SCTP's TSN plays a similar role
+to the TCP’s sequence  number. Moreover, since multiple streams  may exist per SCTP association,  a 16-bit stream
+identifier,  starting  from 0, is used to distinguish  them.
+The SSN is used to distinguish  data chunks  belonging  to the same stream.
+B) SCTP
+Since it is not feasible  to discuss  everything  about SCTP this section  briefly  describes  the SCTP transmission  service,
+as shown in the following  figure. SCTP functions  can be classified  into the following  eight types.
++ Association  start and end
++ Sequenced  delivery
++ User data fragmentation
++ Acknowledgment
++ Congestion  avoidance
++ Chunk bundling
++ Packet  validation
++ Path management
+@ Association  start and end
+An association  begins with an SCTP user's request.  When end-point  A sends an INIT chunk  to end-point  Z, in order to
+prevent  an SYN attack  (synchronization  attack), end-point  Z sends the INIT ACK chunk containing  cookie information.
+Upon receiving  it, end-point  A copies  the received  cookie and sends the COOKIE  ECHO chunk back to end-point  Z to
+inform that it has been properly  received,  and end-point  Z sends the COOKIE-ACK  chunk again, to complete  the four-
+way handshake.  Generating  a transmission  control block (TCB), which is the main system resource,  only when the
+normal COOKIE  ECHO chunk is received  at end-point  Z, solves the denial of service (DoS) problem  caused by an SYN
+attack, due to generating  a TCB as soon as the SYN segment  is received  during  the TCB connection  establishment.
+@ Sequenced  delivery
+In SCTP, a stream means a series of user messages.  The SCTP user can set the number  of streams  that can be
+supported  when setting the association,  and these streams  are identified  by the stream identifier  SI. Moreover,
+assigning  the SSN to the user message  in the stream, enables  the delivery of data chunks in normal order. Other
+streams  can be transmitted  even if one stream is blocked  to deliver  the next sequence  of user messages.
+© User data fragmentation
+As in TCP, user messages  are limited by a path maximum  transmission  unit (MTU) in SCTP, and a fragmentation
+M3 Overview  of System  Architecture  191

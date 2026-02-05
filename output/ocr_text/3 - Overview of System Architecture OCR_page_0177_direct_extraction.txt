@@ -1,0 +1,29 @@
+ESSENCE
+(Table 55) NAT Type [11]
+Type Description
+. - NAT that connects  to the Internet  with public IP addresses,  as many as the number  of terminals  with private IP
+Basic NATaddresses
+NAPT - NAT in which multiple  terminals  with private  IP addresses  connect  to the Internet,  with a public IP address  to
+save public IP addresses
+08 IPv6 Overview
+A) What is an IPv6 (Internet  Protocol  Version  6) address?
+IPv6 is the next-generation  Internet  protocol  with a 128-bit addressing  system developed  to solve the current IPv4
+problems,  such as address  depletion,  security,  and mobility  support.
+B) Background  of IPv6
+The rapidly increasing  hosts and terminals  connected  to networks  have led to problems  with the existing IPv4
+addressing  system, such as a shortage  of IP address  space and poor Internet  security.  The IPv6 protocol  [16] was
+developed  in the mid-90s  to solve the problems. Compared  to the existing  IPv4, the most notable feature of IPv6
+is the expansion  of the address  space, from 32 bits, to 128 bits, to enable the use of approximately  3.4 x 1032
+addresses,  thereby  fundamentally  solving the problem of address shortage.  Moreover,  it has simplified  the head
+format, by removing  header fields that IPv4 does not frequently  use and supports  effective  QoS services.  While
+IPv4 does not include security  functions,  it is necessary  to install a security  protocol  called IPsec (Internet  Protocol
+Security)  [17][18] separately.  IPv6 has added security  and personal  protection  functions, by providing  the end-to-end
+encryption  function  in order to solve these problems.
+09 IPv6 Addressing  System  and Header  Structure
+A) IPv6 addressing  system
+IPv6 addresses  are 128 bit long, four times that of IPv4, and expressed  in hexadecimal. It consists  of the format fix
+(PF)that  describes  the address  format and the address  field. A colon separates  each 16-bit field, and each field is
+expressed  in hexadecimal  to make it easier to read the long addresses.  The notation  of the IPv6 address network
+prefix is similar  to the CIDR notation  of IPv4. The IPv6 address  is followed  by '/", and the length of the network  prefix
+is written in decimal. <Table 56> below shows an example  of the IPv6 address  format  prefix.
+176 TOPCIT  ESSENCE

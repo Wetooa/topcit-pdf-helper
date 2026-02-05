@@ -1,0 +1,178 @@
+LEARNING GUIDE: Pages 43-47
+Generated: 2025-12-05 13:55:40
+PDF: 5 - Understanding the IT Business and Ethics OCR
+
+================================================================================
+LEARNING GUIDE
+================================================================================
+
+Here is a simplified, easy-to-read learning guide based on the provided text:
+
+---
+
+## Learning Guide: IT Business Planning & Governance
+
+This guide summarizes essential concepts related to IT Business Planning, focusing on Enterprise Architecture (EA), Information Strategic Planning (ISP), and IT Governance.
+
+---
+
+### 1. IT Business Planning Overview
+
+*   **Starting Point:** IT business activities begin with establishing a **strategy**, followed by **planning**.
+*   **Main Planning Activities:**
+    *   **Enterprise Architecture (EA):** A blueprint for the entire enterprise's IT business.
+    *   **Information Strategic Planning (ISP):** A plan for developing informatization strategies at the division level.
+*   **Purpose of EA & ISP:** To plan from a macro perspective, preventing **indiscriminate** (unplanned) and **overlapping** IT development activities.
+*   **IT Governance's Role:** Provides control over EA and ISP implementation, links IT business strategy with IT values, and manages risk, resources, and performance.
+*   **Output Utilization:** These plans are used for IT business deployment, process/service operation, and performance evaluation.
+
+---
+
+### 2. IT Governance
+
+#### 2.1. Concept & Purpose
+
+*   **Definition:** A system for controlling and managing a company's IT, similar to corporate governance.
+*   **Aim:**
+    *   Align IT resources with company goals and strategies to achieve business targets.
+    *   Define roles and responsibilities within the organization.
+    *   Establish a control and management structure for IT performance and risks.
+*   **Key Idea:** Ensures IT is used properly and contributes effectively to business objectives.
+
+#### 2.2. Framework (COBIT 5)
+
+**COBIT 5 (Control Objects for Information and Related Technology 5)** is a widely recognized IT governance framework. It separates governance and management processes.
+
+*   **Governance Area (5 Processes):** Focuses on evaluating, directing, and monitoring IT.
+    *   **EDM 1:** Establish the governance framework and measurement standards.
+    *   **EDM 2:** Provide profits (value).
+    *   **EDM 3:** Minimize IT-related risks.
+    *   **EDM 4:** Optimize IT resource usage and risks.
+    *   **EDM 5:** Ensure transparency for stakeholders.
+*   **Management Area (4 Phases):** Focuses on building, running, and monitoring IT activities.
+    *   **APO (Align, Plan, Organize):** Planning phase (linking, planning).
+    *   **BAI (Build, Acquire, Implement):** Deployment phase (deploying, acquiring, configuring).
+    *   **DSS (Deliver, Service, Support):** Operation phase (transferring, servicing, supporting).
+    *   **MEA (Monitor, Evaluate, Assess):** Monitoring phase (monitoring, evaluating, reviewing).
+*   **Standards Link:** The IT governance framework is linked to the international standard **ISO/IEC 38500**, which provides principles for evaluating, directing, and monitoring IT use.
+
+#### 2.3. IT Governance Process
+
+The IT governance process follows a four-stage cycle:
+
+1.  **Planning Stage:**
+    *   Links business goals with IT.
+    *   Sets IT goals and establishes structures for organizing IT activities.
+    *   Defines rules for resource use, risk management, governance structure, and performance measurement.
+2.  **Operations Stage:**
+    *   Monitors IT resources, IT risks, and overall IT management.
+    *   Measures IT performance against set target levels.
+3.  **Evaluation Stage:**
+    *   Evaluates the **IT value** (earnings and costs) from future business opportunities delivered by IT.
+    *   IT value includes strategic, economic, risk management, technical, social, and quality benefits.
+    *   Calculated by subtracting business and potential risk costs from business opportunities.
+4.  **Feedback Stage:**
+    *   Based on evaluation results, corrective measures are taken to improve IT governance activities and processes.
+
+#### 2.4. Key Focus Areas of IT Governance
+
+These five areas align with a company's strategies:
+
+1.  **Strategic Alignment:** Ensures IT governance supports strategic decisions and aligns with company strategy (e.g., through **EA**).
+2.  **IT Value Delivery:** Optimizes IT integration with business processes to achieve IT business goals (e.g., **Backbone systems**, **IT Compliance**).
+3.  **Risk Management:** Manages risk factors to ensure continuity of IT business (e.g., **DRS** - Disaster Recovery System, **BCP** - Business Continuity Plan).
+4.  **Resource Management:** Organizes and manages IT resources to promptly respond to business requirements (e.g., **ITAM** - IT Asset Management).
+5.  **Performance Measurement:** Establishes an IT-centered system to evaluate the performance of IT business activities (e.g., **BSC** - Balanced Scorecard, **IT ROI** - Return on Investment).
+
+---
+
+### 3. Enterprise Architecture (EA)
+
+#### 3.1. Definition
+
+*   **EA (Enterprise Architecture):** A comprehensive blueprint that clearly defines an enterprise's IT business.
+*   **Purpose:**
+    *   Make IT business understandable for stakeholders.
+    *   Help the enterprise achieve its strategic goals and information resource management objectives.
+*   **US OMB Definition:** "A blueprint that defines the current state of the relationship between information technology and an enterprise (as well as the activities carried out by the enterprise) and the state that the enterprise must strive for in the future."
+
+#### 3.2. Need for EA
+
+*   **Problem:** Without proper macro-level planning for IT systems, enterprises face:
+    *   **Redundant systems:** Multiple systems performing similar functions.
+    *   **Inability to collaborate:** Systems and departments cannot work together effectively.
+*   **Consequence:** Falling into the **"IT Productivity Paradox"** – continuous adoption of IT systems without seeing actual benefits like increased corporate profits.
+*   **Solution:** EA provides the necessary planning to avoid these issues, ensuring IT investments deliver tangible value and support strategic objectives.
+
+---
+
+================================================================================
+ORIGINAL TEXT (First 5000 chars)
+================================================================================
+
+--- Page 43 ---
+ESSENCE
++ Preview  for practical  business
+Company  ‘A’ is a company  whose main focus is its financial  business.  As the company’s  capabilities  grew,
+so did its size, leading  each department  and team to begin installing  its own small systems  here and there.
+This in turn led to overlapping  developments  and other difficulties  associated  with development.  Compared
+to the allocated  budget,  the level of informatization  attained  was disappointingly  low.
+Thus, company  ‘A’ decided  to adopt an EA after recognizing  the need to establish  a plan-based
+informatization  strategy  aimed at preventing  or eliminating  development  efforts that could overlap  or be
+carried out indiscriminately.  It conducted  inspections  of and reengineered  its current business processes,
+and established  mid-to-long-term  plans for the job responsibilities  each of its stakeholders,  as well as its
+applications,  data, and technologies.
+Furthermore,  the company  established  information  strategy  planning  in order to develop  informatization
+strategies  at the division level. When establishing  the ISP, the company  devised  a plan that used the
+current information  of the EA to prevent  any overlapping  of development  activities  and indiscriminate
+development.  The adoption  of ISP made it possible  for the company  to derive the detailed  requirements  of
+each individual  system and to set up a system for the efficient  calculation  and verification  of the business
+scope, schedules,  and budgets.
+42 TOPCIT  ESSENCE
+
+
+--- Page 44 ---
+Understanding  the IT Business  and Ethics )
+01 Summary  of Lessons  Learned
+IT business  must begin with the establishment  of a strategy before moving on to planning.  The two main activities
+performed  during the IT business  planning  stage are the enterprise  architecture  (EA) and information  strategic
+planning  (ISP). This is one of the ways of planning  from the macro perspective  and serves to prevent  indiscriminate  and
+overlapping  development  activities  when a company  is pursuing  an IT business.
+IT governance  provides  control over the implementation  of the EA and ISP and secures the linkage of the IT business
+strategy  with IT values. It also provides  risk management,  resource  management,  and performance  measurement
+systems.
+The section on IT governance  describes  the concepts  and frameworks  of IT governance  and introduces  the areas of
+focus of IT governance.  The EA section describes  the concepts  and components  of the EA and introduces  the EA
+framework.  The ISP section introduces  the concept  of ISP and explains  the ISP deployment  procedure  as well as the
+main outputs  of ISP deployment.
+These plans - generated  during the IT business  planning  stage -  are first created  for the deployment  of IT business  and
+then for the operation  of IT business  processes  and services,  eventually  leading to their utilization  in evaluations  of IT
+business  performance.
+02 IT Governance
+A) Concept  of IT governance
+The aim of IT governance  is to implant  a system for controlling  and managing  a company’s  IT to the same degree
+as corporate  governance.  In other words, IT governance  can contribute  to realizing  business  targets by aligning IT
+resources  with a company’s  goals and strategies.  By defining  the roles and responsibilities  within an organization,  IT
+governance  creates a control and management  structure  for handling  the performance  results and risks of IT. The
+table below gives some concrete  descriptions  of IT.
+<Table5>Definitions  of IT governance
+Category Definition
+As part of the corporate  governance  undertaken  by the top management  and BOD of a given
+Definition  by company,  IT governance  encompasses  the right leadership,  organizational  structure  and processes
+IT Governance oe : : . :Institute that could enable that company  to maintain  and expand its business  strategies  and objectives
+through  IT.
+Definition  by IT governance  is the activity  of establishing  a decision-making  authority  and responsibilities  so that
+Gartner IT canbe used in the proper way.
+Definition  by Entrue | IT governance  is a system that controls  and manages  IT-related  resources  and processes  so that
+Consulting  Partners  | they are aligned  with an organization's  strategies  and goals.
+M5 Understanding  the IT Business  and Ethics 43
+
+
+--- Page 45 ---
+ESSENCE
+B) Framework  of IT governance
+Due to the alignment  of IT with the business  goals of a company,  in IT governance,  the value of IT contributes  to the
+attainment  of good business  performance  and results. Through  the management  of risks and core IT resources  for
+the efficient  operation  of IT, the roles and responsibilities  related to IT resources  are clearly defined. IT governance  is
+structured  to ensure reliability  and transparency.
+The following  figure shows the governance  framework  reference  model of COBIT 5 (Control Objects  fo...

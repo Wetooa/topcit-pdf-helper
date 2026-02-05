@@ -1,0 +1,214 @@
+LEARNING GUIDE: Pages 70-74
+Generated: 2025-12-07 00:45:29
+PDF: 6 - Project Management & Technical Communication OCR
+
+================================================================================
+LEARNING GUIDE
+================================================================================
+
+Here is a simplified, easy-to-read learning guide based on the provided text:
+
+---
+
+## Project Management & Technical Communication Learning Guide
+
+This guide covers core concepts in project management, organizational structures, and key roles.
+
+---
+
+### **1. Core Project Management Terms**
+
+Understanding the hierarchy and relationship between projects, programs, and portfolios is crucial.
+
+*   **Project:**
+    *   A temporary activity with a specific beginning and end.
+    *   Unique, offering a distinct service or product.
+    *   Involves **progressive elaboration**: refining the product/service definition from general to specific over time.
+    *   Subject to **constraints**: most commonly scope, cost, and schedule.
+    *   Aims to provide quality through resources to customers and stakeholders.
+    *   **Manager:** Project Manager (PM) handles modifications.
+
+*   **Program:**
+    *   A set of **interrelated projects** managed together.
+    *   **Goal:** Achieve a common objective by integrating multiple projects and managing their correlations effectively.
+    *   Has a greater scope and more significant interests than a single project.
+    *   **Manager:** Program Manager, manages changes both internal and external to the program.
+
+*   **Portfolio:**
+    *   A collection of **programs and projects** undertaken to achieve an organization's **strategic goals**.
+    *   Managed from a strategic perspective, including prioritizing programs/projects and allocating resources.
+    *   **Manager:** Portfolio Manager, continuously monitors the internal and external environment.
+
+---
+
+### **2. Project Organizational Structures & Roles**
+
+Organizational structures dictate how projects are managed and how authority is distributed.
+
+#### **A) Project Organizational Structures**
+
+1.  **Functional Organization:**
+    *   **Structure:** Traditional, divided by task/function (e.g., HR, Marketing, Engineering).
+    *   **Project Execution:** Projects are conducted independently within functional groups.
+    *   **Project Manager Role:** No separate PM; functional manager takes responsibility. If a PM exists, they act as a **facilitator** with minimal to no decision-making authority.
+    *   **Authority Level:** Minimum to none.
+    *   **Time Horizon:** Part-time.
+
+2.  **Projectized Organization:**
+    *   **Structure:** Project-focused. Teams often share physical space.
+    *   **Project Manager Role:** PM has **total authority** and decision-making responsibility for the project.
+    *   **Authority Level:** Total authority.
+    *   **Time Horizon:** Full-time.
+    *   **Role:** Manager.
+
+3.  **Matrix Organization:**
+    *   A hybrid combining elements of functional and projectized structures.
+    *   **Weak Matrix:**
+        *   **Similar to:** Functional organization.
+        *   **PM Role:** Facilitator, with close to no authority.
+        *   **Time Horizon:** Part-time.
+    *   **Balanced Matrix:**
+        *   **PM Role:** Coordinator. Functional members may act as PMs. Has partial decision-making authority.
+        *   **Authority Level:** Minimum to medium.
+        *   **Time Horizon:** Full-time.
+    *   **Strong Matrix:**
+        *   **Similar to:** Projectized organization.
+        *   **PM Role:** Dedicated PM with significant decision-making responsibility and authority, focusing on project management.
+        *   **Authority Level:** Medium to strong.
+        *   **Time Horizon:** Full-time.
+        *   **Role:** Manager.
+
+#### **B) Responsibilities & Roles of a Project Manager (PM)**
+
+The PM is responsible for the entire scope and schedule of a project, overseeing progress, communicating updates, and resolving issues/risks from start to finish.
+
+**PM Competencies:**
+
+1.  **Project Management Knowledge Competency:**
+    *   Knowledge of project management processes, tools, templates.
+    *   Ability to track project progress.
+    *   Understanding of scope, schedule, cost, quality, resources, communication, risk, procurement, integration, change, and contract management.
+    *   Problem-solving skills.
+    *   Experience in job and project management.
+
+2.  **Technical Competency:**
+    *   Understanding of practical work and processes related to the project.
+    *   Comprehensive knowledge of information technology, industry trends, and products/systems.
+
+3.  **Communication Competency:**
+    *   Negotiating skills (with stakeholders, approvers, senior authority).
+    *   Leadership skills to effectively lead the team and communicate with team members, stakeholders, and customers.
+    *   Effective human resource management.
+
+---
+
+### **3. Project Management Office (PMO)**
+
+The PMO is an organizational entity dedicated to improving project management performance.
+
+*   **Purpose:** To enable effective, enterprise-wide project management.
+*   **Role:** Oversees projects, mediates issues, provides consulting, and complements the client's expertise.
+*   **Necessity:** Especially important for complex, intangible projects (e.g., informatization projects) that require high credibility, thorough planning, quantitative process management, regular communication, and quality assurance.
+
+#### **PMO Classification:**
+
+PMO can be classified by Type, Role & Responsibility (R&R), Time Horizon, and Skill.
+
+**A) Classification by PMO Type:**
+*   **Internal:** Composed of internal project managers.
+*   **External:** Composed of external project managers.
+*   **Combined:** A mix of internal and external project managers.
+
+**B) Classification by PMO Role & Responsibility (R&R) Models:**
+These models define the level of influence and responsibility the PMO has.
+
+1.  **Weather Station Model:**
+    *   Operated by a small number of professionals.
+    *   **Role:** Acts as a **facilitator**. Primarily secures and provides progress information, distributes project management knowledge, and develops/disseminates methodology.
+
+2.  **Coach Model:**
+    *   An extended concept of the Weather Station model.
+    *   **Role:** Provides guidance on processes. Distributes common methodologies/tools, fosters communication within project teams, monitors project performance, and supplies PM experts.
+
+3.  **Control Tower Model:**
+    *   **Role:** High influence and responsibility. Deeply involved in all projects and decision-making. Applies consistent methodologies, centralizes management, and coordinates/determines resources for projects.
+
+---
+
+================================================================================
+ORIGINAL TEXT (First 5000 chars)
+================================================================================
+
+--- Page 70 ---
+Project Management  and Technical  Communication  )
+Similar  terms to the project include program  and portfolio.  A program  is a set of interrelated  projects.  It aims
+to integrate  multiple  projects  into a single program  in order to achieve  a common  goal in consideration  of cor-
+relations  between  projects,  and to manage  individual  projects  in an effective  manner.
+A portfolio is a set of programs  and projects  undertaken  to achieve an organization's  strategic  goals. Portfolio
+management  is carried out from the strategic  perspective  of the organization,  including  prioritizing  programs
+and projects  and providing  appropriate  resources,
+Top portfolio
+(Multiple  management  of
+enterprise-wide  project)
+[Figure  18] Relationship  between  project,  program,  and portfolio
+These terms have the following  commonalities  and differences,  depending  on the size, relevance,  and the
+profits of the project in the business  organization.  The comparison  of project, program,  and portfolio is as fol-
+lows.
+<Table 30> Comparison  of project,  program,  and portfolio
+Type Project Program Portfolio
+; . oe A project  group that has a A set of projects  and programs
+Gann ne greater scope and relatively  more with strategic  organizational
+P fee  cle 8 Pro} significant  interests  than the objectives  and organizational
+y project scope
+Project  managers  moor Program managers  manage all Portfolio managers  continuously
+Modification modification  ron ement changes  in- and outside  the monitor  and control  the internal
+process ei program and external environment
+B) Features  of Project
++ Temporary:  A temporary  activity  that has a specific  beginning  and end.
++ Uniqueness:  Every project  is unique, offering  a unique service  to the customer.
++ Progressive  elaboration:  An activity  to specify  the product  or service to be created from constructing  the
+general  meaning  at the beginning
+* Constraint  of scope, cost and time: The most comment  constraints  are scope, cost, and schedule.
++ Resource  and quality:  A service  that provides  quality  through  resources  to customers  and stakeholders.
+Mé6 Project  Management  and Technical  Communication  69
+
+
+--- Page 71 ---
+ESSENCE
+C) Examples  of practical  project
+In business,  projects  are being planned  or undertaken  even today by countless  organizations  with a wide vari-
+ety of goals and objectives.  | would like to briefly examine  the purpose  of projects  in practice,  taking examples
+of several projects  that are being actively  carried out these days.
+<Table 31> Examples  of Practical  Project®
+Type E-government  project Smart factory  project Next Generation  Finance  Project
+. : A project  to establish  factory :A project  to establish automation  and digitalization A project  to construct  an ideal
+public informatization  using by using IT systems  such as integrated  system  of business
+Purpose a framework  for efficient and IT to effectively reflect
+- : loT, MES, PLM, and SCM to aDe OWS | improve the competitiveness  of | Statues of nari nstttionsp manufacturers 8
+A total of 756 public and privateoe : ; The system  has already  been
+Informatization  projects,  including Built 5,003 smart factories as of built or under construction
+Application Service{KOSIS)  and Corporate the end of 2017 with the goal of among most commercial  banks
+: é -Competitiveness  Support  System reaching  20,000  by 2022 aaron banks in Korea since
+(as of March 2018)°
++ Customer-specific + Build customized  MES system + Next-generation  systems  of
+administrative  information + MES/POP  for inventory,  process such as Shinhan  Bank, Hana
+sharing  system management,  and defect rate Bank, Daegu Bank, JB Jeonbuk
+Practical + Resident  service integrated reduction Bank, and Kyungnam  Bank
+Example system + Customized  ERP/web + To be developed  by KB
++ Urban railway system
++911 reporting  service  expansion
++ Health insurance  fee portalcontrol system  for special
+manufacturing  process
++ Real-time  facility monitoringKookmin  Bank, Bank of Korea,
+Korea Postbank,  Hanwha  Life
+Insurance,  etc.
+Numerous  projects  are planned or conducted  with their own goals and objectives.  This is a natural response  of
+organizations  or companies  to survive in the business  ecosystem  as the existing  business  environment,  customers,
+and markets  change  from moment  to moment.
+02 Project  Organizational  Structures  and Roles
+A) Project  organizational  structures
+Organizational  structures  related to project  execution  can be divided into functional  organization,  matrix orga-
+nization,  and project-oriented  organization.
++ Functional  Organization:  It is a conventional  corporate  structure  in which an organization  is divided into
+smaller  groups based on each task or function,  and the project of a group is conducted  independently  from
+other groups. In a functional  organization,  there is no separate  project manager,  but the manager...

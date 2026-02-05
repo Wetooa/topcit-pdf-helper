@@ -1,0 +1,37 @@
+Information  security )
++ Application  of secure coding
+Secure coding should be applied to prevent security  vulnerabilities  that may exist from the source code
+implementation  phase, regardless  of the loT device. Software  developed  in Java and C/C++ should utilize
+secure coding  guides prepared  in advance.  Languages  without  a guide must verify the security  quality  of the
+source code, based on international  standards,  and must use a separate  analysis  tool and methodology.
++ Verifying  software  security
+When using various software  to improve  the productivity  and quality of products  and services  during loT
+product  and service development,  security  measures  against  the presently  known security vulnerabilities
+should be verified, and security  patches  must be applied. The guideline  procedure should be performed  to
+verify the countermeasures  against known security  vulnerabilities,  and the known vulnerabilities  should be
+searched  and responded  to using reference  sites.
++ Using secure hardware  devices
+loT devices require various levels of security  strength,  depending  on the type of application  service. loT
+devices have various hardware  security  vulnerabilities,  such as the side channel attack, firmware  code
+extraction,  and key value extraction,  because  those devices are mainly installed  in the environment  that can
+easily be exposed  to attackers.  For this reason, various hardware  security  techniques,  such as firmware/code
+encryption,  execution  code domain control, and reverse engineering  prevention  techniques,  should be used
+to strengthen  hardware  security.  It is necessary  to appropriately  apply these techniques according  to the
+application  environment  of the loT device.
++ Converging  software  security  technology  and hardware  security  technology
+When converging  software  security  technology  and hardware  security  technology,  confidentiality  and
+integrity  functions  should be provided  for the transmitted  data, by establishing  a safe secure channel
+between  software  security  technology,  and hardware  security  technology,  based on a trusted approach  (one-
+way and two-way  authentication).
+@® Security  by system component  to provide loT services
++ loT network
+Security  requirements  that are suitable  for the communication/network  access protocol,  mainly used by the
+loT service, should be applied.
++ Dedicated  loT protocol
+Security  vulnerabilities  need to be eliminated  when linking between  protocols.  The security  requirement  for
+the data transmission  protocol  that is standardized  by the loT standard  organization,  should be applied.
++ loT platform
+The loT platform  security  requirements,  defined  by the proven standard  organization,  should be applied.
++ Service  model
+Various security  requirements  and legal/regulatory  matters,  related to security,  should be applied for
+M4 Understanding  Information  Security 57

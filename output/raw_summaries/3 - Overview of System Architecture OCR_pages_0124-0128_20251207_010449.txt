@@ -1,0 +1,205 @@
+LEARNING GUIDE: Pages 124-128
+Generated: 2025-12-07 01:04:49
+PDF: 3 - Overview of System Architecture OCR
+
+================================================================================
+LEARNING GUIDE
+================================================================================
+
+Here's a simplified, easy-to-read learning guide based on the provided text:
+
+---
+
+# System Architecture: Availability & Recovery Learning Guide
+
+This guide covers essential concepts for ensuring continuous operation of information systems, including High Availability (HA), Fault Tolerance, and Disaster Recovery (DR).
+
+## 1. Overview of System Availability & Recovery
+
+Information systems are crucial for business, both supporting and creating it. Failures can have massive impacts. To ensure safe and continuous service, systems need:
+
+*   **High Availability (HA) Configuration:** Redundancy within a single operational environment.
+*   **Disaster Recovery (DR) Center:** A separate, spare system located remotely to handle major disasters (e.g., earthquakes, fires).
+
+**Key Metrics for Recovery:**
+
+*   **Recovery Time Objective (RTO):** The maximum tolerable time to recover and restore normal service after a failure or disaster.
+*   **Recovery Point Objective (RPO):** The maximum tolerable level of data loss (or amount of data loss converted to time) that can occur during a failure or disaster.
+
+DR centers are classified (mirror, hot, warm, cold sites) based on their RPO and RTO capabilities.
+
+## 2. High Availability (HA)
+
+**A) Concept of HA**
+
+HA refers to **uninterrupted service** in information systems. Since 100% availability is nearly impossible, the goal is to *prepare for failure* rather than prevent it. This is typically achieved by configuring two or more systems using **clustering**.
+
+*   **HA Criterion:** Often targets **99.999% (5 nines)** availability, meaning less than 5 minutes and 15 seconds of unplanned downtime per year.
+
+**B) Availability Calculation**
+
+Availability (A) is calculated using:
+
+*   **MTBF (Mean Time Between Failures):** Average time a system operates correctly before failing.
+*   **MTTR (Mean Time To Repair):** Average time taken to restore a system after a failure.
+
+**Formula:** A = MTBF / (MTBF + MTTR)
+
+**C) HA Configuration Types**
+
+1.  **Hot Standby (Active-Standby)**
+    *   **Structure:** Simplest HA clustering. One server is **active** (processing tasks), and one is **standby** (powered on, OS running, waiting).
+    *   **Operation:** If the active server fails (hardware, network, process), the failure is detected (e.g., by a heartbeat network). All HA service operations are **automatically switched** to the standby server via a **fail-over** operation.
+    *   *Note:* The standby server might sometimes be used for development.
+
+2.  **Mutual Takeover (Active-Active)**
+    *   **Structure:** Two or more systems are *each* actively operating with separate services.
+    *   **Operation:** If one server fails, its services are **switched (taken over)** by a designated operating server.
+    *   **Requirement:** Each remaining server must have **sufficient system capacity** to handle its own services plus the services from the failed server during a fail-over.
+
+3.  **Concurrent Access**
+    *   **Structure:** Multiple servers process tasks **in parallel**, all operating in an **active state**.
+    *   **Operation:** Service continuity is guaranteed *without* a fail-over even if a server fails, as other active servers continue processing.
+    *   **Method:** Uses an **L4 switch** for load balancing, distributing the same task across multiple servers.
+
+## 3. Fault-Tolerant Systems
+
+**A) Concept of Fault Tolerance**
+
+A **fault-tolerant system** can continuously perform its designed functions even if some of its parts fail.
+*   It cannot use certain functions when a component fails.
+*   As more components fail, unavailable functions increase, eventually leading to system shutdown if a critical failure occurs.
+
+**B) Troubleshooting Steps**
+
+1.  **Fault Detection:** Analyze which module caused the fault using comparative logic.
+2.  **Fault Diagnosis:** Determine if the fault is temporary (transient) or permanent (hard). Exclude hard modules from operation.
+3.  **Fault Isolation:** Block the spread of errors caused by the fault.
+4.  **Fault Recovery:** Eliminate the faulty module, then recover and reconfigure the system.
+
+**C) Fault-Tolerant Techniques**
+
+*   **General Fault-Tolerant Techniques:**
+    *   **Checkpoint Technique:** Error detection for source code that might cause faults.
+    *   **Protocol Monitoring:** Applying fault tolerance through protocol monitoring and tracking.
+
+*   **Hardware Tolerant Techniques:**
+    *   **Triple Modular Redundancy (TMR):** Configures modules in triplicate (3+ processors) to perform the same operation for the same inputs; results are compared, and the majority wins.
+    *   **RAID:** Provides fault tolerance through disk mirroring and distributed storage of parity bits.
+    *   **Duplication with Comparison:** Uses hardware redundancy for fault detection by comparing results from duplicate hardware.
+    *   **Standby Sparing:** Utilizes spare hardware for fault detection.
+    *   **Watchdog Timer:** Initializes system with periodic timer operation; if the timer isn't reset, it indicates a fault.
+
+*   **Software Tolerant Techniques:**
+    *   **Checkpointer:** Reruns the process from a defined checkpoint if a fault occurs.
+    *   **Recover Block:** Rolls back and retries an operation for a single processor.
+    *   **Conversation Processing:** A technique for fault tolerance between multiple processors.
+    *   **Distributed Rollback:** A rollback technique used in distributed computing environments.
+
+## 4. Disaster Recovery System (DRS)
+
+**A) Definition of DRS**
+
+A **Disaster Recovery System (DRS)** is a comprehensive plan and system to minimize the impact of a disaster on a business. It involves locating all or part of the information system infrastructure in a different, remote location to enable quick recovery after a disaster.
+
+**B) DR Center Types (Based on RPO & RTO)**
+
+| Type             | Description                                                                                                                                                                                                 | RTO             |
+| :--------------- | :---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | :-------------- |
+| **Mirrored Site** | Identical facility, IT devices, and network resources as the main center, located remotely. Operates in real-time, simultaneous (active-active) mode.                                                           | **Immediate**   |
+| **Hot Site**     | Identical facility, IT devices, and network resources as the main center, located remotely. Maintained in a standby (active-standby) state. Data is kept up-to-date via synchronous or asynchronous mirroring. | **Within 4 hours** |
+| **Warm Site**    | Only crucial IT resources are present at the DR center. Critical components are transferred from the main center to the DR center for operation when a disaster occurs.                                       | **Days-Weeks**  |
+| **Cold Site**    | Only data is kept in the remote location; minimal IT resources (e.g., power, communication, network) are available. IT components are procured and the network established only *after* a disaster occurs.     | **Weeks-Months** |
+
+**C) Disaster Recovery Goals (RTO & RPO)**
+
+When implementing a DR system, RTO and RPO are the most important factors:
+
+*   **RTO (Recovery Time Objective):**
+    *   Maximum time allowed for downtime.
+    *   The time required to return to normal operation after a disaster or failure.
+*   **RPO (Recovery Point Objective):**
+    *   Indicator of tolerable data loss.
+    *   The amount of data (or data loss converted into time) that can be lost from the moment of disaster to the last recovered point.
+
+---
+
+================================================================================
+ORIGINAL TEXT (First 5000 chars)
+================================================================================
+
+--- Page 124 ---
+Overview  of System Architecture )
++ Preview  for practical  business Information  system  failure at Bank  A lasting
+until late in the afternoon.
+“Blocked  wagesfer’,  The Hankyore.
+Information  systems  have the role of not only supporting  business,  but also creating  business.  A failed bank
+information  system can have an enormous  impact. A fire at OO Card's IDC center in 2014 is a similar  case.
+Enterprises  must improve  the availability of information  system services,  through a high availability  (HA)
+configuration  or disaster  recovery  (DR) center in order to ensure that their information  system safely and
+continuously provides  service. Most major information  systems  are basically  configured  with redundancy.
+An important  banking  system has a spare system, in addition  to redundancy,  to ensure that the reserve
+system can continue  to provide information  services  at the time of disasters,  such as an earthquake  or
+a fire. The DR center is a place that provides  such a spare system.  DR centers are configured  in different
+ways, depending  on the importance  of the information  system.  When  a failure or disaster  occurs, the time
+required  to recover  in order to provide normal service is called the recovery  time objective  (RTO). Moreover,
+the tolerable  level of data loss in a failure or disaster  is called a recovery  point objective  (RPO). The DR
+center is classified  into a mirror, hot, warm, or cold site, based on RPO and RTO. This section describes
+techniques  for providing  service  continuity  of information  systems.
+01 High Availability  (HA)
+A) Concept  of HA
+In information  systems,  HA refers to an uninterrupted  service. However,  it is not easy to make a system,that  consists
+of numerous  parts and software,  100% available.  There must be no failure, or services  must be available  to users in a
+usable state, even at the time of failure, in order to guarantee  uninterrupted  availability.  In general,  the system  fails at
+some point. Therefore,  the way to guarantee  service  continuity  is to prepare  for failure, rather than preventing  failure.
+HA prepares  for failure by configuring  two or more systems  using clustering.
+A typical HA criterion  targets  99.999%  (called 5 nines), representing  less than 5 minutes  and 15 seconds  of unplanned
+service downtime  per year. The scale of the HA level is expressed by the number  of nine, and the  formula for
+calculating  the availability  is the mean time between  failures  (MTBF),  divided by the sum of the MTBF and the mean
+time to repair (MTTR).
+M3 Overview  of System  Architecture  123
+
+
+--- Page 125 ---
+ESSENCE
++ A= Availability
++ MTBF: Mean Time between  System  Failures
++ MTTR: Time to RestoreA=__MIBF
+[Figure  89] Availability  Calculation  Formula
+MTBF
+Failure | Normal Equipment  Actuation  and Operation I Next Failure
+MTTR MTTF
+[Figure  90] Availability  Indicators
+B) HA configuration  type
+@ Hot standby  (Active-standby)
+Hot standby  is the simplest  structure  of HA clustering  implementation.  It consists  of an active server and a standby
+server  that are normally  in a standby  state. The standby  server is powered  on, and the operating  system is running.
+In some cases, a standby  server is used as a development  system.  If the active server  fails, due to hardware,  network,
+or process  problem,  the failure is detected  by the heartbeat  network,  and all HA service  operations  are automatically
+switched  to the standby  server, through  a fail-over  operation.
+[Figure  91] Hot Standby  Configuration
+124 TOPCIT  ESSENCE
+
+
+--- Page 126 ---
+Overview  of System Architecture )
+@ Mutual  takeover  (Active-active)
+The mutual takeover  is the case of two or more systems  operating  with separate  servers. When  a server fails, its
+services  are switched  to the designated  server (takeover)  to continue  the services.  Each server must have sufficient
+system  capacity  in order to provide  services  for the two servers,  in preparation  for a fail-over  at the time of a failure.
+[Figure  92] Mutual Takeover  Configuration
+@® Concurrent  access
+It is a structure  in which multiple  systems  process  tasks in parallel in order to provide  availability.  All servers  operate
+in an active state. Even if a server  fails, the service  continuity  can be guaranteed  without  a fail-over.  In this structure,
+two or more servers  perform  load balancing,  using an L4 switch to perform  the same task.
+M3 Overview  of System  Architecture  125
+
+
+--- Page 127 ---
+ESSENCE
+02 Fault-Tolerant  System
+A) Fault-tolerant  system
+A fault-tolerant  system can continuously  perform  the functions  specified in the design, even if a system part fails. A
+fault-tolerant  system cannot use certain functions  when a component  fails. When components  continue  to fail, the
+unavailable  functions  gradually  increase,  and the system  shuts down when a critical  failure occurs.
+[Table 23] Troubleshooting  Steps...

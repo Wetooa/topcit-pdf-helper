@@ -1,0 +1,234 @@
+LEARNING GUIDE: Pages 103-107
+Generated: 2025-12-07 01:03:01
+PDF: 3 - Overview of System Architecture OCR
+
+================================================================================
+LEARNING GUIDE
+================================================================================
+
+Here's a simplified learning guide based on the provided text, designed for easy study:
+
+---
+
+# Embedded Systems Learning Guide
+
+## 1. Embedded System Development Procedure
+
+Developing an embedded system typically follows these stages:
+
+1.  **Product Planning**
+    *   **Tasks:** Determine commercial feasibility, define rough product specifications (price, technology, marketing, timing).
+    *   **Output:** Product specification chart.
+
+2.  **Hardware & OS Selection**
+    *   **Hardware Team:** Selects CPU, memory, peripherals to meet requirements at the lowest cost.
+    *   **Software Team:** Selects the appropriate OS based on product characteristics and needs.
+
+3.  **Hardware Circuit Diagram & Software Structure Design**
+    *   **Hardware Team:** Generates the circuit diagram.
+    *   **Software Team:** Designs module-to-module interfaces and identifies required libraries.
+    *   **Output:** Hardware circuit diagram.
+
+4.  **Code Design & Artwork Generation**
+    *   **Hardware Team:** Performs "artwork," which involves generating data to physically connect parts on the circuit board (e.g., part size, connector shape, location, wiring).
+    *   **Software Team:** Designs the code for each module, considering the defined interfaces.
+    *   **Output:** Codes, artwork results.
+
+5.  **PWB Manufacturing & Module Integration**
+    *   **Hardware Team:** Manufactures the Printed Wiring Board (PWB) using the artwork data.
+        *   *PWB:* A circuit board created by drawing circuits on a base material (e.g., copper disk) using artwork data.
+    *   **Software Team:** Integrates software modules (e.g., bootloader, OS kernel, applications).
+    *   **Output:** PWB.
+
+6.  **Part Mounting & Hardware Testing**
+    *   **Hardware Team:** Mounts physical parts (CPU, memory) onto the PWB.
+    *   **Software Team:** Tests the actual hardware with a specific test program to ensure normal operation of parts, CPU ports, memory, and I/O devices.
+    *   **Output:** Test results.
+
+7.  **Integrated Testing & Debugging**
+    *   **Tasks:** Install software on hardware, solve identified problems, establish countermeasures for unexpected issues (e.g., part defects). This stage focuses on functional stabilization and is conducted in various environments (e.g., extreme temperatures) for several months before mass production.
+
+8.  **Mass Production Testing & Quality Inspection**
+    *   **Tasks:** Conduct comprehensive quality checks.
+        *   **EMI (Electromagnetic Interference):** Inspect for interference of electromagnetic waves on other electronic parts.
+        *   **Safety:** Perform product stability tests.
+    *   **Output:** EMI and safety results.
+
+9.  **Product Shipment**
+    *   **Task:** Ship the finished product.
+
+## 2. Embedded Hardware
+
+### A) Microprocessors (MPUs) & Microcontrollers
+
+*   **Microprocessor Unit (MPU):** Early MPUs integrated data processing (registers), arithmetic operations (ALU), and result storage (flags) into a single chip. They provide the processing power for devices.
+*   **Microcontroller:** A single chip with a built-in processor, memory, and control interface. Often used for real-time operating systems and automatic controls.
+*   **Ubiquity:** MPUs are found in almost all electronic devices with user interaction, such as smartphones, smart bands, tablet PCs, mechanical keyboards, TVs, air conditioners, game consoles, and smart keys.
+*   **Market Difference:** Unlike the PC CPU market (dominated by Intel/AMD), many companies produce MPUs for embedded systems (e.g., Broadcom, Mediatek, Samsung, Apple, Nvidia, Qualcomm, TI).
+*   **System on Chip (SoC):** A key trend where all integrated circuits (ICs) for a specific function are combined into a single CPU chip, reducing the need for separate peripheral chips on the board.
+*   **Common Architectures:** Embedded systems use various CPU architectures from 8-bit to 64-bit, including ARM, MIPS, ColdFire/68K, PowerPC, x86, PIC, and 8051.
+
+### B) Technical Trends in Embedded Hardware
+
+1.  **Expanded Connectivity:** Increasing adoption of wireless technologies like WiFi, LTE, BLE, and ZigBee in embedded systems. Focus on IoT (Internet of Things) and M2M (Machine-to-Machine) communication and device interoperability.
+2.  **Low-Power 32-bit Processors:** A shift from 8-bit to 32-bit processors, leading to a rapid increase in embedded systems using operating systems, particularly general-purpose OS like Linux.
+3.  **Polarization of OS:**
+    *   **Lightweight/Low-Power OS:** For wearables and IoT devices, prioritizing minimal resource consumption.
+    *   **General-Purpose OS:** For conventional embedded devices, supporting high functionality, stability, and user convenience features like 3D acceleration GUI and multimedia.
+
+## 3. Embedded Software
+
+### A) Definition & Technology Fields
+
+*   **Definition:** Software designed to run within embedded systems. Its complexity increases as embedded system applications diversify.
+*   **Technology Fields:**
+    *   **Basic Embedded Applications:** Multimedia players, map viewers, browsers, games, mobile shop apps, CNS (GPS, GIS).
+    *   **Embedded Middleware:** Software that enables different components or applications to communicate. Examples include distributed middleware (CORBA, XML), Java middleware (JVM, J2ME), control middleware (Jini, UPnP), multimedia middleware (streaming, codecs), and communication middleware (WLAN, WPAN).
+    *   **Embedded System Software:** Core software components like the Embedded OS, device drivers, communication protocols (wired/wireless), multimedia protocols, and embedded DBMS.
+    *   **Embedded System Development Tools:** Tools to aid in development, such as design tools, test tools, Integrated Development Environments (IDEs), simulators, cross compilers, and remote monitors.
+    *   **Embedded Software Platforms:** Frameworks or environments for developing embedded applications (e.g., MS .NET Compact Framework, Sun ONE, Brew, WIPI).
+
+### B) Characteristics of Embedded Software
+
+Embedded software continuously interacts with its physical environment, processing signals and responding to changes. Key characteristics include:
+
+*   **Reactivity:** Continuously interacts with physical environment changes, converting input to output at a specific speed.
+*   **Timeliness:** The time taken to convert input to output must be within a very short, allowable range.
+*   **Concurrency:** Able to process input generated by multiple simultaneous physical environmental changes.
+*   **Heterogeneity:** Effectively processes data originating from diverse hardware or software sources.
+*   **Liveness:** Must never stop operating, even when unexpected events occur.
+*   **Resource & Environmental Constraints:** Must operate within limits of CPU speed, memory size, user interface, power supply, and protocol compatibility.
+
+## 4. Embedded Operating Systems (OS)
+
+### A) Concept of Embedded OS
+
+*   **Definition:** An operating system specifically optimized to run application programs on a computer system performing dedicated functions, typically for controlling a machine or other systems.
+*   **Purpose:** Optimized for specific hardware with a built-in microprocessor to achieve predefined objectives.
+*   **Evolution:** Early embedded systems directly controlled hardware using assembly language without a separate OS. However, as applications diversified, the need for an OS grew.
+
+### B) Embedded OS Structure
+
+An embedded OS is designed to support stable application execution even with low-specification processors, limited memory/storage, and challenging operating environments. It typically has a layered structure:
+
+*   **User Level:**
+    *   **User Process:** The applications or programs that users interact with.
+    *   **Minimum Capacity Standard Library:** Basic functions and services available to user processes.
+    *   **System Call Interface:** The bridge allowing user processes to request services from the kernel.
+
+*   **Kernel Level:**
+    *   **Process Scheduling:** Manages the execution order and allocation of processor time to different processes.
+    *   **Processor Management:** Oversees the CPU's operation.
+    *   **IPC (Inter-Process Communication):** Mechanisms for different processes to communicate and synchronize.
+    *   **Memory Management:** Allocates and manages memory resources for processes.
+    *   **Device Driver (Hardware Control):** Software components that allow the OS to interact with specific hardware devices.
+    *   **System Call Interface:** The internal interface for the kernel to provide services.
+
+*   **Hardware Level:**
+    *   The physical components (CPU, memory, I/O devices) that the OS manages and interacts with via device drivers.
+
+---
+
+================================================================================
+ORIGINAL TEXT (First 5000 chars)
+================================================================================
+
+--- Page 103 ---
+ESSENCE
+System  Requirement
+Analysis
+System
+Requirement  Test
+Hardware/Software .
+Common Design Model eel
+System  Design  Test
+i Narn  part Interface Software :
+' ene Item Item '
+‘ " Development Development :
+Functional  Physical
+System Integration  and ot
+Testing er
+InspectionEvaluation  and e
+Acceptance  Verification
+Maintenance  and
+Functional  Evaluation
+Embedded  System
+Production  and Utilization
+[Figure 72] Embedded  System  Development  Procedure
+<Table 18> below shows details of the above development  procedure.
+{Table 18) Detailed  Tasks of Embedded  System Development
+Stage Task Products
+- Commercial  feasibility  determination an
+Product planning (Price, technology,  and marketing  review) pt :
+: and timing— Determining  rough product  specificationschart
+- Hardware  team: Selects  hardware  parts (CPU, memory,  and other peripherals)
+. Hardware
+Penteciection —  Selecting  hardware  parts that meet requirements  at the lowest cost and OS
+- Software  team: Selects  the OS. Checks  if the product  under  development  requires :
+specificationsan OS and selects  one, according  to characteristics.
+Parcwarctcreni - Hardware  team: Generates  the circuit diagram
+generation  and (Disposal  of all produced  products  if there is a hardware  error Hardware
+software  structure — Led by skilled personnel). circuit diagram
+design - Software team: Designs module-to-module  interfaces,  and checks required libraries.
+- Hardware  team: Performs  the artwork  using the circuit diagram.
+Code design for each_| ~ Artwork:  The task of generating  data to connect  actual parts on the circuit diagram  | Codes  artwork
+artwork  module (Actual part size, connector  shape, part location selection,  and wiring) results.
+- Software  team: Designs  the code of each module,  while considering  the interface.
+102 TOPCIT  ESSENCE
+
+
+--- Page 104 ---
+Overview  of System Architecture )
+- Hardware  team: Manufactures  the PWB using the artwork.
+- PWB:
+Making  the PWB A circuit board is made by melting  other parts with chemicals  and the necessary
+(printed  wiring board) parts using a copper  disk. A machine  uses artwork  data to draw the circuit on the
+‘ PWB
+and integrating board and make the PWB.
+modules - Software team: Integrates  modules.
+(For example,  embedded  Linux software  integrates  the bootloader,  Linux kernel, and
+apps.)
+- Hardware  team: Mounts  parts like the CPU and memory  on the PWB.
+- Software  team: Tests if the actual hardware  operates  as intended.
+Part mounting  and rn . . .
+hardware  testing (Since it is not realistic  to test all designed  and completed  codes, a test program  is Test results
+made to check the normal  operation  of hardware  parts on the PCB, each CPU port,
+the memory  unit, and I/O devices.)
+- Installation  of software  on hardware
+(Hardware  power  supply  > Bootloader  execution  Bootloader  OS execution  > OS
+performs  intended  action, according  to the system  input value.)
+- Solving  the identified  problem  until the mass production
+- Establishing  countermeasures  to unexpected  problems,  such as the increasing  part
+defect  rate and part termination
+- Conducted  after functional  stabilization  (six months  before  the mass-production
+testing)
+- Conducted  in various  environments  (high temperature/high  humidity  and sub-zero
+environments)  for about six months  — For worldwide  export
+- EMI: Inspection  of the interference  of the electromagnetic  wave on other electronic
+Specification parts (Change  of channel  when using a mobile phone)
+inspections,  such as - Safety: Product  stability  testIntegrated  testing  and
+debugging
+Mass-production
+testing
+Quality  inspection
+EMI and safety
+results
+EMI and safety - The designer  includes the EMI Team data in the debugging  circuit during the
+integrated  testing  and debugging  for EMI debugging.
+Product  shipment - Finished  product  shipment
+02 Embedded  Hardware
+A) Microprocessor,  the key to embedded  systems
+An embedded  system can handle more functions  and performance  because  the processor  provides  the performance
+required  to drive the device. Early microprocessor  units (IMPUs) were made in a single chip, in which registers  data
+processing,  arithmetic  logic unit (ALU) for mathematical  operation,  and flags for storing  result values were integrated
+into a chip. Although  CPU and MPU were separated  according  to use and purpose in the past, the boundaries  now
+are somewhat  ambiguous.  Since then, microcontrollers,  with a built-in processor,  memory,  and control interface  on a
+single chip, have emerged  to be used for real-time  operating  systems  or automatic  controls.
+It is not far-fetched  to consider  that the MPU is included in all the electronic  devices that are open to user
+intervention  in its use or configuration.  It is currently  used in smartphones,  smart bands, and tablet PCs that are used
+M3 Overview  of System  Architecture  103
+
+
+--- Page 105 ---
+ESSENCE
+in daily life....

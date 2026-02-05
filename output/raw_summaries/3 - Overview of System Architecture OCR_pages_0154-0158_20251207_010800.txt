@@ -1,0 +1,272 @@
+LEARNING GUIDE: Pages 154-158
+Generated: 2025-12-07 01:08:00
+PDF: 3 - Overview of System Architecture OCR
+
+================================================================================
+LEARNING GUIDE
+================================================================================
+
+Here is a simplified, easy-to-read learning guide based on the provided text:
+
+---
+
+## Network Standards & System Architecture: Learning Guide
+
+This guide covers essential concepts of network layers, IEEE standards for LAN and WPAN, chipset selection, and an introduction to the network layer and routing.
+
+---
+
+### 1. MAC Layer Standards & Physical Media
+
+The **Physical Medium Access Control (MAC) Layer** handles how devices access the physical network medium.
+*   **IEEE 802.3 CSMA/CD MAC (Ethernet):**
+    *   **Media:** Baseband coaxial (1, 10Mbps), Twisted pair (10Mbps), Optical fiber (100Mbps+).
+*   **IEEE 802.4 Token Bus MAC:**
+    *   **Media:** Broadband coaxial (5, 10, 20Mbps).
+*   **IEEE 802.5 Token Ring MAC:**
+    *   **Media:** Shielded twisted pair (1, 4Mbps).
+
+---
+
+### 2. IEEE 802.3 Standard (Ethernet)
+
+*   The most widely used IEEE 802 standard.
+*   **Protocol Stack:** Corresponds to the lower layers of the OSI model.
+    *   **IEEE 802.2:** Logical Link Control (LLC) sublayer of the Datalink layer.
+    *   **IEEE 802.3:** Combines the MAC sublayer and the Physical layer.
+
+---
+
+### 3. IEEE 802.11 Standard (Wi-Fi)
+
+*   The wireless communication standard for **Wireless LAN (WLAN)**, commonly known as **Wi-Fi**.
+*   **Purpose:** Minimizes wiring and maintenance costs, addressing shortcomings of wired Ethernet.
+*   **Key Protocols & Features (Summary from Table 35):**
+
+| Protocol | Frequency (GHz) | Bandwidth (MHz) | Speed per Stream (Mbps) | MIMO | Modulation Method |
+| :------- | :-------------- | :-------------- | :---------------------- | :--- | :---------------- |
+| 802.11   | 2.4             | 20              | 1, 2                    | 1    | DSSS, FHSS        |
+| 802.11a  | 5               | 20              | 6-54                    | 1    | OFDM              |
+| 802.11b  | 2.4             | 20              | 1, 2, 5.5, 11           | 1    | DSSS              |
+| 802.11g  | 2.4             | 20              | 6-54                    | 1    | OFDM, DSSS        |
+| 802.11n  | 2.4 / 5         | 20 / 40         | 7.2 - 150               | 4    | OFDM              |
+| 802.11ac | 5               | 20 / 40 / 80 / 160 | 87.6 - 866.7            | 8    | OFDM              |
+| 802.11ad | 60              | (Various)       | Gbps speeds             |      | (Various)         |
+
+*   **DSSS (Direct Sequence Spread Spectrum):** Modulation method spreading a signal over a wider frequency.
+*   **OFDM (Orthogonal Frequency-Division Multiplexing):** Modulation method dividing a single channel into multiple sub-channels.
+*   **MIMO (Multiple-Input, Multiple-Output):** Uses multiple antennas to improve communication performance.
+*   **Beamforming:** Directs a wireless signal towards specific devices.
+
+---
+
+### 4. IEEE 802.15 Standard (Wireless Personal Area Network - WPAN)
+
+*   A standard for **short-range wireless communication**, distinct from WLAN (802.11).
+*   **Purpose:** Establish wireless networks for mobile devices, PCs, and peripherals in a home environment.
+*   **Sub-Organizations:**
+    *   **WPAN research group:** Max transmission rate 1 Mbps.
+    *   **WPAN HSRC (High Rate Study Group):** Max transmission rate 20 Mbps.
+*   **Leading WPAN Technologies (Summary from Table 36):**
+
+| Technology | Standard       | Frequency (GHz) | Speed                 | Range          | Primary Utilization  |
+| :--------- | :------------- | :-------------- | :-------------------- | :------------- | :------------------- |
+| Bluetooth  | IEEE 802.15.1  | 2.4             | Varies by version     | 10-100m        | Voice, file transfer |
+| UWB        | IEEE 802.15.3  | 3.1-10.6        | 480 Mbps              | 10m            | Multimedia           |
+| ZigBee     | IEEE 802.15.4  | 0.868, 0.915, 2.4 | 20, 40, 250 Kbps      | 10-75m         | Sensor communication |
+
+*   **UWB (Ultra-Wideband):** Fast, low-power transmission of large digital data volumes over a wide spectrum at short distances.
+*   **ZigBee:** Low data rate for home automation and data networks.
+
+---
+
+### 5. Chipset Selection for Embedded Systems
+
+Choosing the right chipset is critical for embedded product development.
+
+*   **General Information to Check in Chipset Specification:**
+    *   **Block Diagram:** Overall configuration and data flow.
+    *   **Communication Method:** How to control the chipset (e.g., SPI, I2C).
+    *   **Memory:** Available RAM/ROM, size, addressing methods.
+    *   **GPIO (General Purpose Input/Output):** Port types and settings for external signal control.
+    *   **Development Tools:** Necessary tools for development with the chipset.
+
+*   **Software Developer Considerations:**
+    *   Does the chipset meet required standards?
+    *   Is the control method convenient and reusable?
+    *   Is memory capacity adequate?
+    *   Are there enough I/O ports for the product's needs?
+    *   Is it better to integrate multiple functions into one chipset or use separate ones?
+
+*   **Hardware Developer Considerations:**
+    *   Electrical characteristics.
+    *   Reliability.
+    *   Complexity of circuit configuration.
+    *   Chipset package type.
+    *   Cost.
+
+*   **Recommendation:** Software and hardware developers must collaborate to select the optimal chipset.
+
+---
+
+### 6. Network Layer: Introduction
+
+*   **Role:** The network layer is crucial for efficient data transmission across networks. It handles how **IP-based packets** are generated, transmitted, moved, and processed.
+*   **Key Topics:** Router structure, packet routing principles, routing algorithms, and actual routing protocols.
+
+#### Learning Objectives:
+
+1.  Explain network layer protocols and equipment.
+2.  Explain routing protocol concepts, types, and algorithms.
+3.  Understand the IPv4 address specification system and subnetting.
+
+#### Key Terminology:
+
+*   **Router:** A device that forwards data packets between different computer networks.
+*   **Routing Table:** A data table stored in a router that lists routes to particular network destinations.
+*   **Packet:** A formatted unit of data carried by a packet-switched network.
+*   **PDU (Protocol Data Unit):** A single unit of information transmitted between peer entities of a computer network.
+*   **Datagram/Virtual Line:** Types of packet delivery services.
+*   **APIPA (Automatic Private IP Addressing):** Automatically assigns IP addresses when DHCP fails.
+*   **Segment:** A unit of data at the Transport layer.
+*   **Metrics:** Values used by routing protocols to determine the best path.
+*   **MTU (Maximum Transmission Unit):** The largest packet size that can be transmitted.
+*   **STP (Spanning Tree Protocol):** Prevents network loops.
+*   **ARP (Address Resolution Protocol):** Maps an IP address to a physical (MAC) address.
+*   **RARP (Reverse ARP):** Maps a physical (MAC) address to an IP address.
+*   **ICMP (Internet Control Message Protocol):** Used for error reporting and diagnostics.
+*   **IGMP (Internet Group Management Protocol):** Manages multicast group memberships.
+*   **QoS (Quality of Service):** Mechanisms to guarantee a certain level of performance to data flows.
+*   **Bandwidth:** The maximum rate of data transfer across a given path.
+*   **IntServ (Integrated Services) / RSVP (Resource ReSerVation Protocol) / DiffServ (Differentiated Services):** QoS architectures.
+*   **Routing Algorithm / Routing Protocol:** Rules and methods used by routers to determine the best path for data.
+*   **EGP (Exterior Gateway Protocol) / IGP (Interior Gateway Protocol):** Categories of routing protocols.
+*   **Distance Vector / Link State:** Types of routing algorithms.
+*   **BGP (Border Gateway Protocol):** An EGP for routing between autonomous systems.
+*   **RIP (Routing Information Protocol) / IGRP (Interior Gateway Routing Protocol) / OSPF (Open Shortest Path First):** Examples of IGPs.
+*   **IPv4:** Internet Protocol version 4.
+*   **Subnetting / Supernetting / CIDR (Classless Inter-Domain Routing):** Methods for IP address allocation and routing efficiency.
+*   **DHCP (Dynamic Host Configuration Protocol):** Assigns IP addresses dynamically.
+*   **NAT (Network Address Translation):** Translates private IP addresses to public ones.
+
+---
+
+### 7. Network Layer & Routing Protocol: Operating Path Example
+
+This scenario illustrates how data packets travel across networks using a router.
+
+**Scenario:** User A's computer (`192.168.11.5`) wants to send data to `my.server.com` in the `220.17.23.0` network. Router B is User A's gateway (`192.168.11.1`).
+
+1.  **Packet Creation:**
+    *   TCP data is encapsulated into an IP packet, destined for `my.server.com`.
+
+2.  **Local Transmission (User A to Router B):**
+    *   User A's computer recognizes `my.server.com` is not on its local network (`192.168.11.0`).
+    *   It sends the packet to its gateway: Router B (`192.168.11.1`).
+    *   For local network transfer, the computer needs Router B's **MAC address** (obtained via ARP).
+    *   The packet is then transmitted to Router B.
+
+3.  **Router B Processing:**
+    *   Router B receives the packet. It sees the packet's final destination is `my.server.com`, which is not directly connected to Router B's networks (`192.168.11.0` or `14.32.172.0`).
+    *   Based on its routing table, Router B determines the next hop is Router C and forwards the packet.
+
+4.  **Final Destination Reception (my.server.com):**
+    *   `my.server.com` receives the packet.
+    *   It checks the IP header and confirms its own IP address is the destination.
+    *   The network layer header (IP address, etc.) is removed.
+    *   The remaining data is sent up to higher layers (e.g., Transport Layer) for processing.
+
+---
+
+================================================================================
+ORIGINAL TEXT (First 5000 chars)
+================================================================================
+
+--- Page 154 ---
+Overview  of System Architecture )
+The physical medium  access  control (MAC) layer includes  the IEEE 802.3 CDMA/CD  MAC, IEEE 802.4 token bus MAC,
+and IEEE 802.5 token ring MAC.
+mee Type 1 (Unconfirmed  diagram  service)ey Lo Type 2 (Virtual circuit service)
+Type 3 (Confirmed  datagram  service)
+Physical media CSMA/CD  media Token bus media Token ring mediaaccess  control(MAC) 8 access  control 8 access  control 8 access  control
+0 | + Reference  band coaxial: 0 0
+2 1 and 10Mbps 2 | + Broadband  coaxial: 2
+Physical  media ; + Reference  band twisted ry 1,5, and 10Mbps ; Shielded  twisted pair: 1
+pair: 10Mbps Optical fiber: and 4Mbps
++ Broadband  coaxial: 5, 10, and 20Mbps
+100Mbps  or higher
+[Figure 110] Services  for Each Layer
+B) IEEE 802.3 standard
+The IEEE 802.3 protocol  stack, the most widely used IEE 802 standard,  includes  IEEE 802.2 that corresponds  to the
+LLC layer of the datalink  layer and IEEE 802.3 that include  the MAC layer and the physical  layer, IEEE 802.5 token ring,
+and FDDI.
+lieee eer, IEEE 802.2
+Et Kg ee -——————————  ==
+Layer = MAC
+Sublayer
+IEEE 802.3Physical  Layer
+Token Ring / 802.5
+OS! Reference  Model LAN Protocol
+[Figure 111] IEEE 802.3 Protocol  Stack
+C) IEEE 802.11 standard
+IEEE 802.11 is the name of the wireless  communication  standardization  committee  for wireless  LAN, called Wi-Fi.
+M3 Overview  of System  Architecture  153
+
+
+--- Page 155 ---
+ESSENCE
+It seeks to minimize  wiring work and maintenance  costs to compensate  for the shortcomings  of wired LAN-type
+Ethernet.  It includes  IEEE 802.11b using the DSSS modulation  method  at the maximum  transmission  speed of 11
+Mbps, IEEE 802.11a supporting  a speed of up to 54 Mbps by using the frequency  of the 5 GHz band and the OFDM
+modulation  method,  and IEEE 802.11g  using the frequency  of the 2.4 GHz band to support  the speed of 54 Mbps.
+IEEE 802.11n uses the 2.4GHz and the 5GHz bands and supports  MIMO (Multiple-Input,  Multiple-Output)  to increase
+the transmission  speed up to 600Mbps.  Wireless  AP products  supporting  the speed of Gpbs have recently  been
+introduced.  IEEE 802.11ac  supports  a theoretical  maximum  speed of 6.93Gbps  by applying  the 80/160MHz  bandwidth,
+multi-user  MIMO/multi-spatial  stream MIMO, 256-QAM  modulation,  and beamforming.  IEEE 802.11ad  is a standard
+that supports  the speed of Gbps by applying  various  technologies  in the 60GHz bandwidth.  The standard  for gigabit
+wireless  LAN technology  to transmitting  UHD-level  video and explosively  increasing  wireless  data at high speed is in
+development.
+{Table 35) IEEE 802.11 Protocol  Standards
+802.11 Frequency  | Bandwidth Speed per stream MIMO Modulation
+Protocol (GHz) (MHz) (Mbps) Stream method
+DSSS,24 20 1,2 1 FHSS
+a 5 20 69,12,18,24  36,48,54 1 OFDM
+b 24 20 1,2,5,5,11 1 DSSS
+OFDM,g 24 20 69,12,18,24  36,48,54 1 DSSS
+24 20 7.2,144,21.7,28.9,43.3,57.865,72.2
+n 4 OFDM
+5 40 15,30,45,6090,120,135,150
+20 87.6
+40 200
+FDM7 > so | 4333 8 ofp
+160 866.7
+D) IEEE 802.15  standard
+IEEE 802.15 is the name of the short-range  wireless  communication  standardization  committee  separated  from IEEE
+802.11, which standardizes  wireless  LAN. It seeks to establish  wireless  networks  for mobile communication  devices,
+PCs, and other peripheral  devices  in the home. Sub-organizations  include,  the WPAN (Wireless  Personal  Area Network)
+research  group, for a maximum  transmission  rate of Mbps, and WPAN HSRC (WPAN High Rate Study Group), with a
+maximum  transmission  rate of 20Mbps.
+The leading WPAN technologies,  corresponding  to the IEEE 802.15 standard,  are IEEE 802.15.1 Bluetooth,  IEEE
+802.15.3  UWB, and IEEE 802.15.4  ZigBee.
+IEEE 802.15.1 Bluetooth  is a short-range  wireless communication  technology  standard  for exchanging  information
+by connecting  mobile devices, such as mobile phones  and laptops. IEEE 802.15.3  UAB is a wireless  technology
+that quickly transmits  a large volume of digital data through  a large spectrum  frequency  at low power in an ultra-
+broadband  and short distance.  IEEE 802.15.4  ZigBee is a standard  technology  for home automation  and data
+networks  with low data transmission  rates.
+154 TOPCIT  ESSENCE
+
+
+--- Page 156 ---
+Overview  of System Architecture )
+{Table 36) IEEE 802,15 Protocol  Standards
+WPAN Bluetooth UWB ZigBee
+Standard IEEE 802.15.1 IEEE 802.15.3 IEEE 802.15.4
+Frequency 2.4GHz 3.1~10.6GHz 868MHz
+frente Different  according  to the version 480Mbps 20/40/250Kbps
+Transmissionats eWeD 10~100m 10m 10~75m
+Utilization Voice and file transfer Multimedia Sensor  communication
+Embedded  software  developers  should be able to select the chipset and the communication  method  to control
+the chipset, and to check which development  tools are available,  and have a broad understanding  of the chipset  by
+reviewing  the specification  of ZigBee  and Bluetooth.
+In general,  the software  developer  should check the following  in the chipset  specification:
++ Block diagram: ...

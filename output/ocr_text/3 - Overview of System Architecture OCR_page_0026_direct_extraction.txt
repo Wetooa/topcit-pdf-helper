@@ -1,0 +1,33 @@
+Overview  of System Architecture )
+external  networks.  A network's  devices  and roles vary, based on the OSI layer 7 standard.  Network  devices  include
+switches,  routers, load balancers  (L4/L7 load balancers),  and bridges.  Additionally,  AP (access  point) is used in
+wireless  networks.  There is an overlap between  the network  domain and the security  domain. Since most of the
+hacking  attacks  intrude  through  the network,  the internal network  (LAN) gate, connected  to the external  network
+(WAN), is protected  by a security  device.
++ Storage
+A storage system holds the data of an information  system.  It is categorized  into three types according  to how
+it stores data. Block storage saves data in fixed block units, like 16KB and 64KB. It stores the OS, such as MS
+Windows,  Linux, and Unix. File storage  saves data in file units, instead  of in fixed blocks. Network  attached  storage
+(NAS), widely used as the shared file repository,  is a type of file storage.  Object storage  saves data in object units,
+instead of in fixed blocks or files. It is mostly used in cloud storage.  Storage  types can also be categorized  by their
+connection  method.  Direct access storage  (DAS) is mounted  in each server, NAS is connected  through  a network,
+and storage  area network  (SAN) is connected  through  the network  used exclusively  for storage. DAS can only be
+used with a filesystem  and includes  IDE, SATA, and SAS. SAN is provided  to the OS through  an SAN network,  and it
+requires  the creation  of a filesystem  before it can be used as DAS. It includes  SAN, iSCSI, and FCoE. NAS becomes
+usable after it is mounted  to the OS. It includes  NFS, CIFS, and AFS.
+NAS SAN
+Application | | Application |DAS
+Application
+File System File System
+| Networking |
+{
+| Disk Storage |
+[Figure  3] Storage  Type According  to Connection  Method
++ Security
+Information  security  is configured  through  the network  connection.  Some security  hardware  is installed between
+the external  Internet  section and the internal network  to protect  the internal systems,  while some are installed  in
+the internal network. It includes  the DDoS defense  system to defend against  DDoS attacks,  firewalls  to protect  the
+system through  monitoring,  logging,  and blocking  network  traffic, and IPS/IDS  to prevent  abnormal  traffic or abuse.
+It also includes  web firewalls  protect  webservers  by logging, monitoring,  blocking  web service traffic, and access
+control solutions  to provide management  functions  that allow or to deny access  to servers.
+M3 Overview  of System  Architecture  25

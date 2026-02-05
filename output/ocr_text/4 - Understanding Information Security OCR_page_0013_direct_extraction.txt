@@ -1,0 +1,21 @@
+Information  security )
++ Preview  for practical  business
+Assistant  manager  Kim, working  for company  A has overseen  the development,  deployment,  and
+maintenance  of Java source programs.  He used to check web pages and servers  on a regular  basis.
+In this process, he should ensure the availability  of numerous  source codes that he is managing,  and
+he should manage  the performance  and capacity  to ensure the availability  of the server, so that the
+applications  can work properly.  He should also take technical  protection  measures,  like encryption,  to
+maintain  the confidentiality  of customer  information  that is saved by the application.
+He is trying to ensure confidentiality,  integrity,  and availability  of business  information.  Let’s take a
+closer look at the concepts  and goals of information  security.
+01 Overview  of information  security
+A) Overview  of information  security
+@® Concept  of information  security
+Information  security  refers to protecting  information  administratively,  physically,  and technically  in order
+to prevent  damage,  alteration,  and leakage  of information  while being collected,  processed,  stored, and
+transmitted  information.
+@ Need for information  security
+The need to guarantee  privacy  and prevent  crimes on the Internet  is gradually  increasing.  Concerns  about the
+leakage  of major domestic  technologies  and information are also increasing,  due to globalization,  as the entire
+world is connected  through  the Internet.
+M4 Understanding  Information  Security  13

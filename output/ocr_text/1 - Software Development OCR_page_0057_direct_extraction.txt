@@ -1,0 +1,32 @@
+ESSENCE
+02 Cohesion  and Coupling
+It is not easy to clearly define a good design. A good design can be defined  as a design that enables efficient
+programming  or a design that helps easy adaptation  to changes  so that software  evolution  programs  can
+be solved well. To be recognized  as a good design, design documents  - which are design results - should be
+written in a way that is easy to read and understand,  and when changes  are made to the system,  the effect
+should be localized.
+Maximizing  functional  independence  and reducing  the merging  of modules  are the good design principles that
+make maintenance  easier. The object-oriented  design technique  can also maximize  independence  in the end,
+improving  the quality of a design. This section describes  cohesion and coupling,  which are factors that affect
+quality  in the design phase.
+A) Cohesion
+Cohesion  is a measure  of module maturity  that indicates  the strength  of the correlations  among the internal
+modules.  That is, it indicates  how each of the components  in the module is correlated  with the others in
+order to achieve a common  purpose.  Cohesion  indicates  how the components  of a module fit together,  and
+is like cement  that binds the components.  Functional  cohesion,  wherein  all elements  of the module perform a
+single function for the upper-level  module,  is the highest  degree of cohesion.  Coincidental  cohesion,  wherein  a
+module  is composed  of unrelated  processing  elements,  is the lowest degree of cohesion.
+Cohesion  also indicates  the degree to which a module performs  a task and thus is another  measure  of
+measuring  a module’s  independence  of each other. Therefore,  it is desirable  to design software  in such a
+way that cohesion  increases  among the internal elements  of a module,  with each component  of a module  or
+system performing  a single logical function  or representing  a single logical entity (model component).  In this
+case, interactions  with the outside can generally  be minimized.  When module cohesion is increased,  coupling
+between  modules  can be decreased.  Conversely,  low cohesion  can cause high coupling.  When designing
+software,  it is desirable  for modules  to have high cohesion  and coupling  between  modules  to be weak. The
+types of cohesion  include functional  cohesion,  sequential  cohesion,  communication  cohesion,  procedural
+cohesion,  temporal cohesion,  logical cohesion,  and coincidental  cohesion.
+Functional Sequential |Communication|  Procedural Temporal Logical Coincidental
+cohesion cohesion cohesion cohesion cohesion cohesion cohesion
+Strong cohesion «<---------------------------------------------  > Weak cohesion
+[Figure 11] Type and degree  of cohesion
+56 TOPCIT  ESSENCE

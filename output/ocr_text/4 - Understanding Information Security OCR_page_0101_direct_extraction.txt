@@ -1,0 +1,36 @@
+Information  security )
+@ Setting  account  lockout
+The account  lockout  policy should be checked  and set to respond  to the brute force attack or password  crack
+attack, by setting account  locks, according  to the number  of logon failures, in the security  policy settings  to
+improve  system security.
+It is desirable  to set “Account  lockout duration”  to 60 minutes,  “Account  lockout threshold”  to 5 times, and
+“Reset account  lockout  counter  after’ to 60 minutes  in Account  Lockout  Policy,
++ How to set account  lockout
+Input secpol.msc  into the Search programs  and files box by selecting  [Start].
+Click the “Account  Lockout  Policy’ sub-menu  under the [Account  Policies]  menu.
+Set “Account  lockout  duration’,  “Account  lockout  threshold”,  and “Reset account  lockout  counter  after’,
+B Local  Security Policy - a x
+File Action View Help
+@9| Alm) xX S| em
+Ib Security Settings Policy Security  Setting
+© [i Account  Policies{G) Account lockout  duration Not  Applicable
+> are  _ {&]  Account lockout threshold invalid logon attempts
+mo (2) Reset account lockout counter after Not  Applicable
+» (Gj Local  Policies
+> (5) Windows  Defender  Firewall  with Adve
+Network  List Manager  Policies
+> © Public Key Policies
+> (1 Software  Restriction  Policies
+> [2 Application  Control  Policies
+> (IP Security  Policies  on Local Comput
+> (9) Advanced  Audit Policy Configuration|
+Figure 51] Setting  account  lockout
+C) Access  control
+@ Checking  unnecessary  shared folders  and stopping  sharing
+Since malware  and viruses may spread through  unnecessarily  shared folders, unnecessary  shared folders should
+be removed.  If a shared folder needs to be used, only authorized  users should be allowed  to access the shared
+folder. Also, check the shared folder using fsmgmt.msc  and stop sharing  if unnecessary.
++ How to stop sharing  unnecessary  shared folders
+Input fsmgmt.msc  into the search programs  and files box by selecting  [Start].
+Check unnecessary  shared folders  and stop sharing  if sharing  is not necessary.
+M4 Understanding  Information  Security  101

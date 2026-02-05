@@ -1,0 +1,15 @@
+ESSENCE
+>p> Recent  trends and issues
+As high-speed  data transmission  becomes  possible  and various  convergence  technologies  emerge,  cutting-
+edge technologies  are also appearing  in the network  field. With the advent  of technologies  that guarantee
+traffic quality in Internet networks, multimedia  and Internet  telephony  services  have been launched.  In
+recent years, loT network-based  technologies  are expanding  together  with standardization  organizations
+and groups. Moreover,  software-based  networks,  differentiated  from the existing  network  structure,  are
+being introduced.  This chapter  discusses  the recent  network  trends and major issues.
+>> Learning  objectives
+1. ITo be able to explain loT network-based  technologies.
+To be able to explain  the concept  of software-based  networks,
+>> Keywords
+Lossless  compression,  lossy compression,  QoS, SIP H.323, RTP, RTCP. IMS, CSCF, HSS, 3GPP. SDN, Openflow,
+Control plane, Data plane, NFV, Virtualization  function,  MQTT, CoAP
+210 TOPCIT  ESSENCE

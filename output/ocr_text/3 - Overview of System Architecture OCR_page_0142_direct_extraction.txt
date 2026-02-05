@@ -1,0 +1,36 @@
+Overview  of System Architecture )
+[Figure 102] below shows an example  of MapReduce  outputting  the frequency  of words included  in a character  string.
+The process  consists  of dividing  the string data by line (splitting)  > Receiving  the string by line and outputting  it in the
+form of <Key, Value> (mapping)  — Separating  data by the key (shuffling)  >Calulating  the sum of the frequency  of each
+key and outputting  it (reducing) Combines  the output  data and stores it in the Hadoop  file system (final result).
+The overall MapRediuce  word count process
+Input Splitting Mapping Shuffling Reducing Final result
+[--->| DOG,2
+DOG CAT RAT |--->|
+ANCA --->| CARCARRAT |--->|
+DOG  CAR CAT
+DOG CAR  CAT |--->
+[Figure 102] Process  of Outputting  the Frequency  of Words Included  in a Character  String through  MapReduce
+C) Hadoop  support  program
+As shown in <Table 31>, Hadoop  support  service  programs  to collect, store, utilize, process,  and manage  big data, are
+in development.
+<Table 31) Hadoop  Support  Service  Programs
+Big Data Type Key Main Function
+Technology
+Flume - Collection  of unstructured  data
+, - Developed  by Cloudera  and currently  included  in Apache  Incubation
+Ses m dats Scribe - A platform to collect unstructured  data
+- Developed  by Facebook  as a transfer  to the centralized  server
+Chuckwa - Unstructured  data collecting  platform  to store distributed  data in HDFS
+- Structured  data collection
+Structured  data Sqoop - Import of data from a relational  database
+collection - Support  for data transfer  to various repositories,  such as HDFS and NoSQL
+Hiho - Large-capacity  structured  data collection  and transfer  solution
+- Distributed  database
+- HDFS-based  column-based  NoSQL  database  developed,  based on Google’s  paper on
+. Hbase BigTable
+Distributed - Used by Yahoo and Twitter, and NHN’s Linedatabase —
+- Open-source  distributed  database  management  system
+Cassandra - Hybrid of a Column-centered  database  and a row-centered  database
+- One of the NoSQL  databases
+M3 Overview  of System  Architecture  141

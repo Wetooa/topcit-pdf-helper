@@ -1,0 +1,31 @@
+ESSENCE
+05 Database  Design to Which Normalization  is Applied - (Sth
+Normalization)
+A) Concept  of the fifth normalization
++ If all join dependencies  that exist in relation R can be satisfied  by the candidate  key of relation R, relation  R is called
+the fifth normal  form.
+B) Characteristics  of the fifth normalization
+@® Normalization  occurs in the primary  key.
+@ There should be a join relationship  between  independent  attributes.
+© Created  after being separated  into associative  relations.
+@ When there are three attributes,  A, B, and C, there is a semantic  relationship  as follows. However,  an anomaly  occurs
+when creating  a table using these attributes.
++ Relationship  between  A and B: A and  B are related.
++ Relationship  between  A and C: A and C are related.
++ Relationship  between  C and B: C and B are related.
++ Relationship  between  A, B, and C: There is no relationship  in which A, B, and C are all related.
+C) Performing  the fifth normalization
+@ When there is an attribute  that has the primary  of SN, CM, and PN, it can be created  as a table, as follows.
++ SN: ID of the supplier  (PK)
++ CN: ID of the part (PK)
++ PN: ID of the project  (PK)
+@ The association  preconditions  of each identifier  are as follows.
++ A supplier  has an association  in which a certain part is supplied.  (A and  B are related.)
++ There is an association  in which the supplier  has supported  a certain project.  (A and C are related.)
++ There is an association  in which a certain part has been used for a certain project.  (B and C are related.)
++ However,  there is no association  about how a certain supplier  has used a certain part for a certain project.  (A, B, and
+C are not related.)
++ Despite  the above constraints,  it is designed  as a single table, as follows.
++ If it is designed  as a single table despite  these preconditions,  input error, modification  error, and deletion  error can
+occur even without  performing  the fifth normalization.
+76 TOPCIT  ESSENCE

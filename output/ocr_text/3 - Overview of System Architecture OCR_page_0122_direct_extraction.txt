@@ -1,0 +1,10 @@
+Overview  of System  Architecture
+expensive  external  storage.  As shown in [Figure 88], HCI groups the direct attached  storage  (DAS), which is located
+under a general-purpose  x86 server, with the software-defined  storage  (SDS) technology  through  the IP-based
+network  and uses it as a storage pool, similar to a storage  area network  (SAN). The architecture  eliminates  the
+structural  complexity  and reduces  costs most of all by eliminating  external  storage.
+cial  eo SIN) Hyper-Converged  Infrastructure
+Dedicated  Storage  Configuration Server  Disk Configured  as Shared  Storage
+SDS Shared Storage
+[Figure 88] Converged  Infrastructure  vs. Hyper  Converged  Infrastructure
+M3 Overview  of System  Architecture  121

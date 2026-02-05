@@ -1,0 +1,22 @@
+CONTENTS
+A) Purpose  of scheduling 53
+B) Type and characteristics  of scheduling 53
+06 Virtual Memory  Nnit 54
+A) mplementing  a virtual memory  unit 54
+B) Page replacement  technique  of the virtual memory  unit 55
+C) Factors  that affect the virtual memory  unit performance 56
+07 File System 56
+A) Understanding  of file system 56
+B) Concept  of directory 56
+C) Allocation  by a file system 57
+D) Types of files system  for each OS 59
+E) UNIXi-node 59
+08 Input/ Output  System 59
+IV. Computer  Architecture 61
+01 Computer  Structure  and Architecture 62
+A) Basic computer  structure 62
+B) Types of computer  architecture 63
+02 CPU 64
+A) Definition  of CPUS! 64
+B) CPU execution 64
+8 TOPCIT  ESSENCE

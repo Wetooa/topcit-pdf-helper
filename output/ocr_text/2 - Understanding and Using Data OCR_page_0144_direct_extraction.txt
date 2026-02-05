@@ -1,0 +1,14 @@
+Database
+>> Recent  trends and major issues
+It is essential  to understand  technologies  related to big data analytics  because  the social demand  for
+big data analytics  and big data technicians  (engineers,  data scientists,  etc.) is increasing  significantly.
+In addition,  NoSQL, which has the characteristics  of a BASE focusing  on the fast-processing  speed for
+unstructured  data and large-scale  data, is increasingly  being adopted  in enterprises’  operating  environment.
+Therefore,  it is necessary  to understand  NoSQL (Not Only SQL) as it is based on a different  concept  to
+existing  relational  databases.
+>> Learning  objectives
+1. To be able to explain the concept  of big data and related  technologies.
+2. To be able to explain the concept  and characteristics  of NoSQL.
+>> Keywords
++ Big data, 3V, unstructured  data, Distributed  File System  (DFS), NoSQL,  CAP theory
+M2 Database  143

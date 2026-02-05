@@ -1,0 +1,28 @@
+ESSENCE
+- Amethod  of ensuring  that each process is completed ~ Significant  overhead and complexityDeadline , a since the deadline  must be calculated Non preemptive
+within the given time limit
+each time
+HRN(Hightest Complementing  the problem  of large jobs taking too - Priority  = (Waiting  time + Execution
+Response-ratio . on Non preemptive
+Next) much time in SJF time)/Execution  time
+MLQ(Multi-Level - Each queue using the unique schedulingQueue) - Processing  different  jobs by time slice in each queue algorithm Preemptive
+MFO(Multi-Level  — - Processing  by multiple  feedback  queues  through  a - Increased  CPU and I/O device
+‘ ; PreemptiveFeedback  Queue) readiness  queue efficiencies
+06 Virtual  Memory  Unit
+The technique  to solve the OS's limited memory  space problem uses the main memory  with a small capacity,  as a
+large capacity  with a large amount  of free space. The virtual memory  unit is not a physical  device, but it logically  uses
+a large-capacity  auxiliary  memory  device as the main memory  device. Therefore,  it is necessary  to map the address
+of the virtual memory  unit to the address  of the main memory  unit in order to execute  a program  stored in the virtual
+memory  unit.
+A) Implementing  a virtual memory  unit
+A virtual memory  unit includes  the virtual address  that processes  refer to and the physical  address  that points to
+the available  main memory.  Whenever  a process  accesses  a virtual address,  the system must quickly convert  it
+into the physical  address  through  the memory  management  unit (MMU).It  is divided into a paging technique  and
+segmentation  technique,  according  to the block configuration.  Some systems  may use a combination of both
+techniques  (see [Figure 26]).
++ Paging  technique:  This technique  partitions  the main memory  unit into fixed sizes, called frames,  and also partitions
+the task to the process  stored in the virtual memory  unit into fixed sizes, called pages, and loads them into the
+frame to run the task.
++ Segmentation  technique:  This technique  partitions  the task to the process  stored in the virtual memory  unit into
+size segments,  which are logical units of various  sizes, and then loads them into the main memory  unit to run.
+54 TOPCIT  ESSENCE

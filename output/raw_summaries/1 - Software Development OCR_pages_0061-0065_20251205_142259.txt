@@ -1,0 +1,220 @@
+LEARNING GUIDE: Pages 61-65
+Generated: 2025-12-05 14:22:59
+PDF: 1 - Software Development OCR
+
+================================================================================
+LEARNING GUIDE
+================================================================================
+
+Here is a simplified, easy-to-read learning guide based on the provided text:
+
+---
+
+# Software Design & Architecture Learning Guide
+
+## 1. Program Structure Design from Data Flow Diagrams (DFD)
+
+Data Flow Diagrams (DFDs) can guide the creation of program structures. Two main approaches are:
+
+### 1.1 Transform Flow-Oriented Design
+
+This method applies when a DFD shows a clear progression from input to processing to output.
+
+*   **Core Idea:** Identify the **Input Flow**, **Transform Center**, and **Output Flow** in the DFD.
+*   **Program Structure Components:**
+    1.  **Input Control Module:**
+        *   Receives data from lower levels.
+        *   Refines input data (if needed).
+        *   Sends refined data to upper levels.
+    2.  **Transform Control Module:**
+        *   Processes the core transformation logic.
+        *   The number of these modules depends on transform complexity.
+    3.  **Output Control Module:**
+        *   Receives processed data from upper levels.
+        *   Refines output data (if needed).
+        *   Sends data to lower levels.
+*   **Visual Representation:** Imagine data entering (input), being processed (transform), and then exiting (output) in a linear fashion.
+
+### 1.2 Transaction Flow-Oriented Design
+
+This method is used when an input can trigger one of several distinct actions or output paths.
+
+*   **Transaction:** An event (data, control signal) that initiates an action.
+*   **Core Idea:** Identify the **Transaction Center** in the DFD.
+*   **Transaction Center (T bubble):**
+    *   Receives input.
+    *   Evaluates the input to decide which "action path" to take.
+    *   Has one input path but multiple, mutually exclusive output paths.
+    *   Each output path can itself contain transform or transaction flows.
+*   **Program Structure Components:**
+    1.  **Transaction Center Module:** Handles the evaluation and dispatching logic.
+    2.  **Input Reception Module:** Receives the initial transaction.
+    3.  **Operation Path Modules:** One or more modules corresponding to each distinct action or output path.
+*   **Visual Representation:** Data enters, goes to a central point (transaction center), and then branches out to one of several possible processing paths.
+
+---
+
+## 2. Software Architecture (SA)
+
+Software Architecture has become critical for developing high-quality software effectively and adapting to technological changes.
+
+### 2.1 Overview of Software Architecture
+
+*   **Definition:** A "blueprint" or "set of important decision-making rules" about the software's structure. It describes:
+    *   System composition and how components interact.
+    *   Modules, processes, data, and their structures.
+    *   Relationships between components.
+    *   Methods for extending and modifying components.
+    *   Technology used, flexibility, and performance.
+*   **Purpose:**
+    *   Manages system complexity.
+    *   Serves as a communication tool among stakeholders.
+    *   Aids in decision-making for overall system structure and project organization.
+*   **Key Components (IEEE-1471 Standard):**
+    *   **System Architecture:** The overall structure.
+    *   **Environment:** The context in which the system operates.
+    *   **Stakeholder:** Anyone interested in the system (e.g., users, developers).
+    *   **Rationale:** The reasons behind architectural decisions.
+    *   **Description:** The documentation of the architecture.
+    *   **Viewpoint:** A perspective on the architecture (e.g., security, performance).
+    *   **View:** The representation of the architecture from a specific viewpoint.
+    *   **Model:** A formal representation within a view.
+    *   **Concern:** An interest in the system.
+    *   **Library:** Reusable architectural elements.
+
+### 2.2 Software Architecture Design Procedure
+
+A structured approach to creating software architecture:
+
+1.  **Requirements Analysis:**
+    *   Identify specific requirements (functional and non-functional) through proposals, interviews, and meetings.
+    *   Classify and specify these requirements.
+2.  **Architecture Analysis & Design:**
+    *   Identify and prioritize key quality factors (e.g., performance, security, maintainability).
+    *   Identify potential architectural styles (e.g., client-server, microservices) and candidate architectures.
+    *   Design the chosen architecture based on these factors.
+3.  **Architecture Verification & Approval:**
+    *   Evaluate the selected architecture against requirements and quality attributes.
+    *   Detail the architecture for implementation.
+
+### 2.3 Roles of a Software Architect
+
+A software architect plays multiple crucial roles throughout a project:
+
+1.  **Creator of a Vision:**
+    *   Understands requirements and constraints.
+    *   Leverages professional experience to define the software's framework.
+    *   Requires creativity and the ability to present a clear design.
+2.  **Key Technical Consultant:**
+    *   Advises development teams on technical matters using their expertise.
+    *   Crucial for selecting appropriate design patterns and development frameworks to ensure quality.
+    *   Requires continuous learning and competency development.
+3.  **Decision Maker:**
+    *   Leads the design team.
+    *   Makes critical decisions affecting the overall design, especially in agile environments.
+    *   Requires strong domain knowledge.
+4.  **Coach:**
+    *   Trains teams on the defined architecture.
+    *   Manages improvements and feedback.
+    *   Acts as a technical leader, guiding and sponsoring technical growth.
+5.  **Coordinator:**
+    *   Mediates and coordinates diverse opinions among project participants to maintain design integrity.
+    *   Requires strong technical and communication skills to prevent risks.
+6.  **Implementer:**
+    *   Evaluates new technologies for design impact and implementation feasibility (often using prototypes).
+    *   Architects often grow from developers by enhancing their skills and experience.
+7.  **Advocate:**
+    *   Continuously evaluates new architectures.
+    *   Builds a case for introducing new technologies and securing ongoing investment.
+    *   Drives continuous advancement in technical skills and architecture.
+
+---
+
+================================================================================
+ORIGINAL TEXT (First 5000 chars)
+================================================================================
+
+--- Page 61 ---
+ESSENCE
+@
+Incoming  flow Transform  center Outgoing  flow
+[Figure 13] Input and output  boundary  of the data flow diagram
+Now, it’s time to start creating  a program  structure  centered  on the data flow. The guidelines  needed  to create
+a transform-based  program  structure  are based on identifying  the input flow, transform  center, and output  flow
+of the data flow diagram.  Mapping  the structure  table in the data flow diagram  is performed  by the guidelines.
+Three components  can be found if the root program structure is created in the transform  flow-oriented  data
+flow diagram.  The three components  are as follows.
++ Input control module,  which processes  input.
++ Transform  control module,  which processes  transform.
++ Output  control module,  which processes  output.
+The input control module receives  input data from the lower-level  modules  and sends them to the upper-level
+module.  If necessary,  the input data are refined and transmitted  to the upper level. The output control module
+receives  output  data from the upper level and sends them to the lower-level  modules.  If necessary,  this module
+also refines  the output  flow and transmits  it to the lower-level  module.
+The number  of control modules  is subject to system complexity,  and the number  of control modules  that
+process  transform  is determined  by transform  centered  complexity.  The figure below shows a simple program
+structure  based on transform.
+tput Controller
+[Figure 14] High-level  program  structure  based on transform  flow
+60 TOPCIT  ESSENCE
+
+
+--- Page 62 ---
+Software  Development )
+B) Transaction  flow-oriented  design
+A “transaction”  is said to occur when data, control signal, etc. trigger an action. Transaction  flow-oriented
+design can be used when received  input can be split into multiple  output flows. A transaction  evaluates  the
+input value and flows the result along one of several output paths depending  on the result. The center  of the
+information  flow in this case is called the transaction  center. The figure below shows this characteristic,  and
+the bubble  T is the transaction  center.
+Transaction a ;
+item Mutally  exclusive
+>| > >| > action paths
+Transaction \
+eocenter
+[Figure 15] Transaction  flow
+If the data flow diagram  has a transaction  flow, the location  of the transaction  center should be clarified  first.
+The transaction  center receives  a transaction  as an input and connects  it to several  output bubbles.  Therefore,
+the transaction  center  has one input path and multiple  output  paths. Each operation  path (output  path) can be
+composed  of several bubbles  and can have  a transform  flow or a transaction  flow.
+Based on this, a program  structure based on transactions  can be created. Such a structure consists  of three
+components.
++ Amodule  that acts as a transaction  center.
++ A module  that receives  an input.
+* One or more modules  corresponding  to each operation  path.
+The figure below shows the structure  of the program  structure  based on transactions.
+Overall Controller
+Reception  path
+| Input Controller Transaction  Controller1 Agta am
+[Figure 16] Structure  of the program  based on transactions
+M1 Software  development  61
+
+
+--- Page 63 ---
+ESSENCE
+>> Recent  trends and major issues
+Recently,  software  architecture  has been highlighted  as having a fundamental  and useful key role in
+effectively  reflecting  changes  in information  technology  and developing  high-quality  software  most
+effectively  in a timely manner.  Architecture  design is the process  of identifying  the composition  of a
+system  and how its components  interact  with each other at the beginning  of the design process.  This
+phase is required  to manage  the complexity  of the system.
+>> Learning  objectives
+1. To be able to list the basic concept  and components  of software  architecture  (SA).
+2. To be able to explain  the representative  types of software  architecture.
+3. To be able to explain  the methods  of expressing  software  architecture  design.
+- Module,  component  and connector,  subsystem,  framework
+- Repository  structure, MVC (Model-View-Controller)  structure,  client-server  model, hierarchical
+structure,  pipe filter structure
+- Context  model, component  diagram,  package  diagram,  deployment  diagram
+62 TOPCIT  ESSENCE
+
+
+--- Page 64 ---
+Software  Development }
++ Preview  for practical  business Roles of the software  architect
+«Creator  of a vision - The requirements  and constraints  should be well understood  and
+understanding  of the realized  technologies  should be improved,  based on a professional
+perspective  and experience  in the type of product  to be made. A software  architect  plays the
+role of completing  the framework  of the software  to be developed.  The architect’s  creativity  is
+important,  and the architect  should be able to present  what has been arranged.
++ Key technical  consultant  - A key technical  consultant  ...

@@ -1,0 +1,39 @@
+Information  security
+The modification  of message  attack  obtains  unauthorized  results by illegallychanging  parts of legal messages,
+delaying  message  transmission,  or changing  the message  sequence.
+The denial-of-service  attack interferes  the normal use or management  of communication  equipment  (specific
+computer  or network).  This attack is generally  called a DoS attack. Most of these attacks  are made against  a
+specific  target.
+The active attack has characteristics  that are opposite  to the passive attack. It is very difficult  to prevent
+active attacks completely,  because  all communication  equipment  and communication  lines cannot be
+physically  protected  at all times. Response  to active attacks  aims to detect an attack and recover  from the
+collapse  or delay, due to such an attack.
+Message  from Darth
+that appears  to be
+from Bob
+e@
+Arr Internet or
+Bob other comms facility
+(a) Masquerade
+Capture  message  from
+Bob to Alice; later
+replay message  to Alice
+Internet  or
+other comms  facility
+(b) Replay
+Dath modifies
+message  from Bob
+to Alice
+Internet  or
+other comms  facility
+(c) Modifiction  of messages
+Dath disrupts
+service
+provided  by server
+e@
+Arr Internet or
+Bob other comms facility
+(d) Denial of serviec
+[Figure  54] Active attack
+(Source:  W. Stallings,  Cryptography  and Network  Security-Principles  and Practice,  Prentice  Hall, p.18, 19)
+M4 Understanding  Information  Security  111

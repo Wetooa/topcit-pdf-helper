@@ -1,0 +1,34 @@
+ESSENCE
+02 Software-Based  Network
+The technologies  that have recently  received  the most attention  in the network  field are software-defined  networks
+(SDN) and network  function  virtualization  (NFV). Network  openness  and virtualization  technologies  are expected  to
+change  the era when certain large equipment  makers  dominated  the global network  equipment  market  and increase
+3rd party software  providers  and equipment  makers  to enter the market.
+Korea has planned smart Internet-related  R&D and standardization  projects  focusing  on SDN and NFV to enhance
+national  SDN technology  competitiveness,  led by ETRI, since 2012. Organizations,  such as the TTA Future Internet
+Project  Group (PG220) and the Smart Internet  Technology  Standardization  Council actively  promote  domestic
+standards  and reflect  international  standards.
+A) Limitations  of the existing  communication  environment  and paradigm  shift
+@ Changes  in traffic patterns
+Current  applications  generate  a large volume  of traffic, by accessing  various  application  servers  and databases  before
+providing  users data. The environment  is changing  from the limited communication  between  the client and the server
+to access  between  various  systems.
+@ Virtualization  technology
+Virtualization  technology  has dramatically  increased  the number  of servers  connected  to the network,  fundamentally
+changing  the assumptions  about the host's physical  location.
+@ Networks  getting  more complex
+Network  structures  are becoming  more complex,  as a large number  of computers  are configured  of discrete protocol
+sets,
+@ Difficulties  in network  design and management
+Initial designs use  a link oversubscription  method that considers  the expected  traffic patterns  and the number
+of concurrent  users. However,  it is becoming  more difficult  to predict the network  size, as traffic patterns  change
+dynamically.
+© Increasing  dependence  on equipment  manufacturers
+In particular,  the core network  has had difficulties  in introducing  new services  or technologies  as certain major
+equipment  manufacturers  dominated  the communication  market.
+B) SDN (Software  Defined  Network)
+SDN is a next-generation  network  technology  that can set the network  routing and control and complex  operation
+management  through software  programming.  The technology  attracted  attention  when ONF introduced  the
+OpenFlow  technology,  and international  standardization  organizations,  such as IETF and ITU-T, began to develop
+standards  for SDN-related  core technologies.  There is heated competition  in the industry  for securing  leadership  in
+216 TOPCIT  ESSENCE

@@ -1,0 +1,44 @@
+Software  Development )
+B) Interpreter  languages
+Interpreter  languages  convert  a source program into a low-level  language  directly, without  requiring  any
+intermediate  steps, and execute  the program at the same time. Machine  language  programs  are not created
+by translating  high-level  languages  into intermediate  codes and then executing  the translated  codes with a
+software  interpreter;  rather, such programs  are executed  by calling sub-routines  corresponding  to the functions
+of each intermediate  code. LISP and PROLOG  are representative  interpreter  languages.
+Writing  using Interpreter
+a development process Loading  in
+tool temporary
+a memory  first
+Writing  source code in
+programming  language
+Program,js,  etc.
+Void abs(), etcOperating Computer
+system hardware
+Source  file
+[Figure 19] Interpreter  process
+@ Strengths  of interpreter  languages
++ Programs  are executed  if needed,  without  waiting  for complete  machine  language  translation.
++ Memory  can be saved as the source language  form is maintained  until the program  has been fully executed.
+@ Shortcomings  of interpreter  languages
++ The source program  has to be decoded  whenever  it is executed  again, which takes time.
+C) Compiler  languages
+“Compilation”  means  converting  a specific  language  into another  language  having an equivalent  meaning.
+The compiler  translates  a high-level  language  into a machine  language,  which is a low-level  language,  in order
+to make an object module,  after which this module is linked, loaded, and executed.  FORTRAN,  PASCAL,  and C/
+C are representative  compiler  languages.
+Writing  using Compilation  process
+a development Loading in
+tool Saving temporarytt tt memory  first
+Writing
+source code in
+programming
+language
+Messenger.C,  etc.
+Void abs(), etc.Creating  an
+executable
+program
+Messenger,  exe, Programm (CPU)
+etc.
+Source  file Binary  file
+[Figure  20] Compilation  process
+M1 Software  development  91

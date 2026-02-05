@@ -1,0 +1,260 @@
+LEARNING GUIDE: Pages 157-161
+Generated: 2025-12-05 14:07:26
+PDF: 5 - Understanding the IT Business and Ethics OCR
+
+================================================================================
+LEARNING GUIDE
+================================================================================
+
+## Learning Guide: Smart Technologies in Business & Ethics
+
+This guide simplifies key concepts in Smart Transportation, Smart Education, and Smart Healthcare, focusing on essential information for learning.
+
+---
+
+### 1. Smart Transportation
+
+Smart transportation uses technology to improve traffic systems. It involves communication between vehicles, infrastructure, and networks.
+
+#### 1.1. Classification of Smart Transportation Services
+
+Smart traffic services are categorized by who communicates with whom:
+
+*   **V2V (Vehicle-to-Vehicle) Service:**
+    *   **Definition:** Vehicles wirelessly exchange information with surrounding vehicles.
+    *   **Purpose:** Share data on position, traffic flow, and road conditions.
+    *   **Communication:** Primarily uses **WAVE** (Wireless Access in Vehicle Environments).
+    *   **Examples:**
+        *   Roadside information and obstacle notifications
+        *   Road construction notifications
+        *   Intersection traffic signal notifications
+        *   Nearby vehicle information notifications
+        *   Emergency vehicle proximity notifications
+
+*   **V2I (Vehicle-to-Infrastructure) Service:**
+    *   **Definition:** Vehicles communicate with traffic support infrastructure.
+    *   **How it Works:**
+        *   Vehicles with **OBU** (On-Board Units) send/receive messages with roadside base stations (via WAVE, 4G LTE/5G).
+        *   Roadside base stations connect to a back-end server at a traffic control center.
+        *   The center collects and analyzes vehicle/base station data, then sends traffic/road condition info back to vehicles via base stations.
+    *   **Examples:**
+        *   Real-time traffic information collection and provision
+        *   Toll collection
+        *   Roadside information and obstacle notifications
+        *   Road construction notifications
+        *   Protected zone notifications
+
+*   **V2N (Vehicle-to-Network) Service:**
+    *   **Definition:** Vehicles communicate with a server or mobile device via a network (cloud or Internet).
+    *   **How it Works:**
+        *   A **TCU** (Telecommunication Control Unit) in the vehicle communicates with a back-end server.
+        *   The server then communicates with mobile devices to provide user information and control the vehicle.
+
+#### 1.2. Connected Car Service
+
+*   **Definition:** A core technology for self-driving cars, built on advances in telematics, mobile communication, and cloud services.
+*   **Functionality:** Allows cars to connect with other cars, surroundings, and infrastructure.
+*   **Services Provided:**
+    *   Transportation information
+    *   In-car music services
+    *   Information services for riders
+    *   Augmented reality (AR) information services
+    *   Road condition recognition and notification
+    *   Fully autonomous driving and automatic parking
+
+---
+
+### 2. Smart Education
+
+Smart education adapts to societal changes by leveraging digital technology for personalized and engaging learning.
+
+#### 2.1. Driving Factors & Concept
+
+*   **Societal Changes:**
+    *   Increased cohabitation (couples living together without marriage)
+    *   Declining birth rate
+    *   Increased respect for individual choices
+    *   Rapid aging population
+*   **Government Response:** National strategy for smart education and basic plan for education informatization.
+*   **Concept of Smart Education:**
+    *   **Self-paced:** Learning at one's own speed.
+    *   **Fun:** Engaging and enjoyable learning experiences.
+    *   **Level-aligned:** Tailored to individual student levels and interests.
+    *   **IT-based:** Uses information technology for learning.
+*   **Development Timeline:**
+    *   **1997:** Basic research began.
+    *   **2006:** Digital textbook prototype produced.
+    *   **2007:** Ministry of Education developed digital textbooks (Korean, English, Math).
+    *   **2011:** "Smart Education Promotion Strategy" announced.
+
+#### 2.2. Smart Classroom
+
+*   **Definition:** A teaching environment equipped with digital devices to enhance learning.
+*   **Key Components:**
+    *   Projectors, TVs
+    *   Large smart liquid crystal displays
+    *   Electronic blackboards
+    *   Wireless Internet devices
+*   **Teacher Role:** Conducts classes using various digital devices and programs.
+
+#### 2.3. Digital Textbooks
+
+*   **Definition:** Digital versions of traditional paper textbooks, enhanced with interactive features.
+*   **Key Features:**
+    *   Includes videos and multimedia content.
+    *   Offers interactive functions.
+    *   Provides automatic scoring capabilities.
+*   **Examples:** Moving images of molecular action, zoomable images (e.g., Earth from space).
+
+#### 2.4. Smart Education Tools & Methods
+
+Smart education uses various digital tools for different teaching activities:
+
+*   **Production:** PowerPoint, Hangul, Google Apps, Lectora, e-textbook authoring tools, movie makers, PDF document production, SNS, Evernote, Prezi.
+*   **Search:** Naver, Google, IP-TV, Fastel, YouTube.
+*   **Analysis:** Fastel, Google document tools.
+*   **Presentation:** Classting, Twitter, mirroring, LMS solutions, Google document tools, SNS, messengers, electronic blackboards.
+*   **Evaluation:** Fastel, Google document tools, quizzes.
+*   **Sharing:** Fastel, Classting, Google document tools.
+*   **Communication:** SNS, LMS messaging, Twitter, Facebook, Google Drive, Classting, school website bulletin boards.
+
+---
+
+### 3. Smart Healthcare
+
+Smart healthcare combines digital devices and IT with medical services, poised for significant growth through advanced technologies.
+
+#### 3.1. Concept & Structure
+
+*   **Definition:** The integration of 'smart' (digital/IT devices) and 'healthcare' (medical services).
+*   **Future Growth:** Expected to advance significantly when combined with **4th Industrial Revolution technologies** like IoT, cloud computing, Big Data, and AI.
+*   **Operational Structure:**
+    1.  **Data Generation:** Consumers/patients generate health data (e.g., via wearables).
+    2.  **Communication/Platform:** Data is transmitted through communication channels and data platforms.
+    3.  **Data Collection/Analysis:** Specialized firms (e.g., Bio R&D, diagnosis companies) collect and analyze this data, often using Big Data techniques.
+    4.  **Service Provision:** Medical institutions, pharmaceutical companies, and health management companies use these findings to provide remote or in-person health counseling, treatment, and medical care to consumers.
+
+#### 3.2. Growth Factors
+
+Several factors contribute to the growth of the smart healthcare industry:
+
+*   **Technological Advances:** User growth and advancements in wireless mobile communications and mobile devices.
+*   **Data Importance:** Increased importance of analysis using Big Data and the rise of a hyper-connected society.
+*   **Demographic & Health Trends:**
+    *   Decreased birth rates and rapid entry into an aging society.
+    *   Continuous increase in new and chronic diseases.
+*   **Economic & Cultural Demand:** Increased demand for healthcare due to cultural and economic development.
+
+#### 3.3. Key Areas of Smart Healthcare
+
+To foster technological superiority, an open ecosystem is crucial across major sectors:
+
+*   **Digital Medical Devices:**
+    *   Includes digital diagnosis and digital therapy (e.g., software for managing diabetes or asthma).
+    *   Products for diagnosing, treating, and preventing diseases, or for achieving specific clinical results.
+*   **Wearable Biometric Measuring Devices:**
+    *   Devices designed for the consumer market to measure biological data.
+*   **Remote Healthcare (Telemedicine):**
+    *   Healthcare services provided remotely.
+    *   Includes monitoring remote patients.
+*   **Analysis & Big Data:**
+    *   Involves integrating and analyzing diverse ranges of health-related data.
+*   **Others:**
+    *   Consumer healthcare contract management.
+
+#### 3.4. Core Technologies
+
+Key technologies supporting smart healthcare include:
+
+*   Health information measurement technology.
+*   Customized diagnosis and field diagnosis technology.
+*   Open healthcare platform technology.
+*   Remote healthcare service technology.
+
+================================================================================
+ORIGINAL TEXT (First 5000 chars)
+================================================================================
+
+--- Page 157 ---
+ESSENCE
+Classification  of smart  transportation
+V2V(Vehicle) Val(infra) V2N(Network)eA c a Ronee Backend server Pity es Q
+e
+(~ Classification  of smart  car partsBEBE  =
+Infotainment Communication  Automotive  body Poverurtand  Chass Diagnosis and mainterance Third-party  supplies
+wegpalgge
+<Source:  Smart  traffic cyber security  guide, Ministry  of Science  and ICT, 2018.5>
+[Fig.68]  Smart  traffic service  classification
++ V2V service
+The V2V service is a service in which vehicles,  the main agents of the traffic system, exchange  information  via
+wireless  communication  with their surrounding  vehicles.  The service allows vehicles  to send/receive  messages  about
+their positions,  traffic flow information,  and road traffic information.  Major V2V services  include roadside  information
+and obstacle  notification  services,  road construction  notification  services,  intersection  traffic signal notification
+services,  nearby  vehicle  information  notification  services,  and emergency  vehicle  access  notification  services.
+V2V service
++ Roadside  information  and obstacle  notification  service
++ Road construction  notification  service
++ Intersection  traffic signal notification  service
++ Nearby  vehicle  information  notification  service
++ Emergency  vehicle  proximity  notification  service
+>  WAVE  communication
+V2V(Vehicle)
+[Fig.69]  V2V service
++ V2I service
+V/2I service refers to communication  between  vehicles,  the main agents of the traffic system,  and the traffic support
+infrastructure.  Vehicles  equipped  with an on board unit (OBU) transmit  and receive messages  with roadside base
+stations  via Wireless  Access in Vehicle Environments  (WAVE) or 4G LTE/5G communication.  The base station
+on the roadside shall be connected  to the back-end  server  of the traffic control center and transmit  and receive
+156 TOPCIT  ESSENCE
+
+
+--- Page 158 ---
+Understanding  the IT Business  and Ethics )
+status, location,  and operation  information  that it receives  from vehicles.  The center system collects and analyzes
+information  received  from a multitude  of vehicles  and base stations,  and then sends information  about the traffic,
+road traffic conditions,  and others to the base stations,  and the base stations  will relay them to vehicles.  Examples
+of V2I services  include real-time  traffic information  collection  and provision services,  toll collection  service, roadside
+information  and obstacle  notification  service, and road construction  notification  service and protected  zone
+notification  service.
++—>  Wave Network
+<—=>  Synchronous  Optical
+Network
+vai (Infra)
+[Fig. 70] V2Iservice
++ V2N service
+A V2N service is a service  that lets a vehicle communicate  through  a network  with a server  or mobile device in the cloud
+or on the Internet.  The TCU (Telecommunication  Control Unit) is installed  in the vehicle and communicates  with the
+backend  server, which communicates  with the mobile  device to provide  information  to the user and controls  the vehicle.
+Mobile communication— networ
+——? Fixed line connection
+———? Nearfield _
+communication
+[Fig.71] V2N service
+M5 Understanding  the IT Business  and Ethics 157
+
+
+--- Page 159 ---
+ESSENCE
++ Connected  car service
+Connected  car is a core technology  of self-driving  cars whose development  has been driven by advances  made in
+telematics  technology  made possible  by the development  of mobile communication  and cloud services.  Connected
+cars can provide  services  like transportation  information  services,  music services  in cars, and information  services  to
+car riders based on their connectivity  to other cars, surroundings,  and infrastructure.
+Examples  of services  that connected  cars can provide include information  services  using augmented  reality, services
+that help drivers by recognizing  and notifying  them about road conditions  ahead, and fully autonomous  driving and
+automatic  parking  that do not require  any driver response.
+© Smart education
+Among  the social changes  brought  about by advanced  digital environment,  the changes  that could affect the
+education  environment  are the increased  number  of couples  who decide to live together  without  tying the knot,
+the continuously  declining  birth rate, the arrival of an age when individual  choices  are respected,  and the rapid aging
+of the population.  To respond  to these societal changes,  the government  established  a national strategy  on smart
+education  along with a basic plan on informatization  of education  in the country.
+Self-paced
+Fun
+In alignment  with my level Study Method
+and interests
+Using information  technology
+[Fig.72]  Concept  of smart  education
+The government's  smart education  program  produced  a digital textbook  prototype  in 2006, based on basic research
+that began in 1997. In 2007, the Ministry  of Education  developed  digital textbooks  for the teaching  of Korean, English,
+and mathematic...

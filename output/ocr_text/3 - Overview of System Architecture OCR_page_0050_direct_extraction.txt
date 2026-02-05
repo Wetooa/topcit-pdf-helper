@@ -1,0 +1,40 @@
+Overview  of System Architecture )
+The critical area problem is to establish  rules so that the processes  cooperate  with each other. Each process  must
+request  permission  to enter, even if it enters its critical section.  The part of the code that implements  such a request
+is called the entry section.  The exit section  is after the critical section,  and the rest of the code is collectively  called
+the remainder  section.
+Solving  the critical section  problem  requires  satisfying  the following  conditions:
++ Mutual exclusion:  If a process  runs in its critical section,  the other processes  cannot  run their own critical section.
++ Progress:  Only processes  that are not running  in the remainder  section  can enter a critical  section  without  a running
+process.
++ Bounded  waiting:  After a process  makes a request  to enter its critical section,  the time allowed  for other processes
+to enter the critical section  should be limited until the process  enters  the critical section.
+C) Solving  the critical  section  problem
+One of the ways to solve the critical section problem is to configure  the synchronization  hardware,  not to allow
+the interruption of generation  while the shared data in the critical section is being changed.  However,  the hardware
+method  is not feasible,  since it deteriorates  the system  efficiency  in a multiprocessor  environment.  Another  way is to
+use a semaphore,  which is a synchronization  tool. The semaphore,'S’,  is an integer  variable,  and only the P operation
+(wait) and V operation  (signal)  are enabled.  If one process  modifies  the semaphore  value, the other processes  cannot
+modify the same semaphore  value at the same time. It works by setting  the semaphore  value to “wait” when a
+process  enters the critical section and changing  the value to “signal” when the process  exits the critical section.
+Another  process  checks  the semaphore  value and does not enter the critical section  if the value is in the “wait” state,
+preventing  multiple  processes  from simultaneously  accessing  the shared data.
+D) Deadlock  status
+In a multi-programming  environment,  the processes  compete  with each other to use limited resources.  When a
+process  requests  a resource,  it obtains  a “standby”  status if the resource  is not available.  There may be a case when
+the status of a process  in “standby”  is never changed  because  the requested  resource  is allocated  to other standby
+processes.  This state is called the deadlock.
+The deadlocked  processes  cannot  finish the running  program,  and the system cannot start other tasks because  the
+resource  is tied to other processes.  <Table 5> shows the conditions  that can cause deadlock.  They include mutual
+exclusion,  hold & wait, non-preemption,  and circular  wait. The deadlock  occurs  when these four conditions  are met.
+<Table 5) Conditions  Causing  Deadlock
+Condition Description
+Mutual  exclusion + The state in which only one process  can use the shared resource.
++ The state in which processes  are requesting  other resources  while occupying  the current
+resource,Hold & wait
++ The state in which the resource  allocated  to each process  cannot  be forcibly  released  untilNon-preemption . A
+its use is complete
++ The state in which the requests  for a resource  by different  processes  are continuously
+Circular  wait
+repeated.
+M3 Overview  of System  Architecture  49

@@ -1,0 +1,44 @@
+ESSENCE
+Data Suppression+ Hong Gil-dong,  35 — MrHong,  30-40
+years old12 Suppression
+13, Random  rounding
+14. Data ranger
+15. Controlled  rounding
++ Hong Gil-dong,  35 years old, live in Seoul,
+attend Korea University 16. Adding  random  noiseData Maskin, ae ; -6 — Hong OO, in his 30s, live in Seoul, 17. Blank and impute
+attend OO university
+[Figure  88] De-identification  Methods
+<Example>  Application  of non-identification  measures
+Resident  registration  number Gender Hospitalization  date Age Disease  name
+77091 41234567 Male 2015/06/23 39 Flu
+. 850930-1234567 Male 2015/10/01 31 Flu
+Originala 7101192345678 Female 2014/01/21 45 High blood pressure
+77061 9-2345678 Female 201 4/09/23 39 High blood pressure
+g90425-1234567 Male 2015/04/16 33 hepatitis
+860804-2345678 Female 2014/11/11 30 hepatitis
+@ Data deletion  (resident  registration  number)
+Resident  registration  number Gender Hospitalization  date Age Disease  name
+Male 2015/06/23 39 Flu
+Male 2015/10/01 31 Flu
+Female 2014/01/21 45 High blood pressure
+Female 2014/09/23, 39 High blood pressure
+De- Male 2015/04/16 33 hepatitis
+identified Female 2014414 30 hepatitis
+data F pan ;@ Data masking  (resident  registration  number, hospitalization  date), aggregation  (average  age)
+Resident registration  number | Gender [Hospitalization  date Age Disease name
+Perens peters, Male 2015/"/"* 35 Flu
+greeet_peeeees Male 2015/*/** 35 Flu
+Pere... Female 2014s" 35 High blood pressure
+Canenet—:-menendl Female 2014s 35 High blood pressure
+Grbeeh = poe, Male 201s" 35 hepatitis,
+gune_geeeeee Female 205" 35 hepatitis
+[Figure  89] <Example>  De-identification  Methods
+@ Personal  Information  Protection  Management  System
+There is the ISMS-P certification  system which establishes  a personal  information  protection  management  system,
+examine  whether  systematic  and continuous  protection  is performed,  and grant certification  if the standards  are met,
+in order to protect  personal  information
+All persons  falling under the following  <Table 7> among “telecommunications  business operators”  and “persons  who
+provide  information  or mediate  the provision  of information  using telecommunications  services  of telecommunications
+business  operators’  (Article 47, Paragraph  2 of the Information  and Communication  Network  Act) are the subject  of
+the obligations.
+200 TOPCIT  ESSENCE

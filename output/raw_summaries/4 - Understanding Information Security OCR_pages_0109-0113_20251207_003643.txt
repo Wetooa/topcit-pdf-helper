@@ -1,0 +1,179 @@
+LEARNING GUIDE: Pages 109-113
+Generated: 2025-12-07 00:36:43
+PDF: 4 - Understanding Information Security OCR
+
+================================================================================
+LEARNING GUIDE
+================================================================================
+
+Here's a simplified learning guide for pages 109-113, focusing on essential information for study:
+
+---
+
+## Learning Guide: Understanding Information Security
+
+### 1. Network Security Overview
+
+#### A. Concept of Network Security
+*   **Purpose:** To protect data transmission between computers from various threats.
+
+#### B. Types of Security Attacks (X.800 Standard)
+
+##### 1. Passive Attacks
+*   **Goal:** Obtain and exploit system information without affecting system resources.
+*   **Nature:** Eavesdropping or monitoring transmitted data.
+*   **Examples:**
+    *   **Message Content Disclosure:** Reading the content of private messages.
+    *   **Traffic Attack (Traffic Analysis):** Observing communication patterns (number, length of messages) to deduce information, even if data is encrypted.
+*   **Detection:** Difficult because data isn't altered.
+*   **Focus:** **Prevention** is key.
+
+##### 2. Active Attacks
+*   **Goal:** Change system resources and affect system operations.
+*   **Nature:** Illegal modification of transmitted data or creation of false data.
+*   **Examples:**
+    *   **Masquerading:** One entity pretends to be another (often combined with other attacks).
+    *   **Replay Attack:** Capturing a legitimate message and re-sending it later to achieve unauthorized results.
+    *   **Modification of Message:** Illegally altering parts of a message, delaying transmission, or changing message sequence.
+    *   **Denial of Service (DoS) Attack:** Interfering with the normal use or management of communication equipment (e.g., making a server unavailable).
+*   **Prevention:** Very difficult to prevent completely.
+*   **Focus:** **Detection and recovery** from the attack's impact.
+
+#### C. Network Security Model
+*   **Purpose:** To describe how security measures protect data during transmission between sender and receiver.
+*   **Key Elements of Security Mechanisms:**
+    1.  **Security-Related Conversion:** Algorithms that transform data to protect it.
+        *   **Examples:** Encryption (mixing messages to prevent understanding), adding a hash code (a unique code based on message content to identify the sender).
+    2.  **Secret Information:** Confidential data known only to communicating parties, not to attackers.
+        *   **Example:** Encryption keys used for converting messages.
+*   **Trusted Third Party:** An entity that may be needed for secure transmission.
+    *   **Roles:** Distributes secret information (like encryption keys) to communication parties, mediates disputes.
+*   **Four Basic Conditions for Designing a Security Service:**
+    1.  Design a robust security conversion algorithm that an attacker cannot break.
+    2.  Create the necessary secret information for the algorithm.
+    3.  Develop a secure method for distributing and sharing this secret information.
+    4.  Designate a specific security algorithm and communication protocol for the entities using the secret information.
+
+#### D. Network Access Security Model
+*   **Threats:** Unauthorized infiltration (hackers), damage/theft of information, malware (viruses, worms).
+*   **Two Categories of Security Response Techniques:**
+    1.  **Gatekeeper Function:** Denies access to information systems for unauthorized users.
+        *   **Example:** Login procedures using passwords.
+    2.  **Internal Security Control:** Monitors and responds to activities *after* initial access by users or software.
+        *   **Example:** **Intrusion Detection System (IDS)** – a system that monitors information system activity to detect intruders or malicious behavior.
+
+#### E. Communication Protocol Layer and Security
+*   **OSI 7-Layer Reference Model:** A standard model (ISO/IEC 7498-1:1994) for how open systems interconnect, providing a framework to understand where security can be applied. (Specific security details for each layer are not covered in this section).
+
+---
+
+================================================================================
+ORIGINAL TEXT (First 5000 chars)
+================================================================================
+
+--- Page 109 ---
+Information  security )
+>> Keywords
+Firewall,  Virtual Private Network  (VPN), SSL, traffic attack, denial of service (DOS) attack, Intrusion
+Detection  System (IDS), IPSec, transmission  mode, tunnel mode, sniffing, spoofing,  key management,
+NAT, DMZ, WLAN, IEEE 802.11i,  4-way handshake,  OWASP  top 10, anonymous  FTP
++ Preview  for practical  business Building  a secure network  using the
+firewall and DMZ
+Company  A is a small and medium-sized  company  that utilizes  a network  connected  to 90 computers.
+Currently,  the company  has 126 public IP addresses  (211.82.50.0/25),  one router (211.82.50.126/25),
+a switch, a database  server, and a web server, respectively.  In this situation,  assistant  manager,  Kim,
+was instructed  to introduce  a firewall to configure  the external,  internal, and DMZ network,  in order
+to increase  a network  security  level. Let’s learn how to build a secure network  under the following
+conditions.
++ Set private IPs (192.168.1.0/24)  for 90 internal  PCs and the database  server.
++ Place the web server in the DMZ area, while keeping  the existing  address  (211.82.50.1/25).
++ Subnet  the external  network  and DMZ network  into two existing  IP bands (211.83.50.0/25).
++ Use only one router, one firewall,  and two switches.
+M4 Understanding  Information  Security 109
+
+
+--- Page 110 ---
+ESSENCE
+01 Overview  of network  security
+A) Concept  of network  security
+@® Type of security  attacks
+X.800 divides security  attacks into passive attacks and active attacks. A passive attack means that an
+attempt  is made to obtain and exploit system information,  but system resources  are not affected.  An active
+attack aims to change  system  resources  and affect system  operations.
++ Passive  attack
+A passive attack refers to the eavesdropping  or monitoring  of transmitted  data and is attempted  to obtain
+the transmitted  data. As shown in [Figure 53], passive  attacks  include message  content  disclosure  and traffic
+attack. Traffic attacks  can also be made against  encrypted  data transmission  for confidentiality.  This attack
+estimates  the nature of communication  by observing  the number  and length of message  exchanges.
+The passive attack has the characteristic  that it is difficult  to detect, because  the attack does not change
+data. Therefore,  prevention  is more important  than detection.
+Read contents  of
+message  from Bob
+to Alice
+Internet  or
+other comms  facility
+(a) Release  of message  contents
+Observe  pattern
+of messages  from
+Bob to Alice
+Internet  or
+other comms  facility
+[Figure  53] Passive  attack
+(Source:  W. Stallings,  Cryptography  and Network  Security  - Principles  and Practice,  Prentice  Hall, p.17)
++ Active attack
+An active attack can be classified  into masquerading,  replay, modification  of message,  and denial of service
+(DOS) attack,  which entail the illegal modification  of transmitted  data or the creation  of false data.
+Masquerading  occurs when one entity pretends  to be another. In general, the masquerading  attack is made
+together  with one of the other active attack  types.
+The replay attack acquires  one message,  by using an inactive  attack method,  and sends the message  again
+to obtain unauthorized  results.
+110 TOPCIT  ESSENCE
+
+
+--- Page 111 ---
+Information  security
+The modification  of message  attack  obtains  unauthorized  results by illegallychanging  parts of legal messages,
+delaying  message  transmission,  or changing  the message  sequence.
+The denial-of-service  attack interferes  the normal use or management  of communication  equipment  (specific
+computer  or network).  This attack is generally  called a DoS attack. Most of these attacks  are made against  a
+specific  target.
+The active attack has characteristics  that are opposite  to the passive attack. It is very difficult  to prevent
+active attacks completely,  because  all communication  equipment  and communication  lines cannot be
+physically  protected  at all times. Response  to active attacks  aims to detect an attack and recover  from the
+collapse  or delay, due to such an attack.
+Message  from Darth
+that appears  to be
+from Bob
+e@
+Arr Internet or
+Bob other comms facility
+(a) Masquerade
+Capture  message  from
+Bob to Alice; later
+replay message  to Alice
+Internet  or
+other comms  facility
+(b) Replay
+Dath modifies
+message  from Bob
+to Alice
+Internet  or
+other comms  facility
+(c) Modifiction  of messages
+Dath disrupts
+service
+provided  by server
+e@
+Arr Internet or
+Bob other comms facility
+(d) Denial of serviec
+[Figure  54] Active attack
+(Source:  W. Stallings,  Cryptography  and Network  Security-Principles  and Practice,  Prentice  Hall, p.18, 19)
+M4 Understanding  Information  Security  111
+
+
+--- Page 112 ---
+ESSENCE
+@ Network  security  model
+A computer  network  consists  of communication  objects,  such as computers  and communication  systems  (a set
+of transmission  devices and communication  lines). The computer  network  exists...

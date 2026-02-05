@@ -1,0 +1,14 @@
+Overview  of System  Architecture
+>p> Recent  trends and issues
+Technologies  that have recently  become  issues in system architecture  are cloud computing,  Al, and big
+data. The learning  subject related to these is data processing  technology.  The subject  closely related to
+Al is the parallel processing  system. The subject  related to big data is storage  technology.  The subjects
+related to cloud computing  are storage,  high availability  storage  devices,  and graphics.
+>p Learning  objective
+1, To be able to explain  the parallel processing  technology  and operational  principle.
+2. To be able to explain the storage  technology  and operational  principle.
+3, To be able to explain  the image and image compression  technology,  and graphics  processing  technology.
+>> Keywords
+Flynn's taxonomy,  parallel processing  technology,  parallel program  technology,  disk scheduling,  SAN, NAS,
+DAS, LTO, VTL, RAID, GPGPU,  video compression  standards
+M3 Overview  of System  Architecture  75

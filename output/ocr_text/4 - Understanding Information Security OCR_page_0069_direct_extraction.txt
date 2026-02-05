@@ -1,0 +1,35 @@
+Information  security )
+When the retention  period of collected  personal  information  has expired, or the purpose  of use has been
+achieved,  personal  information  must be destroyed,  without  delay, in an irrecoverable  way. If the personal
+information  must be retained  according  to other laws and regulations,  it must be stored separately  from
+personal  information  that is currently  in use.
+To store separately,  a separate  database  can be generated  and stored, or data can be stored in a physically
+separated  server. The access  rights of the general personal  information  database  should be set differently  from
+the personal  information  database  that is stored separately,  in order to prevent  unnecessary  access,  inquiries,
+and leakage.
+® Access  control on the personal  information  processing  system
+Those who handle personal  information  should control unauthorized access by limiting the access rights, in
+order to prevent illegal access and breach incidents  to the personal  information  processing  system,  and to
+detect illegal attempts  to leak personal information  by analyzing  the connected  IP addresses.  The access
+control method  includes  ACL (Access  Control List), firewall,  and free intrusion  detection  system (Snort).
+@® Applying  encryption  when storing  and transmitting  personal  information
++ Encrypting  personal  information  to prevent illegal exposure  or forgery/alteration,  when storing it in the
+personal  information  processing  system or transmitting  it through  the network.
++ Storing  passwords  after one-way  encryption  to prevent  decryption.
++ Developing  a system by including  the feature that can provide a temporary  password  or reset the password,
+since the password  cannot  be decrypted  when lost.
++ Storing uniquely  identifiable  information,  such as the resident  registration  number, passport  number,
+driver's license number,  and foreign registration  number, and bio information,  such as fingerprint,  iris, voice,
+handwriting,  etc., after encryption  with a secure encryption  algorithm.
++ Applying  encryption  systems,  such as SSL/TLS  to the personal  information  transmission  section.
+® Managing  the logging  and storage  of access records  and changes  to rights
+Those who handle personal  information  should retain and manage  the access record of the personal
+information  system  for at least 6 months.  Access records are the data that can check for illegal access by
+generating  log files, which keep track of personal  information  input/output  and modification,  data access
+details, etc.
+03 Information  security  standards  and related  systems
+A) ISO 27001:2013
+ISO 27001:2013,  an international  standard  for information  security  management  systems  and certification
+systems,  enables  the applicant  to receive existing  quality management  certification  (ISO 9001), environmental
+management  certification  (ISO 14001), etc. together  with ISO/IEC 27001 and 27002 (ISMS2.0),  which are
+M4 Understanding  Information  Security  69

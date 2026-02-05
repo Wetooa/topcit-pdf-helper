@@ -1,0 +1,31 @@
+ESSENCE
+section  explains  the part of tailoring  that has to do with software  adoption.
+Before software  is adopted,  the adoption  procedure,  method,  and outputs must be optimized  to accommodate
+changes  in the internal and external  requirements.  The need for tailoring  becomes  most acute for unit-level  projects.
+In these situations,  the best software  adoption  environment  can be created  through  tailoring.
+<Table 16> Important  considerations  for the tailoring  process
+Considerations Explanation
+Reasons  for SW — Work scope (ex. Finance,  Telecom,  etc.), stakeholder  considerations
+adoption - Establish  the goal and direction  of SW adoption.
+Timetable  and Scope of adoption,  interfacing  parts, project  timetable  considerations
+scope - Select  the methodology  and output.
+Int Ifext | Environmental  considerations,  e.g. regulations  and laws, IT compliance,  etc.
+vervionm  ent - Establish  the scope of application  of security measures,  and the internal/external  environment  response
+strategy.
+Application SW application  framework  and base technology  considerations
+technology -Select the framework  and attributes,  inspect its utilization,  and select the application  base technology.
+03 IT Business  Adoption  Method
+There are two distinct methods  of adopting  an IT business:  in-house  development  and package  purchase.  The
+advantage  of in-house  development  is that it allows a company  to fully reflect the needs of users by utilizing  its own
+internal personnel.  A purchased  package  has the advantage  of being based on a standardized  advanced  process
+which is conducive  to improving  work efficiency.
+@ Characteristics  of in-house  development
+This is a form of adoption  that allows companies  to set up and develop  information  systems  using their own
+manpower,  resulting  in a system  that is faithful to the internal  requirements  of the company.  While know-how  can be
+accumulated  with this method,  it involves  relatively  higher adoption  costs, while success  cannot  be guaranteed.
+@ Characteristics  of package  purchase
+This is a form of adoption  under which a company  can easily absorb the know-how  gained from early cases of IT
+business  adoption.  By adopting  a system that has undergone  many tests and adoption  verifications,  uncertainty
+about success  can be eliminated. The adoption  period is short and the cost is relatively  low, but the maintenance
+costs are likely to increase
+58 TOPCIT  ESSENCE

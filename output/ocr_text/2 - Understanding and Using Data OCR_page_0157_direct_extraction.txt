@@ -1,0 +1,40 @@
+ESSENCE
+01 Overview  of Al
+A) Definition  and classification  of Al
+© Definition  of Al
+Alis a technology  that realizes  human  learning  ability, reasoning  ability, perception  ability,  and natural  language  understanding
+ability by using computer  programs.  The dictionary  meaning  of Al is based on a philosophical  concept,  which is created  by
+humans  or intelligent  beings or systems.  In the past, Al had the narrow  meaning  of “software  that enables  computers  to imitate
+human intelligence  behaviors”.  More recently,  however,  the meaning  of Al has come to include  a technology  that studies  how to
+enable  computers  to perform  the kinds of thinking, learning,  and self-development  that can be done with human  intelligence.
+@ Classification  of Al
+<Table 81> Classification  of Al
+Three elements Description Case
+Weak Al/Artificial  Narrow  Intelligence:Operable  only under  given conditions.Recommendation  by Google Maps,
+Autonomous  Car, Google  Translation,  and
+an Facebook
+Strong  Al/Artificial  General Terminator,  secretary  robot, factoryintelligence:  AGI Al that can think like humans. robot, etc.
+Artificial  Super Intelligence:  ASI Al that surpasses  humans  in all areas.A high-level  command  is possible,  such
+as “Create  a new energy  source  that can
+be used by people  for the next 1,000
+years.”
+B) History  of Al
+<Table 82> History  of Al
+Item Description Detailed  technology
+Turing defined  the method  of testing  whether  a machine  can think, the
+1950 The beginnings  of Al possibility  of developing  an intelligent  machine,  and a learning  machine,
+etc. in his paper “Computing  Machinery  and Intelligence”
+1956 Composition  of a data-based Ten scientists  gathered  at Dartmouth  College,  UK and held a 6-week
+analysis  system workshop,  which became  the beginnings  of Al study.
+1970's Al Winter (Dark Age) Al Winter began as funding  was cut due to the perception  that Al
+systems  would never meet the original expectations.
+Atule-based  system  created  by manually  entering  the knowledge  of
+human experts.
+1980's Expert system Although  hundreds  of systems  were built, small-sized  systems  were
+not useful, and large-sized  systems  were expensive  to develop  and
+maintain,  and difficult  to use.
+Second  “Al Winter’  in the late 1980s.
+Imitation  of nature Anew  technology  appeared  that focused  on the manipulation  of high-
+1990's Neural network,  genetic level symbols  by replacing  the traditional  “logicist”  paradigm.
+algorithm Optimism  about  Al
+156 TOPCIT  ESSENCE

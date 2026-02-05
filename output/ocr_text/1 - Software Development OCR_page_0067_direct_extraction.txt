@@ -1,0 +1,36 @@
+ESSENCE
+D) Hierarchy
+A hierarchy  can be defined as a system composed  of several layers that provide  its own specific service. It has
+the advantage  of making  problem  solving  easier when applied.  If a problem  occurs, it can be checked  in an easy
+layer. Also, it is compatible  with other equipment  because  the equipment  is standardized.  The seven layers of
+the OSI (Open System Interconnection)  model, a network  protocol  developed  by the International  Standards
+Organization  (ISO), is a representative  example  of the hierarchical  structure.
+03 Method  of Expressing  Software  Architecture  Design
+A) Context  model
+The boundary  between  the initial requirements  analysis  system and the external  environment  should be set.
+The context  diagram represents  a system as a large process before dividing  the system. This model shows
+system IO data by describing the system area that should be developed,  determining  the boundary  between
+the system and the external  environment,  and presenting  the interface  with the outside.
+This model focuses  on the interface  between  the system and the external  environment.  When beginning  an
+analysis,  analysts  should focus on understanding  the data exchanged  between  the user and the system, as
+well as the type of mutual exchange,  first. When the boundary  of the system is set, the inside of the system is
+analyzed  to realize it. It is the same as giving priority  to goals in developing  a system.
+B) Component  diagram
+A component  is a part that can be reused, so that a well-made  part can be purchased  from other fields
+and plugged in, to speed up software  development  and increase  productivity.  In essence, reusability  is the
+foundation  of this technology.  Reuse technology  is designed  to speed up software  development  and increase
+productivity  by reusing  proven parts as much as possible.
+Components  should communicate  and cooperate  with other systems  or external  devices. The standard for
+component  implementation  and documentation  should be established  to guarantee  the interoperability  of the
+components.  Here, “components  association”  is a process  of assembling  components.  There are several types
+of association  including  sequential  association,  hierarchical  association,  and additional  association.
+C) Package  diagram
+Commercial  software  developed  for a large number  of users is called a “package”,  and subsystems  are often
+released  as packages.  Once defined as a package,  the relationship  of dependence  between  packages  can be
+minimized  by hiding the inner details of the package  from the outside.  The package  composed  of a subsystem
+is a set of functionally  related classes.
+The package  diagram represents  the relationship  of dependence  between  subsystems.  It is suitable  for
+representing  software  architecture  because  it represents  a subsystem  that is abstracted  at a higher level. If
+subsystems  are divided to minimize  the association  relationship  between  subsystems,  dependence  between
+objects  can be minimized  and complexity  can be reduced.
+66 TOPCIT  ESSENCE

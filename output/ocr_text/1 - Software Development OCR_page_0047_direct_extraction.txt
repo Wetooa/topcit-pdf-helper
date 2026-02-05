@@ -1,0 +1,26 @@
+ESSENCE
+E) Sorting  algorithm
+@ Classification  of sorting
+Sorting  can be classified  into internal sorting and external storing depending  on the sorting location.  The
+alignment  method should be selected  in consideration  of the conditions,  such as the characteristics  of the
+system in use, the amount  and state of the data, the memory  space required for sorting, and the execution
+time.
++ Internal alignment:  A sorting method  that places a small quantity  of data into the main memory  device for
+sorting.  The sorting  speed is fast, but the amount  of data that can be sorted is limited by the capacity  of the
+main memory  device.
++ External  sorting: A method  of sorting  a large volume of data in an auxiliary  storage  device. A large amount
+of data is divided into several sub-files  and sorted, and then the sorted sub-files  are merged in the auxiliary
+storage  device. The sorting  speed is slow.
+@ Classification  of internal  sorting  algorithms
+Insertion  sort
+L Shell sort
+Selection  sort
+Quick sort
+Bubble  sort
+|  Selection — —_
+Meng _—
+Counting  sort
+Radix sort
+Bucket  sort
+[Figure  6] Classification  of internal  sorting  algorithms
+46 TOPCIT  ESSENCE

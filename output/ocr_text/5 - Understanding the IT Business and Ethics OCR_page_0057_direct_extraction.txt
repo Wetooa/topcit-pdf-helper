@@ -1,0 +1,42 @@
+ESSENCE
+IT business  adoption,  resulting  in a predictable  procedure.
+<Table 12> Detailed  description  of examples  of ordering  processes
+Process Key activities Key outputs
++ Description  of the system to be ordered
+. + Definition  of the requirements  and detailed + Ordering  plan.Ordering  plan . : . .specifications. + Status analysis  and requirements  specification
++ Writing  of the plan for ordering
++ Documentation  of the proposal  requirements. f |
++ Description  of the constraints. * Request for proposal.RFP preparation . + Contracting  terms and conditions  report.
++ Establishment  of supplier  selection  procedure
+and standard + table of supplier  evaluation  criteria.
++ Notice of tender  and evaluation  of the proposal. + Notice of tender.
++ Supplier  selection  and negotiation. + Results  of evaluation  of proposal.
++ Signing  of contract. + Contract.Proposal  evaluation
+and contracting
++ Review  and approval  of the project  execution
+Supplier  monitoring plan.
++ Inspection  of supplier  contract  fulfillment.+ Project  execution  plan.
++ Report  on contract  implementation  inspection
++ Inspection  manager  selection  and acquisition + Acquisition  plan
+Acquisition  and preparation. + Report on test results (performance  evaluation
+completion + Inspection  and acquisition  test. report).
++ Acquisition  and completion  of the project + Report  on acquisition  and project  completion
+B) SW adoption  process,  ISO/IEC 12207
+ISO/IEC 12207 is an international  standard  for the software  adoption  lifecycle.  It provides  a standardized  and
+systematic  process  for acquiring,  supplying,  developing,  operating,  and maintaining  software.
+ISO/IEC  12207 consists  of three main processes  and a detailed  procedure  for each process,
+ISO/IEC 12207 defines all the processes,  activities,  and tasks that can be applied to the adoption  and development
+of many different  forms of software,  but it contains no specifications  regarding  the naming,  form, and contents  of
+the output. Therefore,  if ISO/IEC 12207 is used together  with SPICE (Software  Process  Improvement  and Capability
+Determination)  or CMMI (Capability  Maturity  Model Integration),  not just the WHAT but the HOW of the SW adoption
+process  can be learned.
+@ Basic lifecycle  process
+The basic life cycle process  consists  of five sub-processes  and provides  support  to the stakeholders  participating  in
+the software  lifecycle  process.
+<Table 13> Detailed  process  of the basic lifecycle  process
+Process Description
++ Defines  the activities  of the software  acquirer.
+Acquisition * Defines the system, output, and service acquisition  activities.
++ Defines  the activities  of the software  supplier.
+Supply + Centered  on the supplier  who supplies to the acquirer.
+56 TOPCIT  ESSENCE

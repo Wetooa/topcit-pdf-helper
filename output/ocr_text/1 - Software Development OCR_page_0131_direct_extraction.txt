@@ -1,0 +1,37 @@
+ESSENCE
++ Preview  for practical  business Do we need to manage  open-source
+software?
+As more open-source  software  is used, the need for license management  is also increasing,  because
+disputes  over licensing  can damage  a corporate  image and cause financial losses too. In particular,
+the use of open-source  software  seems to be spreading  further in this era of the Fourth Industrial
+Revolution,  which can also increase  dispute  factors.
+As the source code of open-source  software  is opened, there are several benefits when developing
+a technology  or product  that uses it, such as reducing  the development  time and cost, and breaking
+technological  dependence.  However,  though anyone can use an open-source  license, users should
+follow the license terms when distributing  it to a third party intending  to use it for technology  or
+product  development.
+Last year, a domestic  software  company  called Hangul and Computer  was sued for breach of
+copyright  by Artifex in the U.S. on a charge of violating  the open-source  license. Artifex claimed
+that Hangul and Computer  had violated  the license when selling “Hangeul’  programs  equipped  with
+“Ghostscript”  (a PDF conversion  library), which was developed  and distributed  by Artifex with a GPL.
+Artifex filed a lawsuit  in the California  court, and Hangul and Computer's  request  for its dismissal  was
+rejected.  In the end, Hangul and Computer  had to pay the settlement  money  to end the lawsuit.
+One official at the National  IT Industry  Promotion  Agency  said, “This incident  is a case which shows
+how a corporate  image can be damaged  and financial  losses  incurred  by unauthorized  use of the GPL
+code. This case reminded  us again of the importance  of complying  with open source software.’
+One official at the National  IT Industry  Promotion  Agency  said, “The incident  was the case that tells
+us deterioration  of corporate  image and financial  loss due to the unauthorized  use of the GPL code.
+The case reminded  us again of the importance  of complying  with the open-source  software.”
+Disputes  over open-source  licenses are increasing  because  we did not introduce  and manage the
+open-source  license systematically  due to the erroneous  perception that it is free of charge. In
+addition,  open-source  licenses  are complex  as there are more than 2,000 types of license.  According
+to a NIPA survey, 37% of domestic  SMEs violated  the license in 2016.
+It was pointed out that we need to establish  an open-source  license management  system quickly,
+because  the use of open-source  software  seems to be increasing  in the field of new technology  such
+as the Internet  of Things (loT), artificial  intelligence  (Al), big data, cloud, etc.
+It is essential  that enterprises  and public institutions  using open-source  software  take
+countermeasures  such as establishing  governance  and utilizing license analytics  and verification
+tools.
+(Source:  iNews 24, “Misusing  open source software  can be nightmare.  Using open source software  is
+like walking  on a tightrope]
+130 TOPCIT  ESSENCE

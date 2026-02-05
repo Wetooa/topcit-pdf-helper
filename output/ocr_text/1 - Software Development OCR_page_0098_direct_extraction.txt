@@ -1,0 +1,37 @@
+Software  Development )
+© Composition  of the standard  e-Government  framework
+Daten Execution Management clay
+environment environment environment envi
+Implementation  tool BOSSI DEoeSls Service request
+Business  processing ane De Monitoring  tool
+Deployment  tool Data processingre Change
+Linking and integration management
+Test tool OperationCommon  foundation management  tool
+=a Mobile screen processing Status
+Configuration management
+management  tool Batch processing
+, ne  || | ce . Batch operation
+| Mobile device API Mobile device API Standard P tool
+1 development  tool development  tool Managemen
+beeeeeee-----|  @hybridapp  |------------  :
+[Figure  21] Components  of the standard  e-Government  framework
+The framework  is composed  of the execution  environment,  development  environment,  operating  environment,
+management  environment,  and common  components,  thus providing  the application  architecture,  basic
+functions,  and common  components  that are necessary  for developing  a web-based  information  system.
+<Table 26> Components  of the standard  e-Government  framework
+Component Description
+P An application  program  environment  that supports  the easy standardization  of screen, server
+erect data, and batch function devel eed  when developi Ee  aameneenry program, data, and batch processing  function development  needed when developing  an
+e-Government  business  program.
+An environment  needed  to develop  a business  program  comprising  such tools as the data
+Development development  tool, test automation  tool, code test tool, template  project creation  tool, common
+environment component  assembly  tool, server environment  management  tool, batch template  project  creation
+tool, batch job file creation  tool, etc.
+An environment  for managing  and operating  the service  running  in the execution  environment
+Operating (monitoring,  deployment,  management  system,  etc.)
+environment An environment  for operating  a batch environment  (batch execution,  scheduling,  result monitoring,
+etc.)
+Management A module used to distribute  the development  framework  and common  services  to each development
+environment project  for management.
+A set of reusable  development  components  that can be used in common  by e-Government  projectsCommon  componentswhen developing  application  software.
+M1 Software  development  97

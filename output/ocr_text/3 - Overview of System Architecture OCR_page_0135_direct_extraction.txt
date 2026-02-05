@@ -1,0 +1,27 @@
+ESSENCE
+© Full virtualization
+Full virtualization  completely  virtualizes  the hardware.  Although  the guest OS perceives  that it owns and accesses
+the hardware  directly,  the virtual server  uses the resources  that the hypervisor  emulates  to look like hardware.  If the
+guest OS intends  to monopolize  the hardware,  the hypervisor  must handle  these commands  separately.  A CPU (Intel's
+VT or AMD-V)  that supports  virtualization  is necessary  to emulate  hardware  resources,  other than the CPU, fully.
+The performance  has greatly increased  since the hypervisor, included  in the CPU, handles  it at high speed. There is
+no need to modify  the guest OS, since the CPU handles  full virtualization.  Therefore,  there are no restrictions  on the
+guest OS. Linux-based  guest OS and Windows  guest OS can operate  simultaneously.  The native hypervisor  generally
+corresponds  to full virtualization.
+APP2
+OS Guest OS
+a  OoMSels
+CPU (Intel VI-X, AMD-V)
+[Figure  97] Full Virtualization  Conceptual  Diagram
+@ Para-virtualization
+Para-virtualization  does not completely  virtualize  the hardware,  and the guest OS must operate  through  the
+hypervisor  in order to access the hardware  resources.  It is a method  of using the hypervisor  API, without  hardware
+emulation,  It is necessary  to partially  modify  the guest OS's kernel to use the hypervisor  API.
+It has the advantage  of providing  a high performance,  since it can control it through  a hypervisor,  without  hardware
+emulation.[t  has the disadvantage  that it can use only an open-source  OS as a guest OS, since the kernel of the
+guest OS needs to be partially  modified.
+Guest OS | | Guest OS | | oes |
+| Hypervisor Hypercall |
+Ln  eN=li
+[Figure  98] Para-virtualization  Conceptual  Diagram
+134 TOPCIT  ESSENCE

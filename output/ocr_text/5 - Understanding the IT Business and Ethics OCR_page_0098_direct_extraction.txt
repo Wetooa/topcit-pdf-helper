@@ -1,0 +1,35 @@
+Understanding  the IT Business  and Ethics )
+@ The necessity  for the EDW
+f an enterprise  wishes to maintain  uniformity  of viewpoint  across its entire organization,  it must consolidate  the
+information  that it possesses  and any external  information  it needs from an enterprise-wide  perspective  and keep it
+as the master  information.
+n today’s rapidly changing  business  environment,  enterprises  have to extract enterprise-perspective  data by
+conducting  diverse data analyses  for users in diverse sectors. This is because  enterprises  need to have sufficient
+orecasting  capability  for making  strategic choices  and responding  to changing  user requirements  brought  about by
+changes  in the business  environment.  Enterprises  also have to integrate  their information  resources  and reorganize
+heir management  system  as part of redesigning  their system  to prevent  data duplication.
+@ Characteristics  of the EDW
+The EDW was created  with a clear purpose  for its use. The concept  explains  a very import characteristic  of the EDW,
+amely, that of being topic-centered.  Upon adopting  the EDW, critical data within and outside  the company  become
+concentrated  and consolidated  in one place; and data are loaded and used in a time-based  order. Once stored, data
+will not be destroyed  or changed  unless there is a particular  reason for doing so. These characteristics  of the EDW are
+described  in detail as follows.5
+<Table  44> Characteristics  of the EDW
+Characteristics Description
++ Structures  the system  around  the topic of processing  the data to be analyzed  like a dailySubject-Oriented
+transaction.
++ Extracts  and integrates  the internal  and external  data of an enterprise.
+Integrated + For different  formats  of data expression,  when extracting  data, the process is managed  so
+that data can be expressed  in a uniform  format.
++ While preserving  the accuracy  of the data for a certain period of time, time elements  like the
+Time Variant day, week, and month are properly reflected.
++ To maintain  consistency  of analysis,  properties  do not change  when they have been
+Non-volatile recorded properly
++ The stored data exist as read-only,  and will not be deleted  unless  there are special rules or
+events  requiring  their deletion.
+@ Configuration  of the EDW
+The EDW is configured  so that the work support  system collects, transforms  and loads data during operations,
+analyzes  data that meet the given requirements,  and visualizes  them in such a way that they will be of assistance
+when making  decisions.  From a macro perspective,  all these processes  are referred  to as the EDW, and from a
+microscopic  point of view, the repository  for storing  data is referred  to as the EDW.
+M5 Understanding  the IT Business  and Ethics 97

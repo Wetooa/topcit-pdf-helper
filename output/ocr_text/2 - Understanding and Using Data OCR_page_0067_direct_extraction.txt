@@ -1,0 +1,33 @@
+ESSENCE
+foreign  key that refers to a primary  key, the data cannot  be deleted  or changed.
+Credit  card}
+Credit card number Cardholder  | Issue date
+9411-1111-2222-3333  | HongGildong  | 2012-11-11
+8723-4999-3999-2999  | Yang Soyu 2012-01-02
+5452-0800-0700-0600_|  Jeong Wuchi_| 2013-08-11.  |
+Use history] » Delete
+Approval
+number
+9411-1111-2222-3333  2017-11-11 | LM122 24,000
+8723-4999-3999-2999  2017-11-11 | 10494 36,000
+5452-0800-0700-0600  2017-11-11  | OM998  | 12,000Credit card number Date Amount
+Deletion  is not allowed  because  it is referenced  by the FK.
+[Figure  27] Referential  integrity
+© User-defined  integrity:  A specific  work rule, which does not fall into other integrity  categories,  is defined.
+B) Key
+© Super key: A sub-set  of all fields in a table. It is an attribute  or set of attributes  that can uniquely  identify  a record.
+@ Candidate  key: A candidate  for the primary  key. It is a super key that satisfies  uniqueness  and minimality.  That is, if
+any attribute  is removed  from a super key, the super key loses its nature and becomes  a candidate  key.
+@ Primary  key: A unique identifier  selected  from among  candidate  keys to distinguish  a specific  record in the table. Like
+the candidate  key, the primary  key has the attribute of  uniqueness  and minimality,  but a null value is not allowed. If
+there are multiple  candidate  keys, a primary  key is selected  by considering  the following  two points.
++ Selecting  a field in which values  are not frequently  changed:  Each time the value of the field selected  as the primary
+is changed,  it should be checked  whether  the value concerned  is a unique value or not. Therefore,  a column  without
+frequent  change  is more suitable.
++ Selecting  a field in which values are not relatively  complex:  If a field selected  as a primary  key has a complex  data
+domain,  the cost of comparing  the primary  key increases.  Therefore,  it is more suitable to select a domain with a
+relatively  short and simple form.
+@ Foreign key: When Table A refers to Table B, the foreign key of Table A refers to a key that can uniquely  identify  a
+record of Table B. A foreign key consists  of one field or a subset  of all fields, and cannot  have duplicate  values or a null
+value. Also, you must refer to a field that has a unique  value in Table B.
+66 TOPCIT  ESSENCE

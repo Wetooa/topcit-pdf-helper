@@ -1,0 +1,18 @@
+ESSENCE
+vertex. There are many cases in which problems  cannot be solved  simply by searching  for a graph node, such as
+whether  one can travel from a certain city to another  city on the road network,  or whether  a terminal  is connected
+in an electronic  circuit. Graph search methods  include  depth first search (DFS) and breadth  first search (BFS).
+@ Depth First Search (DFS)
+The algorithm  starts at the root node and explores  in one direction  of the starting  vertex as far as possible.  When
+there are  no more places to  go, it backtracks  to the vertex with the last forked edge and continues  to explore
+the edge of another  direction,  visiting  the vertices  until the target  node is found. A stack with a last-in-first-out
+structure  should be used, since deep first search should be repeated  by backtracking  to the vertex of the last forked
+road. Even though finding the shortest  distance  from the start node to the target node cannot be guaranteed
+initially, the demand  for storage  space is low because  only those nodes on the current  path are memorized,  and the
+target  node can be found quickly  if it is at a deep level. Also, this algorithm  is easy to implement.
+[Figure  9] Example  of depth first search
+@ Breadth  First Search (BFS)
+The adjacent  nodes are searched  first after visiting  one starting  vertex. The vertices  adjacent  to the start vertex are
+visited first, and the vertices  situated  farther  away are visited later. Breadth  first search must test whether  a certain
+node has been visited and uses a queue, which is a data structure  that can retrieve  visited nodes sequentially.
+50 TOPCIT  ESSENCE

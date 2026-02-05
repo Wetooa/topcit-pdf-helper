@@ -1,0 +1,35 @@
+ESSENCE
+against  computers,  file systems,  or networks.  Malware  can be classified  into the following  types:
+@ Worms
+Malware  that runs independently.  This malware  replicates  itself and spreads  to other computers.
+@ Viruses
+Viruses refer to malicious codes that are inserted into the code of another  independent  program,  then make
+the program  perform  malicious  behavior  and spread on its own.
+© Trojan horse
+A program  with hidden codes. Although  it looks like a normal program,  malicious  code is executed  when the
+user executes  the program.
+G) Major security  solutions
+® Firewall
+A firewall  refers to a security  solution  installed  between  the public network  and the private network  to protect
+the private network  from the outside. In general, there are two types of firewalls.  The first type is a packet
+filtering  gateway,  which determines  whether  to pass the packet, based on a series  of rules. The second type is
+a proxy server that provides  authentication  to specific hosts to access a private network  and allows them to
+pass the packet. However,  a method  with increased  security  is also used, which combines  these two methods.
+@ Intrusion  Prevention  System (IPS)
+A security  system  that blocks intrusions  in real time by detecting  unauthorized  and abnormal  behaviors  for the
+target system (network  detection  area), and by distinguishing  detected  illegal behavior.  It can be assumed  that
+the characteristics  in the common  area between  the average  area of the behavior  of the intruder,  and that
+of the behavior  of the authorizer,  make intrusion  detection  difficult.  The intrusion  detection  system is built
+first, along with a firewall,  when implementing  a general security  system.  The purpose  of building  the intrusion
+detection  system includes real-time  detection  and blocking  of illegal activities,  such as hacking,  and defense
+against  attacks  performed  by using the packet,  allowed  by the firewall.
+© Virtual Private Network  (VPN)
+A technology  that enables  to safely use access control, authentication,  and confidentiality  services,  like a
+private  network  when using a public network,  without  building  a physical  private  network  between  remote sites.
+IPSec and SSL are the representative  technologies  for implementing  a VPN. The VPN can be implemented  in a
+dedicated  system,  router, or firewall.
+@ Single Sign On (SSO)
+Single sign on enables the user to access another  site without a separate  authentication  procedure  after
+logging in on one site. In general, different  systems  and sites manage  their user information  separately.
+However, it is necessary  to link user information  on occasion.  In this case, SSO can be used for the integrated
+16 TOPCIT  ESSENCE

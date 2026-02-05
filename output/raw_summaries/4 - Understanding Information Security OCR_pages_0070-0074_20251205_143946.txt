@@ -1,0 +1,220 @@
+LEARNING GUIDE: Pages 70-74
+Generated: 2025-12-05 14:39:46
+PDF: 4 - Understanding Information Security OCR
+
+================================================================================
+LEARNING GUIDE
+================================================================================
+
+Here is a simplified, easy-to-read learning guide based on the provided text:
+
+---
+
+# Information Security Essentials: A Learning Guide
+
+This guide condenses key information on information security standards, vulnerability classifications, and secure application development.
+
+---
+
+## 1. Information Security Standards & Classifications
+
+This section introduces important frameworks and systems used to manage, categorize, and assess information security vulnerabilities and controls.
+
+### A) ISO 27001:2013 2.0
+*   **Purpose**: An international standard for Information Security Management Systems (ISMS) certifications.
+*   **Update**: The 2013 version updated the control checklist from 133 items across 12 fields to **114 items across 14 fields**.
+*   **Key Control Fields (Examples)**:
+    *   Information security policy
+    *   Information security organization
+    *   Asset management
+    *   Personnel security
+    *   Physical and environmental security
+    *   Communication security
+    *   Access control
+    *   Acquiring, developing, and maintaining information systems
+    *   Managing information security incidents
+    *   Managing business continuity
+    *   Compliance
+    *   Supplier relationship
+    *   Password control
+    *   Operational security
+    *   *(Each field contains a specific number of control items, totaling 114.)*
+
+### B) OWASP Top 10 (Open Web Application Security Project)
+*   **Purpose**: A list of the **10 most critical web application security risks**. It serves as a standard awareness document for developers and web application security.
+*   **Basis**: Compiled from extensive data (40+ sets) from application security companies and surveys (500+ professionals), covering vulnerabilities from hundreds of organizations and over 100,000 real-world applications/APIs.
+*   **Ranking**: Items are selected and ranked based on prevalence, possibility of attack, detectability, and impact level.
+*   **Key Changes (OWASP Top 10: 2013 vs. 2017)**:
+    *   **New in 2017**:
+        *   A4: XML External Entities (XXE)
+        *   A8: Insecure Deserialization
+        *   A10: Insufficient Logging and Monitoring
+    *   **Merged/Renamed**:
+        *   A2 (2013): Broken Authentication and Session Management → A2 (2017): Broken Authentication
+        *   A4 (2013): Insecure Direct Object References → *Merged into* A5 (2017): Broken Access Control
+        *   A7 (2013): Missing Function Level Access Control → *Merged into* A5 (2017): Broken Access Control
+        *   A9 (2013): Using Known Vulnerable Components → A9 (2017): Using Components with Known Vulnerabilities
+    *   **Moved in Ranking**:
+        *   A3 (2013): Cross-Site Scripting (XSS) → A7 (2017)
+        *   A5 (2013): Security Misconfiguration → A6 (2017)
+        *   A6 (2013): Sensitive Data Exposure → A3 (2017)
+    *   **Removed from Top 10 (2017)**:
+        *   A8 (2013): Cross-Site Request Forgery (CSRF)
+        *   A10 (2013): Unvalidated Redirects and Forwards
+
+### C) CWE (Common Weakness Enumeration)
+*   **Definition**: A **classification system for software weaknesses**. It categorizes software flaws based on view, category, vulnerability, and complex elements.
+*   **Managed by**: MITRE (with U.S. Department of Homeland Security support).
+
+### D) CWSS (Common Weakness Scoring System)
+*   **Definition**: A scoring system for determining the **relative importance of software vulnerabilities**.
+*   **Application**: Used to assess vulnerabilities in software architecture, design, code, or implementation.
+
+### E) CVE (Common Vulnerabilities and Exposures)
+*   **Definition**: A **list of publicly disclosed security vulnerabilities**. It acts as a historical record of discovered vulnerabilities.
+*   **Identification**: Each vulnerability is assigned a unique ID in the format "CVE-Year-Sequence" (e.g., CVE-2023-12345).
+*   **Distinction**: Unlike CWE (which classifies *types* of weaknesses), CVE lists *specific instances* of vulnerabilities.
+
+### F) CVSS (Common Vulnerability Scoring System)
+*   **Definition**: An open framework used to **assess and identify the severity of security vulnerabilities**.
+*   **Metric Groups**: Consists of three groups to calculate an overall score and priority:
+    1.  **Basic Metrics**: Inherent characteristics of the vulnerability.
+    2.  **Temporary Metrics**: Characteristics that can change over time.
+    3.  **Environmental Metrics**: Characteristics specific to a user's environment.
+
+### G) SANS Top 25 (SysAdmin, Audit, Networking, and Security)
+*   **Definition**: A list of the **25 most serious programming errors** that commonly cause software vulnerabilities.
+*   **Categories**: Errors are grouped into categories, such as unsafe resource management and inappropriate security countermeasures.
+*   **Basis**: Developed by MITRE and SANS, building upon the CWE classification.
+
+---
+
+## 2. Secure Application Development
+
+This section emphasizes the critical role of secure coding practices and integrating security throughout the software development lifecycle.
+
+### A) Recent Trends & Importance
+*   **Core Issue**: The majority of cyber-attacks exploit software security vulnerabilities.
+*   **Conclusion**: **Application security and secure coding are paramount** for developing applications safely and securely.
+
+### B) Learning Objectives (What You Will Learn)
+*   Explain common security weaknesses and vulnerabilities found in software.
+*   Understand the concepts, techniques, and lifecycle of secure coding.
+*   Describe secure coding practices relevant to major programming languages and mobile environments.
+
+### C) Key Terms
+*   **Secure Coding**: Writing software code in a way that prevents security vulnerabilities.
+*   **Security Weakness**: A flaw or defect in software that could lead to a vulnerability.
+*   **Security Vulnerability**: A specific weakness that can be exploited by an attacker.
+*   **Secure SDLC (Software Development Lifecycle)**: Integrating security activities and considerations into every phase of the software development process.
+
+### D) Practical Application: Secure SDLC
+*   **Scenario**: A company aims to build a highly secure website by implementing secure coding practices throughout its development lifecycle.
+*   **Key Steps for Secure Development**:
+    1.  **Apply Secure SDLC**: Integrate security from the project's inception.
+    2.  **Requirement Definition**: Include secure coding requirements at the very start.
+    3.  **Design Analysis**: Implement secure design principles from an architectural perspective.
+    4.  **Development Phase**: Developers actively review their code for security flaws.
+    5.  **Quality Control**: Perform third-party security checks.
+    6.  **Operation & Maintenance**: Utilize secure coding diagnostic tools for ongoing monitoring and review.
+*   **Common Challenge**: Developers often struggle due to a lack of understanding and training regarding secure coding and security vulnerabilities.
+*   **Recommendation**: To build robust and secure applications, secure coding must be consistently applied **across the entire development lifecycle**.
+
+---
+
+================================================================================
+ORIGINAL TEXT (First 5000 chars)
+================================================================================
+
+--- Page 70 ---
+ESSENCE
+certifications  in the information  security  sector. As shown in <Table 18>, the checklist  in the annex has been
+changed  from 133 control items in 12 fields, to 114 items in 14 fields.
+<Table 18> ISO 27001 control  fields
+ISO/IEC  27001:2013  2.0
+Control  field Number  of control  items
+Information  security  policy 2
+Information  security  organization 7
+Asset  management 10
+Personnel  security 6
+Physical  and environmental  security 15
+Communication  security 7
+Access  control 14
+Acquiring,  developing,  and maintaining  the B
+information  system
+Managing  information  security  accidents 7
+Managing  business  continuity 4
+Compliance 8
+Supplier  relationship 5
+Password  control 2
+Operational  security 14
+Sum 114
+B) OWASP  TOP 10
+The OWASP  Top 10 - 2017 is primarily  based on over 40 sets of data submitted  by companies  specializing  in
+application  security,  and on the survey on more than 500 persons  in the industry.  The data encompasses  the
+vulnerabilities  collected  from hundreds  of organizations  as well as more than 100,000  real-world  applications
+and APIs. The Top 10 items are selected  and ranked, according  to the prevalent  data, which is compensated
+with the estimated  value of the possibility,  detectability, and level of impact  of the attack.
+[Figure 33] shows the OWASP  2017 version,  compared  to the previous  version in 2013.
+70 TOPCIT  ESSENCE
+
+
+--- Page 71 ---
+Information  security )
+OWASP |  GRASP  epg | 10 - 2013 OWASP LL GRASP  ep  Isao Rely)
+- Injection Al: 2017 - Injection
+A2 - Broken  authentication  and sessionmanagement =>  | A2: 2017 - Broken authentication
+A3- Cross Site Scripting (XSS) & | A3: 2017 - Sensitive data exposure
+Ad~ insecure  direct object references  (merged | |  | ad: 2017 - XML external entities (XXE) [New]
+A5 - Security  misconfiguration MAS:  2017 - Broken  access  control [Merged]
+A6 - Sensitive data exposure a | A6: 2017 - Security misconfiguration
+Oe rene Ghee  eee U | AZ: 2017 - Cross Site Scripting  (xSS)
+“AB - “Cross  Site Request Modulation »(CSRF) |e AS: Communtyt deserialization  [New,
+AQ - Using known dnerabie components >| AS: ciecbie with known
+oelnvardaredieciecrstendiantends  A10: 2017- Insufficient  logging  and monitoring
+__ [New, Community]
+[Figure  33] OWASP  TOP 10 2017
+(Source:  https://www.owasp.org/images/b/bd/OWASP_Top_10-2017-ko.pdf)
+C) CWE(Common  Weakness  Enumeration)
+CWE is a classification  system  that MITRE, which is an affiliate of the U.S. Department  of Defense  with the
+support  of the National  Cyber Security  Division  within the Department  of Homeland  Security,  classifies
+software  weakness  items, based on the view, category, vulnerability,  and complex  elements.  (http://cwe.mitre.
+org)
+D) CWSS (Common  Weakness  Scoring  System)
+CWSS is a scoring system for determining  the relative importance  of various vulnerabilities  in architecture,
+design, code, or implementation  in software,  which can be important  security  issues of software.
+E) CVE (Common  Vulnerabilities  and Exposures)
+While CWE is a classification  system for common  vulnerabilities,  CVE is a list of security  vulnerabilities
+discovered  over time. It can be seen as a record history of discovered  security  vulnerabilities,  managed  by the
+identification system  of “CVE-Year-Sequence’”.
+F) CVSS (Common  Vulnerabilities  Scoring  System)
+CVSS is an open framework  used to assess and identify security vulnerabilities.  It consists  of three metric
+groups: basic metric group, temporary  metric group, and environmental  metric group. The result, calculated  by
+the three metric  groups,  becomes  the overall score of the vulnerability  and the priority  of the vulnerability.
+M4 Understanding  Information  Security  71
+
+
+--- Page 72 ---
+ESSENCE
+G) SANS (SysAdmin,  Audit, Networking,  and Security)  Top 25
+SANS top 25 is the list of the most serious programming  errors that cause software  vulnerabilities  in three
+categories,  including  the management  of unsafe and dangerous  resources  between  components,  and content
+related to the use of inappropriate  security  countermeasures.  This list is created by the MITRE and SANS
+associations,  based on CWE.
+72 TOPCIT  ESSENCE
+
+
+--- Page 73 ---
+Information  security
+>>b Subject
+Managing  applications  safely!
+>>> Recent  trends and major issues
+It is analyzed that most cyber-attacks  exploit software  security  vulnerabilities.  Accordingly,  the
+importance  of application  security  is also highlighted.  Understanding  and applying  secure coding to
+practical  businesses  are important,  in order to safely develop  an application.
+>>p Learning  objectives
+To be able to explain security  weaknesses  and security  weaknesses  remaining  in software.
+To be able to understand  the concept,  technique,  and lifecycle  of secure coding.
+To be able to explain secure coding in major languages  and mobile environments.
+>>b> Keywords
+Secure coding,  security  weakness,  security...

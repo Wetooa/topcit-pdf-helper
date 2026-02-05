@@ -1,0 +1,23 @@
+Database
+>> Recent  trends and major issues
+A database  has the property  that once it has been built, it should process  actual business  data stably.
+However,  data can be corrupted  due to a certain problem  when they are digitalized  and saved. In this case,
+it is vital to have a technology  that can restore  the database  stably. This chapter  explains  how to process  a
+database  stably and the concept  and techniques  of backing  up and restoring  data.
+The recent DBMS essentially  operates  database  backup policies for stable data processing.  In addition,
+backup  methods  are also evolving  continuously  to enable rapid backup,  such as using the VTL (Virtual Tape
+Library).
+>> Learning  objectives
+1. To be able to explain the concept  and types of database  failures.
+2. To be able to explain the concept  and methods  of database  recovery.
+3. To be able to explain how to recover  a distributed  database.
+4 To be able to explain and apply the types and characteristics  of database  backup  methods.
+>> Keywords
++ Database  failure: Transaction  failure, media failure, system  failure
++ Recovery,  redundancy,  redo , undo, log
++» Database  recovery  techniques:  Log-based  recovery  technique  (deferred  update, immediate  update),
+checkpoint  recovery  technique,  shadow  paging  recovery  technique
++ 2-Phase  commit  protocol
++ Database  backup methods:  Full backup,  differential  backup, incremental  backup,  archive log backup, hot
+backup,  cold backup
+M2 Database 129

@@ -1,0 +1,203 @@
+LEARNING GUIDE: Pages 88-92
+Generated: 2025-12-05 14:00:25
+PDF: 5 - Understanding the IT Business and Ethics OCR
+
+================================================================================
+LEARNING GUIDE
+================================================================================
+
+Here is a simplified, easy-to-read learning guide based on the provided text, designed for study purposes.
+
+---
+
+## IT Business and Ethics: ERP, SCM, and CRM Learning Guide
+
+This guide covers ERP Deployment Strategies, Supply Chain Management (SCM), and Customer Relationship Management (CRM).
+
+---
+
+### **1. ERP Deployment Strategy**
+
+ERP (Enterprise Resource Planning) systems can be deployed using three main approaches:
+
+**A. Deployment Approaches**
+
+1.  **Big Bang Method:**
+    *   **Description:** All ERP modules and functions are deployed simultaneously across the entire enterprise.
+    *   **Strengths:** Easy integration of the package itself, simpler project management for integration.
+    *   **Weaknesses:** Large-scale projects, difficult overall project management.
+2.  **Phased and Function-Based Approach (Functional Approach):**
+    *   **Description:** ERP modules are deployed in phases, separated by their functions (e.g., finance module first, then HR).
+    *   **Strengths:** Less resistance to change within the business due to gradual deployment.
+    *   **Weaknesses:** Requires additional programs to link with existing systems during phased rollout.
+3.  **Phased and Place of Business Approach (Place of Business Approach):**
+    *   **Description:** ERP is deployed in phases at individual business locations (e.g., one branch first, then others). Deployment expands horizontally once stable.
+    *   **Strengths:** Efficient use of human resources as they can be recycled across phases.
+    *   **Weaknesses:** Risk of project prolongation and redundant work.
+
+**B. ERP Solutions**
+
+*   **Vendors:** Both domestic (e.g., Younglimwon ERP, Douzone ERP) and foreign global vendors (e.g., SAP ERP, Oracle ERP) offer solutions. In-house development is also possible.
+*   **Commercial Products:** Offer advantages of standardized processes, but customization to specific enterprise environments can be difficult.
+*   **Key Consideration:** When adopting, check for compliance with **IFRS (International Financial Reporting Standards)**, which are global accounting standards.
+
+---
+
+### **2. Understanding Supply Chain Management (SCM)**
+
+**A. Concept of SCM**
+
+*   **Supply Chain:** The entire process from order placement, raw material supply, production, distribution, to final customer delivery.
+*   **The Bullwhip Effect:**
+    *   **Problem:** A phenomenon where small changes in end-consumer demand lead to dramatically increasing demand fluctuations further up the supply chain (e.g., small consumer order leads to larger orders from retailer to wholesaler, then to manufacturer, then to parts suppliers).
+    *   **Impact:** Distorted demand, increased variance at each step, huge risks for upstream suppliers, inefficiency, surplus orders, excess inventory, and overinvestment.
+*   **SCM Goal:** To maximize efficiency by rectifying the bullwhip effect and eliminating waste throughout the supply chain.
+*   **SCM Mechanism:** Players in the supply chain cooperate, managing materials, funds, and information to link and integrate all goods, services, and value flows (purchasing, manufacture, allocation, distribution) from suppliers to end customers.
+*   **Benefits:** Shortened lead times, reduced uncertainties and variabilities, optimized inventory.
+
+**B. Functions of SCM**
+
+SCM has three core functions that form a positive feedback cycle for continuous improvement:
+
+1.  **Supply Chain Planning (SCP):**
+    *   **Description:** Establishes optimal plans for daily supply chain operations.
+    *   **Examples:** Demand forecasting, global production plans, transportation/delivery plans, distribution allocation plans.
+2.  **Supply Chain Execution (SCE):**
+    *   **Description:** Enhances efficiency of field logistics.
+    *   **Examples:** Warehousing, product transport/delivery management, order management, distribution management. Uses digital tools like barcodes and RFID.
+3.  **Supply Chain Visibility:**
+    *   **Description:** Monitors the supply chain, identifies costs and performance, looks for anomalies, and provides preventive functions by recommending corrective actions.
+
+**C. SCM vs. ERP Comparison**
+
+| Category            | SCM                                        | ERP                                                              |
+| :------------------ | :----------------------------------------- | :--------------------------------------------------------------- |
+| **Key Viewpoint**   | Planning and decision-making               | Work process-centered                                            |
+| **Data Handling**   | Process-centered                           | Transaction-centered                                             |
+| **Major Functions** | Demand forecasting, order management, planning, distribution, warehouse management | Purchasing, production, raw materials, finance, accounting, sales, HR management |
+| **Industrial Sector** | Manufacturing and distribution             | Manufacturing, public organizations, finance                     |
+| **Enterprise Size** | Even small manufacturers benefit (e.g., reduced inventories) | Mainly operated by conglomerates; SMEs should consider ROI     |
+| **Benefits**        | Production planning, demand forecasting considering sales opportunities, inventory management | Faster work processing, labor cost savings                       |
+
+**D. SCM Deployment Effects**
+
+*   **Improved Customer Satisfaction:** Increased transportation/delivery capacity, reduced inventory, reduced customer order processing time due to adherence to delivery schedules.
+*   **Reduced Costs:** Lower logistics costs.
+*   **Improved Efficiency:** Standardized work, reduced product delivery time, improved fund flow.
+*   **Example (Dell Computer):** Reduced inventory from 8 weeks to 12-15 days by linking information between customers, company, and suppliers in real time.
+
+---
+
+### **3. Understanding Customer Relationship Management (CRM)**
+
+**A. Concept of CRM**
+
+*   **Definition:** A management strategy system that studies customer tendencies and requirements in advance to create desired products and develop effective marketing strategies.
+*   **Why CRM is Essential Today:**
+    *   Customers are highly informed about products/services.
+    *   Higher customer expectations and churn rates.
+    *   Enterprises need customer-centric structures, diverse customer interface channels, and customer management strategies that lead to better earnings.
+*   **Implementation:** Requires analyzing customer behavior and consumption patterns, consolidating internal/external data, and deriving insights (e.g., using Big Data analysis).
+
+**B. Customer Life Cycle and CRM Goal**
+
+Enterprises manage customers through their entire life cycle:
+
+*   **Acquisition:** Target responsive potential customers with focused marketing.
+*   **Retention/Growth:** Strategically manage purchasing and high-value (loyal) customers. Categorize customers by personality, type, and interests to provide tailored services and marketing.
+*   **CRM Goal:** To maximize **Customer Lifetime Value (CLV)** – the total value a customer generates throughout their relationship with the enterprise, rather than just temporary profits from individual transactions.
+
+**C. Official Definition of CRM (Gartner)**
+
+*   "A strategy for optimizing corporate sales and expanding the customer base by creating and supporting relationships with profitable customers."
+*   **Essentially:** It's a management technique that integrates and analyzes customer-related data (internal and external) to provide findings to customer points of contact, enabling continuous delivery of desired products/services based on accurate customer understanding, ultimately maximizing CLV and profitability.
+
+**D. CRM Classification**
+
+From a process perspective, CRM collects, analyzes, and provides meaningful information. It can be classified into three types:
+
+1.  **Analysis CRM:**
+    *   **Description:** Gathers information from customer interactions, derives meaningful insights, and supplies them to the enterprise.
+2.  **Operations CRM:**
+    *   **Description:** Uses the insights from Analysis CRM as the backbone for marketing, servicing, and sales activities.
+3.  **Collaboration CRM:**
+    *   **Description:** Focuses on enterprise interactions with customers through a diverse range of communication channels.
+
+---
+
+================================================================================
+ORIGINAL TEXT (First 5000 chars)
+================================================================================
+
+--- Page 88 ---
+Understanding  the IT Business  and Ethics )
++ Develop  the functions.
++ Perform  unit-level  testing.
+Development + Perform regression  testing: testing  of connection  between  existing  modules  and newly developed
+modules.
++ Conduct  outside  link (interface)  integrated  test.
++ Data conversion.
+Implementation + Provide  training  on using the system.
++ Carry out a pilot operation.
+@ ERP deployment  strategy
+There are three approaches  to ERP deployment.  With the Big Bang method,  all modules  and functions  of the ERP.
+system  are deployed  across the place of business  at the same time. In the phased  and function-based  approach,  the
+ERP system modules  are separated  by their functions  and the ERP system is deployed  only on some modules.  In the
+phased and place of business  approach,  the ERP system is deployed  in phases at each place of business.  When the
+operation  of ERP is shown to be stable, its deployment  is then expanded  horizontally  through  the remaining  phases.
+<Table 37> ERP deployment  strategy
+Method Description Strengths Weaknesses
+All modules  and functions  of ERP are Easy integration  of the package Projects  tend to be large-scale
+Big Bang deployed  at the same time for all itself and thus project management  is
+operational  areas of an enterprise. Implementation  is easy. rather  difficult.
+Because  ERP is deployed  in
+Functional ERP modules are deployed by phases, there is little resistance Additional programs should be
+approach, function and in phases to changes in the place of developed  to link to existingphased approach P nangs P systems.
+business.
+Place of . The use of human  resources  is Problems  of project  prolongation
+business  tailored 7 ee  deployedin  each good because they are recycled and high likelihood of redundant.
+approach p pnases. in each phase. work,
+ERP solutions  are supplied by both domestic  vendors  and foreign global vendors.  Depending  on the deployment
+strategy,  the ERP solution could also be developed  in-house.  Leading  foreign ERP solutions  include SAP ERP and
+Oracle ERP, while leading  domestic  ERP solutions  include Younglimwon  ERP and Douzone  ERP. Commercial  ERP.
+products  offer the advantages  of ERP deployment  using standardized  processes;  however,  customized  development
+to match the environment  of an enterprise  is somewhat  difficult. Another  thing worth mentioning  is that when
+adopting  an ERP solution,  an enterprise  must check whether  compliance  with the IFRS (International  Financial
+Reporting  Standards)’  must be observed.
+E) Understanding  SCM
+@ Concept  of SCM
+SCM refers to supply  chain management  solutions.  To understand  SCM, one has to understand  the supply chain. The
+5 IFRS: The International  Financial  Reporting  Standards  (IFRS) published  by the International  Accounting  Standards  Board to ensure
+international  acceptance  of enterprise  accounting  standards.
+M5 Understanding  the IT Business  and Ethics 87
+
+
+--- Page 89 ---
+ESSENCE
+supply chain encompasses  the entire process  from order placement  and the supplying  of raw materials  needed for
+the production  of goods, to the production  process,  distribution  network,  and final delivery  to the customer.
+The biggest  problem  with the supply  chain is the whipping  effect, a phenomenon  in which decisions  that are made
+further  up the supply chain result in a sudden expansion  of demand.  What this means is that a small change in the
+end-consumer  demand  for a product  will cause a chain reaction  furtherup  the supply  chain, increasing  the demand
+from retailers  to wholesalers,  then to manufacturers,  and finally to parts suppliers.
+manufacturer wholesaler retailer consumer
+a@ Order 1 Sales
+eS-ste~ a
+1s
+Ze
+5
+AZ ° Az
+STV Mao
+increases,  the further one goes up the supply chain (upstream)
+[Fig.31]  Bullwhip  effect in supply  chains
+As shown in Figure 31 above, if a consumer  places an order for 10 goods to a wholesaler,  the wholesaler  will place
+an order for 12 goods  just in case. The manufacturer  will in turn manufacture  15 goods just in case. In this way, the
+supply chain will become  overstocked  and resources  will be wasted,  with unnecessary  investments  in manpower  and
+facilities,
+If market  demand  is transmitted in this way to the upper level of the supply chain, the demand  gets distorted  and
+increases  variance at each step. In addition,  the supplier  who supplies  the raw materials  at the end of the value
+chain becomes  exposed  to huge risks, which seriously  increases the inefficiency of the entire supply chain due
+to the imbalance  in demand across the supply chain, ultimately  resulting  in surplus orders, excess inventory,  and
+overinvestment.  Therefore,  supply chain management  is a strategy  that aims to maximize  efficiency  by rectifying  the
+whipping  effect problem  and by eliminating  waste throughout  the supply  chain.
+To be more specific, in supply chain management  the ...

@@ -1,0 +1,41 @@
+ESSENCE
+IPv4 addresses  based on the 32-bit address system, faced exhaustion  as Internet  use increased  rapidly worldwide.
+Although  the IPv6 address system based on 128 bits was introduced  to solve the problem,  IPv4 addresses  are still
+mainly used. Although  the IANA (Internet  Assigned  Numbers  Authority)  was responsible  for IP address  allocation  in the
+past, the ICANN (Intemational  Corporation  for Assigned  Names  and Numbers)  is currently  in charge.
+© Port number:  The port number  used to transfer  messages  between  two processes  (running  applications)  is responsible
+for the connection  between  the web browser  on user A’s computer,  shown in [Figure 10], and the webserver  program
+on myserver.com.  The 16-bit number  system  can identify  up to 65,535 application  programs.  The port numbers  from
+0 to 1023 are called well-known  ports and are allocated  by the IANA. Application  programs,  such as telnet and email,
+use it for sending  and receiving  data. The port numbers  from 1024 to 49,151 are called registration  ports and, like well-
+known ports, are mostly used by servers.  The Internet  chatting  protocol,  IRC (TCP port number  6667), and Git version
+control system (TCP port number  9418) are examples.  The port numbers  from 49,152 to 65,535 are mostly used as a
+temporary  number  by clients, and are called dynamic  ports or temporary  ports.
+04 Internet  Standard
+The IETF (Internet  Engineering  Task Force) is a leading  organization  responsible  for Internet-related  standards.  It
+defines the basic protocols  for Internet  transmissions,  such as IP, TCP, and UDP, as well as the most widely used
+protocols  in the Internet application  layer protocols,  such as HTTP. SSH, FTP, SMTP. POP3, and IMAP. <Table 3> lists
+other international  organizations  responsible  for Internet-related  standardization.
+{Table 3) Internet  Standardization  Organizations
+Standardization
+OrganizationEnactment  StandardDescription (Example)
+* International  Organization  for Standardization
+ISO + An international  organization  established  in 1946 for internal  cooperation  in
+intellectual  activities,  or for scientific,  technological,  and economic  activities
++ International  Telecommunications  Union-Telecommunication  StandardsOSI reference  model
+ITU-T Sector ITU-T G.711
++ An organization  responsible  for telecommunication  standardization  under ITU
++ Institute  of Electrical  and Electronics  Engineers IEEE 802.3
+IEEE + IA specialized  organization,  authorized  by the US ANSI to develop  the IEEE 802.11
+national  standards  in the United States IEEE 802.15
++ Electronic  Industries  Association
+EIA + An organization  that plans to unify standards,  such as dimensions, TIA/EIA-568-B(T568B)
+measurement  methods,  and labeling  methods,  for IEEE
++ World Wide Web Consortium HTML 401/5
+W3C + An international  consortium  related to the Internet,  established  in 1994, for ss 2 13
+the long-term  development  of the web by establishing  web standards
+OMA* Open Mobile Alliance
++ A forum to develop  technical  specifications  and to verify interoperability  for
+the global promotion  of mobile data servicesPush-to-talk  over Cellular
+(PoC)
+40 TOPCIT  ESSENCE

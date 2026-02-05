@@ -1,0 +1,22 @@
+Overview  of System Architecture )
+IT Service
+(System  Development,  Security  and Risk
+Management,  and Data Management)
+[Figure  75] Information  System  and IT-Based  Structure
+B) Information  system  structure
+There are several types of structures  for an information  system.  A web system architecture  and a client-server
+system architecture  are leading  examples.  The most recent information  systems  are generally  composed  of a 3-tier
+web system architecture,  and these information  systems  can be divided into physical areas (hardware)  and program
+areas (software),  as shown in [Figure 76], from a structural  viewpoint.
+@om cs Glo A flo &Domain ; a
+Client Webserver Application Database Database
+Server Server
+Web Browser Web Service Communication DBMS Table
+User VF Mechanism. Trigger
+Communication Business  Logic
+eacer=tr- Mechanism Transaction Stored
+Domain Processing procedure
+Datebase
+Handling
+[Figure  76] 3-Tier  Web System  Architecture
+M3 Overview  of System  Architecture  111

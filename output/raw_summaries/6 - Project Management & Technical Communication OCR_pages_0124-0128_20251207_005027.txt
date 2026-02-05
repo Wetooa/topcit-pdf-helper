@@ -1,0 +1,185 @@
+LEARNING GUIDE: Pages 124-128
+Generated: 2025-12-07 00:50:27
+PDF: 6 - Project Management & Technical Communication OCR
+
+================================================================================
+LEARNING GUIDE
+================================================================================
+
+Here's a simplified, easy-to-read learning guide based on the provided text:
+
+---
+
+## Learning Guide: Project Management & Technical Communication - Quality & Risk
+
+### 1. Quality Evaluation Perspective
+
+Quality evaluation can be viewed from two main perspectives:
+
+*   **Product Quality:**
+    *   Evaluates the functionality and reliability of the final product.
+    *   **Common Standards:** ISO/IEC 9126, 6 Sigma.
+*   **Process Quality:**
+    *   Evaluates if a process is well-defined and properly followed, based on the idea that "a good product comes from a good process."
+    *   **Common Standards:** ISO 9000, ISO/IEC 12207, CMMI.
+
+### 2. Quality Standards
+
+#### A) ISO/IEC 9126 (now ISO/IEC 25000-2)
+
+*   **Purpose:** A quality model for defining and evaluating software product quality characteristics from the user's point of view.
+*   **Components:**
+    *   **9126-1:** Defines 6 quality characteristics and 21 sub-characteristics, helping stakeholders evaluate software quality.
+    *   **9126-2 (External metrics):** Measures external properties visible during use, focusing on the final product from user/manager perspective.
+    *   **9126-3 (Internal metrics):** Measures internal software properties of interim products during development stages.
+    *   **9126-4 (Quality in use metrics):** Measures if goals for efficiency, productivity, safety, and satisfaction are met when using finished software.
+
+#### B) ISO 12207
+
+*   **Purpose:** A standard for software processes across the Software Development Life Cycle (SDLC), providing guidelines for systematic acquisition, supply, development, operation, and maintenance.
+*   **Key Life Cycle Processes:**
+    *   **Acquisition:** Activities for organizations acquiring systems/software.
+    *   **Supply:** Activities for organizations supplying systems/software.
+    *   **Development:** Activities for organizations building software products.
+    *   **Operation:** Activities for organizations running information systems in a real environment.
+    *   **Maintenance:** Activities for organizations providing maintenance services for software products.
+*   **Framework:** Consists of three main life cycle processes: Primary, Supporting, and Organizational, with 20 subprocesses.
+
+#### C) ISO 25000
+
+*   **Purpose:** An integrated software quality evaluation model, combining existing standards (like ISO 14598, 9126) and new developments.
+*   **Divisions:**
+    *   Quality Management
+    *   Quality Model
+    *   Quality Requirements
+    *   Quality Evaluation
+
+#### D) CMMI (Capability Maturity Model Integration)
+
+*   **Purpose:** Provides guidance to improve an organization's processes and capabilities in developing, acquiring, and maintaining software. Measures the maturity of a software development organization.
+*   **Maturity Levels:**
+    *   **Level 1 (Initial):** Processes are unpredictable; performance is difficult to forecast.
+    *   **Level 2 (Managed):** Basic processes are established and managed at the project level.
+    *   **Level 3 (Defined):** Standardized, detailed processes are defined and used across the organization.
+    *   **Level 4 (Quantitatively Managed):** Project performance is quantitatively managed and controlled; performance can be predicted.
+    *   **Level 5 (Optimizing):** Focus on continuous process improvement; projects are carried out with optimal management.
+
+#### E) SPICE (ISO 15504)
+
+*   **Purpose:** A model that evaluates software life cycle processes in two dimensions: organizational software process maturity and improvement capability.
+*   **Process Groups:**
+    *   **Primary Process (Customer-Supplier, Engineering):** Covers acquisition, supply, demand creation, operation, system/software development, and maintenance.
+    *   **Supporting Process (Support):** Includes documentation, configuration management, quality assurance, verification/validation, and audit.
+    *   **Organizational Process (Organization):** Involves organizational improvement, manpower management, and measurement tools/reuse.
+
+#### F) Comparison of Software Process Audit & Certification Systems
+
+| Feature             | SP Certification (Korea)      | CMMI (Overseas - US)             | SPICE (Overseas - International) |
+| :------------------ | :---------------------------- | :------------------------------- | :------------------------------- |
+| **Standard Type**   | Domestic standard             | Market standard                  | International standard           |
+| **Characteristic**  | Organizational maturity       | Organizational maturity          | Process maturity                 |
+| **Model**           | Staged model                  | Staged, Continuous model         | Continuous model                 |
+| **Rating (Levels)** | Three levels (Level 1-3)      | Five levels (Level 1-5)          | Six levels (Level 0-5)           |
+| **Process Focus**   | Project, development, support, organizational, improvement | Process Mgmt, Project Mgmt, Engineering, Support | Depends on Process Reference Model |
+| **Validity Period** | Three years                   | Three years                      | Unlimited                        |
+
+### 3. Risk Management Overview
+
+*   **Importance:** Essential for systematic and effective business management, especially for project success and sustainable growth. Requires integrated management.
+*   **Risk Management Process:**
+    1.  Risk Management Planning
+    2.  Risk Identification
+    3.  Qualitative Risk Analysis
+    4.  Quantitative Risk Analysis
+    5.  Risk Response Planning
+    6.  Risk Control
+*   **Negative Risk Response Strategies (Threats):**
+    *   **Avoid:** Eliminate the threat.
+    *   **Transfer:** Shift the risk (e.g., insurance).
+    *   **Mitigate:** Reduce impact or probability.
+    *   **Acceptance:** Acknowledge and deal with the risk if it occurs.
+*   **Positive Risk Response Strategies (Opportunities):**
+    *   **Exploit:** Ensure the opportunity occurs.
+    *   **Share:** Partner to capture the opportunity.
+    *   **Enhance:** Increase probability or impact.
+    *   **Acceptance:** Acknowledge and capitalize on the opportunity if it arises.
+
+================================================================================
+ORIGINAL TEXT (First 5000 chars)
+================================================================================
+
+--- Page 124 ---
+Project Management  and Technical  Communication  )
+03 Quality Evaluation  Perspective  and Quality  Standard
+A) Quality  evaluation  perspective
+Quality  evaluation  perspective  can be divided into product  quality  and process  quality.
+@ Product  Quality
+It is technique that evaluates  the functionality  and reliability  of a product  made by a project, and ISO/IEC  9126
+and 6 Sigma are the most common  quality  standards.
+@ Process  Quality
+It is a technique  that evaluates  whether  a process is defined and properly  operated  from the viewpoint  that
+a good product  comes from a good process,  and ISO 9000, ISO/IEC 12207, and CMMI are widely used quality
+standards,
+B) Quality  standard
+@ ISO/IEC  9126 (currently  known as ISO/IEC  25000-2)
+It is a quality model created  through  standardization  on software  quality characteristics  from the  user's point
+of view by ISO(International  Organization  for Standardization),  an international  standardization  organization,  as
+a specific  definition  for standardization  and quality assurance  of quality  characteristics  and metrics  is required.
+<Table 58> ISO/IEC  9126 (currently  known as ISO/IEC  25000-2)
+Classification Content
+ISO 9126-1[Consists  of 6 quality  characteristics  and 21 subcharacteristics]
+Enable those involved  in purchasing,  requirements,  development,  use, evaluation,  support,  maintenance,
+quality  assurance,  and software  auditing  to define and evaluate  the quality  of software  products  from
+different  perspectives.
+ISO 9126-2[External  metrics]
+It refers to the external  properties  that appear  while in use, and measures  the final product,  which is the
+closing  stage of software,  from the user’s and manager's  point of view
+ISO 9126-3[Internal  metrics]
+Interim products  are measured  by creating  a measurement  table for each evaluation  factor by
+development  stage based on internal software  properties
+ISO 9126-4It measures  whether  the goals for efficiency,  productivity,  safety and satisfaction  are met when using the
+finished  software
+@ ISO 12207
+As a standard
+Development
+maintenance.ization for software  process, it is a quality model that provides  standards across the Software
+Life Cycle (SDLC) for systematic  software  acquisition,  supply, development,  operation,  and
+The basic framework  for communication  by software  practitioners  in development  and management  was
+defined  and presented  at a high level.
+M6 Project  Management  and Technical  Communication  123
+
+
+--- Page 125 ---
+ESSENCE
+<Table 59> ISO 12207 Life Cycle Process
+Classification Content
+Acquisition Define the activities  to be performed  by organizations  that acquire  systems,  software
+4 products,  or software  services
+Sane Define the activities  to be performed  by organizations  that supply systems,  software
+PP products  or software  services
+Development Define the activities  to be performed  by development  organizations  that define and build
+software  products
+0 ; Define  the activities  to be performed  by organizations  that provide  information  systemperation - ‘ : > .operation  services  in an actual environment  (product  environment)  for users
+Mai Define the activities  to be performed  by organizations  that provide maintenance  services  forjaintenancesoftware  products
+The following  is an acquisition/management  process  framework  among  SW standard  processes  for acquisition
+and managing  public projects  based on ISO/IEC 12207. The acquisition/management  process  framework  is a
+system that defines  basic activities  in the entire life cycle for software  introduction,  and procedures  and activ-
+ities for performing  basic activities  from a managerial  and engineering  perspective.  The framework  consists  of
+three life cycle processes:  primary:  supporting  and organizational,  and 20 subprocesses.
+5, Primary  Life Cycle Processes
+6. Supporting  Life Cycle Processes
+Acquisition 6.1 Documentation  Process
+5.1 Acquisition  Process
+6.2 Configuration  Management  Process(Ctataton ] (Request or propos peparaion } (Convectrepoaton  ard paate ) (Suppiermontoing  ) (Aezepanc  ard conscton ) (ca  contraon nseenene  Pees
+5.2 Supply  Process Quality  Management
+5 Contract preparation 5 Execution and Review and Delivery and Wity Assurence Prroposal preparation ond upiate Planning en reve one completa 6.3 Quality Assurance Process
+6.4 Verification  Process
+Contract Operation 6.5 Validation  Process
+5.6 Information  Strategy  Planning  Process 5.4 Operation  Process
+66 Joint Review  Process
+Process | Current  system} { Target  system  } { implementation  plan Process] { Operational  | System  |{ User
+implementation  || analysis definition establishment implementation  || Testing || operation  || support (67 avait Process }
+Engineering (68 Problem Resolution  Process
+5.3 Development  Process 5.5 Maintenance  Process
+System system system system
+requirements  analysis  || architectural  design integra...

@@ -1,0 +1,244 @@
+LEARNING GUIDE: Pages 199-203
+Generated: 2025-12-05 14:12:39
+PDF: 5 - Understanding the IT Business and Ethics OCR
+
+================================================================================
+LEARNING GUIDE
+================================================================================
+
+Here is a simplified, easy-to-read learning guide based on the provided text (Pages 199-203).
+
+---
+
+## Learning Guide: Personal Information De-identification and Protection
+
+This guide summarizes essential concepts, methods, and systems related to protecting personal information, focusing on de-identification and management systems.
+
+---
+
+### 1. De-identification of Personal Information
+
+**Purpose:** To prevent the identification of an individual while still allowing the use of data for its intended purpose.
+
+**1.1. De-identification Standards**
+
+*   **Identifiers:**
+    *   **Rule:** Delete identifiers from datasets.
+    *   **Exception:** If absolutely essential, de-identify the identifier before use.
+*   **Attribute Values:**
+    *   **Rule:** Remove attribute values irrelevant to the data's purpose.
+    *   **Strict De-identification:** Apply to unique values (e.g., rare disease, unique professional experiences) that could easily identify an individual.
+
+**1.2. De-identification Process**
+
+1.  **Personal Information:** Raw data containing identifiers.
+2.  **De-identification:** Apply various methods to transform the data.
+3.  **Evaluation:** Assess if the de-identification is adequate.
+    *   **Adequate:** Data is anonymized (re-identification risk is low).
+    *   **Inadequate:** Re-identification is possible; repeat de-identification or remove data.
+
+**1.3. Examples of Personal Information Identifiers & Attributes**
+
+These are examples of data that may need de-identification:
+
+*   **Unique Identifiers:** Resident registration number, passport, driver's license, name, detailed address, specific dates (birthday, anniversary), phone numbers, medical/health insurance numbers, account/credit card numbers, vehicle numbers, photos, body identification (fingerprint, voice), email, IP/MAC address, URL, ID/employee/customer numbers, military serial number.
+*   **Personal Characteristics:** Gender, age, nationality, hometown, marital status, religion, hobbies, smoking/drinking habits.
+*   **Physical Characteristics:** Blood type, height, weight, medical exam results, disability type/level.
+*   **Medical Information:** Disease name, injury/medication codes, treatment history.
+*   **Credit Characteristics:** Tax payment, credit rating, donations, health insurance premiums, income quintile.
+*   **Educational/Career Characteristics:** School, department, grade, career, job type, company, position, former workplace.
+*   **Electronic Characteristics:** Cookie info, access/visit dates, service use records, internet/mobile usage, GPS data.
+*   **Family Characteristics:** Spouse, children, parents, siblings, legal representative information.
+
+**1.4. Methods of De-identification**
+
+Methods can be used individually or in combination.
+
+*   **Pseudonymization:** Replacing direct identifiers with artificial identifiers (pseudonyms).
+    *   **Examples:** Heuristic pseudonymization (e.g., "Hong Gil-dong" -> "Lim Kkeokjeong"), Encryption, Swapping (exchanging values between records).
+*   **Aggregation:** Summarizing data to remove individual details.
+    *   **Examples:** Micro Aggregation (grouping similar records), Rounding (e.g., average height instead of individual heights).
+*   **Data Reduction:** Removing or simplifying parts of the data.
+    *   **Examples:** Rearrangement, Identifier deletion, Identifier partial deletion (e.g., "901206-7..." -> "90's born, male"), Reducing records, Complete deletion of identifiers.
+*   **Data Suppression:** Hiding or omitting certain data points.
+    *   **Examples:** Suppression (e.g., "35 years old" -> "30-40 years old"), Random rounding, Data ranging, Controlled rounding.
+*   **Data Masking:** Obscuring data with random or fake values.
+    *   **Examples:** Adding random noise, Blank and impute (e.g., "Hong Gil-dong" -> "Hong OO").
+
+**1.5. De-identification Examples in Action**
+
+| Original Data                                         | Data Deletion (Resident Reg. No.)                 | Data Masking (Reg. No., Hospitalization Date), Aggregation (Age) |
+| :---------------------------------------------------- | :------------------------------------------------ | :--------------------------------------------------------------- |
+| `770914-1234567` Male 2015/06/23 39 Flu                | Male 2015/06/23 39 Flu                            | `********-*******` Male 2015/*/** 35 Flu                       |
+| `850930-1234567` Male 2015/10/01 31 Flu                | Male 2015/10/01 31 Flu                            | `********-*******` Male 2015/*/** 35 Flu                       |
+| `710119-2345678` Female 2014/01/21 45 High blood pres. | Female 2014/01/21 45 High blood pres.             | `********-*******` Female 2014/*/** 35 High blood pres.         |
+| ...                                                   | ...                                               | ...                                                              |
+| *(Note: Age is averaged to 35 across records)*         | *(Note: Resident registration numbers are removed)* | *(Note: Dates are masked, and age is aggregated)*               |
+
+---
+
+### 2. Personal Information Protection Management System (ISMS-P)
+
+**Purpose:** A certification system to establish and verify systematic and continuous protection of personal information.
+
+**2.1. Obligated Entities for ISMS-P Certification**
+
+*   **ISPs:** Internet Service Providers in Seoul and metropolitan cities.
+*   **Integrated Information & Communication Facility Operators.**
+*   **Companies with annual sales/revenue of 150 billion KRW or more AND meeting *any* of the following:**
+    *   Superior General Hospitals.
+    *   Higher Education Act schools with over 10,000 enrolled students.
+    *   Information & Communication service sector sales of 10 billion KRW or more in the previous year.
+    *   Over 1 million daily users of information & communication services in the 3 months prior to the previous year.
+*   **Voluntary Applicants:** Companies not meeting criteria can still apply.
+
+**2.2. ISMS-P Management System Structure**
+
+The system objectively examines whether institutions systematically and continuously perform protection tasks, granting certification upon meeting standards.
+
+**Key Requirements:**
+
+1.  **Establishment and Operation of Management System (16 items)**
+    *   1.1 Establishment of management system
+    *   1.2 Risk management
+    *   1.3 Operation of management system
+    *   1.4 Inspection and improvement of management system
+2.  **Requirements for Protection Measures (64 items)**
+    *   2.1 Policy, organization, asset management
+    *   2.2 Personal security
+    *   2.3 External security
+    *   2.4 Physical security
+    *   2.5 Certification and authority management
+    *   2.6 Access control
+    *   2.7 Encryption application
+    *   2.8 Information system introduction and development security
+    *   2.9 System and service operation management
+    *   2.10 System and service security management
+    *   2.11 Accident prevention and response
+    *   2.12 Disaster Recovery
+3.  **Requirements for each stage of personal information processing (22 items)**
+    *   3.1 Protection measures for collection of personal information
+    *   3.2 Protection measures for possession and use of personal information
+    *   3.3 Protection measures for provision of personal information
+    *   3.4 Protection measures in case of destruction of personal information
+    *   3.5 Protection of data subject rights
+
+---
+
+### 3. Follow-up Measures for Personal Information Controllers
+
+**3.1. Response to Personal Information Leakage**
+
+*   **Mandatory Obligation:** If personal information of more than 1,000 data subjects is leaked.
+*   **Immediate Actions:**
+    *   Notify affected data subjects.
+    *   Confirm facts of the leakage.
+    *   Block affected websites.
+    *   Notify users to change passwords.
+*   **Legal Implications:** Victims may file collective dispute mediation or lawsuits.
+
+**3.2. Notification of Personal Information Leakage**
+
+*   **Who to Report:** Ministry of Security and Public Administration, Korea Internet & Security Agency (KISA).
+*   **When to Report:** Within 5 days (this includes notifying data subjects and reporting response measures).
+*   **How to Report:** Email, fax, or website. For urgent or special circumstances, report by phone followed by a written report.
+*   **What to Report:**
+    *   Institution name
+    *   Status of notification to data subjects
+    *   Items and scale of leaked personal information
+    *   Time and course of leakage
+    *   Measures taken to minimize damage and results
+    *   Methods for data subjects to minimize damage and remedy procedures
+    *   Contact information of the department in charge
+
+---
+
+================================================================================
+ORIGINAL TEXT (First 5000 chars)
+================================================================================
+
+--- Page 199 ---
+ESSENCE
++ De-identification  Standards  for Identifiers:  As a rule, an identifier included  in datasets  should be deleted.  However,
+an identifier  that is absolutely  needed  for a purpose  of the use of data can be utilized  after de-identification.
++ De-identification  Standards  for Attribute  Values: As a rule, an attribute  value included in datasets  should be
+also removed  if it is irrelevant  to a purpose  of the use of data. Attribute  values like rare disease  or unique
+professional  experiences  need strict de-identification  as they are highly likely to identify  an individual  under certain
+circumstances.
+198 TOPCIT  ESSENCEico) Step 4
+(emeltelg (PostCleo) Eure 19)
+YesNon-Priyacy De-identification identification (@dequate) identified ivacy. 
+‘Adequacy. »> Deridenti ([dentification > | (personal  dentiicaton |" Eyaldstion Peto information) elements  removed) (KAnonymit ai
+No (Inadequate)
+TTa\codannr-lele  la egtelem oye = AM(e ple) (=)
+a particular  individual
+(Including  information  that can be easily combined
+with other information  to identify  a specific individual)Dcslidiam@)eaiseore  tel
+(However,  essential  man.
+Fleeced
+through combination  with other information)
+[Figure 85] De-identification  Process  of Personal  Information
+<Example>  Attribute  value
++ Gender,  age (age), nationality,  hometown,  city/county/city,  zip code
++ Military  service,  marital status, religion,  hobbies,  clubs, etc.
++ Smoking,  drinking,  vegetarianism,  concerns,  etc.Personal
+characteristics
++ Blood type, height,  weight,  waist circumference,  blood pressure,  eye
+Physical color, etc.
+characteristics » Medical  examination  result, disability  type, disability level, etc.
++ Disease  name, injury  code, medication  code, treatment  history, etc.
++ Tax payment,  credit rating, donation,  etc.Credit
+chamcienstcs  | * Health Insurance  premiums  paid, income  quintile, medical  aid
+beneficiaries,  etc.
++ School name, department  name, grade, academic  background,  etc.
+h ee . + Career, job, job type, company  name, department  name, position,
+(Ciara  GUeyiSUCS) former workplace  name, etc.
+. + Cookie information,  access  date, visit date, service use record, accessElectronic ee
+characteristic ”
++ Internet  access  records,  mobile phone usage records,  GPS data, etc.
+Family + Family information  such as spouse, children, parents,  siblings, legal
+characteristics representative  information,  etc.
+[Figure  86] Examples  of Personal  Information  Identifiers
+
+
+--- Page 200 ---
+Understanding  the IT Business  and Ethics )
+< Example  > Identifier
++ Unique identification  information  (resident  registration  number,  passport  number,  alien
+registration  number,  driver's  license  number)
++ Name (including  Chinese/English  name, pen name, etc.)
++ Detailed  address  (address  included  up to the district(gu)  unit)
++ Date information:  birthday  (yang/lunar  calendar),  anniversary  (marriage,  first birthday,  sixtieth
+birthday,  etc.), date of certificate, etc.
++ Phone number  (mobile  phone number,  home phone number,  company  phone number,  fax
+number)
++ Medical  record number,  health insurance  number,  welfare  recipient  number
++ Account  number,  credit card number
++ Various  qualifications  and license numbers
++ Vehicle number,  registration  number  & serial number  of various  devices
++ Photos  (still photos,  videos,  CCTV footage,  etc.)
++ Body identification  information  (fingerprint, voice, iris, etc.)
++ Email address,  IP address,  Mac address,  homepage  URL, etc.
++ Identification  code (ID, employee  number,  customer  number,  etc.)
+* Other unique identification  number: military  serial number,  business  registration  number  of sole
+proprietorship,  etc.
+[Figure  87] Examples  of Personal  Information  Identifiers
++ Methods  of De-identification:  A range of methods  including  pseudonymization,  aggregation,  data suppression and
+data masking  can be used individually  or in combination.  There are various kinds of technology  in place to realize
+each method.  The most suitable methods  and specific  techniques  need to be chosen and utilized based on the
+purpose  of data usage, and strengths  and weaknesses  of each method.
+<Example>  De-identification  Methods
+Processing  Method Example Detailed  technology
++ Hong Gil-dong,  35 years old, live in Seoul,
+attend  Korea University1. Heuristic  pseudonymization
+Pseudonymization —Lim Kkeokjeong,  30s, live in Seoul, 7 enaypien
+attend International  University - wappng
++ Lim Kkeokjeong  180cm, Hong Gil-dong
+170cm, Lee Kongji 160cm, Kim Patji 4. hyo .Aggregation 150cm 5. Micro Aggregation
+6. Rounding— Sum of height  among  physics  major
+students:  660cm,  average  height 165cm
++ Resident  registration  number  901206-7, Rearrangement
+1234567 8. Identifier  deletion
+Data Reduction — 90's born, male 9. Identifier  partial deletion
++ Date information  related to individuals 10. Reducing  records
+(date of final pass, e...

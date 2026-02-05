@@ -1,0 +1,19 @@
+08 IPv6 Overview 176
+A) What is an IPv6 (Internet  Protocol  Version  6) address? 176
+B) Background  of IPv6 176
+09 IPv6 Addressing  System  and Header  Structure 176
+A) IPv6 addressing  system 176
+B) IPv6 header  structure 177
+XIV. Transport  Layer Protocol 179
+01 Concept  of Transport  Layer Protocol 180
+02 TCP 181
+A) Characteristics  of TCP 181
+B) Virtual  TCP operation  scenario 182
+C)TCP protocol 183
+03 UDP(User  Datagram  Protocol) 189
+A) Characteristics  of UDP 189
+B) UDP protocol 190
+04 SCTP(Stream  Control  Transmission  Protocol) 190
+A) Characteristics  of SCTP 190
+B) SCTP 191
+M3 Overview  of System  Architecture  17

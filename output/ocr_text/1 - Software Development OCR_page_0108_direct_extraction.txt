@@ -1,0 +1,37 @@
+Software  Development )
+that could occur in an actual situation.
++ The table below shows the representative  white box testing  techniques.
+<Table 32> White box testing  techniques
+Item Contents
+Structural  technique Measures  and evaluates  the logical complexity  of the program.
+Loop test Only the loop structure  of the program  is tested.
+@ Black box testing
++ Black box testing  is called function  or specification-based  testing.
++ It is mainly used in system testing to verify both functional  and non-functional  requirements.  Functional
+requirements  are verified  based on the specification, whereas  non-functional  requirements  are tested for such
+factors  as performance,  availability,  security,  etc., based on the defined  specification.
++ Testing  focuses  on whether  software  runs according  to the requirements  specification.
++ Functional  testing and non-functional  testing  are performed  based on the requirements  specification  and the
+external  interface, without  referring  to the internal  structure  of the software  module/component  or system.
++ The table below shows the representative  black box testing  techniques.
+<Table 33> Black box testing  techniques
+Item Contents
++ Tests are conducted  by selecting  test cases with various  input conditions.
+Equivalence  partitioning + Eg. Testing  by separating  conditions  into x < 0, 0, x, 100, and x > 100 within the range of 1
+to 100.
++ Tests the accuracy  of the result based on the boundary  value.
++ Eg. Testing  with x=0, x=100, x=-1, x=200, etc. within the range of 1 to 100.
+Cause-effect  graph + Detects  an error by expressing  the impact  of input values  on output  values using a graph.
++ Detects  errors that could be overlooked  with sense and experience.
++ E.g. Checks  without  an input value or inputs a number  in the text field.Boundary  value analysis
+Error guessing
+03 Refactoring
+A) Concept  of refactoring
+@ Refactoring  overview
+The term “refactoring”  refers to the improvement  of a program’s  internal structure  without  changing  the
+program  operation  when viewed from the outside.  That is, the external  function  of the software  is not
+modified,  but the internal structure  and relationship  are simplified  to improve  the maintainability  and quality of
+the software.  The following  two points are important  in defining  refactoring.
++ Even if refactoring  is performed,  the program  operation  as viewed  from the outside  does not change.
++ Refactoring  improves  the internal  structure  of a program.
+M1 Software  development  107

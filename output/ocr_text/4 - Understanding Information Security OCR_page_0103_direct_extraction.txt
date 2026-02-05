@@ -1,0 +1,33 @@
+Information  security )
+Unnecessary  services  should be stopped,  because  unnecessary  system  services  can be installed  and executed
+by default, and these services can become  a security  vulnerability  in the system, or they can waste system
+resources.  It is recommended  not to use the service installed  by default, or the services  that are not used for
+a specific purpose.  The system administrator  should accurately  identify  the purpose  of the target system and
+remove  unnecessary  services.
++ How to stop unnecessary  startup  services
+Input services.msc  into the search programs  and files box by selecting  [Start].
+Stop the unnecessary  service  on the list and change  “Startup  type” to “Disabled”.
+F) Checking  the terminal  service
+Remote Desktop  Services  is a tool used to manage remote servers. However,  if a weak password  is used or
+access control is not adequate,  it can be exploited  as a hacking  tool. Therefore, it should be checked  whether
+unnecessary  Remote  Desktop  Services  is used or not. If Remote  Desktop  Services  is used, the encryption  level
+should be set to “Medium”  or higher.
+02 Unix-like  system  security
+A) Overview  of Unix-like  system  security
+Unix-like  operating  systems,  which are widely used as server operating systems,  include Unix and Linux-
+like operating  systems.  Security  management  is needed in various areas, such as account  and password
+management,  access  controls,  system  security,  service security,  monitoring,  and other security  management.
+<Table 33> Unix-like  system  security
+Item Detailed  item
+Checks  related  to accounts  (unnecessary  accounts,  accounts  with a root privilege)
+Account  and password
+management Checks related to passwords  (vulnerable  passwords,  encryption,  automatic  account  locks in
+case of password  error, maximum  password  usage period, etc.)
+eeeeeconiral Access  setting  checks (access  by the approved  PC/user,  remote  access  encryption,  session
+end time, etc.)
+Secu Privilege  setting  checks (user environment  settings,  key directories  and files, boot scripts,
+etc.)
+Service  security Service  shutdown  (unnecessary  service,  NFS settings,  anonymous  FTP, SNMP settings,  etc.)
+Monitoring Log recording  settings,  CPU/file  system use rate check
+Other security  management  | Access  warning  message,  scheduling  content,  latest patch checks
+M4 Understanding  Information  Security  103

@@ -1,0 +1,28 @@
+ESSENCE
+(oes) _> 1010101010Transformer Quantizer© (Lossless) (Lossy)
+. Inverse 1010101010 —> | > ~) —_> transformer
+[Figure 70] Image Data Transformation  Process
+Video data is composed  of several  frames.  Since each frame is an image, a video file requires  a high transmission  rate.
+Video data can be compressed  with a spatial compression  or a temporal  compression  method.  JPEG performs  spatial
+compression  of each frame, and each frame is compressed  independently.  Temporal  compression  removes  redundant
+frames and configures each frame into I-frames,  which are independent  frames, B-frames,  and P-frames,  which
+reference  other I-frames  to compress  data temporally.
+Analog  audio signals  are digitized  using an analog-to-digital  converter  (ADC), and the ADC consists  of two processes:
+sampling  and quantization.
+@ Video compression  standard
+The Moving Picture Experts  Group (MPEG) is an international  standardization  organization.  The official name of the
+standard  is ISO/IEC  JTC1/SC29/WG11.  MPEG created  the following  compression  formats  and additional  standards.
+<Table 16> Compression  Format  and Additional  Standard
+Type Key Features Application
+MPEG-1 + Audio and video compression  and decompression + MP3 and video CD
+MPEG-2 + Compression  and decompression  for DTV + Digital TV and DVD
+broadcasting
+MPEG-4 + Mobile phone video compression  and decompression + IMT2000  and Internet  broadcasting
+AVC/H.264 + Twice the compression  rate, compared  to MPEG-2 + HDTV and mobile phone video
+MPEG-V + VR media presentation  and control + 4D movies and VR
+MPEG-DASH + Internet-based  video streaming + Internet  image streaming
++ Next-generation  media  transfer  standard  t |wr | nega nee arse seme eres | uot antsna
+HEVC/H.265 + Twice the compression  rate, compared  to AVC + UHDTV  and smart TV
+3D Audio + Added dimensions  to existing  surround  audio + UHDTV  and smart TV
+@ Advanced  video coding (AVC) and high efficiency  video coding (HVEC)
+96 TOPCIT  ESSENCE

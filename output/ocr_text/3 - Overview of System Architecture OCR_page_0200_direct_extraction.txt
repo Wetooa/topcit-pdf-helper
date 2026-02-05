@@ -1,0 +1,23 @@
+Overview  of System Architecture )
+Command  types included  in FTP command  messages
+Command  Form Command  Type
+Access  command USER, PASS ACCT, REIN, QUIT, ABOR
+File management  command CWD, CDUP, DELE, LIST, NLIST, MKD, PWD, RMD, RNFR, RNTO, SMNT
+Data forming  command TYPE, STRU, MODE
+Port definition  command PORT, PASV
+File transfer  command GET, PUT, MGET, MPUT, RETR, STOR, APPE, STOU,  ALLO, REST, STAT
+Other  commands HELP, NOOP SITE, SYST
+The general  transfer  mode and passive  transfer  mode operate  in the time sequence  shown in the figure below.
+General  transfer  mode operation
+FTP Server FTP CLient2 Ge
+20 21
+DATA COMMAND 5150 5151
+“PORT 5151"
+9  OK
+DATA CHANNEL
+”“ok
+1) The client connects  to the server's  port 21 and informs  the server  of the second  port it intends  to use.
+2) The server  responds  with ACK.
+3) The server's  port 20 attempts  to connect  to the second  port informed  by the client.
+4) The client responds  with ACK.
+M3 Overview  of System  Architecture  199

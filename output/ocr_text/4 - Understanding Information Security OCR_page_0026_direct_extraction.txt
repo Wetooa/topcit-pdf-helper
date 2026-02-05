@@ -1,0 +1,34 @@
+ESSENCE
+The receiver  tries to send plaintext  P, which can be seen by anyone,  to the other party. The sender  generates
+ciphertext  C from plaintext  P using the encryption  key KE and the cryptographic  algorithm  E,then delivers  it to
+the receiver.  In general,  we cannot  understand  ciphertext  C without  knowing  the decryption  key, which is called
+computational  impossibility.  Here, the computational  impossibility  means that we can understand  the contents
+of the plaintext,  even though  we don’t know the decryption  key, if infinite time is used. The attacker  attempts
+to understand  the contents  of the plaintext  using various methods.  The legitimate  receiver  can understand
+plain text P that the sender has initially intended  to send, by receiving  ciphertext  C sent by the sender and
+converting  it using the decryption  key KD and decryption  algorithm  D.
+@ Cryptosystem
+All the elements  that are needed  for a series of encryption  and decryption  processes  are called a “cryptosystem”.
+The cryptosystem  should generally  meet the following  requirements:
++ Encryption  and decryption  should be effectively  performed  by the encryption  key.
++ A cryptosystem  should be easy to use.
++ Security  should be performed  by the encryption  key, rather  than by a cryptographic  algorithm.
+E) Private key encryption  and public key cryptographic  algorithm
+@ Private key cryptographic  algorithm
+The secret key encryption  algorithm  has the advantage  that the encryption  key used for encryption  and the
+decryption  key used for decryption  are the same, and that the length of the key may be short, and the speed
+of encryption  and decryption  operations  is fast.
+Encryption Decryption
+key Same key
+: Cryptographic . Cryptographic :
+| Plain text b> algorithm ——  >| Ciphertext algorithm Plain text
+[Figure  6] Private key cryptographic  algorithm
+However,  it is difficult to share the key if the distance  between  the sender  and the receiver  is long. If there are
+many other parties who require encrypted  communication,  it is quite burdensome  to generate  and maintain
+different  keys. It is called a private key encryption  system, in the sense that the key should be kept and
+managed  in secret.It  is also called a conventional  encryption  system,  in the sense that it is commonly  used.
+The private key encryption  system is still widely used, even though it is difficult  to share the key, because
+the cryptographic  algorithm  is composed  of a combination  of substitution  and transposition,  enabling  fast
+operations.  In addition,  this system is divided into the block cipher and the stream cipher, as shown in Table 2,
+depending  on the plaintext  processing  method.
+26 TOPCIT  ESSENCE

@@ -1,0 +1,40 @@
+Understanding  the IT Business  and Ethics )
++ The vehicle  controls  all safety  functions  and
+monitors  the condition  of the vehicle.
+Full Self-Driving  Automation + Driver enters destination  and the driving  settings.
++ Autonomous  driving system  is responsible  for the
+safe driving  of the vehicle.+ Smart car that functions  like a
+robot. Autonomously  drives itself
+to a specific  destination  through  a
+specific  course.
+Source: SAE(Society  of Automotive  Engineers)
++ Key technologies  of self-driving  cars
+The job of a self-driving  car is acquiring  information  and using this information  to drive the car safely. It requires
+technologies  of recognition,  judgement,  and manipulation.  These technologies  become  integrated  with other
+technologies  like AUTOSAR,  RTOS, and functional  safety technologies.
+@ Smart Machine
+Smart machines  that can be found in our surroundings  today are machines  that recognize  human voice and provide
+answers  to questions  posed by users, e.g. Apple Siri or Google Home. Medical advisors  that provide  guidance  on
+medical diagnosis  or drug use, and robots that assemble  things on behalf of people in factories  are also example  of
+smart machines.
+Smart machines  are defined as "a machine  that acts autonomously,  has intelligence  and self-learning  abilities, and
+is able to judge and adapt itself to different  situations,  and performs  tasks that have been thought  to be impossible
+except  for humans,"  #
+Smart  Machine
+Autonomous:
+Learns by itself and generates  rules on its own to determine  the situation  and make
+the best choice  or judgement
+Self-driving  cars
+Automation:Digital voice assistant
+a pre-determined  procedure  is executed
+according  to instructions.
+Big DataSB (om)
+[Fig. 78] Concept  diagram  of smart machineExpert  advisor
+Robot. ui
++ Direction  of developments  in smart machines
+Smart machines  are evolving  in a direction  where it can learn by itself and make its own rules, create and validate
+hypothesis  and become  situational  aware and discover  the optimal solution,  in tandem  with advances  being made in
+cloud computing,  Big Data and artificial  intelligence  (Al). In other words, it is approaching  the real concept  of a smart
+machine.
+23 Source:  Gartner
+M5 Understanding  the IT Business  and Ethics 173

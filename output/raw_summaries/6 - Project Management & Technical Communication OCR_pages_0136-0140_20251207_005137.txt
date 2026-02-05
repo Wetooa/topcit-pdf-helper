@@ -1,0 +1,209 @@
+LEARNING GUIDE: Pages 136-140
+Generated: 2025-12-07 00:51:37
+PDF: 6 - Project Management & Technical Communication OCR
+
+================================================================================
+LEARNING GUIDE
+================================================================================
+
+Here is a simplified, easy-to-read learning guide based on the provided text:
+
+---
+
+## Project Management & Technical Communication Learning Guide
+
+This guide condenses pages 136-140, focusing on essential project management tools, concepts, and evaluation methods.
+
+### 1. Project Management Tools
+
+Effective project management relies on various tools to track progress, manage risks, and control configurations.
+
+#### A. Project Progress Tracking Management Tool
+*   **Purpose:** Monitors overall project schedule, tasks, allocated resources, and their completion rates.
+*   **Function:** Provides visibility into project advancement and remaining work.
+*   *Example: A Gantt chart or task list showing work names, periods, dates, resources, and progress percentages.*
+
+#### B. Risk Management System (RMS)
+*   **Purpose:** Monitors and controls project-related issues and risks from project initiation to completion.
+*   **Function:** Manages identified issues and potential risks systematically, similar to how requirements are managed with a traceability matrix.
+*   *Example: An issue tracking log listing issues, their status, creation/update dates, and planned actions.*
+
+#### C. Configuration Management System (CMS)
+*   **Purpose:** Systematically manages source codes and project deliverables in collaborative environments.
+*   **Benefits:**
+    *   Prevents duplicate revisions (multiple people making the same change independently).
+    *   Avoids loss of updated content.
+    *   Tracks the history of source codes and deliverables.
+    *   Performs version control (managing different iterations of files).
+*   **Popular Tools:**
+    *   **CVS (Concurrent Versions System):** Older version control system.
+    *   **Subversion (SVN):** Successor to CVS, improved features.
+    *   **Git:** Distributed version control system, widely used today.
+*   **Tool Comparison (Common Features):**
+    *   **Language Irrelevant:** Work with any programming language.
+    *   **OS Support:** Generally support Windows, Linux, Mac.
+    *   **Interface:** Primarily command-line, but often complemented by third-party Graphical User Interface (GUI) tools (e.g., TortoiseCVS, TortoiseSVN, SourceTree for Git).
+
+### 2. Advantages of Using a Project Management System
+
+Implementing a comprehensive project management system offers several key benefits:
+
+*   **Successful Project Management:**
+    *   Provides full visibility into project progress.
+    *   Helps identify completed and remaining tasks.
+    *   Enables managing the project according to the plan.
+*   **Effective Team Management:**
+    *   Facilitates efficient assignment of tasks to team members.
+    *   Simplifies schedule management and role allocation.
+    *   Contributes to achieving overall project goals.
+*   **Improvement of Organizational Competence:**
+    *   Records project history and deliverables, creating valuable organizational assets.
+    *   Serves as a reference model for future, similar projects.
+    *   Boosts the organization's overall performance capability.
+
+### 3. Concept of Project Monitoring and Evaluation
+
+#### A. Definition and Purpose
+*   **Definition:** The process of assessing whether a project has been completed within the planned timeframe, stayed within budget, and achieved its objectives.
+*   **Reasons for Evaluation:**
+    1.  **Assess IT Investment Value:** Determine how much IT investment contributed to business goal achievement.
+    2.  **Learn and Improve:** Identify problems or issues during the project (retrospective) to reflect on and improve future projects.
+
+#### B. Aspects of Project Evaluation
+Projects are typically evaluated from three key perspectives:
+
+1.  **Financial Perspective:** Evaluates investment costs and Return on Investment (ROI).
+2.  **Management Perspective:** Assesses the project's progress processes, including:
+    *   Schedule management
+    *   Scope management
+    *   Quality management
+    *   Risk management
+3.  **Technical Perspective:** Reviews the technologies and solutions applied within the project.
+
+### 4. Project Evaluation Process and PMO
+
+#### A. Project Evaluation
+*   **Scope:** Involves evaluating everything from the project's start to the post-completion investment.
+*   **Importance:** Crucial for companies managing multiple projects and significant investments, requiring systematic management and fair ex-post evaluation.
+
+#### B. Project Management Office (PMO)
+*   **Role:** A Project Management Office (PMO) often facilitates systematic project evaluation.
+*   **PMO Activities Related to Evaluation:**
+    *   **Integrated Management:** Oversees various project management areas (e.g., scope, schedule, cost, quality, risk).
+    *   **Investment Decision-making:** Supports decisions using analyses like SWOT (Strengths, Weaknesses, Opportunities, Threats).
+    *   **Investment Evaluation Management:** Manages the evaluation process, including initial entry, results analysis, and gap analysis.
+
+#### C. Example Project Evaluation Items
+Key criteria used to evaluate a project's success and value:
+
+*   Return on Investment (ROI)
+*   Business Strategy Consistency
+*   Sales Increase Effect
+*   Cost Reduction Effect
+*   User Satisfaction
+*   Competitive Differentiation
+*   Process Improvement
+*   Recycle/Reusability
+
+#### D. Performance Measurement
+*   **Purpose:** Quantitatively verify if the project achieved its stated goals (e.g., based on business case, project charter).
+*   **Method:** Often involves measuring key metrics (e.g., monthly sales for a new system) over time to assess performance and inform future operations and improvements.
+
+### 5. Project Evaluation Stages
+
+Project evaluation is conducted at different points in the project lifecycle:
+
+*   **Ex-ante Evaluation:** Conducted **before** the project begins. Focuses on feasibility, justification, and alignment with business goals.
+*   **Interim Evaluation:** Conducted **during** the project's execution. Monitors progress, identifies issues, and allows for corrective actions.
+*   **Ex-post Evaluation:** Conducted **after** the project is completed. Assesses final outcomes, ROI, lessons learned, and overall impact.
+
+---
+
+================================================================================
+ORIGINAL TEXT (First 5000 chars)
+================================================================================
+
+--- Page 136 ---
+Project Management  and Technical  Communication  )
+Project  Process  rate
+Work name Period Start date Finish date Peed De Resource name come  |work rate
+New IPCC establishment 143 days | 13/09/23(Mon.)|_  14/04/11(Fri.) 35%
+1. Consultation  application : Lee Hyeonjung,eens 143 days  | 13/09/23(Mon.)|  14/04/11(Fri.) Park Geuncheol 31%
+1.1 Requirements . Lee Hyeonjung,
+specification  and scoping 35 days |13/09/23(Mon.)| 13/11/08(Fri,) Park Geuncheol 100%
+. ‘ Lee Hyeonjung, 9CS(Customer  Service) Oday | 13/09/23(Mon.)}  13/11/08(Fri.) Park Geuncheol 100%
+, . . Lee Hyeonjung,Public Corporation  Plus | Oday |13/09/23(Mon.)| 13/11/08(Fri.) Berk Geunched 100%
+Linkage  to affiliated Lee Hyeonjung,enn Oday | 13/09/23(Mon.)|  13/11/08(Fri.) Park Geuncheol 100%
+Product sales operation | Oday | 13/09/23(Mon.)| 13/11/08(Fri,) bee Fyeon|ung. 100%
+Vertical  service Lee Hyeonjung,ear Oday | 13/09/23(Mon.)|  13/11/08(Fri.) Park Geuncheo 100%
+. . ; Lee Hyeonjung,Membership  operation Oday | 13/09/23(Mon.)}  13/11/08(Fri.) Park Geuncheol 100%
+Kim Jihyeon,
+1.2 Screen  design(planning)  | 25 days  | 13/10/14(Mon.)|  13/11/15(Fri.) Lee Hyeonjung, 88%
+Park Geuncheo
+Kim Jihyeon,
+CS(Customer  Service) 25 days  | 13/10/14(Mon.)  | 13/11/15(Fri.) Lee Hyeonjung, 100%
+Park Geuncheo
+im Jihyeon,
+Public  Corporation  Plus | 25 days |13/10/14(Mon.)}  13/11/15(Fri.) Lee Hyeonjung, 100%
+Park Geuncheo
+Kim Jihyeon,
+Partner 25 days | 13/10/14(Mon.)  | 13/11/15(Fri.) Lee Hyeonjung, 100%
+Park Geuncheo
+Kim Jihyeon,
+Membership  operation 25 days  | 13/10/14(Mon.)  | 13/11/15(Fri.) Lee Hyeonjung, 100%
+Park Geuncheo
+Kim Jihyeon,
+Manager 25 days | 13/10/14(Mon.)  | 13/11/15(Fri.) Lee Hyeonjung, 100%
+Park Geuncheo
+1.3 DB design 25 days  | 13/10/14(Mon.)  | 13/11/15(Fri.) Yun Euisu 100%
+IPCC DB design 25 days  | 13/10/14(Mon.)  | 13/11/15(Fri.) Yun Euisu 100%
+1.4 Interface  design 50 days | 13/10/14(Mon.)}  13/12/20(Fri.) Jang Heyonggeun 78%
+Park Jujin
+1.4.1 CTI 1.45 days  | 13/10/21(Mon.)  | 13/10/22(Tue.) Jeong  Yeongseon 45%
+9
+1.4.2 ARS 29 days  | 13/10/21(Mon)| 13/11/28(Fri,) Jang Heyonggeun, 45%
+Park Jujin
+a Jang Heyonggeun, 90%
+1.4.3 Statistics 20 days | 13/10/21(Mon.)  | 13/12/20(Fri.) Kim Cheoljung
+1.4.5 Recording 15 days | 13/10/21(Mon.)  | 13/11/15(Fri, Jang Hyeonggeun 90%
+1.4.6 Le (Admin, SF, . 90% Soe 50 days | 13/10/14(Mon.)} 13/02/20(Fri,) °
+1.5 Establishment 98 days | 13/11/25(Mon.)  | 14/04/11(Fri.) 0%
+1.5.1 Web Pub 0%
+membership 15 days | 14/01/17(Fri.)  | 14/02/10(Mon.) Lee Yongseok
+operation  hing
+M6 Project  Management  and Technical  Communication  135
+
+
+--- Page 137 ---
+ESSENCE
+1.5.2 Interfe . 9,ple ation 13days  | 4/01/08(Wed,)  | 14/01/24(Fri) Lee Seonyeong 0%
+1.5.3 Consultation  screen  | 86 days | 13/11/25(Mon.)  | 4/03/26(Wed.) Kim Hyeonhwan 1%
+[Figure  46] Project  Progress  Tracking  Management  Tool (example)
+B) Risk management  system,  RMS
+Project  managers  must monitor  and control the project  from initiation  to the end of the project for numerous
+issues and risks. In the same way that requirements are managed  using a Requirement  Traceability  Matrix,
+issues and risks are also managed  using an issue management  tool, and the figure below is an issue and re-
+quirements  management  software.
+Key Summary Status eee Creation date | Update date | Updated version
+SUSRQ- [Local]improve  validity period2663 structure  Sales force Registered  | Unresolved  | 2013/08/23  | 2013/08/23 Developed
+eae) Pe commission  for the Store | Registered  | Unresolved  | 2013/08/19  | 2013/08/22  | To be reviewed
+[CEO work order] Web-related
+SUSRQ- issues of customer  center, .2580 admin FAQ-related  functionality Registered  | Unresolved  | 2013/08/08  | 2013/08/23  | To be reviewed
+implementation
+SUSRQ-  | [Store] Feature  for buyers related
+2577 to shipping  destination  of buyers In progress  | Unresolved  | 2013/08/08  | 2013/08/08  | Being planned
+Se Automatic  estimation  of retum Registered  | Unresolved  | 2013/08/07  | 2013/08/23  | To be reviewed2565 shipping  cost
+SUSRQ- Automatic  reflection  into FN of
+2552 whether  actual shipping  has been | Registered  | Unresolved  | 2013/08/06  | 2013/08/23  | Being planned
+made
+oe Shipping  cost promotion  system Registered  | Unresolved  | 2013/07/31  | 2013/08/07  | To be reviewed
+rae Low price guarantee In progress | Unresolved  | 2013/07/22  | 2013/08/23 QA
+oye Immediate  discount Registered  | Unresolved  | 2013/07/18  | 2013/08/19  | Waiting
+SUSRQ- [Local] Improve  validity  period
+2389 structure In progress  | Unresolved  | 2013/07/16  | 2013/08/23 Developed
+ere Road name address conversion Registered  | Unresolved  | 2013/07/11  | 2013/08/19  | Being planned
+in Create icons for cautions  for use Registered  | Unresolved  | 2013/07/09  | 2013/08/07 Waiting
+os Bundle delivery Registered  | Unresolved  | 2013/07/08  | 2013/08/23  | To be planned
+[Figure  47] Project  Issue and Risk Management  Tool (example)
+C) Configuration  management  system,  CMS
+Configurati...

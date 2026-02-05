@@ -1,0 +1,38 @@
+Database )
+the web client makes requests  frequently  or when the application  program  to link with the web is large, and that
+performance  deteriorates  significantly  when there are too many connections.
+@ CGl application  server  method
+* The CGl application  server  method  separates  and executes  the application  program  accessing  the database  as
+a daemon and transfers  the user's requests  by application  processor.  The CGI module is composed  of a small
+executable  file and transfers  the request  received  from the web server  to the application  server  only.
++ The application process  includes  the fork, pre-fork,  and multithread  methods.  In particular,  the multithread  method
+has the advantage  of a fast response  speed by using system  resources  most efficiently.
+* The CGI application  server method has the advantage  of easy linking with middleware  such as CORBA and TP
+Monitor,  while reducing  the size of the process  and keeping  the existing  system intact, but it also has the limitation
+of being difficult  to implement.
+@ Extended  API method
++ When the extended  API method  is used, a database  application  program  is executed  as a process  by linking it with
+the web server. As the web server provides  APIs with extended  functions, it solves the problem  of the existing  CGI
+method  wherein a new process  should be created each time a request is received.  Microsoft’s  ISAPI, Netscape’s
+NSAPI, and Oracle's  Web Request  Broker  (WRB) belong  to this method.
+* The extended  API method has the advantage  of saving more system resources,  reducing  more system load, and
+providing  faster speed than the CGI method,  because  the routine  created  with the extended  API of the web server
+is used as part of the server program.  However,  this method has the problem  that it is difficult  to create a routine
+using an extended  API and becomes  dependent  on a specific  web server  or browser.
+@ Servlet  method
++ The servlet method is similar to the extended  API method but is platform  independent.  JDBC (Java DataBase
+Connectivity)  or another  database  access  class is used to connect  a database.
++ The serviet  method  has attracted  the attention  of many Java developers  because  it provides  continuous  processing
+and a fast response  speed using Java’s multi-thread  features.
+B) Browser  extension  method
+The browser  extension  method processes  data while maintaining  the connection  by directly  connecting  a database
+from a browser.  It is also called the direct (state) method.  JDBC, ADO (ActiveX  Data Object), and OLE DB belong  to
+this method.
+@ JDBC
++ A method of directly  connecting  a database  server from a Java applet or ActiveX  control. Specifically,  some
+methods  use Java solutions  such as JDBC and JavaBeans.  When this method  is used, the limitations  of the web that
+occur when linking  with mission-critical  systems  can be overcome  by connecting  a database  server  continuously.
++ JDBC is an API for the programming  language  Java, which is designed  to implement  an independent  Java application
+program.  JDBC uses an integrated  SQL server, and another  database  can be connected  without  modifying  the
+source by replacing  the driver or a module  that can be linked to it only.
+M2 Database 119

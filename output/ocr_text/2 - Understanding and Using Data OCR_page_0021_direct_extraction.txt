@@ -1,0 +1,39 @@
+ESSENCE
+01 Understanding  Data
+A) Concept  and characteristics  of data, information,  and knowledge
+@ Data
+Data refers to the collected  resource  itself, which are the basic data discovered,  investigated, collected,  and created
+in the real world. That is, data are related  to a fact, which refers to a natural  state free of the values  and judgments  of
+human beings.
+Q Information
+Information  refers to various data that are organized,  classified,  and systematized  for certain purposes  according  to
+certain rules. When data are processed  in a certain form, the information  necessary  for achieving  a specific  purpose  is
+created,
+@ Knowledge
+Knowledge  refers to matter  that is generalized  from several  items of concrete  information.  It is created  while analyzing
+and studying  the meaning  and relationship  of informational  data. Correlations  between  information  should be
+established  to convert  information  into knowledge.  Therefore,  information  can vary significantly  depending  on how one
+assigns  meaning  to informatized  data, analyzes  the relationship,  and judges  the values of the human  being. Enterprises
+and institutions  manage  such information  or knowledge  in such a way as to make decisions  or create  added value.
+<Table 1> Data, information,  and knowledge
+Item Definition  and characteristics Key point
+Fact + A state of disorder  in reality. Something  that exists without  being observed  by others. | Phenomenon
+Data + Realistic  data that exist widely in the real world. Factual data
++ Several simple facts that have not yet been evaluated  for a specific  purpose.
++ When data are organized  into meaningful  patterns,  they become  information. Treatment  and
+Information + Data are treated and processed  by a certain program  (form) in order to create processing
+information  necessary  for achieving  a specific  purpose.
+Added value,
+generalization,  and
+decision-making+ Information  of the same type is accumulated  and organized  into a generalized  form
+Knowledge + A state to which human interpretations  and meanings  are given.
++ Information  is used for decision-making  or creation,  and added value is created.
++ A state in which an individual  can understand  and apply knowledge. Internalized  ability
++ The mental  ability to acquire,  understand,  apply, and develop  knowledge.Wisdom
+B) Concept  and characteristics  of data processing  types
+The data processing  system, which is the core element  of the information  system, and is directly related to the
+computer,  can be divided into batch processing,  online processing,  and distributed  processing  system depending  on
+the type of data processing,  in other words, how the data are organized  and accessed.
+@ Batch processing  system
++ Data is collected  for a certain period or a certain amount  to process  it at once.
+20 TOPCIT  ESSENCE

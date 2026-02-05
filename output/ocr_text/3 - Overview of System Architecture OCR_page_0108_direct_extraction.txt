@@ -1,0 +1,32 @@
+Overview  of System Architecture )
+Technologies  applied  to embedded  OS can be characterized  by real-time,  small/lightweight,  and low power
+consumption,  as shown in <Table 22>.
+{Table 22) Embedded  OS Application
+Application Description
+Real-time  multitasking Real-time  synchronization  mechanism  and real-time  resource  management  function  to improve
+technology the guarantee  and predictability  of real-time  services,  along with real-time  scheduling
+Lightweight  kernel Basic kernel support  technology  to provide  a solution  suitable  for a system targeting  a specific
+technology application  with limited resources,  according  to the characteristics  of the embedded  system
+Power management Power management  system for embedded  systems,  including  portable  information  home
+technology appliances  using small batteries  in a ubiquitous  environment
+. Basic support  technology to support  ultra-small/ultra-low-resource  embedded  systems,  such asTiny kernel technology pp ae ey pe . , *sensor  networks  in ubiquitous  environments
+C) Types and trends  of embedded  OS
+Embedded  software  runs in a wide range of devices and supports  many operating  systems.  However,  it is largely
+divided into real-time  operating  systems  that must satisfy conditions  to operate  within a set time, and operating
+systems  that do not.
++ Real-time  OS (RTOS): Mainly focuses  on controlling  application  programs  or hardware  affected  by a limited  amount
+of time. The leading  operating  systems  include  VxWorks,  VRTX, QNX, and pSOS.
++ Non real-time  OS: Mainly  focuses  on development  convenience,  scalability,  and diverse  operating  environments.  The
+leading  operating  systems  include  Linux series, embedded  Window  XP, and Windows  CE.
+Traditionally,  an embedded  OS was used because  systems,  such as satellites  and missile controllers,  that must have
+flawless protection  against  errors needed  to have an OS optimized  for real-time  systems. In that case, the systems
+used RTOS, instead  of a general-purpose  OS.
+However,  one of the latest trends in embedded  OS technology  is that the portion of Linux and free RTOS is steadily
+increasing,  when compared  to traditional  embedded  RTOS, such as VxWorks,  pSOS, QNX, and VRTX, which have
+led the existing  information  home appliance  market and other embedded  application  industries  (see [Figure 74]).
+Linux is installed  in about 65% of all embedded  devices  and is still growing  very fast, at an annual average  of 17%.
+Meanwhile,  the UK's FreeRTOS  is rapidly expanding  its base. The market  share is around 50%, which makes it the de-
+facto standard.  In addition  to FreeRTOS,  ARM's mbed, which was recently  acquired  by Softbank  in Japan, is spreading
+rapidly. Of course, commercial  products  are still leading in markets  that require a  high degree of safety, such as in
+automobiles,  aircrafts,  and railways.
+M3 Overview  of System  Architecture  107

@@ -1,0 +1,30 @@
+ESSENCE
+>> Recent  trends and major issues
+The data modeling  technique  represented  by individual  entities  and relationships  has been used widely. In
+recent times, however,  there has been an increase  in practical business  techniques  that try to express  the
+composition  or workflow  of a business  more elaborately  in terms of the data modeling  expression  method.
+Among  these, the extended  data model supplements  the shortcomings  of the traditional  data model which
+expresses  the composition  with simple entities  and relationships  only and has the strengths  of the object-
+oriented  data model. This model expresses  the object-oriented  inheritance  structure as a super-type  and
+a sub-type  of data modeling,  and designates  a grouping  type that has multiple  attribute  values in a single
+entity. An analysis  of commonly  implemented  projects  showed  that about 70% of them use the super-type
+and sub-type  method.  As a result, even though  data modeling  is deployed,  there are many cases in which
+the physical  data model is created  without  a clear standard.  Therefore,  concrete  data modeling  techniques,
+which developer  can understand  accurately  and apply to practical  business,  need to be acquired  and applied
+in the field.
+Actually,  if the following  knowledge  and techniques,  which are frequently  mentioned  in actual projects,  are
+known or learned,  they can be applied usefully.
+- It is essential  to fully know and apply the normalization  rules, which are the starting  point of creating  a
+database.
+- Do not casually  think that inquiry performance  is slow in normalized  models.
+- Denormalization  technology  should be applied  based on a proper  understanding.
+- Auser-independent  conceptual  schema should be applied to data modeling  from the viewpoint  of data
+independence.
+- The meaning  and effect of identifier  relationships  and non-identifier  relationships  should be understood
+before applying  them.
+- Conversion  should be performed  after understanding  the concepts  of super-type  and sub-type  and after
+considering  performance.
+- Do not create a data model with a missing  relationship.
+- History  data modeling  (occurrence,  change,  progress)  in consideration  of performance  should be available.
+- When setting  primary  keys, the performance  and index characteristics  should be considered.
+48 TOPCIT  ESSENCE

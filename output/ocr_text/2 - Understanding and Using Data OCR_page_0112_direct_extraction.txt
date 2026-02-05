@@ -1,0 +1,19 @@
+Database
+>> Recent  trends and major issues
+SQL is the most important  and powerful  tool in a relational  database.  It is not an exaggeration  to say that
+the strengths  of the relational  database  are being increasingly  highlighted  thanks  to the strong  function  of
+SQL, which prevents  the relational  database  from being changed  to the object-oriented  DBMS or another
+DBMS easily. Prior to the introduction  of SQL, the procedural  programming  language  had to be used for
+simple data processing  only by writing a long programming  code. Since the introduction  of SQL, however,
+the productivity  of database  programming  has improved  significantly,  because  the DBMS manages
+everything  when the desired  data are specified.
+>> Learning  objectives
+1. To be able to explain the concept  and characteristics  of the stored procedure.
+2 To be able to explain the concept  and characteristics  of the embedded  SQL.
+3. To be able to explain the concept  and characteristics  of the dynamic  SQL.
+4 To be able to explain the characteristics  of each query optimization  phase.
+5. To be able to explain the characteristics  of the optimizers  by type.
+6 To be able to explain the technique  of linking the web and the database.
+>> Keywords
++ Stored procedure,  embedded  SQL, dynamic  SQL, query optimization,  optimizer,  web database  linkage
+M2 Database  111

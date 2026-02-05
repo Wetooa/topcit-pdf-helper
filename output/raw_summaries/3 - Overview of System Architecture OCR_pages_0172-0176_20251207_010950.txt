@@ -1,0 +1,238 @@
+LEARNING GUIDE: Pages 172-176
+Generated: 2025-12-07 01:09:50
+PDF: 3 - Overview of System Architecture OCR
+
+================================================================================
+LEARNING GUIDE
+================================================================================
+
+Here is a simplified, easy-to-read learning guide based on the provided text:
+
+---
+
+# **Learning Guide: IPv4 Addressing & Network Management**
+
+This guide provides essential concepts for understanding IPv4 addressing, network partitioning, and address allocation.
+
+---
+
+## **1. IPv4 Address Basics**
+
+An IPv4 address is a 32-bit number used to identify devices on a network.
+
+### **A. IPv4 Expression**
+*   **Format:** Typically written in Dotted Decimal Notation (e.g., `128.11.3.31`).
+*   **Components:** An IPv4 address is divided into two parts:
+    1.  **Network Address (Network ID):** Identifies the specific network a device belongs to.
+    2.  **Host Address (Host ID):** Identifies a unique device within that network.
+
+### **B. IPv4 Address Classes (Classful Addressing)**
+Historically, IPv4 addresses were categorized into classes based on their size and intended use, dictating how bits are allocated for Network and Host IDs.
+
+| Class | Address Range               | Network ID / Host ID Structure   | Default Subnet Mask | Primary Purpose                                 |
+| :---- | :-------------------------- | :------------------------------- | :------------------ | :---------------------------------------------- |
+| **A** | `1.0.0.0` - `126.255.255.255` | `NID.HID.HID.HID`                | `255.0.0.0`         | Very large networks, many hosts.                |
+| **B** | `128.0.0.0` - `191.255.255.255` | `NID.NID.HID.HID`                | `255.255.0.0`       | Medium to large networks.                       |
+| **C** | `192.0.0.0` - `223.255.255.255` | `NID.NID.NID.HID`                | `255.255.255.0`     | Small networks, many networks, few hosts.       |
+| **D** | `224.0.0.0` - `239.255.255.255` | *(Multicast)*                    | -                   | Used for multicasting (sending to a group).     |
+| **E** | `240.0.0.0` - `255.0.0.0`   | *(Reserved / R&D)*               | -                   | Reserved for future or experimental use.        |
+
+---
+
+## **2. Special IPv4 Addresses**
+
+Certain IPv4 addresses have specific reserved meanings or uses, often not routable on the public internet.
+
+| Address Type                          | Address / Range                      | Usage                                                                      | Internet Routable? |
+| :------------------------------------ | :----------------------------------- | :------------------------------------------------------------------------- | :----------------- |
+| **Network Address**                   | `Network_ID.0.0.0`                   | Represents the entire network itself.                                      | No                 |
+| **Directed Broadcast**                | `Network_ID.255.255.255`             | Sends data to all devices within a specific network.                       | No                 |
+| **Specific Host on this Network**     | `0.0.0.Host_ID`                      | Refers to a specific device on the *local* connected network.              | No                 |
+| **Loopback Address**                  | `127.0.0.0` - `127.255.255.255` (commonly `127.0.0.1`) | Used by a device to send traffic to itself for testing.                    | No                 |
+| **Limited Broadcast**                 | `255.255.255.255`                    | Sends data to all devices on the *local segment*. Routers do not forward. | No                 |
+| **This Host**                         | `0.0.0.0`                            | Used by a device when it doesn't know its own IP address (e.g., requesting one). | No                 |
+| **Private Addresses**                 |                                      | Used for private networks, not publicly routable without NAT.              | No                 |
+| - Class A Private                     | `10.0.0.0` - `10.255.255.255`        |                                                                            |                    |
+| - Class B Private                     | `172.16.0.0` - `172.31.255.255`      |                                                                            |                    |
+| - Class C Private                     | `192.168.0.0` - `192.168.255.255`    |                                                                            |                    |
+| **APIPA** (Automatic Private IP Addressing) | `169.254.0.0` - `169.254.255.255`    | Auto-assigned when a device cannot obtain an IP from a DHCP server.        | No                 |
+
+---
+
+## **3. Network Partitioning: Subnetting & Supernetting**
+
+### **A. Subnetting**
+*   **Concept:** Divides a single large network into multiple smaller, manageable subnetworks.
+*   **Purpose:** Improves IP address efficiency, enhances security, reduces network congestion (smaller broadcast domains), and simplifies management.
+*   **Subnet Mask:** A 32-bit value that determines which part of an IP address is the network portion and which is the host portion.
+    *   `1`s in the mask indicate the network part (including subnet ID).
+    *   `0`s in the mask indicate the host part.
+*   **How it works:** "Borrows" bits from the Host ID part of an IP address to create a **Subnet ID**.
+
+**Subnetting a Class C Address Example (`255.255.255.0` default mask):**
+By extending the subnet mask (borrowing host bits), you create more subnets but reduce the number of hosts per subnet.
+| Bits Used for Subnet | Subnet Mask     | Number of Subnets | Max Hosts per Subnet |
+| :------------------- | :-------------- | :---------------- | :------------------- |
+| **0** (No subnetting)| `255.255.255.0` | 1                 | 254                  |
+| **2** bits           | `255.255.255.192` | 4                 | 62                   |
+| **3** bits           | `255.255.255.224` | 8                 | 30                   |
+*(Note: Hosts per subnet = 2^(number of host bits) - 2 for network and broadcast addresses)*
+
+### **B. Supernetting**
+*   **Concept:** The opposite of subnetting. Combines multiple smaller networks (e.g., several Class C networks) into one larger network.
+*   **Purpose:** Reduces the size and complexity of routing tables on the internet (route aggregation), improving routing efficiency.
+*   **Method:**
+    *   Multiple consecutive network address blocks are grouped.
+    *   Part of the network identifier bits are used as host identifiers to create a larger host space.
+    *   The number of consolidated networks must be a power of 2 and sequential.
+
+---
+
+## **4. CIDR (Classless Inter-Domain Routing)**
+
+*   **Concept:** A flexible addressing scheme that allows for variable-length subnet masks (VLSM), moving away from fixed Class A, B, C boundaries.
+*   **Benefits:**
+    *   **IP Address Conservation:** Uses IP addresses more efficiently by allocating only the necessary number of addresses for a network.
+    *   **Routing Table Reduction:** Aggregates routes, reducing the number of entries in internet routers.
+    *   **Flexibility:** Network administrators can specify arbitrary network sizes.
+*   **CIDR Expression:** `a.b.c.d/x`
+    *   `a.b.c.d` is the IP address.
+    *   `/x` (the prefix length) indicates the number of bits from the left that constitute the network portion of the address.
+    *   **Example:** `200.23.16.0 / 23` means the first 23 bits represent the network, and the remaining 9 bits are for hosts.
+
+---
+
+## **5. IPv4 Address Allocation & Management Protocols**
+
+### **A. DHCP (Dynamic Host Configuration Protocol)**
+*   **Purpose:** A network protocol that automates the assignment of IP addresses and other network configuration parameters (like subnet mask, default gateway, DNS server addresses) to devices (clients) on a network.
+*   **Key Process (DORA):** The four main steps for a client to obtain an IP address:
+    1.  **DHCPDISCOVER:** Client broadcasts a message to find any available DHCP servers.
+    2.  **DHCPOFFER:** DHCP server(s) offer an available IP address and configuration to the client.
+    3.  **DHCPREQUEST:** Client selects one of the offers and formally requests that IP address.
+    4.  **DHCPACK:** The DHCP server acknowledges the request, confirms the IP address lease, and provides the full configuration.
+
+### **B. NAT (Network Address Translation)**
+*   **Purpose:** Enables devices on a private network (using private IP addresses) to communicate with devices on a public network (like the Internet) using a limited number of public IP addresses.
+*   **Benefits:**
+    *   **IP Address Conservation:** Helps mitigate the shortage of public IPv4 addresses.
+    *   **Security:** Hides the internal network's IP addresses and structure from external networks, making it harder for attackers to target internal devices directly.
+*   **NAPT (Network Address Port Translation) / PAT (Port Address Translation):**
+    *   An advanced form of NAT.
+    *   Translates both IP addresses and **port numbers**.
+    *   Allows multiple internal devices to share a *single* public IP address by mapping different outgoing connections to unique port numbers on the public IP.
+    *   Theoretically, can support up to 65,535 internal hosts connecting simultaneously through one public IP address.
+
+---
+
+================================================================================
+ORIGINAL TEXT (First 5000 chars)
+================================================================================
+
+--- Page 172 ---
+Overview  of System Architecture )
+0? IPv4 Address  Designation  System  and Subnetting
+A) IPv4 expression
+10000000 00001011 00000011 00011111
+128.11.3.31
++ Binary  expression:  01110101  10010101  00011101  00000010
++ Dotted  decimal  notation
+B) IPv4 address  designation  system
+Class A Network | Host | Host | Host
+1.0.0.0 ~ 126.255.255.255
+Class B Network | Network | Host | Host
+128.0.0.0  ~ 191.255.255.255
+Class C Network | Network | Network | Host
+192.0.0.0  ~ 223.255.255.255
+Class D Multicast
+224.0.0.0  ~ 239.255.255.255
+Class E R&D
+240.0.0.0  ~ 255.255.255.255
+[Figure 125] IPv4 Address  Designation  System
+The IPv4 addressing  system consists  of a network  address,  assigned  by an Internet  address  resource  management
+organization,  and a host address,  assigned  by a network  administrator  to identify  individual  hosts on the network.
+As shown in <Table 51>, it is divided into Classes  A, B, C, D, and E, depending  on the network  size or the number  of
+hosts. Classes  A, B, and C are for network  configuration  assigned  to general  users, Class  D is for multicast,  and Class
+E is an address  reserved  for future use.
+M3 Overview  of System  Architecture  171
+
+
+--- Page 173 ---
+ESSENCE
+Table 51) IPv4. Address  Designation  System  [7]
+Class Address Description
+Network  ID: First octet
+A 1.0.0.0 ~ 126.0.0.0 Host ID: Last three octets
+Default  subnet  mask: 255.0.0.0
+Network  ID: First two octets
+B 128.0.0.0  ~ 191.255.0.0 Host ID: Last two octets
+Default  subnet  mask: 255.255.0.0
+Network  ID: First three octets
+Cc 192.0.0.0  ~ 223.255.255.0 Host ID: Last one octet
+Default  subnet  mask: 255.255.255.0
+D 224.0.0.0  ~ 239.0.0.0 Multicast  address
+E 240.0.0.0  ~ 255.0.0.0 Experimentally  used
+In the IPv4 address  designation  method,  subnetting  is the address  partition  method used to separate  a network  ID
+into multiple  network  Ids, and supernetting  is a met!hod of integrating  multiple  networks  into a large network.
+The 169.254.0.0  network band is reserved  for automatic  private IP addressing.  For versions  after Windows  2000,
+DHCP automatically  generates  it to set the IPv4address and cannot  be routed on the Internet.  The addressing
+system  is called the automatic  private IP addressing  (APIPA).
+C) Special  IPv4 address
+In IPv4, there is an addressing  system in a different  form from the conventional  A, B, and C class addressing  system.
+These addresses  are called the special IPv4 addresses.  <Table 52> below shows the special IPv4 addresses.
+(Table 52) Special IPv4 Address  [7]
+Network  ID Host ID Address  name Usage
+specific AllO Network  address + Network  address
+specific All “ rected broadcast  to + Used to broadcast  all terminals  of the specific network
+Allo specific | Specific  host on this network + Indicates  a specific  terminal  inside the connected  network
++ Not able to pass through  routers
+17XXX Local loopback  address + Used as the destination  address  for loopback  inside the
+system
++ Used for broadcasting  to all terminals  inside the router
+255.255.255.255 Limited  broadcast network
++ Not able to pass through  routers
++ Used to specify itself when the terminal  does not know its
+0.0.0.0 This host on this network IP address
++ Not able to pass through  routers
+10. ~ An Private address  for Class A
+: y (10.0.0.0 ~ 10.255.255.255)
+Private  address  for Class B i172.16~172.31 Any (172.160.0  ~ 17231255  ,255) Private network  address  usable without  an official approval
+192.168.0  ~ An Private  address  for Class C
+192.168.255 y (192.168.0.0  ~ 192.168.255.255)
+172 TOPCIT  ESSENCE
+
+
+--- Page 174 ---
+Overview  of System Architecture )
+D) Subnetting
+@ Concept  of subnetting
+Subnetting  is a method  of dividing  a network  address  into multiple  smaller  networks.  A subnet  mask refers to a mask
+to separate  the network  address  of the IP address  [8].
+Conventional  C
+class address
+subnet  mask : 255 255 255 0(rovtataafrataidg  1111177  [oo000000]
+Using 2 Bits forSubnetting pi  H00000]
+subnet  mask : 255 255 255 192
+[Figure 126] IP Address  Applying  Subnetting
+@ Use of subnet
+Adding  a sub-network  generates  an intermediate  layer in the IP address  in order to separate  the address  into the site,
+subnet,  and host.
+141 . 14 . 192 . 2 | 141 . 14 . 192 . 192 |
+Netid h | Hostid Site | Subnetid} i Hostid_qs oa i. oa an an 4
+<Subnetting  Applied> <Subnetting  Not Applied>
+[Figure 127] Addressing  with and without  a Subnetting  Application
+© Use of subnet (Results  of subnetting  using 2 or 3 bits in a class C address)
+Table 53) Subnetting  Results
+Toe Number  of bits used in the subnetting  address
+yp (Not divided) Using 2 bits Using 3 bits
+Subnet  mask 255.255.255.0 255.255.255.192 255.255.255.254
+Number  of subnets 1 4 8
+Number  of hosts in each a 5: =aunt 256-2 = 254 64-2 = 62 32-2  = 30
+Number  of IP addresses = 7
+that can be assigned 254 4x62 = 248 8x30=240
+M3 Overview  of System  Architecture  173
+
+
+--- Page 175 ---
+ESSENCE
+E) CIDR ...

@@ -1,0 +1,240 @@
+LEARNING GUIDE: Pages 211-215
+Generated: 2025-12-05 14:14:00
+PDF: 5 - Understanding the IT Business and Ethics OCR
+
+================================================================================
+LEARNING GUIDE
+================================================================================
+
+Here's a simplified, easy-to-read learning guide extracted from the provided text:
+
+---
+
+## Learning Guide: IT Business & Ethics
+
+This guide covers essential concepts related to computer program works, copyright, open source software, and industrial property rights.
+
+---
+
+### 1. Computer Program Works & Copyright
+
+#### 1.1 What is Software?
+*   **Software** refers to collections of instructions and commands (including audio/visual info) that allow equipment (computers, communications apparatus, automation equipment) to perform tasks like command, control, input, process, save, output, and interact. It also includes descriptions used to prepare them and related data.
+
+#### 1.2 What is a Computer Program Work?
+*   A **computer program work** is a general term for a computer program and its descriptive language.
+*   **Includes:** Programming languages (C, Java), protocols, algorithms, source code, object code, and program structure/arrangement.
+*   **Copyright Protection:**
+    *   **Protected:** Source code, object code, program structure, and arrangement.
+    *   **NOT Protected:** Programming languages, protocols, and algorithms used for programming.
+    *   **In essence:** The *product* of writing software is copyrighted, but the *tools and methods* for writing it are not.
+
+#### 1.3 Software Licenses
+*   **Copyright** grants the software author exclusive rights to use, copy, distribute, and modify their software.
+*   A **license** is when the software author gives specific rights to others to perform certain actions with the software.
+*   **License Agreements** detail contract purpose, definitions, license terms, duration, record keeping, and royalties to prevent disputes.
+
+---
+
+### 2. Open Source Software (OSS)
+
+#### 2.1 What is Open Source Software?
+*   **Open Source Software (OSS)** allows anyone to freely use, copy, distribute, and modify its source code.
+*   **Examples:** Apache web server, Firefox Web Browser, Linux Kernel.
+
+#### 2.2 Basic Requirements for Most OSS Licenses
+*   Acknowledge the developer/contributor and copyright information on the product.
+*   If source code is modified, include modification details (who, when).
+*   When distributing software, attach a copy of the license.
+*   **Copyleft:** Some licenses require redistribution under the *same* license, meaning the source code must also be distributed.
+
+#### 2.3 Key Open Source Software Licenses
+
+| License Type                  | Key Characteristics & Obligations                                                                                                                                                                                                                                                                                                                                                                |
+| :---------------------------- | :----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| **BSD License**               | *   Very permissive. <br> *   No obligation to disclose source code. <br> *   No copyright notice or warranty liability required when distributing.                                                                                                                                                                                                                                              |
+| **Apache License 2.0**        | *   Self-produced by Apache Software Foundation. <br> *   No obligation to disclose source code. <br> *   If modifying/distributing, must include Apache License 2.0 and state it's Apache Foundation software.                                                                                                                                                                                     |
+| **GPL (GNU General Public License) 2.0/3.0** | *   Created by Free Software Foundation (FSF). <br> *   Most widely adopted open source license. <br> *   **Stricter obligations (strong copyleft):** Requires derivative works (works based on GPL code) to also be distributed under GPL, meaning their source code must be made available.                                                                                   |
+| **GNU LGPL (Lesser GPL) 2.1** | *   Separate from GPL, for libraries. <br> *   Does **not** apply GPL's strict copyleft provisions (no obligation to provide source code for the entire linked application). <br> *   Allows linking to simple libraries and modules.                                                                                                                                                              |
+| **MPL (Mozilla Public License)** | *   Developed for Netscape Browser. <br> *   Separates copyright for source code and executable files. <br> *   Allows distributing the executable file under an exclusive license, while source modifications may still need to be disclosed. (File unit copyleft – only modifications to MPL-licensed files need to be open source, not the entire linked project). |
+
+---
+
+### 3. Works Not Protected by Copyright Law
+
+The following works are NOT protected by copyright:
+*   Constitutions, Acts, treaties, decrees, municipal ordinances, and rules.
+*   Bulletins, public notifications, directives, and similar documents issued by central or local governments.
+*   Compilations or translations of works produced by central or local governments.
+*   Judgments, decisions, orders, adjudications of courts, rulings, and decisions from administrative appeals.
+*   Current news reporting that delivers simple facts.
+
+---
+
+### 4. Duration of Copyright Protection (Economic Rights)
+
+Once the protection period expires, works can be used freely without author permission.
+*   **Independent Works:** 70 years after the author's death.
+*   **Joint Works:** 70 years after the death of the *last surviving* co-author.
+*   **Anonymous/Pseudonymous Works:** 70 years after publication.
+*   **Works Made for Hire:** 70 years after publication. If not published within 50 years of creation, then 70 years after creation.
+
+**Note:** The duration starts from the *next year* following the event (death, publication, creation).
+
+---
+
+### 5. Copyright Registration
+
+#### 5.1 What is Copyright Registration?
+*   A process of officially recording facts and legal relations about a work (e.g., author's name) in a public ledger (Copyright Register) and disclosing them.
+
+#### 5.2 What Can Be Registered?
+*   Author's real name, pseudonym, nationality, domicile/residence.
+*   Title, type, creation date of the work.
+*   Publication status, country, and first publication date.
+*   Title and author of the original work (for derivative works).
+*   Information on publication medium.
+*   Shares of registered rights holders (if multiple).
+
+#### 5.3 How to Register (Documents Required)
+Submit the following to the Korea Copyright Commission:
+*   Copyright/Program registration application form.
+*   Copyright/Program registration application statement.
+*   Copies of the work (drawings, photos, electronic media). For programs, an electronic medium with a copy of the program (partial excerpt allowed if sufficient proof of creation).
+*   Documents proving the reason for registration (if required).
+*   List of authors/rights holders (if multiple).
+*   List of works (if registering many).
+
+*The Korea Copyright Commission issues a copyright registration certificate.*
+
+---
+
+### 6. Industrial Property Rights (IPRs)
+
+#### 6.1 Concept of Industrial Property Rights
+*   **Definition:** Rights protecting inventions with commercial value.
+*   **Purpose:** Grant creators exclusive rights for a period to encourage technological progress and industrial development. After the period, anyone can use it.
+*   **Key Types:** Patent rights, utility model rights, design rights, trademark rights.
+
+#### 6.2 Types of Industrial Property Rights
+
+| Classification | Content                                                                                                                                                                                                                                                                                                                                                                                                                            | Duration                                        |
+| :------------- | :--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | :---------------------------------------------- |
+| **Patents**    | *   Right to an advanced invention (e.g., manufacturing methods). <br> *   Cannot be publicly known, performed, or published before filing.                                                                                                                                                                                                                                                                                          | 20 years from application date                  |
+| **Trademarks** | *   Right to a mark identifying one's products/services from others. <br> *   **Mark:** Symbols, letters, figures, sounds, smells, holograms, movements, colors (trade names too). <br> *   **Service Mark:** Trademark for services (academies, restaurants); website domains can be registered. <br> *   Service marks (trademarks) take precedence over registered website domains. | Virtually permanent, renewable every 10 years   |
+| **Designs**    | *   Right to an aesthetically appealing design of an article's form, shape, color, font, or their compositions.                                                                                                                                                                                                                                                                                                                 | 20 years from registration date                 |
+| **Utility Models** | *   Protects practical designs of a lower technical level than patents. <br> *   Focuses on enhancing practicality by improving shape and structure of existing products.                                                                                                                                                                                                                                                         | 10 years from application date                  |
+
+#### 6.3 Acquisition of Industrial Property Rights
+*   **Acquisition:** By registering with the Korean Intellectual Property Office.
+*   **First-to-File Rule:** The first to file an application receives the right.
+*   **Territorial Protection:** Rights are recognized only in the country where registered; separate applications needed for each country.
+
+#### 6.4 Violation of Industrial Property Rights
+
+*   **Cases of Violation (Examples of False Display):**
+    *   Displaying a non-existent, non-applied, or inappropriate patent/registration number (e.g., marking a utility model as a patent).
+    *   Marking a product as "patent pending" or "registered trademark" when it's not.
+    *   Using false trademarks in advertisements or packaging.
+    *   Theft of renowned domestic or foreign trademarks.
+*   **Punishment:**
+    *   Imprisonment for up to 3 years or a fine of up to 20 million won for falsely displaying intellectual property rights.
+    *   This is an **offense not subject to complaint**, meaning anyone (even a third party not directly harmed) can file criminal charges with the prosecution or police.
+
+---
+
+================================================================================
+ORIGINAL TEXT (First 5000 chars)
+================================================================================
+
+--- Page 211 ---
+Understanding  the IT Business  and Ethics )
+@® Computer  Program  Works
+According  to Article 2 of the Software  Industry  Promotion  Act, the term “software”  means a collection  of
+instructions  and commands  (including  audio or visual information,  etc.) that enables  equipment,  such as computers,
+communications  apparatuses  and automation  equipment  and peripheral  equipment  to command,  control, input,
+process,  save, output and interact,  and descriptions  used to prepare  them and other related data.
+A computer  program  work is a generic  term for a computer  program  and a work of descriptive  language  of a program.
+A computer  program  work includes  programming  language  (C, Java, etc.), protocol,  algorithm,  source code and object
+code (compiled  source code), and © structure  and arrangement  method of the program.  Here, the source code,
+object  code, program  structure  and arrangement  are protected by copyright,  but programming  languages,  protocols,
+algorithms,  etc. for programming  are excluded  from the protection.  In other words, the product  of writing software  is
+protected  by copyright,  but programming  languages,  protocols,  and algorithms  for writing  programs  are excluded  from
+copyright  protection.
+Software  is copyrighted  so that only the software  author has the right to use, copy, distribute,  and modify  the
+software.  If the software  author gives someone  the right to perform certain actions, this is called a “license.”  The
+software  license agreement  contains  detailed  regulations  based on the basic contents  of the purpose  of the contract,
+the definition  clause, the establishment  of the license,  the term of the contract,  the storage  of records,  and royalties,
+in order to clearly  set forth the criteria for settlement  in case of dispute.
+© Open Source  Software  Copyright
+Open source software  (OSS, Open Source  Software)  refers to software  in which anyone  can freely use/copy/distribute/
+modify  its source code. Representative  examples  include  Apache  web server, FireFox  Web Browser,  and Linux Kernel.
+<Table 107> Open Source  Software  License
+BSD + License  distributed  by the University  of California,  Berkeley
+(Berkeley  Software  Distribution + Wide allowable  range and no obligation  to disclose  source code
+License) + When distributing  software,  there is no copyright  notice or warranty  liability
++ Self-produced  by the Apache  Software  Foundation
++ No obligation  to disclose  source  code
+Apache  License  2.0 + If you modify  and distribute  the Apache  license source code, you must include
+the Apache  license  version  2.0 and disclose  that it is software  made by the
+Apache  Foundation.
+GPL2.0/30 + Free software  license  created by the Free Software  Foundation  (FSF)
+ote. + Adopted  by the most open source software
+(GNU General Public License 2.0/3.0) * Obligations  are stricter than other licenses
++ Alicense  created  separately  from the GPL for use in the library, does not apply
+GNU LGPL 2.1 the copyleft  provisions  of the GPL, and there is no obligation  to provide  source
+(GNU Lesser  GPL 2.1) code
++ Allow linking  to simple libraries  and modules
++ Developed  to release source code of Netscape  Browser  with Mozilla Public
+MPL License
+(Mozilla  Public License) + By separating  the copyright  of the source code and the executable  file, the
+executable  file can be distributed  under an exclusive  license.
+Most open source licenses  require the following  basic requirements.
++ Indicate  or include  matters  about the developer  or contributor  and matters  about copyright  on the product
+M5 Understanding  the IT Business  and Ethics 209
+
+
+--- Page 212 ---
+ESSENCE
++ If the source code is modified,  information  on the modification,  such as who modified  the code and when, should be
+included.
++ When distributing  software,  attach a copy of the license  to provide license information  on open source.
+Depending  on the type of open source license, some licenses  require a copyleft  to redistribute  under the same
+license. If the copyleft  clause is included,  the source code is also distributed  when the software  is distributed.
+The characteristics  of each open source license are as follows.
+<Table 108> Comparison  of open source licenses  by features
+Obligation — Writing
+Attach  a oa andrange Larger
+copy of notices  of
+license copyright
+upon orRights to
+License reproduce,
+name distribute,
+anal eth distribution attribution na a had
+distribution  _ licenses
+BSD O Oo 0
+Apache
+License 0 0 0 O
+2.0
+All ;GPL 2.0 0 0 0 Conditional
+code
+GPL 3.0 0 0 0 7
+code
+* Derivative
+LGPL 0 0 0
+Work
+21
+MPL 0 0 0 File unit O
+© Works not protected  by copyright  lawtoprovide  Works  and Notice  of
+source distributing revisionThe end of
+alicense Restrictions
+Explicit upona onuse Disclaimer
+patent patent | ofname, of otucbin
+license litigation tradename. warranty y
+bythe trademark
+licensee
+O 0 O
+0 O ) 0 0
+0 0
+0 O 0 0
+0 0...

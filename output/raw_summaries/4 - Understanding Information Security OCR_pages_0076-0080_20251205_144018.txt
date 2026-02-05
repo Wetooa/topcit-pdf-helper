@@ -1,0 +1,225 @@
+LEARNING GUIDE: Pages 76-80
+Generated: 2025-12-05 14:40:18
+PDF: 4 - Understanding Information Security OCR
+
+================================================================================
+LEARNING GUIDE
+================================================================================
+
+This learning guide condenses the essential information from Pages 76-80, focusing on secure SDLC phases and major secure coding techniques.
+
+---
+
+## Secure Software Development Life Cycle (SDLC) Phases
+
+The Secure SDLC integrates security throughout the software development process.
+
+1.  **Requirement Definition Phase**
+    *   **Purpose:** Define security objectives and analyze potential threats.
+    *   **Activities:**
+        *   Identify security objectives based on project/software characteristics.
+        *   Analyze potential threats, security weaknesses, and their impact.
+        *   Derive specific security requirements for software development.
+
+2.  **Analysis/Design Phase**
+    *   **Purpose:** Design security into the overall architecture.
+    *   **Activities:**
+        *   Design security architecture.
+        *   Incorporate security requirements into the entire architecture design.
+        *   Implement developer security training.
+        *   Design security test plans.
+
+3.  **Coding Phase**
+    *   **Purpose:** Ensure code adheres to secure coding practices.
+    *   **Activities:**
+        *   Define secure coding rules, considering programming language strengths/weaknesses.
+        *   Conduct static unit tests on developed code.
+        *   Verify compliance with predefined secure coding rules.
+        *   For commercial packages, check security vulnerabilities and known actions.
+
+4.  **Testing Phase**
+    *   **Purpose:** Dynamically test security and identify vulnerabilities.
+    *   **Activities:**
+        *   Conduct dynamic unit tests on the developed program.
+        *   Test the usability of the applied security features.
+        *   Identify and apply security improvements by checking infrastructure and application vulnerabilities.
+
+5.  **Maintenance Phase**
+    *   **Purpose:** Maintain security posture post-deployment.
+    *   **Activities:**
+        *   Evaluate security impact during code modifications (following change management).
+        *   Periodically check for vulnerabilities.
+        *   Derive and apply ongoing security improvements.
+
+---
+
+## Major Secure Coding Techniques (for Java)
+
+### 1. SQL Injection Attack
+
+*   **Attack Overview:**
+    *   **What it is:** Occurs when an attacker inserts malicious SQL statements into web application input fields (e.g., forms, URL parameters) that are then executed by the database.
+    *   **Cause:** Lack of validation for user-entered data linked to a database.
+    *   **Impact:** Unauthorized reading, manipulation, or deletion of database information.
+
+*   **Coding Technique:**
+    *   **Use `PreparedStatement`:** Transfer *compiled* query statements (constants) to the database using `PreparedStatement` objects.
+    *   **Parameter Binding:** Use `setXXX()` methods (e.g., `setString()`, `setInt()`) to bind external input values to query parameters (`?` placeholders) in `PreparedStatement`. This prevents the input from altering the SQL query structure.
+    *   **Filter Special Characters:** If `PreparedStatement` cannot be used, manually filter special characters and SQL reserved words.
+    *   **Framework Modules:** Utilize input verification and security modules provided by frameworks (e.g., Struts, Spring).
+
+*   **Code Principle (Safe vs. Unsafe):**
+    *   **Unsafe:** Directly concatenates user input into the SQL query string.
+    *   **Safe:** Uses `PreparedStatement` with `?` placeholders for dynamic values, separating the query structure from user input.
+
+### 2. Cross-Site Scripting (XSS) Attack
+
+*   **Attack Overview:**
+    *   **What it is:** An attacker injects malicious client-side scripts (e.g., JavaScript) into a web page. When other users view this page, their browsers execute the malicious script.
+    *   **Cause:** Using unverified external input to create dynamic web pages without proper encoding.
+    *   **Impact:** Information leakage (e.g., stealing cookies, session tokens), unauthorized actions, defacement, or redirection, all executed with the user's browser privileges.
+
+*   **Coding Technique:**
+    *   **Character Conversion (Output Encoding):** Replace special characters that have meaning in HTML/JavaScript with their corresponding HTML entities *before* displaying user-supplied data.
+        *   `<` becomes `&lt;`
+        *   `>` becomes `&gt;`
+        *   `&` becomes `&amp;`
+        *   `"` becomes `&quot;`
+        *   `'` becomes `&#39;` (or `&apos;` in HTML5, though `&#39;` is more universally supported in XML contexts and often preferred)
+    *   **Whitelist HTML Tags:** If allowing certain HTML tags (e.g., in a rich text editor), use a whitelist approach to permit *only* safe, explicitly allowed tags and attributes. Remove or escape all others.
+
+### 3. OS Command Injection Attack
+
+*   **Attack Overview:**
+    *   **What it is:** An attacker provides malformed input that causes the application to execute unintended operating system commands on the server.
+    *   **Cause:** User input that has not been properly validated is used directly as part of or an entire OS command.
+    *   **Impact:** Unauthorized execution of system commands, potentially leading to privilege changes, data manipulation, or system compromise.
+
+*   **Coding Technique:**
+    *   **Avoid Direct Command Execution:** Configure application programs so that system commands are not directly exposed or transferred from the web interface to the server's internal command execution.
+    *   **Never Use Unverified Input:** Do not use external input directly as an internal system command without stringent verification.
+    *   **Command Whitelisting:** If commands must be generated or selected based on external input, specify a predefined *whitelist* of allowed commands and arguments. Only execute commands that explicitly match an entry in this list.
+
+*   **Code Principle (Safe vs. Unsafe):**
+    *   **Unsafe:** Directly executes user-provided input as a system command using methods like `Runtime.getRuntime().exec()`.
+    *   **Safe:** Checks the user-provided command against a predefined list of allowed commands. If the command is not in the whitelist, it is rejected.
+
+### 4. Unrestricted Upload of Dangerous Files Attack
+
+*   **Attack Overview:**
+    *   **What it is:** A vulnerability that allows an attacker to upload arbitrary files, including executable script files (e.g., `.asp`, `.jsp`, `.php`, `.sh`).
+    *   **Cause:** Insufficient validation of file types, content, or names during the upload process.
+    *   **Impact:** If the uploaded script can be executed via the web server, the attacker can gain control over the system (e.g., by uploading a "web shell" to execute arbitrary commands).
+
+*   **Coding Technique:**
+    *   **File Extension Whitelisting:** Only allow uploads for file extensions explicitly defined in a *whitelist* (e.g., `.jpg`, `.png`, `.pdf`). Reject all other extensions.
+    *   **Remove Execute Attribute:** If the operating system or file system allows, remove the execute attribute from uploaded files to prevent them from being run as scripts.
+    *   **Content Type Validation:** Validate the file's *actual* content type (MIME type) in addition to its extension, as extensions can be spoofed.
+    *   **Store Outside Web Root:** Store uploaded files in a directory that is not directly accessible by the web server (if possible) or ensure the web server is configured *not* to execute scripts from the upload directory.
+
+================================================================================
+ORIGINAL TEXT (First 5000 chars)
+================================================================================
+
+--- Page 76 ---
+ESSENCE
+@® Phase of secure SDLC requirement  definition
+A phase that defines security  objectives,  according  to the characteristics  of the project and software,  and
+analyzes  security  weakness  and impact, according  to the potential  threat. Security  requirements  for software
+development  are derived in this phase.
+@ Secure SDLC analysis/design  phase
+A phase that designs  security  architecture  and security  requirements  in the entire architecture  design process.
+Developer  training  is implemented,  and security  test plans are designed  in this phase in order to build a safe
+security  system.
+© Secure  SDLC coding  phase
+Coding rules are defined by checking  the weaknesses  and strengths  of the used programming  language  from
+a security  perspective.  The static unit test of the developed  code is conducted,  and compliance  with the
+predefined  secure coding rules are verified.  When a commercial  package  is used, security  vulnerability  content
+and action details found in the package  are checked.
+® Secure  SDLC testing  phase
+A dynamic  unit test is conducted  on the developed  program,  and the usability  of the security  applied
+application  is tested. Matters  to improve  security  are derived and applied, by checking  the vulnerability  of the
+infrastructure  and application  program,  independently  of the system.
+@® Secure  SDLC maintenance  phase
+When modifying  codes, according  to the software  change management  procedure,  impact on security  is
+evaluated,  vulnerabilities  are checked  periodically,  and matters  to improve  security  are derived  and applied.
+03 Major secure  coding  techniques
+A) Major secure  coding  techniques  for Java
+@® Secure  coding  techniques  for responding  to the SQL injection  attack
++ Attack overview
+If the validity  of the data entered in the web application  program,  linked with the database,  is not verified,  an
+attacker  can read or  manipulate  information  from the database  by inserting  an SQL statement  into the input
+form and URL field. The SQL injection  attack refers to this security  vulnerability,
+76 TOPCIT  ESSENCE
+
+
+--- Page 77 ---
+Information  security )
+rh
+Execute
+manipulated
+SQL queries,Vv
+@ Crafted  requestwsG/
+Attacker @ Attack result Web server DB @DB browsingA rh J Allowing  unauthorized  users
+Unauthorized  database
+manipulation  and deletion
+[Figure  35] SQL injection  security  vulnerability
++ Coding  technique:
+Uses a method  that transfers  the compiled  query statement  (constant)  to the database,  using the Prepared
+Statement  object, etc. When using Prepared  Statement,  filter special characters  and query reserved  words
+that are used for the database  query. When using a framework,  such as Struts and Spring, use the module
+that verifies  the external  input values and security  module,  according  to the circumstances.
+<Table 19> Code example
+String  gubun = request.getParameter(“gubun’):
+String sql = “select  b_gubun
++" aidx .
+, ab_id
+, date_format(a.w_date,  ‘%Y-%m-%d’)  *
+, apwd .
+, a.content
+, bidx
+, asecurity
++* from board a left outer join tail b on a.idx = b.b_id “
++“ where b_gubun  =” + gubun +” *;
+Connection  con = db.getCon();
+Statement  stmt = con.createStatement();
+ResultSet  rs = stmt.executeQuery(sq]):
+The value of “gubun’,  which is entered  from the outside,  is used to create  an SQL query, without  any verification.  In
+this case, if a’ or ‘a’ = ‘a is entered  as the value of “gubun’,  the conditional  clause is changed  to b_gubun  = ‘a’ or ‘a’ =
+‘a’, and the structure  of the query is changed.  Then, all the contents  of the “board”  table are retrieved
+String  gubun = request.getParameter(‘gubun’);Unsafe
+code +e ett t+
+String sql = “select  b_gubun
++" aidx .
+, ab_id
+, date  format(a.w_date,  ‘%Y-%m-%d’)  *
+, apwd .
+, a.content
+, bidx
+, asecurity
++" from board a left  outer  join tail b on a.idx = b.b_id *
++“ where b_gubun  =  ? *:
+Connection  con = db.getConnection();
+PreparedStatement  pstmt = con.prepareStatement(sq|):
+pstmt.setString(1,  gubun):
+ResultSet  rs = pstmt.executeQuery();
+The PreparedStatement  object  that receives  a parameter  should be created  as a constant  string, and the parameter
+should be set with the setXXX  method  to prevent  etemal input from changing  the structure  of the query statement.Safe
+code +t tee t+
+M4 Understanding  Information  Security  77
+
+
+--- Page 78 ---
+ESSENCE
+@ Secure  coding  technique  for responding  to the Cross Site Scripting  (XSS) attack
++ Attack overview:
+An attacker  can insert a malicious script into a web page to induce the user to execute  it. For example,  if an
+unverified  external  input is used to create a dynamic  web page, it can cause an attack, such as information
+leakage, because  inappropriate  script is executed  with the rights of the person who views the transmitted
+dynamic  webpage.
+lalicious  script’
+is stored onTos
+@ Posting Executing
+[Malicious  script] @ Request melee  ss
+> < a
+( ) execution  ...

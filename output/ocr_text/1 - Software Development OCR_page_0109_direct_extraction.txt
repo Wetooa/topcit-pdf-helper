@@ -1,0 +1,37 @@
+ESSENCE
+Refactoring  is performed  for the following  reasons.
++ Refactoring  makes error detection  and debugging  easier.
++ Changes  in software  requirements  can be responded  to more effectively.
++ Complex  code is simplified,  and source code readability  is improved.
++ Program  productivity  and quality are improved.
+@ Time for refactoring  and procedure
+* Codes are written first without  plans, and the second similar codes are written in duplication.  However,
+refactoring  is performed  when writing the third similar codes. Therefore,  it is important  to decide on the time
+to perform  refactoring.
++ Refactoring  is generally  performed  when the time taken to add a new function  to the existing  code is inefficient:
+when the design changes  in such a way that addition  is not easy; when eliminating  bugs; or when reviewing  codes.
++ Refactoring  procedure
+<Table 34> Refactoring  procedure
+Target  selection Maintenance,  inspection,  and XP methodology  application
+aac Including  a senior who plays the role of a mentor
+Performance  control Change  control,  configuration  management,  CCB control
+Performing  technique Design pattern,  AOP execution
+Testing Unit/integration  test, regression  test
+Result arrangement Documentation,  actualization,  application  of the operating  system
++ When performing  refactoring,  it is necessary  to make small-scale  changes  (single refactoring)  and test
+whether  it works. If it works well, one can proceed  to the next factoring  phase. If not, it is necessary  to solve
+the problem,  undo the refactoring  work, and then keep the system running.
+B) Concept  of a code smell
+@® Concept  of a code smell
+The term “code smell’ means the code to be refactored,  such as a program  that is difficult  to read or has
+duplicated  logic, which makes it difficult  for developers  to read or maintain  it. A code smell is the part that is
+difficult  to understand,  modify  or expand.  If it is difficult  to read the code, refactoring  should be considered.
+@ Common  code smells
+Type Description
+Duplicate  code Functions  or data codes are written  in duplication.
+Long method The inside of the method  is too long.
+Vast class One class has too many properties  and methods.
+Long parameter  list A method  has too many parameters.
+Class modified  for two If the method  of one class is modified  for more than two reasons,  the class is responsible  for
+reasons more than one job.
+108 TOPCIT  ESSENCE

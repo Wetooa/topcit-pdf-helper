@@ -1,0 +1,209 @@
+LEARNING GUIDE: Pages 103-107
+Generated: 2025-12-07 00:48:37
+PDF: 6 - Project Management & Technical Communication OCR
+
+================================================================================
+LEARNING GUIDE
+================================================================================
+
+Here's a simplified, easy-to-read learning guide based on the provided text:
+
+---
+
+## Project Cost Management: A Learning Guide
+
+### 1. Introduction to Cost Management
+
+**What is Cost Management?**
+Cost management is the process of planning, estimating, budgeting, and controlling costs to complete a project within its approved budget. It's crucial because projects operate with limited resources.
+
+**Why is Cost Management Important?**
+*   Projects require formal approval and allocated budgets.
+*   Exceeding the budget due to poor cost management (e.g., scope expansion, schedule delays) requires reporting to stakeholders.
+*   Effective cost management means:
+    *   Accurate cost estimation at the start.
+    *   Good scope and schedule management throughout the project.
+
+**Cost vs. Price:**
+*   **Cost:** The monetary value of resources invested in producing a product or service. Determined by the supplier's production capacity.
+*   **Price:** The amount a client pays for a product or service. Determined by business judgment between client and supplier.
+*   *Note:* "Cost" is often used for profit/loss measurement of individual products/services, while "expense" is period-based.
+
+### 2. The Cost Management Process
+
+Project cost management involves a set of activities to ensure the project stays within budget. The main process steps are:
+
+1.  **Cost Management Planning**
+2.  **Cost Estimation**
+3.  **Budgeting**
+4.  **Cost Control**
+
+#### A. Cost Management Planning
+
+This is the initial step to define *how* project costs will be managed throughout its lifecycle. It involves:
+*   Establishing methods for cost management.
+*   Determining various cost estimation techniques to use.
+*   Identifying responsibilities for cost management roles.
+*   Setting up how costs will be predicted based on project information.
+
+#### B. Cost Estimation
+
+This process develops an estimate of the monetary resources needed to complete the project.
+
+**Key Estimation Techniques:**
+
+*   **Analogous Estimating:**
+    *   Estimates current project cost based on similar past projects (scope, cost, budget, duration).
+*   **Bottom-up Estimating:**
+    *   Estimates the cost of individual, lowest-level work packages and then sums them up to get an overall project cost.
+    *   **Pros:** High accuracy, detailed.
+    *   **Cons:** Time-consuming, affected by individual activity complexity.
+*   **Expert Judgment:**
+    *   Uses expertise from individuals or groups to provide cost estimates, considering factors like labor, materials, inflation, and risks from similar past projects.
+*   **Three-point Estimating:**
+    *   Uses three values to estimate cost, accounting for uncertainty and risk:
+        *   **Most Likely:** Realistic estimate.
+        *   **Optimistic:** Best-case scenario.
+        *   **Pessimistic:** Worst-case scenario.
+    *   *(Often calculated as (Optimistic + 4 * Most Likely + Pessimistic) / 6 for a weighted average, though not explicitly stated in the text).*
+
+**Software-Specific Cost Estimation Techniques:**
+
+*   **Function Point (FP):**
+    *   An international standard (ISO/IEC 14143) for estimating software development cost.
+    *   Measures software scale quantitatively from the user's perspective (functions requested/delivered).
+    *   Multiplies the calculated Function Points by a unit price per FP to get the cost.
+    *   **Advantage:** Can estimate project size *before* development starts by identifying user functions, unlike methods based on Lines of Code (LOC) or Man/Month (M/M).
+    *   **Function Categories:**
+        *   **Data Functions:** Internal Logical Files, External Interface Files.
+        *   **Transaction Functions:** External Inputs, External Outputs, External Inquiries.
+*   **Man/Month (M/M):** (Mentioned in keywords and FP comparison, implies it's another method, though not detailed here).
+*   **COCOMO (Constructive Cost Model):** (Mentioned in keywords and FP comparison, implies it's another method, though not detailed here, often LOC-based).
+
+#### C. Budgeting
+
+This process aggregates all estimated costs (from individual activities and work packages) to create an **approved cost baseline**.
+*   **Cost Baseline:** The approved version of the project budget, *excluding* management reserves.
+*   **Project Budget:** The sum of the Cost Baseline and Management Reserves.
+*   **Contingency Reserves:** Funds included in the *cost baseline* to cover unexpected costs for *planned activities* (managed by the project manager).
+*   **Management Reserves:** Funds held for *unforeseen changes to scope or work not yet defined* (controlled by senior management like CTO, sponsor, or CEO).
+
+#### D. Cost Control
+
+This process monitors the status of project costs and manages changes to the cost baseline.
+*   **Goal:** To identify variances (differences between planned and actual costs) and take corrective action.
+
+**Earned Value Management (EVM):**
+*   A widely used method for cost control.
+*   It integrates scope, schedule, and cost performance.
+*   Compares the value of work *earned* (completed) against the value of work *planned* and the *actual cost* incurred.
+
+**Key EVM Terms (from keywords):**
+*   **BAC (Budget At Completion):** The total budget planned for the project.
+*   **Planned Value (PV):** The budgeted cost of work scheduled to be completed by a given date.
+*   **Earned Value (EV):** The budgeted cost of work actually performed by a given date.
+*   **Actual Cost (AC):** The total cost actually incurred for the work performed by a given date.
+
+**EVM Analysis Metrics (from keywords):**
+*   **Schedule Variance (SV):** EV - PV (measures schedule performance).
+*   **Cost Variance (CV):** EV - AC (measures cost performance).
+*   **Schedule Performance Index (SPI):** EV / PV (efficiency of schedule progress).
+*   **Cost Performance Index (CPI):** EV / AC (efficiency of budget utilization).
+
+**EVM Estimation Metrics (from keywords):**
+*   **EAC (Estimate At Completion):** The projected total cost of the project when completed.
+*   **ETC (Estimate To Complete):** The estimated cost needed to finish the remaining work.
+
+**Example of Cost Control (Simplified):**
+If an activity was planned for 5 days at KRW 300,000/day, totaling KRW 1,500,000.
+*   **Planned (PV):** KRW 1,500,000 for the full activity.
+*   **Actual Progress:** After 5 days, only 90% of the work is complete.
+*   **Earned Value (EV):** 90% of KRW 1,500,000 = KRW 1,350,000.
+*   **Analysis:** If the actual cost (AC) for this 90% completion was, say, KRW 1,500,000 (meaning you spent the full budget but only got 90% done), then:
+    *   **Cost Variance (CV):** EV - AC = KRW 1,350,000 - KRW 1,500,000 = -KRW 150,000 (cost overrun).
+    *   This shows that KRW 150,000 was spent excessively for the work completed, or less work was achieved for the money spent.
+
+---
+
+================================================================================
+ORIGINAL TEXT (First 5000 chars)
+================================================================================
+
+--- Page 103 ---
+ESSENCE
+>> Recent  Trends  and Major Issues
+Cost management  is the process  of planning, estimating,  budgeting,  and controlling  cost to complete
+a project within the approved  budget. Project cost management  is an important  factor because
+projects  are performed  with limited resources.
+>> Learning  Objectives
+1. To be able to explain the concept  and process  of cost management.
+2. To be able to explain  cost estimation  techniques.
+3. To be able to explain  cost identification  according  to project  progress.
+>> Keywords
+* Cost management  process:  Cost management  planning,  cost estimation,  budgeting,  cost control
+* Cost estimation  technique:  one-point  estimating,  three-point  estimating,  analogous  estimating,
+parametric  estimating,  expert  judgment,  M/M (Man/Month),  Function  Point
++ Earned Value Management  (EVM), project progress
++ Measurement:  BAC: Budget  At Completion,  Planned  Value, Earned Value, Actual Cost
++ Analysis:  Schedule  Variance,  Cost Variance,  Schedule  Performance  Index, Cost Performance  Index
++ Estimation:  EAC: Estimate  At Completion,  ETC: Estimate  To Complete
+102 TOPCIT  ESSENCE
+
+
+--- Page 104 ---
+Project Management  and Technical  Communication  )
++ Preview  for practical business
+How much SW engineers  in Korea be paid?
+Korea Software Industry  Association  surveys  the actual wages of working  SW engineers  in order to
+identify  the wage trends of SW engineers  and use them as basic data for policy making,  or provide  them
+to the relevant  companies  and related organizations  so that they can be applied as the unit of wages of
+the engineers  mobilized  in software  projects.
+The information can be found in the notification  section of the Korea Software Industry  Association
+website  (www.sw.orkr),  and the following  is a breakdown  of the recently  announced  average  wage for SW
+engineers.
+Average  Software  Engineer  Salary (daily, monthly,  hourly) in the "2015 SW Engineer  Salary Survey
+(Statistics  Approval  No.37501),  pursuant  to Article 27 (Announcement  of Statistics)  of the Statistical  Act.
+(Unit: No. of people, KRW, %)
+Average  monthly  wage (M/D) Average Average
+Classification Number monthly hourly wage
+2017 2018 (% change)  | wage (M/M) (M/H)
+Engineer 295 452,611 462,072 (2.1) 9,611,098 57,759
+Principal  Engineer 15,526 391,068 | 406,342 (3.9) 8,451,914 50,793
+Senior  Engineer 8,742 305,353 305,433 (0.0) 6,353,006 38,179
+ie 9104 | 239506 | 239748 (0.1) 4986758 29,969
+Junior Engineer 11,363 191,320 215681 (12.7) 4,042,272 29,960.
+Senior  Technician 99 191,177 194,340 (1.7) 3,298,818 24,293
+betula 200 | 158490 | 158,597 (0.1) 2515718 19.825
+Junior Technician 233 114914 120948 (5.3) 2,436,616 15,119
+Date Entry Operator 204 113,959 117,145 (2.8) 2,436,616 14643
+Total/Average 45,766 289,473 302,665 (4.6) 6,295,432 37,833
+<Notes  for the utilization  of the survey in SW project  cost estimation>
+The results  of this survey  are not mandatory  for software  business.
+The average  wages by rank will not be announced  in 2019, but the average  wages by IT profession  will be
+announced.
+*The average  wages of software  engineers  refer to the “unit wages of software  engineers”  under Article
+22 (Payment  for Software  Business)  (4) of the Software  Industry  Promotion  Act.
+*The average  wages of software  engineers  include base pay, allowance,  bonus, allowance  for severance
+and retirement  benefits,  and corporate  contribution.
+*The average monthly  wage is calculated  as the daily average  * working  days (20.8 days), and hourly
+average  wage is calculated  as the daily average  + 8 hours.
+*The average number  of working days per month is the average  of the reported  working  days of the
+company,  not including  holidays  and legal holidays,  as well as vacation.
+*The average  wages of software  engineers  increased  by 4.6% compared  to 2017.
+*The base pay of the average  wages of data entry operators,  referenced  in the Guidance  of Cost
+Estimation  Model for the Digital Document  Database  Construction  Project,  is KRW 93,287 in 2018.
+[Enforcement  date] Effective  from September  1, 2018 to August  31, 2019
+M6 Project  Management  and Technical  Communication  103
+
+
+--- Page 105 ---
+ESSENCE
+01 Concept  of Cost Management
+A) Concept  of cost
+Price is the amount  of money the client pays in exchange  for the supplier's  provision  of a product  or service
+in a business  relationship  and is determined  by business  judgment  between  the client and the supplier.  On the
+other hand, cost is the monetary  value of resources  invested  in the production  of a product  or service and is
+determined  by the production  capacity  of the supplier.
+For reference,  cost is often translated as expense.  In other words, they can be distinguished  by how the loss
+and profit from the project execution  are measured.  Cost is mainly used when the profit and loss measure-
+ment is based on an individual  product  or service, ...

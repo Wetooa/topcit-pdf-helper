@@ -1,0 +1,223 @@
+LEARNING GUIDE: Pages 46-50
+Generated: 2025-12-05 13:55:56
+PDF: 5 - Understanding the IT Business and Ethics OCR
+
+================================================================================
+LEARNING GUIDE
+================================================================================
+
+Here is a simplified, easy-to-read learning guide based on the provided text, designed for quick study.
+
+---
+
+## IT Business and Ethics: Learning Guide
+
+This guide covers key concepts in IT Governance, Enterprise Architecture (EA), and Information Strategic Planning (ISP).
+
+---
+
+### 1. IT Governance
+
+**Definition:** IT Governance refers to the principles and frameworks used to evaluate, direct, and monitor how companies utilize IT.
+
+**A. IT Governance Process**
+This process consists of four stages:
+
+1.  **Planning Stage**
+    *   **Goal:** Link business strategy with IT, set IT goals.
+    *   **Activities:** Establish structures, rules for IT activities, resource use, risk management, governance structure, and performance measurement.
+
+2.  **Operations Stage**
+    *   **Goal:** Monitor and manage IT activities.
+    *   **Activities:** Monitor IT resources, IT risks, IT management, and IT performance. Set targets for performance and measure their achievement.
+
+3.  **Evaluation Stage**
+    *   **Goal:** Assess the value delivered by IT.
+    *   **Activities:** Evaluate IT value, considering strategic, economic, risk management, technical, social, and quality benefits. Calculate IT value by subtracting business and potential risk costs from business opportunities.
+
+4.  **Feedback Stage**
+    *   **Goal:** Improve IT governance based on evaluation.
+    *   **Activities:** Implement corrective measures and improvements to IT governance activities and related jobs.
+
+**B. Key Focus Areas of IT Governance**
+These five areas link IT to company strategies:
+
+1.  **Strategic Alignment**
+    *   **Focus:** Aligning IT with company strategy; ensuring IT decisions support business direction.
+    *   **Method:** Enterprise Architecture (EA)
+
+2.  **IT Value Delivery**
+    *   **Focus:** Optimizing IT integration with business processes to achieve IT business goals.
+    *   **Method:** Backbone systems, IT Compliance
+
+3.  **Risk Management**
+    *   **Focus:** Managing IT-related risk factors to ensure business continuity.
+    *   **Method:** Disaster Recovery System (DRS), Business Continuity Plan (BCP)
+
+4.  **Resource Management**
+    *   **Focus:** Organizing and managing IT resources to quickly respond to business requirements.
+    *   **Method:** IT Asset Management (ITAM)
+
+5.  **Performance Measurement**
+    *   **Focus:** Establishing an IT-centered system to evaluate performance of IT business activities.
+    *   **Method:** Balanced Scorecard (BSC), IT Return on Investment (IT ROI)
+
+---
+
+### 2. Enterprise Architecture (EA)
+
+**A. Overview of EA**
+
+*   **Definition:** EA is a blueprint that clearly explains an enterprise's IT business to stakeholders. Its purpose is to help the enterprise achieve its strategic goals and information resource management objectives. It defines the current and desired future state of the relationship between IT and the enterprise.
+
+*   **Need for EA:**
+    *   **Problem:** Without macro-level planning, rapid adoption of information systems can lead to redundant systems, lack of collaboration, and the "IT Productivity Paradox" (adopting IT without seeing increased profits).
+    *   **Solution:** EA provides an overall view of the business and creates close working relationships between different information resources, preventing these issues.
+
+**B. Conceptual Diagram and Components of EA**
+
+*   **Conceptual Flow:**
+    `Enterprise Business Strategy` ↔ `IT Strategy`
+    ↓
+    `Enterprise Architecture (EA)`
+    ↓
+    `Business Architecture (BA)` | `Application Architecture (AA)` | `Data Architecture (DA)` | `Technical Architecture (TA)`
+
+*   **Components of an EA:** EA is an act and instrument of IT governance. Its key components are:
+    1.  **IT Governance:** (As defined above) Manages the process of aligning IT with business goals.
+    2.  **Business Architecture (BA)**
+        *   **Focus:** Designing how people, processes, and information interact based on business strategy and environment analysis.
+        *   **Reference Model:** Performance Reference Model (PRM)
+    3.  **Application Architecture (AA)**
+        *   **Focus:** Identifying information needed for jobs, defining activities for processing/managing it. Creating standards for application functions and environments.
+        *   **Reference Model:** Service Component Reference Model (SRM)
+    4.  **Data Architecture (DA)**
+        *   **Focus:** Identifying required documents, designing data models by understanding relationships between all information, data, and data structures.
+        *   **Reference Model:** Data Reference Model (DRM)
+    5.  **Technology Architecture (TA)**
+        *   **Focus:** Defining criteria for selecting infrastructure and other technologies that support business and data applications. Also defines technical support services.
+        *   **Reference Model:** Technology Reference Model (TRM)
+    6.  **Standard Profile (SP)**
+        *   **Focus:** A sub-structure of TA that defines the detailed list of technologies (e.g., JAVA architecture version: JDK 2.0).
+
+**C. EA Frameworks**
+These are leading frameworks for establishing an EA:
+
+1.  **Zachman Framework**
+    *   **Description:** Most frequently used. Defined as a matrix using views (perspectives) and descriptions.
+    *   **5 Perspectives:** Planner, Owner, Designer, Builder, Subcontractor.
+    *   **6 Descriptions:** Data, Function, Network, People, Time, Motivation.
+
+2.  **TOGAF (The Open Group Architecture Framework)**
+    *   **Description:** Open framework focusing on interoperability between companies.
+    *   **Components:** Architecture Development Method (ADM) cycle, Technology Reference Model (TRM), and a Standards Information Point (SIP) database. Uses a building block approach.
+
+3.  **FEAF (Federal Enterprise Architecture Framework)**
+    *   **Description:** Developed by the U.S. CIO Council. Manages all Zachman framework content.
+    *   **Components:** Eight components, 4-step progressive structure. Defines five reference models (Business, Performance, Data, Service Component, Technology). Forms the basis of Japan's EA framework. Includes AS-IS (current state) and TO-BE (future state) gap analysis for implementation.
+
+---
+
+### 3. Information Strategic Planning (ISP)
+
+**A. Overview of ISP**
+
+*   **Definition:** "Information Strategy Plan." It presents a vision for the information system and management structure needed to support an enterprise's mid-to-long term goals and business plan. Essentially, it's a rough sketch for the direction of long-term information system deployment.
+
+**B. ISP Deployment Procedure**
+
+1.  **Initial Analysis:**
+    *   Analyze the company's external and internal environment using tools like SWOT, 5-Force, 7S, and 4C.
+    *   Analyze the information environment, including technology requirements, trends, and new technology applications.
+
+2.  **Current Operations Analysis:**
+    *   Analyze the company's current operations, focusing critically on **business processes**.
+    *   Examine existing information systems.
+    *   Identify stakeholder requirements and areas for improvement.
+
+3.  **Benchmarking:**
+    *   Review earlier cases in similar industries to identify missing or distorted information and refine the plan.
+
+================================================================================
+ORIGINAL TEXT (First 5000 chars)
+================================================================================
+
+--- Page 46 ---
+Understanding  the IT Business  and Ethics )
+the principles  and frameworks  required  to evaluate,  direct, and monitor  the utilization  of IT by companies.
+C) IT governance  process
+The IT governance  process is composed  of the planning  stage, operations  stage, evaluation  stage, and feedback
+stage.
+Planning  Stage Operations  Stage Evaluation  Stage
+IT  resource, IT risk
+IT management |
+monitoring
+IT performance
+measurement  |_!/ i monitoring
+Business  governance  and work, t oe
+Team performance  measurement | IT governance  developmentOrganization  compatibility
+Business  goals
+Competition  strategy
+Profit, Cost
+Linking  of busi-Confidence  in IT ness and ITOpportunity,
+Threat
+[Fig.18]  IT governance  process
+@ Planning  stage
+The planning  stage involves  linking business  with IT, setting  the goals of IT, establishing  the structures,  activities  and
+mechanisms  regarding  the rules on organizing  IT related activities,  using resources,  managing  risks, the governance
+structure,  and measuring  performance.
+@ Operations  stage
+The monitoring  of IT resources,  IT risks and IT management  involves  all the structures,  activities  and related
+mechanisms  for helping companies  to monitor  their IT resources,  IT risks and IT management.  The monitoring  of
+IT performance  measurement  involves  the structures,  activities  and related mechanisms  for helping  companies  to
+set target levels (for their performances  related to IT resources,  IT risks and IT management)  and measure  their
+attainment  of such targets.
+@ Evaluation  stage
+IT value is evaluated  through  the eamings  and costs of the future business  opportunities  delivered  to the company.
+IT value includes  strategic,  economic,  and risk management,  as well as technical,  social and quality  benefits.  To arrive
+at the IT value, the costs of business  risk and other potential  risk costs are subtracted  from business  opportunities.
+@ Feedback  stage
+Based on the results of the evaluation  of the feedback  information  and the need to prioritize  this information,  during
+this stage a company  takes corrective  measures  aimed at improving  its IT governance  activities.  Included in such
+M5 Understanding  the IT Business  and Ethics 45
+
+
+--- Page 47 ---
+ESSENCE
+corrective  measures  are the structures,  activities  and procedures  for improving  the IT governance  process  and the
+related  jobs.
+D) Key focus areas of IT governance
+IT governance  has five key areas of focus, all of which are linked to the strategies  of a company. IT governance  looks
+at how a company’s  strategies  are used in conjunction  with IT value, and also includes  the management  of risk factors
+and the management  of resources,  as well as a performance  evaluation  system on activities.
+<Table  6>Focus  areas of IT governance
+sat Method  ofFocus area Characteristics alignment
+a IT governance  is aligned  with a company’s  strategy  and aims to
+Strategic  Sigman propose the best direction when it comes to making decisions. EA
+IT Value Delive The realization  of IT business  goals is supported  by optimizing  the Backbone  system
+y integration  of individual business  processes  with IT. IT Compliance
+Risk Management Risk factors  are managed  to ensure continuity  of the IT business. DRS, BCP
+Resource  Management IT resources  are organized  and managed  so as to respond  promptly ITAM
+to IT business  requirements
+An |T-centered  performance  evaluation  system  for activities BSCPerformance  Measurementgenerated  by IT business. IT ROI
+03 Concept  of EA
+A) Overview  of EA (Enterprise  Architecture)
+© Definition  of EA
+EA stands for “enterprise  architecture’.  It is a blueprint  that explains  the IT business  of an enterprise  in a way that is
+easy for the stakeholders  to understand, so that the enterprise  can achieve  its strategic  goals and the goals of its
+information  resource  management.
+“Enterprise  architecture  is a blueprint  that defines the current  state of the relationship  between  information
+technology  and an enterprise(as  well as the activities  carried out by the enterprise)  and the state that the enterprise
+must strive for in the future.’-United  States Office of Management  and Budget  (OMB)
+@ Need for EA
+Currently,  enterprises  are enthusiastically  introducing  information  systems  to cope with the rapidly changing  business
+environments,  but if information  systems  are deployed  without  proper planning  at the macro level, enterprises  will
+be confronted  with a redundant  system and an inability  to collaborate.  Such enterprises  will fall into the so-called  "IT
+Productivity  Paradox’1  which can be described  as the continuous  adoption  of information  systems  without  seeing
+any benefits  in the form of increased  corporate  profits.
+46 TOPCIT  ESSENCE
+
+
+--- Page 48 ---
+Understanding  the IT Business  and Ethics )
+There may be several causes of this paradox,  but in most cases it is attribu...

@@ -1,0 +1,231 @@
+LEARNING GUIDE: Pages 121-125
+Generated: 2025-12-05 14:29:35
+PDF: 1 - Software Development OCR
+
+================================================================================
+LEARNING GUIDE
+================================================================================
+
+Here is a simplified, easy-to-read learning guide based on the provided text (Pages 121-125).
+
+---
+
+## **Learning Guide: Software Configuration Management (SCM)**
+
+### **1. Introduction to Software Configuration Management (SCM)**
+
+**What is "Configuration"?**
+*   Generally refers to:
+    *   Software programs developed.
+    *   Program description documents.
+    *   Related data.
+
+**What is Software Configuration Management (SCM)?**
+*   A management technique to systematically organize and control all deliverables created during software development.
+*   Manages the history of changes made to all software components from development through maintenance.
+
+**Why is SCM Necessary? (Common Problems Without SCM)**
+*   **Lack of Visibility:** Software is intangible, making it hard to see its current state.
+*   **Difficulty in Control:** Invisible nature makes software development hard to manage.
+*   **Lack of Traceability:** Hard to track the entire development process.
+*   **Lack of Monitoring:** Difficulty in continuous project management due to poor visibility and tracking.
+*   **Ceaseless Change:** User requirements constantly change, requiring careful management.
+
+### **2. Core Concepts of SCM**
+
+**Conceptual Flow of SCM Activities:**
+SCM involves a continuous cycle of identifying, recording, controlling, auditing, and approving changes to configurations within a repository.
+
+**Key Components of SCM:**
+*   **Baseline:**
+    *   A technical control point for a specific configuration item.
+    *   It's a standard point in time from which all future changes are controlled.
+*   **Configuration Item (CI):**
+    *   A fundamental unit or target that is formally defined and described in the software life cycle (e.g., source code, design document, test plan).
+*   **Configuration Product:**
+    *   The tangible, realized output of a configuration item, formally implemented in the software development life cycle.
+    *   Examples: Technical documents, hardware products, software products.
+*   **Configuration Information:**
+    *   The sum of a **Configuration Item** and its **Configuration Product**.
+
+### **3. SCM Activities**
+
+SCM is composed of four main activities:
+
+1.  **Configuration Identification:**
+    *   **Goal:** To identify and number the items targeted for configuration management.
+    *   **Purpose:** To define a clear document structure, facilitate tracking, and manage information effectively.
+    *   **Contents:** Products, various documents, and configuration item numbers.
+
+2.  **Configuration Control:**
+    *   **Goal:** To manage and control changes to the software configuration.
+    *   **Process:** Reviewing, approving, and ensuring change requests are reflected in the defined **baseline**.
+    *   Includes managing change requests, controlling changes, and supporting SCM organizational operations.
+
+3.  **Configuration Audit:**
+    *   **Goal:** To verify the integrity of the software **baseline**.
+    *   **Process:** Checking if changes made to the baseline match the original requirements.
+    *   Involves verification and validation activities.
+
+4.  **Configuration Recording (Status Accounting):**
+    *   **Goal:** To record and report the status and execution results of software configurations and change management.
+    *   **Process:** Managing a database to store various statuses and generate reports.
+
+### **4. Benefits & Considerations of SCM**
+
+**Effects/Benefits of SCM:**
+*   **For Administrators (Operators):**
+    *   Provides a standard for systematic and effective project management.
+    *   Increases ease of project control.
+    *   Ensures project visibility and guarantees traceability.
+    *   Establishes a baseline for quality assurance.
+    *   Minimizes the impact of software changes.
+*   **For Developers:**
+    *   Improves software quality assurance.
+    *   Enables proper management of software changes.
+    *   Enhances software maintainability.
+
+**Important Considerations for Efficient SCM:**
+*   Establish a dedicated operation organization and use specialized SCM tools.
+*   Implement continuous management, standards, and methods for problem-solving.
+*   Tailor the level of SCM appropriately for smaller projects.
+*   Formally agree upon and apply changes to defined configuration items.
+*   Exercise extreme caution when changing software that is currently in use.
+
+### **5. SCM Tools and Systems**
+
+**Purpose of SCM Tools:**
+*   Essential for managing source code, version history, changes, and enabling team collaboration.
+*   Often referred to as **Version Control Systems (VCS)** or **Source Code Management (SCM) systems**.
+
+**Evolution of SCM Systems:**
+*   **Early Systems:** Based on file systems (local folder sharing).
+*   **Later Systems:** Shifted to client/server models using central repositories over a network.
+*   **Modern Systems:** Distributed repositories became popular.
+
+**Types of SCM Tools:**
+
+1.  **Folder Sharing (Legacy):**
+    *   **Examples:** RCS, SCCS
+    *   **Concept:** Direct file sharing without a central server.
+
+2.  **Client/Server (Centralized Repository):**
+    *   **Examples:** Subversion (SVN), CVS, Perforce, ClearCase, TFS
+    *   **Concept:** Clients connect to a single central server to check out and commit files. All version history is on the central server.
+
+3.  **Distributed Repository:**
+    *   **Examples:** Git, Mercurial
+    *   **Concept:** Each client/developer gets a *full copy* of the entire repository (including its history). Changes are committed locally and then pushed to other repositories.
+
+### **6. Specific SCM Tools Explained**
+
+*   **Subversion (SVN):**
+    *   An open-source, centralized **version control system (VCS)**.
+    *   Developed by CollabNet Inc. in 2000 as a replacement for CVS.
+    *   Uses a server-client model where multiple clients interact with a central server.
+    *   Current development is managed as an Apache project.
+
+*   **Git (Distributed Repository Concept):**
+    *   A widely used **distributed version control system (DVCS)**.
+    *   Instead of just downloading the latest snapshot, clients copy the *entire repository*.
+    *   **Benefit:** If the main server fails, any client's copy can be used to restore it.
+    *   Source codes can be saved in multiple servers or local PCs.
+    *   Each server/PC becomes a complete **repository**.
+    *   Supports different **branches** (versions) in each repository, meaning there isn't a single "master version" in the system itself; branches can differ across repositories.
+
+*   **Team Foundation Server (TFS):**
+    *   A Microsoft product offering a comprehensive suite of features for software development.
+    *   **Key Features:** Source code management (Team Foundation Version Control), reporting, requirements management, project management (Agile, Waterfall), automated build, lab management, testing, and release management.
+    *   Functions best as a backend for Microsoft Visual Studio or Eclipse.
+    *   An integrated **repository** built on SQL Server, storing all development activity information for team collaboration.
+
+---
+
+================================================================================
+ORIGINAL TEXT (First 5000 chars)
+================================================================================
+
+--- Page 121 ---
+ESSENCE
+Here, “configuration”  generally  refers to the program  created in the process  of software development,  the
+program  description  document,  data, etc. Software  configuration  management  is a management  technique
+designed  to systematically  manage  various  deliverables  created in the software  development  process.  That is,
+it manages  actions  related to the history  of all component  changes  that occur from the software  development
+phase to the maintenance  phase.
+The table below describes  common  problems  that occur when software  configuration  is not (properly)  managed.
+<Table 39> Background  of the necessity  of configuration  management
+Cause  of the problem Contents
+Lack of visibility Software  has no visibility  because  it is intangible.
+Difficulty  in control It is practically  difficult  to control software  development  because  it is invisible.
+Lack of traceability It is difficult  to trace the entire process  of software  development.
+Lack of monitoring It is difficult  to manage  a project  continuously  due to a lack of visibility  and difficulty  in tracking.
+Ceaseless  change Ceaseless  changes  to the user's requirements.
+02 Conceptual  Diagram  and Components  of Configuration  Management
+A) Conceptual  diagram  of configuration  management
+The conceptual  diagram  below describes  the entire activity  and correlation  of configuration  management.
+Library  managementConfiguration
+management  activities
+Identify  configuration
+Meta Data Approve  and
+check changesControl  configuration
+Check configuration Repository Allow changes
+Record  configuration Apply changes
+Integrated  CASE, 00 CASE, intelligent  CASE
+120 TOPCIT  ESSENCE
+
+
+--- Page 122 ---
+Software  Development )
+B) Components  of configuration  management
+The table below describes  the major items of configuration  management.
+<Table  40> Components  of configuration  management
+Component Contents
+BaselineTechnical  control points of each configuration  item. The standard  point in time
+that controls  all changes.
+Configuration  itemThe default  target  that is formally  defined  and described  in the software  life
+cycle.
+The tangible  and realized  target  of configuration  management  that is formally
+Configuration  product implemented  in the software  development  life cycle.
+Technical  documents,  hardware  products,  software  products.
+Configuration  information Configuration  information  = configuration  item + configuration  product.
+03 Configuration  Management  Activity
+A) Configuration  management  activity
+Configuration  management  activities  are composed  of configuration  identification,  control, audit, and recording.
+The table below exp!ains the details.
+<Table  41> Configuration  management  activities
+Activity Contents
+Shape identification+ Identifying  a configuration  management  target  and numbering  the management  items.
++ Goal of identifying  a configuration  item: To define a document  structure  in a clear and predictable
+way, and to facilitate  tracking  and management  by recording  information.
++ Contents  of configuration  item identification:  Product/Various  documents/Configuration  item number.
++ Reviewing  and approving  a software  configuration  change  request  and controlling  it so that it can be
+reflected  in the defined  baselineSoren + Managing  change requests/Controlling  change/Supporting  the operation  of the configuration
+management  organization  and configuration  control over development  companies  and outsourcing
+companies.
++ Means of determining  the integrity  of the software  baseline.
+Configuration  audit | Setting  a software  baseline  successfully  with a successful  configuration  audit.
+eu + When changing  the baseline, checking  whether it matches  the requirement.
++ Verification,  validation.
+Configuration + A function  of recording  the various statuses  and execution  results of software  configuration  and
+recording change management,  and creating  reports by managing  the database.
+B) Effects  of configuration  management
+The effects shown in the table below can be achieved  when configuration  management  activities  are applied
+to software  development  and management.
+M1 Software  development  121
+
+
+--- Page 123 ---
+ESSENCE
+<Table  42> Effects  of configuration  management
+Item Contents
++ Providing  the standard  for systematic  and effective  project  management.
+Administrator's  side + Ease of controlling  a project.
+(operator) + Securing  project  visibility  and guaranteeing  traceability.
++ Presenting  a baseline  for quality assurance.
++ Minimizing  the impact  of software  changes,  ease of management.
++ Software  quality  assurance  technique
++ Proper  management  of software  changes.
++ Improving  maintainability.Developer's  side
+C) Considerations  for configuration  management
+The following  matters  should be considered  to ensure efficient  configuration  management.
++ Form an appropriate  operation...

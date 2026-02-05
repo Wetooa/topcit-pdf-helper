@@ -1,0 +1,208 @@
+LEARNING GUIDE: Pages 19-23
+Generated: 2025-12-05 14:18:38
+PDF: 1 - Software Development OCR
+
+================================================================================
+LEARNING GUIDE
+================================================================================
+
+Here is a simplified, easy-to-read learning guide based on the provided text:
+
+---
+
+# Software Development & Engineering: A Study Guide
+
+## 1. Introduction: Why Software Engineering Matters
+
+Software is inherently prone to defects. The industry often overlooks this due to budget/manpower issues, difficulty pricing software, developer shortages, and a culture focused on SI (System Integration) projects.
+
+**Key Challenges in Modern Software Development:**
+*   Large projects with hundreds of developers.
+*   Communication difficulties.
+*   Schedule and cost management issues.
+*   Ambiguous and complex requirements that change frequently.
+
+**The Solution:**
+Systematic software development and management are essential to improve software quality and productivity, moving beyond reliance on individual programmer experience.
+
+## 2. Software Engineering
+
+### 2.1. Definition and Purpose
+**Software Engineering (SE):** A discipline that systematically, descriptively, and quantitatively studies the entire software lifecycle (development, operation, maintenance).
+
+**Purpose:** To successfully develop increasingly complex and large-scale software by providing technologies and techniques for systematic management throughout the entire process, from requirements analysis to maintenance.
+
+**Three Key Elements for Effective Software Engineering (must be balanced):**
+1.  **Process:** Systematic business methods and workflow.
+2.  **Organization & People:** Equipped with specialized knowledge.
+3.  **Infrastructure & Technology:** For efficient operation of defined methods and personnel.
+
+### 2.2. Historical Background of Software Engineering
+
+*   **1950s:** Concept of software engineering introduced, mirroring hardware engineering.
+*   **1960s: The "Software Crisis"**
+    *   Rapid increase in software demand.
+    *   Lack of experienced and competent engineers.
+    *   Led to the formal introduction of software engineering.
+*   **1970s:**
+    *   Developer scarcity, leading to non-software majors being assigned.
+    *   Prevalent "coding first and correction later" approach, assuming easy modification.
+    *   This approach led to many defects.
+    *   **Response:** Development of structural/formal techniques and the **Waterfall model** (sequential phases: analysis, design, implementation).
+*   **1980s:**
+    *   Problems with Waterfall: Expensive, slow, less usable for general developers.
+    *   Focus shifted to boosting productivity and increasing software reusability.
+*   **1990s:**
+    *   Need to reduce "time to market" for competitive advantage.
+    *   Research on raising productivity and adopting **concurrent engineering models** (simultaneous requirement definition, design, implementation).
+*   **2000s:**
+    *   Rapid changes in the software market environment.
+    *   Comprehensive adoption of the **Agile methodology** to respond effectively to these changes.
+
+### 2.3. Four Key Elements of Software Engineering
+
+These elements enable the production of high-quality software within given cost and schedule constraints:
+
+1.  **Method:**
+    *   Tasks involved in project planning, estimation, analysis, design (data/program structure, algorithms), coding, testing, and maintenance.
+    *   Includes specific language-centered methods (e.g., object-oriented) and graphical notations.
+    *   Incorporates software quality evaluation standards.
+2.  **Tool:**
+    *   Automated or semi-automated aids to improve productivity or consistency.
+    *   Examples: Requirements management tools, modeling tools, configuration management tools, change management tools.
+    *   Integrated tools (where information from one tool feeds another) form a complete software development support system.
+3.  **Procedure:**
+    *   Combines methods and tools for rational and timely software development.
+    *   Defines the applied method, required deliverables (documents, reports), quality controls, coordination mechanisms, and milestones for progress evaluation by managers.
+4.  **People:**
+    *   Software engineering is heavily dependent on people (employees, organizations specializing in SE).
+    *   This is due to the diverse and complex issues that arise, making simple summarization difficult.
+
+## 3. Software Development Lifecycle (SDLC)
+
+### 3.1. Definition
+The SDLC refers to the entire process of software development, from understanding user environments and problems through operation and maintenance.
+
+**General SDLC Activities:**
+Feasibility Review → Development Planning → Requirements Analysis → Design → Implementation → Test → Operation → Maintenance
+
+### 3.2. Purposes of SDLC
+*   Calculate project costs and create development plans, establishing the basic framework.
+*   Standardize terminology across the project.
+*   Facilitate effective project management.
+
+### 3.3. Selecting an SDLC Model
+*   A crucial activity for tailoring the development process to a specific project.
+*   Selection is based on the project's risk, uncertainty, and understanding.
+*   The chosen model should minimize these risks and uncertainties.
+*   **Representative Models:** Waterfall, Prototype, Evolutionary, Incremental.
+
+### 3.4. Types of Software Lifecycle Models
+
+Models are flexible and can be adapted or replaced based on project characteristics.
+
+#### 3.4.1. V-Model
+*   **Purpose:** Clearly outlines development and testing activities for managers, developers, and even non-technical customers.
+*   **Key Characteristic: Verification & Validation (V&V)**
+    *   Emphasizes the strong association between development activities (e.g., requirements analysis, design) and corresponding test activities.
+    *   Development and test activities are performed concurrently throughout the cycle.
+    *   Helps pinpoint which development phase needs rework if a fault is found during testing.
+*   **Application:** Easy to apply and manage. Ideal when requirements are clear, but can be adapted for unclear requirements by initially focusing on identifying risks/assumptions.
+*   **Example:** Projects implementing standard communication protocols.
+
+#### 3.4.2. V-Model with Prototyping
+*   **Prototyping:** Developing a system (or part) to understand it better or to address risks/uncertainties. It helps developers and customers achieve a common understanding of needs.
+*   **Benefit:** Reduces project uncertainty and risks (e.g., feasibility of requirements, system performance, new tool adoption).
+*   **Prototyping can be integrated:** Within Waterfall/V-model phases or used as an independent lifecycle model.
+*   **Two Approaches to Prototyping:**
+
+    1.  **Approach 1: Seek Applicable Solutions**
+        *   **Use Case:** When the problem to be solved is unclear (e.g., designing a new user interface, improving system performance, managing errors).
+        *   **Procedure:**
+            1.  Define uncertainty factors.
+            2.  Seek and define how to apply a solution.
+            3.  Attempt to apply the solution (may iterate).
+            4.  Identify the cause of the uncertainty based on the results.
+
+    2.  **Approach 2: Enumerate & Evaluate Solution Options**
+        *   **Use Case:** When there's a risk or uncertainty regarding the *solution itself* (e.g., selecting middleware for a function, evaluating design performance under various environmental factors).
+        *   **Procedure:**
+            1.  Define uncertainty factors.
+            2.  List potential solutions and define selection criteria.
+            3.  Evaluate solutions against the criteria.
+            4.  Select the most suitable solution.
+
+---
+
+================================================================================
+ORIGINAL TEXT (First 5000 chars)
+================================================================================
+
+--- Page 19 ---
+ESSENCE
+As such, even though software  is prone to be defective  due to its intrinsic nature, the domestic
+software  industry  tends to overlook  it on such pretexts  as a lack of budget or a shortage  of
+manpower.  One can understand  their view that they don’t have any other options. It is natural
+that the software  development  period and cost increase  when quality is taken into account.  This
+phenomenon  is further aggravated  by continuous  issues that have been pointed  out for a long time,
+but which still have not been resolved,  namely, the difficulty  of getting  the right software  price, the
+lack of developers,  a development  culture  centered  on SI projects,  etc. [Source]  “Quality  improvement
+is essential  in the software-centered  era.” - https://blog  naver.com/rsupport/221358144195
+In the past, software  development  projects  could be conducted  normally  without  systematic
+implementation  simply by relying on the experience  of programmers.  However,  today’s  large projects
+involving  hundreds  of developers  face many challenges,  such as communication,  schedule  and cost
+management  issues that arise from the lengthy development  period and changes  to ambiguous
+and complex  requirements,  etc. Therefore,  it is essential  to understand  how to develop  and manage
+software  systematically  and to improve  enterprises’  competencies,  in order to develop  software  of
+the highest  quality and promote  productivity.
+18 TOPCIT  ESSENCE
+
+
+--- Page 20 ---
+Software  Development
+01 Background  to and Purpose  of Software  Engineering
+A) Introduction  to software  engineering
+It is most important  to apply software  engineering  technology  to successfully  develop  software  that becomes
+more multifunctional  and bigger in scale, which provides  technologies  and techniques  that support  systematic
+management  to resolve the expected  difficulties  throughout  the entire process, ranging  from requirements
+analysis  to maintenance.  To effectively  apply software  engineering  technology,  it is necessary  to prepare and
+maintain  three key elements  in a balanced  and harmonious  manner  and make continuous  efforts to maintain
+these three elements,  namely the process  of applying  the definition  of systematic  business  methods  and
+flow, the organization  and people equipped  with specialized  knowledge,  and the infrastructure  and technology
+required  for efficient  operation  of the defined  work methods  and organizational  personnel.
+Procedures  &
+Methods
+SACL aL  ey
+of a successful
+software
+project
+Process  & Tools &
+Organization Equipments
+B) Background  to software  engineering
+Let’s look at the history of software  engineering.  In the 1950s, the concept  of software  engineering,  like hardware
+engineering,  began to be introduced  in order to implement  software  development  projects.  In the 1960s, software
+engineering  was introduced  in earnest  because of the “software  crisis”, which occurred  due to the lack of
+experience  and competence  of the engineers  involved  and the lack of skilled engineers,  while demand  for software
+increased rapidly. In the 1970s, software  developers  became  even scarcer  as the demand  for software  increased
+rapidly. To solve this problem,  many people  who did not major in software  development  were assigned  to projects.
+They adopted a “coding  first and correction  later’ approach,  believing  that software  could be modified  easily
+during its development.
+However,  structural  or formal techniques  were developed  as many defects  were discovered  as a side effect
+of the “coding  first and correction  later” approach.  They began to develop  and use the Waterfall  model, which
+M1 Software  development  19
+
+
+--- Page 21 ---
+ESSENCE
+proceeds  with analysis,  design, and implementation  sequentially.  However,  formal techniques  were less usable
+for general software  developers,  and the Waterfall  model was expensive  and slow to implement.  Recognizing
+these problems,  methods  of boosting  the productivity  of software  development  were studied to efficiently
+develop software by increasing  its reusability  in the 1980s. In the 1990s, software vendors  had to reduce
+the ‘time to market’  to gain  a competitive  advantage. As a result, much research  aimed at raising software
+development  productivity  was conducted,  and models  focusing  on concurrent  engineering  - which could carry
+out requirement  definition,  design, implementation  in the Waterfall  model simultaneously  - were adopted. As
+the market environment  surrounding  software  began to change rapidly in the 2000s, the agile methodology
+was comprehensively  adopted  to effectively  respond  to such rapid changes.
+C) Four key elements  of software  engineering
+Software  engineering  is defined  as “a discipline  that studies the overall life cycle of software  - such as
+development,  operation,  and maintenance  - systematically,  descriptive...

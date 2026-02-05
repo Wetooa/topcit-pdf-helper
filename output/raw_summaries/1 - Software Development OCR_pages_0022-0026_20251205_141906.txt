@@ -1,0 +1,217 @@
+LEARNING GUIDE: Pages 22-26
+Generated: 2025-12-05 14:19:06
+PDF: 1 - Software Development OCR
+
+================================================================================
+LEARNING GUIDE
+================================================================================
+
+Here is a simplified, easy-to-read learning guide based on the provided text:
+
+---
+
+# Software Development Learning Guide
+
+## 1. Software Development Lifecycle (SDLC)
+
+**Definition:** The entire process from understanding user needs and problems to the operation and maintenance of software.
+
+**General Activities:**
+1.  Feasibility review
+2.  Development planning
+3.  Requirements analysis
+4.  Design
+5.  Implementation
+6.  Test
+7.  Operation
+8.  Maintenance
+
+**Purposes of SDLC:**
+*   Calculate project costs and create a development plan.
+*   Configure the basic project framework.
+*   Standardize terms.
+*   Manage the project effectively.
+
+**Selecting an SDLC Model:**
+*   An important activity to tailor the development process for a project.
+*   Selection is based on the system development's risk and uncertainty.
+*   The chosen model should minimize these risks and uncertainties.
+*   **Representative Models:** Waterfall, Prototype, Evolutionary, Incremental.
+
+## 2. Types of Software Lifecycle Models
+
+SDLC models are examples of frequently used approaches and can be adapted based on project characteristics.
+
+### A) V-Model
+*   **Purpose:** Clearly shows project activities to managers, developers, and customers. Helps understand software development principles.
+*   **Key Principle:** Emphasizes **Verification** (are we building the product right?) and **Validation** (are we building the right product?). Development activities (e.g., requirements analysis, design) are directly linked to corresponding test activities (e.g., acceptance testing, integration testing) performed throughout the cycle.
+*   **Usage:** Can be used even if requirements are initially unclear. Planning will detail expected dates and risk identification.
+*   **Characteristics:**
+    *   Easy to apply and manage.
+    *   Clearly defines the start and end of development activities.
+    *   Highlights the association between development and testing, helping pinpoint which phase needs re-work if a fault is found.
+
+### B) V-Model with Prototyping
+*   **Prototyping:** Developing a system (or part of it) to understand requirements, solve issues, or reduce risks/uncertainties. It helps developers and customers achieve a common understanding.
+*   **Benefit:** Reduces project uncertainty and risks (e.g., implementing complex requirements, verifying performance, using new tools, outsourcing).
+*   **Two Approaches to Prototyping:**
+
+    **Approach 1: Seek Applicable Solutions & Apply Them**
+    *   **When to use:** When the problem is unclear (e.g., user interface for a new device, improving system performance, managing errors).
+    *   **Procedure:**
+        1.  Define uncertainty factors.
+        2.  Seek a solution and define its application method.
+        3.  Try applying the solution (can be iterated).
+        4.  Identify the cause of the uncertainty based on results.
+
+    **Approach 2: Enumerate & Evaluate Solution Options**
+    *   **When to use:** When there's risk or uncertainty in a proposed solution (e.g., selecting middleware for a specific function, evaluating design performance under various environmental factors).
+    *   **Procedure:**
+        1.  Define uncertainty factors.
+        2.  List possible solutions and define selection criteria.
+        3.  Evaluate solutions against criteria.
+        4.  Select the most suitable solution.
+
+### C) Incremental Model
+*   **Purpose:** Useful when system development time needs to be reduced, especially when not all functions can be delivered by a deadline.
+*   **Process:**
+    *   Core, operable parts are developed first to make the system functional.
+    *   Functions are then added in multiple extensions (increments).
+    *   Each system version runs a limited set of functions, and later versions add new features to previous ones. The final version is complete.
+*   **Use Cases:**
+    *   When most requirements are defined, but improvements can evolve over time.
+    *   Reduces risks associated with external interfaces (hardware/software) early in development.
+    *   V-Model or V-P Model can be applied to each incremental phase.
+
+### D) Evolutionary Model
+*   **Purpose:** Also useful for reducing development time, similar to the incremental model.
+*   **Key Difference from Incremental:** The *entire system* development phase is reiterated multiple times. Each system version provides *all* specified functions to the user.
+*   **Cycle:** Changes (to functions, user interface, non-functional aspects like reliability/performance) identified during a version's use are reflected in the development of the next system version.
+*   **Use Cases:**
+    *   When the overall system specification is uncertain.
+    *   When continuous product improvement is required.
+*   **Often Combined:** Frequently used in combination with the Incremental model (e.g., adding new functions while improving existing ones).
+*   **Benefits of a Combined Model:**
+    *   Users can be trained and familiarize themselves with the system early, identifying improvements needed for practical business.
+    *   Improves competitiveness by reducing development time and allowing early system use.
+    *   Unexpected system problems can be identified and fixed early.
+    *   Allows development to be divided by specialized fields (e.g., a team specializing in user interfaces).
+
+## 3. Software Development Methodology
+
+**Definition:** A standardized method that defines each development phase, activities, deliverables, verification procedures, completion criteria, and supporting tools for planning, analysis, design, and implementation.
+
+**Necessity of Methodology:**
+*   Improves development productivity by accumulating and reusing experience.
+*   Enables effective project management.
+*   Provides communication by offering formal procedures, deliverables, and unified terminology.
+*   Assures a certain level of quality by verifying and approving each phase.
+
+## 4. Comparison of Software Development Methodologies
+
+| Item                       | Structural Methodology                                | Information Engineering Methodology                                      | Object-Oriented Methodology                                                               | CBD Methodology                                                                            |
+| :------------------------- | :---------------------------------------------------- | :----------------------------------------------------------------------- | :---------------------------------------------------------------------------------------- | :----------------------------------------------------------------------------------------- |
+| **Overview/Focus**         | Focuses on business activities.                       | Focuses on data and business support systems.                            | Identifies relationships between objects/classes; converts into a design model.           | Develops reusable components or combines commercial components.                            |
+| **Basic Principles**       | Abstraction, Structuralization, Stepwise Refinement, Modularization | Information Strategy Planning, Business Area Analysis, Business System Design, Development | Requirements Analysis, Modeling (Architecture, Use Case, Object, Dynamic, Functional), Design, Implementation, Test/Deployment | Component Definition, Business Process/Conceptual Diagram, Reuse by Inheritance, Interface Implementation |
+| **Characteristics**        | - Divide and conquer <br> - Centered on program logic <br> - Program logic depends on data structure <br> - Structured with controllable modules | - Supports corporate business <br> - Data and logic integration <br> - Emphasis on data models <br> - Enterprise integrated data model | - Evolution of object methodology <br> - Emphasis on interface modularization <br> - Aims to close gap between analysis & design | - Component is the unit <br> - Aims to reuse "black box" components <br> - Interface implementation using components |
+| **Major Deliverables**     | Data flow diagrams, Structural drawings, Program specifications, Table definitions/lists | Domain analysis reports, Business process/conceptual diagrams, Function charts, Data structure diagrams, Program specifications | Diagrams (use case, sequence, class, component, etc.)                                     | Domain analysis reports, Business process/conceptual diagrams, Diagrams (use case, sequence, class, component, etc.), Reuse plan |
+| **Supporting Tools**       | Teamwork, SA                                          | Cool Gen, SA                                                             | Rose, SA, Plastic Cool Joe, Together                                                      | EJB (Enterprise JavaBeans)                                                                 |
+| **Major Languages**        | COBOL, C, VB, PASCAL                                  | COBOL, C, VB, PASCAL                                                     | C++, JAVA, VB                                                                             | Choice of development language is generally unimportant.                                   |
+
+## 5. Software Development Phases (General)
+
+These activities are defined by the chosen software lifecycle.
+
+### A) Requirements Analysis
+*   **Goal:** Understand user needs and precisely decide *what* to develop.
+*   **Importance:**
+    *   Practically the first step in software development.
+    *   A critical phase that reduces overall development costs.
+    *   Good investment here shortens development time and prevents excessive costs or quality deterioration later.
+
+### B) Design
+*   **Goal:** The first step in *physical realization* (moving from conceptual requirements). Determines the system's structure (sub-systems) and allocates them to components (hardware/software).
+*   **Importance:**
+    *   Directly affects software quality.
+    *   Improper design leads to unstable systems.
+    *   Unstable systems are difficult to maintain.
+
+### C) Implementation
+*   **Goal:** Program the software to satisfy the requirements, based on the design specification.
+*   **Key Task:** Write code according to the detailed design and user's guide, adhering to established coding standards for clarity and maintainability.
+
+---
+
+================================================================================
+ORIGINAL TEXT (First 5000 chars)
+================================================================================
+
+--- Page 22 ---
+Software  Development )
+because  far more diverse  issues arise than in other engineering  situations.
+02 Lifecycle  of Software  Development
+A) Definition
+The lifecycle  refers to the entire process  from understanding  the user environment  and problems  to operation
+and maintenance.  The general  software  life cycle is composed  of [Feasibility  review  — Development  planning  >
+Requirements  analysis Design  — Implementation  — Test — Operation  — Maintenance]  activities.
+B) Purposes
++ To calculate  the project  costs and draw up a development  plan, and to configure  the basic framework.
++ To standardize  the terms.
++ To manage  a project.
+C) Selecting  a software  lifecycle
++ This is an important  activity  for corporations  to tailor the development  process  of a project.
++ Selection  is based on the risk and uncertainty  of system development  and understanding  of it.
++ The selected  model should be able to minimize  the risks and uncertainties  associated  with a given project.
++The Waterfall  model, prototype  model, evolutionary  model, and incremental  model are the most
+representative  life cycle models.
+D) Types of software  lifecycle  models
+The lifecycle model does not explain all possible  lifecycle models  that could be applied to a project: rather,
+it is an example  of the most frequently  used lifecycle  model. In addition,  the lifecycle  model can be replaced
+according  to the characteristics  of the project.
+@® V model
+* This model clearly shows the activities  that should be performed  while implementing  the project  to project
+managers  and developers.  It also helps customers  who do not know much about this area to understand  the
+principles  of software  development.
++ An ideal lifecycle  model identifies  and clarifies  all system  requirements.
+* The V model can be used even when the requirements  are unclear. However, the estimation,  planning,  and
+confirmation  of a project are limited to the requirement  analysis  and identification  phase only. That is, the
+detailed plan to which the V model is applied is finally completed once all the requirements  have been
+identified  and clarified. If the requirements  are not clear, the initial project plan should specify the start/
+end dates expected  by the customer  and the estimated  date when major risks, assumptions,  dependencies,
+and requirements  have been identified  and clarified.  A project involving  the implementation  of a standard
+communication  protocol  is a typical example  of the type of project  to which the V model can be applied.  The V
+model has the following  characteristics.
+M1 Software  development  21
+
+
+--- Page 23 ---
+ESSENCE
+- It is easy to apply to a project  and manage.
+- A measure  that can effectively manage  the start/end  of development  activities  and the project
+can be clearly  defined.
+- The model emphasizes  project  verification  and validation.  In other words, the model explains  very
+well the association  relationship  between  development  activities,  such as requirements  analysis
+and design, and design activities.  The development  activities  and corresponding  test activities
+are performed  at the same time during  the entire development  cycle.
+- By doing so, we can understand  which phase of the development  activity  should be performed
+again, if a software  fault is found during  the test.
+@ V model with prototyping
++ Prototyping  is a method of developing  a system or a part of a system to understand  a system or to
+solve such issues as risks or uncertainties.  Prototyping  can lead developers and customers  to commonly
+understand  what is needed  and what should be developed.  Prototyping  can be applied to the development
+phase of the Waterfall  model or V model, and can also be used as an independent  lifecycle  model
++ The uncertainty  factors and risks of a project  can be reduced by adding the prototyping  technique  to the V
+model. The uncertainty  factors and risks of a project  include the possibility  of implementing  the requirements
+in the requirement  phase, the status of verifying  system performance  in the design phase, and risk factors
+when introducing  new tools and developing  a system by outsourcing.  The prototyping  technique  can be
+performed  using the following  two approaches.
+- OApproach  1: Seek applicable  solutions  and apply them. This approach  can be applicable  when the
+problem  to be solved is not clear. For example,  this approach  can be used when implementing
+the user interface  of a new device, when seeking  a method  of improving  a system’s  performance,
+or when managing  errors or faults.
+- The general  procedure  for performing  actions  is as follows:
+1. Define  the uncertainty  factors.
+2. Seek a solution  and define how to apply it.
+3. Try to apply the solution.  (It can be reiterated.)
+4. Find the cause of the uncertainty  factor based on the result of step 3.
+OApproach  2: Enumerate  several solution  options  ...

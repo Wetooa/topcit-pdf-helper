@@ -1,0 +1,605 @@
+LEARNING GUIDE: Pages 1-5
+Generated: 2025-12-07 00:52:38
+PDF: 3 - Overview of System Architecture OCR
+
+================================================================================
+LEARNING GUIDE
+================================================================================
+
+Here is a simplified, easy-to-read learning guide based on the provided table of contents, designed for study purposes.
+
+---
+
+# Learning Guide: Core Computer Science Concepts
+
+This guide distills essential information from key areas of computing, focusing on definitions, types, functions, and important technologies.
+
+## I. System Concept
+
+### 1.1 Concept of System Architecture
+
+#### 1.1.1 Understanding System Architecture
+*   **Definition:** The fundamental structure of a system, outlining its components, their relationships, and the principles guiding its design and evolution.
+*   **Purpose:** Provides a blueprint for system development, ensures consistency, facilitates communication, and supports scalability and maintainability.
+
+#### 1.1.2 Components of an Information System
+*   **Hardware:** Physical components (e.g., computers, peripherals).
+*   **Software:** Programs and applications (e.g., operating systems, databases, user applications).
+*   **Data:** Raw facts and figures processed and stored by the system.
+*   **Network:** Infrastructure connecting hardware and enabling communication.
+*   **People:** Users, operators, developers, and administrators.
+*   **Processes:** Steps and procedures involved in using and managing the system.
+
+### 1.2 Types of System Architecture
+
+#### 1.2.1 General Types of System Architecture
+*   Refers to broad categories based on design philosophy (e.g., monolithic, microservices, layered).
+
+#### 1.2.2 Classification by System Layout
+*   **Centralized:** All processing and data storage on a single, powerful server.
+*   **Distributed:** Workload spread across multiple interconnected computers.
+*   **Client-Server:** Clients request services from servers.
+*   **Peer-to-Peer (P2P):** Nodes act as both clients and servers.
+
+#### 1.2.3 Classification by Application Program Provision
+*   **On-Premise:** Software installed and run on local servers within an organization.
+*   **Cloud-based (SaaS, PaaS, IaaS):** Software/services delivered over the internet by a third-party provider.
+    *   **SaaS (Software as a Service):** Users access applications over the internet.
+    *   **PaaS (Platform as a Service):** Provides a platform for developing, running, and managing applications.
+    *   **IaaS (Infrastructure as a Service):** Provides virtualized computing resources over the internet.
+
+#### 1.2.4 Classification by System Layer
+*   **Layered Architecture:** Organizes components into distinct layers, each with specific responsibilities (e.g., presentation, business logic, data access).
+    *   **N-tier architecture:** A common layered approach (e.g., 3-tier: presentation, application, data).
+
+### 1.3 Server's Stack Architecture
+
+#### 1.3.1 Concept of Server's Stack Architecture
+*   **Definition:** Refers to the complete set of software and hardware layers that make up a server environment, from the operating system to web servers, databases, and applications.
+*   **Common Stacks:** LAMP (Linux, Apache, MySQL, PHP), MEAN (MongoDB, Express.js, Angular, Node.js).
+
+#### 1.3.2 Computer Hardware
+*   **Core Components:** CPU (Central Processing Unit), Memory (RAM), Storage (HDD/SSD), Motherboard, Network Interface Card (NIC).
+*   **Role in Server Stacks:** Provides the physical foundation for running server software and applications.
+
+## II. Network Concept
+
+### 2.1 What is a Protocol?
+*   **Definition:** A set of rules and standards that govern how data is formatted, transmitted, and received between devices in a network.
+*   **Purpose:** Ensures reliable and consistent communication between diverse systems.
+
+### 2.2 OSI Reference Model and TCP/IP Protocol Layer Structure
+
+#### 2.2.1 OSI Reference Model
+*   **Definition:** A conceptual framework that standardizes the functions of a telecommunication or computing system into seven distinct layers.
+*   **Layers (from top to bottom):**
+    1.  **Application:** Network processes to applications (HTTP, FTP).
+    2.  **Presentation:** Data representation, encryption, compression.
+    3.  **Session:** Establishes, manages, and terminates connections.
+    4.  **Transport:** End-to-end connection, data segmentation (TCP, UDP).
+    5.  **Network:** Logical addressing, routing (IP).
+    6.  **Data Link:** Physical addressing, error control (MAC addresses, Ethernet).
+    7.  **Physical:** Raw bit transmission (cables, connectors).
+
+#### 2.2.2 TCP/IP Protocol Layer Structure
+*   **Definition:** The most widely used networking model, simpler than OSI, with four or five layers.
+*   **Layers:**
+    1.  **Application:** Combines OSI Application, Presentation, Session layers (HTTP, FTP, DNS).
+    2.  **Transport:** End-to-end communication (TCP, UDP).
+    3.  **Internet (Network):** Logical addressing and routing (IP).
+    4.  **Network Access (Data Link/Physical):** Combines OSI Data Link and Physical layers (Ethernet, Wi-Fi).
+
+### 2.3 Internet Address System
+*   **IP Address (Internet Protocol Address):** A unique numerical label assigned to each device connected to a computer network that uses the Internet Protocol for communication.
+    *   **IPv4:** 32-bit addresses (e.g., 192.168.1.1).
+    *   **IPv6:** 128-bit addresses, designed to address the exhaustion of IPv4 addresses.
+*   **DNS (Domain Name System):** Translates human-readable domain names (e.g., google.com) into numerical IP addresses.
+
+### 2.4 Internet Standard
+*   **Definition:** Protocols and specifications formally defined and published by organizations (e.g., IETF - Internet Engineering Task Force) to ensure interoperability and consistency across the internet.
+*   **Examples:** TCP, IP, HTTP, SMTP.
+
+## III. Operating System (OS)
+
+### 3.1 Operating System (OS)
+
+#### 3.1.1 Overview of OS
+*   **Definition:** Software that manages computer hardware and software resources and provides common services for computer programs.
+*   **Role:** Acts as an intermediary between the user/applications and the hardware.
+
+#### 3.1.2 Main Functions of OS
+*   **Process Management:** Manages the execution of programs (processes) and threads.
+*   **Memory Management:** Allocates and deallocates memory to processes.
+*   **File System Management:** Organizes, stores, retrieves, and protects files.
+*   **I/O Management:** Handles input/output operations for devices.
+*   **Device Management:** Manages peripheral devices.
+*   **Resource Allocation:** Distributes CPU time, memory, and I/O devices among competing processes.
+*   **Security:** Protects system resources from unauthorized access.
+
+#### 3.1.3 Types of Main OS
+*   **Desktop OS:** Windows, macOS, Linux (Ubuntu).
+*   **Mobile OS:** Android, iOS.
+*   **Server OS:** Windows Server, Linux (Red Hat, CentOS), Unix.
+*   **Embedded OS:** RTOS (Real-Time Operating Systems) for specialized devices.
+
+### 3.2 Process and Thread
+
+#### 3.2.1 Understanding of Process
+*   **Definition:** A program in execution. It is an independent unit of work.
+*   **Components:** Program code, data, resources (e.g., open files, I/O devices), and a process control block (PCB).
+*   **States:** New, Ready, Running, Waiting, Terminated.
+
+#### 3.2.2 Process Management Technique
+*   **Scheduling:** Deciding which process gets the CPU and for how long.
+*   **Context Switching:** Saving the state of one process and restoring the state of another.
+*   **Inter-Process Communication (IPC):** Mechanisms for processes to exchange data (e.g., pipes, message queues, shared memory).
+
+#### 3.2.3 Thread
+*   **Definition:** A lightweight unit of execution within a process. A single process can have multiple threads.
+*   **Advantages:** Improved responsiveness, resource sharing (threads within the same process share memory), economy, scalability to multi-core architectures.
+*   **Types:** User-level threads (managed by user-level library), Kernel-level threads (managed by OS kernel).
+
+### 3.3 Process Synchronization and Deadlock
+
+#### 3.3.1 Concept of Process Synchronization
+*   **Definition:** The coordination of concurrent processes or threads to ensure proper execution and data consistency when accessing shared resources.
+*   **Goal:** Prevent race conditions and maintain data integrity.
+
+#### 3.3.2 Critical Section Problem
+*   **Definition:** A section of code where shared resources are accessed. Only one process should be allowed to execute its critical section at any given time.
+*   **Requirements:** Mutual Exclusion, Progress, Bounded Waiting.
+
+#### 3.3.3 Solving the Critical Section Problem
+*   **Semaphores:** Integer variables used to control access to shared resources.
+*   **Mutex Locks:** Binary semaphores, providing mutual exclusion.
+*   **Monitors:** High-level synchronization construct combining data with synchronization primitives.
+
+#### 3.3.4 Deadlock Status
+*   **Definition:** A situation where two or more processes are blocked indefinitely, each waiting for a resource held by another process in the same cycle.
+*   **Conditions for Deadlock (all must be present):**
+    1.  **Mutual Exclusion:** Resources are non-shareable.
+    2.  **Hold and Wait:** A process holding at least one resource is waiting for another resource.
+    3.  **No Preemption:** Resources cannot be forcibly taken from a process.
+    4.  **Circular Wait:** A circular chain of processes exists, where each process holds a resource needed by the next in the chain.
+
+### 3.4 Memory Unit Management
+
+#### 3.4.1 Understanding of Memory Unit Management
+*   **Definition:** The process of allocating and deallocating main memory (RAM) to running programs and ensuring efficient use of memory space.
+*   **Goals:** Maximize CPU utilization, ensure efficient resource allocation, protect memory spaces.
+
+#### 3.4.2 Memory Unit Management Technique
+*   **Paging:** Divides physical memory into fixed-size blocks (frames) and logical memory into same-size blocks (pages). Pages can be loaded into any available frame.
+*   **Segmentation:** Divides memory into variable-size logical blocks called segments, which correspond to logical units of a program.
+*   **Swapping:** Temporarily moving a process from main memory to disk (swap space) and back to main memory.
+*   **Virtual Memory:** See Section 3.6.
+
+### 3.5 Scheduling
+
+#### 3.5.1 Purpose of Scheduling
+*   **Goal:** Efficiently manage the CPU's time by deciding which processes should run when and for how long.
+*   **Objectives:** Maximize CPU utilization, maximize throughput, minimize turnaround time, minimize waiting time, minimize response time.
+
+#### 3.5.2 Type and Characteristics of Scheduling
+*   **Preemptive:** OS can interrupt a running process and allocate the CPU to another.
+*   **Non-Preemptive:** A process runs until it completes or voluntarily yields the CPU.
+*   **Algorithms:**
+    *   **FCFS (First-Come, First-Served):** Simplest, non-preemptive.
+    *   **SJF (Shortest-Job-First):** Prioritizes processes with the shortest estimated execution time (can be preemptive or non-preemptive).
+    *   **Priority Scheduling:** Assigns priority to processes; highest priority runs first.
+    *   **Round Robin (RR):** Each process gets a small unit of CPU time (time slice); preemptive, suitable for time-sharing systems.
+    *   **Multilevel Queue Scheduling:** Divides processes into different queues, each with its own scheduling algorithm.
+
+### 3.6 Virtual Memory Unit
+
+#### 3.6.1 Implementing a Virtual Memory Unit
+*   **Definition:** A memory management technique that allows the OS to use secondary storage (disk) as if it were part of main memory. This gives the illusion of a larger, contiguous memory space than physically available.
+*   **Mechanism:** Uses paging or segmentation with a page table/segment table to map virtual addresses to physical addresses.
+*   **Benefits:** Allows running programs larger than physical memory, allows more programs to run concurrently, simplifies memory management for programmers.
+
+#### 3.6.2 Page Replacement Technique of the Virtual Memory Unit
+*   **Purpose:** When a page fault occurs (requested page not in physical memory) and no free frames are available, the OS must choose a page in memory to swap out to make room for the new page.
+*   **Algorithms:**
+    *   **FIFO (First-In, First-Out):** Replaces the oldest page.
+    *   **LRU (Least Recently Used):** Replaces the page that has not been used for the longest time.
+    *   **LFU (Least Frequently Used):** Replaces the page that has been used the least often.
+    *   **Optimal:** Replaces the page that will not be used for the longest period (ideal, but impossible to implement in practice).
+
+#### 3.6.3 Factors that Affect the Virtual Memory Unit Performance
+*   **Page Fault Rate:** Frequent page faults (thrashing) significantly degrade performance.
+*   **Locality of Reference:** Programs that exhibit good spatial and temporal locality perform better.
+*   **Page Size:** Too small (more page faults) or too large (internal fragmentation).
+*   **Number of Frames:** More physical memory generally reduces page faults.
+*   **Page Replacement Algorithm:** Choice impacts efficiency.
+
+### 3.7 File System
+
+#### 3.7.1 Understanding of File System
+*   **Definition:** A method and data structure that an operating system uses to organize and manage files on storage devices (e.g., hard drives, SSDs).
+*   **Functions:** File creation, deletion, renaming, access control, space allocation, directory management.
+
+#### 3.7.2 Concept of Directory
+*   **Definition:** A special type of file that contains a list of other files and/or subdirectories. It provides a hierarchical structure for organizing files.
+*   **Operations:** Create, delete, list contents, navigate.
+
+#### 3.7.3 Allocation by a File System
+*   **Contiguous Allocation:** Each file occupies a set of contiguous blocks on the disk. Simple but suffers from external fragmentation.
+*   **Linked Allocation:** Each block contains a pointer to the next block of the file. No external fragmentation, but slow random access.
+*   **Indexed Allocation:** Uses an index block (inode) that contains pointers to all disk blocks of a file. Good for random access, but overhead for small files.
+
+#### 3.7.4 Types of File Systems for Each OS
+*   **Windows:** NTFS (New Technology File System), FAT32 (File Allocation Table).
+*   **macOS:** APFS (Apple File System), HFS+.
+*   **Linux:** Ext4 (Fourth Extended Filesystem), XFS, Btrfs.
+*   **Unix:** UFS (Unix File System).
+
+#### 3.7.5 UNIX i-node
+*   **Definition:** An index node (inode) is a data structure in a Unix-style file system that describes a file system object such as a file or a directory.
+*   **Content:** Stores metadata about a file (owner, permissions, timestamps, file type, pointers to data blocks), but not the file name or actual data.
+
+### 3.8 Input/Output System
+
+*   **Definition:** The part of the OS responsible for managing communication between the computer and its peripheral devices (e.g., keyboard, mouse, printer, disk drives).
+*   **Functions:** Device drivers, interrupt handling, buffering, spooling.
+*   **Device Drivers:** Software modules that allow the OS to interact with specific hardware devices.
+
+## IV. Computer Architecture
+
+### 4.1 Computer Structure and Architecture
+
+#### 4.1.1 Basic Computer Structure
+*   **Von Neumann Architecture:** Most modern computers use this. Stores both programs and data in the same memory space. Components: CPU, Memory, I/O devices, interconnected by buses.
+*   **CPU (Central Processing Unit):** Executes instructions.
+*   **Memory:** Stores data and instructions.
+*   **I/O Devices:** Input (keyboard, mouse) and Output (monitor, printer).
+*   **Bus:** Communication pathway between components.
+
+#### 4.1.2 Types of Computer Architecture
+*   **Von Neumann Architecture:** Single address space for instructions and data.
+*   **Harvard Architecture:** Separate address spaces for instructions and data, allowing simultaneous fetching.
+*   **CISC (Complex Instruction Set Computer):** Complex instructions, variable length, fewer registers.
+*   **RISC (Reduced Instruction Set Computer):** Simple instructions, fixed length, many registers, pipelining friendly.
+
+### 4.2 CPU
+
+#### 4.2.1 Definition of CPU
+*   **Definition:** The electronic circuitry within a computer that carries out the instructions of a computer program by performing the basic arithmetic, logic, controlling, and input/output (I/O) operations. Often called the "brain" of the computer.
+
+#### 4.2.2 CPU Execution
+*   **Cycle:** Fetches, decodes, executes, and writes back results.
+*   **Clock Speed:** Determines how many cycles the CPU can complete per second (measured in GHz).
+*   **Cores:** Multiple processing units on a single chip, allowing parallel execution.
+
+#### 4.2.3 CPU Components
+*   **ALU (Arithmetic Logic Unit):** Performs arithmetic operations (add, subtract) and logical operations (AND, OR, NOT).
+*   **Control Unit (CU):** Manages and coordinates the CPU's operations, fetches instructions, decodes them, and generates control signals.
+*   **Registers:** Small, high-speed storage locations within the CPU used to temporarily hold data and instructions during processing. (e.g., Program Counter, Instruction Register).
+
+#### 4.2.4 Instruction Cycle
+*   **Fetch:** Retrieves an instruction from memory.
+*   **Decode:** Interprets the instruction to determine the operation and operands.
+*   **Execute:** Performs the specified operation.
+*   **Write-back (Store):** Stores the result of the operation in memory or a register.
+
+#### 4.2.5 Instruction Set Structure, CISC and RISC
+*   **Instruction Set Architecture (ISA):** The part of the computer architecture related to programming, including the native data types, instructions, registers, addressing modes, memory architecture, interrupt, and exception handling.
+*   **CISC (Complex Instruction Set Computer):**
+    *   **Characteristics:** Many complex instructions (e.g., single instruction for a complex task), variable instruction lengths, microcode implementation.
+    *   **Example:** Intel x86 processors.
+*   **RISC (Reduced Instruction Set Computer):**
+    *   **Characteristics:** Few, simple instructions, fixed instruction lengths, single-cycle execution, extensive use of registers.
+    *   **Example:** ARM processors.
+
+### 4.3 Memory
+
+#### 4.3.1 Memory Unit’s Hierarchical Structure
+*   **Principle:** Faster, smaller, more expensive memory at the top; slower, larger, cheaper memory at the bottom.
+*   **Levels (from fastest to slowest):**
+    1.  **CPU Registers:** Very fast, smallest, directly in CPU.
+    2.  **Cache Memory (L1, L2, L3):** Small, fast memory near CPU, stores frequently accessed data.
+    3.  **Main Memory (RAM):** Larger, slower than cache, holds active programs and data.
+    4.  **Secondary Storage (Disk, SSD):** Largest, slowest, non-volatile, for long-term storage.
+
+#### 4.3.2 Factors for Performance Evaluation of Memory Unit
+*   **Access Time:** Time taken to read or write data.
+*   **Memory Cycle Time:** Time between two successive memory accesses.
+*   **Bandwidth:** Rate at which data can be transferred.
+*   **Cost per bit:** Price of storing one bit of data.
+
+#### 4.3.3 Type and Characteristics of the Memory Unit
+*   **RAM (Random Access Memory):** Volatile (loses data when power is off), main memory.
+    *   **DRAM (Dynamic RAM):** Most common type, needs periodic refreshing.
+    *   **SRAM (Static RAM):** Faster, more expensive, used for cache memory, no refreshing needed.
+*   **ROM (Read-Only Memory):** Non-volatile, stores boot-up instructions (firmware).
+*   **Cache Memory:** See above (SRAM).
+
+#### 4.3.4 Addressing Mode
+*   **Definition:** The way in which the operand of an instruction is specified.
+*   **Types:** Immediate, Direct, Indirect, Register, Indexed, Relative.
+
+#### 4.3.5 Locality
+*   **Definition:** The tendency of a processor to access the same set of memory locations repetitively over a short period of time.
+*   **Types:**
+    *   **Temporal Locality:** Recently accessed data/instructions are likely to be accessed again soon.
+    *   **Spatial Locality:** Data/instructions located near recently accessed ones are likely to be accessed soon.
+*   **Importance:** Crucial for efficient cache performance.
+
+### 4.4 I/O Device
+
+#### 4.4.1 Concept of I/O Device
+*   **Definition:** Hardware components that allow a computer to interact with the outside world (input) and to present results (output).
+*   **Examples:** Keyboard, mouse, monitor, printer, speakers, network card, storage drives.
+
+#### 4.4.2 I/O Controller Structure and Addressing Methods
+*   **I/O Controller (Device Controller):** Electronic circuit board that connects an I/O device to the CPU and memory. It handles the communication details specific to the device.
+*   **I/O Port Addressing:** CPU uses special I/O instructions to communicate with specific I/O ports.
+*   **Memory-Mapped I/O:** I/O devices are mapped into the memory address space, allowing the CPU to use normal memory read/write instructions to interact with them.
+
+#### 4.4.3 DMA (Direct Memory Access)
+*   **Definition:** A hardware feature that allows I/O devices to access main memory directly, without involving the CPU.
+*   **Benefit:** Improves system performance by offloading data transfer tasks from the CPU, allowing the CPU to perform other operations concurrently.
+
+### 4.5 Latest Technologies and Trends
+
+#### 4.5.1 Neuromorphic Chip
+*   **Definition:** A type of computer chip designed to mimic the architecture and functionality of the human brain, particularly neural networks.
+*   **Characteristics:** Event-driven, low power consumption, suitable for AI, machine learning, and pattern recognition tasks.
+
+#### 4.5.2 Quantum Computer
+*   **Definition:** A type of computer that performs operations using quantum-mechanical phenomena, such as superposition and entanglement.
+*   **Capability:** Can solve certain computational problems (e.g., factoring large numbers, drug discovery) significantly faster than classical computers.
+*   **Unit of Information:** Qubit (can represent 0, 1, or both simultaneously).
+
+## V. Data Processing Technology
+
+### 5.1 Parallel Processing System
+
+#### 5.1.1 Concept of the Parallel Processing System
+*   **Definition:** A system where multiple processing units (or cores) work together simultaneously to execute a program or solve a problem.
+*   **Goal:** Increase computational speed and throughput.
+
+#### 5.1.2 Flynn’s Classification of Parallel Processing Systems
+*   **SISD (Single Instruction, Single Data):** Traditional uniprocessor (no parallelism).
+*   **SIMD (Single Instruction, Multiple Data):** A single instruction operates on multiple data streams simultaneously (e.g., vector processors, GPUs).
+*   **MISD (Multiple Instruction, Single Data):** Uncommon; multiple instructions operate on the same data stream.
+*   **MIMD (Multiple Instruction, Multiple Data):** Multiple independent processors execute different instructions on different data streams simultaneously (most common type of parallel system).
+
+#### 5.1.3 Classification of Parallel Processing Systems, According to the Memory Structure
+*   **Shared Memory Systems:** Multiple processors share access to a single, global memory space.
+    *   **UMA (Uniform Memory Access):** All processors have equal access time to any memory location.
+    *   **NUMA (Non-Uniform Memory Access):** Access time varies depending on the memory location's proximity to the processor.
+*   **Distributed Memory Systems:** Each processor has its own private memory, and communication between processors happens via message passing over a network.
+
+#### 5.1.4 Types of Parallel Processor Technology
+*   **Multi-core Processors:** A single chip containing multiple CPU cores.
+*   **Multiprocessor Systems:** Multiple physical CPUs in a single system.
+*   **Vector Processors:** Optimized for array/vector operations (SIMD).
+*   **GPUs (Graphics Processing Units):** Specialized processors with thousands of cores, highly parallel for graphic rendering and general-purpose computation (GPGPU).
+
+#### 5.1.5 Parallel Programming Technology
+*   **Definition:** Techniques and tools used to write programs that can execute simultaneously on multiple processors or cores.
+*   **Models:** Shared memory (e.g., OpenMP), Message Passing (e.g., MPI).
+
+#### 5.1.6 Parallel Programming Technology (Redundant in TOC, likely a repetition)
+*   *Refer to 5.1.5 - this section likely elaborates further on parallel programming models or tools.*
+
+#### 5.1.7 GPU-based Parallel Programming Technology
+*   **CUDA (Compute Unified Device Architecture):** NVIDIA's parallel computing platform and programming model for GPUs.
+*   **OpenCL (Open Computing Language):** An open standard for parallel programming across heterogeneous platforms (CPUs, GPUs, DSPs).
+*   **Use Cases:** Scientific simulations, deep learning, data analytics, cryptography.
+
+### 5.2 Storage Technology
+
+#### 5.2.1 Concept of Storage
+*   **Definition:** The retention of digital data on computer hardware for use by the computer's software or humans.
+*   **Types:** Primary (RAM), Secondary (HDD, SSD), Tertiary (tape, optical).
+*   **Characteristics:** Volatility, access speed, capacity, cost.
+
+#### 5.2.2 Connection of Storage Unit and Server
+*   **DAS (Direct-Attached Storage):** Storage directly connected to a server (e.g., internal hard drive, external USB drive). Simple, but not easily shared.
+*   **NAS (Network-Attached Storage):** Dedicated file storage connected to a network, allowing multiple servers/clients to access shared files over IP.
+*   **SAN (Storage Area Network):** A dedicated high-speed network that provides block-level access to storage devices for servers. Appears as locally attached storage to servers.
+
+#### 5.2.3 IP-SAN
+*   **Definition:** A Storage Area Network that uses Internet Protocol (IP) for communication, typically via iSCSI (Internet Small Computer System Interface).
+*   **Benefit:** Leverages existing Ethernet infrastructure, reducing cost and complexity compared to Fibre Channel SANs.
+
+#### 5.2.4 Storage Capacity Management
+*   **Definition:** The process of monitoring, analyzing, and optimizing storage usage to ensure sufficient space, efficient performance, and cost-effectiveness.
+*   **Techniques:** Thin provisioning, data deduplication, compression, tiered storage.
+
+#### 5.2.5 Storage Disk Scheduling
+*   **Purpose:** To optimize the movement of the disk's read/write head to minimize seek time and improve overall I/O performance.
+*   **Algorithms:**
+    *   **FCFS (First-Come, First-Served):** Simplest, processes requests in order.
+    *   **SSTF (Shortest Seek Time First):** Prioritizes requests closest to the current head position.
+    *   **SCAN (Elevator Algorithm):** Head moves in one direction, servicing all requests, then reverses direction.
+    *   **C-SCAN (Circular SCAN):** Head moves in one direction, servicing requests, then quickly returns to the other end without servicing requests on the return trip.
+
+### 5.3 High Availability Storage
+
+#### 5.3.1 Redundant Array of Independent Disks (RAID) Technology
+*   **Definition:** A data storage virtualization technology that combines multiple physical disk drive components into one or more logical units for data redundancy, performance improvement, or both.
+*   **RAID Levels:**
+    *   **RAID 0 (Striping):** Improves performance by spreading data across multiple disks; no redundancy.
+    *   **RAID 1 (Mirroring):** Provides full data redundancy by duplicating data on two disks; high cost.
+    *   **RAID 5 (Striping with Parity):** Distributes data and parity information across multiple disks; good balance of performance and redundancy, can tolerate one disk failure.
+    *   **RAID 6 (Striping with Double Parity):** Similar to RAID 5 but with two independent parity blocks; tolerates two disk failures.
+    *   **RAID 10 (RAID 1+0):** Combines RAID 1 (mirroring) and RAID 0 (striping) for both performance and high redundancy.
+
+#### 5.3.2 Backup Storage: LTO and VTL
+*   **LTO (Linear Tape-Open):** A magnetic tape data storage technology for high-capacity, cost-effective, long-term data archiving and backup.
+*   **VTL (Virtual Tape Library):** A data storage device that emulates traditional tape libraries but stores data on hard disks, combining the speed of disk with the manageability of tape.
+
+### 5.4 Graphic Compression Technology
+
+#### 5.4.1 Graphic Compression Type
+*   **Purpose:** Reduce the file size of images and videos to save storage space and bandwidth.
+*   **Lossless Compression:** Reconstructs the original data exactly (e.g., PNG, GIF for images; FLAC for audio).
+*   **Lossy Compression:** Permanently removes some data to achieve higher compression ratios; not fully reversible (e.g., JPEG for images; MPEG, H.264 for video; MP3 for audio).
+
+#### 5.4.2 Multimedia Data
+*   **Definition:** Data that combines different content forms, such as text, audio, images, animations, video.
+*   **Compression Importance:** Essential for efficient storage, transmission, and streaming of large multimedia files.
+*   **Standards:** JPEG (images), MPEG (video), MP3 (audio).
+
+## VI. Embedded System
+
+### 6.1 Overview of Embedded System
+
+#### 6.1.1 Definition of Embedded System
+*   **Definition:** A computer system with a dedicated function within a larger mechanical or electrical system, often with real-time computing constraints.
+*   **Characteristics:** Typically purpose-built, often designed for specific tasks, and may not have a traditional user interface.
+*   **Examples:** Microcontrollers in washing machines, automotive systems, smart home devices, medical equipment.
+
+#### 6.1.2 Characteristics of Embedded System
+*   **Dedicated Function:** Performs a specific task or set of tasks.
+*   **Real-time Constraints:** Often must respond to events within a specified time frame.
+*   **Limited Resources:** Constraints on memory, processing power, and power consumption.
+*   **Reliability:** High reliability and stability are crucial.
+*   **Cost-Effective:** Designed for low-cost production.
+*   **Harsh Environments:** May operate in non-ideal conditions (temperature, vibration).
+*   **Power Efficiency:** Often battery-powered, requiring low power consumption.
+
+---
+
+================================================================================
+ORIGINAL TEXT (First 5000 chars)
+================================================================================
+
+--- Page 1 ---
+CONTENTS
+|. System  Concept 20
+01 Concept  of System  Architecture 22
+A) Understanding  system  architecture 22
+B) Components  of information  system 23
+02 Types of System  Architecture 26
+A) Types of system  architecture 26
+B) System  architecture  classification  according  to system layout 26
+C) Classification  according  to how the application  programs  are provided 27
+D) Classification  by system layer 28
+03 Server's  Stack Architecture 29
+A) Concept  of server's  stack architecture 29
+B) Computer  hardware 30
+Il. Network  Concept 32
+01 What is the Protocol? 36
+02 OSI Reference  Model and TCP/IP  Protocol  Layer Structure 37
+03 Internet  Address  System 39
+6 TOPCIT  ESSENCE
+
+
+--- Page 2 ---
+04 Internet  Standard
+Ill. Operating  System  (OS)
+01 Operating  System  (OS)
+A) Overview  of OS
+B) Main functions  of OS
+C) Types of main OS
+02 Process  and Thread
+A) Understanding  of process
+B) Process  management  technique
+C) Thread
+03 Process  Synchronization  and Deadlock
+A) Concept  of process  synchronization
+B) Critical section problem
+C) Solving  the critical section problem
+D) Deadlock  status
+04 Memory  Unit Management
+A) Understanding  of memory  unit management
+B) Memory  unit management  technique
+05 Scheduling40
+Al
+42
+42
+43
+45
+45
+46
+47
+48
+48
+48
+49
+49
+50
+50
+50
+53
+M3 Overview  of System  Architecture  7
+
+
+--- Page 3 ---
+CONTENTS
+A) Purpose  of scheduling 53
+B) Type and characteristics  of scheduling 53
+06 Virtual Memory  Nnit 54
+A) mplementing  a virtual memory  unit 54
+B) Page replacement  technique  of the virtual memory  unit 55
+C) Factors  that affect the virtual memory  unit performance 56
+07 File System 56
+A) Understanding  of file system 56
+B) Concept  of directory 56
+C) Allocation  by a file system 57
+D) Types of files system  for each OS 59
+E) UNIXi-node 59
+08 Input/ Output  System 59
+IV. Computer  Architecture 61
+01 Computer  Structure  and Architecture 62
+A) Basic computer  structure 62
+B) Types of computer  architecture 63
+02 CPU 64
+A) Definition  of CPUS! 64
+B) CPU execution 64
+8 TOPCIT  ESSENCE
+
+
+--- Page 4 ---
+C) CPU components 64
+D) Instruction  cycle 65
+E) Instruction  set structure,  CISC and RISC 66
+03 Memory 67
+A) Memory  unit’s hierarchical  structure 67
+B) Factors  for performance  evaluation  of memory  unit 68
+C) Type and characteristics  of the memory  unit 68
+D)Addressing  mode 68
+E) Locality 69
+04 I/O Device 69
+A) Concept  of I/O device 69
+B) I/O controller  structure  and addressing  methods 69
+C) DMA) 70
+05 Latest  Technologies  and Trends 72
+A) Neuromorphic  chip 72
+B) Quantum  computer 73
+V. Data Processing  Technology 75
+01 Parallel  Processing  System 76
+A) Concept  of the parallel processing  system 76
+B) Flynn’s classification  of parallel  processing  systems 77
+C) Classification  of parallel processing  systems,  according  to the memory  structure 78
+M3 Overview  of System  Architecture  9
+
+
+--- Page 5 ---
+CONTENTS
+D) Types of parallel processor  technology 79
+E) Parallel programming  technology 81
+F) Parallel programming  technology 82
+G) GPU-based  parallel programming  technology 82
+02 Storage  Technology 83
+A) Concept  of storage 83
+B) Connection  of storage  unit and server 84
+C) IP-SAN 86
+D) Storage  capacity  management 87
+E) Storage  disk scheduling 88
+03 High Availability  Storage 91
+A)Redundant  array of independent  disks (RAID) technology 91
+B) Backup  storage:  LTO and VTL 94
+04 Graphic  Compression  Technology 94
+A) Graphic  compression  type 94
+B) Multimedia  data 95
+VI. Embedded  System 98
+01 Overview  of Embedded  System 99
+A) Definition  of embedded  system 99
+B) Characteristics  of embedded  system 100
+10 TOPCIT  ESSENCE
+
+

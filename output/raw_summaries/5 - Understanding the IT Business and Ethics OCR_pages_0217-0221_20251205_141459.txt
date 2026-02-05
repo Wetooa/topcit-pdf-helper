@@ -1,0 +1,194 @@
+LEARNING GUIDE: Pages 217-221
+Generated: 2025-12-05 14:14:59
+PDF: 5 - Understanding the IT Business and Ethics OCR
+
+================================================================================
+LEARNING GUIDE
+================================================================================
+
+Here is a simplified, easy-to-read learning guide based on the provided text (Pages 217-221).
+
+---
+
+## IT Business & Ethics: Learning Guide (Pages 217-221)
+
+### 1. Unfair Competition & Intellectual Property
+
+This section outlines various acts considered unfair competition, with a focus on trade secrets.
+
+#### 1.1 Acts of Unfair Competition
+
+Specific acts are defined as unfair competition, protecting various forms of intellectual property:
+
+*   **Trademark Infringement by Agents/Representatives:**
+    *   An agent/representative of a trademark owner (or someone who was within 1 year) uses an identical or similar trademark.
+    *   The trademark must be registered in countries party to the Paris Convention, WTO, or Trademark Law Treaty.
+    *   This includes selling, distributing, exporting, or importing goods with such a trademark.
+*   **Domain Name Misuse (Cybersquatting):**
+    *   Registering, holding, transferring, or using a domain name identical or similar to another person's name, trade name, or widely known trademark in South Korea.
+    *   Done without a legitimate right and for specific purposes:
+        *   Selling or lending the mark (e.g., trademark) to the legitimate owner or a third party.
+        *   Preventing the legitimate owner from registering or using the domain name.
+        *   Obtaining other commercial profits.
+*   **Copying Product Shapes:**
+    *   Transferring, lending, exhibiting, importing, or exporting goods whose shape has been copied from another person's manufactured goods.
+*   **Unfair Use of Technical/Business Ideas:**
+    *   Unfairly using information containing another person’s technical or business ideas with economic value.
+    *   Information was obtained during negotiations or transactions (e.g., business proposal, auction, public offering).
+    *   Used for personal or third-party business interests, violating the original purpose of the information's provision.
+    *   Also includes providing such information to another person for their advantage.
+
+#### 1.2 Trade Secrets
+
+A crucial aspect of business protection.
+
+*   **Concept of a Trade Secret:**
+    *   Information (e.g., production methods, sales methods, technical/business info).
+    *   **Requirements:**
+        1.  **Non-publicity:** Not publicly known.
+        2.  **Economic Usefulness:** Useful for business activities and has independent economic value.
+        3.  **Confidentiality:** Managed as a secret through reasonable efforts (e.g., non-disclosure agreements, access restrictions). Information known to everyone is not a trade secret.
+
+*   **Infringement of Trade Secrets:**
+    *   **Acquisition & Use:** Acquiring trade secrets by theft, deception, coercion, or other improper means, then using or disclosing them.
+    *   **Knowledge of Improper Acquisition:** Using or disclosing trade secrets after acquiring them, knowing (or being grossly negligent about the fact) that they were improperly obtained.
+    *   **Breach of Duty:** Using or disclosing trade secrets for improper benefits or to harm the owner, while under a contractual or other duty to maintain secrecy.
+
+*   **Legal Precedents for Trade Secret Infringement:**
+    *   **Examples of Infringement:**
+        *   Adding only new features based on existing (protected) source code.
+        *   Developing, producing, and selling substantially similar programs by reverse engineering (violates Copyright Act Article 101-4).
+        *   Reverse analysis conducted in violation of a contract, especially when technical protection measures were in place to prevent it.
+    *   **Examples NOT Constituting Infringement:**
+        *   Software developed with a completely different programming language and implementation method.
+        *   Reverse analysis of a legally purchased program to obtain information necessary for compatibility, when that information cannot be easily obtained otherwise (Copyright Act Article 101-4).
+
+### 2. Ethical Challenges in the IT Industry
+
+The rapid advancement of IT brings new ethical considerations.
+
+#### 2.1 Overview
+
+*   **Trends:** The IT industry revolution fuels new products and services through technology convergence.
+*   **Issues:** Despite improved technical competence, a lack of ethical awareness leads to increasing side effects like safety accidents, information leakage, and privacy invasion.
+*   **Impact:** These issues hinder IT business development.
+*   **Solution:** It's crucial to examine ethical issues in all service fields and cultivate strong ethical awareness to ensure sustainable IT development.
+
+#### 2.2 Learning Objectives
+
+*   Explain ethical issues related to the latest IT business services.
+*   Describe ethical compliance within these services.
+
+#### 2.3 Key Ethical Areas
+
+*   Cloud Computing Ethics
+*   Autonomous Vehicle Ethics
+*   Big Data Ethics Issues
+*   Artificial Intelligence Ethics
+*   Drone Ethics
+
+#### 2.4 The Autonomous Vehicle Dilemma (Case Study)
+
+A practical example of an ethical challenge in emerging technology.
+
+*   **Scenario (The Trolley Problem applied to AI):**
+    *   An autonomous car's brakes fail.
+    *   Option 1: Drive straight, hit 5 pedestrians.
+    *   Option 2: Swerve, hit 1 pedestrian.
+    *   **Additional Complexity:** If the 1 person hit by swerving is an occupant of the car, who should the vehicle save?
+*   **Survey Results (2016, Science journal):**
+    *   **Public Opinion:** 78% of people said it's more ethical to save the most pedestrians.
+    *   **Personal Choice Dilemma:** When asked if they would buy a car that prioritizes pedestrian safety over their own (as an occupant), most answered no.
+*   **Core Challenge:** This highlights an inevitable ethical dilemma in the Fourth Industrial Revolution. We must understand technology's benefits and potential problems from misuse to ensure safe use.
+
+### 3. Major Ethical Issues in Latest IT Business Services
+
+#### 3.1 Artificial Intelligence (AI) Ethics
+
+The rise of AI and intelligent robots has made AI ethics a central concern.
+
+*   **Context:** Intelligent robots and AI-powered products/services are driving the 4th Industrial Revolution, creating an intelligent information society.
+*   **Scope of AI Ethics:**
+    *   **Moral & Philosophical Ethics:** Pertains to the identity of AI/robots and their relationship with humans.
+    *   **Practical Ethics:** Required for professionals involved in developing and using AI that is distributed to consumers.
+
+*   **Key Global Initiatives & Principles for AI Ethics:**
+    *   **2010 UK EPSRC "Principles of Robots":** Focused on AI issues from the perspective of designers, builders, and users.
+    *   **Oct 2016 US NSTC "Preparing for the Future of Artificial Intelligence":** Emphasized the state's role in developing AI as an economic engine and building social consensus on future AI issues.
+    *   **Dec 2016 IEEE "Ethically Aligned Design":** Stressed designing AI and automatic systems with ethical aspects in mind from the start. Addressed accountability, transparency, privacy, and employment issues.
+    *   **Dec 2016 Japanese Ministry of Internal Affairs and Communications "Proposal of Discussion toward Formulation of AI R&D Guideline":** Presented eight core principles for AI developers (e.g., transparency, user support, controllability, security, safety, privacy protection, ethics, accountability).
+    *   **Jan 2017 US FLI "Asilomar AI Principles":** Signed by over 2,000 AI scholars, futurists, and industry experts (including Stephen Hawking, Elon Musk). It outlined 23 principles for AI development, focusing on safety, transparency, accountability, privacy, profit sharing, and preventing an AI arms race.
+    *   **Feb 2017 European Union (EU) "Civil Law Rules on Robotics":** Advised all involved in robot development to prioritize human dignity, respect personal privacy, and put human safety first in planning, design, and implementation.
+
+---
+
+================================================================================
+ORIGINAL TEXT (First 5000 chars)
+================================================================================
+
+--- Page 217 ---
+Understanding  the IT Business  and Ethics )
+trademark,  or an act of selling, distributing,  exporting,  or importing  goods with such trademark,  by an agent or a
+representative  of the owner of the trademark  that is identical  or similar to a trademark  registered  in any of the
+following  countries  or by a person who was an agent or a representative  within one year of the date of such act:
+(1) Any party to the Paris Convention  for the Protection  of Industrial  Property  (hereinafter  referred  to as the "Paris
+Convention’);
+(2) Any member  state of the World Trade Organization;
+(3) Any signatory  state of the Trademark  Law Treaty
++ An act of registering,  holding,  transferring,  or using a domain name identical  or similar to, another  person's  name,
+trade name, or trademark,  or any other mark, which is widely known in the Republic  of Korea, by a person  who does
+not have a legitimate  source of right for any of the following  purposes:
+(1) The purpose  of selling or lending  a mark, including  a trademark,  to a person who has a legitimate  source  of right
+concerning  the mark or a third party;
+(2) The purpose  of preventing  a person who has a legitimate  source of right from registering or using a domain
+name;
+(3) Other purpose  of obtaining  any commercial  profits:
++ An act of transferring  or lending  goods whose shape has been copied from the goods manufactured  by any other
+person;  exhibiting  such goods for transfer  or lending;  or importing  or exporting  such goods
++ An act of unfairly  using information  which includes  another  person’s  technical  or business  ideas with economic  value
+in the process  of negotiating  or conducting  transactions  such as a business  proposal,  auction,  and public offering  for
+his or her business  interests  or the business  interests  of a third party in violation  of the purpose  of the provision  or
+an act of providing  such information  to another  person so that he or she can take advantage  of it
+@ Concept  of Trade Secret
+The term "trade secret” means information, including  a production  method,  sale method,  useful technical  or business
+information  for business  activities,  which is not known publicly,  is managed  as a secret, and has independent  economic
+value.
+Trade secrets  are established  according  to the following  requirements.
++ Non-publicity:  The information  must be publicly  unknown.
++ Economic  usefulness:  Technical  or management  information  useful for business  activities,  and the information  itself
+must have independent  economic  value
++ Confidentiality:  The information  must be kept confidential  by reasonable  efforts (disclosure  and notice of
+confidentiality,  restriction  of access method,  imposition  of confidentiality  obligation,  etc.) Anyone  can access it, and
+the technology  known  to everyone  is no longer a trade secret.
+The term "infringement  of trade secrets"  means  any of the following  acts:
++ An act of acquiring  trade secrets  by theft, deception,  coercion,  or other improper  means, or subsequently  using or
+disclosing  the trade secrets  improperly  acquired;
++ An act of using or disclosing  trade secrets  after acquiring  them, with knowledge  of the fact that an act of improper
+acquisition  of the trade secrets  has occurred  or without  such knowledge  due to gross negligence:
++ An act of using or disclosing  trade secrets  to obtain improper  benefits  or to damage  the owner  of the trade secrets
+while under a contractual  or other duty to maintain  secrecy  of the trade secrets;
+M5 Understanding  the IT Business  and Ethics 215
+
+
+--- Page 218 ---
+_ 1. Precedents  for infringement  of trade secrets
++ When only new features  are added based on other source code
++ In case of developing,  producing,  and selling  substantially  similar  programs  by performing  reverse  analysis  of program  code
+(reverse  engineering)  (Article 101-4 of the Copyright  Act)
++ In the case of reverse  analysis  in violation  of the contract,  even though  the prohibition  against  reverse  analysis  and the
+prohibition  against  disabling  technical  protection  measures  to prevent  reverse  analysis
+_ 2. Precedents  that do not fall under infringement  of trade secrets
++ When the programming  language  in which the software  was developed,  and the method  of implementation  are completely
+different
++ In case of performing  reverse  analysis  of code for the purpose  of obtaining  information  necessary  for compatibility  in
+situations  where it is not possible  to easily obtain information  necessary  for program  compatibility  for a program  that has
+been legally purchased  by a legitimate  method  (Article 101-4 of the Copyright  Act)
+216 TOPCIT  ESSENCE
+
+
+--- Page 219 ---
+Understanding  the IT Business  and Ethics
+bb
+>> Recent  trends and Major Issues
+With the revolution  of the IT industry,  new products  and services  are being developed  across industries
+through the ...

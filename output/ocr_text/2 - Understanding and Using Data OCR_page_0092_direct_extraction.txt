@@ -1,0 +1,29 @@
+Database )
+0S Distributed  Database
+A) Characteristics  of the distributed  database
+@A distributed  database  refers to a database  that is logically  integrated  and shared so that users can recognize  it as a
+single database  even though  it is physically  distributed  among  multiple  computers  on a network.
+@ The distributed  database  management  system refers to a system that exchanges  and manages  the information  of
+each local database  so that multiple  databases  can be recognized  as one logical database.  ([Figure  38])
+( oO ) Global schema
+|
+9g Location> independent  schem
+|3 Fragment  schema
+fe) Local schema fe) Local schemaaU Fea
+© Strengths  of the distributed  database
++ Reduces  dependence  on remote  data by controlling  its data locally.
++ Large volumes  of data can be processed,  which is impossible  in a single server.
++ Scale-up  is supported  by adding  a server  to the existing  system.
++ Reliability  and availability  are improved  because  even if one site fails, only the data in that site cannot  be used.
+@ Shortcomings  of the distributed  database
++ Distributed  processing  increases  complexity,  which in turn increases  software  development  costs.
++ Weak control  functions.
++ Increased  possibility  of error due to distributed  processing.
++ The response  speed may vary depending  on the condition  of the system in which data is physically  stored,
+* It is difficult  to completely  ensure  data integrity.
+B) Data transparency
+@ To recognize  multiple  physical  databases  as a single logical database,  users do not need to know where the data are
+physically  located  or how to access  it.
+@ This characteristic  is called “data transparency’,  and the distributed  database  management  system provides
+partitioning,  location,  replication,  failure, and concurrency  transparency.
+M2 Database  91

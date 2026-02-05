@@ -1,0 +1,26 @@
+ESSENCE
+B) Hadoop’s  main technology  elements
+@ HDFS
+HDFS is a distributed  file system  to store data in the devices  connected  to the Hadoop  network.
++ HDFS prevents  data loss by also storing  replicated  data in multiple  nodes.
++ It is necessary  to access  data through  streaming  in order to store files in HDFS or query the stored files.
++ The data integrity  is ensured  as stored data cannot  be modified  and can be read-only.  (Version  2.0 or higher  allows
+appending  to the saved file.)
++ Although  it does not allow data modification, it provides  an interface  to move, delete, and copy files,
+As shown in [Figure 101], HDFS consists  of one NameNode  serverthat  serves as a master, and multiple  DataNode
+servers, that serve as slaves. The NameNode  server manages  all metadata  (the name of the directory  where the
+blocks are stored, the file name, etc.) of HDFS, and the client can access the files stored in the HDFS by using it.
+Hadoop  applications  use HDFS clients  to store files or to read the stored files in HDFS, and they provide  the clients  to
+users in API. The DataNode  server periodically  transfers  a block report (information  of the block stored in the node)
+from the NameNode,  which helps the NameNode  to confirm the DataNode’s  normal operation.  Therefore,  the client
+can log in to the NameNode  to check the block's location that stores the file and directly query the data from the
+DataNode  that stores the block.
+Changes Shared Storage Changes
+Storage Read
+@ MapReduce
+MapReduce  is a distributed  programming  model and software  framework  for processing  a large volume of data.
+The MapReduce  framework  makes it possible  to analyze  data in parallel with a large-scale  distributed  computing
+environment.  MapReduce  consists  of two methods,  Map and Reduce,  that the programmer  writes.
++ Map: Classifies  scattered  data into relevant  data (key or value type).
++ Reduce:  Removes  duplicate  data from data output  by the map and extracts  the desired  data,
+140 TOPCIT  ESSENCE

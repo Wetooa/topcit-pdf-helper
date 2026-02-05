@@ -1,0 +1,25 @@
+Understanding  the IT Business  and Ethics )
++ Preview  for practical  business
+Company  K is a large-scale  trading  company  that aims to become  a world-class  e-trade company  that
+can grow together  with its customers.  Company  K decides  to adopt IT service management  (ITSM) for
+the purpose  of bringing  about effective improvements  to the quality of its maintenance  & repair of its IT
+resources,  stabilizing  the operation  of its infrastructure,  and deploying  an advanced  operational  process.
+In order to use the global standard  for ITSM, company  K applies  the following  criteria to the IT Infrastructure
+Library (ITIL)-based  processes,  service levels, personnel,  etc.
++ |Implementation  of ITIL-based  processes  to improve  the operational  efficiency  of ITSM.
+« Transparent  management  and real-time  monitoring  of service  levels.
+« Preservation  of the high-quality  level of its services  through  effective  management  of suppliers.
+« Development  of strategies  for preventing  malfunctions  and monitoring/analyzing  key logs in realtime.
+Also, to aid in visualizing  the ITSM, company  K introduces  events/performance  management,  configuration
+management,  malfunction  management,  report management,  and a dashboard  for operating  the help desk.
+The dashboard  reports  the malfunction  status of each server by the type of malfunction  and the level of
+severity.  Through  the dashboard,  company  K is made instantly aware of individual  events. It provides  a
+framework  for quickly  recognizing  and responding  to various  situations  that may arise during the delivery  of
+IT services.
+As a result, company  K is able to quickly respond  to malfunctions  that occur during IT service delivery  by
+communicating  them to the malfunction  manager  almost as soon as they occur. Furthermore, by building
+a knowledge  DB of malfunctions,  the company  is able to establish  measures  for averting  the recurrence  of
+similar  mishaps  in the future. In addition,  ITSM enables  the company  to carry out service-level  management
+(SLM) using a system,  thereby  greatly contributing  to the comprehensive  evaluation  of service levels and
+the building  of trust with customers.
+M5 Understanding  the IT Business  and Ethics 81

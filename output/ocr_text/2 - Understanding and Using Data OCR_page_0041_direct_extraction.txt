@@ -1,0 +1,26 @@
+ESSENCE
+ra Row-based Column-based
+Database Database
+Employee  number  | 1001 Employee  number  | 1001
+Name Hong Gildong Employee  number  | 1002
+Payroll 1000 Employee  number  | 1003
+Phone 09) 123- 2134 Employee  number  | 1004
+Conceptual Empl b 1002 Ne Hong Gild diagram mployee  number lame jong Gildong
+Name Lim Ggoekjeong Name Lim Ggoekjeong
+Payroll 2000 Name Lee Dongcheol
+Phone 09) 253- 9378 Name Lee Cheolsu
+D . . - Data are stored in column  units.a - Data are stored in row units.Characteristics . - The same column values are stored continuously
+- Several records  are stored on one disk page.on one disk page
+Transaction - Suitable  for adding, modifying  and deleting  data - Suitable  for processing  large amounts  of data for
+characteristics by record. the same column
+Data - Compression  efficiency  is relatively  low because - Compression  efficiency  is high when there arecompression - ra
+efficiency records  are unique and without  duplication. many duplicate  values  for each column.
+Example  of
+frequently SELECT  * (or a large number  of columns) SELECT  AVG(COL1)  (or column  operation)
+used SQL FROM Table FROM Table
+patterns
+Applied  DBMS RDBMS  for general  OLTP RDBMS  for analysis
+Oracle, DB2, Sybase  ASE, etc Vectorwise,  Sybase  IQ, SAP HANA, etc.
++ The list of commercial  column-oriented  databases  is updated  at [https://en.wikipedia.org/wiki/List_of_column-
+oriented_DBMSes].
+40 TOPCIT  ESSENCE

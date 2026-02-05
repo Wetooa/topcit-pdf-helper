@@ -1,0 +1,236 @@
+LEARNING GUIDE: Pages 88-92
+Generated: 2025-12-07 00:34:48
+PDF: 4 - Understanding Information Security OCR
+
+================================================================================
+LEARNING GUIDE
+================================================================================
+
+Here is a simplified, easy-to-read learning guide for database security:
+
+---
+
+## Database Security Learning Guide
+
+This guide covers essential concepts, threats, countermeasures, and encryption methods for database security.
+
+---
+
+### 1. Database Security Threats & Countermeasures
+
+#### 1.1 Common Database Security Threats
+
+*   **Illegal Information Acquisition:** Unauthorized access to data, often via:
+    *   **SQL Injection:** Injecting malicious SQL code.
+    *   **Web Shell Execution:** Uploading and running malicious files.
+*   **Vulnerable Identification & Authentication:**
+    *   **Repetitive Authentication Attempts:** Brute-forcing passwords or user IDs.
+    *   **Social Engineering:** Tricking users into revealing credentials.
+*   **Data Leakage:**
+    *   Stealing unencrypted data.
+    *   Decrypting improperly encrypted data.
+*   **Misuse of Cryptographic Modules:**
+    *   Using unreliable encryption modules.
+    *   Applying inappropriate cryptographic modes.
+
+#### 1.2 Countermeasures Against Database Security Threats
+
+*   **Access Controls:**
+    *   **Goal:** Allow only authorized users, prevent unauthorized access to the database itself.
+    *   **Methods:** Account management, MAC, DAC, RBAC (explained below).
+*   **Views:**
+    *   **Goal:** Limit access to specific, permitted data within the database.
+    *   **Method:** Use `CREATE VIEW` to define virtual tables.
+*   **Encryption:**
+    *   **Goal:** Protect sensitive data by storing it in an unreadable format.
+    *   **Algorithms:**
+        *   **One-way Ciphers (Hashing):** For passwords (e.g., SHA-256).
+        *   **Two-way Ciphers:** For other sensitive data (e.g., SEED, AES).
+
+---
+
+### 2. Database Access Control
+
+Access control policies define how users can interact with database objects.
+
+#### 2.1 Database Access Control Policies
+
+*   **Discretionary Access Control (DAC):**
+    *   **Concept:** Access is based on the *subject's identity* or group membership.
+    *   **Control:** The *object owner* determines who has access.
+    *   **Example:** A table owner can grant or revoke privileges to other users.
+*   **Mandatory Access Control (MAC):**
+    *   **Concept:** Access is based on the *owner's rights* to confidential objects. A central authority sets rules.
+    *   **Control:** The system enforces strict security labels/clearances.
+    *   **Example:** Only a Database Administrator (DBA) can access the system catalog.
+*   **Role-Based Access Control (RBAC):**
+    *   **Concept:** Access is based on a user's *role* within the organization.
+    *   **Control:** A central administrator defines roles and assigns privileges to those roles, then assigns users to roles.
+    *   **Example:** Defining "DBA" roles and granting specific privileges to users assigned to the DBA role.
+
+#### 2.2 Methods of Controlling Access to the Database
+
+These methods dictate how access control is implemented physically.
+
+*   **Agent Method:**
+    *   **How it works:** An "agent" (software module for access control and logging) is installed directly on the *database server*. Users access via a dedicated client.
+    *   **Pros:** Strong access control.
+    *   **Cons:** Can degrade database server performance due to traffic overhead.
+*   **Gateway Method (Proxy Server):**
+    *   **How it works:** All connection requests to the database server pass through a separate "database access control server" (a proxy).
+    *   **Pros:** Most powerful access control; can be configured for redundancy (ensuring continuity even if one server fails).
+    *   **Cons:** Can be a single point of failure if not redundant.
+*   **Network Sniffing Method:**
+    *   **How it works:** Uses specialized equipment (like TAP) to *analyze and log network packets* between clients and the database. It doesn't actively block or control.
+    *   **Pros:** No agents or load on the database server/network; no system modifications needed.
+    *   **Cons:** Cannot *fundamentally block* damage to data integrity from improper alterations; primarily a monitoring tool.
+*   **Hybrid Method:**
+    *   **How it works:** Combines multiple methods (e.g., Agent + Gateway, Gateway + Network Sniffing) to leverage their strengths and mitigate individual shortcomings.
+
+---
+
+### 3. Database Encryption
+
+Protecting sensitive data within the database using cryptographic techniques.
+
+#### 3.1 Considerations When Applying Database Encryption
+
+*   **Encryption Target & Method:** Identify sensitive data (e.g., by law) and decide which encryption method to use.
+*   **Cryptographic Algorithm:**
+    *   Use algorithms recommended by security experts.
+    *   **Passwords:** Always use strong *one-way* algorithms (hashing, e.g., SHA-256 or higher).
+    *   **Other Information:** Use strong *two-way* algorithms (e.g., SEED, ARIA, AES).
+*   **Search & Performance:** Encryption can impact database performance (e.g., indexing, search queries). Consider partial encryption for performance optimization.
+*   **Encryption Key Management:** Securely manage encryption/decryption keys throughout their lifecycle (generation, storage, use, destruction).
+
+#### 3.2 Target and Method of Database Encryption
+
+Data requiring encryption is often defined by laws and regulations.
+
+*   **Key Data Types for Encryption:** Passwords, biometric information, resident/foreign registration numbers, passport/driver's license numbers, credit card numbers, account numbers, transaction logs.
+
+| Regulation/Category                 | Target Data                                                                                             | Encryption Method                                   |
+| :---------------------------------- | :------------------------------------------------------------------------------------------------------ | :-------------------------------------------------- |
+| **Common**                          | Passwords                                                                                               | Storage after **one-way encryption** (hashing)      |
+| **Personal Information Protection Act** | Passport numbers, Driver's license numbers, Foreign registration numbers, Resident registration numbers, Bio information | Storing after encryption with a **secure two-way cipher algorithm** |
+| **Information & Comm. Network Act** | Resident registration numbers, Account numbers, Bio information                                        | Storing after encryption with a **secure two-way cipher algorithm** |
+| **Electronic Financial Supervision Regulations** | Transaction logs                                                                                        | Storage after encryption                            |
+
+#### 3.3 Types of Database Encryption (Implementation Methods)
+
+*   **API Method:**
+    *   **How it works:** The encryption/decryption module is installed *inside the application program server*. The application explicitly calls API functions to encrypt/decrypt data.
+    *   **Data Flow:** Data is transmitted *encrypted* between the application server and the database server.
+    *   **Pros:** Low load on the database server.
+    *   **Cons:** Requires *modification of application programs*; potentially higher load on the application server.
+    *   **Recommended When:** Application programs are easy to modify, and database server performance is poor.
+*   **Plug-in Type:**
+    *   **How it works:** The encryption/decryption module is installed *inside the database server*. It intercepts requests and encrypts/decrypts data as it's written/read.
+    *   **Data Flow:** Data is exchanged in *plain text* between the application server and the database server *before encryption and after decryption*.
+    *   **Pros:** No modification required for application programs.
+    *   **Cons:** Can create a load on the database server.
+    *   **Recommended When:** Database performance is good, and application programs are difficult/impossible to modify.
+*   **TDE Method (Transparent Data Encryption):**
+    *   **How it works:** Uses the *built-in or optional encryption/decryption function of the Database Management System (DBMS) itself*.
+    *   **Data Flow:** Encryption/decryption is performed at the *DBMS kernel level*.
+    *   **Pros:** No application program modification needed.
+    *   **Cons:** Support depends entirely on the DBMS type and version; may not be available.
+    *   **Recommended When:** Introducing a new DBMS that supports TDE.
+
+#### 3.4 Applying Database Encryption (One-Way Cipher)
+
+*   **Application of a One-Way Cipher Algorithm (Hashing):**
+    *   **Purpose:** To make it *impossible* to reverse-calculate the original data from the stored hash. Primarily used for passwords.
+    *   **Algorithm:** Cryptographic hash functions, generally SHA-256 or higher.
+    *   **When to Apply/Migrate:**
+        1.  When existing database data is stored in plain text.
+        2.  When insecure hash algorithms (like MD5 or SHA-1) are currently in use.
+
+---
+
+================================================================================
+ORIGINAL TEXT (First 5000 chars)
+================================================================================
+
+--- Page 88 ---
+ESSENCE
+<Table 28> Database  security  threats
+Security  threat Description
+\llegal information  acquisition  by unauthorized  external users, using the SQL injection  attack or web
+Wabbssanilay  diets shell execution,  after uploading  a file
+Vulnerable  identification  | Making  repetitive  authentication  attempts  to obtain the legitimate  user's identity  or acquiring  the
+and authentication authorized  user's identity,  using social engineering  techniques,  etc.
+Data leakage Acquiring  illegal information  by stealing  unencrypted  data and by decrypting  the encrypted  data.
+Misuse  of cryptographic  | Decrypting  ciphertext,  using unreliable  cryptographic  modules  and an inappropriate  cryptographic
+modules mode.
+@ Countermeasures  against  database  security  threats
+There are access  controls,  views, and cryptographic  techniques  to cope with database  security  threats.
+<Table 29> Countermeasures  against  database  security  threats
+Item Details Case
+Ieeeeecontrals Allowing  only authorized  users to access  the database  and Account  management
+preventing  unauthorized  users from accessing  the database  itself. MAC, DAC, RBAC
+viene Limiting  access  to the permitted  data only among  the entire CREATE  VIEW
+database,  using views.
+Encryption Saving important  data after encrypting  with one-way  and two-way SEED, AES
+cipher  algorithms. SHA-256
+02 Database  access  control
+A) Database  access  control  policy
+@ Discretionary  access  control (DAC) policy
+A method  of controlling  access to objects, based on the subject or the identity  of the group to which the
+subject  belongs. On object owner determines  access  permission.
+e.g.,) The owner of the table can grant or revoke the privilege  to another  person.
+@ Mandatory  access  control (MAC) policy
+Access  to an object is controlled,  based on the owner's  rights to the confidential  object.
+e.g.) Allowing  only the database  administrator  to access  the system catalog.
+® Role-based  access control (RBAC) policy
+The central administrator  controls  the relationship  between  the subject and object, and decides  on access to
+the resource,  based on their roles in the organization.
+88 TOPCIT  ESSENCE
+
+
+--- Page 89 ---
+Information  security )
+e.g.,) Defining  DBA roles and granting  RBA roles and necessary  privileges  to a specific  person.
+B) Method  of controlling  access  to the database
+@ Agent  method
+A method of accessing  a database,  using a dedicated  client for database  access, after installing  an agent
+with the access control and logging function in the database  server itself. This method  can implement  strong
+access  control,  but it can cause performance  degradation  of the database  server, due to the traffic therein.
+User aac Database
+[dedicated  client] [agent]
+[Figure  39] Database  access  control  by the agent method
+@ Gateway  method
+A method  of passing  all database  server  connection  requests  through  the database  access  control server (proxy
+server). This method provides  the most powerful  access control function.  As the database  access control
+server can be configured  in redundancy,  work is not affected,  even when  a failure  occurs.
+[Figure  40] Database  access  control  by the gateway  method
+© Network  sniffing  method
+A method  of analyzing  and logging network  packets,  using TAP equipment,  etc. There is no need to install a
+separate  agent between  the database  server and client, and a system can be built, without  any load on the
+network.  However,  it is not easy to fundamentally  block the damage  to the data integrity  caused by improper
+alteration.
+[Figure  41] Database  access  control  by the network  sniffing  method
+M4 Understanding  Information  Security 89
+
+
+--- Page 90 ---
+ESSENCE
+@® Hybrid method
+To compensate  for the shortcomings  of each method,  a hybrid method  of mixing each method is commonly
+used to control database  access. The hybrid method  is used in the form of agent + gateway  method,  gateway
++ network  sniffing  method,  agent + gateway  + network  sniffing  method.
+03 Database  encryption
+A) Considerations  when applying  database  encryption
+When applying  database  encryption,  data column  to encrypt,  encryption  algorithm  to use, impact  of encryption
+on performance,  and encryption
+<Table 30> Considerations  when appl
+Matters  to considerkey management  method  should be considered.
+lying database  encryption
+Description
+Encryption  target  and methodSelecting  the data designated  by domestic  laws and regulations  and other important
+data
+Cryptographic  algorithmAn algorithm,  recommended  by cryptography  research  institutes  at home and abroad,
+should be applied.  A one-way  algorithm  (SHA-256  or higher)  should be applied  to
+passwords,  and a two-way  algorithm  (SEED, ARIA, AES, etc.) should be applied  to other
+information.
+Search  and performanceWhen applying  encryption,  performance,  such as index maintenance,  should ...

@@ -1,0 +1,37 @@
+ESSENCE
++ Web system  architecture
+The architecture  runs the server's application  programs,  and the client uses the service with a web browser. It
+generally  consists
+performance,  andof a webserver,  a web application  server, and a database  server. The middleware  assures stable
+the program  reusability is high. Although  the web system architecture  was limited by only
+providing  web services  with a static display, the introduction  of HTML5, and the performance  enhancement  of PC
+environments,  have enabled  them to provide services  in an impressive  GUI environment.  Most recent information
+systems  use websystem architecture.  The client can use all the services  with a PC or mobile device, if the
+environment  runs a web browser.
+Web Service
+Web
+Browser
+[Figure 7] Web System  Architecture
+D) Classification  by system  layer
+The function  and role of each system component  are classified  by tier, or layer The most widely known layer is the
+OSI 7 layer, which shows the network  structure.  Layers and tiers are considered  similar  concepts  because  they both
+represent  functions and rules in a tiered structure.  The most common  difference  is that layers refer to structures
+from a logical point of view, and tiers refer to structures  from a physical  perspective.  An information  system  is divided
+into a presentation ayer, a business  logic layer, and a data layer. This logical layer architecture  can be divided into an
+N-tier structure  as a physical system architecture.  The typical N-tier structures  are a two-tier  structure  and a three-
+tier structure.
+Type
+Presentation  layerDescription
+This layer is at the highest  level of an application  program.  It provides  the service information  and the
+interface  to users. This layer is also called GUI or front-end.  In a physical  tier structure,  webservers  and
+client's  web browsers  belong  to this layer.
+Business  logic layerThis layer runs the program  information  processing  rules that fulfill business  requirements  (business  logic).
+It determines  which data is needed  according  to the business  logic, and it refers them to the data tier.
+This layer is called the transaction  tier. In a physical  tier structure,  application  program  servers,  such as
+WAS, belong to this layer.
+Data layerThis layer accesses  data resources,  such as the database,  and reads or writes data. The data layer may
+be divided into the data access layer and the data store layer. In a physical  tier structure,  the database
+server  or file system  belongs  to this layer.
++ Two-tier  architecture
+Two-tier  architecture  stores and processes  data in the server and processes  business  logic and presentation  for the
+28 TOPCIT  ESSENCE

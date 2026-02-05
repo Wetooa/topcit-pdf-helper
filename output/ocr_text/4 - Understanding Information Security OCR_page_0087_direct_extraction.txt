@@ -1,0 +1,34 @@
+Information  security )
+01 Overview  of database  security
+A) Overview  of database  security
+@ Three  principles  of database  security
+Database  security  means taking administrative,  physical,  and technical  protection  measures  in order to secure
+confidentiality,  integrity,  and availability  from the threat of leakage,  change, or destruction  of organizational
+database  information.
+In the past, the performance  of DB was emphasized,  but safe management  and data protection  is becoming
+especially  important  in recent years, which proves that the value of data is increasing  with the advancement
+of IT services.  Since the database  collects and stores a large amount  of data, from personal  information,  to
+corporate  confidential  information,  it is an important  asset to protect  for an organization,  and a key target for
+attackers.
+<Table 27> Three principles  of database  security
+tl as of Details Implementation  plan
++ Blocking  the leakage  of information  stored in the database Database  privilege
+Confidentiality + Only the authorized  person accesses  the database  to view management
+information Database  encryption
+Integrity + Only authorized  person can change database  information Database  privilegemanagement
+Availability + Ensuring  continuous  and uninterrupted  database  services Database  redundancy
+@ Need for database  security
++ Database  security  for sustainable  management
+Recently,  personal  information  leakage incidents  have occurred  in succession,  such as H capital, S portal, N
+game company,  K telecom,  etc., which emphasize  the necessity  of database  security.  Database  security  is a
+prerequisite  for sustainable  management  because  enormous  economic  loss, along with a decline in customer
+trust, can threaten  the foundation  of a business,  if database  information  is leaked.
++ Database  security  for responding  to regulations
+Recently,  the importance  of database  security  has been emphasized  because  it is mandated  by related laws,
+such as the Personal  Information  Protection  Act, the Information  Communication  Network  Act, the Electronic
+Financial  Transaction  Act, etc., in addition  to the importance  of personal  information  protection.
+B) Database  security  threats  and responses
+@ Database  security  threats
+Database  security  threats can be caused by a variety  of factors, but general database  security  threats  to the
+organization  can be classified  into the following  four:
+M4 Understanding  Information  Security  87

@@ -1,0 +1,147 @@
+LEARNING GUIDE: Pages 19-23
+Generated: 2025-12-07 00:54:46
+PDF: 3 - Overview of System Architecture OCR
+
+================================================================================
+LEARNING GUIDE
+================================================================================
+
+Here is a simplified, easy-to-read learning guide based on the provided text:
+
+---
+
+# Learning Guide: Overview of System Architecture (Module 03)
+
+## I. Introduction & Importance
+
+*   **What is System Architecture?** The fundamental structure that defines how a system provides services, built upon its hardware and software components.
+*   **Why it's Crucial Now:**
+    *   Modern systems are increasingly complex.
+    *   Driven by new technologies: Big Data, Cloud Computing, Internet of Things (IoT).
+    *   Systems need to deliver high-performance computing, high-capacity memory, and high-speed communication.
+    *   Essential for successful system implementation and operation.
+
+## II. Learning Objectives
+
+After studying this guide, you should be able to:
+1.  Understand the concept and components of system architecture.
+2.  Understand the overall system concept and its layers.
+3.  Explain the different types of information systems.
+
+## III. Key Terms
+
+*   System Architecture
+*   System Layer
+*   Information System
+
+## IV. Understanding System Architecture
+
+### A. Core Concepts
+
+*   **Information System (IS):** A system that uses Information Technology (IT) to provide services, typically via a computer.
+*   **Computer System:** Operates as a combination of **hardware** (physical components) and **software** (programs and data).
+*   **Implementing an IS:** Requires designing and constructing the IT infrastructure, including both hardware and software.
+    *   **Software Architecture:** Defines software components, their operations, connections, and constraints.
+    *   **Hardware Architecture:** Designs and develops the physical hardware infrastructure.
+
+### B. Definitions of System Architecture
+
+*   **Core Definition:** The architecture a system uses to provide services, based on its hardware and software architectures.
+*   **Broader Definition:** Encompasses all architecture needed to build an information system, including:
+    *   **Application Architecture (AA):** Structure of applications and their interactions.
+    *   **Data Architecture (DA):** How data is stored, organized, and managed.
+    *   **Technical Architecture (TA):** The underlying technology infrastructure.
+*   **Narrower Definition:** A document detailing the configuration and relationships of:
+    *   **Hardware:** Servers, storage, network, security devices.
+    *   **Specific Software:** Operating Systems (OS), middleware (software that connects other software applications).
+*   **INCOSE Definition (International Council on Systems Engineering):** "The fundamental and unifying system structure defined in terms of system elements, interfaces, processes, constraints, and behaviors."
+
+## V. Practical Implications
+
+*   **Hardware Security Matters:** Small hardware components (like a microchip) can be critically important and even be a source of sophisticated hacking. Hardware hacking can be more dangerous than software hacking.
+*   **Complexity & Miniaturization:** Modern devices (e.g., smartphones) pack immense computing power into tiny spaces. Understanding their system architecture is essential to manage this complexity, ensure functionality, and maintain security.
+
+---
+
+================================================================================
+ORIGINAL TEXT (First 5000 chars)
+================================================================================
+
+--- Page 19 ---
+TOPCIT
+ESSENCE  ve:
+
+
+--- Page 20 ---
+bal Technical  Field
+03 Overview  of System
+Architecture
+
+
+--- Page 21 ---
+ESSENCE
+>p> Recent  trends and issues
+The system architecture  is becoming  more complex  as new technologies,  such as big data, cloud
+computing,  and loT, have gained attention.  While the system  architecture  consisted  of a simple combination
+of servers, storage,  and network  in the past, its configuration  is changing  to meet the requirements  of
+the new technologies  to provide high-performance  computing  power, high-capacity  memory,  and high-
+speed communication.  In line with these changes, the  system architecture is becoming  more important.
+The system  architecture  is an essential  concept  in a practical  environment  for system  implementation  and
+operation.
+>> Learning  objectives
+1. To be able to understand  the concept  of the system  architecture  and explain its components.
+2 .To be able to understand  and explain the system  concept  and system layers.
+3. To be able to explain the types of information  systems.
+>> Keywords
+System  architecture,  System  layer, Information  system
+20 TOPCIT  ESSENCE
+
+
+--- Page 22 ---
+Overview  of System  Architecture
++ Preview  for practical  business
+"Discovery  of a ‘Chinese  hacking  chip’ in a well-known  server  board in the United
+States...Industry  thrown  into commotion”  2018. 10. 05.
+Citing the words of six senior US intelligence  officials on the 4th (local time), Bloomberg  reported  that a
+hacking  microchip,  that was not in the design, was found on the server mainboard  of a well-known  server
+manufacturer,  Super micro, and that the Chinese  Government  was allegedly  involved.
+(Source: http://it.chosun.com/site/data/htm|_dir/2018/10/05/2018100502710.html)
+There is not a moment  in our daily lives when we do not use the services  provided  by computer  systems.
+With the wide-spread  use of smartphones,  we are spending  even more time with computer  systems.  In
+such an environment,  Chinese  hacking  chips can expose  our lives to hackers.  This hacking  chip was found on a
+computer  system’s  board. It contains  stolen key US information  through  hardware  hacking,  which is more
+threatening  than software  hacking.  This tiny chip has the capability  to steal information  from a computer
+over a network. How can such a small chip contain this function?  While the early computer,  ENIAC, was
+the size of a building,  computers  have become  drastically  smaller since then, and the computing  power
+of smartphones  that we carry in our hand is so high, that it is not even comparable  to that of ENIAC. It is
+necessary  to learn the system  architecture  to understand  the concept  of a computer  system.
+M3 Overview  of System  Architecture  21
+
+
+--- Page 23 ---
+ESSENCE
+01 Concept  of System  Architecture
+A) Understanding  system  architecture
+@ Overview  of system  architecture
+An information  system is a system that uses information  technology  (IT). The information  system provides  services
+using a computer,  and a computer  operates  with a combination  of hardware  and software.  Implementing  an
+information  system used inside an enterprise,  or provided  as a service  to users, requires  the design and construction
+of IT infrastructures,  such as hardware  and software  design and development.  Software  designs the software
+components  and operations,  such as the connection  of the software  components  and constraints  based on software
+architecture.  Hardware,  like software,  designs  and develops  the hardware  architecture.  System architecture  refers
+to the architecture  for a system to provide services,  based on hardware  and software  architecture.  In a broader
+definition,  it refers to all architecture,  including  the application  architecture  (AA), data architecture  (DA), and technical
+architecture  (TA), for constructing  an information  system.  A narrow definition  refers to the document  that defines  the
+configuration  and relationship  of hardware,  such as a server, storage,  network  and security,  and certain  software  parts,
+such as OS and middleware.
+@ Definition  of system  architecture
+* Definition  as defined  by the International  Council  on Systems  Engineering  (INCOSE)
+The fundamental  and unifying  system structure  defined in terms of system elements,  interfaces,  processes,
+constraints,  and behaviors.
+System  Architecture  in
+a Broad Sense Data Architecture
+Technical  Architecture System Architecture  in
+a Narrow  SenseSystem
+22 TOPCIT  ESSENCE
+
+

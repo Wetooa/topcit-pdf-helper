@@ -1,0 +1,239 @@
+LEARNING GUIDE: Pages 22-26
+Generated: 2025-12-05 13:53:35
+PDF: 5 - Understanding the IT Business and Ethics OCR
+
+================================================================================
+LEARNING GUIDE
+================================================================================
+
+Here is a simplified, easy-to-read learning guide based on the provided text:
+
+---
+
+## IT Business and Ethics: A Learning Guide
+
+This guide covers the essentials of the IT business landscape, key trends, ecosystem components, and resource management.
+
+---
+
+### 1. The Hyper-Connected Society and IT Ecosystem
+
+The world is transforming into a **hyper-connected society**, where humans, objects, spaces, data, and services are all interconnected. This evolution spans from **M2M (Machine to Machine)** communication to the **IoT (Internet of Things)** and ultimately to the **IoE (Internet of Everything)**.
+
+**Key Characteristics:**
+*   IT technology connects:
+    *   Humans to humans
+    *   Humans to objects
+    *   Objects to objects
+*   **IT Ecosystem (C-P-N-D-S):** The foundational elements of this society.
+    *   **C**ontents
+    *   **P**latforms
+    *   **N**etworks
+    *   **D**evices
+    *   **S**ecurity
+
+**Ecosystem Shift:**
+*   The focus is moving from hardware **devices** to **platforms** and **contents**.
+*   **Software** is becoming increasingly important.
+*   **Smart mobile-based IT convergence** is expanding into traditional industries (finance, healthcare).
+*   **Destructive innovations** (e.g., 3D printing, unmanned vehicles) are driving competition through open innovation and customized business models.
+
+**Core Technology: ICBM**
+The hyper-connected society is powered by **ICBM technology**:
+*   **I**nternet of Things (IoT)
+*   **C**loud Computing
+*   **B**ig Data
+*   **M**obile
+
+---
+
+### 2. Key Trends in IT Paradigm Change
+
+The IT landscape is undergoing significant shifts in five major areas:
+
+1.  **From HW to SW Platforms:**
+    *   IT ecosystem focus shifts from devices (hardware) to platforms and contents (software).
+    *   Software and platforms are critical for value creation and industrial growth.
+2.  **From IT Convergence to Smart Convergence:**
+    *   Smart mobile-based IT convergence expands to traditional sectors (industries, finance, medical).
+    *   **Fintech** (Financial Technology) has emerged as a major growth area.
+3.  **ICBM-based Hyper-Connected Society:**
+    *   IoT, Cloud, Big Data, and Mobile technologies create new economic growth opportunities.
+4.  **Rapid Changes in the IT Technology Environment:**
+    *   Emergence of "real sensation" technologies like virtual reality.
+    *   Rise of destructive innovations that disrupt existing markets (e.g., 3D printing, unmanned vehicles).
+5.  **IT Business Transformation of Competition:**
+    *   Growth driven by small, creative IT venture companies.
+    *   Competitiveness built through **open innovation** and **demand-customized business models**.
+
+---
+
+### 3. Components of an IT Business Ecosystem (C-P-N-D-S)
+
+These five components characterize the modern IT ecosystem:
+
+*   **Contents (C):**
+    *   Mobile technology increases mobile content consumption.
+    *   Smartphones enable users to access diverse content anytime, anywhere.
+    *   New content distribution models prioritize mobile users.
+    *   *Examples:* Games, Music, Video, E-books.
+*   **Platform (P):**
+    *   Evolving from single-operator services to common platforms where multiple providers participate.
+    *   Shift from **closed platforms** (proprietary) to **open platforms**.
+    *   Trend: Using shared common platforms instead of building individual ones.
+    *   *Examples:* Apple App Store, Google Play, Facebook, Kakao.
+*   **Network (N):**
+    *   The "smart revolution" (smartphones, tablets, smart TVs) significantly increases network traffic.
+    *   Next-generation services (smart homes, smart cars) generate large volumes of diverse traffic.
+    *   IoT devices and sensors in the hyper-connected society produce massive data traffic.
+    *   *Examples:* SK Telecom, KT, LG U+.
+*   **Device (D):**
+    *   Wearable devices (e.g., smartwatches, smart glasses) lead to fierce competition and collaboration among manufacturers.
+    *   The number of smartphones and tablet PCs connecting to smart devices is growing.
+    *   *Examples:* Smartphones, Tablets, PCs, McIntosh.
+*   **Security (S):**
+    *   Increasing sophistication of cyber threats (e.g., cyber terrorism, hacktivism) leads to more damage, especially to national infrastructure.
+    *   Response strategy shifts from post-attack investigation to **early prevention** and **real-time resolution**.
+    *   *Examples:* DDoS response, Attack detection, PIMS (Personal Information Management System), ISMS (Information Security Management System).
+
+---
+
+### 4. IT Resources and Management Activities
+
+#### A) Concept of IT Resources
+
+**IT Resources** include the people, processes, software, and hardware essential for running an IT business.
+
+*   **Components of IT Resources:**
+    *   **IT Support Systems:** Systems that support or manage IT businesses.
+        *   *Examples:* **ERP** (Enterprise Resource Planning), **SCM** (Supply Chain Management), **PLM** (Product Lifecycle Management).
+    *   **IT Management Systems:** Systems for managing IT services.
+        *   *Example:* **ITSM** (Information Technology Service Management).
+*   **Nature:** IT resources continuously evolve to maximize IT business results, adapting to changing technologies and times.
+*   **IT Resource Management System:** Manages the entire lifecycle of IT resources (planning, development, application, operation, management, disposal). It tracks resource specifications and the business performance gains achieved by using them.
+
+#### B) Role of IT Resources
+
+IT resources provide three main benefits to an IT business:
+
+1.  **Improved Production Efficiency:**
+    *   Companies use IT to monitor customer patterns and manage inventory in real-time.
+    *   *Example:* Wal-Mart's RetailLink system allows suppliers direct access to sales data, maximizing sales and competitive advantage.
+2.  **Creation of New Business Values:**
+    *   IT applications create entirely new business models and markets.
+    *   *Examples:* Apple's iTunes transformed music distribution; E-commerce created online markets, open markets, and social commerce.
+3.  **Expansion of Global Business:**
+    *   IT resources enable global cooperative work, opening new markets and reducing costs, labor, and time for international expansion.
+    *   *Examples:* Videoconferencing improves decision-making speed; Intranet systems facilitate information exchange across borders.
+
+#### C) Management Activities and Structure for IT Business
+
+IT business management follows a cyclical process:
+
+**1. Cyclical Management Activities (PDCA Cycle):**
+
+*   **P - Planning:**
+    *   Identify opportunities and issues.
+    *   Set IT business goals and scope.
+    *   Create an IT business plan linking business objectives with IT.
+*   **D - Do (Execution):**
+    *   Design and implement the IT business solution.
+    *   Collect operational data.
+*   **C - Check:**
+    *   Analyze IT business operational results.
+    *   Monitor business and IT performance indicators.
+    *   Verify the correlation between business and IT performance.
+*   **A - Action (Corrective Action):**
+    *   Identify necessary improvements.
+    *   Adjust or modify IT solutions to better support the business.
+    *   Repeat the cycle, returning to the Planning phase.
+
+**2. Management and Control Structure:**
+
+*   **Operational Support:** IT service and IT infrastructure provide support to enable business processes to achieve IT business results.
+*   **Performance Metrics:** New IT business performance indicators are derived from:
+    *   **IT QoS** (IT operational support service quality)
+    *   Organizational business performance results.
+*   **Decision Support:** These indicators are sent to the IT division. IT business management then supports decisions, adjustments, and investments in IT service and infrastructure to ensure target performance levels are met.
+
+---
+
+================================================================================
+ORIGINAL TEXT (First 5000 chars)
+================================================================================
+
+--- Page 22 ---
+Understanding  the IT Business  and Ethics )
+transformation  of M2M (Machine  to Machine)  into the loT (Internet  of Things) and extending  it to the realm of
+the Internet  of Everything  (loE).IT technology  is connecting  humans  to humans,  humans  to objects,  and objects
+to objects, and leading our society  towards  a hyper-connected  society where humans,  objects, spaces, data, and
+services  are all connected  together.
+IT ecosystem  (C-P-N-D-S)
+Contents(C) Platform(P) Network  (N) Device (D) Security(S)
++ Game + Apple + SK Telecom + Smartphone + DDos response
++ Music + Google *KT + Tablet + Detect  attack
++ Video + Facebook *LG *PC + PIMS
++ E-book + E-book + McIntosh + ISMS
+A hyper-connected  society  wields a huge influence  on the IT ecosystem,  which is built on contents,  platforms,
+networks,  devices, and security,  As the center of the IT ecosystem  moves from hardware  devices  to platforms  and
+contents,  software  is becoming  increasingly  important,  and smart mobile-based  IT convergence  is expanding  into
+traditional  major industries,  finance,  and healthcare.
+Meanwhile,  destructive  innovations  like 3D printing  and unmanned  vehicles  with the capacity  to destroy  existing
+markets  are leading  the IT ecosystem  and improving  competitiveness  based on open innovation,  and demand
+customized  business  models are proliferating.  The core technology  that is currently  making the hyper-connected
+society possible  is ICBM technology,  which consists  of the Internet  of Things (loT), Cloud Computing,  Big Data, and
+mobile.
+[Table 1] explains  the changes  taking place in the IT technology  environment  and the form of IT competition  in terms
+of the following  five major trends  from the perspective  of IT paradigm  change:  the change  from HW to SW platforms,
+the change  from IT convergence  to smart convergence,  the ICBM-based  hyper-connected  society,  the rapid changes
+in the IT technology  environment  and the IT business  transformation  of competition.
+<Table1>IT  paradigm  change
+Category Description
+Change  from HW to SW + The IT ecosystem  moves  from devices  (HW) to platform  contents  (SW).
+platform + SW and platforms  are the key to value creation  - the engine of growth for national industries.
+M5 Understanding  the IT Business  and Ethics 21
+
+
+--- Page 23 ---
+ESSENCE
+Category Description
+The change  from IT
+convergence  to smart
+convergence+ Smart mobile-based  IT convergence  is expanding  to traditional  major industries,  finance,  and
+medical  services.
++ Fintech  has emerged  as the new blue ocean in IT convergence.
+The ICBM based hyper-
+connected  society+ ICBM-based  hyper-connected  society  and increased  opportunities  for economic  growth-
+Internet  of Things(|),  Cloud(C),  Big Data(B),  Mobile(M).
+Rapid changes  in the IT
+technology  environment+ Real sensation  environment  technology  of virtual reality that combines  the real world with the
+virtual world.
++ Destructive  innovation  that destroys  existing  markets,  e.g. 3D printing,  unmanned  vehicles.
+IT business
+transformation  of
+competition+ Growth  is being driven by small and medium-sized  creative  IT venture  companies.
++ Competitiveness  is built through  open innovation  and the spread  of the demand-customized
+business  model
+C) Components  of an IT business  ecosystem
+The table below describes  the characteristics  of the 5 components  (contents,  platform,  network,  device, and security)
+that constitute  an IT ecosystem.
+<Table2>  Components  of an IT business  ecosystem
+Components Main characteristics
+Contents  (C)Advances  in mobile technology  lead to increased  consumption  of mobile contents.
++ Amobile  environment  centered  on a smartphone  with computing  power  allows users to use
+diverse  contents  free from the restrictions  of time and space.
++ In the new mobile environment,  users can not only enjoy music and video but also use
+e-books  and other materials  with ease. An ecosystem  comprising  a new form of content
+distribution  in which mobile users are the chief customer  segment  is gradually  gaining
+acceptance
+Platform  (P)IIT service platforms  are evolving  from individual  services  with a single operator  to a common
+platform  in which multiple  providers  participate  together.
++ The closed platform  is being superseded  by the open platform.
++ The trend is changing  from building  one’s own platform  and providing  one’s own service  to
+providing  services  using a common  platform  shared by a select few.
++ Apple, Google,  and Kakao have developed  their service  framework  based on the concept  of a
+platform  in whichmany  operators  can participate.
+Network  (N)The smart revolution  began with tablet PCs, smart TVs, and smartphones,  but is it now raising
+the standard  of network  traffic bothqualitatively  and quantitatively.
++ Next-generation  smart services  such as smart homes and smart cars can generate  many
+different  forms of lar...

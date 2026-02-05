@@ -1,0 +1,41 @@
+ESSENCE
+Table 74) SIP Protocol  Components
+Type Description
+SIP + Definition  of RFC 3261 and SIP
++ Session  Description  Protocol,  RFC 4566/3264SDP . ain
++ Setting  multimedia  session  parameters
+Audio Codec * G7IIA,  G.723.1,  and G.729A
++ Voice coding, many specifications  for compatibility  with various  systems
+WideolGoded + H.263, MPEG-4,  and H.264
++ Video coding  commonly  H.263 and H.264 as the latest version
+RTPIRTCP + Realtime  transport  (control)  protocol,  RFC 3550, and RFC 3551
++ Real-time  communication  protocol
+@ SIP message  structure
+SIP uses an SIP uniform resource  identifier  (URI), similar to an e-mail address,  to identify  users to provide services,
+without  being dependent  on IP addresses.  A SIP message  contains  the START LINE to describe  the method type
+to request  and SIP URI, the HEADER  to set the value to control the session, the BODY containing  the type set in
+Content-Type,  and CR/LF a blank space between  HEADER  and BODY.
+C) H.323
+H.323 is an ITU-T standard  for providing  voice, data, and video services  over LAN where quality is not guaranteed.
+Startup  VoIP service providers  use it widely because  it can provide multimedia  services  without  changing  the existing
+network's  underlying  structure.
+[Figure 144] shows the H.323 network  architecture.  The service components  include terminals,  such as general
+telephones,  fax machines,  and PCs equipped  with multimedia  equipment  that are used by end users. Other
+components  are a gatekeeper  that converts  between  E.164 and the IP address, performs  redirection  and
+authentication for calls, and manages  the components  and bandwidth,  and a gateway  that performs  the logical
+connection  mapping  (encoding,  protocol,  and call control)  of different  networks  (IP network,  PSTN, ISDN, ATM, etc.).
+H.225.0
+H,323 Annex G
+endpoint IP-based Inter—-Domain
+H.323 H.450 | Voice Mail ae coe
+endpoint Call Deflectoin | Server Wee} pee <>) Kooper
+{00 { LO 1.323
+<> IP LANAnnex E
+POTSIS|oe
+<= Sax UDP Signaling
+Firewall Egressee <—| Server [| Router [TM ISP
+co Se 66 ps
+D MewH,323 Annex D (T.38 Fax)
+H.323 Annex F (Simple  Endpoint  Types)
+[Figure 144] H.323 Network  Architecture
+206 TOPCIT  ESSENCE

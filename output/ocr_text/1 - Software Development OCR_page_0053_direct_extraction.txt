@@ -1,0 +1,18 @@
+ESSENCE
+>> Recent  trends and major issues
+The world has now entered a new era of limitless  quality competition,  and software  cannot be an
+exception  to the rule. Software  design is closely related to software  quality. In this respect,  we can
+see that efforts to analyze  the requirements  are also a process  for good design. The cost possibility
+of software failure can be significantly  reduced if quality control and prevention  activities  are
+performed  frequently  in the analysis  and design phase.
+>> Learning  objectives
+1. To be able to describe  the types and contents  of software design  principles  that should be
+considered  when designing  software.
+2. To be able to explain the concepts  of cohesion  and coupling,  which are the criteria for evaluating
+the design of a module.
+3. To be able to understand  structural  design methods  and express  design contents.
+>> Keywords
+- Division,  abstraction,  information  hiding, stepwise  refinement,  modularization,  structuralization
+- Cohesion,  coupling
+- Transform-based  design, transaction-based  design, structure  chart
+52 TOPCIT  ESSENCE

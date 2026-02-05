@@ -1,0 +1,206 @@
+LEARNING GUIDE: Pages 118-122
+Generated: 2025-12-05 10:51:37
+PDF: 2 - Understanding and Using Data OCR
+
+================================================================================
+LEARNING GUIDE
+================================================================================
+
+Here is a simplified, easy-to-read learning guide based on the provided text, designed for easy study.
+
+---
+
+## Database Learning Guide: Query Optimization & Web-Database Linking
+
+### 04. Query Optimization and Optimizer
+
+**Query Optimization** is the process where a Database Management System (DBMS) evaluates multiple execution strategies for a query and selects the most efficient one.
+
+**A) Query Optimization Process**
+1.  **Parse & Tree Generation:** The initial query statement is parsed and converted into a sub-expression, represented as a **query tree**.
+2.  **Query Rewriting:** The internal expression is rewritten using logical rules for efficiency:
+    *   Multiple conditions are combined.
+    *   **Projection** (selecting necessary columns) and **Selection** (filtering rows) are performed as early as possible to reduce data size.
+3.  **Access Plan Creation:** Specific access plans are created, detailing join and selection procedures.
+4.  **Optimal Plan Selection:** Plans are evaluated based on various costs:
+    *   Disk access cost
+    *   Storage cost
+    *   Calculation cost
+    *   Communication cost
+    The plan with the lowest total cost is chosen.
+
+**B) Optimizer**
+*   **Definition:** The core engine of the DBMS. It checks SQL for errors and automatically finds the most efficient data access path to retrieve the requested data.
+*   **Purpose:** Guarantees **physical data independence** (users don't need to know *how* data is stored/accessed) and ensures efficient execution of SQL queries.
+*   **Role in Query Processing:** The optimizer acts during the **Query Rewriting** and **Query Optimization** phases of the 5-phase query processing cycle:
+    1.  Parsing
+    2.  **Query Rewriting**
+    3.  **Query Optimization**
+    4.  QEP Generation
+    5.  Query Execution
+    *   **QEP (Query Execution Plan):** Detailed information required to execute a query.
+
+**C) Roles of the Optimizer in Query Processing Phases**
+*   **Query Rewrite Phase:**
+    *   Checks for more effective query execution plans.
+    *   Merges sub-queries and views.
+    *   Performs OR expansion.
+*   **Query Optimization Phase:**
+    *   Determines the specific access path for the query.
+
+**D) Classification of Optimizers**
+1.  **Rule-Based Optimizer (RBO):**
+    *   **Method:** Sets the optimal path based on predefined rules or rankings (e.g., index structure, comparison operators).
+    *   **Advantage:** User can predict the path accurately due to regular, clear decisions.
+    *   **Limitation:** Doesn't consider realistic factors like statistical data, which can lead to poor execution performance.
+2.  **Cost-Based Optimizer (CBO):**
+    *   **Method:** Calculates the cost for each processing method and selects the one with the lowest cost. Uses statistical information.
+    *   **Advantage:** Guarantees minimum performance without requiring deep user understanding of optimization controls. Considers real-world data distribution.
+    *   **Limitation:** Execution plans can be difficult to predict or control manually.
+
+---
+
+### 05. Linking the Web and Database
+
+Linking the web and a database requires web browser components and a **gateway** to connect to the DBMS. Methods are categorized into Server Extension and Browser Extension.
+
+**A) Server Extension Methods (Stateless Method)**
+*   **Concept:** The database is connected via the web server. A new connection is established for each user request.
+*   **Types:**
+
+    1.  **CGI Executable File Method**
+        *   **How it works:** Executes a database application program as a CGI (Common Gateway Interface) executable file. This file directly accesses the DBMS. A new application process is created for *each* request.
+        *   **Pros:** Simple structure, uses most programming languages, easy to modify the CGI program for system expansion.
+        *   **Cons:** High cost for frequent client requests or large applications, significant performance decline with too many connections.
+
+    2.  **CGI Application Server Method**
+        *   **How it works:** The database application program runs as a separate **daemon** (background process). A small CGI module transfers requests from the web server to this application server. Application processes can use `fork`, `pre-fork`, or `multithread` methods (multithread offers fast response).
+        *   **Pros:** Easy to link with middleware (e.g., CORBA, TP Monitor), reduces process size, keeps existing systems intact.
+        *   **Cons:** Difficult to implement.
+
+    3.  **Extended API Method**
+        *   **How it works:** The database application program is directly linked with the web server and runs as part of the server process. Web servers provide extended APIs (e.g., Microsoft ISAPI, Netscape NSAPI) to avoid creating a new process for each request (unlike CGI).
+        *   **Pros:** Saves system resources, reduces system load, provides faster speed than CGI.
+        *   **Cons:** Difficult to create routines using extended APIs, becomes dependent on a specific web server/browser.
+
+    4.  **Servlet Method**
+        *   **How it works:** Similar to the Extended API method but is **platform-independent**. Uses JDBC (Java DataBase Connectivity) or other Java database access classes.
+        *   **Pros:** Provides continuous processing and fast response using Java's multi-thread features, popular among Java developers.
+
+**B) Browser Extension Methods (Direct/State Method)**
+*   **Concept:** The browser directly connects to the database server and maintains the connection.
+*   **Types:**
+
+    1.  **JDBC (Java DataBase Connectivity)**
+        *   **How it works:** Allows a Java applet or ActiveX control to directly connect to a database server. Uses Java solutions like JDBC and JavaBeans. Enables continuous connection, overcoming web limitations for critical systems.
+        *   **Details:** An API for Java. Connects to different databases by simply replacing the driver, without modifying the application source code.
+
+    2.  **ADO (ActiveX Data Object)**
+        *   **How it works:** A Microsoft solution. An ActiveX control that provides a database interface and manages connections in Internet or client/server environments.
+
+    3.  **OLE DB**
+        *   **How it works:** Provides consistent API access to various data types, including relational data (ISAM, VSAM, Excel Data).
+        *   **Limitation:** Restricted to Microsoft operating systems.
+
+---
+
+### Recent Trends and Major Issues in Databases
+
+**Multi-User Environment Challenges:**
+*   Most databases operate in multi-user environments.
+*   **Problem:** Simultaneous transactions require **concurrency control** to guarantee **atomicity** (all or nothing) and manage interactions.
+*   **Risk:** Poor transaction design (lack of understanding of concurrency control, like locking mechanisms) leads to:
+    *   Transaction delays
+    *   Performance degradation
+    *   **Deadlocks** (transactions waiting indefinitely for each other)
+*   User complaints arise from service delays.
+
+**DBMS Advanced Features (Provisional Solutions):**
+*   Modern DBMS often include features like:
+    *   Internal transaction isolation.
+    *   Consideration for concurrent processing performance.
+    *   Algorithms to detect and handle deadlocks.
+*   **Important Note:** These features are often minimal and provisional, not fundamental solutions.
+
+**Crucial Understanding for High-Performance Systems:**
+To develop high-performance systems in multi-user environments, a clear understanding of the following concepts is essential:
+1.  **Transaction:** Concept and characteristics.
+2.  **Transaction Operations:** Commit (save changes) and Rollback (undo changes).
+3.  **Concurrency Control:** Purposes, necessity, and techniques.
+4.  **2-Phase Locking (2-PL):** A specific concurrency control technique.
+5.  **Transaction Isolation Levels:** How transactions interact regarding visibility of changes.
+6.  **Deadlocks:** Causes and solutions.
+
+---
+
+================================================================================
+ORIGINAL TEXT (First 5000 chars)
+================================================================================
+
+--- Page 118 ---
+Database )
+04 Query Optimization  and Optimizer
+Query optimization  refers to the process  of making  a DBMS select one optimal strategy  by systematically  evaluating
+several strategies  for executing  query statements.  It is used by systems  that support  advanced  relational  query
+languages.
+A) Query optimization  process
+@ For query optimization,  the intermediate  query statement  created  by the parser is converted  into a certain form of
+sub-expression  and represented  as a query tree.
+@ Then, an internal expression  is rewritten  into an efficient  query statement  using logical conversion  rules. Multiple
+conditions  are combined  into one condition,  and projection  is performed  as early as possible  to remove any
+unnecessary  attributes.  Selection  is also performed  as early as possible.
+© Access  plans are created  and specified  by the join procedure,  selection  procedure,  etc.
+@ The most efficient  access plan is selected  by evaluating  them. The evaluation  criteria to consider  include the disk
+access cost, storage  cost, calculation  cost, and communication  cost.
+B) Optimizer
+An optimizer,  as the core engine of the DBMS, checks for grammatical  errors in SQL statements  according  to the
+various requests  of the user, and then finds an optimal path or a processing  procedure  by creating  and adopting  the
+fastest  data access path. When SQL specifies  the desired data (what) in a relational  database,  the DBMS optimizer
+automatically  decides  and handles how to get the data. As such, the optimizer,  which guarantees  the physical data
+independence  of the database  and finds the method of executing  the user's SQL queries efficiently,  is making a
+significant  contribution  to the commercial  success  of the relational  database.
+C) Roles of the optimizer  in each query processing  phase
+Query processing  is divided into 5 phases - parsing,  query rewriting,  query optimization,  QEP generation,  and query
+execution.  The optimizer  acts in the query rewriting  and query optimization  phase. QEP (Query  Execution  Plan) refers
+to a query execution  plan, which is the detailed  information  necessary  to execute  a query.
+Query Optimizer
+we
+QueryQuery Optimization QeP QueryParse D rowie | D Tos D ceneration | Execution | Resut
+[Figure  34] Five phases  of handling  RDBMS  queries
+M2 Database  117
+
+
+--- Page 119 ---
+ESSENCE
+<Table  47> Roles of the optimizer  in each query processing  phase
+Query processing  phase Processing  details
+Checks  whether  a more effective  query execution  plan is available  or not, merges  the sub-query
+and view, and performs  OR expansion.
+Query  optimization Determines  the access  path for the query.Query  rewrite
+D) Classification  of optimizers  according  to criteria
+@ Rule-based  optimizer  (RBO)
+The rule-based  optimizer  sets the optimal path based on the ranking  according  to the index structure  or comparison
+operator. It enables  the user to accurately  predict the path because  the optimizer’s  decision  is very regular  and clear.
+However,  it has the limitation  that a serious  judgment  error may occur in terms of execution  performance  because
+the realistic  factor (statistical  information)  is not considered.
+@ Cost-based  optimizer  (CBO)
+The cost-based  optimizer  calculates  the cost of each processing  method and selects the method  that costs the
+least. Even though there is the advantage  of guaranteeing  minimum  performance  without having to have a deep
+understanding  of the optimizer  through optimization control based on statistical  information  management  and
+decision-making  in consideration  of reality, it has a limitation  in that an execution  plan cannot be forecast  and
+controlled  easily.
+05 Linking  the Web and Database
+Web browser  components  and a gateway  that connects  the DBMS are required to link the web and database.
+Depending  on the method of implementing  the gateway,  the methods  of linking the web and database  are divided
+into server  extension  methods  and browser  extension  methods.
+A) Server  expansion  methods
+The server  extension  method  is also called a stateless  method.  A database  is connected  through  the web server, and
+a connection  is established  each time a request  is made. These methods  include the CGI executable  file method,  CGI
+application  server  method,  extended  API method,  and servlet  method.
+@ CGl executable  file method
++ The CGI executable  file method  executes  the database  application  program  as a CGI (Common  Gateway  Interface)
+executable  file. The CGI directly  accesses  the DBMS to retrieve  data. One application  process is created  for each
+request.
+* This method has the advantage  that the structure  is simple, and the method  can be implemented  using most
+programming  languages.  In addition,  users can select one of the connection  methods  provided  by various database
+vendors,  and it is very convenient  because  the us...

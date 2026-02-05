@@ -1,0 +1,37 @@
+ESSENCE
+Since all sniffers  eavesdrop  on the network  by setting  their LAN cards to promiscuous  mode, a system running
+a sniffer program  can be detected  by periodically  checking  if a specific host is set in promiscuous  mode. Ping,
+ARP, DNS, or induction  method  can be used for detection.
+® Spoofing  attack
+Spoofing  is the act of disguising  and can apply to anything  related to communication,  such as the IP address,
+host name, port number,  MAC address,  etc. A spoofing  attack technique  is used to attack other target systems
+by disguising  its own identification  information.  The spoofing  attack is used for other attacks,  such as packet
+sniffing,  DoS attack, and session  hijacking.
++ ARP spoofing
+The ARP protocol  maps IP addresses  and MAC addresses,  whereas  ARP spoofing  attacks trick MAC
+addresses.
+As shown in [Figure 60], the attacker  first informs  the client of the fake MAC address  “CC”, corresponding
+to the server (address:  10.0.0.2)  and notifies  the server of the fake MAC address  “CC”, corresponding  to the
+client (address:  10.0.0.3).
+Since an attacker  notifies its own MAC address  to the other communication  party (server and client
+computer),  both the sever and the client send packets  to the attacker.
+After the attacker  reads the packets  received from the server and the client, the server normally  sends the
+packets  that the server  sends to the client, and the packets  that the client sends to the server. (As a result,
+the attacker  can obtain the contents  of the communication  between  the server and the client.)
+Server Attacker Client
+i - fj = =a
+IP address:  10.0.0.2 IP address:  10.0.0.4 IP address:  10.0.0.3
+MAC address:  AA MAC address:  CC MAC address:  BB
+A 1 | A
+Notify that the MAC Notify that the MAC
+address  of 10.0.0.3  is CC. address  of 10.0.0.2  is CC.
+[Figure  60] ARP spoofing
+(Source:  Yang Daeil, Introduction  to Information  Security,  Hanbit Media, p. 156)
+There are no fundamental  countermeasures  against  ARP spoofing,  because  it’s the problem of the TCP/IP
+protocol  structure  itself. However,  the change of the MAC address  can be prevented  by setting the attributes
+of the ARP table, using the arp command  to prevent  the change of the ARP table. To use this method,  the
+setting  command  should be executed  every time the system is rebooted.
++ IP spoofing
+An IP spoofing  attack hacks the host by changing  its IP address.  That is, an attacker  steals the IP address  of
+other users and illegally  obtains  the rights to log on or others.
+118 TOPCIT  ESSENCE

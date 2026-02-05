@@ -1,0 +1,249 @@
+LEARNING GUIDE: Pages 115-119
+Generated: 2025-12-05 10:51:19
+PDF: 2 - Understanding and Using Data OCR
+
+================================================================================
+LEARNING GUIDE
+================================================================================
+
+Here's a simplified, easy-to-read learning guide based on the provided text:
+
+---
+
+## **Database Concepts: An Essential Study Guide**
+
+### **1. Embedded SQL**
+
+Embedded SQL integrates SQL statements directly within a host programming language (e.g., C, Java).
+
+*   **Key Characteristics:**
+    *   **Return Value:** Returns only **one tuple** (row) per execution, unlike general SQL which can return multiple.
+    *   **Variable Storage:** The returned tuple can be stored in a common host program variable.
+    *   **Compilation:**
+        1.  A **preprocessor** extracts and compiles SQL statements.
+        2.  It replaces them with library calls in the host program.
+        3.  The modified program is then compiled and linked.
+    *   **Variable Naming:** Host program variables can have the same name as database fields.
+    *   **Data Types:** Host variable data types must match corresponding database field types.
+    *   **Status Reporting:** Execution results (success, failure, error) are passed as a string or integer via the implicit **SQLCODE** variable.
+
+*   **Embedded SQL Cursor:**
+    *   A **cursor** acts as a pointer to access multiple tuples returned by an embedded SQL statement.
+    *   **Cursor Operations:**
+        *   `DECLARE`: Defines the cursor and its associated query.
+        *   `OPEN`: Sets the cursor to point to the first tuple of the query result.
+        *   `FETCH`: Moves the cursor to the next tuple in the result set.
+        *   `CLOSE`: Closes the cursor after processing all results.
+
+### **2. Dynamic SQL vs. Static SQL**
+
+Dynamic SQL statements are processed at runtime based on program logic, offering flexibility but often with a performance trade-off compared to static SQL.
+
+| Feature            | Static SQL                                      | Dynamic SQL                                                  |
+| :----------------- | :---------------------------------------------- | :----------------------------------------------------------- |
+| **Overview**       | SQL statements are hard-coded into the program and processed statically (often using CURSOR). | SQL statements are assigned to string variables and processed dynamically. They can change at runtime. |
+| **Flexibility**    | Fixed SQL statements; cannot change column or WHERE clauses. | Highly flexible; SQL statements (variables, columns, WHERE clauses) can be built or changed dynamically during execution. |
+| **Execution Plan** | Optimizer plans for `IS NULL`/`IS NOT NULL` (for `NVL()`), potentially leading to many concatenations and long hard parsing times. | Optimizer plans for pure access paths only; minimized hard parsing time. |
+| **Strengths**      | Faster execution, SQL checked during development, high code readability. | Access plans use recent statistics. Allows for more diverse and flexible applications (SQL determined at runtime). |
+| **Weaknesses**     | All SQL must be defined during development; requires pre-compilation and binding. | Slower execution than static SQL. SQL type, syntax, and privileges cannot be checked before execution. Higher development difficulty and time. |
+
+*   **Processing Methods:**
+    *   **Static SQL Flow:**
+        1.  Create SQL statement.
+        2.  `CURSOR OPEN`.
+        3.  `CURSOR FETCH` (to save data).
+        4.  `CURSOR CLOSE`.
+    *   **Dynamic SQL Flow:**
+        1.  Create variables to hold SQL statements.
+        2.  Construct SQL statement using logic.
+        3.  Save dynamic SQL into a `REF CURSOR` (or prepare statement).
+        4.  `REF CURSOR OPEN`.
+        5.  `REF CURSOR FETCH` (to save data).
+        6.  `REF CURSOR CLOSE`.
+
+*   **Code Examples (Simplified):**
+    *   **Static SQL:**
+        ```sql
+        // Direct embedding
+        SELECT ENAME INTO :ename FROM EMP WHERE EMPNO = :empno;
+        ```
+    *   **Dynamic SQL:**
+        ```c
+        char select_stmt[50] = "SELECT ENAME FROM EMP WHERE EMPNO = :empno";
+        // Prepare and execute the statement string
+        SQL DECLARE emp_cursor CURSOR SQL sql_stmt; // 'sql_stmt' refers to 'select_stmt'
+        OPEN emp_cursor USING :empno;
+        FETCH emp_cursor INTO :ename;
+        CLOSE emp_cursor;
+        ```
+        *Here, `select_stmt` can be built or modified at runtime.*
+
+### **3. Query Optimization and Optimizer**
+
+**Query Optimization** is the process where a Database Management System (DBMS) systematically evaluates multiple execution strategies for a query and selects the most efficient one.
+
+*   **Query Optimization Process:**
+    1.  **Parsing:** The parser converts the query into an intermediate form (e.g., a query tree).
+    2.  **Query Rewriting:** The internal expression is rewritten for efficiency (e.g., combining conditions, performing projections/selections early).
+    3.  **Access Plan Creation:** Various access plans are generated, specifying procedures like join order and selection methods.
+    4.  **Plan Selection:** The most efficient access plan is chosen based on evaluation criteria like disk access, storage, calculation, and communication costs.
+
+*   **Optimizer:**
+    *   The **optimizer** is the core engine of the DBMS.
+    *   It checks SQL syntax, then finds the fastest data access path.
+    *   It automatically decides "how" to get the data, guaranteeing physical data independence.
+    *   **Role in Query Processing Phases:** The optimizer acts during the **Query Rewriting** and **Query Optimization** phases.
+        *   **Query Processing Phases:** Parsing -> Query Rewriting -> Query Optimization -> QEP Generation -> Query Execution -> Result.
+    *   **QEP (Query Execution Plan):** Detailed information needed to execute a query.
+
+*   **Roles of Optimizer per Phase:**
+    *   **Query Rewrite:** Checks for more effective plans, merges sub-queries and views, performs OR expansion.
+    *   **Query Optimization:** Determines the optimal access path for the query.
+
+*   **Optimizer Classifications:**
+    *   **Rule-Based Optimizer (RBO):**
+        *   Sets the optimal path based on predefined rules (e.g., index structure ranking, comparison operator).
+        *   **Pros:** Predictable and clear decisions for users.
+        *   **Cons:** Doesn't consider real-world factors like statistical information, potentially leading to poor performance.
+    *   **Cost-Based Optimizer (CBO):**
+        *   Calculates the cost for each processing method and selects the one with the least cost.
+        *   **Pros:** Guarantees minimum performance by considering statistical information; less need for deep optimizer understanding.
+        *   **Cons:** Execution plan can be difficult to forecast or control.
+
+### **4. Linking the Web and Database**
+
+Linking web applications to databases requires web browser components and a gateway to the DBMS. Methods vary based on how this gateway is implemented.
+
+*   **A) Server Extension Methods (Stateless Method):**
+    *   A database connection is established via the web server for each request, then closed.
+    *   Examples: CGI executable files, CGI application servers, extended APIs, servlet methods.
+
+*   **CGI Executable File Method:**
+    *   **Mechanism:** Executes a database application as a CGI (Common Gateway Interface) executable file, which directly accesses the DBMS. One application process is created for each web request.
+    *   **Advantages:**
+        *   Simple structure.
+        *   Can be implemented using most programming languages.
+        *   Users can choose from various database vendor connection methods.
+        *   Easy to modify the CGI program for system expansion.
+    *   **Disadvantages:**
+        *   Cost of content replacement increases exponentially (as a new process is created for every request).
+
+---
+
+================================================================================
+ORIGINAL TEXT (First 5000 chars)
+================================================================================
+
+--- Page 115 ---
+ESSENCE
+general SQL statement  can retum multiple  tuples as an execution  result, whereas  an embedded  SQL statement  can
+return only one tuple.
+@ The tuple returned  by the embedded  SQL statement  can be stored using a common  variable.
+© The embedded  SQL statement  is separated  and compiled  by a preprocessor  when the host program  is compiled.
+Editor
+Source Program With embedded  SQL statements
+Oracle Precompiler
+Source Program With all SQL statements  replaced  by library calls
+Compiler
+Object  Program
+Oracle run time <<“ 5 Linker ney
+Source
+reer]
+[Figure40]  Conceptual  diagram  of embedded  SQL compilation
+@ The host program  variable  and the database  field can have the same name.
+© The data type of the host program  variable  should match that of the corresponding  database  field.
+© The execution  result, such as success,  failure, or error, is passed as a string (or integer)  value using an implicit SQL
+state variable  called SQLCODE.
+C) Embedded  SQL cursor
+Cursor indicates  a pointer  to the tuples of the table that are returned  as the result of executing  an embedded  SQL
+statement.  Multiple tuples, which can be returned  as the result of executing  an embedded  SQL statement,  can be
+accessed  using cursor.  The main statements  used to operate  cursor  are as follows.
+@ Declare:  A statement  for declaration  related to cursor, such as cursor definition.
+@ OPEN: A statement  used to set cursor  to point to the first tuple of the query result.
+@ FETCH:  A statement  used to move cursor  to the next tuple among  the tuples of the query result.
+@® CLOSE:  A statement  used to close cursor  upon completing  the processing  of the query execution  result.
+114 TOPCIT  ESSENCE
+
+
+--- Page 116 ---
+Database )
+03 Dynamic  SQL
+Unlike static SQL statements,  dynamic  SQL statements  are dynamically processed  according  to program  logic. As
+dynamic  SQL and static SQL are in a trade-off  relationship  in terms of performance  and flexibility,  an appropriate
+method  should be selected  according  to the development  environment  and purpose.
+A) Comparison  between  dynamic  and static SQL
+<Table  45> Comparison  of the characteristics  of dynamic  SQL and static SQL
+Item Static SQL Dynamic  SQL
+OverviewAn SQL statement  is not assigned  to a variable  but
+is mixed in the code for description.
+An SQL statement  is processed  statically  by
+declaring  CURSOR.An SQL statement  is assigned  to a string-type
+variable  and processed  dynamically.
+The SQL statement  can be dynamically  changed
+according  to the condition.  Part or all of the SQL
+statement  can be received  from the user at runtime.
+Development
+patternStatic SQL is declared  in the CURSOR  clause and
+then the data is processed  in a looping  structure
+between  the BEGIN and END clause.NVL (0) processing  is not needed  as the syntax  of
+dynamic  SQL can be changed.
+Column
+compositionThe column  and WHERE  clause cannot  be changedAs a DBMS is called after assigning  an SQL
+statement  in a variable,  all SQL statements  such as
+variables  and columns  can be freely processed  with
+logic.
+Execution
+planThe optimizer  sets up an execution  plan for Is NULL
+and IS NOT NULL to process  the condition  wherein
+NVL () is processed.
+That is, if there are 6 conditions,  the execution
+plan is divided  by 12 CONCATENATION.  As a result,
+along hard parsing  time is required  to set up an
+execution  plan.The optimizer  sets up an execution  plan for pure
+access  paths only because  the execution  plan does
+not have to be divided,  since there is no WHERE
+condition  whereby  NVL() is processed.
+Therefore,  the hard parsing  time can be minimized.
+StrengthsThe execution  speed is faster  than dynamic  SQL.
+SQL statements  can be checked  in advance  during
+development.
+Code readability  is high because  the code is more
+intuitive  than dynamic  SQL.Anaccess  plan for each SQL statement  in the
+application  is available  based on the most recent
+statistical information.
+More diverse  and flexible  applications  can be
+developed  because  the SQL statement  is
+determined  at runtime,  not during development.
+ShortcomingsThe SQL statements  should all be defined  during
+development.
+The pre-compilation  and bind processes  are
+required.The processing  speed is slower  than that of static
+SQL.
+The type, syntax, and privilege  of the SQL
+statement  cannot  be checked  before execution.
+The level of development  difficulty  is high, and
+development  takes a remarkably  long time.
+M2 Database  115
+
+
+--- Page 117 ---
+ESSENCE
+B) Processing  methods  of dynamic  SQL and static SQL
+<Table  46> Comparison  of the processing  methods  of dynamic  SQL and static SQL
+STATIC  SQL DYNAMIC  SQL
+Create a SQL statement
+through  logic processing
+ft
+CURSOR  OPEN
+ft
+CURSOR  FETCHa
+Save data in RECORDCreate  variables  to
+contain SQR statementsyo
+Create  a SQL statement
+through  logic processing
+oY
+Save dynamic  SQL in REF
+CURSOR
+—_—____ yo
+REF CURSOR  OPEN
+—...

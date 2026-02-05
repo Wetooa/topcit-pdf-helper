@@ -1,0 +1,146 @@
+LEARNING GUIDE: Pages 13-17
+Generated: 2025-12-07 00:54:24
+PDF: 3 - Overview of System Architecture OCR
+
+================================================================================
+LEARNING GUIDE
+================================================================================
+
+This learning guide summarizes the essential topics presented in pages 13-14 of the original text. Pages 15-17 contain meta-information about the publication (titles, publisher, copyright, etc.) and no learnable content, so they are not included in this guide.
+
+---
+
+### **Learning Guide: Key ICT Concepts Overview**
+
+This guide provides a structured overview of crucial topics in Application Layer Technologies, Mobile & Multimedia Communication, and Latest Technologies.
+
+---
+
+#### **I. Application Layer Technologies & Web Applications**
+
+*   **1. Application Layer Protocols**
+    *   Fundamental understanding of protocols that enable network services for applications.
+*   **2. HTTP (Hypertext Transfer Protocol)**
+    *   The core protocol for data communication on the World Wide Web.
+*   **3. FTP (File Transfer Protocol)**
+    *   A standard network protocol used for the transfer of computer files between a client and server on a computer network.
+
+---
+
+#### **II. Mobile & Multimedia Communication Technology**
+
+*   **1. Multimedia Networks**
+    *   **A. Graphic Compression Types:** Techniques and standards for reducing the size of image and video data.
+    *   **B. Multimedia Data:** Characteristics and handling of various forms of digital content (audio, video, images).
+    *   **C. QoS (Quality of Service):** Mechanisms to ensure a certain level of performance for data flow, critical for multimedia applications.
+*   **2. Internet Telephony & Call Signal Protocols**
+    *   **A. VoIP (Voice over Internet Protocol):** Technology that allows voice calls to be made over a computer network (like the internet) instead of traditional phone lines.
+    *   **B. VoIP Call Signal Protocols:** Protocols responsible for setting up, managing, and terminating VoIP calls (e.g., SIP, H.323).
+    *   **C. H.323:** An ITU-T recommendation that defines protocols for providing audio-visual communication sessions over packet networks.
+    *   **D. VoLTE (Voice over LTE):** High-quality voice calls transmitted over 4G LTE networks, enabling better call quality and simultaneous data usage.
+*   **3. Media Transport Protocols**
+    *   **A. RTP (Real-time Transport Protocol):** A network protocol for delivering audio and video over IP networks.
+    *   **B. RTCP (RTP Control Protocol):** A companion protocol to RTP, used to monitor data delivery and provide minimal control and identification functionality.
+    *   **C. RTSP (Real-Time Streaming Protocol):** A network control protocol designed for use in entertainment and communications systems to control streaming media servers.
+    *   **D. IMS (IP Multimedia Subsystem):** An architectural framework for delivering multimedia services over IP networks.
+
+---
+
+#### **III. Latest Technologies**
+
+*   **1. IoT (Internet of Things) Network-Based Technology**
+    *   **A. IoT Concept:** The network of physical objects embedded with sensors, software, and other technologies for the purpose of connecting and exchanging data over the internet.
+    *   **B. IoT Standardization Trend:** Efforts and initiatives to establish common standards for IoT devices, platforms, and protocols.
+    *   **C. Core IoT Technologies:** Key technologies enabling IoT, such as sensors, connectivity, data processing, and cloud platforms.
+    *   **D. Main IoT Protocols:** Primary communication protocols used by IoT devices (e.g., MQTT, CoAP, Zigbee, Bluetooth Low Energy).
+*   **2. Software-Based Networks**
+    *   **A. Limitations of Existing Communication Environment & Paradigm Shift:** Challenges with traditional, rigid network infrastructures and the move towards more flexible, software-driven approaches.
+    *   **B. SDN (Software Defined Network):** An approach to networking that separates the network's control plane from the data plane, allowing for centralized, programmable network management.
+    *   **C. NFV (Network Function Virtualization):** The concept of virtualizing entire classes of network node functions into building blocks that can connect, or chain, together to create communication services.
+    *   **D. SDN and NFV:** Understanding how these two technologies complement each other to create more agile, efficient, and scalable network infrastructures.
+
+---
+
+================================================================================
+ORIGINAL TEXT (First 5000 chars)
+================================================================================
+
+--- Page 13 ---
+ESSENCE
+XV. Application  Layer Technologies,  Including  Web Application 194
+01 What is Application  Layer Protocol? 197
+02 HTTP 197
+03 File Transfer  Protocol 198
+XVI. Mobile Communication  and Multimedia  Communication
+Technology 201
+01 Multimedia  Network 202
+A) Graphic  compression  type 202
+B) Multimedia  data 202
+C) QoS(Quality  of Service) 203
+02 Internet  Telephony  Concept  and Call Signal Protocol 204
+A) What is VoIP (Voice over Internet  Protocol)? 204
+B) VoIP call signal protocol 205
+C) H.323 206
+D) VoLTE(Voice  over LTE) 207
+03 Media Transport  Protocols 208
+A) RTP 208
+18 TOPCIT  ESSENCE
+
+
+--- Page 14 ---
+B) RTCP 208
+C) RTSP 208
+D) IMS 208
+XVII Latest  Technologies 210
+01 loT Network-Based  Technology 212
+A) loT concept 212
+B) loT standardization  trend 212
+C) Core loT technologies 213
+D) Main loT protocols 214
+02 Software-Based  Network 216
+A) Limitations  of the existing  communication  environment  and paradigm  shift 216
+B) SDN (Software  Defined  Network) 216
+C) NFV(Network  Function  Virtualization) 218
+D) SDN and NFV 220
+M3 Overview  of System  Architecture  19
+
+
+--- Page 15 ---
+TOPCI
+Ver, 3
+Technical  Field
+03 Overview  of System
+Architecture
+
+
+--- Page 16 ---
+ESSENCE  «:
+Technical  Field
+03 Overview  of System
+Architecture
+
+
+--- Page 17 ---
+TOPCIT  ESSENCE  is published  to provide learning  materials  for TOPCIT
+examinees.
+The TOPCIT Division desires the TOPCIT  examinees  who want to acquire
+the necessary  practical  competency  in the field of ICTto exploit as self -
+directed  learning  materials.
+For more information  about TOPCIT  ESSENCE,  visit TOPCIT  website or send us
+an e-mail.
+As part of the TOPCIT  ESSENCE  contents  feed into authors’  personal
+opinions,  it is not the TOPCIT  Division's  official stance.
+Ministry  of Science,  ICT and Future Planning
+Institute  for Information  and Communications  Technology  Promotion
+Korea Productivity  Center
+Publisher  TOPCIT  Division
++82-2-398-7649  wwwtopcit.orkr  helpdesk@topcit.orkr
+Date of Publication  1* Edition  2014. 12. 10.
+2" Edition 2016. 02. 26.
+3" Edition 2020, 02. 26.
+Copyright  © Ministry  of Science,  ICT and Future Planning
+All rights reserved.
+No part of this book may be used or reproduced in any manner  whatever
+without  written  permission.
+
+

@@ -1,0 +1,240 @@
+LEARNING GUIDE: Pages 76-80
+Generated: 2025-12-05 14:24:40
+PDF: 1 - Software Development OCR
+
+================================================================================
+LEARNING GUIDE
+================================================================================
+
+Here is a simplified, easy-to-read learning guide based on the provided text:
+
+---
+
+# Software Design Patterns Learning Guide
+
+Design patterns are solutions to common problems in software design. They help manage complex code, promote reusability, and improve communication among developers.
+
+## 1. Design Pattern Categories Overview
+
+Design patterns are categorized based on their primary purpose:
+
+| Large Category         | Problem Type (Purpose)                                | Related Design Pattern          |
+| :--------------------- | :---------------------------------------------------- | :------------------------------ |
+| **Object Creation**    | Creating an object by product family                  | Abstract Factory                |
+|                        | Creating a whole object by creating partial objects   | Builder                         |
+|                        | Creating an object using a delegate function          | Factory Method                  |
+|                        | Creating an object through replication                | Prototype                       |
+|                        | Limiting object creation up to N (e.g., one)          | Singleton                       |
+| **Structural Patterns**| Changing an interface for reusing existing module     | Adapter                         |
+|                        | Clear separation of interface and implementation      | Bridge                          |
+|                        | Establishing and managing partial-whole relationships | Composite                       |
+|                        | Dynamically adding/deleting an object function        | Decorator                       |
+|                        | Clearly separating and defining a subsystem           | Facade                          |
+|                        | Sharing small objects                                 | Flyweight                       |
+|                        | Performing tasks using delegate objects               | Proxy                           |
+| **Behavioral Patterns**| Spreading requests to executable objects              | Chain of Responsibility         |
+|                        | Manipulation by generalizing the task to perform      | Command                         |
+|                        | Verification/work processing based on simple grammar  | Interpreter                     |
+|                        | Sequentially accessing several objects of same type   | Iterator                        |
+|                        | Simplifying an M:N object relationship to N:1         | Mediator                        |
+|                        | Restoring/storing previous state of an object         | Memento                         |
+|                        | One source multiple use                               | Observer                        |
+|                        | Smoothly changing behavior when adding object state   | State                           |
+|                        | Selecting/applying one of several algorithms          | Strategy                        |
+|                        | Reusing algorithm frame, changing implementation      | Template Method                 |
+|                        | Efficiently adding/changing task type                 | Visitor                         |
+
+---
+
+## 2. Object Creation Patterns
+
+These patterns deal with object instantiation, making the system independent of how its objects are created, composed, and represented.
+
+### 2.1. Abstract Factory Pattern
+*   **Purpose:** Provide an interface for creating *families* of related or independent objects without specifying their concrete classes.
+*   **Advantages:**
+    *   Creates specific objects without needing to know the client's object type.
+    *   Allows adding new product families independently without modifying existing code.
+*   **Disadvantage:** Requires modifying *all* factory classes when adding a *new product* to an existing product family.
+*   **Use Cases:** When developing a compiler that needs different configurations for each system or operating system.
+
+### 2.2. Builder Pattern
+*   **Purpose:** Construct a complex object step-by-step. The final product can be of different types or representations.
+*   **Advantages:** Can create objects with different construction methods in a consistent way.
+*   **Disadvantage:** Easy to create a new object, but complex to modify individual components of an existing object.
+*   **Use Cases:** When developing a translator system that translates input into various languages and outputs the result (e.g., building different language outputs from the same input structure).
+
+### 2.3. Factory Method Pattern
+*   **Purpose:** Define an interface for creating an object, but let subclasses decide which class to instantiate. It defers instantiation to subclasses.
+*   **Advantages:**
+    *   Allows consistent programming regardless of the object type being created.
+    *   Flexible and scalable.
+*   **Disadvantage:** Requires defining a new subclass each time the type of object to be created changes.
+*   **Use Cases:** When the OS operates a program after it's double-clicked (the OS acts as a factory, deciding which program type to run).
+
+### 2.4. Prototype Pattern
+*   **Purpose:** Create new objects by copying an existing object (the "prototype") rather than creating new instances from scratch.
+*   **Advantages:**
+    *   No need to create a separate class for each new object type.
+    *   Objects can be added and deleted at runtime.
+*   **Disadvantage:** All classes for objects to be created must implement a `Clone()` or similar duplication function.
+*   **Use Cases:** When creating a graphic editor like MS Visio, where objects (shapes) can be duplicated.
+
+### 2.5. Singleton Pattern
+*   **Purpose:** Ensure that a class has only one instance and provides a global point of access to that instance.
+*   **Advantages:** Easy to manage the number of objects (typically fixed at one) in the class.
+*   **Core Concept:** Achieved by making the constructor private and providing a public static method (e.g., `getInstance()`) that returns the single instance.
+*   **Use Cases:** When a device manager needs only a single object to manage resources.
+
+---
+
+## 3. Structural Patterns
+
+These patterns deal with how classes and objects are composed to form larger structures, promoting flexibility and efficiency.
+
+### 3.1. Adapter Pattern
+*   **Purpose:** Allow incompatible interfaces to work together. It converts the interface of one class into another interface clients expect.
+*   **Advantages:** Easily integrate new classes and functions by adapting their interfaces.
+*   **Use Cases:** Reusing an existing module that has a different interface than what your current system expects.
+
+### 3.2. Bridge Pattern
+*   **Purpose:** Decouple an abstraction from its implementation so that the two can vary independently.
+*   **Advantages:**
+    *   Clearly separates interface and implementation.
+    *   Allows implemented objects to be exchanged and configured at runtime.
+    *   Can replace conditional compilation (`#ifdef~#endif`) for platform-specific code.
+*   **Use Cases:** When you need to manage different types of operating systems (abstraction) with various graphics APIs (implementations).
+
+### 3.3. Composite Pattern
+*   **Purpose:** Compose objects into tree structures to represent part-whole hierarchies. It lets clients treat individual objects and compositions of objects uniformly.
+*   **Advantages:** Convenient for developers, as they don't have to differentiate between basic objects and composite objects in their code.
+*   **Use Cases:** Representing file systems (files and directories are treated as entries), organizational charts, or UI components.
+
+### 3.4. Decorator Pattern
+*   **Purpose:** Attach additional responsibilities to an object dynamically. It provides a flexible alternative to subclassing for extending functionality.
+*   **Advantages:** Simple and flexible for adding or removing functions to an object.
+*   **Use Cases:** Adding logging, encryption, or compression to a data stream without altering the core stream object.
+
+### 3.5. Facade Pattern
+*   **Purpose:** Provide a simplified interface to a complex subsystem. It hides the complexities of the subsystem from the client.
+*   **Advantages:**
+    *   Offers a simple interface for a complex subsystem.
+    *   Removes complex or recursive dependency relationships between classes by introducing a stratified dependency (clients depend only on the facade).
+*   **Core Concept:** A single "facade" class acts as a central entry point, delegating requests to the appropriate classes within the subsystem.
+*   **Use Cases:** A `Computer` class (facade) providing a `startComputer()` method that orchestrates complex interactions between `CPU`, `Memory`, and `HardDrive` components.
+
+### 3.6. Flyweight Pattern
+*   **Purpose:** Minimize memory usage or computation expenses by sharing as much data as possible with similar objects. It separates shareable (intrinsic) and non-shareable (extrinsic) information.
+*   **Advantages:**
+    *   Reduces storage space.
+    *   Simplifies handling of multiple objects.
+*   **Use Cases:** Representing characters in a text editor (character data is shared, position is unique) or thousands of small graphical objects.
+
+### 3.7. Proxy Pattern
+*   **Purpose:** Provide a surrogate or placeholder for another object to control access to it. It represents an object that is complex or time-consuming to create with a simpler, lightweight object.
+*   **Advantages:** Delays the creation of resource-intensive objects, improving performance or resource management.
+*   **Use Cases:** Loading images on demand, remote object access, security checks before accessing a real object.
+
+---
+
+================================================================================
+ORIGINAL TEXT (First 5000 chars)
+================================================================================
+
+--- Page 76 ---
+convenience  of reusing  repetitive  codes and to manage  complex  codes more easily.Software  Development )
+<Table 20> Representative  design patterns  and problem  types
+Large category Problem  type (purpose  of use) Related  design  pattern
+Creating  an object by product  family Abstract  Factory
+, Creating  a whole object  by creating  partial objects Builder
+Patters  for object Creating  an object using a delegate function Factory Method
+Creating  an object  through  replication Prototype
+Limiting  object  creation  up to N Singleton
+Changing  an interface  for reusing  the existing  module Adapter
+Clear separation  of interface  and implementation Bridge
+Establishing  and managing  the partial-whole Composite
+Patterns  for structural relationship  between  objects
+improvement Dynamically  adding  and deleting  an object  function Decorator
+Clearly  separating  and defining  a subsystem Facade
+Sharing  small objects Flyweight
+Performing  tasks using delegate  objects Proxy
+Spreading  requests  to executable  objects Chain of Responsibility
+Manipulation  by generalizing  the task to perform Command
+Verification  and work processing  based on simple Interpreter
+grammar
+Sequentially  accessing  several  objects  of the same Iterator
+data type
+Simplifying  a M:N object  relationship  to N:1 Mediator
+Patterns  for behavior Restoring  or storing  the previous  state of an object Memento
+improvement One source multiple use Observer
+Smoothly  changing  behavior  execution  when adding  an State
+object  state
+Selecting  and applying  one of several algorithms  with Strategy
+the same purpose
+Reusing  the basic frame of the algorithm  and changing Template  method
+detailed  implementation
+Efficiently  adding  or changing  a task type Visitor
+@ Object  creation  patterns
++ Abstract  Factory  pattern
+Definition:  When creating  a family of objects  that are either closely related or hardly related, an interface  is
+provided  that can create the object  concerned  without  specifically  knowing  its class.
+- Advantages:  Applied when creating  a specific  object and actually  using it without  specifically  knowing  the
+type of object to which the client codes belong.
+A new product family can be added independently  of the existing  source codes when creating  a new
+product  family.
+- Disadvantages:  All factory  classes  should be modified  when adding  a new product  to the product  family.
+- Use examples:  When developing  a compiler that should be configured  differently  for each system or
+operating  system.
+M1 Software  development  75
+
+
+--- Page 77 ---
+ESSENCE
++ Builder  pattern
+- Definition:  Used when the returned  objects  are not the simple inheritance  target of the basic output  object,
+but are completely  different  user interfaces  composed  of different  combinations  of objects.
+- Advantages:  An object having  different  expression  methods  can be created  in the same way.
+- Disadvantage:  It is easy to create a new object, but it is very tricky to modify  each component  of the object.
+- Use examples:  When developing  a translator  system that translates  entered Korean into various languages
+and outputs  the result.
++ Factory  Method  pattern
+- Definition:  A method of indirectly  creating  an object using a proxy function,  rather than directly  calling the
+object  constructor.
+- Advantages:  Programming  is possible  using the same form, regardless  of the object to be created.
+Therefore,  it is flexible and scalable.
+- Disadvantages:  A new subclass  must be defined  each time the type of object  to be created  changes.
+- Use examples:  When a program  is double  clicked in the OS, the program  is operated  by the OS.
++ Prototype  pattern
+- Definition:  A method  of creating  an object by duplicating  an existing  object.
+- Advantages:  There is no need to create a separate  class to create an object. An object can be added and
+deleted  at runtime.
+- Disadvantage:  All classes, which are the data types of objects  to be created,  should implement  the Clone()
+member  function.
+- Use examples:  When creating  a graphic  editor like MS Visio.
++ Singleton  pattern
+- Definition:  Used when fixing the number  of class objects  at less than N.
+- Advantages:  Easy to manage  the number  of objects  in the class.
+- Use examples:  When a device manager,  which needs only a single object, manages  objects.
++ Diagram  of the Singleton  example  class
+<<Java  Class>> <<Java  Class>>
+Singleton Singleton
+DPO0S_singleton DPO0S_singleton
+- Singleton - Singleton + Main()
++getInstance():Singleton +main(Stringf):void
+x 0.1
+76 TOPCIT  ESSENCE
+
+
+--- Page 78 ---
+Software  Development )
+Singleton  java - Class with only 1 instance
+package  DP005_singleton;
+public class Singleton  {1
+2
+3
+4. private static Singleton  singleton  = new Singleton();
+5, //Set to private  to prevent  access  from outside,  and set to static so that it is available  throughout  one program.
+6.
+7
+8.
+9.private  Singleton(  )...

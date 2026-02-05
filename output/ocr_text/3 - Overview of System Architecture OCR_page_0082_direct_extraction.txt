@@ -1,0 +1,32 @@
+Overview  of System Architecture )
+Instruction Execution  Result
+@ >| F } >@
+Clock Cycle |
+Instruction |~ ~
+1
+Instruction |~. >
+2
+@ Pipeline  hazard
+A pipeline hazard refers to the pipeline speed exceptionally  slowing  down. Pipeline  hazards  include the data hazard,
+the control hazard, and the structural  hazard.
+Data hazards  occur when the next instruction execution  has to be delayed until the previous  instruction  has been
+completed  because  of the dependency  between  instruction  operands.  Control hazards  are generated  by branch
+instructions,  like branch and jump,which  change the execution  order of the instructions.  Structural  hazards  are
+generated  when instructions  cannot be processed  in parallel in the same clock cycle, due to hardware  limitations.  In
+other words, it means the hardware  cannot  support  the combination  of instructions  in the same clock cycle.
+E) Parallel  programming  technology
+@® Compiler  technology  - OpenMP
+OpenMP  is a compiler  directive-based  parallel programming  API. Here, directive-based  means processing  only the
+desired parts in parallel, by adding a directive  to a program  written sequentially  without  parallel processing.  The
+execution  model of OpenMP  is the fork/join  model. A program  initially operates  as a master thread, and when it
+encounters  a directive,  it creates  threads  and independently  executes  them. When the parallel processing  is finished
+(when the area selected  as a directive  is finished),  they are joined into one master  thread in order to run the code
+sequentially.
+@ Message  passing  parallel programming  model
+The message  passing  interface  is a parallel programming  model suitable  to a distributed  memory  system structure.
+Since MPI is not a memory  sharing mode, the nodes share the information  by transferring  messages  over the
+network.  Therefore,  the network  communication  speed is the most important  factor  for performance,  and it is widely
+used by supercomputers  that require  a high-speed  operation.  Parallel programming  tools for message  passing  include
+High Performance  FORTRAN  (HPF), Parallel Virtual Machine  (PVM), and Message  Passing  Interface  (MPI). MPI has
+become  the standard.
+M3 Overview  of System  Architecture  81

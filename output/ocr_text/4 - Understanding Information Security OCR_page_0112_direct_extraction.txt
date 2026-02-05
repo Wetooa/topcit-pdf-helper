@@ -1,0 +1,38 @@
+ESSENCE
+@ Network  security  model
+A computer  network  consists  of communication  objects,  such as computers  and communication  systems  (a set
+of transmission  devices and communication  lines). The computer  network  exists to support  data transmission
+between  the sending  computer  and receiving  computer,  regardless  of the distance.
+{Figure 55] is an abstract  expression  of network  communication  elements  from the perspective  of security.
+A single message  is sent from the sender to the receiver  through a network,  like the Internet.  Two
+communication  subjects  should cooperate  with each other to exchange  messages  in this process.  A logical
+information  channel (a path consisting  of numerous  communication  devices  is allocated  between  the sending
+computer  and the receiving  computer,  which is used to transfer  data) is established  by setting the Internet
+path between  the message  source and destination,  negotiating  between  the two communication  subjects.
+If transmission  data needs to be protected  from attacks  on confidentiality  and authentication,  corresponding
+security  measures  are started.  All mechanisms  for security  should include  the following  two elements:
+* Conversion,  related to the security of  the data to be sent, belongs  to this. For example,  encryption  that
+mixes messages  to prevent  attackers  from understanding  the message  or adding a code (hash code), based
+on the message  content  to identify  the sender, belong  to this.
++ For example,  encryption  keys belong  to this, which are used to convert  the message  (confidential  information
+shared by two communicating  subjects  that is unknown  to the attacker)  before sending  it, and to convert  it
+again after receiving  the message.
+Trusted  third party (mediator
+and distributor  of confidential
+information)
+Sender Receiver
+Security- Information Security-
+related penal related
+conversion Security Security conversion
+Message t message Gail» message
+Secret Attacker Secret
+information information
+[Figure 55] Network  security  model
+(Source:  W. Stallings,  Cryptography  and Network  Security  - Principles  and Practice,  Prentice  Hall, p.25)
+A trusted  third party may be needed for secure transmission.  For example,  a third party may distribute  secret
+information,  such as encryption  keys, to both communication  subjects  to prevent  attackers  from knowing  it or
+may mediate  a dispute  when it occurs.
+A general network  security  model should meet the following  four basic conditions  when designing  a specific
+security  service:
++ Design should be an algorithm  design that performs  conversion  related to security.  An attacker  should not be
+412 TOPCIT  ESSENCE

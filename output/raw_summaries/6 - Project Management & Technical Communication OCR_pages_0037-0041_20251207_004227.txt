@@ -1,0 +1,221 @@
+LEARNING GUIDE: Pages 37-41
+Generated: 2025-12-07 00:42:27
+PDF: 6 - Project Management & Technical Communication OCR
+
+================================================================================
+LEARNING GUIDE
+================================================================================
+
+Here is a simplified, easy-to-read learning guide based on the provided text:
+
+---
+
+## Communication Essentials: Official Letters, Meetings, and Emails
+
+This guide covers key principles and methods for effective written and verbal communication in a professional setting.
+
+---
+
+### B) Official Letters: Principles and Methods
+
+Official letters convey an organization's intent in business, issued under the head of the organization's name.
+
+#### 1. Official Letter Terminology
+
+*   **Draft Text:** A document created to receive approval from the head of the organization. It's preserved after approval.
+*   **Execution Text:** Created by deleting the approval section from an approved draft text, then delivered to the recipient.
+
+#### 2. Approval Process
+
+Approval makes a document effective, requiring the signature of the approving authority.
+
+*   **Signature Types:**
+    *   Electronic image signatures
+    *   Electronic text signatures
+    *   Administrative electronic signatures
+*   **Approval Types (based on authority):**
+    *   **Regular Approval:** Made by the head of the organization (e.g., CEO, institution head).
+    *   **Discretionary Approval:** Head delegates authority to a sub-organization leader. Has the same effect as regular approval.
+    *   **Substitute Approval:** Approver temporarily delegates authority to a subordinate due to extended absence.
+
+#### 3. General Writing Methods for Official Letters
+
+Based on government regulations (evolved from official government documents).
+
+*   **Numbers:** Arabic numerals are default.
+    *   Currency: Use commas (e.g., 1,113,500 won).
+    *   Year: No commas (e.g., 2011).
+*   **Date:** Numbers only, separated by dots (e.g., 2011.12.12). Omit "year, month, day" text.
+*   **Time:** 24-hour format, numbers only, separated by a colon (e.g., 17:30). Omit "hour, minute" text.
+*   **Subdivision:** Follow specific administrative regulations for drafting subdivision rules.
+
+#### 4. Item-Specific Writing Methods
+
+*   **Sender (Top):** Organization name, top center (e.g., OOO Co., Ltd.).
+*   **Recipient:** Head of the receiving organization (e.g., Mayor of Seoul).
+    *   **Multiple Recipients:** Write "Refer to the list of recipients," then list them at the bottom.
+*   **Reference:** The organization/person responsible for handling the document (e.g., Head of General Affairs Dept., "the person in charge of OO").
+*   **Title:** A concise title encompassing the document's content.
+*   **Greeting:** Start the letter with a greeting (e.g., "1. We wish all the best to your company.").
+*   **Relevant Evidence (Grounds):** State the basis for sending the document. Format: "Document number (effective date), document title." Can be omitted if none.
+*   **Content:** Begin with an opening statement summarizing the core, then detail supporting items.
+*   **Attachment:** Marked below reference/title.
+    *   Single attachment: No number.
+    *   Multiple attachments: Number each (e.g., "1. One copy of OOO, 2. One copy of XXX.").
+*   **"End" Mark:** The word "End" with one space after the last letter of the document. If ending with a table, place "End" at the bottom left of the table.
+*   **Sender (Bottom):** Name of the head of the sending organization, lower center (e.g., CEO OOO of OOO Co., Ltd.).
+*   **Contact Information:** Address, email, and phone of the person in charge for inquiries.
+*   **Document Numbering:** Follow organization rules (usually abbreviation + year + serial number). Location (top/bottom) varies by organization, often at the bottom for public organizations.
+
+---
+
+### C) Meeting Minutes: Methods of Writing
+
+Meeting minutes are crucial documents for recording discussions and decisions.
+
+#### 1. Significance and Importance of Meetings
+
+*   **Definition:** A group discussion where stakeholders gather to discuss a topic and reach an agreement.
+*   **Benefits:** Fosters creative ideas, reduces risks, and leverages collective intelligence.
+*   **Importance of Minutes:**
+    *   Provides a historical record of work and decisions.
+    *   Clarifies communication and prevents disputes, especially in collaborations.
+    *   Acts as an official record of agreements.
+
+#### 2. Methods of Writing Meeting Minutes
+
+*   **Core Information:** Record date, time, place, theme, participants, discussions, and decisions.
+*   **Principle:** Follow the 5W1H (When, Where, Who, What, How, Why).
+*   **Content Focus:** Summarize opinions and clearly record agreed-upon decisions.
+*   **Post-Meeting Process:**
+    1.  Circulate completed minutes via email to attendees.
+    2.  Receive opinions or obtain signatures for confirmation.
+    3.  Confirm the minutes, as they become an important business record.
+    4.  Prompt for opinions: "I have organized the minutes as above; please review and offer your opinion. If there is no special opinion, I will share them or proceed as they are."
+
+#### 3. Meeting Minutes Structure Example
+
+*   **Date:** 20XX.12.5(Wed) 14:00
+*   **Place:** Conference Room 1 on the 3rd floor
+*   **Attendees:** Gil-dong Hong, Gil-san Jang, Kek-jeong Lim, Woo-chi Jeon (4 people)
+*   **1. Main agenda:** (e.g., Discuss how to build a technology history management system)
+*   **2. Detailed discussion:** (Bullet points of key points discussed)
+*   **3. Decisions:** (Clear statements of what was agreed)
+*   **4. Items to be discussed later:** (Follow-up actions or unresolved points)
+*   **Signatures:** (Names and signatures of attendees)
+
+---
+
+### D) E-mail: Methods of Writing
+
+Email is a widely used and often official communication tool, especially in software development.
+
+#### 1. Importance of E-mail
+
+*   Most popular communication method, crucial in business.
+*   Often functions as an official letter, requiring clear and careful writing.
+
+#### 2. General Techniques for Business E-mails
+
+*   **Clear Title:** Reveals the email's purpose.
+*   **Effective Content:** Clearly conveys the purpose.
+*   **Recipient/Reference:** Designate 'To' and 'Cc' considering work scope.
+*   **Concise & Clear:** Main content first (deductive writing), followed by supporting details.
+
+#### 3. Methods of Writing Effective E-mails (Specifics)
+
+*   **Subject Line:**
+    *   Concise, expresses the core message.
+    *   Add a heading like `[Report]`, `[Share]`, `[Notice]`, or `[Reference]`.
+*   **Greeting:** Include a greeting to foster positive communication.
+*   **Heading (within body):**
+    *   Place important information at the beginning.
+    *   Summarizes the email's content in one sentence for quick understanding.
+    *   Typical structure: Greeting, Headings, Numbered details, Final thank-you message.
+*   **Numbering:**
+    *   Use 1, 2, 3... for content points.
+    *   Benefits: Faster understanding, easier for recipients to reply to specific points.
+*   **To vs. CC:**
+    *   **To (Recipient):** Person who needs to read, take action, or give an opinion.
+    *   **Cc (Reference):** Person who needs to be informed or refer to the email.
+*   **Reply to All:**
+    *   Use for collaboration among multiple people to ensure effective information sharing.
+    *   Use a single (general) reply if special security or privacy is required.
+*   **Confirm Recipient:** Always double-check recipients before sending to avoid errors and maintain security.
+
+---
+
+================================================================================
+ORIGINAL TEXT (First 5000 chars)
+================================================================================
+
+--- Page 37 ---
+ESSENCE
+Career  goal and « Career  development  support  through  individual  career  goal and desired  job
+desired  job management management
+4. Establishment  Process
+Job/Skill Classification Slee
+" System  design System  development research  of the entire System  InitiationSystem  establishmentworkforce
+10/3 ~ 28 10/3 ~ 10/15 10/17 ~ 11/30 12/1~12/15 12.15
+5. Expected  Benefit
+Classification Content
+Strenethening  strategic « Support  decision-making  data when promoting  various projects  based on
+support company-wide  technical  competency  data ; ;
+« Can grasp the core competency  level of enterprise-wide  human  resources
+Effective « Use key data to arrange the right resources  for the right organizations
+reinforcement  of manpower  | « Provide  occasional  support  for manpower  with various  skills required  for PJT
+utilization promotion
+« Support  organization  of learning  by establishing  a system  that enables  exchange
+Knowledge  exchange/ of knowledge  among  members
+Business  promotion  support | « Identify  demand  for nurturing  technical  competence  and provide  development
+support
+End.
+[Figure  11] Example  of One-Page  Report
+B) Principles  and methods  of official letters
+The document  conveyed  to clearly express  the intent of an organization  in business  settings,  in the name
+of the head of the organization,  is called the official letter and it’s officially  called the draft/execution  text. A
+draft text is a document  created  to receive approval  from the  head of the organization.  It is preserved  after
+the approval,  and then the approval  section is deleted  to create an execution  text and deliver  to the receiving
+organization.  Here, we will look at the principles  and methods  necessary  for writing  official letters.
+@ Approval
+This document  becomes  effective  with the signature of the approving  authority.  Signatures  include electronic
+image signatures,  electronic  text signatures,  and administrative  electronic  signatures.
+Approval  refers to the act of a person who has the correct  authority  to decide his or her decision,  and the types include
+regular  approval,  discretionary  approval,  substitute  approval,  and cooperation.
++ Regular  approval:  Approval  made by the head of the organization.  For example,  approval  by the head of an
+institution  or the CEO of a company
++ Discretionary  approval:  Refers to the fact that the head of the organization  has delegated  the approval
+authority  to the leader  of the sub-organization  according  to the delegation  regulation.  In the case of approval
+made through  proper  delegation,  it has the same effect as regular  approval.
++ Substitute  approval:  Refers to a case where the approver  temporarily  delegates  the approval  authority  to a
+subordinate  member  when the person is absent  for an extended  period of time.
+@ Methods  of Writing  Official Letters
+Official letters have been evolved from government  official documents,  how to write them is based on the
+36 TOPCIT  ESSENCE
+
+
+--- Page 38 ---
+Project Management  and Technical  Communication  )
+following  methods  in accordance  with government  regulations.
++ Numbers:  Arabic numerals  are the default. In the case of currency  or the amount  of money, a comma (,) is
+used to mark off units of thousands,  and no comma is used for the year (e.g., T113,560  won (1,113,500  won
+for today)
++ Date: Marked as numbers,  omitting  letters such as year, month, and day, and each unit is separated  with a
+dot (ex: 2011.12.12)
++ Time: Hours and minutes  are expressed  as numbers  based on 24 hours, and the letters of hour and minute
+are omitted  and a colon (:) is inserted  between  them (ex: 5:30 pm (x) > 17: 30 (O))
++ Subdivision:  The method of subdivision  of a draft is clearly presented  in <Regulations  on the Efficient
+Operation  of Administrative  Affairs>.  Write according  to the following  subdivision  rule.
+<Methods  of Writing  Official Letters>
+© Method  of Writing  Official Letters  by Item
++ Sender:  Write the name of the organization  that sends out the letter at the top center of the document.  For
+example,  OOO Co., Ltd.
++ Recipient:  Write the head of the organization  which the letter is sent to. (e.g. Mayor of Seoul, CEO of OOO
+Co., Ltd.). If there are multiple  organizations  to receive the document,  write “Refer to the list of recipients”
+and put a comma at the bottom and mark multiple  organizations  (e.g. Seoul Metropolitan  City Mayor, Uiwang
+City Mayor, Gwangju  Metropolitan  City Mayor)
++ Reference:  In the reference  section, write the organization  responsible  for handling  this document.  For
+example,  the head of the organization  in charge such as the head of the general affairs department,  the
+head of the personnel  department,  etc. If you are not sure of the organization  in charge,  write “the person in
+charge  of OO’
++ Title: Write a title that can encompass  the contents  of the document,  just as in th...

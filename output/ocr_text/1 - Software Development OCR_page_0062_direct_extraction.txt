@@ -1,0 +1,28 @@
+Software  Development )
+B) Transaction  flow-oriented  design
+A “transaction”  is said to occur when data, control signal, etc. trigger an action. Transaction  flow-oriented
+design can be used when received  input can be split into multiple  output flows. A transaction  evaluates  the
+input value and flows the result along one of several output paths depending  on the result. The center  of the
+information  flow in this case is called the transaction  center. The figure below shows this characteristic,  and
+the bubble  T is the transaction  center.
+Transaction a ;
+item Mutally  exclusive
+>| > >| > action paths
+Transaction \
+eocenter
+[Figure 15] Transaction  flow
+If the data flow diagram  has a transaction  flow, the location  of the transaction  center should be clarified  first.
+The transaction  center receives  a transaction  as an input and connects  it to several  output bubbles.  Therefore,
+the transaction  center  has one input path and multiple  output  paths. Each operation  path (output  path) can be
+composed  of several bubbles  and can have  a transform  flow or a transaction  flow.
+Based on this, a program  structure based on transactions  can be created. Such a structure consists  of three
+components.
++ Amodule  that acts as a transaction  center.
++ A module  that receives  an input.
+* One or more modules  corresponding  to each operation  path.
+The figure below shows the structure  of the program  structure  based on transactions.
+Overall Controller
+Reception  path
+| Input Controller Transaction  Controller1 Agta am
+[Figure 16] Structure  of the program  based on transactions
+M1 Software  development  61

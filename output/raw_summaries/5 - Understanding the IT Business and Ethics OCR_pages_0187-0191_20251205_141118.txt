@@ -1,0 +1,204 @@
+LEARNING GUIDE: Pages 187-191
+Generated: 2025-12-05 14:11:18
+PDF: 5 - Understanding the IT Business and Ethics OCR
+
+================================================================================
+LEARNING GUIDE
+================================================================================
+
+Here's a simplified, easy-to-read learning guide based on the provided text:
+
+---
+
+# Personal Information Protection: A Learning Guide
+
+## 1. Introduction to Personal Information Security
+
+### 1.1 Why Personal Information Protection Matters
+Recent incidents highlight the critical need for personal information protection. Hackers have leaked millions of individuals' data, including:
+*   Website IDs, names, dates of birth, emails, phone numbers, addresses, passport numbers.
+*   Accommodation reservations and member information.
+
+These breaches lead to severe penalties, such as large fines and corrective orders, for companies violating personal information protection laws like the **Act on Promotion of Information and Communication Network Utilization and Information Protection, Etc. (Network Act)**. Violations include failures in access control, record preservation, encryption, and data expiration.
+
+## 2. Understanding Personal Information
+
+### 2.1 Definition of Personal Information
+**Personal Information** is any information relating to a **living individual** that identifies them (e.g., name, resident registration number, image). It also includes information that, even if not identifying by itself, can be **easily combined** with other data to identify an individual.
+
+*   **"Easily combined with other information"** means there's a high and possible chance of obtaining and combining additional information to identify someone.
+
+### 2.2 Types of Personal Information
+Personal information encompasses various categories:
+
+*   **Identification:** Name, ID numbers, address, phone, email, date/place of birth, family details.
+*   **Physical:** Biometrics (face, fingerprint, iris, voice, genetic info), height, weight. Medical/Health status, records, disabilities.
+*   **Mental:** Preferences (rental/purchase history, website searches), inner secrets (thoughts, beliefs, religion, values, political views).
+*   **Property:** Real estate, savings, income, credit card numbers, bank accounts. Credit rating, loan/collateral details.
+*   **Social:** Education (grades, attendance, certificates), legal (criminal record, trial record), labor (workplace, experience, job evaluations), military service.
+*   **Others:** Phone call history, website access history, emails/messages, GPS location data.
+
+### 2.3 What is NOT Considered Personal Information
+*   Information on deceased persons, corporations, groups, or objects.
+*   Group statistics (aggregated data).
+*   Information where it's difficult to identify a specific individual.
+
+## 3. Key Terms in Personal Information Processing
+
+*   **Information Subject:** The individual who can be identified by the collected and processed information.
+*   **Processing:** Any act involving personal information, including collection, creation, storage, use, provision, disclosure, destruction, etc.
+*   **Personal Information File:** Systematically arranged personal information for easy searching.
+*   **Personal Information Processor:** Public institutions, corporations, organizations, businesses, or individuals who process personal information (themselves or via others) for business purposes.
+*   **Privacy Policy:** A document outlining how an entity processes and protects personal information. It must detail processing purpose, retention period, data items, third-party provision, security measures, and the Personal Information Protection Officer.
+*   **Personal Information Leakage:** Occurs when:
+    *   Documents, storage devices, or computers with personal information are lost or stolen.
+    *   Unauthorized persons access a personal information processing system/database.
+    *   Personal information is incorrectly transmitted to unauthorized persons (intentional or negligent).
+    *   Personal information is transferred to unauthorized persons or access is permitted to the processing system.
+*   **Personal Information Exposure:** When general internet users can obtain others' personal information during normal internet use, without special methods like hacking.
+*   **Permission to Access Personal Information:** The right of the personal information controller to access, view, record, correct, and delete personal information within the processing system.
+
+## 4. Basic Principles of Personal Information Protection Act
+
+*   **Scope:** Applies to all personal information processors (public and private sector). Covers handwritten documents and computer-processed information.
+*   **Processing Restrictions:**
+    *   Generally **prohibited** (unless the information subject consents or legal basis exists).
+    *   **Sensitive information** (e.g., ideology, beliefs, health, sex life, criminal history) and **unique identification information** (e.g., resident registration number) require specific safety measures like encryption due to higher risks.
+*   **Leakage Notification:** Mandatory notification of personal information leakage.
+*   **Dispute Resolution:** Provides for a group dispute mediation system and group lawsuits.
+*   **Committee:** Presidential Personal Information Protection Committee.
+
+## 5. Personal Information Processing Procedure & Guidelines
+
+The Personal Information Protection Act outlines obligations at each stage:
+
+### 5.1 Stages of Processing
+
+1.  **Collection and Use:**
+    *   **Restriction:** Only collect the minimum personal information required.
+    *   **Management:** Strict restrictions on sensitive and unique identification information.
+    *   **Website Membership:** Offer alternative sign-up without resident registration numbers.
+    *   **Image Data:** Install/operate processing equipment, disclose management policies.
+    *   **Management:** Designate Personal Information Protection Managers, implement safety measures.
+2.  **Provision:**
+    *   **Limitation:** Do not provide personal information to third parties or for unintended purposes without proper consent.
+    *   **Outsourcing/Transfer:** Follow rules for outsourcing processing or transferring data during business changes.
+3.  **Destruction:** Destroy personal information when no longer needed.
+4.  **Reporting:** Report personal information leakage and damage.
+5.  **Guarantee of Rights:**
+    *   **Information Subjects' Rights:** Right to access, request correction, deletion, and destruction of personal information.
+    *   **Dispute Resolution:** Utilize the Personal Information Dispute Mediation Committee.
+    *   **Legal Action:** Class action lawsuits to suspend infringements.
+6.  **Penalty and Transition Measures:** Penalties apply for violations.
+
+### 5.2 Guidelines for Personal Information Agreement (Privacy Policy Development)
+
+When collecting or providing customer personal information, companies and public institutions must follow government guidelines for obtaining consent. Information should be presented clearly for users to understand.
+
+#### 5.2.1 Preparation Stage for Policy Development
+
+1.  **Identify Required Personal Information:**
+    *   Determine the **minimum personal information** needed for a task.
+    *   Check for **unique identification information** (resident registration, driver's license, passport, alien registration numbers) or **sensitive information** (ideology, beliefs, health, sex life, criminal history), as these require separate processing and consent.
+2.  **Identify Retention Period:**
+    *   Confirm the retention period via privacy policy guidelines or relevant laws.
+    *   Set the minimum necessary retention period if not specified.
+3.  **Confirm Consent Requirement for Collection & Use:**
+    *   **Generally, consent from the information subject is required** for collection and use.
+    *   **Exceptions (consent NOT needed for collection/use):**
+        *   Public institutions performing statutory duties.
+        *   Legal obligations or specific statutory provisions.
+        *   Inevitably necessary for executing a contract with the data subject.
+        *   Manifestly necessary to protect life, body, or property from imminent danger (and consent can't be obtained).
+        *   Necessary for the legitimate interests of the controller, clearly superior to data subject's rights.
+        *   For information and communication services, if difficult to get consent normally due to economic/technical reasons, or for service charge payment.
+    *   **Special Consent for Sensitive/Unique ID:** Requires **separate consent** (unless laws specifically require or permit processing without it). Processing resident registration numbers is highly restricted to specific legal requirements or imminent danger situations.
+    *   **Children Under 14:** Consent of a legal representative is required.
+4.  **Identify if Personal Information is Provided to a Third Party:**
+    *   **Generally, separate consent is required** to provide personal information to a third party.
+    *   **Checklist for Third-Party Provision (to be disclosed):**
+        1.  Recipient of personal information.
+        2.  Purpose of recipient's use.
+        3.  Specific items of personal information provided.
+        4.  Recipient's retention and use period.
+        5.  The data subject's right to deny consent and any disadvantages.
+    *   **Exception (consent NOT needed for third-party provision):** If provided within the scope of original collection purposes under certain legal conditions (similar to collection/use exceptions above).
+
+## 6. Personal Information Protection Management Levels
+
+Public institutions undergo a "Diagnosis of Personal Information Protection Management Levels" to continuously improve their protection standards.
+
+---
+
+================================================================================
+ORIGINAL TEXT (First 5000 chars)
+================================================================================
+
+--- Page 187 ---
+ESSENCE
++ Preview  for practical  business
+A hacker who infiltrated  into an accommodation  app last year was found to have leaked personal
+information  of 2.9 million people from eight other companies  during the same period. The leaked personal
+information  included  website ID as well as name, date of birth, e-mail, mobile phone number, address,
+passport  number, etc. The information  about 3,239,000  cases of accommodation  reservation  and 178,625
+members,  as well as personal  information  about 971,877  members  (excluding  duplicative  cases) were found
+to have been leaked from several companies.  In addition,  4817 menacing  and obscene  texts were sent by
+abusing  the leaked accommodation  details.
+The Korea Communications  Commission  found that the act amounts  to a “severe act of violation”  and
+imposed  the penalty, as it violates  a number  of personal  information  protection  measures  such as access
+control, access record preservation,  encryption,  and expiration  date set forth in the “Act on Promotion  of
+Information  and Communication.  Network  Utilization  and Information  Protection,  Etc.” (the "Network  Act’).
+The following  are examples  of personal  information  leaks in domestic  companies.
+NumberDate of Type of Number  of Leaked  cases ea ae .cae of Victims Administrative  SanctionsOccurrence Violation (damage) (damage)
+* KRW 310 million in penalty
+Personal ae eens *KRW 25 million in fine
+March 2017 ee  ia accommodation  data oe *  Order of correction  and
+hacking attacks | °X 170.000 cases of pea disclosure
+8 member  information *Recommended  disciplinary
+actions  for executives
+Violation  of 180,000  cases in total a
+provision 3X Personal information *KRW 180 million in penalty
+August  2016  | of personal provided  to 3 property  | 29000  people | *KRW 20 million in fine
+information  to a insurance  companies * Corrective  order
+third party including  Lotte
+20.51 million
+people in total ape Aonl as  Hie % 1033 milion | *4KRW  48 billion in penalty
+May 2016 information ° Pe individual * KRW 25 million in fine
+Res era % 11.2 million dormant lea * Order of correction  andhack attacks % 10.18 million ;members disclosure
+dormant
+members
+186 TOPCIT  ESSENCE
+
+
+--- Page 188 ---
+Understanding  the IT Business  and Ethics )
+01 Understanding  of Personal  Information
+A) Concept  of Personal  Information
+© Definition  of Personal  Information
+The term "personal  information"  means any information  relating  to a @living  ®individual:  ©Information  that identifies
+a particular  @individual  by his or her full name, resident  registration  number,  image, etc. (including  information  which,
+even if it by itself does not identify  a particular  individual,  nay ®be easily combined  with other information  to identify
+a particular  individual.)
+Article 2 of Personal  Information  Protection  Act
+The term "personal  information”  means any information  relating  to a living individual:  Information  that
+identifies  a particular  individual  by his or her full name, resident  registration  number,  image, etc. (including
+information  which, even if it by itself does not identify  a particular  individual,  may be easily combined  with
+other information  to identify  a particular  individual.)
+<Table 98> shows the types of personal  information  and specific  examples.
+<Table  98> Examples  of personal  information
+Type Example  of personal  information
+Identification + Name, resident  registration  number, address, hometown,  contact  information  such as phone number,
+information date of birth, place of birth, e-mail address,  family relations  and family member  information,  etc.
+Physical + (Biometrics  information)  Face, fingerprint,  iris, voice, genetic information,  height, weight, etc.
+information + (Medical  and health) Health status, medical  record, physical  disability,  disability  level, medical  history, etc
++ (Preferences  and propensity  information)  Rental records such as books and videos, magazine
+Mental subscription  information,  product  purchase  details,  website  search details, etc.
+. : * (Inner  secrets,  etc.) Thoughts,  creeds,  religion,  values, political  parties  and real estate  holdings,  savings,information ore
++ (Credit information)  Credit rating information,  loan or collateral  details,  credit card record details, etc.
+Propert + (Personal  financial information)  Income, credit card number, passbook  account  number, movable  and
+Informatip  fn immovable  property  holdings, savings details, etc.
++ (Credit  information)  Credit rating information,  loan or collateral  record,  credit card record,  etc
++ (Educational  information)  Education,  grades, attendance  status, certificate  holdings, reward and
+punishment  records,  school records,  etc.
+Social + (Legal information)  criminal record, trial record, details of penalty payment,  etc.
+information + (Labor Information)  Workplace,  employer, place of work, work experience,  r...

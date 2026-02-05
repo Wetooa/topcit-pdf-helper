@@ -1,0 +1,39 @@
+Database )
+@ Structure  can be understood  both by humans  and machines:  Makes it easy to compare  and collect  data.
+© Separation  of content  and expression:  The format can be changed  according  to the user's preferences  (increased
+reusability).
+© Hierarchical  structure: Supports  structure  search and full text search.
+@ Unicode:  Supports  multiple  languages.
+B) Schematic  diagram  and components  of XML
+XML is composed  of XML Document  Type Definition  (DTD) and the XML schema  for specifying  XML; the XPath for
+processing  XML documents;  and XQuery, Extensible  Stylesheet  Language  (XSL), XML Linking  Language  (XLL), etc.
+To create an XML document,  it is necessary  to fully understand  the XML components  and the basic syntax.
+DOM
+Extracting  objects  from XML documents  | Processing
+Structure Visuali
+XML Schema & DTD aon zation XSL (Style sheet - providing XSLT
+(Document  type definition) document  forms) (Transformation)= T Switching to various
+Cay document  formats
+XLL XP path
+(Linking  Language) (Providing  a specific address  in XML: Addressing)XQL
+(Query language - search)
+2 types
+XPointer/XLink
+(Link to move to another  page
+[Figure  5] Diagram  of XML configuration
+C) XML configuration
+@ XML components
+<Table 12> XML components
+Component Description
++ XML Document  Type Definition
+XML DTD + Adocument  that defines  the form of an XML document  in a consistent  structure.  XML DTD is
+used to validate  XML.
++ High-level  data definition  language  used to specify  the structure  of an XML document  by
+XML Schema replacing  XML DTD.
++ More complex  data types than XML DTD can be declared.
++ Alanguage  that expresses  extended  queries  so that the search condition  can be included  in the
+XML path expression.
++ Astandard  XML query language  that can extract  intended  information  from an XML file as if
+using a database.XPath
+XQuery
+M2 Database  33

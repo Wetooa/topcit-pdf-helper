@@ -1,0 +1,38 @@
+Overview  of System Architecture )
+02 OSI Reference  Model and TCP/IP  Protocol  Layer Structure
+[Figure 13] shows  the concept  of the OSI reference  model communication,  which includes  the open relay system
+described  in the standard  document  ISO/IEC  7498-1:1994(E)  [8]. The diagram  is often used when discussing  ISO's OSI
+reference  model, or OSI layer, which is commonly  referred  to when dealing  with networks.  Here, ISO is derived  from the
+Greek word “iooc (isos)’, meaning  ‘identical’,  andshould not be confused  with the English name of the International
+Organization  for Standardization  (IOS). OSI is an abbreviation  of Open Systems  Interconnection.
+Open
+System
+Application  —————»>
+Presentation  ————>-
+Session  ———_—_—>
+Tehkpor—$—> ———— SEP Vv
+Network  ——> <> <>
+Data Link —————_—_> <> <>
+Physical —————_—_—»> <> <>_m —-H  A
+esOpen
+SystemRelay open system
+TISO2930-94/d11{ Physical media for OS! __t
+[Figure 13] Communication  Concept  of OSI Reference  Model Containing  Relay Open System
+<Table 2> shows in detail the protocol  and its function  of each OSI reference  model layer [1].
+<Table 2) Protocol  and Function  of Each Layer of the OSIReference  Model
+Layer Protocol Function
+a HTTP. SMTP. SNMP. FTP The application  layer provides  services,  such as a user interface,  email,Application  layer
+Telent, etc. and database  management.
+Presentation  layer JPEG, MPEG, XDR, etc.The presentation  layer supports  the syntax  of data exchanged  between
+two systems  and the encoding  translation  and encryption  related to the
+semantic.
+TLS, SSH, RPC, NetBIOS,Session  layery etc.The session  layer is for communication  sessions.  It establishes,
+maintains,  and synchronizes  the interaction  between  communication
+devices.
+Transport  layer TCP, UDP, SCTP §The transport  layer provides  functions  like the reliable  message  transfer
+between  end-to-end  processes,  as well as error control.
+Network
+layerIP. IPX, ICMP, X.25, ARP,
+OSPF, etc.The network  layer supports  packet  transmission  between  networks
+from the sending  point to the destination.
+M3 Overview  of System  Architecture  37

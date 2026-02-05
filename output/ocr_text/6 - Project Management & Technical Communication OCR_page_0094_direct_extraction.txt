@@ -1,0 +1,40 @@
+Project Management  and Technical  Communication  )
+the relationship  between  each activity  to develop  a schedule,  with the goal of completing  the project within
+the time agreed  with the client.
+If the finish date has already  been specified,  the schedule  management  process  is ignored,  and the schedule  is
+planned  in a top-down  manner,  the activities  to be performed  will be determined  based on the project  timeline.
+The schedule  may get tight as the correlation  between  each activity is neglected  and it is divided by weighting
+each stage of the project, which can eventually  fall into a vicious  cycle. Project  schedule  should be feasible  and
+planned  in consideration  of scale and resource  capacity.
+B) Schedule  management  process
+The schedule  management  process  includes  project  schedule  management  planning,  activity  definition,  activi-
+ty sequencing,  activity  duration  estimation,  schedule  development,  and schedule  control.  The existing  activity
+resource  estimation  process  has been moved to the knowledge  area of resource  management  in the PMBOK
+6th edition.
+@® Schedule  Management  Planning
+For schedule  management  planning,  a project schedule  management  plan is formulated.  A detailed plan is
+made by sharing  the project management  plan, project approval,  and rules for measuring  the project  schedule
+with the team members.
+In addition,  as the project schedule  management  plan is an important  deliverable  for quality control or
+supervision,  any change in the confirmed schedule  requires an approval  from the project steering  committee
+and the plan must be updated  and kept in a record.
+@ Definition  of Activity
+It is a process  of identifying  and documenting  the relevant  activities  to be performed  to produce  the project
+deliverables.  The project  teams define the activities  based on the project scope and requirements  statement.
+Since it is difficult  to define all activities  at the beginning  of the project,  the project  activities  are elaborated  in
+a repetitive  and incremental  manner  through  division and Rolling Wave Planning  based on the work breakdown
+system  (WBS).
+@® Sequencing  of Activity
+It is a process of identifying  the relationship  between  subdivided  activities  and connecting  them in a logical
+order.
+The logical relationship  between  activities  is divided into the following  types:
+<Table 40> Logical Relationship  between  Activities
+Item Content Case
+Finish-to-Start + A Successor  Activity  cannot  start until a
+cos Predecessor  Activity  has finished + Develop  a product  after screen designRelationship
++ The most commonly  used
+Finish-to-Finish « A Successor  Activity  cannot  finish until a + Analysis  is completed  only when writing and
+Relationship Predecessor  Activity  has finished deletion  of a text are completed
+Start-to-Start + A Successor  Activity  cannot  start until a + Development  activities  can be initiated  only
+Relationship Predecessor  Activity  has started. when planning  begins
+M6 Project  Management  and Technical  Communication  93

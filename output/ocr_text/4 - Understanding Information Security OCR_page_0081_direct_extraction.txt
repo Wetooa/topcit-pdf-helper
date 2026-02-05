@@ -1,0 +1,50 @@
+Information  security )
+<Table 22> Code example
+Unsafe  code
+Safe codeString filename  = file getOriginalFilename():
+| Do not check  the extension  of the upload file
+File uploadDir  = new File(“/app/webapp/data/upload/notice’);
+String uploadFilePath  = uploadDirgetAbsolutePath()+’/”  + filename;
+[/* Below is the file upload routine.  */
+If the validity  of the file to be uploaded  is not checked,  an attacker  can upload or send a dangerous  file.
+| Check the extension  of the uploaded  file using the white list method
+if (filename  != null) {
+if (filename.endsWith(".doc’)  || filename.endsWith(".hwp’)  ||
+filename.endsWith("  pdf’) || filename.endsWith(“  xls’) ) {
+/* File upload routine below */
+// When saving  the file, change  the file name to a format  that cannot  be guessed  by external  users
+Uploading  is restricted  if the extension  of the uploaded  file is not allowed  when it is checked.  When saving  the
+file, the file name entered  from the outside  is changed.
+B) Major secure  coding  techniques  for C language
+@® Secure  coding  techniques  for responding  to the memory  buffer overflow  attack
++ Attack overview:
+The memory  buffer overflow  attack occurs when reading  or writing data to a location beyond the allocated
+memory  range, that is allocated  by the program using contiguous  memory  space. As the memory  buffer
+overflow  causes program  malfunction,  or execution  of malware,  an attacker  can obtain the rights to control
+programs.
+* Coding  technique:
+When the program uses a memory  buffer, a proper  buffer size should be set, and the program  should be
+controlled  to read and write, within the set range of memory.  In particular,  if the string is not terminated  with
+a null character  when saving it, unintended  results may occur. Therefore,  a null character  must be inserted
+into the buffer range, so the string can be terminated  with a null character.
+<Table 23> Code example
+--typedef  struct  _charvoid  {
+Unsafe
+codechar x[16];
+void * y:
+void * z:
+} charvoid
+void badCode()  {
+charvoid  cv_struct
+cv_structy  = (void *) SRC_STR;
+printLine((char  *) cv_struct.y);
+/* The pointer  y is overwritten  due to the use of sizeof(cv_struct)  */
+memepy(cv_struct.x,  SRC_STR,  sizeof(cv_struct));
+printLine((char  *) cv_struct.x);
+printLine((char  *) cv_struct.y);
+}
+This program  copies a specific  string to the individual  field of a pointer  structure.  The program  causes  a buffer
+overflow  that overwrites  the contiguous  memory  space pointer  y, due to the data size sizeof(cv_struct),  which is
+incorrectly  calculated.  Also, incorrect  results  can be obtained  when referring  to a string, because  the program  has
+not added a terminating  character  to the copied string.
+M4 Understanding  Information  Security  81

@@ -1,0 +1,25 @@
+Software  Development )
++ Preview  for practical  business Ariane 5’s explosion  attributable  to
+poor software  design
+Software  passes through a design process  that consists  in abstracting  the analyzed  requirements
+into a computer  world. The design process  should include  the method  of handling  numerous  variables
+defined  for the design, the variable  types used by an input value, and exceptions  due to error values.
+Software  design faults are sometimes  eliminated  while repeating  tests such as boundary  value
+analysis.  In addition,  redundant  data and server configuration  to cope with an emergency  should also
+be designed  to support  the process  stably.
+The Ariane 5 rocket exploded  during its launch on June 4, 1996 due to an inadequate  exception
+design against  a mismatch  of the variable  types and insufficient  consideration  of redundancy  design.
+The variable  types in the design were 16-bit integers,  yet 64-bit real type was entered.  However,
+exception  handling  for integer-type  conversion  errors was not fully reflected  in the design, causing
+overflow,  As a result, altitude  and velocity  information  was not sent to the central control  computer.
+When a failure  occurred  in one SRI-2, the redundant  SRI-1 should have been activated. However,
+as the architecture  was designed  in this way, There could be no effect due to an input value error.
+Eventually,  Ariane 5 deviated  from its course and exploded  because  its engine nozzle angle and
+thrust could not be controlled.
+According  to the eventual  findings,  three exceptions  out of seven items were omitted  from Ariane 5
+to achieve the SRI’s maximum  load target of 80%. As a result, it is said that software  development
+was forced to bear all the responsibility  for the failure. After all, high-quality  software  design is not
+guaranteed  by the design itself. To complete  high-quality  software, use cases that ensure the widest
+possible test range should be reflected  in the development  and testing process,  which in turn will
+make up for unexpected  defects.  This process  of supplementing  the design should be repeated.
+M1 Software  development  53

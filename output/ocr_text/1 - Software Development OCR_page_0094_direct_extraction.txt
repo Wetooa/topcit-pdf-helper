@@ -1,0 +1,38 @@
+Software  Development )
++ Inheritance  and reusability  aspects:  C++ has reusability  using inheritance.  “Inheritance”  refers to the process
+of creating a new class by re-creating  the common  characteristics  of several classes as a single class and
+extending  it. Program  reusability  can be increased,  and software  productivity  can be enhanced  by using
+inheritance.
++ Polymorphic  aspect: Polymorphism  means that several forms have one name. For example,  a person  named
+“Hong Gildong”  is an office worker  who works hard at work but is also an instructor  who gives lectures  at an
+evening  academy.
+C) Java language
+@ Introduction  to the Java language
+James Gosling began developing  Java at Sun Microsystems  from 1991 as a simple, bug-free  programming
+language  to control home appliances.  Development  started with the C++ language  in the initial stages. Even
+though it improved  several problems  of C++, home appliance  companies  did not pay much attention  to it.
+However,  the powerful  output  form called “applet”  gained popularity  as Java was applied to the Interest  by Hot
+Java owing to the rapid spread of Internet  penetration.  The advantages  of the Java language  were recognized
+because  its small and simple structure  enabled  efficient  change and execution,  and because  it improved  upon
+several  functions  that caused errors in existing  languages.  Currently,  Java has become  the most popular,  widely
+used programming  language  for apps and mobile devices,  and is used to create apps for home appliances  and
+Android  devices.
+@ Characteristics  of the Java language
++ Java is grammatically  similar  to the C/C++ language  because  it derives  from the C++ language.
++ The complexity  of C++ has been simplified.
++ Automatic  garbage  collection  is always performed.
++ Object-oriented  language:  Perfect  object-oriented  language  that applies  the concept  of an object.
++ It is independent  from the platform  as the Java program  is executed  by the Java virtual machine.
+D) Python  language
+@ Introduction  to the Python  language
+Python is an interpreter  language  developed  by Guido Van Rossum  in 1990. This object-oriented,  conversational
+language  uses frequently  used English keywords  for high readability  and productivity.  Python is mainly used as
+a web programming  language  based on Django, a web framework  based on open source. Recently,  it has been
+widely used in big data analysis  and the development  of artificial  intelligence  programs.
+@ Characteristics  of the Python language
++ The data type is checked  at runtime  using dynamic  typing.
++ It is easy to use as grammar  is easy and similar to English sentences.
++ Advantageous  to asynchronous  coding using a single  event loop
++ Multi-paradigm  programming  language  (supporting  procedural  languages,  functional  programming  languages,
+and object-oriented  programming).
+M1 Software  development  93

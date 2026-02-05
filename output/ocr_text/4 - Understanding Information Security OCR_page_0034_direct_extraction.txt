@@ -1,0 +1,35 @@
+ESSENCE
+‘6
+Packet
+Sender's  computer forgery/alteration Receiver's  computer
+w
+Outgoing message |
+YO) fe».
+|Hash Oo cuteones  message Meg Oo
+function @. function @
+Attachment Shs
+| | Remark
+11011 Hash code 110110
+Message  Digest
+[Figure 13] Checking  the integrity  of the transmitted  file
++ Encryption  based on the password
+Both the hash function  and encryption  are techniques  of hiding the password  effectively.  However,  there is a
+difference,  in that the encryption  algorithm  can encrypt  the unencrypted  plaintext  and then decrypt  it again,
+whereas  the hash function  cannot  find the original value of the hash function  using the result value.
+The hash function  can be used for password-based  encryption  (PBE). In PBE, the hash value, which is
+obtained  by entering  the result of combining  the password and salt (random number  generated  using a
+pseudo-random  number  generator)  into the hash function,  is used as an encryption  key. Attacks  against  the
+password  can be prevented  using this method.
++ Electronic  signature
+The hash function  can be used for digital signatures.  A digital signature  is a method of providing both data
+integrity  and the signature’s  authentication  by performing  a hash operation  on a specific  document,  using the
+signature’s  private key. Signing  the entire message  is very inefficient  because  the public key operation  should
+be repetitively  performed  on all message  blocks. Therefore,  an electronic  signature  can be very efficiently
+generated  by calculating  a hash value for the message  and signing  on that value. Although  the signer  signed
+the hash value, instead of the message  itself, this signature  is recognized  as a genuine signature  for the
+message  because  finding  another  message  with the same hash value is difficult.
+O2 Authentication  technology
+A) Concept  of authentication
+Authentication  refers to a method  of verifying  whether  the information  exchanged  between  the sender and
+receiver,  who are the subject of the information,  has not been altered or deleted,  and whether  the subject
+34 TOPCIT  ESSENCE

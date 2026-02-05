@@ -1,0 +1,38 @@
+Project Management  and Technical  Communication  )
+the requirements  and criteria for delivery.  Examples  of official inspection  include Review  and Walkthrough.
+© Scope Controlling
+It is the process  of monitoring  project status and product range and managing  them according  to formal
+procedures.
+It makes sure that requested  changes,  recommended  corrective  actions, and preventive  actions are processed
+throughout  the project. Requests  for changes  to the baseline scope made through scope definition  in the
+project  design and analysis  stage are frequent  in practice.  Since scope changes  are closely  related to schedule
+and cost, they should be reported  to the Project Change Control Board (CCB), reviewed for their impacts
+throughout  the project, and approved  and processed  according  to formal procedures.
+O02 Scope Management  Technique
+A) Work breakdown  structure  (WBS)
+A work breakdown  system is created, in general,  for scope management.  In order to desgin work breakdown
+system, customer  requirements  must be collected,  and the requirements  definition  document  must be pre-
+pared.
+Requirements  are generally  gathered  in the following  ways.
+<Table 36> Scope Management  Techniques
+Technique Explanation
+Interview + A systematic  approach  to derive requirements  through  an oral interview  with individuals  and groups
+Prototyping+ A technique  to promptly  and schematically  build a system  to be developed  in full or part
++ Prototyping  is better than specification  to enhance  the understanding  of and feedback  from users
+Moderator
+meeting+ A technique  to generate  ideas for specific  products,  services  and opportunities  for improvement
++ The moderator  ensures  to achieve  intended  goals by faithfully  implementing  the pre-defined  contents
+for specific  issues when conducting  group discussions
+Document
+analysis+ A technique  to derive system requirements  by examining  documents  and related data on the existing
+system
++ Analysis  of business  plans, market  research  results,  contract  details, RFP, SOW, related records,
+existing  business  guides/procedures,  training  materials,  documents  related to similar products,  problem
+reports,  customer  proposal  records,  and existing  system  design  documents
+@ Concept  of Work Breakdown  Structure  (WBS)
+The work breakdown  system is a hierarchical  structure  of tasks that are classified  based on project  deliverables
+and broken down into manageable  packages.  Each subtask  item in the work breakdown  system  is called a
+work package.  For example,  a project that creates an online bulletin board can be divided into work packages
+of “Writing”,  “Deleting”,  “Editing”,  and “Uploading”.  The following  is an example of WBS created by Microsoft
+Project.
+M6 Project  Management  and Technical  Communication  87

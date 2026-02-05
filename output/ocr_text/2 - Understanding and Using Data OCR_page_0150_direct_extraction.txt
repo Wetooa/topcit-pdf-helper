@@ -1,0 +1,42 @@
+Database )
+SNA (Social Network  Analysis)+ Asocial  network  refers to the network  between  the components  constituting  a given
+society.
++ An analysis  methodology  that analyzes  and visualizes  the relationship  between  objects  -
+such as people,  groups, organizations,  computers  and data - and the characteristics  and
+structure  of the network.
+Opinion  mining+ A technology  that quickly  analyzes  the information  the user wants and intelligently  infers
+meaningful  information  from a large number  of unstructured  reviews  such as SNS and
+replies.
++ Itis used effectively  for corporate  marketing  policies  or public opinion  analysis  by
+extracting  the hot topics of the social network  service  and analyzing  the flow in real time.
+Natural  Language  Processing
+(NLP)+ An artificial  intelligence  technology  that understands,  creates,  and analyzes  human
+language  using computers.
++ The process  of understanding  natural language  by analyzing  human  language
+mechanically  to convert  it into a form that can be understood  by computers.
++ Or various  technologies  that express  such a form in language  that humans  can
+understand
++ Natural  language  is processed  in the following  order: preprocessing  >morpheme  analysis
+—syntax  analysis  semantic  analysis  dialog  analysis.
+F) Data scientist
+A data scientist  is an expert who can collect, organize,  investigate,  analyze,  and visualize  data, The data scientist
+provides  information  necessary  for corporate/organizational  decision-making  by collecting,  analyzing,  and discovering
+the value of data, using various  pIlatform foundations  and analysis  infrastructures  related  to big data.
+<Table 74> Capabilities  of the data scientist
+Point of— Capability Details
+Business Understanding  the business  of the company  concerned  and expressing  it as a business
+model.
+Exploring  and integrating  the internal/external  data of a corporation,  and manipulating
+pe Data management structured/unstructured  data
+. Predictive  analysis  based on data mining/statistics,  and analysis  based on cognitiveData analysis aan
+psychology,  R, and visualization  techniques.
+Change  management  | Establishment  of the data strategy,  communication  skills.
+a Sen  sis + Experience  and training are needed to understand  statistical  analysis tools.
+¥ +R, SAS, SPSS
+tools
+Programming + Overall knowledge  and experience  in programming  are needed.
+language + Understanding  of various  languages  such as C, C, Java, Ruby, and Perl.
+Technology:  | RoeMscapability technology + Ability to design keys, indexes,  queries, normalization,  and constraints  based on SQL.
+Distributed .computing Hadoop  (MapReduce,  HDFS), NoSQL(Cassandra,  BigTable,  MongoDB)
+Mathematica + Understanding of matrix operation  and numerical analysisknowledge 8 Pt ysis.
+M2 Database  149

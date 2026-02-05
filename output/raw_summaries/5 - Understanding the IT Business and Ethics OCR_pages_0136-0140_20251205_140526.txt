@@ -1,0 +1,180 @@
+LEARNING GUIDE: Pages 136-140
+Generated: 2025-12-05 14:05:26
+PDF: 5 - Understanding the IT Business and Ethics OCR
+
+================================================================================
+LEARNING GUIDE
+================================================================================
+
+Here is a simplified, easy-to-read learning guide based on the provided text:
+
+---
+
+# IT Business & Ethics: Learning Guide (Pages 136-140)
+
+## Introduction: The Power of AI
+
+*   **AlphaGo's Impact:** In 2016, Google's AI, AlphaGo, defeated Go world champion Lee Sedol.
+*   **Significance:** This event demonstrated that Artificial Intelligence (AI) can surpass human learning abilities developed over thousands of years.
+
+---
+
+## 01. Latest Web and Mobile Services
+
+### A) Latest Web Technologies
+
+#### 1. HTML5
+
+*   **What it is:** The next-generation standard for HTML.
+*   **Key Advantage: No Plugins Needed**
+    *   Eliminates the need to install separate programs or browser plugins (like ActiveX) for services (e.g., KakaoTalk, word processors, games can run directly in a web browser).
+    *   Overcomes limitations of previous HTML by supporting rich web applications (video, voice, 2D graphics) natively.
+*   **Design Principles:** Compatibility, practicality, interoperability, universal access.
+*   **Improved Semantics:** Adds 26 new markups for clearer meaning representation than HTML4.
+*   **API Support:** Introduces new API functions (e.g., web form, canvas, web socket) for web-based application development.
+*   **Efficiency:** Uses less JavaScript code than HTML4 for similar functions, making it better for mobile environments.
+*   **Business Adoption:** Increasingly used for corporate solutions to maximize scalability and efficiency.
+
+#### 2. Responsive Web / Adaptive Web
+
+*   **The Problem:** Users want consistent web content quality across various devices (desktops, tablets, smartphones) despite different screen sizes and specifications.
+*   **Responsive Web:**
+    *   **Approach:** A web design method where the website's layout and style automatically adjust to fit *any* device screen size, providing an optimal user experience.
+    *   **Focus:** Often emphasizes adapting content from a "mobile-first" perspective.
+*   **Adaptive Web:**
+    *   **Approach:** A server-based or client-based technology that *detects* the accessing device.
+    *   **How it works:** Delivers content (e.g., images) specifically *tailored* for that device, ensuring high-speed access, especially on mobile.
+
+#### 3. Semantic Web
+
+*   **What it is:** A "smart" web that enables intelligent data processing and knowledge building.
+*   **How it Works:**
+    *   Defines and structures data using **ontology** (a formal representation of knowledge).
+    *   Links structured data, allowing computers to understand the *meaning* (semantics) and relationships between web resources.
+*   **Why it's Needed:** Traditional HTML only displays documents; computers cannot understand the semantic meaning or efficiently process vast, unstructured web information.
+*   **Application Areas:**
+    *   **e-commerce:** Connecting to frameworks like ebXML.
+    *   **Data Mining:** Web mining across the entire web (e.g., e-CRM, e-MarketPlace).
+    *   **Knowledge Processing:** Collecting and distributing large volumes of knowledge.
+    *   **Web Service:** Linking with enterprise business service components.
+
+#### 4. SNS (Social Network Service)
+
+*   **Definition:** Online services that help people maintain existing personal relationships or establish new ones.
+*   **History:** Evolved from early online communities (e.g., "The Well" in 1985).
+*   **Main Functions:**
+    *   **Relationship Forming:** Allows users to define and manage their connections.
+    *   **Profile:** Register personal information (hometown, interests, occupation).
+    *   **Communication:** Provides tools like chatting, messages, email, video chat.
+    *   **Content Production:** Tools for creating and sharing photos, videos, and text.
+    *   **Network Utilization:** Allows users to recommend or distribute profiles and content.
+*   **Scale:** Global platforms like Facebook and WhatsApp have billions of monthly users (as of 2017).
+
+#### 5. Open API (Open Application Programming Interface)
+
+*   **Definition:** A free, publicly available API that users and developers can use without restriction.
+*   **Impact:** Empowers users to move beyond just *consuming* services to *developing their own* new services using existing APIs.
+*   **Characteristics:**
+    *   Provides access to specific functions of a website or service.
+    *   Enables creation of new services by combining multiple APIs.
+    *   Key to the development of **mashup sites**.
+    *   Transforms users into potential service providers.
+*   **Component Elements:**
+    *   **Services Provided:** Weather data, traffic info, public information, maps, etc.
+    *   **Technologies Used:** XML, SOAP (server-side), JavaScript, AJAX (client-side).
+
+#### 6. REST (Representational State Transfer) API
+
+*   **Prevalence:** Currently the most widely used type of Open API.
+*   **Architecture:** A network-based architecture designed by Roy Fielding (an HTTP author) to leverage the strengths of the Web (HTTP).
+*   **Components:** Based on Resource Oriented Architecture (ROA), composed of:
+    *   **HTTP URI:** Specifies the target resource (e.g., a specific piece of data).
+    *   **HTTP Method:** Designates the action to be performed on that resource.
+*   **Common REST API Methods:**
+    *   **POST:** Creates a new resource.
+    *   **GET:** Retrieves (searches and extracts) information about a resource.
+    *   **PUT:** Corrects or updates an existing resource.
+    *   **DELETE:** Removes a resource.
+
+### B) Mobile Services
+
+#### 1. Location Based Service (LBS)
+
+*   **Growth:** Rapidly expanded since 2010 due to the surge in smartphone use ("mobile Big Bang").
+*   **Evolution:** Merged location information with commerce and entertainment to become a broad category of services.
+*   **Enabling Factors:**
+    *   Increased availability of devices capable of location detection.
+    *   Opening of location determination platforms.
+*   **How it Works (Smartphones):** Combines various location detection technologies:
+    *   **Base Stations (Cell-ID):** Uses cellular tower signals.
+    *   **GPS:** Global Positioning System.
+    *   **Wi-Fi:** Uses Wi-Fi network signals.
+    *   **Motion Sensors:** Provides precision navigation.
+*   **Integration:** Adoption of mapping services like Google Maps and Apple Maps made LBS widely accessible and usable for general purposes.
+
+**Mashup Site:** A website that combines APIs (e.g., product information, maps) from different sources (like Microsoft, Google, Yahoo) with its own user interface to create new, integrated services.
+
+================================================================================
+ORIGINAL TEXT (First 5000 chars)
+================================================================================
+
+--- Page 136 ---
+Understanding  the IT Business  and Ethics )
++ Preview  for practical  business AlphaGo,  the Al that beat one thousand
+years of human learning
+The match pitting Lee Sedol (a Go player with the 9 ‘dan’ rank) against  AlphaGo's  Deep Mind Challenge,
+held from March 9 to 15, 2016, was a shocking  event that showed how artificial intelligence  could far
+surpass  human learning  ability. The fact that AlphaGo  defeated  Lee Sedol, the world's  No. 1 player  for more
+than a decade and also one of the strongest  players in the world of Go since 2014, was a clear  sign that
+artificial  intelligence  can overcome  human learning  skills that have evolved  over many thousands  of years.
+<Match  between  AlphaGo  and Lee Se dol - Automatic  victory  for AlphaGo>
+M5 Understanding  the IT Business  and Ethics 135
+
+
+--- Page 137 ---
+ESSENCE
+01 Latest  Web and Mobile  Service
+A) Latest  web technologies
+@HTML5
+Typically,  a separate  program must be installed  when a person wants to use a particular  service or program on a
+smartphone  or PC. Kakao Talk is a leading messenger  program  that is widely used in South Korea and exists in
+different  versions  for PC, Android  and iOS. As such, a separate  program  must be installed  for each type of OS in order
+to use Kakao Talk. However,  if HTMLS is used, there is no need to install a separate  program,  and Kakao Talk can be
+accessed  directly  through  the web browser.  Furthermore,  word processors  and games can be used without  having to
+install with the help of HTML5.
+The HTMLS standard  is a next-generation  HTML standard  that overcomes  the limitations  of previous  HTML
+standards,  allowing  rich web applications  such as video, voice, and 2D graphics,  without  requiring  a separate  plug-in.
+Plug-ins  and Active X control were very popular  as solutions  for overcoming  the limitations  of the previous  HTML:
+However,  each came with its own set of problems,  which could only be overcome  through  functional  expansion  and
+combination  through  the advanced  CSS3 and JavaScript  APIs.
+HTML5  was designed  around the principles  of compatibility,  practicality,  interoperability,  and universal  access. The
+contents  of the HTML standard  cover the document  structure,  markup standards,  and API standards.  When the
+semantic  markup  part and the API part of the HTML5  standard  are examined  separately,  26 new markups  have been
+added to the semantic  markup part to enable much clearer semantic  representation than conventional  HTML4.
+HTMLS5 allows various services  or applications  based on web content,  such as search engines,  to provide improved
+functionality,  In the case of APIs, new functions  such as web form, canvas,  and web socket  were added to support  the
+development  of web-based  applications.  HTML5 uses much less JavaScript  code than HTML4  to support  the same
+functionality,  making it easier to use in mobile environments  where network  speed is a sensitive  factor. Recently,  a
+growing  number  of cases have arisen in which corporate  business  solutions  are transitioning  to an HTML5-based
+environment  so as to maximize  scalability  and efficiency.
+@ Responsive  web/Adaptive  web
+With the growing  use of mobile devices such as tablet PCs and smartphones,  interest in the mobile web is also
+increasing.  Users want to enjoy the same web contents  at the same level of quality, irrespective  of the type of mobile
+device or PC being used. However,  it was not easy to provide  the same quality of service  for different  environments
+resulting  from different  mobile phone specifications  and the restrictions  that come with different  mobile phone screen
+sizes. It is also impossible  to develop  a web that is optimized  for all types of mobile devices. The responsive  web
+emerged  as one approach  to solving  this conundrum.
+The responsive  web is an approach  to web design that results in the most optimal user environment,  i.e. one that
+meets the requirements  of many different  devices - from desktops  through monitors  to mobile phones. In other
+words, it is a web whose size changes  to fit any device environment,  making  it easy for users to read the contents.
+With the recent trend towards  carrying  mobile devices as the primary  or first device, the number  of mobile web
+users has grown to exceed the number  of regular  Internet  web users. Web designers  have responded  by minimizing
+136 TOPCIT  ESSENCE
+
+
+--- Page 138 ---
+Understanding  the IT Business  and Ethics )
+unnecessary  elements  of regular  web pages for the sake of improving  the screen size, network  speed and quality, and
+the user mode of the mobile devices  (the common  limitations  of the mobile environment); that is, they have begun
+to focus more on the functions  that should be provided  on the mobile web. While responsive  webs typically  focus
+on how changes  in layout and style take place from one device to another,  there also exist responsive...

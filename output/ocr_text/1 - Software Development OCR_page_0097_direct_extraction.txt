@@ -1,0 +1,43 @@
+ESSENCE
+<Table 24> Components  of the Spring Framework
+Component Description
+' This is the core part of Spring. It provides  BeanFactory,  which implements  the loC container  toSpring  Coreseparate  function  and configuration
+. The basic function  of Spring, like Spring  Core, which provides  the method  of access  to functionalSpring  Context i i
+objects  (bean) implemented  based on Spring.
+‘ An abstraction  layer for JDBC that is integrated  with the ORM framework  and improves  transactionSpring  DAO
+management.
+Spring ORM A package  for integration  such as JDO for object/relation  mapping,  JDO, Hibernate,  and iBatis.
+Pring Spring ORM supports  object-relational  models.
+; Maintainability  and ease of change  are supported  by separating  cross-cutting  concerns  such asSpring  AOP .
+logging,  security,  transaction, etc.
+Spring Web A package  that provides  the basic functions  needed  to develop  general  applications  and is used for
+pring integration  with WebWork  or Struts.
+Spring  WebMVC A package  that implements  general  WAP functions  like Struts as a Spring  version.
+C) Standard  e-Government  framework
+@ Introduction  to the standard  e-Government  framework
+Designed  for public projects,  the standard  e-government  framework  standardizes  and implements  the
+basic functions  necessary  for developing  and operating  a Java-based  system.  The framework  provides  the
+implemented  environment  (execution,  development,  management,  and operation)  and common  modules  that
+are the basis for developing  various types of software  required by the private sector and the government.
+Developers can  develop a system by reusing the common  modules  in the base environment  provided  by the
+standard  framework  and by developing  unique functions  exclusively  for each service.
+@ Purpose  and characteristics  of the standard  e-government  framework
+The framework  aims to standardize  application  software  and improve  quality and reusability  by establishing  a
+development  framework  that can be applied to public projects.
++ Improves  e-Government  service quality.
++ Improves  the efficiency  of investment  in informatization.
++ Enables  fair competition  by conglomerates  and small and medium-sized  businesses  using the same development
+base.
+<Table 25> Characteristics  of the standard  e-Government  framework
+Characteristics Description
+Compliance  with open standards Eliminates  dependence  on a specific  service  provider  by using open source-based
+technology.
+Linkage  with commercial Ensures  interoperability  by presenting  a standard  that can be linked with various
+solutions solutions.
+Software  development  standards  are established  at the national  level by operating  an
+advisory  committee  composed  of members  from the private  and public sectors  and
+academic  circles.
+ar Easy to replace  by modularizing  the components  and minimizing  the impact  of changes
+changeliexDliny between modules through interface-based  linking.Aiming  for national
+standardization
+96 TOPCIT  ESSENCE

@@ -1,0 +1,32 @@
+Database
++ Controls  access  to data by unauthorized  users.
++ Provides  various  types of interfaces  to diverse  users.
++ Expresses  the complex  relationships  that exist between  data.
++ Ensures  the integrity  of the database.
+© Conceptual  diagram  and main functions  of the DBMS
+There is a file structure  that stores a database,  and memory  and major processes  to process  the file structure  in
+DBSM.
+(eeorceUScs Application programmer Dees OuSiclop <>
+Disk /O operation f Search blocks
+Catalog  (data
+dictionary)
+[Figure  3] Conceptual  diagram  of the DBMS
+<Table 10> DBMS components
+Component Description
++ Processes  the schema  specified  in the DDL as an internal  schema,  i.e. metadata,  and stores it in
+DDL compiler the system  catalog.
++ All DBMS modules  should access  and use this catalog  information  when necessary.
+Processes  advanced  queries  submitted  by general  users. le. queries  are analyzed,  parsed,  and
+Query processor compiled.  Then, the database  access  code is created  and sent to the runtime  DB handler  for
+execution.
+DML commands  inserted  into an application  program  are extracted  and sent to the DML compiler
+to be compiled  as an object  code for database  access.DML pre-compiler
+DML compiler ADML  compiler  generates  an object code by parsing  and compiling  the received  DML command.
+Runtime  database Database  access  is managed  at runtime.  That is, database  operations  such as search or update
+handler are executed  in the database  using the storage  data manager.
++ The transaction  manager  checks  compliance  with integrity  constraints  and the user's rights
+Transaction  manager while accessing  the database.
++ Performs  restoration  when controlling  transactions  concurrently  or when a failure  occurs.
+The stored data manager  manages  access  to the user database  and catalog  stored in the disk.
+(Request  to the file manager  of the OS.)Stored  data manager
+M2 Database  27

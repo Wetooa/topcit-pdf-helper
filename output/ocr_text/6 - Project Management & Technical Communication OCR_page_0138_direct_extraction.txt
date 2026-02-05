@@ -1,0 +1,35 @@
+Project Management  and Technical  Communication  )
+cvs SVN GIT
+Language Irrelevant Language Irrelevant Language Irrelevant
+Windows/Linux , .os Mac (Third Party Tool) os Windows/Linux/Mac os Windows/Linux/Mac
+Runtime Comamand  Line Runtime Comamand  Line Runtime Comamand  Line
+Environment Interface Environment Interface Environment Interface
+Various  third-party
+Third party tools Third party tools such as
+GUI such as TortoiseCVS, GUI tools such as GUI SourceTree,  GitEye,
+etc. TortoiseCVS,  etc. git-cola,  etc. offered
+in bundle
+[Figure  48] Comparison  of Configuration  Management  Tools
+D) Advantages  of project  management  system
+The following  advantages  can be obtained  by using the project  management  system.
+@ Successful  project  management
+You can get full visibility  into project progress.  In other words, it is possible  to see how far the entire project
+has progressed  and what tasks remain in the future. Therefore,  there is an advantage  of being able to manage
+the project  as planned.
+@ Effective  team management
+You can effectively  assign each task to team members  and manage  the schedule.  It becomes  convenient  to
+assign the subdivided  tasks to each team and team member  and manage  roles, thereby  achieving  the goal of a
+large project.
+© Improvement  of organizational  competence
+The history of the entire project in progress  is recorded,  and the deliverables  of each stage are registered,  and
+the organization's  assets are managed.  This can serve as a reference  model when conducting  similar projects,
+thereby  improving  the overall performance  capability  of the organization.
+02 Concept  of Project  Monitoring  and Evaluation
+A) Concept  of project  monitoring  and evaluation
+Project monitoring  and evaluation  is the process  of evaluating  whether  the project has completed  delivery
+within the planned time period and whether  the cost has excessively  exceeded  the budget. The reason for
+such evaluation  is: First, it is to evaluate  how much IT investment  has contributed  to the achievement  of busi-
+ness goals. Second,  a project  retrospective  helps identify  whether  there has been any problem  in each step or
+any issue that may be difficult  to respond  to, reflecting  it in future project  progress.  Therefore, project  evalua-
+tion is generally  conducted  in three aspects:  first, a financial  perspective,  second,  a management  perspective,
+M6 Project  Management  and Technical  Communication  137

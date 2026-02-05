@@ -1,0 +1,38 @@
+ESSENCE
+There are three reasons  driving the spread of the infrastructure  for M2M communication.  The first reason is the
+expanding  wireless  networks.  The coverage  of wireless  networks  and the guaranteed  service stability  greatly
+facilitated  the growth of M2M communication.  The second reason is the declining  prices and increasing  availability
+of telecommunication  modules.  The telecommunication  module market is growing  at more than 30% per year, but
+prices are gradually  decreasing,  and market penetration  is rapidly increasing.  The third reason is the declining  price
+of sensors.  As the market  expands,  sensor  technology  is getting more sophisticated,  but prices are falling, allowing
+companies  that provide sensing-based  services  at low cost. These sensors  are expanding  from simple monitoring  to
+fault and accident  detection,  asset management,  and customer  usage management  information.  Furthermore,  the
+applications  of these sensors  are becoming  increasingly  diverse.  Starting  first with simple monitoring,  sensors  are now
+being used to detect  malfunctions  and accidents,  manage  assets, and extract  data about customer  usage levels.
+Typically,  the process  of developing  an M2M device first begins with developing  a module that contains  a mobile
+chipset. Then the device is developed using the module.  An M2M device can be roughly  designed  as an object
+consisting  of a chipset and a module and largely divided into three parts: a sensor/input&output  unit, a data
+processing  unit, and a communication  module.
+inaledicas Must be configured  with a device that is the right one
+Module wiemming)  Product for the purpose and standardized  module must be
+produced  in order to expand  adoption  of the service
+Presently,  M2M services  are provided  through  2G, 3G networks.
+For nation-wide  large scale rollout, a universal  platform  must be
+developed  and service  access protocols  must be established.Chipset
+Machine Wachine ] rscucemenege Identification  system and security  functions  are required  for
+eet pe ree object  communication  services  that could be used in the public/
+- private  sectors.
+[Fig.60]  Component  elements  of M2M
+The data acquired  through  the input&output  uniit is processed  by the data processing  unit before it is sent to the
+communication  module.  RS-232  or USB is used when sending  the data from the processing  unit to the communication
+module.  The technology  used in M2M communication  defines  the technology  needed  for services  at the service layer
+and takes a typical top-down  approach  to design the the lower layer to follow the definition  set by the service layer.
+However,  this approach  can disrupt the standardization  and public sharing  of the technology  and hinder the growth
+of the market. Therefore,  standardization  of the M2M environment  is a critical task for stimulating  the growth of the
+market.
+Q@loT (Internet  of Things)
+The diffusion  of M2M technology  has opened  wide the era of loT which creates  an environment  where communication
+takes place not only between  objects but everything  from people to objects, spaces are connected  to the Internet
+to create, collect,  share, and utilize information  about everything,  Unlike the recent explosion  of public interest  in loT,
+the idea of loT was already commercialized  a long time agolts  just that loT has been spreading/evolving  gradually
+144 TOPCIT  ESSENCE

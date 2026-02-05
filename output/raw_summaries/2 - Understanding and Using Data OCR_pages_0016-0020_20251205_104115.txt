@@ -1,0 +1,282 @@
+LEARNING GUIDE: Pages 16-20
+Generated: 2025-12-05 10:41:15
+PDF: 2 - Understanding and Using Data OCR
+
+================================================================================
+LEARNING GUIDE
+================================================================================
+
+Here's a simplified learning guide based on the provided text:
+
+---
+
+## Database Management Learning Guide
+
+### 03 Transaction Isolation Levels
+
+Transaction isolation levels define how transactions interact with each other regarding data visibility and consistency.
+
+*   **Read Uncommitted:** Allows a transaction to read data that another transaction has modified but not yet committed. (Lowest isolation, highest concurrency, prone to dirty reads).
+*   **Read Committed:** Allows a transaction to read data only after another transaction has committed its changes. (Prevents dirty reads).
+*   **Repeatable Read:** Ensures that if a query is executed multiple times within the same transaction, it will return the same set of records and values. (Prevents dirty reads and non-repeatable reads). New records (phantoms) can still appear.
+*   **Serializable Read:** The highest isolation level. Ensures that if a query is executed multiple times within the same transaction, it returns the exact same result set, including no new records appearing. (Prevents dirty reads, non-repeatable reads, and phantom reads). (Lowest concurrency).
+
+### 04 Deadlock
+
+*   **Definition:** A situation where two or more transactions are waiting indefinitely for each other to release resources, leading to a standstill.
+*   **Causes:** Occurs when transactions simultaneously try to acquire locks on resources already held by another transaction, creating a circular wait condition.
+*   **Solutions:**
+    *   **Detection and Recovery:** Allow deadlocks to occur, detect them, and then resolve by rolling back one or more transactions.
+    *   **Prevention:** Design transactions to prevent deadlocks (e.g., acquire all necessary locks at once, enforce a locking order).
+    *   **Avoidance:** Dynamically analyze resource requests to ensure a safe state before granting locks.
+
+### XII. Database Recovery
+
+#### 01 Concept of Database Failure and Recovery
+
+*   **Definition of Data Recovery:** The process of restoring a database to a consistent and correct state after a failure.
+*   **Types of Database Failures:**
+    *   Transaction failures (e.g., logical errors, deadlocks).
+    *   System crashes (e.g., power failure, software error).
+    *   Media failures (e.g., disk crash, head crash).
+    *   Human errors (e.g., accidental deletion).
+*   **Basic Principles of Database Recovery:**
+    *   **Principle of Information Redundancy:** Maintaining redundant information (like logs, backups) to restore lost data.
+*   **Types of Database Recovery Actions:**
+    *   **Undo:** Removing the effects of uncommitted transactions.
+    *   **Redo:** Reapplying the effects of committed transactions.
+
+#### 02 Database Troubleshooting Method
+
+*   **Database Recovery Technique:** Using transaction logs (redo/undo logs) and checkpoints to restore the database state.
+*   **Recovering from a Distributed Database:** Often uses a **2-phase commit protocol** to ensure all nodes in a distributed transaction either commit or abort together, maintaining consistency.
+
+#### 03 Database Backup
+
+*   **Database Backup Overview:** Creating copies of database data to protect against data loss.
+*   **Database Backup Requirements & Main Tasks:**
+    *   Ensure data integrity.
+    *   Minimize downtime during backup and recovery.
+    *   Allow point-in-time recovery.
+    *   Tasks include scheduling, execution, storage, and validation of backups.
+*   **Types and Characteristics of Database Backup Methods:**
+    *   **Full Backup:** Copies all data. (Simple, takes longest, fastest recovery).
+    *   **Differential Backup:** Copies all changes since the last *full* backup. (Faster than full, slower recovery than incremental as it grows over time).
+    *   **Incremental Backup:** Copies all changes since the *last* backup (full or incremental). (Fastest backup, slowest recovery as multiple backups may be needed).
+    *   **Transaction Log Backup:** Copies transaction log entries, enabling point-in-time recovery.
+
+### XIII. Understanding Database Analytics
+
+#### 01 Concept and Characteristics of the Data Warehouse (DW)
+
+*   **Concept of the Data Warehouse:** A subject-oriented, integrated, time-variant, and non-volatile collection of data used to support management's decision-making process.
+*   **Characteristics of the Data Warehouse:**
+    *   **Subject-Oriented:** Focused on specific business subjects (e.g., sales, customers) rather than day-to-day operations.
+    *   **Integrated:** Combines data from various disparate sources into a consistent format.
+    *   **Time-Variant:** Data includes a time dimension, allowing for historical analysis.
+    *   **Non-Volatile:** Data is stable; new data is added but existing data is not updated or deleted.
+
+#### 02 Data Warehouse Modeling
+
+*   **Definition of Data Warehouse Modeling:** Designing the structure of a data warehouse to optimize for analytical queries.
+*   **Data Warehouse Modeling Technique:**
+    *   **Star Schema:** A common model where a central **fact table** connects to multiple **dimension tables**.
+    *   **Snowflake Schema:** An extension of the star schema where dimension tables are normalized into multiple related tables.
+
+#### 03 Concept of ETL (Extraction, Transformation, Loading)
+
+*   **ETL:** A process used to prepare data for a data warehouse:
+    *   **Extraction:** Reading data from source systems.
+    *   **Transformation:** Cleaning, combining, and reformatting data into the data warehouse's structure.
+    *   **Loading:** Writing the transformed data into the data warehouse.
+
+#### 04 Concept and Search Technique of OLAP (Online Analytical Processing)
+
+*   **Concept of OLAP:** A technology that allows users to quickly analyze multi-dimensional data from various perspectives.
+*   **OLAP Search Techniques:**
+    *   **Slice and Dice:** Reducing the dimensionality of a data cube (slice) or selecting a subset of data (dice).
+    *   **Drill Down/Up:** Navigating from summarized data to detailed data (drill down) or vice-versa (drill up).
+    *   **Roll Up:** Aggregating data along a dimension (e.g., summing sales by month instead of day).
+    *   **Pivot (Rotate):** Changing the dimensional orientation of a report or view.
+
+#### 05 Concept and Algorithm of Data Mining
+
+*   **Concept of Data Mining:** The process of discovering patterns, insights, and knowledge from large datasets using various computational techniques.
+*   **Data Mining Algorithms:** (Specific algorithms not detailed in text, but common types include):
+    *   Classification (e.g., decision trees, support vector machines).
+    *   Clustering (e.g., k-means).
+    *   Association Rule Mining (e.g., Apriori).
+    *   Regression.
+
+### XIV. Understanding Big Data and NoSQL
+
+#### 02 Technologies Related to Big Data
+
+*   **Collection Technology:** Tools and methods for gathering massive amounts of data from diverse sources (e.g., sensors, web logs, social media).
+*   **Big Data Storage/Processing Technology:** Systems designed to store and process vast datasets efficiently (e.g., Hadoop Distributed File System (HDFS), Apache Spark, MapReduce).
+*   **Visualization Technology:** Tools for creating visual representations of big data to uncover patterns and insights (e.g., dashboards, interactive charts).
+*   **Classification of Big Data Analytics:**
+    *   **Descriptive Analytics:** What happened?
+    *   **Diagnostic Analytics:** Why did it happen?
+    *   **Predictive Analytics:** What will happen?
+    *   **Prescriptive Analytics:** What should we do?
+*   **Main Methods of Big Data Analysis:** Statistical analysis, machine learning, natural language processing, graph analysis.
+*   **Data Scientist:** A professional who uses statistical, computational, and domain knowledge to extract insights from data.
+
+#### 03 NoSQL
+
+*   **Definition and Characteristics of NoSQL:**
+    *   **Not Only SQL:** A broad class of non-relational database management systems that store and retrieve data in ways other than the tabular relations used in traditional relational databases.
+    *   **Characteristics:** High scalability, high availability, flexible schema, often optimized for specific data models and workloads.
+*   **BASE Attributes of NoSQL:**
+    *   **Basically Available:** The system continues to operate even with some node failures.
+    *   **Soft State:** The state of the system may change over time, even without input.
+    *   **Eventually Consistent:** Data will eventually become consistent across all nodes, but there might be a delay. (Contrast with ACID properties of traditional RDBMS).
+*   **Storage Method of NoSQL:** Varies greatly by type (e.g., key-value pairs, documents, columns, graphs).
+*   **Characteristics of the NoSQL Data Model:**
+    *   **Key-Value:** Simple, stores data as a collection of key-value pairs.
+    *   **Document-Oriented:** Stores data in flexible, semi-structured documents (e.g., JSON, BSON).
+    *   **Column-Family:** Stores data in columns organized into column families.
+    *   **Graph:** Stores data as nodes and edges, representing relationships.
+
+### XV. Understanding Artificial Intelligence
+
+#### 01 Overview of AI
+
+*   **Definition and Classification of AI:**
+    *   **Definition:** The theory and development of computer systems able to perform tasks that normally require human intelligence (e.g., visual perception, speech recognition, decision-making, language translation).
+    *   **Classification:**
+        *   **Narrow/Weak AI:** Designed to perform a specific task (e.g., Siri, self-driving cars).
+        *   **General/Strong AI:** Hypothetical AI with human-like cognitive abilities across various tasks.
+        *   **Super AI:** Hypothetical AI far surpassing human intelligence.
+*   **History of AI:** (Not detailed in text, but generally involves periods of optimism, "AI winters," and recent resurgence due to increased data, computational power, and algorithmic advances).
+*   **Distinguishing AI:** Focuses on computational models that emulate intelligent behavior.
+*   **Machine Learning (ML):** A subset of AI that enables systems to learn from data without explicit programming. It involves algorithms that can build a model from example data to make predictions or decisions.
+*   **Deep Learning:** A subset of machine learning that uses artificial neural networks with multiple layers (deep networks) to learn complex patterns from large amounts of data, particularly effective for image and speech recognition.
+
+---
+
+================================================================================
+ORIGINAL TEXT (First 5000 chars)
+================================================================================
+
+--- Page 16 ---
+03 Transaction  Isolation  Level 126
+A) Read uncommitted:  Allows other transactions  to read the data that are still being
+processed  by the transaction (not yet completed), 126
+B) Read committed:  Allows other transactions  to read the data that are confirmed  by
+the completed  transaction  only. 126
+C) Repeatable  read: When a query is executed  more than twice in a transaction,  the
+record in the first query does not disappear  or the value is not changed. 126
+D) Serializable  read: When a query is executed  more than twice in a transaction,  the
+record in the first query does not disappear  or the value is not changed,  and no
+new record appears  either. 126
+04 Deadlock 126
+A) Definition  of deadlock 126
+B) Causes  of deadlock 127
+C) Solutions  to deadlock 127
+XII. Database  Recovery 129
+01 Concept  of Database  Failure and Recovery 131
+A) Definition  of data recovery 131
+B)  Types of database  failures 131
+C) Basic principles  of database  recovery:  Principle  of information  redundancy 131
+D)  Types of database  recovery  actions 131
+02 Database  Troubleshooting  Method 132
+A) Database  recovery  technique 182
+M2 Database  15
+
+
+--- Page 17 ---
+ESSENCE
+B) Recovering  from a distributed  database  2—phase  commit protocol
+03 Database  Backup
+A) Database  backup  overview
+B) Database  backup  requirements  and main tasks
+C) Types and characteristics  of database  backup methods
+XII. Understanding  Database  Analytics
+01 Concept  and Characteristics  of the Data Warehouse  (DW)
+A) Concept  of the data warehouse
+B) Characteristics  of the data warehouse
+02 Data Warehouse  Modeling
+A) Definition  of data warehouse  modeling
+B) Data warehouse  modeling  technique
+03 Concept  of ETL (Extraction,  Transformation,  Loading)
+04 Concept  and Search  Technique  of OLAP (Online  Analytical  Processing)
+A) Concept  of OLAP
+B) OLAP search technique
+05 Concept  and Algorithm  of Data Mining
+XIV. Understanding  Big Data and NoSQL
+01 Big Data Overview
+16 TOPCIT  ESSENCE182
+133
+183
+183
+134
+136
+143
+145
+
+
+--- Page 18 ---
+02 Technologies  Related  to Big Data
+A) Collection  technology
+B) Big data storage/processing  technology
+C) Visualization  technology
+D) Classification  of big data analytics
+E) Main methods  of big data analysis
+F) Data scientist
+03 NoSQL
+A) Definition  and characteristics  of NoSQL
+B) BASE attributes  of NoSQL
+C) Storage  method of NoSQL
+D) Characteristics  of the NoSQL data model
+E) Characteristics  of the NoSQL  data model
+XV. Understanding  Artificial intelligence
+01 Overview  of Al
+A) Definition  and classification  of Al
+B) History of Al
+C) Distinguishing  Al
+D) Machine  learning
+E) Deep learning154
+156
+156
+156
+157
+157
+M2 Database  17
+
+
+--- Page 19 ---
+ESSENCE
+>> Recent  trends and major issues
+According  to the annual White Paper on the Data Industry  published  by the Korea Data Agency,  the
+domestic  data-related  market is showing  a steady growth trend. The trend also shows that interest  in
+the diversity  and availability  of data is increasing  significantly.  Considering  this trend, the fields of data
+utilization,  database  construction,  and data solutions  seem to be maintaining  a steady rate of growth
+in all industries  in Korea. It is also obvious  that personnel  requirements  in the related fields will increase
+significantly  in the coming  years. Likewise,  we can anticipate  the main trends of business,  such as the
+spread of the cloud platform  to the data environment,  increased  interest  in data quality management,  and
+increased  decision-making  based on data. Judging  from these trends, it is evident  that competence  related
+to the processing  and utilization  of data is becoming  increasingly  important.
+>> Learning  objectives
+1. To be able to explain the concepts  and characteristics  of data, information,  and knowledge  in the
+Information  Age.
+2. To be able to explain the concept  and characteristics  of data processing.
+3. To be able to explain the concept  and characteristics  of the file handling  system.
+4. To be able to explain the concept  and characteristics  of the database.
+5. To be able to explain the concepts  and components  of the database  system.
+6. To be able to explain the 3-level database  architecture  of ANSI-SPARC.
+7. To be able to explain data independence.
+8. To be able to explain  the roles of the database  administrator  (DBA) and the concept  of the data architect  (DA).
+9. To be able to explain the concept  and functions  of the DBMS (Database  Management  System).
+>> Keywords
+Data, information,  knowledge,  database,  batch processing,  online processing,  distributed  processing,  DBMS,
+data independence,  ANSI-SPARC  3-level database  architecture
+18 TOPCIT  ESSENCE
+
+
+--- Page 20 ---
+Database )
++ Preview  for practical  business
+There are many cases in which a database  is used like an existing  file system,  and tables are created  in the
+database,  but each table is actually  dependent  on individual  applications, ...

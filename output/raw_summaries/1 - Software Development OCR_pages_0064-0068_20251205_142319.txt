@@ -1,0 +1,196 @@
+LEARNING GUIDE: Pages 64-68
+Generated: 2025-12-05 14:23:19
+PDF: 1 - Software Development OCR
+
+================================================================================
+LEARNING GUIDE
+================================================================================
+
+Here is a simplified, easy-to-read learning guide based on the provided text:
+
+---
+
+## Software Development: Key Concepts & Architecture
+
+### 1. Roles of the Software Architect
+
+A software architect plays multiple critical roles throughout the development lifecycle:
+
+*   **Creator of a Vision:** Defines the software's framework by understanding requirements, constraints, and available technologies. Requires creativity and the ability to articulate the vision.
+*   **Key Technical Consultant:** Provides expert technical advice, especially in selecting appropriate design patterns and development frameworks to ensure software quality. Requires continuous learning.
+*   **Decision Maker:** Leads the design team and makes crucial decisions affecting the overall design. Domain knowledge (understanding the product's application area) is vital, especially for quick decisions in agile development.
+*   **Coach:** Trains teams on architectural principles, manages improvements, and provides technical feedback, acting as a technical leader.
+*   **Coordinator:** Mediates differing opinions among project participants to maintain design integrity. Strong communication skills are essential alongside technical competence.
+*   **Implementer:** Evaluates the impact and feasibility of new technologies, often using prototypes, from the design stage. Architects often evolve from developer roles.
+*   **Advocate:** Continuously evaluates and champions new architectural approaches, justifying investments and driving technical advancement.
+
+### 2. Software Architecture Design
+
+#### A) Software Architecture Overview
+
+*   **Definition:** Software architecture is a blueprint for systematically managing various factors that influence software development and complexity.
+*   **Purpose:**
+    *   Serves as a communication tool.
+    *   Aids in decision-making.
+    *   Determines the overall system structure and organization of a development project.
+*   **Key Aspects:** It defines modules, processes, data, their structure, relationships between components, methods for extension/modification, and how flexibility/performance are implemented.
+
+#### B) Software Architecture Design Procedure
+
+The design process follows these main steps:
+
+1.  **Requirements Analysis:** Identify specific functional and non-functional requirements (e.g., through proposals, interviews).
+2.  **Architecture Analysis & Design:**
+    *   Identify and prioritize quality factors.
+    *   Determine architectural styles and candidate architectures.
+    *   Design the chosen architecture.
+3.  **Architecture Verification & Approval:** Evaluate and finalize the detailed architecture.
+
+**Key Design Concepts:**
+
+*   **Problem Solving:** Satisfy user requirements early. Complex problems are simplified by dividing the system (e.g., logically splitting functions or user interfaces).
+*   **Subsystems:** Independent, top-level program components that include data and control structures, can perform functions, and can be compiled. They are distinguished by the services they provide.
+*   **Framework:** A reusable support unit that collects knowledge and provides a general, extendable structure to create concrete subsystems. It increases design abstraction by offering concrete implementation methods.
+
+### 3. Software Architecture Styles
+
+These are representative types of architectural structures:
+
+*   **A) Repository Structure:**
+    *   **Concept:** All shareable data is stored in a central repository, allowing multiple subsystems to access and use it.
+    *   **Advantage:** Ideal for sharing large amounts of data among subsystems.
+*   **B) MVC (Model-View-Controller) Structure:**
+    *   **Concept:** A framework commonly used for Graphical User Interface (GUI) design that separates an object into three interconnected parts:
+        *   **Model:** Manages the application data and business logic.
+        *   **View:** Displays the data from the Model to the user.
+        *   **Controller:** Handles user input and updates the Model or View accordingly.
+    *   **Advantage:** Simplifies modifications and promotes reuse by ensuring all representations of an object are updated consistently when the underlying data changes.
+*   **C) Client-Server Model:**
+    *   **Concept:** Comprises clients that request services and servers that provide them. There can be multiple client instances.
+    *   **Advantage:** Efficiently utilizes network systems for distributed service provision.
+*   **D) Hierarchy (Layered Structure):**
+    *   **Concept:** A system organized into several distinct layers, each providing specific services to the layer above it.
+    *   **Advantages:**
+        *   Simplifies problem-solving and debugging by isolating issues to specific layers.
+        *   Enhances compatibility through standardization (e.g., network protocols).
+    *   **Example:** The seven layers of the OSI (Open System Interconnection) model.
+
+### 4. Method of Expressing Software Architecture Design
+
+These models help in visualizing and documenting architectural decisions:
+
+*   **A) Context Model (Context Diagram):**
+    *   **Purpose:** Defines the boundary between the system being developed and its external environment.
+    *   **What it shows:** Represents the entire system as a single process, detailing its input/output (IO) data and interfaces with external entities.
+    *   **Focus:** Understanding the data exchange and interaction types between the user and the system before internal analysis begins.
+*   **B) Component Diagram:**
+    *   **Concept:** Visualizes reusable software parts (components) that can be assembled to speed up development and boost productivity. Reusability is fundamental.
+    *   **Interoperability:** Components must communicate and cooperate, requiring established standards for their implementation and documentation.
+    *   **Component Association:** Describes how components are assembled (e.g., sequentially, hierarchically).
+*   **C) Package Diagram:**
+    *   **Concept:** Represents functionally related groups of classes or subsystems, often released as commercial "packages."
+    *   **Purpose:** Hides internal details of a package from external view, minimizing dependencies between packages.
+    *   **Advantage:** Excellent for representing high-level software architecture by showing dependency relationships between abstracted subsystems, thereby reducing overall complexity.
+
+### Learning Objectives
+
+After studying this guide, you should be able to:
+
+1.  Understand the concepts of object-oriented analysis and modeling.
+2.  Explain the concepts and principles of object-oriented design.
+3.  Perform static and dynamic modeling using UML (Unified Modeling Language).
+4.  List the concepts of design patterns and representative patterns.
+
+### Key Keywords
+
+*   Use case, sequence diagram, activity diagram
+*   Object, class, encapsulation, inheritance, polymorphism, association, set
+*   Class, property, relationship, association, operation, class diagram
+*   Interaction diagram (sequence diagram, communication diagram), state diagram, activity diagram
+*   Singleton pattern, factory method pattern, facade pattern, strategy pattern
+
+---
+
+================================================================================
+ORIGINAL TEXT (First 5000 chars)
+================================================================================
+
+--- Page 64 ---
+Software  Development }
++ Preview  for practical  business Roles of the software  architect
+«Creator  of a vision - The requirements  and constraints  should be well understood  and
+understanding  of the realized  technologies  should be improved,  based on a professional
+perspective  and experience  in the type of product  to be made. A software  architect  plays the
+role of completing  the framework  of the software  to be developed.  The architect’s  creativity  is
+important,  and the architect  should be able to present  what has been arranged.
++ Key technical  consultant  - A key technical  consultant  advises  the development  organization
+regarding  technical  matters,  based on his or her expertise.  It is particularly  important  to
+properly  select a design pattern and a development  framework  because  it is the first step in
+ensuring  that the quality  of a software  product  is commensurate  with its characteristics.  To this
+end, continuous  knowledge  realization  and competency  development  are required.
++ Decision  maker  - Ultimately,  an architect  leads a design team in the development  of a software
+product  and makes decisions  about major areas or factors  that affect the overall design.  To this
+end, increasing  knowledge  about the domain  in which the product  will be used or applied  is also
+defined  as an important  factor.
+Recently,  this role has become  more important,  given that a proper  decision  appropriate  to the
+situation  must be made quickly  and evaluated,  such as agile development,  etc.
++ Coaches  - Similar to the role of the key technical  consultant  (described  as the second role),
+the coach trains the defined  architecture  and manages  its improvement  and feedback.  The role
+of the coach, as a technical  leader, and coaching  is exercised  by various sponsorships  and its
+position  is also strengthened.
++ Coordinates  - The different  opinions  of the various  project participants  should be coordinated
+and mediated  to maintain  and ensure design integrity.  A person who can mediate  from the
+technical  standpoint  is required  because  these factors may develop  into an important  risk
+factor. An architect  can be seen as an authoritative  technical  mediator  in this regard.  Therefore,
+proper  communication  skills are also important,  in addition  to technical  competence.
++ Implements  - When introducing  a new technology,  its impact should be evaluated  from
+the design stage, and the feasibility  of its implementation  should also be evaluated  using a
+prototype.  Generally,  developers  grow into architects  by improving  their skills and experience.
++ Advocates  - New architecture  should be continuously  evaluated  and a ground for introducing
+and continuous  investment  should be provided.  Technical  skills and architecture  should be
+advanced  continuously  through  this.
+(Source:  Applied  Software  Architecture)
+M1 Software  development  63
+
+
+--- Page 65 ---
+ESSENCE
+01 Software  Architecture  Design
+A) Software  architecture  overview
+Software  architecture  can be regarded  as a blueprint  which is used to systematically  handle various factors
+that directly or indirectly  affect the development  of software  and increase  complexity.  The definition  of
+software  architecture  can be expressed  in various ways. Booch defined architecture  as “a set of important
+decision-making  rules about the software  structure’.  Myron Ahn[4] said that we can judge various things
+from software  architecture,  such as modules,  processes,  data, and their structure;  the relationships  between
+components;  the method  of extending  and modifying  these components  and relationships:  the components  of
+the technology  in use; and the method  of implementing  and modifying  the flexibility  and performance  of the
+system. When starting  a project, software  architecture  is used as a means of communication  and a decision-
+making tool, and is also considered  when determining  the overall system structure  and organization  of a
+development  project.
+Mission
+fulfills
+“a
+influences| has anEnvironment is System Architecture |
+described
+has byl
+. identifies
+is important 1 Architectural provides
+to Lt Stakeholder Rationaleee Description participates
+is addressed Jin
+has 1 organized \\
+hee identifies Selects byl.*
+Le
+ie
+Concem Viewpoint View
+conforms  to
+cover 1..* participates  in
+has source 1*
+0
+Library
+Viewpoint estabish methods for Model
+[Figure 17] Components  of software  architecture  (IEEE-1471)
+B) Software  architecture  design procedure
+Software  architecture  is designed  by the procedure  of requirements  analysis,  architecture  analysis  and design,
+and architecture  verification  and approval.
+Requirements  are specifically  identified through  request  for proposals,  interviews,  and meetings,  and functional
+and non-functional  requirements  are classified  and specified. During  the architecture  analysis  procedure,  qualit...

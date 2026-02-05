@@ -1,0 +1,237 @@
+LEARNING GUIDE: Pages 190-194
+Generated: 2025-12-05 14:11:36
+PDF: 5 - Understanding the IT Business and Ethics OCR
+
+================================================================================
+LEARNING GUIDE
+================================================================================
+
+Here's a simplified, easy-to-read learning guide based on the provided text:
+
+---
+
+## Learning Guide: IT Business, Ethics & Personal Information Protection
+
+This guide summarizes key aspects of personal information protection, focusing on Korean regulations and international guidelines.
+
+### 1. The Personal Information Protection Act (PIPA) - Korea
+
+The **Personal Information Protection Act (PIPA)** is the primary law governing personal information.
+
+#### 1.1. Basic Principles
+
+*   **Scope:** Applies to all personal information processors in public and private sectors.
+*   **Information Covered:** Includes physical documents (handwritten) and electronically processed data.
+*   **Processing Rule:** Generally prohibited without the data subject's consent or a legal basis.
+*   **Unique Identification Information (e.g., resident registration number):** Requires specific safety measures like **encryption** to prevent loss, theft, or damage.
+*   **Data Breach Notification:** Mandatory to notify individuals of personal information leakage.
+*   **Dispute Resolution:** Includes a group dispute mediation system and group lawsuits.
+*   **Oversight:** Presidential Personal Information Protection Committee.
+
+#### 1.2. Personal Information Processing Procedure & Obligations
+
+Companies and public institutions must follow specific rules at each stage of processing personal information:
+
+1.  **Collection & Use:**
+    *   Collect only the **minimum necessary** personal information.
+    *   Strict restrictions on collecting **sensitive information** and **unique identification information**.
+    *   Provide alternative sign-up methods (e.g., without using a resident registration number).
+    *   Install and operate **image data processing equipment** (e.g., CCTV) with disclosed management policies.
+    *   Designate **Personal Information Protection Managers**.
+    *   Implement **safety measures** for personal information.
+
+2.  **Provision to Third Parties / Outsourcing:**
+    *   Limit provision for purposes other than the original intended one.
+    *   Specific rules apply when outsourcing personal information processing or transferring data due to business transfer.
+
+3.  **Destruction:**
+    *   Personal information must be destroyed when no longer needed.
+
+4.  **Data Breach:**
+    *   Mandatory notification and reporting of personal information leakage or damage.
+
+5.  **Guarantee of Rights:**
+    *   Individuals have the right to access their personal information.
+    *   Right to request correction, deletion, or destruction of their personal information.
+    *   Supported by the Personal Information Dispute Mediation Committee and class-action lawsuits.
+
+6.  **Penalty & Transition Measures:**
+    *   Legal penalties for non-compliance.
+
+### 2. Privacy Policy Guidelines: Key Steps & Consent
+
+Organizations must develop privacy policies that are clear and transparent to users.
+
+#### 2.1. Preparation Stage for Policy Development
+
+1.  **Identify Required Information:**
+    *   Determine the **minimum personal information** needed for a task (e.g., name, phone number).
+    *   Check for **unique identification information** (e.g., resident registration number, driver's license) or **sensitive information** (e.g., ideology, health, criminal history) as these require separate, stricter processing.
+2.  **Identify Retention Period:**
+    *   Confirm the legal or policy-defined retention period.
+    *   Set the **minimum necessary retention period** if not specified by law.
+3.  **Confirm Consent Requirements:**
+
+    *   **Consent is generally required** to collect and use personal information.
+    *   **Exceptions (when consent is NOT required):**
+        *   Public institution's statutory duties.
+        *   Existing special legal provisions or unavoidable legal obligations.
+        *   Necessary to execute/perform a contract with the data subject.
+        *   Urgent necessity to protect life, body, or property from imminent danger (and consent cannot be obtained).
+        *   When justifiable interests of the controller outweigh data subject's rights.
+
+    *   **Special Consent Rules:**
+        *   **Sensitive Information or Unique Identification Information:** Requires **separate consent** from the data subject, unless statutes specifically require or permit processing.
+        *   **Resident Registration Number:** Generally prohibited, except when specific laws require or permit it, or for urgent protection of life/property.
+        *   **Children Under 14:** Requires consent from their **legal representative**.
+
+4.  **Identify Third-Party Provision:**
+    *   If personal information will be provided to a third party, **separate consent is required**.
+    *   **Third-party provision checklist (must be provided to data subject):**
+        1.  Recipient of personal information.
+        2.  Purpose of use by the recipient.
+        3.  Specific data to be provided.
+        4.  Retention period by the recipient.
+        5.  Right to deny consent and any resulting disadvantages.
+
+### 3. Managing Personal Information Protection in Public Institutions
+
+Public institutions undergo a national-level **Diagnosis of Personal Information Protection Management Levels**. This evaluates their management systems and infringement prevention activities, influencing institutional evaluations to encourage improvement.
+
+#### 3.1. Key Diagnostic Areas & Indicators (Summary)
+
+1.  **Laying the Foundation:**
+    *   Dedicated organization and manpower for personal information protection.
+    *   Budget allocation for protection activities.
+2.  **Protection in Consignment Processing:**
+    *   Understanding legal obligations for outsourced processing.
+    *   Education and supervision for entrusted parties.
+3.  **Establishment & Operation of Protection System:**
+    *   Annual training plans and implementation for all staff (officers, handlers, general staff).
+    *   Role of the Personal Information Protection Officer (management, supervision, improvement).
+4.  **Establishment & Implementation of Protection Measures:**
+    *   Collecting minimum necessary information and proper consent procedures.
+    *   Procedures for using/providing information for non-intended purposes.
+    *   Conducting **Personal Information Impact Assessments (PIA)** for new or modified systems that might infringe on privacy.
+    *   Operating **Image Information Processing Devices** (e.g., CCTV) with disclosed policies and management registers.
+    *   Measures to prevent leakage/exposure on webpages, systems, business computers, and mobile devices.
+5.  **Establishment & Implementation of Infringement Countermeasures:**
+    *   Procedures for responding to infringement incidents and emergencies.
+    *   Policies for managing access rights to personal information processing systems and auditing access records.
+    *   Understanding and encrypting unique identification information.
+
+### 4. Key Definitions
+
+*   **Sensitive Information:** A broad category of personal information requiring strict protection, including ideas, beliefs, trade union/political party membership, political opinions, health, sex life, genetic information, criminal history data.
+*   **Unique Identification Information:** Information that uniquely identifies an individual, such as resident registration number, passport number, driver's license number, alien registration number.
+*   **Personal Information Impact Assessment (PIA):** An evaluation system to analyze risk factors and derive improvements when new or modified personal information files might lead to infringement.
+*   **Image Information Processing Device:** Devices (e.g., CCTV) installed in a space to record images of people or objects and transmit them. Operators must have and disclose a management policy.
+    *   **Required items for Image Information Management Register:** Classification of use, provision, reading, destruction; date/time; file name/type; person in charge; purpose/reason; third party for data use/provision/reading; grounds for use/provision; type of use/provision; period.
+
+### 5. Domestic Legal Landscape Comparison (Korea)
+
+| Classification | Information & Communications Network Act (ICNA) | Personal Information Protection Act (PIPA) |
+| :------------- | :---------------------------------------------- | :----------------------------------------- |
+| **Governing Law** | Act on Promotion of Information and Communication Network Utilization and Information Protection, Etc. | Personal Information Protection Act |
+| **Scope**        | When information communications service providers collect user personal information. | When any personal information controller collects personal information of a data subject. |
+| **Subject**      | Information & communication service providers, broadcasting service providers, trustees. | Offline business owners, workers, non-profit organizations, **all personal information controllers**. |
+| **Collection**   | Notification of purpose and prior consent required. Restrictions on collecting resident registration numbers. | Notification of purpose and prior consent required. |
+| **Use/Provision** | Prohibition of use for other purposes or provision to third parties without consent. | Prohibition of use for other purposes or provision to third parties without consent. |
+
+### 6. International Guidelines: OECD Privacy Guidelines
+
+The **OECD Privacy Guidelines** (officially, "Recommendation Concerning Guidelines Governing the Protection of Privacy and Transborder Flows of Personal Data") were established in 1980. They serve as a fundamental basis for personal information laws globally.
+
+#### Key Principles:
+
+*   **Collection Limitation Principle:**
+    *   Limits on personal data collection.
+    *   Data must be obtained lawfully and fairly, ideally with data subject consent.
+*   **Data Quality Principle:**
+    *   Personal data must be relevant to its purpose.
+    *   Data should be accurate, complete, and kept up-to-date for those purposes.
+
+---
+
+================================================================================
+ORIGINAL TEXT (First 5000 chars)
+================================================================================
+
+--- Page 190 ---
+Understanding  the IT Business  and Ethics )
+The basic matters  of personal  information  protection  specified  in the Personal  Information  Protection  Act are as follows.
+<Table 100> Basic matters  of personal  information  protection
+Subject  to the Personal
+Information  Protection All personal  information  processors  in the public and private sector
+Act
+P Include handwritten  documents  recorded  on paper documents  as well as informationProtection  rangeprocessed  by computers,  etc.
+ee In principle,  processing  is prohibited  (except  when there is the consent  of the informationeee  . ae subject or the basis of laws and regulations)
+ene ae However,  in the case of processing  unique identification  information,  measures  necessary  to
+registration  number,  etc.ensure safety  such as encryption,  as prescribed  by Presidential  Decree,  must be taken so that
+the unique identification  information  is not lost, stolen, leaked,  forged,  altered,  or damaged.
+Leakage  notification Mandatory  notification  of personal  information  leakage
+Dispute  resolution Introduction  of a group dispute  mediation  system,  a group lawsuit
+Committee Presidential  Personal  Information  Protection  Committee
+© Personal  information  processing  procedure
+The obligations  for each stage of personal  information  processing  stipulated  in the Personal  Information  Protection
+Act are shown in [Figure  79].
++ Collection  and use of personal information |Processing  procedure>
++ Restrictions  on collection  of personal  information  [collection  of the minimum  personal  information  required]
++ Restrictions  on management  of sensitive  information  and unique  identification  information
++ Provision  of an alternative  sign-up  tool without  using one’s resident  registration  number  in the stage of
+being admitted  to membership  via the website
++ Installation  and operation  of image data processing  equipment,  disclosure  of personal  information
+management  policies
++ Designation  of personal  information  protection  managers
++ Measures  to ensure  the safety  of personal  informationBere  en)
+acl  §
++ Limitation  to provision  of personal  information  to a third party, for any purpose  other than the intended  one
++ Outsourcing  the processing  of personal  information,  transfer  of personal  Information  following  business  transfer
++ Destruction  of personal  information9000
+Data breach notification  + report  and report  damage  of personal  information
+The right to access  to personal  information,  the right to request  correction,  deletion,  and destruction  of
+personal  information
+Personal  Information  Dispute  Mediation  Committee  and collective  dispute  mediation
+Class action lawsuit  to suspend  an infringement  with respect  to personal  informationGuarantee
+of rights
+Penalty  and Transition
+Measures
+[Figure 79] Personal  information  processing  procedure
+In case of planning,  developing  and building  a personal  information  processing  system, it should be established  in
+accordance  with the following  personal  information  protection  rules.
+The government  provides  guidelines  for consents  received  from customers  when companies  or public institutions
+M5 Understanding  the IT Business  and Ethics 189
+
+
+--- Page 191 ---
+ESSENCE
+collect  personal  information  or provide  it to third parties.”
+users can recognize  at a glance.The company  shall provide the items and purposes  of the personal  information  to be collected,  the retention  period
+the details of processing  sensitive  information,  the details of the third party's provisions,  the contents  of the right to
+refuse consent,  etc., based on the guidelines,  in a way tha
+Privacy  Policy Guidelines
+Policy Development  Procedures  and Notes Related  Provisions
+[1]Preparation  Stage
+@ Identification of personal  information  required  for task processing
+oldentify  the minimum  personal  information  required  for
+the task to be processed
+x When processing  Task A (example):  name, phone number, email,
+address,  gender,  ageArticle 16 (1) of the
+Personal  Information
+Protection  Act(here-
+inafter  referred  to as
+‘the “Act”)
+oCheck  whether  there is unique identification  informa-
+tion or sensitive  information  among personal  informa-
+tion to be processed  as it has to be processed  sepa-
+rately from general  personal  information
+» Unique  identification  information:  Resident  registration  number,  driver's
+license  number,  passport  number,  alien registration  number
+» Sensitive  information:  ideology,  belief, admission  to or withdrawal  from
+a trade union or political  party, political  opinions,  health, sex life, genetic
+information,  criminal  history  data, etc.Articles 23 and 24
+of the Act
+@ Identification of period for retention  of personal  information
+© Confirm  the retention  period of personal  information  to
+be collected  and used through  privacy  policy  guidelines
+or relat...

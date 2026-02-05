@@ -1,0 +1,235 @@
+LEARNING GUIDE: Pages 91-95
+Generated: 2025-12-05 14:26:07
+PDF: 1 - Software Development OCR
+
+================================================================================
+LEARNING GUIDE
+================================================================================
+
+Here is a simplified, easy-to-read learning guide based on the provided text:
+
+---
+
+# Programming Language & Software Development Guide
+
+## 1. Programming Language Overview
+
+### A. What is a Programming Language?
+*   **Purpose:** Enables humans to communicate instructions to computers.
+*   **How it works:** Programs written in a programming language are translated into **machine language** (0s and 1s) by a **compiler** or **interpreter** so computers can understand them.
+*   **Importance:** Choosing the right language is crucial for productivity and quality, as each language has different uses.
+
+### B. Types of Programming Languages
+
+| Type                | Description                                                                                                                                                                                                                                                                                                        | Examples                                       |
+| :------------------ | :----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | :--------------------------------------------- |
+| **Low-level Language** | - **Machine-centric:** Directly understood by the computer's hardware. <br/> - **Fast execution.** <br/> - **Machine-specific:** Code differs for each computer model, lacking compatibility. <br/> - **Difficult for humans** to write directly.                                                                    | - **Machine language:** Pure binary (0s and 1s). <br/> - **Assembly language:** Simple characters representing machine language instructions. |
+| **High-level Language** | - **Human-centric:** Similar to natural human language, making it easy to read and write programs. <br/> - **Highly readable and productive.** <br/> - **Machine-independent:** Programs can be written once and run on different machines after translation by a compiler or interpreter. <br/> - Created to simplify programming for humans. | FORTRAN, COBOL, BASIC, C, C++, Java, Python |
+
+### C. Programming Language Use Cases
+
+| Area of Use                      | Major Languages             |
+| :------------------------------- | :-------------------------- |
+| Science and Technology (numerical) | FORTRAN, ALGOL60            |
+| Business                         | COBOL                       |
+| Artificial Intelligence (AI)     | LISP, PROLOG                |
+| System Programming               | PL/S, BLISS, ALGOL, C/C++, Java, Python |
+| Special Purposes                 | GPSS (for simulation)       |
+
+### D. Interpreters vs. Compilers
+
+**1. Interpreter Languages**
+*   **Process:** Convert source code into a low-level language directly and execute it immediately, without creating a separate executable file.
+*   **Strengths:**
+    *   Programs execute *as needed*, without waiting for complete translation.
+    *   Saves memory as the original source code form is maintained.
+*   **Shortcomings:**
+    *   **Slower for repeated execution** because the source program must be decoded *every time* it runs.
+*   **Examples:** LISP, PROLOG, Python, JavaScript.
+
+**2. Compiler Languages**
+*   **Process:** Translate high-level source code into a machine language "object module" (executable file) first. This module is then linked, loaded, and executed.
+*   **Strengths:**
+    *   Translated object codes can be saved and reused.
+    *   Once compiled, programs execute **very quickly**.
+*   **Shortcomings:**
+    *   **Compilation process takes time.**
+    *   Can sometimes waste memory as one line of source code might translate into many lines of machine code.
+*   **Examples:** FORTRAN, PASCAL, C, C++.
+
+---
+
+## 2. Characteristics of Major Programming Languages
+
+### A. C Language
+*   **Origin:** Developed by Dennis Richie (1970s) at Bell Labs for the UNIX operating system.
+*   **Influence:** Most computer languages are motivated by C. Many famous OS (iOS, Android) are written in C.
+*   **Characteristics:**
+    *   Fast execution and efficient memory management.
+    *   Concise notation allows function implementation in structured blocks.
+    *   **Procedure-oriented:** Programs execute in a specified sequence.
+    *   **More difficult to use** than Java; requires careful consideration of arrays and memory.
+    *   **Poor portability:** Difficult to port (move) programs when the execution environment or machine changes.
+
+### B. C++ Language
+*   **Origin:** Extends C, suitable for system programming.
+*   **Key Feature:** Supports **Object-Oriented Programming (OOP)**, making it suitable for large-scale software development. Improves reusability, scalability, and maintainability.
+*   **Characteristics:**
+    *   **Object-Orientation:** Supports classes, operator overloading, and virtual functions.
+    *   **Encapsulation & Data Hiding:** Classes hide internal workings; users only interact with the class interface.
+    *   **Inheritance & Reusability:** Allows creating new classes by extending common characteristics of existing ones, boosting software productivity.
+    *   **Polymorphism:** The ability for one name to have multiple forms or behaviors (e.g., a "person" can be an "office worker" and an "instructor").
+
+### C. Java Language
+*   **Origin:** Developed by James Gosling at Sun Microsystems (1991) for home appliances. Gained popularity on the internet with "applets."
+*   **Current Use:** Most popular and widely used language for web apps, mobile devices (Android), and home appliances.
+*   **Characteristics:**
+    *   Syntax similar to C/C++.
+    *   Simplified complexity compared to C++.
+    *   **Automatic garbage collection:** Manages memory automatically.
+    *   **Perfect Object-Oriented Language:** Fully applies OOP concepts.
+    *   **Platform-independent:** Java programs run on any device with a **Java Virtual Machine (JVM)**.
+
+### D. Python Language
+*   **Origin:** Developed by Guido Van Rossum (1990).
+*   **Type:** Interpreter, object-oriented, conversational language.
+*   **Use Cases:** Web programming (Django), big data analysis, Artificial Intelligence (AI) programs.
+*   **Characteristics:**
+    *   **Dynamic typing:** Data types are checked at runtime, not compile-time.
+    *   **Easy grammar:** Similar to English sentences, making it highly readable and easy to learn.
+    *   Good for asynchronous coding using a single event loop.
+    *   **Multi-paradigm:** Supports procedural, functional, and object-oriented programming styles.
+
+### E. JavaScript Language
+*   **Origin:** Object-based script programming language.
+*   **Primary Use:** Web browsers (client-side scripting), but also server-side (Node.js).
+*   **Characteristics:**
+    *   Simple programming, but can have security vulnerabilities.
+    *   **Highly scalable and usable:** Due to its open-source nature and active developer community.
+    *   **Easy to learn:** No separate compilation process is required (interpreted).
+    *   Extensive ecosystem of libraries and frameworks (AngularJS, D3.js, Node.js, React).
+
+---
+
+## 3. Software Development Framework
+
+### A. Concept of a Software Development Framework
+*   **Definition:** A collection of code libraries, interface protocols, and configuration information that provides a **basic structure** for software composition.
+*   **Purpose:** To develop information systems efficiently and easily.
+*   **Key Idea: Inversion of Control (IoC):** The framework controls the flow of the application, and developers extend it by adding their specific business logic.
+*   **How it helps:** Instead of building software from scratch, frameworks provide pre-built structured tools and libraries for common tasks (e.g., displaying data, handling input, integrating with external modules).
+
+### B. Advantages of Using a Framework
+
+| Strength                       | Description                                                                                                                                                                                                                                                                                                         |
+| :----------------------------- | :-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| **Improves Code Quality**      | Defines and handles common repetitive coding tasks, reducing the risk of bugs and ensuring more consistent, correct code.                                                                                                                                                                                             |
+| **Increases Development Productivity** | Provides various pre-built functions and components (e.g., communication methods, data handling, user interface elements), allowing developers to focus on unique features rather than reinventing common solutions. This saves time and effort. |
+| **Standardization & Risk Reduction** | Standardizes development practices, guarantees a certain level of quality, and reduces the risks associated with new software development by using proven technologies and structures. |
+
+---
+
+================================================================================
+ORIGINAL TEXT (First 5000 chars)
+================================================================================
+
+--- Page 91 ---
+ESSENCE
+01 Programming Language  Overview
+A) Concept  of the programming  language
+A programming  language  enables  users to write a program  using a familiar  language,  that is, a language  that is
+similar to the language  they use every day. In other words, programming  languages should be used to enable
+humans  to communicate  with computers.  Thus, programs  written  in each programming  language  are translated
+into machine  language  using a compiler  or an interpreter,  so that computers  can understand  the languages.
+In addition,  it is necessary  to secure the productivity  and quality  goals using a proper programming  language  in
+each area, because  each programming  language  has different  uses.
+<Table 21> Low-level  language  and high-level  language
+Item Description Representative  language
+Low-level  languageMachine-centric  language  that is executed  quickly  and has a
+different  code for each machine.
+There is a machine  language  composed  of a binary system
+that is easily understood  by the computer,  and an assembly
+language  that corresponds  to the machine  language.
+There is no compatibility  between  computer  models.Machine  language,
+assembly  language
+High-level  languageIt is easy to write a program  that is highly readable  and
+productive  compared  to low-level  language  because  it is made
+so as to be similar  to natural language,  which can be easily
+understood  by humans.
+A program  can be written independently  of the machine  and
+converted  into low-level  language  by a compiler  or interpreter.FORTRAN,  COBOL,  BASIC, C, C,
+Java, Python
+The machine  language  is written in only 0 and 1 and can be directly understood  by hardware,  whereas  the
+assembly language  expresses  the machine  language  in simple characters.  Both the machine language  and
+assembly  language  are referred  to as a “low-level  language’.  However,  as it is practically  difficult for humans  to
+manually  write programs  in either machine  language  or assembly  language,  high-level  languages  were created
+to resolve this problem.  High-level  languages,  represented  by C, C++, Java, and Python, enable us to write
+programs  using everyday  languages  and symbols.
+<Table 22> Areas of use of programming  languages
+Area of use Major programming  languages
+Science  and technology
+(used for numerical FORTRAN,  ALGOL60
+calculation)
+Business COBOL
+Artificial  intelligence LISP. PROLOG
+System  programming PL/S, BLISS, ALGOL,  C/C , Java, Python
+Special  purposes GPSS (language  used for simulation)
+90 TOPCIT  ESSENCE
+
+
+--- Page 92 ---
+Software  Development )
+B) Interpreter  languages
+Interpreter  languages  convert  a source program into a low-level  language  directly, without  requiring  any
+intermediate  steps, and execute  the program at the same time. Machine  language  programs  are not created
+by translating  high-level  languages  into intermediate  codes and then executing  the translated  codes with a
+software  interpreter;  rather, such programs  are executed  by calling sub-routines  corresponding  to the functions
+of each intermediate  code. LISP and PROLOG  are representative  interpreter  languages.
+Writing  using Interpreter
+a development process Loading  in
+tool temporary
+a memory  first
+Writing  source code in
+programming  language
+Program,js,  etc.
+Void abs(), etcOperating Computer
+system hardware
+Source  file
+[Figure 19] Interpreter  process
+@ Strengths  of interpreter  languages
++ Programs  are executed  if needed,  without  waiting  for complete  machine  language  translation.
++ Memory  can be saved as the source language  form is maintained  until the program  has been fully executed.
+@ Shortcomings  of interpreter  languages
++ The source program  has to be decoded  whenever  it is executed  again, which takes time.
+C) Compiler  languages
+“Compilation”  means  converting  a specific  language  into another  language  having an equivalent  meaning.
+The compiler  translates  a high-level  language  into a machine  language,  which is a low-level  language,  in order
+to make an object module,  after which this module is linked, loaded, and executed.  FORTRAN,  PASCAL,  and C/
+C are representative  compiler  languages.
+Writing  using Compilation  process
+a development Loading in
+tool Saving temporarytt tt memory  first
+Writing
+source code in
+programming
+language
+Messenger.C,  etc.
+Void abs(), etc.Creating  an
+executable
+program
+Messenger,  exe, Programm (CPU)
+etc.
+Source  file Binary  file
+[Figure  20] Compilation  process
+M1 Software  development  91
+
+
+--- Page 93 ---
+ESSENCE
+@ Strengths  of compiler  languages
++ Translated  object codes can be saved.
++ Executable  immediately  after compilation.
++ The reused program  can be executed  quickly  after compilation
+@ Shortcomings  of compiler  languages
+* Conversion  to machine  language  takes  a long time.
++ Memory  is wasted sometimes  because  one line of raw program  is translated  into hundreds  of lines of...

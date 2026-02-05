@@ -1,0 +1,28 @@
+ESSENCE
+in the initial lifecycle  phase is created,  using the program  or document  obtained  in the last phase of the software  lifecycle.
+Reverse  engineering  is the opposite  concept  of forward  engineering  in which development  is performed  sequentially  from the
+design. The concept  of reverse  engineering  can be understood  by looking  at the flow of input and output  below.
+<Table  6> Input/output  of reverse  engineering
+Input Output
+Data or document  in the form of I/O, such as the source code, | Structure  diagram,  data flow chart, control flow graph, entity
+object  code, work procedure,  library, etc. relationship  diagram,  etc.
+B) The main reasons  why reverse  engineering  is necessary
++ When it is difficult  to maintain  a running  system.
++ When frequent  changes  decrease  a system’s  efficiency
++ When redeveloping  a business  system based on a file system into one based on a relational  database.
++ When downsizing  the default  mainframe
+C) Advantages  of reverse  engineering
++ Commercialized  or previously  developed  software  can be analyzed.
++ Maintainability  can be improved  since the data and information  of the existing  system  can be analyzed  at the
+design level.
++ CASE can be used easily by storing  existing  system information  in a repository.
+D) Types of reverse  engineering
++ Reverse engineering  can be divided into logical reverse engineering  and data reverse engineering  for
+description.
+<Table  7> Types of reverse  engineering
+Type Description
+Logic reverse Information  is extracted  from the source code and stored in the physical  design information  storage.
+engineering Physical  design information  is obtained
+Data reverse
+engineeringThe existing  database  is modified  or migrated  to a new database  management  system.
+36 TOPCIT  ESSENCE

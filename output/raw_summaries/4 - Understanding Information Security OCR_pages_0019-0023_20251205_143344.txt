@@ -1,0 +1,181 @@
+LEARNING GUIDE: Pages 19-23
+Generated: 2025-12-05 14:33:44
+PDF: 4 - Understanding Information Security OCR
+
+================================================================================
+LEARNING GUIDE
+================================================================================
+
+Here is a simplified, easy-to-read learning guide based on the provided text:
+
+---
+
+## Information Security Learning Guide
+
+This guide covers essential concepts in information security, focusing on key definitions, functionalities, and practical applications.
+
+### 1. Core Information Security Principles
+
+*   **Confidentiality:** Ensuring data is viewable *only* by authorized and legitimate users.
+*   **Integrity:** Ensuring data is original, *without forgery or alteration*.
+*   These principles are crucial for responding to security threats.
+
+### 2. Emerging Security Technologies & Concepts
+
+#### A. FIDO 2.0 (Fast Identity Online)
+
+*   **Purpose:** A standard for easier and more secure online authentication.
+*   **Protocol:** Does *not* use the UAF (Universal Authentication Framework) protocol. Instead, it uses its own server-defined protocol for message exchange.
+*   **Client Implementation:** FIDO client is provided as an API by the operating system or as a JavaScript API by web browsers (unlike FIDO 1.0 which used Android apps).
+
+#### B. Network Segregation
+
+*   **Definition:** Separating a business network from external networks (like the internet) to block unauthorized access and prevent internal information leakage.
+*   **Types:**
+
+| Feature          | Physical Network Segregation                               | Logical Network Segregation                                   |
+| :--------------- | :--------------------------------------------------------- | :------------------------------------------------------------ |
+| **Operation**    | Physical separation using 2 separate PCs.                  | Logical separation using virtualization or other methods (1 PC). |
+| **Introduction** | High cost (additional PC, network installation).           | Low cost (depends on environment).                            |
+| **Security**     | High (basic segregation).                                  | Low (potential vulnerabilities).                              |
+| **Efficiency**   | Low (affects work environment).                            | Easy to manage (applying security policies).                  |
+| **Details**      | Uses 2 PCs, multi-PC setups, or network switching devices. | Server-based or PC-based.                                     |
+
+#### C. Fraud Detection System (FDS)
+
+*   **Definition:** A system that detects and blocks suspicious or abnormal financial transactions by analyzing device, access, and transaction details.
+*   **Core Engine:** **Pattern Analysis** – learns typical user transaction patterns and flags any actions that deviate from these patterns as abnormal.
+*   **Functions:**
+    *   **Information Collection:** Gathers user environment, behavior, and accident type information.
+    *   **Analysis & Detection:** Identifies abnormal behavior by analyzing various correlations and testing patterns against collected data.
+    *   **Response:** Blocks illegal transactions or requires additional authentication when abnormal behavior is detected.
+
+#### D. Quantum Cryptography
+
+*   **Definition:** A cryptographic technology leveraging quantum mechanics, unlike traditional cryptography which relies on mathematical complexity.
+*   **Key Property:** A quantum cannot be copied or returned to its original state.
+*   **Security:** If an eavesdropper attempts to measure a quantum (to intercept data), its state changes. This change allows the legitimate receiver to detect the eavesdropping attempt.
+
+#### E. Trusted Platform Module (TPM)
+
+*   **Definition:** A hardware-based security module, established as a standard by the TCG (Trusted Computing Group).
+*   **Purpose:** Addresses limitations of software-only security by providing a strong, hardware-isolated security environment.
+*   **Function:** Securely stores sensitive data (e.g., encrypted keys, passwords, digital certificates) in a hardware-separated space. Ensures critical operations like key management and encryption processing occur *within* the secure device.
+*   **Version:** TPM 2 was released in September 2016 and includes the Mobile Trusted Module (MTM).
+
+#### F. Re-identification
+
+*   **De-identification:** The process of converting data so that an individual cannot be identified from it.
+*   **Re-identification:** The process of identifying an individual from *de-identified* data by combining, analyzing, and processing it with other external information.
+*   **Risk:** Can lead to accidental or intentional disclosure of personal information, especially with the widespread use of big data and information collected from online sources (SNS, websites).
+
+#### G. EU-GDPR (General Data Protection Regulation)
+
+*   **Effective Date:** May 25, 2018.
+*   **Purpose:** An EU law aimed at protecting personal information and regulating its use within the European Union.
+*   **Impact:** Mandatory for all EU member states. Non-EU companies (e.g., Korean companies) must comply if they process personal information of EU residents, even if operating overseas (extra-territorial scope). Violations incur significant penalties.
+*   **Major Changes:**
+    *   **Mandatory Enforcement:** Unlike previous EU directives which were recommendations, GDPR is a strict regulation with penalties for non-compliance.
+    *   **Extra-territorial Scope:** Applies to companies based in the EU *and* companies outside the EU that process personal data of EU residents (e.g., via e-commerce).
+    *   **Increased Responsibilities:**
+        *   **For Enterprises:** Mandates roles like the Data Protection Officer (DPO).
+        *   **For Individuals (Data Owners):** Grants increased rights, such as the right to data portability.
+
+### 3. Key Information Security Terms (from page 23)
+
+These are important terms related to cryptography, authentication, and access control:
+
+*   Encryption algorithm
+*   Private key encryption
+*   Public key encryption
+*   Hash function
+*   Authentication
+*   Digital signature
+*   PKI (Public Key Infrastructure)
+*   Access control
+*   Cryptographic protocol
+*   DES (Data Encryption Standard)
+*   AES (Advanced Encryption Standard)
+*   RSA (Rivest–Shamir–Adleman)
+*   ECC (Elliptic-curve cryptography)
+*   Hash collision
+*   Public certificate
+*   Multi-factor authentication
+*   Session key
+
+### 4. Practical Application: Ensuring Confidentiality
+
+When managing sensitive data like source code, especially when exchanging it with partners or storing it:
+
+*   **Challenge:** Regular checks are insufficient against diversified and intelligent security threats. Data must be protected from unauthorized disclosure to competitors or third parties.
+*   **Solution:** **Confidentiality** must be ensured for source programs during both storage and transmission. This involves applying appropriate security measures to prevent unauthorized access.
+
+---
+
+================================================================================
+ORIGINAL TEXT (First 5000 chars)
+================================================================================
+
+--- Page 19 ---
+Information  security )
+Windows  and Android,  and the web platform  based on the web browser.  FIDO server, RP server, and RP client
+are the components  that should be provided  by the server. Therefore,  if they are regarded  as a part of the
+server, the standard  protocol is not needed anymore.  Therefore,  FIDO 2.0 does not use the UAF protocol,  but
+exchanges  messages,  using its own protocol defined by the server. The FIDO client, which was provided  as an
+Android  app in the existing  FIDO 1.0, will be provided  as an API by the operating  system,  or as a JavaScript  API
+by the web browser.
+C) Network  segregation  and network  linking
+Network  segregation  refers to network  blocking,  which separates the business  network  from the external
+network  in order to block illegal access from the external Internet  network  and to prevent  the leakage  of
+internal information.  There are two types - physical  network  segregation  and logical network  segregation.
+<Table 1> Physical  network  segregation  and logical network  segregation
+Item Physical  network  segregation Logical network  segregation
+Operation Physical segregation  of the business  network  and Logical segregation  using virtualization  or other
+method internet  network  (using 2 PCs) methods  (using 1 PC)
+Introduction High (additional k installati ; he installati .none igh (additional  PC, network installation) Low (depending  on the installation  environment)
+Security High security  (basic segregation) Low security  (vulnerabilities  occur)
+Efficiency Low efficiency  (work environment) Easy to manage  (applying  security  policies)
+Detailed | P : 7 7nary 2 PCs, multi-PC,  network  switching  device Server-based,  PC-based
+D) Fraud Detection  System  (FDS)
+The FDS is a system that detects suspicious  transactions  and blocks abnormal  financial  transactions  by
+comprehensively  analyzing  device information,  access information,  and transaction  details used in electronic
+financial  transactions.  Pattern analysis is the core engine of the FDS because  the usual transactions  of the
+user are analyzed,  and abnormal  behavior  is detected  when an action that violates  the analyzed  pattern is
+taken. The FDS has the following  functions.
+© Information  collection
+The FDS collects  user media environment  information  and accident  type information  by collecting  information
+on user information  and behavior.
+@ Analysis  and detection
+The FDS detects  abnormal  behavior  by analyzing  various correlations  by user type and transaction  type, and
+by testing  the pattern,  based on the analysis  of abnormal  behavior,  using the collected  information.
+@ Response
+The FDS blocks an illegal transaction  by blocking  the transaction  or by requiring  additional  authentication  when
+abnormal  behavior  is detected.
+M4 Understanding  Information  Security  19
+
+
+--- Page 20 ---
+ESSENCE
+E) Quantum  cryptography
+Quantum  cryptography  is a cryptographic  technology  that utilizes the characteristics  of mechanics.  Unlike
+existing  cryptosystems  that are based on mathematical  complexities,  quantum  cryptography  is based on
+the characteristics  of quantum.  A quantum  cannot be copied or returned  to its original state. Due to these
+properties,  the receiver  can detect an eavesdropping  attempt  when a third party measures  the quantum  for
+eavesdropping  because  its state is changed  if measured.
+F) Trusted  Platform  Module  (TPM)
+The trusted platform  module (TPM) is a standard  established  by the TCG (Trusted  Computing  Group), an
+international  industry  standard  organization,  to overcome  the limitations  of security  technology  that only
+operates  with software.  This module provides  a strong security  environment  that stores important  data
+that requires  security  in a secure space separated  by hardware,  such as the encrypted  key, password,  digital
+certificate.  It ensures  that key management,  encryption  processing,  etc., are only handled inside the security
+device.  The latest TPM 2 was released  in September  2016, which includes  the Mobile  Trusted  Module  (MTM).
+G) Re-identification
+De-identification  is the process or method of converting  data in such way that an  individual  cannot  be
+identified.  Re-identification  is the process  or method of identifying  an individual  from the de-identified  data
+by combining,  analyzing,  and processing  it with other information.  Personal  information  may be disclosed,  due
+to intentional  or accidental  re-identification,  while collecting  information  from SNS or websites,  like search
+engines,  or while companies  that handle personal  information,  such medical and financial institutions,  are
+analyzing  data. Recently,  as big data is being used in various  fields, there is concern  that personal  information
+may be leaked indiscriminately  due to re-identification.
+H) EU-GDPR
+EU-GDPR  is the personal  information  protection  law of the EU...

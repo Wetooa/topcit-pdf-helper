@@ -1,0 +1,218 @@
+LEARNING GUIDE: Pages 34-38
+Generated: 2025-12-05 14:20:16
+PDF: 1 - Software Development OCR
+
+================================================================================
+LEARNING GUIDE
+================================================================================
+
+Here is a simplified, easy-to-read learning guide based on the provided text:
+
+---
+
+## Software Development: Learning Guide
+
+### 01. Software Reuse
+
+**A) Overview & Definition**
+*   **Software Reuse:** Developing new software using existing software components or knowledge.
+*   **Reusable Asset:** Includes design, requirements, inspection reports, and architecture.
+*   **Purpose:** To increase development productivity, quality, reliability, and reduce schedule/cost by standardizing and reusing existing, proven software parts.
+*   **Goals:**
+    *   **Responsibility:** Utilize components with proven functions, stability, speed.
+    *   **Scalability:** Easy upgrades based on proven functions.
+    *   **Productivity:** Improve development cost, time, and risk.
+
+**B) Targets of Software Reuse (What can be reused?)**
+*   **Knowledge:** Environmental info (education), External info (development, field experience).
+*   **Design Information:** System architecture, system design.
+*   **Data Information:** System data, test cases.
+*   **Program Code:** Modules, entire programs.
+*   **Other Deliverables:** Cost-benefit analysis, user documentation, feasibility studies, prototypes, human expertise.
+
+**C) Principles of Software Reuse**
+*   **Generality:** Designed for broad use, not just specific applications.
+*   **Modularity:** Follows information hiding and abstraction; characteristics of low coupling and high cohesion.
+*   **Hardware Independence:** Reusable software should be independent of specific execution hardware.
+*   **Software Independence:** Reusable software should be independent of the OS or DBMS.
+*   **Self-documentation:** Clear description of function, usage, and interface.
+*   **Commonality:** Commonly needed and usable by many developers.
+*   **Reliability:** Proven to be reliable during use.
+
+**D) Challenges & Obstacles to Software Reuse**
+*   **Difficulty in finding suitable modules.**
+*   **Lack of software standardization.**
+*   **Difficulty understanding internal interfaces or side effects of changes.**
+*   **Higher initial cost to develop components for reuse.**
+*   **Benefits may only be visible long-term.**
+*   **Impractical to extract reusable components from existing legacy software.**
+*   **Adverse reactions from managers and developers.**
+*   **Lack of motivation to apply reuse technology.**
+*   **Social or legal obstacles.**
+
+**E) Countermeasures & Considerations for Successful Reuse**
+*   **Technical:**
+    *   Use new design/development methodologies.
+    *   Develop and maintain a reuse software library.
+    *   Utilize automation tools (CASE).
+*   **Administrative/Institutional:**
+    *   Establish a compensation system for reuse contributions.
+    *   Implement an active management strategy.
+    *   Facilitate organizational change to support reuse.
+*   **General Considerations:**
+    *   Prioritize reuse when it clearly improves productivity.
+    *   Adopt a systematic software development process based on reuse.
+    *   Establish systems to promote a reuse culture.
+    *   Make initial investments to create a reuse environment.
+    *   Continuously improve the reuse library.
+    *   Support reuse with appropriate tools.
+    *   Evaluate software productivity and manage reused component information.
+    *   Consider different levels of component granularity and development approaches (top-down/bottom-up).
+    *   **Deliverables for reuse:** Architecture, source code, data, designs, documents, estimates (templates), human interfaces, plans, requirements, test cases.
+
+**F) Effects of Software Reuse**
+*   Reduces Total Cost of Ownership (TCO) for software production.
+*   Enables sharing and utilization of high-quality software.
+*   Promotes information and deliverable sharing across projects.
+*   Provides educational benefits on system structure and good system development practices.
+
+---
+
+### 02. Reverse Engineering
+
+**A) Definition**
+*   **Reverse Engineering:** A software engineering process where a developed system is deconstructed to extract design information, documentation, and underlying techniques.
+*   **Purpose:** To understand, analyze, modify, or recreate documentation for an existing system, especially during maintenance.
+*   **Opposite of Forward Engineering:** Forward engineering builds sequentially from design; reverse engineering works backward from existing code/system to design/documentation.
+*   **Input:** Source code, object code, work procedures, libraries, etc.
+*   **Output:** Structure diagrams, data flow charts, control flow graphs, entity-relationship diagrams, etc.
+
+**B) Reasons Why Reverse Engineering is Necessary**
+*   Difficulty maintaining a running system.
+*   Decreased system efficiency due to frequent changes.
+*   Redeveloping a legacy system (e.g., file-based to relational database).
+*   Downsizing from a mainframe system.
+
+**C) Advantages of Reverse Engineering**
+*   Allows analysis of commercial or previously developed software.
+*   Improves maintainability by analyzing existing system data and information at the design level.
+*   Facilitates CASE tool usage by storing existing system information in a repository.
+
+**D) Types of Reverse Engineering**
+*   **Logic Reverse Engineering:** Extracts information from source code to create or store physical design information (e.g., system logic, control flow).
+*   **Data Reverse Engineering:** Modifies an existing database or migrates it to a new database management system (e.g., schema analysis, transformation).
+
+---
+
+### Ill. Data Structure and Algorithm
+
+**Learning Objectives (Key Concepts to Understand):**
+*   **Data Structure:** Definition, classification, understanding linear (e.g., Array, List, Stack, Queue, Deque) and nonlinear (e.g., Tree, Graph) structures.
+*   **Algorithm:** Definition, performance analysis, and common algorithms like sorting and searching.
+
+---
+
+================================================================================
+ORIGINAL TEXT (First 5000 chars)
+================================================================================
+
+--- Page 34 ---
+Software  Development )
+01 Software  Reuse
+A) Overview  of software  reuse
+The term “software  reuse” means to develop new software  using existing  software  or software  knowledge.
+Reusable  software  or software  knowledge  is a reusable  asset comprising  design, requirements,  inspection,  and
+architecture.
+@ Background  to software  reuse
++ Deterioration  of quality and productivity  due to a software  crisis.
++ Increased  use of CASE tools due to the development  of automation  technology  in software  development.
++ Efforts  to comply  with software  development  standardization  and secure quality.
+@ Definition  of software  reuse
++ Software  reuse is a method of standardizing  knowledge  about software development  (function,  module,
+configuration,  etc.) and configuring  it to be suitable for repeated  use in order to increase  development
+productivity.
++ Countermeasures  that increase  the quality, productivity,  and reliability  of newly developed  software and
+reduce the development  schedule  and cost by reusing  all or a part of software  that has been recognized  for
+its development  functions,  performance,  and quality.
++ A concept  whereby  developed  modules,  programs  and deliverables  are directly reused or reused after some
+modifications  in the same application  field, or are reused for different  application  duties or by different
+companies
+@ Purpose  of software  reuse
+Goal Contents
+Responsibility Performance  such as functions,  stability,  speed, etc. has already  been proved.
+Scalability Easy to upgrade  based on proven functions.
+Productivity Improvement  of the overall development  process, such as cost, time, risk, etc.
+B) Target  of software  reuse
+Various  subjects  can utilize software  reuse.
+@ General  knowledge
++ Environmental  information:  Knowledge  obtained  through  education  and use.
++ External  knowledge:  Knowledge  obtained  by participating  in the development  and the specific  field.
+@ Design information
++ System  architecture
++ System  design
+M1 Software  development  33
+
+
+--- Page 35 ---
+ESSENCE
+@ Data information
++ System  data
++ Test cases
+@ Program  code
++ Module
++ Program
+© Others
++ Cost benefit  analysis
++ User documentation
++ Feasibility  studies
++ Prototype
++ People
+C) Principle  of software  reuse
+@ Generality: Software  should be generally  reusable,  rather  than designed  for a specific  area of application.
+@ Modularity:  The principle  of information  hiding and abstraction.  Software  reuse should have the characteristics of
+minimum  coupling  and maximum  cohesion.
+@ Hardware  independence:  Reused software  should be independent  of execution  hardware  as much as possible.
+@ Software  independence:  Reused  software  should be independent  of the OS or DBMS.
+© Self-documentation:  The accurate  function,  usage, and interface  of the module  should be described.
+© Commonality:  Reused  software  should be commonly  needed  and usable by many developers.
+@ Reliability:  Reused  software  should be reliable  during  use.
+D) Problems  when reusing  software  for practical  business
++ Itis difficult  to find software  modules  that can be used in common.
++ Software  is not very standardized.
++ It is difficult  to understand  the internal  interface  requirements  of the software  module.
++ It is difficult  to understand  the side effects  of the change.
++ The development  of software  components  for reuse can be more costly.
++ The benefits  of software  reuse may only be recognized  after a long time.
++ It is impractical  to extract  components  for reuse from existing  software  components.
+E) Obstacles  to software  reuse and countermeasures
+@ Obstacles  to software  reuse
++ Adverse  reaction  of managers  and developers.
++ Lack of motivation  to apply reuse technology.
++ Lack of software  standardization.
++ Social or legal obstacles.
+34 TOPCIT  ESSENCE
+
+
+--- Page 36 ---
+Software  Development )
+@ Obstacles  to software  reuse and measures  to remove  the obstacles
++ Technical  plan
+- Use of a new design and development  methodology.
+- Development  of the reuse software  library.
+- Use of the automation  tool (CASE).
++ Administrative  and institutional  methods
+- Establishment  of a compensation  system.
+- Active management  strategy.
+- Organizational  change.
+F) Considerations  when reusing  software
++ Reuse software  if productivity  can be improved.
++ Software  development  process  based on systematic  software  reuse.
++ Establishment  of a system  for promoting  a reuse culture.
++ Creation  of a reuse environment  through  initial investment.
+* Continual  improvement  and enhancement  of the library.
++ Software  reuse that is supported  by tools.
++ Software  productivity  evaluation  and measures,
++ Management  of a set of information  on reused components.
++ Deliverables  for software  reuse:
+Architecture,  source code, data, designs,  documents,  estimates  (templates),  human interfaces,  plans,
+requirements,  te...

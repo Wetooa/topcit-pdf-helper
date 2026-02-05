@@ -1,0 +1,15 @@
+Software  Development )
++ Strategy  pattern
+- Definition:  Provides  a method  of selecting  the most suitable  character  by enabling  the algorithm  to change
+character.
+- Advantages:  Easy to select a desired algorithm;  and a new algorithm  can be applied without  modifying
+existing  code.
++ Template  Method  pattern
+- Definition:  If concrete  implementation  is different  when inheritance  is used, but the basic frame of the
+algorithm  is the same within a larger scheme,  the same basic frame can be created  and managed  by the
+superclass  as a module.
++ Visitor  pattern
+- Definition:  Separates  work targets  and work items and defines  them in a class structure  so that new
+types of work can be added easily, and various  tasks can be performed  for multiple  objects without  any
+inconveniences.
+M1 Software  development  83

@@ -1,0 +1,37 @@
+Information  security )
++ Transport  mode and tunnel mode
+AH and ESP support  transport  mode or tunnel mode. As shown in [Figure 63], IP headers  do not change and
+only the payload  of the IP datagram  is encrypted  in transport  mode, whereas  all IP datagrams  are encrypted
+and transmitted  as the payload  of a new IP packet  in tunnel mode. In general,  the router plays a proxy role of
+IPSec in tunnel mode.
+The transport  mode is mainly used to protect  the upper layer protocol,  which is the payload range of the IP
+datagram.  For example, it is used to protect TCP fragmentation  or ICMP packets. IPSec in transport  mode
+operates  right above the IP layer. ESP encrypts the  IP payload,  but it does not encrypt  the IP header in
+transport  mode, and authentication  is optional.  AH only authenticates  the IP payload and selected  parts of
+the IP header  in transport  mode.
+Tunnel mode protects  all IP datagrams.  To this end, an “external”  IP datagram  that has a new external  IP
+header is created. No router can inspect the internal IP header while this datagram  is transported.  For this
+reason, the IP datagram can be transported  to the external network,  through  a conceptual  tunnel, using
+tunnel mode.
+ESP in tunnel mode encrypts  all internal IP datagrams,  including  the internal IP header, and authentication
+is optional.  AH in tunnel mode authenticates  all internal IP datagrams  and selected  parts of  the external IP
+header.
+Encrypted
+TCP session
+network
+(a) Transport-level  secrity
+Internet
+Encrypted  tunnels
+carrying  IP traffic
+> a
+network, . . . GSW ie
+(b) A virtual private network  via tunnel mode
+[Figure  63] Encryption  of transmission  mode and tunnel mode
+(Source:  W. Stallings,  Network  Security  Essentials,  Pearson,  p.285)
++ Security  Association  (SA)
+To establish  secure communication  with the other party, using IPSec, authentication  and encryption
+algorithms  to be used by two communication  entities,  as well as encryption  keys, are needed.  The security
+algorithm  and key information  should be exchanged  and saved before full-scale  communication,  and the
+records  of this information  are called SA. Since there are many SAs in one system,  SAs are identified  by the
+security  parameter  index (SPI), which is given randomly,  and a destination  IP address. Since one SA is needed
+M4 Understanding  Information  Security  124

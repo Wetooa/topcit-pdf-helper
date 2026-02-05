@@ -1,0 +1,30 @@
+Database )
+03 Index Design
+A) Functions  of the index
+© An index is a data structure  that organizes  database  record information  to perform  search operations  quickly.
+@ Desired information  can be searched  quickly  without  searching  all data if an index is used. The search speed does not
+change  even if the number  of records  increases.
+© The index is sorted by the column  value that has generated  the index and has the pointer  of the location  where the
+actual values are stored in the table.
+@ The most important  function  of the index is to speed up data search by reducing  the access  path.
+B) Index design  procedure
+@ An index should be selected  based on a comprehensive  judgment  after collecting  all access paths to the table and
+analyzing  the collected  results.
+@ In general,  an index is designed  in the following  order.
+* Collection  of access  paths.
++ Selection  of candidate  columns  based on the distribution  survey.
++ Decision  on the access  path.
++ Decision  on the column  combination  and order.
+C) Types of index structures
+@ Tree-based  index
+@ Function-based  index
+@ Bitmap  join index
+@ Domain  index
+04 View Design
+A) Characteristics  of the database  view
+@ A view  is a table that is virtually  created  by collecting  the desired  data only from one or more tables.
+@ Repetitive  data manipulation  can be performed  efficiently  by defining  frequently  used queries  in advance.
+© Users can focus exclusively  on the data they are interested  in.
+@A view  can show calculated  or derived  information.
+@©A view  can limit the data that users can see.
+M2 Database  89

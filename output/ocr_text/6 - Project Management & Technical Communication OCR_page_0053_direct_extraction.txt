@@ -1,0 +1,43 @@
+ESSENCE
+G) Design brief
+The design brief is a document  that implements  the requirements  described  based on the analysis  specifying
+detailed  requirements  for designing  or manufacturing  a SW product.  Therefore,  it includes  structural  design to
+understand  the configuration  of SW and the relationship  between  programs,  interface  design between  mod-
+ules or systems,  design of data storage  to store data, design of program  algorithm,  and design of user inter-
+face,
+<Table 17> Composition  of Design Brief (example)
+Classification Content
+1. General  information + Definition and overview
+2. Structure  design« SW components
++ Relationship  between  SW components
+3. Program  design+ Algorithm  design of SW components
++ Input and output  design of SW components
+4. Interface  design+ Overview  of related SW components
++ Interface  between  SW components
+5. Material  design
+H) Test design brief+ Data storage  overview
++ Data storage  design
+In order to test an implemented  product,  it is necessary  to define test targets and clearly understand  the re-
+sult values such as normal results and exception  results during the test.
+The test design brief is a document  created to be used for testing by defining  test objects, test cases, and
+test data.
+<Table 18> Composition  of Test Design Brief (example)
+Classification Content
+1. Test itemTypes of test
++ Functionality,  performance,  usability,  etc.
+Test ID
++ Uniquely  define test items
+Test item
++ Define the item to be tested
+2. Test cases and data
+|) ManualTypes of test
++ Functionality,  performance,  usability,  etc.
+Test ID
++ Uniquely  define test items
+Input
+« Content  and data to be entered  for testing
+Expected  output
++ Expected  results  and data according  to the contents  put in for the test
+In order to use a new product  (or technology)  well, the user needs to know the principle,  features,  and opera-
+tion methods  of the product. It is a document  written in an easy-to-understand  manner  for customers  who do
+52 TOPCIT  ESSENCE

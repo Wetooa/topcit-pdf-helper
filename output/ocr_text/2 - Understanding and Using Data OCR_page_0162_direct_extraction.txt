@@ -1,0 +1,27 @@
+Database )
+@ Deep learning  algorithm
+<Table  86> DNN, CNN, RNN, RBM, DBN
+Characteristics Description
+DNN+ An artificial  neural network  that is composed  of multiple  hidden layers between  the input layer
+and the output  layer in order to build a complex  and expressive  model by overcoming  the
+limitations  of ANN.
++ Anartificial  neural network  structure  composed  of multiple  hidden layers.
+input layer
+CNN+ Convolutional  Neural Networks
++ Aneural  network  algorithm  with a structure  suitable  for image data processing,  using the
+mechanical  principle  of the organisms  optic nerve.
++ Itis composed  of the convolution  layer > pooling  layer > convolution  layer > pooling  layer > feed
+forward  layer.
+Feature  maps
+enivahiiiea Subsampling Convolution  Subsampling  Fully connected
+RNN+ Recurrent  Neural Network
++ Aneural  network  in which the connections  between  units, which constitute  an artificial  neural
+network,  compose  a directed  cycle.
++ Analgorithm  that creates  a relationship  which produces  multiple  values  when one value is
+entered.
++ It connects  the past neural network  (T-1) and the current  neural network  (T), and learns using an
+algorithm  called BPTT (Back-Propagation  Through  Time), which is an extension  of error back-
+propagation,  a learning  algorithm  of the existing  artificial  neural network.
+D
+D
+M2 Database  161

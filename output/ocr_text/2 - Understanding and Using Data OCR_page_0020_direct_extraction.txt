@@ -1,0 +1,15 @@
+Database )
++ Preview  for practical  business
+There are many cases in which a database  is used like an existing  file system,  and tables are created  in the
+database,  but each table is actually  dependent  on individual  applications,  screens,  and reports.
+For example,  when developing  a book management  system  for each team a booklist  table can be created
+for each team during implementation  of the database  in the same way as managing  books using Excel files.
+However,  if tables are designed  in the same way as Excel files, the advantages  of the database,  including
+integration,  storage,  operation,  and sharing,  cannot  be utilized at all.
+In this case, the complexity  of the application  program  also increases,  causing  problems  that can lead to
+serious symptoms,  such as an increase  in the development  cost, problems  with data integrity  (lack of
+consistency  due to data duplication),  and deterioration  of data processing  performance.  Therefore,  these
+problems  can be prevented,  and the advantages  of the database  can be maximized  and applied  to system
+development  only when we understand  the definition  and characteristics  of the database  (integration,
+storage,  operation,  sharing)  and its advantages,  and apply them to practical  business.
+M2 Database  19

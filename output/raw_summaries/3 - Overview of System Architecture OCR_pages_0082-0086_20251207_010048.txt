@@ -1,0 +1,188 @@
+LEARNING GUIDE: Pages 82-86
+Generated: 2025-12-07 01:00:48
+PDF: 3 - Overview of System Architecture OCR
+
+================================================================================
+LEARNING GUIDE
+================================================================================
+
+Here's a simplified, easy-to-read learning guide based on the provided text:
+
+---
+
+## Learning Guide: System Architecture & Storage Technology
+
+### 1. Instruction Execution & Pipeline Hazards
+
+*   **Pipeline Hazard:** Occurs when the CPU pipeline significantly slows down.
+    *   **Data Hazard:** Next instruction delays because it needs the result of a previous instruction.
+    *   **Control Hazard:** Caused by branch or jump instructions that change the program's execution order.
+    *   **Structural Hazard:** Hardware limitations prevent multiple instructions from processing in parallel during the same clock cycle.
+
+### 2. Parallel Programming Technology
+
+*   **OpenMP (Open Multi-Processing):**
+    *   **Type:** Compiler directive-based API.
+    *   **How it works:** You add special "directives" to your code to mark sections for parallel processing.
+    *   **Model:** Uses a **fork/join model**: A master thread "forks" (creates) multiple threads for parallel work, then "joins" them back into one master thread when the parallel section finishes.
+
+*   **Message Passing Interface (MPI):**
+    *   **Model:** Suitable for **distributed memory systems** (where each processor has its own memory, not shared).
+    *   **How it works:** Nodes (processors) communicate by sending "messages" over a network.
+    *   **Key Factor:** Network communication speed is critical for performance.
+    *   **Standard:** MPI is the widely accepted standard for message passing.
+
+### 3. Load Balancing Technologies (for Multi-Core Performance)
+
+*   **Purpose:** Distributes tasks efficiently across multiple processor cores to maximize performance.
+*   **Models:**
+    *   **Asymmetric Multiprocessing (AMP):** Each processor core runs its own independent operating system (OS).
+    *   **Symmetric Multiprocessing (SMP):** A single OS manages all processor cores simultaneously. Applications can run on any available core.
+    *   **Bound Multiprocessing (BMP):** A single OS manages all cores, but specific application programs are "bound" to run only on certain designated cores.
+
+### 4. Graphic Processing Technology
+
+*   **Graphics Processing Unit (GPU):**
+    *   **Purpose:** Hardware specifically designed for graphics calculations, especially 3D rendering.
+    *   **Architecture:** Contains thousands of small cores that perform parallel floating-point operations.
+    *   **Advantage:** Much more efficient than a CPU for highly parallel tasks like image processing, due to its massive parallel processing capability.
+    *   **Evolution:** Modern GPUs are becoming more flexible and programmable.
+
+*   **General-Purpose GPU (GPGPU):**
+    *   **Concept:** Using GPUs, originally for graphics, to perform general computing tasks, leveraging their high performance for matrix and vector operations.
+    *   **Programming Models (Examples):** NVIDIA's CUDA and OpenACC, Khronos Group's OpenCL, Microsoft's C++ AMP.
+
+### 5. GPU-Based Parallel Programming Technologies
+
+*   **Compute Unified Device Architecture (CUDA) - NVIDIA:**
+    *   **Tool:** A parallel computing platform and programming model for NVIDIA GPUs.
+    *   **Language:** Based on C, making GPU programming more accessible.
+    *   **Benefit:** Significantly improves speed for tasks suitable for parallel processing (e.g., simulations).
+    *   **APIs:**
+        *   **Runtime API:** User-friendly, automatically manages settings and memory.
+        *   **Driver API:** Allows direct, low-level management of memory and devices.
+
+*   **Open Computing Language (OpenCL) - Khronos Group:**
+    *   **Type:** An open, general-purpose parallel computing framework and industry standard.
+    *   **Heterogeneous Systems:** Designed for systems with different types of processors (GPUs, CPUs, DSPs).
+    *   **Model:** Supports data-based and task-based parallel programming.
+    *   **Components:** OpenCL compiler (to convert OpenCL C code to binary) and an OpenCL runtime library (for managing CPU-side control programs).
+
+*   **C++ Accelerated Massive Parallelism (C++ AMP) - Microsoft:**
+    *   **Type:** An open programming language extension for C++ to enable heterogeneous computing (using CPU and GPU).
+    *   **Integration:** Can be used with Visual Studio to accelerate C++ code using the GPU.
+    *   **Goal:** Helps C++ developers use GPUs without needing deep knowledge of low-level graphics APIs.
+
+*   **OpenACC - NVIDIA:**
+    *   **Type:** Compiler directive-based programming model, simplifying CUDA.
+    *   **Benefit:** Offers a simpler programming environment for higher developer productivity.
+    *   **Cross-Platform:** Has lower dependence on specific operating systems or platforms.
+
+### 6. Storage Technology
+
+*   **Concept:** Computer systems use storage units (like main memory and auxiliary memory) to store data and program commands. Auxiliary memory is for permanent storage.
+*   **Necessity:** Crucial for storing OS, application files (for web servers, WAS), and database data to prevent loss or corruption.
+
+### 7. Storage Unit Connection to Servers
+
+*   **Why Specialized Storage?** Single disks can't handle the massive data volumes needed by modern applications (e.g., multimedia). Storage systems combine multiple disks.
+*   **Types (based on connection):**
+
+    *   **Direct Attached Storage (DAS):**
+        *   **Connection:** Directly connected to a single computer system via cables (e.g., Fiber Channel, SCSI).
+        *   **Management:** The connected computer manages the file system.
+        *   **Pros:** High speed, simple setup, low cost.
+        *   **Cons:** Limited number of disks, data cannot be easily shared with other computers.
+
+    *   **Network Attached Storage (NAS):**
+        *   **Connection:** Connected to computer systems over a standard network (Ethernet, LAN/WAN).
+        *   **Management:** Has its own dedicated file system management server (controller).
+        *   **Pros:** Easier data management, allows multiple servers/computers to share storage regardless of physical location.
+        *   **Cons:** Performance (speed and capacity) is limited by the network speed.
+
+    *   **Storage Area Network (SAN):**
+        *   **Purpose:** Developed to overcome DAS limitations (scalability, sharing) and NAS limitations (network speed).
+        *   **Connection:** Uses a dedicated high-speed network, typically a **Fiber Channel switch**.
+        *   **Pros:** Very fast (e.g., 8-16Gbps), highly scalable (can connect many servers and storage devices), dedicated network reduces impact on main network.
+        *   **Cons:** High cost (requires specialized switches and cables), potential data consistency issues (locking) if multiple systems access the same file.
+
+---
+
+================================================================================
+ORIGINAL TEXT (First 5000 chars)
+================================================================================
+
+--- Page 82 ---
+Overview  of System Architecture )
+Instruction Execution  Result
+@ >| F } >@
+Clock Cycle |
+Instruction |~ ~
+1
+Instruction |~. >
+2
+@ Pipeline  hazard
+A pipeline hazard refers to the pipeline speed exceptionally  slowing  down. Pipeline  hazards  include the data hazard,
+the control hazard, and the structural  hazard.
+Data hazards  occur when the next instruction execution  has to be delayed until the previous  instruction  has been
+completed  because  of the dependency  between  instruction  operands.  Control hazards  are generated  by branch
+instructions,  like branch and jump,which  change the execution  order of the instructions.  Structural  hazards  are
+generated  when instructions  cannot be processed  in parallel in the same clock cycle, due to hardware  limitations.  In
+other words, it means the hardware  cannot  support  the combination  of instructions  in the same clock cycle.
+E) Parallel  programming  technology
+@® Compiler  technology  - OpenMP
+OpenMP  is a compiler  directive-based  parallel programming  API. Here, directive-based  means processing  only the
+desired parts in parallel, by adding a directive  to a program  written sequentially  without  parallel processing.  The
+execution  model of OpenMP  is the fork/join  model. A program  initially operates  as a master thread, and when it
+encounters  a directive,  it creates  threads  and independently  executes  them. When the parallel processing  is finished
+(when the area selected  as a directive  is finished),  they are joined into one master  thread in order to run the code
+sequentially.
+@ Message  passing  parallel programming  model
+The message  passing  interface  is a parallel programming  model suitable  to a distributed  memory  system structure.
+Since MPI is not a memory  sharing mode, the nodes share the information  by transferring  messages  over the
+network.  Therefore,  the network  communication  speed is the most important  factor  for performance,  and it is widely
+used by supercomputers  that require  a high-speed  operation.  Parallel programming  tools for message  passing  include
+High Performance  FORTRAN  (HPF), Parallel Virtual Machine  (PVM), and Message  Passing  Interface  (MPI). MPI has
+become  the standard.
+M3 Overview  of System  Architecture  81
+
+
+--- Page 83 ---
+ESSENCE
+© Load balancing  technologies  - AMP, SMP. and BMP
+Load balancing  adequately  distributes  jobs to the cores in order to increase the multi-core  performance.  The
+multiprocessing  models include asymmetric  multiprocessing  (AMP), symmetric  multiprocessing  (SMP), and bound
+multiprocessing  (BMP).
++ AMP: An OS is executed  independently  in each processor  core.
++ SMP: An OS manages  all processor  cores simultaneously.  Application  programs  can operate  in any core.
++ BMP model: An OS manages  all process  cores simultaneously,  and an application  program  can run on a specific  core.
+F) Graphic  processing  technology
+@ Graphics  processing  unit (GPU)
+The hardware  specializes in computer  graphics  calculation  and is mainly used for the rendering  of 3D graphics.  Since
+a GPU is configured  with thousands  of small cores that perform  floating-point  operations  processed  in parallel, its
+performance  is superior  to a CPU that is configured  with a small number  of cores. A GPU dedicated  to processing
+large-capacity  image data generates  results through  parallel  jobs using multiple  cores. Although  recent  GPUs were
+mainly used for graphics  processing  functions,  they are evolving  into more flexible, programmable  GPUs.
+@ General-purpose  GPU (GPGPU)
+Based on the fact that a GPU shows high computational  performance  in matrix and vector  operations  that are mostly
+used for graphic rendering, the computing  system intends  to utilize GPUs in the general computing  domain as well.
+Many models  supporting  GPGPU  programming  have appeared.  They include  CUDA and OpeACC  from NVIDIA,  OpenCL
+from Khronos  Group, and C++ AMP from Microsoft.
+CPU GPU
+ALU ALU ALU ALU ALU ALU ALU ALU ALU ALU ALU
+ALU ALU ALU ALU ALU ALU ALU ALU ALU ALU ALU
+ALU ALU ALU. ALU : : ALU ALU ALU ALU ALU ALU ALU ALU ALU ALU ALU
+ALU ALU ALU ALU ALU ALU ALU ALU ALU ALU ALU
+[Figure 51] Difference  of CPU and GPU Structures
+G) GPU-based  parallel  programming  technology
+@ Compute  Unified Device Architecture  (CUDA)
+In 2006, NVIDIA introduced  CUDA, a tool for GPU development.  CUDA is a parallel computing  platform and a
+programming  model that can significantly  improve  computing  speed with a large number  of GPU cores. It provides
+82 TOPCIT  ESSENCE
+
+
+--- Page 84 ---
+Overview  of System Architecture )
+intuitive  GPI programming,  based on the C language,  and it enables  quick operation  using shared memory.  CUDA
+consists  of CUDA Runtime  API and Driver API. Runtime  API provides user-friendliness  by automatically  allocating
+necessary  values for settings  and others. Driver API, which helps the Runtime  API to operate, allows t...

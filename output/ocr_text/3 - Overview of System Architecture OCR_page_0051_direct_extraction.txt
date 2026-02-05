@@ -1,0 +1,35 @@
+ESSENCE
+<Table 6> shows  how to solve the deadlock  state.
+Table 6) Ways to Solve Deadlock  State
+Condition Description
+Prevention + It removes  the deadlock  causing  conditions  in advance.
+Avoidance * It does not remove the condition  causing  the deadlock,  but avoids them.
+Detection * It allows the deadlock  condition  to occur and finds its cause to resolve it.
++ It restarts  the deadlocked  process,  or restores  it into the original state in order to resolve  the
+Recovery
+deadlock  state.
+04 Memory  Unit Management
+A) Understanding  of memory  unit management
+A CPU uses scheduling  to improve  the utilization  rate as if multiple programs  share it at the same time. A CPU can
+only execute  the instruction  and read data when they are stored in the memory.  Therefore,  multiple  processes  must
+be stored in a memory  unit for them to run. Virtual memory  is the technique  of running  processes,  even if they are
+not present  in the memory  unit. This technique  allows a user program  that is larger than the physical memory  unit to
+run. This section  describes  various  techniques  for managing  the storage  unit.
+B) Memory  unit management  technique
+@ Memory  unit allocation  technique
+It is the technique  of searching  for the best way to allocate processes  to the available  main memory  area when a
+process  requests  the memory  unit for a new use. As shown in <Table 7>, the first-fit, best-fit,  and worst-fit  are the
+generally  used techniques  for selecting  the available  areas from a set of available  areas.
+{Table 7) Techniques  of Allocating  Memory  Unit
+Type Description
++ It is a technique  of comparing  the request for the capacity  of the memory  unit and allocating
+First-fit the first searched  space, which should be sufficiently  large. Using this technique  can make the
+allocation  decision  quick, but it increases  fragmentation.
+Best-fit + This technique  allocates  the smallest  available  space that can meet the required  memory  unit
+capacity.  This technique  creates  another  smallest  available  space.
++ This technique  allocates  the largest  available  space. Since it allocates  the largest  available  space,
+Worst-fit it can use the available  space better  than the best-fit  technique,  which can cause fragmentation
+by creating  the smallest  available  space.
+@ Fragmentation  problem
+Memory  space is allocated
+50 TOPCIT  ESSENCEwhen the memory  is requested  and recollected  after use. Repetition  of the allocation  and

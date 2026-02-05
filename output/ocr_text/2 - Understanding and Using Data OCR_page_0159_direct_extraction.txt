@@ -1,0 +1,37 @@
+ESSENCE
+A method  of learning  in which learners  increases  their own knowledge
+through  the experience  of being praised  for good behavior  and punished
+for wrongdoing.
+Reinforcement  | An intermediate  form between  supervised  and unsupervised  learning.  A
+learning learner  selects behavior  for the input and learns from the reward that the
+teacher  provides  for the action.
+A method  that informs  output  evaluation  value c only, instead  of input x
+and target output  y for input x.
+© Supervised  learningTrial and error, reward  function,
+dynamic  programming,
+Q-Learning,  DQN
+<Table 84> Supervised  Study  Table
+Classification Description Case of learning  problem
+Hidden  Layer
+a An algorithm  (neural network)  that
+Neural Ler processes  diverse information  in
+network a way that is similar to the brain,
+using the human  brain as a model.
+Transition  probability
+State A model that is made of a
+space of multiplication  of transition
+. hidden : aon
+Hidden variables probability  and emission
+Markov probability.
+Model (HMM) - Directed  graph, sequential  data
+modeling,  probabilistic  model,
+generative  model.
+Output
+obability
+Indicator
+status
+we Tree structure, sequential division
+Deceontres of data space,  entropy-based  /
+information  acquisition,  convertible
+toarule.
+158 TOPCIT  ESSENCE

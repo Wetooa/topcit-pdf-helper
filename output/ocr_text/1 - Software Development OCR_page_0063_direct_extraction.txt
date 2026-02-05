@@ -1,0 +1,16 @@
+ESSENCE
+>> Recent  trends and major issues
+Recently,  software  architecture  has been highlighted  as having a fundamental  and useful key role in
+effectively  reflecting  changes  in information  technology  and developing  high-quality  software  most
+effectively  in a timely manner.  Architecture  design is the process  of identifying  the composition  of a
+system  and how its components  interact  with each other at the beginning  of the design process.  This
+phase is required  to manage  the complexity  of the system.
+>> Learning  objectives
+1. To be able to list the basic concept  and components  of software  architecture  (SA).
+2. To be able to explain  the representative  types of software  architecture.
+3. To be able to explain  the methods  of expressing  software  architecture  design.
+- Module,  component  and connector,  subsystem,  framework
+- Repository  structure, MVC (Model-View-Controller)  structure,  client-server  model, hierarchical
+structure,  pipe filter structure
+- Context  model, component  diagram,  package  diagram,  deployment  diagram
+62 TOPCIT  ESSENCE

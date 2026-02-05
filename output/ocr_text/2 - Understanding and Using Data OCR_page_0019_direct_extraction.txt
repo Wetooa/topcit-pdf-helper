@@ -1,0 +1,26 @@
+ESSENCE
+>> Recent  trends and major issues
+According  to the annual White Paper on the Data Industry  published  by the Korea Data Agency,  the
+domestic  data-related  market is showing  a steady growth trend. The trend also shows that interest  in
+the diversity  and availability  of data is increasing  significantly.  Considering  this trend, the fields of data
+utilization,  database  construction,  and data solutions  seem to be maintaining  a steady rate of growth
+in all industries  in Korea. It is also obvious  that personnel  requirements  in the related fields will increase
+significantly  in the coming  years. Likewise,  we can anticipate  the main trends of business,  such as the
+spread of the cloud platform  to the data environment,  increased  interest  in data quality management,  and
+increased  decision-making  based on data. Judging  from these trends, it is evident  that competence  related
+to the processing  and utilization  of data is becoming  increasingly  important.
+>> Learning  objectives
+1. To be able to explain the concepts  and characteristics  of data, information,  and knowledge  in the
+Information  Age.
+2. To be able to explain the concept  and characteristics  of data processing.
+3. To be able to explain the concept  and characteristics  of the file handling  system.
+4. To be able to explain the concept  and characteristics  of the database.
+5. To be able to explain the concepts  and components  of the database  system.
+6. To be able to explain the 3-level database  architecture  of ANSI-SPARC.
+7. To be able to explain data independence.
+8. To be able to explain  the roles of the database  administrator  (DBA) and the concept  of the data architect  (DA).
+9. To be able to explain the concept  and functions  of the DBMS (Database  Management  System).
+>> Keywords
+Data, information,  knowledge,  database,  batch processing,  online processing,  distributed  processing,  DBMS,
+data independence,  ANSI-SPARC  3-level database  architecture
+18 TOPCIT  ESSENCE

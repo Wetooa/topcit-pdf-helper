@@ -1,0 +1,35 @@
+ESSENCE
+Shows information  by mapping  it on the
+Spatial  visualization map.
+Including  PO! data
+D) Classification  of big data analytics
+Big data analytics  refers to the process  of “discovering  meaningful  patterns  from big data.”
+<Table  72> Classification  of data analysis
+Classification , ; 5an Modeling Contents Applied technique
+Descriptive The primary  purpose  is to find patterns Association  rule, clustering,  database,
+modeling that describe  the given data. segmentation,  visualization,  etc.
+ues a A model is created based on the given Classification .use Predictive - . Regression,  time series analysis
+. data, and is used to predict  new inputmodeling data Neural network
+. SVM
+Decision  Tree
+Supervised  data When the target is determined. Neural network
+Presence Case-based  reasoning
+of target When there is no target.
+variable - The correlation  or similarity  between Association  rule discovery,  market basketUnsupervised  data : .data is analyzed  with the focus on input K-means  clustering
+variables.
+E) Main methods  of big data analysis
+<Table 73> Methods  of big data analysis
+Concept Description
++ A statistical  technique  used to predict  the possibility  of an event’s  occurrence  (probabilityee) of occurrence)  using a linear combination  of independent  variables.
++ Amethod  of quantitative  analysis  that classifies  an interested  group into several
+Decl  sont  eelaDal  si subgroups  or performs  Prediction  by drawing a decision tree chart.
++ Amethod  of analysis  that handles  a problem  with parallel/distributed/probabilistic
+calculation  based on the idea that digital information  is a network  of nerve cells,
+rather than a method  of processing  digital information  based on a deterministic  binary
+computational  model using the human brain itself as the model.Neural network  analysis
++ A technology  that extracts  and processes  useful information  by applying  natural language
+processing  technology  and document  processing  technology  to unstructured/semi-
+Text mining structured  data.
++ The core technologies  of text mining  include  document  summarization,  document
+classification, document  clustering,  and feature  extraction.
+148 TOPCIT  ESSENCE

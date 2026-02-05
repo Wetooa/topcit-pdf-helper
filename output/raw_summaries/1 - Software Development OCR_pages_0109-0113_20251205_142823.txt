@@ -1,0 +1,200 @@
+LEARNING GUIDE: Pages 109-113
+Generated: 2025-12-05 14:28:23
+PDF: 1 - Software Development OCR
+
+================================================================================
+LEARNING GUIDE
+================================================================================
+
+This learning guide transforms the original text (Pages 109-113) into a simplified, easy-to-read format for studying.
+
+---
+
+# Learning Guide: Refactoring and Software Requirements Management
+
+## Part 1: Refactoring
+
+### 1. What is Refactoring?
+Refactoring is the process of restructuring existing computer code without changing its external behavior. The goal is to improve the internal structure of the code, making it cleaner, easier to understand, and more maintainable.
+
+### 2. Why Refactor? (Benefits)
+-   **Easier Debugging:** Makes error detection and fixing simpler.
+-   **Adaptability:** Improves responsiveness to changes in software requirements.
+-   **Improved Code Quality:** Simplifies complex code and enhances readability.
+-   **Increased Productivity:** Boosts program development productivity and overall software quality.
+
+### 3. When to Refactor? (Timing & Triggers)
+-   **Inefficient Additions:** When adding new functions to existing code becomes difficult or time-consuming.
+-   **Design Changes:** When the current design makes future additions challenging.
+-   **Bug Fixing:** Often done as part of the process of eliminating bugs.
+-   **Code Reviews:** During routine code inspection and review.
+-   **Pattern of Duplication:** A common guideline: Refactor when you are about to write the *third* similar piece of code, after two duplicates already exist.
+
+### 4. How to Refactor? (Procedure & Best Practices)
+
+**Refactoring Procedure:**
+1.  **Target Selection:** Identify specific areas for improvement (maintenance, inspection). Methodologies like **XP (Extreme Programming)** can guide this. Include experienced mentors.
+2.  **Performance Control:** Manage changes effectively using **Change Control** and **Configuration Management**. A **CCB (Change Control Board)** often oversees these changes.
+3.  **Technique Application:** Apply appropriate **Design Patterns** and **AOP (Aspect-Oriented Programming)** techniques.
+4.  **Testing:** Thoroughly conduct **Unit Tests**, **Integration Tests**, and **Regression Tests** after refactoring.
+5.  **Result Arrangement:** Document all changes, ensure they are correctly implemented (**actualization**), and apply them within the operating system.
+
+**Best Practice: Small, Incremental Changes**
+-   Perform refactoring in small, isolated steps (called **single refactoring**).
+-   After *each* small change, test immediately to ensure it works correctly.
+-   If successful, proceed to the next change.
+-   If a problem arises, solve it, undo the problematic refactoring, and ensure the system is running correctly before trying again.
+
+### 5. Code Smells
+
+#### What are Code Smells?
+**Code smell** refers to characteristics in the source code that suggest a deeper problem in the system. They are indicators that the code is difficult to understand, modify, or expand, signaling a need for refactoring.
+
+#### Common Code Smells:
+-   **Duplicate Code:** Identical or very similar code blocks found in multiple locations.
+-   **Long Method:** A method with an excessive number of lines, implying too many responsibilities.
+-   **Vast Class:** A class having too many properties and methods, indicating it's doing too much.
+-   **Long Parameter List:** A method requiring an excessive number of input parameters, making it hard to use.
+-   **Class Modified for Two Reasons:** A class whose methods are changed for more than one independent reason, meaning it handles multiple unrelated jobs.
+-   **Modifying Multiple Classes at the Same Time:** When a small change in one class requires corresponding changes in several other related classes.
+-   **Data Clumps:** Groups of data items that frequently appear together but are not encapsulated within their own class.
+-   **Primitive Obsession:** Over-reliance on basic data types (e.g., `int`, `string`) instead of creating small, meaningful objects.
+-   **Switch Statements:** Extensive use of `switch` or `if-else` statements to differentiate behavior, which often can be better handled by polymorphism.
+-   **Lazy Class:** A class that performs very little work or has minimal responsibilities.
+-   **Speculative Generality:** Code written with excessive generalization for potential, but often unrealized, future expansion.
+-   **Class Interface Mismatch:** The public interface (API) of a class is not intuitive or appropriate for its purpose.
+-   **Incomplete Library Class:** Difficulty in effectively using or extending existing library classes.
+-   **Parallel Inheritance Hierarchies:** Creating a new subclass in one hierarchy necessitates creating a corresponding subclass in another.
+-   **Comment:** Overly detailed comments used to explain unclear or poorly written code, rather than improving the code itself.
+
+### 6. Typical Refactoring Techniques
+
+| Technique                                         | Description                                                                                                                                                                              |
+| :------------------------------------------------ | :--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| **Extract Method**                                | Group related code snippets into a new, clearly named method that expresses its purpose.                                                                                                 |
+| **Replace Parameter with Method**                 | If a method parameter is the result of another method call, let the receiving method call the first method directly instead of taking it as a parameter.                                   |
+| **Extract Class**                                 | If a single class is performing tasks for two distinct responsibilities, create a new class and move related fields and methods to it.                                                      |
+| **Transfer between Super/Sub Classes (e.g., Pull Up Field/Method)** |
+| - **Pull Up Field**                               | Move a common field from subclasses to their shared superclass.                                                                                                                          |
+| - **Pull Up Method**                              | Move a common method that performs the same task from multiple subclasses to their shared superclass.                                                                                    |
+| **Extract Interface**                             | If several clients use the same subset of a class's interface, extract that subset into a new interface.                                                                                 |
+| **Rename Method**                                 | Change a method's name to better convey its intent, especially if the old name was generic or tied to a specific data type.                                                              |
+| **Inline Method**                                 | If a method's body is as clear as its name, delete the method after moving its main code directly into all callers.                                                                      |
+| **Collapse Hierarchy**                            | Integrate a superclass and its subclass if they are not significantly different and their separation offers little value.                                                                |
+| **Replace Magic Number with Symbolic Constant**   | Replace numeric literals (e.g., `3.14159`) with named constants (e.g., `PI`) that clearly reveal their intent.                                                                          |
+
+---
+
+## Part 2: Software Requirements Management
+
+### 1. Introduction & Importance
+
+**Why Requirements Management Matters:**
+-   It is the most fundamental and critical process in the entire software development lifecycle.
+-   **Major Cause of Project Failure:** Studies (e.g., Standish Group) indicate that 50% of IT project failures are linked to requirements management, contributing to 70-80% of total project costs.
+
+**Main Causes of Failure Related to Requirements:**
+-   **Inadequate Definition & Communication:**
+    -   Insufficient understanding of requirements early in development due to limited resources or timelines.
+    -   Poor or incomplete dialogue between stakeholders.
+-   **Lack of Change Management:**
+    -   Failure to consider the impact and relevance of changes when customer requirements or development deliverables are modified.
+
+### 2. Definition of Requirements Management
+
+**Requirements Engineering** broadly consists of two parts:
+-   **Requirements Development:** Focuses on *defining what the software should do*.
+-   **Requirements Management:** Focuses on *ensuring that planned and defined requirements are accurately reflected* throughout development, and *continuously managing changes* to those initial requirements.
+
+### 3. Goals & Purposes of Requirements Management
+-   **Customer Satisfaction:** Understand and satisfy customer requirements from their perspective.
+-   **Quality Software:** Produce high-quality software within specified schedule and budget constraints.
+-   **Effective Communication:** Provide a clear communication channel among all stakeholders (users, developers, managers, etc.).
+-   **Risk Prevention:** Prevent delivery delays and budget overruns through systematic management from the project's start.
+-   **Specification Execution:** Ensure user requirements specifications are properly executed and managed.
+
+### 4. Requirements Management Process
+
+**Overview in the Software Development Life Cycle (SDLC):**
+Requirements management activities are integrated throughout the entire SDLC. They span from the initial software request through design, implementation, testing, and operation. This process involves both defining requirements and continuously managing changes to them.
+
+**Key Activity and Deliverable:**
+
+| Process                    | Description                                                                                             | Deliverables                           |
+| :------------------------- | :------------------------------------------------------------------------------------------------------ | :------------------------------------- |
+| **Requirements Elicitation** | - Define the business requirements. <br> - Identify all relevant participants (stakeholders). <br> - Extract the initial set of requirements. | Candidate requirement extraction list. |
+
+================================================================================
+ORIGINAL TEXT (First 5000 chars)
+================================================================================
+
+--- Page 109 ---
+ESSENCE
+Refactoring  is performed  for the following  reasons.
++ Refactoring  makes error detection  and debugging  easier.
++ Changes  in software  requirements  can be responded  to more effectively.
++ Complex  code is simplified,  and source code readability  is improved.
++ Program  productivity  and quality are improved.
+@ Time for refactoring  and procedure
+* Codes are written first without  plans, and the second similar codes are written in duplication.  However,
+refactoring  is performed  when writing the third similar codes. Therefore,  it is important  to decide on the time
+to perform  refactoring.
++ Refactoring  is generally  performed  when the time taken to add a new function  to the existing  code is inefficient:
+when the design changes  in such a way that addition  is not easy; when eliminating  bugs; or when reviewing  codes.
++ Refactoring  procedure
+<Table 34> Refactoring  procedure
+Target  selection Maintenance,  inspection,  and XP methodology  application
+aac Including  a senior who plays the role of a mentor
+Performance  control Change  control,  configuration  management,  CCB control
+Performing  technique Design pattern,  AOP execution
+Testing Unit/integration  test, regression  test
+Result arrangement Documentation,  actualization,  application  of the operating  system
++ When performing  refactoring,  it is necessary  to make small-scale  changes  (single refactoring)  and test
+whether  it works. If it works well, one can proceed  to the next factoring  phase. If not, it is necessary  to solve
+the problem,  undo the refactoring  work, and then keep the system running.
+B) Concept  of a code smell
+@® Concept  of a code smell
+The term “code smell’ means the code to be refactored,  such as a program  that is difficult  to read or has
+duplicated  logic, which makes it difficult  for developers  to read or maintain  it. A code smell is the part that is
+difficult  to understand,  modify  or expand.  If it is difficult  to read the code, refactoring  should be considered.
+@ Common  code smells
+Type Description
+Duplicate  code Functions  or data codes are written  in duplication.
+Long method The inside of the method  is too long.
+Vast class One class has too many properties  and methods.
+Long parameter  list A method  has too many parameters.
+Class modified  for two If the method  of one class is modified  for more than two reasons,  the class is responsible  for
+reasons more than one job.
+108 TOPCIT  ESSENCE
+
+
+--- Page 110 ---
+Software  Development )
+Type Description
+Modifying  multiple  classes  at_ | When minor changes  are required  in several related classes  each time a specific  class is
+the same time modified.
+Data clumps Data that should be handled  together  are not in one class.
+Primitive  obsession Only basic types like int are used without  creating  a class.
+Switch statements Operations  are split using a ‘switch’  statement  or an ‘if statement
+Lazy class A ass that doesn’t  do much.
+Speculative  generality Excessive  generalization  such as “Expansion  will be performed  someday’.
+Class interface  mismatch The class interface  (API) is not appropriate.
+Incomplete  library  class It is difficult  to use existing  library classes.
+Parallel  inheritance  hierarchies Asub-class  should be created  in another  place of the class hierarchy  when a sub-class  is created.
+Comment There are detailed  comments  to explain  the insufficient  code.
+C) Typical refactoring  techniques
+Refactoring  techniques Description
+When there are code snippets  that can be grouped  together,  a separate  methodExtract  Method . .Method is created  with a name that clearly expresses  the purpose  of the code.
+cleanup Replace  Parameter  with | If an object calls a method and passes the result to another  method as a
+Method parameter,  the receiver  calls the method.
+Extract  Class If one class is doing the task that should be performed  by two classes,  a new class is
+Pnetiten created,  and the related fields and methods  are transferred  to it from the old class.
+Transfer If a class has a function  that is used by some instances  only, a sub-class  isE | : : ’between Sue SMaEES created that manages  the functions  used by the instance only.
+Objects If several clients are using the same subset of the interface of one class, theExtract  Interface .subset  is extracted  as an interface.
+Name Rename  Method Aname  with a  built-in  type is changed  to a name that can deliver  the intent well
+without  associating  with the type.
+. Inline Method If the main text of a method  is as clear as the method's  name, delete the method
+en after moving  the main text into the caller that calls the method.
+Collapse  Hierarchy Integrates  the super class and sub-class  if they are not very different.
+Replace  Magic Number  | If there is a numeric  literal that has special meaning,  a constant  is created  with
+with Symbolic  Constant  | the name that reveals  the intent and the number  is replaced  with ...

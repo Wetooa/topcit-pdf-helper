@@ -1,0 +1,219 @@
+LEARNING GUIDE: Pages 79-83
+Generated: 2025-12-05 10:47:49
+PDF: 2 - Understanding and Using Data OCR
+
+================================================================================
+LEARNING GUIDE
+================================================================================
+
+This guide simplifies the concepts of Denormalization and Performance Design from the original text, focusing on essential information for learning.
+
+---
+
+## Database Learning Guide: Denormalization & Performance Design
+
+### 1. Introduction to Denormalization
+
+Denormalization is a database optimization technique used to improve read performance by adding redundant data or grouping data. It's considered when normalized structures lead to performance bottlenecks, often due to excessive joins.
+
+### 2. Denormalization Procedure & Methods
+
+Before applying denormalization, a structured approach is recommended:
+
+#### 2.1. Investigating Denormalization Targets
+
+Consider denormalization if:
+*   **Specific Processing Range:** Many processes frequently access a specific, narrow range of data in large tables.
+*   **Wide Processing Range:** Large amounts of data are frequently accessed over a wide range, and performance cannot be guaranteed without reducing the range.
+*   **Statistical Processes:** Specific statistical information (SUM, AVG) is frequently required. A separate statistics table might be beneficial.
+*   **Excessive Table Joins:** Querying becomes technically difficult or slow due to a high number of table joins.
+
+#### 2.2. Considering Other Performance Improvement Methods (Before Denormalization)
+
+Before denormalizing, evaluate these alternatives:
+*   **Using Views:** Create views to simplify complex queries involving many joins without changing the underlying table structure.
+*   **Clustering Application:** Reorganize physical data storage based on a specific clustering fact (e.g., frequently queried column) for query-oriented tables.
+*   **Index Adjustment:** Optimize database indexes. If sufficient performance can be achieved with indexes, denormalization might not be necessary.
+*   **Application Development:** Improve performance by optimizing the application logic that interacts with the database.
+
+#### 2.3. Applying Denormalization (Types)
+
+If other methods are insufficient, denormalization can be applied at these levels:
+*   **Table Denormalization:** Modifying entire tables (merging, splitting, adding).
+*   **Attribute/Column Denormalization:** Modifying columns within tables (adding duplicates, derived values).
+*   **Relationship Denormalization:** Modifying relationships between tables (adding duplicate paths).
+
+### 3. Denormalization Techniques (Detailed)
+
+Here are the specific techniques for applying denormalization:
+
+#### 3.1. Table Denormalization
+
+| Technique               | Description                                                                                                                                                                                                                                                         | Example/Use Case                                                                                                                                   |
+| :---------------------- | :------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ | :------------------------------------------------------------------------------------------------------------------------------------------------- |
+| **Merging Tables**      | Combines data from multiple tables into one. Improves performance by reducing join operations.                                                                                                                                                                        | Merging 1:1, 1:M (one-to-many), or super/sub-type relationship tables when joins are frequent.                                                     |
+| **Splitting Tables**    | Divides a large table into smaller ones.                                                                                                                                                                                                                            |                                                                                                                                                    |
+|   - **Vertical Split**  | Splits columns into different tables when only specific attributes are frequently accessed. Reduces disk I/O.                                                                                                                                                       | Separating frequently accessed customer details from less used historical notes.                                                                   |
+|   - **Horizontal Split** | Splits rows into different tables based on data values, when the schema is the same but data usage varies (e.g., by year). Reduces lockup and contention.                                                                                                         | Separating payment history by month/year (e.g., `Payment_History_January`, `Payment_History_February`).                                          |
+| **Adding a Duplicate Table** | Creates an identical copy of a table on a different server or for a different task to eliminate remote joins and improve performance across distributed systems.                                                                                                  | A reporting server duplicates a transactional table to avoid impacting production performance.                                                      |
+| **Adding a Statistics Table** | Creates a separate table to store pre-calculated aggregate values (SUM, AVG, COUNT) from other tables. Improves query speed for common statistical reports.                                                                                                     | `Daily_Sales_Summary` table storing `Total_Sales`, `Average_Order_Value`, etc., pre-calculated overnight.                                         |
+| **Adding a History Table** | Creates a separate table to store historical records, often duplicated from a master table, to maintain a record of past states without cluttering the active master table.                                                                                       | When a `Product` is updated, the old version is moved to `Product_History`.                                                                       |
+| **Adding a Partial Table** | Creates a separate denormalized table containing only the most frequently used and concentrated columns from a larger table. Reduces disk I/O by avoiding loading unnecessary data.                                                                                 | Creating a `Customer_Contact_Info` table with `Customer_ID`, `Name`, `Phone`, `Email` from a broader `Customer` table with many more attributes. |
+
+#### 3.2. Attribute/Column Denormalization
+
+| Technique                                 | Description                                                                                                                                                                                                                                   | Example/Use Case                                                                                                                                                                                              |
+| :---------------------------------------- | :-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | :------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
+| **Adding a Duplicate Column**             | Adds a column to a table that already exists in another related table. Prevents performance degradation from join operations and shortens query paths.                                                                                         | Adding `Branch_Location` to the `Employee` or `Customer` table, even though it exists in the `Branch` table.                                                                                               |
+| **Adding a Derived Column**               | Stores a value that can be calculated from other columns. The calculation is done in advance to prevent performance issues during transaction processing or frequent queries.                                                                    | Storing `Total_Order_Amount` in an `Order` table, calculated from `Quantity` * `Unit_Price` of ordered items.                                                                                                  |
+| **Adding a Functional Column**            | Adds a column to a history table (or other tables) to store specific functional states or values (e.g., status, start/end date). Prevents performance degradation when querying unspecified dates or recent values in large datasets.          | Adding `Progress_Status` to an `Order_List_History` table to quickly see the latest status of an order without scanning all historical records.                                                                |
+| **Adding a Column by Primary Key (PK)**   | Used when a composite primary key has multiple meanings, and querying specific parts of the PK separately causes performance issues. Adds redundant data as general attributes to improve direct access.                                       | In a `Receipt` table with a composite PK (e.g., `Receipt_Number`, `Office_Number`), adding `Office_Number` as a separate non-PK attribute for easier filtering.                                            |
+| **Adding a Column to Prevent Application Malfunction** | Temporarily stores previous or interim data in duplicate. This allows for data restoration if incorrect input occurs, even if the duplicated data seems functionally meaningless for the main workflow. This is often an application-level concern. | Storing `Previous_Construction_Status` in a `Construction_Work` table to allow rollback or auditing of status changes. Or `Interim_Settlement_Value` in financial transactions for audit trails or correction. |
+
+#### 3.3. Relationship Denormalization
+
+| Technique                       | Description                                                                                                                                                     | Example/Use Case                                                                                                                                                            |
+| :------------------------------ | :-------------------------------------------------------------------------------------------------------------------------------------------------------------- | :-------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| **Adding a Duplicate Relationship** | Establishes an additional, redundant relationship between tables to create a direct path, preventing performance deterioration that would occur by traversing multiple existing relationships. | A direct relationship from `Customer` to `Delivery` might be added if `Customer_ID` is frequently needed during `Delivery` lookups, bypassing `Order_List` and `Order` tables. |
+
+### 4. Performance Design Considerations
+
+#### 4.1. Performance Improvement Goals
+
+When designing for performance, define clear goals:
+*   **Throughput:** The total amount of work (transactions, queries) performed per unit of time.
+*   **Throughput Time:** The total time required to perform a single unit of work (e.g., processing one transaction).
+*   **Response Time:** The time from a user's input (e.g., clicking a button) until the system responds.
+*   **Load Time:** The time required to load data into a database or system.
+
+#### 4.2. Entity Integration & Splitting
+
+This refers to the architectural decision of whether to combine similar entities into one (integration) or break them apart (splitting).
+
+**Advantages of Entity Integration:**
+*   Easier to query comprehensive information across related concepts.
+*   Improved performance by eliminating unnecessary table joins.
+*   Reduces data duplication between similar entities.
+*   Simplifies the Entity-Relationship Diagram (ERD).
+*   Reduces the number of physical tables.
+
+**Disadvantages of Entity Integration:**
+*   Reduced scalability and flexibility of the data model due to potential changes in workflow.
+*   Can make it harder to understand the underlying workflow from the data model.
+*   Performance may degrade if large amounts of data are concentrated in a single entity, leading to contention.
+
+================================================================================
+ORIGINAL TEXT (First 5000 chars)
+================================================================================
+
+--- Page 79 ---
+ESSENCE
+and number  of table joins.
++ Considering  inducing  other methods:  View creation,  clustering  application,  index adjustment,  and application
+development.
++ Applying  denormalization:  Denormalization  of tables, columns,  and relationships.
+<Table 32> Denormalization  procedure  and method
+Procedure Method Method
+Investigating  the range When there are many processes  that access frequently  used tables, and only a
+processing  frequency certain range is always searched.
+a When there are large amounts  of data in a table and a wide data range is
+Investigating  wide range1. rocessin frequently  accessed,  and performance  cannot be guaranteed  unless the
+Investigating p 6 processing  range is reduced to a certain extent.
+denormalization ; __ _ _
+targets Investigating  the A separate  statistics  table (denormalization)  is created  when statistical
+statistical process information  is required  by a statistics  process.
+Investigating  the number  | Consider  denormalization  if the table query  job is technically  difficult  because
+of table joins too  many joins are applied  to the tables.
+A view is used when the data query  job is technically  difficult  because  too manyView table ;
+joins are applied to the tables.
+2 Applying clusterin A method  of changing  the method  of storing  large amounts  of data based on a
+Considering PPYINE € specific clustering  fact (applicable  to query-oriented  tables only)
+inducing  other ; . a
+methods If sufficient  performance  can be ensured  using the index, avoid denormalizationApplying  the indexby adjusting  the index.
+Application Improving performance  by changing  the method  of applying  logic to the
+application.
+3. - Table denormalization
+Applying - Attribute  denormalization
+denormalization  | - Relationship  denormalization
+B) Actual denormalization
+<Table 33> Denormalization  technique
+Type ean Description
++ Table is merged  when it is more efficient  in improving  performance  because  there are many
+join operations.
+Merging  tables | + Merging  1:1 relationship  tables
++ Merging  1:M relationship  tables
+Table + Merging  super/sub-type  relationship  tables
+denormali- + Table is split when accessing  specific attributes  only in the table.
+zation + When split, access frequency,  lockup, and contention  are reduced, but performance  is
+Splitting  the degraded  because  the union operation  should be performed  when searching  the entire split
+table table.
++ Vertical  split: When only specific  attributes  are frequently  accessed,  a table is created  by
+splitting  the columns.
+78 TOPCIT  ESSENCE
+
+
+--- Page 80 ---
+Database )
+DenormalizationType technique Description
+Payment
+Payment  number
+Payment Date of payment
+Payment  number confirmation
+Payment  confirmation  date Payment  method
+Employee  ID of the person in Branch code
+charge of checking  payment Billing number
+Date of payment  check payment Customer  ID
+Method of payment  check Accounting  processing  date
+Date of payment  confirmation Date of acceptance
+Payment  method Information  creation  code
+Branch code Payment  confirmation
+Biling number correction  type
+Customer  ID +
+poe ete Payment c&firmation
+Information  creation branch code Payment  number
+Payment  confirmation  correction Date of payment
+type confirmation
+Employee  ID of the person  in
+charge  of checking  payment
+Date of reflecting  payment
+confirmation
+Payment  confirmation
+method
+Tabl + Horizontal  split: When the schema  is the same, but the method  of using the data value is
+denaprali Splitting  the different  for each row (querying  history by year, etc.)
+zation table Payment  history - January
+Payment  number
+Date of payment
+Date of payment  confirmation
+Employee  ID of the person in
+charge  of checking  payment
+Date of reflecting  payment
+confirmation
+Payment  history  - February
+Payment  number
+Payment  history Date of payment
+Payment  number Date of payment  confirmation
+Date of payment Employee  ID of the person in
+Date of payment charge  of checking  payment
+confirmation Date of reflecting  payment
+Employee  ID of the person in confirmation
+charge  of checking  payment
+Date of reflecting  payment Payment  history  - March
+Confirmation Payment number
+Date of payment
+Date of payment  confirmation
+Employee  ID of the person in
+charge  of checking  payment
+Date of reflecting  payment
+confirmation
+M2 Database  79
+
+
+--- Page 81 ---
+ESSENCE
+Denormalization _Type technique Description
+Adding  a duplicate  table: Performance  is improved  by removing  remote  joins, and by
+duplicating  the same table structure,  if the task or server  is different.
+Table Adding  a statistics  table: Performance  is improved  by automatically  performing  SUM, AVG, etc.
+denormali- Adding a table n  advance. . : 5 : 5 .zation Adding  a history  table: The record in the master  table is placed in the history  table in duplicate.
+Adding  a partial table: A partial table is a separate  denormalized  table that collects  frequent...

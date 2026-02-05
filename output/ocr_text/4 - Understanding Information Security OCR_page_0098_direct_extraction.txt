@@ -1,0 +1,17 @@
+ESSENCE
+>>b Subject
+Managing  systems  safely!
+>>> Recent  trends and major issues
+Recently,  the number  of attacks targeting  the system, such as the server, is increasing,  using APT
+attacks.  Accordingly,  the importance  of system security  is also increasing  together  with network
+security,  such as the firewall and intrusion  detection  system. In particular,  efforts should be made to
+strengthen  access  control to the system, security  settings,  and account  management,  in order to
+respond  to the hijacking  of system administrator's  rights or inappropriate  access of internal users to
+information  security  resources.
+>>p Learning  objectives
+To be able to apply security  settings  to the Windows  system.
+To be able to apply security  settings  to the UNIX and Linux system.
+>>> Keywords
+Account  and password  management,  shared folder management,  service security,  password  crack,
+UMASK,  daemon,  anonymous  FTP, secure FTP
+98 TOPCIT  ESSENCE

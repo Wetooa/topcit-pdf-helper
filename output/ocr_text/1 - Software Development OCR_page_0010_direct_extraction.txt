@@ -1,0 +1,22 @@
+A) Repository  structure 65
+B) MVC (Model — View — Controller)  structure 65
+C) Client-server  model 65
+D) Hierarchy 66
+03 Method  of Expressing  Software  Architecture  Design 66
+A) Context  model 67
+B) Component  diagram 66
+C) Package  diagram 66
+VI. Object-Oriented  Design 67
+01 Object-Oriented  Analysis  and the Modeling  Concept 69
+02 Object-Oriented  Design and Principles 71
+A) Object and class 7
+B) Encapsulation 71
+C) Inheritance 72
+D) Polymorphism 72
+03 Static Modeling  and Dynamic  Modeling 72
+A) Static modeling 72
+B) Dynamic  modeling 73
+04 Design Pattern 74
+A) Concept  of the design pattern 74
+B) Representative  design patterns 74
+M1 Software  development  9

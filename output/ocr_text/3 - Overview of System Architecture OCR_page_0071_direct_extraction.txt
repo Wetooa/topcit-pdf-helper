@@ -1,0 +1,32 @@
+ESSENCE
+Each device needs two addresses  (a status/control  register  address  and a data register  address)  for I/O control, and
+the same two addresses  are required  for each device. It is divided into the memory  mapped  |/O and the I/O mapped  |/
+O, depending  on how the addresses  are allocated.
++ Memory  mapped  |/O: It is a method  of allocating  a part of the address  area in the memory  to the register  addresses
+in the I/O controller,  as shown in [Figure 37]. It has the advantage  of easy programming,  but the disadvantage  of
+reducing  the available  memory  space.
+Address Full Address  Space
+0
+- Address  Space in
+: Memory  Device
+511
+512
+: I/O Address  Space
+1023
+[Figure 37] Allocation  of Memory  Mapped  I/O Address
++ 1/O mapped  1/O: It is a method  of allocating  the I/O device address  space separately  from the memory  address
+space, as shown in [Figure 38]. It has the advantage  of not reducing  the available  memory  address  space, but
+the disadvantage  of making  it difficult  to program.
+0 0
+Address
+Space in I/O Address
+Memory Space
+Device
+1023 1023
+[Figure 38] Address  Allocation  by |/O Mapped  |/O
+C) DMA
+@® Concept  of DMA
+DMA is a method  of the I/O device directly  accessing  the memory  without  the assistance of the CPU. The DMA
+controller  controls  the bus, and the I/O device and memory  transfer  information  directly. [Figure 39] shows the
+system  structure  that includes  the DMA controller.
+70 TOPCIT  ESSENCE

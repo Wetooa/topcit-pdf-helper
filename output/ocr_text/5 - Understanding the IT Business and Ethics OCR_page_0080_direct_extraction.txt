@@ -1,0 +1,25 @@
+Understanding  the IT Business  and Ethics )
+process,thus  laying the foundations  for the production  of zero-defect  goods. With SPC, enterprises  can produce
+high-quality  goods, and enhance  their productivity  to levels that will lead to significant  cost reductions,  thereby
+contributing  to higher profits.
+@ Constituent  elements  of SPC
+<Table 33> Constituent  elements  of SPC
+Component  elements Description
++ Aproduct  attributes  which indicates  the product’s  quality. Deviation  refers to the distribution  of
+Deviation values around a central value or the trend of this value.
++ Deviations  occur mainly due to a common  caused  or an assignable  cause.6
+Process  management + Managerial  ability for reducing  deviation.
+and process + Deviations  are kept within the allowable  range of the product  by the repeated  elimination  of common
+capability causes and assignable  causes. .
++ This refers to a schematic  diagram  of the deviation  trend caused by common  causes  and assignable
+causes.
+Distribution  and * Creating  a minimum  amount  of spraying  is an important  goal: In order to achieve  this goal, the cause
+statistics of ‘coincidence’  must be continuously  managed  and the cause of ‘sputum’  removed.
++ Keeping  the distribution  to a minimum  range is an important  goal: In order to meet this goal, an
+enterprise  must continuously  manage  the common  cause and eliminate  the assignable  cause.
+Besides  the component  elements  described  above, statistical  data must be collected  for the variance  analysis.
+The instruments  used in data collection  include the work log, checklists,  and inspection  device  data among other
+things.
+The statistical  techniques  used in SPC analysis  include the control chart, histogram,  scatter  plot, Pareto diagram,  and
+cause-effect  diagram.
+M5 Understanding  the IT Business  and Ethics 79

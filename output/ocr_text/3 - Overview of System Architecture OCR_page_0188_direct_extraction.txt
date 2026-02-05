@@ -1,0 +1,37 @@
+Overview  of System Architecture )
+{Table 63) RWND and CWND
+‘Type Description
+Receiver  window + The size of the packet  that the receiver  can receive without  data loss.
+(RWND) + It notifies  the status to the other end of the segment  containing  an ACK.
+C +i ind + The size of the packet  that can be sent at once, according  to the network  congestion
+one CWND) OW | «The CWND gets smaller, since data loss during the transmission  increases  if the network  congestion  is
+high. It gets larger if the congestion  is low.
+@ Error control
+Error control is activated  when the transmitted  segment  is lost, damaged,  out of order, or duplicated.
+{Table 64) TCP Error Control  Tools
+Tool Description
+Checksum + Each segment  contains  a checksum  field to indicate  if the segment  is damaged.
+Acknowledgment + The acknowledgment  is used to confirm receiving  the data segment.
++ The key to the error control  mechanism.  The segment  is stored in a buffer until the acknowledgment  isResend ;
+received.
+© Congestion  control
+Congestion  control is a mechanism  and technique  of maintaining  the user traffic volume input to the network  to
+ensure that it does not exceed the network  capacity,  TCP performs  the congestion  control, based on the slow start
+algorithm  and the congestion  avoidance  algorithm.
+The slow start algorithm  exponentially  increases  the congestion  window  size for congestion  control, until it reaches
+the limit.
+Client Server
+mH——t=
+1
+Congestion  Window
+RIT
+2
+Congestion  Window
+RIT
+4
+Congestion  Window
+RIT
+8
+Congestion  Window
+[Figure 1362] Concept  of Slow Start
+M3 Overview  of System  Architecture  187

@@ -1,0 +1,30 @@
+ESSENCE
+01 What is the Protocol?
+<Table 1> above showed many standard  protocols,  such as ARP, IP TCP, HTTP, DNS, and NAT. A protocol is a
+standardized  communication  rule for sending  and receiving  data through  a network. The Internet,  as we know, is a
+large group of networks  that connect  multiple  PCs and servers.
+For tens or hundreds  of thousands  of PCs, servers, and routers that connect  them to exchange  data, it is necessary
+to have a common  protocol  that can be found by each other, and there are several international  organizations  that
+standardize  these protocols.
++ IETF (Internet  Engineering  Task Force) is responsible  for most Internet-related  standard  protocols.
++ 3GPP (Third Generation  Partnership  Project)  and 3GPP2 are responsible  for wireless  communication  protocols  such
+as GSM, CDMA, UMTS, LTE, and LTE-A.
++ ITU-T (International  Telecommunication  Union Telecommunication  Standardization  Sector) is responsible  for
+protocols  related to telephones.
+Therefore,  it is necessary  to have the competitiveness  to understand  and implement  (if necessary)  the standard
+protocols  enacted  by these standardization  organizations  to develop  software  in the network/communication  sector.
+[Figure 12] below shows the details of [Figure 11] by reflecting  the network  protocol  concepts  described  above. When
+a user searches  through  a web browser,  data requests  and response  data flow in the network  through  devices,  such
+as the user’s computer,  a wired/wireless  router, a switching  hub, and a router, using the related protocols.  While the
+physical layer is directly  connected  with hardware,  such as wires and switches,  and operates  with electric  signals, the
+protocol  layer above the data link layer is implemented  and operated  in software.  Understanding  how many software
+components  are connected  to each other for operation  should enable application  programs  or system  software  over
+a network.  Later sections  describe  in detail how each protocol  layer shown in [Figure 12] works with the others in
+each stage.
+Datalink  Layer14.32.172.0 sabesHub D Physical Layer
+Router my.server.com
+220.17.23.15
+FTNetwork  Layer
+Datalink  Layer 220.17.23.0
+Physical Layer
+36 TOPCIT  ESSENCE

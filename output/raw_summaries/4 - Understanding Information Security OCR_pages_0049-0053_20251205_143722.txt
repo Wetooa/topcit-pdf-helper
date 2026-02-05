@@ -1,0 +1,199 @@
+LEARNING GUIDE: Pages 49-53
+Generated: 2025-12-05 14:37:22
+PDF: 4 - Understanding Information Security OCR
+
+================================================================================
+LEARNING GUIDE
+================================================================================
+
+Here's a simplified, easy-to-read learning guide based on the provided text:
+
+---
+
+# Information Security Threats and Countermeasures
+
+This guide covers common information security threats and how to protect against them.
+
+## I. Introduction to Latest Information Security Threats
+
+Many modern products, from smart appliances to smartphones, are vulnerable to cyberattacks. These attacks can lead to personal information leaks, financial fraud, and system compromise. This section details various threats and their countermeasures.
+
+## II. Types of Information Security Threats
+
+### A. APT (Advanced Persistent Threat) Attacks
+
+*   **Concept:** A sophisticated, long-term hacking strategy designed to target specific, high-value entities (e.g., political, social, economic, or military targets). Attackers collect information over time, identify vulnerabilities, and use various techniques (social engineering, technical hacking) to achieve their goals.
+*   **Procedure:**
+    1.  **Infiltration:** Attacker infects vulnerable systems or employee PCs with malware.
+    2.  **Internal Network Access:** Attacker uses malware to infiltrate the organization's internal network.
+    3.  **Information Collection:** Attacker gathers information on the internal systems and infrastructure to plan further attacks.
+    4.  **Data Theft/System Destruction:** Attacker steals important information, destroys systems, or launches Denial-of-Service (DoS) attacks.
+*   **Examples:** Past incidents include data deletion in financial institutions and large-scale customer information leaks.
+*   **Countermeasures:**
+    *   **Security Management:**
+        *   Analyze overall security threats and reorganize the security system.
+        *   Implement continuous security management, constant controls, and regular mock hacking.
+    *   **Endpoint Security:** (Endpoints are primary targets, e.g., PCs, mobile devices)
+        *   Keep OS security updated.
+        *   Install and operate security software.
+        *   Use application control based on a whitelist (only allow approved apps).
+    *   **Access Right Management:**
+        *   Manage and minimize access rights to important information.
+        *   Subdivide information rights based on importance.
+        *   Implement strong person/device authentication.
+    *   **Data Encryption:**
+        *   Encrypt data before saving.
+        *   Implement Data Loss Prevention (DLP) solutions to prevent information leakage.
+
+### B. Pharming
+
+*   **Concept:** A scam that redirects users to fake (pharming) websites to steal financial or personal information. This occurs when a user's PC is infected with malware that alters the host file or web browser favorites.
+*   **Procedure:**
+    1.  **Malware Infection:** Attacker installs malware on the victim's PC.
+    2.  **System Alteration:** Malware alters the PC's host file or browser favorites.
+    3.  **Redirection:** When the user tries to access a legitimate site (e.g., bank), they are automatically redirected to a fake site.
+    4.  **Information Theft:** The victim inputs personal financial information on the fake site, which the hacker then steals.
+    5.  **Financial Fraud:** The hacker uses the stolen information for financial gain.
+*   **Countermeasures:**
+    *   Strengthen web browser security settings.
+    *   Keep antivirus programs up-to-date and regularly scan for malware.
+    *   Frequently check the PC host file (`C:\windows\system32\drivers\hosts`) for unauthorized changes.
+
+### C. Qshing
+
+*   **Concept:** (QR code + phishing) An attack technique that uses QR codes to trick users into connecting to malicious links or directly infecting their devices.
+*   **Procedure (Example):**
+    1.  A QR code is displayed on a fake financial site, often claiming "additional authentication" is required.
+    2.  User scans the QR code, leading to the installation of a malicious app on their smartphone.
+    3.  The malicious app steals personal information (e.g., security card details, phone numbers, text messages) and can manipulate mobile settings (e.g., blocking text reception, setting up call forwarding).
+    4.  This leads to financial damage (e.g., small amount payments, money transfers).
+*   **Combination with Pharming:** Malware is evolving to combine pharming (targeting PC internet banking) with Qshing (targeting smartphone financial information).
+*   **Countermeasures:**
+    *   Keep all application software (antivirus, web browser) updated.
+    *   On smartphones, disable the "Allow Installation from Unknown Sources" option to prevent malicious apps from installing via QR codes.
+
+### D. Smishing
+
+*   **Concept:** (SMS + phishing) A fraudulent technique exploiting smartphone small amount payment services. Attackers send text messages disguised as free coupons or event winnings, containing malicious links.
+*   **Procedure:**
+    1.  Victim clicks a web link in a fraudulent text message.
+    2.  Malware is installed on the smartphone.
+    3.  The criminal then triggers a small amount payment, requesting an authentication number.
+    4.  The victim's phone is used to purchase game items, cyber money, etc., leading to fraud.
+*   **Countermeasures:**
+    *   Avoid clicking web links in promotional text messages from unknown sources.
+    *   Always verify the correct domain URL when accessing links from text messages.
+    *   Install a smishing blocking app.
+    *   Cancel any app installation that occurs without your consent.
+    *   Delete illegal apps using the app management menu if installed.
+    *   Check mobile phone billing details if you suspect smishing damage.
+
+### E. Spear Phishing
+
+*   **Concept:** A highly targeted phishing attack where the attacker focuses on specific key personnel within an organization (e.g., those with access to confidential data or critical systems). Attackers use collected information and social engineering to send convincing emails, aiming to hijack accounts or gain remote control over systems.
+*   **Countermeasures:**
+    *   Implement awareness and response training for key personnel (security managers, web server operators, end-users).
+    *   Web server operators should prepare countermeasures like malicious code distribution detection, web firewall operation, and web server security measures.
+    *   Continuously monitor application programs and operating systems for security vulnerabilities and apply security patches regularly.
+
+### F. Cryptojacking
+
+*   **Concept:** (Cryptocurrency + hijacking) Hackers secretly use a victim's computing resources (PC, server) to mine cryptocurrency without their consent. This can be done by infecting a PC with malware or by embedding malicious scripts (e.g., JavaScript) into compromised websites.
+*   **Countermeasures:**
+    *   Keep antivirus programs up-to-date and regularly check for malware.
+    *   Use browser extensions designed to block cryptojacking (e.g., AntiMiner, NoCoin, MinerBlock).
+    *   Block malicious sites (e.g., coinhive.com) using an IP firewall or by configuring detection rules in security equipment (IDS/IPS).
+
+### G. Ransomware
+
+*   **Concept:** (Ransom + software) Malicious software that either disables a computer system or encrypts a user's data, demanding payment (ransom) to restore access or decrypt the data. If the ransom demand is not met within a specified period, the data may be permanently deleted.
+*   **History:** First appeared in 1989 (AIDS ransomware), became a serious social issue in Korea with CryptoLocker in 2015.
+
+---
+
+================================================================================
+ORIGINAL TEXT (First 5000 chars)
+================================================================================
+
+--- Page 49 ---
+Information  security )
+APT, smishing,  spear phishing,  ransomware,  “fileless”  attack, Malvertising,  loT security,  security  by
+design, privacy by design, cloud security,  hypervisor  infection,  virtual machine  attack, virtual machine
+portability,  independence  between  VMs, hypervisor  detection  technique,  VM detection  technique,
+PPDM, personal information  de-identification,  pseudonymization,  aggregation,  categorization,  data
+masking
++ Preview  for practical  business Latest information  on security  threats
+and response  technologies
+Recently  developed  home appliances,  such as refrigerators  and TVs, were hacked in company  A.
+Many customers  who have purchased  those products,  have reported  an incident  of receiving  millions
+of spam emails to the customer  center. On the other hand, loT security  breach incidents  occur in
+company  B. Smartphones  that they have recently  developed  and launched  were infected  with a
+malicious  app, which remotely  controlled  the vehicle electronic control  device through  a wireless
+communication  network.
+As described,  numerous  products  with the latest technology  are released,  and various attempts  are
+being made to hack those products.
+In this section, we will learn the type of the latest information  security  threats and available
+countermeasures.
+M4 Understanding  Information  Security  49
+
+
+--- Page 50 ---
+ESSENCE
+01 Latest information  security  threats
+A) APT (Advanced  Persistent  Threat)  attacks
+@® Concept  of the APT attack
+Targeting  the subject  of , a: Utilizing  various  attack
+. . . Identifying  vulnerabilities : .
+political,  social, economic, a techniques  and social
+. . by collecting  information . .technological  and military . engineering  hacking
+for a long timeimportance techniques
+Hacking  strategy  to make complex  and intelligent  attacks
+[Figure  27] Concept  of the APT attack
+@ Procedure  of the APT attack
+An APT attack is made through  several processes,  such as infiltration,  search, collection,  and leakage  stages.
++ Stage 1: An attacker  infects  vulnerable  systems  or employee  PCs with malware.
++ Stage 2: The attacker  infiltrates  the internal  network  using malware.
++ Stage 3: The attacker  collects  information  on the infiltrated  internal system and infrastructure  and prepares
+for attacks.
++ Stage 4: The attacker  steals important  information  from the vulnerable  system to destroy  the system and
+make a DoS attack.
+© Cases of the APT attack
++ In Korea, the computing  network  of financial institution  N was paralyzed  in 2011, due to data deletion  by
+hacking.
++ The information  of 1.75  million customers  was leaked, due to the hacking  of financial  institution H.
++ The information  of 35 million customers  was leaked,  due to the hacking  of portal company  N.
+@® Countermeasures  against  the APT attack
+<Table 13> Countermeasures  against  the APT attack
+Countermeasures
+Strengthening
+security  management,
+operation,  and
+education
+Endpoint  security
+50 TOPCIT  ESSENCEContents
++ Analyzing  the overall security  threat  of the organization  and reorganizing  the security  system,  by
+analyzing  various  vulnerabilities,  based on the analysis  of the target security  system.
++ Management  is required,  including  continuous  management,  constant  security  control,  and regular
+mock hacking,  with a focus on the security  management  organization  for continuous  operation.
++ The endpoint  is the primary  target  of the APT attack, and malware  can infiltrate  into the endpoint
+using media, such as the Internet,  e-mail, SNS, messenger,  P2P, USB, etc.
++ OS security  update,  security  software  installation  and operation,  and application  control based on
+the whitelist  are needed.
+
+
+--- Page 51 ---
+Information  security )
++ Management  of access  rights to important  information,  minimization  of access rights, and
+Access right subdivision  of information  rights, according  to the importance  of the information.
+management + Person and device authentication,  strategic  management  of rights, and automatic  allocation  and
+collection  of rights for the information  of high importance.
+no + Encrypting  data before saving, as the ultimate  goal of the APT attack is data.
+renerypti  an Tato + Solutions,  such as DLP (Data Loss Prevention),  are needed to be introduced,  because information
+can be leaked in various  ways, depending  on the storage  type of the important  information.
+B) Pharming
+@® Concept  of a pharming  attack
+A pharming  attack refers to scamming  that causes illegal financial  fraud or personal information  leakage,
+by stealing  financial  information  or access information  when the user accesses  the web site of the financial
+company  or portal. The user is automatically  guided to the pharming  (fake) site, due to the altered host file
+(C:\windows\system32\drivers\hosts)  or the altered “Favorites”  of the web browser  in the PC that is infected
+with t...

@@ -1,0 +1,30 @@
+ESSENCE
++ Support  for application  container:  Application-specific  container  configuration  support
+OS-level  virtualization  has the following  disadvantages:
++ Host OS-dependent
++ Not possible  to configure  the kernel for each container
+04 Storage  and Network  Virtualization  Technologies
+A) Storage  virtualization
+It enables  service  implementation  by virtually  allocating  only the minimum  space initially required,  with thin-
+provisioning  technology,  instead of configuring  the required  storage space. Moreover,  it provides  an environment  to
+use heterogeneous  storage  system integration.
+B) Network  virtualization
+It implements  L2, L3, and L7 switches,  network  firewalls,  and security  devices  that existed in the form of hardware
+appliances  as virtual machines.  It enables  networking  resources  to operate  separately  through  internal virtualization,
+even in a shared physical  environment.
+05 Cloud Platform
+A) Definition  of cloud platform
+A cloud platform is a cloud operation system to collect, control, and operate resources,  such as servers,  storage,
+networks,  and virtualization  technologies.
+B) Openstack
+Openstack  is an open-source  project that develops  all software  blocks needed to build public and private cloud
+computing  platforms.  It also refers to the community  of open-source  developers,  enterprises, and users that want to
+implement  and operate  cloud computing  with open source. Moreover,  Openstack  establishes  industry  standards  for
+cloud computing  platforms,  independent  of the equipment  type or vendor's  implementation  technology.
+@ Main Openstack  projects
++ Nova: The core component  for automatic  control and the operation  of large-scale  virtual computer  instances
++ Swift: Implementation  of large-scale,  reliable  cloud object storage  services
++ Glance: Storage,  registration,  management,  and delivery  of virtual disk image files
++ Keystone:  Integrated  authentication  and authority  system
++ Cinder: Volume  replication,  snapshot  support,  and block storage
+136 TOPCIT  ESSENCE

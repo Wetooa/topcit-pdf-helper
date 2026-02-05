@@ -1,0 +1,36 @@
+Software  Development )
+@ Functional  cohesion
++ When all functional  elements  inside a module  are performed  in connection  with a single problem.
+@ Sequential  cohesion
++ When the output  data from one activity in a module  are used as the input data of the next activity.
+@® Communication  cohesion
++ When components  performing  different  functions  while using the same input and output  are gathered.
+@ Procedural  cohesion
++ When a module has multiple related functions,  and the components  of the module perform  those functions
+sequentially.
+© Temporal  cohesion
++ When creating  a module  by combing  several  functions  that are processed  at a specific  time.
+© Logical  cohesion
++ When a module is created using processing  elements  that have similar characteristics  or are classified  in a
+specific  form.
+@ Coincidental  cohesion
++ When each component  inside a module is composed  of unrelated  elements  only.
+B) Coupling
+Modules  have an associative  relationship  with other modules.  “Coupling”  refers to the complexity  of correlations
+between  modules.  Coupling  between  the modules  increases  when modules  interact  more and depend  on each
+other more. In particular,  when the interface  is not set correctly  or the functions  are not correctly  divided,  an
+unnecessary  interface  appears  and increases  the degree of dependence  between  modules  and coupling.
+Coupling  is a method of indicating  a correlation  between  program  elements  and is closely related to module
+independence  and cohesion.  If two modules  function  perfectly,  whether  they are adjacent  to each other or
+not, they are completely  independent  of each other and do not interact  at all. Data coupling  in which modules
+communicate  with parameters  is the most ideal - and weakest  - coupling.  Content  coupling  in which a module
+directly refers to or modifies  another  module’s  internal function  or data is the strongest  coupling,  and should
+be avoided.
+If coupling  is strong, it is difficult to change a module independently,  and changes  in one module affect other
+modules  significantly,  causing  a ripple effect. The greater  the ripple effect, the more difficult it is to maintain
+the system.  The ripple effect is a phenomenon  in which, when one thing is affected,  it goes on to affect many
+other things. If this effect occurs in system  development,  it lands many people in trouble.
+Therefore,  coupling  needs to be reduced  as much as possible  when designing  software. When modules  share
+variables  or exchange  control information,  coupling  between  modules  increases.  Because  of this (to weaken
+coupling),  we are instructed  not to use global variables,  if possible,  and to use parameters  when learning
+M1 Software  development  57

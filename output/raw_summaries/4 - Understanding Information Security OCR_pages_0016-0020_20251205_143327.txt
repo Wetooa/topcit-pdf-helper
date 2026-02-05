@@ -1,0 +1,210 @@
+LEARNING GUIDE: Pages 16-20
+Generated: 2025-12-05 14:33:27
+PDF: 4 - Understanding Information Security OCR
+
+================================================================================
+LEARNING GUIDE
+================================================================================
+
+Here's a simplified, easy-to-read learning guide based on the provided text:
+
+---
+
+# Information Security Learning Guide
+
+## 1. Malware Types
+
+Malware is malicious software designed to harm computers, file systems, or networks.
+
+*   **Worms:**
+    *   Runs independently.
+    *   Self-replicates and spreads to other computers.
+*   **Viruses:**
+    *   Malicious code inserted into another independent program.
+    *   Makes the host program perform malicious actions and spread.
+*   **Trojan Horse:**
+    *   A program that appears normal but contains hidden malicious code.
+    *   Executes the malicious code when the user runs the program.
+
+## 2. Major Security Solutions
+
+These solutions protect networks and systems from various threats.
+
+*   **Firewall:**
+    *   **Purpose:** Security solution installed between public and private networks to protect the private network.
+    *   **Types:**
+        *   **Packet Filtering Gateway:** Allows or blocks data packets based on a set of rules.
+        *   **Proxy Server:** Provides authentication for specific hosts to access a private network.
+        *   Often combined for enhanced security.
+*   **Intrusion Prevention System (IPS):**
+    *   **Purpose:** Detects and blocks unauthorized/abnormal behaviors (intrusions) in real-time.
+    *   **Function:** Defends against attacks (e.g., hacking) that a firewall might allow through packet-level attacks.
+    *   Often implemented alongside a firewall.
+*   **Virtual Private Network (VPN):**
+    *   **Purpose:** Enables secure use of public networks as if they were private networks.
+    *   **Services:** Provides access control, authentication, and confidentiality without physical private network infrastructure.
+    *   **Technologies:** Implemented using IPSec and SSL.
+    *   **Deployment:** Can be on dedicated systems, routers, or firewalls.
+*   **Single Sign-On (SSO):**
+    *   **Purpose:** Allows users to log in once to one system and gain access to multiple other connected systems or sites without re-authenticating.
+    *   **Benefit:** Centralizes user authentication across different systems that usually manage user info separately.
+*   **Web Application Firewall (WAF):**
+    *   **Purpose:** Protects web servers from web application attacks.
+    *   **Location:** Sits in front of web servers.
+    *   **Function:** Monitors HTTP/HTTPS traffic and blocks malicious attacks (e.g., SQL Injection, XSS) before they reach the web server.
+*   **Network Access Control (NAC):**
+    *   **Purpose:** Controls access to the internal network by checking endpoint devices.
+    *   **Function:** Verifies if a user's computer complies with security policies (e.g., user authentication, anti-virus installation) before granting network access.
+*   **Wireless Intrusion Prevention System (WIPS):**
+    *   **Purpose:** Secures wireless LANs.
+    *   **Function:** Continuously monitors wireless networks to automatically detect and block unauthorized wireless devices or intrusion attempts via unauthorized Access Points (APs).
+*   **Enterprise Security Management (ESM):**
+    *   **Purpose:** Integrates various security management functions into a single, consistent interface.
+    *   **Goal:** Build an efficient, policy-oriented, and systematic security management system for all enterprise systems.
+*   **Security Information and Event Management (SIEM):**
+    *   **Purpose:** Provides an early warning and monitoring system for intelligent threats.
+    *   **Function:** Extends ESM by collecting, analyzing, and correlating logs from across the enterprise (big data). Offers forensic capabilities for threat tracing and corporate compliance.
+
+## 3. New Technical Terms of Information Security
+
+Key emerging concepts and technologies in information security.
+
+### A) Blockchain
+*   **Concept:** A distributed public ledger that records all transactions in a network.
+*   **Structure:** Transactions are collected into "blocks," which are then sequentially linked to form a "chain."
+*   **Key Features:**
+    *   **Distributed Ledger:** Copies of the ledger are distributed among all network members.
+    *   **P2P Network:** Operates without a central authority, allowing direct peer-to-peer transactions.
+    *   **Consensus Verification:** New transactions are verified by the consent of network members.
+    *   **Immutability:** Transaction information, once recorded, cannot be forged or altered.
+*   **Benefits:** Increased efficiency, transparency, faster/safer transactions at lower costs, high reliability, and easy traceability.
+
+### B) FIDO (Fast Identity Online Alliance)
+*   **Purpose:** An alliance established to set technical standards for biometric authentication in online environments.
+*   **Principle:** Separates local user authentication (on the device) from remote authentication (by the service provider's server).
+*   **FIDO 1.0:**
+    *   **UAF (Universal Authentication Framework):** Protocol designed not to store user personal information on the server.
+    *   **U2F (Universal 2nd Factor):** Protocol for two-factor authentication to enhance security.
+*   **FIDO 2.0:**
+    *   **Goal:** Provides convenient biometric authentication and payment in PC and web environments, replacing passwords.
+    *   **Implementation:** Leverages APIs from operating systems (e.g., Windows, Android) or web browsers (JavaScript API).
+    *   Does not use the UAF protocol; uses its own server-defined protocol.
+
+### C) Network Segregation and Linking
+*   **Concept:** Separating a business network from external networks to block unauthorized access and prevent internal data leakage.
+*   **Types:**
+
+| Feature            | Physical Network Segregation                               | Logical Network Segregation                                  |
+| :----------------- | :--------------------------------------------------------- | :----------------------------------------------------------- |
+| **Operation Method** | Physical separation (e.g., using two separate PCs).        | Logical separation using virtualization or software (e.g., one PC). |
+| **Introduction Cost**| High (requires additional hardware).                       | Low (depends on installation environment).                   |
+| **Security**       | High (fundamental separation).                             | Lower (potential for vulnerabilities).                       |
+| **Efficiency**     | Low (can impact work environment).                         | Easy to manage (facilitates applying security policies).     |
+| **Details**        | Examples: Two PCs, multi-PC setups, network switching devices. | Examples: Server-based or PC-based virtualization.           |
+
+### D) Fraud Detection System (FDS)
+*   **Purpose:** Detects and blocks suspicious or abnormal electronic financial transactions.
+*   **Mechanism:** Comprehensively analyzes device information, access information, and transaction details.
+*   **Core Engine:** **Pattern Analysis** – learns normal user transaction patterns and identifies abnormal behavior that deviates from these patterns.
+*   **Functions:**
+    *   **Information Collection:** Gathers user/behavior information and data on accident types.
+    *   **Analysis and Detection:** Analyzes correlations by user and transaction types, testing patterns to detect anomalies.
+    *   **Response:** Blocks illegal transactions or requests additional authentication when abnormal behavior is detected.
+
+### E) Quantum Cryptography
+*   **Concept:** A cryptographic technology that uses principles of quantum mechanics, unlike traditional cryptography based on mathematical complexity.
+*   **Key Property:** Quantum states cannot be copied or reverted to their original state without detection.
+*   **Security Benefit:** If an eavesdropper attempts to measure a quantum (to intercept data), its state changes, immediately alerting the legitimate receiver to the eavesdropping attempt.
+
+### F) Trusted Platform Module (TPM)
+*   **Purpose:** A hardware-based security module designed to overcome the limitations of software-only security.
+*   **Standard:** Established by the TCG (Trusted Computing Group).
+*   **Function:** Provides a secure, isolated hardware space for storing critical data like encrypted keys, passwords, and digital certificates.
+*   **Security:** Ensures that sensitive operations like key management and encryption processing occur entirely within the secure hardware device.
+*   **Version:** The latest is TPM 2, which includes the Mobile Trusted Module (MTM).
+
+### G) Re-identification
+*   **De-identification:** The process of converting data so that an individual cannot be identified from it.
+*   **Re-identification:** The process of identifying an individual from *de-identified* data by combining, analyzing, or processing it with other available information.
+*   **Risk:** Can lead to the unintentional or intentional disclosure of personal information, especially with the use of big data and combining data from various sources (e.g., SNS, search engines, medical/financial records).
+*   **Concern:** Heightened risk of personal information leakage due to the widespread use of big data.
+
+### H) EU-GDPR (General Data Protection Regulation)
+*   **Context:** The European Union's comprehensive personal information protection law, effective May 25, 2018.
+*   **Importance:** It is a mandatory regulation with significant penalties for violations. Companies outside the EU (e.g., Korean companies) must comply if they process the personal information of EU residents.
+*   **Purpose:** To protect personal information while also providing opportunities for its responsible utilization (through concepts like general, anonymous, and pseudonymized information).
+*   **Major Changes from previous EU Directives:**
+    *   **Enforcement Regulation:** It's a mandatory regulation for all member states, imposing penalties for non-compliance (unlike prior recommendations).
+    *   **Extra-territorial Scope:** Applies not only to companies with a business site in the EU but also to any company globally that processes the personal information of EU residents (e.g., via e-commerce).
+
+---
+
+================================================================================
+ORIGINAL TEXT (First 5000 chars)
+================================================================================
+
+--- Page 16 ---
+ESSENCE
+against  computers,  file systems,  or networks.  Malware  can be classified  into the following  types:
+@ Worms
+Malware  that runs independently.  This malware  replicates  itself and spreads  to other computers.
+@ Viruses
+Viruses refer to malicious codes that are inserted into the code of another  independent  program,  then make
+the program  perform  malicious  behavior  and spread on its own.
+© Trojan horse
+A program  with hidden codes. Although  it looks like a normal program,  malicious  code is executed  when the
+user executes  the program.
+G) Major security  solutions
+® Firewall
+A firewall  refers to a security  solution  installed  between  the public network  and the private network  to protect
+the private network  from the outside. In general, there are two types of firewalls.  The first type is a packet
+filtering  gateway,  which determines  whether  to pass the packet, based on a series  of rules. The second type is
+a proxy server that provides  authentication  to specific hosts to access a private network  and allows them to
+pass the packet. However,  a method  with increased  security  is also used, which combines  these two methods.
+@ Intrusion  Prevention  System (IPS)
+A security  system  that blocks intrusions  in real time by detecting  unauthorized  and abnormal  behaviors  for the
+target system (network  detection  area), and by distinguishing  detected  illegal behavior.  It can be assumed  that
+the characteristics  in the common  area between  the average  area of the behavior  of the intruder,  and that
+of the behavior  of the authorizer,  make intrusion  detection  difficult.  The intrusion  detection  system is built
+first, along with a firewall,  when implementing  a general security  system.  The purpose  of building  the intrusion
+detection  system includes real-time  detection  and blocking  of illegal activities,  such as hacking,  and defense
+against  attacks  performed  by using the packet,  allowed  by the firewall.
+© Virtual Private Network  (VPN)
+A technology  that enables  to safely use access control, authentication,  and confidentiality  services,  like a
+private  network  when using a public network,  without  building  a physical  private  network  between  remote sites.
+IPSec and SSL are the representative  technologies  for implementing  a VPN. The VPN can be implemented  in a
+dedicated  system,  router, or firewall.
+@ Single Sign On (SSO)
+Single sign on enables the user to access another  site without a separate  authentication  procedure  after
+logging in on one site. In general, different  systems  and sites manage  their user information  separately.
+However, it is necessary  to link user information  on occasion.  In this case, SSO can be used for the integrated
+16 TOPCIT  ESSENCE
+
+
+--- Page 17 ---
+Information  security )
+authentication  of multiple  systems,  based on the information  of one user.
+@® Web Application  Firewall (WAF)
+Located  in front of  the web server, this security  solution monitors  incoming  traffic with the HTTP/HTTPS
+protocol and blocks malicious  attacks  detected  against  the web application,  such as the SQL Injection  attack
+or XSS attack, before it reaches  the web server.
+© Network  Access  Control (NAC)
+When at the endpoint,  when a user computer  attempts  to access the internal network  for the first time, the
+system checks whether  the accessing  user computer  complies  with various  security  policies,  such as network
+user authentication,  anti-virus  program installation,  etc., and controls  network  access according  to the pre-
+defined  security  policy, when security  policies  are not observed.
+@ Wireless  Intrusion  Prevention  System (WIPS)
+The WIPS automatically  detects and blocks access from unauthorized  wireless  devices by continuously
+monitoring  the wireless  LAN operated  of a specific  organization,  and it improves  the stability  of wireless  LAN
+and enables integrated  management.  The WIPS provides  a function  of detecting  and blocking  an intrusion
+attempt  using an unauthorized  AP or user device in the exposed  wireless  network.
+Enterprise  Security  Management  (ESM)
+ESM is designed  to provide a consistent  and intuitive  administrator  and user interface  by integrating  security
+management  functions  modularized  by function  and product.  This security  solution  aims to build an integrated
+security  management  system for all systems,  according  to standard  policies, by building  an efficient,  policy-
+oriented,  and systematic  security  management  system.
+© Security  Information  Event Management  (SIEM)
+The SIEM solution  establishes  an early warning and monitoring  system for intelligent  threats,  which provides
+correlation  analysis and forensic  functions  in the vast information  of big data, by extending  the role of the
+existing  ESM from the security  domain  to the entire enterprise,  and by adding corporate  compliance  response
+functions,  so that...

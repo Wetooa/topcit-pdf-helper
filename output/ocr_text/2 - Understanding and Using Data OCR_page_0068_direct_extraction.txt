@@ -1,0 +1,20 @@
+Database
+>> Recent  trends and major issues
+The “normalization”  theory is the foundation  of completing  a system and is one of the most important
+theories  that need to be understood  when building  a system in the field. The theory  of first normalization  is
+the starting  point for normalization,  which removes  duplication  from a file system  in order that data can be
+processed  stably. This situation  occurs frequently  in the actual project site, so it is necessary  to learn the
+details in depth. The first, second,  and third Boyce-Codd  normalizations  are performed  based on function
+dependency,  whereas  the fourth and fifth normalizations  are performed by  the semantic  association
+between  attributes.  Data should be managed  stably when building  a system.  Normalization  is an important
+theory that everyone  should know when developing  an information  system, because  normalization  is the
+most important  and basic theory  for ensuring  stable data management.
+>> Learning  objectives
+1. To be able to explain the concept  and characteristics  of file dependency.
+2. To be able to explain abnormal  normalization.
+3. To be able to design a database  by applying  normalization.
+4. To be able to explain denormalization.
+5. To be able to explain the points to be taken into consideration  for performance  design.
++ Normalization  removes  anomalies  by removing  data redundancy.
++ Denormalization  is a design technique  for improving  query performance,
+M2 Database  67

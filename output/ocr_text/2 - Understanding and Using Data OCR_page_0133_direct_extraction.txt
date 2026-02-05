@@ -1,0 +1,49 @@
+ESSENCE
+02 Database  Troubleshooting  Method
+A) Database  recovery  technique
+Check point recovery  technique Siar (oo retell area -ceoN IVa eunla (C0 Log-based  recovery  technique
+Instant  update Delayed  update
+technique technique
+[Figure  46] Types of database  recovery  techniques
+<Table 55> Comparison  of database  recovery  techniques
+Item Concept Characteristics Recovery  process Recovery  speed
+Log-based
+techniqueRecovery  using log
+files.Checks  all logs to determine
+Redo and Undo.
+Time delay.
+Redo of the transaction  that
+does not need RedoUses Redo and
+Undo.Slow
+Checkpoint
+recovery
+techniqueRecovery  using log
+files and checkpoints.Relatively  faster recovery  speed
+than log-based  recovery.Uses Undo. Faster  than logs
+Shadow  paging
+technique
+B) Recovering  from a distributed  database  2-phase  commit  protocolRecovery  using
+shadow  page tables.
+© Transaction  of the distributed  databaseSimple Undo and no need for
+Redo.
+Fast execution  speed and
+simple.
+Difficulty in using it alone
+when several transactions  are
+executed  at the same time.
+Used along with log-based  or
+checkpoint  techniques.
+Overhead  occurs  while copying
+and recording  shadow  page
+tables.Replaces  shadow
+tables.Faster  recovery
+from copies and
+backups
++ This transaction  accesses  more than two databases,  and each DBMS can use different  recovery  techniques  and
+transaction  managers.
++ The atomicity  of transactions  is an important  issue when building  multiple  database  systems.
++ If a certain transaction  is executed  across two sites and the transaction  is not professionally  designed,  an
+inconsistent  state can be caused when one site completes  the transaction  while the other site cancels the
+transaction.
++ The 2-phase  commit  protocol  should be used to maintain  the atomicity  of multiple  database  transactions.
+132 TOPCIT  ESSENCE

@@ -1,0 +1,31 @@
+ESSENCE
+@ Determination  of Adjusted  Function  Points
++ When the value adjustment  factor (VAF) is determined,  the final adjusted  FP is calculated  by reflecting  the
+VAF according  to the development/enhance  /application  type
++ Adjusted  FP Count = Unadjusted  FP Count x VAF
+Function  Point Analysis  (FPA) is largely divided into Estimated  FPA and Detailed  FPA. In the development
+proposal  stage, cost is calculated  using the average  values of El/EO/EQ  and ILF/EIF, while the cost is calculated
+using the traditional  method  after the stage of demand  analysis  and design.
+Function  Point Analysis
++ Based on weighted  average  complexity  rating + High/Avg/Low  complexity  determined
++ Applied  to the planning  and acquisition  stages + Applied  after the design stage
+[Figure 37] Function  Point Analysis  Method
+In recent practice,  in the case of public projects,  cost estimation  is carried out focusing  on user's functional
+requirements  by utilizing  the FPA.
+B) Man/Month  (MM)
+Man/Month  is a method  of measuring  how much labor is consumed  in a project based on previous  experience
+in similar  projects,  and calculating  the cost based on the manpower  put into the project.
+Project  development  cost = direct labor cost + overhead  cost + Royalty+  direct cost
+Generally,  required manpower  resources  are allocated  for each work package,  the lowest unit of the WBS
+derived  from scope management.
+@ Direct Labor Cost
+When the required  labor is allocated  for each work package,  the unit price per labor must be determined.  In the
+case of Korea, the average  wage of a software  engineer  published  by Korea Software  Industry  Association  is
+applied,  which is determined  by referring  to the table below.
+<Table 47> Average  Wage for SW Engineers  in 2017
+Classification Average  Wage (M/M) Average  Wage (M/H)
+Engineer 9,414,309 56,576
+Principal  Engineer 8,134,214 48,884
+Senior Engineer 6,351,342 38,169
+Intermediate  Engineer 4,981,725 29,938
+108 TOPCIT  ESSENCE

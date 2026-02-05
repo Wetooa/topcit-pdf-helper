@@ -1,0 +1,34 @@
+ESSENCE
+Memory
+Withdrawal
+Processor Execution
+[Figure 34] Instruction  Cycle Conceptual  DiagramInterruptWithdrawal
+<Table 10> shows  the entire instruction  cycle. The CPU components  needed in each cycle are different.
+<Table 10) Relationship  between  Instruction  Cycle Types and CPU Components
+Type Detailed  Operation Related  CPU Component
+Fetch cycle+ The cycle fetches  an instruction  from the memory  unit location
+pointed  to by the PC.- Register  (PC, MAR, MBR, and IR)
+~ CPU internal  bus
+Execution  cycle+ The CPU decodes  the fetched  instruction  code and performs  the
+needed  operation,  according  to the result.- Register  (AC)
+- ALU
+- Control  unit
+Interruption  cycle+ The cycle inspects  the interruption  request  signal, stores the
+current  PC data in the stack, and loads the ISR’s beginning
+address  to the PC.- Register  (MBR, PC, MAR, SP)
+Indirect  cycle+ The cycle is the process  of reading  the actual data address  from
+the memory  unit before the execution  cycle begins.
+E) Instruction  set structure,  CISC and RISC
+Instruction  set, or ins’- Register  (MAR, IR, MBR)
+- CPU internal  bus
+ruction set architecture  (ISA), refers to the machine  language  instructions  that a microprocessor
+can recognize,  understand  its function,  and execute.  The ISA is part of the programming-related  computer
+architecture,  and it includes  data types, instructions,  registers,  addressing  modes, memory  structures,  interruptions,
+exception  handling,  and external  input/output.
+The leading ISAs are the complex  instruction  set computer  (CISC) and the Reduced  instruction  set computer  (RISC).
+<Table 4> shows the concepts  and differences  in these structures,
+* CISC:A complex  instruction-type  computer  that embeds  many complex  instructions  into the hardware  in order to
+process  the complex  instructions  as a single instruction.
+* RISC: A reduced instruction-type  computer  that embeds  a few simple instructions  into the hardware  to process
+complex  instructions  as a set of simple instructions.
+66 TOPCIT  ESSENCE

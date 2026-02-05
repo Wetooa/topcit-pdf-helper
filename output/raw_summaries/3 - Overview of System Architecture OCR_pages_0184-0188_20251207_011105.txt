@@ -1,0 +1,198 @@
+LEARNING GUIDE: Pages 184-188
+Generated: 2025-12-07 01:11:05
+PDF: 3 - Overview of System Architecture OCR
+
+================================================================================
+LEARNING GUIDE
+================================================================================
+
+Here is a simplified, easy-to-read learning guide based on the provided text:
+
+---
+
+## TCP/IP Learning Guide: TCP Protocol Details
+
+This guide covers essential aspects of the TCP protocol, including its header, connection management, and control mechanisms.
+
+### 1. TCP Protocol Overview
+
+TCP (Transmission Control Protocol) is a core protocol in the transport layer, providing reliable, ordered, and error-checked delivery of data. It handles:
+*   **Flow Control:** Manages data transfer rates between sender and receiver.
+*   **Error Control:** Detects and corrects transmission errors.
+*   **Congestion Control:** Prevents network overload.
+
+### 2. TCP Header Format
+
+The TCP header carries control information for the segment (a unit of data in TCP).
+*   **Default Size:** 20 bytes (without options).
+*   **Total Header Size:** 40 bytes when combined with the IP header (20 bytes TCP + 20 bytes IP).
+*   **Padding:** Added to options to maintain a 4-byte unit length.
+
+**Key TCP Header Components:**
+
+*   **Source Port (16 bits):** Identifies the sending application's port number.
+*   **Destination Port (16 bits):** Identifies the receiving application's port number.
+*   **Sequence Number (SEQ) (32 bits):** Number of the first byte of data in the current segment. Increases by 1 for each transmitted byte.
+*   **Acknowledgment Number (ACK) (32 bits):** The next sequence number (byte) the sender expects to receive from the other party.
+*   **Header Length (4 bits):** Length of the TCP header in 4-byte units (20-60 bytes).
+*   **Control Flags (6 bits):** Set to 0 or 1 to indicate specific functions:
+    *   **URG:** Urgent Pointer field is valid.
+    *   **ACK:** Acknowledgment Number field is valid.
+    *   **PSH:** Push function (forces data delivery to application).
+    *   **RST:** Reset the connection.
+    *   **SYN:** Synchronize sequence numbers (used for connection establishment).
+    *   **FIN:** No more data from the sender (used for connection termination).
+*   **Window Size (16 bits):** Amount of data (in bytes) the receiver is currently willing to accept. Max 65,535 bytes.
+*   **Checksum (16 bits):** Used for error detection across the entire segment.
+*   **Urgent Pointer (16 bits):** Offset from the sequence number, indicating where urgent data ends. Only valid if URG flag is set.
+
+### 3. TCP Connection Establishment (Three-way Handshake)
+
+This procedure establishes a reliable, bidirectional connection between two TCP endpoints.
+
+1.  **SYN (Synchronize Sequence Numbers):**
+    *   TCP A (client) sends a `SYN` segment to TCP B (server).
+    *   It includes an initial **Sequence Number (SEQ)** (e.g., SEQ=100) and sets the `SYN` control flag.
+2.  **SYN-ACK (Synchronize-Acknowledge):**
+    *   TCP B receives the `SYN` segment.
+    *   TCP B responds with a `SYN-ACK` segment.
+    *   It includes its own initial **Sequence Number (SEQ)** (e.g., SEQ=300) and an **Acknowledgment Number (ACK)** which is the client's SEQ + 1 (e.g., ACK=101).
+    *   Both `SYN` and `ACK` control flags are set.
+3.  **ACK (Acknowledge):**
+    *   TCP A receives the `SYN-ACK` segment.
+    *   TCP A responds with an `ACK` segment.
+    *   It includes an **Acknowledgment Number (ACK)** which is the server's SEQ + 1 (e.g., ACK=301).
+    *   The `ACK` control flag is set.
+    *   At this point, the bidirectional connection is established.
+
+*   **System Resource:** TCP allocates a **Transmission Control Block (TCB)** for each connection.
+*   **SYN Flooding Attack:** Maliciously sending many `SYN` segments without completing the handshake can exhaust a server's TCB resources, leading to a Denial-of-Service (DoS) attack.
+
+### 4. TCP Connection Termination
+
+TCP connections are gracefully terminated, usually involving a "four-way handshake" (though it can be optimized).
+
+1.  **FIN-ACK (Initiator wants to close):**
+    *   TCP A (initiator) sends a `FIN-ACK` segment to TCP B, indicating no more data will be sent from its side.
+    *   `FIN` and `ACK` flags are set.
+2.  **ACK (Receiver acknowledges FIN):**
+    *   TCP B receives the `FIN-ACK`.
+    *   TCP B sends an `ACK` segment to TCP A, acknowledging the `FIN`.
+    *   TCP B is now in `CLOSE-WAIT` state, meaning it can still send data to TCP A.
+3.  **FIN-ACK (Receiver wants to close):**
+    *   When TCP B is ready to close its side of the connection, it sends a `FIN-ACK` segment to TCP A.
+    *   `FIN` and `ACK` flags are set.
+4.  **ACK (Initiator acknowledges FIN):**
+    *   TCP A receives TCP B's `FIN-ACK`.
+    *   TCP A sends a final `ACK` segment to TCP B.
+    *   TCP A enters a `TIME-WAIT` state for a period (2 MSL - Maximum Segment Lifetime) to ensure the `ACK` reaches TCP B and handle any retransmitted segments, then fully closes.
+    *   TCP B receives the final `ACK` and immediately closes.
+
+### 5. Flow Control (Sliding Window Protocol)
+
+Flow control ensures a sender doesn't overwhelm a receiver with data, balancing data creation and consumption rates.
+
+*   **Mechanism:** TCP uses the **Sliding Window Protocol**.
+*   **How it Works:** The receiver informs the sender how much buffer space (window size) it has available. The sender adjusts its transmission rate based on this announced window.
+*   **Window Size:** Maximum of 65,535 bytes (due to 16-bit field).
+*   **Key Components:**
+    *   **Receiver Window (RWND):** The buffer size (in bytes) that the receiver currently has available and can receive without data loss. The receiver communicates this in its `ACK` segments.
+    *   **Congestion Window (CWND):** The amount of data (in bytes) that can be sent at once, determined by network congestion.
+        *   CWND decreases if network congestion is high (data loss increases).
+        *   CWND increases if congestion is low.
+*   **Effective Window Size:** The actual amount of data the sender can transmit is the **minimum of RWND and CWND**.
+*   **Sliding Window Operations:**
+    *   **Open Operation:** When an `ACK` arrives, the window's right boundary moves to the right, allowing more data to be sent.
+    *   **Close Operation:** When data is transmitted, the window's left boundary moves to the right, indicating that this data no longer needs intervention from the sender.
+
+### 6. Error Control
+
+Error control ensures reliable data delivery by handling lost, damaged, out-of-order, or duplicated segments.
+
+*   **Key Tools:**
+    *   **Checksum:** Each TCP segment includes a checksum field to detect if the segment itself has been damaged during transmission.
+    *   **Acknowledgment (ACK):** The receiver sends `ACK` segments to confirm successful reception of data segments. This is fundamental to reliability.
+    *   **Resend (Retransmission):** If an `ACK` for a sent segment is not received within a timeout period, the sender retransmits the segment. Segments are buffered until their `ACK` is received.
+
+### 7. Congestion Control
+
+Congestion control prevents the network from becoming overloaded by regulating the amount of user traffic injected into it.
+
+*   **TCP Mechanism:** TCP primarily uses two algorithms:
+    *   **Slow Start Algorithm:**
+        *   Increases the **Congestion Window (CWND)** size exponentially at the beginning of a connection or after a timeout.
+        *   Starts with a small CWND and doubles it with each round-trip time (RTT) as long as no congestion is detected.
+        *   This exponential growth continues until a certain threshold is reached or congestion occurs.
+    *   **Congestion Avoidance Algorithm:** (Used after Slow Start or congestion detection to grow CWND linearly).
+
+================================================================================
+ORIGINAL TEXT (First 5000 chars)
+================================================================================
+
+--- Page 184 ---
+Overview  of System Architecture )
+The connection  request  in step © is actually  a simple drawing  of steps © through  @, and the connection  termination
+in step @ is also a simple drawing  of steps @ through  @. Steps @ through  © and  © through  @ are application  layer
+data that is immediately  appended  after the TCP header. According  to the HTTP protocol,  this data is generated  by
+the web browser  on user A’s computer  and the my.server.com  web server program.  The following  section describes
+he TCP protocol  and corresponding  steps in detail.
+TCP flow control is important  when a large volume of data, such as PDF files, is transmitted  simultaneously,  as
+shown in steps  © through  @, because  IP packets  can be transmitted  through  multiple network  paths. Error control
+is crucial to cope with transmission  errors. Moreover,  it is also necessary  to understand  congestion  control, since the
+ransmission  of more packets  that can be processed  per unit time in the network,  greatly  affects  TCP performance.
+C) TCP protocol
+The header  format used in the TCP protocol  is shown in the following  figure [1].
+When adding an option, it is necessary  to add a padding  byte to fit the 4-byte unit. When there is no option,  the TCP
+header  is 20 bytes, which is the same size as the IP header. Therefore,  the TCP/IP header is 40 bytes and must be
+sent, even when sending  one byte of user data. For effective network  transmission  in an application  layer program,
+data larger than an appropriate  size must be sent to the transport  layer.
+{Table 61) TCP Protocol  Header  Components
+Type Description
++ Defines  the port number  of the host application  sending  the segment  (16 bits)
++ Performs  the same purpose  as the source port number  in the UDP header
++ Defines  the port number  of the host application  receiving  the segment  (16 bits)Source  port address
+Destination  port address  | | porforms  the same purpose as the destination  port number in the UDP header
+Se eeenol + Defines the number  assigned  to the first byte of data contained  in the segment  (32 bits)
+BSG + The byte number  that the segment  sender expects to receive (32 bits)
++ TCP header  expressed  as the number  of 4 bytes (4 bits)
++ (Header  length: 20 - 60 bytes)
+Control + 6 different  control fields or flag bit definition
++ The window  size in bytes that the other party must maintain
++ 16-bit  long. The maximum  window  size is 65,536 bytes.Header  length
+Windows + The data size that can be sent to the segment, used by the windowing  mechanism
++ Buffer size
+Checksum + Error detection  for all checksums  and segments  (16 bits)
+Urgent  pointer + Valid only when the urgent  flag value is set (16 bits)
++ Used when the segment  contains  urgent  data
+The sequence  number  SEQ (sequence  number)  increases  by increments  of 1 for each 8-bit octet and performs  the
+unsigned  module  2” calculation.  Therefore,  the sequence  value changes  to make 0 > 2” - 10>:
+The six flags for control have the following  meanings.  The SYN, ACK, and FIN control  flags are widely used in the TCP.
+protocol.
++ URG: The urgent  pointer  field is meaningful.
+M3 Overview  of System  Architecture  183
+
+
+--- Page 185 ---
+ESSENCE
++ ACK: The acknowledged  response  field is meaningful.
++ PSH: Push function
++ RST: Connection  reset
++ SYN: Sequence  number  synchronization
++ FIN: No more data from the sender
+@ TCP connection  setting
+The basic way to establish  a TCP connection  is with a three-way  handshake  procedure.  This procedure  begins by
+sending  an SYN segment  with a sequence  number  (SEQ) 100, from one TCP endpoint,  to another  TCP end, as shown
+in the second step of [Figure 132]. The SYN segment  means that the SYN control flag of the TCP header is set to 1.
+The ACK segment  means that the ACK control  flag is set to 1. The SYN and ACK segments  mean that both the SYN
+control  flag and the ACK control  flag are set to 1.
+Upon receiving  the SYN segment,  TCP B sets the SYN control flag (SEQ=300),  requesting  connection  establishment
+with TCP A from TCP B, along with acknowledgment  number  (ACK) 101'°, and sends the SYN and ACK segments,  as
+shown in step 3 in [Figure 132]. Upon receiving  it, TCP A confirms  the ACK control  flag and ACK=101  to recognize  that
+the connection  request  has been properly  delivered.
+The SYN control flag set together  indicates that TCP B sent the connection  request.  The three-way  handshake  is
+complete  when the ACK segment  (ACK=301)  is sent to TCP B, and the bidirectional  connection,  between  TCP A and
+TCP B, is established.
+As described  above, the three-way  handshake  for TCP connection  confirms  that the SYN segment,  the SYN and ACK
+segment,  and the ACK segment  are transferred  between  TCP terminals.  At the same time, the sequence  number  (SEQ)
+that is transferred  between  TCP terminals  plays an important  role in flow and error controls  to check whether  the
+data st...

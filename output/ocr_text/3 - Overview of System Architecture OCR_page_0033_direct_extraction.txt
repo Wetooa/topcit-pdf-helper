@@ -1,0 +1,21 @@
+ESSENCE
+>> Recent  trends and issues
+In network  technology  have evolved  from data communication,  through existing  56kbps wired media, to
+wireless networks  and mobile  communication  of hundreds  of Mbps and even Gbps. Moreover,  the advent
+of various  connected  terminals  has led people to in an inseparable  relationship  with communication  in their
+daily lives, as well as in more diverse  business  areas. Accordingly,  software  used in a terminal  or system has
+a close relationship  with a network,  and it is based on mutual communication.  It is necessary  to understand
+and utilize the standard  protocols  used by networks  to design and develop  organic  and optimized  software,
+based on this network  concept.
+>> Learning  objectives
+1. To be able to explain  the concept  of the Internet  and the open protocol.
+2. To be able to explain how the OS manages  processes.
+3. To be able to explain the concept  of virtual memory  and management  techniques.
+4. To be able to explain  the storage  unit, file systems,  and input/output  (I/O).
+5. To be able to explain  the latest OS technologies  and trends.
+>> Keywords
+Protocol,  Internet,  IETF, 3GPP, 3GPP2, ITU-T, OSI reference  model, Application  layer, Presentation  layer,
+Session  layer, Transport  layer, Network  layer, Datalink  layer, Physical  layer, Internet  protocol  layer, Application
+layer, Internet  layer, Network  interface  layer, Internet  address  scheme,  MAC address,  IP address,  Port
+number,  IPv4 address,  IPv6 address,  Private  network,  NAT, CIDR, RFC
+32 TOPCIT  ESSENCE

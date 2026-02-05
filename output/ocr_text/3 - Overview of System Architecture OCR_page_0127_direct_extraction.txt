@@ -1,0 +1,33 @@
+ESSENCE
+02 Fault-Tolerant  System
+A) Fault-tolerant  system
+A fault-tolerant  system can continuously  perform  the functions  specified in the design, even if a system part fails. A
+fault-tolerant  system cannot use certain functions  when a component  fails. When components  continue  to fail, the
+unavailable  functions  gradually  increase,  and the system  shuts down when a critical  failure occurs.
+[Table 23] Troubleshooting  Steps
+Step Description
+Fault detection - Analyzes  which module  has caused  fault, through  comparative  logic.
+Fault diagnosis- Determines  whether  the fault is temporary  (transient)  or permanent  (hard) and excludes  the hard
+module  from an operation.
+Fault isolation - Blocks  the spread of errors by fault.
+Fault recovery - Eliminates  the module  that caused  the fault in order to recover  and reconfigure  the system.
+[Table 24] Fault-Tolerant  Technique
+Technique Type Description
+General  faulttolerantCheckpoint  technique Error detection  for source  code that may cause a fault
+Application  of fault-tolerant  technique,  through  protocol  monitoring  andtechnique Protocol monitoring -
+tracking
+Triple modular Configuration  of modules  in triple redundancy  so that three or more
+Redundancy processors  perform the same operation  for the same inputs
+Hardware  tolerant |_RAID Fault tolerance  through  disk mirroring  and distributed  storage  of parity bits
+technique Duplication  with Comparison Hardware  redundancy  for fault detection
+Stand by Sparing Use of spare hardware  for fault detection
+Watchdog  Timer Initialization  with periodic  timer operation
+Checkpointer Rerun from the point of the checkpoint,  when there is a fault
+Software  tolerant Recover  block Rollback  and retry of a single processor
+technique Conversation Processing  between  multiple processors
+Distributed  rollback Rollback  technique  in a distributed  environment
+03 Disaster  Recovery  System  (DRS)
+A) Definition  of DRS
+DRS is an overall plan and system to minimize  the impact of a disaster  on a business,  by locating all or part of the
+information  system  infrastructure  in a location  different  from the disaster  point,then  quickly  recovering  from a disaster
+126 TOPCIT  ESSENCE

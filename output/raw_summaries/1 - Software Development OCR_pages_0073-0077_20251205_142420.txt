@@ -1,0 +1,212 @@
+LEARNING GUIDE: Pages 73-77
+Generated: 2025-12-05 14:24:20
+PDF: 1 - Software Development OCR
+
+================================================================================
+LEARNING GUIDE
+================================================================================
+
+Here is a simplified, easy-to-read learning guide based on the provided text:
+
+---
+
+## **Software Design Fundamentals: An Essential Study Guide**
+
+This guide covers key object-oriented programming concepts (Inheritance, Polymorphism), system modeling (Static, Dynamic), and foundational Design Patterns.
+
+---
+
+### **1. Core Object-Oriented Concepts**
+
+#### **C) Inheritance**
+
+*   **Concept**: A mechanism where a new class (subclass) can inherit properties and operations from an existing class (superclass). This allows code reuse and promotes a hierarchical relationship between classes.
+*   **Generalization**: The process of identifying common properties and operations among several classes and defining a new, more general class (the superclass) from them.
+    *   **Example**: "Student" and "Professor" (subclasses) share common properties (name, address, etc.). These can be generalized into a "People" class (superclass).
+*   **Superclass**: The parent class that provides common attributes and behaviors.
+*   **Subclass**: The child class that inherits from the superclass and adds its unique attributes and behaviors.
+*   **Benefit**: Simplifies class definitions and allows creating new classes based on existing, proven ones.
+
+#### **D) Polymorphism**
+
+*   **Concept**: "Many forms." It means operations with the same name can behave differently depending on the object's class. A single function name or operator can be used for multiple purposes.
+*   **Application**: Primarily used in inheritance relationships, allowing subclasses to provide their unique implementations for an operation defined in the superclass.
+*   **Mechanism**: The superclass can call methods that are actually implemented in its subclasses.
+*   **Types of Polymorphism**:
+    *   **Overriding**: A subclass redefines a method that is already defined in its superclass to provide a specific implementation.
+    *   **Overloading**: Defining multiple methods with the same name but with different types or numbers of parameters within the same class.
+*   **Run-time Binding**: The process where the correct method to execute is determined *at the time the program runs*, based on the actual type of the object (subclass).
+    *   The sender (caller) of the message only needs to know the superclass operation, not the specific subclass type.
+*   **Importance**: Crucial for understanding and implementing design patterns.
+
+---
+
+### **2. System Modeling**
+
+#### **03 Static Modeling and Dynamic Modeling**
+
+##### **A) Static Modeling**
+
+*   **Purpose**: Describes the static (unchanging over time) structure of a system. It focuses on objects, their properties, and relationships *without* considering temporal aspects.
+*   **Relationship to Information Modeling**: Similar concept, focusing on data structure (like a database schema).
+*   **Process**:
+    1.  Identify basic objects required by the system.
+    2.  Define their properties.
+    3.  Establish relationships between objects.
+*   **UML Tool**: **Class Diagram** is the primary tool for static modeling.
+    *   Shows classes, their properties, operations, and relationships between them.
+*   **Inputs**: Problem description documents or use case scenarios help identify classes and their characteristics.
+
+##### **B) Dynamic Modeling**
+
+*   **Purpose**: Describes the behavior and interactions of objects within a system over time. It focuses on how objects change state, perform operations, and communicate with each other.
+*   **Process**:
+    1.  Identifies class operations based on interactions between objects.
+    2.  Operations are defined to respond to messages from other objects.
+*   **UML Tools (Interaction Diagrams)**:
+    *   **Sequence Diagram**: Illustrates the chronological order of messages exchanged between objects to achieve a specific functionality. Emphasizes time-ordered interactions.
+    *   **Collaboration Diagram**: (Also called Communication Diagram) Shows the structural organization of objects and their message exchanges, focusing on the relationships between objects rather than strict time sequencing.
+    *   **Activity Diagram**: Used to model the workflow or step-by-step activities within a system or a complex operation of a class. Helps understand event handling procedures and dependencies.
+
+##### **UML Diagram Overview (Table 19 Simplified)**
+
+| Model Type        | Diagram           | Contents (What it shows)                                       |
+| :---------------- | :---------------- | :------------------------------------------------------------- |
+| **Functional**    | Use Case Diagram  | System functions from an actor's perspective; relationships between use cases. |
+| **Static**        | Class Diagram     | Structural relationships between classes and interfaces.       |
+|                   | Object Diagram    | State of objects at a specific point in time.                  |
+|                   | Component Diagram | Relationships between software components.                     |
+|                   | Deployment Diagram| Physical deployment of system (hardware, software, network).   |
+| **Dynamic**       | Sequence Diagram  | Time-ordered messages exchanged between objects.               |
+|                   | Collaboration Diagram | Interactions and relationships between objects.                |
+|                   | Activity Diagram  | Flow of activities or processes within the system.             |
+|                   | Statechart Diagram| State transitions and behavior of a single object.             |
+| **Other**         | Package Diagram   | Organization and dependencies of model elements into packages. |
+
+---
+
+### **3. Design Patterns**
+
+#### **04 Design Pattern**
+
+##### **A) Concept of the Design Pattern**
+
+*   **Definition**: A general, reusable solution to a commonly occurring problem within a specific context of software design. They are formalized "best practices" that describe how classes and objects interact.
+*   **Classification by Purpose**:
+    *   **Creation Patterns**: Deal with object creation mechanisms, making them more flexible and controlled.
+    *   **Structural Patterns**: Focus on composing classes and objects into larger structures, improving flexibility and efficiency.
+    *   **Behavioral Patterns**: Characterize the ways objects and classes interact and distribute responsibilities.
+*   **Classification by Scope**:
+    *   **Class Patterns**: Address relationships between classes and their subclasses, primarily using inheritance. Determined statically at compile time.
+    *   **Object Patterns**: Address relationships between objects, allowing for dynamic changes at runtime.
+
+##### **B) Representative Design Patterns (Simplified)**
+
+Design patterns improve code reuse and manage complexity.
+
+| Category             | Problem Type (Purpose)                                   | Representative Patterns                          |
+| :------------------- | :------------------------------------------------------- | :----------------------------------------------- |
+| **Object Creation**  | Creating objects flexibly, managing instances.           | Abstract Factory, Builder, Factory Method, Prototype, Singleton |
+| **Structural Improvement** | Composing objects/classes into larger structures.        | Adapter, Bridge, Composite, Decorator, Facade, Flyweight, Proxy |
+| **Behavioral Improvement** | Defining how objects interact and responsibilities are assigned. | Chain of Responsibility, Command, Interpreter, Iterator, Mediator, Memento, Observer, State, Strategy, Template Method, Visitor |
+
+##### **Key Object Creation Patterns in Detail**
+
+*   **Abstract Factory Pattern**
+    *   **Definition**: Provides an interface for creating *families* of related or dependent objects without specifying their concrete classes.
+    *   **Advantages**:
+        *   Creates specific objects without the client knowing their exact types.
+        *   New product families can be added independently.
+    *   **Disadvantages**: Adding a *new product* (not a new family) requires modifying all factory classes.
+    *   **Use Example**: Compilers that need different configurations for various systems or operating systems.
+
+*   **Builder Pattern**
+    *   **Definition**: Separates the construction of a complex object from its representation, allowing the same construction process to create different representations. Useful when an object has many optional parts or construction steps.
+    *   **Advantages**: The same construction process can create various object representations.
+    *   **Disadvantages**: Can be tricky to modify individual components within the complex object.
+    *   **Use Example**: A translator system outputting Korean into various languages, each requiring a different structure for the translated output.
+
+*   **Factory Method Pattern**
+    *   **Definition**: Defines an interface for creating an object, but lets subclasses decide which class to instantiate. The 'factory method' in the superclass is overridden by subclasses. It uses a "proxy function" (the factory method) instead of a direct constructor call.
+    *   **Advantages**:
+        *   Allows consistent programming regardless of the specific object being created.
+        *   Flexible and scalable.
+    *   **Disadvantages**: A new subclass must be defined for each new type of object to be created.
+    *   **Use Example**: An OS opening a program when double-clicked; the OS acts as a factory, deciding which program type to instantiate.
+
+*   **Prototype Pattern**
+    *   **Definition**: Creates new objects by copying (cloning) an existing object, instead of creating new instances from scratch.
+    *   **Advantages**:
+        *   No need to create a separate class for each new object type.
+        *   Objects can be added or deleted at runtime.
+    *   **Disadvantages**: All classes intended for cloning must implement a `Clone()` member function.
+    *   **Use Example**: Graphic editors (like MS Visio) where users can duplicate existing shapes.
+
+*   **Singleton Pattern**
+    *   **Definition**: Ensures a class has *only one instance* throughout the application and provides a global point of access to that instance. (The text mentions "less than N", but standard Singleton ensures exactly one instance).
+    *   **Advantages**: Easy to manage (and guarantee) the unique instance of the class.
+    *   **Use Example**: A device manager or a configuration manager, where only one instance should coordinate actions globally.
+
+---
+
+================================================================================
+ORIGINAL TEXT (First 5000 chars)
+================================================================================
+
+--- Page 73 ---
+ESSENCE
+C) Inheritance
+Each class has its own properties  and operations,  as well as properties  and operations  common  to several
+other classes too. When there are similarities  between  classes, these similarities  can be collected to  define
+a new class, which is called generalization.  For example,  the classes “professor”  and “student”  have common
+properties  (e.g. resident  registration  number,  name, address,  phone number).  At this time, a generalized  class,
+“people”,  can be defined  by combining  professors  and students.  In this case, “student”  and “professor”  are called
+a subclass  of “people”,  and “people”  is the superclass  of student  and professor.
+In this case, the superclass  “people”  has the common  properties  and operations  of the subclasses  “student”
+and “professor’,  and the subclasses  “student”  and “professor’  have properties  and operations  that are not
+shared between  subclasses.  Generalization  shows important  characteristics  wherein the superclass  displays
+the common  properties  and operations of certain  subclasses,  and superclass  information  is inherited  by
+subclasses.  Inheritance  through  generalization  enables  us to simplify  the definition of a class and create a new
+class by using the pre-defined  class.
+D) Polymorphism
+One of the characteristics  of object-oriented  programming  is polymorphism.  Polymorphism  means that
+operations  with the same name are performed  differently  depending  on the class, and means  that one function
+name and one operator  can be used for multiple  purposes.  Polymorphism  in object-oriented  programming  is
+mainly used in inheritance  relations  and provides  a degree  of flexibility  that allows subclasses  to respond  to one
+operation  defined in the superclass  using their own unique method.  Polymorphism  is based on a concept  that
+allows the superclass  to call the method  (a series of task sequences  to be executed  according  to the message)
+of the subclass.  It is also classified  into “overriding”,  which redefines  the method defined by the superclass
+in the subclass,  and “overloading”,  which defines multiple methods  using different  types of parameter  and
+different  numbers  of parameters.
+The sender  of the message  simply calls the operation  of the superclass  only and does not have to know the
+type of object (subclass),  and the proper operation  of the subclass  is automatically  determined  according  to
+the type at runtime. Determining  the operation  using the object of the subclass  at runtime  is called “run-time
+binding”. Polymorphism  and run-time  binding  are essential  concepts  for understanding  design patterns.
+03 Static Modeling  and Dynamic  Modeling
+A) Static modeling
+Static modeling  is based on the same concept  as the information  modeling  described  above. It is designed  to
+reveal the static information  of an object  without  the intervention  of the concept  of time. Information  modeling
+describes  the data by finding out the structure of  the database  used in the system. The information  model
+finds the basic objects  required  by the system,  and is composed  of relationships  that indicate  the properties  of
+the objects  and the relationships  between  those objects.
+The class diagram  of UML is an information  model that shows the static information  structure  of a system.  It is
+used to represent  the classes  required  for the system  and the relationships  between  them. Each class consists
+72 TOPCIT  ESSENCE
+
+
+--- Page 74 ---
+Software  Development )
+of various properties  and operations  that represent  the properties  of the object concerned.  The documents
+created in the preceding  phase can be used to find a class, its properties,  and the relationships  between
+classes.  Problem  description  documents  or use case scenarios  can be used to identify  a class.
+B) Dynamic  modeling
+The classes constituting  a system  can be found and the properties  and relationships  of the classes can be
+identified  using the static modeling  described  above. Now let’s learn how to perform  dynamic  modeling  based
+on the results of static analysis.  While static modeling  literally focuses  on the static structure  of a system,
+dynamic  modeling  is a process  of finding  the operations  of classes  by paying  attention  to changes  in the state
+or behavior  of the objects  that constitute  a system,  or the interactions  between  objects.
+Dynamic  modeling  identifies  class operations  based on interactions  between  objects.  Class operations  are
+defined to perform the functions  requested  by the messages  of other objects. In general,  a UML sequence
+diagram  is used to represent  the interactions  between  objects.  The sequence  diagram  emphasizes  the transfer
+process of the messages  exchanged  between  objects over time, while the collaboration  diagram  expresses
+the cooperative  relations  and exchanges  of message  between  objects. ...

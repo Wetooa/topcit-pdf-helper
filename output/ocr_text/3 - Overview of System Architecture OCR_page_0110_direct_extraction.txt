@@ -1,0 +1,25 @@
+Overview  of System  Architecture
+>p> Recent  trends  and issues
+With the advent  of the information  age, the social demand  to construct  information  system infrastructure
+is increasing,  and various information  systems  are being implemented  for business  efficiency  and customer
+service improvement.  These information  systems  generally  consist  of hardware,  software,  and human
+resources.  It is necessary  to understand  the concept,  architecture,  and structure  of the information  to
+implement  a successful  information  system.
+Recent information  systems  tend to adopt a large number  of web-based  structures.  In that regard,
+theinformation  system projects  of the planners  (public institutions)  and implementers  (systems  integrators
+and hardware  manufacturers)  need to procure hardware  resources  that suit the project scope in order to
+improve  the efficiency  of investment  in information  systems.
+Information  system infrastructure  is generally  implemented  by purchasing  servers, storage,  and network
+devices  separately  from each vendor, then integrating  them for the project. Moreover,  they also purchase
+software  separately,  and thus need to test and verify if it works properly  with the hardware.
+The complex  structures  and procedures  of constructing  information  system infrastructure  have inevitably
+resulted in inefficiency  in construction  time and system management.  The converged  infrastructure
+that integrates  the hardware,such  as storage,  servers, and networks,  with the virtualization  solution  and
+the management  software  into a product,  and validates  it in advance  for supply to customers, has been
+introduced  to compensate  for it. Moreover,  the hyper-converged  infrastructure  that complements  the high
+investment  cost has also appeared.  These efforts to increase  the efficiency  of system  implementation  are
+ongoing,
+1, To be able to explain information  system  structures,
+2. To be able to calculate  information  system capacity.
+3, To be able to explain the latest OS technologies  and trends,
+M3 Overview  of System  Architecture  109

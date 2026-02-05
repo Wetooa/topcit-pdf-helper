@@ -1,0 +1,251 @@
+LEARNING GUIDE: Pages 97-101
+Generated: 2025-12-05 14:26:45
+PDF: 1 - Software Development OCR
+
+================================================================================
+LEARNING GUIDE
+================================================================================
+
+Here is a simplified, easy-to-read learning guide based on the provided text:
+
+---
+
+## Learning Guide: Software Development Fundamentals
+
+This guide covers core concepts in software development, focusing on the Spring Framework, e-Government Framework, development environments, and key development practices.
+
+---
+
+### 1. The Spring Framework
+
+The Spring Framework is a popular Java framework designed to simplify enterprise application development.
+
+**Key Components of Spring:**
+
+*   **Spring Core:** The foundation. Provides the **IoC (Inversion of Control) container** (via `BeanFactory`) to manage object dependencies and separate configuration from functionality.
+*   **Spring Context:** Provides ways to access objects (called "beans") managed by Spring.
+*   **Spring DAO (Data Access Object):** Offers an abstraction layer for JDBC, improves transaction management, and integrates with ORM (Object-Relational Mapping) frameworks.
+*   **Spring ORM:** Supports integration with various ORM tools like JDO, Hibernate, and iBatis, helping map objects to relational databases.
+*   **Spring AOP (Aspect-Oriented Programming):** Helps separate "cross-cutting concerns" (like logging, security, transactions) from core business logic, improving maintainability.
+*   **Spring Web:** Provides basic functions for general web applications and integrates with other web frameworks (e.g., WebWork, Struts).
+*   **Spring WebMVC:** A Spring-specific implementation of common web application functions, similar to Struts.
+
+---
+
+### 2. Standard e-Government Framework
+
+This framework is specifically designed for public projects in Korea to standardize Java-based system development.
+
+**2.1. Concept & Purpose:**
+
+*   **What it is:** A standardized framework providing basic functions, environments (execution, development, management, operation), and common modules for Java-based e-Government systems.
+*   **Goal:** To standardize application software for public projects, improving quality and reusability.
+*   **Benefits:**
+    *   Improves e-Government service quality.
+    *   Increases efficiency of investment in IT.
+    *   Ensures fair competition among businesses by using a common development base.
+
+**2.2. Key Characteristics:**
+
+*   **Compliance with Open Standards:** Uses open-source technology to avoid dependence on specific vendors.
+*   **Linkage with Commercial Solutions:** Provides standards for interoperability with various commercial software.
+*   **National Standardization:** Development standards are set at a national level through public-private advisory committees.
+*   **Easy Change/Replacement:** Components are modularized and linked via interfaces, minimizing the impact of changes.
+
+**2.3. Framework Composition:**
+
+The framework provides an application architecture, basic functions, and common components across several environments:
+
+*   **Execution Environment:** Supports standardized development of screens, server logic, data processing, and batch functions for e-Government programs.
+*   **Development Environment:** Provides tools for developing business programs (e.g., data development tools, test automation, code testing, project templates).
+*   **Operating Environment:** Manages and operates services running in the execution environment (e.g., monitoring, deployment, batch execution, scheduling).
+*   **Management Environment:** Facilitates distribution and management of the framework and common services to individual development projects.
+*   **Common Components:** A collection of reusable development components for e-Government projects.
+
+---
+
+### 3. Integrated Development Environment (IDE)
+
+An IDE is a single software application that provides comprehensive facilities to computer programmers for software development.
+
+**3.1. Concept:**
+
+*   **Purpose:** Combines various development tasks (coding, debugging, compilation, distribution) into one interactive interface.
+*   **Advantage:** Replaces separate tools (text editor, compiler, debugger) with an all-in-one solution.
+*   **Examples:** Visual Studio, Eclipse, Xcode.
+
+**3.2. Core Components of an IDE:**
+
+*   **Editor:** For writing and editing code.
+*   **Build Tool:** Converts source code into machine-readable code (includes compilers, interpreters, linkers).
+*   **Debugger:** Helps find and fix errors during program execution.
+*   **Project Management:** Tools for organizing projects and supporting team collaboration.
+
+---
+
+### 4. Continuous Integration (CI)
+
+CI is a core practice in modern software development focused on frequent code integration.
+
+**4.1. Concept:**
+
+*   **Process:** Developers frequently merge their code changes into a central repository.
+*   **Automation:** Each merge triggers an automated build and test process.
+*   **Frequency:** Codes are merged multiple times a day (at least once daily) after quick error checks.
+*   **Goal:** To maintain continuous quality control, minimize integration issues, and accelerate software improvement and delivery.
+
+**4.2. Necessity of CI:**
+
+*   Manages build configurations effectively.
+*   Allows developers to focus solely on coding tasks.
+*   Detects and resolves code integration problems early.
+*   Supports agile methodologies by enabling frequent feedback and deployment.
+
+**4.3. CI Server Requirements:**
+
+To implement CI, a CI server needs:
+*   At least one accessible source code repository.
+*   A set of build scripts and procedures.
+*   A test suite for the generated software artifacts.
+
+---
+
+### 5. Software Development Lifecycle Activities
+
+These are practical steps in creating and managing software.
+
+**5.1. Software Build:**
+
+*   **Definition:** The process of converting source code files into independent, executable software artifacts.
+*   **Purpose (Quality Assurance):**
+    *   Reduces integration risks.
+    *   Prevents quality deterioration.
+    *   Helps monitor initial fault analysis.
+    *   Boosts developer morale.
+
+**5.2. Daily Build and Operation Test:**
+
+*   **Process:** Compiling the entire software product daily and running a series of tests to confirm basic functionality.
+*   **Benefits:**
+    *   Increases project efficiency and customer satisfaction.
+    *   Reduces risks like integration failures, poor quality, and low project visibility.
+    *   Saves time.
+*   **Applicability:** Useful for all project sizes and types (large, small, commercial, business systems).
+
+**5.3. Software Deployment:**
+
+*   **Definition:** The set of activities involved in preparing a software system for use. The specific procedures vary based on the software and user requirements.
+*   **Key Activities:**
+    *   Release (making available)
+    *   Installation & Activation (setting up and starting)
+    *   Deactivation & Uninstallation (stopping and removing)
+    *   Update & Built-in Update (applying changes)
+    *   Version Tracking (monitoring changes)
+    *   Retirement (ending service)
+
+---
+
+### 6. Current Trends & Future Topics
+
+**6.1. Emphasis on Software Testing:**
+
+*   There's a growing investment in time, money, and effort for software testing.
+*   IT companies increasingly form dedicated QA (Quality Assurance) teams or departments.
+
+**6.2. Upcoming Learning Objectives:**
+
+*   Understanding testing concepts and test case design methods.
+*   Describing different test levels (types) and their purposes.
+*   Explaining software refactoring and its main activities.
+
+**6.3. Key Terms to Know:**
+
+*   Testing process, testing type
+*   Specification-based technique, structure-based technique, experience-based technique
+*   White box testing, black box testing
+*   Software code smell, refactoring
+
+---
+
+================================================================================
+ORIGINAL TEXT (First 5000 chars)
+================================================================================
+
+--- Page 97 ---
+ESSENCE
+<Table 24> Components  of the Spring Framework
+Component Description
+' This is the core part of Spring. It provides  BeanFactory,  which implements  the loC container  toSpring  Coreseparate  function  and configuration
+. The basic function  of Spring, like Spring  Core, which provides  the method  of access  to functionalSpring  Context i i
+objects  (bean) implemented  based on Spring.
+‘ An abstraction  layer for JDBC that is integrated  with the ORM framework  and improves  transactionSpring  DAO
+management.
+Spring ORM A package  for integration  such as JDO for object/relation  mapping,  JDO, Hibernate,  and iBatis.
+Pring Spring ORM supports  object-relational  models.
+; Maintainability  and ease of change  are supported  by separating  cross-cutting  concerns  such asSpring  AOP .
+logging,  security,  transaction, etc.
+Spring Web A package  that provides  the basic functions  needed  to develop  general  applications  and is used for
+pring integration  with WebWork  or Struts.
+Spring  WebMVC A package  that implements  general  WAP functions  like Struts as a Spring  version.
+C) Standard  e-Government  framework
+@ Introduction  to the standard  e-Government  framework
+Designed  for public projects,  the standard  e-government  framework  standardizes  and implements  the
+basic functions  necessary  for developing  and operating  a Java-based  system.  The framework  provides  the
+implemented  environment  (execution,  development,  management,  and operation)  and common  modules  that
+are the basis for developing  various types of software  required by the private sector and the government.
+Developers can  develop a system by reusing the common  modules  in the base environment  provided  by the
+standard  framework  and by developing  unique functions  exclusively  for each service.
+@ Purpose  and characteristics  of the standard  e-government  framework
+The framework  aims to standardize  application  software  and improve  quality and reusability  by establishing  a
+development  framework  that can be applied to public projects.
++ Improves  e-Government  service quality.
++ Improves  the efficiency  of investment  in informatization.
++ Enables  fair competition  by conglomerates  and small and medium-sized  businesses  using the same development
+base.
+<Table 25> Characteristics  of the standard  e-Government  framework
+Characteristics Description
+Compliance  with open standards Eliminates  dependence  on a specific  service  provider  by using open source-based
+technology.
+Linkage  with commercial Ensures  interoperability  by presenting  a standard  that can be linked with various
+solutions solutions.
+Software  development  standards  are established  at the national  level by operating  an
+advisory  committee  composed  of members  from the private  and public sectors  and
+academic  circles.
+ar Easy to replace  by modularizing  the components  and minimizing  the impact  of changes
+changeliexDliny between modules through interface-based  linking.Aiming  for national
+standardization
+96 TOPCIT  ESSENCE
+
+
+--- Page 98 ---
+Software  Development )
+© Composition  of the standard  e-Government  framework
+Daten Execution Management clay
+environment environment environment envi
+Implementation  tool BOSSI DEoeSls Service request
+Business  processing ane De Monitoring  tool
+Deployment  tool Data processingre Change
+Linking and integration management
+Test tool OperationCommon  foundation management  tool
+=a Mobile screen processing Status
+Configuration management
+management  tool Batch processing
+, ne  || | ce . Batch operation
+| Mobile device API Mobile device API Standard P tool
+1 development  tool development  tool Managemen
+beeeeeee-----|  @hybridapp  |------------  :
+[Figure  21] Components  of the standard  e-Government  framework
+The framework  is composed  of the execution  environment,  development  environment,  operating  environment,
+management  environment,  and common  components,  thus providing  the application  architecture,  basic
+functions,  and common  components  that are necessary  for developing  a web-based  information  system.
+<Table 26> Components  of the standard  e-Government  framework
+Component Description
+P An application  program  environment  that supports  the easy standardization  of screen, server
+erect data, and batch function devel eed  when developi Ee  aameneenry program, data, and batch processing  function development  needed when developing  an
+e-Government  business  program.
+An environment  needed  to develop  a business  program  comprising  such tools as the data
+Development development  tool, test automation  tool, code test tool, template  project creation  tool, common
+environment component  assembly  tool, server environment  management  tool, batch template  project  creation
+tool, batch job file creation  tool, etc.
+An environment  for managing  and operating  the service  running  in the execution  environment
+Operating (monitoring,  ...

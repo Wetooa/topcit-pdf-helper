@@ -1,0 +1,41 @@
+ESSENCE
+04 Data Manipulation  Language  (DML)
+A data manipulation  language  is used to input, modify, delete, and search data in a database.  This section  introduces
+the data manipulation  language  by subdividing  it into basic operations,  aggregate  operations,  and advanced  join
+operations.
+A) Basic DML operations
+DML basic operations  consist  of statements  such as INSERT, UPDATE,  DELETE,  SELECT,  FROM, and WHERE,  and are
+used for input, modification,  deletion,  and search operations.  Among  them, FROM and WHERE  are used together  with
+the INSERT, UPDATE,  DELETE,  and SELECT  statements.  FROM is used to designate  the target table and WHERE  is
+used to set the conditions.
+<Table  43> Basic DML operations
+Statement Description  and examples  of usage
+Used to search  data values stored in a table.
+SELECT SELECT  column  name 1, column  name 2
+FROM table name
+WHERE  conditional  clause:
+Used to input values in all or some columns  of a table
+(Entering  all columns)
+INSERT  INTO table name VALUES  (input value 1, input value 2, input value 3);
+(Entering  some columns)
+INSERT INSERT  INTO table name (column  name 1, column name 3) VALUES  (input value 1, input value 3);
+(Entering  from an existing  table)
+INSERT  INTO table name
+SELECT  column  name 1, column  name 2
+FROM table name
+WHERE  conditional  clause:
+Used to change  the data stored in a table.
+UPDATE  is performed  for all rows if a conditional  clause is not specified.UPDATE - :UPDATE  table name SET column  name 1 = input value 1, column  name 2 = input value 2
+WHERE  conditional  clause:
+Used to delete  the data stored in a table.
+DELETE DELETE  is performed  for all rows if a conditional  clause is not specified.
+DELETE  FROM table name
+WHERE  conditional  clause:
+B) Aggregate  DML operations
+Aggregate  operations  can be performed  by using the AVE, SUM, and COUNT  statements  of the DML. The GROUP
+BY clause is specified  after the FROM clause and the WHERE clause in the SQL statement.  This clause is used to
+group data and to obtain statistical  information  on each group item. Aggregate  operations  are generally  used with
+the GROUP BY clause. However,  if an entire table is a group, an aggregate  operation  can be performed  without  the
+GROUP  BY clause. On the other hand, the HAVING  clause can be used to set the condition  for the GROUP  BY clause.
+In addition,  the DISTINCT  option can be used to consider  the same value as the same data.
+108 TOPCIT  ESSENCE

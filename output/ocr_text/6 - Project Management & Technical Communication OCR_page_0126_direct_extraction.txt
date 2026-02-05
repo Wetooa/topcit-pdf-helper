@@ -1,0 +1,31 @@
+Project Management  and Technical  Communication  )
+@ Iso 25000
+1SO25000  is an integrated  software quality evaluation  model established  by International  Organization  for
+Standardization.  Each division consists  of the integration  of existing  quality standards  such as 1SO14598  and
+9126 and the development  of new standards  referring  to ISO/IEC  15288.
+Quality  Model Division Measurement  Division
+ISO/IEC  2500n :
+Quality Management
+Division
+ISO/IEC  2503n :
+Quality  RequirementsISO/IEC  2504n :
+Quality  Evaluation
+[Figure  43] ISO 25000
+@ CMM\(Capability  Maturity  Model Integration)
+CMMI is designed  to provide guidance  to improve  the processes  and capabilities  of an organization  that
+develops,  acquires,  and maintains  software  products  or services.  It is a standard  to measure  the maturity  of a
+software  development  organization  developed  by Software  Engineering  Research  Institute  of Carnegie Mellon
+University.
+<Table 60> CMMI Maturity  Levels
+Classification Content
+nerclld [Initial]  Organization  where it is difficult  to predict performance  results because  there is no
+standardized  process
+Level 2 [Managed]  Organization  in which the project  is managed  by building  a basic process
+Level 3 [Defined]  Organization  in which the project  is controlled  with detailed  standard  processes
+ren [Quantitatively  Managed]  Organization  capable  of predicting  performance  by quantitatively
+managing  and controlling  project  performance  activities
+[Optimizing]  Organization  in which continuous  improvement  activities  are established  and projectsee are carried out with optimal management
+The following  is a table  comparing  software  process audit and certification  systems:  Software  Process  (SP)
+certification  of Korea, international  standard  (ISO/IEC  15504) SPICE (Software  Process Improvement  and
+Capability  Determination),  and CMMI of the US.
+M6 Project  Management  and Technical  Communication  125

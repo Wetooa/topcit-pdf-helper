@@ -1,0 +1,209 @@
+LEARNING GUIDE: Pages 94-98
+Generated: 2025-12-05 14:26:27
+PDF: 1 - Software Development OCR
+
+================================================================================
+LEARNING GUIDE
+================================================================================
+
+Here is a simplified, easy-to-read learning guide based on the provided text:
+
+---
+
+## Software Development & Frameworks: A Learning Guide
+
+This guide covers key programming language concepts and software development frameworks.
+
+---
+
+### I. Programming Language Concepts
+
+#### A. C++ Aspects (Common in Object-Oriented Programming)
+
+*   **Inheritance:**
+    *   **Concept:** Creating a new class by reusing common characteristics from existing classes and extending them.
+    *   **Benefit:** Increases code reusability and software productivity.
+*   **Polymorphism:**
+    *   **Concept:** "Many forms, one name." An object can take on multiple forms or behaviors depending on the context.
+    *   **Example:** A person can be an "office worker" at work and an "instructor" at an academy.
+
+#### B. Java Language
+
+*   **Introduction:**
+    *   **Origin:** Developed by James Gosling at Sun Microsystems starting 1991.
+    *   **Initial Goal:** Simple, bug-free language for home appliances (derived from C++).
+    *   **Popularity:** Gained traction with "applets" for the Internet due to its small, simple, and efficient nature.
+    *   **Current Use:** Most popular for apps, mobile devices (Android), and various enterprise systems.
+*   **Characteristics:**
+    *   **Syntax:** Similar to C/C++.
+    *   **Complexity:** Simplified compared to C++.
+    *   **Memory Management:** Automatic garbage collection.
+    *   **Paradigm:** Purely object-oriented.
+    *   **Portability:** Platform-independent (runs on the **Java Virtual Machine - JVM**).
+
+#### C. Python Language
+
+*   **Introduction:**
+    *   **Origin:** Interpreter language developed by Guido Van Rossum in 1990.
+    *   **Design:** Object-oriented and conversational.
+    *   **Readability:** High due to English-like keywords.
+    *   **Current Use:** Web programming (e.g., Django framework), big data analysis, artificial intelligence (AI).
+*   **Characteristics:**
+    *   **Typing:** Dynamic typing (data type checked during runtime).
+    *   **Ease of Use:** Simple grammar, similar to English sentences.
+    *   **Concurrency:** Advantageous for asynchronous coding using a single event loop.
+    *   **Paradigm:** Multi-paradigm (supports procedural, functional, and object-oriented programming).
+
+#### D. JavaScript Language
+
+*   **Introduction:**
+    *   **Type:** Object-based script programming language.
+    *   **Primary Use:** Web browsers (client-side scripting).
+    *   **Other Uses:** Server-side network programming (e.g., Node.js runtime environment).
+*   **Characteristics:**
+    *   **Simplicity:** Easy to program, but can have security vulnerabilities.
+    *   **Scalability:** Highly scalable due to active developer sharing (open source).
+    *   **Learning Curve:** Easy to learn as no separate compilation process is required.
+    *   **Ecosystem:** Growing number of related libraries and frameworks (e.g., AngularJS, D3.js, Node.js, React.js).
+
+---
+
+### II. Software Development Frameworks
+
+#### A. Concept of a Software Development Framework
+
+*   **Definition:** A collection of code libraries, interface protocols, and configuration information.
+*   **Purpose:**
+    *   Develop information systems efficiently.
+    *   Provide a basic structure for software composition.
+    *   Applies **Inversion of Control (IoC)**: The framework controls the flow, and developers extend its functions (e.g., business logic).
+    *   Provides structured tools and libraries, avoiding development "from scratch."
+    *   Solves integration and consistency issues between software components.
+    *   Reduces coding effort and increases developer productivity.
+    *   Standardizes development, guarantees quality, and reduces risks by using proven technology.
+*   **Advantages:**
+    *   **Improves Code Quality:** Minimizes bugs by handling common coding errors in advance.
+    *   **Increases Development Productivity:** Provides pre-built functions (components, communication, data handling).
+    *   **Easy Analysis & Modification:** Structured environment adapts easily to changes.
+    *   **Reduces Risks:** Reuses proven technology and standardized structures, making new systems less risky.
+
+#### B. Spring Framework (for Java)
+
+*   **Introduction:**
+    *   **Type:** Open-source application framework for the Java platform.
+    *   **Purpose:** Provides a comprehensive basic structure and services for Java-based enterprise applications and dynamic web development.
+    *   **Importance:** Used as a core basis for the standard e-Government development framework due to its stability and flexibility.
+*   **Characteristics:**
+    *   **Object Management:** Uses a lightweight container called **POJO (Plain Old Java Object)** to manage the lifecycle of Java objects.
+    *   **Dependency Management:** Guarantees **loose coupling** between objects using **DI (Dependency Injection)**, which defines dependencies via configuration or annotations.
+    *   **Cross-Cutting Concerns:** Uses **AOP (Aspect-Oriented Programming)** to combine common functions (like logging, security, transactions) that are separate from core business logic.
+    *   **Database Integration:** Provides libraries for database access (JDBC, MyBatis, Hibernate, JPA).
+    *   **API Support:** Supports interfaces with enterprise APIs (JMS, mail, scheduling).
+*   **Key Components:**
+    *   **Spring Core:** The core part; implements the IoC container (BeanFactory) for separating function and configuration.
+    *   **Spring Context:** Provides access methods to functional objects (beans) based on Spring.
+    *   **Spring DAO:** An abstraction layer for JDBC, integrates with ORM frameworks, and improves transaction management.
+    *   **Spring ORM:** Package for integrating with object/relation mapping frameworks (JDO, Hibernate, iBatis).
+    *   **Spring AOP:** Supports separating cross-cutting concerns (logging, security, transaction) for better maintainability.
+    *   **Spring Web:** Provides basic functions for general web applications and integration with other web frameworks.
+    *   **Spring WebMVC:** Implements general Web Application (WAP) functions as a Spring version.
+
+#### C. Standard e-Government Framework
+
+*   **Introduction:**
+    *   **Purpose:** Designed for public projects; standardizes and implements basic functions for developing and operating Java-based government systems.
+    *   **Components:** Provides pre-implemented environments (execution, development, management, operation) and common modules.
+    *   **Benefit:** Developers reuse common modules from the base environment and develop unique functions for specific services.
+*   **Purpose & Characteristics:**
+    *   **Main Goal:** Standardize application software and improve quality/reusability for public projects.
+    *   **Benefits:**
+        *   Enhances e-Government service quality.
+        *   Increases efficiency of investment in informatization.
+        *   Promotes fair competition by providing a common development base.
+    *   **Key Characteristics:**
+        *   **Open Standards Compliance:** Uses open-source technology, reducing dependence on specific vendors.
+        *   **Commercial Solutions Linkage:** Ensures interoperability by providing standards for linking with various solutions.
+        *   **National Standardization:** Establishes national software development standards through an advisory committee.
+        *   **Change Flexibility:** Achieved by modularizing components and minimizing impact of changes through interface-based linking.
+*   **Composition:**
+    *   Provides application architecture, basic functions, and common components for web-based information systems.
+    *   **Execution Environment:** Supports easy standardization of screen, server, data, and batch functions for e-Government business programs.
+    *   **Development Environment:** Tools for program development, testing, code analysis, template creation, and server management.
+    *   **Operating Environment:** Manages and monitors services running in the execution environment, including batch processing.
+    *   **Management Environment:** Used to distribute and manage the development framework and common services to development projects.
+    *   **Common Components:** A set of reusable development components shared across e-Government projects.
+
+---
+
+================================================================================
+ORIGINAL TEXT (First 5000 chars)
+================================================================================
+
+--- Page 94 ---
+Software  Development )
++ Inheritance  and reusability  aspects:  C++ has reusability  using inheritance.  “Inheritance”  refers to the process
+of creating a new class by re-creating  the common  characteristics  of several classes as a single class and
+extending  it. Program  reusability  can be increased,  and software  productivity  can be enhanced  by using
+inheritance.
++ Polymorphic  aspect: Polymorphism  means that several forms have one name. For example,  a person  named
+“Hong Gildong”  is an office worker  who works hard at work but is also an instructor  who gives lectures  at an
+evening  academy.
+C) Java language
+@ Introduction  to the Java language
+James Gosling began developing  Java at Sun Microsystems  from 1991 as a simple, bug-free  programming
+language  to control home appliances.  Development  started with the C++ language  in the initial stages. Even
+though it improved  several problems  of C++, home appliance  companies  did not pay much attention  to it.
+However,  the powerful  output  form called “applet”  gained popularity  as Java was applied to the Interest  by Hot
+Java owing to the rapid spread of Internet  penetration.  The advantages  of the Java language  were recognized
+because  its small and simple structure  enabled  efficient  change and execution,  and because  it improved  upon
+several  functions  that caused errors in existing  languages.  Currently,  Java has become  the most popular,  widely
+used programming  language  for apps and mobile devices,  and is used to create apps for home appliances  and
+Android  devices.
+@ Characteristics  of the Java language
++ Java is grammatically  similar  to the C/C++ language  because  it derives  from the C++ language.
++ The complexity  of C++ has been simplified.
++ Automatic  garbage  collection  is always performed.
++ Object-oriented  language:  Perfect  object-oriented  language  that applies  the concept  of an object.
++ It is independent  from the platform  as the Java program  is executed  by the Java virtual machine.
+D) Python  language
+@ Introduction  to the Python  language
+Python is an interpreter  language  developed  by Guido Van Rossum  in 1990. This object-oriented,  conversational
+language  uses frequently  used English keywords  for high readability  and productivity.  Python is mainly used as
+a web programming  language  based on Django, a web framework  based on open source. Recently,  it has been
+widely used in big data analysis  and the development  of artificial  intelligence  programs.
+@ Characteristics  of the Python language
++ The data type is checked  at runtime  using dynamic  typing.
++ It is easy to use as grammar  is easy and similar to English sentences.
++ Advantageous  to asynchronous  coding using a single  event loop
++ Multi-paradigm  programming  language  (supporting  procedural  languages,  functional  programming  languages,
+and object-oriented  programming).
+M1 Software  development  93
+
+
+--- Page 95 ---
+ESSENCE
+E) JavaScript  language
+® Introduction  to the JavaScript  language
+JavaScript  is an object-based  script programming  language  that is mainly used in the web browser. It includes  a
+function  for accessing  the built-in objects  of other application  programs.  JavaScript  is also used for server-side
+network  programming  such as the Node js runtime  environment.
+@® Characteristics  of the JavaScript  language
++ Programming  is simple, but it may be vulnerable  to security.
++ Highly scalable  and useable due to active sharing among developers  because  it is operated  as an open
+source,
++ Easy to learn because  no separate  compilation  process  is required.
++ Recently,  more and more developers  have started using libraries  and frameworks  related to JavaScript,  such
+as Angularjs,  D3js, Nodejs,  and Reacts.
+03 Software  Development  Framework
+A) Concept  of the software  development  framework
+A software  development  framework  is a set of code libraries,  interface  protocols,  and configuration  information,
+all of which is used to develop  an information  system efficiently  and to provide the basic framework  for
+software  composition.  This framework  is the representative  technology  to which the concept  of “Inversion  of
+Control” (loC) is applied, and it enables developers  to complete  an application  by extending  the upper-level
+application  functions  (business  logic, etc.)
+That is, this framework  provides  an environment  in which developers  can create software  easily, by providing
+structured  tools and libraries  for data display on the screen, a method of handling  data, and interfacing  with
+external  modules,  instead  of developing  software  from scratch.
+The software  development  framework  solves the problem  of integration  and consistency  that occurs while
+developing  a set of classes  and interfaces  which can cooperate  with each other to solve the specific problem
+of software,  and reduces  the coding work of developers  while incr...

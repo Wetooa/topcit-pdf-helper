@@ -1,0 +1,37 @@
+Information  security )
++ Management  of access  rights to important  information,  minimization  of access rights, and
+Access right subdivision  of information  rights, according  to the importance  of the information.
+management + Person and device authentication,  strategic  management  of rights, and automatic  allocation  and
+collection  of rights for the information  of high importance.
+no + Encrypting  data before saving, as the ultimate  goal of the APT attack is data.
+renerypti  an Tato + Solutions,  such as DLP (Data Loss Prevention),  are needed to be introduced,  because information
+can be leaked in various  ways, depending  on the storage  type of the important  information.
+B) Pharming
+@® Concept  of a pharming  attack
+A pharming  attack refers to scamming  that causes illegal financial  fraud or personal information  leakage,
+by stealing  financial  information  or access information  when the user accesses  the web site of the financial
+company  or portal. The user is automatically  guided to the pharming  (fake) site, due to the altered host file
+(C:\windows\system32\drivers\hosts)  or the altered “Favorites”  of the web browser  in the PC that is infected
+with the malicious  code.
+@ Procedure  of performing  the pharming  attack
+Withdraw  deposit  using collected  financial  information
+| Install
+malware
+@ sie aM malware @ pene ee toaccess  | Normal site
+ls =|  ——— (bank)
+hacker Victim
+@ Input @ Induce
+personal the victim @ Guide to the fake
+financial to input pen
+informationy  | financial eb site
+informati
+© Steal financialFake web siteinformation (Please input
+@® Countermeasures  against  the pharming  attack
++ Strengthen  the security  level by clicking  the [Internet  Options]  menu of the web browser  and selecting  the
+[Security]  tab.
++ Keep the anti-virus  program  up-to-date  and check for malware  infection  on a regular  basis.
++ Frequently  check whether  the PC host file (C:\windows\system32\drivers\hosts)  is forged or altered.
+C) Qshing
+@® Concept  of Qshing
+Qshing is a compound  word of “QR code” and “fishing” of personal  information  and financial information.  This
+M4 Understanding  Information  Security  54

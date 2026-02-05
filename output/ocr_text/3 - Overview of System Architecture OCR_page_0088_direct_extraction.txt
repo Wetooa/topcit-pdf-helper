@@ -1,0 +1,18 @@
+Overview  of System Architecture )
+@ Internet  SCSI (iSCSI)
+iSCSI encapsulates  SCSI commands  into IP packets  and transfer  the I/O block data through  TCP/IP. Technologies  like
+IPSec ensure reliability.  It reduces  the network  storage implementation  cost, since it can use the existing  network
+environment  as is.
+iSCSI Switch
+[Figure  57] iSCSI
+D) Storage  capacity  management
+@ Thin provisioning
+The existing  fixed-allocation  storage  technology  uses a thick logical unit number  (LUN) wasted data storage  space.
+Thin provisioning  is a storage  virtualization  technology  that allocates  data by mapping  actual data space into a thin
+LUN. It can flexibly  expand  the disk space required  by users in cloud computing,  and it offers a higher  data utilization
+rate than the conventional  thick LUN type.
+e@ e e
+OTB
+: storage
+: sharingPOOL
+M3 Overview  of System  Architecture  87

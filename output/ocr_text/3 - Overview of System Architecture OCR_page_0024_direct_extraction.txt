@@ -1,0 +1,40 @@
+Overview  of System Architecture )
++ Broad definition  of system  architecture
+A system architecture  is a document  that defines  the structure  of an information  system provided  to support  the
+business  process  required  to achieve  the objective  of an enterprise.  A system architecture  is divided into TA, which
+defines the structure  of hardware,  such as a server, network,  and security,  as well as the distributed  structure  of
+middleware  operating  on the hardware,  DA, which defines  the data structure  to assure data integrity,  and AA, which
+defines  the software  components  and the relationship  and constraints  of said defined  components.
++ Narrow  definition  of system  architecture
+A system  architecture  refers to the structure  of an information  system,  which includes  principles  and guidelines  that
+define the components,  such as hardware,  software,  security,  interactions,  and constraints.  In other words, it refers
+to TA and defines  the layout and connection  mode of the middleware,  such as the DB server and WAS, to distribute
+the application  programs  of the developed system and hardware,  such as a server, storage,  and network.  The
+following  table shows the types of detailed  architecture  defined  in system  architecture.
+Type Description
+It defines  the server  resources.
+- CPU clock speed and number  of cores
+- Memory  capacity  and network  card (NIC) performance  and count
+- Type and capacity  of storage  units, such as SSD and SAS disk
+- Server  type, such as rack-mount  type and blade type
+- Server size from 1 unit to 4 unitsServer  design architecture
+It defines  the network  of components  that provide  services.
+- Capacity  of external  networks  (Bandwidth)
+Network  design - Determination  of connected  switches  and routers
+architecture - L4 switches  for load balancing
+- Security  systems,  such as DDoS, IPS, and firewalls
+- Network  addresses  used by services  (Subnet,  IP. and gateway)
+It defines  separate  network  storage.
+- Storage  capacity  and performance  (IOPS and bandwidth)
+Storage  design architecture  | - SSD, SAS, and SATA media type as storage
+- RAID configuration  type
+- SAN, iSCSI, and NFS storage  network  type
+B) Components  of information  system
+@ Definition  of information  system
+System components  are a configuration  of items to provide  the functions  of information  system services.  They
+include a server that provides  the computing  power of an information  system, storage  that stores the data, a
+network  that provides  communication  between  each component,  such as a server and storage, and security
+to provide confidentiality,  integrity,  and availability  of the information  system. The detailed  components  include
+computer  hardware,  OS, and middleware  operating  on a physical server. The following  diagram shows the details of
+each component.
+M3 Overview  of System  Architecture  23

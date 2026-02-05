@@ -1,0 +1,22 @@
+ESSENCE
+Server, storage,  network  equipment,  webserver,  WAS server, DB server, hardware  capacity  calculation,  OLTP
+capacity  calculation,  web/WAS  capacity  calculation, memory  capacity  calculation,  disk capacity  calculation,
+storage  capacity  calculation,  converged  infrastructure,  hyper-converged  infrastructure
++ Preview  for practical  business
+Company  A has recently  launched  a new system,  but recognized  that its hardware  capacity  is about 30%
+insufficient  during a service.  An investigation  found that the concurrent  user calculation  of some services
+was inaccurate,  leading to incorrect  hardware  capacity  selection.  The current infrastructure  is expected
+to face inadequacy  within three to four months if the company  operates  the system as is. Therefore,
+Company  A’s Planning  Team decided to allocate the additional  budget to expand the infrastructure  in
+two months.  This case shows the practical  importance  of calculating  the information  system capacity,
+according  to its structural  design and system structure.  This chapter  describes  information  structure  and
+size calculation  in detail.
+01 Information  System  Structure
+A) Concept  of information  system
+An information  system uses information  technology  (IT) to perform  business  procedures,  such as providing  necessary
+information, or business  processing  required  by enterprises.  It creates a system that enables  IT personnel  to provide
+IT services  by using IT components,  such as hardware  and software,  to perform  organizational  business  procedures.
+As shown in [Figure 75], the information  system provides  services  by using the technology  resources  of the IT
+infrastructure.  The IT infrastructure  includes  computing  platforms,  such as networks,  hardware,  software,  IT personnel,
+and IT services.
+110 TOPCIT  ESSENCE

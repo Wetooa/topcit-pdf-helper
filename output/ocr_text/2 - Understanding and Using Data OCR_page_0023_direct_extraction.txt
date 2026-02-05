@@ -1,0 +1,39 @@
+ESSENCE
+as a physical  file structure.
++ Application  programmers  can implement  the data access method in the application program  only when they know
+the physical  data structure  very well.
++ Sharing  data naturally  becomes  difficult  in an environment  where each application  program has its own data.
+Therefore,  one file ultimately  exists only for one application  only.
+@ Problems  with the file system
++ Inability  to guarantee  data independence  - Program  dependent.
++ Problem  of ensuring  data consistency  - Time dependence  of a file (which has a different  value depending  on the
+time of retrieval).
++ Problem  of ensuring  data integrity  - Values that are semantically  the same should remain identical.
++ Low sharing  and use convenience  - Low economic  feasibility  and poor security  management.
+B) Concept  and characteristics  of the database
+@® Concept  of the database
+The database  has the characteristics  of integration,  operation,  storing, and sharing. In the past, data were inevitably
+saved in duplicate  when recorded  on paper, because  even the same data could not be shared in real time. Data
+were also saved in several files in duplicate  even when the file system was in use. The database, however,  manages
+duplicated  data in one place as intensively  as possible  to eliminate  duplication  to the maximum.
+<Table 2> Data classification
+Classification Contents
+This means  that the same data are not duplicated  in principle
+Integrated  data + Minimal  redundancy
++ Controlled  redundancy
+Stored data Data are saved in a storage  medium  that can be accessed  by a computer  (tape, disk, etc,).
+Data which are required  to perform  the unique functions  of an organization.  (Temporary  data
+used while performing  a task, such as simple input/output,  are not operational  data.)
+Data which are jointly owned, maintained,  and used by several application  programs  within an
+organization.Operational  data
+Shared data
+@ Characteristics  of the database
+The shared database  can be accessed  in real time using the programming  language,  and is constantly  changing  due
+to the input, modification  and deletion  of data. The database  can also be accessed and  shared by multiple  users
+simultaneously,  and it has the characteristic  of being referable  by using the contents  of data.
+<Table 3> Characteristics  of the database
+Item Contents
+Real-time  accessibility Real-time  response  to occasional  and informal  queries.
+. ; Update,  insert, delete: Dynamic  characteristics  (keeping  the current  state accuratelyContinuous  evolution :during such changes).
+Concurrent  sharing Supports  the concurrent  sharing  of the same data in different  ways.
+22 TOPCIT  ESSENCE

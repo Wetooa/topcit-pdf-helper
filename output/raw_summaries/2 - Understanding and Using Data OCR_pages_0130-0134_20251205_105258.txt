@@ -1,0 +1,235 @@
+LEARNING GUIDE: Pages 130-134
+Generated: 2025-12-05 10:52:58
+PDF: 2 - Understanding and Using Data OCR
+
+================================================================================
+LEARNING GUIDE
+================================================================================
+
+Here is a simplified, easy-to-read learning guide based on the provided text, designed for easy study.
+
+---
+
+## Learning Guide: Database Stability, Recovery, and Backup
+
+### I. Introduction to Database Stability & Recovery
+
+**Why Database Recovery is Essential:**
+*   Databases must process business data stably once built.
+*   Data can be corrupted (e.g., due to digitalization errors, hardware failure, power outages, software defects, user mistakes).
+*   Data loss can cause severe business disruption and financial losses (e.g., 9/11 WTC IT losses were ~$7 billion).
+*   **Goal:** Restore the database to a consistent state, ensure data **atomicity** (all or nothing for transactions) and **durability** (data persists after commit), minimize service downtime, and ensure business continuity.
+*   Modern Database Management Systems (DBMS) integrate backup and recovery policies.
+
+**Key Learning Objectives:**
+*   Understand database failure types.
+*   Explain database recovery concepts and methods.
+*   Learn how to recover distributed databases.
+*   Identify and apply different database backup methods.
+
+**Key Terms (Quick Reference):**
+*   **Database Failure:** Transaction, System, Disk/Media, User failures.
+*   **Recovery:** Restoring database consistency after failure.
+*   **Redundancy:** Storing duplicate data (archives, logs) for recovery.
+*   **Redo:** Re-executing completed transactions from logs to restore changes.
+*   **Undo:** Cancelling incomplete transactions from logs to revert changes.
+*   **Log:** A record of database changes (old and new values).
+*   **Log-based Recovery:** Uses log files for recovery.
+*   **Checkpoint Recovery:** Uses logs and periodic "checkpoints" for faster recovery.
+*   **Shadow Paging:** Uses shadow page tables for fast recovery.
+*   **2-Phase Commit Protocol (2PC):** Ensures atomicity in distributed transactions.
+*   **Database Backup Methods:** Full, Differential, Incremental, Archive Log, Hot, Cold.
+
+---
+
+### II. Database Failures
+
+**Definition of Data Recovery:**
+*   The process of restoring a database to a consistent and correct state after an unexpected failure.
+
+**Types of Database Failures:**
+
+1.  **Transaction Failure:**
+    *   **Logical Error:** An internal error prevents a transaction from completing.
+    *   **System Error:** An active transaction is forcibly terminated (e.g., due to a deadlock).
+
+2.  **System Failure:**
+    *   Caused by power outages, hardware failures (e.g., memory, CPU), or software defects (e.g., OS, DBMS crashes).
+    *   Ensures stored contents are not affected by the system crash.
+
+3.  **Disk (Media) Failure:**
+    *   When part or all of the disk storage is physically broken.
+    *   Requires re-executing completed transactions using recent dumps and logs.
+
+4.  **User Failure:**
+    *   Caused by user mistakes or errors made by the Database Administrator (DBA) during database management.
+
+---
+
+### III. Database Recovery Principles & Actions
+
+**Basic Principle: Information Redundancy**
+*   To recover from failures, redundant copies of data are crucial.
+    *   **Archive or Dump:** A complete copy of the database stored on a separate device.
+    *   **Log or Journal:** Records every change made to the database, including the old value (before change) and the new value (after change).
+
+**Types of Database Recovery Actions:**
+
+1.  **Redo (Forward Recovery):**
+    *   **Purpose:** To restore the database to a state *after* committed transactions, typically used when the database's contents are damaged (e.g., after a disk failure).
+    *   **Process:** Loads the most recent archive/dump, then reapplies (re-executes) all changes from the log for transactions that completed *before* the failure. This ensures committed changes are not lost.
+    *   **Outcome:** Database reaches its status *after commit*.
+
+2.  **Undo (Backward Recovery):**
+    *   **Purpose:** To restore the database to its original state *before* a problematic transaction, typically used when in-progress or recently changed data is untrustworthy.
+    *   **Process:** Cancels all changes made by transactions that were incomplete or in progress at the time of failure, using the old values stored in the log.
+    *   **Outcome:** Database reaches its start status by reverting uncommitted changes.
+
+---
+
+### IV. Database Recovery Techniques
+
+Different strategies to achieve recovery using logs and other mechanisms:
+
+1.  **Log-based Recovery Technique:**
+    *   **Concept:** Relies entirely on log files to track changes and perform Redo/Undo operations.
+    *   **Characteristics:** Checks all logs; involves Redo and Undo. Can be slow because it reviews all log entries.
+    *   **Types (mentioned in keywords):** Deferred Update, Immediate Update techniques.
+
+2.  **Checkpoint Recovery Technique:**
+    *   **Concept:** Combines log files with periodic "checkpoints." A checkpoint is a point in time where all modified buffer blocks are forced to disk, and a record is made in the log.
+    *   **Characteristics:** Faster than pure log-based recovery because it reduces the amount of log to scan during recovery (only logs after the last checkpoint need to be processed). Primarily uses Undo for transactions that were active at the checkpoint.
+
+3.  **Shadow Paging Technique:**
+    *   **Concept:** Uses two page tables: a "current" page table and a "shadow" page table. Changes are made to a copy, and only after commit is the shadow table updated to become the new current table.
+    *   **Characteristics:** Very fast recovery, as it simply replaces the "current" page table with the consistent "shadow" page table if a failure occurs (simple Undo, no Redo needed for committed transactions). Simple and efficient for single transactions.
+    *   **Limitations:** Can incur overhead due to copying page tables. Often used in conjunction with log-based or checkpoint techniques for complex scenarios or multiple concurrent transactions.
+
+---
+
+### V. Distributed Database Recovery
+
+**Challenges in Distributed Transactions:**
+*   A **distributed transaction** accesses data across multiple independent databases (sites).
+*   Each database might use different recovery techniques and transaction managers.
+*   **Critical Issue: Atomicity.** If not properly designed, one site could commit a transaction while another cancels it, leading to an inconsistent state across the distributed system.
+*   **Goal:** All participating databases must either complete the transaction together, or none of them should. Recovery must be possible to a consistent state even if a failure occurs at any participating site.
+
+**The 2-Phase Commit Protocol (2PC):**
+*   **Purpose:** The most widely used protocol to ensure atomicity in distributed database transactions.
+*   **Mechanism:** It coordinates commitment across multiple sites through two phases, ensuring a unanimous decision to commit or abort.
+
+**Execution of the 2-Phase Commit Protocol:**
+
+*   **Phase 1: Vote Phase (Prepare to Commit?)**
+    1.  A **Coordinator** (the initiating database) sends a "Prepare to Commit" message to all participating databases (A, B, etc.).
+    2.  Each participating database (A, B) performs necessary checks and writes its changes to stable storage (e.g., log).
+    3.  Each participant replies to the Coordinator with either:
+        *   "**Ready**" (it can commit the transaction).
+        *   "**Not Ready (Abort)**" (it cannot commit).
+
+*   **Phase 2: Decision Phase (Commit or Abort)**
+    1.  The Coordinator collects all replies.
+    2.  **If ALL participants replied "Ready":** The Coordinator sends a "**Commit**" signal to all participants. Each participant then finalizes the transaction.
+    3.  **If ANY participant replied "Not Ready (Abort)" or if the Coordinator times out:** The Coordinator sends an "**Abort**" signal to all participants. Each participant then undoes its changes.
+
+---
+
+### VI. Database Backup
+
+**Database Backup Overview:**
+
+*   **Definition:** The process of creating duplicate copies of an entire database or parts of it to enable recovery in case of data loss or corruption.
+*   **Frequency:** Backups are typically performed daily, weekly, or monthly using different methods (incremental, differential, full).
+
+**Purposes of Backup:**
+1.  **Prevent Data Loss:** Enables restoration of the database using duplicated data after a failure.
+2.  **Secure Business Continuity:** Minimizes business disruption and downtime caused by IT failures, ensuring operations can resume quickly.
+
+**Types of Database Backup Methods (from keywords):**
+*   **Full Backup:** Copies all data in the database. Provides the fastest recovery but takes the most time and storage space.
+*   **Differential Backup:** Copies all data that has changed since the *last full backup*. Faster than full backup, but recovery requires the last full backup plus the latest differential.
+*   **Incremental Backup:** Copies all data that has changed since the *last backup of any type* (full, differential, or incremental). Fastest backup process and uses least storage, but recovery can be complex (requires the full backup plus all subsequent incremental backups in sequence).
+*   **Archive Log Backup:** Backs up the transaction log files. Essential for point-in-time recovery, especially when combined with full backups.
+*   **Hot Backup (Online Backup):** Performed while the database is online and actively being used. Minimizes downtime but can be complex to manage and ensure consistency.
+*   **Cold Backup (Offline Backup):** Performed while the database is shut down. Simplest and most consistent backup, but causes downtime for users.
+
+================================================================================
+ORIGINAL TEXT (First 5000 chars)
+================================================================================
+
+--- Page 130 ---
+Database
+>> Recent  trends and major issues
+A database  has the property  that once it has been built, it should process  actual business  data stably.
+However,  data can be corrupted  due to a certain problem  when they are digitalized  and saved. In this case,
+it is vital to have a technology  that can restore  the database  stably. This chapter  explains  how to process  a
+database  stably and the concept  and techniques  of backing  up and restoring  data.
+The recent DBMS essentially  operates  database  backup policies for stable data processing.  In addition,
+backup  methods  are also evolving  continuously  to enable rapid backup,  such as using the VTL (Virtual Tape
+Library).
+>> Learning  objectives
+1. To be able to explain the concept  and types of database  failures.
+2. To be able to explain the concept  and methods  of database  recovery.
+3. To be able to explain how to recover  a distributed  database.
+4 To be able to explain and apply the types and characteristics  of database  backup  methods.
+>> Keywords
++ Database  failure: Transaction  failure, media failure, system  failure
++ Recovery,  redundancy,  redo , undo, log
++» Database  recovery  techniques:  Log-based  recovery  technique  (deferred  update, immediate  update),
+checkpoint  recovery  technique,  shadow  paging  recovery  technique
++ 2-Phase  commit  protocol
++ Database  backup methods:  Full backup,  differential  backup, incremental  backup,  archive log backup, hot
+backup,  cold backup
+M2 Database 129
+
+
+--- Page 131 ---
+ESSENCE
+* Preview  for practical  business Why database  recovery  is necessary
+It has been reported  that IT-related  losses accounted  for 16% (approximately  USD  7 billion)  of the
+total financial  losses sustained  during the 09.11 WTC attack in New York, even though there were also
+numerous  casualties.  Some enterprises  suffered  serious  damages  due to the loss of data and subsequently
+experienced  difficulty  resuming  their online work because  it took a couple of days to recover  the lost data.
+As such, if the duplicated  data and archives  of a business  system are not available,  damages  can be caused
+not only by simple system shutdown  but also by the loss of the most important  information  essential  to
+the survival  of the company  in an instant.  In fact, the incident  served as a timely reminder  for all enterprises
+of the overriding  importance  of database  backup and recovery,  and led many enterprises  to adopt a
+disaster  recovery  system,  which is a non-disruptive  recovery  system.
+Although  they may not be the result of a terrorist  attack as in the above example,  failures  frequently
+occur in the field, which cannot  ensure transaction  atomicity  and durability  due to various reasons  such as
+hardware  failure (e.g. broken hard drive), power outage, DBMS software  defects, and so forth. Therefore,
+all database  systems  need a method  of maintaining  the atomicity  and persistence  of transactions.  The
+recovery  techniques  used to restore a system to its previous  state after the occurrence  of a database
+failure (consistent  state) should ensure high availability  so that service downtime  caused by the failure of
+the database  can be minimized.
+130 TOPCIT  ESSENCE
+
+
+--- Page 132 ---
+Database )
+01 Concept  of Database  Failure  and Recovery
+A) Definition  of data recovery
+Data recovery  refers to the restoration  of the consistency  and integrity  of a database  before the occurrence  of an
+unexpected  (database)  failure while operating  the database.
+B) Types of database  failures
+<Table 54> Types of database  failures
+Type Main content
+Transaction + Logical error: A transaction  cannot be completed  due to an internal error.
+failure + System error: An active transaction  is terminated  by force due to error conditions  such as deadlock.
++ Failure  of power, hardware,  software,  etc.
++ Checks  integrity  to ensure that the stored contents  are not affected  by system  failure.
++ When a part or all of the disk storage  is broken.
++ Re-executes  transactions  (redo) that were completed  after dumping,  using the most recent  dump and log.
++ Occurs  due to the users’ lack of understanding  of the database.
++ DBA’s mistakes  made while managing  the database.System  failure
+Disk failure
+User failure
+C) Basic principles  of database  recovery:  Principle  of information  redundancy
+@ Archive  or dump: Copy and store a database  to another  storage  device.
+@ Log or  journal:  Record  the old values and new values of changing  data each time a database  is changed.
+D) Types of database  recovery  actions
+@ Redo: Archive  copy + log => Status after commit
++ If the contents  of the database  itself are damaged,  the most recent copy is loaded, and any changes  made after
+making  the copy are read from the log and executed  again so that the contents  of the database  can be restored.
++ This corresponds  to the completed  transaction  at the time of failure occurre...

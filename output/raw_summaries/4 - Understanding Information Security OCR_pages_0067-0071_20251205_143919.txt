@@ -1,0 +1,263 @@
+LEARNING GUIDE: Pages 67-71
+Generated: 2025-12-05 14:39:19
+PDF: 4 - Understanding Information Security OCR
+
+================================================================================
+LEARNING GUIDE
+================================================================================
+
+Here is a simplified, easy-to-read learning guide based on the provided text (Pages 67-71):
+
+---
+
+# Information Security Learning Guide
+
+## 1. Information Security Fundamentals
+
+Information security involves protecting information from unauthorized access, use, disclosure, disruption, modification, or destruction.
+
+**Key Steps:**
+*   **Risk Assessment:** Measure asset values, identify asset risk levels, and analyze vulnerabilities.
+*   **Protective Measures:** Establish appropriate security measures within the organization.
+*   **Resource Management:** Requires professional knowledge, time, and effort.
+
+**Risk Assessment Approaches:**
+1.  **Detailed Risk Approach:** Applied to major or high-risk systems.
+2.  **Baseline Approach:** Applied to other systems.
+    *   **Efficiency Note:** Clearly defining which approach to use for which system saves time and resources; misapplication can lead to wasted effort.
+
+## 2. Information Security & Personal Information Management
+
+### 2.1 ISMS-P (Information Security Management System - Personal Information)
+
+**Overview:**
+*   An integrated certification system that combines:
+    *   **ISMS:** Information Security Management System
+    *   **PIMS:** Personal Information Security Management
+*   **Purpose:** Systematically protect both general information and personal information within a single framework.
+
+**Composition of ISMS-P (102 Certification Criteria Items):**
+1.  **Management Systems (16 Items):**
+    *   Laying the foundation of the management system
+    *   Risk management
+    *   Operating the management system
+    *   Checking and improving the management system
+2.  **Protective Measures Requirements (64 Items):**
+    *   Policy, organization, asset management
+    *   Personnel security
+    *   Outsider security
+    *   Physical security
+    *   Authentication and right management
+    *   Access control
+    *   Encryption application
+    *   Security for information system introduction and development
+    *   System and service operation management
+    *   System and service security management
+    *   Incident prevention and response
+    *   Disaster recovery
+3.  **Requirements for Each Personal Information Processing Stage (22 Items):**
+    *   Protective measures when collecting personal information
+    *   Protective measures when holding and using personal information
+    *   Protective measures when providing personal information
+    *   Protective measures when destroying personal information
+    *   Protecting information owner's rights
+
+### 2.2 Personal Information Protection Practices
+
+**A. Privacy Policy & Consent:**
+*   **Consent Method:**
+    *   Present consent details *before* the user enters personal information.
+    *   Allow users to *accept or reject* consent.
+    *   Clearly state:
+        *   Purpose of collection/use
+        *   Items to be collected
+        *   Retention and use period
+        *   Disadvantages of rejection
+
+**B. Personal Information Destruction:**
+*   **When to Destroy:** Without delay when retention period expires or purpose of use is achieved.
+*   **Method:** Irrecoverable destruction.
+*   **Retention by Law:** If required by other laws, store *separately* from currently used personal information.
+    *   Methods: Separate database or physically separated server.
+    *   Access rights for separated data must be distinct to prevent unauthorized access.
+
+**C. Access Control on Personal Information Processing Systems:**
+*   **Goal:** Prevent illegal access, breaches, and detect leakage attempts.
+*   **How:** Limit access rights for those handling personal information, analyze connected IP addresses.
+*   **Methods:** ACL (Access Control List), Firewall, Intrusion Detection System (e.g., Snort).
+
+**D. Encryption for Storing & Transmitting Personal Information:**
+*   **General:** Encrypt personal information when storing or transmitting over networks to prevent illegal exposure or alteration.
+*   **Passwords:** Store using *one-way encryption* (cannot be decrypted).
+    *   Systems should offer temporary password or password reset features since lost passwords cannot be retrieved.
+*   **Sensitive Data:** Uniquely identifiable information (e.g., resident registration number, passport, driver's license, biometrics) must be encrypted with secure algorithms.
+*   **Transmission:** Apply encryption systems like SSL/TLS to transmission channels.
+
+**E. Logging & Storage of Access Records:**
+*   **Requirement:** Retain access records of personal information systems for at least 6 months.
+*   **Content:** Log files tracking input/output, modification, data access details.
+*   **Purpose:** Check for illegal access attempts.
+
+## 3. Information Security Standards and Related Systems
+
+### 3.1 ISO 27001:2013
+
+*   **Definition:** International standard for Information Security Management Systems (ISMS) and a certification system.
+*   **Integration:** Can be combined with other ISO certifications (e.g., ISO 9001 for quality, ISO 14001 for environment).
+*   **Control Items:** 114 control items organized into 14 fields (updated from 133 items in 12 fields).
+
+**Control Fields (Example):**
+*   Information security policy
+*   Information security organization
+*   Asset management
+*   Personnel security
+*   Physical and environmental security
+*   Communication security
+*   Access control
+*   Acquiring, developing, and maintaining information systems
+*   Managing information security accidents
+*   Managing business continuity
+*   Compliance
+*   Supplier relationship
+*   Password control
+*   Operational security
+
+### 3.2 OWASP TOP 10
+
+*   **Definition:** A regularly updated list of the most critical web application security risks.
+*   **Basis:** Data from application security specialists, industry surveys, and real-world applications/APIs.
+*   **Ranking:** Based on prevalence, possibility, detectability, and impact of attacks.
+
+**OWASP Top 10 - 2017 (Compared to 2013):**
+*   **A1: Injection** (e.g., SQL injection)
+*   **A2: Broken Authentication** (was "Broken authentication and session management")
+*   **A3: Sensitive Data Exposure** (was "Cross Site Scripting (XSS)")
+*   **A4: XML External Entities (XXE)** (New)
+*   **A5: Broken Access Control** (Merged, was "Security misconfiguration")
+*   **A6: Security Misconfiguration** (was "Sensitive data exposure")
+*   **A7: Cross Site Scripting (XSS)** (was "Missing Function Level Access Control")
+*   **A8: Insecure Deserialization** (New, Community)
+*   **A9: Using Components with Known Vulnerabilities** (was "Using known vulnerable components")
+*   **A10: Insufficient Logging and Monitoring** (New, Community)
+
+### 3.3 CWE (Common Weakness Enumeration)
+
+*   **Definition:** A classification system for software weakness items.
+*   **Managed By:** MITRE (supported by U.S. Department of Homeland Security).
+*   **Purpose:** Classifies software weaknesses based on views, categories, vulnerabilities, and complex elements.
+
+### 3.4 CWSS (Common Weakness Scoring System)
+
+*   **Definition:** A scoring system to determine the relative importance of various software vulnerabilities.
+*   **Focus:** Vulnerabilities in architecture, design, code, or implementation that are critical security issues.
+
+### 3.5 CVE (Common Vulnerabilities and Exposures)
+
+*   **Definition:** A list of *discovered* security vulnerabilities over time (unlike CWE, which is a classification system).
+*   **Purpose:** A record history of identified security vulnerabilities.
+*   **Identification:** Managed with a unique ID system: "CVE-Year-Sequence".
+
+### 3.6 CVSS (Common Vulnerability Scoring System)
+
+*   **Definition:** An open framework used to assess and identify the severity of security vulnerabilities.
+*   **Metrics:** Consists of three metric groups:
+    *   **Basic Metric Group**
+    *   **Temporary Metric Group**
+    *   **Environmental Metric Group**
+*   **Result:** Calculates an overall vulnerability score and its priority.
+
+---
+
+================================================================================
+ORIGINAL TEXT (First 5000 chars)
+================================================================================
+
+--- Page 67 ---
+Information  security )
++ Determining  the level of risks after measuring  asset values and asset risk level and analyzing
+vulnerabilities.
++ Appropriate  protective  measures  can be established  within the organization.
++ Professional  knowledge,  time, and efforts are needed.
++ Major systems  or high-risk  systems  are identified  and “detailed  risk approach’  is applied,  and the
+“baseline  approach’  is applied  to other systems.
++ Time and efforts can be efficiently  utilized  by quickly  establishing  security  strategies.
++ Resources  can be wasted  if the application  target  of two methods  is not clearly  set.Detailed  risk approach
+Combined  approach
+C) Information  security  and information  security  management  system  (ISMS-P)
+@® Overview  of ISMS-P
+The certification  system is integrated  so that the existing  information  security  management  system (ISMS)
+and the personal  information  security  management  (PIMS) can be systematically  protected  in a single system.
+Current Integration
+Information
+systemation
+[Figure  31] Overview  of ISMS-P
+(Source: https://isms-p.kisa.orkr)
+@ Composition  of ISMS-P
+ISMS-P  consists  of 102 certification  criteria items, including  the establishment  and operation  of 16 management
+systems,  64 protective  measures  requirements,  and 22 requirements  for each personal  information  processing
+stage.
+M4 Understanding  Information  Security 67
+
+
+--- Page 68 ---
+ESSENCE
+1.1 Laying  the foundation  of the
+management  system 1.2 Risk management
+1
+1.4 Checking  and improving  the  \ Establishing  and operating
+management  system the management  systems 1.3 Operating  the management
+(16)
+y
+Protective  measures  requirements  (64)3
+Requirements  for each personal  information
+2.1 Policy, organization, handling  phase (22)
+asset maniagement 2.7 Encryption  application
+= 3.1 Protective  measures  when collecting personal information28 Security for information  system PI
+introduction  and development
+2.9 System  and service
+operation  management
+2.10 System  and service
+security  management2.2 Personnel  security
+32 Protective  measures  when holding  and using personal  information
+2.3 Outsider  security
+3.3 Protective  measures  when providing  personal  information
+2.4 Physical  security
+3.4 Protective  measures  when destroying personal  information2.5 Authentication  and Ing Pp
+right management2.11 Incident  prevention  and
+response :
+3.5 Protecting  information  owner's  rights
+2.6 Access  control 2.12 Disaster  recovery
+[Figure 32] Composition  of ISMS-P
+(Source:  https://isms-p.kisa.or.kr)
+02 Personal  information  protection
+A) Privacy  policy
+@® Reflecting  the method  of obtaining  consent  when collecting  personal  information
+When obtaining  consent  to personal  information  collection,  consent  details should be presented  before the
+user enters personal  information,  and the user should be able to accept  or reject.
+When obtaining  consent  to information  collection,  the purpose  of collecting  and using personal information,
+the items of personal  information  to be collected,  the period of personal  information  retention  and use, and the
+disadvantages  in case of rejection  should be presented  to the users.
+@ Reflecting  the method  of personal  information  destruction
+68 TOPCIT  ESSENCE
+
+
+--- Page 69 ---
+Information  security )
+When the retention  period of collected  personal  information  has expired, or the purpose  of use has been
+achieved,  personal  information  must be destroyed,  without  delay, in an irrecoverable  way. If the personal
+information  must be retained  according  to other laws and regulations,  it must be stored separately  from
+personal  information  that is currently  in use.
+To store separately,  a separate  database  can be generated  and stored, or data can be stored in a physically
+separated  server. The access  rights of the general personal  information  database  should be set differently  from
+the personal  information  database  that is stored separately,  in order to prevent  unnecessary  access,  inquiries,
+and leakage.
+® Access  control on the personal  information  processing  system
+Those who handle personal  information  should control unauthorized access by limiting the access rights, in
+order to prevent illegal access and breach incidents  to the personal  information  processing  system,  and to
+detect illegal attempts  to leak personal information  by analyzing  the connected  IP addresses.  The access
+control method  includes  ACL (Access  Control List), firewall,  and free intrusion  detection  system (Snort).
+@® Applying  encryption  when storing  and transmitting  personal  information
++ Encrypting  personal  information  to prevent illegal exposure  or forgery/alteration,  when storing it in the
+personal  information  processing  system or transmitting  it through  the network.
++ Storing  passwords  after one-way  encryption  to prevent  decryption.
++ Developing  a sys...

@@ -1,0 +1,30 @@
+ESSENCE
+>> Recent  trends  and issues
+With the advent of the loT (Internet  of Things), represented  by technological  innovation  in various
+industries,  the embedded  system market  is expected
+the automobile  (or connected  car) and medical  fields.to grow explosively,  due to the increased  demand  in
+A market research  firm predicts  that the global embedded  systems  market will grow by 5.6% per year,
+reaching  $2,587 billion by 2023. The reason for this gi
+the automotive  and medical  fields is expected  to increrowth is that the demand  for embedded  systems  in
+ase rapidly, thanks  to the recently  emerged  loT.
+Embedded  systems  are widely utilized in information  home appliances,  information  terminals,
+communication  equipment,  aviation/military,  logistics/ inance, vehicle/transportation,  office work, industrial/
+control, medical  care, games,  and robots. In other words, embedded  systems  have become  an integral  part
+of any industry.  Among  various applications,  the auto
+the growth  of the embedded  system  market  in the fu
+However,  solving security  problems  that may arisemotive and medical industries  are expected  to drive
+ture.
+from linking various embedded  systems,  through
+technological  innovation,  has emerged  as a challenge.  Embedded  systems  mostly  operate  home appliances,
+transportation,  aviation,  machinery,  medical  equipmen
+all equipment,  machines,  and vehicles  are being connt, automobiles,  and communication  devices.  Recently,
+ected to an OS, a webserver,  a remote control, and
+smart devices.  Among these, medical equipment  and automobiles  are very important  because  their
+security  vulnerabilities  can have a great impact  on pubic safety.
+It is essential  to protect  embedded  systems  from unauthorized  software  and other vulnerabilities,  such as
+theft and privacy  protection.  Accordingly,  continuous
+theft and data hackers  and to solve them.
+>> Learning  objectivesefforts are being made to protect  the systems  from
+1, To be able to explain  system  structure  and characteristics,
+2. To be able to explain embedded  OS.
+98 TOPCIT  ESSENCE

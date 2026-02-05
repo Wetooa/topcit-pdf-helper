@@ -1,0 +1,22 @@
+Understanding  the IT Business  and Ethics )
+status, location,  and operation  information  that it receives  from vehicles.  The center system collects and analyzes
+information  received  from a multitude  of vehicles  and base stations,  and then sends information  about the traffic,
+road traffic conditions,  and others to the base stations,  and the base stations  will relay them to vehicles.  Examples
+of V2I services  include real-time  traffic information  collection  and provision services,  toll collection  service, roadside
+information  and obstacle  notification  service, and road construction  notification  service and protected  zone
+notification  service.
++—>  Wave Network
+<—=>  Synchronous  Optical
+Network
+vai (Infra)
+[Fig. 70] V2Iservice
++ V2N service
+A V2N service is a service  that lets a vehicle communicate  through  a network  with a server  or mobile device in the cloud
+or on the Internet.  The TCU (Telecommunication  Control Unit) is installed  in the vehicle and communicates  with the
+backend  server, which communicates  with the mobile  device to provide  information  to the user and controls  the vehicle.
+Mobile communication— networ
+——? Fixed line connection
+———? Nearfield _
+communication
+[Fig.71] V2N service
+M5 Understanding  the IT Business  and Ethics 157

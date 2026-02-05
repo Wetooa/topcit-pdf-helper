@@ -1,0 +1,27 @@
+ESSENCE
+01 Cryptographic  techniques
+A) Concept  of a cipher
+Encryption  is the process of converting  plain text, which can be seen by anyone, into an incomprehensible
+form of ciphertext.  Decryption  is the process  of converting  ciphertext  back into plaintext,  so that it can be
+understood.  These two processes  are called cryptography.  The mathematical  function  used in these two
+conversion  processes  is called a cryptographic  algorithm.  The cryptographic  algorithm  uses a key to perform
+encryption  and decryption. In short, encryption  is an important  means to obtain confidentiality,  which is one of
+the three main goals of information  security.
+B) Encryption  and decryption
+Encryption  is the process  of converting  plain text into a form (ciphertext)  that cannot  be recognized  by a third
+party, whereas  decryption  is the reverse process  of encryption. That is, decryption  is the process  of restoring
+converted  ciphertext  back into plaintext.
+Encryption  key
+Cryptographic ‘[res [Sao  oe
+Decryption  key
+es  Jo SH of oealgorithm
+[Figure 3] Encryption  and decryption
+Initially, encryption  was mainly used for military purposes.  However,  it is used to protect  a variety  of important
+information  with the development  of information,communication,  and Internet  technology.
+C) Classification  of cryptographic  techniques
+Cryptographic  techniques  are classified  into the cryptographic  technique  and cryptographic  protocol  technique.
+@® Cryptographic  techniques
+Cryptographic  techniques  can be divided  into the symmetric  key cryptosystem,  in which the encryption  key
+and the decryption  key are the same, and the public key cryptosystem,  in which the encryption  key and the
+decryption  key are different,  depending  on whether  the encryption  key and the decryption  key are the same.
+24 TOPCIT  ESSENCE

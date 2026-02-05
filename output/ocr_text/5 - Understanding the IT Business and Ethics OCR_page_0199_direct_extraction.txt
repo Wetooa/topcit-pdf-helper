@@ -1,0 +1,41 @@
+ESSENCE
++ De-identification  Standards  for Identifiers:  As a rule, an identifier included  in datasets  should be deleted.  However,
+an identifier  that is absolutely  needed  for a purpose  of the use of data can be utilized  after de-identification.
++ De-identification  Standards  for Attribute  Values: As a rule, an attribute  value included in datasets  should be
+also removed  if it is irrelevant  to a purpose  of the use of data. Attribute  values like rare disease  or unique
+professional  experiences  need strict de-identification  as they are highly likely to identify  an individual  under certain
+circumstances.
+198 TOPCIT  ESSENCEico) Step 4
+(emeltelg (PostCleo) Eure 19)
+YesNon-Priyacy De-identification identification (@dequate) identified ivacy. 
+‘Adequacy. »> Deridenti ([dentification > | (personal  dentiicaton |" Eyaldstion Peto information) elements  removed) (KAnonymit ai
+No (Inadequate)
+TTa\codannr-lele  la egtelem oye = AM(e ple) (=)
+a particular  individual
+(Including  information  that can be easily combined
+with other information  to identify  a specific individual)Dcslidiam@)eaiseore  tel
+(However,  essential  man.
+Fleeced
+through combination  with other information)
+[Figure 85] De-identification  Process  of Personal  Information
+<Example>  Attribute  value
++ Gender,  age (age), nationality,  hometown,  city/county/city,  zip code
++ Military  service,  marital status, religion,  hobbies,  clubs, etc.
++ Smoking,  drinking,  vegetarianism,  concerns,  etc.Personal
+characteristics
++ Blood type, height,  weight,  waist circumference,  blood pressure,  eye
+Physical color, etc.
+characteristics » Medical  examination  result, disability  type, disability level, etc.
++ Disease  name, injury  code, medication  code, treatment  history, etc.
++ Tax payment,  credit rating, donation,  etc.Credit
+chamcienstcs  | * Health Insurance  premiums  paid, income  quintile, medical  aid
+beneficiaries,  etc.
++ School name, department  name, grade, academic  background,  etc.
+h ee . + Career, job, job type, company  name, department  name, position,
+(Ciara  GUeyiSUCS) former workplace  name, etc.
+. + Cookie information,  access  date, visit date, service use record, accessElectronic ee
+characteristic ”
++ Internet  access  records,  mobile phone usage records,  GPS data, etc.
+Family + Family information  such as spouse, children, parents,  siblings, legal
+characteristics representative  information,  etc.
+[Figure  86] Examples  of Personal  Information  Identifiers

@@ -1,0 +1,36 @@
+ESSENCE
+Telecommunication  Association  9TTA defines  them as follows:
+<Table  27) Definitions  of “Cloud Computing”  and “Cloud Service”
+Terms Definition
+Cloud service An on-demand  outsourcing  IT service  that provides  a user-centered  cloud computing  environment
+Cloud computingA computing  environment  that leases IT resources  through  the Internet,  based on virtualization  and
+distributed  processing  technology  and pays a fee, based on usage
+A) Comparison  of cloud computing  and other computing  technologies
+@ Grid computing  and cloud computing
+Grid computing  is defined  as "a structure  for virtualizing  and resources,  such as computers  and data, on a network  for
+integration  and dynamically  creating  virtual computers  if needed.”  Grid computing  and cloud computing  are similar in
+that they use a distributed computing  structure  and provide  virtualized  computing  resources.  The difference  is that
+grid computing  uses all the computer  resources  on the Internet,  whil
+owned by the operator.
+<Table 28) Differentiation  between  Grid Computing  and Cloud Computingle cloud computing  uses only the computing
+Grid Computing Cloud computing
+Computer  location Geographically  scattered  and managed  by Geographically  scattered  but managed  by a
+different  organizations central organization
+Computer  configuration Heterogeneous  mixture Most of the same model
+Standardization  organization  | Existing None
+Technicelctandard Standards  for resource  management, None
+scheduling,  and data management  security
+Interconnectivity Important Not considered
+Usage Highly parallel applications,  such as scientific  and | General-purpose  applications,  such as web
+technical  calculations  and large-scale  operations
+@ Utility computing  and cloud computingapplications
+Utility computing  is a type that provides  computing  resources  and charges  for the resources  used. Utility computing
+and cloud computing  are similar, in that they charge for the resources  used. Cloud computing  has developed  the
+abstraction  of computing  resources,  based on utility computing.
+02 Cloud Computing  Types
+A) Classification  according  to the service  type
+Cloud services  can be classified  into laaS (Infrastructure  as a Service),  PaaS (Platform  as a Service),  and SaaS (Software
+as a Service),  according  to the service  type.
+@laaS
+laaS provides  infrastructure  resources  (server, storage,  and network)  as a service  through  the Internet.  Although  the
+130 TOPCIT  ESSENCE

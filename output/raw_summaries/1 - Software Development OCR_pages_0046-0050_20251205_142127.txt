@@ -1,0 +1,220 @@
+LEARNING GUIDE: Pages 46-50
+Generated: 2025-12-05 14:21:27
+PDF: 1 - Software Development OCR
+
+================================================================================
+LEARNING GUIDE
+================================================================================
+
+Here's a simplified, easy-to-read learning guide based on the provided text:
+
+---
+
+# Software Development Essentials: A Learning Guide
+
+This guide covers key concepts in software development, focusing on efficiency, data organization, and retrieval.
+
+---
+
+## 1. Software Development Metrics
+
+### 1.1 Variable Space
+*   **Definition:** Storage allocated for data, variables, and function execution information during program runtime.
+
+### 1.2 Time Complexity
+*   **Definition:** The total time an algorithm takes to execute and complete.
+*   **Formula:** `Time Complexity = Compilation Time + Execution Time`
+    *   **Compilation Time:** Fixed time, unrelated to program characteristics; constant once compiled.
+    *   **Execution Time:** Calculated by counting command executions, not actual clock time (due to varying computer performance).
+        *   **Purpose:** Primarily used for comparing algorithms.
+        *   **Expression:** Uses **Big O notation** (e.g., O(n)).
+        *   **Goal:** Select an algorithm with the smallest time complexity for a given problem.
+*   **Big O Notation (O(n))**
+    *   **Purpose:** Describes the upper bound of an algorithm's growth rate in terms of execution time or space requirements as the input size (n) grows.
+    *   **How to Use:** Identify the term in the execution time function that affects the value most as 'n' grows, then place it inside O() without coefficients.
+*   **Common Execution Time Functions & Their Growth Order:**
+    *   `O(1)` (Constant): Finds solution regardless of input size. Fastest.
+    *   `O(log N)` (Logarithmic): Divides input, processes one part.
+    *   `O(N)` (Linear): Processes all input data one by one.
+    *   `O(N log N)` (Linearithmic): Divides, processes, then merges.
+    *   `O(N^2)` (Quadratic): Double loop structure.
+    *   `O(N^3)` (Cubic): Triple loop structure.
+    *   `O(2^N)` (Exponential): Tests all possible solutions. Slowest.
+    *   **Order of Efficiency (Fastest to Slowest):** `O(1) < O(log N) < O(N) < O(N log N) < O(N^2) < O(N^3) < O(2^N)`
+
+---
+
+## 2. Sorting Algorithms
+
+### 2.1 Overview
+*   **Definition:** Algorithms used to arrange data in a specific order (e.g., numerical, alphabetical).
+*   **Selection Criteria:** Depends on system characteristics, data volume/state, memory needs, and execution time.
+
+### 2.2 Classification by Sorting Location
+*   **Internal Sorting:**
+    *   **Method:** Sorts a small quantity of data within the main memory.
+    *   **Characteristics:** Fast, but limited by main memory capacity.
+*   **External Sorting:**
+    *   **Method:** Sorts a large volume of data using auxiliary storage devices. Divides data into sub-files, sorts them, then merges.
+    *   **Characteristics:** Slow, but can handle large datasets.
+
+### 2.3 Internal Sorting Algorithms
+*   **Types:** Insertion Sort, Shell Sort, Selection Sort, Quick Sort, Bubble Sort, Heap Sort, Merge Sort, Counting Sort, Radix Sort, Bucket Sort.
+
+### 2.4 Comparison of Internal Sorting Algorithms
+
+| Sorting Method  | Description                                                                                                                              | Execution Time (Worst) | Execution Time (Best) | Execution Time (Average) | Additional Memory |
+| :-------------- | :--------------------------------------------------------------------------------------------------------------------------------------- | :--------------------- | :-------------------- | :----------------------- | :---------------- |
+| **Insertion Sort** | Inserts elements one by one into their correct position in a growing sorted sub-array.                                                    | O(N^2)                 | O(N)                  | O(N^2)                   | None              |
+| **Shell Sort**  | A variation of insertion sort that sorts elements at various gap intervals, then reduces the gap.                                          | O(N^2)                 | O(N^(1.25))           | O(N log N) to O(N^2)     | None              |
+| **Selection Sort** | Finds the minimum (or maximum) element from the unsorted portion and swaps it with the first unsorted element. Repeats.                  | O(N^2)                 | O(N^2)                | O(N^2)                   | None              |
+| **Quick Sort**  | **Divide and Conquer.** Picks a 'pivot', partitions array into elements smaller/larger than pivot, then recursively sorts partitions.      | O(N^2)                 | O(N log N)            | O(N log N)               | None (in-place)   |
+| **Bubble Sort** | Repeatedly steps through the list, compares adjacent elements, and swaps them if they are in the wrong order.                              | O(N^2)                 | O(N)                  | O(N^2)                   | None              |
+| **Heap Sort**   | Builds a max-heap (or min-heap) from the input data, then repeatedly extracts the largest (or smallest) element from the heap.          | O(N log N)             | O(N log N)            | O(N log N)               | None              |
+| **Merge Sort**  | **Divide and Conquer.** Divides the unsorted list into 'n' sub-lists, each containing one element, then repeatedly merges sub-lists to produce new sorted sub-lists until there is only one sorted list. | O(N log N)             | O(N log N)            | O(N log N)               | Available         |
+| **Radix Sort**  | Sorts integers by processing individual digits. Can be LSD (least significant digit first) or MSD (most significant digit first).           | O(dN)                  | O(dN)                 | O(dN)                    | Available         |
+
+### 2.5 Selection Sort Example
+1.  **Given Array:** `[8, 31, 48, 73, 3, 65, 20, 29, 11, 15]`
+2.  **Find Largest:** `73` (at index 3)
+3.  **Swap with Rightmost:** `73` swaps with `15`. Array becomes `[8, 31, 48, 15, 3, 65, 20, 29, 11, **73**]` (73 is now sorted at the end).
+4.  **Repeat:** Find largest in remaining unsorted part `[8, 31, 48, 15, 3, 65, 20, 29, 11]`, which is `65`. Swap with `11`.
+    *   Array becomes `[8, 31, 48, 15, 3, 11, 20, 29, **65**, 73]` (65 sorted).
+5.  Continue until the entire array is sorted.
+
+### 2.6 Bubble Sort Example
+1.  **Given Array:** `[3, 31, 48, 73, 8, 1, 20, 29, 65, 15]`
+2.  **First Pass (compare adjacent, swap if out of order):**
+    *   `(3, 31)` -> no swap
+    *   `(31, 48)` -> no swap
+    *   `(48, 73)` -> no swap
+    *   `(73, 8)` -> swap `[3, 31, 48, **8, 73**, 1, 20, 29, 65, 15]`
+    *   `(73, 1)` -> swap `[3, 31, 48, 8, **1, 73**, 20, 29, 65, 15]`
+    *   `(73, 20)` -> swap `[3, 31, 48, 8, 1, **20, 73**, 29, 65, 15]`
+    *   `(73, 29)` -> swap `[3, 31, 48, 8, 1, 20, **29, 73**, 65, 15]`
+    *   `(73, 65)` -> swap `[3, 31, 48, 8, 1, 20, 29, **65, 73**, 15]`
+    *   `(73, 15)` -> swap `[3, 31, 48, 8, 1, 20, 29, 65, **15, 73**]`
+    *   Now, `73` is at its correct sorted position at the end.
+3.  **Second Pass:** Repeat the process for the remaining unsorted part `[3, 31, 48, 8, 1, 20, 29, 65, 15]`.
+    *   `65` will "bubble" to the second to last position.
+4.  Continue until the entire array is sorted.
+
+---
+
+## 3. Search Algorithms
+
+### 3.1 Overview
+*   **Definition:** Techniques for efficiently finding a desired item within a dataset.
+*   **Selection:** Depends on the data structure and arrangement (sorted/unsorted).
+
+### 3.2 Classification of Search Algorithms
+
+| Classification   | Data Sorted? | Type                | Content & Characteristics                                                                                                                                                                                                                                                                                                                                                            | Average Search Time |
+| :--------------- | :----------- | :------------------ | :------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | :------------------ |
+| **Linear Search** | No           | Linear Search       | Compares each record sequentially from start to finish until the key is found. Simple to program. Search time increases linearly with file size.                                                                                                                                                                                                                          | O(N)                |
+| **Control Search** | Yes          | Binary Search       | Sets upper (F) and lower (L) limits, finds the middle (M), and continuously compares the key with M. Efficiently reduces search space by half each time. More effective for large datasets.                                                                                                                                                                                  | O(log N)            |
+| **Control Search** | Yes          | Fibonacci Search    | Creates sub-files using Fibonacci permutations. Searches using only addition and subtraction, making it potentially faster than binary search (which uses division).                                                                                                                                                                                                       | O(log N)            |
+| **Control Search** | Yes          | Interpolation Search | Selects an expected location for the search target based on key value distribution, then performs a linear search from that point. Useful for dictionary, phone book, or index searches.                                                                                                                                                                                       | O(log N)            |
+| **Control Search** | Yes          | Block Search        | Divides data into blocks, determines which block contains the data, then sequentially searches within that selected block. Effective block size is approximately the square root of N (`√N`). Easy to write and update.                                                                                                                                                            | O(log N)            |
+| **Control Search** | Yes          | Binary Tree Search  | Uses a binary tree data structure. Elements are organized such that left children are smaller and right children are larger.                                                                                                                                                                                                                                           | O(log N)            |
+| **Hashing**      | No           | Hashing             | Calculates the storage address of data using a **hashing function**. Directly accesses data based on its key. Suitable for data that are frequently inserted and deleted.                                                                                                                                                                                                   | O(1) (average)      |
+
+### 3.3 Graph Search Algorithms
+*   **Graph Search:** A basic operation on a graph that involves visiting and processing all vertices (nodes) in the graph exactly once, starting from a designated vertex. (e.g., Breadth-First Search, Depth-First Search).
+
+---
+
+================================================================================
+ORIGINAL TEXT (First 5000 chars)
+================================================================================
+
+--- Page 46 ---
+Software  Development )
++ Amount  of variable  space: Storage  space that stores data and variables  used while executing  a program,  and
+information  related  to function  execution.
+@ Time complexity
+This is the time taken to execute  and complete  an algorithm  as a program,  which is the sum of the compilation  time and the
+execution  time.
+Time complexity  = Compilation  time + Execution  time
+* Compilation  time: Fixed time, which is not closely related to the characteristics  of the program.  Once
+compiled,  the program  is kept constant  unless the program  is modified.
++ Execution  time: The program execution  time that is calculated  by counting  the number  of instances  of
+command  execution,  rather than by measuring  the actual accurate  execution  time, as it depends  on the
+performance  of the computer.
+Execution  time is mainly used when comparing  algorithms  and is expressed  as O(n) using the Big Oh notation’
+, which is expressed  as time complexity.  Execution  time functions  include logn, n, nlogn, n2, n3, and 2n,
+depending  on the algorithm  (by Lee Ji-young).  To solve the problem,  it is recommended  to select an algorithm
+with the smallest  value of time complexity  after creating  multiple algorithms  and calculating  the execution
+time of each algorithm.
+<Table 14> Calculating  execution  times according  to the change  of n value in the execution  time function
+logn < n < nlogn < rn < n3 < 2
+0 1 0 1 1 2
+1 2 2 4 8 4
+2 4 8 16 64 16
+3 6 24 64 512 256
+4 16 64 256 4096 65536
+5 32 160 1024 32768 4294967296
+<Table 15> Algorithm  complexity
+Complexity  notation Description
+O(1) Constant  type. Finds the solution  regardless  of the input size.
+O(log, Log type. Divides the input data and processes  one of them only.
+O(N) Linear  type. Processes  all input data one by one.
+O(Nlog,) Division and merger  type. Processes  data by dividing  and then merging  them.
+O(N) Square type. When the basic operation  loop structure  is double.
+O(N?) Cubic type. When the basic operation  loop structure  is triple.
+O(2") Exponential  type. Processes  by testing  all possible  solutions.
+1 To use Big Oh notation,  find an execution  time function  by calculating  the number  of execution  times and select a term for n,
+which affects  the value of this function  most, and then place it in the right parenthesis  of O without  the coefficient.
+M1 Software  development  45
+
+
+--- Page 47 ---
+ESSENCE
+E) Sorting  algorithm
+@ Classification  of sorting
+Sorting  can be classified  into internal sorting and external storing depending  on the sorting location.  The
+alignment  method should be selected  in consideration  of the conditions,  such as the characteristics  of the
+system in use, the amount  and state of the data, the memory  space required for sorting, and the execution
+time.
++ Internal alignment:  A sorting method  that places a small quantity  of data into the main memory  device for
+sorting.  The sorting  speed is fast, but the amount  of data that can be sorted is limited by the capacity  of the
+main memory  device.
++ External  sorting: A method  of sorting  a large volume of data in an auxiliary  storage  device. A large amount
+of data is divided into several sub-files  and sorted, and then the sorted sub-files  are merged in the auxiliary
+storage  device. The sorting  speed is slow.
+@ Classification  of internal  sorting  algorithms
+Insertion  sort
+L Shell sort
+Selection  sort
+Quick sort
+Bubble  sort
+|  Selection — —_
+Meng _—
+Counting  sort
+Radix sort
+Bucket  sort
+[Figure  6] Classification  of internal  sorting  algorithms
+46 TOPCIT  ESSENCE
+
+
+--- Page 48 ---
+Software  Development )
+@© Comparison  of the execution  times of internal  sorting  algorithms
+<Table 16> Comparison  of the execution  times of internal  sorting  algorithms
+Sorting sos Execution  time AdditionalDescriptionmethod pe Worst | Best | Average  | memory
+Insertion  | - A method  of sorting  by inserting  a value into the position > 7
+sort | concerned  based on the assumption  that data has been sorted, Oe!) Oe! 1) None
+- Dividing  the list of given data into subfiles  that has the length
+Shell sort  | of a specific parameter  value, and performing  insertion  sortingin | O(nlog,n) O(n'*) O(n) None
+each subfile.
+Selecti - Amethod  of sorting  repetitively  as many times as the size
+cath (number)  of data when finding the minimum  value and moving it O(n) O(n) O(n’) None
+to the left.
+A sorting  method  based on the Divide and Conquer  method.
+First, a random  criterion  is selected,  and values  smaller  than the
+B criterion  are placed on the left and larger  values  are placed on the 2
+oT right. Then, a random criterion is selected again and values are Oe! Mnlogn)  | Olnlogn) a
+divided  to the right and left again for sorting.
+~ Recursive  call is used.
+Bubble - Amethod  of sorting b . hy . ; ; :aes method of sorting by continuously  exchanging  adjacent  data. O(n’) O(n’) O(n’) None
+- Amethod  of sorting  by con...

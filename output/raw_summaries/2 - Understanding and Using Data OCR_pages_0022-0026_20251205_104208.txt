@@ -1,0 +1,257 @@
+LEARNING GUIDE: Pages 22-26
+Generated: 2025-12-05 10:42:08
+PDF: 2 - Understanding and Using Data OCR
+
+================================================================================
+LEARNING GUIDE
+================================================================================
+
+Here is a simplified, easy-to-read learning guide based on the provided text.
+
+---
+
+## Database Fundamentals: A Learning Guide
+
+This guide covers essential concepts about data processing, file systems, databases, database systems, architecture, and key roles.
+
+---
+
+### I. Data Processing Systems
+
+Different methods for processing data:
+
+#### A. Batch Processing System
+*   **Method:** System-centered.
+*   **Processing:** Data collected and processed in batches at scheduled times.
+*   **Requirements:**
+    *   Low processing cost.
+    *   High system performance.
+*   **Workflow:**
+    *   Requires preparatory work: collecting, classifying, organizing raw data, then writing to files.
+    *   Requires standby time: immediate processing is not supported.
+    *   Modifying changes is complex until files are processed collectively.
+*   **Examples:** Payroll, grade processing, utility bill processing.
+
+#### B. Online Processing System (Real-time Processing System)
+*   **Method:** User-centered.
+*   **Processing:** Data processed immediately when transferred to the computer.
+*   **Requirements:**
+    *   Can incur high processing costs.
+    *   Maintains data currency (up-to-date).
+*   **Workflow:**
+    *   No preparatory work required.
+*   **Challenges:** Difficult to maintain, repair, or restore.
+*   **Examples:** Airline/railroad seat reservations, bank deposit systems, stock account systems.
+
+#### C. Distributed Processing System
+*   **Method:** Connects geographically dispersed processors and databases over a network to process data.
+*   **Architecture:** Operates as a client/server system.
+*   **Benefits:**
+    *   Improves operation speed and reliability.
+    *   Increases efficient use of resources.
+*   **Challenges:**
+    *   Difficult software development.
+    *   High security level and design complexity.
+
+---
+
+### II. File Processing System
+
+Before databases, data was managed using file processing systems.
+
+#### A. Concept
+*   **Definition:** A method of storing and retrieving data recorded on physical disks. Originally for paper documents, computerized records were included from the 1960s.
+*   **Structure:** Typically uses a hierarchical file system with a directory structure.
+*   **Access:** Each application program accesses individual files directly to search, input, delete, and modify data.
+
+#### B. Characteristics
+*   **Program-Dependent Structure:** Application programmers must directly implement the logical file structure as a physical file structure.
+*   **Deep Knowledge Required:** Programmers need to know the physical data structure intimately to implement data access methods.
+*   **Limited Data Sharing:** Each application program often has its own data, making sharing difficult. One file generally serves only one application.
+
+#### C. Problems with the File System
+*   **Lack of Data Independence:** Programs are dependent on specific data structures; changes to data require changes to programs.
+*   **Data Inconsistency:** Difficult to ensure data values are consistent across different files/applications (e.g., a file's value might depend on when it was retrieved).
+*   **Lack of Data Integrity:** Difficult to ensure semantically identical values remain identical across the system.
+*   **Poor Sharing & Use:** Low convenience, economic feasibility, and security management.
+
+---
+
+### III. Database (DB) Concepts
+
+The database addresses the problems of file processing systems.
+
+#### A. Definition & Core Characteristics
+A database is characterized by:
+*   **Integration:** Data is managed in one place to minimize duplication.
+*   **Operation:** Supports data necessary for an organization's functions.
+*   **Storing:** Data is saved in computer-accessible storage media (disk, tape).
+*   **Sharing:** Data is jointly owned, maintained, and used by multiple applications/users.
+
+#### B. Key Features
+*   **Real-time Accessibility:** Responds immediately to queries.
+*   **Continuous Evolution:** Dynamically changes with data input, modification, and deletion, accurately reflecting the current state.
+*   **Concurrent Sharing:** Multiple users can access and share the same data simultaneously in different ways.
+*   **Content Reference:** Data can be accessed and retrieved based on its *values* (content), not just its physical location.
+
+---
+
+### IV. Database System (DBS)
+
+A DBS is a computer-based system that uses a database.
+
+#### A. Definition
+A **Database System (DBS)** is a computer-centered system that stores and manages data in a database to create necessary information.
+
+#### B. Components of a DBS
+1.  **Database (DB):** A set of operational data, integrated and stored with minimal redundancy, shared by multiple applications within an organization.
+2.  **Database Language:** Tools (like SQL) that provide an interface between users and the database system (for data manipulation and definition).
+3.  **Users:**
+    *   **Database Administrator (DBA):** Manages the database.
+    *   **Database Application Programmer:** Develops applications that interact with the database.
+    *   **Database User:** End-users who access and use the database through applications.
+4.  **Database Management System (DBMS):** System software that provides functions for constructing, maintaining, and utilizing the database.
+
+---
+
+### V. Data Independence & 3-Level Architecture (ANSI-SPARC)
+
+Data independence is a core concept that allows different parts of the database system to change without affecting others.
+
+#### A. Why Data Independence? (Background)
+*   **Problem:** Data dependency, where application programs are tied to specific data structures, leads to high maintenance costs, complexity, and duplicated data.
+*   **Solution:** Data independence separates how users view data from how it's physically stored and logically organized. This allows changes in one area (e.g., storage) without impacting others (e.g., user applications).
+*   **3-Schema Architecture:** Proposed by ANSI-SPARC to reduce interference from changes by separating these views.
+
+#### B. The 3-Level Database Architecture
+This model defines three non-interfering phases (schemas):
+
+1.  **External Schema (User's Viewpoint):**
+    *   **What it is:** The individual view of the database seen by specific users or application programs.
+    *   **Characteristics:** Multiple external schemas can exist, each tailored to a user's specific needs or an application's requirements.
+    *   **Analogy:** A personalized window showing only relevant parts of the database.
+
+2.  **Conceptual Schema (Integrated Perspective):**
+    *   **What it is:** A single, integrated description of the entire organization's database.
+    *   **Characteristics:** Combines all user perspectives, describing all data, its relationships, and constraints, regardless of how it's physically stored.
+    *   **Analogy:** A complete blueprint of the entire building, showing all rooms and their connections, without detailing how the walls are constructed.
+
+3.  **Internal Schema (Physical Storage Structure):**
+    *   **What it is:** Describes the physical storage structure of the database.
+    *   **Characteristics:** Details how data is actually stored on storage devices, including indexing, file organization, and physical record structures.
+    *   **Analogy:** The detailed construction plans for the building's foundation and structural elements.
+
+#### C. Types of Data Independence
+Data independence is categorized into two areas based on the 3-level architecture:
+
+1.  **Logical Independence:**
+    *   **What it is:** The ability to change the conceptual schema without affecting the external schemas or application programs.
+    *   **Benefit:** Allows the overall integrated structure of the database to be changed (e.g., adding a new attribute) without modifying existing user applications.
+
+2.  **Physical Independence:**
+    *   **What it is:** The ability to change the internal schema (physical storage structure) without affecting the conceptual schema, external schemas, or application programs.
+    *   **Benefit:** Allows changes to how data is physically stored (e.g., moving to a different storage device, changing indexing) without impacting the logical view or user applications.
+
+#### D. Mapping
+**Mapping** acts as a "bridge" to connect these independent concepts.
+
+1.  **External/Conceptual Mapping (Logical Mapping):**
+    *   **Function:** Defines the correlation between an external view (what a user sees) and the conceptual view (the overall logical structure).
+    *   **Example:** A user's view might show an 'Age' field, while the conceptual schema stores 'Date of Birth'. This mapping translates between them. Changes in the conceptual view's field types do not necessarily affect the external view.
+
+2.  **Conceptual/Internal Mapping (Physical Mapping):**
+    *   **Function:** Defines the correlation between the conceptual view and the physically stored database.
+    *   **Example:** If the physical storage structure changes (internal schema), this mapping adjusts so that the conceptual schema (and thus external schemas) remains unchanged.
+
+---
+
+### VI. Database Roles
+
+Key personnel responsible for database management:
+
+#### A. Database Administrator (DBA)
+*   **Role:** Responsible for the configuration and overall administration of the database to ensure the database system functions properly.
+*   **Tasks (Partial):**
+    *   **Data Modeling:** Designing data models based on business requirements, including physical data modeling for storage environments.
+    *   **Performance Modeling:** Optimizing database performance.
+    *   **Implementation Support:** Acts as a physical model expert during project analysis and design.
+
+---
+
+================================================================================
+ORIGINAL TEXT (First 5000 chars)
+================================================================================
+
+--- Page 22 ---
+Database )
++ System-centered  processing  method.  (Low processing  cost and high system  performance  are required.)
++ Preparatory  work is required.  (Collecting,  classifying,  and organizing  raw data -> Writing  in a file)
++ Standby  time is required.  (Immediate  processing  is not supported.)
++ The procedure  of modifying  changes  is complex  and difficult  until files are processed  collectively.
++ Example:  Payroll processing  system,  grade processing  system,  utility bill processing  system,  etc.
+@ Online processing  system
++ When data are transferred  to a computer,  the computer  immediately  processes  the data. (Real-time  processing
+system)
++ User-centered  processing  method.  (It incurs a high processing  cost and low system  performance  is required.)
++ Preparatory  work is not required.
++ Data currency  is maintained.
+* Difficult  to maintain,  repair, or restore,
++ Example:  Seat reservation  processing  systems  for airlines and railroads,  bank deposit  processing  systems,  stock
+account  systems  for securities  companies,  etc.
+@ Distributed  processing  system
++ Data are processed  by connecting  processors  and databases,  which are geographically  dispersed,  over the network.
++ Operated  in the form of a client/server  system.
++ Improves  the operation  speed and reliability.
++ Increases  the efficient  use of resources.
++ Software  development  is difficult,  and the security  level and degree  of design complexity  are relatively  high.
+O2 Understanding  the Database
+A) Concept  and characteristics  of the file processing  system
+The term ‘file processing  system’  refers to a method  of storing  and retrieving  paper documents  that was widely used
+before the computer  was invented.  However,  the meaning  of the term began to include  computerized  records  in the
+1960s. Such  a file system is designed  to arrange and manage the data recorded  by the user on a physical disk. In
+general,  a hierarchical  file system  with a directory  structure  is used.
+Each application program  in a file system accesses  an individual  file to process,  in order to search, input, delete, and
+modify  it.
+For example,  if a file system is used when a certain web service system saves the user’s log-in history,  the application
+program  that saves the login history has a unique form according  to the characteristics of the application program,
+depending  on the sequence  in which the information  to be saved is arranged,  and the unit of classification  of such
+information.
+@ Characteristics  of the file processing  system
++ The application  program  should directly  implement  the logical file structure  designed  by the application  programmer
+M2 Database  21
+
+
+--- Page 23 ---
+ESSENCE
+as a physical  file structure.
++ Application  programmers  can implement  the data access method in the application program  only when they know
+the physical  data structure  very well.
++ Sharing  data naturally  becomes  difficult  in an environment  where each application  program has its own data.
+Therefore,  one file ultimately  exists only for one application  only.
+@ Problems  with the file system
++ Inability  to guarantee  data independence  - Program  dependent.
++ Problem  of ensuring  data consistency  - Time dependence  of a file (which has a different  value depending  on the
+time of retrieval).
++ Problem  of ensuring  data integrity  - Values that are semantically  the same should remain identical.
++ Low sharing  and use convenience  - Low economic  feasibility  and poor security  management.
+B) Concept  and characteristics  of the database
+@® Concept  of the database
+The database  has the characteristics  of integration,  operation,  storing, and sharing. In the past, data were inevitably
+saved in duplicate  when recorded  on paper, because  even the same data could not be shared in real time. Data
+were also saved in several files in duplicate  even when the file system was in use. The database, however,  manages
+duplicated  data in one place as intensively  as possible  to eliminate  duplication  to the maximum.
+<Table 2> Data classification
+Classification Contents
+This means  that the same data are not duplicated  in principle
+Integrated  data + Minimal  redundancy
++ Controlled  redundancy
+Stored data Data are saved in a storage  medium  that can be accessed  by a computer  (tape, disk, etc,).
+Data which are required  to perform  the unique functions  of an organization.  (Temporary  data
+used while performing  a task, such as simple input/output,  are not operational  data.)
+Data which are jointly owned, maintained,  and used by several application  programs  within an
+organization.Operational  data
+Shared data
+@ Characteristics  of the database
+The shared database  can be accessed  in real time using the programming  language,  and is constantly  changing  due
+to the input, modification  and deletion  of data. The database  can also be accessed and  shared by multiple  users
+...

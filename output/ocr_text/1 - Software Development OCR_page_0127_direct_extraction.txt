@@ -1,0 +1,38 @@
+ESSENCE
+01 Concept  and Tupes of Software  Maintenance
+A) Definition  of software  maintenance
+Software  maintenance  is the last phase of the SDLC (Software  Development  Life Cycle). It is an operation-
+oriented  operational  phase that extends  the life of software,  and comprises  a series of tasks aimed at
+correcting  software  errors and improving  its functions  and performance  by modifying  the original requirements.
+Software  maintenance  is a series of software  engineering  works that eliminate  defects,  improve  performance,
+and adapt software  to the changed  environment  after its initial delivery  to the customer.
+B) Purposes  of software  maintenance
+Software  is mainly maintained  to improve software  performance,  repair defects,  port software  to enable it to
+run in a new environment,  and consists  of a series of preventive  measures  including  correction.  As mentioned
+above, software  maintenance  is a very important  phase in securing  the efficiency  of the software  life cycle for
+the following  reasons.
++ Noticeable  increase  of maintenance  costs that are higher than the  existing  development  costs among the
+entire software  development  and maintenance  costs.
++ Increased  administrative  tasks such as documentation  due to the complexity  of the software.
++ Emphasis  is placed on the importance  of management  due to the use period being longer than the
+development  period.
++ Increased  maintenance  works due to the spread of package  development,  rather than outsourced
+development.
+C) Type of software  maintenance
+Software  maintenance  can be classified  according  to reason, time, and target. Sometimes,  a contract  is signed
+according  to these classification  criteria.
+<Table  44> Classification  of software  maintenance
+Classification  criteria Type Contents
+Maintenance,  handling,  execution,  implementation,  and error
+identification  due to errors.
+Processing  to adapt to changes  in the data environmentCorrective  maintenance
+Maintenance  byAdaptive maintenan - ireason daptive maintenance and the infrastructure  environment.
+. . i Ir i Perfective  maintenance Maintenance  for adding  a new feature,  changing,  and
+improving  quality.
+Scheduled  maintenance Periodic  maintenance.
+Maintenance  by time  | Preventive  maintenance Maintenance  as a preventive  measure.
+Emergency  maintenance If maintenance  work needs to be approved  later.
+Data/program  maintenance Processing  when necessary,  such as data conversion.
+Maintenance  by Processing  for changing  the document  standard  or whenDocumentation  maintenancetarget necessary.
+System  maintenance System  maintenance.
+126 TOPCIT  ESSENCE

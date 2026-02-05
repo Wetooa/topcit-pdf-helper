@@ -1,0 +1,14 @@
+Overview  of System Architecture )
+chunks. The information  field indicates the type of the chunk, and the Type field is defined up to 256 bytes of the
+chunk, but only some are defined,  and the rest are reserved  for future use. The Flag field defines special flags that
+may require special chunks.
+In some chunk types, the data chunk is identified  as the control  chunk. <Table  70> shows major chunk types.
+{Table 70) Chunk  Types
+A a Chunk type os _ Chunk type
+0 Payload  data 6 Abort
+1 INIT 7 SHUTDOWN
+2 INIT ACK 8 SHUTDOWN  ACK
+3 SACK (selective  ACK) 9 ERROR
+4 HEARTBEAT 10 COOKIE  ECHO
+5 HEARTBEAT  ACK 11 COOKIE  ACK
+M3 Overview  of System  Architecture  193

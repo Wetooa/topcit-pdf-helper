@@ -1,0 +1,40 @@
+Database )
+* It is difficult  to perform  unexpected  random  search.
+@ Network  database
+A network  database  stores data by expanding  the tree form of a hierarchical  database  into a network  form. Pointers
+are used to maintain  a many-to-many  relationship  between  records  and to link data.
+The major characteristics  of the network  database  are as follows.
++ It was developed  in the early 1970s to solve the problems  with the hierarchical  database.
++ Data can be extracted  quickly  and effectively  by adding  links between  hierarchical  structures.
++ High maintenance  costs and backlog  are entailed  by the complex  type system.
++ Programmers  must understand  the structure  to write a program.
++ A record can have pointers  to children and sibling records and to parent  records, which was not possible  with the
+hierarchical  database.
+@ Relational  database  (RDB)
+The relational  database  is based on the relational  data model proposed  by E.F. Codd in the 1970s. Major commercial
+products  include  Oracle, SQL Server, DB2, Informix,  Sybase,  and Ingres.
+Characteristics  of the relational  database
++ The model itself is simple.  The database  stores characters/numbers/date  information  in a two-dimensional  structure
+(column,  row).
+* The model is based on mathematical  theory - particularly  the set theory of mathematics.  Therefore,  the
+performance  of the system to be developed  can be predicted  and verified mathematically,  and various operations
+can be mathematically  optimized.
++ Existence  of query language  - Anyone  can easily search for desired information  by leaming  a simple query language
+in the 4GL format.
++ Contiguous  support  for technology  that keeps pace with the circumstances  of the times - Supports  the client/
+server architecture,  large-scale  parallel processing,  etc.
+@ Object-oriented  database  (OODB)
+The relational  database  cannot create new types of data or expand existing  types, and has difficulty  processing
+unstructured  complex  information  such as multimedia. Also, the standard  query language  “SQL” expresses  data
+relationships  by values, making  it difficult  to find and process mutually related entities when expressing  a complex
+object. Accordingly,  a database  that can search and store information  based on an object model emerged,  namely,
+the object-oriented  database.  Major commercial  products  include ObjectStore,  O2, Objectivity,  and Uni-SQL.
+The object-oriented  database  has the following  characteristics,
++ User-defined  data types are supported,  and inheritance  can be specified.
++ Unstructured  complex  information  can be modeled.
++ Information  can be accessed  based on navigation  using the reference  structure  between  objects.
++ The structure  of information  in the program  is also same as that of the database  schema.
+However,  the object-oriented  database  was not distributed  widely in the market because  its basic database
+management  functions  were found to be weak, such as transaction  processing,  number  of supported  concurrent
+users, backup  and recovery,  etc., and system safety and performance  were never proven in an enterprise  environment.
+M2 Database  31

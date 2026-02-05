@@ -1,0 +1,195 @@
+LEARNING GUIDE: Pages 22-26
+Generated: 2025-12-07 00:55:05
+PDF: 3 - Overview of System Architecture OCR
+
+================================================================================
+LEARNING GUIDE
+================================================================================
+
+Here is a simplified, easy-to-read learning guide based on the provided text:
+
+---
+
+# System Architecture: Learning Guide (Pages 22-26)
+
+## 1. Introduction to System Architecture
+
+### 1.1 Why Study System Architecture?
+*   Computer systems are integral to daily life (smartphones, services).
+*   Understanding **system architecture** is crucial for comprehending how computer systems operate and how to secure them (e.g., against hardware hacking threats).
+
+## 2. Concept of System Architecture
+
+### 2.1 What is an Information System?
+*   A system that uses **Information Technology (IT)**.
+*   Provides services using computers, which operate with a combination of **hardware** and **software**.
+*   Requires designing and building IT infrastructure (hardware and software).
+
+### 2.2 Understanding System Architecture Definitions
+
+**A) Broad Definition:**
+*   Refers to all architecture needed for a system to provide services.
+*   Encompasses:
+    *   **Application Architecture (AA):** Designs software components, their connections, operations, and constraints.
+    *   **Data Architecture (DA):** Defines data structures to ensure data integrity.
+    *   **Technical Architecture (TA):** Designs hardware and middleware structures.
+
+**B) Narrow Definition:**
+*   Refers specifically to the document defining the configuration and relationships of:
+    *   **Hardware:** Servers, storage, network, security.
+    *   **Specific Software:** Operating Systems (OS), middleware.
+*   Essentially, it focuses on the **Technical Architecture (TA)**, detailing how hardware and middleware components are laid out and connected.
+
+**C) INCOSE Definition (International Council on Systems Engineering):**
+*   "The fundamental and unifying system structure defined in terms of system elements, interfaces, processes, constraints, and behaviors."
+
+### 2.3 Detailed Architecture Types (Under Narrow/Technical Architecture)
+
+These define the specific structure and resources:
+
+*   **Server Design Architecture:**
+    *   Defines server resources: CPU speed/cores, memory capacity, network card (NIC) performance/count, storage types (SSD, SAS disk) and capacity.
+    *   Specifies server types (rack-mount, blade) and sizes (1U to 4U).
+*   **Network Design Architecture:**
+    *   Defines network components for services: External network capacity (bandwidth).
+    *   Determines connected switches and routers.
+    *   Includes **L4 switches** for load balancing (distributing network traffic).
+    *   Details security systems (DDoS, IPS, firewalls).
+    *   Specifies network addresses (Subnet, IP, gateway).
+*   **Storage Design Architecture:**
+    *   Defines separate network storage: Capacity and performance (IOPS, bandwidth).
+    *   Specifies media types (SSD, SAS, SATA).
+    *   Details **RAID configurations** (Redundant Array of Independent Disks for data redundancy/performance).
+    *   Specifies storage network types (SAN, iSCSI, NFS).
+
+## 3. Core Information System Components
+
+Information systems are built from four fundamental components: **Server, Storage, Network, and Security.**
+
+### 3.1 Server
+*   **Function:** Provides the computing power for an information system. Runs application programs to process business logic and data.
+*   **Components:** Stacked structure of computer hardware, OS, middleware, and application programs.
+*   **Design:** System architecture defines server capacity, count, layout, and role.
+*   **Common Types:** Mainframes, Unix servers, x86 servers (increasingly popular, especially with cloud services).
+*   **Example (Web Services):**
+    *   **Webserver:** Responds to user requests, organizes web pages (e.g., Apache, Nginx).
+    *   **Web Application Server (WAS):** Processes business logic, interacts with database servers (e.g., Tomcat, JBoss).
+    *   **Database Server:** Manages data (creates, requests, modifies, deletes) (e.g., MySQL, PostgreSQL).
+
+### 3.2 Network
+*   **Function:** Connects all information system components for communication. Processes communication between servers, servers and storage, and internal/external networks.
+*   **Devices:**
+    *   **Switches:** Connect devices within a local network (LAN).
+    *   **Routers:** Connect different networks and direct traffic between them (e.g., LAN to Internet).
+    *   **Load Balancers (L4/L7):** Distribute incoming network traffic across multiple servers.
+    *   **Bridges:** Connect network segments.
+    *   **Access Points (AP):** Used in wireless networks.
+*   **Security Overlap:** The network is a common entry point for attacks, so security devices protect internal networks from external threats.
+
+### 3.3 Storage
+*   **Function:** Holds the data of an information system.
+
+**A) Categorization by Data Storage Method:**
+*   **Block Storage:** Saves data in fixed-size blocks (e.g., 16KB). Used for Operating Systems (OS) like Windows, Linux, Unix.
+*   **File Storage:** Saves data in file units. **Network Attached Storage (NAS)**, used for shared file repositories, is a common type.
+*   **Object Storage:** Saves data as flexible objects, not fixed blocks or files. Mostly used in cloud storage.
+
+**B) Categorization by Connection Method:**
+*   **Direct Attached Storage (DAS):**
+    *   Directly connected to a single server.
+    *   Requires a filesystem to be usable.
+    *   Examples: IDE, SATA, SAS drives within a server.
+*   **Network Attached Storage (NAS):**
+    *   Connected via a standard network (e.g., Ethernet).
+    *   Mounted to the OS as a shared folder.
+    *   Examples: NFS, CIFS, AFS protocols.
+*   **Storage Area Network (SAN):**
+    *   Connected via a dedicated, high-speed network specifically for storage (often Fibre Channel or iSCSI).
+    *   Provides block-level access to storage, appearing as local disks to the OS, but requires creating a filesystem.
+    *   Examples: SAN, iSCSI, FCoE.
+
+### 3.4 Security
+*   **Function:** Protects the confidentiality, integrity, and availability of the information system. Typically configured via network connections.
+*   **Placement:** Security hardware is installed between external (Internet) and internal networks, and often within the internal network itself.
+*   **Key Security Devices/Systems:**
+    *   **DDoS Defense System:** Protects against Distributed Denial of Service attacks.
+    *   **Firewalls:** Monitor, log, and block network traffic based on predefined rules.
+    *   **IPS/IDS (Intrusion Prevention/Detection System):** Detects and/or prevents abnormal traffic or abuse.
+    *   **Web Firewalls:** Specifically protect webservers by monitoring and blocking malicious web service traffic.
+    *   **Access Control Solutions:** Manage user and system permissions, allowing or denying access to servers and resources.
+
+---
+
+================================================================================
+ORIGINAL TEXT (First 5000 chars)
+================================================================================
+
+--- Page 22 ---
+Overview  of System  Architecture
++ Preview  for practical  business
+"Discovery  of a ‘Chinese  hacking  chip’ in a well-known  server  board in the United
+States...Industry  thrown  into commotion”  2018. 10. 05.
+Citing the words of six senior US intelligence  officials on the 4th (local time), Bloomberg  reported  that a
+hacking  microchip,  that was not in the design, was found on the server mainboard  of a well-known  server
+manufacturer,  Super micro, and that the Chinese  Government  was allegedly  involved.
+(Source: http://it.chosun.com/site/data/htm|_dir/2018/10/05/2018100502710.html)
+There is not a moment  in our daily lives when we do not use the services  provided  by computer  systems.
+With the wide-spread  use of smartphones,  we are spending  even more time with computer  systems.  In
+such an environment,  Chinese  hacking  chips can expose  our lives to hackers.  This hacking  chip was found on a
+computer  system’s  board. It contains  stolen key US information  through  hardware  hacking,  which is more
+threatening  than software  hacking.  This tiny chip has the capability  to steal information  from a computer
+over a network. How can such a small chip contain this function?  While the early computer,  ENIAC, was
+the size of a building,  computers  have become  drastically  smaller since then, and the computing  power
+of smartphones  that we carry in our hand is so high, that it is not even comparable  to that of ENIAC. It is
+necessary  to learn the system  architecture  to understand  the concept  of a computer  system.
+M3 Overview  of System  Architecture  21
+
+
+--- Page 23 ---
+ESSENCE
+01 Concept  of System  Architecture
+A) Understanding  system  architecture
+@ Overview  of system  architecture
+An information  system is a system that uses information  technology  (IT). The information  system provides  services
+using a computer,  and a computer  operates  with a combination  of hardware  and software.  Implementing  an
+information  system used inside an enterprise,  or provided  as a service  to users, requires  the design and construction
+of IT infrastructures,  such as hardware  and software  design and development.  Software  designs the software
+components  and operations,  such as the connection  of the software  components  and constraints  based on software
+architecture.  Hardware,  like software,  designs  and develops  the hardware  architecture.  System architecture  refers
+to the architecture  for a system to provide services,  based on hardware  and software  architecture.  In a broader
+definition,  it refers to all architecture,  including  the application  architecture  (AA), data architecture  (DA), and technical
+architecture  (TA), for constructing  an information  system.  A narrow definition  refers to the document  that defines  the
+configuration  and relationship  of hardware,  such as a server, storage,  network  and security,  and certain  software  parts,
+such as OS and middleware.
+@ Definition  of system  architecture
+* Definition  as defined  by the International  Council  on Systems  Engineering  (INCOSE)
+The fundamental  and unifying  system structure  defined in terms of system elements,  interfaces,  processes,
+constraints,  and behaviors.
+System  Architecture  in
+a Broad Sense Data Architecture
+Technical  Architecture System Architecture  in
+a Narrow  SenseSystem
+22 TOPCIT  ESSENCE
+
+
+--- Page 24 ---
+Overview  of System Architecture )
++ Broad definition  of system  architecture
+A system architecture  is a document  that defines  the structure  of an information  system provided  to support  the
+business  process  required  to achieve  the objective  of an enterprise.  A system architecture  is divided into TA, which
+defines the structure  of hardware,  such as a server, network,  and security,  as well as the distributed  structure  of
+middleware  operating  on the hardware,  DA, which defines  the data structure  to assure data integrity,  and AA, which
+defines  the software  components  and the relationship  and constraints  of said defined  components.
++ Narrow  definition  of system  architecture
+A system  architecture  refers to the structure  of an information  system,  which includes  principles  and guidelines  that
+define the components,  such as hardware,  software,  security,  interactions,  and constraints.  In other words, it refers
+to TA and defines  the layout and connection  mode of the middleware,  such as the DB server and WAS, to distribute
+the application  programs  of the developed system and hardware,  such as a server, storage,  and network.  The
+following  table shows the types of detailed  architecture  defined  in system  architecture.
+Type Description
+It defines  the server  resources.
+- CPU clock speed and number  of cores
+- Memory  capacity  and network  card (NIC) performance  and count
+- Type and capacity  of storage  units, such as SSD and SAS disk
+- Server  type, such as rack-mount  type and blade type
+- Server s...

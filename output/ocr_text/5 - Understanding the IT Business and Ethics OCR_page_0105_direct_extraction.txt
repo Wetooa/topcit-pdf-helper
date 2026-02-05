@@ -1,0 +1,34 @@
+ESSENCE
++ ISO/IEC 20000 is an international  standard  which clearly defines the requirements  for IT service management
+activities.  It was developed  by modifying  the BS15000  certification  of the BSI (British Standard  Institute),  the de
+facto international  standard  and certification  specification  on IT service  management.
+B) Understanding  ITIL
+@ Definition  of ITIL
+The IT Infrastructure  Library (ITIL) is a guideline  for IT management  developed  by the Central Computer  &
+Telecommunications  Agency (CCTA) of the UK for public agency users in the late 1980s. ITIL is an IT service
+management  framework  which is a compilation  of the best practices  in IT service management,  and which provides
+standard  guidelines  for IT service management.
+It also provides  a process  for clearly  and transparently  identifying  the complex  IT service framework  so that
+enterprises  can realize  their business  objectives.
+@ History  of ITIL
+ITIL is an intellectual  property and a registered  trademark  managed  by the British government,  but it is effectively
+used as a de-facto  global standard  for managing  IT services.
++ Version 1: In the 1980s, the British government's  CCTA developed  a standard  reference  document  to address
+its reliance  on IT. In this version, several books on the specialized field of IT services  were collected  and
+published.
++ Version  2: During  the period 2000~2001,  ITIL version  2 was announced  and an ITIL v2 glossary  was published.
++ Version  3: Version 3 was announced  in 2007 by the OGC, an organization  under Her Majesty's  Treasury,  and is
+known as the ITIL 2007 edition. In July 2011, ITIL 2011 was published  as an improved  version of ITIL 2007.
+Since then, the ownership  of ITIL has belonged  to the British  government.
+@ ITIL v2 process
+The key component  elements  of ITIL v2 are service  delivery  and service  support.
+<Table  49> Component  elements  of ITIL v2
+Area Process Key activities
+Management  of service  quality  as dictated
+Service  level management by SLA
+Estimation  of required  resources,
+Capacity  management management  of transaction  load.
+Service  Delivery Availability  management Work continuity  plan and control.
+Financial  management Management  of quantitative  cost and income.
+IT service  continuity  management Management  of disaster  and recovery  efforts
+104 TOPCIT  ESSENCE

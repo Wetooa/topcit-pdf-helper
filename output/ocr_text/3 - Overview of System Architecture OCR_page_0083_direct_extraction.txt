@@ -1,0 +1,31 @@
+ESSENCE
+© Load balancing  technologies  - AMP, SMP. and BMP
+Load balancing  adequately  distributes  jobs to the cores in order to increase the multi-core  performance.  The
+multiprocessing  models include asymmetric  multiprocessing  (AMP), symmetric  multiprocessing  (SMP), and bound
+multiprocessing  (BMP).
++ AMP: An OS is executed  independently  in each processor  core.
++ SMP: An OS manages  all processor  cores simultaneously.  Application  programs  can operate  in any core.
++ BMP model: An OS manages  all process  cores simultaneously,  and an application  program  can run on a specific  core.
+F) Graphic  processing  technology
+@ Graphics  processing  unit (GPU)
+The hardware  specializes in computer  graphics  calculation  and is mainly used for the rendering  of 3D graphics.  Since
+a GPU is configured  with thousands  of small cores that perform  floating-point  operations  processed  in parallel, its
+performance  is superior  to a CPU that is configured  with a small number  of cores. A GPU dedicated  to processing
+large-capacity  image data generates  results through  parallel  jobs using multiple  cores. Although  recent  GPUs were
+mainly used for graphics  processing  functions,  they are evolving  into more flexible, programmable  GPUs.
+@ General-purpose  GPU (GPGPU)
+Based on the fact that a GPU shows high computational  performance  in matrix and vector  operations  that are mostly
+used for graphic rendering, the computing  system intends  to utilize GPUs in the general computing  domain as well.
+Many models  supporting  GPGPU  programming  have appeared.  They include  CUDA and OpeACC  from NVIDIA,  OpenCL
+from Khronos  Group, and C++ AMP from Microsoft.
+CPU GPU
+ALU ALU ALU ALU ALU ALU ALU ALU ALU ALU ALU
+ALU ALU ALU ALU ALU ALU ALU ALU ALU ALU ALU
+ALU ALU ALU. ALU : : ALU ALU ALU ALU ALU ALU ALU ALU ALU ALU ALU
+ALU ALU ALU ALU ALU ALU ALU ALU ALU ALU ALU
+[Figure 51] Difference  of CPU and GPU Structures
+G) GPU-based  parallel  programming  technology
+@ Compute  Unified Device Architecture  (CUDA)
+In 2006, NVIDIA introduced  CUDA, a tool for GPU development.  CUDA is a parallel computing  platform and a
+programming  model that can significantly  improve  computing  speed with a large number  of GPU cores. It provides
+82 TOPCIT  ESSENCE

@@ -1,0 +1,173 @@
+LEARNING GUIDE: Pages 220-224
+Generated: 2025-12-05 14:15:14
+PDF: 5 - Understanding the IT Business and Ethics OCR
+
+================================================================================
+LEARNING GUIDE
+================================================================================
+
+Here is a simplified, easy-to-read learning guide based on the provided text:
+
+---
+
+## Learning Guide: IT Business & Ethics - Focus on AI
+
+### 1. Introduction: The Ethical Dilemma of Autonomous Technology
+
+*   **Problem:** New technologies, like Artificial Intelligence (AI) and Autonomous Vehicles (AVs), create complex ethical dilemmas.
+*   **Example (Autonomous Vehicle):**
+    *   **Scenario:** A self-driving car with broken brakes faces a choice:
+        *   Hit 5 pedestrians (driving straight).
+        *   Hit 1 pedestrian (turning).
+        *   Hit 1 car occupant (turning, if the injured person isn't a pedestrian).
+    *   **Survey Results (2016 Science Journal):**
+        *   **Ethical Preference:** 78% of people said it's more ethical to save the most lives (5 pedestrians).
+        *   **Purchase Intent:** However, most people *would not buy* an AV that prioritizes pedestrian safety over the car occupant's (who could be them or their family).
+    *   **Conclusion:** This highlights a fundamental dilemma: what is rational/ethical for society vs. what is desired for personal safety.
+*   **Key Takeaway:** Understanding the ethical issues of new technology is crucial for its safe and beneficial use, considering both its advantages and potential misuse.
+
+### 2. Major Ethical Issues of Artificial Intelligence (AI)
+
+*   **Context:** The rise of intelligent robots and products marks the 4th Industrial Revolution and an intelligent information society.
+*   **Two Main Types of AI Ethical Issues:**
+    1.  **Moral & Philosophical Ethics:** Pertains to the identity of AI/robots and their relationship with humans.
+    2.  **Practical Ethics:** Required from professionals (developers, users) involved in creating and distributing AI.
+
+#### Key International AI Ethics Initiatives & Principles:
+
+Several organizations have issued guidelines for AI ethics:
+
+*   **2010 - UK EPSRC (Engineering & Physical Sciences Research Council):** Presented "Principles of Robots," covering AI issues from the perspective of designers, builders, and users.
+*   **2016 (Oct) - US NSTC (National Science and Technology Commission):** Published "Preparing for the future of artificial intelligence." Emphasized:
+    *   AI as an economic growth engine.
+    *   Need for national/social consensus on future AI issues.
+*   **2016 (Dec) - IEEE (Institute of Electrical and Electronics Engineers):** Announced "Ethically Aligned Design." Focused on:
+    *   Designing AI with ethical aspects from the start.
+    *   Accountability of suppliers, transparency, awareness, privacy, employment.
+*   **2016 (Dec) - Japan's Ministry of Internal Affairs and Communications:** Proposed "Discussion toward Formulation of AI R&D Guideline." Presented eight principles for AI developers: transparency, user support, controllability, security, safety, personal info protection, ethics, accountability.
+*   **2017 (Jan) - US FLI (Future of Life Institute):** Announced "Asilomar AI Principles."
+    *   23 principles for AI development, signed by over 2,000 experts.
+    *   Keywords: safety, transparency, accountability, privacy protection, shared profits, avoiding AI arms race.
+*   **2017 (Feb) - EU (European Union):** Released "Civil Law Rules on Robotics." Advised developers, researchers, and designers to prioritize:
+    *   Human dignity, personal privacy, and human safety when planning, designing, and implementing robots.
+
+#### Ethical Guidelines for AI Developers:
+
+*   **Reason for Specific Guidelines:** AI's performance is affected by human interaction, its behavior is difficult to predict, and it's more complex/less secure than conventional software.
+*   **Developer Responsibilities:**
+    1.  Design & develop AI accurately, clearly, fairly, and faithfully to client orders.
+    2.  Conduct quality certification and supply AI to business operators.
+    3.  Maintain product responsibility and provide continuous upgrades.
+    4.  Prepare and provide malfunction countermeasures within the product.
+    5.  Comply with global standard design/implementation and share knowledge.
+    6.  Act honestly and unbiasedly with customers, obey laws (societal, national, global), and respect intellectual property (universal social responsibility).
+
+### 3. Foundational AI Ethics: Asimov's Three Laws of Robotics
+
+*   **Origin:** Introduced by Isaac Asimov in his 1942 short story "Runaround" and formalized in the 1950 collection "I, Robot."
+*   **Purpose:** These are "commands" embedded *within* an AI robot at manufacturing, forming a "moral code" for the AI itself, not ethical rules for developers. They regulate robot behavior and define their relationship with humans.
+*   **The Three Laws (in order of precedence):**
+    1.  **First Law:** A robot may not injure a human being or, through inaction, allow a human being to come to harm.
+    2.  **Second Law:** A robot must obey the orders given it by human beings except where such orders would conflict with the First Law.
+    3.  **Third Law:** A robot must protect its own existence as long as such protection does not conflict with the First or Second Law.
+*   **Later Addition (1984):** A "Zeroth Law" was later implied/added: "A robot may not harm humanity, or, by inaction, allow humanity to come to harm." (This supersedes all three original laws).
+
+### 4. Advanced AI Ethics: The Asilomar AI Principles
+
+*   **Origin:** Published by the Future of Life Institute (FLI) in the U.S.
+*   **Structure:** Divided into three main categories:
+    *   **Research Issues (Items 1-5):** Focus on the direction and conduct of AI research.
+    *   **Ethics and Values (Items 6-18):** Address the moral implications and desired characteristics of AI systems.
+    *   **Longer-term Issues (Items 19-23):** Consider the societal impact and future challenges of advanced AI.
+
+#### Key Asilomar AI Principles Summarized:
+
+*   **Research Issues:**
+    *   **Research Goal:** Create *beneficial* intelligence, not just undirected intelligence.
+    *   **Research Funding:** Fund research to ensure AI's beneficial use.
+    *   **Science-Policy Link:** Foster healthy exchange between AI researchers and policymakers.
+    *   **Research Culture:** Encourage cooperation, trust, and transparency among AI developers.
+    *   **Race Avoidance:** Teams should cooperate to avoid compromising safety standards for speed.
+
+*   **Ethics and Values:**
+    *   **Safety:** AI systems must be safe, secure, and verifiably so throughout their operation.
+    *   **Failure Transparency:** If AI causes harm, the reason must be ascertainable.
+    *   **Judicial Transparency:** Autonomous systems in judicial decisions need auditable explanations.
+    *   **Responsibility:** Designers/builders are accountable for the moral implications of their AI's use/misuse.
+    *   **Value Alignment:** AI goals and behaviors must align with human values throughout operation.
+    *   **Human Values:** AI systems should respect human dignity, rights, freedoms, and cultural diversity.
+    *   **Personal Privacy:** People should control their data, given AI's analytical power.
+    *   **Liberty and Privacy:** AI's use of personal data must not unreasonably restrict people's liberty.
+    *   **Shared Benefit:** AI technologies should benefit and empower as many people as possible.
+    *   **Shared Prosperity:** Economic prosperity from AI should be broadly shared.
+    *   **Human Control:** Humans should choose if and how to delegate decisions to AI, to achieve human-chosen objectives.
+    *   **Non-subversion:** Control of advanced AI should improve, not undermine, societal and civic processes.
+
+*   **Longer-term Issues:**
+    *   **AI Arms Race:** Avoid an arms race in lethal autonomous weapons.
+
+---
+
+================================================================================
+ORIGINAL TEXT (First 5000 chars)
+================================================================================
+
+--- Page 220 ---
+ESSENCE
++ Preview  for practical  business
+In a paper titled “The Social Dilemma  of Autonomous  Vehicles”  published  in the scientific  journal Science  in
+June 2016, a survey  on self-driving  cars was conducted.
+The question  was as follows.
+There is a self-driving  car whose brakes are broken while driving. If you drive as it is, you would hit 5
+pedestrians,  and if you turn the steering  wheel, you would hit 1 pedestrian.  The car has a program  that
+makes judgments  about the steering  wheel, but if the person who would be injured by turning  the steering
+wheel is not a pedestrian  but a car occupant,  who should the vehicle save between  the pedestrian  and the
+occupant?
+In this survey, the majority of people (78%) said it was more ethical to protect  the most number  of
+pedestrians.  What was interesting  was the next question.
+When asked, “Would you buy an autonomous  vehicle that prioritizes  the safety of pedestrians  over car
+occupants?”,  most people answered  that they would not buy such a car. It would be rational  to prioritize  the
+more number  of pedestrians,  but if the car occupant  is you or your family, you may end up in a dilemma.
+This ethical dilemma  is emerging  as an inevitable  challenge  in the era of the Fourth Industrial  Revolution.
+Therefore,  by thinking  about the ethical issues of the latest technology,  it is necessary  to understand  the
+safe use of technology  by looking at the benefits  of technology  and problems  that may arise from the
+misuse  of technology.
+[Source]  Article: Esquire,  The October  2018 Edition
+218 TOPCIT  ESSENCE
+
+
+--- Page 221 ---
+Understanding  the IT Business  and Ethics )
+01 Major Ethical  Issues of the Latest IT Business  Services
+A) Ethical issues of the Latest IT Business  Services
+@ Ethical Issues of Artificial  Intelligence(Al)
+The emergence  of intelligent  robots and the phenomenon  of intelligentization  of products  and services  led to the
+transition  to an intelligent  information  society  while ushering  in the era of the 4th industrial  revolution.  Ethical issues
+in artificial intelligence  and robot technology  are largely divided into moral and philosophical  ethics for the identity
+of Al(robots)  and its relationship  with humans,  and practical  ethics required  of professionals  who participate  in the
+development  and use of artificial  intelligence  which is distributed  to consumers.
+The following  major announcements  have been made regarding  Al ethics.
++ In 2010, UK EPSRC (Engineering  & Physical  Sciences  Research  Council)  presented  Principles  of Robots: Present  all Al
+issues from the perspective  of designers,  builders,  and users.
++ In October  2016, the NSTC (National  Science  and Technology  Commission)  published  an Al report titled “Preparing
+‘or the future of artificial intelligence’  : Emphasize  the role of state in developing  artificial intelligence  as an
+important  economic  growth engine, Form a national  and social consensus  on future issues that may arise from Al.
++ In December  2016, the IEEE (Institute  of Electrical  and Electronics  Engineers)  announced  “Ethically  Aligned Design”:
+Emphasize  to design by taking into account  ethical aspects  from the beginning  of developing  artificial intelligence
+and automatic  systems.  Deal with accountability  that should be held by suppliers  and suppliers,  transparency,
+awareness-raising,  personal  information  protection,  employment  issues, etc.
++ In December  2016, the Japanese  Ministry  of Internal  Affairs and Communications  announced  “Proposal  of Discussion
+toward Formulation  of Al R&D Guideline”:  Present  eight major principles  that Al developers  must comply with,
+including  transparency,  user support,  controllability,  security, safety protection,  personal information  protection,
+ethics, accountability,  etc.
++ In January  2017, FLI (Future of Life Institute)  in the U.S. announced  “Asilomar  Al Principles”  : signed on 23 principles
+to adhere to when developing  artificial intelligence.  More than 2,000 Al scholars,  futurists,  and industry,  academia,
+and research  associates  signed the keywords  of Al ethics such as safety, transparency,  accountability,  privacy
+protection,  sharing  of profits, and prevention  of Al arms race.
++ In February  2017, the European  Union (EU) released  the “Civil Law Rules on Robotics”:  Advise  all developers,
+researchers,  and designers  involved in robot development  to prioritize  human dignity when planning,  designing,  and
+implementing  robots, respect  personal  privacy, and put human safety  first.
+Some argue that Al developers  as individuals  or companies  who are planning  and designing  artificial  intelligence  (robots)
+41 The seven topics presented  in the report are as follows.
+@Applications  of Al for Public Good, @ Al in the federal Government  © Al and regulation,  @ Research  and Workforce,  © Al,
+Automation,  and the Economy  © Fairness,  Safet...

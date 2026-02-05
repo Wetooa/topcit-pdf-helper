@@ -1,0 +1,187 @@
+LEARNING GUIDE: Pages 28-32
+Generated: 2025-12-05 13:54:21
+PDF: 5 - Understanding the IT Business and Ethics OCR
+
+================================================================================
+LEARNING GUIDE
+================================================================================
+
+Here is a simplified, easy-to-read learning guide based on the provided text:
+
+---
+
+## **IT Business & Ethics: Strategy & Value Chain**
+
+### **1. IT's Evolving Role in the Business Value Chain**
+
+The traditional Value Chain Model, which outlines a company's key and support activities, is fundamentally transformed by IT.
+
+*   **Company-wide IT Integration:**
+    *   IT is no longer just for "back-office" functions.
+    *   It's integrated into *all* key and support activities of a company's value chain.
+    *   **Example:** A hypermarket uses IT for real-time inventory, customer behavior analysis, and purchase history tracking to stay competitive.
+*   **IT-Specialized Companies:**
+    *   For e-businesses or Internet businesses (e.g., Amazon.com, Interpark), IT is the core.
+    *   Their key and support activities are inseparable from IT; a new perspective on the value chain is needed.
+*   **Expansion of the Value Chain Model:**
+    *   Our understanding of the value chain must adapt to IT's dual role:
+        1.  IT integrated *into* existing business processes.
+        2.  IT *as* the main business itself.
+    *   **Impact of IT Integration:**
+        *   Drives structural changes within companies.
+        *   Eliminates unnecessary processes (e.g., through intranet information systems).
+        *   Transforms hierarchical organizations into more horizontal ones by sharing information more broadly.
+        *   IT's impact creates a "new" value chain concept that influences organizational structure and competitive advantage.
+
+### **2. IT Business Strategy: Introduction**
+
+**IT Business Strategy** is about finding the most effective way to achieve a company's mission and objectives by integrating IT and business processes, considering both internal and external environments.
+
+*   **Key Focus:** Establishing strategies and analyzing the environment before formulation.
+*   **Learning Objectives:**
+    1.  Explain IT business strategy.
+    2.  Explain business environment analysis models for IT strategy formulation.
+*   **Keywords:** IT business strategy formulation, IT business environment analysis.
+
+### **3. Practical Example: Dell Computers' SWOT Analysis (Mid-1990s)**
+
+Dell used **SWOT analysis** (Strengths, Weaknesses, Opportunities, Threats) to develop its IT business strategy.
+
+*   **Strengths (Internal):**
+    *   Ability to sell directly to consumers.
+    *   Ability to design components to lower manufacturing costs.
+    *   Lower prices than competitors.
+*   **Weaknesses (Internal):**
+    *   No relationships with local computer dealerships.
+*   **Opportunities (External):**
+    *   Consumer demand for one-stop shopping.
+    *   Consumers had good computer knowledge and knew what they wanted.
+    *   The Internet emerged as a powerful marketing tool.
+*   **Threats (External):**
+    *   Competitors (Compaq, IBM) had superior brand power and quality reputation.
+    *   Competitors had strong relationships with local dealerships.
+*   **Dell's Strategy based on SWOT:**
+    *   **Leveraged Strengths & Opportunities:** Assembled and sold custom-built computers directly to customers (initially phone, then Internet).
+    *   **Addressed Weaknesses & Threats:** Eliminated dependence on local dealer networks, directly counteracting competitor advantages in that area. Built high-quality, tailored PCs shipped immediately, neutralizing brand/quality threats.
+
+### **4. Phases of IT Business Strategy**
+
+Developing an IT business strategy involves two main phases:
+
+**Phase 1: Establishment of IT Business Strategy**
+*   Defining the strategy's general concept, elements, and process.
+
+**Phase 2: Analysis of the IT Business Environment**
+*   Involves analyzing external, internal, and then consolidated environments.
+
+    *   **A. External Environment Analysis:**
+        *   **Macro-External (PEST Technique):** Analyzes broad external factors:
+            *   **P**olitical
+            *   **E**conomic
+            *   **S**ocial
+            *   **T**echnical
+        *   **Micro-External (Porter's 5-Forces Industry Structure Analysis):** Analyzes competitive forces within an industry:
+            *   Bargaining power of suppliers
+            *   Bargaining power of buyers
+            *   Threat of new entrants
+            *   Threat of substitute products or services
+            *   Intensity of rivalry among existing competitors
+        *   **Marketing/Competitive Market Analysis:**
+            *   **4P Technique:** Product, Price, Place, Promotion.
+            *   **3C Technique:** Company, Customers, Competitors.
+    *   **B. Internal Environment Analysis (McKinsey 7S Method):**
+        *   Analyzes 7 interconnected internal elements:
+            *   **S**hared Values, **S**trategy, **S**tructure, **S**ystems, **S**taff, **S**tyle, **S**kills.
+    *   **C. Consolidated Environment Analysis:**
+        *   **SWOT Analysis:** Combines external opportunities/threats with internal strengths/weaknesses.
+        *   **BCG Matrix:** Used with SWOT to select business development strategies based on an IT business's growth potential and market share (e.g., Stars, Cash Cows, Question Marks, Dogs).
+
+### **5. Establishing an IT Business Strategy: Detailed View**
+
+**A. Concept of Strategy Establishment:**
+*   Defining strategies to fulfill an organization's mission.
+*   Requires analysis of current status and a clear direction for change.
+*   Must align with strategies at all organizational levels.
+*   The output (strategic plan) provides overall direction for Enterprise Architecture (EA), process improvement, risk management, and portfolio management.
+
+**B. Elements of a Strategy Plan:**
+
+| Element              | Description                                                                     |
+| :------------------- | :------------------------------------------------------------------------------ |
+| **Basic Information**  | Company's mission, objectives/goals, quantitative performance results.           |
+| **Current Status Model** | The "As-Is" state: current internal/external environment, business principles, values. |
+| **Future Goal Model**  | The "To-Be" state: the vision and specific goals for the future.                |
+| **Implementation Strategy** | The roadmap or actions to achieve the future goals and mission.                 |
+
+**C. Strategy Development Process (As-Is to To-Be):**
+1.  **Evaluate Current (As-Is) Model:** Understand the company's present state.
+2.  **Present Future (To-Be) Model:** Define the desired future state and goals.
+3.  **Develop Implementation Strategies:** Create plans to transform the company from the As-Is to the To-Be model.
+
+**D. Interdependence of Strategy Elements (Simplified Flow):**
+
+*   **Mission:** The organization's highest purpose and achievement.
+*   **Vision:** Future aspirations and goals, guided by the mission.
+*   **Goals/Objectives:** Specific, measurable targets derived from the vision.
+*   **Implementation Strategies/Initiatives:** Actions and plans to achieve objectives and vision.
+*   **Performance Index/Measures:** Metrics used to track progress and success in realizing goals.
+
+================================================================================
+ORIGINAL TEXT (First 5000 chars)
+================================================================================
+
+--- Page 28 ---
+Understanding  the IT Business  and Ethics )
+perspectives.
+B) Company-wide  integration  of the value chain model and IT
+IT is being applied  throughout  all the key activities  and support  activities  that constitute  the elements  of a company’s
+value chain model. This signifies  that the role of IT is no longer limited to back-office  functions,  but that IT is being
+integrated  and utilized as a key factor in every aspect  of a company’s  key activities.
+For example,  let's look at the typical example  of a hypermarket.  Without  IT, would it be possible  to pursue the five
+key activities  of the value chain model normally  or do it in a way that would be competitive?  In an environment  where
+managers  working  for a hypermarket  can check inventory  and product  information  in realtime,  place products  on
+shelves  in ways that reflect  customer  shopping  behaviors  and local characteristics,  and collect customers’  purchasing
+histories  in realtime,  the answer  to this question  would be a resounding  ‘NO’. In other words, today, when the
+operations  of all key activities  defined by the value chain model are based on IT, the above question  suggests  a new
+perception  about the convergence  of the value chain model and IT. Leaving  aside the example  of hypermarkets,  the
+situation  is pretty much the same in other industries  referred  to as “smokestack  industries”.
+C) Value chain model and IT specialized  companies
+When a company’s  business  model is e-business  or Internet  business,  it is hard to explain its key activities  and
+support  activities  separately  from IT. For example,  Amazon.com  is a leading  example  of a company  that performs
+both its key activities  and its supporting  activities  using IT. Likewise,  Interpark  in Korea is considered  a similar case. In
+other words, companies  that began their operations  as [T-based  entities  cannot be understood  if the key activities
+and support  activities  defined in their value chain models  are considered  separately.  In such situations,  the traditional
+value chain model has to be approached  from a new perspective.
+D) Expansion  of the value chain model
+The two perspectives  explained  above are related to the two angles mentioned  when explaining  the IT business.
+Just as when one tries to understand  the IT business,  one must view it in terms of two different  trends,  that’s to say
+one in which IT is integrated  into the business  processes  across the whole company,  and another  in which IT is used
+as the main business,  the value chain model can also be understood  in two different  ways. Therefore,  since most
+companies  today are pursuing  their IT business  in the hope of gaining a competitive  edge from IT, our understanding
+of the traditional  value chain model must also be expanded  from the business  perspective.
+Such an expanded  understanding  of IT is raising several issues in academia  and in the field. Traditional  job processes
+that have long been taken for granted are driving structural  changes  in companies  following  the company-wide
+integration  of IT. Examples  include the elimination  of unnecessary  processes  in the decision-making  process  through
+the adoption  of an intranet  information  system, and the transformation  of a company  into a more horizontal
+organization  in which quality information  is supplied  to all employees  - information  that otherwise  would have been
+held by a privileged  few. That is, the perception  is spreading  that the utilization  of IT is not limited  to just being
+integrated  into the value chain model activities,  but that it is a (new) concept  of value chain model that could have a
+decisive  impact  on the structure  of an entire organization  and its competitive  advantages.
+M5 Understanding  the IT Business  and Ethics 27
+
+
+--- Page 29 ---
+ESSENCE
+>> Recent  Trends  and Major Issues
+The development  of a company’s  IT business  strategy  is the process  of finding the most effective  way
+of achieving  its mission and objectives  under the constraints  of the internal and external  environments
+to which it is subject.  Setting  the right strategy  is particularly critical for this new concept  of IT business,
+which involves  the integration  of IT and business  processes.  As the domain of IT business  continues  to
+expand,  and the business  process  becomes  ever more closely integrated  with IT, interest  is growing  in how
+to establish  IT business  strategies  and find the right way to analyze  the environment  before setting  one’s
+strategies.  This section introduces  the current  model and the future model, which are essential  elements
+in developing  IT business  strategies,  as well as the strategies  for implementing  them, and also presents
+different  methods  of analyzing  the IT business  environment  (including  SWOT  analysis).
+>> Learning  Objectives
+1. To be able to explain  the IT business  strategy.
+2. To be able to e...

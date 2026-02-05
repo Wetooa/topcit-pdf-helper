@@ -1,0 +1,50 @@
+Software  Development )
+Scrum  teamGenerally,  a Scrum team is composed  of five to nine members.  The Scrum team identifies  the
+functions  to be developed  during  a sprint using user stories.
+@ Scrum process
+The Scrum process  has the following  three components.
++ Sprint: Sprint refers to the repetitive  development  period in units of 1 to 4 weeks by the calendar.
++ Three meetings:  Daily Scrum, Sprint plan, Sprint review
++ Three deliverables:  Product  backlog,  Sprint backlog,  Burndown  chart
+The three deliverables  can be summarized  as shown in <Table 4>.
+<Table  4> Scrum process  deliverables
+Roles
+Product  backlog
+Sprint backlog
+Burndown  chartDescription
+The product  backlog  is a breakdown  of work to be done, and the product  manager  mainly
+determines  the priority  on behalf  of the customer.  The function  defined  in the product  backlog  is
+called user story. The standard  called ‘story point’ is mainly used to estimate  the user’s workload.
+A list of works to be developed  during a sprint. The user story and the work required  to complete  it
+are defined  as a task. The size of each task is estimated  by the hour.
+The sprint burndown  chart shows remaining  work in the sprint backlog.  The chart shows remaining
+work for each iteration  as a story point.
+The three deliverables  of the Scrum process  can be summarized  as shown in <Table 5>.
+<Table 5> Scrum process  deliverables
+Roles
+Sprint planning
+Daily Scrum
+Sprint  reviewDescription
+Goals are set for each sprint and items are selected  for execution  during  a sprint from the
+product  backlog.  A person  is appointed  to take charge  of each item and draw up a plan for each
+task.
+A meeting  that is held for 15 minutes  each day to share the progress  of the project.  All of the
+team members  should attend and discuss  what they did, what to do and other issues every day.
+A meeting  held to check the work progress  and deliverables  in order to see if the sprint goal has
+been achieved.  The Scrum team demonstrates  what they did during  the sprint to the attendees
+and receives  their feedback.  It is recommended  to run a demo for all works performed  during  the
+sprint concerned  with the participation  of the customer.  At this time, the Scrum master  conducts
+a retrospective  review  to find out what went well, what was disappointing,  and what should be
+improved  upon during  the sprint.
+@ Characteristics  of Scrum
+Scrum has the following  characteristics.
++ Transparency:  It is difficult  to exactly understand  the current status of the project, progress  compared  to
+the plan, and identified  issues. Scrum enables  the user to effectively  understand  the status or problem  of a
+project  using various  techniques,  such as the Scrum meeting,  burndown  chart, and sprint review.
+* Timeboxing:  Concentration on a project only becomes  possible  by limiting the amount  of time it takes to
+implement  Scrum. The daily Scrum is performed  for a limited time of 15 minutes  each day, and the sprint
+review is performed  periodically  for each iteration.
+* Communication:  Much effort is made during Scrum to facilitate  communication  among the team members.
+One of the characteristics  of Scrum that makes communication  among team members  smooth is the
+procedure  by which developers  share their problems  during the daily Scrum and discuss  the difficulty/time  of
+M1 Software  development  29

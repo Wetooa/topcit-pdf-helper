@@ -1,0 +1,38 @@
+Database )
+B) Armstrong’s  axioms
+<Table 27> Armstrong’s  axioms
+Item Inference Contents
+Reflexivity  rule IFY & X, then X = Y.
+Armstrong's  axioms  | Augmentation  rule If XY, then XZ > YZ.
+Transitivity  rule IfX = Y, and Y > Z, then X > Z.
+Union rule IfX >Y and Y > Z, then X > YZ.
+Other  derived  rules | Decomposition  rule If X > YZ, then X > Y, and X > Z.
+Pseudo-transitivity  rule If X > Y and WY > Z, then XW > Z.
+03 Database  Design in Which Normalization  is Applied (1st, 2nd, 3rd,
+Boyce-Codd)
+The table derived by normalization  is called the “normal  form” table. The first normal  form (INF), second normal  form
+(2NF), third normal form (3NF), Boyce-Codd  normal form (BCNF), fourth normal form (4NF), and fifth normal form
+(5NF) have been introduced  in both the academic  world and practical  business.  In particular,  it is known that the third
+normal  form and the Boyce-Codd  normal form are frequently  utilized.
+A) Normalization  process  ([Figure  28])
+Irregular  relation
+| Remove  functional  dependency  (FD) that the
+determinant  is not a candidate  key.Decomposing  a domain, not an atomic value |
+\ / \ )
+ws - : >
+INF BCNF
+ws . ws .
+6 \ \)(Remove  multi-valued  dependency  (MVD) that is
+not functional  dependency. }Remove partial function  dependency. | |
+Ss : os
+2NF ANF
+P es ad
+my) ( ae *i . Remove  join dependency  (FD) that isRemoves  transitive  functional  dependency.[ ] L not through a candidate  key. )
+a Se
+3NF SNF
+[Figure  28] Normalization  process  (1st, 2nd, 3rd, Boyce-Codd  normal  form)
+B) Example  of normalization
+@ First normalization  ([Figure  29])
++ The table on the left is an un-normalized  table, because  the “Courses”  field does not have atomic  values.
++ The first normal  form table, shown in the table on the right, can be derived by decomposing  the attribute  “Courses”
+M2 Database  71

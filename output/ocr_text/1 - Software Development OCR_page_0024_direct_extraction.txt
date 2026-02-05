@@ -1,0 +1,40 @@
+Software  Development )
+@ Incremental  model
++ The incremental  model is useful when the system development  time needs to be reduced.  For example,  this
+model is appropriate  when a system should be developed  by the date the customer  wants, even though not
+all of the functions  can be developed  by that time. That is, the core parts are developed  first to make the
+system  operable,  and then the rest of the functions  are implemented.
++ A system is developed  by extending  the functions  several times. The system  version in each phase runs
+only a few limited functions,  and the later version includes  newly added functions  in addition  to those of the
+previous  version.  Of course,  the final system  version is a complete  system into which all of the functions  are
+incorporated.
++ This model is also useful when most of the requirements  are defined,  but improvements  can be made as time
+goes by.
++ This model can be usefully  applied to reduce the risk of external  interfaces  (H/W and S/W) in the early phase
+of development.
++ Both the V model and the VP model can be applied since the requirements  for each phase for development
+of a function  expansion  are generally  clear.
+@ Evolutionary  model
++ Like the incremental  model, the evolutionary  model is useful when the system  development  time needs to be
+reduced.  However,  unlike the incremental  model, the development  phase for the entire system is reiterated
+several times. Each system provides  all of the functions  to the user.
++ Next, changes  are identified  when a system is developed  and used, and then those changes  are reflected  in
+the development  of the next system.
++ Changes  include changes  to the function,  changes  to the user interface,  and changes  to non-functional
+items such as reliability  and performance  improvement,  etc. This model is suitable  when the overall system
+specification  is not certain or when the product  should be continually  improved.
++ In practice,  this model is used in combination  with the incremental  model. That is, new functions  can be
+added to a new system version, while the existing  functions  are improved.  A mixed model such as this has
+the following  characteristics.
+- Users can be trained about a system early on even though the system is not fully functional.
+Users can familiarize  themselves  with the system and identify  improvements  necessary  for
+practical  business,  because  they can use the system  after receiving  initial training.  By doing so, a
+system  can be developed  that is needed  by practical  business.
+- Also, competitiveness  can be improved  by reducing  the development  period and using the system
+in the early stages.
+- Since a system is developed  over time, unexpected  problems  with the system can be identified
+and fixed early on.
+- Or a system can be developed  by dividing  it by specialized  field. For example,  if the functions
+need to be improved  from a text-based  user interface  to a graphic-based  user interface,  a
+development  team specializing  in user interface  can implement  the project.
+M1 Software  development  23

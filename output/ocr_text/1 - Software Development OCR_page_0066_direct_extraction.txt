@@ -1,0 +1,34 @@
+Software  Development )
+then submitted  for final approval.
+The structure  of a system  should be set in such a way that the user’s requirements  can be satisfied  in the early
+stages of design. It is desirable  to divide the system in order to solve complex  problems.  A complex  problem
+can be solved easily if the system is analyzed  after dividing  it. An easier solution  can be found if functions  are
+divided or the user interface  is divided logically.
+System components  split from the top level are generally  called subsystems.  Subsystems  are the program
+components  that generally  include data and the control structure,  and can perform functions  independently
+and can be compiled.  In addition,  subsystems  are distinguished  by the service  or function  they provide.
+A framework  is a support unit that collects  knowledge,  which can be reflected  in architectural  design
+repetitively,  when designing  a subsystem.  The framework  represents  a general structure  that can be
+extended  to create a concrete  subsystem,  and increases  the level of design abstraction  by providing  concrete
+implementation  methods.
+Architecture  design is a process  of setting  up a system configuration  to satisfy the system requirements.  The
+relationship  between  each component  (module)  in the program  structure  can be described  using the results
+of the requirements  analysis process.  The main purpose  of structure  design is to develop  a modular  program
+structure,  and to represent  the control and interface  between  the modules.
+02 Software  Architecture  Style
+The following  section  describes  the representative  types of architecture  found during software  development.
+A) Repository  structure
+When one subsystem creates data and other subsystems  use that data, the repository  is a structure  that
+enables  all subsystems  to share the data by storing  all shareable  data in one place. The structure  of the shared
+repository  is suitable  for sharing  a large amount  of data.
+B) MVC (Model - View - Controller)  structure
+The MVC structure  is a framework  that is frequently  used for GUI design. It is an approach  in which several
+expressions  of one object can interact with each other. Therefore,  when the expression  of one object is
+modified,  all other expressions  are updated  accordingly.  Modifications  can be simplified,  and reuse can be made
+easy using this method.
+C) Client-server  model
+The client-server  model is composed  of a set of servers and clients. The model is composed  of a client
+requesting  a service and a server providing  the service, and there may be multiple  client instances.  Generally,
+the client-server model can utilize the network  system effectively  as it is implemented as a client-server
+model.
+M1 Software  development  65

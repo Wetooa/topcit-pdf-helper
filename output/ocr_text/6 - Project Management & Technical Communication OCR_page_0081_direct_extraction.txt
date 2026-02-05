@@ -1,0 +1,36 @@
+ESSENCE
+O2 Project  Management  Methodology
+A) Project  management  methodology
+Typical project  management  methodologies  include PMBOK,  ISO 21500, and PRINCE2.
+The most representative  PMBOK  (Project  Management  Body of Knowledge)  is a project management  knowl-
+edge system published  by the PMI (Project  Management  Institute),  a non-profit  project management  organi-
+zation in the United States. In September  2017, the 6th edition of PMBOK  was released,  which consists  of five
+process  groups: initiating,  planning,  executing,  monitoring  and controlling,  and closing; 10 knowledge  areas:
+scope, cost, schedule,  quality, risk, communication,  resources,  procurement,  and stakeholder  management:
+and a total of 49 processes.  In the 6th edition of PMBOK, the project manager's  Talent Triangle (Technical
+Project Management,  Leadership,  Strategic  and Business  Management)  was added. PMI operates the  PMP
+(Project  Management  Professional)  qualification  system as the license of project  management  experts.
+ISO 21500 is a project  management  standard  established  by ISO (International  Standard  Organization),  an in-
+ternational  organization  for standardization.  The overall content  is similar  to that of PMBOK.
+Unlike PMBOK, PRINCE2  (PRojects  IN Controlled  Environments)  is a structured  project management  method-
+ology developed  in the UK and mainly used in Europe and Australia,  and a project management  professional
+license.  It consists  of Seven Principles  (Continued  Business  Justification,  Learn From Experience,  Defined  Roles
+and Responsibilities,  Manage  by Stages, Manage by Exception,  Focus on Products,  Tailor to Suit Project En-
+vironment);  Seven Themes  (Business  Case, Organization,  Quality, Plans, Risk, Change,  Progress);  and Seven
+Processes  (Starting  Up A Project,  Initiating  A Project,  Directing  A Project,  Controlling  A Stage, Managing  Prod-
+uct Delivery,  Managing  Stage Boundaries,  Closing  A Project).  While PMBOK describes  project management
+centered  on the project manager,  PRINCE2  deals with project  management  more practically,  focusing  on vari-
+ous participants  and outputs  in addition  to the project  manager.
+The project management  methodology  defines  the project life cycle and clarifies  and manages  inputs, tools
+and technologies,  and outputs  in detail through  the systems  engineering  approach  at each stage, to support
+the achievement  of project  goals using limited resources.  Recently,  Agile methodology  as a flexible and practi-
+cal approach  to project  management  is garnering  a lot of attention.
+B) Agile methodology
+Agile methodology  is an adaptive  model that continuously  creates prototypes  at regular intervals,  adds and
+modifies  requirements  in a timely manner,  compared  to existing  traditional  methodologies  based on thorough
+planning  and explicit  outputs.
+The purpose  and spirit of Agile methodology  is well represented  in the Agile Manifesto.
+@ Manifesto  for Agile Software  Development
++ Individuals  and interactions  over processes  and tools
++ Working  software  over comprehensive  documentation
+80 TOPCIT  ESSENCE

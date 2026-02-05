@@ -1,0 +1,53 @@
+Information  security )
+rh
+Execute
+manipulated
+SQL queries,Vv
+@ Crafted  requestwsG/
+Attacker @ Attack result Web server DB @DB browsingA rh J Allowing  unauthorized  users
+Unauthorized  database
+manipulation  and deletion
+[Figure  35] SQL injection  security  vulnerability
++ Coding  technique:
+Uses a method  that transfers  the compiled  query statement  (constant)  to the database,  using the Prepared
+Statement  object, etc. When using Prepared  Statement,  filter special characters  and query reserved  words
+that are used for the database  query. When using a framework,  such as Struts and Spring, use the module
+that verifies  the external  input values and security  module,  according  to the circumstances.
+<Table 19> Code example
+String  gubun = request.getParameter(“gubun’):
+String sql = “select  b_gubun
++" aidx .
+, ab_id
+, date_format(a.w_date,  ‘%Y-%m-%d’)  *
+, apwd .
+, a.content
+, bidx
+, asecurity
++* from board a left outer join tail b on a.idx = b.b_id “
++“ where b_gubun  =” + gubun +” *;
+Connection  con = db.getCon();
+Statement  stmt = con.createStatement();
+ResultSet  rs = stmt.executeQuery(sq]):
+The value of “gubun’,  which is entered  from the outside,  is used to create  an SQL query, without  any verification.  In
+this case, if a’ or ‘a’ = ‘a is entered  as the value of “gubun’,  the conditional  clause is changed  to b_gubun  = ‘a’ or ‘a’ =
+‘a’, and the structure  of the query is changed.  Then, all the contents  of the “board”  table are retrieved
+String  gubun = request.getParameter(‘gubun’);Unsafe
+code +e ett t+
+String sql = “select  b_gubun
++" aidx .
+, ab_id
+, date  format(a.w_date,  ‘%Y-%m-%d’)  *
+, apwd .
+, a.content
+, bidx
+, asecurity
++" from board a left  outer  join tail b on a.idx = b.b_id *
++“ where b_gubun  =  ? *:
+Connection  con = db.getConnection();
+PreparedStatement  pstmt = con.prepareStatement(sq|):
+pstmt.setString(1,  gubun):
+ResultSet  rs = pstmt.executeQuery();
+The PreparedStatement  object  that receives  a parameter  should be created  as a constant  string, and the parameter
+should be set with the setXXX  method  to prevent  etemal input from changing  the structure  of the query statement.Safe
+code +t tee t+
+M4 Understanding  Information  Security  77

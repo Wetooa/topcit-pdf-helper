@@ -1,0 +1,202 @@
+LEARNING GUIDE: Pages 34-38
+Generated: 2025-12-07 00:56:23
+PDF: 3 - Overview of System Architecture OCR
+
+================================================================================
+LEARNING GUIDE
+================================================================================
+
+Here is a simplified, easy-to-read learning guide based on the provided text:
+
+---
+
+## Network Communication Basics & Protocols Learning Guide
+
+### 1. Introduction to Network Communication
+
+Networks allow computers to exchange data. Even common actions like browsing a website involve many hidden network processes.
+
+**Example Network Configuration (User A's Computer):**
+*   **IPv4 Address:** 192.168.11.5 (Your computer's unique ID on its local network)
+*   **Subnet Mask:** 255.255.255.0 (Defines which part of the IP address is the network and which is the host)
+*   **Gateway:** 192.168.11.1 (The device, usually a router, that connects your local network to other networks, like the internet)
+*   **DHCP Server:** 192.168.11.1 (Assigns IP addresses automatically to devices on your local network)
+*   **DNS Server:** 192.168.11.1 (Translates human-readable domain names into IP addresses)
+
+**Example Web Server (my.server.com):**
+*   **IPv4 Address:** 220.17.23.15
+
+### 2. Web Request Scenario: User A Accessing "my.server.com"
+
+This describes the step-by-step process when a user types a URL into a web browser.
+
+1.  **URL Entry & DNS Resolution:**
+    *   User A enters `http://my.server.com/` and presses Enter.
+    *   The web browser needs the **IP address** for `my.server.com` because computers communicate using IPs, not domain names.
+    *   The browser sends a request to the **Domain Name System (DNS) server** (e.g., 192.168.11.1) to resolve `my.server.com`'s IP.
+    *   The DNS server returns the IP address, e.g., `220.17.23.15`.
+
+2.  **Preparing the Request Packet:**
+    *   **HTTP Request:** The browser prepares an **HTTP (Hypertext Transfer Protocol)** request for the homepage content.
+    *   **TCP Encapsulation:** The HTTP request is passed to the **TCP (Transmission Control Protocol)** layer. TCP adds header information to ensure reliable delivery, breaks data into segments, and sends it to the web server program.
+    *   **IP Encapsulation:** The TCP segment is then passed to the **IP (Internet Protocol)** layer. IP adds its own header, including the source IP (192.168.11.5) and destination IP (220.17.23.15), to route the packet across networks. This forms an IP packet.
+
+3.  **Sending Packet to Gateway (Local Network Transfer):**
+    *   User A's computer (192.168.11.5) cannot directly send the packet to `my.server.com` (220.17.23.15) because it's on a different network.
+    *   The packet must first be sent to the **gateway** (router B: 192.168.11.1) on the local network.
+    *   For data transfer within a local network, a **MAC address (Media Access Control address)** is needed, not an IP address.
+    *   User A's computer uses **ARP (Address Resolution Protocol)** to broadcast a request on its local network to find the MAC address corresponding to the gateway's IP (192.168.11.1).
+    *   Once the gateway's MAC address is obtained, the IP packet is encapsulated in an **Ethernet frame** and transmitted to router B.
+    *   **NAT (Network Address Translation):** If User A is on a private network (like 192.168.11.0), the gateway performs NAT to translate User A's private IP to a public IP before sending it to the internet.
+
+4.  **Routing Across Networks (Router B to Router C):**
+    *   Router B receives the packet. It examines the destination IP (220.17.23.15) in the IP header.
+    *   Since the destination is not on its directly connected networks (192.168.11.0 or 14.32.172.0), router B uses its **routing table** (via a **routing protocol**) to forward the packet to the next appropriate router, in this case, router C.
+
+5.  **Sending Packet to Destination Server (Router C to my.server.com):**
+    *   Router C receives the packet and recognizes that the destination network (220.17.23.0) is local to it.
+    *   Similar to Step 3, for local network transfer, Router C needs the MAC address of `my.server.com` (220.17.23.15).
+    *   Router C uses **ARP** to find `my.server.com`'s MAC address and then sends the packet directly to the server.
+
+6.  **Server Receives and Processes Request:**
+    *   `my.server.com` receives the packet.
+    *   **IP Processing:** It examines the destination IP address, confirms it's for itself, and removes the IP header. The remaining TCP segment is passed up.
+    *   **TCP Processing:** It determines which application (e.g., the web server software) should receive the data, removes the TCP header, and passes the actual HTTP request data to the web server application.
+
+7.  **Server Sends Response:**
+    *   The web server application processes the **HTTP request** and generates the homepage content.
+    *   This content goes through the same encapsulation process in reverse (HTTP -> TCP -> IP -> Ethernet) and is sent back to User A's computer.
+
+8.  **User A's Browser Displays Content:**
+    *   User A's computer receives the response packet.
+    *   The data is de-encapsulated (Ethernet -> IP -> TCP -> HTTP).
+    *   The web browser receives the **HTTP response** containing the homepage content (e.g., **HTML**).
+    *   The browser renders and displays the content for User A to view.
+
+### 3. Understanding Network Protocols
+
+A **protocol** is a standardized set of rules for sending and receiving data through a network. Without common protocols, devices couldn't understand each other.
+
+**Protocol Standardization Organizations:**
+*   **IETF (Internet Engineering Task Force):** Responsible for most Internet-related standard protocols (e.g., IP, TCP, HTTP).
+*   **3GPP (Third Generation Partnership Project) / 3GPP2:** Focuses on wireless communication protocols (e.g., GSM, CDMA, UMTS, LTE).
+*   **ITU-T (International Telecommunication Union Telecommunication Standardization Sector):** Handles protocols related to telecommunications, including telephones.
+
+**Software vs. Physical Layers:**
+*   **Physical Layer:** Involves hardware like cables and switches, operating with electrical signals.
+*   **Protocol Layers (above Data Link Layer):** Primarily implemented and operated in software, defining how data is formatted and processed.
+
+### 4. OSI Reference Model (Open Systems Interconnection)
+
+The **OSI Reference Model** is a conceptual framework (not a protocol itself) that describes how network communication works. It divides network communication into seven distinct layers.
+
+*   **ISO** (International Organization for Standardization) developed the OSI model. **OSI** stands for **Open Systems Interconnection**.
+
+**OSI Layers, Protocols & Functions:**
+
+| Layer | Protocols (Examples) | Function |
+| :---- | :------------------- | :------- |
+| **7. Application Layer** | HTTP, SMTP, SNMP, FTP, Telnet | Provides network services directly to end-user applications; deals with user interface, email, database management. |
+| **6. Presentation Layer** | JPEG, MPEG, XDR | Handles data format, syntax, encryption, decryption, compression, and translation between different data representations. |
+| **5. Session Layer** | TLS, SSH, RPC, NetBIOS | Manages communication sessions between applications, establishing, maintaining, and synchronizing interactions. |
+| **4. Transport Layer** | TCP, UDP, SCTP | Provides reliable (TCP) or unreliable (UDP) end-to-end message transfer between processes, including error control and flow control. |
+| **3. Network Layer** | IP, IPX, ICMP, X.25, ARP, OSPF | Responsible for logical addressing and packet routing across different networks, from source to destination. |
+| **2. Data Link Layer** | Ethernet, PPP, MAC | Provides reliable data transfer between directly connected network nodes (frames), handles physical addressing (MAC), and error detection on the link. |
+| **1. Physical Layer** | USB, Bluetooth, Ethernet (physical), Wi-Fi (physical) | Defines physical characteristics of the network, including electrical signals, cabling, connectors, and how bits are transmitted over the physical medium. |
+
+---
+
+================================================================================
+ORIGINAL TEXT (First 5000 chars)
+================================================================================
+
+--- Page 34 ---
+Overview  of System Architecture )
++ Preview  for practical  business  How to understand  networks
+IpV4 Address:  14.32.172.167
+Subnet  Mask: 255.255.255.0
+Gateway:  14.32.172.254
+DHCP Server: 121.138.7.42
+Server 1: 168.126.63.1
+Server  2: 168.126.63.2Switching  Hub D
+my.server.com
+220.17.23.15
+192.168.11.0
+IPv4 Address:  192.168.11.5
+IPv4 Subnet  Mask: 255.255.255.0
+IPv4 Gateway: 192.168.11.1
+IPv4 DHCP Server: 192.168.11.1
+IPv4 DNS Server: 192.168.11.1
+[Figure 10] Network  between  Users and Servers
+Figure 10] shows  a virtual network  connection  in a situation  where user A connects  to a webserver  (my.
+server.com)  and uses a computer  to locate the data. Although  the situation  frequently  occurs inhomes,
+schools,  or workplaces,  many people use their computer  network  information  without  knowing  it. The
+following  example  shows  a situation  of using a network  service  in detail.
+&/
+@ Request  for homepage
+Homepage  content  transmission
+@ Request  for my.pdf
+My.pdf  transmission
+ooo
+[Figure 11] Web Use by User A
+M3 Overview  of System  Architecture  33
+
+
+--- Page 35 ---
+ESSENCE
+[Figure 11] shows user a connecting  to a webserver  (my.server.com)  and searching  for the data. <Table 1>
+describes,  in detail, which changes  occur in the network  at each stage of the operation  in [Figure 11]. The
+standard  protocol  used at each stage is described in parentheses,  and its concept  and detailed  operation
+are described  in the following  chapters.
+This example  shows how a simple network  service,  as shown in [Figure 11], is executed.
+Network  operation  procedure  to “Homepage  request”
+{Table 1) Web Use Scenario  by User A
+User A enters http://my.servercom/  on the web browser  and presses  the Enter key.
+Siy))) The web browser  intends to send User A’s request  to the webserver,
+my.server.com,  but cannot do it because  my.server.com  is an arbitrary
+domain name for users to recognize  easily. The web browser  requests
+the IP address  of my.server.com  to the domain name server to solve the
+problem  (ONS).
+On receiving  the IP address  of my.servercom,  220.17.23.15,  from the DNS, the web
+browser  connects  to the webserver  using the address  and requests  data in the
+document  route (HTTP).
+{ Step  3-1 | The web browser hands over the requested  information  to the TCP protocol
+to request  my.server.com.  The information  is properly  capsulized  and delivered
+to the webserver  program  of my.servercom  (TCP).
+(step  3-2, a2 } Information  created by the TCP protocol is capsulized  to be routed to the
+-220.17.23,0  network,  in which my.server.com  is present,  through  several hoops (IP).
+is created. However,  it must be further  modified  to be transferred  between
+networks,  The IPv4 address  of user A’s computer  is 192.168.11.5  and cannot  be
+transmitted  to my.server.com  directly.  It must be transmitted  to the computer's
+gateway  wired/wireless  router B (192.168.11.1).  However,  an IP address  cannot
+be used for data transfer  within a network, so the MAC address  is needed for
+this.  After finding  the MAC address  corresponding  to 192.168.11.1,  the gateway’s
+IP address,  through  network  broadcasting,  the packet is transmitted  to wired/
+wireless  router  B (ARP, Ethernet,  private network,  and NAT).
+34 TOPCIT  ESSENCE
+
+
+--- Page 36 ---
+Overview  of System Architecture )
+Step 3-4) ) On receiving  the packet  from user A’s computer,  wired/wireless  router B, aware
+that the packet is not sent to the router as the final destination,  examines  the
+address  to which the packet must be transmitted.  The IP header  indicates  that
+the packet's  final destination  is myservercom,  and since it does not belong to
+network  192.168.11.0  or 14.32.172.0,  to which wired/Wireless  router B belongs,  it
+transmits  the packet  to router  C, to which it belongs  (routing  protocol).
+On receiving  the packet, router C recognizes  that the packet is sent to
+network  220.17.23.0,  to which the router belongs,  and intends  to transmit  it
+to the webserver’s  IP address  220.17.23.15.  As in Step 3.3, since the packet
+movement  in a network  requires  the physical  address  of my.server.com,  the
+MAC address,  it obtains  the MAC address  corresponding  to the IP address
+of my.server.com,  220.17.23.15,  though the network  broadcasting,  and
+transmits  the packet  (ARP).
+On receiving  the packet, my.server.com  examines  the IP address  and
+recognizes  that the packet  was sent to it. It removes  the header  data, such as
+the IP address,  and sends the remaining  data up to the higher  protocol  layer (IP).
+It determines  which application  of my.server.com  to which the packet
+should be transmitted,  removes  unneeded  data, and sends the remaining
+data to the intended  webserver  application  (TCP).
+computer.
+S99 On receiving  information  in the document  route from the webserver,  the web
+browser  displays  the contents  for user A’s viewing, The user can select the...

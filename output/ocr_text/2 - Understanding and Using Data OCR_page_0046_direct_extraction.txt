@@ -1,0 +1,28 @@
+Database )
+02 Considerations  for Database  Design
+Database  design is the key area in the process  of database  build. The possibility  of a problem arising can be minimized
+when proceeding  with the next phase only when each phase is clearly arranged  and the deliverables  are accurately
+produced.
+A) Deliverables  to be analyzed
+@ Considerations  in the conceptual  model design phase
+The meaning  of data and the rules of the correlation  between  data are defined in this phase. A conceptual  data
+model should be created  as a deliverable  by defining  the subject  area, key entity, and relationships  in this phase.
+@ Considerations  in the logical model design phase
+Attributes  and keys should be defined based on the previously  created conceptual  data model: entities  should be
+specified  accordingly:  and a final entity-relationship  diagram  should be created  after defining  history  management.
+© Considerations  in the physical  model design phase
+A physical schema is implemented  in a physical data model to implement  a database.  Semi-normalization  can be
+performed  in consideration  of performance  in this phase. A table definition  document  reflecting  these requirements  is
+created,
+B) Considerations  of the design subject
+A data architect  (DA) plays the most important  role in the database  design phase. The data architect,  who is directly
+involved  from the phase of requirement  collection,  establishes  a data management  system and defines the data
+standards.  In addition,  the data architect  manages  the overall data models that are created by conceptual,  logical,
+and physical modeling.  However,  the performance  aspect should be considered  in the physical modeling  phase, to
+ensure that the database  concerned  will work well regardless  of whether  the user requirements  are implemented.  At
+this time, the database  administrator  (DBA) may review and reflect the physical  structure  area, such as the indexes,
+partitions,  as well as the clustering  storage  space, and denormalization.
+That is, the data architect  and the database  administrator  should discuss and determine  the final physical model
+which they regard as the best from their own perspectives  in the physical modeling  phase, so as to achieve  efficient
+and stable performance.
+M2 Database  45

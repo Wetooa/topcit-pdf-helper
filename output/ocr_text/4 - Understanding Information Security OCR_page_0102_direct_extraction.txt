@@ -1,0 +1,28 @@
+ESSENCE
+a) Open Files
+a prints CAWINDOWS\syst..  Windows,
+[Figure  52] Stop sharing  unnecessary  shared  folders
+D) System  security
+@® Turning  off automatic  administrator  logon in Windows
+If the automatic  logon function  is used, an attacker  can check the login account  and password  in the Windows
+registry, using hacking  tools. Therefore,  the automatic  logon function  must be disabled  by setting the
+AutoAdminLogon  value in the Windows  registry  to “0”.
++ How to turn off automatic  administrator  logon in Windows
+Input regedit  into the Search programs  and files box by selecting  [Start], and
+Set the AutoAdminLogon  value in the HKLM\Software\Microsoft\WindowsNT\CurrentVersion\Winlogon
+entry to “0”.
+If there is a “DefaultPassword  entry’, delete it.
+@ Checking  startup  programs
+Startup programs  include the programs  that are executed  when the computer  boots. However,  malware  can
+copy its code in this folder so that it is executed  when the computer  starts. Therefore,  delete any unauthorized
+or unnecessary  programs  from the Startup  programs.
++ How to delete startup  programs
+Input msconfig  into the search programs  and files box by selecting  [Start].
+When the System Configuration  dialog box opens, click the Startup  tab.
+Check for unauthorized  or unnecessary  programs  and click the check () mark on the program  to remove  and
+then, click the [OK] button.
+When a pop-up window  appears,  prompting  that the computer  needs to be restarted,  click the [Restart]
+button,
+E) Service  security
+@® 2.5.1 Stopping  unnecessary  startup  services
+102 TOPCIT  ESSENCE

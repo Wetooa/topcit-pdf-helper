@@ -1,0 +1,34 @@
+ESSENCE
+@ Requirements  for a secure digital signature  algorithm
++ Forgery  prevention:  Anyone  other than a legitimate  signer shouldn't  be able to forge the signature.
++ User authentication:  The signer should be identifiable  from the electronic  signature.
++ Non-repudiation:  The signer should not be able to deny that the signer has signed the document.
++ Alteration  prevention:  A signed document  should not be changeable.
++ Reuse prevention:  A signature  for one document  cannot  be reused as a signature  for another  document.
+© Operation  of the electronic  signature
+The operation  of the digital signature  consists  of six phases  as shown in <Table 9>.
+<Table  9> Operation  procedure  of the electronic  signature
+Order Description
+Phase 1 The sender  generates  a message  digest, a fixed-length  string, by applying  a hash algorithm  to the message
+to be sent.
+Phase 2 The sender  creates  an electronic  signature  by encrypting  the created message  digest using the sender's
+private key.
+Phase  3 The sender  sends a message  and digital signature  to the receiver.
+The receiver  extracts  the message  digest  generated  by the sender, by decrypting  the received  digitalPhase 4 : . : -
+signature  using the sender's  public key.
+Phase 5 The receiver  generates  a new message  digest by applying  the same hash algorithm  as the sender  to the
+received  message.
+Phase 6 The receiver  compares  the message  digest received  from the sender,  with the receiver's  message  digest. If
+they are the same, it is regarded  as the electronic  signature  of the legitimate  sender.
+E) PKI (Public Key Infrastructure)
+© Definition  of PKI
+PKI is an infrastructure  for managing  the public key, which is an essential  element  for encryption  and
+authentication  required  for secure transactions.  This infrastructure  safely distributes  encryption  and decryption
+keys, as well as certificates  that provide information  security  services.  PKI is a network  structure  of objects
+that sets up and provides  policies, means, and tools, which makes the use of certificates  and encrypted
+communication  easy in various application  fields that require secure communication,  such as information
+system  security  and electronic  commerce.
+@ PKI components
+As shown in <Table 10>, the PKI is composed  of the policy approval  authority  (PAA), policy certification
+authority  (PCA), certification authority  (CA), registration  authority  (RA), and public certificate.
+40 TOPCIT  ESSENCE

@@ -1,0 +1,27 @@
+ESSENCE
+Web Sever Application  Server DBMS Server
+Oo a i Encryption  Module
+Firewall FirewallCryptographic
+module44 Management
+console
+[Figure 43] Plug-in  type database  encryption
+It is recommended  to select this type when database  performance  is good, and the application  program is
+difficult  or impossible  to modify.
+@ TDE method
+A method of using the built-in or optional  encryption/decryption  function  of the database.  This type can be
+supported,  depending  on the DBMS type and version. There is no modification  to the application  program
+because  encryption/decryption  is performed  at the DBMS kernel level. However,  this type may not be
+supported,  depending  on the DBMS type or version. The selection  of this type can be considered  when
+introducing  a new DBMS.
+Web Sever Application  Server DBMS Server
+Firewall Firewall
+[Figure 44] TDE type database  encryption
+D) Applying  database  encryption
+The concepts  of a one-way  cipher algorithm  and a two-way  cipher algorithm  can be applied  to the database  as
+follows:
+® Application  of a one-way  cipher algorithm
+Original data extraction  by computation  should be made impossible,  using a hash cipher algorithm  (one-way
+cipher algorithm),  and a cryptographic  hash function,  above SHA-256,  is generally  used.
+Currently,  there are two cases when the one-way  cipher algorithm  should be applied: when data is saved in
+plain text in the existing  database,  and when an insecure  hash cipher algorithm,  such as MD5 or SHA~1, is used.
+92 TOPCIT  ESSENCE

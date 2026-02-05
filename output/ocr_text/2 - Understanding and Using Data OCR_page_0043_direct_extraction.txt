@@ -1,0 +1,25 @@
+ESSENCE
++ Preview  for practical  business
+There are many cases in which a database  is used like an existing  file system,  and tables are created  in the
+database,  but each table is actually  dependent  on individual  applications,  screens,  and reports.
+For example,  when developing  a book management  system for each team, a booklist  table can be created
+for each team during implementation  of database  in the same way as books are managed  using Excel files.
+If tables are designed  in the same way as Excel files, the advantages  of the database,  including  integration,
+storage,  operation,  and sharing,  cannot  be utilized  at all.
+In this case, the complexity  of the application  program  also increases,  causing  symptoms  that can lead to
+serious  problems,  such as an increase  in development  costs, problems  with data integrity  (lack of consistency
+due to data duplication),  and the deterioration  of data processing  performance.  Therefore,  these problems.
+should be prevented  and the advantages  of the database  can be maximized  and applied to the development
+of a system only when we understand  the definition  and characteristics  of the database  (integration,  storage,
+operation,  sharing)  and the advantages  of the database,  and then apply them to practical  business.
+01 Database  Design  and Build Process
+In general, the database  design and build process is performed  in the phases of collecting  and analyzing  the
+requirements,  designing  the database,  building the database,  and operating  and maintaining  it. In particular,  the
+analysis/design  phase is performed  in detailed  stages, such as conceptual  design, logical design, and physical  design.
+The details  of the three design phases  will be described  in greater  detail in the next topic [Data modeling].
+DB Design
+Conceptual  design
+Collect  and analyze > Operation  and
+requirements Physical  design maintenance
+[Figure 8] Database  design and build process
+42 TOPCIT  ESSENCE

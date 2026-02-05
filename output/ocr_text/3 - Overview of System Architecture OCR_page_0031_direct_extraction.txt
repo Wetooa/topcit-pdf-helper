@@ -1,0 +1,27 @@
+ESSENCE
+that houses the CPU and the main memory.  The mainframe  features  excellent  stability  and performance,  but it is
+very expensive  because  an enterprise  made all the elements  from the CPU to OS, the development  language,  and
+the application  programs,  The mainframe  began downsizing  gradually  in 1997 when the attention  to super Unix
+servers, such as HP, Sun, and Silicon Graphics,  increased.  Downsizing  refers to replacing  a mainframe  server with a
+super Unix server, While Unix servers  were generally  equipped  with a Power CPU, it is worth noting  that more mid- to
+large-sized  servers  began featuring  Pentium  CPU in the server market  in 1997. It was around  this time that Windows
+NT servers, using Intel CPU, were on the sharp rise. Twenty  years later, in 2017, x86 servers,  featuring  Intel CPU, are
+dominating  the Unix server  market. Currently,  the server  market is divided into x86 servers and non-x86  servers.
+Although  the market  is divided  into two major server  types in terms of sales,x86  servers  account  for more than 70%
+when comparing  the number  of server  units sold.
+This server has a stack structure.  The computer  hardware,  consisting  of a CPU, main memory,  and auxiliary  memory
+is at the bottom.  An OS that abstracts  computer  hardware  and provides  services  to software  is located above it.
+On top of the OS, middleware,  such as a webserver,  WAS, and DBMS server to support  the flexibility  of convenient
+expansion,  as well as the reduction  of application  programs  and independence  of computer  hardware,  is located.
+Application  programs  provide  services  to users using this middleware.
+Information  System  Layer
+Application  Program
+Middleware/Platform
+[Figure 9] Information  System  Server's  Stack Structure
+B) Computer  hardware
+While some argue that an abacus used in calculations  in ancient  times is the origin of computers,  the Turing Machine,
+devised by the English mathematician  Allen Turing in 1936, is generally  regarded  as the beginning  of modern
+computers.  This Turing Machine  proved the mathematical  concepts  and calculation  processes.  Afterward,  ENIAC,
+created in 1946, is known as the first programmable  general-purpose  computer.  Using 18,000 vacuum tubes, it
+weighed  30 tons and was literally as large as a house. Later, EDSAC,  the first computer  that embedded  the program
+30 TOPCIT  ESSENCE

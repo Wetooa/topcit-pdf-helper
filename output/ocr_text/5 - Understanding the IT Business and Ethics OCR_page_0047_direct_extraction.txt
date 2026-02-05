@@ -1,0 +1,33 @@
+ESSENCE
+corrective  measures  are the structures,  activities  and procedures  for improving  the IT governance  process  and the
+related  jobs.
+D) Key focus areas of IT governance
+IT governance  has five key areas of focus, all of which are linked to the strategies  of a company. IT governance  looks
+at how a company’s  strategies  are used in conjunction  with IT value, and also includes  the management  of risk factors
+and the management  of resources,  as well as a performance  evaluation  system on activities.
+<Table  6>Focus  areas of IT governance
+sat Method  ofFocus area Characteristics alignment
+a IT governance  is aligned  with a company’s  strategy  and aims to
+Strategic  Sigman propose the best direction when it comes to making decisions. EA
+IT Value Delive The realization  of IT business  goals is supported  by optimizing  the Backbone  system
+y integration  of individual business  processes  with IT. IT Compliance
+Risk Management Risk factors  are managed  to ensure continuity  of the IT business. DRS, BCP
+Resource  Management IT resources  are organized  and managed  so as to respond  promptly ITAM
+to IT business  requirements
+An |T-centered  performance  evaluation  system  for activities BSCPerformance  Measurementgenerated  by IT business. IT ROI
+03 Concept  of EA
+A) Overview  of EA (Enterprise  Architecture)
+© Definition  of EA
+EA stands for “enterprise  architecture’.  It is a blueprint  that explains  the IT business  of an enterprise  in a way that is
+easy for the stakeholders  to understand, so that the enterprise  can achieve  its strategic  goals and the goals of its
+information  resource  management.
+“Enterprise  architecture  is a blueprint  that defines the current  state of the relationship  between  information
+technology  and an enterprise(as  well as the activities  carried out by the enterprise)  and the state that the enterprise
+must strive for in the future.’-United  States Office of Management  and Budget  (OMB)
+@ Need for EA
+Currently,  enterprises  are enthusiastically  introducing  information  systems  to cope with the rapidly changing  business
+environments,  but if information  systems  are deployed  without  proper planning  at the macro level, enterprises  will
+be confronted  with a redundant  system and an inability  to collaborate.  Such enterprises  will fall into the so-called  "IT
+Productivity  Paradox’1  which can be described  as the continuous  adoption  of information  systems  without  seeing
+any benefits  in the form of increased  corporate  profits.
+46 TOPCIT  ESSENCE

@@ -1,0 +1,179 @@
+LEARNING GUIDE: Pages 112-116
+Generated: 2025-12-05 14:02:59
+PDF: 5 - Understanding the IT Business and Ethics OCR
+
+================================================================================
+LEARNING GUIDE
+================================================================================
+
+Here is a simplified, easy-to-read learning guide derived from the provided text:
+
+---
+
+## Learning Guide: IT Business Performance Evaluation & Ethics
+
+### 1. Introduction to IT Business Performance Evaluation
+
+*   **Purpose:** To review IT's contribution to enterprise growth.
+*   **Evolution:**
+    *   **Past:** Focused primarily on **financial aspects** (easy to quantify).
+    *   **Present:** Expanded to a **comprehensive evaluation** covering:
+        *   **Financial aspects**
+        *   **Non-financial aspects:** Corporate image enhancement, employee morale/satisfaction.
+*   **Key Challenge:** Aligning individual performance goals with enterprise performance goals. This requires effective communication.
+
+### 2. Overview of IT Business Performance Evaluation Techniques
+
+Effective IT business performance evaluation ensures IT investments align with business strategy and provides feedback. The main techniques are:
+
+1.  **Financial Performance Evaluation:** Focuses on quantitative financial benefits.
+2.  **Balanced Scorecard (BSC) Assessment:** Complements financial evaluation by adding qualitative and non-financial perspectives.
+
+*   **Key Tools:**
+    *   **Key Performance Indicators (KPI):** Measures the level of goal attainment.
+    *   **Management by Objectives (MBO):** System for setting objective levels for employee skill development.
+
+### 3. Financial Performance Evaluation Technique
+
+**A. Overview**
+
+*   **Nature:** Traditional, quantitative, uses "currency" as a common unit. Also called "quantitative performance evaluations."
+*   **Purpose:**
+    *   Shareholders and managers prioritize financial results.
+    *   Provides a quick understanding of the management situation.
+*   **Limitations:**
+    *   **Result-oriented:** Tends to ignore the process of achieving results.
+    *   **Low employee motivation:** Not a great booster for morale due to its abstract nature.
+    *   **Abstract figures:** Difficult to convey meaning accurately to all organizational members.
+
+**B. Types of Financial Performance Evaluation Techniques**
+
+These techniques assess financial performance over a specific period or at a specific point in time.
+
+| Technique                 | Description                                                                                             |
+| :------------------------ | :------------------------------------------------------------------------------------------------------ |
+| **ROI** (Return on Investment) | Ratio of net effect to total cost. Used to assess investment feasibility. Does *not* estimate payback time. |
+| **NPV** (Net Present Value)   | Relationship between cost and effect of present value, considering discount rate. Reflects future net profits and monetary value over time. Risks should be considered separately. |
+| **IRR** (Internal Rate of Return) | Revenues from investments against cash flows. Expresses expected annual revenues to judge risk reduction. Does *not* consider investment size or payback period. |
+| **PP** (Payback Period)       | Time taken for cumulative effect to exceed cumulative cost and reach the break-even point. Shows when revenue is generated, *not* how much. |
+
+### 4. Balanced Scorecard (BSC) Technique
+
+**A. Overview of the BSC Technique**
+
+*   **Definition:** A balanced performance evaluation technique that assesses both financial and non-financial performances.
+*   **Origin:** Introduced in 1992 by Harvard Business School Professor Robert Kaplan and consultant David Norton.
+*   **Why BSC?**
+    *   Traditional systems focused too much on financial indicators, making systematic strategy execution difficult.
+    *   Necessity to consider non-financial evaluations.
+*   **Purpose:**
+    *   Maintains a balance between indicators.
+    *   Concretizes and links strategies.
+    *   Improves communication within the organization.
+
+**B. Characteristics of BSC**
+
+*   **Balance Between Indicators:**
+    *   Considers multiple perspectives (beyond just financial).
+    *   Balances short-term vs. long-term views.
+    *   Balances leading (predictive) vs. trailing (historical) indicators.
+*   **Concreteness of Strategy:**
+    *   Secures strategy clarity through **KPIs**.
+    *   Aims for company-wide optimization, not just partial.
+    *   Aligns feasible strategies with correct business directions.
+*   **Connectivity of Strategy:**
+    *   Establishes **causal relationships** between strategies.
+    *   Links core strategies after focused selection.
+*   **Internal Communication Tool:**
+    *   Builds executive capability using detailed KPIs.
+    *   Serves as a common language across the organization.
+
+**C. Component Elements of BSC**
+
+BSC evaluates performance from four perspectives and includes elements to manage and achieve enterprise goals.
+
+| Component Element  | Description                                                                                                                                                                                                                                                                                            |
+| :----------------- | :----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| **Perspective**    | The four core viewpoints: Financial, Customer, Process, Learning & Growth.                                                                                                                                                                                                                             |
+| **CSF**            | **Critical Success Factors:** Factors absolutely essential for successfully realizing an enterprise's vision and strategy.                                                                                                                                                                           |
+| **Strategy Map**   | A visual tool showing the **causal relationships** among CSFs. It illustrates how an organization creates value by linking initiatives across the four perspectives.                                                                                                                                   |
+| **KPI**            | **Key Performance Indicator:** A quantifiable measure to track the progress and success level of a CSF (and thus, a strategy).                                                                                                                                                                          |
+
+**D. Four Perspectives of BSC**
+
+The BSC manages both financial and non-financial views, with the four perspectives being organically interconnected:
+
+1.  **Financial Perspective:** How do we look to shareholders? (e.g., profitability, revenue growth, cost reduction).
+2.  **Customer Perspective:** How do customers see us? (e.g., customer satisfaction, market share, customer retention).
+3.  **Process Perspective:** What must we excel at? (e.g., operational efficiency, quality, innovation, timely delivery).
+4.  **Learning & Growth Perspective:** How can we sustain our ability to change and improve? (e.g., employee skills, IT capabilities, organizational culture, innovation capacity).
+
+*   **Interconnection Example:** Improving employee skills (Learning & Growth) leads to better product quality and production efficiency (Process), which increases customer satisfaction (Customer), ultimately resulting in improved financial performance (Financial).
+
+---
+
+================================================================================
+ORIGINAL TEXT (First 5000 chars)
+================================================================================
+
+--- Page 112 ---
+Understanding  the IT Business  and Ethics
+bb
+>> Recent  trends and key issues
+The IT business  performance  evaluation  is a procedure  for reviewing  how IT has contributed  to the growth
+of an enterprise.  In the past, IT business  performance  evaluations  were mainly performed  on the financial
+aspects  of a business.  This made it easy to quantify  the results of IT's contribution to  the earnings  of an
+enterprise  and its affiliated  organizations.  However,  this type of evaluation  failed to cover all aspects  of how
+IT business  could contribute  in the aforementioned  regard.
+In recent years, enterprises  have been expanding  the scope of their IT business  performance  evaluations
+with the aim of creating  a more comprehensive  evaluation.  Current  evaluations  cover not only financial
+aspects,  but also non-financial  areas such as efforts to enhance  the corporate  image or raise employees’
+morale  or satisfaction  with their work.
+When evaluating  the performance  of IT business,  one particularly  important  consideration  is the degree to
+which enterprises  can align individual  performance  goals with the enterprise’s  performance  goals. To this
+end, communication  among employees  is of paramount  importance,  and enterprises  must utilize various
+techniques  for bringing  into alignment  top-down  goal setting and bottom-up  goal setting  when they
+operate  their businesses
+>> Learning  Objectives
+1. To be able to explain  the various  types and methods  of IT business  performance  evaluation.
+>> Keywords:
+Financial  performance  evaluations,  BSC, IT-BSC, KPI, MBO.
+M5 Understanding  the IT Business  and Ethics 111
+
+
+--- Page 113 ---
+ESSENCE
++ Preview  for practical  business
+With the aim of improving  the quality of patent administration  and laying the
+foundations  for customer-oriented  administrative  services,  the Korean Intellectual
+Property  Office (KIPO) declared  its core vision of ‘Promoting  Technology  Innovation
+Korean  Intellectual  and Establishing  an Environment  Conducive  to Innovation  by Effectively  Protecting
+Property  Office nq Promoting  the Use of Intellectual  Property’ and its mission of  ‘Becoming  an
+Intellectual  Property  Powerhouse  through  the Innovation  of Patent  Administration’.  Based on this vision and
+mission statement,  the patent office developed  five strategic  objectives,  taking into account  the unique
+nature of public institutions  and the two conflicting  interests  of public benefit and financial  profit. In 2005,
+the patent  office created  the BSC system,  which links the performance  targets  of individual  employees  to
+the five strategic  objectives  of KIPO.
+The Korean Intellectual  Property  Office developed  the BSC system in three phases, as follows. In the Ist
+phase (second  half of 2004), KIPO established  the performance  management  model for each department.
+It also established  its mission,  vision, and strategic  goals, and then derived  the key success  factors  (19) and
+the key performance  indicators  (32) for realizing  those goals.
+Thus the strategic  framework  of the office was completed  by November  26, 2004. Based on this strategic
+framework,  and in alignment  with its strategic  goals, the office announced  the performance  goals, key
+success  factors  and key performance  indicators  that each department/bureau  must pursue,  on December
+21, 2004. These factors  and indicators  were the core areas of the one-year  job performance  agreements
+signed between  the commissioner  and the bureau/department  heads, and between  the bureau/department
+heads and the team managers,  on December  28, 2004.
+In the 2nd phase (first half of 2005), the organization-level  BSC design was followed  by the individual-level
+performance  management  model design. The organizational  performance  indicators were distributed  to
+individual  employees,  who were asked to align organization-level  performance  with individual  performance
+by reflecting  the organization's  performance  score in the individual  performance  score. By April 30, 2005, an
+individual  performance  and competency  evaluation  system had been established  through  which employees
+could be motivated  to meet their job goals. At the same time, as part of its effort to introduce  a more
+performance-centered  HR policy, the office announced  a new plan in which the result of each individual
+employee's  performance  evaluation  would be more closely  linked to the compensation  system.
+In the 3rd phase, deployment  of the information  system began on April 1, 2005, and was completed  by the
+end of June. Concurrently,  the information  system construction  work was carried out from April 1, 2005 and
+completed  at the end of June. The performance  management  system was implemented  using the best
+solution  so as to enable the office to manage  performance  as a whole. A strategic  operational  system was
+also put in place to monitor  the ex...

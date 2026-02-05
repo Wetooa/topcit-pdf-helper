@@ -1,0 +1,33 @@
+Software  Development )
+Contents Description
+BY tercvarelntertace Protocol  exchange,  interaction  between  system  hardware  components  and software
+| rots
+3.3 Software  interface Defines  the data or message  that access  this software  from other software  components.
+4, Functional  requirements. __| + Describes  the detailed  requirements  for the functions  listed in Chapter  2.
++ Purpose:  Purpose  of/reason  for the function
++ Inputs: Data coming  into the function
+4.1 <Function  Name> (validation  check, troubleshooting)
+* Outputs:  Data coming  out of the function
+(process  error message,  parameter  range, form, shape, distance,  volume  output)
+5. Non-functional  requirements
+5.1 Performance  requirements
+5.2 Security  requirements
+5.3 Software  quality Availability,  flexibility,  interoperability,  maintainability,  portability,  reliability,  usability,  etc.
+requirements Describes  the software  quality  requirements.
+Operation  rules, standards  when individuals/organizations  do business  using softwareBenes  ee CBP (Current Biz Process)  and FPM (Future Process Model)
+03 Requirements  Change  and Tracking  Management
+A) Overview  of requirements  traceability
+Once the requirements  baseline is established  and the project starts, changes  to the requirements  will
+inevitably  occur. Requirements  change management  is the process  of formally  controlling  all changes  that
+occur based on the requirements  baseline.  The consistency  and integrity  of changes  can be provided  by
+controlling  and tracking  formal changes  to the requirements  that arise in the course of executing  the project.
+Errors occur while changing  the requirements  for the following  reasons:
++ Requirements  errors, conflicts,  and inconsistencies  occur.
++ The participants  develop  a deeper  understanding  and greater  knowledge  of the system
++ Changes  occur in the system  environment  and organization.
++ Technical,  time, and cost problems  arise.
+The above types of errors can be reduced by defining  and configuring  the traceability  of the requirements.
+Tracking  the requirements  does not mean that each requirements  document  is traced, but rather that the
+requirements  in each sentence  of the requirements  document  are traced. The concept  of tracing each
+sentence  can be easily understood  by referring  to the figure below.
+M1 Software  development  115

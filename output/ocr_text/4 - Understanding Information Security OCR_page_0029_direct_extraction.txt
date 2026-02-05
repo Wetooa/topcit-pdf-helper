@@ -1,0 +1,42 @@
+Information  security )
+only two keys, that is, their own private key and a public key.
+The public key cipher has the advantage  of being used for various authentication  functions  and secure key
+exchange,  because  only each user knows their private key corresponding  to the public key, which can be
+checked  by everyone.  RSA (Rivest, Shamir  and Adleman),  ElGamal,  and ECC (Elliptic  Curve Cryptosystem)  are
+the representative  public key cryptographic  algorithms.
+*RSA
+The RSA public key cryptosystem  is used for encryption  and authentication.  The safety of this system is:
+based on the difficulty  of factoring  a large integer. RSA has the characteristic  that ciphertext  for the same
+message  is always the same, because  no random numbers  are used in the encryption  process.  Since the
+safety of the RSA system depends  on prime number  p and q, the prime number  selection  conditions  are
+important.
++ ElGamal
+ElGamal was proposed in 1984 by Stanford  University  cryptographer,  T. ElGamal,  and is the first public
+key cryptographic  algorithm,  based on the difficulty  of the discrete  algebra problem.  When a message  is
+encrypted  with ElGamal,  its length is doubled.  However,  different  ciphertext  is created  each time, even
+though the same message  is encrypted  because  random numbers  are used for encryption, which is a great
+advantage  from the perspective  of information  security.
++ ECC
+The Elliptic Curves encryption  system is based on the discrete  logarithm  problem  on the elliptic curve. Since
+its safety is high and its speed is fast, it draws attention  as a new public key encryption  system.  For example,
+it is known that a 1024-bit  key of RSA and a 160-bit key of elliptic curve cipher have the same level of
+security.  In addition,  the ECC system is suitable  for the encryption  of mobile communication,  such as a mobile
+phone with limited power supply.
+@® Comparison  of the private key cryptographic  algorithm  and public key cryptographic  algorithm
+<Table 4> shows the result of comparing  the private key encryption  system and the public key encryption
+system.
+<Table  4> Comparison  of the private key cipher  and public key cipher
+Item Private  key cipher Public key cipher
+Key relationship Encryption  key = decryption  key Encryption  key # decryption  key
+Encryption  key Private Public
+Decryption  key Private Private
+Algorithm Public Public
+Number  of keys n(n-1)/2 2n
+Number  of keys tobe  | __
+managed  per person nl '
+Encryption  speed High speed Low speed
+( dtl aerate) Complex Simple
+. an Easy key distribution.
+Strengths ..  7 a  time Foner number of keys to manage.
+Used in various  fields, such as authentication.
+M4 Understanding  Information  Security  29

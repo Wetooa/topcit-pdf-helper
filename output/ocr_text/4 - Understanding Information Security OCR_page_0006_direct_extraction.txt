@@ -1,0 +1,24 @@
+CONTENTS
+|. Concept  of information  security 12
+01 Overview  of information  security 13
+A) Overview  of information  security 13
+02 Basic terms of information  security 14
+A) Authentication 14
+B) Non-repudiation 14
+C) Cryptography 5
+D) Digital signature 15
+E) Hash function 15
+F) Malware 15
+G) Major security  solutions 16
+03 New technical  terms of information  security 17
+A) Blockchain 17
+B) FIDO (Fast Identity Online Alliance) 18
+C) Network segregation  and network  linking 19
+D) Fraud Detection  System (FDS) 19
+E) Quantum  cryptography 20
+F) Trusted Platform Module  (TPM) 20
+G) Re-identification 20
+H) EU-GDPR 20
+ll. Fundamental  technologies  for information  security 22
+01 Cryptographic  techniques 24
+6 TOPCIT  ESSENCE

@@ -1,0 +1,26 @@
+Project Management  and Technical  Communication  )
+he or she does not have decision-making  authority  in the project  and plays  a facilitating  role.
++ Projectized  Organization:  It is an organizational  structure  in which the project manager  is responsible  for
+decision-making  and has total authority  for project execution.  It shares the same physical space by project,
+allowing  prompt  communication  and decision-making.
++ Matrix Organization:  Matrix organization  is a complex  form of functional  organization  and project-oriented
+organization,  and can be divided into weak, balanced  matrix, and strong matrix structure.  The weak matrix
+organization  is similar to the functional  organization,  and the project manager  acts as a facilitator.  The
+balanced matrix organization  is a structure  in which members  of the functional  organization  play the role of
+project managers.  The project manager  acts as a coordinator  with the right to decision-making  and partial
+authority.  The strong matrix organization  is similar to the projectized  organization,  and a separate project
+manager  apart from the functional  organization  focuses  on project management  and is responsible for much
+decision-making  and authority.
+<Table 32> Project  Organizational  Structure
+Functional p P A ProjectizedType creeneaon Weak Matrix Balanced  Matrix Strong  Matrix eeneeren
+Level of - Minimum  to . :Authority Close to none Minimum medium Medium  to strong Total authority
+Time Part-time Part-time Full-time Full-time Full-timeHorizon
+Role Facilitator Facilitator Coordinator Manager Manager
+In general,  when a project  for software  development  or system construction  is undertaken,  project managers
+of the client company  and staff of the IT development  company  are combined  to form a project  organization.
+Development  Team 1| | Development  Team 2
+PL (Project Leader) PL (Project Leader) Architect  Team 3 aon
+Developer Developer TA/DA/BA HW
+Developer Developer
+[Figure 19] Project  Organizational  Chart
+M6 Project  Management  and Technical  Communication  71

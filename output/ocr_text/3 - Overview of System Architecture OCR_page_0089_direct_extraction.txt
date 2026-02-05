@@ -1,0 +1,31 @@
+ESSENCE
+[Figure 58] Inexpensive  Thin Provisioning
+@ Data de-duplication
+The technology  provides  a high efficiency  of disk space used by removing  any duplicated  data when saving the data.
+The removal methods  include  an inline method,  which immediately  removes  redundant  data as it enters the storage
+system,  and an offline method,  which removes  the redundant  data after storing  the new data.
+E) Storage  disk scheduling
+@ Disk scheduling
+A disk drive that stores data is a device using a rotating  magnetic  disk. When inputs and outputs  are requested  to this
+disk drive, the system performance  varies significantly,  according  to which request  is processed  first, and the process
+in moving  the head to access the data. Disk scheduling  is a technique  of efficiently  processing  I/O requests,  when
+multiple  users request  them, in order to process  different  tasks. Using disk scheduling  has the following  purposes:
+- Maximization  of I/O requests  to service  during  a unit time
+- Maximization  throughput  per unit time
+- Minimization  of the mean response  time
+- Minimization  of response  time
+- Minimization  of the variation  of response  time
+@ Disk performance  measurement  indicator
+Disk scheduling  can be compared  with the indicators  that measure  disk performance.  Disk performance  measurement
+indicators  include the access  time, seeking  time, rotational  delay or rotational  latency,  and data transfer  time.
+Search Time
+Original  Position——_/—_ Rotation
++) Standby  Time
+‘ Data to Search for
+[Figure 59} Disk  Performance  Measurement  Indicators
+The seeking  time indicates  how long it takes to move the head from the current head position,  to the track
+containing  the data. The rotational  latency  indicates how long it takes from the moment  the head begins rotating  to
+move to the track containing  the data, to the moment  it reaches  the sector  that contains  the data.
+Seeking  time is the time it takes to move the head from the current head position,  to the track containing  the data.
+Recent  disk drives minimize  the rotational  latency  by having an internal  buffer, and by storing  all the data in the track
+88 TOPCIT  ESSENCE

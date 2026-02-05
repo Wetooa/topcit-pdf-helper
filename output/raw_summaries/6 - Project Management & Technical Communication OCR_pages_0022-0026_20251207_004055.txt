@@ -1,0 +1,231 @@
+LEARNING GUIDE: Pages 22-26
+Generated: 2025-12-07 00:40:55
+PDF: 6 - Project Management & Technical Communication OCR
+
+================================================================================
+LEARNING GUIDE
+================================================================================
+
+Here's a simplified, easy-to-read learning guide based on the provided text:
+
+---
+
+# Learning Guide: Reasoning, Hypothesis Testing, and Problem Solving
+
+## 1. Logical Reasoning Fundamentals
+
+**A. Deductive Reasoning**
+*   **Definition:** Deriving a specific fact from general, known premises.
+*   **Types:**
+    *   **Direct Reasoning:** One fact from one premise.
+    *   **Indirect Reasoning:** Concrete facts from two or more premises.
+*   **Example (Indirect):**
+    *   All men are mortal. (Premise 1)
+    *   Socrates is a man. (Premise 2)
+    *   Therefore, Socrates is mortal. (Conclusion)
+
+**B. Inductive Reasoning**
+*   **Definition:** Deriving a general principle from several concrete/empirical facts.
+*   **Inventor:** Francis Bacon (1620).
+*   **Process:** Make hypotheses from empirical facts, then judge truth with more empirical facts.
+*   **Example:**
+    *   Socrates is dead. (Concrete fact)
+    *   Socrates is a man. (Concrete fact)
+    *   Therefore, a man is mortal. (General principle)
+
+**C. Limitations of Logical Explanation**
+*   Both deductive and inductive reasoning provide logical explanations.
+*   However, logical explanation alone is often **not enough to persuade stakeholders**. Additional methods are needed.
+
+## 2. Hypothesis Testing for Persuasion & Verification
+
+*   Used to explain or verify an established hypothesis, often with statistical methods.
+*   Involves two mutually exclusive statements:
+
+**A. Null Hypothesis (H0)**
+*   **Definition:** An initial argument recognized based on existing knowledge or status quo.
+*   **Example:** The average life expectancy of men in Korea is 70 years old.
+
+**B. Alternative Hypothesis (H1)**
+*   **Definition:** A new argument that you hope to prove as a new truth through testing. It contradicts the null hypothesis.
+*   **Example:** The average life expectancy of men in Korea is **not** 70 years old (or has increased to over 70).
+
+**C. Process Overview**
+*   Hypotheses are adopted or rejected based on statistical hypothesis testing.
+*   If H0 is rejected and H1 is adopted, it means the existing claim (H0) is found to be false, and the new claim (H1) is supported.
+
+## 3. Business Problem Solving Techniques
+
+**Learning Objectives:**
+*   Identify business problem definitions and types.
+*   Describe the business problem-solving process.
+*   Apply appropriate problem-solving techniques.
+
+**A. Concept of Business Problem Solving**
+*   **Types of Business Problems:**
+    1.  **Planning:** Creating new opportunities ("blue ocean"), finding solutions for new markets.
+    2.  **Improvement:** Making internal processes more efficient for existing market opportunities.
+*   **Importance:** Accurately recognizing, defining, and resolving these problems ensures stable business continuity and creates new opportunities.
+*   **Key Attributes for Problem Solvers:**
+    *   Broad and in-depth knowledge.
+    *   Zero-base thinking (going beyond stereotypes).
+    *   Ability to observe and analyze in detail.
+    *   Openness to others' ideas.
+    *   Efforts to find the best combination of ideas (wisdom).
+    *   Ability to secure good information.
+
+**B. Business Problem Solving Process (General Steps)**
+*   A structured approach to recognize, analyze, address, and propose solutions for work-related problems.
+
+**1. Step 1: Problem Definition**
+*   **Goal:** Clearly decide what problem needs to be solved.
+*   **Actions:**
+    *   Grasp the essence of the problem.
+    *   Determine if the problem can be fundamentally resolved.
+    *   Use the **MECE framework** (Mutually Exclusive, Collectively Exhaustive) to break down a large problem into smaller, manageable subproblems.
+
+**2. Step 2: Cause Analysis**
+*   **Goal:** Understand the root causes of the defined problem.
+*   **Actions:**
+    *   Classify and structure the problem logically.
+    *   Use an **Issue Tree:** Dissect the main problem into smaller, logical components in a tree-like structure.
+    *   Use profiling and various analysis methods to identify the *root cause*.
+    *   Prioritize identified causes and remove non-essential ones.
+
+**3. Step 3: Alternative Development & Evaluation**
+*   **Goal:** Create and choose the best solutions for the identified root causes.
+*   **Actions:**
+    *   Develop various alternatives based on hypotheses and facts (from profiling).
+    *   Evaluate alternatives using established criteria and weighting for each criterion.
+    *   Select one or more optimal alternatives.
+
+**4. Step 4: Solution Application & Feedback**
+*   **Goal:** Implement the chosen solution and verify its effectiveness.
+*   **Actions:**
+    *   Find a suitable "test bed" for efficient verification.
+    *   Execute the alternative based on a detailed work plan.
+    *   Provide quantitative feedback on its effectiveness.
+    *   Verify the solution's validity and incorporate feedback for improvement.
+
+## 4. Creative Thinking Techniques
+
+*   Methods to consciously guide thinking and derive innovative solutions.
+
+**A. Brainstorming**
+*   **Inventor:** Alex Osborn (1940s).
+*   **Concept:** A meeting method to generate many ideas quickly, encouraging "a storm in the brain" of ideas.
+*   **Usage:** Can be used throughout the problem-solving process (cause analysis, solution derivation, action planning).
+*   **Key Principle:** Emphasizes free idea generation before evaluation.
+
+**B. Six Thinking Hats**
+*   **Inventor:** Edward de Bono.
+*   **Concept:** A group method where participants adopt different "hat" roles to approach an issue from various perspectives, leading to optimal decision-making.
+*   **Hat Roles:**
+    *   **White Hat:** Objective facts, data, neutral information.
+    *   **Red Hat:** Emotional thinking, feelings, intuition.
+    *   **Black Hat:** Negative, critical thinking, risks, problems.
+    *   **Yellow Hat:** Positive, optimistic thinking, benefits, opportunities.
+    *   **Green Hat:** Creative thinking, new ideas, alternatives.
+    *   **Blue Hat:** Process control, organizing results, objective overview.
+
+**C. Random Word**
+*   **Inventor:** Edward de Bono.
+*   **Concept:** Presenting random words and combining them to create new connections and unique ideas.
+
+**D. SCAMPER**
+*   **Inventor:** Bob Eberle (based on Osborn's checklist).
+*   **Concept:** An ideation method that uses a predefined checklist of prompts to generate ideas.
+*   **Acronym:**
+    *   **S**ubstitute
+    *   **C**ombine
+    *   **A**dapt
+    *   **M**odify (or Magnify)
+    *   **P**ut To Other Uses
+    *   **E**liminate
+    *   **R**earrange (or Reverse)
+
+**E. TRIZ (Theory Of Inventive Problem Solving)**
+*   **Inventor:** Dr. Altshuller (Russian inventor).
+*   **Concept:** A problem-solving and ideation technique developed from analyzing thousands of existing inventions. It provides a systematic approach to innovation.
+*   **Process:**
+    1.  Model a **specific problem** into a **generalized issue** (abstraction).
+    2.  Find a **general solution model** (using proven principles).
+    3.  Derive a **specific solution** for the original problem.
+*   **Key Principles:** Uses principles like 40 principles of invention and 76 standard solutions.
+*   **ARIZ (Problem Solving Process):** A continuous, iterative process for solving complex invention-level problems.
+
+---
+
+================================================================================
+ORIGINAL TEXT (First 5000 chars)
+================================================================================
+
+--- Page 22 ---
+Project Management  and Technical  Communication  )
+Deductive  reasoning  is a method of deriving  a specific  fact from general premises  that are already known.
+There is direct reasoning  that derives  one fact from one premise,  and indirect  reasoning  that derives  concrete
+facts from two or more premises  (First premise,  Second premise).  The example  below is a representative  ex-
+ample of deductive  indirect  reasoning.
+All men are mortal. (First premise)
+Socrates  is a man. (Second  premise)
+Therefore,  Socrates  is mortal. (Conclusion)?
+Inductive  reasoning  is a method  of reasoning  invented  by Francis Bacon in 1620. According  to Bacon, it refers
+to a method  of making  guesses  or hypotheses  and principles  from empirical  facts and judging  truth/falsehood
+with empirical  facts.* In other words, it is a method of deriving  a general principle  from several concrete  facts.
+The example  below is a representative  example  of inductive  reasoning.
+Socrates  is dead. (Concrete  fact)
+Socrates  is a man.
+Therefore,  a man is mortal. (General  principle)
+Both deductive  and inductive  reasoning  are methods  of reasoning  for logical explanation,  but logical explana-
+tion alone is not enough  to persuade  stakeholders.  In order to effectively  persuade  stakeholders,  there is more
+to be needed  than logical explanation.
+In some cases, it is necessary  to explain or verify an established  hypothesis  using a statistical  method,  and
+the two mutually  exclusive  statements  used in this case are the null hypothesis  and the alternative  hypoth-
+esis. The null hypothesis  is an initial argument  that is recognized  based on existing  knowledge, while the al-
+ternative  hypothesis  is a new argument  that we hope to prove as a new truth through  testing. For example,
+if there is an existing  claim that “the average  life expectancy  of men in Korea is 70 years old”, and there is a
+claim that “the average  life expectancy  of men in Korea has recently  increased  to over 70 years”, we can con-
+sider the following  null and alternative  hypotheses,
+The Null Hypothesis:  The average  life expectancy  of men in Korea is 70 years old.
+The Alternative  Hypothesis:  The average  life expectancy  of men in Korea is not 70 years old.
+Based on the above two hypotheses, the  hypothesis  is adopted  or rejected  through  statistical  hypothesis
+testing. In the example  above, if the null hypothesis  is rejected  and the alternative  hypothesis  is adopted,  the
+average  life expectancy  is not 70 years old.
+3 Source:  Wikipedia  (https://ko.wikipedia.org/wiki/¢424)
+4 Source:  Wikipedia  (https://ko.wikipedia.org/wiki/It)
+M6 Project  Management  and Technical  Communication  21
+
+
+--- Page 23 ---
+ESSENCE
+>> Learning  Objectives
+1. To be able to identify  the definition  and types of business  problems.
+2. To be able to describe  the business  problem  solving  process.
+3. To be able to apply problem-solving  techniques  appropriate  to your situation.
++ Preview  for practical  business
+K System decided  to enter the online bank business  centering  on payment  and settlement  services
+of the FinTech  industry.
+However,  in order to start the online bank business,  you must submit a business  plan to the Financial
+Services  Commission  and obtain approval  after being reviewed  through  presentation.
+Director  Kim in charge the business  decided to conduct  an analysis  of the current situation  of K
+System and the external  environment  of the online bank business,  and to prepare a business  plan
+including  strategies  to build an online bank.
+Kim is applying  various business  problem-solving  techniques  to accurately  grasp the current  state of
+K system and its competitors,  in order to determine  how to promote  the online bank business.
+For successful  business execution,  it is very important  to analyze information  about consumers,
+competitors,  and industry  trends in a timely manner, and utilize it for strategy  establishment  and
+product  development  through  creative  ideas.
+22 TOPCIT  ESSENCE
+
+
+--- Page 24 ---
+Project Management  and Technical  Communication  )
+01 Business  Problem  Solving  Techniques
+A) Concept  of business  problem  solving
+In a business  environment,  problems  can be broadly  divided into two: planning  that creates  new opportunities:
+and improvement  of internal processes.  Planning  can be said to be the process  of finding the “blue ocean’,
+which is a business  opportunity,  and it is the process  of creating  a new market through a solution  that can
+address  the current problems.  Improving  internal processes  is a task to more efficiently  execute  a current
+market  opportunity.  When those two elements  are accurately  recognized,  defined and resolved,  it is possible
+to ensure stable business  continuity  and to create new opportunities.  Therefore, it is most important  to solve
+business  problems  through  optimal  problem-solving  processes ...

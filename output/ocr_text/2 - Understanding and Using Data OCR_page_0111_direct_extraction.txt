@@ -1,0 +1,9 @@
+ESSENCE
+performance  deteriorates  if all sorting operations  cannot be performed  in the memory  due to there being too many
+data to be sorted.
+@® Hash Join
+Hash Join performs  a join operation  using the hashing  technique.  The hash function  is executed  using the join column
+of the table to perform a join operation.  The join operation  is performed  while checking  whether  the data with the
+same hash value actually  have the same value. Hash Join was introduced  as an alternative  for solving the random-
+access  problem  of NL Join and sorting  the workload  of Sort Merge Join.
+110 TOPCIT  ESSENCE

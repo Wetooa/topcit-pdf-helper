@@ -1,0 +1,31 @@
+Database )
+03 Data Control  Language  (DCL)
+A data control language  is used to define and describe  data controls,  in order to use the database  in common.  The
+main statements  include  GRANT,  REVOKE,  COMMIT,  and ROLLBACK.  Sometimes,  COMMIT  and ROLLBACK,  which are
+used to control  nested  transactions,  are separated  and called TCL (Transaction  Control  Language).
+A) Roles of the data control  language
+<Table  42> Roles of the data control  language
+Item Roles
+Data security Protect  data from unauthorized  users.
+Integrity Maintain  the accuracy  of data.
+Recovery Cope with system failure.
+Concurrency  control Enable multiple  users to access (use) a database  at the same time.
+B) Types of data control languages
+@ GRANT
+This statement  is used to grant privileges  related  to an object  to a user.
++ Example:  When granting  the privilege  of searching  the customer  table to user ABC.
+-> GRANT  SELECT  ON customer  TO ABC ;
+@ REVOKE
+This statement  is used to cancel a user's privileges  related  to an object.
++ Example:  When withdrawing  the privilege  of searching  the customer  table from user ABC.
+-> REVOKE  SELECT  ON customer  FROM ABC ;
+@ DENY
+This statement  is used to deny the user’s privilege  related to an object. If both GRANT  and DENY are assigned  at the
+same time, DENY takes precedence.
++ Example:  When denying  the user ABC’s privilege  of searching  the customer  table.
+-> DENY SELECT  ON customer  TO ABC;
+@ COMMIT
+This statement  is used to complete  a transaction  and confirm  a data change.
+@ ROLLBACK
+This statement  is used to cancel a transaction  and restore  data to their original  state before the change.
+M2 Database 107

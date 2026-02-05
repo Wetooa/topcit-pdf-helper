@@ -1,0 +1,37 @@
+Database )
+<Table 30> Classification  of anomalies
+Type Anomaly
+If a supplier  wants to input new association  information  for a part, the supplier  should consider  the association
+between  the supplier  and project  and the association  between  the part and project.
+Modification  | To modify  the association  information  for a supplier  and a part, multiple  records  should be modified  because
+error other associations  should also be considered.
+If the association  information  for a supplier  and a part is deleted,  the association  information  for a supplier  and
+a project, as well as the association  information  for a part and a project,  are also deleted.
+D) Performing  the fifth normalization
++ As there is a precondition  of the four same semantic  associations,  it can be analyzed  so as to create the following
+table.Input error
+Delete error
+<Table 31> Association  rule table
+Rule Association  rule Table
+1 A supplier  handles  a certain part. (A and  B are related.) Created
+2 It can be known whether  a part has been used for a certain  project.  (A and C are Created
+related.)
+8 A supplier  supports  a certain project.  (B and C are related.) Created
+It cannot  be known whether  a supplier  supports  a certain project  using a certain
+“ part. (A, B, and C are not related.) Not created
++ The fifth normalization  based on the above prerequisites  means  creating  a join table (relational  table) as follows.
+sP PC ToSN PN PN CN CS) cn soSN
+Sl | Pl Pl C2 Q Si
+Sl | P2 P2. Cl cast
+S2 Pl Pl ea} C1 92
+The fifth |
+normalization
+[Figure36]  Performing  the fifth normalization
+06 Denormalization
+A) Concept  and procedure  of denormalization
+@ Definition:  The process  of integrating  data models for normalized  entities,  attributes,  and relationships  in order to
+improve  system  performance  and simplify  development  and operations.
+@ Considerations:  Data consistency  and integrity  > System  performance  and data model simplicity
+@ Procedure  of denormalization
++ Investigating  denormalization  targets: Range processing  frequency,  large range processing,  aggregation  process,
+M2 Database  77

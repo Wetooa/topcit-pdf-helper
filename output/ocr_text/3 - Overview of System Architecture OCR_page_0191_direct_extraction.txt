@@ -1,0 +1,35 @@
+ESSENCE
+B) UDP protocol
+A UDP packet, called the user datagram,  has a fixed-size  8-byte header  made of four 2-byte (16-bit)  fields, as shown
+below. Each field of the UDP header  is used for the purposes  shown in <Table 67>.
+<Table  67> User Datagram  Header  Fields
+Field Length Description
+Source  Port 2Bytes The port number  of the source packet in the range of 0-65,535
+Destination  Port 2Bytes The port number  of the destination  packet
+Length 2Bytes The length of the entire packet, including  the UDP header  and data fields
+Checksum 2Bytes A value to detect a data error
+Data octets Variable | Storage  of data to be transmitted
+The source port refers to the port of the transmitting  process,  and the destination  port refers to the port of a specific
+destination  host. The length is the sum of the UDP header  (minimum  8) and the data size. The checksum  is the result
+of adding 16-bit 1's complement  to the pseudo-IP  header, UDP header, and data. The checksum  field is filled with
+zeros before the calculation.
+As described  above, unlike TCP. the UDP protocol  is simple to implement  because  it receives  data from the application
+layer and sends it down to the IP layer. It also analyzes  the UDP user datagram,  that is received  from the IP layer, and
+delivers  it to an appropriate  application  program.
+04 SCTP (Stream  Control  Transmission  Protocol)
+A) Characteristics  of SCTP
+The stream control transmission  protocol (SCTP) is a new transport  layer protocol  designed  by combining  UDP
+and TCP advantages  for multimedia  communication  [3]. The service characteristics  of the SCTP are described  in
+the following  table. The SCTP association  is a broader  concept  than the end-to-end  TCP connection. In an SCTP
+association,  one or more IP addresses  can be connected  at each endpoint.  It is called multi-homing,  and it enables
+network-level  fault tolerance. SCTP is called association  in order to highlight  its multi-homing  nature. While a stream
+is transmitted  and received  to an end-to-end  connection  in TCP multiple streams  can be transmitted  and received
+per association  in SCTP.
+<Table 68) SCTP Service  Characteristics
+Features Description
+Process-to-process - _—at Provides  process-to-process  communication
+Multi-stream +A multi-stream  service, called association,  is allowed in each connection.
++ The transmitting/receiving  host defines  multiple  IP addresses  on each terminal  for an
+Multi-homing association.
+* Only one of the IP addresses  is the primary  address,  and all others are alternative  addresses.
+190 TOPCIT  ESSENCE

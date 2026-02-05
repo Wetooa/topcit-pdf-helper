@@ -1,0 +1,215 @@
+LEARNING GUIDE: Pages 112-116
+Generated: 2025-12-05 14:28:41
+PDF: 1 - Software Development OCR
+
+================================================================================
+LEARNING GUIDE
+================================================================================
+
+Here's a simplified learning guide based on the provided text:
+
+---
+
+## Software Requirements Management: A Study Guide
+
+### 1. Introduction: Why Requirements Management Matters
+
+*   **Problem:** Project failures often stem from poor requirements management.
+*   **Statistics:**
+    *   50% of IT project failures linked to requirements management.
+    *   70-80% of total project cost caused by requirements management failures.
+*   **Main Causes of Failure:**
+    *   **Inadequate Definition/Insufficient Communication:** Poor understanding of requirements early on, limited stakeholder dialogue.
+    *   **Lack of Change Management:** Not considering the impact of requirement changes on deliverables.
+
+### 2. Requirements Management (RM)
+
+#### 2.1 Definition
+*   **Requirements Engineering** consists of:
+    *   **Requirements Development:** Defining "what to do."
+    *   **Requirements Management:** Checking if defined requirements are accurately reflected and continuously managing changes.
+
+#### 2.2 Importance
+*   Provides effective communication among stakeholders.
+*   Prevents project delays and budget overruns.
+*   Ensures systematic management of user requirements from the project's start.
+
+#### 2.3 Purposes
+*   Satisfy customer requirements by understanding their perspective.
+*   Produce high-quality software within schedule and budget constraints.
+
+#### 2.4 Requirements Management Process
+This process covers activities throughout the software development lifecycle.
+
+| Process Step              | Description                                                                                             | Deliverable(s)             |
+| :------------------------ | :------------------------------------------------------------------------------------------------------ | :------------------------- |
+| **1. Requirements Extraction** | Define business requirements, identify participants, extract initial requirements.                        | Candidate requirements     |
+| **2. Requirements Analysis** | Model candidate requirements, prioritize them, discuss with stakeholders.                                 | Agreed requirements        |
+| **3. Requirements Specification** | Define specification standards, create the requirements specification document, record traceability info. | Formal requirement         |
+| **4. Requirements Verification** | Review the specification, verify terms, set the requirements baseline.                                  | Baselined Requirement      |
+| **5. Requirements Change Management** | Control requirements changes, manage traceability, control versions (history).                          | Consistent Requirement     |
+
+#### 2.5 Principles of Requirements Management
+*   Prioritize customer value based on requirements and obtain stakeholder consent.
+*   Clearly identify the exact target of the system (manage expectations and scope).
+*   Analyze the impact of requirement changes using a **Change Control Board (CCB)** and set a baseline for each change.
+
+### 3. Requirements Specification
+
+#### 3.1 Requirements Specification Techniques
+These techniques define requirements, categorized by method:
+
+| Classification | Technique Name                  | Description                                                                     |
+| :------------- | :------------------------------ | :------------------------------------------------------------------------------ |
+| **Formal**     | **VDM** (Vienna Development Method) | Mathematics-based; provides a framework for development and systematic verification. |
+|                | **ESM** (Finite State Machine)  | Expresses state transitions based on input signals.                             |
+| **Informal**   | **SADT** (Structured Analysis and Design Technique) | Graphic-based structural analysis model.                                        |
+|                | **Use Case**                    | User-based modeling.                                                            |
+|                | **Decision Table**              | Documents probabilities and cases for decision-making.                          |
+|                | **ER Modeling** (Entity Relationship) | Represents entities and their relationships.                                    |
+
+#### 3.2 Principles of Requirements Specification (IEEE Standards)
+The IEEE recommends these principles for high-quality software requirements specifications:
+
+*   **Verifiability:** Requirements can be objectively tested.
+*   **Modifiability:** Requirements can be easily changed without excessive effort.
+*   **Clarity:** Requirements are clearly presented to all stakeholders.
+*   **Accuracy:** Requirements are precisely and correctly described.
+*   **Traceability:** The source and reasoning behind each requirement can be tracked.
+*   **Consistency:** No conflicts exist between different requirements.
+*   **Completeness:** All important details (functionality, performance, constraints) are documented.
+*   **Interpretability:** Requirements provide a consistent interpretation for everyone.
+*   **Understandability:** Requirements are easy for stakeholders to comprehend.
+
+#### 3.3 Main Contents of a Requirements Specification (IEEE Standard)
+This outlines the typical structure and details of a Software Requirements Specification (SRS):
+
+1.  **Overview**
+    *   Purpose of the SRS and software, intended audience.
+    *   Development scope (constraints, characteristics, business strategy).
+2.  **Overall Description**
+    *   Project perspective, product functions (list only).
+    *   User characteristics (experience, education, frequency of use).
+    *   Software operating environment (hardware, OS, software).
+    *   Constraints (hardware, memory, security, multilingual support).
+    *   Assumptions (dependencies on outsourced components, other projects).
+    *   User scenarios (how users interact with the system).
+3.  **Interface**
+    *   User Interface (UI) details.
+    *   Hardware Interface (protocols, interaction between components).
+    *   Software Interface (data/messages exchanged with other software).
+4.  **Functional Requirements**
+    *   Detailed requirements for each function listed in Chapter 2.
+    *   For each function: purpose, inputs (with validation), outputs (with error messages, parameters).
+5.  **Non-Functional Requirements**
+    *   **Performance Requirements:** Speed, response time, throughput.
+    *   **Security Requirements:** Authentication, authorization, data protection.
+    *   **Software Quality Requirements:** Availability, flexibility, interoperability, maintainability, portability, reliability, usability.
+6.  **Other Requirements**
+    *   Operation rules, standards (e.g., Current Business Process - CBP, Future Process Model - FPM).
+
+### 4. Requirements Change and Tracking Management
+
+#### 4.1 Overview of Requirements Traceability
+*   **Inevitability of Change:** Once a requirements baseline is set, changes are unavoidable.
+*   **Purpose:** Formally control all changes to maintain consistency and integrity.
+*   **Reasons for Changes/Errors:**
+    *   Initial requirements errors, conflicts, or inconsistencies.
+    *   Participants gaining a deeper understanding of the system.
+    *   Changes in the system's environment or organization.
+    *   Technical, time, or cost issues arising.
+*   **Reducing Errors:** Defining and configuring traceability helps reduce these errors.
+*   **What is Traced?** Traceability applies to individual sentences/elements within the requirements document, not just the document as a whole. This ensures fine-grained tracking of each requirement's origin, implementation, and verification.
+
+---
+
+================================================================================
+ORIGINAL TEXT (First 5000 chars)
+================================================================================
+
+--- Page 112 ---
+Software  Development )
+* Preview  for practical  business
+Projects  fail mostly because  of inappropriate  requirements  management.
+According  to data from Standish  Group, a global market  research  organization,  50% of IT project
+failures in overseas  countries  are related to requirements  management,  and 70-80%  of the total
+project cost is caused by the failure of requirements  management.  The above data also apply to
+domestic  projects.  The main causes  of these results can be summarized  as follows.
+- Inadequate  definition  of requirements/insufficient  communication:  Insufficient  understanding  of
+the requirements  in the early development  process due to limited resources  and timelines,  and
+incomplete  dialogue  between  stakeholders.
+- Lack of change management:  When changing  the customers’  requirements  or the development
+deliverables,  its impact  and relevancy  are not considered.
+[Source:  Present  and future direction  of domestic  requirements  management  market,  The Electronic
+Times]
+M1 Software  development  111
+
+
+--- Page 113 ---
+ESSENCE
+01 Requirements  Management
+A) Definition  of requirements  management
+Requirements  engineering  can be largely divided into requirements  development  and requirements
+management.  Requirements  development  consists  in defining  what to do, while requirements  management
+consists  in checking  whether  the planned and defined requirements  are accurately  reflected  and in managing
+changes  to the first requirements  on a continuous  basis.
+B) Importance  of requirements  management
+Proper requirements  management  should provide an effective  means  of communication  among the
+stakeholders,  prevent  delivery  delays and going over budget through systematic  requirements management
+from the initial phase of the project,  and execute  and manage  the user requirements  specification.
+C) Purposes  of requirements  management
+Requirements  management  aims to satisfy the customer’s  requirements  by understanding  them from the
+customer's  point of view and to produce  high-quality  software  within  a limited schedule  and period.
+D) Requirements  management  process
+The figure below illustrates  the requirements  management  activities  in the entire software  development  life
+cycle.
+\ EB \ Frexinme\ i “\ Va \ i ‘\
+/ SW request | sw / SW design/  | = \
+\ extraction | requirement  | (ppeciication  and} \ architecture }> \im cena)  Sen|\ SW test ] \ \gmrss 7] ey)  ] Ww _Z \ Z
+SW requirement  definition  activity SW requirement  change  management
+Overall requirements  engineering  activities
+[Figure  24] Requirements  management  activities
+The table below describes  the detailed activities  and corresponding  deliverables  of the requirements
+management  process.
+<Table 35> Details  of requirement  management  activities
+Process Description Deliverables
+Reaaiemente + Defining  the business  requirements.
+q A + Identifying  the participants. Candidate  requirementextraction 5 es
++ Extracting  the initial requirements.
+112 TOPCIT  ESSENCE
+
+
+--- Page 114 ---
+Software  Development )
+Process Description Deliverables
+Renuicments + Modeling  the candidate  requirements.
+“analysis + Determining  the priority of the requirements. Agreed requirement
++ Discussing  the requirements.
+* Defining  the requirements  specification  standards:  creating  the
+Requirements specification. |
+specification + Saving information  related to the traceability  of the Formal requirement
+requirements.
+Requirements + Reviewing  the requirements  specification:  verifying  the terms:
+verification setting the baseline. Baselined Requirement
+Requirements  change  | ° Requirements  change control, traceability  control,  version Consistent  Requirement
+management control (history  management).
+E) Principles  of requirements  management
+The principles  of requirements  management  are as follows.
++ Giving priority to requirements-based  customer  value/obtaining  the stakeholders’  consent  to the
+requirements.
++ Identifying  the exact target of the required  system  (expectation  management/scope  management).
++ Analyzing  the impact of a change to the requirements  by running  the Change Control Board (CCB), and
+setting  a baseline  for each change  step.
+02 Requirements  Specification
+Requirements  should be defined by specification  techniques,  and the correct specification  can be defined only
+when the principles  are considered.
+A) Requirements  specification  techniques
+Requirements  specification  techniques  can be divided into formal specification  and informal specification
+depending  on the method.
+<Table 36> Requirements  specification  techniques
+Classification Specification  techniques Description
+VOM + Vienna  Development  Method
+Formal + State-based  graphical  specification  method
+specification Mathematics-based + Provision of a framework  for development of the specification  and
+technology systematic  verification  of the system
+ES...

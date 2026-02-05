@@ -1,0 +1,29 @@
+Overview  of System Architecture )
++ Preview  for practical  business Information  system  failure at Bank  A lasting
+until late in the afternoon.
+“Blocked  wagesfer’,  The Hankyore.
+Information  systems  have the role of not only supporting  business,  but also creating  business.  A failed bank
+information  system can have an enormous  impact. A fire at OO Card's IDC center in 2014 is a similar  case.
+Enterprises  must improve  the availability of information  system services,  through a high availability  (HA)
+configuration  or disaster  recovery  (DR) center in order to ensure that their information  system safely and
+continuously provides  service. Most major information  systems  are basically  configured  with redundancy.
+An important  banking  system has a spare system, in addition  to redundancy,  to ensure that the reserve
+system can continue  to provide information  services  at the time of disasters,  such as an earthquake  or
+a fire. The DR center is a place that provides  such a spare system.  DR centers are configured  in different
+ways, depending  on the importance  of the information  system.  When  a failure or disaster  occurs, the time
+required  to recover  in order to provide normal service is called the recovery  time objective  (RTO). Moreover,
+the tolerable  level of data loss in a failure or disaster  is called a recovery  point objective  (RPO). The DR
+center is classified  into a mirror, hot, warm, or cold site, based on RPO and RTO. This section describes
+techniques  for providing  service  continuity  of information  systems.
+01 High Availability  (HA)
+A) Concept  of HA
+In information  systems,  HA refers to an uninterrupted  service. However,  it is not easy to make a system,that  consists
+of numerous  parts and software,  100% available.  There must be no failure, or services  must be available  to users in a
+usable state, even at the time of failure, in order to guarantee  uninterrupted  availability.  In general,  the system  fails at
+some point. Therefore,  the way to guarantee  service  continuity  is to prepare  for failure, rather than preventing  failure.
+HA prepares  for failure by configuring  two or more systems  using clustering.
+A typical HA criterion  targets  99.999%  (called 5 nines), representing  less than 5 minutes  and 15 seconds  of unplanned
+service downtime  per year. The scale of the HA level is expressed by the number  of nine, and the  formula for
+calculating  the availability  is the mean time between  failures  (MTBF),  divided by the sum of the MTBF and the mean
+time to repair (MTTR).
+M3 Overview  of System  Architecture  123

@@ -1,0 +1,41 @@
+ESSENCE
+- Creating  and disposing  of files
+- Creating  and disposing  of the directory
+- Providing  primitive  files and directory  management
+- Mapping  for the OS to use the file in the auxiliary  memory  unit
+- Storing  the file in a nonvolatile  storage  medium
+@ Input/output  system  management
+The OS helps users use a device, even if they do not know its characteristics.  Here, a device refers to an input/output
+device and includes  a mouse,  keyboard, printer, and speaker. Users can easily use these devices with the functions
+provided  by the OS.
+© Auxiliary  memory  unit management
+The volume of data used by a computer  system is growing  larger, from gigabytes  and even to terabytes.  However,
+the data used by a computer's  CPU is that which is in the main memory  unit. The main memory  does not provide  the
+capacity  at the terabyte  level. The OS hands the following  auxiliary  memory  unit management  function  to store the
+managed  data:
+- Empty  space management
+~ Storage  allocation
+~ Disk scheduling
+© Networking
+A distributed  system is a set of memory  units or separate  processors.  Each processor  communicates  at a high speed
+through  the network.  The network  integrates  scattered  computer  resources  into a system  to improve  the calculation
+speed, share data, and to enhance  reliability.
+@ Command-interpreter  system
+A command-interpreter  system is one of the system programs  that enables  users to access  the main OS functions.
+In MS-DOS  of UNIX shell, a user can enter a command  with a keyboard  in order to run an OS function.
+C) Types of main OS
+<Table 4) Types of Main OS
+Type Operating  system  (OS) Description
+- Developed  by Microsoft
+Windows ~ Stable and standardized  GUI
+PC OS - Supported  by many third party programs
+Mac OS - Developed  by Apple
+- Optimized  for Apple's  hardware
+- Developed  by Google  (Acquired  Android  in 2005)
+Android - High openness
+. ~ Installation  using APK files
+Mobile  OS
+- Developed  by Apple
+iOS - Very secure
+~ Installation  of apps only available  from the AppStore
+44 TOPCIT  ESSENCE

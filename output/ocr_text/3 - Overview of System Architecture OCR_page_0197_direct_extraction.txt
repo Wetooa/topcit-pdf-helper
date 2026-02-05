@@ -1,0 +1,33 @@
+ESSENCE
+Most eas Transmitting Sesulan id
+1. Request  for 1.1 Connection
+, Request  tohomepage
+MeEPAg Webserver Connection  Request
+1.2 “GET /
+HTTP /1.1°
+transmitted Request  for
+jomepage
+200
+Acknowledgment HTTP  /Showing 1.1 200 OK (text/html) jomepagreceivedHomepage
+Connection  terminated
+2.1 Connection
+2. Request  for Request  to
+mypdf Webserver SYN
+ACK 22°GET  |
+FIN
+ACK
+FIN
+ACK
+[Figure 139] Virtual Scenario  of Application  Layer Operation
+This section describes  the part related to the HTTP protocol  in [Step 1] and [Step 3-4] of the network
+operational  procedure  in user A’s web usage scenario  @ in “l. Network  concept”. A web browser  and an
+application  program  are connected  to the web server program,  httpd, through  a TCP connection  and plays
+the role of fetching  the web content  that is desired by user Athen converting  it into a user-friendly  form.
+The web browser  uses the HTTP/1.1  protocol  for communication  with the webserver.  The HTTP/1.1  protocol
+is a text-based  application  layer protocol [8]. Text data created, according  to the HTTP/1.1 protocol,  is
+delivered  to the other application  layer program  through  the transport  layer protocol.
+The application  layer program uses socket programming  to transmit  and receive user data through  the
+transport  layer. Socket programming  is a programming  technique  that is crucial for implementing  the
+application  layer protocol,  but it is out of the scope of this guide's  contents.  Refer to other books for more
+details.
+196 TOPCIT  ESSENCE

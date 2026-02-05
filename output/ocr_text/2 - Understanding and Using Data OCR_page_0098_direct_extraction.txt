@@ -1,0 +1,32 @@
+Database )
+criteria,  and a guideline  on what to prepare  to secure  a better  level is urgently  required.  The data quality management
+maturity  model, which was developed  to satisfy  these requirements,  is composed  of three key elements,  namely,  the
+data quality  standard,  the data quality management  process,  and the data quality  management  maturity  level.
+@ Data quality  standard
++ Data validation  aspect: Accuracy,  consistency
++ Data utilization  aspect: Usability,  accessibility,  timeliness,  security
+@ Data quality  control process
++ Processes  that are needed  to improve  the quality of accuracy,  consistency,  usability,  accessibility,  timeliness,  and
+security  are identified.
++ Sometimes,  there is a one-to-one  correspondence  between  the quality standard  and the data quality management
+process,  There are also processes  that are related to several quality standards  at the same time.
+@ Data quality  control maturity  level
++ The level is defined  from 1 to 5.
++ The higher the maturity  level, the more the data is managed  systematically  and elaborately.
+02 Data Standardization
+Data standardization  means  that principles  for the name, definition,  format, and rule of data information  elements  are
+established  and applied throughout  an organization.  It is indispensable  for improving  the clarity of communication  and
+data quality and for reducing  the cost of data conversion  and cleansing.
+A) Overview  of data standardization
+@ Recently, interest  in data integration  and data quality has been increasing  because  data have emerged  as a key
+element  of a corporation's  strategic  decision-making  process.
+@ Data standardization  means that the principles  for the name, definition,  format,  and rule of data information  elements,
+which are dispersed  in each system,  are established  and applied throughout  an organization.
+@ The exact meaning  of data can be  understood,  and opposite  opinions  about data can be adjusted  through data
+standardization.
+B) Necessity  of data standardization
+@ Improves  clarity of communication  by unifying  names.
+@ Reduces  the time and effort spent on finding  the location  of the necessary  data.
+© Improves  data quality by applying  consistent  data formats  and rules.
+@ Reduces  the cost of data conversion  and cleansing  when designing  a data interface  between  information  systems.
+M2 Database  97

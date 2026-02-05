@@ -1,0 +1,14 @@
+Overview  of System Architecture )
+@ Comparison  of NFV and SDN
+Classification SDN NFV
+Technolo Software  implementation  of network  functions, Implementation  of existing  dedicated  network  devices,
+obje  Pree through a separation  of control and data and using the VM and high-performance  x86 server
+centralization  of network  control platform
+Target Although the technology  began at Campuses,  data . The technology  targeted network devices ofconten centers,  and cloud services,  telecommunication  carriers communication  operators  from the beginnin
+have recently  used it. INNING,
+Target Network  equipment,  such as middle to large routers Network  equipment,  such as middle to large routers
+equipment  | and switches and switches
+Implemented ; . Router, firewall, gateway,  CDN, WAN accelerator,  and a Cloud orchestration  and networking SLA compensation
+Protocol OpenFlow  centered None
+Leading .organization ONF ETSI NFV Working  Group
+M3 Overview  of System  Architecture  221

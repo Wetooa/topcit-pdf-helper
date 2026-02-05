@@ -1,0 +1,196 @@
+LEARNING GUIDE: Pages 19-23
+Generated: 2025-12-05 13:53:15
+PDF: 5 - Understanding the IT Business and Ethics OCR
+
+================================================================================
+LEARNING GUIDE
+================================================================================
+
+Here's a simplified, easy-to-read learning guide based on the provided text:
+
+---
+
+# IT Business & Ethics: Learning Guide
+
+## I. IT Business Integration & Alignment
+
+### A. Concept of IT Business
+*   IT is more than a tool or support function; it's a concept deeply interdependent with business strategy and objectives.
+*   This interdependence:
+    *   Strengthens a company's business model competitiveness.
+    *   Creates new business value.
+
+### B. Business and IT Alignment
+1.  **Interdependence:**
+    *   Corporate business (strategy, data management, processes) and IT systems (applications, infrastructure, network) are mutually dependent.
+    *   **Alignment:** IT application programs, infrastructure, and organization support and realize a company's business strategy and processes.
+2.  **Strategic Alignment Model (2-Dimensional Diagram):**
+    *   **Strategic Fit:** Focuses on external (business environment) and internal (management structure) aspects.
+    *   **Functional Integration:** Focuses on business and IT integration.
+    *   *Visualized as: Business Strategy ↔ IT Strategy & Strategic Compatibility ↔ Functional Integration.*
+3.  **Four Complementary Areas for Strategic Alignment:**
+    *   Business Strategy
+    *   IT Strategy
+    *   Organizational Infrastructure and Processes
+    *   IT Infrastructure and Processes
+    *   *Each area has its own scope, capabilities, governance, infrastructure, processes, and technology.*
+
+## II. IT Business Ecosystem
+
+### A. The Hype Cycle (Gartner)
+*   **Definition:** A diagram showing the evolution of expected industrial economic value and impact of new IT technologies over time. Released annually by Gartner.
+*   **Purpose:** Helps understand current and future technological trends to aid company growth and IT business incorporation.
+*   **Five Phases:**
+    1.  **Innovation Trigger:** New technologies are first introduced, generating high expectations.
+    2.  **Peak of Inflated Expectations:** Hype exceeds actual capabilities, leading to unrealistic expectations.
+    3.  **Trough of Disillusionment:** The "bubble bursts" as technologies fail to meet overblown expectations.
+    4.  **Slope of Enlightenment:** Expectations stabilize and start climbing steadily again as the technology improves and real-world applications emerge.
+    5.  **Plateau of Productivity:** The technology matures, generates steady value, and becomes widely adopted.
+
+### B. Evolution of the IT Ecosystem
+*   IT technology advances create a vast ecosystem of interacting and competing technologies.
+1.  **Key Revolutions:**
+    *   **Information Revolution (1980s):** Driven by personal computers and telecom networks.
+    *   **Smart Revolution (2000s onwards):** Mobile devices, smartphone-based wireless internet, phone, and computing services converged, accelerating IT industry convergence and "smartification" across industries (e.g., education, automobiles, medicine).
+2.  **Hyper-Connected Society:**
+    *   Driven by advancements in sensor and network technologies.
+    *   Evolution: **M2M** (Machine-to-Machine) → **IoT** (Internet of Things) → **IoE** (Internet of Everything).
+    *   Connects humans to humans, humans to objects, and objects to objects, linking humans, objects, spaces, data, and services.
+3.  **Core Technologies for Hyper-Connected Society:**
+    *   **ICBM:**
+        *   **I**oT (Internet of Things)
+        *   **C**loud Computing
+        *   **B**ig Data
+        *   **M**obile
+4.  **IT Ecosystem Components (C-P-N-D-S):**
+    *   The IT ecosystem's center is shifting from hardware devices to platforms and contents, increasing software importance.
+    *   **C - Contents:**
+        *   Increased consumption of mobile content due to mobile technology (e.g., music, video, e-books).
+        *   Smartphone-centered mobile environment allows diverse content use anywhere, anytime.
+        *   New content distribution ecosystems are emerging, focused on mobile users.
+    *   **P - Platform:**
+        *   Evolution from individual services by single operators to common platforms with multiple providers.
+        *   Shift from closed platforms to open platforms.
+        *   Trend towards using shared common platforms rather than building proprietary ones (e.g., Apple, Google, Kakao service frameworks).
+    *   **N - Network:**
+        *   Smart revolution (smartphones, tablets, smart TVs) significantly increased network traffic.
+        *   Next-generation smart services (smart homes, smart cars) and numerous IoT devices generate massive amounts of data traffic.
+    *   **D - Device:**
+        *   Wearable devices (e.g., smartwatches like Samsung Galaxy Gear, smart glasses like Google Glass) have intensified competition and collaboration among device makers.
+        *   The number of smartphones and tablet PCs connectable to smart devices is increasing.
+    *   **S - Security:** (Mentioned as a component, but specific characteristics are not detailed in the provided text.)
+    *   *Note: Destructive innovations like 3D printing and unmanned vehicles lead the IT ecosystem and improve competitiveness through open innovation and customized business models.*
+
+### C. Major IT Paradigm Changes (Five Trends)
+1.  **Change from HW to SW Platform:**
+    *   IT ecosystem shifts from devices (Hardware) to platforms and contents (Software).
+    *   Software and platforms are now key drivers for value creation and national industry growth.
+2.  **Change from IT Convergence to Smart Convergence:**
+    *   Smart mobile-based IT convergence expands into traditional major industries (e.g., finance, healthcare).
+    *   Fintech (Finance + Technology) has emerged as a significant new growth area.
+3.  **ICBM-based Hyper-Connected Society:**
+    *   The foundation of the hyper-connected society is ICBM (IoT, Cloud, Big Data, Mobile).
+    *   This paradigm creates increased opportunities for economic growth.
+4.  **Rapid Changes in the IT Technology Environment:**
+    *   Emergence of "real sensation environment" technologies like virtual reality (VR), blending real and virtual worlds.
+    *   Rise of "destructive innovations" such as 3D printing and unmanned vehicles, which can disrupt existing markets.
+5.  **IT Business Transformation of Competition:**
+    *   Growth is increasingly driven by small and medium-sized creative IT venture companies.
+    *   Competitiveness is built through open innovation and the spread of demand-customized business models.
+
+---
+
+================================================================================
+ORIGINAL TEXT (First 5000 chars)
+================================================================================
+
+--- Page 19 ---
+ESSENCE
+(IT integration)Business  and IT are closely integrated
+Business  process
+Business
+goal
+[Fig.2] The evolving  concept  of IT business
+B) The alignment  of business  and IT
+In terms of IT business,  IT is more than just a tool or a support  function:  It is becoming  established  as a concept
+whose interdependence  with business  strategy  objectives  and processes  is maximized.  This maximization  of
+interdependence  not only strengthens  the competitiveness  of a company's  business model but also plays a major
+role in creating  new business  value. [Figure 3] shows the interdependence  between  a coprorate  business  and the IT
+system  of a corporation.
+Business
+strategy  goal, Data man-agement[wa)process | Mutual |
+dependence oo
+Enterprise ' IT system Somnetwork
+«_ _business_ _, . ’
+[Fig.3] The interdependence  between  a corporate  business  and the IT system.
+In IT business,  the alignment  of business  and IT can be understood  as IT application programs,  IT infrastructure,  and
+an IT organization  that supports  and realizes  a company’sbusiness  strategy  and business  processes.The  strategic
+alignment  model of business  and IT can be represented  as a 2-dimensional  diagram,  as shown in [Fig. 4]. In this figure,
+the*strategic  fit” dimension  is subdivided  into external  focus (business  environment)  and internal  focus (management
+structure),  while the“functional  integration’  dimension  is subdivided  into business  and IT.
+18 TOPCIT  ESSENCE
+
+
+--- Page 20 ---
+Understanding  the IT Business  and Ethics
+Functional  integration<—
+Business  strategy IT strategy
+Strategic compatibility
+[Fig.4] The strategic  links between  business  and IT
+To achieve strategic  alignment,  this model defines four areas that complement  each other: business  strategy,  IT
+strategy,  organizational  infrastructure  and processes,  IT infrastructure,  and processes.  Each area has its own scope,
+capabilities,  governance,  infrastructure,  processes,  and technology.
+02 IT Business  Ecosystem
+A) IT business  and the hype cycle
+Now let's take a look at the changes  in the IT technology  environment  that have brought  about various  IT business
+innovations  in recent  times. A diagram  that shows changes  in the expected  level of industrial  economic  value and the
+impact  of new technologies  in the IT sector  over time is what the hype cycle from Gartner  (released  every year) is all
+about.
+In the hype cycle, the so-called  “innovation  trigger’  is the time when new technologies  are first introduced  and
+people expect  great things from them. After that point, the level of expectation  gradually  increases  before the
+new technology  starts to become  more exaggerated  than what it can actually  deliver, leading  to a period when the
+bubble reaches its maximum  size (the peak of inflated expectations).  The Trough of Disillusionment  is the period
+when the bubble bursts, after which the hype cycle enters a period of revival (the Slope of Enlightenment)  in which
+the expectations  for the technology  start to climb steadily  once again. In the last period of the hype cycle, the
+technology  transitions  to the Plateau  of Productivity,  the period when it generates  steady  values.
+M5 Understanding  the IT Business  and Ethics 19
+
+
+--- Page 21 ---
+ESSENCE
+Hype Cycle  for Emerging  Technologies,  2018
+Deep Neural Mets (ae Leamig Praley  W/l be echt  is
+Carton  Manotioe‘gal  Fe
+Biochipe@ loscthen 2 years
+Sinset  Worbspare- (OF Patton @ Po  Syeasin uag tts ‘intu Assatars @ S00 10yeatscronmnus Mobile Rot li‘Silicon  Ande  Batteries 2S mone than 10 yeasBlockshain
+Canmore  Hora
+‘cncesoue  Ornng  LevVobiined  &: Displays.
+‘Sal Healy  Sysem Tectronyy.
+Comeesaticnal  Al Patloam:
+‘uiorenuy  tang Level & Mod Beaty
+llsckntan  foe Data Serunty
+aucenorplic  Harcvare
+Husuan  Augmertation
+bovetecge  Caps
+AD PristingExpectations
+‘rtical  Generel ltetigance
+‘Saneel Dust,
+Fling  Auten Vettes
+Binlech — Cukaved  ot
+Aili  Tessu
+Ascot  July 2018
+Innovation
+TriggerTrough  of Plateau  of
+Stops af EnlightonmontBeccary Disilusiaament BioRe et Endahtena Produativity
+gartner.com/SmarterWithGartner
+SanTe Garten  fos  andor ke elabecs  A nighicrocteved Ga  rtner.
+[Fig.5] 2018Gartner  Hype Cycle
+The hype cycle allows us to understand  not only those technologies  which have recently  become  important  issues,
+but also what kind of world will unfold in the future due to the nature of such technologies.  Understanding  the
+evolution  of technology  as presented  in the hype cycle and incorporating  it into an IT business  can be of tremendous
+help to a company's  growth.
+B) IT ecosystem
+As IT technology  continues  to advance  and improve, it is creating  a huge ecosystem  where different  technologies
+both interact  with and compete  against  each other. [Fig. 6] represents  this IT ecosystem
+After the Information  Revolution  of the 1980s brought  on by the development  of personal  computer  and telecom
+networks, ...

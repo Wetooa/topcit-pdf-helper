@@ -1,0 +1,39 @@
+ESSENCE
+© Clouding  Computing
+Cloud computing  is a technology  that lets people user IT resources  (networks,  servers, storage,  and service
+applications) through  the Internet  as a service whenever  they need them, without  ever having to own them. This
+implies the IT services  could be provided  better and cheaper  anytime  and anywhere.  Different  organizations  each
+define the concept  of cloud computing  in their own different  ways. Gartner  defines cloud computers  as a form of
+computing  that leverages  Internet  technology  to provide high-level,  scalable  resources  to many customers  as a
+service. Forest Research  defines cloud computing  as computing  that provides  standardized  IT based functions
+through  IP. access to computing  at any time, computing  power that varies based on the level of demand,  provides
+billing model based on the usage level or advertising  and provides  web or programmable  interface.
+Cloud computing  is not a new technology,  but it existed as a concept  for a long time in the IT community.  But
+it emerged  as a market issue as companies  began to show interest  in cloud computing  to reduce costs in the
+wake of the global economic  recession.  Cloud computing  can be seen as a form of rental business.  With improving
+virtualization  technology,  it became  possible  to integrate  the IT resources  located in different  spaces into a single
+system  for service.
+The characteristics  of cloud computing  are summarized  in the table below.
+<Table77>  Characteristics  of cloud computing
+Category Description
+Cloud computing  can dynamically  meet customer  requirements,  and customers  can buildin-Demand - ooOpe infrastructure  with minimal infrastructure  investment.
+Cloud computing  is scalable  and can be used whenever  resources  are needed  and returned  whenScalability they are not needed
+Cloud computing  is available  through  networks  and accessed  through  basic mechanism  that
+Broad Network  Access stimulate  the use of thick or thin client platforms.
++ The computing  resources  of the cloud service provider  are pooled in multi-ownership  structure
+so that multiple  different  customers  could be supported.
++ Different  physical  and virtualized  resources  are dynamically  allocated,  disassembled  and used to
+meet the requirements  of customers.Resource  Pooling
++ The form of service (storage,  processing,  bandwidth,  active user account)  is summarized  and
+resources  are automatically  adjusted  for use.
++ The amount  of resources  used is monitored  and controlled.  The findings  are then reported  in a
+transparent  process  to the service provider  and the service usersMeasured  Service
+Cloud computing  has a direct and interactive  relationship  with the IT sector, which encompasses  networks,  hardware,
+solutions,  and applications.  The stakeholders  of cloud computing  can be divided into three main groups. In the first
+group are vendors  who provide hardware,  solutions,  and applications  to cloud service providers.  In the second group
+are providers  that provide cloud services  to users and some global leading companies  are Amazon,  sales force
+dotcom,  and Google.  Third, there are various users such as individual  users or corporate  users, those that actually
+use cloud services.  Users can rent as much services  as they need and they can scale up their services  in real-time  in
+response  to increased  service loads, support  real-time  scalability  based on service load. And they only have to pay as
+much as they use.
+146 TOPCIT  ESSENCE

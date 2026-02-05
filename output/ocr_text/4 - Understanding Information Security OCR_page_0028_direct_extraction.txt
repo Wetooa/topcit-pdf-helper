@@ -1,0 +1,31 @@
+ESSENCE
+@ Public key cryptographic  algorithm
+The public-key  cryptographic  algorithm  became the important  element  of modern ciphers, since the
+introduction  of the concept  of the public key cipher by Diffie and Hellman in 1976, and the development  of a
+practical  public key cryptographic  algorithm,  called RSA, in 1978.
+Encryption . Decryption
+key Different key
+: Cryptographic , Cryptographic .
+| Plain text.  -——> algorithm ——>| Ciphertext algorithm Plain text
+[Figure  8] Public key cryptographic  algorithm
+Unlike the private  key encryption,  the sender  and receiver  use different  keys to establish  secret communication,
+as shown in [Figure 8]. The sender  encrypts  data, using the receiver's  public key, and sends the result over the
+network.  The receiver  decrypts  the encrypted  data, using the private key that matches  the receiver's  public
+key, to restore  the plain text.
+Public key . Private key£ Pair
+Pp —  fp
+Asymmetric  key
+Plain text |}——>| Encryption |——>| Ciphertext  |——>| cryptographic Plain text
+algorithm
+ya) ee 4?
+Pair
+Public key Public key
+[Figure  9] Key mechanism  of the public key cryptographic  algorithm
+The public key encryption  system has the advantage  of establishing  secure communication  using the
+cryptographic  algorithm,  even though the key is not shared with other users. Each user discloses  the key
+that will be used to send data to them (called a public key), and has the key that can decrypt  the information
+encrypted  by their public key (called a private key). Therefore,  it has the characteristic  that anyone can
+encrypt  information,  but only those who have a private key corresponding  to the public key can decrypt  the
+information.  For example,  when there are ‘n’ users in the network  environment,  a total of 2n keys are required
+across the network  because  each user holds two keys (a public key and a private key). Each user must hold
+28 TOPCIT  ESSENCE

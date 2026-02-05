@@ -1,0 +1,19 @@
+ESSENCE
++ Preview  for practical  business
+Since the database  collects and stores a large amount  of data, from personal  information,  to
+corporate  confidential  information,  it is an important  asset to protect  for an organization,  in addition
+to being a key target for attackers.  Therefore,  database  access  control and encryption  policies  should
+be established,  and countermeasures  should be prepared  to identify  various  security  threat elements
+of the database  and safely protect  important  data from these security  threats.
+Company  A decided  to come up with access control and encryption  measures  to safely manage
+the database  and requested  consulting  by submitting  the following  requirements  to the consulting
+company:
+1) Company  A experiences  frequent  organization  and business  changes.  Therefore,  the company
+needs a database  access  control system  that can be flexibly  applied  to such changes.
+2) Company  A should encrypt  uniquely  identifiable  information,  within the period stipulated  by the
+law, in accordance  with the revision  of the Personal  Information  Protection  Act.
+3) Company  A should thoroughly  analyze  the impact  of encrypting  uniquely  identifiable  information  in
+order to prevent  system failure and performance  degradation.
+Therefore,  let’s review the database  access control system that is desirable  for company  A, and the
+methods  for encrypting  uniquely  identifiable  information  and matters  to consider.
+86 TOPCIT  ESSENCE

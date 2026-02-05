@@ -1,0 +1,208 @@
+LEARNING GUIDE: Pages 97-101
+Generated: 2025-12-07 00:35:33
+PDF: 4 - Understanding Information Security OCR
+
+================================================================================
+LEARNING GUIDE
+================================================================================
+
+Here's a simplified, easy-to-read learning guide based on the provided text:
+
+---
+
+## Learning Guide: Information and System Security
+
+This guide covers essential principles of **encryption key management** and fundamental practices for **Windows system security**.
+
+---
+
+### Part 1: Encryption Key Management
+
+Effective management of encryption keys is crucial for data security. It involves distinct stages:
+
+1.  **Key Storage Stage:**
+    *   **Method:** Store encryption keys using **hardware storage** methods.
+    *   **Examples:** A separate **Key Management Server (KMS)** or a **Hardware Security Module (HSM)**.
+    *   **Avoid:** Hardcoding keys in applications, saving them as files, or storing them directly in a Database Management System (DBMS).
+
+2.  **Key Use Stage:**
+    *   **Principles:** Apply **"least privilege"** (users only get access needed for their job) and **"separation of duty"** (no single person has complete control).
+    *   **Access:** Only authorized personnel (e.g., database administrators, security managers) should access or modify master keys.
+
+3.  **Key Backup and Recovery Stage:**
+    *   **Procedure:** Establish clear backup and recovery procedures for encryption keys.
+    *   **Frequency:** Back up keys periodically, following your organization's key backup policy.
+    *   **Purpose:** To recover keys if lost or damaged.
+
+4.  **Key Replacement Stage:**
+    *   **Frequency:** Replace encryption keys periodically as per organizational policy to maintain security.
+    *   **Process:**
+        1.  Decrypt existing data with the current key.
+        2.  Create a new encryption key.
+        3.  Encrypt the data again using the new key.
+
+5.  **Key Destruction Stage:**
+    *   **Scenario:** When an encryption key is lost, damaged, or no longer needed.
+    *   **Process:**
+        1.  If lost/damaged, decrypt data using a backed-up key (if available).
+        2.  Generate a new encryption key.
+        3.  Encrypt the data again with the new key.
+        4.  Destroy the old, lost, or damaged encryption key.
+
+---
+
+### Part 2: Understanding System Security
+
+**Objective:** Learn to apply security settings to Windows, UNIX, and Linux systems.
+
+**Key Concepts:**
+
+*   **APT Attacks (Advanced Persistent Threats):** Sophisticated, long-term attacks designed to gain access to a network and remain undetected.
+*   **Password Crack / Brute Force Attack:** Attempts to discover a password by systematically trying every possible combination.
+*   **UMASK:** (UNIX/Linux) Controls the default file permission mask for newly created files and directories.
+*   **Daemon:** (UNIX/Linux) A background process that runs without user interaction, often performing system tasks.
+*   **Anonymous FTP:** Allows users to access files on an FTP server without a specific username or password.
+*   **Secure FTP (SFTP/FTPS):** Encrypted versions of FTP for secure file transfer.
+
+---
+
+### Part 3: Real-World Impact - Lessons from Cyber Attacks
+
+**Case Study: March 20, 2013 Cyber Terror**
+
+*   **Incident:** Major domestic broadcasting and financial companies experienced system paralysis due to a cyber-attack. Malware was distributed via an update management server (PMS).
+*   **Identified Causes of Hacking Damage:**
+    1.  **Insecure Administrator PCs:** Servers were accessible from non-administrator IP addresses.
+    2.  **Weak Patch Management:** Security patches were not applied properly, and authentication for the update server was weak.
+    3.  **Poor Configuration:** Default passwords were used, and unnecessary commands were not restricted.
+
+**Learning Point:** These incidents highlight the need for robust system security practices to prevent similar attacks.
+
+---
+
+### Part 4: Windows System Security Best Practices
+
+Windows systems require comprehensive security management across various areas.
+
+#### A) Overview of Windows System Security Areas
+
+| Item                    | Detailed Security Checks                                                                                                        |
+| :---------------------- | :------------------------------------------------------------------------------------------------------------------------------ |
+| **Account & Password**  | Unnecessary accounts, administrator privileges, vulnerable passwords, encryption, automatic account locks, password expiration.     |
+| **Access Control**      | Shared folders, remote registry access, automatic screen locks.                                                                 |
+| **System Security**     | Privilege settings (system directory, Windows account), system utilization rates.                                                 |
+| **Service Security**    | Unnecessary service shutdown (terminal, anonymous FTP, SNMP settings).                                                          |
+| **Monitoring**          | System audit policies, log record settings.                                                                                     |
+| **Other Security**      | Security settings, task scheduling details, anti-virus status, latest patch checks.                                             |
+
+#### B) Account and Password Management
+
+1.  **Delete Guest and Unnecessary Accounts:**
+    *   **Rationale:** Guest accounts can be a security risk. If access for unspecified individuals is needed, create standard user accounts.
+    *   **How-to:**
+        *   Open "Local Users and Groups" by typing `lusrmgr.msc` in the Start menu search box.
+        *   Delete guest accounts and any other unnecessary accounts.
+
+2.  **Set Account Lockout Policy:**
+    *   **Rationale:** Protect against **brute force attacks** and **password cracking** by locking accounts after multiple failed login attempts.
+    *   **Recommended Settings:**
+        *   **Account lockout duration:** 60 minutes
+        *   **Account lockout threshold:** 5 invalid logon attempts
+        *   **Reset account lockout counter after:** 60 minutes
+    *   **How-to:**
+        *   Open "Local Security Policy" by typing `secpol.msc` in the Start menu search box.
+        *   Navigate to `Account Policies` > `Account Lockout Policy`.
+        *   Configure the three settings listed above.
+
+#### C) Access Control
+
+1.  **Check and Stop Unnecessary Shared Folders:**
+    *   **Rationale:** Unnecessary shared folders can be a vector for malware and virus spread. Only allow authorized users to access necessary shared folders.
+    *   **How-to:**
+        *   Open "Shared Folders" management by typing `fsmgmt.msc` in the Start menu search box.
+        *   Review shared folders and stop sharing any that are not necessary.
+
+---
+
+================================================================================
+ORIGINAL TEXT (First 5000 chars)
+================================================================================
+
+--- Page 97 ---
+Information  security )
+@ Key storage  stage
+Encryption  keys should be stored using the hardware  storage method,  such as a separate  key management
+server or an HSM (Hard Security  Module), instead of hardcoding  the encryption  key into the application
+program,  saving as a file in the file system,  or storing  the encryption  key inside the DBMS.
+@ Key use stage
+The database  administrator  and security  manager  should apply the principles  of “granting least privilege  and
+separation  of duty”, and they should only allow authorized  persons  to access or modify  the master  key.
+@® Key backup  and recovery  stage
+Backup  and recovery  procedures  for the encryption  key should be prepared  to recover  it when lost or damaged,
+and the encryption  key should be backed up periodically,  according  to the key backup policy.
+© Key replacement  stage
+The security  of the encryption  key should be maintained by  replacing  it periodically,  according  to the internal
+policy of the organization.  Before replacing  the encryption  key, data should be decrypted  with the existing
+encryption  key, and a new encryption  key should be created.  Then, the data should be encrypted  again.
+@ Key destruction  stage
+When the encryption  key is lost or damaged,  the data should be decrypted  using the encryption  key that has
+been backed up by the administrator,  according  to the procedure  stipulated  by the organization  policy. A new
+encryption  key should be generated,  and the data should be encrypted  with the generated  key again. Then,
+the lost or damaged  encryption  key should be destroyed.
+M4 Understanding  Information  Security  97
+
+
+--- Page 98 ---
+ESSENCE
+>>b Subject
+Managing  systems  safely!
+>>> Recent  trends and major issues
+Recently,  the number  of attacks targeting  the system, such as the server, is increasing,  using APT
+attacks.  Accordingly,  the importance  of system security  is also increasing  together  with network
+security,  such as the firewall and intrusion  detection  system. In particular,  efforts should be made to
+strengthen  access  control to the system, security  settings,  and account  management,  in order to
+respond  to the hijacking  of system administrator's  rights or inappropriate  access of internal users to
+information  security  resources.
+>>p Learning  objectives
+To be able to apply security  settings  to the Windows  system.
+To be able to apply security  settings  to the UNIX and Linux system.
+>>> Keywords
+Account  and password  management,  shared folder management,  service security,  password  crack,
+UMASK,  daemon,  anonymous  FTP, secure FTP
+98 TOPCIT  ESSENCE
+
+
+--- Page 99 ---
+Information  security )
++ Preview  for practical  business
+All systems  of major domestic  broadcasting  companies  and financial  companies  were paralyzed,  due
+to exposure  to cyber terror, on March 20, 2013. The internal computer  networks  of 3 broadcasting
+companies  and 4 financial  companies  were down all at once, around 2 pm on this day, and serious
+confusion  occurred.  As computer  networks  at similar institutions  were down at the same time,
+the police suspected  a high possibility  of cyber terror and began an investigation.  The Korea
+Communications  Commission  announced  that the incident  was caused by malware,  distributed  by
+the update management  server (PMS), and the extent of the damage  was so enormous  that it was
+difficult  to estimate.
+Financial  company  A, a hacking  victim, analyzed  three major causes  of hacking  damage:
+1) The administrator  PC was not secure enough and servers  could be accessed  from the IP address,
+other than that of the administrator.
+2) Security  patches  were not applied properly,  and authentication  of the updated  server  was weak.
+3) Default passwords  were used, and the use of unnecessary  commands  were not restricted.
+Let’s learn how to set security,  according  to the system characteristics,  to effectively  respond  to
+cyber-attack  damage,  such as in the case of company  A, and how to manage systems  safely, based
+on such understanding.
+M4 Understanding  Information  Security  99
+
+
+--- Page 100 ---
+ESSENCE
+01 Windows  system  security
+A) Overview  of Windows  system  security
+Windows  systems  are widely used as PC operating  systems,  and they require security  management  in
+various areas, such as account  and password  management,  access  control, system security, service security,
+monitoring,  and other security  management.
+<Table 33> Windows  system  security
+Item Detailed  item
+* Checks  related  to accounts  (unnecessary  accounts,  accounts  with an administrator  privilege)A int an re : : .count and password  | Checks related to passwords  (vulnerable  passwords,  encryption,  automatic  account locks in case of
+management password  error, maximum password usage period, etc.)
+Access  control + Access  control setting  checks (shared  folders, remote  registry  access,  automatic  screen locks, ...

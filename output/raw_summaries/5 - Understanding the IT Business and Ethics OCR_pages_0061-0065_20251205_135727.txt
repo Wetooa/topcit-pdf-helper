@@ -1,0 +1,248 @@
+LEARNING GUIDE: Pages 61-65
+Generated: 2025-12-05 13:57:27
+PDF: 5 - Understanding the IT Business and Ethics OCR
+
+================================================================================
+LEARNING GUIDE
+================================================================================
+
+Here is a simplified, easy-to-read learning guide derived from the provided text:
+
+---
+
+## IT BUSINESS OUTSOURCING & PROCESS INNOVATION: Learning Guide
+
+### Section 1: IT Business Outsourcing
+
+#### A. Adoption Process
+When a company decides to outsource IT functions, the process typically involves these phases:
+
+1.  **Preparation Phase:**
+    *   Identify your company's core competencies.
+    *   Select specific IT tasks or operations to be outsourced.
+2.  **Selection Phase:**
+    *   Choose the best outsourcing vendor/company.
+3.  **Negotiation & Contracting Phase:**
+    *   Negotiate terms and sign a contract.
+    *   **Crucial Point:** Achieve a clear agreement with the vendor on how **Service Level Indicators (SLIs)** will be managed.
+4.  **Control Phase:**
+    *   Manage the contract and oversee performance.
+    *   Continuously improve performance.
+5.  **Transition & Implementation Phase:**
+    *   Transfer necessary technology and build experience.
+    *   Ensure clear handover management for a smooth transition.
+
+#### B. Forms of IT Business Outsourcing
+IT outsourcing can take four main forms, each with its own characteristics:
+
+1.  **Total Outsourcing**
+    *   **Description:** The entire IT functionality is handed over to a single vendor.
+    *   **Pros:** Clear accountability, improved job handling efficiency.
+    *   **Cons:** Lack of competition can lead to monopolistic issues.
+2.  **Selective Outsourcing**
+    *   **Description:** Specific functions or job units are subcontracted to multiple vendors.
+    *   **Pros:** Competition among vendors can improve price and quality.
+    *   **Cons:** Potential accountability issues if problems arise, difficulties communicating exact requirements to multiple vendors.
+3.  **IT Subsidiary Company Outsourcing**
+    *   **Description:** IT functionality is outsourced to a subsidiary company established specifically for IT services.
+    *   **Pros:** Improved communication and unity due to a shared sense of solidarity among employees.
+    *   **Cons:** Increased associated costs, risk to the parent company if the subsidiary is not profitable.
+4.  **Co-Sourcing**
+    *   **Description:** IT planning, strategy, and service activities are separated, often with the client and vendor sharing responsibilities.
+    *   **Pros:** Advantages in rapidly evolving environments, can partially address issues of total outsourcing.
+    *   **Cons:** May require coordination if there's a gap between strategy and performance.
+
+#### C. Considerations When Adopting Outsourcing
+Companies face various challenges during IT outsourcing. Key considerations include:
+
+1.  **General Oversight:**
+    *   **Continuous Oversight:** Essential to monitor the outsource vendor using standards like **eSCM** (e-Sourcing Capability Model) and **ISO/IEC 20000** (IT Service Management standard).
+    *   **Security:** Establish robust security systems to prevent corporate information leakage.
+    *   **Service Quality:** Continuously monitor and manage service levels to ensure optimal quality.
+    *   **BPO (Business Process Outsourcing):** If an entire business process (or a significant part) is outsourced, adopt BPO.
+
+2.  **Specific Issues & Solutions (Table Summary):**
+
+| Category    | Common Problems                                        | Key Considerations/Solutions                                                                                                        |
+| :---------- | :----------------------------------------------------- | :-------------------------------------------------------------------------------------------------------------------------------- |
+| **Management** | Weak control over subcontractors, increased vendor dependency, inter-company disputes, higher management costs. | Set up a control system using IT governance. Evaluate from a Balanced Scorecard (BSC) viewpoint. Use evaluation systems like eSCM/ISO20000. |
+| **Contracts** | Unclear scope and Roles & Responsibilities (R&R), uncertain estimated costs, difficulty awarding bonuses/sanctions. | Use **Service Level Agreements (SLA)** for clear level agreement and management. Plan for change management. Adopt systematic cost estimation methods. |
+| **Operations** | Security concerns for corporate information, difficulty accumulating internal know-how, insufficient fulfillment of requirements. | Implement a security training program and a security control system. Establish a technology transfer process. Set up a service quality system. |
+
+---
+
+### Section 2: Recent Trends & Process Improvement
+
+#### A. Optimizing IT Business Processes
+*   **Goal:** Companies must optimize IT business processes to respond quickly to environmental changes.
+*   **Evolution:** Processes become more optimized over time, with changes in the business environment acting as a key factor.
+*   **Identifying Issues:** Continuous monitoring of process **bottlenecks** is crucial for improvement.
+*   **Solutions:** Companies use **BPR (Business Process Reengineering)** or **PI (Process Innovation)** to rectify bottleneck issues.
+
+#### B. The Human Element in Process Innovation
+*   **Challenge:** The most challenging aspect of BPR/PI is gaining the support and conviction of a company's own employees.
+*   **Reason:** Employees are both the operators of processes and the subjects of any innovations.
+*   **Success Factors:**
+    *   Ceaseless persuasion.
+    *   Creating an atmosphere where employees feel they can share in the company's growth.
+
+#### C. Learning Objectives
+By studying this material, you should be able to:
+1.  Explain the constituent elements of the IT business process.
+2.  Explain various methods of improving the IT business process.
+
+#### D. Keywords
+*   **BPM:** Business Process Management
+*   **BAM:** Business Activity Monitoring
+*   **BRE:** Business Rule Engine
+*   **ILM:** Information Lifecycle Management
+*   **IRM:** Information Rights Management
+*   **BPR:** Business Process Reengineering (fundamental rethinking and radical redesign of business processes to achieve dramatic improvements)
+*   **PI:** Process Innovation (often used interchangeably with BPR or as a broader term for significant process improvement)
+*   **6 Sigma:** A set of techniques and tools for process improvement.
+*   **Trees:** (Context unclear, but likely refers to decision trees or problem-solving methodologies)
+*   **Servqual:** A service quality measurement scale.
+*   **SPC:** Statistical Process Control
+
+---
+
+### Section 3: Case Studies in Process Innovation
+
+#### A. BPR Case Study: Starbucks
+**Context:** In 2008, Starbucks faced a significant economic downturn and a more than 50% drop in sales.
+
+**BPR Initiatives (Transformation Strategy):**
+1.  **Leveraging Technology:** Integrated wireless technology and mobile digital platforms into its business.
+2.  **Customer-Centric Innovations:**
+    *   Customer analysis showed 1/3 of customers used smartphones.
+    *   Introduced a smartphone app-based payment system (prepaid/rechargeable cards).
+    *   Created "Starbucks Digital Network" with Yahoo, offering free Wi-Fi, Wall Street Journal articles, and iTunes music downloads.
+3.  **Internal Process Efficiency (Lean Manufacturing Principles):**
+    *   Formed a "Lean Team" to benchmark Toyota's lean manufacturing methods.
+    *   Redesigned barista workstations to eliminate unnecessary bending.
+    *   Minimized customer waiting times and reduced drink preparation time.
+4.  **Employee Work Environment:**
+    *   Built a smart work environment with wireless technology to maximize employee efficiency.
+    *   Enabled employees to work from any store nationwide, increasing regional managers' store visit times by ~25%.
+
+**Results:**
+*   Significant cost savings through new operating methods and customer services.
+*   Starbucks recovered its profitability and maintained growth.
+
+#### B. PI Case Study: Korea Workers’ Compensation & Welfare Service (COMWEL)
+**Context:** From 2010-2011, COMWEL undertook a large-scale Process Innovation (PI) project to build an advanced administration system.
+
+**Keys to PI Success (for COMWEL and generally):**
+*   **Company-Wide Consensus:** PI requires agreement from top management to working-level staff.
+*   **Best Practices:** Application and full internalization of best practices within the organization.
+*   **Systematic Management:** COMWEL's success became a benchmark for other public institutions, despite their conservative nature.
+
+**Motivation:**
+*   To achieve "job efficiencies through process innovation."
+*   To improve the quality of public services despite limited human resources.
+
+**COMWEL's PI Process:**
+1.  **Internal Analysis:** Began with internal discussions to identify areas most in need of improvement.
+2.  **Process Diagnosis:** Conducted "AS-IS" (current state) process diagnosis consulting.
+3.  **Selection:** Studied end-to-end processes for each job and selected those requiring PI.
+4.  **Requirements Gathering:** Identified and extracted requirements from the working level.
+5.  **System Implementation:** Used gathered information to set up:
+    *   **BPM (Business Process Management):** For managing business processes.
+    *   **PKMS (Process-based Knowledge Management System):** For managing knowledge related to processes.
+    *   **EID (Enterprise Information Display) system:** For displaying enterprise information.
+6.  **Prioritization & Systemization:** Systemized 25 out of 50 core processes that were expected to yield the greatest impact.
+7.  **Continuous Improvement Cycle:** PI was continuously performed through a framework of: Process Establishment → Monitoring → Improvement Activities → Process Establishment.
+
+**Benefits/Results:**
+*   **Improved Public Service:** Eliminated unnecessary procedures and simplified complex ones.
+*   **Enhanced Information Access:** When users search for data, the system provides increasingly relevant information as data accumulates.
+*   **Better Management:** Management could quickly identify business unit plans and core information, allowing for rapid modification of strategies and reduction of risks.
+
+---
+
+================================================================================
+ORIGINAL TEXT (First 5000 chars)
+================================================================================
+
+--- Page 61 ---
+ESSENCE
+B) Adoption  process
+Preparation/AY Select target Select outsourcing Negotiations  andona operation company contracting
+oe + Identify core competencies + -Select best company + -Send payment
+Control | Contract Contract manage- Transition and YO Realistic
+Phase transition ment implementation ieee
+* Transfer  technology/  build + Manage/improve  performance + Clear handover management
+experience  DB
+[Fig. 21] Conceptual  diagram  of IT business  outsourcing  adoption  process
+When a company  opts for IT outsourcing,  it begins by identifying  its core competencies  and selecting  the tasks to be
+outsourced.  Once the target  task has been selected,  the vendor  will be chosen,  and negotiations  will proceed  until a
+contract  is signed. The most important  task is for the company  and the vendor  to reach a clear-cut  agreement  on
+how the index for service levels will be managed.
+C) Forms of outsourcing
+IT business  outsourcing  can take one of four forms.
+<Table 18> Forms  of IT business  outsourcing
+Form
+Total Outsourcing
+Selective  Outsourcing
+IT Subsidiary  Company
+Outsourcing
+Co-SourcingDescription
+The entire IT functionality  is subcontracted  to a single vendor,  and the accountability  is clear cut
+and the job handling  efficiency  can be improved.  But the absence  of competition  can give rise to
+monopolistic  issues.
+The selected  function  or job unit is subcontracted  to multiple  vendors. Price and quality
+improvements  can be expected  from competition  among  vendors.  However,  accountability  issues
+may arise when problems  occur, and there could be difficulties  when communicating  the exact
+customer  requirements.
+The IT functionality  is outsourced  to a subsidiary  company  specializing  in IT, which is established
+solely for the purpose.  This is a form of outsourcing  that can yield benefits  like improved
+communication  and unity by promoting  a sense of solidarity  among  employees.  However,
+associated  costs could increase  and, if the subsidiary  is not profitable,  it could become  a risk to the
+parent  company.
+IT planning,  IT strategy,  and IT service  activities  are separated.  This is a form of adoption  that offers
+advantages  in a rapidly  evolving  environment,  and the problems  of total outsourcing  can be partly
+addressed.  However,  some coordination  may be required in the event of a gap between  strategy
+and performance.
+D) Considerations  when adopting  outsourcing
+In the course of outsourcing  an IT business,  a company  will come across many types of problems.  To address  these
+problems,  the following  steps could be considered:
+60 TOPCIT  ESSENCE
+
+
+--- Page 62 ---
+Understanding  the IT Business  and Ethics )
++ IT outsourcing  requires  continuous  oversight  of the outsource  vendor (company).  Standards  like eSClM? and ISO/
+IEC20000  can be used for the oversight.
++ It is necessary  to establish  a security  system  to prevent leakages  of critical corporate  information  while managing
+the level of and continuously  monitoring  changes  in, the service  so as to secure optimal  service  quality.
++ When it is not a specific  job category,  but the whole or a part of the business  process has to be outsourced,  a
+company  needs to adopt and operate  business  process  outsourcing  (BPO).
+<Table19>Issues  and considerations  when adopting  outsourcing
+Category Management Contracts Operations
++ Security  concerns  over
++ Control  over subcontractors  is weak. + Scope and R&R can be unclear. :corporate  information.
++ Dependency  on the vendor  is + Uncertainty  over estimated _ .
++ Difficulty in accumulatingProblems increased. costs.know-how.
++ Inter-company  disputes  could occur Difficulty  in awarding  bonus .
+. - + Fulfillment  of requirements  can
++ Increased  management  costs. points and imposing  sanctions. ; ;be insufficient.
++ Set up a control system  using IT + Level agreement  and + Set up a security  training
+governance. management  using SLA. program  and a security  control
+Stati + Evaluate  from the BSC viewpoint. + Set up a plan for change systemConsiderations : .
++ Set up an evaluation  system using management. + Set up a technology  transfer
+standards + Adopt a systematic  method  of process.
+(eSCM, ISO20000,  etc.). estimating  costs. + Set up a service  quality
+2 eSCM: e-Sourcing  Capability  Model.
+M5 Understanding  the IT Business  and Ethics 61
+
+
+--- Page 63 ---
+ESSENCE
+bs
+>> Recent  trends and key issues
+With the IT business  process,  it is important  for a company  to optimize  the process in order to respond
+quickly to changes  in its environment.  After the initial set-up, a process becomes  optimized  with the
+passage  of time, with changes  in the business  environment  playing an important  role as an optimizing
+factor.
+To improve  the IT business  process on a continuous  basis, it is critical to monitor  bottlenecks  in the
+process.  Companies  in this situation  usually  turn to BPR or PI to rectify ...

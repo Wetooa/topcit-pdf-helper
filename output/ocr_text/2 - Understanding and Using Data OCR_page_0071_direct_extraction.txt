@@ -1,0 +1,37 @@
+ESSENCE
+O2 Concept  of Functional  Dependency  and Rule of Inference
+The anomalies  described above can be prevented  by decomposing  each table based on specific  criteria. Functional
+dependency  is one of the most useful criteria that can be applied when decomposing  a table in this way and is
+expressed  as the relationship  between  a determinant  and a dependent.  Additional  functional  dependency  can be
+inferred  based on the previously  discovered  functional  dependency.  At this time, Armstrong’s  Axioms  are used.
+A) Functional  dependency
+@ Definition:  There are the subsets X and Y of the field defined in the table R. At this time, if the values of X of the
+arbitrary  record pair t1 and t2 are the same, and the Y values of those two records  are always the same, Y is functionally
+dependent  on X.
+@ Expression:  X >Y (Dependent  Y is functionally  dependent  on determinant  X.)
++ (Example)  (Resident  registration  number)  — (Name)
++ If the resident  registration  numbers  of two records  are the same in the table about people, it means  that the names
+of these two records  are always the same.
+<Table 26> Types of functional  dependency
+Type Concept
+Full functional Full functional  dependency
+dependency There is no attribute  X that satisfies  X’<X and XY.
+Full functional  dependency
+There is no attribute  X that satisfies  X’CX and XY.a frags Ergoee ue st Empoee|q Employee  | Seat
+Partial functional *k name number
+dependency  (2NF) 1789 Park Jiseong 15 2000 / 07 / 12 Buidng ;
+1412 _ LeeVoungnyo 23 1999 / 02 / 19 Partial functional number > | Start date
+1789 Park  Jiseong 19 2000/05/24  | MRREZcIcicaall
+1412 Lee Youngpyo 32 2001 / 04/21 <Complete/Partial  functional  dependency  - Used in 2NF>
+Transitive  Dependence
+If attributes  A>X and X-Y in relation  R, then A-Y.
+Supplier  number Place of location Transport  distance | Supplier  number | Pace of location
+Transitive  dependence Sl Suwon 46
+(3NF) -S2 Daejeon 164
+$3 Daegu 302
+$4 Gwangju 329 <Transtive  functional dependency - Used in 3NF>>. | Tarsport  distance
+Boyce-Codd  normalization
+If the determinant  that is functionally  dependent  is not a candidate  key.
+That is, X is not a candidate  key in XY.Boyce-Codd  Normal
+Form (BCNF)
+70 TOPCIT  ESSENCE

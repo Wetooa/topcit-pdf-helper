@@ -1,0 +1,231 @@
+LEARNING GUIDE: Pages 160-164
+Generated: 2025-12-07 01:08:30
+PDF: 3 - Overview of System Architecture OCR
+
+================================================================================
+LEARNING GUIDE
+================================================================================
+
+Here's a simplified, easy-to-read learning guide based on the provided text:
+
+---
+
+## Networking Devices & Core Concepts (Pages 160-164)
+
+### 1. Internetworking Equipment Overview
+
+Internetworking devices connect networks and operate at different layers of the OSI and TCP/IP models.
+
+*   **Repeater:**
+    *   **Function:** Amplifies or reproduces signals to extend network reach.
+    *   **OSI/TCP/IP Layer:** Physical Layer / Network Access Layer (Hub, Repeater)
+
+*   **Bridge:**
+    *   **Function:** Connects two LANs, making them appear as one by interpreting and converting frame formats.
+    *   **OSI/TCP/IP Layer:** Data Link Layer / Network Access Layer (Bridge, Switch)
+
+*   **Switch:**
+    *   **Function:** A multi-port bridge that separates network traffic based on MAC addresses.
+    *   **OSI/TCP/IP Layer:** Data Link Layer / Network Access Layer (Bridge, Switch)
+
+*   **Router:**
+    *   **Function:** Finds the optimal communication path to forward packets between heterogeneous networks using IP addresses.
+    *   **OSI/TCP/IP Layer:** Network Layer / Internet Layer
+
+*   **Gateway:**
+    *   **OSI/TCP/IP Layer:** Application Layer (Handles protocol conversion between different networks)
+
+---
+
+### 2. Router Deep Dive
+
+A router is a key device for forwarding traffic and determining optimal paths.
+
+*   **What is a Router?**
+    *   Forwards packets from one network to another.
+    *   Makes path decisions based on Network Layer (IP address) information.
+
+*   **Router Structure:**
+    *   **Control Plane:** Software-based; determines where to send packets using routing tables.
+    *   **Forwarding Plane:** Hardware-based; actually sends packets based on decisions from the control plane.
+
+*   **Router Metrics (Used to determine optimal paths):**
+    *   **Number of Hops:** Number of routers a packet must pass through to reach its destination. Fewer hops usually mean higher speed.
+    *   **MTU (Maximum Transmission Unit):** Maximum data size a protocol can transfer.
+    *   **Cost:** Determined by transfer time, link reliability, and bandwidth. Higher cost means lower efficiency.
+    *   **Latency:** Packet delay records and bottlenecks during transfer.
+
+*   **Routing Table:**
+    *   A database storing the output interface and next-hop IP address for each destination network.
+
+---
+
+### 3. Switch Deep Dive
+
+A switch connects network units and performs important functions for LAN management.
+
+*   **What is a Switch?**
+    *   Connects network units.
+    *   Key roles include MAC address learning, filtering, and loop prevention.
+    *   Also supports port mirroring and VLANs.
+
+*   **Main Switch Functions:**
+    *   **Address Learning:** Learns the MAC addresses of all connected systems to specific ports.
+    *   **Filtering:** Directs data traffic only to the relevant port using MAC addresses.
+    *   **Loop Prevention:** Prevents network loops when multiple paths to a destination exist, typically using **Spanning Tree Protocol (STP)**.
+    *   **Port Mirroring:** Sends a duplicate of data from one port to a "mirrored" port, used by administrators for traffic monitoring.
+
+*   **Virtual Local Area Network (VLAN):**
+    *   **Purpose:** Configures logical networks independent of physical and regional constraints.
+    *   **Method:** Groups devices into a logical network using criteria like IP unit, protocol unit, MAC address, or connecting port, rather than physical location.
+    *   **Protocols:**
+        *   **ISL (Inter-Switch Link):** VLAN tagging protocol (Cisco proprietary).
+        *   **802.1Q:** Standard VLAN tagging protocol.
+        *   **VTP (VLAN Trunking Protocol):** VLAN management protocol.
+
+*   **Switch vs. Router Comparison:**
+
+| Feature            | Switch               | Router                               |
+| :----------------- | :------------------- | :----------------------------------- |
+| **Reference Table**| MAC address table    | Routing table                        |
+| **Reference PDU**  | Ethernet frame       | IP packet                            |
+| **Reference Field**| Destination MAC addr | Destination IP address               |
+| **Frames Used**    | Ethernet             | Ethernet, Frame Relay, PPP, etc.     |
+| **L2 Header**      | No change            | Replaced by new header (for each hop)|
+
+---
+
+### 4. Network Layer Concepts
+
+The Network Layer handles logical addressing, packet routing, and error reporting.
+
+*   **Network Layer Encapsulation:**
+    *   The process of adding a header to data (segment from Transport Layer) to create a packet for the Network Layer.
+    *   **Decapsulation:** The reverse process on the receiving end, removing the header.
+
+*   **IPv4 Header Structure (Key Fields):**
+    *   **Version:** Protocol version of the datagram (e.g., IPv4).
+    *   **IHL (Internet Header Length):** Length of the IPv4 header.
+    *   **Type of Service (ToS):** Indicates the desired service quality for the packet.
+    *   **Total Length:** Sum of header and data lengths in the datagram.
+    *   **Time to Live (TTL):** Packet life limit; decremented at each hop to prevent infinite loops.
+    *   **Protocol:** Identifies the next-level protocol (e.g., TCP or UDP) for recombination.
+    *   **Source Address:** 32-bit IP address of the sender.
+    *   **Destination Address:** 32-bit IP address of the recipient.
+    *   *(Other fields: Identification, Flags, Fragment Offset, Header Checksum, Options, Padding)*
+
+*   **Packet Switching (Methods for finding packet paths):**
+    *   **Datagram Approach:**
+        *   **Connectionless:** Each packet is processed independently.
+        *   Packets can travel via different paths.
+        *   Forwarding path determined by the packet's destination address.
+    *   **Virtual Circuit Approach:**
+        *   **Connection-oriented:** A virtual path is established *before* data transfer.
+        *   All packets for a session follow the same path.
+        *   Forwarding path determined by a packet label (virtual circuit identifier).
+
+*   **Network Layer Protocols/Commands:**
+    *   **ARP (Address Resolution Protocol):** Resolves an IP address to a MAC address.
+    *   **RARP (Reverse Address Resolution Protocol):** Resolves a MAC address to an IP address.
+    *   **ICMP (Internet Control Message Protocol):** Used to transfer network error information (e.g., ping).
+    *   **IGMP (Internet Group Management Protocol):** Used for IP multicast transfer (managing group memberships).
+
+---
+
+================================================================================
+ORIGINAL TEXT (First 5000 chars)
+================================================================================
+
+--- Page 160 ---
+Overview  of System Architecture )
+<Table 38) Internetworking  Equipment
+Equipment Description
+Repeater A device that enhances  (amplifies  or reproduces)  the signals between  AN connection  points
+Bridge A device that connects  two LANs and makes them look like one, through interpretation  and format conversion
+Switch A device that has the concept  of a multi-port  bridge to separate  the network,  based on the MAC address
+Router A device that finds the optimal  communication  path when connecting  to a heterogeneous  network
+This section describes  for which of the OS! 7 layers and TCP/IP 4 layers these internetworking  devices are
+responsible.  The router performs  packet routing  through  the IP address  on the network  layer. The bridge and switch
+are responsible  for frame transfer  on the datalink layer, while the hub and repeater  transfer  physical signals on the
+physical  layer. <Table 39> compares  the function  of each device  with the protocol  layer.
+{Table 39) Protocol  Layers and Device for Each Layer
+OS! 7 Layers TCP/IP  4 Layers Equipment
+Application
+Presentation Application
+Gateway
+Session
+Transport Transport
+Network Internet Router
+. Bridge,Data Link Network Sain h
+Access
+Physical Hub, Repeater
+D) What is a router?
+A router forwards  traffic and determines  the optimal path, using one or more metrics. In other words, it forwards:
+packets  from one network,  to another,  based on the network  layer information.
+@ Router  structure
+As shown in [Figure 114], a router mostly  consists  of a router control plane and a forwarding  plane. The control plane,
+implemented  in the software  in a router, determines  where to send the packets  it receives  and uses tables to decide.
+The forwarding  plane actually  sends the packets  according  to the requirements  created  by the control  plane.
+M3 Overview  of System  Architecture  159
+
+
+--- Page 161 ---
+ESSENCE
+Management  Functions
+router manager cLI SNMP
+BGP 4+ ~~ sd PIM-SM
+OSPF 4 t
+RIP tt IGMP/MLD
+IS-IS FEA Multicast  Routing
+Unicast  Routing
+Forwarding  Plane Somos
+RIB = routing  information  base FEA = forwarding  engine abstraction
+[Figure 114] Router  Conceptual  Diagram
+<Table 39> shows the shapes of a router. Small networks  mostly use cisco 2500, while larger networks  use cisco
+7300.
+{Table 39) Router Shape [2]
+@ Router  metrics
+It refers to the data collected  by a router at a given time, when the traffic passes through  the path. <Table 40>
+shows the metric  types.
+{Table 40) Routing Metrics [3]
+Metric Description
+It refers to the number  of routers  to pass through  in order to reach the destination.  The processing
+speed is higher  when there are fewer routers.
+MTU Maximum  Transmission  Unit. It refers to the maximum  data that the protocol  can transfer.
+The cost according  to the transfer  time, link reliability,  and band characteristics  is determined.  A higher
+cost means  lower efficiency.
+Latency The packet  delay records  and bottlenecks  during the transfer  between  routers are determined.Number  of hops
+Cost
+160 TOPCIT  ESSENCE
+
+
+--- Page 162 ---
+Overview  of System Architecture )
+© Routing  table
+A routing table is a database  that stores the output interface  of each destination  network  and the next hop IP
+address.
+1.0.0.0 2.0.0.0 3.0.0.0 4.0.0.0
+Routing  Table Routing  Table Routing  Table
+1.0.0.0 EO 0 2.0.0.0 so 0 3.0.0.0 so 0
+2.0.0.0 so 0 3.0.0.0 S| 0 4.0.0.0 EO 0
+3.0.0.0 Si} 1 1.0.0.0 Si) 1 2.0.0.0 Ss 1
+4.0.0.0 0) 2 4.0.0.0 St 1 1.0.0.0 Ss 2
+[Figure 115] Routing  Table
+E) What is a switch?
+A switch is a device that connects  network  units. A switch device has an important  role in MAC address learning,
+filtering,  and loop prevention.  Other switch functions  include port mirroring  and VLAN. Port mirroring,  also called
+port monitoring,  is the function  of sending  a replicate  of the data sent from a specific  port to a mirrored  port. It is an
+important  function  used by administrators  to monitor  network  traffic through  the mirrored  port.
+<Table 41) Main Switch Functions
+Function Description
+Address  learning - Learning  the MAC address  of all systems  that are connected  to a port
+Filtering - Filtering  data traffic to a specific port using the MAC address
+Wooneevention - Preventing  a network  loop when multiple  paths to a destination  are generated
+PP - The system usesa spanning  tree protocol (STP) to prevent  the network loop.
+F) Virtual local area network  (VLAN)
+VLAN is a method  of configuring  a logical network,  desired by the user, to overcome  the physical and regional
+constraints  of the existing  networks. In other words, it uses the IP unit, protocol  unit, MAC address,  and connecting
+port to configure  a logical network, instead of separating  networks  by spatial and geographical  locations.  The VLAN
+protocols  of a switch include ISL, 802.1Q,  and VTP. ISL and 802.1Q are the VLAN tagging  protocols,  and VTP is a
+VLAN management  protocol.
+M3 Overview  of System  ...

@@ -1,0 +1,24 @@
+and enormous  in an actual environment,  so it is better  to apply it in the form of a utility.
++ OCP (Open Closed Principle)
+A class should be closed to modifications  and open to extensions.  It is related to
+polymorphism  and abstraction,  which are the representative  characteristics  of object-oriented
+programming.  When improving  functions,  it is desirable  to improve  inheritance  rather than
+direct modification.  In addition,  abstract  classes should be implemented  in consideration  of
+changes  in logic.
++ LSP (Liskov  Substitution  Principle)
+This is the most important  principle  among the design for inheritance.  This principle  should
+be followed  because  the IS-A relationship  is established  when a class is inherited.  That is, it is
+related  to inheritance  which the superclass  can always refer to the subclass.
++ ISP (Interface  Segregation  Principle)
+Communication  between  objects is established  using the interface  of the exposed  object.
+This principle  is related to the exposing  method.  It should be designed  in such a way that a
+different  type of interface  is provided  for each user. As an example,  we can consider  that the
+interface  for general  users and administrators  should be different.
++ DIP (Dependency  Inversion  Principle)
+When there is a using class and a used class, and the interface  of the used class is changed,
+there is a dependence  which the change to the using class should also be checked. Even
+though a slight change occurs, the reality is that it is difficult  to guarantee  its integrity  and
+integrity.  Therefore, this principle  stipulates  that the design should be made as flexible as
+possible  through  abstraction  using the interface,  so as to minimize  the possibility  of such
+changes.
+68 TOPCIT  ESSENCE

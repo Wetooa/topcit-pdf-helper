@@ -1,0 +1,233 @@
+LEARNING GUIDE: Pages 112-116
+Generated: 2025-12-07 00:49:26
+PDF: 6 - Project Management & Technical Communication OCR
+
+================================================================================
+LEARNING GUIDE
+================================================================================
+
+Here's a simplified, easy-to-read learning guide based on the provided text:
+
+---
+
+# Project Management: Earned Value & Quality Management
+
+## Section 1: Earned Value Management (EVM)
+
+**What is Earned Value Management (EVM)?**
+EVM is a project performance technique that integrates schedule and cost to analyze performance and predict the project's final cost and schedule.
+
+**Key EVM Terms & Formulas:**
+
+*   **PV (Planned Value) / BCWS (Budgeted Cost of Work Scheduled):**
+    *   The approved budget for the work *planned* to be performed by a certain date.
+    *   *Example:* For a 5-day activity, PV = 5 days' budget.
+
+*   **AC (Actual Cost) / ACWP (Actual Cost of Work Performed):**
+    *   The costs *actually incurred* for the work completed to date.
+    *   *Example:* If a 5-day activity took 6 days/persons, AC = 6 days' budget.
+
+*   **EV (Earned Value) / BCWP (Budgeted Cost of Work Performed):**
+    *   The *budgeted cost* of the work that has *actually been performed* (the value of work done).
+    *   *Example:* If 80% of a 5-day activity is done, EV = 5 days * 0.8 = 4 days' budget.
+
+---
+
+### Schedule Performance Indicators:
+
+*   **SV (Schedule Variance): EV - PV**
+    *   Measures actual progress against expected progress.
+    *   **SV > 0:** Ahead of schedule.
+    *   **SV < 0:** Behind schedule.
+    *   *Example:* EV=4, PV=5. SV = 4 - 5 = -1 (1 day behind schedule).
+
+*   **SPI (Schedule Performance Index): EV / PV**
+    *   Measures the efficiency of schedule performance.
+    *   **SPI > 1:** On or ahead of schedule.
+    *   **SPI < 1:** Behind schedule.
+
+---
+
+### Cost Performance Indicators:
+
+*   **CV (Cost Variance): EV - AC**
+    *   Measures actual cost against budgeted cost for work performed.
+    *   **CV > 0:** Under budget.
+    *   **CV < 0:** Over budget.
+    *   *Example:* EV=4, AC=6. CV = 4 - 6 = -2 (2 units over budget).
+
+*   **CPI (Cost Performance Index): EV / AC**
+    *   Measures the efficiency of cost utilization.
+    *   **CPI > 1:** On or under budget.
+    *   **CPI < 1:** Over budget.
+
+---
+
+**Interpreting EVM Data (Example):**
+If SV is negative and CV is negative, it means the project is both behind schedule and over budget.
+
+**Forecasting Project Performance:**
+
+*   **EAC (Estimate At Completion):**
+    *   The estimated *total cost* of the project at completion.
+    *   **Formula:** `EAC = AC (Actual Cost) + ETC (Estimate To Complete)`
+
+*   **ETC (Estimate To Complete):**
+    *   The estimated cost of the *remaining work* to finish the project.
+    *   **Methods to calculate ETC:**
+        1.  **Considering CPI:** `ETC = (BAC - EV) / CPI` (BAC = Budget At Completion)
+            *   Assumes future work will be performed at the current cost efficiency.
+        2.  **Using Original Budget:** `ETC = (BAC - EV)`
+            *   Assumes future work will be performed at the original budgeted rate.
+        3.  **New Estimate:** `ETC = New estimate for the remaining work`
+            *   Used when past performance is not a good indicator for future work.
+
+---
+
+**Methods for Measuring Work in Progress (to calculate EV):**
+These methods help assign an Earned Value to ongoing tasks:
+
+*   **Percent Complete:** Assigns EV directly proportional to the physical percentage of work completed.
+    *   *Example:* If 40% complete, claim 40% of the task's budget as EV.
+*   **50/50 Rule:** 50% EV credit when a task starts, the remaining 50% when it's completed.
+*   **20/80 Rule:** 20% EV credit when a task starts, the remaining 80% when it's completed.
+*   **0/100 Rule:** 0% EV credit when a task starts, 100% only when it's fully completed.
+
+---
+
+## Section 2: Quality Management
+
+**Why Quality Management is Important:**
+Modern software projects are complex, leading to issues like delivery delays, low customer satisfaction, and high operational costs. Effective quality management addresses these challenges.
+
+**Core Components of Quality Management:**
+Quality management generally consists of:
+1.  **Quality Planning:** Defining quality standards and how to meet them.
+2.  **Quality Assurance:** Ensuring that the processes used to build the product are effective.
+3.  **Quality Control:** Monitoring specific project results to verify they meet quality standards.
+    *   The PDCA (Plan-Do-Check-Act) cycle is often used here.
+
+**Key Terms & Standards:**
+
+*   **Quality Standards:** ISO/IEC 9126 (Software Quality), ISO/IEC 12207 (Software Lifecycle), CMMI, Six Sigma, ISO 9000.
+*   **Quality Evaluation Perspectives:** Product quality, Process quality, Project quality.
+
+**Quality Control: Manufacturing vs. Project (IT Specifics):**
+
+*   **Manufacturing Quality Control:** Focuses on *product quality*, managing defects across many identical products.
+*   **Project Quality Control (especially IT Projects):**
+    *   Focuses on *process quality* because outputs (like a system) are unique, few, and often intangible.
+    *   The goal is to manage errors within the development process to produce a high-quality, error-free output.
+    *   **For IT projects, quality control is crucial for *intermediate outputs* at each project stage** (e.g., analysis, design, execution, testing, deployment).
+
+**Quality Management Activities & Support:**
+
+*   Activities are carried out through techniques like:
+    *   **Reviews:** Formal meetings to evaluate documents or products.
+    *   **Inspections:** Structured process to find defects.
+    *   **Walk-throughs:** Meeting where a work product is presented to peers for comments.
+*   Guidance often comes from specialized quality management or quality assurance teams.
+*   For enterprise-wide quality control, the **PMO (Project Management Office)** helps establish and monitor quality standards across projects.
+
+**Benefits of Effective Quality Management:**
+
+*   **Minimize Quality Cost:** By meeting customer requirements (e.g., of the acquirer) from the start.
+*   **Reduce Rework:** Through clear requirements validation and verification.
+*   **Improve Scope Management:** Prevents missing requirements.
+*   **Improve Schedule Management:** Reduces wasted time caused by errors and rework.
+
+---
+
+================================================================================
+ORIGINAL TEXT (First 5000 chars)
+================================================================================
+
+--- Page 112 ---
+Project Management  and Technical  Communication  )
+ue is the budgeted  cost of work that has actually  been performed.  Earned  value is also called BCWP (Budgeted
+Cost of Work Performed).
++ EV, Earned Value = Value of work performed  = Budgeted  Cost of Work Performed
+B) Earned  value management
+Earned Value Management  (EVM) is a project  performance  management  technique  that analyzes  performance
+through  integrated  management  of project  schedule  and cost, and predicts  the cost and schedule  of the final
+project  at the present  time.
+Schedule  Performance pSVSia
+Cost Performance [ae]
+Estimated  at Completion  | =\© ©
+[Figure 38] Composition  of Earned  Value Management  (EVM)Va VAG
+EVM is a technique  to control project  performance  by integrating  cost and schedule.  The related terms are as
+follows:
+<Table 50> Key Terms of EVM
+Key Terms Explanation
++ The allocated  budget  for the work performed  to dateCee (Example)  5 days 80% (progress  rate) = 5*0.8 = 4 days
++ The approved  (planned)  budget  for the work performed  to complete  an activity  or
+PV: Planned  Value component  in the WBS
+(Example)  5 days
++ The costs actually  incurred  for the work completed
+ME AeuEllesst (Example)  Add 1 person and 1 day to the 5-day activity = 5 days*1 person + 1 day*1 = 6 days
++ Ameasure  of actual progress  against  expected  progress
+SV: Schedule  Variance + SV > 0: ahead of schedule,  SV < 0: behind schedule
++ SV=EV  - PV, 4-5 = -1 day, 1 day behind schedule
++ Ameasure  of actual progress  against  expected  progress
++ SPI=EV/PV
++ SPI > 1: on or ahead of schedule,  SPI < 1: behind scheduleSPI: Schedule
+Performance  Index
++ Ameasure  of actual cost against  the budgeted  cost
+CV: Cost Variance + CV  > 0: under budget,  CV < 0: over budget
++ CV=EV-AC,  4-6 = -2, 2 days over budget
++ Ameasure  of actual cost against  the budgeted  cost
++ CPI=EV/AC
++ CPI> 1: on or under budget,  CPI < 1: over budgetCPI: Cost Performance
+Index
+Mé6 Project  Management  and Technical  Communication  111
+
+
+--- Page 113 ---
+ESSENCE
+The following  graph is an example  of earned  value management.  As of August 1, the planned  value (PV), actual
+cost (AC), and earned value (EV) are measured,  and schedule  variance  (SV) and cost variance  (CV) are ana-
+lyzed, for  project  value estimation.  The AC, which is costs actually  incurred,  was spent more than the PV, and
+the EV, which indicates  the actual amount  of work completed,  was less than the PV.
+To analyze the project cost, schedule  variance  (SV) = earned value (EV) - planned value (PV) is negative,
+meaning  behind schedule,  and cost difference  (CV) = earned value (EV) - actual cost (AC) is also negative,
+meaning  over budget.
+Cumulative  Cost
+Actual Cost
+(AC)/ Planned  Value (PV)
+J
+CV (Cost Difference)
+=EV-AC
+7 Earned Value (EV)
+! >
+As of Aug 1 Project  Schedule
+[Figure 39] Graph of Earned  Value Management  (EVM) (Example)
+Estimate  At Completion  (EAC) is “estimated  total cost at project completion’.  An important  advantage  of
+the EVM is that the total cost of the project can be estimated  reasonably.  EAC is calculated  as the sum of
+the actual cost (AC) incurred  from work completed  up to the point of performance  measurement  and the
+estimated  cost of the remaining  work, or Estimate  To Completion  (ETC). Since the actual cost (AC) can be
+known as the result of the performance  measurement,  only the Estimate  to Complete  (ETC) is calculated  to
+come up with the EAC.
+There are three methods  to calculate  the ETC according  to the results of performance  analysis.
+How to apply the previously  approved  budget  for the remaining  work divided by the cost performance  index (CPI)
++ Estimate  to Complete  (ETC) = (Budget  at Completion  (BAC) - Earned Value (EV)) / Cost Performance  Index
+(CPI)
+How to apply the previously  approved  budget  for the remaining  work without  change
++ Estimate  to Complete  (ETC) = (Budget  at Completion  (BAC) - Earned Value (EV))
+How to create a new budget  overriding  the previously  approved  budget  for the remaining  work
++ Estimate  to Complete  (ETC)= New estimate  for the remaining  work
+By adding  the ETC calculated  as above with the AC, the EAC can be estimated  as follows:
++ Estimate  At Completion  (EAC) = Actual Cost (AC) + Estimate  to Complete  (ETC)
+112 TOPCIT  ESSENCE
+
+
+--- Page 114 ---
+Project Management  and Technical  Communication  )
+It is difficult  to judge the value of work that has already been completed  or has not begun at the time
+of performance  measurement.  However,  measuring  the value of work in progress may be less inaccurate
+depending  on the criteria.  The value of the work in progress  can be measured  by choosing  one of the following
+methods:
++ Percent  Complete
+The amount  of completed  work against  the planned  budget  at completion
+Example)  40% Complete  — 40% of the budget  claimed  as EV
++ 50/50 Rule
+A task is considered  50% complete  when it starts. The remaini...

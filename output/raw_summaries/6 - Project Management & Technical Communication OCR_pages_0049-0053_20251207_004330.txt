@@ -1,0 +1,224 @@
+LEARNING GUIDE: Pages 49-53
+Generated: 2025-12-07 00:43:30
+PDF: 6 - Project Management & Technical Communication OCR
+
+================================================================================
+LEARNING GUIDE
+================================================================================
+
+Here's a simplified, easy-to-read learning guide based on the provided text:
+
+---
+
+## Technical Document Learning Guide
+
+This guide covers essential principles for writing technical documents and details various common document types.
+
+---
+
+### **Part 1: General Principles of Technical Document Writing**
+
+To ensure completeness and accuracy, **proofreading and review should be conducted while writing** technical documents.
+
+**Key Principles:**
+
+*   **Consistency:**
+    *   **Logical Causal Relationship:** Main requirements must logically connect to core content, and core content to written content.
+    *   **Uniformity:** Maintain consistent nature from start to finish (e.g., font, color, descriptive technique).
+    *   **Substance:** Content should be arranged logically (e.g., if discussing transportation, group by train, bus, taxi).
+*   **Accuracy:**
+    *   **SW Technical Documents:** Must be written precisely.
+    *   **Functionality:** Stated structure and algorithms should accurately reflect required software functions.
+*   **Suitability:**
+    *   **Purpose-driven:** Documents must be described to suit their purpose.
+    *   **User Focus:** Clearly state the document's purpose to match the user's needs.
+
+---
+
+### **Part 2: Types of Technical Documents**
+
+This section details various specific technical documents, their purpose, and key components.
+
+#### **A) Business Plan**
+
+*   **Purpose:** A guideline to review project feasibility and prepare for future risks. It outlines project content, target market, and potential for success.
+*   **Composition:**
+    1.  **General Status:** Project overview.
+    2.  **Goals:** Project objectives.
+    3.  **Content:** Project specifics.
+    4.  **Business Method:** How the project will be conducted.
+    5.  **Promotion:** Marketing cost and personnel.
+    6.  **Expected Effects:** Anticipated outcomes.
+*   **Principles for Writing:**
+    *   **Easy to Understand:** Must convince third parties (investors, customers). Avoid technical terms in product/technical analysis; use simple, universal content.
+    *   **Feasibility:** Based on evidence from public or professional organizations to ensure reliability.
+    *   **Highlight Core Content:** Focus on product characteristics that appeal more than competitors' products.
+    *   **Consistency and Accuracy:** Unify numbers and units, maintain a consistent flow and theme.
+    *   **In-depth Analysis of Problems and Risk Factors:** Analyze potential issues and future risks to prevent project delays or failure.
+
+#### **B) Request for Information (RFI)**
+
+*   **Purpose:** To identify external companies capable of solving a company's problem.
+*   **Information Usually Requested:** Brief company introduction, credit information, experience in related services, and potentially project budget scope.
+*   **Composition:**
+    1.  **Business Overview:** Project name, background, purpose, scope, submission method.
+    2.  **Information about Ordering Company:** Business status (goals/direction), informatization status, improvement needs.
+    3.  **Key Requirements:** Business and technical requirements, implementation, training, project management, project budget.
+
+#### **C) Request for Proposal (RFP)**
+
+*   **Purpose:** An official document informing potential bidders about the ordering agency's system, business status, problems, and requirements for projects (e.g., establishing an information system). It allows proposers to clearly outline their solutions.
+*   **Composition:**
+    1.  **Business Overview:** Background, necessity, service content, business scope, expected effects.
+    2.  **Status and Problems:** Business status, informatization status, problems, and improvement directions.
+    3.  **Direction of Business Promotion:** Goals, strategies, systems, schedules.
+    4.  **Request for Proposal Content:** RFP overview, target system overview, development target details/requirements, equipment to be introduced, initial data construction, standardization, operating conditions, support requirements (training, technical, maintenance).
+
+#### **D) Proposal**
+
+*   **Purpose:** A document submitted by a proposer to win a business order. It provides a detailed analysis of the proposer's experience, capabilities, and proposed business solution. The ordering company selects a partner based on this.
+*   **Composition:**
+    1.  **Proposal Overview:** Background, purpose, scope, prerequisites, expected effects.
+    2.  **General Information about Proposer:** General status, organization, personnel, major business details, performance.
+    3.  **Technology:** System configuration diagram, construction plan (specs, functions, device details, delivery/installation), software development plan (methodology, business development, data construction, system integration).
+    4.  **Business Management:** Quality assurance, risk management, implementation schedule, work reporting/review, performance organization/division, input manpower/history.
+    5.  **Support:** Education/training plan, maintenance plan, technology transfer plan, other support.
+    6.  **Others:** Attachment: Basis for price calculation.
+
+#### **E) Requirement Traceability Matrix (RTM)**
+
+*   **Purpose:** A document that tracks the process of user requirements being reflected in the final deliverable. It allows tracing how requirements are implemented and vice-versa.
+*   **Function:** Maps and manages user requirements with various project artifacts like Work Breakdown Structure (WBS), design documents, developed products, and test scenarios.
+*   **Composition:**
+    1.  **User Requirements:** Requirements from RFP and collected requirements.
+    2.  **Analysis Output:** Analysis content mapped to user requirements (e.g., use cases, requirements analysis).
+    3.  **Design Output:** Design content mapped to user requirements (e.g., architecture, screen design brief, module design brief, interface design brief, DB design brief).
+    4.  **Implementation and Test Output:** (Refers to actual code implementation and test results, linking back to requirements).
+
+#### **F) Analysis Document**
+
+*   **Purpose:** Specifies detailed conditions required for designing or manufacturing software products. It helps understand SW requirements and clearly describes constraints. It includes overall details of the implemented software for design reference.
+*   **Composition (Example):**
+    1.  **General Information:** Definition, overview, product features, user characteristics, assumptions, and dependencies.
+    2.  **General Technical Information:** Functional requirements (input, processing, output).
+    3.  **Detailed Information:** Performance requirements, design limitations, external interface requirements (user, hardware, software interfaces).
+*   **Principles for Writing:**
+    *   **Clarity:** Clearly describe all system functions and constraints.
+    *   **Conciseness:** Written concisely and easy to understand for both customers and developers.
+    *   **Verifiability:** All requirements must be verifiable, specifying desired quality, importance, measurement, and verification methods/standards.
+    *   **Abstract:** Describes the external behavior of the system, not a specific internal design or algorithm.
+    *   **Modifiability:** Organized hierarchically to understand system functions and analyze the impact of changes.
+    *   **Availability:** Requirements are uniquely numbered for easy reference and prioritized.
+
+#### **G) Design Brief**
+
+*   **Purpose:** Implements requirements described in the Analysis document. It details the design for manufacturing a software product.
+*   **Content:** Includes structural design (SW configuration, program relationships), interface design (between modules/systems), data storage design, program algorithm design, and user interface design.
+*   **Composition (Example):**
+    1.  **General Information:** Definition and overview.
+    2.  **Structure Design:** SW components, relationships between SW components.
+    3.  **Program Design:** Algorithm design, input/output design of SW components.
+    4.  **Interface Design:** Overview of related SW components, interface between them.
+    5.  **Material Design:** Data storage overview, data storage design.
+
+#### **H) Test Design Brief**
+
+*   **Purpose:** Defines test objects, test cases, and test data to be used for testing an implemented product. It clarifies expected results (normal and exception).
+*   **Composition (Example):**
+    1.  **Test Item:**
+        *   **Types of Test:** Functionality, performance, usability, etc.
+        *   **Test ID:** Unique identifier for test items.
+        *   **Test Item:** Defines the specific item to be tested.
+    2.  **Test Cases and Data:**
+        *   **Types of Test:** Functionality, performance, usability, etc.
+        *   **Test ID:** Unique identifier for test items.
+        *   **Input:** Content and data to be entered for testing.
+        *   **Expected Output:** Expected results and data based on the test input.
+
+#### **I) Manual**
+
+*   **Purpose:** To help users understand a new product or technology. It explains the principles, features, and operation methods in an easy-to-understand manner for customers.
+
+---
+
+================================================================================
+ORIGINAL TEXT (First 5000 chars)
+================================================================================
+
+--- Page 49 ---
+ESSENCE
+Since it is not possible  to invest indefinitely  the cost and time for writing the document,  proofreading  and
+review should be conducted  while writing the text. This can increase the completeness  of the document  by
+improving  the accuracy  and logic.
+<Table 8> Consistency  and Relevance
+« There must be a logical causal relationship  between  the main requirements  of the documentBern and the core contents, the selected core contents  and the written contents.
++ One method  or point of view, etc. must have the consistent  nature  from start to finish. It
+means that the presentation  of the main content  described  in the document  should be
+Consistency similar.
+« E.g.) Formally,  the font, color, and descriptive  technique  should be constant,  and in terms of
+substance,  if it is about a means of transportation,  it should be arranged  by train, bus, taxi,
+etc.
+« When writing  SW technical  documents,  you must write them accurately.
+Accuracy + The stated structure  and algorithm  should be described  to show that they accurately
+perform  the functions  required  by the software.
++ Technical  documents  must be properly  described  to suit the purpose  of the document.
+Suitability + The purpose  of the document  should be clearly stated to suit the purpose  of use of the user
+who uses the technical  document.
+03 Writing  Technical  Documents
+A) Business  plan (plan)
+The business  plan is a guideline  that includes  business-related  details such as the content  of the project,  the
+characteristics  of the target market, and the possibility  of success  in the market so that the business  plan
+can review the feasibility  of the project  and prepare  for possible  future risks.
+<Table 9> Composition  of Business  Plan
+Classification Content
+1. General  Status + Overview  of the project
+2. Goals + Describe  the goals you are trying to achieve  through  the project
+3. Content * Content  of the project
+4, Business  Method « Method  of conducting  the project
+eirinenes « Promotion  cost
++ Promotion  personnel
+6. Expected  Effects + Expected  effects  that can be obtained  through  the project
+48 TOPCIT  ESSENCE
+
+
+--- Page 50 ---
+Project Management  and Technical  Communication  )
+<Table 10> Principles  of Writing  business  plan
+Classification Content
++ The business  plan should be written in an easy-to-understand  way to convince  third
+parties  such as investors  and customers
+« In particular,  product  and technical  analysis  should avoid using technical  terms as
+much as possible,  and should be composed  of simple and universal  content.Easy to understand
++ If itis judged that it is not feasible in the view of a third party, reliability  may be
+Feasibility severely  damaged.  Therefore,  it is recommended  to write the document  based on
+evidence  from public  or professional  organizations.
++ If the business  plan is mediocre,  it cannot  appeal to a third party. It is necessary
+to explain the product  focusing  on the characteristics  of the product  with the
+expectation  that the planned  product  will be more appealing  to the consumer  than
+the competitor  product.Highlight  the core content
++ If arguments  and viewpoints  do not match, it lowers the credibility  of the entire
+Consistency  and accuracy business  plan. Therefore,  it is necessary  to unify and express  numbers  and units, and
+to write with a consistent  flow and theme.
++ In-depth  analysis  of potential  problems  in the planned  project  and possible  risk
+factors  in the future, and inspections  from various  angles are required  to ensure  that
+the project  is not delayed  or made impossible  due to unexpected  circumstances.In-depth  analysis  of problems  and
+risk factors
+B) Request  for Information  (RFI)
+Since it can be viewed as a process to determine  who is an external  company  that can solve the problem
+facing the company,  the information  that is usually requested  is a brief introduction  to the external  company,
+credit-related  information,  and experience  in performing  related services.  If necessary,  it also inquires of the
+scope of the project  budget.
+<Table 11> Composition  of Request  for Information
+Classification Content
++« Project  name, background  and purpose,  scope of business,  RFI submission  method,
+1. Business  overview
+etc.
+2. Information  about ordering  | » Business  status (business  goal/direction,  etc.), informationization  status, improvement
+company
+« Business  and technical  requirements,  implementation,  training,  project  management,
+3. Key requirements project  budget,  etc.
+C) Request  for proposal  (RFP)
+This is a document  that informs bidders  of the ordering  agency's  system and business  status, problems,  and
+requirements  so that the ordering  agency can successfully  carry out projects such as information  system
+establishment  and describe  in detail the matters  necessary  for the proposal.  This is an official document  that
+allows the propose...

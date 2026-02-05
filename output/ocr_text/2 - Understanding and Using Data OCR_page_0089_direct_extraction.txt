@@ -1,0 +1,33 @@
+ESSENCE
++ Temporary  table: A temporary  table that can store and process  data for each transaction  or session.
+@ Considerations  when designing  a table
++ If the sum of the column  data length is more than 1 block size, vertical  split needs to be considered.
++ If the use frequency  of a specific  column  is extraordinarily  high, vertical  split needs to be considered.
++ If different  user groups use a specific  column  only, vertical  split needs to be considered.
++ When considering  vertical partitioning,  there should be no case in which a split table is processed  simultaneously  by
+one transaction  or join operations  occur frequently.
+O2 Data Type Design
+Data are stored in a database  in various forms such as characters,  numbers, dates, and images. If a data type
+is incorrectly  selected when designing  a database,  it makes the development  of an application  more difficult  or
+deteriorates  performance.  Therefore,  it is very important  to carefully  determine  the data type or size in the database
+design phase.
+A) Character  data type
+@ Fixed-length  character  type: A type of data for which as much space is allocated  and used as data are declared.
+@ Variable-length  character  type: A type of data for which as much space is allocated  and used as data are actually
+stored,
+© Character  large object: A type of data that is designed  to be stored as large character  type data. As it is too big, the
+actual type column is not stored in a database,  but stored outside  the table, and the table column stores the address
+that references  the data location only. This type of data can be useful when storing large amounts  of text, such as a
+book or publication.
+B) Numeric  data type
+@ Real type: A type of data that represents  real numbers  in floating  point and variable  point formats.
+@ Integer  type: A type of data that represents  an integer  within the range of the maximum  size.
+C) Binary  data type
+@ Fixed-length  binary data type: A type of data that can store as much binary data as has been defined.
+@ Variable-length  binary data type: A type of data that can be stored in the form of binary data by allocating  as much
+space as the actual storage  size within the defined  size.
+@ Binary large object: A type of data that can be stored in the form of one large binary set of data such as image, video,
+and sound. Like CLOB, it is stored outside  the table, and a reference  address  is stored in the actual CLOB column.
+D) Date data type
+Date and time data type: A type of data that can be stored in the form of time, date, and time + date.
+88 TOPCIT  ESSENCE

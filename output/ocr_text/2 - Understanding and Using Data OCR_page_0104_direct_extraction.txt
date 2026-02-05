@@ -1,0 +1,19 @@
+Database
+>> Recent  trends and major issues
+Even though the types of databases  have been diversified  recently,  most of the information  systems  used
+by corporations  and organizations  are still running  on relational  databases.  Therefore, software  developers
+should be familiar  with relational  database  language  and query processing  methods  and should be able to
+use them proficiently  in order to process  data efficiently.
+SQL was developed  by IBM researchers  Donald D. Chamberlain  and F. Raymond  Boyce in the early 1970s.
+SQL began with the name of SEQUEL  (Structured  English  Query Language)  and was devised  to manipulate
+and receive  the data stored in System  R, which was the semi-relational  database  management  system of
+IBM. Recently,  interest  in acquiring  SQL-related  certifications  has been increasing  because  the importance
+of SQL has been highlighted.
+>> Learning  objectives
+1. To be able to utilize a Data Definition  Language  (DDL).
+2. To be able to utilize a Data Control Language  (DCL).
+3. To be able to utilize the basic operation,  group function,  and advanced  join of a Data Manipulation
+Language  (DML).
+>> Keywords
++ SQL, Data Definition  Language  (DDL), Data Control  Language  (DCL), Data Manipulation  Language  (DML)
+M2 Database  103

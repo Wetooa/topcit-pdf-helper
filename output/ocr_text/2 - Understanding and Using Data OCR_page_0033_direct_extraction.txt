@@ -1,0 +1,33 @@
+ESSENCE
+02 Object  Relational  Database
+A) Object  relational  database  (ORDB)
+@® Concept  of the object  relational  database
+Even though the object-oriented  database  was introduced  to solve the weakness  of the relational  database
+regarding  new advanced  applications,  it showed  certain limitations  in terms of its use in an enterprise  environment.
+To overcome  this, the object relational  database  was introduced  by combining  the existing  relational  database  with
+the concept  of the object-oriented  database  and expanding  its functions.  Currently,  most commercial  databases  are
+object  relational  databases,  such as Oracle’s  Oracle9i,  IBM’s DB2 UDB, and Microsoft's  SQL Server.
+@ Characteristics  of the object relational  database
+The object relational  database  has the following  characteristics.
+<Table 11> Characteristics  of the object  relational  database
+Characteristic Description
+Supports  user-defined  data types Users can define and use new types of data in addition  to basic data types.
+Supports  the reference  typeData can be accessed  based on navigation  using the reference  structure  in such a
+way that one object record refers to another  object record.
+Supports  a nested  tableA data model with a complex  structure  can be designed  because  one column  ina
+table is composed  of another  table.
+Supports  large-scale  objectsSupports  LOB (Large Object)  as a basic data type for large-scale  unstructured
+data such as images,  audio, and video
+Supports  table inheritance  relationships
+03 Understanding  KMLAccommodates  the advantages  of the object-oriented  database  by specifying  the
+inheritance  relationship  between  tables.
+A) Concept  and characteristics  of XML (Extensible  Markup  Language)
+HTML (HyperText  Markup Language) is mainly used to create and format web documents  in a web environment,
+but it remains  unsuitable  for specifying  structured  data extracted  from a database.  Therefore,  the World Wide Web
+Consortium  (W3C) has developed  an extensible  markup language  (XML) as a standard  language  that is used to
+structure  and exchange  data in a web environment.
+XML has the following  characteristics,
+© Simplicity:  XML can simplify  SGML (unused  functions  have been eliminated,  while major  functions  have been retained).
+@ Openness:  XML can be used together  with HTML on the web, and can exchange  meta-data.
+@ Scalability:  It can create its own tags and supports  self-description.
+32 TOPCIT  ESSENCE

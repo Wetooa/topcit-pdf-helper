@@ -1,0 +1,17 @@
+Software  Development )
+H) Minimum  spanning  tree
+@ Introduction  to the minimum  spanning  tree
+A spanning  tree is a special form of tree that includes  and connects  all vertices  in an undirected  weighted
+graph. This tree should not contain a cycle. A minimum  spanning  tree is a spanning  tree whose sum of
+weighted  values is the minimum.  Kruskal’s  algorithm  and Prime’s algorithm  are representative  algorithms  that
+implement  a minimum  spanning  tree.
+@ Kruskal’s  algorithm
+An edge with the smallest  weighted  value is selected  from among the edges connected  to the vertex, and
+it is checked whether  the added edge creates a cycle. Edges with a smaller weighted  value are selected
+sequentially,  even though the edge with the smallest  weighted  value is selected  but not connected  to the
+vertex.
+@ Prim’s algorithm
+A random vertex is selected  from the graph to be analyzed.  Then, a new vertex and an edge which have not
+been visited before are selected  for each iterative  process  and expanded in the minimum  spanning  tree that
+has been composed  up to that point.
+M1 Software  development  51

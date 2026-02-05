@@ -1,0 +1,28 @@
+ESSENCE
+<Table 58) IPv6 Basic Header  Structure  and Components
+Component Size Description
+Version Abit IP Version is marked.  (version  4 or 6)
+Traffic Class 8 bit A function  to request  a transmission  priority  to a transmitting  device
+Flow Label 20 bit Service  classification  for QoS is marked.
+Payload  Length 16 bit Data length is marked
+Next Header 8 bit Definition  of the header  type following  the IP header
+Hop Limit 8 bit Forwarding  limit for packet  transfer  is marked.
+Source  Address 128 bit Address  of the source  device is marked.
+Destination  Address 128 bit Address  of the destination  device is marked.
+IPv6's extension header is set to 64 bits and configured  in a daisy chain type. <Table 59> shows the structure  and
+type of extension  headers.
+IPv6 basic header(40  octets)
+Any number  of extension  headers
+eee i (forexample  9 >>>>=-2ea TCP of UDP) BS
+Next Header Extension  Header  Lengt
+Extension  Header  Data
+<Table 59) IPv6 Extension  Header  Structure  and Components
+Header  Type Description
+Hop-by-Hop Information  needed by all communication  devices  in the path to process  packets
+er Information  needed  by the communication  devices  in the final destination  to process
+Destinationpackets
+Routing Routing  path list by the sender
+. Packet  partition  and recombination  information  after the increase  of the transmissionFragmentation |length
+Authentication Data integrity  and sender  authentication  information
+Encapsulation  Security Encryption  of the packet's  payload  section
+178 TOPCIT  ESSENCE

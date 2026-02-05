@@ -1,0 +1,19 @@
+ESSENCE
+* Preview  for practical  business Why database  recovery  is necessary
+It has been reported  that IT-related  losses accounted  for 16% (approximately  USD  7 billion)  of the
+total financial  losses sustained  during the 09.11 WTC attack in New York, even though there were also
+numerous  casualties.  Some enterprises  suffered  serious  damages  due to the loss of data and subsequently
+experienced  difficulty  resuming  their online work because  it took a couple of days to recover  the lost data.
+As such, if the duplicated  data and archives  of a business  system are not available,  damages  can be caused
+not only by simple system shutdown  but also by the loss of the most important  information  essential  to
+the survival  of the company  in an instant.  In fact, the incident  served as a timely reminder  for all enterprises
+of the overriding  importance  of database  backup and recovery,  and led many enterprises  to adopt a
+disaster  recovery  system,  which is a non-disruptive  recovery  system.
+Although  they may not be the result of a terrorist  attack as in the above example,  failures  frequently
+occur in the field, which cannot  ensure transaction  atomicity  and durability  due to various reasons  such as
+hardware  failure (e.g. broken hard drive), power outage, DBMS software  defects, and so forth. Therefore,
+all database  systems  need a method  of maintaining  the atomicity  and persistence  of transactions.  The
+recovery  techniques  used to restore a system to its previous  state after the occurrence  of a database
+failure (consistent  state) should ensure high availability  so that service downtime  caused by the failure of
+the database  can be minimized.
+130 TOPCIT  ESSENCE

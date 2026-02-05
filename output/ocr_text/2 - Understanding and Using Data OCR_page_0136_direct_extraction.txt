@@ -1,0 +1,46 @@
+Database )
+Item Backup  method Description Advantages/disadvantages
++ Full backup  is the process  of making  a copy
+of the entire database.+ Full backup  is the process  of
+Full backup a a copy of the entire + Backup takes a long time, and costs area high due to data duplication.
++ The amount  of data backup  can be
+Classification + A differential  backup is a reduced  compared  to a full backup.
+by backup cumulative  backup  of all changes  | + There must be a full backup.
+range made since the last full backup. + More data are backed up in duplicate
+Differential  Backup Eg. If full backup  is set for Sunday compared  to an incremental  backup.
+and differential  backup  for + The recovery  time can be reduced  because
+Thursday,  all changes  after the only the latest full backup  and the last
+Sunday  backup  will be backed up. differential  backup  copy needs to be
+applied  when restoring.
++ Anincremental  backup  is a type
+of backup  that only copies data
+that have been changed  or
+created  since the conduct  of the
+previous  backup  activity.
+Incremental  Backup Eg. If full backup  is set for Sunday
+and differential  backup  for every
+day, only data accumulated  after
+the Wednesday  incremental+ The amount  of data backup  can be
+reduced  compared  to a full backup.
++ Fewer  data are backed up in duplicate
+compared  to a differential  backup.
++ There must a full backup.
++ The recovery  time increases  because
+the latest full backup  and all incremental
+backups  should be applied when restoring.
++ Recovery  fails if any backup  files are
+Classification backup  will be backed up on oe
+by backup Thursday, missing.
+range + There is an advantage  in recovering
+to a specific  point in time because  the
+transaction  record in the log file can be
+read and executed  again.
++ Data loss can be minimized  because  data
+can be restored  to their original state
+immediately  before  the failure.
++ As database  data are not backed up, there
+must be a data copy when the database
+itself is damaged.+ Alog file backup  that records
+Archive  Log Backup the transaction  execution
+details.
+M2 Database 135

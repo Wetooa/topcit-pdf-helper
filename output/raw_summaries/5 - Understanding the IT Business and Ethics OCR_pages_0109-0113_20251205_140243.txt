@@ -1,0 +1,190 @@
+LEARNING GUIDE: Pages 109-113
+Generated: 2025-12-05 14:02:43
+PDF: 5 - Understanding the IT Business and Ethics OCR
+
+================================================================================
+LEARNING GUIDE
+================================================================================
+
+Here is a simplified, easy-to-read learning guide based on the provided text:
+
+---
+
+## Learning Guide: Service Level Management and IT Business Performance
+
+### 1. Service Level Agreements (SLA)
+
+An **SLA (Service Level Agreement)** is a formal contract between a service provider and a customer. It defines the service to be provided, the expected level of service, and the responsibilities of both parties.
+
+*   **Key Benefits of SLAs:**
+    *   **Seamless Communication:** Acts as a clear communication tool between customers and service suppliers.
+    *   **Conflict Prevention:** Reduces the gap between customer expectations and actual service, providing a framework for dispute resolution.
+    *   **Objective Evaluation:** Allows for quantitative and objective measurement of service quality.
+    *   **Continuous Control:** Provides a structured system for managing and monitoring services.
+
+*   **Core Components of an SLA:**
+    *   **Service Level Metrics:** Quantitative measures used to judge service levels (e.g., uptime, response time).
+    *   **Service Level Objectives (SLOs):** Specific target levels and minimum acceptable levels for each metric. These often include penalties for underperformance and incentives for exceeding targets.
+    *   **Service Level Measurements:** Details how metrics are measured (e.g., measurement intervals, responsible team, frequency).
+    *   **Service Level Reports:** Specifies the format and method for reporting service levels to stakeholders.
+
+*   **Examples of SLA Metrics (Service Level Items / Configuration Items - CIs):**
+    These metrics cover various aspects of IT services:
+    *   **Application Systems:** On-time processing rates, system response speed, number of malfunctions.
+    *   **System Hardware (HW):** System operation rate, backup compliance, malfunction handling rate.
+    *   **Network:** Line failure rate, network availability, utilization rate.
+    *   **Service Desk:** Call processing rate, call waiting rate, help desk system availability.
+    *   **Security:** Immediate processing rate for IT requests, security training sessions, personal information inspection frequency.
+    *   **Strategy:** Number of suggestions received, compliance with training plans.
+
+### 2. Service Level Management (SLM)
+
+**SLM (Service Level Management)** is a core process within ITIL (Information Technology Infrastructure Library). It ensures that the agreed-upon service quality levels are consistently delivered, boosting customer confidence and driving continuous service improvement.
+
+*   **Purpose:** SLM manages the **Service Level Objectives (SLOs)** specified in an SLA and identifies any infringements of the agreement. It's crucial for effective IT service level management.
+
+*   **Key Elements of SLM:**
+    *   **Service Catalog:** A document listing all available IT services with their descriptions.
+    *   **Service Level Agreement (SLA):** The formal, written contract outlining mutually agreed IT service levels.
+    *   **Service Level Objectives (SLO):** The specific IT services and their performance targets covered by the SLA.
+    *   **Operational Level Agreement (OLA):** Internal agreements between different departments within the service provider. These OLAs ensure internal teams can effectively support the overall SLA.
+    *   **Service Quality Plan:** An internal plan detailing all requirements to ensure agreed-upon service levels are met.
+    *   **Service Report:** Periodic assessments that track compliance with the SLA and report any violations.
+    *   **SLM Engine:** An automated system designed to measure service level metrics, generate reports, and monitor service performance in real-time.
+
+*   **Critical Considerations for SLA & SLM Operations:**
+    *   **Evaluation Criteria:** Must be specific, quantitative, and objective.
+    *   **Verifiability:** Criteria should be easy to verify.
+    *   **Baseline & Change Management:** Establish clear baselines and manage any changes smoothly.
+    *   **Clear Responsibilities:** Define responsibilities for each item to prevent potential disputes.
+    *   **Automated Tools:** Utilize reliable, automated management tools to streamline task execution.
+
+### 3. IT Business Performance Evaluation
+
+This process reviews how IT contributes to an organization's overall growth and success.
+
+*   **Evolution of Evaluation:**
+    *   **Historically:** Focused primarily on **financial aspects**, quantifying IT's direct impact on earnings. This approach was limited.
+    *   **Currently:** Expanded to **comprehensive evaluations** that include both financial and **non-financial aspects**. This includes factors like enhancing corporate image, improving employee morale, and boosting job satisfaction.
+
+*   **Key Principle:** A critical aspect is aligning individual employee performance goals with the broader enterprise performance goals.
+    *   This requires strong communication among employees.
+    *   Organizations must effectively balance "top-down" (management-set) and "bottom-up" (employee-driven) goal setting.
+
+*   **Key Terms:**
+    *   **Financial Performance Evaluations:** Assessing IT's impact on financial results.
+    *   **BSC (Balanced Scorecard):** A strategic performance management framework.
+    *   **IT-BSC (IT Balanced Scorecard):** A BSC specifically adapted for IT organizations.
+    *   **KPI (Key Performance Indicator):** Measurable values that demonstrate how effectively a company is achieving key business objectives.
+    *   **MBO (Management by Objectives):** A management model aiming to improve performance by clearly defining objectives that are agreed to by both management and employees.
+
+### 4. Case Study: Korean Intellectual Property Office (KIPO) BSC Implementation
+
+**Background:** KIPO aimed to improve patent administration and create customer-oriented services, with a vision to promote technology innovation and protect intellectual property. As a public institution, they needed to balance public benefit with financial considerations.
+
+**Solution:** In 2005, KIPO implemented a **Balanced Scorecard (BSC) system** to link individual employee performance targets directly to KIPO's five strategic organizational objectives.
+
+*   **KIPO's 3-Phase BSC Implementation Process:**
+
+    1.  **Phase 1 (Late 2004): Establishing the Strategic Framework**
+        *   **Defined:** Mission, vision, and strategic goals for the organization.
+        *   **Derived:** 19 Key Success Factors (KSFs) and 32 Key Performance Indicators (KPIs) to achieve these goals.
+        *   **Completed:** Strategic framework for the office.
+        *   **Communicated:** Department-level performance goals, KSFs, and KPIs.
+        *   **Formalized:** Job performance agreements signed between the commissioner, bureau/department heads, and team managers based on these metrics.
+
+    2.  **Phase 2 (Early 2005): Individual Performance Alignment & HR Integration**
+        *   **Designed:** Individual-level performance management model, aligning with the organizational BSC.
+        *   **Distributed:** Organizational performance indicators to individual employees, ensuring their goals reflected the broader organizational scores.
+        *   **Established:** An individual performance and competency evaluation system to motivate employees.
+        *   **Integrated:** Linked individual performance evaluation results more closely to the compensation system, shifting towards a performance-centered HR policy.
+
+    3.  **Phase 3 (April-June 2005): Information System Deployment**
+        *   **Implemented:** A dedicated information system for performance management, using a "best solution."
+        *   **Established:** A strategic operational system to continuously monitor strategy execution and enable rapid responses to changes.
+
+---
+
+================================================================================
+ORIGINAL TEXT (First 5000 chars)
+================================================================================
+
+--- Page 109 ---
+ESSENCE
+@ Effects  of SLA deployment
++ Seamless  communication:  Used as a communication  tool between  consumers  and suppliers  of services.
++ Prevention  of conflicts:  Narrows  the expectation  gap (vs reality) for service levels and lays the foundation  for
+resolving  the gap.
+* Objective  evaluation:  An objective  and quantitative  evaluation  of service  quality is possible.
++ Continuous  control: Provides  a control  system  for managing  services.
+@ Component  elements  of the SLA and the metric  for each item
+An SLA sets the service target levels for service level management  metrics, provides  performance measurement
+standards  for the objectives  of the service,  and has a system  for reporting  service levels.
+<Table 52> Component  elements  of the SLA
+Component  elements Description
+Provides  performance  metrics  for quantitatively  judging a service  levels (i.e. each serviceService  Level Metrics
+area).
+Establishes  the standards  of the service. For example,  the target level and the minimum
+level of the service  level management  metric. Imposes  penalties  when the service  level
+falls short of the target, and provides  incentives  when the service  level exceeds  the
+target.Service  Level Objectives
+Method  of quantitatively  measuring  the pre-defined  service  level metrics  (includesService  Level Measurements ae ‘imeasuring  interval,  measuring  team, frequency  of measurement,  etc.)
+Service  Level Reports Format  and method  of reporting  the service level used in the communication  system
+Some examples  of metrics  defined in the SLA are shown in the table below. In particular,  the items described  using
+metrics  are also called “service  level items” or “configuration  items’ (Cl).
+<Table 53> Examples  of SLA metrics
+Item Examples  of metrics
+On-time  CSR processing  rate, program  revision  and increase  rate, system  response  speed and time,
+Application  system number of malfunctions,  etc.
+System  operation  rate, backup  compliance  rate, malfunction  handling  rate, number  of system
+HW malfunctions,  malfunction  handling  procedure  compliance  rate, number  of transactions  for each type of
+transaction,  monthly  disk usage data management,  etc.
+Line failure rate, network  equipment  and line availability,  network  utilization  rate, network
+Network troubleshooting  compliance  rate, etc.
+. Call processing  rate, number  of calls handled  for each type of call/job,  call waiting  rate, help deskService  desksystem availability,  call desk employee  absenteeism,  etc
+. User IT request  immediate  processing  rate, customer  profile accuracy,  number  of security  trainingSecurity ; ; . isessions,  number  of inspections  for protecting  personal  information,  etc.
+Strategy Number  of suggestions  and recommendations  received,  compliance  with the informatization  training
+planning plan, etc.
+108 TOPCIT  ESSENCE
+
+
+--- Page 110 ---
+Understanding  the IT Business  and Ethics
+D) Understanding  SLM
+SLM (Service  Level Management)  is one of the core processes  of ITIL. The use of SLM ensures  that the level of
+service quality agreed upon with the customers  can be delivered  and that the process  for increasing  customer
+confidence  and improving  service levels can be managed.
+i Sm a ‘ Certifi-
+: ign up for cation" service gq eSCM
+1 <—+__»>
+I <+_____ Certifi-
+i Provide cation ITIL
+I service
+SLM
+Measure  service  levels
+Report  service  levels
+SLO measurement  and
+contract  infringement
+monitoring
+[Fig. 44] Concept  and scope of SLM
+SLM provides  the ability to manage  service level objectives  (SLO), which are the contents  of an SLA, and to notify an
+enterprise  of any infringements  of the SLA. Therefore,  the implementation  of SLM is essential for managing  the IT
+service  levels.
+<Table 54> Component  elements  of SLM
+Component  elements Concept
+Service  Catalog + Metadata  (document)  that explains  the entire list of services.
++ Service  Level Agreement
+oth -Written contract on the mutually agreed level of IT service.
+slo + Service  Level Objectives
+- List of IT services  covered  by the SLA.
++ Objectives  Level Agreement
+OLA - Agreement  on the interdependent  relationships  between  the internal departments  of a service
+supplier,  which will enable  the internal  departments  to effectively  communicate  and manage  the
+service level agreement.
+Service  Quality  Plan + An internal  plan that describes  everything  required  to ensure the agreed  level of service.
+Service  Report + Periodic  assessment  of violations  of the service level agreement.
++ An automated  engine  for managing  service  levels. The engine measures  the values  of service
+SLM engine level management  metrics,  report automation  function,  and monitors  the service  with real-time
+information.
+When operating  SLAs and SLMs, the evaluation  criteria for established  service levels must be specific, quantitative,
+and objective.  The evaluation  criteria must be verifie...

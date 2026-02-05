@@ -1,0 +1,45 @@
+ESSENCE
+@ Extreme  programming  practices
+XP suggests  using twelve practices  as described  in <Table 2>, in addition  to the aforementioned  five values.
+<Table  2> Basic XP practices
+Item Practice Description
+. . h ib Simple design Keep the design as simple as possible  to meet the current
+requirements.
+; Write the test programs  first before  writing  the code and automateTest-driven  developmentthem using the test tools.
+Refactoring Design  the existing  code by eliminating  code duplication  and
+complexity.
+Development Coding  standard Establish  coding standards  for effective  communication.
+A . Have two developers  sit in front of a computer  and work together
+Pair programming
+for development.
+Have all the developers  in the team  assume  joint responsibility  for
+Collective  code :
+- the source code so that everyone  can modify  the code to make itownership ,
+better  at any time.
+Continuous  integration Perform  integration  work until the work is finished.
+Establish  the entire project  plan and cycle plan by considering  the
+Planning  game business  and technical  aspects  and keep them updated  through
+execution  and feedback.
+Management Deploy  executable  modules  as quickly as possible  so that customersSmall release .can frequently  experience  how the software  works.
+Express  the overall look of the system using pictures  and storiesMetaphor
+that can be understood  easily.
+40 hours/week Do not work more than 40 hours per week to maintain  quality.
+Environment Have the customer  who actually  uses the system stay at theOn-site  customer .development  site.
+C) Scrum
+@ Scrum overview
+Scrum is one of the agile methodologies  designed  for project management  and is a representative  type
+of empirical  management  technique  based on estimation  and adjustment.  Scrum for software  was directly
+modeled  after “The New Product  Development  Game’ by Hirotaka Takeuchi  and Ikujiro Nonaka  published  in the
+Harvard Business  Review in 1986. This method was named “Scrum”  when it was introduced  by Ken Schwaber
+and Jeff Sutherland  for software  development  in 1995. Scrum consists  of three fundamental  units, as shown in
+<Table 3>.
+<Table 3> Type of Scrum units
+Roles Description
+The product  owner manages  the creation  of a product  backlog  corresponding  to the product
+function  list, priority  adjustment,  or new item addition.
+It is recommended  that the product  owner  should play a key role when setting  up a splint plan, but
+should be involved  in team operation  as little as possible  once the sprint starts.
+The Scrum master  endeavors  to remove  any factors  that disturb  the team’s work. The Scrum
+master  supports  the team responsible  for development  while upholding  the principles  and values.Product  owner
+Scrum master
+28 TOPCIT  ESSENCE

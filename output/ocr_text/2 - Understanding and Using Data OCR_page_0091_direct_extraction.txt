@@ -1,0 +1,34 @@
+ESSENCE
+B) Creation  of the view
+@ A view is created  from an existing  table using the CREATE  VIEW statement  ([Figure  37]).
+CREATE  VIEW  View_name
+[(column_name  [,column_name...])]
+[WITH  ENCRYPTION]
+AS select_statement  [WITH  CHECK  OPTION]
+[Figure 37] View creation  syntax
+@ WITH CHECK  OPTION
+* This option is used to make all data modification  statements  executed  on the view comply  with the conditions  of
+the SELECT  statement.
+@ WITH ENCRYPTION
++ This option prevents  users from viewing  the text that creates  a view.
++ To decrypt,  the view must be deleted,  and a new view should be created.
+@ Constraints
++ The user of the view should have the SELECT  privilege  for the entity used in the view definition.
++ The SELECT  INTO statement  cannot  be used.
++ Aview  ona temporary  table cannot  be created.
++ A trigger  or an index cannot  be created  for the view.
++ Up to 250 columns  can be referred  to.
+C) Modifying  data with a view
+@A view  does not have a separate  data copy.
+@ An update  of the view always  affects  the original table.
+@ Constraints
++ An update  of the view cannot  affect more than one original  table, and it can affect only one table.
++ Acolumn  that has a calculated  value, built-in  function,  or calculation  function  cannot  be updated  using a view.
++ Anerror  will occur if a view affects  a table that has a NOT NULL column.
++ A default  value should have been defined  or Null should be allowed  for the column  without  an input value.
+D) Other  considerations
+@ If a new column  is added to the original table after defining  the view, this column  will not appear  in the view.
+@ To change  the definition  of a view itself, the existing  view should be deleted,  and the view should be defined  again.
+© The view is not automatically  deleted  even if the original entity is deleted.  Therefore,  the view should be manually
+deleted.
+90 TOPCIT  ESSENCE

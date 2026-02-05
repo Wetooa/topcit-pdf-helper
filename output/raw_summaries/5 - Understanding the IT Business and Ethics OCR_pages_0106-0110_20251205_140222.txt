@@ -1,0 +1,231 @@
+LEARNING GUIDE: Pages 106-110
+Generated: 2025-12-05 14:02:22
+PDF: 5 - Understanding the IT Business and Ethics OCR
+
+================================================================================
+LEARNING GUIDE
+================================================================================
+
+Here is a simplified, easy-to-read learning guide based on the provided text:
+
+---
+
+## IT Business and Ethics: Learning Guide (Pages 106-110)
+
+### 1. ITIL v3 Process Overview
+
+ITIL v3 (Information Technology Infrastructure Library Version 3) is a framework that evolved from ITIL v2 to provide a business value model for IT service management. It supports IT governance and extends service management across all business areas.
+
+**Key Features of ITIL v3:**
+*   **Lifecycle Approach:** Follows a continuous improvement cycle.
+*   **Business Value-Centered:** Focuses on delivering value to the business.
+*   **Strengthens Performance Evaluation (ROI):** Addresses a deficiency in v2.
+*   **Incorporates ISO/IEC 20000 Requirements.**
+*   **Uses PDCA Model:** Plan-Do-Check-Action for continuous improvement.
+
+**The 5 Core ITIL v3 Process Areas (Lifecycle):**
+
+1.  **Service Strategy:**
+    *   **Purpose:** Define IT service strategy, align with business goals.
+    *   **Key Activities:** Planning IT services, organization/relationship specification, IT investment management, understanding customers, setting competitive priorities, HR management, compliance.
+
+2.  **Service Design:**
+    *   **Purpose:** Design new or changed services to meet business requirements.
+    *   **Key Activities:** Requirement analysis, negotiation/contract drafting, service solution design, evaluating alternatives, procuring preferred solutions, designing applications, systems, and processes.
+
+3.  **Service Transition:**
+    *   **Purpose:** Build, test, and deploy services into the live environment.
+    *   **Key Activities:** Release planning/preparation, build/test/pilot services, establish transition plans, transition/adoption/disposal, review and termination, service verification.
+
+4.  **Service Operation:**
+    *   **Purpose:** Deliver and support services effectively and efficiently.
+    *   **Key Activities:** Customer request processing, communication management, event/incident/problem management, service level metrics management, safety/accessibility management.
+
+5.  **Continual Service Improvement (CSI):**
+    *   **Purpose:** Improve IT services and processes over time.
+    *   **Key Activities:** Participating in strategy/design/implementation phases, service report analysis, trend identification, establishing performance baselines, operating improvement programs, feedback across all lifecycle phases.
+
+### 2. ITIL v2 vs. ITIL v3 Comparison
+
+| Feature             | ITIL Version 2                               | ITIL Version 3                                                                                                   |
+| :------------------ | :------------------------------------------- | :--------------------------------------------------------------------------------------------------------------- |
+| **Volumes**         | 8 (Core: Service Support, Delivery)          | 5 major + additional volumes (Introduction & Dic)                                                                |
+| **Processes**       | 1 function + 10 processes                    | 5 major processes                                                                                                |
+| **Usage**           | Best Practice, ISO 20000 Guideline (Part II) | Best Practice, Framework + Standard expansion, ISO 20000 revision                                                |
+| **Key Points**      | Book of best practices, service level-centric  | More libraries, business value-centered (IT Governance), Lifecycle Approach, Continual Service Improvement       |
+| **Limitations (v2)** | Lacked IT service-wide support, weak business alignment, inadequate IT governance, gap with current processes (SOA, BSM). |                                                                                                                  |
+| **Improvements (v3)** |                                              | Presents IT service lifecycle & business-driven services, design/execution/improvement model, links to SOA, BRM, IT operation. |
+
+### 3. Understanding Service Level Agreement (SLA) & Related Concepts
+
+**SLA (Service Level Agreement):**
+*   An agreement between an IT service provider and its customers.
+*   Defines the scope, items, form, performance, measurement methods, and price of the provided service.
+*   Crucial for managing expectations and preventing conflicts.
+
+**SLM (Service Level Management):**
+*   The framework for continuously monitoring, changing, and managing SLAs.
+*   Ensures agreed service quality and works to improve service levels and customer confidence.
+
+**SOW (Statement of Work):**
+*   A work statement that specifies the detailed requirements of a service or work described in the SLA or for a project.
+
+**Effects of SLA Deployment:**
+*   **Seamless Communication:** Facilitates dialogue between consumers and suppliers.
+*   **Prevention of Conflicts:** Narrows expectation gaps and provides a basis for resolution.
+*   **Objective Evaluation:** Enables quantitative assessment of service quality.
+*   **Continuous Control:** Establishes a system for managing and controlling services.
+
+### 4. Component Elements of an SLA & Metrics
+
+An SLA sets target levels, provides measurement standards, and defines reporting for service levels.
+
+**SLA Component Elements:**
+
+1.  **Service Level Metrics:** Quantitatively judge service levels for each service area (e.g., uptime, response time).
+2.  **Service Level Objectives (SLO):** Establish target and minimum service levels. Can include penalties for underperformance and incentives for exceeding targets.
+3.  **Service Level Measurements:** Define how metrics are measured (interval, team, frequency).
+4.  **Service Level Reports:** Specify the format and method for reporting service levels.
+
+**Examples of SLA Metrics (also called "Service Level Items" or "Configuration Items"):**
+
+*   **Application System:** On-time processing rate, program revision rate, system response speed/time, number of malfunctions.
+*   **Hardware (HW):** System operation rate, backup compliance, malfunction handling rate, number of HW malfunctions, disk usage.
+*   **Network:** Line failure rate, network availability/utilization, troubleshooting compliance.
+*   **Service Desk:** Call processing rate, number of calls handled, call waiting rate, help desk system availability, employee absenteeism.
+*   **Security:** User request processing rate, customer profile accuracy, security training sessions, personal information inspection count.
+*   **Strategy:** Number of suggestions received, compliance with training plans.
+
+### 5. Understanding Service Level Management (SLM)
+
+SLM is a core ITIL process that manages service level objectives (SLOs) within an SLA and notifies of any infringements. It's essential for managing IT service levels.
+
+**Component Elements of SLM:**
+
+1.  **Service Catalog:** A document listing all available services and their metadata.
+2.  **SLA (Service Level Agreement):** The written contract on agreed IT service levels.
+3.  **SLO (Service Level Objectives):** The specific list of IT services covered by the SLA and their target levels.
+4.  **OLA (Operational Level Agreement):** An internal agreement between departments within a service supplier to ensure effective communication and management of the SLA.
+5.  **Service Quality Plan:** An internal plan detailing everything required to ensure agreed service levels.
+6.  **Service Report:** Periodic assessment of SLA violations.
+7.  **SLM Engine:** An automated system to measure metrics, automate reports, and monitor services in real-time.
+
+**Operating Criteria for SLAs and SLMs:**
+*   Evaluation criteria must be **specific, quantitative, and objective.**
+*   Criteria must be **verified.**
+*   Ensure **seamless baseline setting** and **smooth management of changes.**
+
+---
+
+================================================================================
+ORIGINAL TEXT (First 5000 chars)
+================================================================================
+
+--- Page 106 ---
+Understanding  the IT Business  and Ethics )
+Area Process Key activities
+Reception  of incidents  and problems,
+Service  desk -processing  of inquiries.
+Management  and evaluation  of malfunction
+Incident  management
+level.
+Application  of emergency  measures  forProblem  management :
+solving  a problem.
+Service  Support
+Management  of service level, programChange  managementchanges.
+Configuration  management Management  of configuration  items.
+Management  of release  of products  approvedRelease  management for distribution,
+Besides  the two areas mentioned  above, there is also the Business  Perspective  area, which deals with business
+continuity  management  and partnership  outsourcing,  and ICT Infrastructure  Management,  which deals with network
+service  management  and operations  management,  computer  installation  and accessibility,  and system  management.
+@ The ITIL v3 process
+ITIL v3 was born as a business  value model from ITIL v2. It supports  IT governance  (lacking  in ITIL v2), and extends  IT
+service  management  to all areas of a business.
+(NOTE: In the box above, capitalization  of names is inconsistent,  e.g. Carnegie  Mellon University.)
+ITIL Version  3 |___Service  Strategy  _|
+* Generation,  Financial,
+Portfolio,  Demand
+Lifecycle  Approach
+= CONTINUAL  SERVICE  IMPROVEMENT  OF THE WHOLE REALM Service  Design
+* Value for Services [+ Catalogue,  Serice  Level, |: e + Catalogue,  Service Level,
+Service  Portfolio Availability,  Capacity,* Service  Design Cc 3
+* Service  Knowledge  Management pobruts Supplier
+Service  Transition
+* Change,  Asset  &Configuration,
+Release  and Deployment,  Test
+& Validate
+Service  Operation
++ Event, Incident,  Problem,
+Technology,  Access
+Fontinual Service improvement|
++ Sernice Lifecycle
+Improvement,  7StepsAccenture,  Carnegie  melon
+University,  TEMS Ltd, Fox IT
+ConnectSphere,  Guillernot  Rock
+Hewlett  Packard,  Pink Elephant
+[Fig. 42] Overview  of ITIL Version  3
+ITIL v3 strengthens  the service support  area and service  delivery  area of v2 and includes  the Requirement  Process  of
+ISO/IEC20000.  The goals of v3 are to formulate  strategies  for alignment  with business  through  a lifecycle  perspective
+M5 Understanding  the IT Business  and Ethics 105
+
+
+--- Page 107 ---
+ESSENCE
+and to improve  the IT service life cycle.
+<Table 50> ITIL v3 process
+Process Contents Key activities
++ IT service  strategy  planning.
++ IT service  organization  and relationship
+specification. + Planning  and organization.
+Service  Strategy . IT investment  management. .  Understanding  of customers.
++ Dissemination  of top management's  goals and _ + Determining  the order of priority  of
+policies. competition  and investment.
++ HR management.
+* Compliance  with outside  requirements.
++ Negotiation  and contract  drafting  through « Adoption  and deployment.
+requirement  analysis. + Design based on requirement,
+Service  Design + Service  solution  design. ’
+application,  system,  process
++ Alternative  solution  evaluation  and :
+consideration.procurement  of preferred  solution.
++ Release  planning  and preparation.
++ Build, test and service  pilot.
++ Establishment  and preparation  of transition
+plan.
++ Transition,  adoption  and disposal.
++ Service  transition  review and termination.+ Operation  and support.
++ Transition  plan.
++ Service  verification  and testing.Service  Transition
++ Monitoring  and control
++ Customer  request  processing  and
+communication  management. + Monitoring  efficiency  in
+Service  Operation + Event, incident,  problem  management. management.
++ Service  level metrics  management. + Safety, accessibility  management.
++ Strategy/design/implementation  phase
+participation.
++ Service  report analysis  and trend
+identification.
++ Establishment  of baseline  of performance + Continual  service  improvement.
+Continual  Service  Improvement evaluation  and service  results. + PDCA® Model implementation.
++ Operation  of service improvement  program. + Service  report and measurement.
++ Feedback  across the strategy/design/
+implementation  phases.
+ITIL v3 consists  of 5 process  areas. This 5-step process  of continuous  service improvement  (Service  Strategy  >
+Service Design — Service Implementation  — Service Operations)  is a continuous,  repeated  cycle. In particular,  the
+performance  evaluation  (ROI) area was strengthened  in ITIL v3 because  it was deficient  in v2. By reflecting  the
+performance  results back into service  strategy,  ITIL v3 further  strengthens  the IT service  capabilities  of an enterprise.
+6 PDCA: Plan - Do - Check  - Action cycle model
+106 TOPCIT  ESSENCE
+
+
+--- Page 108 ---
+@® Comparison  of ITIL v2 and v3
+<Table 51> Comparison  of ITIL v2 and v3Understanding  the IT Business  and Ethics )
+Item compared Version  2
+Library + 8 volumes  (Core Service Support,
+Delivery)
+Process + 1 function  + 10processes
+Usage + Best Practice
+ei + ISO20000  Guideline(Part  II)
++ IT Service  Management  Library
+...

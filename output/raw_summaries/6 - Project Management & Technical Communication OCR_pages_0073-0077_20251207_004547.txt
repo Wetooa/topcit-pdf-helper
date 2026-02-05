@@ -1,0 +1,244 @@
+LEARNING GUIDE: Pages 73-77
+Generated: 2025-12-07 00:45:47
+PDF: 6 - Project Management & Technical Communication OCR
+
+================================================================================
+LEARNING GUIDE
+================================================================================
+
+Here is a simplified, easy-to-read learning guide based on the provided text:
+
+---
+
+## Project Management & Organization: Learning Guide
+
+This guide summarizes essential concepts, roles, and methodologies in project management.
+
+---
+
+### **1. Project Organization & Roles**
+
+#### **1.1. Project Organization Structure**
+A project organization typically includes:
+*   **Project Managers (PMs)**
+*   **Project Leaders (PLs)**: Lead development teams.
+*   **Developers**
+*   **Quality Assurance (QA) Staff**
+*   **Software Architects (SAs)**: For architecture support.
+*   **Project Management Office (PMO)**: For project management support.
+*   **Project Support Groups**: E.g., UI design, testing.
+*   **Architect Team**
+*   **Steering Committees & Sponsors**: Support high-level decisions (scope/schedule changes).
+
+*(Note: The structure can vary based on project goals and characteristics.)*
+
+#### **1.2. Project Manager (PM) Responsibilities & Role**
+A PM is responsible for the entire project scope and schedule. Key duties include:
+*   Overseeing and communicating project progress.
+*   Resolving issues and mitigating risks (quality, stakeholders).
+*   Managing the project from start to finish.
+
+#### **1.3. PM Competencies**
+PMs need three distinct competencies:
+
+**A. Project Knowledge Competency**
+*   **Project Management Tools:**
+    *   Basic knowledge of project management processes, templates, and tools.
+    *   Ability to create a framework for project activities.
+    *   Skill to track project progress against the plan.
+*   **Project Area Knowledge:**
+    *   Knowledge of scope, schedule, cost, quality, human resources, communication, risk, procurement management.
+    *   Understanding of integrated management, configuration change, and contract management.
+
+**B. Technical Competency**
+*   **Project-Related Technical Knowledge:**
+    *   Understanding of practical work and processes specific to the project.
+    *   Relevant practical experience and knowledge.
+*   **Information Technology Trends:**
+    *   Comprehensive knowledge of information technology.
+    *   Awareness of market trends in the information industry, including products and systems.
+
+**C. Communication Competency**
+*   **Problem-Solving Skill:** Ability to effectively resolve project issues.
+*   **Management Experience:** Practical experience in job and project management.
+*   **Negotiating Skill:**
+    *   Ability to negotiate with project approvers or senior authorities.
+    *   Skills in dispute resolution and conflict arbitration.
+*   **Communication:**
+    *   Leadership skills to guide the team.
+    *   Effective communication with team members, stakeholders, and customers.
+*   **Human Resource Management:** Effective management of team members.
+
+---
+
+### **2. Project Management Office (PMO)**
+
+#### **2.1. What is a PMO?**
+The PMO is an organization dedicated to achieving effective, enterprise-wide project management.
+
+#### **2.2. Role and Importance of PMO**
+*   **General Purpose:** Centralize and standardize project management practices across an organization.
+*   **In Korea (e-government projects):** Functions as a system to entrust professionals with knowledge and skills to efficiently perform projects (per Electronic Government Act). It oversees, mediates issues, and consults, complementing the client's expertise.
+*   **For Intangible Informatization Projects:** Essential for high credibility. Provides pre-diagnosis, thorough planning, quantitative process management, periodic communication, and quality assurance.
+
+#### **2.3. PMO Classification**
+PMOs can be classified into 4 types based on various criteria:
+
+**A. PMO Type**
+*   **Internal:** PMO composed of internal project managers.
+*   **External:** PMO composed of external project managers.
+*   **Combined (Mixed):** A mix of internal and external project managers/skills.
+
+**B. PMO Role & Responsibility (R&R)**
+*(Affected by corporate structure)*
+*   **Weather Station Model:**
+    *   Acts as a facilitator with a small number of professionals.
+    *   Provides progress information, distributes PM knowledge.
+    *   Develops and disseminates methodologies.
+*   **Coach Model:**
+    *   An extended Weather Station model.
+    *   Promotes common methodologies and software tools.
+    *   Operates communities for team communication, monitors performance, and provides PM experts.
+*   **Control Tower Model:**
+    *   Deeply involved in all projects and decision-making.
+    *   Applies a consistent methodology across all projects.
+    *   Provides centralized management, coordinates, and determines project resources.
+
+**C. PMO Position**
+*   **Full-time PMO:** A project manager is dedicated to one project and manages it intensively.
+*   **Part-time PMO:** A project manager is in charge of two or more projects simultaneously.
+
+**D. PMO Skill**
+Determined by the specialized expertise of the individual project managers within the PMO, such as:
+*   Development
+*   Consulting
+*   Project Evaluation
+*   Database Management
+*   Quality Management
+*   Development Methodology
+
+---
+
+### **3. Project Management Trends & Concepts**
+
+#### **3.1. Recent Trends & Key Issues**
+*   Project management processes are not "one-size-fits-all."
+*   Tailor the project lifecycle and management processes to the specific project environment and conditions.
+*   **Agile Processes** are increasingly important to understand and apply.
+
+#### **3.2. Learning Objectives**
+By studying this material, you should be able to:
+1.  Explain the project life cycle (preparation, initiation).
+2.  Explain project management methodologies.
+3.  Explain the concept and execution of Agile processes.
+
+#### **3.3. Concept Summary**
+*   **Project Life Cycles:** Predictive, Iterative, Adaptive
+*   **Project Management Process Groups:** Initiating, Planning, Executing, Monitoring & Controlling, Closing
+*   **Project Management Methodologies:** PMBOK, ISO21500, PRINCE2
+*   **Agile Process Types:** Scrum, XP (eXtreme Programming), Kanban, Lean
+*   **Agile Process Execution Methods:** Backlog, Burndown Chart, Scrum Master, Sprint, Retrospective, Daily Meeting
+
+#### **3.4. Practical Business Preview**
+*   Project management methodologies and processes are influenced by a company's organizational structure and how they are applied.
+*   **Waterfall Methodology:** A traditional, sequential model. It can evolve into iterative or adaptive life cycles through overlapping or repetition of its phases. It is planning-based.
+*   **Agile Methodology:** A value-oriented approach (contrasts with planning-based Waterfall).
+*   **Scrum (an Agile type):** Focuses on improving project productivity through active cooperation and communication among people, rather than strict formalities.
+*   **Challenges:** Applying Agile methodologies can be difficult in environments with vertical organizational structures or imbalanced power relationships (e.g., between an acquirer and a supplier).
+
+---
+
+### **4. Project Life Cycle**
+
+#### **4.1. General Project Life Cycle**
+A project typically progresses through five main processes:
+1.  **Initiating:** Starting the project.
+2.  **Planning:** Defining scope, objectives, and actions.
+3.  **Executing:** Carrying out the work defined in the plan.
+4.  **Monitoring & Controlling:** Tracking progress, managing changes, and ensuring objectives are met.
+5.  **Closing:** Formalizing acceptance of the project or phase and bringing it to an orderly end.
+
+*(Note: If a project is stopped mid-way, the closing process is executed immediately.)*
+
+---
+
+================================================================================
+ORIGINAL TEXT (First 5000 chars)
+================================================================================
+
+--- Page 73 ---
+ESSENCE
+The project organization  consists of project  managers  (PM), project leaders (PL) who lead each development
+team, developers,  quality assurance  (QA) staff under the direct control of PMs, SA (software  architect)  for ar-
+chitect support,  PMO (Project  Management  Office) for project management  support,  project support  groups
+(UI design, testing, etc.), architect  team, PM, etc., as well as steering  committees  and sponsors  who support
+higher-level  decisions,  such as changes  in the scope and schedule  of the project. Of course, the project orga-
+nization  may vary depending  on the goals and characteristics  of each individual  project.
+B) Responsibilities  and roles of project  manager
+“Who is the project  manager,  and what does the person do on the project?”
+The project manager  is the person responsible  for the entire scope and schedule  of the project. In other
+words, the person oversees  and communicates  the progress  of the project, as well as resolving  issues and
+risks to quality and stakeholders  from the initial stage to the end of the project.”  Project managers  need to
+understand  and be able to exert the following three distinct  competencies  in order to carry out a project.
+<Table 33> Classification  of PM’s Competencies
+Classification Type Detailed  Area
++ Basic knowledge  of the use of project  management  process,
+Knowledge  of project templates  and tools
+management  tools + Provide  a framework  for project  activities
++ Track project  progress  against  the plan
+ProjectTEESE * Knowledge  of scope, schedule,  cost, quality, human
+knowledge Knowledge of the project area resources,communication,  risk, purchase  management  and
+competency 8 Pros integrated  management,  configuration  change and contract
+management
+Problem-solving  skill + Ability to resolve  project  issues
+Management  Experience + Experience  in the job and project  management
+Technical  knowledge  related  to | + Understanding  of practical  work and processes  related to the
+the project project,  practical  experience  and knowledge  thereto
+Technical + Comprehensive  knowledge  of information  technology,  market
+competency trends of information  industry
+Information  technology  trends + Trends in information  technology  products,  systems  related to
+information  industry
++ Legal and compliance  knowledge
++ Dispute  resolution  and conflict  arbitration
+Negotiating  skill + Negotiating  skills with project approver  or senior authority
+Communicationcompetency Communication + Exhibit leadership  skills to effectively  lead the team and
+communicate  with team members,  stakeholders  and customers
+Human resource  management + Effective  management  of team members
+C) Project  management  office (PMO)
+Many companies  have thought  about how to conduct  an effective  enterprise-wide  project management  for
+several decades.  As a result, an organization  dedicated  to the project  called the Project Management  Office
+(PMO) has come into being.
+In Korea, PMO functions  as a system that entrusts  persons  with professional  knowledge  and technical  skills
+to efficiently  perform  e-government  projects  in accordance  with Article 64-2 “Entrustment  of Management  of
+72 TOPCIT  ESSENCE
+
+
+--- Page 74 ---
+Project Management  and Technical  Communication  )
+Electronic  Government  Projects”  of Electronic  Government  Act. It plays the role of overseeing  and the entire
+project, mediating  issues, and consulting,  from the standpoint  of complementing  the client's  expertise,
+In the case of intangible  informatization  projects  requiring  a high level of credibility,  PMO is needed  for pre-di-
+agnosis,  thorough  planning  for each stage of the project,  quantitative  process  management,  periodic  commu-
+nication  and quality assurance  of outputs.
+PMO can be classified  according  to the type, responsibility,  and role of PMO, time horizon  of the project,  and
+skill division  of PMs, into 4 types as follows.
+Classification  by PMO type
+Internal
+External
+Combined Classification  by PMO
+time horizon
+<Role & Responsibility> D :
+r PMO Position>- eal PMO Key Model Part-time PMO
+Control Tower Full-time  PMO
+<PMO Skill>
+Development,  consulting,  project
+CeV_|  Wreln(olamo)ieecscmeloNo  (oi n aClassification  by PMO R&R
+[Figure 20] PMO Classification
+@ PMO Type
+When the PMO organization  is composed  of internal project managers,  it becomes  an internal organization,  an
+external  organization  if composed  of external  project  managers,  and a mixed type in case of skill mix.
+@ PMO Role & Responsibility  (R&R)
+As the PMO is affected  by the corporate  structure,  it is classified  into the weather  station model that acts
+as a facilitator  according  to the roles and responsibilities  of the project manager,  the coach model that is
+responsible  for guides and processes,  and the control tower model that has a great influence  on the overall
+responsibility  and process  for the p...

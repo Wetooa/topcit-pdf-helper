@@ -1,0 +1,45 @@
+Project Management  and Technical  Communication  )
+Junior  Engineer 3,979,456 23,915
+Senior Technician 3,976,482 23,897
+Intermediate  Technician 3,296,592 19,811
+Junior  Technician 2,390,211 14,364
+Date Entry Operator 2,370,347 14,245
+@ Overhead  Cost and Royalty
+Overhead  cost is indirect expenses’  incurred in the areas of planning,  management,  and general affairs for the
+administrative operation  of the software  developer.  Usually, it is calculated  as 110 to 120% of the direct labor
+cost. Royalty  is an amount  paid in exchange  for the use and accumulation  of technology  developed  and owned
+by the software  developer,  and it is calculated  as 20 to 40% of the sum of direct labor cost plus overhead
+cost?
+@ Direct Cost
+Direct cost refers to expenses  directly required  for software  development,  such as royalties  for computer
+system or software  tools, software,  professional  expenses,  travel expenses,  and materials  costs, etc. directly
+incurred  for the software  development  project.
+In the field of private projects,  the man month calculation  is used to calculate  project development  cost,
+and also for mutual verification  interchangeably  with the function  point analysis,  which has recently become
+mandatory  in public projects.
+C) COCOMO(Constructive  Cost Model)
+COCOMO  is one of the estimation  methods  of the cost of a software  development  project. It calculates  the
+cost by using a regression  formula  with parameters  such as development  period, man per month, and mainte-
+nance costs that are put into the modules  and subsystems  that make up the system.
+COCOMO  is divided into three types: Basic, Intermediate,  and Detailed,  depending  on the complexity  of the
+calculation  model. In addition,  it is divided into three types: Organic  Mode, Semi-Detached  Mode, and Embed-
+ded Mode, according  to the type of applied project. Each is calculated  by taking into account  the effort, devel-
+opment  time, average  staff size and productivity.
+A brief look at the COCOMO  calculation  method  is as follows:
+Case of the Basic COCOMO  model
+@ Effort Applied)  E = a * (KLOC)  >
+*aand  b are coefficients  by project  type (see table below)
+* KLOC (Kilo Line Of Code) is the estimated  number  of delivered  lines of code in thousands
+8 BH
+ SWAT!
+ CH7EAPS
+ ZFOLE
+ 201714
+ 7HagEE
+9 BH
+ SWAT!
+ CH7EAPS
+ ZFOLE
+ 201714
+ 7HAgEE
+M6 Project  Management  and Technical  Communication  109

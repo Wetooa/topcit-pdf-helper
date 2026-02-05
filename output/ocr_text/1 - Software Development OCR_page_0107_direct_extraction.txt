@@ -1,0 +1,37 @@
+ESSENCE
+<— Test  creation  process  ———S>  <E—$—=|  Test running  process  ———=>
+NOUN eee  Acceptance
+analysis ica
+Functionalelec  aaa  -> (Secu
+MaelSSieiag << -----=--=--=-—  Eom Integrated  test
+Test ;
+mcucncin  < Upti ees
+[Figure  23] Test level types
+Software  testing requires  test plans and strategies  for each test level, which is a set of test activities
+corresponding  to the development  stage. Specific  details, such as the test basis, test target, test approach,
+tester or organization,  etc., which are the development  deliverables  to be referred to when identifying  the
+goals of each test level and test case, should be defined.
+<Table 31> Test types
+Test type Purpose Performing  Tester/Test Environment
+Organization
+Acceptance  test To  check compliance  with the User User environment
+requirements.
+To check the overall functional
+System  test and non-functional  tests in Test organization Environment  similar  to an
+an environment  similar  to the actual user environment
+actual environment.
+To find a defect in the interface  | Development  organization  or | Development  environmentIntegrated  test . : ; -between  the unit modules. testing  organization or test environment
+Unit test To detect any defects in the Development  organization Development  environment
+unit modules.
+B) Testing  techniques
+Testing  techniques  are broadly  divided into white box testing  and black box testing,  which have the following
+characteristics.
+@ White box testing
++ White box testing  is called structural  or code-based  testing.
++ It is mainly used in unit testing  to find defects  in testable  software  (module,  program,  object, class, etc.) and
+to verify the function  of them. The source code is used to perform control flow testing, condition/decision
+coverage  testing,  and elementary  comparison  testing.
++ This technique  can be applied  to integrate  testing  using a structural  approach.
++ White box testing is divided into static analysis,  which is used to detect a pre-defined  error by analyzing  the
+internal structure  of the implemented  source  code, and dynamic  analysis,  which is used to detect  an error
+106 TOPCIT  ESSENCE

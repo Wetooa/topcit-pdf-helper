@@ -1,0 +1,38 @@
+ESSENCE
+C) Inheritance
+Each class has its own properties  and operations,  as well as properties  and operations  common  to several
+other classes too. When there are similarities  between  classes, these similarities  can be collected to  define
+a new class, which is called generalization.  For example,  the classes “professor”  and “student”  have common
+properties  (e.g. resident  registration  number,  name, address,  phone number).  At this time, a generalized  class,
+“people”,  can be defined  by combining  professors  and students.  In this case, “student”  and “professor”  are called
+a subclass  of “people”,  and “people”  is the superclass  of student  and professor.
+In this case, the superclass  “people”  has the common  properties  and operations  of the subclasses  “student”
+and “professor’,  and the subclasses  “student”  and “professor’  have properties  and operations  that are not
+shared between  subclasses.  Generalization  shows important  characteristics  wherein the superclass  displays
+the common  properties  and operations of certain  subclasses,  and superclass  information  is inherited  by
+subclasses.  Inheritance  through  generalization  enables  us to simplify  the definition of a class and create a new
+class by using the pre-defined  class.
+D) Polymorphism
+One of the characteristics  of object-oriented  programming  is polymorphism.  Polymorphism  means that
+operations  with the same name are performed  differently  depending  on the class, and means  that one function
+name and one operator  can be used for multiple  purposes.  Polymorphism  in object-oriented  programming  is
+mainly used in inheritance  relations  and provides  a degree  of flexibility  that allows subclasses  to respond  to one
+operation  defined in the superclass  using their own unique method.  Polymorphism  is based on a concept  that
+allows the superclass  to call the method  (a series of task sequences  to be executed  according  to the message)
+of the subclass.  It is also classified  into “overriding”,  which redefines  the method defined by the superclass
+in the subclass,  and “overloading”,  which defines multiple methods  using different  types of parameter  and
+different  numbers  of parameters.
+The sender  of the message  simply calls the operation  of the superclass  only and does not have to know the
+type of object (subclass),  and the proper operation  of the subclass  is automatically  determined  according  to
+the type at runtime. Determining  the operation  using the object of the subclass  at runtime  is called “run-time
+binding”. Polymorphism  and run-time  binding  are essential  concepts  for understanding  design patterns.
+03 Static Modeling  and Dynamic  Modeling
+A) Static modeling
+Static modeling  is based on the same concept  as the information  modeling  described  above. It is designed  to
+reveal the static information  of an object  without  the intervention  of the concept  of time. Information  modeling
+describes  the data by finding out the structure of  the database  used in the system. The information  model
+finds the basic objects  required  by the system,  and is composed  of relationships  that indicate  the properties  of
+the objects  and the relationships  between  those objects.
+The class diagram  of UML is an information  model that shows the static information  structure  of a system.  It is
+used to represent  the classes  required  for the system  and the relationships  between  them. Each class consists
+72 TOPCIT  ESSENCE

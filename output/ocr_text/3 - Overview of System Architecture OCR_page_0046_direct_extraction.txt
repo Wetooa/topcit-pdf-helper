@@ -1,0 +1,28 @@
+Overview  of System Architecture )
+- Developed  by AT&T
+- Multi-user  environment
+- Commercial  products  mainly use the OS, as it is relatively  inexpensive.  Each
+server  developer  develops  and installs  a proprietary  UNIX operating  system.
+- Many open-source  versions  are available,  and the source  code is disclosed
+Server  OS Linux - Low-cost  implementation
+- Compatible  with UNIX
+- Types: RedHat,  CentOS,  Ubuntu,  Fedora,  Suse, etc.UNIX
+- Developed  by Microsoft
+Windows  Server - Windows  interface  to provide  the same UI/UX
+- Supports  many application  programs
+02 Process  and Thread
+A) Understanding  of process
+Early computer  systems  could only execute  one application  program  at a time. In other words, one program  occupied
+all the system's  resources.  However,  modern computer  systems  run multiple programs  concurrently.  The OS must
+manage  computer  resources  so that multiple  programs  share resources  and operate  in stable condition  at the same
+time. A process  refers to a running  program,  and in today’s concurrent  multi-process  environment,  it is a work unit of
+a time-sharing  system.
+@ Process  status
+A process  has a distinct  process  status  during its lifecycle,  as shown in [Figure 16].
+Dispatch
+Ready Jo |
+Wake Up
+[Figure 16] Process  Status  Change
+* Created:  A process  is created  but is not running  by the OS.
++ Preparing:  The process  is waiting  for the CPU allocation  to run.
+M3 Overview  of System  Architecture  45

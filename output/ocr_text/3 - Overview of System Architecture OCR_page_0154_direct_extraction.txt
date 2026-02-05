@@ -1,0 +1,28 @@
+Overview  of System Architecture )
+The physical medium  access  control (MAC) layer includes  the IEEE 802.3 CDMA/CD  MAC, IEEE 802.4 token bus MAC,
+and IEEE 802.5 token ring MAC.
+mee Type 1 (Unconfirmed  diagram  service)ey Lo Type 2 (Virtual circuit service)
+Type 3 (Confirmed  datagram  service)
+Physical media CSMA/CD  media Token bus media Token ring mediaaccess  control(MAC) 8 access  control 8 access  control 8 access  control
+0 | + Reference  band coaxial: 0 0
+2 1 and 10Mbps 2 | + Broadband  coaxial: 2
+Physical  media ; + Reference  band twisted ry 1,5, and 10Mbps ; Shielded  twisted pair: 1
+pair: 10Mbps Optical fiber: and 4Mbps
++ Broadband  coaxial: 5, 10, and 20Mbps
+100Mbps  or higher
+[Figure 110] Services  for Each Layer
+B) IEEE 802.3 standard
+The IEEE 802.3 protocol  stack, the most widely used IEE 802 standard,  includes  IEEE 802.2 that corresponds  to the
+LLC layer of the datalink  layer and IEEE 802.3 that include  the MAC layer and the physical  layer, IEEE 802.5 token ring,
+and FDDI.
+lieee eer, IEEE 802.2
+Et Kg ee -——————————  ==
+Layer = MAC
+Sublayer
+IEEE 802.3Physical  Layer
+Token Ring / 802.5
+OS! Reference  Model LAN Protocol
+[Figure 111] IEEE 802.3 Protocol  Stack
+C) IEEE 802.11 standard
+IEEE 802.11 is the name of the wireless  communication  standardization  committee  for wireless  LAN, called Wi-Fi.
+M3 Overview  of System  Architecture  153

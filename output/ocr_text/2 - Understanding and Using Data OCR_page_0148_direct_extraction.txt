@@ -1,0 +1,26 @@
+Database )
+@ MapReduce
+MapReduce  is a programming  model designed  for the parallel distributed  processing  of big data using inexpensive
+machines.  This model can process  large amounts  of data in parallel using a program  composed  of a map procedure
+and a reduce  method.  MapReduce  allows the analysis  of large-scale  data by processing  data that has been distributed
+and stored in multiple machines.  Basically,  MapReduce  performs  batch-based  processing  and can handle large-scale
+data conveniently.  The data of the execution  result is copied, distributed,  and stored safely in consideration  of the
+failure of the physical  device.
+C) Visualization  technology
+This technique  provides  insights  by effectively  transferring  numbers,  statistics,  and valuable  meanings,  by classifying
+data for the user’s easy understanding,  and by analyzing  large-scale  data. It allows the exact and effective  transfer  of
+information  without  actually  requiring  the user to look at the data.
+<Table  719> Big data visualization  method
+Technology Description Example
+. Peers Shows  the passage  of time.Time visualization . -Continuous,  segmented.
+id
+Shows the relationship  between  the whole aT
+Distribution  visualization  | and the part, and the ratio. ey)
+Pie, Treemap
+REVENUE  VS. RATING
+Shows the relationship  between  two or
+Peeuoneile more variables. 2
+Bubble  chart, histogram
+Comparison Shows spaces and shadows  intuitively.
+visualization Heatmap,  Stars
+M2 Database  147

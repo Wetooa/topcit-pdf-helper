@@ -1,0 +1,267 @@
+LEARNING GUIDE: Pages 34-38
+Generated: 2025-12-05 14:35:39
+PDF: 4 - Understanding Information Security OCR
+
+================================================================================
+LEARNING GUIDE
+================================================================================
+
+Here is a simplified, easy-to-read learning guide based on the provided text:
+
+---
+
+# Information Security: Authentication & Hash Functions
+
+## 1. Hash Functions and Their Applications
+
+A **hash function** is a mathematical algorithm that converts an input (e.g., a message or password) into a fixed-size string of characters, called a **hash value** or **message digest**.
+
+### 1.1 Key Characteristics of Hash Functions
+*   **One-way:** It's computationally infeasible to reverse the process and get the original input from the hash value.
+*   **Collision-resistant:** It's very difficult to find two different inputs that produce the same hash value.
+
+### 1.2 Applications of Hash Functions
+
+1.  **Checking File Integrity (Detecting Alteration)**
+    *   **Sender:**
+        1.  Calculates a hash value for the original message.
+        2.  Sends the message along with its hash value.
+    *   **Receiver:**
+        1.  Receives the message.
+        2.  Calculates a new hash value for the *received* message.
+        3.  Compares this new hash value with the hash value sent by the sender.
+        4.  **Result:** If they match, the message has not been altered during transmission. If they don't, integrity is compromised.
+
+2.  **Password-Based Encryption (PBE)**
+    *   Combines a user's password with a `salt` (a random number) and feeds them into a hash function.
+    *   The resulting hash value is used as an encryption key.
+    *   **Benefit:** Protects against password attacks by not storing or using the raw password directly as a key.
+
+3.  **Electronic Signatures (Digital Signatures)**
+    *   **Purpose:** Provides both data integrity and proof of the signer's identity.
+    *   **Process:**
+        1.  A hash value is calculated for the document.
+        2.  The signer's private key is used to "sign" this hash value (not the entire document).
+    *   **Efficiency:** Signing the small hash value is much faster than signing a large document.
+    *   **Validity:** This signature is considered valid for the original document because finding another document with the same hash value is extremely difficult.
+
+### 1.3 Hash Functions vs. Encryption
+*   **Hash Function:** One-way process. You cannot get the original data back from the hash value. (e.g., used for password storage).
+*   **Encryption:** Two-way process. You can encrypt plaintext into ciphertext and then decrypt it back to plaintext using a key.
+
+---
+
+## 2. Authentication Technology
+
+**Authentication** is the process of verifying two things:
+1.  That information exchanged between parties has not been altered or deleted.
+2.  That the individuals (sender/receiver) involved are legitimate.
+
+### 2.1 Types of Authentication
+
+1.  **User Authentication:**
+    *   **Purpose:** Verifies a user's identity to another party (e.g., a server) to prevent impersonation.
+    *   **Application:** Used for logging into systems and granting access to services. Remote users require strict authentication due to the privileges they gain upon verification.
+
+2.  **Message Authentication:**
+    *   **Purpose:** Confirms that the contents of a transmitted message are original and have not been tampered with.
+    *   **Tool:** Electronic signatures can achieve both message authentication and sender identification.
+
+### 2.2 Methods of Authentication
+
+Authentication methods are generally categorized by *what* is used to prove identity:
+
+1.  **Knowledge-based ("What you know"):**
+    *   Examples: PINs, passwords, account numbers.
+
+2.  **Ownership-based ("What you have"):**
+    *   Examples: OTP (One-Time Password) tokens, smart cards, card keys.
+
+3.  **Presence-based ("What you are" - Biometrics):**
+    *   Examples: Iris recognition, fingerprint recognition, voice recognition, face recognition.
+
+---
+
+## 3. Specific Authentication Technologies
+
+### 3.1 Password Authentication
+
+*   **Overview:** The most common authentication method. Users set a password, then provide it to be compared with the stored version for verification.
+*   **Vulnerabilities:**
+    *   **Easy to guess:** Using common words, social engineering.
+    *   **Easy to leak:** Storing/transferring passwords in plaintext.
+    *   **Easy to hijack:** Malicious software (e.g., Trojan horses) or direct access to password files.
+*   **Password Policy (Best Practices):**
+    *   Minimum 8 characters.
+    *   Combine uppercase, lowercase letters, numbers, and special characters.
+    *   Easy for the user to remember, difficult for an attacker to guess.
+    *   Store passwords using a **hash function** (never plaintext or reversible encryption).
+    *   Limit failed login attempts.
+*   **Attack Techniques:**
+    *   **Brute-force attacks:** Trying every possible combination.
+    *   **Dictionary attacks:** Trying words from a dictionary.
+    *   **Trojan horses:** Malware that steals credentials.
+    *   **Direct access:** Gaining unauthorized access to password files.
+    *   **Social engineering:** Tricking users into revealing passwords.
+*   **Countermeasures:**
+    *   Use password generators.
+    *   Enforce login failure limits.
+    *   Require periodic password changes.
+    *   Use Intrusion Detection Systems (IDS) to detect attacks.
+    *   Security awareness training for users.
+    *   Implement OTPs.
+
+### 3.2 One-Time Password (OTP) Authentication
+
+*   **Concept:** Generates a unique password for each login session. This password is valid only once.
+*   **Benefits:** Reduces the risk of password reuse attacks and replay attacks (where stolen credentials are used later).
+*   **Types of OTPs:**
+
+    | Type             | Sub-type            | Description                                                                                             |
+    | :--------------- | :------------------ | :------------------------------------------------------------------------------------------------------ |
+    | **Synchronous**  | Challenge-response  | Server sends a random number (challenge); client uses it to generate the OTP.                           |
+    |                  | Time-synchronous    | Both server and client use the current time as an input to generate a synchronized OTP. (See process below) |
+    | **Asynchronous** | Event-synchronous   | Both server and client use a shared authentication count (e.g., number of logins) to generate the OTP.  |
+
+*   **Time-Synchronous OTP Operating Procedure:**
+    1.  Authentication server and client synchronize their internal clocks.
+    2.  User requests login.
+    3.  Client (e.g., an OTP token) generates an OTP based on the current time.
+    4.  User inputs the generated OTP.
+    5.  Server also generates an expected OTP using its synchronized time.
+    6.  Server compares the user's input OTP with its generated OTP. If they match, authentication is successful.
+
+### 3.3 Biometric Authentication
+
+*   **Concept:** Uses automated sensors to measure and analyze a person's unique physical or behavioral features for authentication.
+*   **Characteristics (Ideal Biometric Features):**
+    *   **Universality:** Everyone has the characteristic.
+    *   **Distinctiveness:** Unique to each individual.
+    *   **Acquisition:** Easily measurable by a sensor.
+    *   **Permanence:** Stable and doesn't change significantly over a person's lifetime.
+    *   **Accuracy:** Provides precise and consistent authentication.
+    *   **Acceptability:** Non-intrusive and user-friendly during acquisition.
+*   **Types of Biometric Authentication:**
+
+    | Category              | Type        | Description                                                                 |
+    | :-------------------- | :---------- | :-------------------------------------------------------------------------- |
+    | **Body Information**  | Fingerprint | Most common. Uses semiconductor, optical, or mixed sensors.                 |
+    |                       | Iris        | Highly accurate and fast but often requires expensive systems.              |
+    |                       | Face        | Natural method, uses facial features for recognition.                       |
+    |                       | Vein        | Identifies patterns in the shape of veins.                                  |
+    |                       | DNA         | The most accurate method.                                                   |
+    | **Behavioral Characteristics** | Signature   | Analyzes both the final signature form and the hand's movement trajectory.  |
+    |                       | Voice       | Used in various applications, including physical access control.            |
+
+*   **Process of Biometric Authentication:**
+    1.  **Registration:** User's biometric information is captured and stored in a database (e.g., a fingerprint template).
+    2.  **Authentication:**
+        *   User presents their biometric feature (e.g., places finger on scanner).
+        *   The system extracts data from the presented feature.
+        *   This extracted data is compared with the previously stored information in the database.
+        *   Based on the comparison, the user is either **certified** (authenticated) or **rejected**.
+
+### 3.4 Multi-Factor Authentication (MFA)
+
+*   **Concept:** Combines two or more different authentication methods to verify a user's identity.
+*   **Purpose:** Significantly improves security by overcoming the weaknesses of any single authentication method. Even if one factor is compromised, the attacker still needs to compromise another different factor.
+*   **Example:** Using a password ("what you know") plus an OTP from a phone app ("what you have").
+
+---
+
+================================================================================
+ORIGINAL TEXT (First 5000 chars)
+================================================================================
+
+--- Page 34 ---
+ESSENCE
+‘6
+Packet
+Sender's  computer forgery/alteration Receiver's  computer
+w
+Outgoing message |
+YO) fe».
+|Hash Oo cuteones  message Meg Oo
+function @. function @
+Attachment Shs
+| | Remark
+11011 Hash code 110110
+Message  Digest
+[Figure 13] Checking  the integrity  of the transmitted  file
++ Encryption  based on the password
+Both the hash function  and encryption  are techniques  of hiding the password  effectively.  However,  there is a
+difference,  in that the encryption  algorithm  can encrypt  the unencrypted  plaintext  and then decrypt  it again,
+whereas  the hash function  cannot  find the original value of the hash function  using the result value.
+The hash function  can be used for password-based  encryption  (PBE). In PBE, the hash value, which is
+obtained  by entering  the result of combining  the password and salt (random number  generated  using a
+pseudo-random  number  generator)  into the hash function,  is used as an encryption  key. Attacks  against  the
+password  can be prevented  using this method.
++ Electronic  signature
+The hash function  can be used for digital signatures.  A digital signature  is a method of providing both data
+integrity  and the signature’s  authentication  by performing  a hash operation  on a specific  document,  using the
+signature’s  private key. Signing  the entire message  is very inefficient  because  the public key operation  should
+be repetitively  performed  on all message  blocks. Therefore,  an electronic  signature  can be very efficiently
+generated  by calculating  a hash value for the message  and signing  on that value. Although  the signer  signed
+the hash value, instead of the message  itself, this signature  is recognized  as a genuine signature  for the
+message  because  finding  another  message  with the same hash value is difficult.
+O2 Authentication  technology
+A) Concept  of authentication
+Authentication  refers to a method  of verifying  whether  the information  exchanged  between  the sender and
+receiver,  who are the subject of the information,  has not been altered or deleted,  and whether  the subject
+34 TOPCIT  ESSENCE
+
+
+--- Page 35 ---
+Information  security
+(sender  and receiver)  is legitimate.  That is, authentication  can be divided into message  authentication  and user
+authentication.
+@ User  authentication
+User authentication  refers to a function  that enables  the user to prove their identity  to the other party over
+the network.  Given this, a third party should not be able to disguise  as the user.
+Proving  that the information  accessing  subject  is
+the identified  person
+Recognizing  the use who
+claim his/her  identity
+[Figure 14] User authentication
+User authentication,  also known as identification,  is used to verify the identity  of a user when logging in to a
+server, and to grant the authority  of using information  services.  Servers should require the remote user to go
+through  a strict authentication  procedure  because  the remote user can perform  all the privileges  as the user in
+question,  once authenticated.
+@ Message  authentication
+Message  authentication  is to check whether  the contents  of the transmitted  message  have the original
+information  and are not altered or modified.  An electronic  signature  can be used to verify that the transmitted
+message  has not be altered,  and to identify  the sender  at the same time.
+B) Type of authentication  methods
+Authentication can be performed  by using the user’s knowledge,  the user's object, or the user’s physical
+characteristics.
+@® Knowledge-based  authentication
+This method  is based on the user's information  (“What  you know’), and uses various means, such as a PIN
+(Personal Identification  Number),  password,  account  number,  etc.
+@ Ownership-based  authentication
+This method  is based on the user’s possessions  (“What  you have’), and uses various means, such as anOTP (One
+Time Password),  smart card, card key, etc.
+® Presence-based  authentication
+This method is based on the user’s body or characteristics  of their body ("What you are”), and uses various
+means, such as iris recognition,  fingerprint  recognition,  voice recognition,  and face recognition.
+M4 Understanding  Information  Security  35
+
+
+--- Page 36 ---
+ESSENCE
+C) Type of authentication  technologies
+@® Password  authentication
+* Overview  of password  authentication
+The user sets the password  in advance.  After that, the user is authenticated  by comparing  the password
+entered during authentication,  with the set password.  Although  this authentication  technology  is the most
+widely used, it requires  careful attention  when using it because  it is the most insecure  as shown in [Figure 15].
+Social
+engineering Using well-
+known
+wordsStoring  and
+transferring
+in plain text
+8 s 3
+Easy to guess Easy to leak Easy to hijack
+[Figure  15] Vulnerabilities  of the password  authentication  method
++ Password  policy
+When creating  a password,  it should have at least 8 di...

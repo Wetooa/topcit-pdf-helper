@@ -1,0 +1,213 @@
+LEARNING GUIDE: Pages 166-170
+Generated: 2025-12-07 01:09:02
+PDF: 3 - Overview of System Architecture OCR
+
+================================================================================
+LEARNING GUIDE
+================================================================================
+
+Here is a simplified, easy-to-read learning guide based on the provided text:
+
+---
+
+## Learning Guide: Network System Architecture
+
+### 04. Network Service Quality
+
+#### A) Quality of Service (QoS) Characteristics
+
+**QoS Definition:** Technology that guarantees a communication service's quality and performance to meet user requirements.
+
+**QoS Attributes:**
+*   **Confidence:** Ensures safe packet delivery to the destination.
+*   **Delay:** Time taken to transmit a packet from sender to receiver.
+*   **Jitter:** Variation in delay for packets belonging to the same flow.
+*   **Bandwidth:** Maximum data transfer rate available in communication.
+
+#### B) Quality Implementation Techniques
+
+**1. Scheduling:**
+Routers manage packet flow, and scheduling determines the order of packet delivery.
+
+*   **FIFO Queuing (First-In, First-Out):** Delivers packets in order of arrival (basic Internet method).
+*   **Priority Queuing:** Assigns priority to packets; higher-priority packets are handled first.
+*   **Weighted Fair Queuing:** Assigns packets to priority classes/queues. Selects queues round-robin, delivering varying numbers of packets based on queue weight.
+
+**2. Traffic Shaping and Traffic Policing:**
+Used to control traffic speed and volume.
+
+*   **Traffic Shaping:** Controls traffic *as it leaves* the network.
+*   **Traffic Policing:** Controls traffic *as it enters* the network.
+
+**Techniques:**
+*   **Leaky Bucket:** Stores burst input packets in a buffer ("bucket") and outputs them at an average, steady rate. Packets may be discarded if the input exceeds bucket size.
+*   **Token Bucket:** A fundamental algorithm used by both traffic shaping and policing.
+
+**3. Resource Reservation:**
+Method of reserving network resources (e.g., buffer, bandwidth, CPU, time) for a specific data flow to ensure service quality.
+
+**4. Admission Control:**
+A procedure where a communication network's control unit decides whether to accept a new connection request.
+
+**5. Service Quality Model and Protocol:**
+
+*   **Service Quality Models:**
+    *   **Integrated Service (IntServ):** A flow-based model that explicitly reserves resources (like bandwidth) for a specific data flow.
+    *   **Differentiated Service (DiffServ):** A class-based model that specifies the required service type for each packet transmission, operating based on packet priority.
+
+*   **Service Quality Protocol:**
+    *   **Resource Reservation Protocol (RSVP):** A standardized protocol used to reserve and secure bandwidth for applications between endpoints (RFC 2110).
+
+### 05. Routing Protocol Algorithm and Type
+
+#### A) What is a Routing Protocol?
+Defines the messages, exchange procedures, and actions routers use to efficiently set up and update routing tables.
+
+#### B) What is a Routing Algorithm?
+Finds the "low-cost" (minimum value of combined link costs) path between a source and destination router in a network.
+
+**Types of Routing Algorithms:**
+
+*   **Link State Routing Algorithm:**
+    *   Each router has a complete map (configuration and link-state information) of the entire network.
+    *   Calculates the low-cost path to all destinations independently.
+*   **Distance Vector Routing Algorithm:**
+    *   Each router maintains a table (vector) of low-cost paths to all destinations.
+    *   Initially, only stores costs to directly connected neighbors.
+    *   Shares its path cost data with neighboring routers.
+
+**Specific Algorithms:**
+
+*   **Dijkstra Algorithm:**
+    *   A leading **link-state** routing algorithm.
+    *   Finds the shortest path from a single source node to all other nodes by iteratively building a tree of shortest paths.
+
+*   **Bellman-Ford Algorithm:**
+    *   A leading **distance-vector** routing algorithm.
+    *   Finds the shortest path from a single source node by iteratively "relaxing" (updating) all edges in the graph `|V|-1` times (where `|V|` is the number of nodes).
+
+#### C) Routing Protocol Types (Classification)
+
+Routing protocols are classified by routing type and Autonomous System (AS).
+
+**Autonomous System (AS):** A collection of networks under a single, independent management system with a common operating policy.
+
+*   **Static Routing:** Manual configuration of routes.
+*   **Dynamic Routing:** Routes are automatically learned and updated.
+    *   **IGP (Interior Gateway Protocol):** Protocols used *within* an Autonomous System (AS).
+        *   Examples: RIP, OSPF, IGRP, ISIS, EIGRP.
+    *   **EGP (Exterior Gateway Protocol):** Protocols used *between* different Autonomous Systems (ASs).
+        *   Example: BGP.
+
+#### D) Routing Protocol Type (Details)
+
+| Protocol | Description |
+| :------- | :---------- |
+| **RIP**  | - Uses **distance-vector** algorithm. <br> - Broadcasts routing table every 30 seconds. <br> - Limited to 15 hops (16th hop is unreachable). <br> - Does NOT support Variable Length Subnet Mask (VLSM). <br> - Does NOT support load balancing. <br> - Does NOT reflect network state (bandwidth, delay, load). |
+| **IGRP** | - Enhances some RIP problems. <br> - Reflects network state (bandwidth, delay, load). <br> - Increased hop limit (up to 255 hops). <br> - Does NOT support VLSM. <br> - Supports load balancing. |
+| **OSPF** | - Uses **link-state** algorithm. <br> - Spreads information on changes (user-specified, economical, multiple routes) faster than RIP. <br> - All routers maintain the same network topology information. <br> - Supports VLSM and load balancing. |
+| **BGP**  | - An **EGP** method for connecting different ASs and large network interconnections. <br> - Uses a **path-vector** routing algorithm. <br> - Operates over TCP. |
+
+### 06. IPv4 Overview
+
+#### A) What is an IPv4 (Internet Protocol Version 4) Address?
+
+*   A **32-bit address** used at the IP layer.
+*   Serves as a unique and universal identifier for a router or host connected to the Internet.
+*   **Structure:** Composed of four 8-bit sections (octets), typically represented in dot-decimal notation (e.g., 192.168.1.1).
+
+---
+
+================================================================================
+ORIGINAL TEXT (First 5000 chars)
+================================================================================
+
+--- Page 166 ---
+Overview  of System Architecture )
+04 Network  Service  Quality
+A) Quality  of Service  (QoS) characteristics
+QoS is the technology  of guaranteeing  a service quality and performance  of a communication  service  to meet user
+requirements,  The attributes  to determine  the QoS include confidence,  delay, jitter, and bandwidth,  as shown in
+<Table  45>.
+{Table 45) QoS Measurements
+Attribute Description
+Confidence - An attribute  needed by a flow in order to deliver a packet safely to the destination
+Delay - Adelay  when transmitting  a packet from the transmitting  side to the receiving  side
+Jitter - Variation  of delay for packets belonging  to the same flow
+Bandwidth - The maximum  rate available  in communication,  i.e. the ability to transmit  information
+B) Quality  implementation  technique
+® Scheduling
+Routers  are responsible  for handling  packets  over the Internet.  Therefore,  the packet  flow can differ, according  to the
+schedule.
+<Table 46) Packet Scheduling  Methods
+Scheduling  Method Description
+FIFO queuing - The basic Internet  scheduling  method  delivers  packets  in the order of their arrival.
+ra . - The method  assigns  a priority  to each transferred  packet and handles  the packet  with higher
+Priority  queuing . .
+priority  first.
+- The method  assigns  a priority  class to packets,  and packets  are assigned  to each priority  queue.
+Weighted  fair queuing - It selects  a queue in the form  of a round-robin,  and the packets  in the selected  queue are delivered.
+The number  of packets  delivered  varies, according  to the weight  of the queue.
+@ Traffic shaping  and traffic policing
+As a way to control the traffic speed and volume,  traffic shaping  is used when the traffic leaves the network, and
+traffic policing  is used when the traffic enters  the network.
+Table 47) Traffic Shaping  and Traffic Policing
+Traffic  Shaping/Policing Description
+Meaty bucket - The burst input packets  are  stored ina bucket  and output at an average  speed.
+- The packets  can be discarded  if the input packets  exceed the bucket  size.
+Token bucket ~ The basic algorithm  used by traffic shaping  and policing
+@ Resource  reservation
+It is the method  of reserving  resources,  such as buffer, bandwidth,  CPU, and time needed for data flowfor a specific
+service  to ensure the service  quality.
+M3 Overview  of System  Architecture  165
+
+
+--- Page 167 ---
+ESSENCE
+@ Admission  control
+It is a procedure  used by the control unit of a communication  network  to determine  whether  to accept a connection
+request.
+© Service  quality model and protocol
+Service quality models include  the integrated  service (IntServ)  model and the differentiated  service (DiffServ)  model.
+The service  quality  protocol  is the resource  reservation  protocol  (RSVP).
+Table 48) Service  Quality Model and Protocol  [6]
+Service  quality  model Description
+Integrated  service - Flow-based  quality model that explicitly  reserves  resources,  such as bandwidth  for the given data
+(IntServ) flow
+Resource  reservation - A protocol  standardized  to reserve  and secure the bandwidth  needed  by the application  programs
+Protocol  (RSVP) between  terminals  (RFC 2110)
+Differentiated  service - Class-based  service quality  model that specifies  the required  service type each time a packet is
+(DiffServ) transmitted,  and operates  according  to packet priority
+05 Routing  Protocol  Algorithm  and Type
+A) What is a routing  protocol?
+Routing  protocol  defines  the types of messages  exchanged  between  routers,  exchange  procedure,  and actions  when
+receiving  a message,  for efficient  setting  and updating  of the routing  tables.
+B) What is a routing  algorithm?
+The routing algorithm  finds the low-cost  path between  a source router and a destination  router in a graphical
+network,  connected  by links with a cost between  routers. The low-cost  path refers to the path of minimum  value
+among  the sum of link costs out of all possible  paths from the source to the destination.  <Table 49> shows the types
+of routing  algorithms.
+Table 49) Routing  Algorithm  Types
+Algorithm Description
++ Link state routing  algorithm
++ Each router calculates  the low-cost  path to all destinations  with the configuration  and link-state  information
+of the entire network.Link state
+Routing
++ Distance  vector routing  algorithm
+Distance  vector + Each router maintains  the low-cost  path table (vector)  to all destination  routers.
+Routing + The initial router path cost table only maintains  the cost data of the directly  connected  routers, and the
+router notifies  the path cost data to the neighboring  routers.
+166 TOPCIT  ESSENCE
+
+
+--- Page 168 ---
+Overview  of System Architecture )
+@ Dijkstra  algorithm
+[Figure 120] shows the pseudo-code  of the Dijkstra  Algorithm,  the leading  link-state  routing  algorithm.
+£
+u
+Initialization
+Tree = {root} Tree is made only  of the root
+for (y=1 to N) N is the number of  nodes
+{
+if (y...

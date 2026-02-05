@@ -1,0 +1,33 @@
+ESSENCE
+B) Network  layer protocol/command
+C) Network  layer command
+04 Network  Service  Quality
+A) Quality  of Service  (QoS) characteristics
+B) Quality  implementation  technique
+05 Routing  Protocol  Algorithm  and Type
+A) What is a routing  protocol?
+B) What is a routing  algorithm?
+C) Routing  protocol  types
+E) Routing  protocol  type
+06 IPv4 Overview
+A) What is an IPv4 (Internet  Protocol  Version  4) address?
+B) Network  using IPv4 addresses  (Example)
+07 IPv4 address  Designation  System  and Subnetting
+A) IPv4 expression
+B) IPv4 address  designation  system
+C) Special IPv4 address
+D) Subnetting
+E) CIDR(Classless  Inter-Domain  Routing)
+F) Supernetting
+G) IPv4 address  allocation
+16 TOPCIT  ESSENCE163
+164
+165
+165
+165
+166
+166
+166
+168
+169
+169

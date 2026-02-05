@@ -1,0 +1,38 @@
+ESSENCE
+External phase External Schema #1 External Schema #2 | Extemal  Schema #n
+\ ! Logical data independence
+Conceptual = +e Conceptual  Schema |phase
+Physical  data independence
+Internal  phase Internal  Schema
+[Figure  2] 3-level database  architecture
+To understand  data independence,  it is helpful to understand  the background  to the introduction  of the concept
+of data independence.  The opposite  of data independence  can be defined as data dependency.  Here, the subject
+of dependency  generally  refers to an application  program.  An application  is the interface  object which interacts
+with users and handles  the user requirements.  It can be said that data dependency  has the purpose  of reducing
+continuously  increasing  maintenance  costs, data complexity,  and the number  of duplicated  data. The concept  of
+data independence  was also introduced  to maintain  independence  between  the screen and the database  against  the
+users’ constantly  evolving  requirements.
+It can be said that data independence  is a three-schema  architecture,  which was proposed  by the special
+subcommittee  of the X3 committee  under the American  Standards  Institute  (ANSI) for the DBMS and its interfaces,
+The main purpose  of this three-schema  architecture  was to reduce interference  in changes,  by separating  the
+user's view of the database  from the view by which the database  is actually  expressed.  When data independence  is
+secured,  the independence  of each view can be maintained,  data can be changed  without  affecting  the view by layer,
+and different  DDL (data definition  language)  and DML (data manipulation  language)  can be provided  according  to the
+schema  by phase.
+@ 3-level database  architecture  of ANSI-SPARC
+The data independence  model, which is based on the 3-level database  architecture  proposed  by ANSI/SPARC,
+presents  a model composed  of an external  phase, a conceptual  phase, and an internal  phase, none of which interferes
+with the others.
+<Table 5> External  schema,  conceptual  schema,  and internal  schema
+Item Contents Remarks
++ An external  schema  is composed  of several users’ viewpoints  in the view phase,  | User's viewpoint
+External that is, a personal  database  schema  viewed by everyone  in each user's phase. Schema  composition
+schema + Individual  database  users or the database  accessed  by the application according  to accessed
+programmer  are defined. characteristics
++ Composed  of one conceptual  schema  in the conceptual  phase. The database
+of the entire organization  is described,  which has integrated  all its users’
+Conceptual perspectives.
+schema + The database  of the entire organization  is described,  which has integrated  the
+data needed  by all application  systems  or users, including  the data saved in the
+database  and the schema  that expresses  the relationship  between  the data.Integrated  perspective
+24 TOPCIT  ESSENCE

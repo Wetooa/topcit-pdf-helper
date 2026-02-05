@@ -1,0 +1,41 @@
+ESSENCE
+F) How to read relationships
+To read a data model, the identifier reads one or each source entity participating  in the relationship,  followed  by the
+number  of target entities  (one, more than one), relationship  options,  and relationship  names.
++ The identifier  reads one or each source entity.
++ The identifier reads the degree of the target entity's participation  in relationships,  that is, the number  (one, more
+than one).
++ The identifier  reads the relationship  option and the relationship  name.
+Each
+/One
+G) Characteristic  ofRelationshipSource entity order
+employee
+department severalTarget  entity
+department
+employeesTeam Employee
+Includes
+LL | Belongs to x
+Optional
+Required/OptionalRelationship
+name
+sometimes belong  to
+always belong to
+[Figure21]  Questioning  method  for identifying  the relationship
+the identifier
+An identifier  will have different  characteristics  depending  on whether  it is a “primary  identifier’  or a “foreign identifier’.
+First, if it is a “primary  identifier’,  it has the following  characteristics.
+<Table 22> Characteristics  of the primary  identifier
+Characteristics Contents Remark
+P A primary  identifier  uniquely  distinguishes  all Example)  An employee  number  (primary  identifier)Uniqueness mn oo 5
+instances  within an entity. is uniquely  assigned  to each employee.
+Example)  If an identifier  is composed  of the
+The number  of attributes  constituting  a primary employee  classification  code + the employee
+Minimality identifier  should be the minimum  number  that number  while only the employee  number  has a
+satisfies  uniqueness. unique  structure,  the primary  identifier  has an
+inappropriate  structure.
+If a primary  identifier  has been assigned  to a specific | Example)  If the value of an employee  number  has
+Invariability entity, the value of the identifier  should not be changed,  it means that the previous  record has
+changed. been erased and a new record will be created
+Precencel If a primary  identifier  has been designated,  there Example)  A company  employee  must have an
+must be a data value. (Null is not allowed.) employee  number.
+60 TOPCIT  ESSENCE

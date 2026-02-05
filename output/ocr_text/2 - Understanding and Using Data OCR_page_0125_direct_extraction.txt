@@ -1,0 +1,26 @@
+ESSENCE
+continue  due to a fatal error in the middle of the transaction  or because  the user issues a rollback  command.
+D) Considerations  when executing  a transaction
+@® Implementation  of transaction  concurrency:  Simultaneous  execution  of transactions  can increase  concurrency  by
+increasing  the transaction  throughput  and system utilization  ratio and by reducing  latency.
+@ Executing  a transaction  as quickly as possible:  If a transaction  takes too long, there is a high possibility  that conflicts
+and deadlocks  will occur due to the long locking  time. Locking  should be maintained  long enough  to ensure transaction
+serialization,  but should be executed  quickly  enough  so as not to deteriorate  performance  at the same time.
+02 Concurrency  Control
+A) Definition  of the serializable  schedule  of the transaction
+MA serializable  schedule  means that even if each transaction  is executed  at the same time, the result is the same as
+the sequential  execution  of the transaction.
+@ Guaranteeing  the serialization  of transactions.
+[Transaction 1 ] 1
+No2 No3 SS=
+[Figure  43] Serialization  of transactions
+B) Definition  of concurrency  control
+@ A function  that enables  the successful  execution  of several transactions  at the same time in a database  system that
+supports  a multi-user  environment.
+@A database  system  that supports  a multi-user  environment  must have this function,  which is also called concurrency
+control,
+C) Purposes  of concurrency  control
+© To create a serializable  schedule  or ensure the possibility  of transaction  serialization.
+@ To guarantee  the maximum  sharing  level, minimum  response  time, and maximum  system  activity.
+@ To ensure data integrity  and consistency.
+124 TOPCIT  ESSENCE

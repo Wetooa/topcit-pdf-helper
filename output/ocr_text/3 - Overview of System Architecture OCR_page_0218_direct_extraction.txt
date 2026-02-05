@@ -1,0 +1,29 @@
+Overview  of System Architecture )
+SDN technology  standards.
+@ Introduction  of SDN
+SDN was first proposed  at the Open Network  Summit,  a conference  specializing  in SDN and open flow, held at
+Stanford  University  in October  2010. SDN and OpenFlow  are technologies  that program and configure  or operate
+networks,  like computers.  They have attracted  attention  as new innovative  communication environmental
+technologies.  In March 2011, ONF (Open Networking  Foundation)  was formed  to promote  and standardize  OpenFlow
+and SDN.
+@ Concept  of SDN
+As shown in [Figure 150], SDN enables  programming  networks  by separating  the control plane (to guide the network
+to which it goes) from the data plane (to send packets  to a specific destination).  The basis of SDN is a switch that
+uses industry  standard  control protocols,  such as OpenFlow,  and can be programmed  through  an SDN controller.
+APPLICATION  LAYER
+SUS  laosow\eel(e-i(egsy
+{ar { API { API
+CONTROL  LAYER SDN
+Control
+Software Network  Services
+Control Data Plane interface
+(e.g,.0penFlow)
+Ne Nee D\e-) Ne  eee  \(e-) Ne Meee  \(e-)
+Network  Device Network  DeviceINFRASTRUCTURE  LAYER
+[Figure 150] SDN Architecture  [5]
+© OpenFlow  technology
+As shown in [Figure 151], the OpenFlow  technology  separates  the functions  to control and transfer  the packets  and
+controls  the network  through programming.  OpenFlow  consists  of a controller  and a switch. The controller issues
+commands  to the switch, and the switch performs  tasks related to data flow, such as sending  or modifying  packets
+to the destination,  according  to the commands.
+M3 Overview  of System  Architecture  217

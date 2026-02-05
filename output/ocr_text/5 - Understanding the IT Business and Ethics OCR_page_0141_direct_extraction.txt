@@ -1,0 +1,40 @@
+ESSENCE
+These technologies  in combination  with services  such as social network  services,  augmented  reality, mobile games,
+and advertising,  are boosting  the utilization  of the services.  Network-based  location detection  technologies  include
+the following:
+<Table71>  Network  based location  determination  technology
+Category Description
+A method  of calculating  the location  of a device by measuring  the location  value of the base
+Cell ID/Sector  ID station and the distance between the base station and the device.
+A method  of calculating  location  of a device by measuring  the angle of arrival of signals sent from
+AoA (Angle of Arrival) each base station to the device and the location values of at least 2 base stations.
+TDoA (Time difference  of | Amethod  of calculating  location  of a device by measuring  the time difference  of arrival of signals
+Arrival) sent from each base station to the device and the location  values of at least 3 base stations.
+Fingerprint/  Pattern A method  of calculating  the location  of a device by using the location information  of base station
+Matching and the intensity  of the radio signal sent by the base station
+With the advancements  in IT technology  and mobile communication  technology,  the technique  of location
+determination  has also evolved.  In the 2G era, location  determination  was based on the principle  of simple cell-based
+positioning.  But for 3G location  determination,  the Global Positioning  System (GPS) was adopted.  In the 4G era,
+location  determination  has become  highly precise  with very narrow  error margins  because  the technology  has greatly
+improved  the high error margins  that had been the weakness  of base stations  and the difficulty  of determining
+positions  in indoor areas and areas with many impediments  to GPS. And wherever  an access  point (AP) exists,
+location  determination  has become  possible  with Wi-Fi.
+@ Mobile Commerce
+Mobile technology  can be characterized  by 3 words: “Anytime”,  "Anywhere",  and "Any Device"  It is these characteristics
+which has made mobile technology  the essential  backbone  of mobile businesses  from mobile based commerce  to
+mobile based entertainment,  communication,  search, and location  information.
+Mobile commerce  is mobile business  that utilizes  mobile devices  like smartphones,  tablets,  and smart pads for trading
+goods, services,  and information
+<Table72>  Comparison  of M-Commerce  and E-Commerce
+Category E-Commerce M-Commerce
++ Fixed network + Mobile network
+Network .  High  speed  line . Relative  low speed line /
++ Rich applications + Provides  simplified  user experience
++ Stable quality  of communication + Relatively  unstable  communication  quality
++ Big screen + Relatively  small screen
+. + Alot of memory + Low memoryDevice
++ High speed processing + Low speed processing
+* Convenient  input/output  device + Input/output  device are unnecessary
++ Conducted  at home or office + Location  of the user must be determinedOthers ;
++ Personal  or public + Personal
+140 TOPCIT  ESSENCE

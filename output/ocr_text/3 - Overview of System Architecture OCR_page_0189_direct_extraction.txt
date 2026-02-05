@@ -1,0 +1,32 @@
+ESSENCE
+The congestion  avoidance  algorithm  additively increases  the congestion  window  size, until the congestion  stat is
+detected.
+Client Server
+—Coa =
+cwnd
+i=2 LL]
+Congestion  Window
+RIT
+i+1
+Congestion  Window
+RIT
+i+2
+Congestion  Window
+RIT
+ices} ]
+Congestion  Window
+Time Time
+[Figure 137] Concept  of Congestion  Avoidance
+© TCP timer
+TCP mostly  uses four timers  for its operation.
+<Table 65) Types  of TCP Timers
+Timer  Type Description
++ A retransmission  timer is set to a retransmission  time-out  (RTO) value, which is the time to wait for
+acknowledgement  by a segment  for retransmission  of a lost segment.
++ A persistence  timer is used for each TCP connection  to resolve  the deadlock  between  the receivingRetransmission
+Persistenceand sending  TCPs.
+Keepalive + Akeepalive  timer is used to prevent  TCP established  connections  from being idle for long periods  of
+time.
+Time-wait + Itime-wait  timer is used during connection  termination.  TCP performs  an active close, and the time-
+wait timer is activated  when sending  the last ACK.
+188 TOPCIT  ESSENCE

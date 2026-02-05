@@ -1,0 +1,247 @@
+LEARNING GUIDE: Pages 97-101
+Generated: 2025-12-05 10:49:33
+PDF: 2 - Understanding and Using Data OCR
+
+================================================================================
+LEARNING GUIDE
+================================================================================
+
+Here is a simplified, easy-to-read learning guide based on the provided text (Pages 97-101).
+
+---
+
+## Learning Guide: Data Management & Standardization
+
+This guide covers fundamental concepts of data structure, data management processes, data quality, and the importance of data standardization.
+
+---
+
+### Part 1: Data Structure & Management Fundamentals
+
+#### 1. Data Structure Concepts
+
+These models and components define how data is organized and stored.
+
+*   **Conceptual Data Model:**
+    *   **Purpose:** Defines the business view of data.
+    *   **Focus:** Key entities (main objects), relationships between them, and the overall subject area to meet business requirements.
+*   **Data Reference Model:**
+    *   **Purpose:** Standardizes data elements.
+    *   **Focus:** Defines standard data and control items by business/subject area to build data architecture, enable data model interoperability, and reuse existing models.
+*   **Logical Data Model:**
+    *   **Purpose:** Translates the conceptual model into a logical design.
+    *   **Focus:** Specifies logical data sets, control items, and relationships based on the conceptual model. (Independent of specific database systems).
+*   **Physical Data Model:**
+    *   **Purpose:** Implements the logical model for a specific database system.
+    *   **Focus:** Actualizes the logical model, considering the characteristics and performance of the chosen Database Management System (DBMS).
+*   **Database:**
+    *   **Definition:** The result of implementing a physical data model; a repository storing actual data.
+*   **User View:**
+    *   **Definition:** The interface or output (e.g., screen, report) of an information system that displays data to the user.
+
+#### 2. Data Management Processes
+
+These are activities involved in handling data throughout its lifecycle.
+
+*   **Data Standard Management:**
+    *   **Activity:** Defines, changes, and manages standard dictionaries (words, domains, terms, codes, data elements).
+    *   **Goal:** Cleans and improves data quality, ensures compliance with data standards.
+*   **Requirements Management:**
+    *   **Activity:** Collects, classifies, and incorporates user requirements into data, applications, and the overall system.
+*   **Data Model Management:**
+    *   **Activity:** Updates the data model to reflect changes from requirements; maintains consistency between the model and the database system structure.
+*   **Data Flow Management:**
+    *   **Activity:** Manages the entire process of creating source data, storing it, and processing it (e.g., extraction, transformation, loading - ETL).
+*   **Database Management:**
+    *   **Activity:** Ensures stable operation and management of a database.
+    *   **Includes:** Backup, security, performance tuning, and monitoring.
+*   **Database Security Management:**
+    *   **Activity:** Protects the database and its data from unauthorized access or actions.
+    *   **Includes:** User authentication, access control, log analysis, and auditing.
+*   **Data Utilization Management:**
+    *   **Activity:** Measures data quality by selecting specific data and quality metrics, then analyzes causes of non-compliance with quality requirements.
+
+#### 3. Data Quality Management Maturity Model
+
+This model helps systematically assess and improve an organization's data quality control.
+
+*   **Purpose:** Measures the level of data quality control based on objective criteria and provides guidelines for improvement.
+*   **Three Key Elements:**
+
+    1.  **Data Quality Standard:**
+        *   **Data Validation Aspects:** Accuracy, Consistency
+        *   **Data Utilization Aspects:** Usability, Accessibility, Timeliness, Security
+
+    2.  **Data Quality Control Process:**
+        *   Identifies processes needed to improve accuracy, consistency, usability, accessibility, timeliness, and security.
+        *   Some processes may correspond to one standard, others to multiple.
+
+    3.  **Data Quality Control Maturity Level:**
+        *   Defined on a scale of 1 to 5.
+        *   Higher levels indicate more systematic and sophisticated data management.
+
+---
+
+### Part 2: Data Standardization
+
+#### 1. Overview of Data Standardization
+
+**Data standardization** means establishing and applying consistent principles (name, definition, format, rule) for all data elements across an organization.
+
+*   **Why it's important:**
+    *   Data is crucial for strategic decision-making.
+    *   Unifies data elements dispersed across various systems.
+    *   Clarifies data meaning and resolves conflicting interpretations.
+
+#### 2. Necessity of Data Standardization
+
+*   **Improves Communication:** Ensures everyone uses and understands data names consistently.
+*   **Reduces Effort:** Makes it faster and easier to locate necessary data.
+*   **Enhances Data Quality:** Applies consistent data formats and rules, leading to higher quality data.
+*   **Lowers Costs:** Reduces expenses for data conversion and cleansing when integrating different information systems.
+
+#### 3. Components of Data Standardization
+
+*   **Core Components:**
+    *   Data standards themselves.
+    *   A dedicated data management organization.
+    *   Clearly defined data standardization procedures.
+*   **Target for Management:** Terms, words, domains, and codes.
+*   **Management Functions:**
+    *   **Data Standard Management:** Managing words, terms, domains, standard codes, and handling multiple standards.
+    *   **Data Structure Management:** Managing ER models, database schemas, variable attributes, history, and model comparisons.
+    *   **Process Management:** Managing the registration of standards and models.
+
+#### 4. Defining Data Standards
+
+Steps to create effective data standards:
+
+*   **Deriving Standard Words:**
+    *   **Process:** Split all existing terms into individual word units from across information systems. Extract words from entities and attributes.
+    *   **Management:** Reorganize homophones (same sound, different meaning) and synonyms (same meaning, different word). Manage words with logical and physical names.
+    *   **Dictionary:** The standard word dictionary should define relationships like synonyms and antonyms.
+*   **Word Split:**
+    *   Breaks collected terms into their basic, meaningful business words.
+    *   *Example:* "Resident registration number" → "resident" + "registration" + "number".
+*   **Processing Synonyms:**
+    *   Selects one representative word as the standard for words with the same meaning.
+    *   All final standard words must be unique in both their full name and abbreviation (e.g., in Korean and English).
+    *   *Example:* Unify "secret number," "passcode," "password" into "password."
+*   **Deriving a Standard Domain Dictionary:**
+    *   **Process:** Each attribute must be assigned to *one* specific domain (a set of allowed values for an attribute).
+    *   **Registration:** When a new attribute is added, its domain must be selected and registered.
+    *   *Example:* (Term) "Resident registration number" → (Domain name) "Registration number" → (Type) "Char(13)".
+*   **Deriving a Standard Code Dictionary:**
+    *   **Process:** Collect all codes used in the organization, then check and integrate identical codes to define standard codes.
+    *   **Usage:** New codes can be defined using these standard codes (e.g., defining a "wrapping paper color" code based on a standard "color code").
+*   **Deriving a Standard Term Dictionary:**
+    *   **Process:** Combine standard words (extracted from entities and attributes) to create standard terms.
+    *   **Reference:** Uses the standard word, domain, and code dictionaries to derive terms for current use.
+    *   **Structure:** Typically divided into an entity term dictionary and a property (attribute) term dictionary.
+    *   *Example:* (Standard words) "Customer," "classification," "code," "ID" → (Standard terms) "Customer classification code," "Customer ID".
+
+#### 5. Confirming Data Standards
+
+Reviewing data standards ensures their quality and effectiveness.
+
+*   **Targets for Review:** Standard word, domain, code, and term dictionaries.
+*   **Major Verification Criteria:**
+    *   **Uniqueness:** Each data standard is physically and semantically distinct.
+    *   **Completeness:** All necessary inputs for each data standard object are defined.
+    *   **Accuracy:** All input items for each data standard target are correctly entered.
+    *   **Generality:** The defined data standard can be applied consistently across multiple systems.
+
+---
+
+### Next Topic Preview: Relational Algebra
+
+This section introduces the foundational theory behind relational databases and SQL.
+
+**Concept:**
+Relational algebra is a set of operations used to process relations (tables) in a relational database. The key characteristic is that both the input (operands) and output (results) of these operations are always relations.
+
+**Importance:**
+Understanding relational algebra is crucial for efficiently using relational databases via query languages like SQL. Without this theoretical basis, SQL statements may not produce intended results or could lead to poor performance.
+
+**Learning Objectives:**
+
+1.  Explain the concept of relational algebra.
+2.  Utilize set operations (e.g., union, intersection) and relation operations (e.g., select, project, join).
+3.  Utilize extended relational algebra operations.
+
+**Keywords:**
+Relational operation, relational algebra, relational calculus, set operation, relational operation, join, extended relational algebra.
+
+---
+
+================================================================================
+ORIGINAL TEXT (First 5000 chars)
+================================================================================
+
+--- Page 97 ---
+ESSENCE
+B) Data structure
+@® Conceptual  data model: A model that defines  the subject  area, key entity, and key relationship  of the data that meet
+business  requirements.
+@ Data reference  model: A model that defines a set of standard  data and control items by business  area and subject
+area for the purpose  of establishing  and maintaining  the data architecture,  of interoperating  the data models used by
+organizations,  and of referring  to and reusing  other organization  data models.
+© Logical  data model: A model that defines the logical data set, control item, and relationship  by specifying  the
+conceptual  data model.
+@ Physical  data model: A model that actualizes the logical data model by considering  the characteristics  and
+performance  of the DBMS.
+© Database:  A result of implementing  a physical  model and a data repository  that stores actual build data.
+© User view: A screen or output of the information  system  that provides  data.
+C) Data management  process
+@ Data standard  management:  An activity  that cleans and improves  data by defining,  changing,  and managing  the
+standard  word dictionary,  domain dictionary,  standard  term dictionary,  standard  code, data-related  element  standard,
+etc., which are defined according  to the data standardization  principle,  into the form that is most suitable  for the
+institution, and by checking  compliance  with data standards.
+@ Requirements  management:  The task of collecting,  classifying,  and reflecting  user requirements  in the related
+applications  and the overall system  as well as data.
+@® Data model management:  The task of reflecting  the data structure,  which is changed by data requirements
+management,  in a model; and the task of maintaining  a data model in the same way as the database  system  structure.
+@ Data flow management:  The task of managing  the process  of manually  creating  source data, storing the data or
+processing  the data through  extraction,  conversion,  and loading.
+© Database  management:  The task of stably operating  and managing  a database.
++ This includes  such tasks as backup,  security,  tuning,  and monitoring,  etc.
+© Database  security  management:  The task of protecting  a database  and loaded data from a series of unauthorized
+actions.
+* This includes  such tasks as authentication,  access control,  log analysis,  and auditing.
+@ Data utilization  management:  The task of measuring  quality by selecting  the data to be measured  and the quality
+index and by analyzing  the cause of a failure to comply  with the quality requirements.
+D) Data quality  management  maturity  model
+To access data quality  control systematically,  the level of data quality  control should be measured  based on objective
+96 TOPCIT  ESSENCE
+
+
+--- Page 98 ---
+Database )
+criteria,  and a guideline  on what to prepare  to secure  a better  level is urgently  required.  The data quality management
+maturity  model, which was developed  to satisfy  these requirements,  is composed  of three key elements,  namely,  the
+data quality  standard,  the data quality management  process,  and the data quality  management  maturity  level.
+@ Data quality  standard
++ Data validation  aspect: Accuracy,  consistency
++ Data utilization  aspect: Usability,  accessibility,  timeliness,  security
+@ Data quality  control process
++ Processes  that are needed  to improve  the quality of accuracy,  consistency,  usability,  accessibility,  timeliness,  and
+security  are identified.
++ Sometimes,  there is a one-to-one  correspondence  between  the quality standard  and the data quality management
+process,  There are also processes  that are related to several quality standards  at the same time.
+@ Data quality  control maturity  level
++ The level is defined  from 1 to 5.
++ The higher the maturity  level, the more the data is managed  systematically  and elaborately.
+02 Data Standardization
+Data standardization  means  that principles  for the name, definition,  format, and rule of data information  elements  are
+established  and applied throughout  an organization.  It is indispensable  for improving  the clarity of communication  and
+data quality and for reducing  the cost of data conversion  and cleansing.
+A) Overview  of data standardization
+@ Recently, interest  in data integration  and data quality has been increasing  because  data have emerged  as a key
+element  of a corporation's  strategic  decision-making  process.
+@ Data standardization  means that the principles  for the name, definition,  format,  and rule of data information  elements,
+which are dispersed  in each system,  are established  and applied throughout  an organization.
+@ The exact meaning  of data can be  understood,  and opposite  opinions  about data can be adjusted  through data
+standardization.
+B) Necessity  of data standardization
+@ Improves  clarity of communication  by unifying  names.
+@ Reduces  the time and effort spent on finding  the l...

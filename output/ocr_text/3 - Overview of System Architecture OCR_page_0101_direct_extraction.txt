@@ -1,0 +1,36 @@
+ESSENCE
+Embedded  systems  control many devices  used in everyday  life. As shown in <Table 17>, embedded  systems  are used
+in a wide range of areas, from portable  digital watches  and health bands, to large fixed facilities,  such as traffic lights,
+factory  control devices,  and nuclear  power  plant control systems.H/W
+Micro Pr
+Memory-+
+I/O Device
+Network  DeviceS/W
+DS  - Keme
+System  Software
+Application  Software
+[Figure  71] Embedded  System  Configuration
+{Table 17) Examples  of Embedded  System
+Type Example
+Offices Telephone,  fax, copying  machine,  scanner,  and cutter
+Games Arcade and console  game machines
+Industry/control Automation  systems,  industrial  accident  diagnosis  systems,  and fire systems
+Vehicles/railways/transportation  | Engine controls,  navigators,  ITS controls,  and subway  electrical  controls
+Logistics/finance POS, ATMs, currency  exchange  indicators,  and card readers
+Medicine Diabetes  meters, ECG meters, and MRI systems
+Wearable Smartwatches  and health bands
+Digital advertising Signage  systems  and digital information  displays  (DID*)
+Aviation/shipbuilding
+Robots/dronesControl  systems,  signal systems,  and information  display  systems
+Industrial  controls,  education,  and aviation  filming  drones
+B) Characteristics  of embedded  system
+Since an embedded  system  performs  a specific  mission,  engineers  can optimize  the design in order to reduce  the size
+and production  cost and to increase  reliability  and performance.
+@ Low cost
+Many embedded  systems  are mass-produced  in units of millions  and the reduction  of production  costs is one of the
+crucial factors. Some embedded  systems  that do not require high processing  performance  or resources  can have a
+relatively  slow processor  and small memory  in order to reduce costs.
+@ Low performance
+Many embedded  system parts have low performance.  Here, being slow does not simply refer to a slow clock speed. In
+4 DID: Digital Information  Display
+100 TOPCIT  ESSENCE

@@ -1,0 +1,37 @@
+Project Management  and Technical  Communication  )
+ue is the budgeted  cost of work that has actually  been performed.  Earned  value is also called BCWP (Budgeted
+Cost of Work Performed).
++ EV, Earned Value = Value of work performed  = Budgeted  Cost of Work Performed
+B) Earned  value management
+Earned Value Management  (EVM) is a project  performance  management  technique  that analyzes  performance
+through  integrated  management  of project  schedule  and cost, and predicts  the cost and schedule  of the final
+project  at the present  time.
+Schedule  Performance pSVSia
+Cost Performance [ae]
+Estimated  at Completion  | =\© ©
+[Figure 38] Composition  of Earned  Value Management  (EVM)Va VAG
+EVM is a technique  to control project  performance  by integrating  cost and schedule.  The related terms are as
+follows:
+<Table 50> Key Terms of EVM
+Key Terms Explanation
++ The allocated  budget  for the work performed  to dateCee (Example)  5 days 80% (progress  rate) = 5*0.8 = 4 days
++ The approved  (planned)  budget  for the work performed  to complete  an activity  or
+PV: Planned  Value component  in the WBS
+(Example)  5 days
++ The costs actually  incurred  for the work completed
+ME AeuEllesst (Example)  Add 1 person and 1 day to the 5-day activity = 5 days*1 person + 1 day*1 = 6 days
++ Ameasure  of actual progress  against  expected  progress
+SV: Schedule  Variance + SV > 0: ahead of schedule,  SV < 0: behind schedule
++ SV=EV  - PV, 4-5 = -1 day, 1 day behind schedule
++ Ameasure  of actual progress  against  expected  progress
++ SPI=EV/PV
++ SPI > 1: on or ahead of schedule,  SPI < 1: behind scheduleSPI: Schedule
+Performance  Index
++ Ameasure  of actual cost against  the budgeted  cost
+CV: Cost Variance + CV  > 0: under budget,  CV < 0: over budget
++ CV=EV-AC,  4-6 = -2, 2 days over budget
++ Ameasure  of actual cost against  the budgeted  cost
++ CPI=EV/AC
++ CPI> 1: on or under budget,  CPI < 1: over budgetCPI: Cost Performance
+Index
+Mé6 Project  Management  and Technical  Communication  111

@@ -1,0 +1,221 @@
+LEARNING GUIDE: Pages 172-176
+Generated: 2025-12-05 14:09:25
+PDF: 5 - Understanding the IT Business and Ethics OCR
+
+================================================================================
+LEARNING GUIDE
+================================================================================
+
+Here is a simplified, easy-to-read learning guide extracted from the provided text:
+
+---
+
+## IT Business and Ethics: Key Concepts
+
+This guide covers modern IT technologies and the increasing importance of ethical responsibility in their development and use.
+
+### 1. 3D Printing Technology
+
+*   **Current Status:** Limited performance in some areas.
+*   **Future Outlook:** Rapid development expected due to:
+    *   New technology efforts.
+    *   Advancements in materials.
+    *   Expiration of critical patents.
+
+### 2. Wearable Devices
+
+**Definition:**
+*   Next-generation mobile technology, replacing smartphones.
+*   Electronic devices attached to the human body for convenience.
+*   Communicate with users from a close proximity.
+*   Offer superior portability, ease of use, and environmental adaptability compared to existing devices.
+*   Applications span fitness, healthcare, manufacturing, military, and infotainment.
+
+**Evolution & Types:**
+
+| Category          | Definition & Characteristics                                 | Core Technologies                                            |
+| :---------------- | :----------------------------------------------------------- | :----------------------------------------------------------- |
+| **Accessory**     | Like watches; utilize ultra-small/low-power systems. Ergonomic design to overcome discomfort. | Ultra-small sensors, high-capacity batteries, low power/high-performance SoC (System-on-Chip), flexible/transparent displays. |
+| **Apparel**       | Integrated into textiles; systems merged with fabric, circuits printed on flexible fabric. | Conductive thread, textile/fabric technology, fabric circuit boards, adhesive battery components. |
+| **Body Attachment** | Systems that attach to the skin; use flexible polymers.      | Polymer circuit boards, electronic component packaging, antenna and communication technology, attach/detach technology. |
+| **Body Transplant** | Electronic devices inserted into the human body; use biocompatible circuit boards. | Biometric sensor technology, electronic tattoo/capsule development, low power/miniaturization technology, human body integration. |
+
+**Importance & Drivers:**
+*   **IoT Growth:** Expanded interconnectedness of people, objects, and devices.
+*   **User Proximity:** Always connected to the user, hands-free operation, close to user's view/position.
+*   **Data Collection:** Enables collection of previously difficult data.
+*   **Customization:** Supports customized personal content and new services.
+
+**Challenges:**
+*   **Battery Life:** Short battery life restricts always-on use.
+*   **Content Limitations:** Limited content for small screens.
+*   **Lack of "Killer" Functions:** Absence of game-changing features or services.
+
+**Future Value & Convergence:**
+*   Convergence with IoT, Cloud Computing, Big Data, and Mobile Devices.
+*   **Sensing:** Wearable sensors gather Big Data.
+*   **Analysis:** Cloud analyzes gathered Big Data.
+*   **Services:** Analysis results inform customized user services.
+*   **New Markets:** Drives new business models (e.g., smart home, O2O commerce, smart car services).
+
+### 3. Self-Driving Cars
+
+**Definition:**
+*   Automobiles that drive safely autonomously, recognizing their environment and risks without driver intervention.
+*   Integrate **ICT** (Information and Communication Technology) like software, AI, communication, and sensor technologies to minimize human control.
+
+**Emergence Factors:**
+*   **Industry Collaboration:** IT companies and car manufacturers accelerate cooperation to integrate ICT.
+*   **Market Growth:** Rapid growth in electrical parts and telematics markets driven by demand for safety and convenience.
+*   **Network Improvements:** Advanced network and Internet tech allow cars to be recognized as new mobile spaces, offering new UX (User Experiences).
+
+**Levels of Autonomous Driving (SAE Standard):**
+
+| Level                        | Description                                                  | Sub Functions / Characteristics                                |
+| :--------------------------- | :----------------------------------------------------------- | :------------------------------------------------------------- |
+| **No Automation**            | Driver always monitors and controls all safety-sensitive functions (brakes, speed, steering). | Traditional car; driver fully aware, judges, and controls.     |
+| **Function-Specific Automation** | Driver controls most of the vehicle, but some functions are automated during normal driving or collision threats. | Driving assistant system providing info, warnings, and control support for safe driving/parking. |
+| **Combined-Specific Automation** | Two or more controls operate harmoniously. Driver still monitors, can override, and is responsible for safety. | Driver assist systems that combine multiple functions (e.g., adaptive cruise control with lane keeping). |
+| **Limited Self-Driving Automation** | Vehicle controls all safety functions under specific traffic environments. Vehicle has monitoring authority; driver takes over intermittently when an alarm sounds. | Infrastructure-linked autonomous driving, enabling autonomous operation on roads equipped with specific infrastructure. |
+| **Full Self-Driving Automation** | Vehicle controls all safety functions and monitors its own condition. Driver enters destination and driving settings. System is fully responsible for safe driving. | Smart car functioning like a robot, driving autonomously to a specific destination via a specific course. |
+
+**Key Technologies:**
+*   **Core Functions:** Recognition (of surroundings), Judgment (on driving decisions), Manipulation (of vehicle controls).
+*   **Integration:** These core functions integrate with:
+    *   **AUTOSAR (Automotive Open System Architecture):** A global standard for automotive software architecture.
+    *   **RTOS (Real-Time Operating System):** Operating systems for real-time computing tasks crucial for vehicle control.
+    *   **Functional Safety Technologies:** Systems designed to prevent and mitigate risks from system failures.
+
+### 4. Smart Machines
+
+**Definition:**
+*   Machines that act autonomously, possess intelligence and self-learning abilities.
+*   Can judge and adapt to different situations.
+*   Perform tasks previously thought impossible for non-humans.
+
+**Examples:**
+*   Digital voice assistants (Apple Siri, Google Home).
+*   Medical advisors for diagnosis or drug use.
+*   Robots performing assembly in factories.
+*   Self-driving cars.
+*   Expert advisors.
+
+**Key Concepts:**
+*   **Autonomous:** Learns by itself, generates rules, determines situations, makes optimal choices/judgments.
+*   **Automation:** Executes pre-determined procedures based on instructions.
+*   **Convergence:** Increasingly integrates with Big Data, AI, and Cloud Computing.
+
+**Direction of Development:**
+*   Evolving towards self-learning, rule creation, hypothesis validation, situational awareness, and discovering optimal solutions.
+*   Approaching the true concept of a "smart machine" capable of tasks beyond human ability (e.g., analyzing vast medical/judicial records, recommending decisions, supplementing human physical or cognitive abilities).
+
+### 5. Drones
+
+**Definition:**
+*   An unmanned aerial vehicle (UAV), aircraft or helicopter-shaped, flown by radio signals.
+
+**Origin & Evolution:**
+*   First developed for **military purposes** (e.g., target aircraft after WWII).
+*   Increasingly used in the **private sector**, especially when equipped with GPS or video devices.
+
+**Advantages:**
+*   **Accessibility:** Can reach places impossible or too hazardous for humans (e.g., underwater, deep oceans, areas with dangerous gases or radioactivity).
+*   **Autonomy:** Can operate in autonomous mode, recognizing surroundings and flying independently.
+*   **Versatility:** No restrictions on where they can go, enabling diverse applications.
+
+**Applications:**
+
+| Sector             | Description & Examples                                       |
+| :----------------- | :----------------------------------------------------------- |
+| **Distribution**   | Delivery services (Amazon Prime Air for 16km within 30 min, Domino's Pizza delivery). |
+| **ICT**            | Delivering Internet access in remote places (Facebook's drone concept for Wi-Fi). |
+| **Disaster Relief** | Gathering data from hazardous zones (Global Hawk in Fukushima nuclear reactor) and aiding recovery efforts (Haiti earthquake, Philippines typhoon). |
+| **Crime**          | Tracking stolen vehicles, investigating drug-related crimes (Seattle police). |
+| **Traffic Information** | Gathering traffic congestion and road obstacle information (Renault car with integrated drone). |
+| **Movies & Broadcasting** | Used for movie production and sports broadcasts (multicopters). |
+
+### 6. Recent Trends & Major Issues: Professional Ethics
+
+**Impact of IT Technology:**
+*   Causes rapid fluctuations across all industries.
+*   Maximizes convenience and efficiency in modern life.
+*   Services prioritize user convenience and interests.
+
+**Growing Concern:**
+*   Enhanced software intelligence leads to increased risks of misuse, abuse, and malicious use.
+
+**Importance of Ethics:**
+*   The ethical responsibility of IT business-related developers is critically increasing.
+*   It is essential to understand professional ethics in the IT business context.
+
+**Learning Objectives (for professional ethics):**
+1.  Describe the professional ethics expected of IT business workers.
+2.  Explain the principles and codes of professional ethics related to IT business.
+
+**Keywords:** Professional Ethics, Ethics, Work Ethics, Community Ethics, Ethics and Law.
+
+---
+
+================================================================================
+ORIGINAL TEXT (First 5000 chars)
+================================================================================
+
+--- Page 172 ---
+Understanding  the IT Business  and Ethics )
+Currently,  the 3D printing technology is showing  limited performance  on several technological  fronts. But rapid
+development  is expected  in the years to come because  of positive factors like the effort being put into developing
+new technologies,  advancements  being made in new materials,  and critical patents  whose rights are scheduled  to
+expire,
+@ Wearable  device
+The smartphone  market, which was on an explosive  growth  trajectory  since the introduction  of the iPhone in 2009,
+is now in its maturing  stage. At this point in time, the next-generation  mobile  technology  that is expected  to replace
+the smartphone  is the wearable  device. Wearable  devices are devices of various form factors that are designed  to
+be attached  to the human body to improve  the convenience  of use. Wearable  devices are electronic  devices  that
+are just worn on the body like an accessory,  but they are electronic  devices  that can communicate  with users from
+the closest  location  to the user's body. They provide  functions  that are clearly differentiable  from existing  devices  in
+terms of portability,  ease of use, and environmental  adaptability.  From fitness and well-being  to healthcare,  medical
+care, manufacturing,  military,  and infotainment,  wearable  devices  are being used in increasing  number  of applications.
+Wearable  devices began as an accessory  type device. But today, they are evolving into many different  forms,
+including  body attachment  type which is attached  to the human body, apparel-integrated  type which is integrated
+into textiles,  and body transplants,  which are devices  that are actually  inserted  into the human body,
+The different  types of wearable  devices  are summarized  in the table below.
+<Table 93> Types of wearable  devices”
+Category Definition  and Characteristics Core Technology
++ Wearable  devices  like watches. + Ultra-small  sensors  and high-capacity  battery
+Accessor + Utilize ultra-small/low  power system. + Low power, high performance  SoC
+ry * Overcome  discomfort  issue through ergonomic  | + Flexible, thin, transparent  display and interaction
+design. technology
++ Use system that is merged  with fabric + Conductive  thread,  textile, fabric technology
+Apparel + Application  of circuits printed on flexible  fabric. | +» Fabric circuit board and packaging  technology
++ Integration  with clothing/textile  products. + Adhesive  battery  component
++ Use systems  that attach to the skin + Polymer  circuit board and electronic  component
+Body a - packaging  technology
+. | oeAttachment . ree ileal a e polymers + Antenna and communication  technology
+8 + Material and attach/detach  technology
++ Transplantation  of electronic  device into the . .
++ Biometric  sensor  technology
+Body human body. + Development  of electronic  tattoo, capsule formTransplant + Use biocompatible  circuit boards :
+i . . r/miniaturi, In techi « Integration  with human body Low power/miniaturization  technology
+In recent  years, the growth of loT has greatly  expanded  the scope and the range of objects  (people,  objects,  devices,
+etc.) that could be interconnected.  This development  has led to the growing  importance  of wearable  devices  because
+such devices  are always connected  to the user’s network.  Because  they can free up the 2 hands of users and are
+always located close to the user's view and the user's position,  the role of wearables  will become  increasingly  more
+22 Source:  Directions  and Challenging  Tasks of Smart  Grid, Park Chan-guk,  NIPA, 2009
+M5 Understanding  the IT Business  and Ethics 171
+
+
+--- Page 173 ---
+ESSENCE
+important  and the collection  of data that was previously  difficult  to collect will become  possible.  Consequently,  the
+production  of customized  personal  contents  will become  possible,  opening  the floodgates  to new types of services.
+The problems  facing wearable  devices  are short battery  life which severely  restricts  the user's ability to appreciate  the
+value of always  wearing  the device, limited content  that can be implemented  in a small screen, and the lack of killer
+content  or services  and the lack of a game changing  function.  However,  wearable  devices  will be able to create core
+values if they converge  with loT, cloud computing,  Big Data, and mobile devices.  The sensing  functions  in wearable
+devices  can be used for gathering  Big Data, Big Data (cloud) analysis can be carried out on the gathered  data, the
+implications  from the analysis  results could be used in customized  services  for users. Also, new business  models like
+smart home service  based on loT, O20 commerce,  and smart car service  will create new markets  and expand  existing
+markets.
+© Self-Driving  Cars
+Self-driving  cars are defined as "automobiles  that can drive safely on their own by recognizing  the surrounding
+environment  on their own without  the driver's interventi...

@@ -1,0 +1,244 @@
+LEARNING GUIDE: Pages 136-140
+Generated: 2025-12-07 01:06:05
+PDF: 3 - Overview of System Architecture OCR
+
+================================================================================
+LEARNING GUIDE
+================================================================================
+
+Here's a simplified, easy-to-read learning guide based on the provided text:
+
+---
+
+## Learning Guide: System Architecture & Cloud Technologies
+
+This guide covers key concepts in virtualization, cloud platforms, and big data systems.
+
+---
+
+### I. Virtualization Technologies
+
+#### A. OS-Level Virtualization (Container Technology)
+
+1.  **Definition**:
+    *   A virtualization technology that makes a system appear to be running another OS on top of the host OS.
+    *   Uses the virtualization features built into the **host OS**, not a hypervisor.
+    *   **Container technology** allocates and isolates resources within the OS.
+
+2.  **How it Works**:
+    *   Containers share the **same host OS kernel**.
+    *   Each container is allocated resources (memory, storage, network) and operates independently.
+    *   The guest OS **must be the same** as the host OS.
+
+3.  **Characteristics**:
+    *   **Lighter** and more **portable** than traditional virtualization.
+    *   In Linux containers (LXC), user space is partitioned, limiting resources for each user process, while sharing the kernel space.
+
+4.  **Examples**:
+    *   Solaris Containers
+    *   FreeBSD Jails
+    *   Linux Docker
+
+5.  **Advantages**:
+    *   **Quick Start/Finish**: Very fast compared to hypervisor-based virtualization.
+    *   **High Density**: Minimal resource consumption; one OS can run many containers.
+    *   **Low Overhead**: User space isolated without full system emulation.
+    *   **Application Container Support**: Supports specific application configurations.
+
+6.  **Disadvantages**:
+    *   **Host OS-Dependent**: Containers are tied to the host OS.
+    *   **Kernel Configuration Limited**: Cannot configure a unique kernel for each container.
+
+7.  **Comparison: Hypervisor vs. OS-Level Virtualization**
+
+| Feature              | Hypervisor Virtualization                    | OS-Level Virtualization              |
+| :------------------- | :------------------------------------------- | :----------------------------------- |
+| **Hardware Use**     | Fully independent VMs                        | Uses host OS directly                |
+| **OS Independence**  | Guest OS fully independent of host OS        | Guest OS must be same as host OS     |
+| **Performance**      | High overhead (but hardware virtualization improves) | Low overhead                         |
+| **Management**       | Separately managed for each VM               | Centralized management of common software |
+| **Heterogeneity**    | Heterogeneous integration (e.g., Linux & Windows mixed) | Resource integration in a single OS environment |
+| **Technologies**     | Xen, MS Virtual Server, KVM                  | Solaris, LXC, Docker                 |
+
+#### B. Storage Virtualization
+
+*   **Definition**: Provides an environment to use heterogeneous storage systems by virtually allocating only the minimum required space (using **thin-provisioning**) instead of configuring all required storage upfront.
+
+#### C. Network Virtualization
+
+*   **Definition**: Implements network devices (L2/L3/L7 switches, firewalls, security devices) as **virtual machines**.
+*   Allows network resources to operate separately through internal virtualization, even within a shared physical environment.
+
+---
+
+### II. Cloud Platforms & Technologies
+
+#### A. Cloud Platform Definition
+
+*   A cloud operating system that collects, controls, and operates resources like servers, storage, networks, and virtualization technologies.
+
+#### B. Openstack
+
+1.  **Definition**:
+    *   An **open-source project** developing software blocks for building public and private cloud computing platforms.
+    *   Refers to the community (developers, enterprises, users) aiming to implement and operate open-source cloud computing.
+    *   Establishes industry standards for cloud platforms, independent of equipment type or vendor.
+
+2.  **Main Openstack Projects (Components)**:
+    *   **Nova**: Core component for automatic control and operation of large-scale virtual computer instances.
+    *   **Swift**: Implements large-scale, reliable cloud **object storage** services.
+    *   **Glance**: Stores, registers, manages, and delivers virtual disk image files.
+    *   **Keystone**: Integrated **authentication and authorization** system.
+    *   **Cinder**: Provides **block storage**, including volume replication and snapshot support.
+    *   **Ceilometer**: Mirroring support (often used for monitoring/metering).
+    *   **Horizon**: Self-service portal (dashboard).
+    *   **Heat**: Orchestration service for system restoration and recovery.
+    *   **Neutron**: Provides **network services**.
+    *   **Trove**: Delivers **database services**.
+    *   **Sahara**: Supports Spark/data processing and Hadoop.
+
+#### C. CloudStack
+
+*   An open-source cloud computing project developed by cloud.com and managed by the Apache Foundation.
+
+#### D. Kubernetes
+
+*   **Definition**: An **orchestration platform** for container management and operation.
+*   Originally open-sourced by Google based on its internal operational knowledge.
+*   Allows developers to manage and schedule multiple containers across nodes using **declarative programming**.
+*   The **Kubernetes Control Plane** automatically maintains the specified system state.
+
+#### E. Mesos
+
+*   **Definition**: A **resource management project** that integrates and manages cloud infrastructure and computing engine resources.
+*   Groups distributed computing resources into a single resource pool.
+*   Allocates instances to run application programs when requested by a user.
+*   **Frameworks**:
+    *   **Marathon**: Allocates resources and creates jobs.
+    *   **Chronos**: Responsible for scheduling.
+
+---
+
+### III. Big Data Systems
+
+#### A. Recent Trends & Issues
+
+*   **Evolution**: We've moved from Big Data 1.0 (quantitative explosion) to Big Data 2.0 (creating practical value).
+*   **Hadoop 2.2**: Led to more sophisticated technology and diversified professional services.
+*   **Demand**: Rapidly increasing adoption by large companies, especially in financial and service industries.
+*   **Usage**: Companies are moving beyond simple data collection to practical business use through pilot tests.
+*   **Government Role**: Policies promote R&D, professional training, industry-academia governance, and public data disclosure.
+*   **Challenges**: Expansion has led to side effects like privacy infringement and personal profiling. New concepts for personal data use and comprehensive policy support are needed.
+
+#### B. Big Data System Structure: Hadoop Ecosystem
+
+1.  **Hadoop Definition**:
+    *   Abbreviation for "High-availability distributed object-oriented platform."
+    *   A **Java-based framework** for distributed processing of large data volumes across multiple distributed storage systems.
+    *   Initial solution included HDFS and MapReduce.
+
+2.  **Core Components (Initial Solution)**:
+    *   **Hadoop Distributed File System (HDFS)**: For distributed storage.
+    *   **MapReduce**: For distributed processing.
+
+3.  **Hadoop Ecosystem Overview (Key Modules)**:
+    *   The original HDFS and MapReduce were difficult for non-specialists.
+    *   The **Hadoop Ecosystem** bundles various peripheral modules to support data integration, migration, application management, and system management, making Big Data more accessible.
+    *   **Key Modules (as depicted in Figure 100)**:
+        *   **HDFS**: Distributed File System
+        *   **MapReduce**: Processing Framework
+        *   **YARN**: Resource Management / Job Scheduling
+        *   **Hive**: Data Warehousing (SQL-like queries)
+        *   **Pig**: High-level data flow language
+        *   **Spark**: Fast, in-memory processing
+        *   **Kafka**: Distributed streaming platform
+        *   **Storm**: Real-time data processing
+        *   **Zookeeper**: Centralized service for distributed coordination
+        *   **Flume**: Collecting/moving log data
+        *   **Sqoop**: Transferring data between Hadoop and relational databases
+        *   **Oozie**: Workflow scheduler for Hadoop jobs
+
+================================================================================
+ORIGINAL TEXT (First 5000 chars)
+================================================================================
+
+--- Page 136 ---
+Overview  of System Architecture )
+@ OS-level  virtualization
+It is a virtualization  technology  that makes the system look like it’s using another  OS on the OS. It uses the
+virtualization  technology  included in the OS, instead of a hypervisor.  The container  technology  that allocates  and
+isolates  the resources  included  in the OS has gained interest.  The leading  OS-level  virtualization  technologies  include
+Solaris Containers,  FreeBSD  Jails, and Linux Docker. The guest OS must be the same as the host OS, since it uses
+the OS's container  function, instead of a hypervisor.  Containers  on the OS are allocated  resources,  such as memory,
+storage,  and network,  which are independently  operated  between  containers.
+| Application  2 | | Appiiation  2
+| Application  1 | | Application  1
+Container Container
+[Figure  99] OS-Level  Virtualization
+Container  virtualization  technology  can be characterized  as being lighter and more portable  than existing
+virtualization  technologies.  In Linux containers  (LXC), there is kernel space for managing  physical resources,  and a
+user space for executing  user processes  inside the OS. The container  virtualization  technology  partitions  the user
+space into ten and limits the resources  visible in each user process.
+<Table 30) Comparison  of Hypervisor  Virtualization  and OS-Level  Virtualization
+Classification Hypervisor  Virtualization OS-Level  Virtualization
+Hardware : .independence Fully independent  in VM Use of host OS
+OS independence Fully independent  from host OS Host OS to be the same as the guest OS
+High overhead
+Performance Application  of hardware  virtualization  to improve No overhead
+performance
+Management Separately  managed  for each VM Centralized  management  of common  software
+pear Heterogeneous  integration a : .Application Linux and Windows  mixed Resource  integration  in a single OS environment
+Virtualization -technologies Xen, MS Virtual Server, and KVM Solaris,  LXC, and Docker
+OS-level  virtualization  (container  virtualization)  has the following  advantages:
+* Quick start and finish: Very fast compared  to hypervisor-based  virtualization
++ High density:  Minimized  resource  consumption,  since an OS can operate  multiple  containers
++ Low overhead:  Userspace  isolated  without  emulation
+M3 Overview  of System  Architecture  135
+
+
+--- Page 137 ---
+ESSENCE
++ Support  for application  container:  Application-specific  container  configuration  support
+OS-level  virtualization  has the following  disadvantages:
++ Host OS-dependent
++ Not possible  to configure  the kernel for each container
+04 Storage  and Network  Virtualization  Technologies
+A) Storage  virtualization
+It enables  service  implementation  by virtually  allocating  only the minimum  space initially required,  with thin-
+provisioning  technology,  instead of configuring  the required  storage space. Moreover,  it provides  an environment  to
+use heterogeneous  storage  system integration.
+B) Network  virtualization
+It implements  L2, L3, and L7 switches,  network  firewalls,  and security  devices  that existed in the form of hardware
+appliances  as virtual machines.  It enables  networking  resources  to operate  separately  through  internal virtualization,
+even in a shared physical  environment.
+05 Cloud Platform
+A) Definition  of cloud platform
+A cloud platform is a cloud operation system to collect, control, and operate resources,  such as servers,  storage,
+networks,  and virtualization  technologies.
+B) Openstack
+Openstack  is an open-source  project that develops  all software  blocks needed to build public and private cloud
+computing  platforms.  It also refers to the community  of open-source  developers,  enterprises, and users that want to
+implement  and operate  cloud computing  with open source. Moreover,  Openstack  establishes  industry  standards  for
+cloud computing  platforms,  independent  of the equipment  type or vendor's  implementation  technology.
+@ Main Openstack  projects
++ Nova: The core component  for automatic  control and the operation  of large-scale  virtual computer  instances
++ Swift: Implementation  of large-scale,  reliable  cloud object storage  services
++ Glance: Storage,  registration,  management,  and delivery  of virtual disk image files
++ Keystone:  Integrated  authentication  and authority  system
++ Cinder: Volume  replication,  snapshot  support,  and block storage
+136 TOPCIT  ESSENCE
+
+
+--- Page 138 ---
+Overview  of System Architecture )
++ Ceilometer:  Mirroring  support
++ HoriZone:  Self-service  portal
++ Heat: Restoration  and system recovery
++ Neutron:  Network  service
++ Trove: Delivery  of database  services
++ Sahara: Support  for Spark/data  process  and Hadoop
+C) CloudStack
+- CloudStack  is the cloud computing  open-source  project developed  by cloud.com  and managed  by the Apache
+Foundation  by Citrix.
+D) Kubernetes
+Kubernetes  is an orchestration  platform  for container  manage...

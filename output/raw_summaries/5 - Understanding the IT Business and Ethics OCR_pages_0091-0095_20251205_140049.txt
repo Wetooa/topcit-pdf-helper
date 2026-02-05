@@ -1,0 +1,202 @@
+LEARNING GUIDE: Pages 91-95
+Generated: 2025-12-05 14:00:49
+PDF: 5 - Understanding the IT Business and Ethics OCR
+
+================================================================================
+LEARNING GUIDE
+================================================================================
+
+Here is a simplified, easy-to-read learning guide based on the provided text:
+
+---
+
+## IT Business and Ethics: Key Concepts
+
+### 1. SCM vs. ERP
+
+| Category           | SCM (Supply Chain Management)                        | ERP (Enterprise Resource Planning)                       |
+| :----------------- | :--------------------------------------------------- | :------------------------------------------------------- |
+| **Key Viewpoint**  | Planning and decision-making for the supply chain.   | Work process-centered within the enterprise.             |
+| **Data Handling**  | Process-centered.                                    | Transaction-centered.                                    |
+| **Major Functions**| Demand forecasting, order/purchasing/distribution/warehouse management. | Purchasing, production, raw materials, finance, accounting, sales, HR. |
+| **Industrial Sector**| Manufacturing and distribution.                      | Manufacturing, public organizations, finance.            |
+| **Enterprise Size**| Even small manufacturers can benefit (e.g., reduced inventory). | Mainly for conglomerates. SMEs should consider ROI.      |
+| **Benefits**       | Integrates sales opportunities into production/demand planning, improves inventory management. | Faster work processing, labor cost savings.              |
+
+---
+
+### 2. SCM Deployment Effects
+
+*   **Goal:** Real-time information linkage between customer, company, and component suppliers.
+*   **Benefits:**
+    *   **Reduced Inventory:** Significant reduction in supply stock (e.g., Dell reduced from 8 weeks to 12-15 days).
+    *   **Improved Customer Satisfaction:** Increased delivery capacity, reduced order processing time, strict adherence to schedules.
+    *   **Reduced Logistics Costs.**
+    *   **Improved Fund Flow Efficiency:** Standardized work, reduced product delivery and order processing times.
+
+---
+
+### 3. Understanding CRM (Customer Relationship Management)
+
+*   **Definition:** A management strategy system to understand customer tendencies and requirements, enabling product creation and effective marketing strategies.
+*   **Why CRM is Essential Today:**
+    *   Customers have more product/service knowledge.
+    *   Higher customer expectations and churn rates.
+    *   Businesses need customer-centric structures, diverse interaction channels, and profit-driven customer management.
+*   **Method:** Enterprises analyze customer behavior and consumption patterns, consolidating internal/external data to derive insights (e.g., using Big Data).
+
+#### Customer Life Cycle in CRM
+
+CRM helps manage customers through stages to maximize their **Customer Lifetime Value (CLV)** – the total value generated throughout their relationship, not just individual transactions.
+*   **Potential Customer:** Shows initial interest.
+*   **Responsive Customer:** Reacts to marketing efforts.
+*   **Purchasing Customer:** Buys products.
+*   **High-Value Customer:** Highly loyal and profitable.
+*   **Low-Value Customer:** Less profitable or loyal.
+*   **Lost Customer:** No longer engaging with the business.
+*   **Forced-Departure Customer:** The company terminates interaction.
+
+#### Definition of CRM (Gartner)
+*   **Core Idea:** A strategy to optimize sales and expand the customer base by creating and supporting relationships with profitable customers.
+*   **Process:** Integrates and analyzes customer data (internal and external) to provide findings to customer contact points, enabling effective interactions. This ensures customers receive desired products/services based on accurate understanding, maximizing CLV and profitability.
+
+#### CRM Classification
+
+CRM is typically classified into three types for better understanding:
+
+1.  **Analysis CRM:**
+    *   **Concept:** Gathers and analyzes data from customer interactions to derive meaningful insights for the enterprise. Often linked to a **Data Warehouse (DW)**.
+    *   **Components:** Enterprise-wide DW, Data Mining, OLAP (Online Analytical Processing).
+    *   **Considerations:** Providing analysis techniques to identify customer needs, building a knowledge base, ensuring data reliability.
+
+2.  **Operational CRM:**
+    *   **Concept:** Uses insights from Analysis CRM to support customer management at contact points, integrating marketing, service, and sales activities. Automates front-office business processes.
+    *   **Components:** Marketing information management, Campaign system, SFA (Sales Force Automation), Customer service system.
+    *   **Considerations:** Integrating processes across channels, unified management of customer contact history, rapid development of business functions, access to back-office systems.
+
+3.  **Collaboration CRM:**
+    *   **Concept:** Manages customer interaction channels. Facilitates improved communication and task consolidation between customers, the company, and internal departments.
+    *   **Components:** Call Center, Mobile collaboration system, eCRM (electronic CRM).
+    *   **Considerations:** Diversifying channels, providing a uniform service across all channels.
+
+*   **Overall Goal:** While categorized for understanding, CRM's ultimate aim is to deeply understand customer minds, requiring robust data analysis, business support systems, and diverse interaction channels.
+
+#### Configuration of the CRM System
+
+*   **Information Flow:** Starts and ends at the **customer point of contact (channel)**.
+*   **Role of Channels:** Collects **VoC (Voice of Customer)** and communicates internal process results back to the customer. This makes channels crucial for identifying CRM components.
+*   **Key Components:**
+    *   **Customer Data Warehouse:** Central storage for all customer data; used by all CRM elements.
+    *   **OLAP & Data Mining:** Tools for diverse customer analysis, identifying relationships, and supporting decision-making (e.g., customer acquisition).
+    *   **Campaign System:** Develops tailored services and recommends profitable business directions.
+    *   **Channel System:** Provides 1:1 or 1:N marketing support (e.g., call centers, email, direct mail).
+    *   **Sales Force Automation (SFA):** Supports sales staff with planning, management, performance evaluation, and direct sales activities.
+    *   **Customer Service System:** Uses VoC for customer service and product maintenance (A/S).
+
+#### Effects of CRM Deployment
+
+*   **Improved Customer Relationships:** Increases loyalty and prevents customer churn.
+*   **High-Quality Services:** Provides tailored services by analyzing customer tastes.
+*   **Increased Sales:** Induces linked sales and upstream sales.
+*   **Competitive Edge:** Builds differentiated policies for products and services based on customer insights.
+
+| Benefit Area                | Specific Advantages                                       |
+| :-------------------------- | :-------------------------------------------------------- |
+| **Marketing Opportunity**   | - Attracts new customers, invigorates existing base.      |
+|                             | - Increases earnings and customer lifetime values.        |
+|                             | - Enables effective marketing based on customer life cycle. |
+| **Marketing Management**    | - Develops products meeting customer requirements and market changes. |
+|                             | - Improves products based on market reactions/results.    |
+| **Customer Service**        | - Strengthens customer loyalty.                           |
+|                             | - Manages customer satisfaction and service effectively.  |
+| **Customer Channel Management** | - Secures optimal channels meeting customer requirements. |
+|                             | - Minimizes customer management costs.                    |
+
+---
+
+### 4. Understanding PLM (Product Lifecycle Management)
+
+*   **Definition:** A solution that uniformly manages a product's entire lifecycle, from design drawings to final product and post-sales services.
+*   **Goal:** Increase product added value and reduce costs throughout the process.
+*   **Detailed Definition:** A support system that integrates and manages all product-related information (drawings, documents, CAD/CAM, parts, design changes, process information) generated across the enterprise's product development and manufacturing lifecycle.
+*   **Configuration:**
+    *   PLM includes not only initial product planning but also **post-sales services** provided to customers.
+    *   Its key role is managing an individual product's complete cycle from planning to sale.
+    *   Requires organic support from other work support systems.
+    *   Visualizing the product's entire life cycle helps understand PLM components.
+
+---
+
+================================================================================
+ORIGINAL TEXT (First 5000 chars)
+================================================================================
+
+--- Page 91 ---
+ESSENCE
+<Table 39> Comparison  of SCM and ERP
+Category SCM ERP
+Key viewpoint Planning  and decision  making Work process-centered
+Datahandling Process-centered Transaction-centered
+Demand  forecasting,  order management/; - rchasi . .
+Major functions  __ planning, distribution  management,  warehouse Purchasing,  production,  raw materials,  finance,accounting,  sales, HRmanagement
+Industrial  sector + Manufacturing  and distribution Manufacturing,  public organization,  finance
+; . Even small manufacturers  can see benefits  inthe Mainly  operated  by conglomerates.  SMEs should
+Size of enterprise . :form of reduced  inventories. consider  RO! before adopting.
+Benefits of Production  planning  and demand  forecasting  that
+x a 7 otion factor in sales opportunities.  Benefits  for inventory Faster work processing  time, labor cost savings.
+management.
+@ SCM deployment  effects
+Dell Computer,  the most successful  company  in introducing  SCM, said that after adopting  SCM it became  possible  to
+link information  between  customer,  company,  and component  suppliers  in real time, and reduced  its inventory  from 8
+weeks’  worth of supplies  to 12 ~ 15 days’ worth of supplies.
++ The introduction  of supply chain management  can improve  customer  satisfaction  by increasing  transportation
+delivery  capacity and reducing  inventory,  reduce logistics  costs, and reducethe  customer  order processing  time
+through  strict adherence  to delivery  schedules.
++ It can also improve  the efficiency  of fund flow by standardizing  work and by reducing  the product  delivery  time and
+the order processing  time.
+F) Understanding  CRM
+CRM stands for customer  relationship  management.  It is a management  strategy  system for studying  customers’
+tendencies  and requirements  in advance  in order to create the products  that customers  want and to develop
+marketing  strategies.
+Because  today’s customers’  knowledge  of product  and service information  has vastly increased  and customer
+expectations  and customer  churn are higher than ever before, enterprises  are compelled  to establish  new business
+management  strategies,  such as adopting  a customer-centric  corporate  structure,  establishing  diverse customer
+interface  channels,  and implementing  customer  management  that leads to better  earnings.
+To implement  these strategies,  enterprises  must analyze  customer  behavior  patterns  and consumption  patterns.  In
+recent  years, enterprises  have felt the need to consolidate  internal/external  data and analyze  markets  and customers
+to derive insights.  Big Data analysis  is a good example  of this.
+90 TOPCIT  ESSENCE
+
+
+--- Page 92 ---
+Understanding  the IT Business  and Ethics )
+High value cus-eyo oecet) Interested Purchasing  Customer Lost Cus-
+Customer Customer tomer
+tomer Low value cus-
+tomer
+Responsive NewCus- _» Potential  valueee Steihet Customer tomer customerForced-depar-
+Low value cus- ture customer
+tomer
+[Fig. 33] Life cycle of enterprise  customers
++ Enterprises  can gain opportunities  to acquire new customers  through  focused marketing  or promotional  activities
+that target responsive  customers  among potential  customers  in the target market who show interest  in their
+products.
++ Enterprises  should strategically  manage  customers  who purchase  their products  as well as high-value  (highly loyal)
+customers.  To this end, enterprises  should have a system in place that can sort their customers  based on such
+criteria  as personality,  type, and interests,  and provide  their services  and conduct  their marketing  accordingly.
++ This requires  an entity to establish  a strategy  for maximizing  customer  lifetime  value, i.e. the total value generated
+throughout  the customer's  lifecycle, rather than the temporary  profitability generated  by individual  transactions.
+This is the goal of CRM.
+© Definition  of CRM
+The CRM defined by Gartner  is ‘a strategy  for optimizing corporate  sales and expanding  the customer  base by
+creating  and supporting  relationships with profitable  customers.  In other words, CRM is a management  technique
+that integrates  and analyzes  customer  data across the enterprise  and customer-related  data inside and outside  the
+enterprise,  and then provides  the findings  to customer  points of contact  for use in interactions  with the customers.
+This is an integrated  process  that enables  enterprises  to continually  deliver the products  and services  customers
+want, based on an accurate  understanding  of the customers,  thereby  maximizing  customer  lifetime value and
+increasing  profitability.
+@ CRM Classification
+From  a process  perspective,  CRM collects  and analyzes  the various data generated  by the entity and provides  it with
+meaningful  information.
+CRM can be classified  as analysis  CRM, operations  CRM, or collaboration  CRM. With analysis  CRM, information
+generated  through interactions  with customers  is g...

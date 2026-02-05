@@ -1,0 +1,32 @@
+ESSENCE
+The number  of keys to manage  increases  as
+Shortcomings many as the number  of users.
+The key changes  frequently.Slow encryption/decryption  time.
+Long key length.
+The key does not change  frequently.
+F) Hash function
+@® Concept  of the hash function
+A hash function,  or a hash algorithm,  is a mathematical  function  that outputs  a short hash value (hash code)
+with a fixed length from random data of various sizes, as shown in Figure 10. That is, the hash function
+compresses  an input string with a random length into a string with a fixed, short length. For example,  HAS-160
+(Hash Algorithm  Standard  160), SHA-1 outputs  a 160-bit  result.
+| A bit string with certain length Output with fixed short length
+@
+Ff 1010011010110...
+10101011010100... oughOY Hash valuewe 10101011010010...  weg qadlaid 10101011010000...
+[Figure 10] Hash function
+The cryptographic  algorithm  uses keys, but the hash function  does not use keys. Therefore,  the same input
+always produces  the same output. The hash function  with this characteristic  is used to verify the integrity  that
+detects  the error in or tampering  of the message  by extracting  the unalterable  evidence  value for the input
+message.
+@ Properties  of the hash function
+Since the operating  algorithm  of the hash function  is simple, it is easy to calculate  h(x), when function  h and
+input x are given, and system resources,  such as a CPU and memory,  are consumed  relatively  less. Also, the
+hash function  should have the basic properties  described  in <Table 5> from the aspect  of stability.
+<Table 5> Basic properties  of the hash function
+Property Characteristics
+Pre-image  resistance + When y is given, it is difficult  to find x where h(x)=y.
+2nd pre-image  resistance * Given h(x)=y, it is difficult  to find x where h(x’)=y  (however,  x#x’).
+Collision  resistance + It is difficult  to find x and x’ (however,  x#x’) where h(x)=h(x’)
+The hash function is widely used in the security  field because  of its characteristic  that the original  text cannot be
+30 TOPCIT  ESSENCE

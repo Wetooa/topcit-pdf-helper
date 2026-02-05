@@ -1,0 +1,39 @@
+Overview  of System Architecture )
+03 Embedded  Software
+A) Definition  of embedded  software  and technology  application
+Embedded  software  refers to software  installed  in embedded  systems.  As the application  fields of embedded  systems
+diversify,  embedded  software  is becoming  increasingly  complex  to handle  various  functions.
+As shown in <Table 20>,
+applications,  embeddedthe main technology  fields of embedded  software  can be classified  into basic embedded
+middleware,  embedded  system software,  embedded  system development  tools, and
+embedded  software  platforms.
+Table 20) Technology  Fields and Examples  of Embedded  Software
+Technology  Application Example
+Basic embedded
+applicationMultimedia  player, MAP viewer, browser,  PIMS, game, mobile shop, and CNS (GPS, GIS)
+Embedded  middleware- Distributed  middleware,  such as CORBA,  COM XML, and TMO.
+~ Java middleware,  such as JVM and J2ME
+- Control middleware,  such as Jini, UPnP, and Havi
+- Multimedia  middleware,  such as streaming  and codec
+- Communication  middleware,  related  to WLAN and WPAN
+Embedded  system Embedded  OS, device  driver, wired/wireless  communication  protocol  and multimedia  protocol
+software support  library, and embedded  DBMS
+Embedded  system Design  tool, test tool, IDE, target system  resetting  tool, simulator,  cross compiler,  real-time  remote
+development  tool monitor,  remote  monitor,  and device driver toolkit
+Embedded  softwareplatform MS .net compact  framework,  Sun ONE, Brew, and WIPI
+B) Characteristics  of embedded  software
+Embedded  software  is embedded  in a physical product  and continuously interacts  with the physical  environment.
+In other words, it must continuously  receive and process signals from the physical  environment.  In some cases,
+it is necessary  to receive the user’s requirements  and respond  to them, by considering  changes  in the physical
+environment.  There are also cases, such as computers  and smartphones,  where it only responds  to user requirements.
+Therefore,  embedded  software  has characteristics,  such as reactivity,  timeliness,  concurrency,  heterogeneity,  liveness,
+resource  and environmental  constraints,  and determinism.  <Table 21> below shows features  of each characteristic.
+{Table 21) Characteristics  of Embedded  Software
+Technology  Application Example
+Embedded  software  should continuously  interact  with physical  environmental  changes,  by
+REEEBUBY converting  input data into output data at a specific speed.
+Timeliness The time required  to convert  input data into output  data should be within the very short allowable
+range.
+Embedded  software  should be able to process  input data, generated  by the concurrent  physicalConcurrency -environmental  changes.
+Heterogeneity Embedded  software  should effectively  process  data from hardware  or software.
+M3 Overview  of System  Architecture  105

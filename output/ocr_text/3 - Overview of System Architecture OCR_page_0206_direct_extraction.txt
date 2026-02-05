@@ -1,0 +1,37 @@
+Overview  of System Architecture )
+Signaling
+Gateway— IP Device
+RTP/RTCP
+H.323,SIP @ SS7-@- -m-
+SiGTran
+aot MGCP/
+@ =e @> « > «
+RTP / RTCP
+7 IP networkMedia r
+GatewayPSTN PSTN
+SSP Bs sa «< >
+[Figure 142] VoIP System  Structure
+B) VoIP call signal protocol
+VoIP call signaling  protocols  include SIP (Session  Initiation  Protocol)  and H.323. The SIP protocol  is an application
+layer signaling  protocol  that specifies  a procedure  for intelligent  terminals  that are communicating  on the Internet  in
+order to identify  each other, find their locations,  and create or delete a multimedia  communication  session between
+them. The H.323 protocol  is an ITU-T standard  for providing  voice, data, and video services  on a LAN that does not
+guarantee  quality. Startup  VoIP service providers  use it widely because  it can provide multimedia  services  without
+changing  the existing  network's  underlying  structure.
+@ SIP
+SIP is an application  layer signaling  protocol,  used to establish,  modify, and terminate  multimedia  sessions.  It operates
+independently  of the lower-layer  transport  protocols  and has scalability  as an HTTP text-based  protocol.
+It controls  sessions  to enable call control in a circuit-switched  data network  in a packet-switching  network  and
+multimedia  applications  on the Intemet,  which is a packet network.  It can support  text-based  addressing  methods  in
+URL and E-mail format  and message  parsing  or extension.
+(Figure 143] shows the SIP protocol  stack located on top of the transport  layer protocols  TCP and UDP<Table  74>
+shows the SIP protocol  components.
+SIP API
+Audio Video
+SIP Codec Codec
+RTP { —sRTP/RTCP Cd; RTCP
+TCP / UDP UDP }
+IP
+Physical
+[Figure 143] SIP Protocol  Stack
+M3 Overview  of System  Architecture  205

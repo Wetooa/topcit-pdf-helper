@@ -1,0 +1,37 @@
+Database )
+01 What is a Transaction
+A) Concept  of a transaction
+@A transaction  is a set of several operations  constituting  a logical task unit, which converts  a consistent  state of the
+database  to another  consistent  state.
+@A transaction  is also a unit of performing  a series of read and write operations  in a database,  which should be
+performed  at the same time.
+Unit of business  processing
+(LOGICAL  UNIT OF WORK)
+Start of transaction End of transaction
+Read Modify Delete
+[Figure  42] Conceptual  diagram  of a transaction
+B) ACID properties  of the transaction
+<Table  48> Transaction  properties
+Characteristics Cases of violating  ACID
++ Cheolsu  has to process  the task of entering  10 data as one transaction.  However,  he successfully  enters 9
+Atomicity data but fails to input one datum.
+~All data should be successfully  entered  or failed in one transaction.
++ Ganghee  performs  an SQL operation  with the logic of column 1+ column 2 + column  3 - Column  4, but
+the result varies each time he performs  the operation.
+Consistency —The transaction  result should always be the same expected  value. A transaction  should be controlled
+using Lock, Timestamp,  Validation,  etc. to prevent  other transactions  from intervening  in the middle  of
+processing  the transaction.
++ Younghee  is performing  the task of modifying  100 data and the 35th datum is being updated  in a
+database,  but Cheolsu  accesses  the first modification  datum and modifies  it again.
+Isolation —Another  transaction  should not intervene and process the data until transaction  commit or rollback is
+issued,
++ Cheolsu  has entered 10 items of member  information  and successfully  committed  the transaction,  but
+Durability the data are lost due to a temporary  power failure.
+—The persistence  of a successful  transaction  should be guaranteed.  In this case, the data should be
+restored  using the forward  recovery  algorithm.
+C) when finishing  a transaction
+@ Transaction  commit  operation:  An operation  that completes  a transaction  after permanently  reflecting  the results of
+all SQL statements  in the transaction  to the database.
+@ Transaction  rollback operation:  An operation  that restores  all data values that have been modified by a transaction
+so far to the state prior to executing  the transaction  (that is, aborting  the transaction), when the transaction  cannot
+M2 Database 123

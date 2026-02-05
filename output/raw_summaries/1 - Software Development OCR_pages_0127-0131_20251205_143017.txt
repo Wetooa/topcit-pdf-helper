@@ -1,0 +1,224 @@
+LEARNING GUIDE: Pages 127-131
+Generated: 2025-12-05 14:30:17
+PDF: 1 - Software Development OCR
+
+================================================================================
+LEARNING GUIDE
+================================================================================
+
+Here is a simplified, easy-to-read learning guide based on the provided text:
+
+---
+
+## Software Maintenance and Open-Source Software: A Learning Guide
+
+This guide covers the core concepts of software maintenance, its activities, organizational aspects, and the importance of open-source software management.
+
+---
+
+### **Part 1: Software Maintenance**
+
+#### **1. Concept and Definition**
+
+*   **What is Software Maintenance?**
+    *   The **final phase** of the Software Development Life Cycle (SDLC).
+    *   Involves modifying software *after* its initial delivery to:
+        *   Correct errors (bugs).
+        *   Improve functions and performance.
+        *   Adapt to changes in the environment (e.g., new operating systems).
+        *   Extend its useful life.
+
+#### **2. Purposes and Importance**
+
+*   **Main Purposes:**
+    *   **Repair defects:** Fix identified bugs and errors.
+    *   **Improve performance:** Enhance efficiency, speed, or resource usage.
+    *   **Port software:** Enable it to run in new hardware or software environments.
+    *   **Preventive measures:** Proactively address potential issues before they become problems.
+    *   **Add new features:** Enhance functionality to meet evolving user needs.
+
+*   **Why is Maintenance Important?**
+    *   **High Costs:** Maintenance costs often surpass initial development costs.
+    *   **Complexity:** Modern software is complex, increasing administrative tasks like documentation.
+    *   **Longer Lifespan:** Software is used for longer periods than it takes to develop, making ongoing support essential.
+    *   **Package Development:** Increased use of pre-built "packages" rather than entirely custom solutions often means internal teams take on more maintenance.
+
+#### **3. Types of Software Maintenance**
+
+Software maintenance is classified by its **reason**, **time**, and **target**:
+
+*   **By Reason:**
+    *   **Corrective Maintenance:** Fixing identified errors or defects.
+    *   **Adaptive Maintenance:** Modifying software to adapt to changes in the data environment or infrastructure (e.g., database upgrades, new OS versions).
+    *   **Perfective Maintenance:** Improving software quality, adding new features, or enhancing existing ones.
+
+*   **By Time:**
+    *   **Scheduled Maintenance:** Planned, periodic maintenance.
+    *   **Preventive Maintenance:** Proactive measures taken to prevent future problems.
+    *   **Emergency Maintenance:** Urgent, unplanned maintenance that requires immediate attention and often post-facto approval.
+
+*   **By Target:**
+    *   **Data/Program Maintenance:** Processing related to data conversion or changes in program logic.
+    *   **Documentation Maintenance:** Updating or changing documentation standards and content.
+    *   **System Maintenance:** General maintenance activities for the overall system.
+
+#### **4. Software Maintenance Activities and Procedure**
+
+*   **Standard Maintenance Procedure:**
+    1.  **Understanding Current Software:** Analyzing existing program structure, variables, data, application field, and business knowledge.
+    2.  **Requirements Analysis:** Quickly understanding how a maintenance request affects the current system and defining the maintenance type and strategy.
+    3.  **Identifying & Modifying Scope of Impact:** Determining which parts of the software need changing and the impact on existing functions; then implementing the changes.
+    4.  **Test & Maintenance:** Performing testing, modifying related documents, and managing configuration.
+
+*   **Key Concept: Ease of Maintenance**
+    *   Indicates the level of difficulty in maintaining software.
+    *   **Ease of Use:** How easy an application/program is to understand.
+    *   **Ease of Modification:** How easy an application/program is to change.
+    *   **Ease of Testing:** How easy it is to verify an application/program's accuracy.
+
+*   **Improving Maintainability During Development:**
+    *   **Analysis:** Validating customer requirements and constraints.
+    *   **Standards & Guidelines:** Establishing clear rules for development to facilitate future maintenance.
+    *   **Design:** Emphasizing clarity, modularity, and ease of change in software design.
+    *   **Implementation:** Applying standard structures and coding styles.
+    *   **Supporting Documents:** Creating comprehensive guides and test manuals for maintenance activities.
+
+#### **5. Software Maintenance Organizations**
+
+*   **Maintenance Personnel:**
+    *   Individuals dedicated to performing maintenance activities, distinct from original developers.
+    *   Need deep knowledge of the software. Ideally, they should interact with developers or participate in the development phase to gain insight.
+    *   Responsible for supporting, evolving, and maintaining developed products throughout the software life cycle.
+
+*   **Roles in Maintenance Activities:**
+    *   **Users/Customers:** Initiate maintenance requests (e.g., through a Modification Request Form - MRF or Change Request - CR); classify maintenance type and severity.
+    *   **Analyst:** Analyzes the request content and its impact; prioritizes maintenance tasks.
+    *   **Maintenance Management Committee:** Approves or rejects maintenance work; reviews and approves applied changes.
+    *   **Maintenance Personnel:** Execute the maintenance on the target system; create a Software Change Report (SCR); update related documents.
+
+*   **Types of Maintenance Organizations:**
+    *   **By Work Type:** Teams specialized in specific tasks like analysis, design, implementation, or testing.
+        *   *Pros:* Deep specialization in programming knowledge/skills.
+        *   *Cons:* Can incur high coordination costs between different specialized teams.
+    *   **By Application Field:** Organizations structured around specific business domains or application areas. (Often the most common type).
+        *   *Pros:* Expertise in the specific applied knowledge of a field.
+    *   **By Life Cycle:** Organizations divided into separate development and maintenance teams.
+        *   *Pros:* Specialization in either development or maintenance technologies.
+        *   *Cons:* Requires coordination between development and maintenance teams.
+
+---
+
+### **Part 2: Trends of Open-Source Software (OSS)**
+
+#### **1. Recent Trends and Importance**
+
+*   **Focus on Speed:** Modern software development prioritizes rapid delivery ("Time to Service") to enhance company competitiveness.
+*   **Limitations of Proprietary Software:** Traditional development with proprietary software often cannot meet the demand for speed and agility.
+*   **Rise of OSS:** The need for Open-Source Software (OSS) is increasing as it allows for quicker development and leveraging multiple technologies.
+
+#### **2. Managing Open-Source Software Licenses**
+
+*   **Why is OSS License Management Necessary?**
+    *   **Legal Risks:** Mismanaging OSS licenses can lead to disputes, copyright infringement lawsuits, damaged corporate image, and significant financial losses.
+    *   **Pervasive Use:** OSS is increasingly used in key emerging technologies like IoT, AI, Big Data, and Cloud computing, raising the potential for disputes.
+
+*   **Benefits of OSS:**
+    *   Reduces development time and cost.
+    *   Breaks technological dependence on specific vendors.
+    *   Fosters innovation through collaboration.
+
+*   **Crucial Caveat:**
+    *   While source code is open, users *must* follow the specific license terms when incorporating OSS into products or distributing it to third parties. OSS is not necessarily "free of charge" without conditions.
+
+*   **Real-World Example: Hangul and Computer vs. Artifex**
+    *   A Korean software company, Hangul and Computer, was sued by Artifex (U.S.) for violating the GNU General Public License (GPL) of "Ghostscript" (a PDF conversion library) that was bundled with their "Hangeul" program.
+    *   Hangul and Computer's attempt to dismiss the lawsuit failed, and they ultimately had to pay a settlement.
+    *   This case underscored the critical importance of complying with OSS licenses to avoid legal and financial repercussions.
+
+*   **Challenges in Compliance:**
+    *   **Misconception of "Free":** A common but incorrect belief that open-source software is entirely free without any obligations.
+    *   **Complexity:** There are over 2,000 types of OSS licenses, each with unique terms, making compliance complex.
+    *   **High Violation Rates:** Surveys show a significant percentage of companies (e.g., 37% of domestic SMEs in 2016) violate OSS licenses.
+
+*   **Essential Countermeasures for Organizations:**
+    *   **Establish Governance:** Implement clear policies and procedures for OSS use and management.
+    *   **Utilize Tools:** Employ license analytics and verification tools to identify and manage OSS components and their associated licenses effectively.
+
+---
+
+================================================================================
+ORIGINAL TEXT (First 5000 chars)
+================================================================================
+
+--- Page 127 ---
+ESSENCE
+01 Concept  and Tupes of Software  Maintenance
+A) Definition  of software  maintenance
+Software  maintenance  is the last phase of the SDLC (Software  Development  Life Cycle). It is an operation-
+oriented  operational  phase that extends  the life of software,  and comprises  a series of tasks aimed at
+correcting  software  errors and improving  its functions  and performance  by modifying  the original requirements.
+Software  maintenance  is a series of software  engineering  works that eliminate  defects,  improve  performance,
+and adapt software  to the changed  environment  after its initial delivery  to the customer.
+B) Purposes  of software  maintenance
+Software  is mainly maintained  to improve software  performance,  repair defects,  port software  to enable it to
+run in a new environment,  and consists  of a series of preventive  measures  including  correction.  As mentioned
+above, software  maintenance  is a very important  phase in securing  the efficiency  of the software  life cycle for
+the following  reasons.
++ Noticeable  increase  of maintenance  costs that are higher than the  existing  development  costs among the
+entire software  development  and maintenance  costs.
++ Increased  administrative  tasks such as documentation  due to the complexity  of the software.
++ Emphasis  is placed on the importance  of management  due to the use period being longer than the
+development  period.
++ Increased  maintenance  works due to the spread of package  development,  rather than outsourced
+development.
+C) Type of software  maintenance
+Software  maintenance  can be classified  according  to reason, time, and target. Sometimes,  a contract  is signed
+according  to these classification  criteria.
+<Table  44> Classification  of software  maintenance
+Classification  criteria Type Contents
+Maintenance,  handling,  execution,  implementation,  and error
+identification  due to errors.
+Processing  to adapt to changes  in the data environmentCorrective  maintenance
+Maintenance  byAdaptive maintenan - ireason daptive maintenance and the infrastructure  environment.
+. . i Ir i Perfective  maintenance Maintenance  for adding  a new feature,  changing,  and
+improving  quality.
+Scheduled  maintenance Periodic  maintenance.
+Maintenance  by time  | Preventive  maintenance Maintenance  as a preventive  measure.
+Emergency  maintenance If maintenance  work needs to be approved  later.
+Data/program  maintenance Processing  when necessary,  such as data conversion.
+Maintenance  by Processing  for changing  the document  standard  or whenDocumentation  maintenancetarget necessary.
+System  maintenance System  maintenance.
+126 TOPCIT  ESSENCE
+
+
+--- Page 128 ---
+Software  Development )
+02 Software  Maintenance  Activities
+A) Software  maintenance  procedure
+Software  is generally  maintained  in the following  order.
+<Table  45> Maintenance  procedure
+Maintenance  procedure Contents
++ Program  structure  analysis,  variable/data  structure,  application  field, business
+knowledge.
++ Maintenance  type, strategy  establishment  (modification/new).
++ Identifying  targets  such as the changed  program.
+Identifying  and modifying  the scope + Impact  of software  change  on existing  functions
+of impact + Program  change,  modification.
+Test/maintenance + Performing  document  modification,  configuration  management,  and maintenance.Understanding  current  software
+Requirements  analysis
+“Requirements  analysis”,  which is an important  activity  in the above maintenance  sequence,  aims to quickly  understand  how a
+maintenance  request  affects  the current  system.  “Identifying  the scope of impact”  may be easy or require  tremendous  efforts,
+as described  in the example,  depending  on how easy it is to maintain  the software  in the existing  system.  Ease of maintenance
+is a characteristic  that indicates  the level of difficulty  in maintaining  software,  and there are the following  types.
++ Ease of use: A characteristic  that indicates  how easy it is to understand  an application  or program.
++ Ease of modification:  A characteristic  that indicates  how easy it is to modify an application  or program.
++ Ease of testing:  A characteristic  that indicates  how easy the process  is to show the accuracy  of an
+application  or program.
+Therefore,  if systematic  activities  are performed  to improve  ease of maintenance  while developing  software,  as shown in the
+following,  the requirements  of users or customers  can be continuously  satisfied,  and rapidly  increasing  maintenance  costs can
+be handled  economically  even in the event of changes  in the environment  in the future.
++ Analysis  activities:  Determining  the customer's  requirements  and constraints,  and proving  the validity  of the
+product  to be developed.
++ Standards  and guidelines:  Establishing  various kinds of standards  and guidelines  to facilitate  software
+maintenance.
++ Design activities:  Emphasizing  and ma...

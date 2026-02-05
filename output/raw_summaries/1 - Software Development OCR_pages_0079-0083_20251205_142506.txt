@@ -1,0 +1,235 @@
+LEARNING GUIDE: Pages 79-83
+Generated: 2025-12-05 14:25:06
+PDF: 1 - Software Development OCR
+
+================================================================================
+LEARNING GUIDE
+================================================================================
+
+Here is a simplified, easy-to-read learning guide based on the provided text.
+
+---
+
+## **Learning Guide: Software Design Patterns**
+
+This guide covers essential software design patterns, categorized into Structural and Behavioral patterns.
+
+---
+
+### **I. Structural Patterns (Continued)**
+
+Structural patterns deal with how classes and objects are composed to form larger structures, promoting flexibility and efficiency.
+
+#### **1. Composite Pattern**
+*   **Definition:** Allows you to treat individual objects and compositions of objects (groups) uniformly. It structures objects into tree hierarchies where both individual elements and groups of elements can be handled with the same interface.
+*   **Key Idea:** "Part-whole" hierarchy, where clients can treat individual objects and groups of objects in the same way.
+*   **Advantage:** Simplifies client code as it doesn't need to distinguish between basic (leaf) objects and composite (branch) objects.
+
+#### **2. Decorator Pattern**
+*   **Definition:** Dynamically adds new functionality or behavior to an existing object without modifying its original class. It "wraps" the original object with additional features.
+*   **Key Idea:** Extend an object's behavior at runtime.
+*   **Advantage:** Flexible and simple way to add functions to an object.
+
+#### **3. Facade Pattern**
+*   **Definition:** Provides a simplified, high-level interface to a complex subsystem of classes. It acts as a single point of entry, hiding the subsystem's intricacies from external clients.
+*   **Key Idea:** Simplify interaction with complex systems.
+*   **Advantages:**
+    *   Provides a simple interface for a complex subsystem.
+    *   Reduces complex dependencies between classes by creating layers.
+*   **Example (Conceptual): Computer Startup**
+    *   **Problem:** Starting a computer involves many steps: CPU initialization, memory loading, hard drive access. A user shouldn't need to manually orchestrate these.
+    *   **Solution:** A `Computer` class (the Facade) provides a single `startComputer()` method.
+    *   **Mechanism:** Internally, the `startComputer()` method orchestrates calls to various subsystem classes like `CPU`, `Memory`, and `HardDrive` (e.g., `cpu.freeze()`, `memory.load()`, `hardDrive.read()`, `cpu.execute()`).
+    *   **Result:** A client simply calls `computer.startComputer()` without needing to know the complex internal boot sequence.
+
+#### **4. Flyweight Pattern**
+*   **Definition:** Minimizes memory usage by sharing common data among many objects. It achieves this by separating object states into intrinsic (shareable) and extrinsic (context-dependent, non-shareable) parts, sharing the intrinsic parts.
+*   **Key Idea:** Efficiently support a large number of fine-grained objects.
+*   **Advantages:**
+    *   Reduces storage space.
+    *   Facilitates handling of multiple objects.
+
+#### **5. Proxy Pattern**
+*   **Definition:** Provides a surrogate or placeholder for another object to control access to it. It delays the creation of a resource-intensive object until it's actually needed (lazy initialization).
+*   **Key Idea:** Control access or defer object creation, acting as an intermediary.
+
+---
+
+### **II. Behavioral Patterns**
+
+Behavioral patterns focus on algorithms and the assignment of responsibilities between objects. They describe how objects communicate and distribute tasks.
+
+#### **1. Chain of Responsibility Pattern**
+*   **Definition:** Passes a request along a chain of potential handler objects until one of them handles it. It decouples the sender of a request from its receiver.
+*   **Key Idea:** Decouple sender and receiver by letting multiple objects try to handle a request sequentially.
+*   **Advantages:**
+    *   Reduces coupling between system components.
+    *   Distributes responsibilities more flexibly among objects.
+*   **Disadvantage:** Not suitable for systems requiring strict time prediction (e.g., real-time systems), as request processing time and status might be unpredictable.
+
+#### **2. Command Pattern**
+*   **Definition:** Encapsulates a request to perform an action as an object. This allows you to parameterize clients with different requests, queue or log requests, and support undoable operations. Unlike Chain of Responsibility, which involves multiple potential handlers, the Command pattern targets a specific object.
+*   **Key Idea:** Treat requests or operations as objects.
+*   **Advantages:**
+    *   Provides an object-oriented alternative to callback functions.
+    *   Very useful for implementing Undo/Redo functionality.
+
+#### **3. Interpreter Pattern**
+*   **Definition:** Defines a grammatical representation for a language and an interpreter that uses this representation to interpret sentences in the language. It translates simple grammar rules into class structures for efficient processing.
+*   **Key Idea:** Implement a simple language or grammar directly within your application.
+*   **Advantage:** Makes it easy to change, extend, or implement grammar.
+
+#### **4. Iterator Pattern**
+*   **Definition:** Provides a standard way to access elements of a collection or list sequentially without exposing the collection's internal structure.
+*   **Key Idea:** Traverse collections uniformly regardless of their internal implementation.
+
+#### **5. Mediator Pattern**
+*   **Definition:** Defines an object (the Mediator) that encapsulates how a set of objects interact. It promotes loose coupling by preventing objects from referring to each other explicitly, centralizing their communication. It transforms complex many-to-many (M:N) relationships into simplified many-to-one (M:1) relationships.
+*   **Key Idea:** Centralize complex communication and control between objects.
+*   **Advantage:** Reduces class coupling.
+
+#### **6. Memento Pattern**
+*   **Definition:** Captures and externalizes an object's internal state without violating its encapsulation, allowing the object to be restored to that state later. It stores an object's status in a separate "memento" object.
+*   **Key Idea:** Save and restore an object's previous state.
+
+#### **7. Observer Pattern**
+*   **Definition:** Establishes a one-to-many dependency between objects. When the state of one object (the "Subject" or "Observable") changes, all its dependent objects (the "Observers") are automatically notified and updated.
+*   **Key Idea:** Implement a publish-subscribe mechanism for event handling.
+*   **Class Diagram Concept:**
+    *   **Subject (Observable):** Maintains a list of observers, provides methods to `registerObserver()`, `unregisterObserver()`, and `notifyObservers()` when its state changes.
+    *   **Observer:** Defines an `update()` method that the Subject calls when its state changes.
+    *   **Concrete Observers:** Implement the `update()` method to react to state changes.
+*   **Example (Conceptual): Event Notification**
+    *   An `EventSource` (Subject) reads input (e.g., from a keyboard).
+    *   A `ResponseHandler` (Observer) registers with the `EventSource`.
+    *   When `EventSource` receives input, it calls `notifyObservers()`.
+    *   The `ResponseHandler`'s `update()` method is then automatically triggered, processing the input.
+
+#### **8. State Pattern**
+*   **Definition:** Allows an object to change its behavior when its internal state changes, making it appear as if the object has changed its class. It defines object states as separate classes, allowing behavior to change by delegating to a different state object, rather than using conditional logic.
+*   **Key Idea:** Change an object's behavior based on its internal state without using complex conditional statements.
+*   **Advantages:**
+    *   Eliminates large conditional statements (e.g., `if-else` or `switch` cases) that check object states.
+    *   Helps maintain information consistency across states.
+
+================================================================================
+ORIGINAL TEXT (First 5000 chars)
+================================================================================
+
+--- Page 79 ---
+ESSENCE
+object in the same way as if a directory  and files were combined  and treated  as a directory  entry.
+- Advantages:  Convenient  because  the basic object and the constituent  object do not have to be separated
+when writing  a source code.
++ Decorator  pattern
+- Definition:  A class structure  used to dynamically  add a function  to a specific  object or to delete the added |
+function.
+- Advantages:  Quite simple and flexible  when adding  a function  to an object.
++ Facade  pattern
+- Definition:  When several classes  have a close relationship  and play a role as a whole, this method  enables
+the user to receive  the desired  function  using the representative  class even when no class to represent  the
+role has been defined,  and external  clients  do not directly  handle each class.
+- Advantages:  A simple interface  can be provided  for a complex  subsystem. A complex  or recursive
+dependency  relationship  can be removed  by stratifying  the dependency  relationship  between  classes.
++ Facade  class diagram
+Package1
+- Class  1.class
+—
+Package2 <<includes  >>
+- Class2.class
+Package3
+- Class3.class
+- Java source  code
+The following  example  of Java code is an abstract  example  in which the user (you) accesses  the internal  parts:
+78 TOPCIT  ESSENCE. ,~<<includes  >>
+doSomething()
+Facade |e
+*doSomething(  )
+doSomething()
+uo? <<includes  >> .Client2
+Client1
+doSomething(  ) {
+Class1 cl = new Class1();
+Class2 c2 = new Class2();
+Class3 c3 = new Class3();
+c1.doStuff(c2);
+c3.setX(cl.getX());
+return c3.getY();
+
+
+--- Page 80 ---
+Software  Development )
+(CPU, HDD) of the computer  using the facade (computer).
+/* Complex  parts */
+class CPU {
+public void freeze( ) { ... }
+public void jump(long  position)  { ... }
+public void execute()  { ... }
+}
+class Memory  {
+public void load(long  position,  byte[ ] data)  {
+}
+}
+class HardDrive  {
+public byte[ ] read(long  Iba, int size) {
+}
+}
+/* Facade  */
+class Computer  {
+public void start Computer(  ) {
+CPU cpu = new CPU( );
+Memory  memory  = new Memory(  );
+HardDrive  hardDrive  = new HardDrive(  );
+cpu.freeze(  );
+memory.  load(BOOT_ADDRESS,  hardDrive.read(BOOT_SECTOR,  SECTOR_SIZE));
+cpu, jump (BOOT_ADDRESS);
+cpu.execute(  );
+}
+/* Client  */
+class You {
+public static void main(String[  ] args) throws ParseException  {
+Computer  facade  = /* grab a facade  instance  */;
+facade.start  Computer(  );
+}
++ Flyweight  pattern
+- Definition:  A design that separates  information  into shareable  and non-shareable  information  in order to
+share information,  and which defines  shareable  information  as an object  and performs  information  sharing.
+- Advantages:  Storage  space can be reduced,  and multiple  objects  can be handled  easily.
++ Proxy pattern
+- Definition:  A pattern used to represent  a complex  object or an object that takes time to create within a
+simpler  object. As creating  an object uses many resources  and/or takes a lot of time, this pattern delays
+M1 Software  development  79
+
+
+--- Page 81 ---
+ESSENCE
+object creation  until the developer  actually  needs it.
+@ Behavioral  patterns
++ Chain of Responsibility  pattern
+- Definition:  When a request is sent to a specific object after configuring  a chain based on the relationship
+between  objects,  this design makes another  object in the chain handle the request  if the object concerned
+cannot  process  the request.
+- Advantages:  The degree of system coupling  can be reduced,  and responsibilities  among objects can be
+distributed  more flexibly.
+- Disadvantages:  Not recommended  if time prediction  is important,  such as the real-time  system, because
+the request  processing  time and processing  status are not accurate.
+* Command  pattern
+- Definition:  While the Chain of Responsibility  pattern sends a request  within the chain of the class, the
+Command  pattern sends a request  to a specific object only. The request  also includes  a request  for a
+specific  processing  task in an object, and the request  concerned  is sent using a known public interface.
+- Advantages:  An object-oriented  alternative  to the callback  function.  It is useful when supporting  the Undo/
+Redo function.
++ Interpreter  pattern
+- Definition:  A class structure that defines  relatively  simple grammar  itself as a class to perform necessary
+functions  efficiently  without  a separate  data structure,  in addition  to a grammar  check.
+- Advantages:  Easy to change,  expand  or implement  grammar.
++ Iterator  pattern
+- Definition:  Movement  using a data list or collection  is allowed, using a standard  interface,  without
+considering  the internal  structure  of the object.
++ Mediator  pattern
+- Definition:  A class structure  that can convert a complex  M:N relationship  into a M:1 relationship  by
+disconnecting  the direct relationship  between  classes when the classes have established  a complex  M:N
+relationship  directly.
+- Advantages:  Class coupling  can be reduced.
++ Memento  pattern
+- De...

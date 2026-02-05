@@ -1,0 +1,14 @@
+ESSENCE
++ Preview  for practical  business
+SQL is the language  that must be used  to process data when using  a relational  database.  In the past,
+SQL statements  were simply used to input, modify, delete, or retrieve data. Now, the composition  of
+a statement  is becoming  too complex  to process  complex  calculations,  aggregations,  and processing
+according  to the conditions.  In fact, SQL statements  processing  such a complex  procedure  are written
+as long as several A4 pages. SQL statements  that are not properly  written may cause a deterioration  of
+performance,  thus creating  a problem  in the entire project. For example,  the performance  of the entire
+database  system can be degraded  if SQL statements  are called repetitively  while processing  a loop in a
+program,  or if the characteristics  of the index are not considered  when writing  SQL statements,  or if SQL
+statements  are excessively  long due to the indiscriminate  use of subqueries.  A full understanding  of the
+database  system,  data model, index structure,  as well as SQL syntax, is required  to write correct SQL
+statements  according  to the characteristics  required  by the business.
+112 TOPCIT  ESSENCE

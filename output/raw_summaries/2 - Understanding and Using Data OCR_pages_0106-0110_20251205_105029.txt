@@ -1,0 +1,242 @@
+LEARNING GUIDE: Pages 106-110
+Generated: 2025-12-05 10:50:29
+PDF: 2 - Understanding and Using Data OCR
+
+================================================================================
+LEARNING GUIDE
+================================================================================
+
+Here's a simplified, easy-to-read learning guide based on the provided text:
+
+---
+
+## Database Languages: DDL, DCL, DML
+
+This guide covers the essential relational database languages, their commands, and core concepts.
+
+### 1. Types of Relational Database Languages
+
+Relational database languages are classified based on their function:
+
+*   **DDL (Data Definition Language):** Defines and manages the database structure (e.g., tables).
+*   **DCL (Data Control Language):** Controls access to data and manages database integrity.
+*   **DML (Data Manipulation Language):** Manages the actual data within the database (search, insert, update, delete).
+
+**TCL (Transaction Control Language):** Sometimes separated from DCL, it controls database transactions (e.g., COMMIT, ROLLBACK).
+
+### 2. Evolution of SQL
+
+SQL (Structured Query Language) standards have evolved:
+
+*   **SQL-86:** First SQL standard.
+*   **SQL-92:** Major revision, focused on relational databases.
+*   **SQL:1999 (SQL3):** Introduced object-oriented features, regular expressions, recursive queries, and triggers.
+*   **SQL-2003:** Added XML features, window functions, and auto-generated column values.
+*   **SQL-2006 (and beyond):** Continued enhancements for metadata access and other features.
+
+**Characteristics of SQL3 (Object-Relational DBMS):**
+*   **Relational:** New data types, conditional expressions, strengthened type system.
+*   **Object-Oriented:** Supports user-defined types, objects, object identifiers, reference types, functions, and methods.
+*   **Other:** Recursive queries, active database functions (triggers), client-server environment support, improved security, and view update functions.
+
+### 3. Data Definition Language (DDL)
+
+**Purpose:** To define and manage the database schema (structure) for the computer to understand. It handles the creation, alteration, and deletion of database objects like tables.
+
+**Main DDL Statements:**
+
+*   **CREATE:**
+    *   **Function:** Defines and creates database objects (e.g., tables, views, indexes, schemas, functions).
+    *   **Usage:** Used to define primary keys (PK) and foreign keys (FK) when creating tables. Object names must be unique.
+*   **ALTER:**
+    *   **Function:** Changes the structure of an existing database object.
+    *   **Usage:** Add or delete columns, add or delete constraints in a table.
+*   **DROP:**
+    *   **Function:** Deletes an object (and all its data and structure) from the database.
+    *   **Important:** If the table has referenced constraints, those must be deleted first. In Oracle, `CASCADE CONSTRAINT` option can delete related constraints simultaneously.
+*   **RENAME:**
+    *   **Function:** Changes the name of an object (e.g., a table).
+
+### 4. Data Control Language (DCL)
+
+**Purpose:** To define and manage data controls, ensuring secure and concurrent use of the database.
+
+**Key Roles of DCL:**
+*   **Data Security:** Protects data from unauthorized access.
+*   **Integrity:** Maintains data accuracy.
+*   **Recovery:** Helps the system cope with failures.
+*   **Concurrency Control:** Allows multiple users to access the database simultaneously without conflict.
+
+**Main DCL Statements:**
+
+*   **GRANT:**
+    *   **Function:** Grants specific privileges (permissions) on a database object to a user.
+    *   **Example:** `GRANT SELECT ON customer TO ABC;` (Grants user ABC permission to view data in the 'customer' table).
+*   **REVOKE:**
+    *   **Function:** Removes (cancels) previously granted privileges from a user.
+    *   **Example:** `REVOKE SELECT ON customer FROM ABC;` (Removes SELECT privilege from user ABC on the 'customer' table).
+*   **DENY:**
+    *   **Function:** Explicitly denies a privilege to a user.
+    *   **Important:** If a user is both granted and denied a privilege, `DENY` takes precedence.
+    *   **Example:** `DENY SELECT ON customer TO ABC;` (Explicitly denies SELECT privilege to user ABC on the 'customer' table).
+*   **COMMIT:**
+    *   **Function:** Finalizes a transaction, making all data changes permanent in the database.
+*   **ROLLBACK:**
+    *   **Function:** Cancels an ongoing transaction, undoing all data changes and restoring the database to its state before the transaction began.
+
+### 5. Data Manipulation Language (DML)
+
+**Purpose:** To perform operations on the actual data within the database: input, modification, deletion, and searching.
+
+#### A) Basic DML Operations
+
+These statements work with data rows in tables. `FROM` designates the target table, and `WHERE` sets conditions.
+
+*   **SELECT:**
+    *   **Function:** Retrieves (searches) data values from a table.
+    *   **Syntax:** `SELECT column1, column2 FROM table_name WHERE condition;`
+*   **INSERT:**
+    *   **Function:** Adds new rows of data into a table.
+    *   **Syntax (all columns):** `INSERT INTO table_name VALUES (value1, value2, value3);`
+    *   **Syntax (specific columns):** `INSERT INTO table_name (col1, col3) VALUES (value1, value3);`
+    *   **Syntax (from another table):** `INSERT INTO table_name SELECT col1, col2 FROM existing_table WHERE condition;`
+*   **UPDATE:**
+    *   **Function:** Modifies existing data in a table.
+    *   **Syntax:** `UPDATE table_name SET column1 = new_value1, column2 = new_value2 WHERE condition;`
+    *   **Note:** If `WHERE` clause is omitted, all rows in the table will be updated.
+*   **DELETE:**
+    *   **Function:** Removes rows of data from a table.
+    *   **Syntax:** `DELETE FROM table_name WHERE condition;`
+    *   **Note:** If `WHERE` clause is omitted, all rows in the table will be deleted.
+
+#### B) Aggregate DML Operations
+
+These operations perform calculations on groups of rows.
+
+*   **Aggregate Functions:**
+    *   **COUNT(*):** Returns the number of rows.
+    *   **SUM(column):** Calculates the total sum of values in a column (excluding NULLs).
+    *   **AVG(column):** Calculates the average of values in a column (excluding NULLs).
+*   **GROUP BY Clause:**
+    *   **Function:** Groups rows that have the same values in specified columns, allowing aggregate functions to be applied to each group.
+    *   **Placement:** Placed after `FROM` and `WHERE` clauses.
+    *   **Example:** Calculate total salary *by department*.
+*   **HAVING Clause:**
+    *   **Function:** Sets conditions for groups created by `GROUP BY`. (Similar to `WHERE` for individual rows, but `HAVING` filters groups).
+*   **DISTINCT Option:**
+    *   **Function:** Used with aggregate functions to consider only unique values.
+
+**Example (using Employee table for aggregates):**
+To get the number of employees, total salary, and average salary *per department*:
+`SELECT department, COUNT(*) AS num_employees, SUM(agreed_annual_salary) AS total_salary, AVG(agreed_annual_salary) AS avg_salary FROM Employee GROUP BY department;`
+
+#### C) Advanced DML Join Operations
+
+Join operations combine rows from two or more tables based on a related column between them.
+
+*   **NL (Nested Loop) Join:**
+    *   **How it works:** Similar to a nested programming loop. It takes each row from the "outer table" (preceding table) and compares it with all rows in the "inner table" (following table) to find matches.
+    *   **Performance:**
+        *   **Recommendation:** Choose the table with fewer *resulting rows* after filtering as the outer table to optimize performance.
+        *   **Advantage:** Efficient for narrow processing ranges, as it involves random access to data.
+
+*   **Sort Merge Join:**
+    *   **How it works:** Sorts both tables independently based on their join columns. Then, it merges the sorted results, comparing values as it scans through the sorted lists.
+    *   **Advantage:** Efficient for processing a wide range of data, as it primarily uses sequential scan access.
+
+---
+
+================================================================================
+ORIGINAL TEXT (First 5000 chars)
+================================================================================
+
+--- Page 106 ---
+Database )
+01 Tupes of Relational  Database  Languages
+A) DDL, DCL, DML
+The relational  database  language  processes  the structure  and value stored  in a relational  database  and can be
+classified  into the Data Definition  Language  (DDL), Data Control Language  (DCL), and Data Manipulation  Language
+(OML).
+<Table 39> Types of relational  database  languages
+Poe — MainClassification Description onan  ra
+CREATEie Definition A language  that defines the relationship  between data and is used to create, change, ALTER
+Language) and delete a data structure  like a table in a database. DROP
+RENAME
+A language  that controls  access  to data in a database  and is used to perform  data GRANT
+ion control security, integrity, and concurrency  control REVOKE
+Language) Sometimes,  commit  and rollback,  which controls  nested  transactions,  are separated  into | COMMIT
+TCL (Transaction  Control Language). ROLLBACK
+SELECT
+DML FROM
+(Data A language  that searches,  registers,  deletes, updates,  etc. the data of the database WHERE
+Manipulation user or application  program. INSERT
+Language) UPDATE,
+DELETE
+B) Changes  in SQL and the characteristics  of SQL3
+@ Changes  in SQL
+SQL was developed  by IBM researchers Donald D. Chamberlain  and F. Raymond  Boyce in the early 1970s, and its
+standards  have been changed  periodically  by the ANSI, as follows.
+<Table  40> Changes  in SQL
+Year Name Alias Characteristics
+1986 SQL SQ-86 First SQL standard
+. Adopted  a major revision  (ISO9075)  FIPS 127-2.
+es sQ2 SQis2 Relational  database
+. Object-oriented  database
+rep sas SQL1999 Added the regular expression,  recursive  query, trigger, etc.
+2003 sala SQL-2003 XML-related  characteristics,  Window  functions,  standardized  sequences,  and a
+SQI-2006 column that has an automatically  generated  value
+In progress  | SQL/NM Consistent  access  to the metadata  registry
+@ Characteristics  of SQL3
+The object-oriented  characteristics  of SQL3 can be seen as the common  characteristics  of the object relational
+DBMS..
+M2 Database 105
+
+
+--- Page 107 ---
+ESSENCE
+<Table  41> Characteristics  of SQL3
+Characteristics Contents
+Relational Newly introduced  data types and conditional  expressions, and a strengthened  type systemcharacteristics ’ .
+Object-oriented . .i eer Supports  the user-defined  type, object, object identifier,  reference  type, function,  and method.
+Newly introduced  concepts  such as the recursive  query.
+Other additional Provides  an active database  function  that supports  a trigger.
+functions Supports  the client-server  environment.
+Improved  security  and view update  functions.
+02 Data Definition  Language  (DDL)
+A data definition  language  is used to describe  the database  schema in such a way that computers  can understand
+it. Specifically,  it manages  the creation,  change, and deletion  of a table structure.  The main statements  of the data
+definition  language  include  CREATE,  DROP. ALTER, and RENAME.
+A) Types of data definition  language
+@ CREATE:  Defining  and creating  an object
+A table, view, index, schema,  function,  etc. can be defined using the CREATE  statement.  A primary  key and foreign
+key can be defined  when creating  a table, and the object should not be the same as other created  objects.
+@ ALTER: Changing  an object
+Once  a table has been created,  it is best to keep its structure  intact. However,  it may be necessary  to add or delete
+columns  and constraints  while using the table due to changes  in the work requirements  or the need for system
+operation.  At this time, the structure  of the table can be changed  using the ALTER  statement.
+© DROP: Deleting  an object
+This command  is used to delete all data and structures  of the table when it has been created incorrectly  or is no
+longer needed. However,  the referenced  constraint  related to the table concerned  should be deleted first before
+deleting  a table. In Oracle, the CASCADE  CONSTRAINT  option can be used to delete it at the same time.
+@ RENAME:  Changing  an object  name
+This command  is used to change  the table name.
+106 TOPCIT  ESSENCE
+
+
+--- Page 108 ---
+Database )
+03 Data Control  Language  (DCL)
+A data control language  is used to define and describe  data controls,  in order to use the database  in common.  The
+main statements  include  GRANT,  REVOKE,  COMMIT,  and ROLLBACK.  Sometimes,  COMMIT  and ROLLBACK,  which are
+used to control  nested  transactions,  are separated  and called TCL (Transaction  Control  Language).
+A) Roles of the data control  language
+<Table  42> Roles of the data control  language
+Item Roles
+Data security Protect  data from unauthorized  users.
+Integrity Maintain  the accuracy  of data.
+Recovery Cope with system failure.
+Concurrency  control Enable multiple  users to access (use) a database  at the same time.
+B) Types of data control languages
+@ GRANT
+This statement  is used to grant privileges  related  to an object  to a user.
++ Example:  When granting  the pr...

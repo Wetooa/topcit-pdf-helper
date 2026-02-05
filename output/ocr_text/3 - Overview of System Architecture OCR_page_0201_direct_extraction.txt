@@ -1,0 +1,11 @@
+3Passive  FTP mode operation
+FTP Server FTP CLient> ]= I]
+20 21
+DATA COMMAND 5150 5151
+3267 “pASY
+“OK 32567"
+1) The client attempts  to connect  to the command  port.
+2) The server  informs  the second  port it intends  to use.
+) The client opens another  port and attempts  to connect  to the port informed  by the server,
+4) The server responds  with ACK.
+200 TOPCIT  ESSENCE

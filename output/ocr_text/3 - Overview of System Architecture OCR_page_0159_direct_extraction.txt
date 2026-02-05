@@ -1,0 +1,34 @@
+ESSENCE
+01 Network  Layer Overview  and Equipment
+A) What is a network  layer?
+The network  layer is the third layer of the OSI 7 model and TCP/IP and sends packets,  from a transmitting  side, to a
+receiving  side. It receives  a segment  from the transmitting  layer, encapsulates  it, and sends it to the datalink  layer.
+Transport  Layer
+Routing  Protocol
+IP Protocol
+Network
+Layer
+Routing  Table ICMP Protocol
+Link Layer
+Physical  Layer
+[Figure 113] Network  Layer in TCP/IP
+B) Network  layer function
+The transmitting  side of the network  layer performs  payload  encapsulation,  and the receiving  side performs  payload
+decapsulation.  The packetizing  function  is responsible  for ensuring  that there is no change  to the payload  during data
+transmission.  The routing function  finds a path through  which packets can be delivered.  The forwarding  function is
+performed  by a router when a packet arrives through  one interface  on the router. When performing  forwarding,  the
+router creates  a decision  table by applying  the routing  rules. The decision  table is also called the forwarding  or routing
+table.
+<Table 37) Network  Layer Functions
+Function Description
+- The transmitting  side encapsulates  the payload,  and the receiving  side decapsulates  the payload.
+Packetizing - The function  is responsible  for transmitting  a payload,  from the transmitting  side, to the receiving  side,
+without  a change.
+Routing - The function  finds the path to transfer  the payload,  from the transmitting  side, to the receiving  side.
+- The router performs  the function  when a packet has arrived  through  an interface.
+Forwarding - The router applies the routing  rules to create a decision  table.
+3 The decision  table is also called the routing  table.
+C) Internetworking  equipment
+Internetworking  refers to a connection  between  networks.  The leading  internetworking  equipment  includes  repeaters,
+bridges,  switches,  and routers. .
+158 TOPCIT  ESSENCE

@@ -1,0 +1,36 @@
+Information  security )
+Guessing  and
+brute force attack (‘Knowledge
+-base
+Supplement
+vulnerabilities
+Viv teietereicolgPresence Degraded authenticatioutilization \Pased
+Strengthen
+securityqi Ownership
+Illegally  used  \\ -based
+when lost
+[Figure 18] Concept  of multi-factor  authentication
+To implement  a more powerful  multi-factor  authentication  system, it is desirable  to mix and use various
+authentication  technologies,  based on knowledge,  ownership,  and presence,  such as OTP + fingerprint
+recognition.
+D) Electronic  signature
+@® Concept  of the electronic  signature
+An electronic  signature  is a technology  that enables  the user to sign on an electronic  document  using the
+authentication  function  of encryption  technology,  as shown in [Figure 19]. The effect of an electronic  signature
+can be obtained  by authenticating  the identity  of the signer, by using the authentication  function  of the public
+key cryptographic  technique,  while authenticating  an electronic  document  to be signed at the same time.
+The basic assumption  of the public key encryption  system is that the user (owner) will securely and secretly
+keep the private key (secret key), which becomes  a pair of the public keys. If a certain signing operation  is
+performed  using the private key in this environment,  it can only be performed  by the user who has the private
+key, and the result  can be recognized  as the user’s signature.
+The sender  sends a message  using public key cryptographic  techniques,  together  with an electronic  signature,
+which is the result of encrypting  the message  digest (hash value of the message)  with the private key. Then,
+the receiver  checks the sender authentication,  non-repudiation,  and message  integrity,  by comparing  the
+result of decrypting  the sender’s  message,  using the received  electronic  signature  with the message  digest
+value that was calculated  by using the received  message.
+a=-Gep~-  Bn. \y wif(summary) (sender’s private key) Electronic
+Hash Message
+oO = i = digest function .Compare= IP = Determined  as theZe Decryption Meseage Verify legitimate  electronic
+hace =r»,  (ender  )puplie = digest signature  of thegnature rer sender
+[Figure 19] Concept  of the electronic  signature
+M4 Understanding  Information  Security  39

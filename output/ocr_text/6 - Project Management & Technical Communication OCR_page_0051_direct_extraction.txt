@@ -1,0 +1,45 @@
+ESSENCE
+3. Direction  of business
+promotion* goals, strategies,  systems,  schedules  of business  promotion
+4, Request  for Proposal
+Content
+D) Proposal+ RFP overview,  target system  overview,  details and configuration  requirements  of the
+development  target, and the target equipment  to be introduced,  initial data construction
+requirements,  standardization  requirements,  system  operating  conditions,  training  support
+requirements,  technical  support  requirements,  maintenance  requirements,  etc.
+A proposal  is a document  that provides  detailed  analysis  of the company's  experience,  capabilities,  and busi-
+ness in order to win an order for the business  ordered  by the proposer.  The ordering  company  selects a com-
+pany based on the proposal.
+<Table 13 Composition  of Proposal
+Classification Content
+1. Proposal  overview Background,  purpose,  scope, prerequisites,  and expected  effects  of the proposal
+2. General  information
+about proposerGeneral  status, organization  and personnel,  major business  details, major business
+performance
+3. TechnologySystem  configuration  diagram,  system  construction  plan (system  specifications  and functions,
+configuration  device details and detailed  specifications,  system delivery  and installation
+plan, etc.), software  development  plan (development  methodology  utilization  plan, business
+development  plan, initial data construction  plan, system integration  plan), etc
+4. Business
+ManagementQuality  assurance  plan, risk management  plan, implementation  schedule  plan, work report and
+review plan, performance  organization  and work division,  input manpower  and history, etc.
+5. Support Education  and training  plan, maintenance  plan, technology  transfer  plan, other support  matters
+6. Others Attachment:  Basis for price calculation
+E) Requirement  traceability  matrix
+The Requirement  Traceability  Matrix is a document  that tracks the process  of the user's requirements  to be
+reflected  in the final deliverable.  Through  this document,  it is possible  to trace how the user's requirements
+are reflected  in the product,  and trace back to what requirements  the implemented  product  is based on.
+In the document,  WBS, design, developed  product,  test scenario,  etc. are mapped  and managed  with user re-
+quirements.
+<Table 14> Composition  of Requirement  Traceability  Matrix
+Classification Content
+1. User requirements RFP requirements  and requirements  collected
+2. Analysis  outputAnalysis  contents  mapped  to user requirements
++ Use case, requirements  analysis,  etc.
+3. Design  outputDesign content  mapped  with user requirements
++ Architecture
+Screen design brief
+Module  design brief
+Interface  design brief
+DB design brief
+50 TOPCIT  ESSENCE

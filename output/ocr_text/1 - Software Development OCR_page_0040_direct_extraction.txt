@@ -1,0 +1,30 @@
+Software  Development )
+01 Data Structure
+A) Definition
+A data structure  is a method  of storing  data in the memory  device  of a computer.  It defines  data systematically
+so that various data can be efficiently  expressed  and utilized, considering  the characteristics  and usages of
+data.
+B) Classification
+The data structure  can be broadly divided into linear and non-linear  structures.  The linear structure  is a
+method  of organizing  data in such a way that they are connected  in a row, whereas,  in the non-linear  structure,
+data have a special form such as a hierarchical  structure.
+<Table  8> Classification  of data structures
+Classification Description
+Data are arranged  in a straight  line by considering  the sequence  of the data. Data are arranged  in a
+Linear  structure one-to-one  relationship  between  data and before/after,  adjacent  to, previous/next  data.
+The types of linear structure  include  array, linear list, linked list, stack, queue, and dequeue.
+It is a structure  in which several data exist after one data. Data adjacent/before  and after data are
+Non-linear  structure arranged  in a one-to-many  or many-to-many  relationship.
+The types of non-linear  structure  include  tree and graph.
+Linear list
+Linear
+structure Linked list
+[Figure 1] Classification  of the data structure
+<Table  9> Comparison  of sequential  data structures  and linked data structures
+Item Sequential  data structure Linked data structure
+M , When saving data in the memory,  data are Logical sequences  are expressed  by link,es  a stored consecutively  in order without  an regardless  of the physical location or sequence
+empty space. stored in the memory.
+Logical/physical
+sequence  matching The logical and physical  sequences  match. The logical and physical  sequences  do not match
+status
+M1 Software  development  39

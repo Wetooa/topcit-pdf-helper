@@ -1,0 +1,46 @@
+ESSENCE
+@ Application  of a two-way  cipher  algorithm
+Data, such as personal  information,  should be encrypted  and decrypted  using a two-way  cipher algorithm.
+Secure block cipher algorithms,  such as SEED, ARIA, and AES (Rijndael),  are generally  used.
+Currently,  there are two cases when the secure block cipher algorithm  should be applied:  when data is saved in
+plain text in the existing  database,  and when an insecure  cipher algorithm,  such as DES or 3-DES, is used.
++ When data stored is in plain text
+When personal  information  is stored in plain text, it should be encrypted  and stored, using a 128-bit  or higher
+secret key, and the used secret key should be stored in a separate  safe place.
+Him etesrol  are]  Mace  lauitele(OMM  MIke le-(e NaN e)(- lan) au
+fein)  eN  (Ulan LastName falesi lune} Password(plain  text)
+10001 KIM NAMIL. 761108-1234567
+10002 LEE YOUNGPYO 750624-2345678
+10003 CHA DORI 820301-3456789
+Using a 128-bit
+or longer  secret
+eames) COA  M1)a
+iInfeleieam Resident  registration  number  / Secret  key
+SEED a safe place
+0 aS
+EmpNum LastName FirstName SSN(SEED)
+10001 KIM NAMIL. Tocbf16566d..
+10002 LEE YOUNGPYO  | 26505434366.
+10003 CHA’ DORI 318286064.
+[Figure  47] When personal  information  is stored in plain text
++ If an insecure  block cipher algorithm  is used
+If an insecure  block encryption  algorithm,  such as DES or 3-DES, is used, the existing  encrypted  data
+is decrypted,  using a batch job processing method, then encryption  is performed,  using a secure block
+encryption  algorithm.
+If an insecure  block cipher  algorithm  is used
+Lei NOt LastName aN NCS SSN(DES)
+10001 KIM NAMIL 70a627096..
+10002 LEE YOUNGPYO, 0644e74bf..
+10003, CHA DORI cabc6b542..
+es
+nelle Ciphertext  / Secret  key J
+eo oe
+: Kosa j Gl»  cup. ee Dhiiresser-ia
+Nts 10M  0-40
+Resecmarecseritony [|__— a safe placeInput:number  / Secret keyNs  0: EE
+fein)  oN eta) LastName SiN INS SSN(SEED)
+10001 KIM NAMIL. 03ac674216.
+10002 LEE YOUNGPYO, 11043a8795..
+10003 CHA DORI C9d75iala...
+[Figure  48] If an insecure  block cipher  algorithm  is used
+94 TOPCIT  ESSENCE

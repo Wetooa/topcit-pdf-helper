@@ -1,0 +1,33 @@
+Overview  of System Architecture )
+When classifying routing protocols,  based on AS, the routing protocol  within the AS is called the inter gateway
+protocol  (IGP). The leading IGP includes  the routing information  protocol  (RIP), using a distance  vector routing
+algorithm,  and the open shortest  path first (OSPF),  using a link-state  routing  algorithm.  The routing  protocol  between
+AS is called the exterior  gateway  protocol  (EGP). The leading  EGP is the border  gateway  protocol  (BGP) that uses a
+path-vector  routing  algorithm.
+D) Routing  protocol  type
+The routing protocol includes  RIP, which uses the distance-vector  routing  algorithm  and delivers  the routing  table
+information  every 30 seconds  through  broadcasting,  IGRP. which improves  some of the RIP problems  by reflecting  the
+network  state (bandwidth,  delay time, load, etc.), OSPF, which uses the link-state  routing  algorithm,  and BGP, which
+connects  between  AS. <Table 50> shows  the details  of each protocol.
+Table 50) Routing Protocol  Types
+Protocol Description
++ RIP uses the distance-vector  routing  algorithm  and delivers  the routing  table information  every 30 seconds
+RIP through  broadcasting.
+(RFC 1058) + The number  of hops is limited (up to 16hop),  VLSM is not supported,  and load balance  is not available.
++ It does not reflect  the network  state (bandwidth,  delay time, load, etc.).
++ IGRP enhances  some of the problems  of RIP.
+IGRP + It reflects  the network  state (bandwidth,  delay time, load, etc.).
++ The number  of hops is increased  (up to 255 hops), VLSM is not supported,  and load balance  is available.
++ OSPF uses the link-state  routing  algorithm.ae  Rec | * Information  on the occurrence  of changes, such as user-specified  routes, the most economical  routes, and
+n 47) multiple  routes, spreads  faster than RIP
++ Topology  information  remains  the same across all routers,  VLSM, and load balancing.
+BGP + EGP method  that connects  AS and the interconnection  of large networks
+(RFC 4271) + Uses the TCP technique,  based on the path-vector  routing
+06 IPv4 Overview
+A) What is an IPv4 (Internet  Protocol  Version  4) address?
+The IPv4 address  is the 32-bit address  used on the IP layer, as shown in [Figure 123]. It is an identifier  that makes the
+router or host connection  to the Internet  unique and universal.
+32 bit
+f Bbit ) i Bbit ) Bbit | f Bbit—_
+[Figure 123] IPv4 Address  Structure
+M3 Overview  of System  Architecture  169

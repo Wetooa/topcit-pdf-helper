@@ -1,0 +1,38 @@
+ESSENCE
+“maintenance  personnel”  often refers to each individual  who performs  maintenance  activities,  so as to distinguish  them from
+developers.  Maintenance  personnel  can learn much from developers  who have a deep knowledge  of the software  concerned.
+If maintenance  personnel  meet developers  or participate  in development  from the beginning,  maintenance  can be reduced.
+Sometimes  maintenance  personnel  become  perplexed  because  the software  engineer  in charge has moved to another  job
+or is out of contact.  Maintenance  personnel  should take over and immediately  support  the developed  product  (e.g. code or
+document),  and evolve and maintain  the developed  product  throughout  the entire software  life cycle.
+The table below shows  the various  subjects  for each activity  in the general  maintenance  phase. Each activity  subject  performs
+and bears the responsibility  for the maintenance  activity  concerned.  The maintenance  management  committee  approves  or
+rejects  the maintenance  of changes,  and finally reviews  and approves  the applied  change.
+<Table  46> Subject  by software  maintenance  activity
+Phase Activity Activity  subject
++ Filling in the MRF (Modification  Request  Form).
+Be + Making a CR (Change Request). Users, customers
++ Classifying  maintenance  types, determining  the severity.
+Analysis + Analyzing  the content  of the maintenance  request,  and the impact. Analyst
++ Prioritizing  maintenance  works,
+. Approving,  maintenance  work depending  on the content  of the Maintenance  management
+Approval analysis. :
+° committee
++ Approving  maintenance  work
+* Conducting  maintenance  on the maintenance  target.
+Execution + Creating  a software  change  report (SCR). Maintenance  personnel
++ Changing  the related  documents.
+The table below describes  the types of software  maintenance  organizations.  The “organization  by application
+field” is the most frequently  applied  type - mainly to fields requiring  knowledge  about the application  business.
+<Table  47> Types  of software  maintenance  organizations
+Type Contents
+Organization  by work type+ Analyzing  user requirements,  and designing, implementing,  and testing  a system.
++ Each team performs  its separate  roles and responsibilities.
++ The organization  can be specialized  in programming  knowledge  and skills, but incurs
+coordination  costs between  analysts  and programmers.
+Organization  by application  field + Classifying  organizations  according  to the application.
++ The organization  has expertise  in the development  of applied knowledge.
+Organization  by life cycle
+128 TOPCIT  ESSENCE+ Classifying  organizations  into development  and maintenance.
++ The organization  can be specialized  in development  and maintenance  technology.
++ The cost of coordinating  the development/maintenance  organization  is needed

@@ -1,0 +1,24 @@
+ESSENCE
++ Running:  The process  has the CPU allocation.
++ Finished:  The process  has completed  its running,  and the CPU allocation  is released.
++ Standby:  The process  ran after getting  the CPU allocation,  and is waiting  for an event, such as the completion  of
+input or output.
+@ Process  control block (PCB)
+PCB stores information  necessary  for process  management.  A unique PCB is generated  when  a process is created,
+and the PCB is removed  from the process  completion.  A PCB includes  a process  identification  number  (PIC), a process
+status, a program  counter  (the value that indicates  the instruction  to run next), a scheduling  priority, registered
+information,  and main memory  unit information.
+B) Process  management  technique
+@ Process  creation
+Processes  must be able to run in parallel, and also be created and removed  dynamically.  A process  can create other
+new processes  through  the "fork()” system call while it runs. The process  that creates other processes  is called a
+parent process,  and a newly created  process  is called a child process.  A child process  can create another  child process,
+and this relationship  is formed  in a tree structure,  as shown in [Figure 17].
+maa | Swapper | init I
+ee | ee |
+[Figure  17] Process  Tree Structure  in the UNIX OS (Example)
+@ Process  termination
+After completing  the last code of the program,  the process  requests  the OS to delete the process  with the “exit()
+system call, as shown in [Figure 18]. At that point, the child process retums data to the parent process  with the
+"wait()" system call, and the OS recollects  all the resources  allocated  to the deleted  process.
+46 TOPCIT  ESSENCE

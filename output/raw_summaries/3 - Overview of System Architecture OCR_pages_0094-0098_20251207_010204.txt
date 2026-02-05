@@ -1,0 +1,222 @@
+LEARNING GUIDE: Pages 94-98
+Generated: 2025-12-07 01:02:04
+PDF: 3 - Overview of System Architecture OCR
+
+================================================================================
+LEARNING GUIDE
+================================================================================
+
+Here's a simplified, easy-to-read learning guide based on the provided text:
+
+---
+
+## Learning Guide: System Architecture & Data Management
+
+### 1. RAID Configurations
+
+**RAID** (Redundant Array of Independent Disks) provides data redundancy and/or improved performance.
+
+#### 1.1 RAID-6 (Stripe set with dual distributed parity)
+*   **Concept:** Similar to RAID-5, but stores **two independent parity blocks** across different drives.
+*   **Minimum Drives:** 4
+*   **Benefit:** Enhanced data durability and safety. Can withstand **two drive failures** without data loss.
+*   **Why use it?** Solves the risk of data loss in RAID-5 if a second drive fails during a long rebuild process.
+*   **Mechanism:** Data is striped (distributed) across drives, with two dedicated parity blocks for redundancy.
+
+#### 1.2 RAID-10 (Striping & Mirroring)
+*   **Concept:** A combination of RAID-0 (striping for speed) and RAID-1 (mirroring for redundancy).
+*   **Minimum Drives:** 4
+*   **Benefits:**
+    *   **Improved I/O Speed:** From RAID-0.
+    *   **High Data Stability/Redundancy:** From RAID-1.
+    *   Addresses performance issues of RAID-1 and stability issues of RAID-0.
+*   **Drawback:** High cost due to 50% storage overhead (mirrored drives).
+*   **Configurations:**
+    *   **RAID 1+0 (RAID-10):** Drives are first mirrored (RAID-1 sets), then these mirrored sets are striped together (RAID-0). This is generally preferred for better stability.
+    *   **RAID 0+1:** Drives are first striped (RAID-0 sets), then these striped sets are mirrored (RAID-1).
+
+### 2. Backup Storage Solutions
+
+#### 2.1 Linear Tape-Open (LTO)
+*   **Concept:** An open-standard tape drive technology.
+*   **Purpose:** High-speed data processing and large-capacity data storage (tape backups).
+*   **Terminology:** Also referred to as tape backup machines, LTO libraries, etc.
+*   **Evolution:** LTO generations have significantly increased speed and capacity over time (e.g., LTO-1: 100 GB / 20 MB/s in 2000; LTO-8: 12.8 TB / 427 MB/s today; LTO-10 (expected): 48 TB / 1100 MB/s).
+
+#### 2.2 Virtual Tape Library (VTL)
+*   **Concept:** A backup solution that emulates disk storage as a virtual tape device.
+*   **Purpose:** Overcomes limitations of physical tape devices (performance, scalability, recovery time).
+*   **Benefit:** Simplifies backup processes and enables high-speed backups through tape virtualization, using disk arrays to simulate tape libraries.
+
+### 3. Graphic Compression Technology
+
+Compression reduces file size, essential for multimedia data.
+
+#### 3.1 Types of Compression
+
+*   **Lossless Compression (Reversible Compression):**
+    *   **Definition:** Compresses data in a way that allows perfect reconstruction of the original data upon decompression. **No information is lost.**
+    *   **Characteristic:** Lower compression rates compared to lossy compression.
+*   **Lossy Compression (Irreversible Compression):**
+    *   **Definition:** Achieves higher compression rates by **permanently discarding some data** that is deemed redundant or less important. The decompressed data is an approximation of the original.
+    *   **Characteristic:** Higher compression rates.
+
+#### 3.2 Lossless Compression Methods
+*   **Run-length Encoding (RLE):** Represents consecutive identical symbols as the symbol itself and a count of its repetitions (e.g., "AAAAB" becomes "A4B1").
+*   **Dictionary Coding:** Builds a dictionary of frequently occurring character strings. When a string is found, it's replaced by a shorter code or index from the dictionary.
+*   **Huffman Coding:** Assigns shorter binary codes to frequently occurring symbols and longer codes to less frequent symbols.
+*   **Arithmetic Coding:** Represents an entire message as a fraction within the interval [0,1], then encodes that fraction in binary.
+
+#### 3.3 Lossy Compression Methods
+*   **Prediction Coding:** Used for analog signals. Instead of quantizing (digitizing) samples directly, it quantizes the *difference* between samples. These difference values are smaller, requiring fewer bits.
+*   **Transform Coding:** Transforms a signal from one domain (e.g., time/space) to another (e.g., frequency). This allows more efficient compression in the new domain, often by discarding less perceptually important frequency components.
+
+### 4. Multimedia Data
+
+Multimedia data includes text, image, video, and audio.
+
+#### 4.1 Text Data
+*   **Forms:** Plain text, non-linear hypertext.
+*   **Standard:** Unicode is used for expressing symbols.
+*   **Compression:** Typically uses **lossless compression**.
+
+#### 4.2 Image Data (Still Image)
+*   **Examples:** Photos, fax pages, video frames.
+*   **JPEG Compression Process:**
+    1.  **Transformation:** Image data (often in 8x8 blocks) is transformed using a **Discrete Cosine Transform (DCT)**. This converts spatial information into frequency information.
+    2.  **Quantization:** The real numbers from the DCT are converted to integers, and some values (less perceptually significant frequencies) are set to zero. **This is the main lossy step.**
+    3.  **Coding:** Data is arranged in a zigzag pattern, then **lossless compression** methods like Run-length Encoding and Arithmetic Coding are applied for further reduction.
+*   **Decompression:** Uses inverse processes (inverse DCT).
+
+#### 4.3 Video Data
+*   **Composition:** Series of individual image frames. Requires high transmission rates.
+*   **Compression Methods:**
+    *   **Spatial Compression:** Compresses *each individual frame* as a standalone image (like JPEG).
+    *   **Temporal Compression:** Removes redundancy *between frames*. It categorizes frames:
+        *   **I-frames (Intra-coded):** Independent, full image frames.
+        *   **P-frames (Predictive):** Reference previous I- or P-frames to encode only changes.
+        *   **B-frames (Bi-directional):** Reference both previous and future I- or P-frames for even greater efficiency.
+
+#### 4.4 Audio Data
+*   **Digitization:** Analog audio signals are converted to digital using an **Analog-to-Digital Converter (ADC)**.
+*   **ADC Processes:**
+    1.  **Sampling:** Taking discrete measurements of the analog signal at regular intervals.
+    2.  **Quantization:** Assigning a digital value to each sampled measurement.
+
+### 5. Video Compression Standards (MPEG)
+
+**MPEG (Moving Picture Experts Group)** is an international standardization organization for multimedia.
+
+| Standard Type       | Key Features                                       | Common Applications                  |
+| :------------------ | :------------------------------------------------- | :----------------------------------- |
+| **MPEG-1**          | Audio and video compression/decompression          | MP3, Video CD                        |
+| **MPEG-2**          | Compression/decompression for DTV broadcasting     | Digital TV, DVD                      |
+| **MPEG-4**          | Mobile phone video compression/decompression       | IMT2000, Internet broadcasting       |
+| **AVC/H.264**       | Twice the compression rate compared to MPEG-2      | HDTV, mobile phone video             |
+| **MPEG-V**          | VR media presentation and control                  | 4D movies, VR                        |
+| **MPEG-DASH**       | Internet-based video streaming (adaptive)          | Internet image streaming             |
+| **HEVC/H.265**      | Twice the compression rate compared to AVC         | UHDTV, Smart TV                      |
+| **3D Audio**        | Adds dimensions to existing surround audio         | UHDTV, Smart TV                      |
+
+#### 5.1 AVC (Advanced Video Coding) & HEVC (High Efficiency Video Coding)
+*   **AVC (H.264 / MPEG4 Part10/AVC):** A video compression technology jointly developed by ITU-T (called H.264) and ISO (called MPEG4 Part10/AVC). They refer to the same standard.
+*   **HEVC (H.265 / ISO/IEC 23008-2):** The successor to AVC, offering significantly higher compression efficiency, roughly double that of AVC.
+
+---
+
+================================================================================
+ORIGINAL TEXT (First 5000 chars)
+================================================================================
+
+--- Page 94 ---
+Overview  of System Architecture )
+@ RAID-6  (Stripe set with dual distributed  parity)
+RAID-6 is similar to RAID-5, except that while RAID-5 stores one parity, RAID-6  redundantly  stores a parity in two
+drives. The configuration  is more durable  than RAID-5  and can store data safely. In a RAID-5  configuration,  the rebuild
+time restores  data to the new drive when  a drive fails and is replaced. The rebuilding  takes a long time in a storage
+system  with a large storage  capacity.  If another  drive fails during  this rebuilding  time, there is a possibility  of data loss.
+Therefore,  RAID-6 is recommended.
+RAID 6
+striping  with dual parity across drives
+BLOCK  1b Tova)
+orn Naor PEIN
+PENAees es
+Ola Si9 PENAL
+drive 1 drive 2 drive 3 drive 4parity b3
+reniaaery
+[Figure  67] RAID-6
+© RAID-10(Striping  & Mirroring)
+RAID-10  requires  at least four drives and is a combination  of RAID-O and RAID-1 to improve  |/O speed while
+providing  data stability.  It eliminates  the concern  with stability,  which is an important  drawback  of RAID-O, and it
+can significantly  improve  performance,  which is the biggest  drawback  of RAID-1. However,  its disadvantage  is that
+the cost is high. RAID 1+0 configures  two drives in mirroring  first, then RAID-1 drives, configured  of two drives, are
+configured  in RAID-0.  RAID 0+1 divides  the drives to be configured  in half, configures  them in RAID-O,  and reconfigures
+Ys of the drives and the remaining  1/2 of the drives in RAID-1. The RAID-10  configuration  features  better stability  and
+generally  uses RAID-10  more than RAID-O+1.
+RAID 10
+RAID 0
+RAID 1 RAID 1
+LV) ame ry a2
+Mi wy BS
+Disk 1 Disk 2 Disk 3 Disk 4q
+it
+[Figure  68] RAID-10
+M3 Overview  of System  Architecture  93
+
+
+--- Page 95 ---
+ESSENCE
+B) Backup  storage:  LTO and VTL
+@ Linear  tape-open  (LTO)
+LTO is a standard  open tape drive technology  that supports  high-speed  data processing  and  a large capacity.
+Although  LTO refers to physical devices  and technology,  they are also used interchangeably.  It is also called the tape
+backup machine,  tape media machine,  LTO machine,  LTO library, and LTO. LTO-1, first released in 2000, provided  a
+maximum  speed of 20 MB/s at an uncompressed  capacity  of 100 GB. The LTO-8 that is currently  available,  supports
+the performance  of a maximum  speed of 427MB/s  based on an uncompressed  capacity  of 12.8TB. The LTO-10 is
+expected  to provide  a maximum  speed of 1100MB/s  at an uncompressed  capacity  of 48TB.
+@ Virtual tape library (VTL)
+VTL is a backup solution  that emulates  disk storage and makes it into a virtual tape device to compensate  for
+problems  such as limited performance,  scalability,  and the recovery  time of existing  tape backup devices. Backup is
+simplified,  and high-speed  backup  is enabled  through  tape virtualization.
+Recovery Server Server Server Soe
+Server
+Fiber Channel
+VTL Appliance
+First Backup Second  Backup
+& * Virtual ~ Physical
+Backup — Tape Tape
+ase
+as)
+Disk Array
+[Figure 69] VTL Conceptual  Diagram
+04 Graphic  Compression  Technology
+A) Graphic  compression  type
+Video data compression,  which accounts  for most of the traffic in a multimedia  network,  can be divided  into lossless
+compression  (reversible  compression)  and lossy compression  (irreversible  compression).  Lossless  compression  is also
+called reversible  compression.It  refers to a method  of restoring  a compressed  image without  information  loss from the
+original data while decompressing.  It is characterized  by a lower compression  rate than lossy compression.
+Lossy compression  is also called irreversible  compression.It  refers to a compression  method when the compressed
+data is restored,  but it does not match  the original  data before the compression  because  some data is lost.
+94 TOPCIT  ESSENCE
+
+
+--- Page 96 ---
+Overview  of System Architecture )
+@ Lossless  compression
+Since the compression  and decompression  algorithms  are exactly  the opposite  of each other, the compression
+method preserves  the original data’s integrity,  and no part of the data is lost during processing.  Leading  lossless
+compression  methods  include run-length  decoding,  dictionary  decoding,  Huffman  coding, dictionary  coding, and
+arithmetic  coding.
+(Table 15) Lossless  Compression
+Compression  method Description
+Runrlenath Sli + Run-length  encoding  (RLE)
+al “RL ine + Amethod  expressing  consecutively  repeated symbols in terms of the symbol and repetition  count
+(run-length)
++ Dictionary  coding
++ Amethod  that creates  a dictionary  while scanning  a message,  and if an entry character  string in the
+Pistenenyeceiing dictionary  is found in the message,  the code value (index value) of the entry is sent instead of the
+string
++ Huffman  coding
+Huffman  coding + Amethod  that encodes  data in a binary pattern  and allocates  short codes to symbols  that occur more
+frequently  and long codes to symbols  that occur less frequently
++ Arit...

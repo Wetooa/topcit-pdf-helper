@@ -1,0 +1,15 @@
+ESSENCE
++ Preview  for practical  business
+Since most of the recent information  systems  store data in a database,  an adequate  database  processing
+language  is needed  to process  values by linking a program  to a database.  In particular,  as more than 90%
+of the databases  adopted  by a project  are mostly  relational  databases  in the majority  of cases, developers
+should be familiar with the relational  database  language.  So how well should developers  familiarize
+themselves  with the relational  database  language?  Objects  such as tables and views are managed  by the
+data architect  (DA) or the database  administrator  (DBA) in some large-scale  projects;  however,  developers
+manage  everything  from table creation/change/delete  to data processing  in most projects.  Therefore,
+it is desirable  for the developer  to know all of the data definition  language  (DDL), data control language
+(DCL), and data manipulation  language  (DML) of the relational  database,  in order to perform those tasks
+smoothly.  That is, relational  database  languages  are one of the key database  build and operation  areas that
+developers  should know well, and it is recommended  for developers  to learn those languages  to such a level
+that they can use the syntax  quite freely,
+104 TOPCIT  ESSENCE

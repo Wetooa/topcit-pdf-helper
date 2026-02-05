@@ -1,0 +1,26 @@
+Overview  of System Architecture )
+ee  Distributed| Loading
+Logical  Memory
+Physical  Memory
+Segment Memory  Management  Unit (MMU)
+MemoryaManagement
+Distributed  loading
+according  to size
+Distributed  Loading
+a | vysical Memory
+[Figure  26] Comparison  of Paging  and Segmentation  Memory  Allocations
+B) Page replacement  technique  of the virtual memory  unit
+If all pages are filled in the paging  virtual memory  unit, free space must be created  before loading  new memory  pages
+from the auxiliary  memory  unit. The system selects  a page to replace the page replacement  technique,  affecting  the
+system  efficiency  and performance.
++ Optimal  technique:  This technique  replaces  a page that is not likely to be used for the longest  time. Although  it
+is the optimal replacement  technique  with the minimum  absent page rate, it is not a realistic  technique,  since it is
+difficult  to predict  behavior.
++ First In First Out (FIFO) technique:  This technique  tracks the order of loading  in the main memory  and replaces  the
+first loaded page.
++ Least Recently  Used (LRU) technique:  This technique  replaces  the page that has been unused  for the longest  time.
++ Least Frequently  Used (LFU) technique:  This technique  tracks each page's utilization  frequency  and replaces  the
+least used or least intensively  used page.
++ Not Used Recently  (NUR) technique:  This technique  uses the tendency  that the page not used recently  is less likely
+to be used in the near future, so it replaces  the page.
+M3 Overview  of System  Architecture  55

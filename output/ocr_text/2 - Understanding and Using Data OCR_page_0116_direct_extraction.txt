@@ -1,0 +1,58 @@
+Database )
+03 Dynamic  SQL
+Unlike static SQL statements,  dynamic  SQL statements  are dynamically processed  according  to program  logic. As
+dynamic  SQL and static SQL are in a trade-off  relationship  in terms of performance  and flexibility,  an appropriate
+method  should be selected  according  to the development  environment  and purpose.
+A) Comparison  between  dynamic  and static SQL
+<Table  45> Comparison  of the characteristics  of dynamic  SQL and static SQL
+Item Static SQL Dynamic  SQL
+OverviewAn SQL statement  is not assigned  to a variable  but
+is mixed in the code for description.
+An SQL statement  is processed  statically  by
+declaring  CURSOR.An SQL statement  is assigned  to a string-type
+variable  and processed  dynamically.
+The SQL statement  can be dynamically  changed
+according  to the condition.  Part or all of the SQL
+statement  can be received  from the user at runtime.
+Development
+patternStatic SQL is declared  in the CURSOR  clause and
+then the data is processed  in a looping  structure
+between  the BEGIN and END clause.NVL (0) processing  is not needed  as the syntax  of
+dynamic  SQL can be changed.
+Column
+compositionThe column  and WHERE  clause cannot  be changedAs a DBMS is called after assigning  an SQL
+statement  in a variable,  all SQL statements  such as
+variables  and columns  can be freely processed  with
+logic.
+Execution
+planThe optimizer  sets up an execution  plan for Is NULL
+and IS NOT NULL to process  the condition  wherein
+NVL () is processed.
+That is, if there are 6 conditions,  the execution
+plan is divided  by 12 CONCATENATION.  As a result,
+along hard parsing  time is required  to set up an
+execution  plan.The optimizer  sets up an execution  plan for pure
+access  paths only because  the execution  plan does
+not have to be divided,  since there is no WHERE
+condition  whereby  NVL() is processed.
+Therefore,  the hard parsing  time can be minimized.
+StrengthsThe execution  speed is faster  than dynamic  SQL.
+SQL statements  can be checked  in advance  during
+development.
+Code readability  is high because  the code is more
+intuitive  than dynamic  SQL.Anaccess  plan for each SQL statement  in the
+application  is available  based on the most recent
+statistical information.
+More diverse  and flexible  applications  can be
+developed  because  the SQL statement  is
+determined  at runtime,  not during development.
+ShortcomingsThe SQL statements  should all be defined  during
+development.
+The pre-compilation  and bind processes  are
+required.The processing  speed is slower  than that of static
+SQL.
+The type, syntax, and privilege  of the SQL
+statement  cannot  be checked  before execution.
+The level of development  difficulty  is high, and
+development  takes a remarkably  long time.
+M2 Database  115

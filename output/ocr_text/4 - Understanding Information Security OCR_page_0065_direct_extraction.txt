@@ -1,0 +1,36 @@
+Information  security )
+Certification  standard  for the information  security  management  system
+5 phases,
+12 certification
+criteriaInformation  security  measures
+92 certification
+criteria| Establishing  information  security 1. Information  security| 7. Physical securitypolicy and setting  the scope policy
+| Executives’  responsibility  and 2. Information  security { 8. System  development
+organization  formation organization security
+4, Information  asset
+classificationImplementing  information  security
+measures | 10, Access control |
+5. Information  security
+education
+12. Breach incident
+6, Personnel  security
+13, IT disaster  recovery
+Number  of
+(occlu iced euler) V7 manent  CeTiseS
+Information  security 92 information  protection  measures=<
+| eee  | - aoe ee  ae Conformity  assessment  on 104 certification
+criteria in total
+[Figure  29] Composition  of the information  security  management  system| Risk management | 3. Outsider security | 9, Password  control |
+| Follow-up  management | 11. Operational  security |
+B) Risk management
+As shown in [Figure 30], risk management  is a series of processes  that estimates  values, by identifying
+information  assets managed  by an organization,  identifies  risks from the legal, administrative,  physical,  and
+technical  aspect by assets, and by preparing  effective  protection  measures  against  the risk that exceeds  an
+acceptable  degree of assurance  (DoA)'.
+Asset Asset
+Threat ThreatDanger Risk Remaining
+k management Wis
+Vulnerability Vulnerability
+[Figure  30] Risk management
+1 DoA: Degree  of Assurance
+M4 Understanding  Information  Security 65

@@ -1,0 +1,16 @@
+ESSENCE
+>> Recent  trends and issues
+Conventional  IT environments,  based on high-performance  servers represented  by mainframes,as  well as
+UNIX servers, are rapidly transforming  into cloud computing  environments  characterized  by virtualization,
+immediateness,  and linear scalability  (scale-out).  The importance  of cloud computing  is increasing,
+particularly  with the rapid growth of SNS and Internet  services,  and big data and loT become  keywords
+of IT. Understanding  cloud computing  is essential  in order to respond  quickly to rapidly changing  business
+environments  and to provide  an IT environment  with continuous  scalability.
+>> Learning  objectives
+1. To be able to distinguish  and explain the characteristics,  concepts,  and types of cloud computing.
+2. To be able to explain virtualization  technologies  and components  that are the basis of cloud computing,
+3. To be able to distinguish  types of server virtualization  technologies  for cloud computing  and explain the
+differences,
+>> Keywords
+Cloud computing,  Cloud type, Virtualization,  OpenStack,  Docker,  Linux container,  Mesos, Kubernetes
+128 TOPCIT  ESSENCE

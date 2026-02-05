@@ -1,0 +1,36 @@
+Overview  of System Architecture )
+{Table 11) Comparison  of CISC and RISC
+Type CISC RISC
+( (Data  ‘\ = DataXK Path Z XC!  Path ) Cache
+Se We “
+System i)
+Configuration BaaSProgam \\ Va oe. commen
+\ cont 7 {Contra 2 - es
+1Byte { OP-CODE }
+2 Byte (_OP-CODE |(_OP-CODE OP-CODE  )  { OPERAND1) OPERAND2 )
+OP-CODE  |( OPERAND
+= = (OPERAND  ~ Fixed to 32 BitsConfiguration  3Byte  ( OP-CODE  ) OP-CODE \( OPERAND
+of Number  of OP-CODE \( OPERAND  ){ OPERAND
+Commands  | 4 Byte (OP-CODE  )(  OP-CODE \( OPERAND  \( OPERAND
+Since only the needed information  is stored as It is easier  to apply the pipeline  since the instruction
+instruction  in a variable length, it can reduce  wasted size is fixed to 32 bits.
+code, and the program  size decreases  accordingly.
+Control  system | Micro-program  type Hard-wired  type
+Compiler Simple structure Complex  structure
+Number of registers  | Few Many
+Example Intel series (x86) ARM and MIPS
+03 Memory
+A) Memory  unit’s hierarchical  structure
+As shown in [Figure 35], the memory  unit at a higher level has a higher price per bit, less capacity,  a shorter  access
+time, and a higher access  frequency  by the CPU.
+Fast High Priced Small
+Register
+Internal  Memory cetera , ~ co
+ccess_ | Price rage
+Speed | /Bit Capacity
+Main Memory
+External  Memory
+Auxiliary  Memory
+Slow LowPrice Large Quantity
+[Figure  35] Memory  Unit's Hierarchical  Structure
+M3 Overview  of System  Architecture  67

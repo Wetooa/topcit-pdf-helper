@@ -1,0 +1,37 @@
+Software  Development )
++ Amount  of variable  space: Storage  space that stores data and variables  used while executing  a program,  and
+information  related  to function  execution.
+@ Time complexity
+This is the time taken to execute  and complete  an algorithm  as a program,  which is the sum of the compilation  time and the
+execution  time.
+Time complexity  = Compilation  time + Execution  time
+* Compilation  time: Fixed time, which is not closely related to the characteristics  of the program.  Once
+compiled,  the program  is kept constant  unless the program  is modified.
++ Execution  time: The program execution  time that is calculated  by counting  the number  of instances  of
+command  execution,  rather than by measuring  the actual accurate  execution  time, as it depends  on the
+performance  of the computer.
+Execution  time is mainly used when comparing  algorithms  and is expressed  as O(n) using the Big Oh notation’
+, which is expressed  as time complexity.  Execution  time functions  include logn, n, nlogn, n2, n3, and 2n,
+depending  on the algorithm  (by Lee Ji-young).  To solve the problem,  it is recommended  to select an algorithm
+with the smallest  value of time complexity  after creating  multiple algorithms  and calculating  the execution
+time of each algorithm.
+<Table 14> Calculating  execution  times according  to the change  of n value in the execution  time function
+logn < n < nlogn < rn < n3 < 2
+0 1 0 1 1 2
+1 2 2 4 8 4
+2 4 8 16 64 16
+3 6 24 64 512 256
+4 16 64 256 4096 65536
+5 32 160 1024 32768 4294967296
+<Table 15> Algorithm  complexity
+Complexity  notation Description
+O(1) Constant  type. Finds the solution  regardless  of the input size.
+O(log, Log type. Divides the input data and processes  one of them only.
+O(N) Linear  type. Processes  all input data one by one.
+O(Nlog,) Division and merger  type. Processes  data by dividing  and then merging  them.
+O(N) Square type. When the basic operation  loop structure  is double.
+O(N?) Cubic type. When the basic operation  loop structure  is triple.
+O(2") Exponential  type. Processes  by testing  all possible  solutions.
+1 To use Big Oh notation,  find an execution  time function  by calculating  the number  of execution  times and select a term for n,
+which affects  the value of this function  most, and then place it in the right parenthesis  of O without  the coefficient.
+M1 Software  development  45

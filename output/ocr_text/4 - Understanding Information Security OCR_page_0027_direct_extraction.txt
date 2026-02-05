@@ -1,0 +1,39 @@
+<Table 2> Comparison  ofInformation  security )
+the block cipher  and the stream  cipher
+Item Block encryption Stream  encryption
+Operating  method ihe bacon.  called Plaintext is encrypted  in bits.
+Low risk of error spread
+Strengths Easy to implement Easy to implement  in a mobile communication
+environment
+High risk of error spread Slow execution  timeShortcomings 8 im Malicious  attackers  can easily modify the
+Initial values should be set.content.
++ Block cipher algorithm
+The block cipher algorithm  performs  the encryption  and decryption  process, using the cryptographic
+algorithm  that transforms  fixed size input blocks into fixed size output blocks using a secret key. The block
+cipher algorithm  includes  Feistel Network,  DES (Data Encryption  Standard),  AES (Advanced  Encryption
+Standard),  IDEA (International  (Data Encryption  Algorithm),  SEED, and ARIA. <Table 3> shows major attack
+techniques  against  the block cipher system.
+<Table 3> Block cipher  attack  techniques
+Attack  technique Contents
+Differential  attackThe differential  attack  is a method  of attack  on the selected  plaintext.  This attack  technique  finds the
+key used for encryption  by using the bit difference  of the ciphertext  blocks, which corresponds  to the
+difference  of two plaintext  blocks.
+Linear  attackThe linear attack is a method  of attacking  plaintext.  This attack  technique  finds the encryption  key by
+properly  linearizing  a nonlinear  structure  inside a cryptographic  algorithm.
+Brute force attackAn attack technique  that finds the encryption  key by comparing  plaintext  and ciphertext  by using all
+possible  encryption  keys used for encryption.
+Statistical  analysisAn attack technique  that decrypts  ciphertext  using all known statistical  data, including  statistical  data
+on the frequency  of each word used in ciphertext.
+Mathematical
+analysisAn attack technique  that decrypts  ciphertext  using mathematical  theories,  including  statistical
+methods.
++ Stream cipher algorithm
+A stream cipher is a method developed  mainly in Europe. Unlike block ciphers that perform encryption  and
+decryption  in blocks, ciphertext  is created by the bitwise XOR operation  of the plaintext  bit string, and
+the bit string of the key, as shown in [Figure 7]. RC4 is a representative  stream cipher, and there are other
+algorithms,  such as A5/1 and A5/2.
+Plain text 0101110110 y
+oo” 1000000101
+Key stream 1101110011 K
+[Figure 7] Stream  cryptographic  algorithm
+M4 Understanding  Information  Security  27

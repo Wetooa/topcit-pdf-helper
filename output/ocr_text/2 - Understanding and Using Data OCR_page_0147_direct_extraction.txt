@@ -1,0 +1,38 @@
+ESSENCE
+02 Technologies  Related  to Big Data
+A) Collection  technology
+Various  technologies  can be used for data collection,  such as ETL, web crawling,  RSS Feeding,  Open API, and CEP
+(Complex  Event Processing).  Among them, the web crawling  technology  automatically  collects  various documents
+and data generated  on the web, and is used to collect data such as SNS, blogs, and news. Web crawling  copies the
+entire web page after collecting  the URLs to be collected,  or collects  data with a specific  tag only after analyzing  the
+HTML code.
+<Table 69> Examples  of big data collection  solutions
+Technology Description Solutions
+Collesisteie  te Collects data using the SQL function of the DBMS. Oracle, MariaDB, MS SQL, Tibero, etc.
+Collection  using sensors  | Collects  data when a certain  condition  is met. CQL, Kafka
+FTP collection Collects  data using a port that can transfer  files.
+HTTP collection Collects  data by reading  HTML tags. Scraper
+B) Big data storage/processing  technology
+The Distributed  File System (DFS), NoSQL, MapReduce,  and other technologies  are used to store and process  large
+amounts  of data and unstructured  data (that is, big data) generated  at high speed in an efficient,  cost-effective
+manner. Recently,  the distributed file system, which is based on the cloud and uses virtualization  technology  in the
+cloud computing  environment,  was introduced.
+<Table  70> Example  of big data storage/processing  technology
+Technology Description Solutions
+a . A file system  that allows access  to files on multiple
+Distributed  File System host computers  which are shared over a computer GFS (Google  File System), HDFS(DFS) (Hadoop  Distributed  File system),  etc.
+network.
+Anew  type of data storage/retrieval  system  that
+uses a less restrictive  consistency  model (BASE HBase, Cassandra,  Mongodb,
+NoSQL (Not Only SQL) characteristics)  than the traditional relational CouchBase,  Redis, Neo4J, etc.
+database
+Distributed  parallel A technology  that processes  a large amount  of data in MapReduce
+processing a distributed  parallel computing  environment. p
+@ Distributed  File System (DFS)
+The DFS is a file system architecture  for storing and processing  large-scale  and unstructured data in a distributed
+environment.  It has the following  characteristics.
++ It is composed  of inexpensive  servers.
++ Scale-out:  Its entire available  capacity  and performance  increase  almost  linearly  each time equipment  is added.
++ High availability:  Even if some servers  fail, the usability  of the entire system  is not affected  very much.
++ Optimized  for throughput:  It is suitable  for the batch processing  of large-scale  data.
+146 TOPCIT  ESSENCE

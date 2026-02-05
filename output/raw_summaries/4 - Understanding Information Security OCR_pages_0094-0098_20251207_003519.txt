@@ -1,0 +1,248 @@
+LEARNING GUIDE: Pages 94-98
+Generated: 2025-12-07 00:35:19
+PDF: 4 - Understanding Information Security OCR
+
+================================================================================
+LEARNING GUIDE
+================================================================================
+
+Here is a simplified, easy-to-read learning guide based on the provided text:
+
+---
+
+# Data and System Security Learning Guide
+
+## 1. Database Encryption: Core Concepts
+
+### 1.1 What is Two-Way Cipher Encryption?
+*   A method to encrypt (scramble) and decrypt (unscramble) sensitive data, like personal information.
+*   Uses a **two-way cipher algorithm**, meaning data can be both encrypted and returned to its original form.
+
+### 1.2 Secure vs. Insecure Algorithms
+*   **Secure Block Cipher Algorithms (Recommended):**
+    *   SEED
+    *   ARIA
+    *   AES (Rijndael)
+*   **Insecure Block Cipher Algorithms (Avoid/Upgrade):**
+    *   DES
+    *   3-DES
+
+### 1.3 When to Apply Database Encryption
+Encryption is crucial in two main scenarios:
+1.  **Data stored in plain text:** When sensitive information exists in an unencrypted, readable format in a database.
+2.  **Using insecure algorithms:** When data is already encrypted but with weak algorithms (e.g., DES, 3-DES).
+
+## 2. Database Encryption: Application Scenarios
+
+### 2.1 Encrypting Plain Text Data
+*   **Action:** Encrypt personal information using a **128-bit or higher secret key**.
+*   **Key Management:** The secret key used for encryption must be stored **separately in a safe place**, away from the encrypted data itself.
+*   **Example:** Social Security Numbers (SSN) stored as plain text are encrypted using SEED, and the SEED key is secured elsewhere.
+
+### 2.2 Upgrading Insecure Encryption
+*   **Scenario:** If a database uses weak encryption like DES or 3-DES.
+*   **Action:**
+    1.  Decrypt the existing data (encrypted with the insecure algorithm) using a batch job.
+    2.  Re-encrypt the data using a secure block encryption algorithm (e.g., SEED, ARIA, AES).
+*   **Key Management:** The new, secure encryption key must be stored **separately in a safe place**.
+
+## 3. Database Encryption: Implementation Procedure
+
+Applying database encryption is a structured process with five key phases:
+
+### 3.1 Phase 1: Prior Consultation
+*   **Goal:** Ensure all project stakeholders are aligned and informed.
+*   **Activities:** Discuss the database to be encrypted, applicable environment, security policy, and project schedule.
+
+### 3.2 Phase 2: Impact Analysis (Critical Phase)
+*   **Goal:** Understand how encryption will affect the application and database management system (DBMS) *before* implementation. This is one of the most important phases.
+*   **Activities:**
+    *   **Selecting Encryption Targets:** Identify specific tables and columns within the DBMS that contain sensitive data and need encryption.
+    *   **Analyzing Query Statements:**
+        *   Examine all database queries.
+        *   Analyze query execution time and data volume.
+        *   Identify queries that may require optimization after encryption is applied.
+    *   **Analyzing DBMS:**
+        *   Check current resource usage (CPU, memory, storage).
+        *   Calculate the additional resources needed to handle encryption overhead.
+    *   **Analyzing Applications:**
+        *   Identify application modules affected by encryption.
+        *   Determine required changes to application logic and common modules.
+        *   Select modules for optimization.
+
+### 3.3 Phase 3: Test Verification
+*   **Goal:** Validate the encryption solution in a controlled environment similar to production.
+*   **Activities:**
+    *   Create a test environment mirroring the live system.
+    *   Conduct business tests and application tests with encryption applied.
+    *   Identify and resolve any issues or problems that arise during testing.
+    *   Test all applications and query statements to ensure full functionality and performance.
+
+### 3.4 Phase 4: Application & Monitoring
+*   **Goal:** Deploy the validated encryption solution to the live operating environment and ensure continuous smooth operation.
+*   **Activities:**
+    *   Apply encryption to data in the production environment.
+    *   Integrate modified source code and optimized queries from the test phase.
+    *   Resolve any remaining issues identified during testing.
+    *   **Continuous Monitoring:** Regularly check for errors in applications and query statements, ensuring proper system functioning after encryption.
+
+## 4. Database Encryption: Key Management
+
+### 4.1 Importance of Key Management
+*   **Criticality:** If an encryption/decryption key is leaked, the encryption becomes ineffective.
+*   **Principle:** Keys must be **redundant** (e.g., encryption/decryption key and master key) and accessible only by authorized persons.
+
+### 4.2 Types of Encryption Keys
+*   **Encryption/Decryption Key:** The key directly used to encrypt data and decrypt already encrypted data.
+*   **Master Key:** A key used to secure (store and distribute) the encryption/decryption keys themselves.
+
+### 4.3 Key Lifecycle Management
+
+Effective key management involves securing keys throughout their entire lifecycle:
+
+*   **1. Key Generation Stage:**
+    *   Generate keys using a **safe random number generator**.
+    *   For keys derived from user input, use algorithms with **proven stability**.
+*   **2. Key Distribution Stage:**
+    *   Distribute encryption keys securely by **encrypting them with an asymmetric key cipher algorithm**. This ensures only authorized recipients can access them.
+*   **3. Key Storage Stage:**
+    *   Store encryption keys using **hardware storage methods**, such as a separate Key Management Server or an **HSM (Hardware Security Module)**.
+    *   **AVOID:** Hardcoding keys into application programs, saving them as files on the file system, or storing them within the DBMS.
+*   **4. Key Use Stage:**
+    *   Apply **"least privilege"** and **"separation of duty"** principles (e.g., between database administrators and security managers).
+    *   Only authorized personnel should be allowed to access or modify the master key.
+*   **5. Key Backup & Recovery Stage:**
+    *   Establish clear **backup and recovery procedures** for encryption keys.
+    *   Perform **periodic backups** according to the organization's key backup policy to mitigate loss or damage.
+*   **6. Key Replacement Stage:**
+    *   Periodically **replace encryption keys** based on internal organizational policy to maintain security.
+    *   **Procedure:** Decrypt data with the old key, generate a new key, and then re-encrypt the data with the new key.
+*   **7. Key Destruction Stage:**
+    *   **When needed:** If an encryption key is lost or damaged.
+    *   **Procedure:**
+        1.  Use a backed-up key to decrypt any data encrypted with the lost/damaged key.
+        2.  Generate a new encryption key and re-encrypt the data.
+        3.  Securely destroy the lost or damaged encryption key.
+
+## 5. System Security Fundamentals
+
+### 5.1 Recent Trends & Major Issues
+*   **Increased Attacks:** Growing number of system-targeted attacks, especially **APT (Advanced Persistent Threat)** attacks.
+*   **Rising Importance:** System security is becoming as critical as network security (firewalls, intrusion detection systems).
+*   **Key Focus Areas:** Strengthening **access control**, improving **security settings**, and robust **account management**.
+*   **Goal:** Prevent system administrator rights hijacking and unauthorized internal user access to information security resources.
+
+### 5.2 Learning Objectives
+*   Be able to apply security settings to **Windows systems**.
+*   Be able to apply security settings to **UNIX and Linux systems**.
+
+### 5.3 Important Keywords
+*   **Account and Password Management:** Practices for creating, maintaining, and securing user accounts and passwords.
+*   **Shared Folder Management:** Securing access and permissions for shared directories.
+*   **Service Security:** Ensuring that system services are configured and run securely.
+*   **Password Crack:** The process of discovering passwords, often for malicious intent.
+*   **UMASK:** (UNIX/Linux) A command/setting that controls the default file and directory permissions for newly created files.
+*   **Daemon:** (UNIX/Linux) A background process that performs system tasks, often without user interaction.
+*   **Anonymous FTP:** A File Transfer Protocol (FTP) configuration that allows users to access files without a specific username and password. Often less secure.
+*   **Secure FTP (SFTP):** A secure version of FTP that uses SSH to encrypt data transfers.
+
+---
+
+================================================================================
+ORIGINAL TEXT (First 5000 chars)
+================================================================================
+
+--- Page 94 ---
+ESSENCE
+@ Application  of a two-way  cipher  algorithm
+Data, such as personal  information,  should be encrypted  and decrypted  using a two-way  cipher algorithm.
+Secure block cipher algorithms,  such as SEED, ARIA, and AES (Rijndael),  are generally  used.
+Currently,  there are two cases when the secure block cipher algorithm  should be applied:  when data is saved in
+plain text in the existing  database,  and when an insecure  cipher algorithm,  such as DES or 3-DES, is used.
++ When data stored is in plain text
+When personal  information  is stored in plain text, it should be encrypted  and stored, using a 128-bit  or higher
+secret key, and the used secret key should be stored in a separate  safe place.
+Him etesrol  are]  Mace  lauitele(OMM  MIke le-(e NaN e)(- lan) au
+fein)  eN  (Ulan LastName falesi lune} Password(plain  text)
+10001 KIM NAMIL. 761108-1234567
+10002 LEE YOUNGPYO 750624-2345678
+10003 CHA DORI 820301-3456789
+Using a 128-bit
+or longer  secret
+eames) COA  M1)a
+iInfeleieam Resident  registration  number  / Secret  key
+SEED a safe place
+0 aS
+EmpNum LastName FirstName SSN(SEED)
+10001 KIM NAMIL. Tocbf16566d..
+10002 LEE YOUNGPYO  | 26505434366.
+10003 CHA’ DORI 318286064.
+[Figure  47] When personal  information  is stored in plain text
++ If an insecure  block cipher algorithm  is used
+If an insecure  block encryption  algorithm,  such as DES or 3-DES, is used, the existing  encrypted  data
+is decrypted,  using a batch job processing method, then encryption  is performed,  using a secure block
+encryption  algorithm.
+If an insecure  block cipher  algorithm  is used
+Lei NOt LastName aN NCS SSN(DES)
+10001 KIM NAMIL 70a627096..
+10002 LEE YOUNGPYO, 0644e74bf..
+10003, CHA DORI cabc6b542..
+es
+nelle Ciphertext  / Secret  key J
+eo oe
+: Kosa j Gl»  cup. ee Dhiiresser-ia
+Nts 10M  0-40
+Resecmarecseritony [|__— a safe placeInput:number  / Secret keyNs  0: EE
+fein)  oN eta) LastName SiN INS SSN(SEED)
+10001 KIM NAMIL. 03ac674216.
+10002 LEE YOUNGPYO, 11043a8795..
+10003 CHA DORI C9d75iala...
+[Figure  48] If an insecure  block cipher  algorithm  is used
+94 TOPCIT  ESSENCE
+
+
+--- Page 95 ---
+Information  security )
+E) Procedure  of applying  database  encryption
+A database  is encrypted  with the procedure  of [Figure 49], which consists  of prior consultation,  prior impact
+analysis,  test verification,  build, and stabilization.
+lin eycleie » Application
+ETI and
+monitoring
++ Environmental  survey + Pre-diagnosis + Test environment + Operation  server  application
++ System information + DBMS analysis configuration + Monitoring  and stabilization
+collection + Application  analysis + Unit test + Technology  transfer  and
++ Security  policy consultation + Integrated  test training
++ Schedule  consulation
+[Figure 49] If an insecure  block cipher  algorithm  is used
+@ Prior consultation  for encrypting  a database
+All stakeholders  participating  in the project  should consult  on necessary  matters  in advance  to share necessary
+information  in advance,  such as the database  to be encrypted  to apply the database  application  security,  the
+applicable  environment,  the security  policy, etc., before applying  security  to the DB application.
+@ Analyzing  the impact  of database  encryption
+In this phase, the operational  server is monitored  and the impact on the application  and DBMS is analyzed,
+before applying  security  to the database  application.
+This phase is one of the most important  phases in applying  security  to database  applications.  Before applying
+encryption  to the operating  system, it is necessary  to perform encryption  pre-diagnosis,  such as extracting
+encryption  targets and encryption-related  SQL queries in advance,  running performance  tests on the test
+system, etc. Overall, the DBMS and application  are analyzed  in order to analyze the impact on changes in
+performance  and system  resources  after encryption.
++ Selecting  an encryption  target
+The encryption  target should be determined  by searching  the tables and columns  of the entire operating
+DBMS to extract  the columns  needing  to be encrypted.
++ Analyzing  query statements
+The amount  of data extracted  when executing  query statements  and the time of query statement  execution
+should be analyzed,  and the query statement  expected  to need optimization  should be selected,  by
+extracting  all query statements  used in all operating  DBMS.
++ Analyzing  DBMS
+The resources  used by the DBMS, such as CPU, memory,  and storage,  should be checked,  and the appropriate
+level of additional  resources,  that are required  when applying  encryption,  should be calculated.
++ Analyzing  applications
+The application  modules  that are affected  by the application  of encryption  should be extracted,  and the
+M4 Understanding  Information  Security  95
+
+
+--- Page 96 ---
+ESSENCE
+common  modules  that are additionally  required  to apply encryption,  as well as application  logic that needs to
+be changed  should be analyze...

@@ -1,0 +1,231 @@
+LEARNING GUIDE: Pages 40-44
+Generated: 2025-12-05 14:20:41
+PDF: 1 - Software Development OCR
+
+================================================================================
+LEARNING GUIDE
+================================================================================
+
+Here is a simplified, easy-to-read learning guide based on the provided text:
+
+---
+
+# Data Structures & Algorithms Learning Guide
+
+## 01. Data Structures
+
+### A) Definition
+A **Data Structure** is a method of storing data in a computer's memory. It organizes data systematically for efficient expression and utilization, considering data characteristics and usage.
+
+### B) Classification
+Data structures are divided into two main types:
+
+1.  **Linear Structure:**
+    *   **Definition:** Data are organized sequentially, connected in a row. They have a one-to-one relationship (before/after, adjacent).
+    *   **Types:** Array, Linear List, Linked List, Stack, Queue, Dequeue.
+
+2.  **Non-linear Structure:**
+    *   **Definition:** Data have special forms like hierarchical structures, with one-to-many or many-to-many relationships.
+    *   **Types:** Tree, Graph.
+
+#### Comparison: Sequential vs. Linked Data Structures
+
+| Item                   | Sequential Data Structure               | Linked Data Structure                     |
+| :--------------------- | :-------------------------------------- | :---------------------------------------- |
+| **Storage**            | Data stored consecutively in memory.    | Logical sequence expressed by links. Physical location doesn't matter. |
+| **Logical/Physical Match** | Logical and physical sequences match.   | Logical and physical sequences do **not** match. |
+| **Operations (Insert/Delete)** | Physical sequence changes due to operations; no empty space is created. | Physical sequence doesn't change; only link information changes. |
+| **Programming Tech.**  | Implemented using an **array**.         | Implemented using a **pointer**.           |
+
+### C) Stack and Queue
+
+#### @ Stack
+*   **Definition:** A linear data structure where data are added and removed only from one end, called the "top."
+*   **Principle:** **LIFO** (Last-In-First-Out). The last element added is the first one removed.
+*   **Access:** Only from the **top**.
+*   **Operations:**
+    *   `top()`: Returns the data value at the top.
+    *   `push()`: Inserts data onto the stack (at the top).
+    *   `pop()`: Deletes and returns data from the stack (from the top).
+    *   `isempty()`: Checks if the stack is empty (returns `true` or `false`).
+    *   `isfull()`: Checks if the stack is full (returns `true` or `false`).
+
+#### @ Queue
+*   **Definition:** A linear data structure where data are added at one end (rear/bottom) and removed from the other end (front/top).
+*   **Principle:** **FIFO** (First-In-First-Out). The first element added is the first one removed.
+*   **Access:**
+    *   Insertion (enqueue): At the **rear** (bottom).
+    *   Deletion (dequeue): At the **front** (top).
+*   **Operations:**
+    *   `enQueue`: Inserts data into the queue (at the rear).
+    *   `deQueue`: Deletes data from the queue (from the front).
+
+#### Comparison: Stack vs. Queue Operations
+
+| Item      | Data Structure | Operator (Insert) | Insert Location | Operator (Delete) | Delete Location |
+| :-------- | :------------- | :---------------- | :-------------- | :---------------- | :-------------- |
+| **Stack** | Stack          | `push`            | Top             | `pop`             | Top             |
+| **Queue** | Queue          | `enQueue`         | Rear            | `deQueue`         | Front           |
+
+### D) Tree and Graph
+
+#### @ Tree
+*   **Definition:** A non-linear, hierarchical data structure with a one-to-many relationship between elements. It expands from top to bottom.
+*   **Key Terms:**
+    *   **Root Node:** The topmost node.
+    *   **Edge:** The line connecting nodes.
+    *   **Child Nodes:** Nodes with the same parent node.
+    *   **Sibling Nodes:** Child nodes sharing the same parent.
+    *   **Subtree:** A tree formed by a node and its descendants, disconnected from its parent.
+
+#### @ Graph
+*   **Definition:** A non-linear data structure expressing many-to-many relationships between connected elements. It's a set of **vertices** (objects) and **edges** (connections).
+*   **Uses:** Solves complex problems like electric circuit analysis, shortest distance search, and AI.
+
+#### Types of Graphs
+*   **Undirected Graph:** Edges have no direction between vertices.
+*   **Directed Graph:** Edges have a specific direction; the sequence of vertices in a pair is important.
+*   **Complete Graph:** All vertices are connected to every other vertex.
+*   **Weighted Graph:** Edges have numerical values (weights) assigned to them.
+
+#### Graph Representation in Memory
+1.  **Adjacency Matrix:**
+    *   Uses a **sequential data structure** (2D array).
+    *   Stores the presence of an edge between two vertices in a matrix (e.g., 1 for connected, 0 for not).
+2.  **Adjacency List:**
+    *   Uses a **linked data structure** (linked list).
+    *   For each vertex, a linked list stores its adjacent vertices.
+
+### E) Data Structure Selection Criteria
+When choosing a data structure, consider:
+*   Data processing time
+*   Data size
+*   Data utilization frequency
+*   Data update frequency
+*   Ease of programming
+
+### F) Utilization of Data Structures
+*   **List:** Array implementation, DBMS indexes, search/sorting problems.
+*   **Stack:** Interrupt handling, recursive program control, saving return addresses (subroutines), postfix notation calculation, undo functions in editors.
+*   **Queue:** Operating system job scheduling, asynchronous data exchange (file I/O, pipes, sockets), keyboard buffers, spool operations.
+*   **Deque:** (Double-ended queue) Used in fields related to stacks and queues, leveraging strengths of both.
+*   **Tree:** Search/sorting problems, grammar parsing, Huffman code, decision trees, games.
+*   **Graph:** Computer networks (LAN, internet, web), electric circuit analysis, binary relations, simultaneous equations.
+
+---
+
+## 02. Algorithm
+
+### A) Algorithm Overview
+
+#### @ Algorithm Definition
+An **Algorithm** is a step-by-step description of procedures used to solve a problem. It's a logical, abstract specification of a problem-solving method. Algorithms aim not just for results, but for efficiency in processing time and storage space.
+
+#### @ Conditions of Algorithms
+For a procedure to be considered an algorithm, it must meet these conditions:
+
+1.  **Input:** Takes zero or more data inputs from outside.
+2.  **Output:** Produces one or more results after execution.
+3.  **Definiteness:** Each processing step and its sequence must be clearly specified.
+4.  **Finiteness:** The algorithm must terminate after a finite number of steps.
+5.  **Effectiveness:** Each instruction must be basic enough to be carried out in principle by a person using pencil and paper. (Implicit in definiteness and finiteness, often included in formal definitions).
+
+---
+
+================================================================================
+ORIGINAL TEXT (First 5000 chars)
+================================================================================
+
+--- Page 40 ---
+Software  Development )
+01 Data Structure
+A) Definition
+A data structure  is a method  of storing  data in the memory  device  of a computer.  It defines  data systematically
+so that various data can be efficiently  expressed  and utilized, considering  the characteristics  and usages of
+data.
+B) Classification
+The data structure  can be broadly divided into linear and non-linear  structures.  The linear structure  is a
+method  of organizing  data in such a way that they are connected  in a row, whereas,  in the non-linear  structure,
+data have a special form such as a hierarchical  structure.
+<Table  8> Classification  of data structures
+Classification Description
+Data are arranged  in a straight  line by considering  the sequence  of the data. Data are arranged  in a
+Linear  structure one-to-one  relationship  between  data and before/after,  adjacent  to, previous/next  data.
+The types of linear structure  include  array, linear list, linked list, stack, queue, and dequeue.
+It is a structure  in which several data exist after one data. Data adjacent/before  and after data are
+Non-linear  structure arranged  in a one-to-many  or many-to-many  relationship.
+The types of non-linear  structure  include  tree and graph.
+Linear list
+Linear
+structure Linked list
+[Figure 1] Classification  of the data structure
+<Table  9> Comparison  of sequential  data structures  and linked data structures
+Item Sequential  data structure Linked data structure
+M , When saving data in the memory,  data are Logical sequences  are expressed  by link,es  a stored consecutively  in order without  an regardless  of the physical location or sequence
+empty space. stored in the memory.
+Logical/physical
+sequence  matching The logical and physical  sequences  match. The logical and physical  sequences  do not match
+status
+M1 Software  development  39
+
+
+--- Page 41 ---
+ESSENCE
+Item Sequential  data structure Linked data structure
+oe Data are stored consecutively  in order The physical sequence  does not change evenCharacteristics  of . . though  the logical sequence  changes  due
+: because  no empty  space is created  even if : : :operations to insert/delete  operation,  because  only link
+insert/delete  operation  is performed. . ;information  changes.
+Programming  technique  | Implementation  using an array. Implementation  using a pointer.
+C) Stack and queue
+@ Stack
+A stack is one of the linear lists. In this data structure,  data are saved in the storage space in order of data
+input, and the last input data are output first. That is, an element  stored in the stack can be accessed  only
+from the place designated  as the top, and an element  is inserted  at the top only and the inserted  element  is
+stacked  on the top and output  first.
+Access
+(insert/delete)
+LIFO(Last-In-First-Out)top Data input order—
+err se
+(oldest cet) Eee) Ee) Ls
+Stack
+[Figure  2] Conceptual  diagram  of the stack
+The types of stack operations  are as follows.
++ top(): Returns  the data value at the top of the stack.
++ push(): Inserts data on the stack.
++ pop(): Deletes  and returns  data from the stack.
++ isempty():  Returns ‘true’ if there is no element  on the stack or returns ‘false’ if there is an element  on the
+stack.
++ isfull(): Returns  ‘false’ if there is no element  on the stack or returns ‘true’ if there is an element  on the stack.
+@ Queue
+Like the stack, the location  of insertion  and deletion is limited. However,  unlike the stack, the place of data
+insertion  is different  from that of deletion.  The queue has a structure  in which an element  can be inserted  at
+the bottom  and deleted at the top only. Elements  are listed in order of insertion,  and the element  inserted  first
+is at the front and thus is deleted  first.
+40 TOPCIT  ESSENCE
+
+
+--- Page 42 ---
+Software  Development )
+deQueue enQueue
+Delete a es ee  A Insert
+f t
+front rear
+First data in Last data in
+saved data saved data
+[Figure  3] Conceptual  diagram  of the queue
+The types of queue operations  are as follows.
+* enQueue:  Inserts data into the queue. Frees up space in the queue by moving  the rear, and inserts data.
++ deQueue:  Deletes  data from the queue. Moves  the front to pass the oldest  data to the position  of the next data.
+@® Comparison  of stack and queue operations
+<Table 10> Comparison  of insert and delete  operations  on stack and queue
+Item Insert operation Delete  operation
+Data structure Operator Insert location Operator Delete location
+Stack push top pop top
+Queue enQueue rear deQueue front
+D) Tree and graph
+© Tree
+A tree is a hierarchical  data structure  with a hierarchical  relationship  between  elements.  It has a tree-like
+structure  that expands  from top to bottom,  and the elements  have a one-to-many  relationship.
+The topmost  node in a tree is called the “root node’, and the line connecting  the nodes is called the “edge”.
+Child nodes having the same parent node are called “sibling  nodes’, and the tree created  when the edge to the
+p...

@@ -1,0 +1,197 @@
+LEARNING GUIDE: Pages 58-62
+Generated: 2025-12-05 14:38:26
+PDF: 4 - Understanding Information Security OCR
+
+================================================================================
+LEARNING GUIDE
+================================================================================
+
+This learning guide summarizes essential information on Cloud Security, Big Data Security, and Mobile Security from the provided text.
+
+---
+
+## Information Security Learning Guide
+
+### B) Cloud Security
+
+**1. Overview of Cloud Security Concerns**
+*   **Key Concern:** Difficulty in knowing the exact location of stored data and its accumulation in the cloud.
+*   **Public Cloud Issue:** Reliability and stability concerns arise when storing sensitive data on external public cloud spaces, hindering adoption.
+
+**2. Threats of Cloud Security**
+*   **Hypervisor Infection:** A vulnerability in the **hypervisor** (software that creates and runs virtual machines) can simultaneously damage multiple virtual machines (VMs) it hosts.
+*   **Attack Against Virtual Machines (VMs):** Interconnected VMs create attack paths for internal threats like packet sniffing, hacking, DDoS attacks, and malware spread.
+*   **Attacker Tracking Difficulty:** Existing network security tools (firewall, IPS, IDS) struggle to detect and trace attackers within the virtual environment.
+*   **Portability of Virtual Machines:** Easy movement of VMs between physical platforms allows malware-infected VMs to spread malware when ported to new platforms.
+
+**3. Countermeasures Against Cloud Security Threats**
+*   **Protect Incoming/Outgoing Data:** Maintain confidentiality using security protocols like TLS, SSH, and VPN for data sent to cloud servers over the Internet.
+*   **Encrypt Stored Data:** Encrypt data before storing it in cloud storage. Use strong cryptographic algorithms like AES-256 or better.
+*   **Secure Access and Authentication:**
+    *   Implement robust access and authentication mechanisms.
+    *   Change administrator passwords periodically.
+    *   Establish and enforce access control policies (e.g., 2-factor authentication).
+*   **Secure Independence Between VMs:** Maximize virtual network security to protect against shared resource threats and ensure complete isolation between user-accessed VMs.
+*   **Attack and Intrusion Detection:**
+    *   **Hypervisor-type detection:** Analyzes the internal state of each VM via the hypervisor to detect intrusions.
+    *   **VM-type detection:** An agentless (no software installed on the VM itself) virtual security detection technique.
+
+### C) Big Data Security
+
+**1. Overview of Big Data Security**
+*   **Increased Risk:** Rapid big data adoption increases personal information leakage risk due to vast collection and concentration of sensitive data (credit, location, behavior).
+*   **Impact:** Leakage incidents are magnified in scope and scale.
+*   **Priority:** Security is paramount for big data adoption, especially in finance.
+*   **Lifecycle Management:** Secure management throughout the big data lifecycle (collection to destruction) is crucial.
+
+**2. Security Threat and Response by Big Data Lifecycle Phase**
+
+*   **Big Data Collection Phase:**
+    *   **Personal Information:** De-identify personal information if not legally permitted or consented to by the owner.
+    *   **Active Data Collection (e.g., Chukwa, Scribe, Flume):** Obtain owner consent for data connection; apply access controls.
+    *   **Passive Data Collection (e.g., Web Robot, Web Crawler):** Comply with robot exclusion standards.
+*   **Big Data Storage and Management Phase:**
+    *   **Encryption:** Encrypt data using cryptographic techniques suitable for distributed and replicated environments.
+    *   **Access Controls:** Apply technical and physical access controls.
+    *   **De-identification:** Filter and de-identify data before storage.
+*   **Data Processing and Analysis Phase:**
+    *   **Anonymization:** Use data anonymization techniques (e.g., K-anonymity, L-diversity, differential privacy) to de-identify data.
+    *   **Encrypted Processing:** Process sensitive information in an encrypted state (e.g., order preserving encryption, operation preservation encryption).
+    *   **Privacy-Preserving Data Mining (PPDM):** Protect privacy during big data mining.
+*   **Data Destruction Phase:**
+    *   **Complete Destruction:** Consider the distributed and replicated nature of big data; ensure complete and unrecoverable destruction.
+    *   **Monitoring System:** Implement a management system to monitor data destruction for internal control.
+
+**3. Overview of Personal Information De-identification**
+
+*   **Concept:** Processing data to make it difficult to identify a specific individual, even if other information is combined with the de-identified data. This involves deleting or replacing identifying information.
+*   **Targets:** Information that can identify an individual on its own, or information that can easily identify an individual when combined with other data.
+*   **De-identification Techniques (General Categories):**
+    *   **Pseudonymization:** Replacing key identifying elements with other values.
+    *   **Aggregation:** Showing total data values to prevent individual identification.
+    *   **Data Reduction:** Removing unnecessary or identifying values from the data set.
+    *   **Data Suppression:** Converting data values into category values.
+    *   **Data Masking:** Adding random noise or replacing with space to hide key identifiers.
+
+**4. Major Personal Information De-identification Technologies and Utilization Methods**
+
+*   **Heuristic Pseudonymization:**
+    *   **Method:** Hides identifier values based on pre-defined rules or data handler's discretion.
+    *   **Applicability:** Names, user IDs, department names, addresses, phone numbers, email accounts, etc.
+*   **K-anonymity:**
+    *   **Method:** Ensures that at least 'k' records share the same attribute values, preventing re-identification based on those attributes.
+    *   **Applicability:** Age, height, address, zip code, department.
+*   **Aggregation:**
+    *   **Method:** Groups data into totals, averages, or other summaries to reduce sensitivity.
+    *   **Applicability:** Age, height, income, credit card usage amount.
+*   **Data Suppression:**
+    *   **Method:** Converts specific personal information into an average or category value to hide it.
+    *   **Applicability:** Age, height, disease.
+*   **Adding Random Noise:**
+    *   **Method:** Adds random numbers (noise) to sensitive personal identification items to prevent exposure.
+    *   **Applicability:** Resident registration number, user ID, name, date of birth, height, age.
+
+### D) Mobile Security
+
+**1. Security Threats in the Smart and Mobile Environment**
+*   **Open OS Vulnerabilities:** Smartphones with open operating systems (OS) allowing free app installation create security risks.
+*   **Specific Threats:**
+    *   Security vulnerabilities due to **jailbreaking** (iOS) and **rooting** (Android) – modifying the OS to remove restrictions.
+    *   Theft and loss of smart devices.
+    *   Malware infection, app forgery, and alteration.
+    *   Sniffing (capturing network traffic) and session hijacking (taking over an active user session) through illegal Wi-Fi Access Points (APs).
+
+**2. Countermeasures Against Security Threats in the Mobile Environment**
+
+*   **For OS and Application Threats:**
+    *   Encrypt application program codes and data.
+    *   Apply theft and loss prevention solutions.
+    *   Regularly apply security updates and run anti-virus programs.
+*   **For Memory Threats:**
+    *   Apply anti-virus technology and memory hacking prevention technology.
+    *   Apply personal information leakage prevention solutions.
+*   **For Web Services Threats:**
+    *   Apply app forgery and alteration prevention solutions.
+    *   Block illegal apps using electronic signature technology.
+*   **For Network Threats:**
+    *   Block illegal APs.
+    *   Apply location information protection and data encryption technology.
+    *   Apply a personal firewall and VPN (Virtual Private Network).
+
+---
+
+================================================================================
+ORIGINAL TEXT (First 5000 chars)
+================================================================================
+
+--- Page 58 ---
+ESSENCE
+each service.
+B) Cloud security
+@® Overview  of cloud security
+Concerns  about cloud security  begin with the fact that the exact location  of the stored data cannot be easily
+understood,  and the data is accumulated,  due to the characteristics  of the cloud. In particular,  when using a
+public cloud, the question  of whether  storing sensitive  data on the cloud, which is an external  storage  space, is
+correct  in terms of reliability  and stability,  is becoming  an obstacle  to cloud adoption  and spread.
+@ Threats  of cloud security
++ Hypervisor  infection
+If the hypervisor  in the virtualization  system,  which is essential  to run the cloud service,  is vulnerable,  several
+virtual machines  (VMs) using the hypervisor  can be damaged  at the same time.
++ Attack against  the virtual machine
+As the users’ virtual machines  are interconnected,  there is an attack path from an internal  virtual machine  to
+another  virtual machine,  such as packet sniffing,  hacking,  DDoS attack, and malware  spread.
++ Attacker  tracking
+It is difficult for existing  network  security  equipment  (firewall,  IPS, IDS, etc.) to detect attacks and intrusions
+against  the inside of the virtualized  machine,  because  it is not easy to identify and trace an attacker  in the
+virtual environment.
++ Portability  of the virtual machine
+Since virtual machines  can be easily transported  between  physical platforms  in the virtualization,  there is a
+possibility  that malware  can spread easily, as the virtual machine  infected  with malware  is ported to another
+physical  platform.
+® Countermeasures  against  cloud security  threats
++ Protecting  incoming  and outgoing  data
+The confidentiality  of incoming  and outgoing  data should be maintained  by using TLS, SSH, VPN, etc. for
+security  issues that may occur when sending  user data to the cloud server through  the Internet.
++ Encrypting  data when storing  data
+Data should be encrypted  before storing it in the cloud storage,  and at least AES-256  and a secure
+cryptographic  algorithm  should be used.
++ Access  and authentication
+A secure access and authentication  mechanism  should be applied, the administrator  password  should be
+changed  periodically,  and access control policies,  such as 2-factor,  should be established  and observed.
+58 TOPCIT  ESSENCE
+
+
+--- Page 59 ---
+Information  security )
++ Securing  independence  between  VMs
+A system  should be protected  by utilizing  the strengths  of a V's virtual network  security  against  the threat
+to the shared repository  and shared network  to the maximum  extent, and complete  isolation between  the
+VMs accessed  by users should be provided.
++ Attack and intrusion  detection
+Attacks and intrusions  should be detected  by applying  the hypervisor  type detection  technique,  which
+analyzes  the internal state of each virtual machine  and detects  intrusions  using the hypervisor,  and the VM
+type detection  technique,  which is an agentless  virtual security  detection  technique.
+C) Big data security
+@® Overview  of big data security
+As big data is introduced  at a rapid rate, the risk of personal  information  leakage is also increasing  because
+an enormous  amount  of customer  information  is collected  and concentrated.  Unlike existing  data types, big
+data extensively  collects and analyzes  sensitive  personal  information,  such as credit information,  location
+information,  and behavior information.  Therefore,  the scope and scale of a leakage incident  are inevitably
+enlarged  if it occurs. Hence, security  should be ensured  most of all to spread the use of big data in the financial
+sector. The safe management  of big data by lifecycle,  from big data collection  to destruction,  is important.
+@ Security  threat and response  by the phase of the big data lifecycle
++ Big data collection  phase
+If the data of a specific individual  is to be collected,  the individual’s  personal  information  should be de-
+identified  if it is not allowed  by the law or agreed to by the owner in advance.
+When collecting  big data using active data collection  technologies,  such as Chukwa,  Scribe, and Flume, the
+owner of the data to be connected  should consent,  and access  controls  should be applied to the data. When
+using passive data collection  technologies,  such as Web Robot or Web Crawler, robot exclusion  standards
+should be complied  with.
++ Big data storage  and management  phase
+Data should be encrypted  using a cryptographic  technique  suitable for data distribution  and replication,
+technical  and physical  access controls  should be applied, and data should be de-identified  through  data
+filtering  before being stored.
++ Data processing  and analysis  phase
+Data anonymization  techniques,  such as K-anonymity,  L-diversity,  and differential  privacy, should be used
+to de-identify  data in the processing  and analysis  phase. Sensitive  information  should be processed  in an
+enc...

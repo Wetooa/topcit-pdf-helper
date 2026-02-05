@@ -1,0 +1,367 @@
+LEARNING GUIDE: Pages 79-83
+Generated: 2025-12-05 14:40:36
+PDF: 4 - Understanding Information Security OCR
+
+================================================================================
+LEARNING GUIDE
+================================================================================
+
+Here's a simplified, easy-to-read learning guide based on the provided text:
+
+---
+
+## **Secure Coding Techniques: A Learning Guide**
+
+This guide covers common security vulnerabilities and how to prevent them through secure coding practices.
+
+---
+
+### **1. OS Command Injection**
+
+**Concept:**
+*   An attacker injects operating system (OS) commands into a web request (e.g., a username field).
+*   The application executes these commands on the server, allowing the attacker to control the system.
+
+**Vulnerability Cause:**
+*   The application uses external input directly as an internal system command without proper verification.
+
+**Attack Pattern:**
+1.  Attacker sends a request with a manipulated OS command (e.g., `usr_name=tom:/bin/ls`).
+2.  Web server executes the attacker's command.
+
+**Secure Coding Technique:**
+*   **Do not** transfer system commands from external input through the web interface without verification.
+*   **Whitelist:** Pre-define allowed commands or values required for command generation. Select commands based on external input from this approved list.
+
+**Code Example (Java - Simplified):**
+
+**Unsafe Code:**
+```java
+String cmd = args[0]; // Directly uses user input
+Process ps = Runtime.getRuntime().exec(cmd); // Executes whatever is in cmd
+// Problem: Allows execution of any program passed as a parameter.
+```
+
+**Safe Code:**
+```java
+List<String> allowedCommands = new ArrayList<>();
+allowedCommands.add("notepad");
+allowedCommands.add("calc"); // Whitelist of allowed programs
+
+String cmd = args[0];
+if (!allowedCommands.contains(cmd)) {
+    System.err.println("Not an allowed command.");
+    return; // Reject unauthorized commands
+}
+Process ps = Runtime.getRuntime().exec(cmd); // Only executes whitelisted commands
+// Solution: Limits programs to be executed to a predefined whitelist.
+```
+
+---
+
+### **2. Unrestricted Upload of Dangerous Files**
+
+**Concept:**
+*   A security weakness where an attacker can upload a server-side executable script file (e.g., `.asp`, `.jsp`, `.php`, also known as a "web shell").
+*   The attacker then manually executes this file via the web, gaining control over the server.
+
+**Attack Pattern:**
+1.  Attacker uploads a web shell (dangerous file type).
+2.  Attacker executes the web shell.
+3.  Attacker occupies the victim server.
+
+**Secure Coding Technique:**
+*   **Whitelist:** Only allow the upload of files with extensions explicitly permitted by a whitelist.
+*   **Remove Execute Attribute:** If the file system supports it, remove execution permissions from uploaded files.
+*   **Rename Files:** When saving, change the file name to a format that cannot be easily guessed or exploited by external users.
+
+**Code Example (Java - Simplified):**
+
+**Unsafe Code:**
+```java
+String filename = file.getOriginalFilename(); // No check on file extension
+File uploadDir = new File("/app/webapp/data/upload/notice");
+String uploadFilePath = uploadDir.getAbsolutePath() + "/" + filename;
+// Problem: Allows uploading of any file type, including dangerous scripts.
+```
+
+**Safe Code:**
+```java
+String filename = file.getOriginalFilename();
+if (filename != null) {
+    // Whitelist check: Only allow specific safe extensions
+    if (filename.endsWith(".doc") || filename.endsWith(".hwp") ||
+        filename.endsWith(".pdf") || filename.endsWith(".xls")) {
+        // ... File upload routine below ...
+        // When saving, change the file name to prevent guessing/exploitation
+        // Example: generate a unique ID as filename
+    } else {
+        // Restrict upload if extension is not allowed
+        System.err.println("File type not allowed.");
+    }
+}
+// Solution: Checks file extension against a whitelist before uploading.
+```
+
+---
+
+### **3. Memory Buffer Overflow (C Language)**
+
+**Concept:**
+*   Occurs when a program tries to read or write data beyond the allocated memory range of a buffer.
+*   This overwrites adjacent memory locations.
+
+**Consequences:**
+*   Program malfunction.
+*   Execution of malicious code (malware).
+*   Attacker gaining control or rights over the program/system.
+
+**Secure Coding Technique:**
+*   **Proper Buffer Sizing:** Always set an appropriate buffer size.
+*   **Boundary Checks:** Ensure all read and write operations stay within the allocated memory range.
+*   **Null Termination:** For strings, explicitly insert a null character (`\0`) to ensure proper string termination within the buffer.
+
+**Code Example (C - Simplified):**
+
+**Unsafe Code:**
+```c
+typedef struct _charvoid {
+    char x[16]; // Buffer of 16 characters
+    void *y;    // Pointer immediately after x
+    void *z;
+} charvoid;
+
+void badCode() {
+    charvoid cv_struct;
+    // Problem: Copies SRC_STR using sizeof(cv_struct) (entire struct size, e.g., 24 bytes)
+    // instead of sizeof(cv_struct.x) (buffer x size, 16 bytes).
+    // This overwrites pointer y because 24 > 16.
+    memcpy(cv_struct.x, SRC_STR, sizeof(cv_struct));
+    // Problem: No null terminator added to cv_struct.x, leading to incorrect string handling.
+}
+```
+
+**Safe Code:**
+```c
+typedef struct _charvoid {
+    char x[16];
+    void *y;
+    void *z;
+} charvoid;
+
+static void goodCode() {
+    charvoid cv_struct;
+    // Solution 1: Use sizeof(cv_struct.x) to copy only within the bounds of buffer x.
+    memcpy(cv_struct.x, SRC_STR, sizeof(cv_struct.x));
+
+    // Solution 2: Explicitly null-terminate the copied string at the last valid index.
+    cv_struct.x[(sizeof(cv_struct.x) / sizeof(char)) - 1] = '\0';
+}
+```
+
+---
+
+### **4. Format String Insertion Attack (C Language)**
+
+**Concept:**
+*   This vulnerability occurs when unverified external user input is used as the `format string` in input/output functions (like `printf()`, `snprintf()`, `fprintf()`).
+
+**Consequences:**
+*   Attacker can read or write arbitrary memory content.
+*   Attacker can obtain process rights.
+*   Attacker can execute arbitrary code.
+
+**Secure Coding Technique:**
+*   **DO NOT** use user input directly as a format string.
+*   **DO NOT** include user input when creating a format string.
+*   If user input needs to be displayed, pass it as an argument (e.g., `printf("%s", userInput);`) rather than incorporating it into the format string itself.
+
+**Code Example (C - Simplified):**
+
+**Unsafe Code:**
+```c
+void incorrect_password(const char *user) {
+    char *msg = (char *)malloc(len);
+    // ... snprintf to construct msg with user input ...
+    fprintf(stderr, msg); // Problem: msg contains unreliable user input and is passed directly as a format string.
+                          // If user input contains format specifiers (e.g., %x, %n), it will be exploited.
+    free(msg);
+}
+```
+
+**Safe Code:**
+```c
+void incorrect_password(const char *user) {
+    char *msg = (char *)malloc(len);
+    // ... snprintf to construct msg with user input ...
+    if (fputs(msg, stderr) == EOF) { // Solution: Use fputs() which treats msg as a literal string, not a format string.
+        /* Error handling */
+    }
+    free(msg);
+}
+```
+
+---
+
+### **5. Android/Java Secure Coding**
+
+#### **5.1. Attack Against Exported Components**
+
+**Concept:**
+*   An Android application component (`Activity`, `Service`, `Receiver`, `Content Provider`) is declared with `android:exported="true"` in `AndroidManifest.xml`.
+*   This setting allows external applications to access and activate the component using `Intents`.
+
+**Consequences:**
+*   System security breach if the component starts in an unintended situation or performs sensitive operations without proper access control.
+
+**Secure Coding Technique:**
+*   **Restrict Access:** It is best not to give external access rights to a component unless absolutely necessary.
+*   **Set `exported="false"`:** Explicitly set `android:exported="false"` for components that should not be accessible from outside the application. If `android:exported` is omitted for components with intent filters, it defaults to `true` (for API 31+ it defaults to `false` for components without intent filters).
+
+**Code Example (AndroidManifest.xml - Simplified):**
+
+**Unsafe Code:**
+```xml
+<manifest xmlns:...>
+    <application android:icon="..." android:label="...">
+        <service android:name=".syncadapterSyncService" android:exported="true">
+            <!-- This service can be started by any app -->
+        </service>
+    </application>
+</manifest>
+```
+
+**Safe Code:**
+```xml
+<manifest xmlns:...>
+    <application android:icon="..." android:label="...">
+        <service android:name=".syncadapterSyncService" android:exported="false">
+            <!-- This service is only accessible by its own application or apps with the same User ID -->
+        </service>
+    </application>
+</manifest>
+```
+
+#### **5.2. Access Control Pass Attack Using Shared ID**
+*(No specific details or examples provided in the original text for this section.)*
+
+---
+
+================================================================================
+ORIGINAL TEXT (First 5000 chars)
+================================================================================
+
+--- Page 79 ---
+Information  security )
+-_
+i y@ Inserting  the manipulated@ operating  system command— / into the request
+usr_name=tom:/bin/Is a
+Attacker Web server
+( [% MN
+@ Executing  the operating  system
+Attack pattern command  requested  by attacker
+[Figure 37] OS command  injection  security  vulnerability
+* Coding  technique:
+An application  program  should be configured  in a way that system commands  are not transferred  to the
+inside of the server  through  the web interface.  The value received  from the outside  should not be used as an
+internal system command,  without  verification.  If a command  is generated  or selected  according  to external
+input, the values required  for command  generation  should be specified  in advance  and selected,  according  to
+the external  input.
+<Table  21> Code example
+public static void main(String  args[]) throws IOException  {
+if (args.length  == 0) {
+System.errprintin(‘Please  input the name of the program  to execute.’);
+return;
+}
+// All programs  passed  as a parameter  can be executed,  because  there is no limit in the program  to be
+executed  by the program  concerned.
+String cmd = args[0]:
+Process  ps = null;
+InputStream  is = null;
+InputStreamReader  isr = null:
+BufferedReader  br = null:
+try{
+Unsafe  code | PS= Runtime.getRuntime().exec(cmd).
+is = ps.getinputStream();
+isr = new InputStreamReader(is);
+br = new BufferedReader(isr);
+String line = null:
+while (line = brreadLine())  != null) {
+System.outprintin(line);
+}
+}
+.. (Appropriate  exception  handling  and resource  release  handling) + + +
+}
+Programs  are executed  using the Runtime.getRuntime().exec()  command,  and the argument  value received
+from the outside  is used to create the command.  However,  an attacker  can execute  any programs,  because
+the program  concerned  does not restrict  the program  that can be executed.
+M4 Understanding  Information  Security  79
+
+
+--- Page 80 ---
+ESSENCE
+public static void main(String  args[]) throws IOException  {
+// The program  that can be executed  by the application  concerned  is limited to Notepad  and Calculator.
+List<String>  allowedCommands  = new ArrayList<String>();
+allowedCommands.add(“notepad”);
+allowedCommands.add(“calc’):
+if (args.length  == 0) {
+System.errprintin(‘Please  input the name of the program  to execute.”);
+return:
+}
+String cmd = args[0]:
+if (!allowedCommands.contains(cmd))  {
+System.errprintin(“Not  an allowed  command.’);
+Safe code return:
+}
+Process  ps = null:
+InputStream  is = null:
+InputStreamReader  isr = null:
+BufferedReader  br = null:
+try{
+ps = Runtime.getRuntime().exec(cmd);
+An array of predefined  parameters  should be created,  and appropriate  parameters  should be selected,
+according  to the external  input. The possibility  of using an inappropriate  external  input as a command  should
+be removed.
+@® Secure coding  technique  for responding  to the “unrestricted  upload of dangerous  files’ attack
++ Attack overview:
+“Unrestricted  upload of dangerous  files’ is a security weakness  that can control the system by executing
+internal  commands  or connecting  with the outside,  if a script  file (asp, jsp, php file, etc.), that can be executed
+on the server side, can be uploaded,  and the attacker  can manually  execute  this file through  the web.
+‘
+@ File upload (web shell)v
+G-/ el
+Attacker Web server
+( [ i
+@ Executing  web shell, occupying  a
+victim server
+[Figure  38] “Unrestricted  upload of file with dangerous  type” security  vulnerability
+* Coding  technique:
+Allow the upload of the file with the extension  allowed by the whitelist  only. Also remove  execute  attribute,  if
+the file execution  status can be set.
+80 TOPCIT  ESSENCE
+
+
+--- Page 81 ---
+Information  security )
+<Table 22> Code example
+Unsafe  code
+Safe codeString filename  = file getOriginalFilename():
+| Do not check  the extension  of the upload file
+File uploadDir  = new File(“/app/webapp/data/upload/notice’);
+String uploadFilePath  = uploadDirgetAbsolutePath()+’/”  + filename;
+[/* Below is the file upload routine.  */
+If the validity  of the file to be uploaded  is not checked,  an attacker  can upload or send a dangerous  file.
+| Check the extension  of the uploaded  file using the white list method
+if (filename  != null) {
+if (filename.endsWith(".doc’)  || filename.endsWith(".hwp’)  ||
+filename.endsWith("  pdf’) || filename.endsWith(“  xls’) ) {
+/* File upload routine below */
+// When saving  the file, change  the file name to a format  that cannot  be guessed  by external  users
+Uploading  is restricted  if the extension  of the uploaded  file is not allowed  when it is checked.  When saving  the
+file, the file name entered  from the outside  is changed.
+B) Major secure  coding  techniques  for C language
+@® Secure  coding  techniques  for responding  to the memory  buffer overflow  attack
++ Attack overview:
+The memory  buffer overflow  attack occurs when reading  or writing data to a location beyond the allocated
+memory  range, that i...

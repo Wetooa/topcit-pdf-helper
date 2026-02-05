@@ -1,0 +1,195 @@
+LEARNING GUIDE: Pages 196-200
+Generated: 2025-12-07 01:12:22
+PDF: 3 - Overview of System Architecture OCR
+
+================================================================================
+LEARNING GUIDE
+================================================================================
+
+Here is a simplified, easy-to-read learning guide based on the provided text:
+
+---
+
+# System Architecture: Application Layer Protocols
+
+## 1. Overview of Application Layer Protocols
+
+### 1.1 What is the Application Layer?
+*   The **Application Layer** is the top layer in the networking model.
+*   **Function:** Programs at this layer operate end-to-end, meaning they communicate directly between the client and server applications.
+*   **Independence:** Intermediate network devices (like routers) do not affect how application layer protocols operate.
+*   **Compatibility:** Most widely used application programs use internationally recognized standard application layer protocols to ensure compatibility between different systems.
+
+### 1.2 How Application Layer Programs Communicate
+*   Application layer programs use **socket programming** to transmit and receive user data through the **Transport Layer** (e.g., TCP or UDP).
+*   **Example Scenario (Web Usage):**
+    1.  **Connection Request:** Client (web browser) sends a connection request to the web server (e.g., for `my.server.com` homepage).
+    2.  **HTTP GET Request:** Client sends an HTTP GET request (e.g., `GET / HTTP/1.1`) for the homepage.
+    3.  **Server Response:** Server acknowledges and sends the homepage data (e.g., `HTTP/1.1 200 OK (text/html)`).
+    4.  **Connection Termination:** Connection for the homepage is terminated.
+    5.  **Repeat for Files:** The process repeats for additional files like `my.pdf`.
+
+## 2. Key Application Layer Protocols
+
+Application layer protocols are used to exchange necessary information between application programs.
+
+### 2.1 Common Application Layer Protocols
+*   **FTP (File Transfer Protocol):** For transferring files.
+*   **Telnet:** For terminal connections.
+*   **SMTP, POP3, IMAP:** For email transmission and access.
+*   **DNS (Domain Name System):** For mapping hostnames to IP addresses.
+*   **SNMP (Simple Network Management Protocol):** For network management.
+*   **HTTP (Hypertext Transfer Protocol):** For data transmission between web clients and web servers.
+*   **BitTorrent:** A P2P (peer-to-peer) protocol for file sharing.
+
+### 2.2 HTTP (Hypertext Transfer Protocol)
+*   **Definition:** An application layer protocol for hypermedia information systems (connecting text with video, audio, etc.).
+*   **History:**
+    *   Used since the early 1990s.
+    *   **HTTP/0.9:** Simple, low-level data transfer.
+    *   **HTTP/1.0:** Introduced MIME-type messages.
+    *   **HTTP/1.1:** Current version, designed for reliability.
+*   **Model:** Operates as a **request/response protocol** in a client-server environment.
+    *   **Client (e.g., web browser):** Sends a request message.
+    *   **Server (e.g., Apache HTTP Server):** Sends a response message.
+*   **HTTP Request Message Format:**
+    *   `<request method, URI, protocol version, MIME type information message>`
+*   **HTTP Response Message Format:**
+    *   `<protocol version, success or error code, MIME type, server information, etc.>`
+*   **Common HTTP Methods (in Request-Line):**
+    *   **GET:** Primarily used to *retrieve* content from the server (e.g., accessing a website).
+    *   **POST:** Primarily used to *send* user input information to the server (e.g., submitting a form).
+*   **HTTP Status Codes (in Response Message):**
+    *   **2xx (e.g., 200 OK, 206 Partial Content):** Request processed successfully.
+    *   **4xx:** Client error.
+    *   **5xx:** Server error.
+
+### 2.3 FTP (File Transfer Protocol)
+*   **Definition:** A protocol designed specifically for transferring files between systems.
+*   **Unique Feature: Two Connections**
+    1.  **Control Connection:**
+        *   Uses **Port 21**.
+        *   Maintained throughout the FTP session.
+        *   Used for sending commands from client to server and receiving responses.
+    2.  **Data Connection:**
+        *   Uses **Port 20** (or other dynamic ports depending on the mode).
+        *   Established only when a file transfer starts.
+        *   Used for the actual transfer of file data.
+*   **FTP Transfer Modes:**
+    *   **1. General (Active) Transfer Mode:**
+        *   **Concept:** The server initiates a connection to the client's specific port for data transfer.
+        *   **Issue:** Can cause problems with firewalls because the server tries to connect *into* the client's network.
+        *   **Ports:** Control: 21, Data: 20 (server connects to client's specified port).
+        *   **Operation Steps:**
+            1.  Client connects to server's port 21 and tells the server which client port to use for data (e.g., 5151).
+            2.  Server acknowledges (ACK).
+            3.  Server's port 20 attempts to connect to the client's specified data port (e.g., 5151).
+            4.  Client acknowledges (ACK).
+    *   **2. Passive (PASV) Transfer Mode:**
+        *   **Concept:** The client requests a connection to the server's data port.
+        *   **Benefit:** Allows clients behind firewalls/proxy servers to connect easily because the client initiates all connections.
+        *   **Ports:** Control: 21, Data: 1024 or higher (client connects to server's specified port).
+*   **FTP Command Types (Examples):**
+    *   **Access Commands:** `USER`, `PASS`, `QUIT` (e.g., for login/logout)
+    *   **File Management Commands:** `CWD` (change directory), `DELE` (delete), `LIST`, `MKD` (make directory)
+    *   **Data Forming Commands:** `TYPE` (specify data type, e.g., ASCII, binary)
+    *   **Port Definition Commands:** `PORT`, `PASV` (switch to passive mode)
+    *   **File Transfer Commands:** `GET`, `PUT`, `RETR` (retrieve), `STOR` (store)
+    *   **Other Commands:** `HELP`, `NOOP`
+
+---
+
+================================================================================
+ORIGINAL TEXT (First 5000 chars)
+================================================================================
+
+--- Page 196 ---
+Overview  of System Architecture )
++ Preview  for practical  business
+[Figure 138] shows the operational  path of the application  program  over the Internet.  It shows that
+application  layer programs,  like transport  layer protocols,  operate  on the service  end-to-end.  In other words,
+like transport  layer protocols,  such as TCP, the nodes, like wired/wireless  routers  positioned  between  end-
+points, do not affect the operation  of transport  layer protocols.  Although  users can generate  and exchange
+them as needed, the most widely used application  programs  tend to use the internationally  recognized
+standard  application  layer protocols  in order  to ensure compatibility.
+Application  LayerZ Transport Layer
+Network  Layer
+Datalink  Layer
+14.32.172.0 Physical  Layer
+Rerenaen RouterC
+Datalink  Layer my.server.com — SF Switching
+Network  Layer Hub D
+Datalink  Layer | 220.17.23.0
+Physical  Layer220.17.23.15
+Physical  Layer
+Application  Layer
+Transport  Layer
+Network  Layer
+Datalink  Layer
+Physical  LayerRouter  B
+192.168.11.0 Z—__—.Y
+[Figure 138] Operational  Path of Application  Layer Protocol
+[Figure 139] shows the operational  procedure  between  the application layer  and transport  layer protocols,
+according  to user A’s web use scenario  described  in “I. Network  concept”. It shows user A logging  into the
+webserver,  my.servercom,  and downloading  the my.pdf  file. Although  this section  focuses  on the operation
+of the application  layer protocol,  HTTP. it also shows interaction  with the transport  layer protocol  for better
+understanding.
+M3 Overview  of System  Architecture  195
+
+
+--- Page 197 ---
+ESSENCE
+Most eas Transmitting Sesulan id
+1. Request  for 1.1 Connection
+, Request  tohomepage
+MeEPAg Webserver Connection  Request
+1.2 “GET /
+HTTP /1.1°
+transmitted Request  for
+jomepage
+200
+Acknowledgment HTTP  /Showing 1.1 200 OK (text/html) jomepagreceivedHomepage
+Connection  terminated
+2.1 Connection
+2. Request  for Request  to
+mypdf Webserver SYN
+ACK 22°GET  |
+FIN
+ACK
+FIN
+ACK
+[Figure 139] Virtual Scenario  of Application  Layer Operation
+This section describes  the part related to the HTTP protocol  in [Step 1] and [Step 3-4] of the network
+operational  procedure  in user A’s web usage scenario  @ in “l. Network  concept”. A web browser  and an
+application  program  are connected  to the web server program,  httpd, through  a TCP connection  and plays
+the role of fetching  the web content  that is desired by user Athen converting  it into a user-friendly  form.
+The web browser  uses the HTTP/1.1  protocol  for communication  with the webserver.  The HTTP/1.1  protocol
+is a text-based  application  layer protocol [8]. Text data created, according  to the HTTP/1.1 protocol,  is
+delivered  to the other application  layer program  through  the transport  layer protocol.
+The application  layer program uses socket programming  to transmit  and receive user data through  the
+transport  layer. Socket programming  is a programming  technique  that is crucial for implementing  the
+application  layer protocol,  but it is out of the scope of this guide's  contents.  Refer to other books for more
+details.
+196 TOPCIT  ESSENCE
+
+
+--- Page 198 ---
+Overview  of System Architecture )
+01 What is Application  Layer Protocol?
+Anyone managing  a network  system or developing  a network  application  program  often encounters  application
+layer technology.  The application  layer protocol  is used to exchange  necessary  information  between  application
+programs.  Widely used application  layer protocols  include FTP [1] for file transfer,  telnet [2] for terminal  connection,
+SMTP [3], POP3 [4], and IMAP [5] for e-mail transmission  and access, DNS [6] for mapping  hostnames  and IP
+addresses,  and SNMP [7] for network  management.  HTTP [8], which is used for data transmission  between  web
+clients and webservers,  is also an application layer  protocol.  The BitTorrent  protocol  is also a widely used application
+layer protocol,  although  it is a P2P (peer-to-peer)  protocol,  not a method  of accessing  network  infrastructure,  as
+conventional  communication  protocol  does.
+02 HTTP
+HTTP (Hypertext  Transfer  Protocol)  is an application  layer protocol  for a hypermedia  information  system that
+connects  text with video and audio files. It has been used for transferring  web contents  since the early 1990s [8].
+The first version, HTTP/0.9,  was a simple protocol  for low-level  data transfer  through  the Internet,  but MIME-type
+messages  have been defined and used since HTTP/1.0 (RFC  1945). HTTP/1.1 is the current  version in use and is
+designed  to be more reliable  than HTTP/1.0.
+Like most standard  application  protocols,  the HTTP protocol  implements  a request/response  protocolthat  is suitable
+for a client-server  environment.  Since web browsers,  such as Microsoft’s  Internet  Explorer,  Google Chrome,  Mozilla
+Firefox, and web servers, such as Apache HTTP Server, imp...

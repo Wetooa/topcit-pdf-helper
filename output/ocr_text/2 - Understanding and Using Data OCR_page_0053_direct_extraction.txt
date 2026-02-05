@@ -1,0 +1,36 @@
+ESSENCE
++ If the relationship  has its own attributes,  they are included  in the connected  entity or included by identifying  a
+relationship  entity.
++ For your reference,  “physical  modeling’  refers to the process  of converting  an ERD into a table structure.
++ In general,  normalization  is performed  in the logical data modeling  phase, and denormalization  is performed  in the
+physical  data modeling  phase.
+<Table 21> Differences  in the understanding  of data modeling
+Academic  world Industry
+The time of ERD : . .production Conceptual  modeling Logical modeling
+Main notation Chen type Crow's  Foot
+Generally,  normalization  is performed  in the
+logical modeling  phase, while denormalization  is
+performed  in the physical  modeling  phase for the
+purpose  of improving  performance.Normalization  phase  | Performed  in the logical modeling  phase.
+When the Not allowed.
+relationship  has The relationship  itself can have attributes. Separating  into relationship  entities  or switching
+attributes to the existing  entity attribute.
+The process  of creating  tables that are suitable The process  of converting  an ERD into a tablePhysical  modelingfor the actual DBMS. structure.
+D) Concept  of process  modeling
+“Process  modeling”  refers to the task of finding missing  or unnecessary  tasks to satisfy the functions  required  by
+the target system, by analyzing  a given task efficiently  within a specified  period of time, when analyzing  large and
+complex  tasks. In addition, it is regarded  as most important  to develop a high-quality  system by classifying  the
+analyzed  tasks systematically  and by designing  the menu of the target  system  and program  system.
++ When  a task is analyzed  using a methodology,  the task can be arranged  systematically  in order to find most of
+missing  or unnecessary  tasks, which is helpful when creating  a data model.
++ The process hierarchy  diagram is a frequently  used process model; and the task process is subdivided  into the
+function  area, function,  process,  and unit process  according  to the size of the task.
+E) Concept  of correlation  modeling
+Correlation  modeling  is a method  of analyzing  what is happening  (process)  to something  (data) that exists within the
+task concerned  and what is affected  by which event, when developing  an information  system.
++ Correlation  modeling  is performed  by using the entity type identified  from data modeling  and the unit process
+identified  from process  modeling.
++ Whether  or not data are generated  by the entity type and the unit process  can be verified using the CRUD matrix,
+which enables  the developer  to verify the task for the data model and the process  model in the analysis  phase, and
+which can be used to understand  the test and task data exchange  in the future development  phase.
+52 TOPCIT  ESSENCE

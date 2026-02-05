@@ -1,0 +1,34 @@
+ESSENCE
+802.1X authentication,  4-way handshake  key exchange,  and CCMP (Counter  Mode With CBC-MAC  Protocol)
+encryption  algorithm,  as essential  functions.
+@ IEEE 802.11i components
+The security  standard  of IEEE 802.11i defines the following  services.  [Figure 68] shows the structure  of the
+security  protocol  and encryption  protocol  used to provide  these services.
++ Authentication:  The user and the authentication  server (AS) should authenticate  with each other using the
+protocol,  and a temporary  key, to be used between  the client and the AP on the wireless link, should be
+generated.
++ Access control: Proper message  routing and key exchange should be performed  using the authentication
+function.  This function  can be performed  together  with various  authentication  protocols.
++ Privacy through  message  integrity:  MAC layer data is encrypted  together  with message  integrity  code, to
+guarantee  that it is not been tampered  with.
+Robust  Security  Network  (RSN)
+Confidentiality,  Data
+Origin  Authentication
+and Integrity  and
+Replay  ProtectionServices
+IEEE 802.1 Extensible .
+Port-based Authentication TKIP CCMP
+Access  Control Protocol  (EAP)Protocols
+(a) Services  and protocols
+Robust  Security  Network  (RSN)
+KeyConfidentiality Generation
+Services
+Algorithms
+(b) Cryptographic  algorithms
+CBC-MAC  = Cipher  Block Block Chaining  Message  Authentication  Code (MAC)
+ccM = Counter  Mode with Cipher  Block Chaining  Message  Authentication  Code
+CCMP — = Counter  Mode with
+TKIP = Temporal  Key Integrity  Protocol
+[Figure  68] IEEE 802.111 components
+(Source: W. Stallings,  Network  Security  Essentials,  Pearson,  p.184)
+128 TOPCIT  ESSENCE

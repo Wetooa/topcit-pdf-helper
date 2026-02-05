@@ -1,0 +1,36 @@
+ESSENCE
+B) Account  and password  management
+© Deleting  unnecessary  accounts
+In many cases, accounts  created by default when installing  the OS or package,  use the default password.
+Accounts  that are not deleted by the system as well as suspicious accounts  should be deleted,  because  they
+can be exploited  for the password  guessing  attack. In general,  system accounts  that do not require login should
+be prohibited  from logging  in.
++ How to delete unnecessary  accounts
+# userdel [Ip | uucp | nuucp | Account  to be deleted]  on SUN/HP-UX.
+# rmuser  [Ip | uucp | nuucp | Account  to be deleted]  on AIX.
+@ Checking  the account  that uses a vulnerable  password
+In general,  if a password  that is easy to guess is set for an account,  unauthorized  users can access  the system.
+A password  should be set using a combination of 8 or more letters, numbers,  and special characters  that are
+not the same or similar to the account  name.
++ How to check the account  that uses a vulnerable  password  method:
+Check the password,  using a password  cracking  tool, such as “john the ripper’.
+Create a password.txt  file in the same directory  as the john script.
+Copy the contents  of the password  encryption  file /etc/shadow  (/etc/passwd  for HP-UX), paste it into the
+password.txt  file, and input john password.  txt.
+C) Access  control
+@ Allowing  access  to authorized  systems  only
+The Inetd daemon  executes  the Internet  service  daemon,  which is an internal program  registered  in /etc/inetd.
+conf, when requested by the external network.  If the access rights of inetd.conf(xinetd.d)  are incorrectly  set,
+unauthorized  persons  can register  a malicious  program  in this file and execute  it with root privileges.  Therefore,
+include those who will be allowed  to access  in the /etc/hosts.  allow and include those who will be denied in the
+/etc/hosts.  deny file.
+@ Setting  session  idle timeout
+If timeout  is not set for a session that is not in use, it may cause problems,  both in confidentiality  and
+availability.  Therefore,  the connected session should be set in a way that it is blocked from the server in
+question,  if not used for a specified  period  of time.
++ How to set session  idle timeout
+Add “TIMEOUT=300"  (stop sessions  if not used for 300 seconds)  to the “/etc/default/login’  file.
+Add “TMOUT=300,  export TMOUT”  to the /etc/profile  or .profile file in HP-UX, AIX, and Linux.
+D) System  security
+® Setting  privileges  to the user's default  configuration  file
+104 TOPCIT  ESSENCE

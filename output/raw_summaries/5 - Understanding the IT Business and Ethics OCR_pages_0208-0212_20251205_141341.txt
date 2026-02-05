@@ -1,0 +1,210 @@
+LEARNING GUIDE: Pages 208-212
+Generated: 2025-12-05 14:13:41
+PDF: 5 - Understanding the IT Business and Ethics OCR
+
+================================================================================
+LEARNING GUIDE
+================================================================================
+
+Here's a simplified, easy-to-read learning guide based on the provided text:
+
+---
+
+## **Understanding Copyright and Software Ethics**
+
+### **1. Copyright and Related Rights**
+
+Copyright protects original works of authorship. It has two main components:
+
+*   **Moral Rights:**
+    *   **Nature:** Personal, mental, non-monetary, non-transferable.
+    *   **Purpose:** Protects the author's personal connection to their work.
+    *   **Examples:** Right of attribution (being named), right to publish anonymously/pseudonymously, right to integrity of the work (preventing distortion).
+
+*   **Economic Rights:**
+    *   **Nature:** Property-based, monetary, transferable.
+    *   **Purpose:** Allows the author to profit from their work.
+    *   **Examples:** Right of reproduction, performance, broadcasting, exhibition, distribution, rental, and production of derivative works.
+
+**Neighboring Rights:**
+These rights are granted to those who "create added value" to a work, but are not the original author.
+*   **Performers:** Rights like attribution, integrity, reproduction, distribution, performance, broadcasting.
+*   **Record Producers:** Rights of reproduction, distribution, rental.
+*   **Broadcasters:** Rights of reproduction, performance, simultaneous broadcasting.
+
+### **2. Copyright Authorship Presumption**
+
+If the actual creator of a work is hard to identify, copyright law provides presumptions:
+
+*   **Author Presumed If:**
+    *   Their **real name or well-known pseudonym** is indicated on the original/copies of the work in a usual manner.
+    *   Their **real name or well-known pseudonym** is indicated during a public performance or transmission of the work.
+*   **If no author name is indicated:** The **publisher, public performer, or person making the work public** is presumed to have the copyright.
+
+### **3. Key Copyright Terms**
+
+*   **Public Performance:** Presenting works (e.g., acting, singing, screening) to the public.
+*   **Public Transmission:** Making works available to the public via wired or wireless means (e.g., internet).
+*   **Publication:** Reproducing and distributing works to meet public demand.
+*   **Making Works Public:** Opening works to the public through public performance, transmission, exhibition, or publication.
+
+### **4. Types of Copyright-Protected Works**
+
+A "work" is a creative production expressing human thoughts and emotions, possessing **originality** and **externality**.
+
+*   **Literary Works:** Novels, poems, theses, lectures, speeches, plays, written & oral works (books, magazines).
+*   **Musical Works:** Compositions (music, lyrics).
+*   **Theatrical Works:** Dramas, choreographies, pantomimes (expressions through body movements).
+*   **Artistic Works:** Paintings, sculptures, printmaking, crafts, applied art (aesthetic shapes/colors).
+*   **Architectural Works:** Buildings, architectural models, design drawings.
+*   **Photographic Works:** Creative expressions with original and aesthetic photographic elements.
+*   **Cinematographic Works:** Movies, dramas (moving images reproducible by mechanical/electronic devices).
+*   **Diagrammatic Works:** Maps, charts, design drawings, models (expressed by figures).
+*   **Computer Program Works:** Series of instructions/commands applied to devices (like computers) to achieve specific results.
+*   **Derivative Works:** New creative works produced by translating, arranging, altering, or adapting an original work (e.g., a movie based on a novel). Protected independently.
+*   **Compilation Works:** Creative compilations of materials (e.g., selecting or arranging data), regardless of the material itself. Includes databases (systematically organized data searchable by information processing devices).
+
+### **5. Works Made for Hire**
+
+*   **Definition:** A work created by an employee for a legal entity (e.g., company, organization) during their duties and at the entity's initiative.
+*   **Authorship:** The **legal entity** is considered the author, unless a contract or work regulations state otherwise.
+*   **Requirements for Legal Entity to be Author:**
+    1.  The work was **initiated by the legal entity**.
+    2.  It was **written by an employee** engaged in the entity's business.
+    3.  It was a work **written for the entity's business**.
+    4.  It was **publicized in the name of the legal entity**.
+    5.  There are **no contrary stipulations** in the contract or work rules.
+
+### **6. Computer Program Works & Software Licensing**
+
+*   **Software Definition:** A collection of instructions and commands that enable equipment (computers, communication devices) to process information, interact, and perform tasks. Includes related data and descriptions used to prepare them.
+*   **Computer Program Work:** The program itself and its descriptive language.
+*   **What is Protected by Copyright:**
+    *   **Source code** and **object code** (compiled source code).
+    *   **Program structure** and **arrangement method**.
+*   **What is NOT Protected by Copyright:**
+    *   Programming languages (e.g., C, Java).
+    *   Protocols.
+    *   Algorithms.
+    *(These are considered ideas or tools, not the specific creative expression of a program).*
+*   **Software Licensing:**
+    *   The software author typically holds exclusive rights (use, copy, distribute, modify).
+    *   A **license** is an agreement where the author grants specific permissions (rights) to others.
+    *   License agreements define terms to prevent disputes, covering aspects like purpose, definitions, royalties, and contract duration.
+
+### **7. Open Source Software (OSS) Copyright**
+
+*   **Definition:** Software where anyone can freely use, copy, distribute, and modify its source code.
+*   **Examples:** Apache web server, Firefox Web Browser, Linux Kernel.
+*   **Common Open Source Licenses:**
+    *   **BSD (Berkeley Software Distribution License):**
+        *   Highly permissive.
+        *   No obligation to disclose source code.
+        *   No copyright notice or warranty liability required when distributing.
+    *   **Apache License 2.0:**
+        *   No obligation to disclose source code.
+        *   If modified and distributed, must include the Apache License 2.0 and disclose its Apache Foundation origin.
+    *   **GPL 2.0/3.0 (GNU General Public License):**
+        *   Created by the Free Software Foundation (FSF).
+        *   Most widely adopted.
+        *   **Stricter obligations (copyleft):** Requires derivative works to be distributed under the same GPL license, meaning their source code must also be made available.
+    *   **GNU LGPL 2.1 (Lesser GPL):**
+        *   Designed for libraries.
+        *   Less strict copyleft than GPL. Allows linking to simple libraries/modules without forcing the entire linked application to be LGPL. No obligation to provide source code for simply linking.
+    *   **MPL (Mozilla Public License):**
+        *   Separates copyright for source code and executable files.
+        *   Executable files can sometimes be distributed under an exclusive license.
+        *   **File-level copyleft:** Modifications to MPL-licensed files must remain MPL, but it allows linking with proprietary code.
+*   **Basic Requirements for Most OSS Licenses:**
+    1.  Indicate developer/contributor and copyright information on the product.
+    2.  If the source code is modified, include information about the modification (who, when).
+    3.  Attach a copy of the license when distributing the software.
+*   **Copyleft:** A clause in some open source licenses that requires derivative works (or modified versions) to be distributed under the same license, including providing the source code.
+
+### **8. Works Not Protected by Copyright Law**
+
+The following types of works are generally *not* protected by copyright:
+
+*   **Laws & Government Documents:**
+    *   Constitutions, Acts, treaties, decrees, municipal ordinances and rules.
+    *   Bulletins, public notifications, directives issued by central or local government.
+    *   Compilations or translations of works produced by central or local government.
+*   **Judicial & Administrative Decisions:**
+    *   Judgments, decisions, orders, adjudications of courts.
+    *   Rulings and decisions made through administrative appeals or similar procedures.
+*   **Simple Facts:**
+    *   Current news reporting that delivers simple facts (e.g., headlines, raw data).
+
+---
+
+================================================================================
+ORIGINAL TEXT (First 5000 chars)
+================================================================================
+
+--- Page 208 ---
+Understanding  the IT Business  and Ethics )
+create added value by using the work, more restrictive  rights are given to the copyright  holder.
++ The personal  and mental rights that the author  has in his work
++ Non-monetary,  non-transferable  (the right under exclusive  belongingness  of oneself)
++ The right of attribution,  the right to have a work published  anonymously  or pseudonymously,  and
+the right to the integrity  of the work
++ The property  rights the author  has with respect  to the use of the work
+Author's  economic + Monetary  rights and transferable
+rights + The right of reproduction,  performance,  broadcasting,  exhibition,  distribution,  rental, production  of
+derivative  works.
++ Rights of performance/record/broadcasting  as stipulated  by laws
+- Performers:  the right to have a work published  anonymously  or pseudonymously,  the right to the
+integrity  of the work, the right of reproduction,  distribution,  rental,  performance,  broadcasting,
+transmission,  and the right under  exclusive  belongingness  of oneself)
+- Record producers:  the right of reproduction,  distribution,  rental, transmission,  etc.
+- Broadcasters:  the right of reproduction,  performance,  simultaneous  broadcastingMoral rights
+Neighboring  rights
+[Figure  91] Copyright  and Neighboring  Rights
+If it is difficult  to know who actually  created  the work, any person who falls under any of the following  subparagraphs
+shall be presumed  to have the copyright  for his or her works as an author: (“Copyright  Act, Article 8 (1))
+- A person whose real name or well-known  pseudonym  (referring  to the stage name, pen name, abbreviated  name,
+etc.; hereinafter  the same shall apply) is indicated  as the name of the author in a usual manner  on the original or
+copies  of a work;
+- A person whose real name or well-known  pseudonym  is indicated  as the name of the author  in the public
+performance  or public transmission  of a work.
+If the name of the author  is not indicated  as prescribed  under any of the subparagraphs  of paragraph  (1), the person
+who is indicated  as a publisher,  public performer  or a person making  the work public shall be presumed  to have the
+copyright.  ("Copyright  Act, Article 8 (2))
+<Table 105> Terms  related  to copyright
+Terms related  to copyright
++ “Public performance”  means to present  to the public works, performances,  phonograms  or broadcasts  by acting, musical
+playing,  singing,  narrating,  reciting,  screening,  playback  or other means.
++ “Public  transmission”  means  transmitting  works, stage performances,  phonograms,  broadcasts  or database  by making  such
+available  to the public by wire or wireless  means  so that the public may receive  them or have access  to them.
++ “Publication”  means a reproduction  and distribution  of the works or phonograms  to meet public demand.
++ “Making  works public” means  to make the works open to the public by means of public performance,  public transmission,  or
+exhibit and by other means, and to publish  the works.
+@ Types of Works
+The term “work” means a creative  production  that expresses  human  thoughts  and emotions.
+Copyright  is established  only when a work with originality  and externality  is created,  and the types of works
+recognized  are as follows.
+M5 Understanding  the IT Business  and Ethics 207
+
+
+--- Page 209 ---
+ESSENCE
+<Table 106> Types of Recognized  Works
+Classification Content
++ Novels, poems,  theses,  lectures,  speeches,  plays and other literary  works
+Literary  Works + Not only books, magazines,  pamphlets,  etc., but written  works and oral works such as speeches  are
+all included  in literary  works.
++ Novels, poems,  theses,  lectures,  speeches,  plays and other literary  works
+Musical Works + Not only books, magazines,  pamphlets,  etc, but written  works and oral works such as speeches  are
+all included  in literary  works.
++ Expressions  of human  thoughts  and emotions  through  body movements,  such as dramas,
+Theatrical  Works :choreographies,  pantomimes,  etc.
++ Paintings,  calligraphic  works, sculptures,  printmaking,  crafts, works of applied  art, etc., expressedeNOS aesthetically  in shapes or colors
+Architectural  Works + Buildings,  architectural  models  and design drawings
+Photographic  Works + A creative  expression  of the photographer's  thoughts  and emotions,  with original and aesthetic
+elements
+Cinematographic + Creations  of moving images, such as movies or dramas,  that can be reproduced  or viewed by
+Works mechanical  or electronic  devices
+Diagrammatic  Works + Maps, charts, design  drawings,  models,  and others expressed  by figures
++ Acteation  expressed  in a series of instructions  or command  which are directly  or indirectly  appliedmputer  Program ane - oe i ACo ana within devices having a capability  of processing  information,  such as a computer,  in order to obtain
+certain results
++ Acreative  work produced  by means of translation,  arran...

@@ -1,0 +1,243 @@
+LEARNING GUIDE: Pages 103-107
+Generated: 2025-12-05 14:27:22
+PDF: 1 - Software Development OCR
+
+================================================================================
+LEARNING GUIDE
+================================================================================
+
+Here is a simplified, easy-to-read learning guide based on the provided text:
+
+---
+
+## Software Testing: Simplified Learning Guide
+
+### 1. The Importance of Software Testing
+
+**Past View:** Companies often saw testing as an unnecessary expense.
+
+**Modern View:** Software is now integral to every sector (IoT, mobile, cloud, home/medical/industrial devices). This shift means:
+*   Increased emphasis on efficient development and operations.
+*   Growing recognition of software quality's importance.
+*   Rising user expectations.
+
+**Result:** Companies now invest more in systematic software testing, hiring professionals, automating processes, and establishing robust procedures.
+
+### 2. Concepts and Process of Testing
+
+#### 2.1 What is Software Testing?
+
+**Definition:** Testing is a method to check or confirm that an application or system's operation, performance, and stability meet user/customer demands by identifying defects or faults.
+
+#### 2.2 Key Principles of Testing
+
+1.  **Testing Shows Defects:** Testing helps reveal the presence of defects but cannot prove software is defect-free.
+2.  **Exhaustive Testing is Impossible:** It's impossible to test all possible cases, even for simple programs.
+3.  **Start Testing Early:** Testing initiated in early development reduces costs, shortens development periods, and aids defect prevention.
+4.  **Pesticide Paradox:** Repeating the same tests continuously becomes ineffective at finding new defects over time. Tests must be varied and updated.
+5.  **Context-Dependent:** Testing approaches, methodologies, and severity levels differ based on the specific context or field.
+6.  **Absence of Error - Fallacy:** Fixing all defects is useless if the system itself is unusable or fails to meet the user's actual needs and requirements.
+
+#### 2.3 The Testing Process: Main Activities
+
+Testing involves a coordinated and managed process with various components:
+
+*   **Analyzing and Designing Tests:**
+    *   Review the test basis (requirements, design docs).
+    *   Identify test situations, requirements, and data.
+    *   Assign appropriate **test techniques**.
+    *   Evaluate **testability** (how easily the system can be tested).
+    *   Create a **test environment**.
+*   **Implementing and Executing Tests:**
+    *   Specify **test cases** (priority selection, data creation, procedure writing).
+    *   Conduct preliminary testing.
+    *   Run tests and record results.
+    *   Compare actual results with expected results.
+*   **Evaluating and Reporting Completion Conditions:**
+    *   Check if **completion conditions** (criteria for finishing testing) are met.
+    *   Create initial test reports.
+*   **Planning and Controlling Tests:**
+    *   Set test purposes/goals and research targets.
+    *   Develop **test strategies** and analyze risks.
+    *   Establish strategies and test completion conditions.
+    *   Plan tests and control test management.
+*   **Estimating Tests and Forming Organizations:**
+    *   Estimate testing effort and resource needs.
+    *   Structure the testing team.
+*   **Test Deadline Activities:**
+    *   Report progress regularly.
+    *   Check deliverables and store **testware** (test artifacts like test cases, data, environment setups).
+    *   Evaluate the overall testing process.
+
+#### 2.4 Test Design
+
+##### 2.4.1 Test Design Overview
+
+**Purpose:** To identify and execute test cases to determine how thoroughly the target software has been tested.
+**Process:**
+1.  Analyze the **test basis** (e.g., requirements, design documents).
+2.  Identify **test conditions** (specific aspects to be tested).
+3.  Design and specify test cases and test data using various **test design techniques**.
+**Factors Influencing Design:** Testing context, organization, process maturity, time constraints, and number of participants.
+
+##### 2.4.2 Components of a Test Case
+
+A **test case** is a set of instructions prepared to check a specific test condition. It typically includes:
+
+*   **Test Case ID:** Unique identifier for the test case.
+*   **Test Case Name:** A clear, simple description of what is being tested.
+*   **Precondition:** Environment or data required before running the test.
+*   **Test Running Procedure:** Concrete steps (up to 7) to execute the test.
+*   **Expected Result:** The anticipated outcome, used to determine pass/fail.
+*   **Result (Pass/Fail):** The actual outcome of executing the test case.
+*   **Traceability:** Links to related requirements or applied techniques.
+*   **Importance:** Criteria for selecting this test when time is limited.
+*   **Remarks:** Description of the test case's intent and purpose.
+
+##### 2.4.3 Test Case Design Techniques
+
+Test design techniques are classified by their reference basis:
+
+1.  **Specification-Based Techniques (Black Box Testing):** Based on software requirements or specifications, without looking at internal code.
+    *   **Equivalence Partitioning:** Divide input data into "equivalence classes" and test with one representative value from each.
+    *   **Boundary Value Analysis:** Focus on values at the boundaries of input ranges, as defects often occur there.
+    *   **Pairwise Testing:** Design tests so that every possible pair of input values is tested together at least once.
+    *   **Decision Table Testing:** Create tables to test combinations of input conditions (causes) and their corresponding actions (effects).
+    *   **State Transition Testing:** Design tests based on how a system changes between states (e.g., logged in, logged out) due to events.
+    *   **Use Case Testing:** Extract test cases directly from use cases, which describe how users interact with the system.
+
+2.  **Structure-Based Techniques (White Box Testing):** Based on the internal structure, code, or architecture of the software.
+    *   **Control Flow Testing:** Test all possible paths or event flows within a component or system.
+    *   **Coverage Testing:** Design tests to achieve specific "coverage" metrics (e.g., statement coverage, branch coverage) to ensure parts of the code are executed.
+    *   **Elementary Comparison Testing:** Test combinations of input values using concepts like modified condition/decision coverage.
+
+3.  **Experience-Based Techniques:** Rely on the tester's experience and intuition.
+    *   **Exploratory Testing:** An unofficial, interactive approach where testers design and execute tests simultaneously, adapting based on what they learn.
+    *   **Classification Tree Method:** Combine representative input and output domain values based on a classification tree structure.
+
+### 3. Testing Types and Techniques
+
+#### 3.1 Test Levels (Types)
+
+Software testing involves different levels, each corresponding to a development stage and having specific goals, targets, and environments.
+
+*   **Unit Test:**
+    *   **Purpose:** To detect defects within individual unit modules (smallest testable parts of code).
+    *   **Performer:** Development organization.
+    *   **Environment:** Development environment.
+*   **Integrated Test:**
+    *   **Purpose:** To find defects in the interfaces and interactions between unit modules.
+    *   **Performer:** Development or testing organization.
+    *   **Environment:** Development or test environment.
+*   **System Test:**
+    *   **Purpose:** To check the overall functional and non-functional requirements of the complete system in an environment similar to the actual user environment.
+    *   **Performer:** Test organization.
+    *   **Environment:** Environment similar to the actual user environment.
+*   **Acceptance Test:**
+    *   **Purpose:** To check the system's compliance with user requirements and business needs.
+    *   **Performer:** User.
+    *   **Environment:** User environment.
+
+#### 3.2 Testing Techniques (Broad Classification)
+
+Testing techniques are broadly divided into **White Box Testing** and **Black Box Testing**. This section details White Box Testing.
+
+##### White Box Testing
+*   **Also called:** Structural or Code-Based Testing.
+*   **Mainly Used For:** Unit testing to find defects and verify the function of individual software components (modules, programs, objects, classes).
+*   **How it Works:** Uses the source code directly. Techniques include control flow testing, condition/decision coverage testing, and elementary comparison testing.
+*   **Application:** Can also be applied to integration testing using a structural approach.
+*   **Sub-divisions:**
+    *   **Static Analysis:** Detects pre-defined errors by analyzing the internal structure of the implemented source code *without executing it*.
+    *   **Dynamic Analysis:** Detects errors by analyzing the software's behavior *during execution*.
+
+---
+
+================================================================================
+ORIGINAL TEXT (First 5000 chars)
+================================================================================
+
+--- Page 103 ---
+ESSENCE
+* Companies  recognize  testing as unnecessary  and as an additional  expense  rather than an
+investment.
+These days, however,  software  is gradually  crossing  over from the traditional  domain  and spreading  to
+every sector (home appliances,  wireless  devices,  industrial  devices,  medical  devices,  etc.) through  the
+loT, big data, mobile, and cloud. Enterprises  are increasingly  placing  greater  emphasis  on improving
+the efficiency  of development  and operation  and recognizing  the importance  of software  quality. As
+the users’ expectation  is rising, enterprises  need to run software  testing systematically,  resulting  in
+higher investment,  the recruitment  of increasingly  professional  human resources,  the use of more
+automated  tools and process  establishment.
+102 TOPCIT  ESSENCE
+
+
+--- Page 104 ---
+Software  Development )
+01 Concept  and Process  of Testing
+A) Concept  of testing
+Testing is a method of checking  or confirming  that the operation,  performance  and stability  of an application
+or system satisfies  the demands  of the user or customer,  by identifying  or detecting  defects  or faults etc. The
+general  principles  of testing  are as follows.
+@ Testing  shows the presence  of defects
+Testing  activity is designed  to reveal the presence  of defects. However,  it is almost impossible  to prove that
+software  has no defects.
+@ Exhaustive  testing  is not possible
+Even a very simple program  cannot  be tested for all cases.
+© Testing  should start during the initial stages of development
+If tested early, the development  period can be reduced and defect prevention  activities  can be performed,
+eventually  resulting  in a reduction  of costs.
+@ Pesticide  paradox
+The repetitive  use of the same pesticide  mixes to eradicate  insects will over time lead to the insects
+developing  resistance  to the pesticide,  thus rendering  the pesticides  ineffective.  The same applies to software
+testing. If the same set of repetitive  tests is conducted,  the method will be totally ineffective  in discovering
+new defects.
+© Testing  is context  dependent
+The approach  as well as the methodology  and severity  differ for each field.
+© Absence  of error - fallacy
+Finding  and fixing defects  will be of no help whatsoever  if the ‘system  build’ is unusable  and does not fulfill the
+user's needs and requirements.
+B) Testing  process
+Testing should be coordinated  and managed  by emphasizing  a process  comprising  various components.  The
+table below shows the main activities  of the process  concerned.
+M1 Software  development  103
+
+
+--- Page 105 ---
+ESSENCE
+<Table 28> Main activities  of the testing  process
+Process Main activities
++ Reviewing  the test basis.
++ Identifying  test situations/requirements/data
+Analyzing  and designing  tests + Assigning  a test technique.
++ Evaluating  testability.
++ Creating  a test environment.
++ Specifying  test cases: Priority  selection,  data creation,  procedure  writing.
+Implementing  and executing + Preliminary  testing,
+tests + Running  tests and recording  the results.
++ Comparing  expected  results.
+Evaluating  and reporting + Checking  whether  the completion  conditions  are met.
+completion  conditions + Creating  the first test report.
++ Checking  the deliverables  and storing  the test ware.
++ Evaluating  the test process.
++ Setting  the test purposes/goals  and researching  the targets.
+Planning  and controlling  tests + Developing  test strategies  and analyzing  the risks.
++ Establishing  strategies  and test completion  conditions.
+—— . + Planning tests and controlling test management.Estimating  tests and forming e € 8organizations + Reporting  and planning/designing  reporting.
++ Reporting  progress.Test deadline  activities
+C) Test design
+@ Test design overview
+The test design is used to check to what extent the target has been tested by identifying  and executing  test
+cases. How to proceed  with the test design depends  on the testing  context,  such as the composition  of the
+test organization,  the maturity  of the testing  and development  process,  time constraints,  and the number  of
+participants  in the test. The test basis is analyzed  to identify  the test conditions,  and the test cases and test
+data are designed  and specified  using the test design technique  based on the test conditions  identified  during
+the test analysis  process.
+@ Composition  of test cases
+A test case is composed  of a set of input values, pre-conditions  when executing,  execution  procedures,
+expected  results,  and conditions  after execution.  It is prepared  to check a specific  test condition.
+<Table 29> Components  of a test case
+Component Contents
+Test case ID A number  or an identifier  used to identify  a test case.
+Test case name A simple and clear description  of the test content.
+Precondition Information  on the preconditions,  such as the environment  required  to run a test, or test data.
+Test running  proc...

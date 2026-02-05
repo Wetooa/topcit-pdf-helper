@@ -1,0 +1,24 @@
+ESSENCE
+01 Concept  of System  Architecture
+A) Understanding  system  architecture
+@ Overview  of system  architecture
+An information  system is a system that uses information  technology  (IT). The information  system provides  services
+using a computer,  and a computer  operates  with a combination  of hardware  and software.  Implementing  an
+information  system used inside an enterprise,  or provided  as a service  to users, requires  the design and construction
+of IT infrastructures,  such as hardware  and software  design and development.  Software  designs the software
+components  and operations,  such as the connection  of the software  components  and constraints  based on software
+architecture.  Hardware,  like software,  designs  and develops  the hardware  architecture.  System architecture  refers
+to the architecture  for a system to provide services,  based on hardware  and software  architecture.  In a broader
+definition,  it refers to all architecture,  including  the application  architecture  (AA), data architecture  (DA), and technical
+architecture  (TA), for constructing  an information  system.  A narrow definition  refers to the document  that defines  the
+configuration  and relationship  of hardware,  such as a server, storage,  network  and security,  and certain  software  parts,
+such as OS and middleware.
+@ Definition  of system  architecture
+* Definition  as defined  by the International  Council  on Systems  Engineering  (INCOSE)
+The fundamental  and unifying  system structure  defined in terms of system elements,  interfaces,  processes,
+constraints,  and behaviors.
+System  Architecture  in
+a Broad Sense Data Architecture
+Technical  Architecture System Architecture  in
+a Narrow  SenseSystem
+22 TOPCIT  ESSENCE

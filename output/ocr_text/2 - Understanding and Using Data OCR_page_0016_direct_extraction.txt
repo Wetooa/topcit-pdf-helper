@@ -1,0 +1,23 @@
+03 Transaction  Isolation  Level 126
+A) Read uncommitted:  Allows other transactions  to read the data that are still being
+processed  by the transaction (not yet completed), 126
+B) Read committed:  Allows other transactions  to read the data that are confirmed  by
+the completed  transaction  only. 126
+C) Repeatable  read: When a query is executed  more than twice in a transaction,  the
+record in the first query does not disappear  or the value is not changed. 126
+D) Serializable  read: When a query is executed  more than twice in a transaction,  the
+record in the first query does not disappear  or the value is not changed,  and no
+new record appears  either. 126
+04 Deadlock 126
+A) Definition  of deadlock 126
+B) Causes  of deadlock 127
+C) Solutions  to deadlock 127
+XII. Database  Recovery 129
+01 Concept  of Database  Failure and Recovery 131
+A) Definition  of data recovery 131
+B)  Types of database  failures 131
+C) Basic principles  of database  recovery:  Principle  of information  redundancy 131
+D)  Types of database  recovery  actions 131
+02 Database  Troubleshooting  Method 132
+A) Database  recovery  technique 182
+M2 Database  15

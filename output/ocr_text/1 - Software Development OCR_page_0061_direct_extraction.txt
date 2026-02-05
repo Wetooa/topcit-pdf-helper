@@ -1,0 +1,22 @@
+ESSENCE
+@
+Incoming  flow Transform  center Outgoing  flow
+[Figure 13] Input and output  boundary  of the data flow diagram
+Now, it’s time to start creating  a program  structure  centered  on the data flow. The guidelines  needed  to create
+a transform-based  program  structure  are based on identifying  the input flow, transform  center, and output  flow
+of the data flow diagram.  Mapping  the structure  table in the data flow diagram  is performed  by the guidelines.
+Three components  can be found if the root program structure is created in the transform  flow-oriented  data
+flow diagram.  The three components  are as follows.
++ Input control module,  which processes  input.
++ Transform  control module,  which processes  transform.
++ Output  control module,  which processes  output.
+The input control module receives  input data from the lower-level  modules  and sends them to the upper-level
+module.  If necessary,  the input data are refined and transmitted  to the upper level. The output control module
+receives  output  data from the upper level and sends them to the lower-level  modules.  If necessary,  this module
+also refines  the output  flow and transmits  it to the lower-level  module.
+The number  of control modules  is subject to system complexity,  and the number  of control modules  that
+process  transform  is determined  by transform  centered  complexity.  The figure below shows a simple program
+structure  based on transform.
+tput Controller
+[Figure 14] High-level  program  structure  based on transform  flow
+60 TOPCIT  ESSENCE

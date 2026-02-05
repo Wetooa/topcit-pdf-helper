@@ -1,0 +1,34 @@
+Understanding  the IT Business  and Ethics )
+applications  can be connected.  As the characteristics  and purchasing  patterns  of customers  who seek and pay for
+goods using their smartphones  are accumulated,  they are released  through  the API and all the member  companies
+get to jointly use the marketing  data collected  by each of the other members.
+App developers  will also be able to utilize the API open data as a business  asset to build new applications  and provide
+a variety of customized  services  to consumers.  Since 2010, E*Trade  has been providing  its stock trading  service to
+partner  companies  through  an API. Its partner  companies  have been able to sell, order, or view a portfolio  on behalf of
+its customers.
+In addition,  E*Trade  has made it possible  for its customers  to use the company’s  service without  requiring  them to
+visit its website.  Through  this strategy,  E*Trade  has elevated  the quality  of its service  and is providing  it very stably.
+In the United States, IT companies  such as Amazon,  Twitter, and Google are also generating  revenue  by releasing
+their data and services  through  APIs. By sharing their APIs (their core assets) through  their respective  business
+ecosystems,  these companies  are able to maximize  their internal/external  efficiencies  and raise expectations  of new
+revenue  generation.  But the task of developing  and managing  APIs is not easy and even after APIs are released,
+essential  management  tasks such as account  management,  authentication,  and security  management  have to be
+taken care of. Since the number  and diversity  of APIs released  by companies  are increasing  every year, systemized
+management  of APIs is something  that companies  are being called upon to commit  to.
+Business  Assets Web APIs Developers Apps End Users
+Business  open Provide  commercial Develop  apps Use back-end Boost sales using
+services access to using API services apps based on
+business  assets through  API business  assets_ aeBased on customers  insights
+APIs -€ s— pom”) 2)1 i) iV)
+[Fig. 54] API value chain
+The API value chain must be understood  before API can be used as a business  model. In other words, enterprise  data
+and services  are released  through  APIs, and third-party  developers  create innovative  applications  by using the open
+API. Companies  that provide APIs must also understand  the requirements  of third-party  developers  who use APIs
+directly  and the even the needs of the application  users.
+Internally,  an enterprise  must have a system in place for monitoring  and managing  the released  APIAn enterprise
+should also be able to provide formal documents  or websites  where developers  can contact  each other so that
+external  developers  can easily understand  and use the APIs.
+In an era when mobile devices ranging  from smartphones  to tablets and smart watches  are deeply embedded  in our
+daily lives, companies  should be able to manage  different  forms of customer  contact  points through  strategic  API
+management.
+M5 Understanding  the IT Business  and Ethics 131

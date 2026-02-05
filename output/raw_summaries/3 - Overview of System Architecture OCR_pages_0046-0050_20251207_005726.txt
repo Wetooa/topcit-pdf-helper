@@ -1,0 +1,239 @@
+LEARNING GUIDE: Pages 46-50
+Generated: 2025-12-07 00:57:26
+PDF: 3 - Overview of System Architecture OCR
+
+================================================================================
+LEARNING GUIDE
+================================================================================
+
+Here's a simplified, easy-to-read learning guide based on the provided text:
+
+---
+
+# System Architecture & Process Management Learning Guide
+
+## 1. Operating System Overview
+
+### 1.1 UNIX
+*   **Developer:** AT&T
+*   **Environment:** Multi-user
+*   **Commercial Use:** Often proprietary versions, relatively inexpensive.
+*   **Availability:** Many open-source versions with disclosed source code.
+
+### 1.2 Linux (Server OS)
+*   **Cost:** Low-cost implementation.
+*   **Compatibility:** UNIX compatible.
+*   **Examples:** RedHat, CentOS, Ubuntu, Fedora, Suse.
+
+### 1.3 Windows Server
+*   **Developer:** Microsoft
+*   **Interface:** Provides a Windows UI/UX.
+*   **Applications:** Supports many application programs.
+
+## 2. Process and Thread
+
+### 2.1 Understanding a Process
+
+*   **Definition:** A process is a program in execution. In modern multi-process environments, it's a unit of work for a time-sharing system.
+*   **Purpose:** The OS manages resources to allow multiple programs (processes) to run concurrently and stably.
+
+#### Process Status
+A process moves through distinct statuses during its lifecycle:
+*   **Created:** Process is generated but not yet running by the OS.
+*   **Preparing (Ready):** Process is waiting for the CPU to be allocated so it can run.
+*   **Running:** Process currently has the CPU allocated and is executing instructions.
+*   **Standby (Waiting/Blocked):** Process ran, but is now waiting for an event to complete (e.g., input/output operation).
+*   **Finished:** Process has completed its execution, and its CPU allocation is released.
+
+#### Process Control Block (PCB)
+*   **Purpose:** Stores information vital for managing a specific process.
+*   **Lifecycle:** Created when a process starts, removed when it finishes.
+*   **Contents (Examples):**
+    *   Process Identification Number (PID)
+    *   Process Status
+    *   Program Counter (next instruction to execute)
+    *   Scheduling Priority
+    *   Registered Information
+    *   Main Memory Unit Information
+
+### 2.2 Process Management Techniques
+
+#### Process Creation
+*   **Dynamic Nature:** Processes can be created and removed dynamically, allowing parallel execution.
+*   **`fork()` System Call:** A running process can use `fork()` to create a new process.
+*   **Parent/Child Relationship:**
+    *   **Parent Process:** The process that creates another process.
+    *   **Child Process:** The newly created process.
+*   **Structure:** This forms a tree-like structure (e.g., in UNIX OS).
+
+#### Process Termination
+*   **`exit()` System Call:** A process requests the OS to delete it after its last code completes.
+*   **`wait()` System Call:** A child process uses `wait()` to return data to its parent process.
+*   **Resource Reclamation:** The OS reclaims all resources allocated to the terminated process.
+
+### 2.3 Understanding Threads
+
+#### Concept of Thread
+*   **Definition:** A basic unit for CPU utilization, often called a "lightweight process."
+*   **Structure:** A single process can have one or more threads.
+*   **Shared Resources:** Threads within the *same* process share:
+    *   Memory unit (e.g., code, data, files).
+*   **Own Resources:** Each thread maintains its own:
+    *   Register set
+    *   Stack
+*   **Context Exchange:** Threads have more economical (faster) context exchange than processes because they share memory resources.
+
+#### Multi-threading
+*   **Single-thread Process:** A process with only one thread.
+*   **Multi-threaded Process:** A process with multiple threads.
+*   **Thread Statuses:** Ready, Blocked, Running, Terminated.
+*   **CPU Usage:** A CPU can only run one thread at a time. When one thread is running, others might be blocked.
+*   **Benefits of Multi-threads:**
+    *   **Memory Sharing:** Multiple threads within a process can access the same memory addresses.
+    *   **Efficiency:** Lower cost for thread creation and context exchange compared to processes.
+    *   **Parallelism:** Increases the parallel capabilities of a process, improving utilization of multi-processors.
+
+## 3. Process Synchronization and Deadlock
+
+### 3.1 Concept of Process Synchronization
+
+*   **Race Condition:** Occurs when two or more parallel processes access and modify the same shared data concurrently, and the final result depends on the specific order of execution.
+*   **Necessity:** Process synchronization is needed to protect shared data, ensuring that only one process can manipulate it at a time to prevent inconsistent results from race conditions.
+
+### 3.2 Critical Section Problem
+
+*   **Critical Section:** A segment of code within a process where shared data is accessed and modified.
+*   **Mutual Exclusion Principle:** Only one process should be allowed to execute its critical section at any given time.
+*   **Code Structure:**
+    *   `entry section`: Code requesting permission to enter the critical section.
+    *   `critical section`: The code segment that accesses shared resources.
+    *   `exit section`: Code executed after leaving the critical section.
+    *   `remainder section`: The rest of the process's code.
+
+*   **Conditions to Solve the Critical Section Problem:**
+    1.  **Mutual Exclusion:** If one process is in its critical section, no other process can be in its own critical section.
+    2.  **Progress:** If no process is in the critical section and some processes wish to enter, only those processes not executing in their remainder sections can participate in the decision of which will enter the critical section next, and this selection cannot be postponed indefinitely.
+    3.  **Bounded Waiting:** After a process has made a request to enter its critical section, there must be a limit on the number of times other processes are allowed to enter their critical sections before that process's request is granted.
+
+### 3.3 Solving the Critical Section Problem
+
+*   **Hardware Method:** Temporarily disallow interruptions while shared data in the critical section is being modified.
+    *   **Drawback:** Inefficient and not feasible in multi-processor environments.
+*   **Semaphore:**
+    *   **Definition:** A synchronization tool, represented by an integer variable `S`.
+    *   **Operations:** Only two atomic operations are allowed:
+        *   **`P` operation (wait):** Decrements `S`. If `S` becomes negative, the process waits.
+        *   **`V` operation (signal):** Increments `S`. If `S` is less than or equal to zero, it wakes up a waiting process.
+    *   **Mechanism:** When a process enters the critical section, it performs a `P` operation (often setting a "wait" state). When it exits, it performs a `V` operation (setting a "signal" state). Other processes check the semaphore value and are prevented from entering if it's in a "wait" state, thus ensuring mutual exclusion.
+
+### 3.4 Deadlock Status
+
+*   **Definition:** A situation where two or more processes are indefinitely blocked, waiting for resources that are held by other blocked processes in the same set.
+*   **Cause:** Occurs when processes compete for limited resources, and a process enters a "standby" state waiting for a resource that is held by another process also in a "standby" state.
+*   **Impact:** Deadlocked processes cannot complete execution, and the system cannot start new tasks because resources are tied up.
+
+*   **Conditions for Deadlock (all four must be present simultaneously):**
+    1.  **Mutual Exclusion:** Only one process can use a shared resource at a time.
+    2.  **Hold & Wait:** A process is holding at least one resource and is waiting to acquire additional resources that are currently held by other processes.
+    3.  **Non-Preemption:** Resources cannot be forcibly taken away from a process; they can only be released voluntarily by the process holding them after it has completed its task.
+    4.  **Circular Wait:** A set of processes (P0, P1, ..., Pn) exists such that P0 is waiting for a resource held by P1, P1 is waiting for a resource held by P2, ..., Pn-1 is waiting for a resource held by Pn, and Pn is waiting for a resource held by P0.
+
+---
+
+================================================================================
+ORIGINAL TEXT (First 5000 chars)
+================================================================================
+
+--- Page 46 ---
+Overview  of System Architecture )
+- Developed  by AT&T
+- Multi-user  environment
+- Commercial  products  mainly use the OS, as it is relatively  inexpensive.  Each
+server  developer  develops  and installs  a proprietary  UNIX operating  system.
+- Many open-source  versions  are available,  and the source  code is disclosed
+Server  OS Linux - Low-cost  implementation
+- Compatible  with UNIX
+- Types: RedHat,  CentOS,  Ubuntu,  Fedora,  Suse, etc.UNIX
+- Developed  by Microsoft
+Windows  Server - Windows  interface  to provide  the same UI/UX
+- Supports  many application  programs
+02 Process  and Thread
+A) Understanding  of process
+Early computer  systems  could only execute  one application  program  at a time. In other words, one program  occupied
+all the system's  resources.  However,  modern computer  systems  run multiple programs  concurrently.  The OS must
+manage  computer  resources  so that multiple  programs  share resources  and operate  in stable condition  at the same
+time. A process  refers to a running  program,  and in today’s concurrent  multi-process  environment,  it is a work unit of
+a time-sharing  system.
+@ Process  status
+A process  has a distinct  process  status  during its lifecycle,  as shown in [Figure 16].
+Dispatch
+Ready Jo |
+Wake Up
+[Figure 16] Process  Status  Change
+* Created:  A process  is created  but is not running  by the OS.
++ Preparing:  The process  is waiting  for the CPU allocation  to run.
+M3 Overview  of System  Architecture  45
+
+
+--- Page 47 ---
+ESSENCE
++ Running:  The process  has the CPU allocation.
++ Finished:  The process  has completed  its running,  and the CPU allocation  is released.
++ Standby:  The process  ran after getting  the CPU allocation,  and is waiting  for an event, such as the completion  of
+input or output.
+@ Process  control block (PCB)
+PCB stores information  necessary  for process  management.  A unique PCB is generated  when  a process is created,
+and the PCB is removed  from the process  completion.  A PCB includes  a process  identification  number  (PIC), a process
+status, a program  counter  (the value that indicates  the instruction  to run next), a scheduling  priority, registered
+information,  and main memory  unit information.
+B) Process  management  technique
+@ Process  creation
+Processes  must be able to run in parallel, and also be created and removed  dynamically.  A process  can create other
+new processes  through  the "fork()” system call while it runs. The process  that creates other processes  is called a
+parent process,  and a newly created  process  is called a child process.  A child process  can create another  child process,
+and this relationship  is formed  in a tree structure,  as shown in [Figure 17].
+maa | Swapper | init I
+ee | ee |
+[Figure  17] Process  Tree Structure  in the UNIX OS (Example)
+@ Process  termination
+After completing  the last code of the program,  the process  requests  the OS to delete the process  with the “exit()
+system call, as shown in [Figure 18]. At that point, the child process retums data to the parent process  with the
+"wait()" system call, and the OS recollects  all the resources  allocated  to the deleted  process.
+46 TOPCIT  ESSENCE
+
+
+--- Page 48 ---
+Overview  of System Architecture )
+Parent  Process Parent  Process Resume =  @®“*-@  —-
+Child Process
+[Figure 18] Process  Creation  and Termination  in the UNIX OS
+C) Thread
+@® Concept  of thread
+A thread is a basic unit for using a CPU and is all called a lightweight  process.  As shown in [Figure 19], a process
+generally  has one or more threads.  A thread shares the memory  unit, such as codes, data, and files, and creates
+its own register and stack. While processes  use more CPU time than threads  for context  exchange,  threads  can
+exchange  context  more economically  because  threads  share the memory  unit.
+Process
+Information  accessible Address Space
+by all threads  of the Other Global Process  Data
+process :
+Register Register Register
+Information Stack Stack Stack
+accessible  only by
+each thread Mask Mask Mask
+[Figure 19] Relationship  between  Thread  and Process
+@ Multi-thread
+As shown in [Figure  20], a single-thread  process  is a case in which a thread exists for a process,  and a process,  having
+multiple  threads,  is called a multi-threaded  process.  A thread operates  with the status of “ready”, “blocked”,  “running”,
+and “terminated”.  A CPU can occupy  only one thread at a time. In other words, only one thread runs at a time, and the
+status of the other threads  is “blocked.”  When a thread is blocked,  other threads  can run. There are certain benefits
+to using multi-threads.
+M3 Overview  of System  Architecture  47
+
+
+--- Page 49 ---
+ESSENCE
++ The memory  occupied  by a process  can be shared, and another  thread can access the same memory  address  in a
+multi-thread  system.
++ The cost of thread creation  and context  exchange  is more economical  than the process,
++ Threads  increase  the parallel...

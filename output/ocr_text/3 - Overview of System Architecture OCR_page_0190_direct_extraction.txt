@@ -1,0 +1,36 @@
+Overview  of System Architecture )
+03 UDP (User Datagram  Protocol)
+A) Characteristics  of UDP
+User datagram  protocol (UDP) provides  a connectionless  service for sending  and receiving  data without  a pre-
+configuration  process  for connection.  Unlike TCP. it is a protocol  that does not guarantee  the reliability  of the
+transport  layer level.
+Each user datagram  of UDP is an independent  datagram  and is not assigned  a number, unlike TCP. UDP is a very
+simple protocol,  and there is no flow control, so there is no window  mechanism,  and packet overflow  may occur.
+Error Control also has no other error control mechanism,  except for checksum.  When the receiver  detects  an error
+through  a checksum,  the user datagram  is removed,  and congestion  control is not provided.  Due to this nature of the
+UDP transport  protocol,  the application  layer may be necessary  in order to define and implement  the flow control
+and error control. As described  above, since the UDP has a continuous  minimum  transmission  rate, despite some
+packet loss, due to a lack of reception  confirmation  and retransmission  function,  it is suitable  for video play service
+and is considered  to provide the best effort service. In particular,  for playing video that is transmitted  in real time,
+the transmitting  side must separately  include the image frame order in the data. The receiving  side must store it in a
+separate  buffer, according  to the frame order and process  it in order. In the case of a streaming  method,  instead  of a
+download  method,  if there is a delay for more than a certain time, or if only the B and P frames are received  without
+the | frame, the application  layer needs to maintain  the real-time  property  by destroying  the data.
+The UDP protocol  is mainly  used for the following  purposes.
++ Aprocess  requiring  simple request-response  communication,  without  flow and error controls
++ Aprocess  with internal  flow and error control techniques
++ Multicasting  transmission  technology
++ Management  processes,  like SNMP
++ Route update  protocols,  such as the routing information  protocol  (RIP)
+<Table 66> below shows well-known  ports for widely used UDP services.  It supports  the NTP service that corrects
+the host time through  the network,  the BOOTP  and DHCP services  that are network  IP management  protocols,  the
+TFTP service  that is simpler  than FTP, the RIP and OLSR services  that are routing  protocols,  and the Kerberos  service
+that is a computer  network  authentication  protocol.
+{Table 66) Well-known  UDP Ports
+Service TCP port Service TCP port
+NTP [12,13] 123 Syslog 514
+BOOTP Server, DHCP Server [14,15] 67 RIP [18] 520
+BOOTP  Client, DHCP Client [14,15] 68 RIPng 521
+TFTP [16] 69 Timed (Time Server) 525
+Kerberos  [7] 88 OLSR [19] 698
+M3 Overview  of System  Architecture  189

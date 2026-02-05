@@ -1,0 +1,40 @@
+Overview  of System Architecture )
+ran slowly and were difficult  to develop  in this form, since the developer  needed to implement  every interface  for
+accessing  the computer's  resources  and allocating  and recovering  resources.  OS implements  input, control,  memory,
+operation,  and output functions  to provide services  in order to use computer  resources  efficiently.  In other words,
+an OS controls  the computer's  resources  and implements  usage policies to allocate resources  to users through
+scheduling,  It exchanges  data through  input/output  devices,  or outputs  exceptions  or errors. The purposes  of using
+the operating  system  are as follows.
++ Abstraction:  Provides  standardized  API to application  programs  by abstracting  the complexity  of the computer's
+hardware.
++ Virtualization:  Provides  a virtualization  function to enable application  programs  and users to share computer
+resources,  and to use a single virtual computer  hardware.
++ Management:  Maximizes  computer  resource  performances  and provides  them to application  programs,  while
+meeting  computer  resource  constraints.
+B) Main functions  of OS
+OS abstracts  and virtualizes  computer  hardware  to provide resources  to application  programs,  or to manage  them
+efficiently.  Therefore,  OS can be understood  by the functions  of managing  main hardware  components.  The main
+functions  of OS are described  as follows.
+@ Process  management
+In simple terms, a process is a running  program.  However,  it is actually more than just a program,  as a process  is a
+system  work unit that allocates,  uses, and recovers  various  resources,  such as the CPU, storage  unit, files, and input/
+output  units to perform  its tasks. An OS manages  processes  and performs  the following  tasks:
+- Creating  and disposing  of user and system processes
+- Terminating  and re-running  processes
+- Providing  a technique  for process  communication  and synchronization
+- Providing  techniques  to prevent  deadlock
+@ Main memory  unit management
+A hard disk (HDD) is the hardware  that most people think of when they consider  a storage unit. However,  the main
+memory  is a different  type of storage. The main memory  is a depository  that allows the CPU to fetch commands
+and data to use from the instructions,  The addresses  that the CPU uses to access data are only available  in the main
+memory.  Even if the CPU intends  to retrieve  data in an HDD, it cannot read the data if it is not stored in the main
+memory.  The main memory  must handle the following  management  functions  to provide  data to the CPU:
+- Tracking  and managing  the space and the users that use the storage  device
+- Deciding  which process  will occupy  the memory  space
+- Allocating  and recovering  memory  space
+@ File management
+OS can store data through  various physical  devices. It is necessary  to abstract  media with different  physical
+characteristics,  such as magnetic  tape, magnetic  disks, optical disks, and flash memory,  for the OS to use them. File
+management  provides  the function  of abstracting  these physical  characteristics  into files, the logical storage  units. It
+handles  the following  tasks:
+M3 Overview  of System  Architecture  43

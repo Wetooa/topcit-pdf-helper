@@ -1,0 +1,26 @@
+Software  Development )
+deQueue enQueue
+Delete a es ee  A Insert
+f t
+front rear
+First data in Last data in
+saved data saved data
+[Figure  3] Conceptual  diagram  of the queue
+The types of queue operations  are as follows.
+* enQueue:  Inserts data into the queue. Frees up space in the queue by moving  the rear, and inserts data.
++ deQueue:  Deletes  data from the queue. Moves  the front to pass the oldest  data to the position  of the next data.
+@® Comparison  of stack and queue operations
+<Table 10> Comparison  of insert and delete  operations  on stack and queue
+Item Insert operation Delete  operation
+Data structure Operator Insert location Operator Delete location
+Stack push top pop top
+Queue enQueue rear deQueue front
+D) Tree and graph
+© Tree
+A tree is a hierarchical  data structure  with a hierarchical  relationship  between  elements.  It has a tree-like
+structure  that expands  from top to bottom,  and the elements  have a one-to-many  relationship.
+The topmost  node in a tree is called the “root node’, and the line connecting  the nodes is called the “edge”.
+Child nodes having the same parent node are called “sibling  nodes’, and the tree created  when the edge to the
+parent node is disconnected  is called a “subtree”.
+Device node ——>
+M1 Software  development  41

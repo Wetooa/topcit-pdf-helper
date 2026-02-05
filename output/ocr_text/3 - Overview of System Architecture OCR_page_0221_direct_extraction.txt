@@ -1,0 +1,29 @@
+ESSENCE
+@ NFV application  cases
+NFV uses virtualization  to implement  network  equipment  functions.  It not only operates  on specialized  equipment,
+but also implements  the network  equipment  functions  in a general high-performance  x86 server platform,  as shown
+in [Figure 154].
+Functions Firewall
+Common  Hardware
+(Servers  & Switches)
+[Figure 154] NFV Implementation
+D) SDN and NFV
+Initially, SDN was developed  mainly by researchers  and data center designers,  and NFV was developed  by Internet
+service providers  (ISPs). However,  SDN and NFV technologies  are complementary  to each other, and ISPs currently
+combine  the two technologies  and apply them to networks.
+@ Relationship  between  NFV SDN
+Creates
+ae Creates  network
+innovative (ojo—ia) abstractions  to
+applications HaTaey7=(eln} enable  faster
+by third innovation
+parties
+Network
+Functions
+AV (iu Wri  (0)a)Reduces  CAPEX,  OPEX, Space & Power
+Consumption
+[Figure 155] Relationship  between  NFV SDN [8]
+SDN enables  faster change by creating  an abstracted  network,  and NFV reduces  capital expenditures  (CAPEX),
+operating  expenditures  (OPEX), and space and resource  consumption.  NFV and SDN have a complementary
+relationship  and can be independently  configured.
+220 TOPCIT  ESSENCE

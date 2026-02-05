@@ -1,0 +1,41 @@
+Software  Development )
+Process Description Deliverables
+Renuicments + Modeling  the candidate  requirements.
+“analysis + Determining  the priority of the requirements. Agreed requirement
++ Discussing  the requirements.
+* Defining  the requirements  specification  standards:  creating  the
+Requirements specification. |
+specification + Saving information  related to the traceability  of the Formal requirement
+requirements.
+Requirements + Reviewing  the requirements  specification:  verifying  the terms:
+verification setting the baseline. Baselined Requirement
+Requirements  change  | ° Requirements  change control, traceability  control,  version Consistent  Requirement
+management control (history  management).
+E) Principles  of requirements  management
+The principles  of requirements  management  are as follows.
++ Giving priority to requirements-based  customer  value/obtaining  the stakeholders’  consent  to the
+requirements.
++ Identifying  the exact target of the required  system  (expectation  management/scope  management).
++ Analyzing  the impact of a change to the requirements  by running  the Change Control Board (CCB), and
+setting  a baseline  for each change  step.
+02 Requirements  Specification
+Requirements  should be defined by specification  techniques,  and the correct specification  can be defined only
+when the principles  are considered.
+A) Requirements  specification  techniques
+Requirements  specification  techniques  can be divided into formal specification  and informal specification
+depending  on the method.
+<Table 36> Requirements  specification  techniques
+Classification Specification  techniques Description
+VOM + Vienna  Development  Method
+Formal + State-based  graphical  specification  method
+specification Mathematics-based + Provision of a framework  for development of the specification  and
+technology systematic  verification  of the system
+ESM + Finite State  Machine - / /
++ Expressing  state transition  by input signals
++ Structured  Analysis  and Design Technique
+Informal SADT + Graphic-based  structural analysis model
+specification -
+Use case + User-based  modeling
+Decision  Table + Writing  probabilities  and cases for decision  making
+ER modeling + Representation  of the entity relationship
+M1 Software  development  113

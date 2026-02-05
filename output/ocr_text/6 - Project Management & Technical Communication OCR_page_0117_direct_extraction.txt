@@ -1,0 +1,35 @@
+ESSENCE
+01 Concept  of Quality  Control
+A) Concept  of software  quality
+@® Software  Quality
+It refers to the characteristics  and productivity  of a software  product  that meets a given requirement.
+@ Characteristics  of Software  Quality
+Software  quality is a relative concept,  and it is difficult  to measure  quantitatively,  dependent  on several
+resources  such as cost, time, manpower,  and tools, and correlated  with each other.
+In order to measure  and evaluate  software  quality, a quality model that can first define elements  and
+characteristics  representing  the quality of software  and quantify  quality in an objective  aspect in the
+development  process  is required.  In general, such quality model is represented  in a hierarchical  structure.  The
+first layer is composed  of quality  targets  from the user's point of view, the second layer is composed  of high-
+level Quality Characteristics  that can achieve  the quality targets,  and the third layer is composed  of specific
+Subcharacteristics.
+<Table 51> ISO/IEC  9126-1 Quality  Characteristics
+Quality  Characteristics Subcharacteristics
+Functionality Suitability,  Accurateness,  Interoperability,  Compliance,  Security
+Reliability Maturity,  Fault tolerance,  Recoverability
+Usability Understandability,  Learnability,  Operability
+Effectiveness Time behavior,  Resource  behavior
+Maintainability Analyzability,  Changeability,  Stability,  Testability
+Portability Adaptability,  Installability,  Conformance,  Replaceability
+@ Major Standards  Related  to Software  Quality
+There are ISO/IEC  9126, ISO/IEC 12207, CMMI, 6 Sigma, ISO 9000, etc.
+@ Perspective  of Software  Quality  Evaluation
++ Product:  Quality  itself (measurement,  verification,  validation,  evaluation)
++ Process:  Process  improvement  and audit
+B) Concept  of quality  control
+© Definition  of Quality  Control
+It refers to all techniques  and activities  performed  to preserve  the quality of a product  or service that satisfies
+the user's requirements.
+@ Quality  Control Process
+It refers to the activities  and processes  performed  to establish  quality policies,  set quality  goals, and determine
+quality-related  responsibilities  in order to meet user requirements  (Fitness  for use) in a project.
+116 TOPCIT  ESSENCE

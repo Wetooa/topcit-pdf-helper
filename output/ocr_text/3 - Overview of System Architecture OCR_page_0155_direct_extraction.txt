@@ -1,0 +1,40 @@
+ESSENCE
+It seeks to minimize  wiring work and maintenance  costs to compensate  for the shortcomings  of wired LAN-type
+Ethernet.  It includes  IEEE 802.11b using the DSSS modulation  method  at the maximum  transmission  speed of 11
+Mbps, IEEE 802.11a supporting  a speed of up to 54 Mbps by using the frequency  of the 5 GHz band and the OFDM
+modulation  method,  and IEEE 802.11g  using the frequency  of the 2.4 GHz band to support  the speed of 54 Mbps.
+IEEE 802.11n uses the 2.4GHz and the 5GHz bands and supports  MIMO (Multiple-Input,  Multiple-Output)  to increase
+the transmission  speed up to 600Mbps.  Wireless  AP products  supporting  the speed of Gpbs have recently  been
+introduced.  IEEE 802.11ac  supports  a theoretical  maximum  speed of 6.93Gbps  by applying  the 80/160MHz  bandwidth,
+multi-user  MIMO/multi-spatial  stream MIMO, 256-QAM  modulation,  and beamforming.  IEEE 802.11ad  is a standard
+that supports  the speed of Gbps by applying  various  technologies  in the 60GHz bandwidth.  The standard  for gigabit
+wireless  LAN technology  to transmitting  UHD-level  video and explosively  increasing  wireless  data at high speed is in
+development.
+{Table 35) IEEE 802.11 Protocol  Standards
+802.11 Frequency  | Bandwidth Speed per stream MIMO Modulation
+Protocol (GHz) (MHz) (Mbps) Stream method
+DSSS,24 20 1,2 1 FHSS
+a 5 20 69,12,18,24  36,48,54 1 OFDM
+b 24 20 1,2,5,5,11 1 DSSS
+OFDM,g 24 20 69,12,18,24  36,48,54 1 DSSS
+24 20 7.2,144,21.7,28.9,43.3,57.865,72.2
+n 4 OFDM
+5 40 15,30,45,6090,120,135,150
+20 87.6
+40 200
+FDM7 > so | 4333 8 ofp
+160 866.7
+D) IEEE 802.15  standard
+IEEE 802.15 is the name of the short-range  wireless  communication  standardization  committee  separated  from IEEE
+802.11, which standardizes  wireless  LAN. It seeks to establish  wireless  networks  for mobile communication  devices,
+PCs, and other peripheral  devices  in the home. Sub-organizations  include,  the WPAN (Wireless  Personal  Area Network)
+research  group, for a maximum  transmission  rate of Mbps, and WPAN HSRC (WPAN High Rate Study Group), with a
+maximum  transmission  rate of 20Mbps.
+The leading WPAN technologies,  corresponding  to the IEEE 802.15 standard,  are IEEE 802.15.1 Bluetooth,  IEEE
+802.15.3  UWB, and IEEE 802.15.4  ZigBee.
+IEEE 802.15.1 Bluetooth  is a short-range  wireless communication  technology  standard  for exchanging  information
+by connecting  mobile devices, such as mobile phones  and laptops. IEEE 802.15.3  UAB is a wireless  technology
+that quickly transmits  a large volume of digital data through  a large spectrum  frequency  at low power in an ultra-
+broadband  and short distance.  IEEE 802.15.4  ZigBee is a standard  technology  for home automation  and data
+networks  with low data transmission  rates.
+154 TOPCIT  ESSENCE

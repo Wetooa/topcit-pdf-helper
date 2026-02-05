@@ -1,0 +1,41 @@
+ESSENCE
+© Risk identification
++ A risk means the possibility  that an unexpected  situation  occurs and affects (damages)  an organization,  and
+can be expressed  as a function  of assets, threats, and vulnerabilities.  The value of each information  asset
+should be estimated,  and risks of each asset should be identified  during the risk identification process.
+@ Risk assessment
++ The scope of risk analysis  should be selected  based on the scope of the information  security  management
+system, according  to the business,  organizational,  locational,  asset, and technical  characteristics  during the
+risk assessment  process.
++ For efficient  risk analysis,  a quantitative  or qualitative  method should be selected,  depending  on whether
+the risk can be quantified  or not. Alternatively,  the baseline  approach,  detailed risk approach,  or combined
+approach  should be selected,  depending  on the approach.
+® Risk assessment  method
++ Risk assessment  method  depending  on risk quantification
+<Table 16> Quantitative  technique  vs. qualitative  technique
+Item Quantitative  technique Qualitative  technique
++ Since the scale of damages  cannot  be measured,Used when the scale of damage  can be measured itis expressed  as an interval  (eg, H:3, M:2, L:1)
+in monetary  units. ora variable
+Characteristics + Past data approach,  mathematical  formula a” .
+, oe + Risk analysis  method  based on the experience
+approach,  probability  distribution  estimation 'd knowledge of thmethod and knowledge  of the analyst.
++ Delphi method,  scenario  method,  ranking  method.
++ Cost-effectiveness  analysis  and budget  planning + Used when estimating  information  that cannot
+erenetie are easy because  quantified  data is used. be quantified.
+€ + Calculation  is logical because  a mathematical + Easy to understand  terms.
+method  is used. + Analysis  does not take long.
+; + Difficult  to obtain accurate  quantification  values. + Room for the abuse of subjective  judgment.
+Shortcomings + Mathematical  calculation  takes much time and _ ;
+effort + Cost-effectiveness  analysis  is difficult.
++ Risk assessment  method  depending  on the approach.
+<Table 17> Risk assessment  method  depending  on the approach
+Item Contents
+Baseline  approachto achieve  the basic level.
+organizations  can be selected.+ Setting  the basic level of information  security  for all systems  and establishing  protective  measures
++ Less time and costs are required. Protective  measures  that are basically  required  by all
++ Applying  security  control  for each department  in the organization,  which is lower or higher  than
+the proper  security  level, since the characteristics  of the organization  are not considered
+Expert  judgment
+method+ Cost effective  in small organizations.+ Risk analysis  based on expert knowledge  and experience,  not the standardized  method
++ Objective  assessment  is difficult  because  there is no structured  approach.
+66 TOPCIT  ESSENCE

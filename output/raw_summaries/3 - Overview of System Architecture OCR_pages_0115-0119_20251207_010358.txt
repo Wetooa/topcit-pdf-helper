@@ -1,0 +1,202 @@
+LEARNING GUIDE: Pages 115-119
+Generated: 2025-12-07 01:03:58
+PDF: 3 - Overview of System Architecture OCR
+
+================================================================================
+LEARNING GUIDE
+================================================================================
+
+Here's a simplified, easy-to-read learning guide based on the provided text:
+
+---
+
+# Information System Architecture & Sizing Guide
+
+## 1. Core System Architecture Components
+
+Information systems rely on several key components working together.
+
+### 1.1 Web Application Server (WAS)
+*   **Purpose:** Middleware for stable processing of web client requests and developing distributed systems. It acts as an engine for database queries and business logic.
+*   **Functions:** Supports component development, application development, web services, distributed objects, security, and integration with legacy systems.
+*   **Examples:** Tomcat, Jetty, JEUS, JBoss, WebLogic, WebSphere, Node.js.
+
+### 1.2 Transaction Processing (TP) Monitor
+*   **Purpose:** Middleware for managing distributed transactions. It monitors transactions (minimum processing units between active sessions and systems) to maintain consistency across various protocols.
+*   **Standard:** Most products comply with the DTP (Distributed Transaction Process) model by X/Open.
+*   **Examples:** Tmax, Tuxedo.
+
+### 1.3 DB Server (Database Management System - DBMS)
+*   **Purpose:** Provides technology and a query language for accessing and modifying structured data. It's a large-scale, consolidated data storage with minimal duplication, accessible concurrently by multiple users.
+*   **Key Features:**
+    *   **Data Independence:** Separates application programs from data storage details.
+    *   **Efficient Access:** Allows quick data retrieval through queries.
+    *   **System Catalog:** A system table used by database administrators (DBAs) that lists definitions of all data objects stored in the database.
+*   **Examples:** Oracle, MS-SQL, PostgreSQL, MariaDB, Cubrid.
+
+## 2. Information System Capacity Calculation (Sizing)
+
+Sizing is crucial for planning system resources.
+
+### 2.1 Challenges in Sizing
+*   **Inaccurate Calculations:** Often based on experience, leading to incorrect hardware estimates.
+*   **Business-Specific Needs:** Hardware size depends on business nature, load increase, and user frequency, making it hard to determine appropriateness.
+*   **Low Interest:** Despite hardware being a large part of total project costs, sizing often receives less attention than software development.
+*   **No Correction Mechanism:** Difficult to correct over/underestimated hardware components once set by contractors or suppliers.
+
+### 2.2 Concept of Sizing
+*   **Definition:** Estimating or calculating a system's size using mathematical methods, based on actual work and applications.
+*   **Relation to Capacity Planning:** Sizing is a lower-level, temporary concept within broader capacity planning/management.
+*   **Nature:** Predictive, often called "size estimation."
+*   **Goal:** Determine performance requirements and performance based on system architecture and application work.
+
+### 2.3 Hardware Size Calculation Methods
+To ensure accuracy, applying the right method is important.
+*   **1. Mathematical Calculation Method**
+    *   **Concept:** Calculates capacity based on sizing factors (e.g., number of users) and applies a correction factor.
+    *   **Strength:** Clear basis for sizing, simpler calculation.
+    *   **Weakness:** Inaccurate correction factors lead to incorrect results; difficult to provide evidence for correction factors.
+*   **2. Reference Method**
+    *   **Concept:** Estimates size by comparing approximate values from existing business systems with similar workloads (e.g., number of users, DB size).
+    *   **Strength:** Relatively safe calculation, comparable to existing systems.
+    *   **Weakness:** Weak evidence as it's comparative, not a direct calculation.
+*   **3. Simulation Method**
+    *   **Concept:** Models the workload for the target job and simulates it to calculate size.
+    *   **Strength:** Relatively accurate values.
+    *   **Weakness:** Requires significant time and cost.
+
+## 3. Targets for Size Calculation
+
+Sizing generally targets hardware, specifically servers, and focuses on key components.
+
+### 3.1 Hardware Sizing Areas
+*   **Servers:** PCs or peripherals are excluded; focus is on server hardware.
+*   **Key Components:**
+    *   **CPU:** Calculates CPU size needed to process tasks; selects server model with adequate performance.
+    *   **Memory:** Calculates memory usage by system software and applications for each server, based on CPU size and server configuration.
+    *   **Disk:** Calculates disk usage by OS, system software, database, and database archives/backups for each server, based on CPU size and server configuration.
+    *   **Storage:** Calculates external storage size needed, based on server size and CPU.
+
+### 3.2 Performance Standards for Sizing
+Different metrics are used depending on the system type and component.
+*   **CPU:**
+    *   **OLTP (Online Transaction Processing) / OLTP & Batch:** tpmC (transactions per minute C)
+    *   **Webserver:** SPECWeb2009
+    *   **WAS (Application Server):** SPECjbb2005
+*   **Storage:** IOPS (Input/Output Operations Per Second), SPC-1
+
+## 4. Reference Architecture for Size Calculation
+
+Understanding the system's conceptual model is crucial for accurate sizing. Most information systems use a 3-tier architecture.
+
+### 4.1 3-Tier Architecture
+Divides an application into three logical and physical computing tiers.
+*   **1. Presentation Layer:**
+    *   User input collection.
+    *   Standard interface.
+    *   Access to business services.
+*   **2. Business Logic Layer:**
+    *   Includes data processing rules.
+    *   Defines application business logic.
+    *   Maps business functions to actions on business objects.
+*   **3. Data Service Layer:**
+    *   Data storage.
+    *   Prevention of data mismatching errors.
+    *   Access to mainframe databases.
+
+### 4.2 Reference Models for 3-Tier Physical Server Configuration
+Government standards suggest three models for physical server arrangement:
+*   **Reference Model 1 (Layer 1):**
+    *   **Configuration:** Web, application (WAS), and database layers all physically reside on a **single server**.
+    *   `[WEB / WAS / DB] <-> Internet Network <-> User`
+*   **Reference Model 2 (Layer 2):**
+    *   **Configuration:** Web and application (WAS) layers are on **one server**, while the database layer is on a **separate DB server** (two servers total).
+    *   `[WEB / WAS] <-> Internet Network <-> [DB server]`
+*   **Reference Model 3 (Layer 3):**
+    *   **Configuration:** Web, application (WAS), and database layers each reside on **separate servers** (three servers total).
+    *   `[Web server] <-> [Application Server] <-> [Database Server]`
+
+## 5. Size Calculation Procedure (High-Level)
+
+The general procedure for sizing involves:
+1.  **Reference Data Investigation:** Gather existing data and information.
+2.  **Task Analysis:** Understand the specific tasks and workloads.
+3.  **Application of Reference Model:** Select and apply the appropriate reference architecture model (e.g., 3-tier model).
+4.  **Direction & Basic Data/Weight Factor for Each Reference Model:** Define specific parameters and weighting factors based on the chosen model.
+
+---
+
+================================================================================
+ORIGINAL TEXT (First 5000 chars)
+================================================================================
+
+--- Page 115 ---
+ESSENCE
+HTTP RequestPN
+Web server Browser
+[Figure  78] Webserver
++ Web application  server (WAS): A WAS is a middleware  that enables  the stable transaction  processing  of web
+client requests  and helps develop  the distributed  systems.  It is an engine for database  queries or business  logic
+processing,  which supports  component  development  and use, application  development,  web, distributed  objects,
+security,  IED, system management,  and interface  to legacy systems.  Leading  WAS products  include Tomcat,  Jetty,
+JEUS, JBoss, WebLogic,  WebSphere,  and Node js (see [Figure  79]).
+Web Application  Server
+a A I Container
+<<
+Webserver
+Server
++ Transaction  processing  (TP) monitor:  A TP-monitor  is transaction  management  middleware  that supports  the
+distributed  transaction  processing  and monitors  transactions,  which are the minimum  processing  units between
+active sessions  and systems  in various protocols,  in order to maintain  them consistently.  Most TP-monitor
+products  comply  with the DTP (distributed  transaction  process)  model specified  by X/Open,  the UNIX environment
+standardization  organization.  The leading  TP-monitor  products  include  Tmax and Tuxedo.
++ DB server (Database  management  system,  DBMS): A DB server provides  the database  type, database  management
+114 TOPCIT  ESSENCE
+
+
+--- Page 116 ---
+Overview  of System Architecture )
+technology,  and query language  for the access to and modification  of structural  data. It is large-scale  storage  of
+consolidated  data with minimum  duplication  and is used by multiple  users concurrently.  It provides  independence
+between  application  programs  and data and efficient  access  to data through  queries.  The system  catalog  is the tool
+for database  administrators  (DBAs) and a system  table that lists the definitions  or statements  of all data objects
+stored in the database.  The leading  DBMS products  include  Oracle, MS-SQL,  PostgreSQL,  Maria DB, and Cubrid (see
+[Figure  80)).
+Application Program / e@
+User
+[Fite] oy-1\-9 System Catalog
+02 Information  System  Capacity  Calculation
+When implementing  an information  system,  many hardware  suppliers  or system integrators  use the items and rates
+for sizing calculation,  based on their experience,  leading  to inaccurately  calculated  sizes.
+Moreover,  since the hardware  size must be calculated  according  to the nature of the business,  load increase  rate, and
+use frequency  by the users, it is difficult to determine  the appropriateness  of the hardware  size in the information
+system  implementation  projects.
+For that reason, hardware  sizing has usually been dependent  on the project contractor  or hardware  supplier. It has
+gained relatively  low interest,  compared  to software  development,  although  the share of hardware  in the information
+system  implementation  project  is very large in the total project  cost. Therefore,  there is no way to correct  it, even if a
+M3 Overview  of System  Architecture  115
+
+
+--- Page 117 ---
+ESSENCE
+hardware  component  is over or underestimated  by a project  contractor  or a hardware  supplier.
+As such, this chapter  reflects  the government  guidelines  for calculating  hardware  size.
+A) Concept  of size calculation
+System sizing is to estimate  or calculate  a system’s  size using a mathematical  methodology,  based on actual
+work and applications.  It can be defined as a lower-level  concept  of capacity  planning  or capacity  management  to
+determine  performance  requirements  and performance  based on the system architecture  application,  as shown in
+[Figure 81]. Sizing is temporarily  performed  for a specific  system  or server, and it is also called size estimation  because
+it has a predictive  nature.
+Subject Definition Viewpoint Time Factor
+F To generate  current  and future capacity  plans to meet business .Se aa requirements  and balancing  cost and balance cost and capacity Organization ae
+A plan to determine  the performance  requirements  and performance Organization
+Capacity  plan needed for the system based on the outlined system architecture 8 Continuousand systemand application  work
+Sra acteysten To convert  the given basic capacity  and performance  requirements System Temporary
+into system  requirements
+[Figure  81] Comparison  of Size Calculation  Concepts
+Sizing is a matter of prediction,  and the calculation  method significantly  affects the accuracy  of the calculation.
+Hardware  size calculation  methods  are generally  classified  into the mathematical  calculation,  reference,  and simulation
+methods,  as shown in [Figure 82]. It is necessary  to apply an appropriate  sizing method  to get accurate  sizing. This
+guideline  uses a mathematical  calculation  method.  However,  it is necessary  to use all three methods  appropriately  for
+size calculation,  in order to increase  the accuracy  of the calculation  results and objectivity.
+Subject Concept Str...

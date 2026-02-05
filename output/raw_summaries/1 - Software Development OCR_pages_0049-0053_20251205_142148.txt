@@ -1,0 +1,284 @@
+LEARNING GUIDE: Pages 49-53
+Generated: 2025-12-05 14:21:48
+PDF: 1 - Software Development OCR
+
+================================================================================
+LEARNING GUIDE
+================================================================================
+
+Here is a simplified, easy-to-read learning guide based on the provided text:
+
+---
+
+## Software Development Essentials: A Learning Guide
+
+### I. Sorting Algorithms
+
+Sorting algorithms arrange data in a specific order.
+
+#### 1. Selection Sort
+
+**Concept:** Repeatedly finds the largest (or smallest) element in the unsorted portion and moves it to its correct sorted position.
+
+**Steps:**
+1.  **Identify:** Find the largest number in the entire array.
+2.  **Swap:** Replace this largest number with the rightmost unsorted number in the array.
+3.  **Exclude & Repeat:** Exclude the now-sorted rightmost number from consideration. Repeat steps 1 and 2 for the remaining unsorted portion until the entire array is sorted.
+
+**Example Walkthrough:**
+*   **Original:** `8 31 48 73 3 65 20 29 11 15`
+*   **Pass 1:**
+    *   Largest: `73`
+    *   Swap `73` with `15` (rightmost unsorted).
+    *   Result: `8 31 48 15 3 65 20 29 11 **73**` (73 is now sorted)
+*   **Pass 2 (remaining: `8 31 48 15 3 65 20 29 11`):**
+    *   Largest: `65`
+    *   Swap `65` with `11`.
+    *   Result: `8 31 48 15 3 11 20 29 **65** 73` (65, 73 sorted)
+*   *Continues this process until all numbers are sorted.*
+
+#### 2. Bubble Sort
+
+**Concept:** Continuously compares adjacent elements and swaps them if they are in the wrong order, effectively "bubbling" the largest elements to the end of the array.
+
+**Steps:**
+1.  **Compare Adjacent:** Start from the left, compare each adjacent pair of numbers.
+2.  **Swap if Needed:** If numbers are not in order (e.g., left > right for ascending sort), swap their positions.
+3.  **Pass Completion:** After one full pass, the largest unsorted element will be at the rightmost unsorted position.
+4.  **Exclude & Repeat:** Exclude this newly sorted element from the target for the next pass. Repeat steps 1-3 until the array is sorted.
+
+**Example Walkthrough:**
+*   **Original:** `3 31 48 73 8 11 20 29 65 15`
+*   **Pass 1 (moving 73 to the end):**
+    *   `3 31 48 73` -> No swap
+    *   `31 48 73 8` -> Swap `73` and `8`: `3 31 48 8 **73** 11 20 29 65 15`
+    *   `73 11` -> Swap `73` and `11`: `3 31 48 8 11 **73** 20 29 65 15`
+    *   ... (73 continues to move right)
+    *   Final after Pass 1: `3 31 48 8 11 20 29 65 15 **73**` (73 is now sorted)
+*   **Pass 2 (remaining: `3 31 48 8 11 20 29 65 15`):**
+    *   *Compares adjacent pairs, bubbling the next largest (65) to the second to last position.*
+    *   Final after Pass 2: `... **65** 73`
+*   *Continues this process until all numbers are sorted.*
+
+### II. Search Algorithms
+
+Search algorithms efficiently find a desired item within a dataset.
+
+#### 1. Overview
+
+*   **Purpose:** Efficiently locate specific data.
+*   **Types:** Linear Search, Control Search (Binary, Fibonacci, Interpolation, Block, Binary Tree), Hashing.
+*   **Selection:** Choose based on data structure and whether data is sorted.
+
+#### 2. Classification of Search Algorithms
+
+| Classification | Data Sort | Type                | Characteristics                                                                                                                                                                                                                                                              | Average Search Time |
+| :------------- | :-------- | :------------------ | :--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | :------------------ |
+| **Linear Search** | ❌         | Linear Search       | - Compares each record sequentially from start to finish.<br>- Easy to program.<br>- Search time increases with file size.<br>- Simplest and most direct.<br>- Average comparisons: (n+1)/2.                                                                                   | O(n)                |
+| **Control Search** | ✔️         | Binary Search       | - Sets upper (F) and lower (L) limits, finds intermediate (M).<br>- Compares key with M, reducing search space by half each time.<br>- Very efficient for large datasets.                                                                                                    | O(log2n)            |
+|                |           | Fibonacci Search    | - Creates sub-files using Fibonacci permutations.<br>- Fast, as it uses only addition and subtraction (no division).                                                                                                                                                               | O(log2n)            |
+|                |           | Interpolation Search | - Selects an expected location, then performs linear search from there.<br>- Used for dictionary, phone book, or index searches.                                                                                                                                              | O(log(n))           |
+|                |           | Block Search        | - Divides data into blocks.<br>- Determines the block containing the data, then sequentially searches within that block.<br>- Effective block size: √n.<br>- Easy to write and update.                                                                                              | O(log(n))           |
+|                |           | Binary Tree Search  | - Uses a binary tree data structure.                                                                                                                                                                                                                                         | O(log(n)) (insert/search/delete) |
+| **Hashing**    | ❌         | Hashing             | - Calculates the storage address of data using a **hashing function**.<br>- Suitable for data that are frequently inserted and deleted. (A hashing function maps data to a fixed-size table using a mathematical algorithm, allowing direct access to data locations.) |                     |
+
+### III. Graph Search Algorithms
+
+Graph search algorithms visit and process all vertices (nodes) in a graph.
+
+#### 1. Graph Search Overview
+
+*   **Purpose:** To explore connections and relationships within a graph.
+*   **Applications:** Road networks (can city A reach city B?), electronic circuits (is terminal X connected?).
+*   **Methods:** Depth First Search (DFS), Breadth First Search (BFS).
+
+#### 2. Depth First Search (DFS)
+
+**Concept:** Explores as far as possible along each branch before backtracking.
+
+**How it works:**
+1.  Starts at a root node.
+2.  Explores one direction (path) as deeply as possible.
+3.  When it hits a dead end or an already visited node, it **backtracks** to the last "fork" and explores another unvisited path.
+4.  Uses a **stack** (Last-In, First-Out) data structure to manage backtracking points.
+
+**Characteristics:**
+*   **Storage:** Low storage demand (only nodes on the current path are memorized).
+*   **Speed:** Can find target nodes quickly if they are at a deep level.
+*   **Shortest Path:** Does not guarantee finding the shortest path.
+*   **Implementation:** Easy to implement.
+
+#### 3. Breadth First Search (BFS)
+
+**Concept:** Explores all the neighbor nodes at the present depth level before moving on to nodes at the next depth level.
+
+**How it works:**
+1.  Starts at a starting vertex.
+2.  Visits all directly **adjacent nodes** first.
+3.  Then, visits all nodes adjacent to those adjacent nodes (i.e., nodes one step further away), and so on.
+4.  Tests whether a node has been visited to avoid infinite loops.
+5.  Uses a **queue** (First-In, First-Out) data structure to store and retrieve visited nodes sequentially.
+
+### IV. Minimum Spanning Tree
+
+#### 1. Introduction
+
+*   **Spanning Tree:** A connected subgraph of an undirected weighted graph that includes all its vertices, without containing any cycles.
+*   **Minimum Spanning Tree (MST):** A spanning tree where the sum of the weights of all its edges is the minimum possible.
+*   **Algorithms:** Kruskal's Algorithm, Prim's Algorithm.
+
+#### 2. Kruskal's Algorithm
+
+**Concept:** Builds the MST by adding edges in increasing order of weight, as long as they don't form a cycle.
+
+**Steps:**
+1.  Sort all edges in the graph by their weight in ascending order.
+2.  Start with an empty set of edges for the MST.
+3.  Iterate through the sorted edges:
+    *   Select the edge with the smallest weight.
+    *   Check if adding this edge to the MST creates a cycle with existing edges.
+    *   If no cycle is formed, add the edge to the MST.
+4.  Repeat until the MST has (V-1) edges, where V is the number of vertices.
+
+#### 3. Prim's Algorithm
+
+**Concept:** Builds the MST by starting from a random vertex and iteratively adding the cheapest edge that connects a vertex already in the MST to a vertex not yet in the MST.
+
+**Steps:**
+1.  Start with an arbitrary (random) vertex from the graph and add it to the MST.
+2.  Maintain a set of vertices already included in the MST.
+3.  In each step, find the edge with the minimum weight that connects a vertex in the MST to a vertex not yet in the MST.
+4.  Add this minimum-weight edge and the new vertex to the MST.
+5.  Repeat until all vertices are included in the MST.
+
+### V. Recent Trends & Learning Objectives
+
+#### 1. Recent Trends in Software
+
+*   **Quality Competition:** Software must meet high-quality standards.
+*   **Design & Quality:** Software design is directly linked to software quality.
+*   **Requirements Analysis:** A thorough analysis of requirements is crucial for good design.
+*   **Cost Reduction:** Frequent quality control and prevention activities during the analysis and design phases significantly reduce the possibility of software failure and associated costs.
+
+#### 2. Learning Objectives
+
+By studying these topics, you should be able to:
+1.  Describe types and principles of software design.
+2.  Explain **cohesion** (how related elements are in a module) and **coupling** (interdependencies between modules), which evaluate module design.
+3.  Understand structural design methods and express design content.
+
+#### 3. Keywords
+
+*   **Design Principles:** Division, abstraction, information hiding, stepwise refinement, modularization, structuralization.
+*   **Module Evaluation:** Cohesion, coupling.
+*   **Structural Design Methods:** Transform-based design, transaction-based design, structure chart.
+
+---
+
+================================================================================
+ORIGINAL TEXT (First 5000 chars)
+================================================================================
+
+--- Page 49 ---
+ESSENCE
+An array to sort is given.
+8 31 48 73 3 65 20 29 1 15
+Find the largest  number  (73).
+8 31 48 73 3 65 20 29 11 15
+Replace  73 with the  rightmost(5)  number  45)$  $$
+8 31 48 15 3 65 20 29 11 ie
+Find the largest  number(65)  in the numbers  except  the rightmost  number  (65).
+8 31 48 15 3 65 20 29 1
+Replace  65 with the rightmost  number  (11). ——
+8 31 48 15 3 a 20 29 65
+Find the largest  number  in the numbers  except  the rightmost  two numbers  (48).
+8 31 48 15 3 1 20 29 65 73
+[Figure  7] Example  of the selection  sort algorithm
+@ Bubble sort
+Like selection  sort, theFirst loop
+Second  loop
+largest  element  is continuously  moved to the last position.  However,  the number  adjacent  to the
+left is compared  when moving  the largest  element  to the right. If the sequence  is incorrect,  the positions  are changed.
+bubbleSort  (A[ ], 7)
+{
+for last —n downto  2 {
+fori — 1 to last -1
+if (A[i] > Afi + 1]) then A[i] — Afi + 1];
+An array to sort is given.
+3 31 48 73 8 1 20 29 65 15
+Keep on comparing  adjacent  pairs, starting from the left.
+3 31 48 73 8 1 20 29 65 15
+Change  the positions  if numbers  are not in order.
+3 31 48 8 73 1 20 29 65 15
+3 31 48 8 in} 73 20 29 65 15
+3 31 48 8 ml 20 29 65 15 73
+Exclude  the rightmost  number  (73)from the target.
+3 31 48 8 11 20 29 65
+48 TOPCIT  ESSENCE[Figure  8] Example  of the bubble  sort algorithm
+
+
+--- Page 50 ---
+Software  Development )
+F) Search  algorithm
+@ Search  algorithm  overview
+This is a technique  that efficiently  finds the desired  item in the data set. It can be divided into linear search
+and control search depending  on whether  data are sorted or not. There is also hashing,  which searches  for
+data by calculating  a key value according  to a specific  function.  Therefore,  an optimal  search method should be
+selected  in consideration  of the type of data structure  and the data arrangement  status.
+@ Ciassification  of search algorithms
+<Table 17> Classification  of search  algorithms
+Classification Data
+method sort ‘Type Content  and characteristics
++ Amethod  of finding  a key by comparing  each record  sequentially  from start to finish.
++ Easy to write a program.
+Linear  search x Linear search + Search  time increases  as much as the file size.
++ The simplest  and most direct search method
++ Average  number  of comparison  times: (n+1)/2,  average  search time: O(n)
++ Asearch  method  that sets the upper limit value (F) and the lower limit
+value (L), finds the intermediate  value (M), and searches  by continuously
+comparing  the key and the intermediate  value.
++ Efficient  as the number  of targets  in a file to search  is reduced  by half each time.
++ More effective  when the number  of records  is large. (The number  of
+comparisons  even in the worst case is just one more than the average
+number  of times.)
++ Average  search time: O(log2n)
++ Amethod  of searching  by creating  sub-files  using Fibonacci  permutations.
+Fibonacci + Fibonacci  search is fast because  it can search by addition  and subtraction
+search only, while binary search uses division.
++ Average  search time: O(log2n)
+Control  search ° + Amethod  of selecting  and finding  a location  where the search target is
+expected  to be present.  After finding  the location,  linear search is performed
+from that location.
++ Interpolation  search  is used to search  dictionary,  phone book, or index name, etc.
++ Performance  of O(log(n))  on average
++ Asearch  method  that divides  entire data into a certain number  of blocks,
+determines  a block that contains  the data to search,  and then sequentially
+searches  for the key value in the selected  block.
++ The effective  block size is yn.
++ Easy to write and update  a program.
++ Performance  of O(log(n))  on average
+Binary  tree + Search method  using a binary  tree
+search + Performance  of O(log(n))  for insert/search/delete  on averageBinary search
+Interpolation
+search
+Block search
+A method  of
+approaching
+data by using a
+specific  function+ Asearch  method  that searches  for data by calculating  the address  where
+x Hashing they are stored using the hashing  function.
++ Suitable  for data that are frequently  inserted  and deleted.
+G) ) Graph search algorithms
+@ Graph search
+The most basic operation  of a graph, which visits and processes  all vertices  in the graph once, starting  from one
+M1 Software  development  49
+
+
+--- Page 51 ---
+ESSENCE
+vertex. There are many cases in which problems  cannot be solved  simply by searching  for a graph node, such as
+whether  one can travel from a certain city to another  city on the road network,  or whether  a terminal  is connected
+in an electronic  circuit. Graph search methods  include  depth first search (DFS) and breadth  first search (BFS).
+@ Depth First Search (DFS)
+The algorithm  starts at the root node and explores  in one direction  of the starting  vertex as far as possible.  When
+there are  no more places to  go, it backtracks  to the vertex with t...

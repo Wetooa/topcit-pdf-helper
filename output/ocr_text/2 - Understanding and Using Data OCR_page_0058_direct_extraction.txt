@@ -1,0 +1,18 @@
+Database )
+© Composite  attribute
+A composite  attribute  refers to an attribute  that can be decomposed  into two or more elements,  and is distinguished
+from general  attributes  (simple  attribute)  by displaying  the links between  the attributes.
+05 Extended  ER (EER: Extended  Entity-Relationship)  Model
+The EER model adds several  useful concepts  to the basic ER model.
+A) Generalization/Specialization
+@ Generalization:  Separation  of one entity type (super  type) into multiple  sub-level  entity types (sub-type).
+@ Specialization:  Integration  of multiple  entity types (sub type) into one upper-level  entity type (super-type).
+© Generalization  and specialization  have an inverse relationship.  The generalization/specialization  relationship  is called
+the IS-A relationship.
+@ The concept  of inheritance  applies.
+Specialization
+Generalization
+B) Aggregation
+@ Aggregation  defines  a new entity with a set of multiple  entities.  It is called an IS-PART-OF  relationship.
+@ The concept  of inheritance  does not apply.
+M2 Database  57

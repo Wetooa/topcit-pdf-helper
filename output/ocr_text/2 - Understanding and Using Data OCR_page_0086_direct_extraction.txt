@@ -1,0 +1,14 @@
+Database )
++ Preview  for practical  business
+Physical  data modeling  and database  design are performed  in the database  physics  design phase. Physical
+data modeling  consists  in converting  the logical data model into a database storage structure  (physical
+data model) by considering  the characteristics  of each DBMS to be used. Here, the concept  of physical
+data modeling  and database  design can be summarized  as follows: Physical  data modeling  consists  in
+designing  matters related to the structure  of data including  the physical appearance,  whereas  database
+design consists  in optimally  designing  the physical model (design drawing)  as objects  from the DBMS
+perspective.  Examples  of database  design include the plan for using the storage  space for each object
+efficiently,  object partitioning  design, and optimal index design, etc. In terms of practical  business,  physical
+design consists  in understanding  the denormalization  and performance  design for physical data modeling,
+and in understanding  and applying  relational  table conversion,  table, data type, index, database  view, and
+distributed  databases  for database  design.
+M2 Database  85

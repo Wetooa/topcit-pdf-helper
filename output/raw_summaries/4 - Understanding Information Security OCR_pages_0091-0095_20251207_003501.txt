@@ -1,0 +1,233 @@
+LEARNING GUIDE: Pages 91-95
+Generated: 2025-12-07 00:35:01
+PDF: 4 - Understanding Information Security OCR
+
+================================================================================
+LEARNING GUIDE
+================================================================================
+
+Here is a simplified, easy-to-read learning guide based on the provided text:
+
+---
+
+## Database Encryption: A Learning Guide
+
+This guide covers types of database encryption, how to apply one-way and two-way cipher algorithms, and the procedure for implementing database encryption.
+
+### I. Types of Database Encryption
+
+Database encryption methods vary in how they integrate with your system. The main types are:
+
+1.  **API Method**
+    *   **How it works:** An encryption/decryption module is installed directly within the **application program server (AP server)**.
+    *   **Process:** The application encrypts/decrypts data *before* sending it to or receiving it from the database server.
+    *   **Modification:** Requires **modification of multiple application programs**.
+    *   **Load:** Creates a load on the **AP server** (low load on the database server).
+    *   **Data Transmission:** Data is transmitted **encrypted** between the AP server and database server.
+    *   **Recommendation:** Use if application programs are easy to modify and the database server's performance is poor.
+
+2.  **Plug-in Type**
+    *   **How it works:** The encryption/decryption module is installed directly within the **database server**.
+    *   **Process:** The database server handles encryption/decryption internally.
+    *   **Modification:** Requires **no modification** to application programs.
+    *   **Load:** Creates a load on the **database server**.
+    *   **Data Transmission:** Data is exchanged in **plain text** between the AP server and database server, then encrypted/decrypted within the DBMS.
+    *   **Recommendation:** Use if database performance is good and application programs are difficult/impossible to modify.
+
+3.  **TDE (Transparent Data Encryption) Method**
+    *   **How it works:** Uses the **built-in or optional encryption/decryption function of the DBMS kernel**.
+    *   **Process:** Encryption/decryption occurs at the DBMS kernel level, transparent to applications.
+    *   **Modification:** Requires **no modification** to application programs.
+    *   **Support:** **Depends on the specific DBMS type and version.** Not universally supported.
+    *   **Recommendation:** Consider when introducing a new DBMS that supports TDE.
+
+### II. Applying Database Encryption Algorithms
+
+Database encryption uses two main types of cipher algorithms:
+
+#### A. One-Way Cipher Algorithm (Hashing)
+
+*   **Purpose:** To make **original data extraction impossible** from the encrypted output. Primarily used for passwords.
+*   **Method:** Uses a **cryptographic hash function**.
+*   **Standard:** Generally uses **SHA-256 or higher** (e.g., SHA-256, SHA-512). MD5 and SHA-1 are considered insecure.
+
+**Application Scenarios:**
+
+1.  **When data (e.g., passwords) is stored in plain text:**
+    *   **Problem:** Plain text passwords are vulnerable to dictionary attacks (e.g., Rainbow attacks).
+    *   **Solution:**
+        1.  Add a **SALT value** (a random string) to the user's password.
+        2.  Apply a hash cipher algorithm (e.g., SHA-256) to the combined password + SALT.
+        3.  Store the resulting hash value.
+        4.  Store the SALT value in a secure, separate location.
+
+2.  **When an insecure hash algorithm (e.g., MD5, SHA-1) is used:**
+    *   **Problem:** Insecure hashes are vulnerable to collisions and brute-force attacks.
+    *   **Solution (Migration Strategy):**
+        1.  First, convert existing insecure hash values into **double-hashed values** by applying SHA-256. Store these.
+        2.  For **successfully logged-in users only**, gradually convert their double-hashed data into **single SHA-256 hash values**.
+        3.  Use the login success time or a separate flag to track conversion status (single vs. double hash).
+
+#### B. Two-Way Cipher Algorithm (Encryption/Decryption)
+
+*   **Purpose:** To **encrypt and decrypt data**, allowing secure storage and retrieval of sensitive information. Primarily used for personal information.
+*   **Method:** Uses **secure block cipher algorithms**.
+*   **Standard:** Generally uses **SEED, ARIA, or AES (Rijndael)**. DES and 3-DES are considered insecure.
+
+**Application Scenarios:**
+
+1.  **When data (e.g., personal information) is stored in plain text:**
+    *   **Solution:**
+        1.  Encrypt the plain text data using a **128-bit or higher secret key**.
+        2.  Store the encrypted data.
+        3.  Store the **secret key in a separate, safe place**.
+
+2.  **When an insecure block cipher algorithm (e.g., DES, 3-DES) is used:**
+    *   **Problem:** Insecure block ciphers are vulnerable to cryptanalysis.
+    *   **Solution (Migration Strategy):**
+        1.  Use a **batch job processing method**.
+        2.  **Decrypt** the existing encrypted data (using the old insecure algorithm).
+        3.  **Re-encrypt** the decrypted data using a secure block encryption algorithm (e.g., SEED, ARIA, AES).
+
+### III. Procedure for Applying Database Encryption
+
+Applying database encryption involves a structured, multi-phase process:
+
+1.  **Prior Consultation**
+    *   **Goal:** Share necessary information and align stakeholders *before* applying encryption.
+    *   **Activities:**
+        *   Environmental survey (system, DBMS, application info).
+        *   Security policy consultation.
+        *   Schedule consultation.
+
+2.  **Prior Impact Analysis**
+    *   **Goal:** Analyze the potential impact on performance and system resources *before* implementing encryption on the operational system. This is a critical phase.
+    *   **Activities (Pre-diagnosis):**
+        *   **Selecting an encryption target:** Identify specific tables and columns that need encryption.
+        *   **Analyzing query statements:** Examine SQL queries for performance impact, identify those needing optimization.
+        *   **Analyzing DBMS:** Check CPU, memory, storage usage; calculate additional resources required post-encryption.
+        *   **Analyzing applications:** Identify application modules affected by encryption.
+
+3.  **Test Verification**
+    *   **Goal:** Validate functionality and performance in a test environment.
+    *   **Activities:**
+        *   Set up a test environment.
+        *   Perform unit tests.
+        *   Perform integrated tests.
+
+4.  **Build (Operation Server Application)**
+    *   **Goal:** Implement encryption on the live operational server.
+    *   **Activities:**
+        *   Apply encryption to the operation server.
+
+5.  **Stabilization (Monitoring and Stabilization)**
+    *   **Goal:** Monitor the system post-implementation to ensure stability and transfer knowledge.
+    *   **Activities:**
+        *   Continuous monitoring.
+        *   Stabilization efforts.
+        *   Technology transfer and training for administrators.
+
+---
+
+================================================================================
+ORIGINAL TEXT (First 5000 chars)
+================================================================================
+
+--- Page 91 ---
+Information  security )
+Resident  registration
+Information  and numbers . . . |OmmMtin  ication etwor Storing after encryption,  with a secure two-way  cipher
+Act Account  numbers algorithm
+Bio information
+Electronic  financialsupervision  regulations Transaction  logs Storage  after encryption
+C) Types of database  encryption
+There are various  types of database  encryption,  such as the API type, plug-in type, TDE type, and hybrid type
+or proxy type, that combines  the API and plug-in type.
+@ API method
+API type database  encryption  performs  encryption/decryption  by installing  an encryption/decryption  module
+inside an application  program  server. It requires  the modification  of multiple  application  programs,  and data is
+transmitted  after encryption  between  the AP server and database  server. There is a low possibility  that a load
+is created  in the database  server, but a load is likely to be created  in the AP server.
+Web Sever Application  Server DBMS Server
+G  | [Get] |G
+Firewall oh Cryptographic
+module
+=z, Management
+console
+[Figure  42] API type database  encryption
+If the application  program is easy to modify and the performance  of the database  server is poor, it is
+recommended  to select this type, as data is transmitted  after being encrypted  through  the network.
+@ Plug-in  type
+When the plug-in type is used, the encryption/decryption  module is installed  inside the database  server in
+order to perform  encryption/decryption.  A load on the database  server may be created and data is exchanged
+between  the AP server and database  server in plain text when it is encrypted/decrypted.
+M4 Understanding  Information  Security  94
+
+
+--- Page 92 ---
+ESSENCE
+Web Sever Application  Server DBMS Server
+Oo a i Encryption  Module
+Firewall FirewallCryptographic
+module44 Management
+console
+[Figure 43] Plug-in  type database  encryption
+It is recommended  to select this type when database  performance  is good, and the application  program is
+difficult  or impossible  to modify.
+@ TDE method
+A method of using the built-in or optional  encryption/decryption  function  of the database.  This type can be
+supported,  depending  on the DBMS type and version. There is no modification  to the application  program
+because  encryption/decryption  is performed  at the DBMS kernel level. However,  this type may not be
+supported,  depending  on the DBMS type or version. The selection  of this type can be considered  when
+introducing  a new DBMS.
+Web Sever Application  Server DBMS Server
+Firewall Firewall
+[Figure 44] TDE type database  encryption
+D) Applying  database  encryption
+The concepts  of a one-way  cipher algorithm  and a two-way  cipher algorithm  can be applied  to the database  as
+follows:
+® Application  of a one-way  cipher algorithm
+Original data extraction  by computation  should be made impossible,  using a hash cipher algorithm  (one-way
+cipher algorithm),  and a cryptographic  hash function,  above SHA-256,  is generally  used.
+Currently,  there are two cases when the one-way  cipher algorithm  should be applied: when data is saved in
+plain text in the existing  database,  and when an insecure  hash cipher algorithm,  such as MD5 or SHA~1, is used.
+92 TOPCIT  ESSENCE
+
+
+--- Page 93 ---
+Information  security )
++ When data is stored in plain text
+If passwords  are stored in plain text and the hash cipher algorithm  is applied only to passwords,  they may
+be vulnerable to  dictionary  attacks, such as Rainbow  attacks.  Therefore, the SALT value, which is a random
+string, should be added to the user's password,  and the hash cipher algorithm  should be applied. Then, the
+SALT value should be stored in a safe place.
+If the password  is stored in plain text
+EmpNum LastName meses) Password(plain  text)
+10001 KIM NAMIL 1234
+10002 LEE YOUNGPYO god
+10003 CHA DORI angel
+Scola  aug oe LaInput : Password Paice
+SHA-256
+Ciphertext  (hash value)
+EmpNum LastName aN  CIS Password(SHA-256)
+KIM NAMIL 03ac674216..
+10002 LEE YOUNGPYO, 11043a8795..
+10003, CHA DORI C9d75iala..
+[Figure  45] When data is stored in plain text
++ If an insecure  hash cipher  algorithm  is used
+If an insecure  hash cipher  algorithm,  such as MD5 or SHA~1, is used, the previously  stored hash value should
+first be converted  into a double hashed value, by applying  the SHA-256  hash cipher algorithm,  before storing
+it. Then, the data of the successfully  logged-in  user should be gradually  converted  into a single hash value,
+using SHA-256,  before storing it. At this time, the login success  time should be used, or a separate  column
+should be added in order to check whether  the data has a single hash value or a double hash value.
+Hila acrel0  Mars aKel FeZolt ATA MU s=Le)
+EmpNum LastName FirstName Password(MD5)
+10001 KIM. NAMIL 930e1c89..
+10002 LEE YOUNGPYO 347ed2f4..
+10003, CHA DORI ed6f836d..
+rl Converting  into a
+. Sioa
+input: RG Weer  echo
+successfully  logged-
+iS n/a 0h} in users only
+Ciphertext  (hash value...

@@ -1,0 +1,36 @@
+Overview  of System Architecture )
+intuitive  GPI programming,  based on the C language,  and it enables  quick operation  using shared memory.  CUDA
+consists  of CUDA Runtime  API and Driver API. Runtime  API provides user-friendliness  by automatically  allocating
+necessary  values for settings  and others. Driver API, which helps the Runtime  API to operate, allows the programs
+to directly manage  memory  or devices  without  using Runtime  API. The CUDA is expected  to show an excellent
+performance  improvement  when applied to performing  tasks suitable  for parallel processing  operations  in various
+fields that require  a large amount  of computation,  such as simulation.  Excellent  performance  can also be expected.
+@ Open Computing  Language  (OpenCL)
+OpenCL,  maintained  and managed  by Khronos  Group, is an open, general-purpose  parallel computing  framework
+developed  by Apple, AMD, IBM, Intel, and NVIDIA. It is an industry  standard  programming  model for heterogeneous
+computer  systems,  consisting  of GPUs, CPUs, and other processors.  It is a parallel  programming  model based on data
+and tasks and has characteristics  of the open specification  to use GPU, CPU, and DSP. OpenCL  mainly consists  of the
+OpenCL  compiler  and the OpenCL  runtime  library. Programs  running  on a computational  processor  (accelerator)  are
+written in OpenCL  C language,  and the OpenCL  compiler  gathers  the source code to convert  it into a binary code.
+Moreover,  a control program  to run or manage  programs  running  on a CPU is necessary.  It can be written  using C or
+C++ through  the OpenCL  runtime  library.
+@ C++ Accelerated  Massive  Parallelism  (C++ AMP)
+C++ AMP was developed  by Microsoft  in an open programming  language  for heterogeneous  computing,  using CPU
+and GPU. C++ AMP. when added to Visual Studio 2021, can increase  the execution  speed of C++ codes using GPU.
+The C++ language-based  C++ AMP intends  to help developers  create general-purpose  programs  using GPU without  a
+high level of understanding  or application  capability  about DirectX  API.
+@ Open ACC
+Although  the concept  and usefulness  of GPU programming  have been widely  known with the emergence  of platforms
+like CUDA, it is not easy to write a program  that can expect  a significant  performance  improvement  by making
+good use of parallel computing.  NVIDIA introduced  OpenACC,  a programming  model based on compiler  directives
+that abstract  CUDA. Open ACC is a programming  model for higher productivity,  since it provides  a relatively  simple
+programming  environment  for developers.  It has another  advantage  of having lower dependence  on an OS and
+platform,  since it is a cross-platform  model, unlike the above programming  models.
+02 Storage  Technology
+A) Concept  of storage
+Computer  systems  use a storage  unit to access data and run commands.  Although  a system uses main memory  for
+the main storage  unit, it uses auxiliary  memory  to permanently  store and utilize data. The web server, WAS, and the
+database  of information  systems  also need a storage unit as the permanent  auxiliary  memory  unit. The web server,
+WAS requires a storage  unit to store its OS or the binary files of its application  program.  Although  the data used by
+an information  system is stored and managed  through  a database,  the storage  unit is necessary  to ensure that data
+M3 Overview  of System  Architecture  83

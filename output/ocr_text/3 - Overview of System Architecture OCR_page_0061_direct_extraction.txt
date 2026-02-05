@@ -1,0 +1,4 @@
+ESSENCE
+coordination,  communication  with the processor,  communication  with input/output  devices,  data buffering,  and error
+detection,  so the process  can easily control multiple  input/output  devices.
+60 TOPCIT  ESSENCE

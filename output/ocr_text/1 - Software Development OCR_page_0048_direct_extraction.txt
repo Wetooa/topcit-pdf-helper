@@ -1,0 +1,34 @@
+Software  Development )
+@© Comparison  of the execution  times of internal  sorting  algorithms
+<Table 16> Comparison  of the execution  times of internal  sorting  algorithms
+Sorting sos Execution  time AdditionalDescriptionmethod pe Worst | Best | Average  | memory
+Insertion  | - A method  of sorting  by inserting  a value into the position > 7
+sort | concerned  based on the assumption  that data has been sorted, Oe!) Oe! 1) None
+- Dividing  the list of given data into subfiles  that has the length
+Shell sort  | of a specific parameter  value, and performing  insertion  sortingin | O(nlog,n) O(n'*) O(n) None
+each subfile.
+Selecti - Amethod  of sorting  repetitively  as many times as the size
+cath (number)  of data when finding the minimum  value and moving it O(n) O(n) O(n’) None
+to the left.
+A sorting  method  based on the Divide and Conquer  method.
+First, a random  criterion  is selected,  and values  smaller  than the
+B criterion  are placed on the left and larger  values  are placed on the 2
+oT right. Then, a random criterion is selected again and values are Oe! Mnlogn)  | Olnlogn) a
+divided  to the right and left again for sorting.
+~ Recursive  call is used.
+Bubble - Amethod  of sorting b . hy . ; ; :aes method of sorting by continuously  exchanging  adjacent  data. O(n’) O(n’) O(n’) None
+- Amethod  of sorting  by configuring  the maximum  heap tree orHeap sort the minimum  heap tree. Qnlogn)  | Onlogn)  | Onlogn) None
+Merge | - The Divide and Conquer  method  is used. The size of data is
+sort continuously  divided in half and combined  again while sorting. Anlogn)  | nlogn) | Anlogn) | Available
+Radix sort | - Amethod  of sorting  by comparing  the low digit of data. O(dn) O(dn) O(dn) Available
+Selection  sort is one of the simplest  sorting algorithms.  The largest  element  is searched  in an array A [1---n]
+and replaced  with the A[n] at the end of the array.
+selectionSort  (A[ ], 1)
+t
+for last —n downto  2 {
+The largest  number  A[k] is
+Ak] < Aflast];
+}
+The for loop reduces  the size of the array to be sorted one by one. The array size begins as n and becomes  n-1
+in the next loop, after which the size continues  to decrease.
+M1 Software  development  47

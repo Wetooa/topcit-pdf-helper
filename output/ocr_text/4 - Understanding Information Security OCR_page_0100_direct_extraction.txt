@@ -1,0 +1,30 @@
+ESSENCE
+01 Windows  system  security
+A) Overview  of Windows  system  security
+Windows  systems  are widely used as PC operating  systems,  and they require security  management  in
+various areas, such as account  and password  management,  access  control, system security, service security,
+monitoring,  and other security  management.
+<Table 33> Windows  system  security
+Item Detailed  item
+* Checks  related  to accounts  (unnecessary  accounts,  accounts  with an administrator  privilege)A int an re : : .count and password  | Checks related to passwords  (vulnerable  passwords,  encryption,  automatic  account locks in case of
+management password  error, maximum password usage period, etc.)
+Access  control + Access  control setting  checks (shared  folders, remote  registry  access,  automatic  screen locks, etc.)
+System  security + Privilege  setting  checks (system  directory  privilege,  Windows  account  privilege,  system utilization
+rates, etc.)
+Service  security + Service  shutdown  (unnecessary  service,  terminal  service,  anonymous  FTP, SNMP settings,  etc.)
+Monitoring + System audit policies, log record settings,  etc.
+Other security + Security settings, scheduling  details, anti-virus  use status, and latest patch checksmanagement
+B) Account  and password  management
+© Deleting  guest accounts  and unnecessary  accounts
+Restrict  the use  of the guest account.  If access by unspecified  individuals  is required,  general user accounts,
+not guest accounts,  should be created and used. Execute  lusrmgr.msc  (local users and groups) and delete
+guest accounts  and unnecessary  accounts.
++ How to delete unnecessary  accounts
+Input lusrmgr.msc  into the search programs  and files box, by selecting  [Start], and delete guest accounts  and
+unnecessary  accounts  from local users and groups.
+| 8  tusamgr-  (Local Users and Groups (LecaD\User] - oOo x
+File Action View Help
++9) am) *% os!  Bim
+BE  WOAGUEIy  Account
+[Figure  50] Deleting  unnecessary  accounts
+100 TOPCIT  ESSENCE

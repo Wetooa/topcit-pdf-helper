@@ -1,0 +1,46 @@
+ESSENCE
+03 NoSQL
+A) Definition  and characteristics  of NoSQL
+A NoSQL database  provides  other means of processing  than the tabular  relations  used in relational  databases.  NoSQL
+is anon-relational  distributed  data repository  that can be expanded  horizontally,  such as data replication  and distributed
+storage  on multiple  servers  focusing  on the write speed for processing  unstructured  and ultra-high-capacity  data.
+<Table  75> Characteristics  of NoSQL
+Characteristic Description
+fee  of  lager - Provides a loose data structure that allows data to be processed  at the petabyte level.
+Use of flexible - Saves data relatively  freely without  a predefined  schema.
+schemas - Saves (data) in a simplified  form such as the key value, graph, and document  structure.
+Inexpensive  cluster - Supports  scale-out,  data replication,  and distributed  storage  using multiple  servers  composed  of
+configuration Pc-level commercial  hardware.
+Simple  CLI (Call Level | - No query language  like SQL in existing  relational  databases  is provided.
+Interface) - Asimple  interface  is provided  by calling a simple API or HTTP.
+High availability - NoSQL loads data by automatically  dividing  data items into the cluster  environment.
+Allows as much - While the relational  DBMS focuses  on ensuring  logical structure  and ACID, NoSQL makes  the
+integrity  as needed application  process  some of the integrity  works instead of assigning  them all to the DBMS.
+The methods  of saving  data are largely divided into column,  value, document,  and chart, using a
+Schema-less function  that allows data storage  and access using the key values, without  the fixed data schema for
+data modeling.
+NoSQL  has a structure  that allows expansion  of the system's  scale and performance  and distribution
+Elasticity of the I/O load more easily,  so that large-scale  data can be created, updated,  and queried,  while not
+causing  downtime  for any clients and application  systems  that access  the system,  even if the system
+fails partially.
+NoSQL  provides  query language,  related processing  technology,  and API that can efficiently  search
+Query and process  data according  to the characteristics  of data even in a system composed  of tens or
+thousands  of servers.
+NoSQL  has a structure  in which memory-based  caching  technology  is very important,  and which can
+Caching provide a high-performance  response  speed even for large-scale  queries and be consistently  applied
+to development  and operation.
+High scalability Partitioning  allows a gradual  node increase.
+: Sees There is no single point of failure, and data are available  even though  a certain node is down because
+High availability .they are replicated.
+5 The result should be quickly  returned  based on memory  instead  of disk, which can be achieved  byHigh performanceusing the non-blocking  write and low complexity  algorithm.
+Atomicity Each write operation  needs to be atomic.
+Consistency Strong consistency  is not needed, but the resulting  consistency  is sufficient  (Read-Your-Writes).
+Persistence Data should be kept on a disk, not just in a volatile memory  only.
+Deploment When a node is added or deleted,  data should be automatically  loaded  without  the need for data
+flexibility distribution  or manual mediation,  and there should be no constraints,  such as distributed  file system  or
+shared storage,  or any need for special hardware.  Hardware  should be operable  in heterogeneous  hardware.
+Modeling  flexibilityData of various  types such as key-value  pairs, hierarchical  data, and graphs  should be modeled
+conveniently.
+Query  flexibility
+150 TOPCIT  ESSENCEMultiple  GET that obtains  a set of values  for the provided  key from a query, and queries  that obtain
+data based on a specific  range of keys, are needed.

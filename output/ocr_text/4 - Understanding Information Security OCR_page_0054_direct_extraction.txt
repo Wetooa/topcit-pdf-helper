@@ -1,0 +1,38 @@
+ESSENCE
+can increase,  and infected  systems  and encrypted  data may be unavailable  or deleted.
+@ Major characteristics  of ransomware
++ Since ransomware  uses a private key encryption  system,  the encryption  key and the decryption  key must be
+the same. If multiple  keys have been used for encryption,  batch decryption  is impossible,  or it takes a lot of
+time, because  multiple  keys should be used for encryption.
++ Demanding  payment  by virtual currency  like Bitcoin
+Even if the requested  amount  is paid in full, there is no 100% guarantee  for decryption.  An attacker  may
+demand payment  by virtual currency,  such as Bitcoin, in exchange  for the decryption  of the encrypted  file.
+However,  even if the requested  amount  is paid, full recovery  is impossible.
+* Once ransomware  has made a successful  attack, modified  variants  are continuously  created.
+Variants  with different  infection  paths and attack methods  constantly  appear, such as CryptoLocker,
+Cryptowall,  and CryptXXXx.
+© Procedure  of the ransomware  attack
+Accessing  to the infection  path > Downloading  ransomware  to a PC and executing  ransomware  — Searching
+for encryption  targets  (document  files, images, etc.) and encrypting  them—  Demanding  money  for decryption
+@® Countermeasures  against  ransomware
++ Keeping  all actives  programs  up to date
+Malware infection  attacks  using software  vulnerabilities  are increasing,  such as Windows  operating  systems,
+Internet  browsers,  such as Internet  Explorer,  Chrome,  Firefox, etc., and programs  used in a PC (Hangul, MS
+Office, Adobe, Java, etc.). In particular,  the “zero-day  attack’ is increasing  which uses the vulnerability  as soon
+as an operating  system or software  vulnerability  is discovered.  Therefore,  the operating  system and all active
+programs  should be kept up-to-date,  and security  updates  should be applied immediately.
++ Installing  the latest anti-virus  program  on the PC and smartphone
+Basically,  anti-virus  programs  should be installed  to protect  the PC or smartphone  safely from malware.
+Furthermore,  anti-virus  engines should be updated  on a regular basis, and automatic  updatesare
+recommended.  In addition,  users sometimes  need to check whether  the anti-virus  program  is properly
+performing  in real-time  and with periodic  checks, and whether  anti-virus  engines  are updated  regularly.  The
+anti-virus  program  should always be updated  to the latest version because  modified  variants  of malware  may
+appear, or new types of malware  may appear.
++ Setting  the pop-up blocker
+Hackers  use adware to register  fake advertising  sites that distribute  malware  in the user's PC. The software
+download  site distributes  adware  to users, and users access the fake advertising  site using the adware.  Then,
+the user’s PC is infected  with malware.  That’s why users have to block  the advertising  pop-up  windows  using
+a pop-up  blocker  in the Internet  web browser.
++ Refraining  from distributing  e-mail addresses  and periodically  changing  account  passwords
+You should refrain from distributing  your e-mall address because hackers can send e-mails that contain
+54 TOPCIT  ESSENCE

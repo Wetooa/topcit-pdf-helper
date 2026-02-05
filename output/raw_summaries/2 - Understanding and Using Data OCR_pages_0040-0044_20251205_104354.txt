@@ -1,0 +1,227 @@
+LEARNING GUIDE: Pages 40-44
+Generated: 2025-12-05 10:43:54
+PDF: 2 - Understanding and Using Data OCR
+
+================================================================================
+LEARNING GUIDE
+================================================================================
+
+Here is a simplified, easy-to-read learning guide based on the provided text.
+
+---
+
+## Learning Guide: Database Concepts & Design
+
+### I. Spatial Database (Continued from Page 39)
+
+A spatial database includes:
+*   **Geometry, geographical objects, and topology** for spatial relationships.
+*   **Processing of unstructured data** and large data volumes quickly.
+*   **Reflection of spatial characteristics** (topological, geometric).
+*   **New indexing and operations** (e.g., R-tree index) for unsortable data.
+*   **Expressive data model** for complex information.
+*   **Support for combining** spatial and non-spatial data.
+
+### II. Column-Base Database
+
+**Definition:** A database that physically stores data based on columns, unlike traditional relational databases which usually store data in rows (row-based).
+
+**Background:**
+*   Traditional row-based storage struggled with high-speed analysis of large datasets because it often required reading unnecessary data.
+*   The concept isn't new (e.g., TAXIR in 1969).
+*   Resurgence since the mid-2000s due to demand for rapid processing of large data, leading to developments like column store indexes, column store DBMS, and hybrid DBMS.
+*   Now actively used with main memory databases.
+
+**Comparison: Column-Based vs. Row-Based Databases**
+
+| Feature                   | Row-Based Database                                 | Column-Based Database                                    |
+| :------------------------ | :------------------------------------------------- | :------------------------------------------------------- |
+| **Physical Storage**      | Stores data in row units.                          | Stores data in column units.                             |
+| **Conceptual Diagram**    | Each row (record) is stored together.              | All values for a single column are stored together.      |
+| **Characteristics**       | Several records stored on one disk page.           | Same column values stored continuously on one disk page. |
+| **Transaction Suitability** | Good for adding, modifying, deleting data by record (OLTP). | Good for processing large amounts of data for the same column (OLAP/Analytics). |
+| **Compression Efficiency** | Relatively low; records are unique.                | High; many duplicate values within a column compress well. |
+| **Example SQL Patterns**  | `SELECT * FROM Table` (selects entire rows or many columns). | `SELECT AVG(COL1) FROM Table` (column-level operations). |
+| **Applied DBMS**          | General OLTP RDBMS (e.g., Oracle, DB2, Sybase ASE). | RDBMS for analysis (e.g., Vectorwise, Sybase IQ, SAP HANA). |
+
+*For a more extensive list of commercial column-oriented DBMS, refer to Wikipedia.*
+
+### III. Recent Database Trends & Issues
+
+*   **Evolution:** Moved from digitalizing paper records ("paperless") to managing and processing various types of unstructured data directly from a digital environment.
+*   **Focus:** Less on fixed-format data, more on varied, unstructured data regardless of format or size.
+
+**Learning Objectives:**
+1.  Explain database design and build processes.
+2.  Explain considerations for database design.
+
+**Keywords:** Requirements analysis, conceptual data modeling, logical data modeling, physical data modeling, data modeling subject, deliverables for analysis, impact of design.
+
+### IV. Practical Business Preview: Why Proper Database Design Matters
+
+*   **Problem:** Treating a database like a simple file system (e.g., Excel files), where tables are dependent on individual applications/screens/reports, negates its benefits.
+    *   Example: Creating separate "booklist" tables for each team instead of an integrated one.
+*   **Consequences of Poor Design:**
+    *   Cannot utilize database advantages (integration, storage, operation, sharing).
+    *   Increased application program complexity.
+    *   Higher development costs.
+    *   Data integrity issues (inconsistency due to duplication).
+    *   Deterioration of data processing performance.
+*   **Solution:** Understand and apply database definitions and characteristics (integration, storage, operation, sharing) to maximize advantages and prevent problems.
+
+### V. Database Design and Build Process
+
+The general process involves phases:
+1.  **Collect and Analyze Requirements**
+2.  **Design the Database** (This phase has detailed stages)
+3.  **Build the Database**
+4.  **Operate and Maintain**
+
+**Detailed Analysis/Design Phases:**
+The design phase is broken down into three levels of abstraction:
+*   **Conceptual Design**
+*   **Logical Design**
+*   **Physical Design**
+
+**[Figure 8] Database Design and Build Process (Simplified)**
+```
+Collect & Analyze Requirements
+       ↓
+    DB Design
+     ├─ Conceptual Design
+     ├─ Logical Design
+     └─ Physical Design
+       ↓
+    DB Build
+       ↓
+Operate & Maintain
+```
+
+#### A) Requirements Collection and Analysis
+
+*   **Purpose:** Gather and analyze user business requirements.
+*   **Deliverable:** A formal requirement statement.
+*   **Identification:** Identify both static and dynamic structural requirements.
+    *   **Static Structure Requirements:** Entity, property, relationship, constraint.
+    *   **Dynamic Structure Requirements:** Transaction type, frequency.
+
+#### B) DB Design: Data Models
+
+A **data model** is a design document for building a database with a clear goal. Database design progresses through different levels of abstraction.
+
+**[Figure 9] Process of Creating a Database in the Real World (Simplified)**
+```
+Real World
+     ↓ (Abstraction)
+Conceptual World (High Abstraction)
+     ↓ Conceptual Data Modeling
+Conceptual Structure (e.g., ERD)
+     ↓ Logical Data Modeling
+Logical Structure (e.g., Relational Model)
+     ↓ Physical Data Modeling
+Physical (Computer) World (Low Abstraction)
+     ↓
+Storage Database
+```
+
+**Types of Data Modeling**
+
+| Data Modeling Type   | Contents                                                                                                                  | Abstraction Level |
+| :------------------- | :------------------------------------------------------------------------------------------------------------------------ | :---------------- |
+| **A. Conceptual**    | High abstraction, business-focused, comprehensive modeling. Used for enterprise data modeling and enterprise architecture (EA) establishment. | **Abstract**      |
+| **B. Logical**       | Accurately expresses keys, attributes, relationships for system development. Highly reusable. Focuses on concrete business aspects and flow. | **Mid-Level**     |
+| **C. Physical**      | Considers physical characteristics (e.g., tablespace, storage structure) to improve performance and storage efficiency for actual database implementation. | **Concrete**      |
+
+---
+
+================================================================================
+ORIGINAL TEXT (First 5000 chars)
+================================================================================
+
+--- Page 40 ---
+Database )
++ Geometry,  a geographical  object, and topology  for the spatial relationship  between  objects  are included.
++ Unstructured  data can be processed;  large amounts  of data can be processed  quickly.
++ Spatial (topological,  geometric)  characteristics  are reflected,
++ New index and operation  (R-tree  index) are used to sort data that cannot  be sorted.
++ Expressive  data model that can express  complex  information.
++ Supports  the combination  of spatial data and non-spatial  data.
+F) Column  base database
+A column base database  physically  stores data based on columns.  The data storage method of the relational
+database  is not defined  as row base or column base, but general relational  databases  use a physical  storage  structure
+based on rows. However,  a way to store data with this structure  reached  the limit in analyzing  large-scale  data at
+high speed because  its physical  structure  required  that unnecessary  data should be also read. The concept  of column
+storage  did not suddenly  appear  recently.  Rather,  this concept  was studied  relatively  early on, including  TAXIR, which
+was developed  in 1969 for searching  biological  information.  Recently,  as the demand  for the rapid processing  of large
+amounts  of data increased,  a function  that partially borrowed  the concept  of the column store such as the column
+store index, column store base DBMS, and hybrid DBMS supporting both structures  were developed  from the mid-
+2000s. Column base database  technology  is now being actively used in the DBMS market, together  with the main
+memory  database.
+The column  base database  has the following  structure  and characteristics  compared  to the row-based  database.
+<Table 18> Comparison  of the column  base database  and row base database
+fon Row-based Column-based
+Database Database
+page page page
+Column-store |B  |
+Physical
+storage
+structure
+Row-store
+M2 Database  39
+
+
+--- Page 41 ---
+ESSENCE
+ra Row-based Column-based
+Database Database
+Employee  number  | 1001 Employee  number  | 1001
+Name Hong Gildong Employee  number  | 1002
+Payroll 1000 Employee  number  | 1003
+Phone 09) 123- 2134 Employee  number  | 1004
+Conceptual Empl b 1002 Ne Hong Gild diagram mployee  number lame jong Gildong
+Name Lim Ggoekjeong Name Lim Ggoekjeong
+Payroll 2000 Name Lee Dongcheol
+Phone 09) 253- 9378 Name Lee Cheolsu
+D . . - Data are stored in column  units.a - Data are stored in row units.Characteristics . - The same column values are stored continuously
+- Several records  are stored on one disk page.on one disk page
+Transaction - Suitable  for adding, modifying  and deleting  data - Suitable  for processing  large amounts  of data for
+characteristics by record. the same column
+Data - Compression  efficiency  is relatively  low because - Compression  efficiency  is high when there arecompression - ra
+efficiency records  are unique and without  duplication. many duplicate  values  for each column.
+Example  of
+frequently SELECT  * (or a large number  of columns) SELECT  AVG(COL1)  (or column  operation)
+used SQL FROM Table FROM Table
+patterns
+Applied  DBMS RDBMS  for general  OLTP RDBMS  for analysis
+Oracle, DB2, Sybase  ASE, etc Vectorwise,  Sybase  IQ, SAP HANA, etc.
++ The list of commercial  column-oriented  databases  is updated  at [https://en.wikipedia.org/wiki/List_of_column-
+oriented_DBMSes].
+40 TOPCIT  ESSENCE
+
+
+--- Page 42 ---
+Database
+>> Recent  trends and major issues
+In the past, many databases  were built to create a “paperless”  environment  in which data recorded  on paper
+are digitalized  and stored in a database.  Recently,  there have been many cases in which databases  have
+been elaborately  built from a digital environment  to a digital environment.  Instead  of simply managing  data
+with a fixed format  or length, there is an increasing  number  of cases in which data are stored and processed
+as various  types of unstructured  data regardless  of the data format  or size.
+>> Learning  objectives
+1. To be able to explain the database  design  and build process.
+2. To be able to explain the matters  to take into consideration  when designing  a database
+>> Keywords
+Requirements  analysis,  conceptual  data modeling, logical data modeling,  physical data modeling,  data
+modeling  subject,  deliverables  for analysis,  impact  of design
+M2 Database  41
+
+
+--- Page 43 ---
+ESSENCE
++ Preview  for practical  business
+There are many cases in which a database  is used like an existing  file system,  and tables are created  in the
+database,  but each table is actually  dependent  on individual  applications,  screens,  and reports.
+For example,  when developing  a book management  system for each team, a booklist  table can be created
+for each team during implementation  of database  in the same way as books are managed  using Excel files.
+If tables are designed  in the same way as Excel files, the advantages  of the database,  including  integration,
+storage,  operati...

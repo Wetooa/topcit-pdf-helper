@@ -1,0 +1,243 @@
+LEARNING GUIDE: Pages 25-29
+Generated: 2025-12-07 00:55:29
+PDF: 3 - Overview of System Architecture OCR
+
+================================================================================
+LEARNING GUIDE
+================================================================================
+
+Here's a simplified, easy-to-read learning guide based on the provided text:
+
+---
+
+## Learning Guide: Information System Architecture
+
+### 1. Information System Components
+
+An information system relies on several core components working together:
+
+*   **Internet:** External network access.
+*   **Routers:** Direct network traffic.
+*   **DDoS Defense:** Protects against distributed denial-of-service attacks.
+*   **Firewall:** Monitors and controls network traffic.
+*   **IPS (Intrusion Prevention System):** Detects and prevents network intrusions.
+*   **L4 Switch / Load Balancer:** Distributes network load across multiple servers.
+*   **Switches:** Connect devices within a local network.
+*   **Internal Network:** The private network of the organization.
+*   **Servers:** Provide computing power.
+*   **Storage:** Holds system data.
+*   **Application/Webserver/Database Server:** Specific types of servers for web services.
+
+---
+
+### 2. Core Components Explained
+
+#### 2.1. Servers
+
+*   **Purpose:** Provide computing power to process business logic and data by running application programs.
+*   **Key Elements:** Stacked hardware, Operating System (OS), middleware, and application programs.
+*   **System Design:** Defines server capacity, count, layout, and role. Servers communicate via the network.
+*   **Common Types:** Mainframes, Unix servers, and x86 servers (increasingly used with cloud expansion).
+*   **Web Service Server Examples:**
+    *   **Webserver:** Responds to user requests, organizes web pages, displays content.
+    *   **Web Application Server (WAS):** Processes business logic based on user requests, delivers results to a database or for display.
+    *   **Database Server:** Manages (creates, requests, modifies, deletes) data.
+
+#### 2.2. Networks
+
+*   **Purpose:** Connects all information system components for communication (e.g., server-server, server-storage, internal-external).
+*   **Devices & Roles:** Vary based on the **OSI Layer 7 standard** (a model for network communication).
+*   **Key Network Devices:**
+    *   **Switches:** Connect devices within a local area network (LAN).
+    *   **Routers:** Connect different networks (e.g., LAN to WAN - Wide Area Network).
+    *   **Load Balancers (L4/L7):** Distribute incoming network traffic across multiple servers.
+    *   **Bridges:** Connect two separate networks.
+    *   **Access Point (AP):** Used for wireless network connectivity.
+*   **Security Aspect:** Networks are common entry points for attacks. Internal networks (LAN) connected to external networks (WAN) are protected by security devices.
+
+#### 2.3. Storage
+
+*   **Purpose:** Stores all data for the information system.
+*   **Classification by Data Storage Method:**
+    *   **Block Storage:** Stores data in fixed-size blocks (e.g., 16KB, 64KB). Typically used for Operating Systems (OS) like Windows, Linux, Unix.
+    *   **File Storage:** Stores data in file units. **Network Attached Storage (NAS)**, often used for shared files, is an example.
+    *   **Object Storage:** Stores data as objects. Mostly used in cloud storage environments.
+*   **Classification by Connection Method:**
+    *   **Direct Access Storage (DAS):**
+        *   **Description:** Mounted directly into individual servers.
+        *   **Usage:** Only accessible by the server it's attached to. Requires a filesystem.
+        *   **Examples:** IDE, SATA, SAS drives.
+    *   **Network Attached Storage (NAS):**
+        *   **Description:** Connected to the network (like any other network device).
+        *   **Usage:** Becomes usable after being mounted to the OS. Provides shared file access over a standard network.
+        *   **Examples:** NFS, CIFS, AFS.
+    *   **Storage Area Network (SAN):**
+        *   **Description:** Connected via a network *exclusively* used for storage.
+        *   **Usage:** Appears to the OS as local storage but is accessed over a dedicated high-speed network. Requires filesystem creation.
+        *   **Examples:** Fibre Channel SAN, iSCSI, FCoE.
+
+#### 2.4. Security
+
+*   **Purpose:** Protects internal systems from external threats and controls access.
+*   **Placement:** Security hardware is installed between external and internal networks, or within the internal network itself.
+*   **Key Devices & Solutions:**
+    *   **DDoS Defense System:** Protects against Distributed Denial of Service attacks.
+    *   **Firewalls:** Monitor, log, and block network traffic based on predefined rules.
+    *   **IPS/IDS (Intrusion Prevention/Detection System):** Detect and prevent abnormal traffic or abuse.
+    *   **Web Firewalls:** Specifically protect webservers by monitoring, logging, and blocking web service traffic.
+    *   **Access Control Solutions:** Manage and enforce rules for who can access servers (allow/deny).
+
+---
+
+### 3. Types of System Architecture
+
+System architecture evolves with technology (hardware, software, user environment like mobile/cloud). Modern systems often center around web services and centralized or cloud structures.
+
+#### 3.1. Classification by System Layout
+
+*   **A. Centralized Architecture**
+    *   **Description:** All systems and data are stored and operated from a single, integrated center. Uses a large-capacity server with an integrated database.
+    *   **Pros:**
+        *   Simple system configuration.
+        *   Easy to ensure data integrity (single database).
+        *   Convenient management and operation.
+        *   Quick response to system failures.
+    *   **Cons:**
+        *   Single point of failure: If the center fails, all business services stop.
+        *   Load concentration during peak times.
+
+*   **B. Multi-Region Distributed System Architecture**
+    *   **Description:** Systems and applications are distributed geographically across multiple regions. Each region manages its distributed data using smaller servers.
+    *   **Pros:**
+        *   Reduces load on individual servers by distributing user load.
+        *   Regional failures only affect that specific region's services.
+    *   **Cons:**
+        *   Difficult to manage data integrity due to distributed databases.
+        *   Complex system configuration and management.
+
+#### 3.2. Classification by Application Program Provision
+
+*   **A. Client-Server Architecture**
+    *   **Description:** System functions are divided between servers and clients. The client (e.g., a desktop application) runs some application programs and provides a Graphical User Interface (GUI).
+    *   **Pros:**
+        *   Provides the convenience of a GUI.
+    *   **Cons:**
+        *   Complex configuration.
+        *   Difficult development and management due to the separation into server and client parts.
+    *   **Examples:** Games, chatting applications, messengers, FTP clients/servers, terminal servers.
+
+*   **B. Web System Architecture**
+    *   **Description:** The server runs application programs, and clients access services using a web browser.
+    *   **Typical Components:** Webserver, Web Application Server (WAS), and Database Server.
+    *   **Key Features:**
+        *   Middleware ensures stable performance.
+        *   High program reusability.
+        *   Evolved from static displays to impressive GUI environments (thanks to HTML5 and PC advancements).
+    *   **Prevalence:** Most recent information systems use this architecture.
+    *   **Client Access:** Any PC or mobile device with a web browser can access all services.
+
+#### 3.3. Classification by System Layer (N-Tier)
+
+*   **Layers vs. Tiers:**
+    *   **Layers:** Refer to logical structures (e.g., OSI 7 layer for networks).
+    *   **Tiers:** Refer to physical structures (how components are physically deployed).
+    *   The logical layer architecture can be implemented as a physical N-tier structure.
+
+*   **Information System Logical Layers:**
+    *   **Presentation Layer (GUI/Front-end):**
+        *   **Function:** Highest level. Provides service information and the user interface.
+        *   **Physical Examples:** Webservers, client's web browsers.
+    *   **Business Logic Layer (Transaction Tier):**
+        *   **Function:** Runs programs that process business requirements (business logic). Determines what data is needed from the data layer.
+        *   **Physical Examples:** Application program servers (like WAS).
+    *   **Data Layer:**
+        *   **Function:** Accesses data resources (e.g., databases) to read or write data. Can be subdivided into data access and data store layers.
+        *   **Physical Examples:** Database servers, file systems.
+
+*   **Physical N-Tier Structures:**
+    *   **A. Two-Tier Architecture**
+        *   **Description:** Data storage and processing are handled by the server. Business logic and presentation are typically handled by the client.
+        *   *(Note: The original text provides an incomplete sentence for this description, but this is the common understanding in this context.)*
+
+================================================================================
+ORIGINAL TEXT (First 5000 chars)
+================================================================================
+
+--- Page 25 ---
+ESSENCE
+Internet
+(Network)
+Router —< ==] Router
+DDoS fy DDoS
+Firewall Firewall
+IPS IPS
+L4 Switch @ @ L4 Switch
+Switch #1 = fees] Switch #2
+=! Intemal Network =!oe oe
+Application Database
+Webserver Server Server Storage
+[Figure  2] Information  System  Components
++ Server
+A server provides  the computing  power of an information  system. The information  system uses this computing
+power to process  the business  logic and data by running  the application programs.  Server components  include  the
+stacked  structures  of the computer's  hardware,  OS, middleware,  and application  programs.  The system  architecture
+design defines  the server  capacity,  count, layout, and role, and the network  facilitates communication  between  the
+servers. Mainframes,  Unix servers,  and x86 servers are the most commonly  used server types, and the x86 servers
+using Intel CPUs have been used more often as the cloud services  expand.
+For example,  the servers of an information  system providing  web services  include a webserver  that responds  to
+user requests  through  a web browser,  organizes  web pages, and provides  a screen to display  the contents  to users,
+a web application  server (WAS) that processes  business  logic, according  to the user request  and delivers  the results
+to a database  server for storage,  or to a WAS for display, and a database  server that creates, requests,  modifies,
+and deletes  data.
++ Network
+A network  connects  the information  system components  for communication.  Network  devices  process
+communication  between  servers, between  servers and storage  units, and between  the enterprise's  internal and
+24 TOPCIT  ESSENCE
+
+
+--- Page 26 ---
+Overview  of System Architecture )
+external  networks.  A network's  devices  and roles vary, based on the OSI layer 7 standard.  Network  devices  include
+switches,  routers, load balancers  (L4/L7 load balancers),  and bridges.  Additionally,  AP (access  point) is used in
+wireless  networks.  There is an overlap between  the network  domain and the security  domain. Since most of the
+hacking  attacks  intrude  through  the network,  the internal network  (LAN) gate, connected  to the external  network
+(WAN), is protected  by a security  device.
++ Storage
+A storage system holds the data of an information  system.  It is categorized  into three types according  to how
+it stores data. Block storage saves data in fixed block units, like 16KB and 64KB. It stores the OS, such as MS
+Windows,  Linux, and Unix. File storage  saves data in file units, instead  of in fixed blocks. Network  attached  storage
+(NAS), widely used as the shared file repository,  is a type of file storage.  Object storage  saves data in object units,
+instead of in fixed blocks or files. It is mostly used in cloud storage.  Storage  types can also be categorized  by their
+connection  method.  Direct access storage  (DAS) is mounted  in each server, NAS is connected  through  a network,
+and storage  area network  (SAN) is connected  through  the network  used exclusively  for storage. DAS can only be
+used with a filesystem  and includes  IDE, SATA, and SAS. SAN is provided  to the OS through  an SAN network,  and it
+requires  the creation  of a filesystem  before it can be used as DAS. It includes  SAN, iSCSI, and FCoE. NAS becomes
+usable after it is mounted  to the OS. It includes  NFS, CIFS, and AFS.
+NAS SAN
+Application | | Application |DAS
+Application
+File System File System
+| Networking |
+{
+| Disk Storage |
+[Figure  3] Storage  Type According  to Connection  Method
++ Security
+Information  security  is configured  through  the network  connection.  Some security  hardware  is installed between
+the external  Internet  section and the internal network  to protect  the internal systems,  while some are installed  in
+the internal network. It includes  the DDoS defense  system to defend against  DDoS attacks,  firewalls  to protect  the
+system through  monitoring,  logging,  and blocking  network  traffic, and IPS/IDS  to prevent  abnormal  traffic or abuse.
+It also includes  web firewalls  protect  webservers  by logging, monitoring,  blocking  web service traffic, and access
+control solutions  to provide management  functions  that allow or to deny access  to servers.
+M3 Overview  of System  Architecture  25
+
+
+--- Page 27 ---
+ESSENCE
+O2 Types of System  Architecture
+A) Types of system  architecture
+Various ways of configuring  a system are provided.  System configuration  is changing  in various ways, according
+to the changes  in hardware  and software  technology,  and the changes  to the user environment.  As the use of
+mobile devices,  such as smartphones,  has recently  increased,  most systems  provide services  based on the system
+architecture  centered  around a web service.  Moreover,  the system  layout is also changing  into a centralized  structure,
+as the cloud services  have expanded.
+B) System  architecture  classification  according  to system layo...

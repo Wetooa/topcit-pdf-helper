@@ -1,0 +1,34 @@
+ESSENCE
+B) Classification  according  to the cloud operation  form
+Cloud services  can be classified  into three levels, based on the service  operation  form. The following  table shows the
+classification,
+{Table 29) Cloud Service  Type Based on Disclosure  Level
+Cloud service Description
+; + Cloud services  disclosed  to unspecified  masses  over the Internet  and are accessible  by thePublic cloud
+Internet
+: + Cloud services  implemented  over the closed network  by enterprises  and institutions  to allowPrivate  cloudaccess  only to authorized  users
++ Services  that use both cloud services  open to the outside  and closed cloud services,  by
+p combining the public cloud and private cloudHybrid cloud g tne Pi Pp
++ The compatibility  by moving  services  deployed  in the public cloud to the private  cloud domain
+and sending  services  in the private  cloud domain  to the public is very important.
+03 Server  Virtualization  Technology
+The conventional  computing  environment  generally  installs an OS-dependent  on single hardware  and runs
+applications  above the OS. Virtualization  refers to the technology  of abstracting  the computer  resources  of multiple
+computers  to make them look like servers, or by abstracting  the computer  resources  of a computer  to make them
+look like multiple  computers.  Since the server  virtualization  technology  makes it possible  to run one or more operating
+systems  on a computer,  it can maximize  the utilization  rate of computer  resources  and management  efficiency.
+Cloud services  generally  use virtualization  technology  to provide abstract  computer  resources  to users. The x86
+virtualization  technology,  in particular,  has been rapidly spread, based on the technology  and market  maturity,  and has
+become  the basis of the cloud computing  environment  for the logic sharing and allocation  of computing  resources
+beyond  the physical  limitations.
+A) Hypervisor
+In server  virtualization,  a host OS is a physical  server, and a guest OS is a virtually  provided  server. Server  virtualization
+technology  can be classified,  according  to how a virtual server allocates physical  resources in order to make it look
+like a physical server. A hypervisor  is a technology  of virtualizing  a physical server. It is a logical platform  for server
+virtualization.  It is also called a virtual machine  monitor  (VMM). The hypervisor  can be classified  by how it is installed
+and virtualized.
+B) Hypervisor  types
+Hyperviors  are classified  into native types and hosted types, according  to the installation  method.  The native type
+is installed  directly on the hardware,  while the hosted type (see [Figure 95]) is installed  on an OS, like conventional
+programs.
+132 TOPCIT  ESSENCE

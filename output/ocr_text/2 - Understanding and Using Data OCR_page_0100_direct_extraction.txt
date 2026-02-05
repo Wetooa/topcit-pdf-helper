@@ -1,0 +1,16 @@
+Database )
++ Standard  terms are created by combining  the standard  words that are extracted  from the entities  and attributes
+held throughout  the organization.
++ Standard  terms for current terms are derived by referring  to the standard  word dictionary,  standard  domain
+dictionary,  and standard  code dictionary.
++ The standard  term dictionary  is divided into an entity term dictionary  and a property  term dictionary.
+E.g. (Standard  word) Customer,  classification, code, ID — (Standard  term) Customer  classification  code, customer  ID
+E) Confirming  data standards
+@ Target  for data standard  review
++ Standard  word dictionary,  standard  domain  dictionary,  standard  code dictionary,  standard  term dictionary,  etc.
+@ Major verification  criteria for data standards
++ Uniqueness:  Check  whether  each data standard  is physically  and semantically  unique.
+* Completeness:  Check whether  all required  inputs for each data standard  object  are defined.
++ Accuracy:  Check whether  the input items of each data standard  target  are completely  entered,
++ Generality:  Check whether  the defined  data standard  can be applicable  to multiple  systems.
+M2 Database  99

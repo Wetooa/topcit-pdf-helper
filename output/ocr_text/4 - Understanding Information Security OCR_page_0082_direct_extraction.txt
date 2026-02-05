@@ -1,0 +1,51 @@
+ESSENCE
+typedef  struct _charvoid  {
+char x[16];
+void * y;
+void * z:
+} charvoid
+static void goodCode()  {
+charvoid  cv_struct
+cv_structy  = (void *) SRC_STR:
+printLine((char  *) cv_struct.y);
+Safe code /* Change  to sizeof(cv_struct.x)  to prevent  the overwriting  of pointer  y */
+memepy(cv_struct.x,  SRC_STR,  sizeof(cv_struct.x)):
+/* Insert a null character  to end with a string */
+cv_struct.x[(sizeof(cv_struct.x)/sizeof(char))-1]  = ‘\0’;
+printLine((char  *) cv_struct.x);
+printLine((char  *) cv_struct.y);
+}
+To make a code secure,  first, modify  the code in a way that only the index within the allowed  range is used, by
+using sizeof(cv_struct.x),  which calculates  an exact string, because  a string copy is limited to the field value x
+within the struct. Second,  since the copied string should have the correct  null information,  the last index of the
+array cv_struct.x,  which has the copied value, should be calculated  and padded  with a null character.
+@ Secure  coding  techniques  for responding  to the format  string insertion  attack
++ Attack overview:
+This security  weakness  could occur if the value entered from the outside is not verified and used as the
+format string of the input/output  function.  An attacker  can attack a vulnerable  process,  or read or write
+memory  content,  by using the format string. As a result, the attacker  can obtain the rights of the vulnerable
+process  and execute  random  code.
++ Coding  technique:
+When using the function  that uses a format string such as printf() and snprintf(),  the user input value should
+not be used as a format string, or included  in format string creation.  When using the user input value for the
+function that uses a format string, a structure  that enables  the user to change the format string should not
+be used.
+<Table 24> Code example
+void incorrect_password(const  char *user) {
+static const char msg_format[]  = “%s cannot  be authenticated.  \n’:
+size_t len = strlen(user)  + sizeof(msg  format):
+char *msg = (char *)malloc(len):
+if (msg == NULL) {
+/* Error handling  */
+}
+int ret = snprintf(msg,  len, msg format,  user):
+Unsafe if (ret < 0 || ret >=len) {
+code /* Error handling  */
+}
+fprintf(stderr, msg):
+free(msg);
+msg = NULL:
+}
+msg is vulnerable  to format  string insertion  because  it contains  an unreliable  user input and is passed as a
+format  string argument,  when fprintf()  is called
+82. TOPCIT  ESSENCE

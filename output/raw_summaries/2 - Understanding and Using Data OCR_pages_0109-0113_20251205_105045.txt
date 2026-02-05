@@ -1,0 +1,239 @@
+LEARNING GUIDE: Pages 109-113
+Generated: 2025-12-05 10:50:45
+PDF: 2 - Understanding and Using Data OCR
+
+================================================================================
+LEARNING GUIDE
+================================================================================
+
+Here is a simplified, easy-to-read learning guide derived from Pages 109-113 of the original text.
+
+---
+
+## Data Manipulation Language (DML) Learning Guide
+
+DML is used to interact with data in a database: input, modify, delete, and search. This guide covers basic operations, aggregate operations, and advanced join operations.
+
+### 1. Basic DML Operations
+
+These operations use statements like `INSERT`, `UPDATE`, `DELETE`, `SELECT`, `FROM`, and `WHERE`.
+*   **`FROM`**: Specifies the target table.
+*   **`WHERE`**: Sets conditions for the operation.
+
+#### 1.1. `SELECT`
+*   **Purpose**: Searches and retrieves data values from a table.
+*   **Syntax**:
+    ```sql
+    SELECT column_name1, column_name2
+    FROM table_name
+    WHERE conditional_clause;
+    ```
+    *(Example: `SELECT Name, Age FROM Employees WHERE Department = 'HR';`)*
+
+#### 1.2. `INSERT`
+*   **Purpose**: Inputs new values into a table.
+*   **Syntax**:
+    *   **All columns**:
+        ```sql
+        INSERT INTO table_name VALUES (value1, value2, value3);
+        ```
+    *   **Specific columns**:
+        ```sql
+        INSERT INTO table_name (column_name1, column_name3) VALUES (value1, value3);
+        ```
+    *   **From an existing table (copying data)**:
+        ```sql
+        INSERT INTO table_name
+        SELECT column_name1, column_name2
+        FROM existing_table_name
+        WHERE conditional_clause;
+        ```
+
+#### 1.3. `UPDATE`
+*   **Purpose**: Changes existing data in a table.
+*   **Note**: If `WHERE` is not specified, all rows will be updated.
+*   **Syntax**:
+    ```sql
+    UPDATE table_name
+    SET column_name1 = new_value1, column_name2 = new_value2
+    WHERE conditional_clause;
+    ```
+    *(Example: `UPDATE Employees SET Salary = 70000 WHERE Department = 'HR';`)*
+
+#### 1.4. `DELETE`
+*   **Purpose**: Deletes data from a table.
+*   **Note**: If `WHERE` is not specified, all rows will be deleted.
+*   **Syntax**:
+    ```sql
+    DELETE FROM table_name
+    WHERE conditional_clause;
+    ```
+    *(Example: `DELETE FROM Employees WHERE EmployeeID = 123;`)*
+
+### 2. Aggregate DML Operations
+
+Aggregate operations perform calculations on a set of rows and return a single summary value. They are typically used with the `GROUP BY` clause.
+
+*   **`COUNT(*)`**: Returns the number of rows.
+*   **`SUM(column)`**: Returns the total sum of values in a column (excluding `NULL`).
+*   **`AVG(column)`**: Returns the average value of a column (excluding `NULL`).
+
+#### 2.1. `GROUP BY` Clause
+*   **Purpose**: Groups data based on one or more columns to perform aggregate functions on each group.
+*   **Placement**: Specified after the `FROM` and `WHERE` clauses.
+*   **Usage**: If an aggregate operation applies to the entire table, `GROUP BY` is optional.
+
+#### 2.2. `HAVING` Clause
+*   **Purpose**: Sets conditions for the `GROUP BY` clause, filtering groups based on aggregate results.
+
+#### 2.3. `DISTINCT` Option
+*   **Purpose**: Ensures only unique values are considered in an aggregate function (e.g., `COUNT(DISTINCT column_name)` counts only unique values).
+
+#### Example: Employee Statistics
+To calculate the number of employees, total salary, and average salary per department from an `Employee` table:
+```sql
+SELECT
+    department,
+    COUNT(*) AS number_of_employees,
+    SUM(agreed_annual_salary) AS total_salary,
+    AVG(agreed_annual_salary) AS average_salary
+FROM
+    Employee
+GROUP BY
+    department;
+```
+
+### 3. Advanced DML Join Operations
+
+Join operations combine rows from two or more tables based on a related column between them.
+
+#### 3.1. NL (Nested Loop) Join
+*   **How it works**: Similar to a nested programming loop. It takes each row from an "outer" (preceding) table and matches it with rows from an "inner" (following) table.
+*   **Performance Tip**: Choose the table with fewer *result* rows as the outer table for better performance.
+*   **Advantage**: Good for narrow processing ranges, as it accesses data randomly.
+
+#### 3.2. Sort Merge Join
+*   **How it works**: Sorts data from both tables based on the join column, then merges the sorted results.
+*   **Advantage**: Efficient for processing a wide range of data because it primarily uses a scan method.
+*   **Disadvantage**: Performance drops if data to be sorted exceeds memory capacity, requiring disk-based sorting.
+
+#### 3.3. Hash Join
+*   **How it works**: Uses a hashing technique. It builds a hash table on one table's join column and then probes it with the other table's join column to find matches.
+*   **Purpose**: Developed as an alternative to mitigate random-access issues of NL Join and the sorting workload of Sort Merge Join.
+
+### 4. SQL Importance and Best Practices
+
+SQL is a powerful and essential tool for relational databases, significantly improving database programming productivity.
+
+*   **SQL's Role**: Allows specifying desired data, with the DBMS managing the retrieval.
+*   **Performance Issues**: Poorly written SQL can severely degrade database performance, affecting entire projects.
+    *   **Common Causes**:
+        *   Repetitive SQL calls within program loops.
+        *   Ignoring index characteristics in queries.
+        *   Excessive use of subqueries, leading to overly long statements.
+        *   Complex calculations and aggregations without proper optimization.
+*   **Effective SQL Writing**: Requires a deep understanding of:
+    *   The database system itself.
+    *   The data model.
+    *   Index structures.
+    *   SQL syntax.
+
+### Keywords for Future Study (Not detailed in pages 109-113)
+
+*   Stored procedure
+*   Embedded SQL
+*   Dynamic SQL
+*   Query optimization
+*   Optimizer
+*   Web database linkage
+
+================================================================================
+ORIGINAL TEXT (First 5000 chars)
+================================================================================
+
+--- Page 109 ---
+ESSENCE
+04 Data Manipulation  Language  (DML)
+A data manipulation  language  is used to input, modify, delete, and search data in a database.  This section  introduces
+the data manipulation  language  by subdividing  it into basic operations,  aggregate  operations,  and advanced  join
+operations.
+A) Basic DML operations
+DML basic operations  consist  of statements  such as INSERT, UPDATE,  DELETE,  SELECT,  FROM, and WHERE,  and are
+used for input, modification,  deletion,  and search operations.  Among  them, FROM and WHERE  are used together  with
+the INSERT, UPDATE,  DELETE,  and SELECT  statements.  FROM is used to designate  the target table and WHERE  is
+used to set the conditions.
+<Table  43> Basic DML operations
+Statement Description  and examples  of usage
+Used to search  data values stored in a table.
+SELECT SELECT  column  name 1, column  name 2
+FROM table name
+WHERE  conditional  clause:
+Used to input values in all or some columns  of a table
+(Entering  all columns)
+INSERT  INTO table name VALUES  (input value 1, input value 2, input value 3);
+(Entering  some columns)
+INSERT INSERT  INTO table name (column  name 1, column name 3) VALUES  (input value 1, input value 3);
+(Entering  from an existing  table)
+INSERT  INTO table name
+SELECT  column  name 1, column  name 2
+FROM table name
+WHERE  conditional  clause:
+Used to change  the data stored in a table.
+UPDATE  is performed  for all rows if a conditional  clause is not specified.UPDATE - :UPDATE  table name SET column  name 1 = input value 1, column  name 2 = input value 2
+WHERE  conditional  clause:
+Used to delete  the data stored in a table.
+DELETE DELETE  is performed  for all rows if a conditional  clause is not specified.
+DELETE  FROM table name
+WHERE  conditional  clause:
+B) Aggregate  DML operations
+Aggregate  operations  can be performed  by using the AVE, SUM, and COUNT  statements  of the DML. The GROUP
+BY clause is specified  after the FROM clause and the WHERE clause in the SQL statement.  This clause is used to
+group data and to obtain statistical  information  on each group item. Aggregate  operations  are generally  used with
+the GROUP BY clause. However,  if an entire table is a group, an aggregate  operation  can be performed  without  the
+GROUP  BY clause. On the other hand, the HAVING  clause can be used to set the condition  for the GROUP  BY clause.
+In addition,  the DISTINCT  option can be used to consider  the same value as the same data.
+108 TOPCIT  ESSENCE
+
+
+--- Page 110 ---
+Database )
+<Table  44> Aggregate  DML operations
+Statement Description  and examples  of usage
+Used to output  the number  of rows.
+SELECT  COUNT(*)  FROM table name
+Used to output  the total excluding  the NULL value.
+SUM SELECT  column name 1, SUM (column  name 2) AS alias FROM table name
+GROUP  BY column  name 1
+Used to output  the average  excluding  the NULL value.
+AVG SELECT  column name 1, AVG (column  name 2) AS alias FROM table name
+GROUP  BY column  name 1COUNT
+Example  of calculation  of no. of employees  by department/total  employee  salary/average  salary from the
+Employee]  table below.
+Department  | Employee  number Name Agreed annual salary Job title Contact information
+Finance 01144 Hong Gildong 6000 Team leader | O10-XXXX-XXXX
+Legal affairs 04489 Lee Mongryong 5400 Assistant  manager  | 010-XXXX-XXXX
+HR 01122 Maeng  Saseong 5700 General manager  | 010-XXXX-XXXX
+General  affairs 07876 Ha Wongil 7700 General manager  | 010-XXXX-XXXX
+SELECT  department,  COUNT(*)  AS number  of employees,  SUM (agreed  annual salary)  AS total salary, AVG
+(agreed  annual salary)  AS average  salary
+[Figure  39] Utilization  of aggregate  operations
+C) Advanced  DML join operations
+@ NL (Nested  Loop) Join
+NL Join  performs  join operations  in a similar way to the nested loop statement  used in programming.  The table
+outside  the loop is called the “preceding  table” or the “outer  table”, and the table inside the loop is called the “following
+table’ or the ‘inner table”.
+NL Join first extracts the rows that meet the conditions  of the preceding  table and performs  a join operation
+while reading  the following  table. This operation is repeated  as many times as the number  of rows that meets the
+conditions  of the preceding  table. As the join operation  of the following  table is repeated  as many times as the
+number  of rows that meet the conditions  of the preceding  table, it is recommended  to select a table with fewer
+result rows as the preceding  table in consideration  of performance.  It is advantageous  to NL Join to have a narrow
+processing  range because  data are accessed  randomly.
+@ Sort Merge  Join
+Sort Merge Join performs  a join operation  by sorting  data based on the join column. Sort Merge Join is advantageous
+when processing  a wide range of data as it mainly reads data using the scan method,  unlike NL Join. However,
+M2 Database  109
+
+
+--- Page 111 ---
+ESSENCE
+performance  deteriorates  if all sorting operati...

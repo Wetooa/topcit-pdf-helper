@@ -1,0 +1,13 @@
+_ 1. Precedents  for infringement  of trade secrets
++ When only new features  are added based on other source code
++ In case of developing,  producing,  and selling  substantially  similar  programs  by performing  reverse  analysis  of program  code
+(reverse  engineering)  (Article 101-4 of the Copyright  Act)
++ In the case of reverse  analysis  in violation  of the contract,  even though  the prohibition  against  reverse  analysis  and the
+prohibition  against  disabling  technical  protection  measures  to prevent  reverse  analysis
+_ 2. Precedents  that do not fall under infringement  of trade secrets
++ When the programming  language  in which the software  was developed,  and the method  of implementation  are completely
+different
++ In case of performing  reverse  analysis  of code for the purpose  of obtaining  information  necessary  for compatibility  in
+situations  where it is not possible  to easily obtain information  necessary  for program  compatibility  for a program  that has
+been legally purchased  by a legitimate  method  (Article 101-4 of the Copyright  Act)
+216 TOPCIT  ESSENCE

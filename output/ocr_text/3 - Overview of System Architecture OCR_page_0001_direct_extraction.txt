@@ -1,0 +1,18 @@
+CONTENTS
+|. System  Concept 20
+01 Concept  of System  Architecture 22
+A) Understanding  system  architecture 22
+B) Components  of information  system 23
+02 Types of System  Architecture 26
+A) Types of system  architecture 26
+B) System  architecture  classification  according  to system layout 26
+C) Classification  according  to how the application  programs  are provided 27
+D) Classification  by system layer 28
+03 Server's  Stack Architecture 29
+A) Concept  of server's  stack architecture 29
+B) Computer  hardware 30
+Il. Network  Concept 32
+01 What is the Protocol? 36
+02 OSI Reference  Model and TCP/IP  Protocol  Layer Structure 37
+03 Internet  Address  System 39
+6 TOPCIT  ESSENCE

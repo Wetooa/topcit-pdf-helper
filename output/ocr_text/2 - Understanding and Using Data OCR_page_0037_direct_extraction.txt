@@ -1,0 +1,41 @@
+ESSENCE
+© Step 3: Combining  XML and DTD
++ Determines  whether  the DTD declaration  and definition  part will be created  inside XML or saved as an external  file.
++ Internal  declaration:  Defines  the DTD in an XML document.
++ External  declaration:  Applies  the DTD (Document  type declaration)  part to an XML document.
+G) Concept  and characteristics  of XML Schema,  and comparison  with DTD
+The existing  DTD cannot limit or extend the data type or range of certain information,  and the DTD description
+grammar  differs from the XML description  grammar,  which requires understanding  of both the DTD and XML
+grammars,  As a result, the XML schema  was introduced  to replace  the DTD and to enable the creation  of a data type
+that can process  a document  more easily.
+Supporting  data types: More complex  types of data than the existing  DTD can be created, and new types can be
+created  and used.
++ Supporting  complex  structure  definition:  Another  schema  document  can be included  in a schema  document  using
+the Schema  location  directive.
++ Supporting  a namespace:  XML Schema  supports  a namespace.
+* Namespace:  An abstract  entity that can distinguish  elements  when extracting  elements  from an XML document
+type and combining  them with other documents,  and when processing  multiple  documents  at the same time.
+<Table 15> Comparison  of the XML Schema  and DTD
+Item XML Schema DTD
+Writing  grammar  | Complies  with XML 1.0. EBNF + pseudo
+Structure Complex Relatively  simple
+Namespace Supported  (Multiple  namespaces  can be used ina document.)  | Not supported  (Used once in a document.)
+DOM support DOM is supported  and can be used because  it is XML. Not supported.
+Dynamic Supported  (Selecting  at runtime.  Subject  to change due to an | Not supported
+schema  support  | interaction.) (DTD can actually  read only.)
+Data type Extensive  data type Very limited data type
+Scalability Fully object-oriented  scalability Extension  using string substitution
+Openness Content  model that supports  open and closed modification. Closed structure
+H) Characteristics  of XQuery
+XQuery  is a query language  that is used to search an XML-based  database, and can extract  information  from XML
+files as if using a database.
+<Table 16> Characteristics  of XQuery
+Characteristics Description
+Technology  neutral | A technology  that is standardized  based on W3C-based  XQuery1.0.
+- DA data search and storage  technology  using XML.
+- A language  that is originated  from an XML query language  called Quilt and which includes  the XPath
+expression
+- The result of the query statement  written  in XQuery  is the list of nodes indicating  a tree structure,  not
+an XML document.XML-based  query
+language
+36 TOPCIT  ESSENCE

@@ -1,0 +1,18 @@
+Overview  of System  Architecture
++ Preview  for practical  business
+"Discovery  of a ‘Chinese  hacking  chip’ in a well-known  server  board in the United
+States...Industry  thrown  into commotion”  2018. 10. 05.
+Citing the words of six senior US intelligence  officials on the 4th (local time), Bloomberg  reported  that a
+hacking  microchip,  that was not in the design, was found on the server mainboard  of a well-known  server
+manufacturer,  Super micro, and that the Chinese  Government  was allegedly  involved.
+(Source: http://it.chosun.com/site/data/htm|_dir/2018/10/05/2018100502710.html)
+There is not a moment  in our daily lives when we do not use the services  provided  by computer  systems.
+With the wide-spread  use of smartphones,  we are spending  even more time with computer  systems.  In
+such an environment,  Chinese  hacking  chips can expose  our lives to hackers.  This hacking  chip was found on a
+computer  system’s  board. It contains  stolen key US information  through  hardware  hacking,  which is more
+threatening  than software  hacking.  This tiny chip has the capability  to steal information  from a computer
+over a network. How can such a small chip contain this function?  While the early computer,  ENIAC, was
+the size of a building,  computers  have become  drastically  smaller since then, and the computing  power
+of smartphones  that we carry in our hand is so high, that it is not even comparable  to that of ENIAC. It is
+necessary  to learn the system  architecture  to understand  the concept  of a computer  system.
+M3 Overview  of System  Architecture  21

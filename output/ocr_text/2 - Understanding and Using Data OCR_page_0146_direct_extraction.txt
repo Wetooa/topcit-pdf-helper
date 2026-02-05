@@ -1,0 +1,37 @@
+Database )
+01 Big Data Overview
+A) Definition  and characteristics  of big data
+@ Definition  of big data
+Big data generally  refers to either data that exceed  the ability of database  management  tools used to capture,  store,
+and analyze  data (McKinsey,  2011), or to next-generation  technologies  and architectures  designed  to extract  value
+from large-scale  data at low cost and support  the rapid collection,  discovery,  and analysis  of data (IDC, 2011).
+@ Characteristics  of big data (3V)
+The characteristics  of big data can be explained  by the three elements  (3V) of big data, namely,  volume,  velocity,  and
+variety. Each element  has the following  characteristics.
+<Table  66> Characteristics  of the three elements  of big data (3 Vs)
+Three elements Description
+- Refers to a volume  of data of tens of terabytes,  petabytes  or more, thus exceeding  theVolume : : : :processing  limit of commonly  used software  when collecting,  storing,  and processing  data.
+Velocit: - ‘Big data’ is created  very quickly.
+y - Data collection,  processing,  storage, and analysis  need to be processed  in real time.
+Variet - Diverse kinds of data
+y - Big data can be classified  into structured,  semi-structured,  and unstructured  data.
+> 6V of big data = Volume,  Variety, Velocity,  Veracity,  Visualization,  Value.
+© Structured  data vs. unstructured  data
+<Table  67> Description  of structured,  semi-structured,  and unstructured  data
+Data type Description
+Structured - Data to be stored in a fixed field.
+- Data not stored in a fixed field, but which contain  metadata  or schema,  such as XML or HTML.
+- XML, CVS, XLS, RDF, etc.
+- Data not to be stored in a fixed  field.
+- Document,  picture,  video, and audio data, etc.Semi-structured
+Unstructured
+B) Detailed  technology  by big data life cycle
+<Table  68> Detailed  technology  by big data life cycle
+Item Description Detailed  technology
+. - A technology  that can collect  data from all devices - Crawling  (web robot), ETL, CEP (Complexoer and systems. Event Processing),  etc
+Storage/ - A technology  that can store and process  collected - Distributed  file system, NoSQL, MapReduce,
+processing large-scale  data using a distributed  processing  system. processing
+Analysis -A method  of analysis that can assist companies  and - Natural language  processing,  machine
+the public with using big data in business  and daily life. learning,  data mining  algorithms,  etc.
+Visualization - patil  that can visualize analyzed results - Visualization  such as R, graphs, drawings, etc.
+M2 Database 145

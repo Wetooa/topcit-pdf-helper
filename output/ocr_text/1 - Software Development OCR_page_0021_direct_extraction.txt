@@ -1,0 +1,38 @@
+ESSENCE
+proceeds  with analysis,  design, and implementation  sequentially.  However,  formal techniques  were less usable
+for general software  developers,  and the Waterfall  model was expensive  and slow to implement.  Recognizing
+these problems,  methods  of boosting  the productivity  of software  development  were studied to efficiently
+develop software by increasing  its reusability  in the 1980s. In the 1990s, software vendors  had to reduce
+the ‘time to market’  to gain  a competitive  advantage. As a result, much research  aimed at raising software
+development  productivity  was conducted,  and models  focusing  on concurrent  engineering  - which could carry
+out requirement  definition,  design, implementation  in the Waterfall  model simultaneously  - were adopted. As
+the market environment  surrounding  software  began to change rapidly in the 2000s, the agile methodology
+was comprehensively  adopted  to effectively  respond  to such rapid changes.
+C) Four key elements  of software  engineering
+Software  engineering  is defined  as “a discipline  that studies the overall life cycle of software  - such as
+development,  operation,  and maintenance  - systematically,  descriptively  and quantitatively.”  The following
+section  describes  the four key elements  of software  engineering,  which make it possible  to produce  top quality
+software  and deliver  it according  to a given cost and schedule.
+@ Method
++ The method is composed  of project planning  and estimation,  system and software  analysis,  data structure,
+program  structure,  algorithm,  coding,  testing,  and maintenance  tasks.
++ Methods  centered  on a specific language  (e.g. an object-oriented  method),  or graphical  notation,  are
+introduced  from time to time.
++ Aseries  of evaluation  standards  for software  quality  is introduced.
+@ Tool
++ “Tool” refers to an automated  or semi-automated  method  that is used to improve  productivity  or consistency
+when performing  a task.
++ There are numerous  tools in the software  development  lifecycle  (e.g. requirements  management  tools,
+modeling  tools, configuration  management  tools, change  management  tools).
++ When tools are integrated  in such a way that the information  created  by one tool can be used by other tools,
+it is set as a system  that supports  software  development.
+@® Procedure
++ A procedure  combines  a method  and a tool so that they can be used to develop  software  in a rational  and timely  fashion.
++ The procedure  defines the applied method,  required deliverables  (documents,  reports, etc.), controls  to
+guarantee  quality and assist coordinate  adjustment,  and the sequence  of milestones  that enable software
+managers  to evaluate  progress.
+@ People
++ As many tasks (establishment,  improvement,  maintenance,  etc.) are performed  by employees  and organizations
+specializing  in software  engineering,  software  engineering  relatively  depends  more heavily  on people.
++ It is practically  impossible  to summarize  software  development  in an easily accessible  or graspable  manner
+20 TOPCIT  ESSENCE

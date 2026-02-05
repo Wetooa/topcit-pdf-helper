@@ -1,0 +1,25 @@
+Overview  of System Architecture )
+> Keywords
+Embedded  hardware,  Microprocessor,  Microcontroller,  Low power, Lightweight,  Small form factor, RTOS,
+Embedded  Linux Windows  CE
++ Preview  for practical  business
+Company  A specializes  in developing  embedded  systems  that control industrial  equipment  and home
+appliances.  Since embedded  systems  are applicable  to a wide range of devices,  such as sensors,  controllers,
+and loT devices,  they are the core technology  required  from the market  development  stage. An embedded
+system is a solution  built into a product  to perform  specific  tasks. Developers  of such systems  must have a
+broad knowledge  of software  and hardware  functions.  This chapter  describes  embedded  systems  in detail.
+01 Overview  of Embedded  System
+A) Definition  of embedded  system
+An embedded  system is a computer  system that performs  a specific function  for controlling  a machine  or other
+systems  requiring  control,  and an electronic  system in the device.
+In more detail, it is a system with a built-in microprocessor  and a program  that drives the microprocessor  to perform
+a specific  function,  more than just simple circuits in various  electronic  devices,  home appliances,  and control devices
+used in our daily life.
+An embedded  system is configured  of a set of hardware  and software,  as shown in [Figure 71].
++ Embedded  hardware:  Embedded  hardware  consists  of a microprocessor/microcontroller,  equivalent  to a CPU,
+memory,  input/output  device, network  device, sensor, driver, etc.
++ Embedded  software:  Embedded  software  consists  of an operating  system (OS) that directly  controls  hardware  and
+manages  the software,  system software,  and application software.  Unlike conventional  software,  the main purpose
+of the embedded  software  is to provide an appropriate  response  to the physical  world. Therefore,  embedded
+software  has the characteristics  of the physical  world, such as time, energy,  and permanence.
+M3 Overview  of System  Architecture  99

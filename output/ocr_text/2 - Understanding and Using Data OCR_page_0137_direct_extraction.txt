@@ -1,0 +1,25 @@
+ESSENCE
+>> Recent  trends and major issues
+As the business  environment  has switched  from a seller-centered  model to a buyer-centered  model, ever
+faster and more accurate  decision-making  is directly related to the survival of enterprises.  Accordingly,
+analytical  systems  are needed  that support  a series of analysis  processes,  including  the collection,  storage,
+processing,  presentation  and utilization  of data, in order to analyze enterprise  information  including
+customers  more quickly and accurately.  In particular,  the data warehouse  (hereafter  referred  to as a “DW’)
+for storing  large amounts  of corporate  information  accumulated  over time, the OLAP for diversely  analyzing
+and utilizing  data from the user's perspective,  and data mining  for finding new business  insights  have been
+introduced.
+On the other hand, data warehouses  that were previously  available  for each area are now being replaced  by
+the EDW (Enterprise  DW) due to the development  of large-scale  data storage  technology,  and semi-real-
+time data warehouses  have also been introduced  due to the development  of data processing  technology.  In
+addition,  as enterprises  are adopting  the Hadoop  system  for big data analytics,  its coexistence  with existing
+analytics  data warehouses  is required.
+>> Learning  objectives
+1. To be able to explain the concept  and characteristics  of the data warehouse  (DW).
+2. To be able to explain data warehouse  modeling.
+3. To be able to explain ETT.
+4. To be able to explain the concept  and search technique  of OLAP (Online  analysis  processing).
+5. To be able to explain the concept  and algorithm  of data mining.
+>> Keywords
++Data warehouse  (DW), star schema,  snowflake,  ETL, ETT, OLAP, search technique,  data mining,
+association  analysis,  sequential  analysis,  classification,  clustering
+136 TOPCIT  ESSENCE

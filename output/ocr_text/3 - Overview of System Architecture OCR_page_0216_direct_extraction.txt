@@ -1,0 +1,34 @@
+Overview  of System  Architecture
+Access
+Control
+SystemSubscribe:
+Topic Open Door
+Camera .Publish: PImage f Par Subscribe:
+Sensor eae Topic Intrusion image Meta data—= Subscribe: ;
+Topic Intrusion  image Meta data Video
+MQTT Broker Management
+Subscribe: System_ Topic Open Door
+aun Publish:
+Sensor Topic Open Door
+Building
+Subscribe: Energy
+Topic Open Door = Management
+System
+[Figure 149] MQTT  Applications
+MQTT is a flexible data transfer  model between  multiple  endpoints  and multiple  servers and operates  by publishing
+and subscribing  to necessary  topics. [Figure 149] shows a conceptual  diagram  of transmitting  the topic of the door
+opening  and closing, by sending pressure sensor data to the access control system, video security  system, and
+building  energy control system, using Arduino and the metadata  topic that is generated  by the camera’s  image
+sensor  to multiple  systems,  using MQTT.
+Although  the protocols  based on CoAP and HTTP are widely  used currently,  the standardization  organizations  are still
+suggesting  architectures  using MQTT and REST. OASIS continues  to update the MQTT standard.  [14]
+{Table 75) Comparison  of MQTT and CoAP
+Type MQTT CoAP
+Purpose Message  protocol  for loT Message  protocol  for loT
+Topology N:M type 1:1 type
+Configuration A broker and multiple  clients Server and client
+Operation Publishing  and subscribing Requesting  and responding
+Data Event Status Information
+al Mostly TCP Mostly UDP
+Standard OASIS standard IETF CoRE standard
+M3 Overview  of System  Architecture  215

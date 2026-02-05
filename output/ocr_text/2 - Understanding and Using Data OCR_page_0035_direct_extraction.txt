@@ -1,0 +1,21 @@
+ESSENCE
++ XSL (Extensible  Stylesheet  Language)  is a language  that specifies  the style sheet, which is used
+to express  XML data in various  different  forms.
+XSL/XSLT + XSLT (Extensible  Stylesheet  Language  Transformation)  is a part of XSL that converts  an XML
+document  into a different  type of document  (such as HTML) so that it can be displayed  on
+general browsers.
++ The extensible  Linking  Language  (XLL) displays  the connection  and relationship  between  XML
+XLL elements.
++ XLink: Recognizes  and processes  hyperlinks.
++ XPointer:  An address  of the element  in an XML document.
+D) Structure  and major components  of the XML processor
+User
+XML editorXML Processor DB
+nconutetto
+Crea
+<Table 13> XML components
+Component Function
+XML parser Checks  and inspects  the grammar  and syntax structure  of an XML document  (validation  check).
+XML syntaxanalyzer Analyzes  the syntax structure  of an XML document  (SAX, DOM).
+XSL engine Converts  an XML document  to a document  format  with expression  information.
+34 TOPCIT  ESSENCE

@@ -1,0 +1,37 @@
+ESSENCE
+object creation  until the developer  actually  needs it.
+@ Behavioral  patterns
++ Chain of Responsibility  pattern
+- Definition:  When a request is sent to a specific object after configuring  a chain based on the relationship
+between  objects,  this design makes another  object in the chain handle the request  if the object concerned
+cannot  process  the request.
+- Advantages:  The degree of system coupling  can be reduced,  and responsibilities  among objects can be
+distributed  more flexibly.
+- Disadvantages:  Not recommended  if time prediction  is important,  such as the real-time  system, because
+the request  processing  time and processing  status are not accurate.
+* Command  pattern
+- Definition:  While the Chain of Responsibility  pattern sends a request  within the chain of the class, the
+Command  pattern sends a request  to a specific object only. The request  also includes  a request  for a
+specific  processing  task in an object, and the request  concerned  is sent using a known public interface.
+- Advantages:  An object-oriented  alternative  to the callback  function.  It is useful when supporting  the Undo/
+Redo function.
++ Interpreter  pattern
+- Definition:  A class structure that defines  relatively  simple grammar  itself as a class to perform necessary
+functions  efficiently  without  a separate  data structure,  in addition  to a grammar  check.
+- Advantages:  Easy to change,  expand  or implement  grammar.
++ Iterator  pattern
+- Definition:  Movement  using a data list or collection  is allowed, using a standard  interface,  without
+considering  the internal  structure  of the object.
++ Mediator  pattern
+- Definition:  A class structure  that can convert a complex  M:N relationship  into a M:1 relationship  by
+disconnecting  the direct relationship  between  classes when the classes have established  a complex  M:N
+relationship  directly.
+- Advantages:  Class coupling  can be reduced.
++ Memento  pattern
+- Definition:  A class structure  that defines  the status information  of an object as a separate  class and stores
+the object of that class in a list data structure  whenever  needed, so  that the status of the object can be
+easily restored  at a specific  point in time.
++ Observer  pattern
+- Definition:  A design that creates  a one-to-many  dependency  between  objects  when the state of one object
+changes,  so that related objects  can be automatically  notified and updated.
+80 TOPCIT  ESSENCE

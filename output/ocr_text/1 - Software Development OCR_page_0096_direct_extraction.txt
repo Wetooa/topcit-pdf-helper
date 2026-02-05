@@ -1,0 +1,37 @@
+Software  Development )
+Easy to analyze  and modify  using a development  environment  that is structured  andes  ma aaa Ly systematized  to adapt to changes in the person in charge or the user environment.
+Reduces  the risks posed | Reduces  the risk of new systems  by reusing  proven  technology  and the service  based on the
+by new systems standardized  structure.
+B) Spring  Framework
+@ Introduction  to the Spring  Framework
+The Spring Framework  is an open-source application  framework  for the Java platform,  which provides  a
+comprehensive  basic structure  for the development  of Java-based  enterprise  applications,  and various  services
+necessary  for dynamic  web application  development.  The Spring Framework  is utilized as a core basis for the
+standard  e-government  development  framework  on account  of its proven stability  and flexibility.
+@ Characteristics  of the Spring Framework
+The Spring Framework  uses  a lightweight  container  called POJO (Plain Old Java Object) to manage  the life
+cycle of the Java object, such as creation  and destruction,  and guarantees  loose coupling  between  objects by
+using DI (Dependency  Injection),  which sets the dependency  relationship  between  objects using configuration
+files or annotations.  It also uses AOP (Aspect-Oriented  Programming)  to support  the combination  of functions
+that are commonly  used in multiple  modules,  but which are not related to core business  logic, such as logging,
+security, transactions,  etc., if they are executed  after separation.  In addition,  it provides  database  libraries  such
+as JDBC, MyBatis,  Hibernate,  JPA, etc., and supports  the interface  with various  APIs necessary  for developing
+enterprise  applications  such as JMS, mail, and scheduling.
+© Composition  of the Spring Framework
+Spring  ORM Spring  Web
+Hibernate  support Web ApplicationContext
+iBats support Mutipart  resolver
+JDO support Web utlities Spring  Web MVC
+Spring  AOP Web MVC
+Source-level Framework
+metadata 2 Web  Views
+AOP infrastructure Spring  Context JSP/Velocity
+Spring  DAO Application  context PDF/Export
+. UI support
+rer 8C spp JNDL BB suppor and
+DAO support remodeling
+Mail
+Spring  Core
+Supporti ing utlities
+Bean container
+M1 Software  development  95

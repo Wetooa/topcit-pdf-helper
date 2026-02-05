@@ -1,0 +1,42 @@
+ESSENCE
+Used to copy files between  different  Unix systems  and send commands  to be executed  inUucp (540)
+different  systems.
+Ingreslock  (1524) Ingre database  lock service
+Dtspcd  (6112) A daemon  service  to control the subprocess  of the desktop.
+Daytime  (13) Daytime  is a daemon  that displays  the current  time and date in ASCII format  when
+responding  to the client’s  query.
+Tftp (69) File transfer  protocol
+Uucp-path  (117) Uucp path service
+Netbios_ns  (137) NetBIOS  name service  used to identify  a resource  on the network.
+Bftp (152) Binary File Transfer  Protocol
+A.user  connects  the system remotely  and can start a chat session  with a user who hasTalk (517)logged into another  system.
+Pcserver  (600) ECD integrated  PC board server used to make RPC related attacks.
+@ Restricting  the use of anonymous  FTP and using Secure FTP
+Anonymous  FTP allows a malicious user to obtain information  about the system. Since various  attacks  can be
+made if writing permission  is set in the directory,  the use of anonymous  FTP should be restricted  by setting
+it in such a way that only necessary  users can gain access. Also, secure FTP should be used, rather than FTP
+with weak security.
+When using general FTP by using anonymous  FTP or by setting up an account,  there are security
+vulnerabilities,  such as the transmission  of user authentication  information,  in plain text without  encryption,
+and security  vulnerabilities  of the FTP protocol  itself, That is, FTP can acquire  account  privileges  by exploiting
+the authentication  vulnerability  of the account  login and by applying  a brute force attack or a sniffing attack.
+Therefore, when creating  an FTP program  for sending  and receiving  a file, an SFTP server should be installed
+and an SFTP client program  should be written.
++ How to apply SFTP using Java
+The SFTP open-source  library is used to create a SFTP client program using Java. Download  and install
+Commons-Net  library from the Apache open-source  project site (http://commons.apache.org/proper/
+commons-net/),  then write a SFTP client program  as follows:
+// Import  libraries
+import org.apache.commons.vfs2FileObject:
+import org.apache.commons.vfs2.FileSystemOptions:
+import org.apache.commons.vfs2.Selectors:
+import org.apache.commons.vfs2.impl.StandardFileSystemManager:
+import org.apache.commons.vfs2.providersftp.SftpFileSystemConfigBuilder:
+| FTP connection  and file download
+StandardFileSystemManager  manager  = new StandardFileSystemManager();
+String sftpUri = “sftp://  + userld + *:” + password  + “@” + serverAddress  + “/” +
+remoteDirectory  + fileToF  TP;
+FileObject  localFile  = managerresolveFile(file,getAbsolutePath());
+FileObject  remoteFile  = managerresolveFile(sftpUri,  opts);
+remoteFile.copyFrom(localFile,  Selectors  SELECT  _SELF);
+106 TOPCIT  ESSENCE

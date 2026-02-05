@@ -1,0 +1,31 @@
+Overview  of System Architecture )
++ Preview  for practical  business
+[Figure 138] shows the operational  path of the application  program  over the Internet.  It shows that
+application  layer programs,  like transport  layer protocols,  operate  on the service  end-to-end.  In other words,
+like transport  layer protocols,  such as TCP, the nodes, like wired/wireless  routers  positioned  between  end-
+points, do not affect the operation  of transport  layer protocols.  Although  users can generate  and exchange
+them as needed, the most widely used application  programs  tend to use the internationally  recognized
+standard  application  layer protocols  in order  to ensure compatibility.
+Application  LayerZ Transport Layer
+Network  Layer
+Datalink  Layer
+14.32.172.0 Physical  Layer
+Rerenaen RouterC
+Datalink  Layer my.server.com — SF Switching
+Network  Layer Hub D
+Datalink  Layer | 220.17.23.0
+Physical  Layer220.17.23.15
+Physical  Layer
+Application  Layer
+Transport  Layer
+Network  Layer
+Datalink  Layer
+Physical  LayerRouter  B
+192.168.11.0 Z—__—.Y
+[Figure 138] Operational  Path of Application  Layer Protocol
+[Figure 139] shows the operational  procedure  between  the application layer  and transport  layer protocols,
+according  to user A’s web use scenario  described  in “I. Network  concept”. It shows user A logging  into the
+webserver,  my.servercom,  and downloading  the my.pdf  file. Although  this section  focuses  on the operation
+of the application  layer protocol,  HTTP. it also shows interaction  with the transport  layer protocol  for better
+understanding.
+M3 Overview  of System  Architecture  195

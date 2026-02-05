@@ -1,0 +1,179 @@
+LEARNING GUIDE: Pages 145-149
+Generated: 2025-12-07 01:06:52
+PDF: 3 - Overview of System Architecture OCR
+
+================================================================================
+LEARNING GUIDE
+================================================================================
+
+Here's a simplified, easy-to-read learning guide based on the provided text:
+
+---
+
+## Learning Guide: System Architecture - The Datalink Layer
+
+### 1. Introduction & Importance
+
+*   **Communication Basics:** Data travels as electrical or optical signals over physical media.
+*   **Layered Understanding:** To understand network mechanisms, you need to learn about:
+    *   **Physical Layer (Layer 1):** Deals with physical media and signal standards.
+    *   **Datalink Layer (Layer 2):** Connects the physical layer to higher layers. It handles **media access control** and **logical link control**.
+*   **Why Study This?** Even though application developers might not directly interact with it, understanding the Datalink Layer is crucial for:
+    *   **Debugging:** Identifying network connection issues or data errors.
+    *   **Embedded Software:** Developing device drivers.
+    *   **Short-range Wireless:** Technologies like Bluetooth and ZigBee heavily rely on this layer.
+
+### 2. Datalink Layer Core Concepts
+
+*   **Definition:** The Datalink Layer transmits data between peripheral devices on a network, using the Physical Layer.
+*   **Key Responsibilities:**
+    *   **Address Allocation:** Ensures devices correctly receive signals.
+    *   **Error Detection & Correction:** Checks for and sometimes fixes errors in transmitted signals.
+*   **Addressing Types:**
+    *   **IP Address (Layer 3):** Logical address used for routing data **between different networks**.
+    *   **MAC Address (Media Access Control Address) (Layer 2):** Physical address, unique to each network interface card (NIC). Used for transferring data **within the same local network segment**.
+
+### 3. How Data Moves (Practical Example: IP to MAC)
+
+Imagine User A wants to send data to `my.server.com`:
+
+1.  **Initial Packet:** An IP packet is created, containing the destination IP address (`220.17.23.15` for `my.server.com`).
+2.  **First Hop (Local Network):**
+    *   User A's computer (`192.168.11.5`) knows `my.server.com` is not on its local network.
+    *   It needs to send the packet to its **gateway router** (e.g., Router B, `192.168.11.1`).
+    *   **IP addresses cannot directly transfer data within a local network.** The Datalink Layer needs the **MAC address** of Router B.
+    *   User A's computer finds Router B's MAC address (often through **ARP - Address Resolution Protocol** broadcasting).
+    *   The packet is then sent to Router B using its MAC address.
+3.  **Subsequent Hops (Between Networks):**
+    *   Router B receives the packet. It knows the packet needs to go to a different network (`220.17.23.0`).
+    *   It forwards the packet to the next router (e.g., Router C) on the path, again using MAC addresses for local transfers between routers.
+4.  **Final Hop (Destination Network):**
+    *   Router C receives the packet and recognizes `my.server.com`'s IP address (`220.17.23.15`) is on its local network.
+    *   Router C needs the **MAC address** of `my.server.com`.
+    *   It finds `my.server.com`'s MAC address (again, often via ARP broadcasting).
+    *   The packet is then transmitted directly to `my.server.com` using its MAC address.
+
+**Key Takeaway:** While higher layers use IP addresses for end-to-end communication, the Datalink Layer translates these to MAC addresses for actual physical data transfer within each local network segment.
+
+### 4. Datalink Layer Encapsulation
+
+*   **Encapsulation:** The process where the Datalink Layer adds a **header** and a **trailer** to the Network Layer's packet (data).
+    *   **Frame:** The resulting unit of data after encapsulation.
+*   **Decapsulation:** The reverse process at the receiving end, where the header and trailer are removed.
+
+#### Frame Header and Trailer Details:
+
+*   **Frame Header:** Contains control information at the beginning of the frame.
+    *   **Preamble:** For bit synchronization between devices.
+    *   **Start of Frame Delimiter (SFD):** Indicates the beginning of the frame.
+    *   **Destination & Source Addresses:** These are the **physical MAC addresses** (48-bit, unique to each device).
+*   **Frame Trailer:** Contains control information at the end of the frame.
+    *   **Frame Check Sequence (FCS):** Used for **error detection** during data transfer.
+
+### 5. Datalink Layer Configuration: Sub-layers
+
+The Datalink Layer is divided into two sub-layers:
+
+1.  **Logical Link Control (LLC) Sub-layer:**
+    *   **Higher level** sub-layer of the Datalink Layer.
+    *   **Responsibility:** Provides the connection between the **MAC sub-layer** and the **Network Layer (Layer 3)**.
+    *   **Function:** Handles data transfer between two adjacent nodes (devices) on the network.
+    *   **Flexibility:** Allows the Datalink Layer to use various MAC sub-layer protocols, independent of the network topology. (e.g., IEEE 802.2 standard).
+    *   **Components in a frame (e.g., IEEE 802.3):** Destination Service Access Point (DSAP), Source Service Access Point (SSAP), Control field (Ctrl).
+
+2.  **Media Access Control (MAC) Sub-layer:**
+    *   **Lower level** sub-layer of the Datalink Layer.
+    *   **Responsibility:** Controls access to the physical transmission medium based on network topology or other physical characteristics.
+    *   **Examples of MAC methods:** **CSMA/CD** (Carrier Sense Multiple Access with Collision Detection, used in Ethernet), **CSMA/CA** (Carrier Sense Multiple Access with Collision Avoidance, used in Wi-Fi).
+
+---
+**Note:** Many keywords listed on Page 146 (e.g., Turbo code, Convolution code, BCH, Hamming code, Reed-Solomon, specific ARQ types, DSSS, OFDM, MIMO, FHSS, Beamforming, UHD, WPAN, ZigBee, Bluetooth, UWB) are related to error correction, wireless technologies, and advanced networking concepts. They are mentioned in the "Keywords" list but not elaborated upon in the provided pages (145-149). They would likely be covered in subsequent sections of the original text.
+
+================================================================================
+ORIGINAL TEXT (First 5000 chars)
+================================================================================
+
+--- Page 145 ---
+ESSENCE
+With the growth of open source-based  technologies,  the competitive  landscape  has been established  to facilitate
+small venture  companies  that provide user-centered  customized  software,  as well as traditional  cloud companies,  to
+grow in the market.
+© Strengthened  linkage  with Al
+Starting  with IBM Watson and Google AlphaGo,  expectations  for the industrial  use of Al has risen significantly.
+Traditional  cloud companies  target consumers  by linking their infrastructure  and Al, and they are building newly
+expanded  ecosystems  by cooperating  with competitors.
+144 TOPCIT  ESSENCE
+
+
+--- Page 146 ---
+Overview  of System  Architecture
+>> Recent  trends and issues
+Communication  is established  by transferring  data through  electrical  or optical signals  over physical  media.
+In the OSI 7 hierarchy,  the physical  layer is at the bottom,  and one can understand  the mechanisms  at the
+lower-level  network  by learning  the media and standards  for this physical  layer. Moreover,  it is necessary  to
+understand  the datalink  layer that connects  the physical  media and standards  with the upper layers, and to
+further  learn the media access  control method  and the logical link control method.
+>> Learning  objectives
+1. To be able to explain the sub-layer  (datalink  control and media access  control) of the datalink  layer,
+2. To be able to explain the error detection  on the datalink  layer and error correction  techniques,
+>> Keywords
+LLC, Topology,  CSMA/CD,  CSMA/CA,  ARP, RARP, Forward error correction,  Backward  error correction,
+Turbo code, Convolution  code, BCH, Hamming  code, Reed-Solomon,  Parity test, Checksum  test, Cyclic
+redundancy  check (CRC), Top-standby  ARQ, Go-Back-N,  Selective-repeat,  Adaptive  ARQ, H-ARQ, VRC,
+LRC, Optical cable, IEEE 802.11, DSSS, OFDM, MIMO, 256-QAM,  FHSS, Beamforming,  UHD, IEEE 802.15,
+WPAN, ZigBee,  Bluetooth,  UWB
+M3 Overview  of System  Architecture  145
+
+
+--- Page 147 ---
+ESSENCE
++ Preview  for practical  business Operation  path of the datalink  layer
+An initial packet  that contains  the information  for routing  between  networks  is created.
+However,  it must be further  modified  to be transferred  between  networks.  The IPv4
+address  of user A’s computer  is 192.168.11.5  and cannot be transmitted to my.server.
+com directly. It must be transmitted  to the computer's  gateway  wired/wireless  router
+B (192.168.11.1).  However,  an IP address  cannot be used for data transfer  in a network,
+and the MAC address  is needed  for it. After finding the MAC address  corresponding  to
+192.168.11.1,  the gateway’s  IP address,  the packet  is transmitted  to wired/wireless  router  B,
+through  network  broadcasting.
+Upon receiving  the packet, router C recognizes  that the packet  is sent to network  220.17.23.0,
+to which the router belongs,  and intends to transmit  it to the webserver's  IP address
+220.17.23.15,  AS is iniSi=e)ene),  since the packet movement  in a network  requires  the physical
+address of my.server.com,  the MAC address,  it obtains the MAC address  corresponding  to
+myserver.com’s  IP address,  220.17.23.15,  through  the network  broadcasting  and transmits  the
+packet.
+Applic
+SS Transport  Layer
+Network  Layer
+Datalink  Layer
+Physical  Layer
+14.32.172.0
+Router my.server.com
+Network  Layer 220.17.23.15
+Datalink  LayerDatalink  Layer
+wie weno i Physical Layer
+Application R onterB Physical Layer 220.17.23.0
+ico 192.168,11.0 Z——
+Network Layer e@
+Datalink Layer
+Physical Layer
+User A
+[Figure 103] Operation  Path of datalink  Layer
+146 TOPCIT  ESSENCE
+
+
+--- Page 148 ---
+Overview  of System Architecture )
+01 Concept  of Datalink  Layer
+The datalink  layer transmits  data between  peripheral  devices  on the network,  using the physical  layer that transmits
+signals  between  devices,  and is responsible  for address  allocation  and error detection.  The address  allocation  function
+ensures  that devices  properly  receive  signals  from the physical layer on the network,  and the error detection  function
+detects  whether  errors are included  in the transmitted  signals.
+Application  software  developers  have no problem in programming  without  understanding  the datalink  layer and the
+physical  layer. However,  a network  product  may need debugging  for cases where there is no network  connection  or
+data error. If a product  uses various medium access control (MAC) layers, it may be necessary  to understand  each
+standard  protocol.  Moreover,  developing  embedded  software  requires  a basic understanding  of drivers  since it may be
+necessary  to develop  a driver. If the embedded  software  does not operate  normally  after the program  is ported to the
+test environment  prepared  by the hardware  developer,  it is necessary  to perform debugging  to determine  whether
+it is a hardware  or a software  problem.  The developer  needs to perform debugging,  using JTAG, or in the case of a
+network ...

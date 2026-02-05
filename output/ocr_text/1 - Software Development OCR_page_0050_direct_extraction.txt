@@ -1,0 +1,54 @@
+Software  Development )
+F) Search  algorithm
+@ Search  algorithm  overview
+This is a technique  that efficiently  finds the desired  item in the data set. It can be divided into linear search
+and control search depending  on whether  data are sorted or not. There is also hashing,  which searches  for
+data by calculating  a key value according  to a specific  function.  Therefore,  an optimal  search method should be
+selected  in consideration  of the type of data structure  and the data arrangement  status.
+@ Ciassification  of search algorithms
+<Table 17> Classification  of search  algorithms
+Classification Data
+method sort ‘Type Content  and characteristics
++ Amethod  of finding  a key by comparing  each record  sequentially  from start to finish.
++ Easy to write a program.
+Linear  search x Linear search + Search  time increases  as much as the file size.
++ The simplest  and most direct search method
++ Average  number  of comparison  times: (n+1)/2,  average  search time: O(n)
++ Asearch  method  that sets the upper limit value (F) and the lower limit
+value (L), finds the intermediate  value (M), and searches  by continuously
+comparing  the key and the intermediate  value.
++ Efficient  as the number  of targets  in a file to search  is reduced  by half each time.
++ More effective  when the number  of records  is large. (The number  of
+comparisons  even in the worst case is just one more than the average
+number  of times.)
++ Average  search time: O(log2n)
++ Amethod  of searching  by creating  sub-files  using Fibonacci  permutations.
+Fibonacci + Fibonacci  search is fast because  it can search by addition  and subtraction
+search only, while binary search uses division.
++ Average  search time: O(log2n)
+Control  search ° + Amethod  of selecting  and finding  a location  where the search target is
+expected  to be present.  After finding  the location,  linear search is performed
+from that location.
++ Interpolation  search  is used to search  dictionary,  phone book, or index name, etc.
++ Performance  of O(log(n))  on average
++ Asearch  method  that divides  entire data into a certain number  of blocks,
+determines  a block that contains  the data to search,  and then sequentially
+searches  for the key value in the selected  block.
++ The effective  block size is yn.
++ Easy to write and update  a program.
++ Performance  of O(log(n))  on average
+Binary  tree + Search method  using a binary  tree
+search + Performance  of O(log(n))  for insert/search/delete  on averageBinary search
+Interpolation
+search
+Block search
+A method  of
+approaching
+data by using a
+specific  function+ Asearch  method  that searches  for data by calculating  the address  where
+x Hashing they are stored using the hashing  function.
++ Suitable  for data that are frequently  inserted  and deleted.
+G) ) Graph search algorithms
+@ Graph search
+The most basic operation  of a graph, which visits and processes  all vertices  in the graph once, starting  from one
+M1 Software  development  49

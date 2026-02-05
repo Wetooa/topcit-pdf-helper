@@ -1,0 +1,30 @@
+ESSENCE
+Liveness Embedded  software  should never stop its operation,  even after unexpected  events.
+Resource  and Embedded  software  should meet the resource  (CPU processing  speed, memory  size, and user
+environmental  constraints  | interface)  and environmental  (power  supply  and protocol  compatibility)  constraints.
+04 Embedded  OS
+A) Concept  of embedded  OS
+An embedded  OS is an operating  system that is optimized  to execute  the application  programs  running  on a
+computer  system that perform specific functions  for controlling a  machine  or other systems.  It is optimized  for a
+specific  system  that has hardware  with a built-in  microprocessor,  and it performs  set purposes.  In the early embedded
+systems,  the hardware  was directly  controlled  using the assembly  language,  and it operated  without  a separate  OS.
+However,  as the embedded  system applications  have diversified, the need to use an OS has increased,
+B) Embedded  OS structure  and applied  technology
+As shown in [Figure 73], an embedded  OS generally  has a structure  to support the stable application  program
+execution  with a low-specification  processor,  a limited memory  and storage  device, and poor operating  environment
+conditions.
+User Process Minimum  Capacity  Standard  Library
+System  Call Interface
+User Level
+Kemel  Level
+ae aaa Process Scheduling
+Processor
+anne Management
+User Process
+IPC Memory
+Management
+Device  Driver  (Hardware  Control)
+Hadwarelevel  —ss—“<i‘“—<“<i<i‘<;  Ci
+System  Call Interface
+[Figure 73] Embedded  OS Structure
+106 TOPCIT  ESSENCE

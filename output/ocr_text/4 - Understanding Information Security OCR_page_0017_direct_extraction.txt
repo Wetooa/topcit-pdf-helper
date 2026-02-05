@@ -1,0 +1,34 @@
+Information  security )
+authentication  of multiple  systems,  based on the information  of one user.
+@® Web Application  Firewall (WAF)
+Located  in front of  the web server, this security  solution monitors  incoming  traffic with the HTTP/HTTPS
+protocol and blocks malicious  attacks  detected  against  the web application,  such as the SQL Injection  attack
+or XSS attack, before it reaches  the web server.
+© Network  Access  Control (NAC)
+When at the endpoint,  when a user computer  attempts  to access the internal network  for the first time, the
+system checks whether  the accessing  user computer  complies  with various  security  policies,  such as network
+user authentication,  anti-virus  program installation,  etc., and controls  network  access according  to the pre-
+defined  security  policy, when security  policies  are not observed.
+@ Wireless  Intrusion  Prevention  System (WIPS)
+The WIPS automatically  detects and blocks access from unauthorized  wireless  devices by continuously
+monitoring  the wireless  LAN operated  of a specific  organization,  and it improves  the stability  of wireless  LAN
+and enables integrated  management.  The WIPS provides  a function  of detecting  and blocking  an intrusion
+attempt  using an unauthorized  AP or user device in the exposed  wireless  network.
+Enterprise  Security  Management  (ESM)
+ESM is designed  to provide a consistent  and intuitive  administrator  and user interface  by integrating  security
+management  functions  modularized  by function  and product.  This security  solution  aims to build an integrated
+security  management  system for all systems,  according  to standard  policies, by building  an efficient,  policy-
+oriented,  and systematic  security  management  system.
+© Security  Information  Event Management  (SIEM)
+The SIEM solution  establishes  an early warning and monitoring  system for intelligent  threats,  which provides
+correlation  analysis and forensic  functions  in the vast information  of big data, by extending  the role of the
+existing  ESM from the security  domain  to the entire enterprise,  and by adding corporate  compliance  response
+functions,  so that those threats  can be traced later, instead  of only collecting  and analyzing  logs.
+03 New technical  terms of information  security
+A) Blockchain
+The Bitcoin cryptocurrency  system and all transactions  occurring  in the network  are recorded  in one public
+ledger, distributed,  and stored in a single ledger. Blockchain  is a distributed  ledger and is designed  with a
+structure  that enables network  participants  to store and verify data. When transactions  occur, transactions
+that have occurred  for a certain period of  time (10 minutes)  are collected  to create a block, in order to verify
+transaction  information,  then the blocks are sequentially  connected  to form a chain. That’s why it is called a
+M4 Understanding  Information  Security 17

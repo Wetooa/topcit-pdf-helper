@@ -1,0 +1,21 @@
+A) Concept  of error control 150
+B) Error detection  and correction 151
+06 IEEE 802 Standard 152
+A) Concept  of IEEE 802 152
+B) IEEE 802.3 standard 153
+C) IEEE 802.11 standard 153
+D) IEEE 802.15 standard 154
+XII. Network  Layer 156
+01 Network  Layer Overview  and Equipment 158
+A) What is a network  layer? 158
+B) Network  layer function 158
+C) Internetworking  equipment 158
+D) What is a router? 159
+E) What is a switch? 161
+F) Virtual local area network  (VLAN) 161
+02 Network  Layer Encapsulation 162
+A) Network  layer encapsulation 162
+B) IPv4 header 163
+03 Packet  Switching  and Network  Layer Protocol/Instruction 163
+A) Packet  switching 163
+M3 Overview  of System  Architecture  15

@@ -1,0 +1,220 @@
+LEARNING GUIDE: Pages 88-92
+Generated: 2025-12-07 00:47:10
+PDF: 6 - Project Management & Technical Communication OCR
+
+================================================================================
+LEARNING GUIDE
+================================================================================
+
+Here is a simplified, easy-to-read learning guide based on the provided text:
+
+---
+
+## Project Management & Technical Communication Learning Guide
+
+### I. Scope Controlling
+
+**A. Definition:**
+*   Monitoring project status and product scope.
+*   Managing them according to formal procedures.
+
+**B. Key Activities:**
+*   Processing requested changes.
+*   Implementing recommended corrective actions.
+*   Implementing preventive actions throughout the project.
+
+**C. Importance of Change Control:**
+*   Changes to the baseline scope are common.
+*   Scope changes impact schedule and cost.
+*   All scope changes **must** be reported to the **Project Change Control Board (CCB)**.
+*   Changes are reviewed for project-wide impacts and processed formally.
+
+### II. Scope Management Technique: Work Breakdown Structure (WBS)
+
+**A. Purpose:**
+*   The primary tool for scope management.
+*   Requires collecting customer requirements and preparing a requirements definition document.
+
+**B. Requirements Gathering Techniques (Prerequisite for WBS):**
+1.  **Interview:** Systematic oral interviews with individuals or groups to derive requirements.
+2.  **Prototyping:**
+    *   Promptly and schematically building a partial or full system.
+    *   Better than specifications for user understanding and feedback.
+3.  **Moderator Meeting:**
+    *   Generates ideas for products, services, or improvements.
+    *   A moderator ensures predefined goals are met during group discussions.
+4.  **Document Analysis:**
+    *   Derives system requirements by examining existing documents and related data.
+    *   Includes business plans, market research, contracts, RFPs, SOWs, existing guides, training materials, problem reports, similar product documents, and existing system designs.
+
+**C. Concept of Work Breakdown Structure (WBS):**
+*   **Definition:** A hierarchical structure that breaks down project deliverables into manageable tasks.
+*   **Work Package:**
+    *   Each subtask item in the WBS is called a work package.
+    *   Example: An "online bulletin board" project could have work packages like "Writing," "Deleting," "Editing," and "Uploading."
+
+**D. Structure of WBS:**
+*   Most commonly represented as a **tree diagram**.
+*   Arranges components in a **parent-to-child relationship** for intuitive hierarchy.
+
+**E. Components of WBS:**
+1.  **Work Package:**
+    *   The lowest-level unit of the WBS.
+    *   Cost and duration can be planned, estimated, monitored, and controlled at this level.
+2.  **Code of Account:**
+    *   A unique identification or numbering system.
+    *   Assigns unique numbers to each work package.
+3.  **WBS Dictionary:**
+    *   A detailed description for each work package.
+    *   Includes outline, schedule, person in charge, and budget.
+4.  **RAM (Responsibility Assignment Matrix):**
+    *   A standard that defines who is responsible for each WBS element.
+    *   Identifies approvers, quality reviewers, and input managers.
+
+**F. How to Create a WBS (Principles):**
+*   WBS is created by breaking down the scope statement into small, manageable work packages.
+1.  **Deliverable-based:** Focus on tangible deliverables to effectively control and manage scope.
+2.  **Detailed Segmentation:**
+    *   The lowest WBS unit typically has a duration of **~80 hours (2 weeks)** for effective performance control.
+    *   Units should be processable by project members within 1-2 weeks.
+3.  **Hierarchical Representation:** Defined to clearly show sequential relationships or correlations between WBS elements.
+
+### III. Schedule Management Fundamentals
+
+**A. Importance of Schedule Management:**
+*   Projects have a "fixed timeline" or "delivery date."
+*   Requires efficient work and minimizing errors to meet deadlines.
+*   Delays can lead to "project failure."
+
+**B. Recent Trends & Key Issue (Resource Capacity):**
+*   Overconfidence in resource capacity often leads to project delays.
+*   Project schedules **must** be based on realistic scope requirements and available resource capacity.
+
+**C. Key Concepts & Processes:**
+1.  **Schedule Management Process Steps:**
+    *   Schedule management planning
+    *   Activity definition
+    *   Activity sequencing
+    *   Activity resource estimation
+    *   Activity duration estimation
+    *   Schedule development
+    *   Schedule control
+2.  **Activity Duration Estimation Techniques:**
+    *   One-point estimating
+    *   Three-point estimating
+    *   Analogous estimating
+    *   Parametric estimating
+    *   Expert judgment
+3.  **Schedule Management Techniques:**
+    *   Critical Path Method (CPM)
+    *   Critical Chain Method (CCM)
+4.  **Schedule Compression Techniques:**
+    *   Crashing
+    *   Fast Tracking
+
+### IV. Modern Approaches to Schedule Management: Agile Process
+
+**A. Context and Need:**
+*   Systematically managing schedules is crucial.
+*   Involves breaking down schedules into smaller, iterative units.
+*   Adjusts schedules based on completed tasks and estimates future work.
+*   Becoming more necessary due to intense market competition and technical diversification.
+
+**B. Agile Process Overview (XP, Scrum):**
+*   An example of systematic schedule management.
+*   Based on rapid and iterative development (e.g., eXtreme Programming (XP) or Scrum).
+
+**C. Key Agile Concepts:**
+1.  **Sprint:**
+    *   A short, fixed-duration period for developing a part of the whole project.
+    *   Multiple sprints are performed to incrementally increase the degree of completion.
+2.  **Retrospective:**
+    *   A procedure at the end of each sprint.
+    *   Allows participants to communicate openly and adjust future plans realistically based on lessons learned.
+
+---
+
+================================================================================
+ORIGINAL TEXT (First 5000 chars)
+================================================================================
+
+--- Page 88 ---
+Project Management  and Technical  Communication  )
+the requirements  and criteria for delivery.  Examples  of official inspection  include Review  and Walkthrough.
+© Scope Controlling
+It is the process  of monitoring  project status and product range and managing  them according  to formal
+procedures.
+It makes sure that requested  changes,  recommended  corrective  actions, and preventive  actions are processed
+throughout  the project. Requests  for changes  to the baseline scope made through scope definition  in the
+project  design and analysis  stage are frequent  in practice.  Since scope changes  are closely  related to schedule
+and cost, they should be reported  to the Project Change Control Board (CCB), reviewed for their impacts
+throughout  the project, and approved  and processed  according  to formal procedures.
+O02 Scope Management  Technique
+A) Work breakdown  structure  (WBS)
+A work breakdown  system is created, in general,  for scope management.  In order to desgin work breakdown
+system, customer  requirements  must be collected,  and the requirements  definition  document  must be pre-
+pared.
+Requirements  are generally  gathered  in the following  ways.
+<Table 36> Scope Management  Techniques
+Technique Explanation
+Interview + A systematic  approach  to derive requirements  through  an oral interview  with individuals  and groups
+Prototyping+ A technique  to promptly  and schematically  build a system  to be developed  in full or part
++ Prototyping  is better than specification  to enhance  the understanding  of and feedback  from users
+Moderator
+meeting+ A technique  to generate  ideas for specific  products,  services  and opportunities  for improvement
++ The moderator  ensures  to achieve  intended  goals by faithfully  implementing  the pre-defined  contents
+for specific  issues when conducting  group discussions
+Document
+analysis+ A technique  to derive system requirements  by examining  documents  and related data on the existing
+system
++ Analysis  of business  plans, market  research  results,  contract  details, RFP, SOW, related records,
+existing  business  guides/procedures,  training  materials,  documents  related to similar products,  problem
+reports,  customer  proposal  records,  and existing  system  design  documents
+@ Concept  of Work Breakdown  Structure  (WBS)
+The work breakdown  system is a hierarchical  structure  of tasks that are classified  based on project  deliverables
+and broken down into manageable  packages.  Each subtask  item in the work breakdown  system  is called a
+work package.  For example,  a project that creates an online bulletin board can be divided into work packages
+of “Writing”,  “Deleting”,  “Editing”,  and “Uploading”.  The following  is an example of WBS created by Microsoft
+Project.
+M6 Project  Management  and Technical  Communication  87
+
+
+--- Page 89 ---
+ESSENCE
+Hierarchical  Classification
+Work name Period | Starting  date | Finishdate  | Preceding  work  | Resource  name
+The Bulletin Board for IT 19 days 13/07/25 13/08/20
+Competency  Index Project y (Thurs.) (Tues.)
+. 13/07/25 13/08/20Create a bulletin board 19 days (Thurs) (Tues.)
+Write text 5 days nee We Kim Jisim
+13/08/01 13/08/02 Kang
+Delete text 2 days (Thurs.) (Fri.) 3 Jeongbae
+. 13/08/05 13/08/06 KimModify  text 2 days (Mon.) (Tues,) 4 Seonhwa
+. 13/08/07 13/08/20
+File upload 10 days (Wed) (Tues) 5 Lee Hongcheol
+[Figure  26] Example  of WBS (building  an online bulletin  board)
+@ Structure  of Work Breakdown  Structure  (WBS)
+A tree diagram  is the most common  structure  of WBS. It arranges  components  in a parent-to-child  relationship,
+which facilitates  an intuitive  understanding  of the hierarchy.
+@® Components  of Work Breakdown  Structure  (WBS)
+The elements  of the work breakdown  system include Work Package,  Code of Account, WBS dictionary,  and
+RAM, and their explanations  are as follows:
+<Table 37> Components  of Work Breakdown  Structure  (WBS)
+Component Explanation
++ The lowest-level  unit of the work breakdown  structure  for which cost and duration  can beWork Package - :planned,  estimated,  monitored  and controlled
+Code of Account + Aunique  identification  or numbering  system in which unique numbers  are assigned  to each
+unique work package  of the work breakdown  structure
+WBS Dictionary + A detailed  description  of each work package  (outline,  schedule,  person in charge, budget)
+RAM(Responsibility
+Assignment  Matrix) stage, quality reviewer,  and input manager+ It serves as a standard  for who is responsible  for each element,  such as the approver  at each
+88 TOPCIT  ESSENCE
+
+
+--- Page 90 ---
+Project Management  and Technical  Communication  )
+@ How to Create a Work Breakdown  Structure  (WBS)
+The work breakdown  structure  is broken down into small, manageable  work packages  to identify  key
+deliverables  and tasks described  in the scope statement.
+<Table 38> How to Create a Work Breakdown  Structure  (WBS)
+Principle Explanation
+Delivera...

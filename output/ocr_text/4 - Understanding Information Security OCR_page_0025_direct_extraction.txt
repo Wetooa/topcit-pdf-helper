@@ -1,0 +1,25 @@
+Information  security )
+@ Cryptographic  protocols
+Cryptographic  protocols  refer to the protocols  that use cryptographic  techniques.  As a protocol  means a series
+of finite phases in which more than 2 persons participate  to achieve a certain purpose,  the cryptographic
+protocol  should prevent repudiation  by  a participant,  or a third party, to ensure a certain purpose  of the
+concerned  cryptographic  protocol  (authentication,  confidentiality,  integrity,  and non-repudiation,  etc.), as well
+as the meaning  of each message.
+Cryptographic  technique
+|
+; + Factoring  problem * Individuals  identification  |  | » Electronic  payment
+7 inolapelgeolec  ieee + Discrete algebra problem and authentication + Electronic money
+Typuon sys| * Elliptical curve problem + Electronic  signature + Electronic  election
+[Figure  4] Classification  of cryptographic  techniques
+D) Cryptographic  algorithm  and cryptosystem
+® Cryptographic  algorithm
+The cryptographic  algorithm  that uses an encryption  key can be described  as [Figure 5]. In the figure, P is plain
+text, E is the cryptographic  function,  and K(KE, KD) is the key value. As in the public key method,  the encryption
+key and the decryption  key can be different.  In that case, keys are expressed  KE and KD respectively.  Since
+ciphertext  is generally  transmitted  over the communication  line or network  that is not secure, the sender  and
+receiver  can ensure  confidentiality  by transmitting  the result of encrypting  the plaintext.
+Encryption  key Decryption  key
+| i
+C=E(K,,  P) P= D(K,, C)
+[Figure  5] Cryptographic  algorithm
+M4 Understanding  Information  Security  25

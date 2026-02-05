@@ -1,0 +1,23 @@
+ESSENCE
+(Ooi cel og
+A
+OpenFlow  Protocol
+OpenFlow Group
+Channel Table
+Flow ai Flow
+Table Pipeline Table
+OpenFlow  Switch
+[Figure 151] Main Components  of OpenFlow  Switch [6]
+@ SDN applications
+As shown in [Figure 152], network  devices  have had a control plane and a data plane implemented  in one device until
+now. However,  when SDN is applied,  the controller  performs  the control plane function  of each network  device, and
+only the data plane function  remains  in the actual physical  network  device.
+Here, OpenFlow  plays a role as an interface  standard  technology  for SDN operation.
+Controller
+For example,  it removes  computational  operations  in medium and large routers and leaves only a simple switching
+function.  Each router simply operates  according  to a command  issued by the controller.
+C) NFV (Network  Function  Virtualization)
+NFV has emerged  as a new topic, thanks to the high interest  of network  operators.  Moreover,  the NFV Group is
+preparing  standards  for major telecommunications  operators  and equipment  manufacturers  and is promoting  a PoC
+(Proof  of Concept)  to check the feasibility  of the technology.
+218 TOPCIT  ESSENCE

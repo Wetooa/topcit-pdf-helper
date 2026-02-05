@@ -1,0 +1,204 @@
+LEARNING GUIDE: Pages 193-197
+Generated: 2025-12-07 01:12:05
+PDF: 3 - Overview of System Architecture OCR
+
+================================================================================
+LEARNING GUIDE
+================================================================================
+
+Here is a simplified, easy-to-read learning guide based on the provided text:
+
+---
+
+## Learning Guide: Network Protocols (SCTP & Application Layer)
+
+### 1. Stream Control Transmission Protocol (SCTP)
+
+SCTP is a transport layer protocol that offers features beyond TCP and UDP, especially useful for telephony applications and multi-homed hosts.
+
+#### 1.1 Core SCTP Features
+
+*   **Message Reassembly:** Fragments of a user message, divided for transmission, are reassembled by SCTP back into the original user message at the receiving end.
+*   **Acknowledgment (ACK) & Congestion Avoidance:**
+    *   SCTP assigns a **Transmission Sequence Number (TSN)** to each data chunk, regardless of its stream.
+    *   The receiver acknowledges (ACKs) all received TSNs to ensure reliable transmission.
+    *   If an ACK is not received within a set time, the packet is retransmitted using a congestion avoidance procedure, similar to TCP.
+*   **Chunk Bundling:**
+    *   SCTP can combine multiple user data chunks or SCTP control information chunks into a single SCTP packet for efficient transmission.
+*   **Packet Validation:**
+    *   SCTP packets include a **Verification Tag (VT)** and a 32-bit checksum (CRC32c) in their common header.
+    *   The VT is unique to each "association" (connection) and prevents misdelivered packets. Packets with incorrect VTs are discarded.
+    *   The checksum prevents data corruption during network transmission.
+*   **Path Management:**
+    *   Allows manipulation of the destination IP address and SCTP port number.
+    *   A **primary path** is established during connection setup.
+    *   If the primary path fails, an alternative path (possible with multi-homing, where an endpoint has multiple network interfaces) can be designated.
+    *   Path management works alongside packet verification.
+
+#### 1.2 SCTP Packet Structure
+
+SCTP packets consist of a **general header** followed by a set of **chunks**.
+
+*   **General Header:**
+    *   Defines the endpoint of the association, ensures the packet belongs to a specific association, and maintains data integrity.
+    *   **Components (Table 69):**
+        *   **Source/Destination Port No.:** Identifies the application process, similar to TCP/UDP.
+        *   **Verification Tag (VT):** Unique identifier for the association, present in all packets.
+        *   **Checksum:** A 32-bit CRC-32 checksum (more robust than the 16-bit checksums in UDP, TCP, IP).
+*   **Chunks:**
+    *   Carry control information or user data.
+    *   **Types:**
+        *   **Control Chunks:** Delivered before data chunks.
+        *   **Data Chunks:** Carry user data.
+    *   **Common Fields:** Each chunk has Type, Flag, and Length fields.
+        *   **Type Field:** Indicates the specific chunk type.
+        *   **Flag Field:** Defines special flags for chunk processing.
+    *   **Major Chunk Types (Table 70):**
+        *   0: Payload data
+        *   1: INIT (Initiate an association)
+        *   2: INIT ACK (Acknowledge initiation)
+        *   3: SACK (Selective ACK)
+        *   4: HEARTBEAT (Check path liveness)
+        *   5: HEARTBEAT ACK
+        *   6: Abort (Terminate an association abnormally)
+        *   7: SHUTDOWN (Initiate graceful association termination)
+        *   8: SHUTDOWN ACK
+        *   9: ERROR
+        *   10: COOKIE ECHO (Exchange security cookies)
+        *   11: COOKIE ACK
+
+### 2. Introduction to Application Layer Protocols
+
+The application layer is the top layer in the network model, providing services directly to user applications.
+
+#### 2.1 The Mobile Era & Protocol Importance
+
+*   Since the mid-2000s, mobile platforms (Android, iOS) have driven a rapid shift to the mobile era.
+*   Applications use either standard (e.g., SMTP, POP3, IMAP, FTP) or custom (e.g., KakaoTalk, Line, Facebook) application layer protocols.
+*   Understanding these protocols is crucial for developing user-friendly applications.
+
+#### 2.2 Learning Objectives (Summarized)
+
+*   Understand, design, and use application layer protocols.
+*   Understand and use **HTTP** for web client-server data exchange.
+*   Understand and use **FTP** for client-server file exchange, including using open-source libraries.
+*   Understand and develop web applications using **JSP-based server programming** and **client programming** (HTML, JavaScript, AJAX, etc.).
+
+#### 2.3 Key Application Layer Terminology
+
+*   **Application Layer Protocol:** Rules and procedures for applications to communicate over a network.
+*   **HTTP (Hypertext Transfer Protocol):** Protocol for transferring hypermedia documents, such as HTML. It's the foundation of data communication for the World Wide Web.
+    *   **GET method:** Used to request data from a specified resource (e.g., loading a webpage).
+    *   **POST method:** Used to send data to a server to create/update a resource (e.g., submitting a form).
+*   **FTP (File Transfer Protocol):** Protocol for transferring files between a client and a server.
+    *   **Control connection:** Used for commands (e.g., login, directory listings).
+    *   **Data connection:** Used for the actual file transfer.
+    *   **General transport mode:** Active mode, where the client opens a port and tells the server to connect to it for data transfer.
+    *   **Passive transport mode:** Passive mode, where the server opens a port and tells the client to connect to it for data transfer (common for clients behind firewalls).
+*   **JSP (JavaServer Pages):** A technology that helps developers create dynamic, platform-independent web applications.
+*   **HTML, JavaScript, AJAX:** Core technologies for web client-side development.
+
+### 3. Application Layer Protocol Operation
+
+#### 3.1 End-to-End Principle
+
+*   Application layer protocols operate **end-to-end** between the client and server.
+*   Intermediate network devices (like routers) between the endpoints do not affect their operation, similar to transport layer protocols (e.g., TCP).
+*   Using internationally recognized standard protocols ensures compatibility across various applications and systems.
+
+#### 3.2 Web Usage Scenario (HTTP Example)
+
+*   **Scenario:** A user logs into a web server (`my.server.com`) and downloads a file (`my.pdf`).
+*   This involves an application layer program (web browser) connecting to a web server program (`httpd`) via a **TCP connection**.
+*   The web browser uses **HTTP/1.1** to communicate with the web server. It fetches content and displays it in a user-friendly format.
+
+#### 3.3 HTTP/1.1 Protocol
+
+*   HTTP/1.1 is a **text-based application layer protocol**.
+*   Text data formatted according to HTTP/1.1 rules is delivered to the other application layer program via the transport layer.
+
+#### 3.4 Role of Socket Programming
+
+*   Application layer programs use **socket programming** to send and receive user data through the transport layer.
+*   This is a fundamental technique for implementing application layer protocols, but its details are beyond the scope of this guide.
+
+---
+
+================================================================================
+ORIGINAL TEXT (First 5000 chars)
+================================================================================
+
+--- Page 193 ---
+ESSENCE
+technique  is provided  to resolve it. Each fragment  that has been divided and transmitted  is reassembled  in the SCTP
+layer to become  one user message.
+@ Acknowledgment  and congestion  avoidance
+SCTP transmits  a data chunk by assigning  a TSN to it, regardless  of the stream.  The receiving  side separately  secures
+the transmission  reliability  from the sequenced  stream transmission  by acknowledging  (ACK) all the received  TSNs.
+Acknowledgment  and congestion  control  functions  are related  to packet retransmission  if an acknowledgment  is not
+received  within a given time. Packet retransmission  is performed  according  to a congestion  avoidance  procedure,
+similar  to TCP congestion  control.
+© Chunk bundling
+A chunk with multiple  user data or SCTP control information  may follow an SCTP packet's  common  header,  An SCTP
+user can request  to bundle multiple user messages  in a single SCTP packet. The SCTP chunk bundling  function is
+responsible  for assembling  multiple  chunks  into one SCTP packet  and decomposing  it.
+© Packet  validation
+The SCTP common  header  has a verification  tag (VT) and a 32-bit checksum  field. The VT is a value selected  at
+each endpoint  when setting  up the association. During  the set association,  SCTP packets  must be transmitted  using
+the same VT, and if an SCTP packet with a wrong VT is received,  it is discarded.  Moreover, generating  a CRC32c
+checksum  and transmitting  the SCTP packet  prevents  data corruption  in the network.
+@ Path management
+The transmitting  SCTP user can use the path management  function  to manipulate  the transport  address,  SCTP port
+number,  and IP address,  used in the SCTP packet  destination. When the association  is established,  the primary  path
+of each SCTP endpoint  is defined and used to transmit  and receive SCTP packets. However,  if there is a problem
+with the current path, and available  transmission address  among the addresses,  defined by multi-homing, can be
+designated  as an alternative  path. The path management  and the packet  verification  that uses the VT and checksum
+are performed  simultaneously.
+SCTP packets  have a general  header  and set of blocks called chunks.  There are two types of chunks: control chunks
+and data chunks.  Control  chunks  are delivered  before data chunks.
+The general header  defines the endpoint  of each association  of the packet, guarantees  a packet belonging  to a
+specific  association,  and preserves  the integrity  of the contents  of the packet, including  the header  itself
+<Table 69) SCTP Protocol  Header  Components
+Type Description
+Source  port no. + Same as TCP and UDP
+Destination  port no. + Same as TCP and UDP
+Verification  tag + Used as the identifier  for the association  and repeated  in all packets  during  the association.
+@réem + The  size of a checksum  is 32 bits to enable CRC-32  checksums.
++ (16-bit  checksums  are used in UDP TCP, and IP.
+Control information  and user data are carried in chunks,  and three fields of Type, Flag, and Length are common  in all
+192 TOPCIT  ESSENCE
+
+
+--- Page 194 ---
+Overview  of System Architecture )
+chunks. The information  field indicates the type of the chunk, and the Type field is defined up to 256 bytes of the
+chunk, but only some are defined,  and the rest are reserved  for future use. The Flag field defines special flags that
+may require special chunks.
+In some chunk types, the data chunk is identified  as the control  chunk. <Table  70> shows major chunk types.
+{Table 70) Chunk  Types
+A a Chunk type os _ Chunk type
+0 Payload  data 6 Abort
+1 INIT 7 SHUTDOWN
+2 INIT ACK 8 SHUTDOWN  ACK
+3 SACK (selective  ACK) 9 ERROR
+4 HEARTBEAT 10 COOKIE  ECHO
+5 HEARTBEAT  ACK 11 COOKIE  ACK
+M3 Overview  of System  Architecture  193
+
+
+--- Page 195 ---
+ESSENCE
+bs
+>p> Recent  trends and issues
+With the advent  of mobile platforms,  such as Android and iOS, since the mid-2000s,  society  has rapidly
+transformed  into the mobile era, as applications  useful for work and personal  leisure have emerged.  Some
+programs  use standard  application  layer protocols,  such as SMTP, POP3, IMAP. and FTP. and some others,
+like SNS, use their own application  layer protocols,  such as KakaoTalk,  Line, and Facebook.  Developers  can
+only develop  user-friendly  application  programs  when they have a good understanding  of the concept  and
+operation  method  of the application  layer protocol  operating  on the transport  layer.
+>> Learning  objectives
+1. To be able to understand  application layer  protocols  and design or utilize them,
+2. To be able to understand  HTTP protocols  for data exchange  between  clients and webservers  and utilize them,
+3. To be able to understand  FTP protocols  for file exchange  between  clients and webservers  and utilize them
+for program  development.  Moreover,  they will be able to use open-source  libraries in order to increase  the
+productivity  of application program  develop...

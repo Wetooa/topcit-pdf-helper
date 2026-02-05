@@ -1,0 +1,254 @@
+LEARNING GUIDE: Pages 139-143
+Generated: 2025-12-05 14:05:45
+PDF: 5 - Understanding the IT Business and Ethics OCR
+
+================================================================================
+LEARNING GUIDE
+================================================================================
+
+Here's a simplified, easy-to-read learning guide based on the provided text:
+
+---
+
+## IT ESSENTIALS: Online Services & Mobile Technologies
+
+This guide covers key concepts in online social interaction, software integration, and mobile services.
+
+### 1. Social Network Service (SNS)
+
+**Definition:**
+*   Online platform for people to maintain existing relationships or form new ones.
+*   Began as early online communities (e.g., "The Well" in 1985).
+
+**Main Functions:**
+*   **Forming Relationships:** Set connections with others.
+*   **Profile Management:** Register personal info (hometown, interests, occupation).
+*   **Communication:** Chat, messages, email, video calls.
+*   **Content Production:** Create and share photos, videos, texts.
+*   **Network Utilization:** Share profiles and content with others.
+
+**Scale:**
+*   Global SNS sites have billions of monthly users (e.g., Facebook, WhatsApp).
+
+### 2. Open API (Open Application Programming Interface)
+
+**Definition:**
+*   A free, public API that allows anyone (users, developers) to access website functions.
+*   Enables users to move beyond consuming services to developing and using their own.
+
+**Characteristics:**
+*   **Access Website Functions:** Allows external applications to interact with a website's features.
+*   **New Service Design:** Multiple APIs can be combined to create novel services.
+*   **Mashup Sites:** A key enabler for mashup sites (websites that combine data/functions from multiple sources, e.g., combining map data with real estate listings).
+*   **User Empowerment:** Transforms users into potential service providers.
+
+**Component Elements:**
+*   **Open API Service:** The actual functionality provided (e.g., weather data, traffic info, maps).
+*   **How to 'Open' an API:** Technologies used for communication (e.g., XML, SOAP on server-side; XML, JavaScript, AJAX on client-side).
+
+#### REST (Representational State Transfer) API
+
+**Definition:**
+*   Currently the most widely used type of Open API.
+*   A network-based architecture for web services, designed by Roy Fielding in 2000.
+*   Based on Resource-Oriented Architecture (ROA), utilizing HTTP methods.
+
+**Structure:**
+*   **HTTP URI (Uniform Resource Identifier):** Specifies the target resource (e.g., a user profile, a product).
+*   **HTTP Method:** Specifies the action to be performed on that resource.
+
+**Common REST API Methods:**
+*   **POST:** Creates a new resource.
+*   **GET:** Searches for and retrieves information about a resource.
+*   **PUT:** Corrects/updates an existing resource.
+*   **DELETE:** Removes a resource.
+
+### 3. Mobile Services
+
+The "Anytime, Anywhere, Any Device" nature of mobile technology drives mobile commerce, entertainment, communication, and location-based services.
+
+#### A. Location Based Service (LBS)
+
+**Definition:**
+*   Services that merge location information with commerce, entertainment, and other applications.
+*   Has grown exponentially with the smartphone market.
+
+**Key Drivers:**
+*   Widespread availability of location-detection devices (smartphones).
+*   Open location determination platforms.
+*   Integration with mapping services (e.g., Google Map, Apple Map).
+
+**Location Detection Mechanisms (Smartphones):**
+*   Combines technologies like:
+    *   **Cell-ID:** Uses cellular base station location and distance.
+    *   **GPS:** Global Positioning System.
+    *   **Wi-Fi:** Uses Wi-Fi access points.
+    *   **Motion Sensors:** For precise navigation.
+
+**Network-Based Location Determination Technologies:**
+*   **Cell ID/Sector ID:** Calculates device location by measuring distance to a base station.
+*   **AoA (Angle of Arrival):** Uses the angle of signals arriving from at least two base stations.
+*   **TDoA (Time Difference of Arrival):** Uses the time difference of signals arriving from at least three base stations.
+*   **Fingerprint/Pattern Matching:** Uses base station location and radio signal intensity patterns.
+
+**Evolution of Location Determination:**
+*   **2G Era:** Simple cell-based positioning.
+*   **3G Era:** Adopted GPS.
+*   **4G Era:** Highly precise, overcoming weaknesses of base stations (high error) and GPS (indoor issues, impediments). Wi-Fi also enabled location determination where access points exist.
+
+#### B. Mobile Commerce (M-Commerce)
+
+**Definition:**
+*   Business transactions (trading goods, services, information) conducted using mobile devices like smartphones and tablets.
+
+**M-Commerce vs. E-Commerce Comparison:**
+
+| Feature               | E-Commerce                         | M-Commerce                                  |
+| :-------------------- | :--------------------------------- | :------------------------------------------ |
+| **Network**           | Fixed (high-speed line)            | Mobile (relatively lower speed line)        |
+| **User Experience**   | Rich applications                  | Simplified user experience                  |
+| **Communication**     | Stable quality                     | Relatively unstable quality                 |
+| **Screen Size**       | Big screen                         | Relatively small screen                     |
+| **Device Resources**  | High memory, high speed processing | Lower memory, lower speed processing        |
+| **Input/Output**      | Convenient (keyboard, mouse)       | Often unnecessary (touch, voice)            |
+| **Location**          | Home or office                     | User's location often determined/relevant   |
+| **Usage Context**     | Personal or public                 | Typically personal                          |
+
+**Key Technologies of Mobile Commerce:**
+*   **Wireless Communication:** Technologies like 3G, 4G (LTE), 5G for voice/data/video.
+*   **Mobile Security:** Core functions like certification, confidentiality, integrity, and non-repudiation (e.g., encryption, public key security).
+*   **Mobile Payment:** Methods for direct payment, banking system integration, third-party services, simplified payments, and electronic wallets.
+*   **Mobile Application Server:** Software platform for developing and operating application services in wireless environments.
+
+#### C. MEAP (Mobile Enterprise Application Platform)
+
+**Definition:**
+*   A platform designed to support a wide range of diverse mobile device environments.
+*   Enables sharing and reuse of applications across different devices and operating systems.
+
+**Why MEAP is Needed (Benefits):**
+*   **Reuse:** Allows the same code to be used across various smartphone OS, hardware, and service provider environments.
+*   **Cost Savings:** Shared platform reduces the need for duplicate infrastructure and middleware, saving development and operational costs.
+*   **Screen Support:** Helps develop mobile screens optimized for different device types.
+*   **Testing & Interworking:** Provides support for testing applications and ensuring they work together across systems.
+
+**Components:**
+MEAP covers the entire lifecycle of mobile development, execution, and operation:
+*   **Development Environment:**
+    *   Integrated Development Environment (IDE) for coding, testing (simulators).
+*   **Execution Environment:**
+    *   Mobile Framework (middleware for platform-independent code execution).
+    *   Distribution Management (app distribution, version control).
+*   **Operations Environment:**
+    *   Mobile Device Management (MDM) (for device and security management).
+    *   Backend Integrated Interface (standard interface for existing systems).
+    *   Service Operations and Management (monitoring).
+
+#### D. MDM (Mobile Device Management)
+
+**Definition:**
+*   A solution for efficiently managing diverse mobile devices and applications used within an enterprise.
+*   Allows remote management (Over-The-Air, OTA), provided devices are powered on.
+
+**Main Functions:**
+*   **Device Management:** Collects device info, manages distribution, identifies device IDs.
+*   **Registration & Tracking:** Registers, approves, and recalls mobile devices; can freeze lost/stolen devices.
+*   **Security Policy Enforcement:** Integrates with company directories (e.g., Active Directory) to establish and enforce security policies.
+*   **Software Distribution:** Pushes applications and updates to devices based on policies.
+
+---
+
+================================================================================
+ORIGINAL TEXT (First 5000 chars)
+================================================================================
+
+--- Page 139 ---
+ESSENCE
+@ SNS(Social  Network  Service)
+Social Network  Service (SNS) refers to a service that helps people continue  their personal  relationships  online or to
+establish  new relationships.  Early SNSs began in the form of online communities  on websites,  such as "The Well”
+which began in 1985, and "Theglob.com,”  which started in 1994. These are the first examples  of SNS that provided
+services  in the form of early communities.
+<Table68>  Main functions  of SNS
+Category Description
+Forming  relationship Provides  basic function  that lets users set their relationships  and use functions  provided  from SNS.
+Profile Function  for registering  information  that characterizes  a person such as the home town, alma mater,
+interests/hobby,  occupation,  employer,  etc.:
+Communication Provides  communication  functions  like chatting,  messages,  email, video chatting,
+Contents  production Provides  tools for creating  contents  using photos,  video clips, messages  and texts.
+Users are permitted  to utilize the network,  for purposes  like recommending/distributing  user profiles,
+Network  utilization user contents  to the outside world:
+Facebook,  the global SNS site with the largest  number  of users, has about  2 billion  (September,  2017) monthly  users.
+WhatsApp,  another  global SNS site, has acquired  about 1.3 billion users.
+Fh LT  2.0651
+Fxchok  Mesegi  a  1,300
+Wh hp, TT 1,30)
+VChet TT 963
+C0 EE 850
+<~e 700
+Q2cre 606
+Tunbr a,  368
+SnaWebc 361
+Twiter a  328
+BaiduTiebo”  mmm  300
+Skype” Mmmm 300
+Viber Ma! 250
+Snapchat**  NN 255
+UNE Mm 214
+Pinterest mmm 200
+w mm 122
+Linkedin mam 106
+Telegram”  mmm 100
+500 1,000 1,500 2,000 2,500
+[Fig.56]  Number  SNS users each month (as of September  2017, units: 1 million people)
+lote: Figures  for the sites marked  with “were not updated  for the past 1 year.
+Source: STATISTA  (2017.9)
+© Open API (Open Application  Programming  Interface)
+Open API is a free public API that is free for use by anyone  including  users and developers.  By using the API provided
+to the public free of charge by websites,  users are no longer  confined  to receiving  and consuming  services.  They can
+now develop  their own service  and use them.
+138 TOPCIT  ESSENCE
+
+
+--- Page 140 ---
+Understanding  the IT Business  and Ethics )
++ Characteristics  of Open API
+- Using the open API, people can gain access  to the functions  of a website.
+- New service  can be designed  by connecting  several APIs.
+- Key factor in the emergence  of mashup  sites? .
+- People  who were  just users of a service  can become  service providers.
+<Table69>Component  elements  of Open API
+Category Description
+What could be Open API Service  that an API provides  to users (weather,  traffic, public information,  map, etc.)
+Server: XML, SOAP, Blooging  API
+How to ‘open’ an API Ciient: XML, Javascript,  DOM, XML Http Request, AJAX, etc.
++ REST (Representational  State Transfer)  API
+REST API is currently  the most widely used Open API.
+REST API is a network-based  architecture  published  in 2000 by Roy Fielding,  one of HTTP's leading authors, to
+properly  utilize the superiority  of the Web (HTTP). REST is a web service architecture  based on the Resource
+Oriented  Architecture  (ROA) and it is composed  of HTTP URI + HTTP Method.  HTTP URI is used to specify  the target
+resource,  and the designation  of actions  for that resource  utilizes the HTTP Method.
+<Table  70> Examples  of REST API Method
+Method Role
+POST Generates  the relevant  resource.
+GET Search  the relevant  resource  and extracts  information.
+PUT Corrects  the relevant  resource.
+DELETE Deletes  the relevant  resource.
+B) Mobile service
+@ Location  Based Service
+Location-based  services  are growing  together  with the smartphone  market, which has seen exponential  growth
+since 2010, and are evolving  into a broad category  of services  by merging  location information,  commerce,  and
+entertainment.  Due to the mobile Big Bang, the availability  of location  detection  capable  devices greatly increased
+and the location  determination  platform  became  open. This led to the rapid evolution  of location-based  services  (LBS)
+In the case of location  detection  mechanism  used in smartphones,  location  detection  technologies  like base stations
+Cell-ID, GPS, and Wi-Fi were combined  with motion sensor-based  precision  guess navigation.  Furthermore,  by
+adopting  maps like Google Map and Apple Map, location-based  services  began to be used for many general purposes.
+9 Mashup site -Websites  that use APIs for product  information,  map information,  etc. from Microsoft,  Google, Yahoo, Amazon,  and
+others and combines  them with their own user interfaces  to come up with new services.
+M5 Understanding  the IT Business  and Ethics 139
+
+
+--- Page 141 ---
+ESSENCE
+These technologies  in combination  with services  such as social network  services,  augmented  reality, mobile games,
+and advertising,  are boosting  the utilization...

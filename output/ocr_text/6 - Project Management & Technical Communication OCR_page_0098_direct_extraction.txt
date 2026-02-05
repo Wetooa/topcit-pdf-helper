@@ -1,0 +1,23 @@
+Project Management  and Technical  Communication  )
+In order to calculate  the schedule  by hand using the critical path method,  the activity  is expressed  as follows.
+Activity  Name
+The following  is an example  of calculating  a schedule  using the critical path method.  The critical path method
+will be described  in detail through  the example  below.
+<Table 43> Critical Path Method  (Example)
+Activity  Name Duration Predecessor  Activity
+A 3 days
+B 2 days A
+Cc 2 days B,D
+D 4 days A
+E 6 days D
+F 3 days GE
+@ Activity  Definition,  Duration  Estimation
+If the activities  of the project are defined and the duration  of each activity is estimated,  the activities  are
+linked according  to the sequential  relationship  as follows. Arrange  the identified  activities  according  to the
+sequential  relationship  and enter the activity  name and duration.
+6 /{> E
+[Figure 30] Critical Path Method@  (Example)
+In the case of the activity  name “B’, it is placed after the activity  “A” because  the Predecessor  Activity  is “A”, and the
+duration  of the activity  “B’ is 2 days, so enter 2 in the “Duration”.  Likewise,  for all other activities,  predecessor  activities
+are identified  and arranged  in order, and the duration  of the activity  is written  at the top of the activity  name.
+M6 Project  Management  and Technical  Communication  97

@@ -1,0 +1,37 @@
+Software  Development )
+of various properties  and operations  that represent  the properties  of the object concerned.  The documents
+created in the preceding  phase can be used to find a class, its properties,  and the relationships  between
+classes.  Problem  description  documents  or use case scenarios  can be used to identify  a class.
+B) Dynamic  modeling
+The classes constituting  a system  can be found and the properties  and relationships  of the classes can be
+identified  using the static modeling  described  above. Now let’s learn how to perform  dynamic  modeling  based
+on the results of static analysis.  While static modeling  literally focuses  on the static structure  of a system,
+dynamic  modeling  is a process  of finding  the operations  of classes  by paying  attention  to changes  in the state
+or behavior  of the objects  that constitute  a system,  or the interactions  between  objects.
+Dynamic  modeling  identifies  class operations  based on interactions  between  objects.  Class operations  are
+defined to perform the functions  requested  by the messages  of other objects. In general,  a UML sequence
+diagram  is used to represent  the interactions  between  objects.  The sequence  diagram  emphasizes  the transfer
+process of the messages  exchanged  between  objects over time, while the collaboration  diagram  expresses
+the cooperative  relations  and exchanges  of message  between  objects.  These two diagrams  are also called an
+interaction  diagram.
+The activity  diagram is used to accurately  understand  the process  of handling  events in a class. It is used to
+understand  the procedure  for handling  complex  processes  or to identify  the additional  operations  of a class.
+This activity  diagram  can help to understand  the activities  occurring  in each use case and the dependencies
+between  them. In addition,  if the operation  of a specific  object is composed  of a complex  structure  internally,  it
+can be represented  using an activity  diagram.
+The table below divides  the UML diagram  into the functional  model, static model, and dynamic  model.
+<Table 19> UML diagram>
+Model type Diagram Contents
+; . re i f i Fincdonelimedel Use case diagram Structurally  expresses  various  cases of using actors and systems,  that is,
+the relationship  between  use cases.
+Expresses  a structural  relationship  between  the classes  and interfaces  thatClass diagram :constitute  the system.
+Static model Object  diagram Expresses  the structural  state of objects  at a specific  point in time.
+Component  diagram Expresses  the relationship  between  component  structures.
+Deployment  diagram Expresses  the physical  structure  of the execution  system including
+software,  hardware,  and network.
+- Expresses  the dynamic  messages  exchanged  between  objects  inside theSequence  diagram -system  in order to handle external system events  over time.
+. Expresses  the same contents  as the sequence  diagram  from the viewpointCollaboration  diagramrennet of the interrelation  between  objects.DOCS Activity diagram Expresses  the flow of activities inside the system.
+Statechart  diagram Expresses  state transitions  inside the system.
+Package  diagram Expresses  the relationship  between  packages  after creating  a package  by
+grouping  several model elements  including  classes  or use cases.
+M1 Software  development  73

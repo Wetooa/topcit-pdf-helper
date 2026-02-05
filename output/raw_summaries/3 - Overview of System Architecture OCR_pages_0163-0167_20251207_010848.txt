@@ -1,0 +1,247 @@
+LEARNING GUIDE: Pages 163-167
+Generated: 2025-12-07 01:08:48
+PDF: 3 - Overview of System Architecture OCR
+
+================================================================================
+LEARNING GUIDE
+================================================================================
+
+Here is a simplified, easy-to-read learning guide based on the provided text:
+
+---
+
+## Network Essentials: A Learning Guide (Pages 163-167)
+
+### 1. Switches and Routers Comparison
+
+| Feature         | Switch                                  | Router                                                   |
+| :-------------- | :-------------------------------------- | :------------------------------------------------------- |
+| **Reference Table** | MAC address table                       | Routing table                                            |
+| **Reference PDU** | Ethernet frame                          | IP packet                                                |
+| **Reference Field** | Destination MAC address                 | Destination IP address                                   |
+| **Frame Used**  | Ethernet                                | Ethernet, Frame Relay, PPP, etc.                         |
+| **2-Layer Header**| No change                               | Replaced by a new header                                 |
+
+### 2. Network Layer Encapsulation
+
+*   **Encapsulation:** The process of adding a header (e.g., network layer header) to data at a transmitting layer segment (e.g., datalink layer). This configures packets for transmission.
+*   **Decapsulation:** The reverse process at the receiving end, where headers are removed.
+
+### 3. IPv4 Header Fields
+
+The IPv4 header contains important information for routing and packet handling:
+
+*   **Version:** The IP protocol version (e.g., 4 for IPv4).
+*   **IHL (Internet Header Length):** The length of the IP header.
+*   **Type of Service:** Specifies the desired service type for the packet in the subnet.
+*   **Total Length:** The sum of the header and data lengths in the datagram.
+*   **Time to Live (TTL):** A limit on the packet's lifespan, preventing infinite loops.
+*   **Protocol:** Indicates the higher-layer protocol (e.g., TCP or UDP) for datagram recombination.
+*   **Source Address:** The 32-bit IP address of the sender.
+*   **Destination Address:** The 32-bit IP address of the recipient.
+
+### 4. Packet Switching Approaches
+
+Methods for finding a packet's path in a network:
+
+*   **Datagram Approach (Connectionless):**
+    *   Each packet is processed independently.
+    *   Packets can be transferred via different paths.
+    *   The destination address determines the forwarding path for each packet.
+*   **Virtual Circuit Approach (Connection-oriented):**
+    *   Establishes a virtual path for datagrams *before* transfer.
+    *   All datagrams for that connection follow the same path.
+    *   The forwarding path is determined by a packet label (virtual circuit identifier).
+
+### 5. Network Layer Protocols
+
+Key protocols operating at the network layer:
+
+*   **ARP (Address Resolution Protocol) (RFC 826):** Converts an IP address into a MAC (Media Access Control) address.
+*   **RARP (Reverse Address Resolution Protocol) (RFC 903):** Converts a MAC address into an IP address.
+*   **ICMP (Internet Control Message Protocol) (RFC 792):** Used to transfer network error information (e.g., destination unreachable).
+*   **IGMP (Internet Group Management Protocol) (RFC 1112):** Used for IP multicasting (sending data to a group of recipients).
+
+### 6. Network Layer Commands
+
+Common commands to check network status or perform actions:
+
+*   **Ping:**
+    *   Uses ICMP messages (echo request/reply) to test network layer connectivity to a host.
+*   **Tracert / Traceroute:**
+    *   Finds the path (route) to a desired destination.
+    *   Helps identify network sections causing bottlenecks.
+*   **Route:**
+    *   Allows manual modification of the routing table.
+*   **Ipconfig / Ifconfig:**
+    *   Checks a computer's TCP/IP network settings.
+    *   Used to check and update DHCP and DNS settings.
+*   **Netstat:**
+    *   Checks network connections, routing table, and network interface status.
+*   **Arp:**
+    *   Shows or allows changes to the local ARP cache (mappings of IP to MAC addresses).
+
+### 7. Network Service Quality (QoS)
+
+**A) QoS Characteristics (Measurements)**
+QoS ensures service quality and performance. Key attributes include:
+
+*   **Confidence:** The ability to safely deliver a packet to its destination.
+*   **Delay:** The time taken to transmit a packet from sender to receiver.
+*   **Jitter:** The variation in delay for packets belonging to the same data flow.
+*   **Bandwidth:** The maximum data transfer rate available for communication.
+
+**B) QoS Implementation Techniques**
+
+1.  **Scheduling:** Routers manage packet flow based on different scheduling methods:
+    *   **FIFO (First-In, First-Out) Queuing:** Packets are delivered in the order they arrive (basic Internet method).
+    *   **Priority Queuing:** Packets are assigned priorities; higher priority packets are handled first.
+    *   **Weighted Fair Queuing:** Packets are assigned to priority queues, and queues are selected in a round-robin manner. The number of packets delivered from each queue varies by its assigned "weight."
+
+2.  **Traffic Shaping & Traffic Policing:**
+    *   **Traffic Shaping:** Controls traffic speed and volume as traffic *leaves* the network.
+    *   **Traffic Policing:** Controls traffic speed and volume as traffic *enters* the network.
+    *   **Leaky Bucket:** Stores burst input packets and outputs them at an average, consistent rate. Packets may be discarded if the input exceeds the bucket's capacity.
+    *   **Token Bucket:** A common algorithm used for both traffic shaping and policing.
+
+3.  **Resource Reservation:**
+    *   Method of reserving network resources (e.g., buffer space, bandwidth, CPU time) for specific data flows to guarantee service quality.
+
+4.  **Admission Control:**
+    *   A procedure used by a communication network's control unit to decide whether to accept a new connection request, based on available resources and QoS policies.
+
+**C) Service Quality Models and Protocols**
+
+*   **Integrated Service (IntServ) Model:**
+    *   A flow-based QoS model.
+    *   Explicitly reserves resources (like bandwidth) for specific data flows.
+*   **Resource Reservation Protocol (RSVP) (RFC 2110):**
+    *   A protocol standardized to reserve and secure bandwidth needed by applications between endpoints. Often used with IntServ.
+*   **Differentiated Service (DiffServ) Model:**
+    *   A class-based QoS model.
+    *   Specifies the required service type for each packet transmission, operating based on packet priority.
+
+### 8. Routing Protocol Algorithm and Type
+
+**A) What is a Routing Protocol?**
+*   Defines messages, exchange procedures, and actions for routers to efficiently set and update routing tables.
+
+**B) What is a Routing Algorithm?**
+*   Finds the "low-cost" path between a source and destination router in a network.
+*   "Low-cost" refers to the path with the minimum sum of link costs among all possible paths.
+
+**C) Routing Algorithm Types**
+
+*   **Link State Routing Algorithm:**
+    *   Each router calculates the low-cost path to all destinations.
+    *   Uses the *entire network's* configuration and link-state information.
+*   **Distance Vector Routing Algorithm:**
+    *   Each router maintains a low-cost path table (vector) to all destination routers.
+    *   Initially, only direct connections' cost data is known.
+    *   Routers share their path cost data with neighboring routers.
+
+---
+
+================================================================================
+ORIGINAL TEXT (First 5000 chars)
+================================================================================
+
+--- Page 163 ---
+ESSENCE
+Sales VLAN
+~
+e e e e
+e e e e
+Switch 1 Switch 2
+[Figure 116] VLAN Configuration  [4]
+<Table 42) Comparison  of Switch and Router
+Compared  Items Switch Router
+Reference  table MAC address  table Routing  table
+Reference  PDU Ethemet  frame IP packet
+Reference  field Destination  MAC address Destination  IP address
+Frame used Ethernet Ethernet,  frame relay, PPP, etc.
+2-Layer  header No change Replaced  by a new header
+O2 Network  Layer Encapsulation
+A) Network  layer encapsulation
+As shown in [Figure 117], the packets  on the network  layer are configured  by adding a header  to the transmitting
+layer segment.  This process  is called encapsulation  of the datalink  layer, and the process  is reversed  on the receiving
+end and is called decapsulation.
+162 TOPCIT  ESSENCETransport  Layer
+Datalink  LayerL4 Data
+Network  Layer L4 Data
+[Figure 117] Network  Layer Encapsulation
+
+
+--- Page 164 ---
+Overview  of System Architecture )
+B) IPv4 header
+0 1 2 3
+012345678901234567890123456789021
++44  -4-4t-  4-4-4 4 tt tat  ttatitaitttittittatititit  att  tt
+[Version| IHL |Type of Service] Total Length
+tata  t itt  tata  tata  ta tata  t ati  ta ta titi  t batt  apatite  ti  tate  te tata  te
+| Identification |Flags| Fragment  Offset+-4-4-4-4-4-4-4-4-4-4-t  4-4-4  tt  tt  ttt  ttt  tt  it  it ttt
+| Time to Live | Protocol | Header Checksum
+taototatototototatitatitetito  tata  titatitatit  tata  titattitetotite
+| Source  Address
++-4-4-4-4-4-4-4-4-4-4  4-44-44  4-4 tt  tt  tt  tt  tt  ttt
+|
+-
+|
+aeDestination  Address
+—+-4-4+-4-4-4-4+-4+-+-+4+-+-+4+-4-4-4-4-4-4+-4-4-4-4+-4-4-4-4-4-4-4-4-4-
+Options | Padding
+—4-4-4-4-4-4-4-4-4+-4$-4-4+-4-4-4-4-4-4-4-4-4-4+-4-4-4-4-4-4-4-4-4- to +¢— +--+ —- + —-4+¢— 4
+[Figure 118] Network  Packet  Structure  [5]
+In [Figure 118] above, “Version”  refers to the protocol  version  of the datagram,  “IHL” refers to the header  length, and
+“Type of Service” refers to which type of service the host wants in the subnet. “Total length” refers to the sum of
+the header and data lengths in the datagram,  “Time to Live” refers to the packet life limit, and “Protocol’ refers to
+the notification  of TCP or UDP for the recombination  of the datagram  on the network  layer. “Source  Address”  and
+“Destination  Address’  refer to the source and destination  addresses  of the 32-bit datagram.
+03 Packet  Switching  and Network  Layer Protocol/Instruction
+A) Packet  switching
+The methods  of finding the packet path in a packet-exchanging  network,  include the datagram  approach  and the
+virtual circuit approach.  The datagram  approach  is a non-connected  service  that independently  processes  all packets.
+Packets  can be transferred  through  different  paths, and the packet’s  destination  address  determines  the forwarding
+path. The virtual circuit approach  is a connection-oriented  service. It establishes  a virtual path for the datagram
+before the transfer,  and all datagrams  are transmitted  to the same path after the connection.  The forwarding  path is
+determined  by the packet  label (virtual circuit identifier).
+B) Network  layer protocol/command
+The network  layer protocols that convert  the IP and MAC addressesinto  an IP address,  are the ARP (Address
+Resolution  Protocol)  and the RARP (Reverse  Address  Resolution  Protocol).  ICMP (Internet  Control Message  Protocol)
+is a protocol  used to transfer  the network  error information, and IGMP (Internet  Group Management  Protocol)  is the
+protocol  for IP multicast  transfer.
+M3 Overview  of System  Architecture  163
+
+
+--- Page 165 ---
+ESSENCE
+Network
+InterfaceNetwork
+Network  Interface
+(Ethernet)
+Physical
+<Table 43) Network  Layer Protocols
+Protocol Description
+ARP - Address  Resolution  Protocol(RFC  826)
+- Conversion  of an IP address  into a MAC address
+RARP - Reverse  Address  Resolution  Protocol(RFC  903)
+- Conversion  of a MAC address  into an IP address
+- Internet  Control  Message  Protocol(RFC  792)ICMP . ;
+- Transfer  of network  error information
+IGMP - Internet  Group Management  Protocol(RFC  1112)
+- IP multicasting
+C) Network  layer command
+<Table 44> shows commands  to check the network  layer status or perform  a specific  action.
+(Table 44) Network  Layer Commands
+Number  of a
+Commands aed
+Pin + Acommand  that uses an ICMP message  to test the connectivity  to the network  layer.
+8 + It uses the echo request  and replies to messages  from the ICMP message.
+Tracert/ + Acommand  to find the path to the desired destination.
+Traceroute * It checks  which network  section  caused the bottleneck,  if there is a problem  in connecting  a specific  site.
+Route + Acommand  to allow manual modification  of the routing  table.
+Ipconfig/ + Acommand  to check the computer's  TCP/IP network  settings.
+lfconfig + It is used to check and update  the DHCP and DNS settings.
+Netstat + Acommand  to check the network  connection,  routing  table, and network  interface  status.
+Arp + Acommand  that shows or changes  the ...

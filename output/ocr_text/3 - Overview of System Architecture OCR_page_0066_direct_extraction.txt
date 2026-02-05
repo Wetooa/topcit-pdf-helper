@@ -1,0 +1,30 @@
+Overview  of System Architecture )
+connect  them in order to deliver  the data.
+@ Control  unit: A hardware  module that sequentially  generates  control signals to interpret  the program  codes
+(instructions)  and run them.
+@ ALU: A key element  of the CPU to execute  arithmetic  operations’  and logical operations?
+Register:  A temporary  storage  area that temporarily  stores instructions  waiting  to be processed  by the CPU or the
+intermediate result values of the CPU operation.  The register  types include, PC (program  counter),  IR (instruction
+register),  AC (accumulator),  MAR (memory  address  register),  MBR (memory  buffer register),  and SP (stack pointer).
+© Bus: A common  transmission  line that connects  the CPU, memory,  I/O unit, etc., in order to exchange  necessary  data.
+Buses are classified  as follows:
++ Address  bus: A set of signal lines that transmits  address  data generated  by the CPU.
++ Data bus: A set of signal lines that transmits  data from the CPU to a memory  unit or an I/O unit.
++ Control  bus: A set of signal lines that are necessary  for the CPU to control  various  system  elements.
+Address Data Control
+Bus Bus Bus
+CPU
+MAR
+Control
+UnitALU Memo
+ry
+MBR
+[Figure 33] CPU Structure
+D) Instruction  cycle
+This is the entire process  required  for the CPU to execute  an instruction.  The CPU repeats it from the moment  the
+CPU starts executing  the program,  until the power is tumed off or an irrecoverable  error occurs to terminate  the
+execution.  The instruction  cycle from the fetching  of the instruction  to the completion  of the operation  consists  of a
+fetch cycle, an indirect  cycle, an execution  cycle, and an interrupt  cycle, as shown in [Figure 34].
+2 Arithmetic  operation:  Addition,  subtraction,  multiplication,  and division
+3 Logic operation:  AND, OR, NOT, XOR, etc.
+M3 Overview  of System  Architecture  65

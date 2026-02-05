@@ -1,0 +1,33 @@
+ESSENCE
+product  development  and architectural  projects  with much accumulated  technology  or experience.  It is a cycle
+in which the entire scope of the project  is defined  at the initiating  stage and the schedule  and cost are carried
+out according  to the plan.
+The iterative  life cycle is a model in which a product  is divided  into parts that are developed  repeatedly  to
+complete  a final product.  Iterative  life cycles can be divided into incremental  and evolutionary  types.
++ Incremental  life cycle: The scope of the project is divided into multiple  phases in which the activities  of the
+project  are run in parallel and overlapped  gradually  and repeatedly.
++ Evolutionary  life cycle: The project is divided into several phases, and the iteration itself proceeds
+sequentially.
+Increment  1
+>| Planning >| Executing >| Closing
+Project
+Delivery of accurateRequirements 
+' information
+Increment  2. i i
+. >| race Ye [eset Yo{ cose  |
+( Increment  3 vy vy vy
+>| Planning >| Executing >| Closing
+Increment  N
+[Figure  22] Incremental  Life Cycle
+Development  of project key areas
+. . Establishin Ist >| Initiatin >| Plannin; >| Executin, | >| S .6 6 6 (Cut-over) completion
+ow Apply improvement
+revolution . Establishing 2nd .Se, Initiating Planning >>| Executing (Cut-over) completion
+“ep
+Apply =3rdProject | revolution Plannin Executin GoaRange 8 > eecxtn (Cut-over) ee
+[Figure  23] Evolutionary  Life Cycle
+The adaptive  life cycle refers to an agile process  that reacts promptly  to external  changes,  and its purpose  is
+to flexibly  respond  to changing  requirements  to fulfill the value of the project.
+B) Project  planning  and executing
+To briefly look at the stages before the project is contracted  and commenced,  it largely goes through  the
+78 TOPCIT  ESSENCE

@@ -1,0 +1,35 @@
+ESSENCE
+attack technique induces users to connect  the malicious  link or infect the user’s device directly using a QR
+code.
+@ Procedure  of the Qshing  attack
+Infecting  the user’s smartphone  with a malicious  code so that the user is connected  to a fake financial site
+(phishing  site), even if the user accesses  a normal financial  site — Inducing  the user to install a malicious app
+by showing  a QR code on a fake financial  site, as if additional  authentication  is required  — Stealing personal
+information,  such as the security  card, phone numbers,  and text messages, using the malicious  app and
+manipulating  the mobile environment,  such as blocking  text message  reception  and call forwarding  service set-
+up. — Causing  financial  damage,  such as small amount  payments,  money  transfers,  etc.
+@® Combining  Pharming  and Qshing
+It was found that malware  is evolving  into a form that combines  pharming,  targeting  the Internet  banking  of
+the existing  PC, and Qshing,  targeting  the financial  information  of the smartphone.
+@® Response  to QR code-related  attacks
+Keep the security of  application  software,  such as an anti-virus  program, a web browser,  etc.,up to date to
+prevent  damage  caused by QR code-related  malware.  In addition,  disable the “Allow Installation  from Unknown
+Sources’  option in the smartphone  toprevent  the malicious  app from being installed  through  QR codes.
+D) Smishing
+® Concept  of the smishing  attack
+Smishing  is a compound  word of SMS and phishing.  Smishing  is a fraudulent  technique  that exploits  the small
+amount  payment  service  of the smartphone,  by using a text message  that disguises  a free coupon  or an event
+winning,  as smartphones  become  popular and various financial  services,  such as small amount  payments,  are
+increased.
+@® Procedure  of performing  the smishing  attack
+@ @ © @
+Click an Internet » Install malware  in » Sendan » Game items, » Request  for small
+URL in the text the smartphone authentication  number} cyber money, etc. amount  payment
+message for small payment to purchase  by the (smart phone fraud
+the criminal criminal victim)
+[Figure  28] Procedure  of performing  the smishing  attack
+@® Countermeasures  against  the smishing  attack
++ Refrain  from clicking  a web site link in a promotional  text message  with an unknown  source.
++ Check the correct  domain URL when accessing  the website  link included  in a text message.
++ Install a smishing  blocking  app.
+52 TOPCIT  ESSENCE

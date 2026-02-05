@@ -1,0 +1,223 @@
+LEARNING GUIDE: Pages 70-74
+Generated: 2025-12-07 00:59:44
+PDF: 3 - Overview of System Architecture OCR
+
+================================================================================
+LEARNING GUIDE
+================================================================================
+
+Here's a simplified learning guide derived from the provided text:
+
+---
+
+## Learning Guide: System Architecture & Latest Technologies
+
+### 1. Locality
+
+**Concept:** Programs tend to access specific areas of memory intensively, rather than uniformly. This tendency helps optimize memory access.
+
+*   **Temporal Locality:** Data or programs recently accessed are likely to be accessed again in the near future. (e.g., a loop variable)
+*   **Spatial Locality:** Data stored adjacent to recently accessed data is likely to be accessed continuously. (e.g., elements in an array)
+*   **Sequential Locality:** Instructions are typically fetched and executed in order, unless a branch occurs. (about 80% of the time)
+
+### 2. I/O Devices
+
+**A) Concept of I/O Device**
+I/O devices are essential for:
+*   **Input:** Storing data from external sources into memory for CPU processing.
+*   **Output:** Transferring processing results from main memory to an external medium.
+
+**B) I/O Controller Structure and Addressing Methods**
+An **I/O controller** is a dedicated circuit that manages communication between the CPU/memory and I/O devices.
+
+*   **Roles of an I/O Controller:**
+    *   Control and coordinate timing for I/O devices.
+    *   Communicate with the CPU.
+    *   Communicate with the I/O device itself.
+    *   Buffer data (temporary storage).
+    *   Detect errors.
+
+*   **I/O Addressing Methods:** Each I/O device needs two addresses (a status/control register address and a data register address).
+    *   **Memory-Mapped I/O:**
+        *   **Method:** A portion of the CPU's memory address space is allocated to I/O controller registers.
+        *   **Advantage:** Easier programming (CPU uses standard memory instructions).
+        *   **Disadvantage:** Reduces the total available memory space for programs.
+    *   **I/O-Mapped I/O:**
+        *   **Method:** I/O devices have a separate address space distinct from memory.
+        *   **Advantage:** Does not reduce the available memory address space.
+        *   **Disadvantage:** Requires special I/O instructions, making programming more complex.
+
+**C) DMA (Direct Memory Access)**
+
+*   **Concept:** A method where an I/O device directly accesses main memory without CPU intervention. A **DMA controller (DMAC)** manages the bus for these direct transfers.
+*   **Benefit:** Increases system efficiency for high-speed I/O devices by minimizing CPU interruptions and overhead, allowing the CPU to focus on other tasks.
+*   **DMA Operation Sequence (Simplified):**
+    1.  I/O device requests DMA service from the DMAC.
+    2.  DMAC requests bus control from the CPU (via HOLD pin).
+    3.  CPU grants bus control to DMAC (via HLDA pin).
+    4.  DMAC places the memory address on the address bus.
+    5.  DMAC signals the I/O device to place data on the data bus.
+    6.  Data transfers directly between I/O device and memory.
+    7.  DMAC updates address register and byte count.
+    8.  Steps 4-7 repeat until all data is transferred.
+    9.  DMAC releases bus control; CPU reclaims the bus.
+*   **DMA Operation Modes:**
+    *   **Cycle Stealing:**
+        *   DMAC takes control of the bus for short periods (e.g., to transfer one word of data), "stealing" bus cycles from the CPU.
+        *   Used when the DMAC and CPU need the bus simultaneously, giving priority to fast I/O.
+    *   **Burst Mode:**
+        *   DMAC acquires bus control and holds it until an entire block of data (multiple memory words) is transferred.
+        *   Applicable to high-speed I/O devices that transfer data in large chunks.
+
+### 3. Latest Technologies and Trends
+
+**A) Neuromorphic Chip**
+
+*   **Concept:** A new type of semiconductor designed to process information like the human brain, implementing brain-like behavior in silicon. It's a core technology for neuromorphic computing.
+*   **Structure & Function:**
+    *   Contains multiple cores, each embedding electronic devices (transistors, memory).
+    *   Some devices in the core act as **neurons**; memory chips act as **synapses** (linking neurons).
+    *   Configured in parallel, like the human brain.
+*   **Comparison to Conventional Chips:**
+    | Feature         | Conventional Computer Chip         | Neuromorphic Semiconductor            |
+    | :-------------- | :--------------------------------- | :------------------------------------ |
+    | **Architecture**| Separate CPU (operation) & Memory (storage) ➡ Bottleneck | Integrated operation/storage/communication ➡ No Bottleneck |
+    | **Basic Unit**  | Cell (storage/operation) & Bandwidth | Neuron (nerve function) & Synapse (signal transmission) |
+    | **Function**    | Specific functions, separate storage/operation | Sensing (image/sound), pattern recognition; integrated storage/operation |
+    | **Processing**  | Serial (one I/O at a time)         | Parallel (simultaneous data I/Os)     |
+*   **Advantages:**
+    *   Processes large data with low power consumption.
+    *   Enhanced learning and operational capabilities.
+    *   Can learn autonomously and adapt to context.
+    *   Wide applicability: IoT, smartphones, robots, automobiles, cloud, supercomputing.
+*   **Challenges:**
+    *   Limited understanding of human neural circuits at a system level.
+    *   Current simulations are mostly at the single-neuron level.
+    *   Significant technical hurdles to achieve brain-level complexity.
+    *   No clear leader in research globally.
+
+**B) Quantum Computer**
+
+*   **Concept:** A new computer type that uses principles of quantum mechanics (superposition and entanglement) to achieve ultra-high-speed, large-capacity processing for specific operations.
+*   **Quantum Bits (Qubits):** The basic unit of information. Unlike classic bits (0 or 1), a qubit can be 0, 1, or a combination of both simultaneously (superposition). This enables **quantum parallel processing**.
+*   **Comparison to Conventional Computers:**
+    | Subject              | Existing Computer                     | Quantum Computer                         |
+    | :------------------- | :------------------------------------ | :--------------------------------------- |
+    | **Information Expr.**| 0 or 1                                | Overlapping 0s and 1s                    |
+    | **Operation Concept**| Sequential calculation                | Simultaneous calculation (instantaneous) |
+    | **Basic Unit**       | Bit (0 or 1)                          | Qubit (0, 1, or both simultaneously)     |
+    | **Calculation Type** | Logic table                           | Matrix function                          |
+    | **Error Correction** | Easy to correct errors                | Difficult to correct errors              |
+    | **N-bit Memory**     | Remembers one value out of 2^N        | Remembers all 2^N values (overlap)       |
+    | **Operational Thru.**| 1 operation for N bits                | 2^N operations for N qubits (simultaneous) |
+*   **Types of Quantum Computers:**
+    *   **Analog Type (e.g., Quantum Ising Machine, Quantum Annealing):**
+        *   Low versatility, primarily optimized for combination optimization problems.
+        *   Commercialized by D-Wave Systems since 2011.
+    *   **Quantum Neural Network (QNN) / Laser Network Type:**
+        *   Also low versatility, primarily for combination optimization.
+        *   Can operate at room temperature and potentially at lower cost.
+
+---
+
+================================================================================
+ORIGINAL TEXT (First 5000 chars)
+================================================================================
+
+--- Page 70 ---
+Overview  of System Architecture )
++ Immediate  addressing  mode
++ Displacement  addressing  mode: Relative  addressing  mode, indexed  addressing  mode, and base-register  addressing
+mode
+E) Locality
+The locality is a tendency  in which programs  intensively  refer to a specific  area in the moment,  rather than uniformly
+accessing  information  in the memory  device.
++ Temporal  locality:  Recently  accessed  programs  or data are more likely to be accessed  again in the near future.
++ Spatial locality:  Data stored adjacent  to the storage  device is more likely to be accessed  continuously,
++ Sequential  locality: Instructions  are fetched  and executed  in the order in which they were stored, unless branched
+(about  20%).
+04 1/0 Device
+A) Concept  of I/O device
+The device is necessary  to perform an input operation  that stores data to be processed  by the CPU in the memory
+unit, as well as an output  operation  that transfers  the processing  results  from the main memory  to an output  medium.
+B) I/O controller  structure  and addressing  methods
+An /O controller  is necessary  to process  inputs and outputs,  as shown in [Figure 36], and it plays the following  roles:
++ I/O device control  and timing  coordination
+* Communication  with the CPU
+* Communication  with the I/O device
++ Data buffering
++ Error detection
+Data {0  }
+Status/Control  Register |<— L >
+Oo ‘ }
+I! Status Signali /O }— >| Control }«—_  Devi }
+Timing and F . Coa,Address Bus 8 Circuit Control Signal | ;
+Control  Signal Control  Circuit > }
+M3 Overview  of System  Architecture  69
+
+
+--- Page 71 ---
+ESSENCE
+Each device needs two addresses  (a status/control  register  address  and a data register  address)  for I/O control, and
+the same two addresses  are required  for each device. It is divided into the memory  mapped  |/O and the I/O mapped  |/
+O, depending  on how the addresses  are allocated.
++ Memory  mapped  |/O: It is a method  of allocating  a part of the address  area in the memory  to the register  addresses
+in the I/O controller,  as shown in [Figure 37]. It has the advantage  of easy programming,  but the disadvantage  of
+reducing  the available  memory  space.
+Address Full Address  Space
+0
+- Address  Space in
+: Memory  Device
+511
+512
+: I/O Address  Space
+1023
+[Figure 37] Allocation  of Memory  Mapped  I/O Address
++ 1/O mapped  1/O: It is a method  of allocating  the I/O device address  space separately  from the memory  address
+space, as shown in [Figure 38]. It has the advantage  of not reducing  the available  memory  address  space, but
+the disadvantage  of making  it difficult  to program.
+0 0
+Address
+Space in I/O Address
+Memory Space
+Device
+1023 1023
+[Figure 38] Address  Allocation  by |/O Mapped  |/O
+C) DMA
+@® Concept  of DMA
+DMA is a method  of the I/O device directly  accessing  the memory  without  the assistance of the CPU. The DMA
+controller  controls  the bus, and the I/O device and memory  transfer  information  directly. [Figure 39] shows the
+system  structure  that includes  the DMA controller.
+70 TOPCIT  ESSENCE
+
+
+--- Page 72 ---
+Overview  of System  Architecture
+With DMA, high-speed  |/O devices can increase  system efficiency  by minimizing  the interruption  overhead  that
+reduces  the CPU's actual processing  time.
+aii  sss TS
+V0 c aahontrollerInterface (DMAC)
+@
+® © rie  es 2 © itr O La
+CONTROL  BUS.
+[Figure  39] System  Structure  Including  DMA
+@ DMA operation  sequence
+@® The I/O interface  requests  a DMA service  from the DMA controller.
+@ The bus request  is transferred  to the CPU's HOLD pin, so that the DMA acquires  the control  of the bus (Active High).
+® The bus grant is returned  from the CPU's HLDA (Hold Acknowledge)  pin, to the DMAC (Active  High).
+@® The DMAC loads the contents  of the address  register  into the address  bus.
+© The DMAC transfers  the DMA acknowledgment  to the I/O interface  in order to load the data into the data bus.
+© The address  bus transfers  the data bytes to the identified  memory  location.
+@ The I/O interface  maintains  the data transfer  (Latch).
+The DMAC returns  the bus grant as the bus request  is dropped,  and the HOLD becomes  a low state.
+© The bus grant is dropped,  and HLDA becomes  a low state.
+Afterward,  the address  register  increases  by increments  pf 1, and the byte count decreases  by decrements  of 1.
+@ The process  retums  to Step © if the byte count is not 0, and otherwise  stops.
+@ DMA operation  mode
+Type Description
+- The fast CPU gives the slow DMA the priority  of using the bus to enable  fast inputs and outputs
+Cycle stealing when the DMA controller  and the CPU intend to use the bus at the same time.
+- Itis applied  when transferring  data of about one word during  a DMA operation.
+- It is applied  when transferring  data in blocks during  a DMA operation.
+- It continuously  transfers  blocks  formed by multiple  memory  words.
+- It is applicable  to high-speed  I/O devices.  When a DMA interface  acquires  the bu...

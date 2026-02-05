@@ -1,0 +1,230 @@
+LEARNING GUIDE: Pages 124-128
+Generated: 2025-12-05 14:29:50
+PDF: 1 - Software Development OCR
+
+================================================================================
+LEARNING GUIDE
+================================================================================
+
+Here's a simplified, easy-to-read learning guide based on the provided text:
+
+---
+
+# Software Development & Maintenance Learning Guide
+
+## I. Version Control Systems (VCS)
+
+**Version Control System (VCS):** A system that records changes to a file or set of files over time so you can recall specific versions later.
+
+### A. Subversion (SVN)
+
+*   **Type:** Open-source, centralized version control system.
+*   **Abbreviation:** SVN (from its command-line interface).
+*   **Origin:** Developed by CollabNet Inc. in 2000 to replace CVS. Now an Apache project.
+*   **Model:** Server-client model.
+    *   A central server stores the repository.
+    *   Multiple **clients** (developers) check out and use files from this central server.
+
+### B. Distributed Repository (Git)
+
+*   **Type:** Distributed version control system (e.g., Git).
+*   **Key Difference from Centralized:** Instead of just downloading a snapshot, clients **copy the entire repository**.
+*   **Resilience:** If the central server fails, it can be restored using a copy held by any client.
+*   **Storage:** Source codes can be saved in multiple servers or multiple developers' local PCs. Each becomes a source code **repository**.
+*   **Branches:** Code is stored in different **branches** (versions). Different repositories can hold different combinations of these branches (e.g., Server A has branches A, B, C; Server B has A, C, D).
+*   **No Master Version:** There is no single "master" version as branch versions differ across repositories.
+
+### C. TFS (Team Foundation Server)
+
+*   **Product:** Microsoft product.
+*   **Features:** Comprehensive suite for software development, including:
+    *   Source Code Management (Team Foundation Version Control)
+    *   Reporting
+    *   Requirements Management
+    *   Project Management (Agile, Waterfall)
+    *   Automated Build
+    *   Lab Management
+    *   Testing
+    *   Release Management
+*   **Integration:** Designed to work best with Microsoft Visual Studio or Eclipse.
+*   **Architecture:** Integrated repository based on **SQL Server**. Stores all development activity information for team collaboration.
+
+---
+
+## II. Software Maintenance
+
+### A. Importance of Software Maintenance
+
+*   **High Cost:** Maintenance accounts for about **60%** of total software process costs and application lifecycle costs.
+*   **Cost Breakdown:**
+    *   **60%** on functional enhancement.
+    *   **17%** on error correction.
+    *   **18%** on adaptability (supporting other platforms).
+    *   **5%** on refactoring (restructuring code without changing external behavior).
+*   **Purpose:** To extend software's useful life, adapt to changes, correct errors, and improve performance.
+*   **Vitality:** Well-maintained software remains "fit for use." Poor maintenance leads to obsolescence.
+*   **Criticality:** More important and resource-intensive than initial development.
+
+### B. Definition of Software Maintenance
+
+*   **Phase:** The last phase of the **SDLC (Software Development Life Cycle)**.
+*   **Focus:** An operation-oriented phase.
+*   **Goal:** To extend software life by:
+    *   Correcting errors.
+    *   Improving functions and performance.
+    *   Adapting to changed environments or modifying original requirements.
+
+### C. Purposes of Software Maintenance (Why it's important)
+
+1.  Maintenance costs are often higher than initial development costs.
+2.  Increased complexity of software leads to more administrative tasks (e.g., documentation).
+3.  Software use periods are often longer than development periods, emphasizing ongoing management.
+4.  Increased maintenance work due to the widespread use of package development.
+
+### D. Types of Software Maintenance
+
+Maintenance is classified by reason, time, and target.
+
+#### 1. By Reason:
+
+*   **Corrective Maintenance:** Fixing identified errors, bugs, or defects in the software.
+*   **Adaptive Maintenance:** Modifying software to adapt to changes in the data environment, infrastructure, or platform (e.g., new OS version).
+*   **Perfective Maintenance:** Enhancing software by adding new features, changing existing functionalities, or improving performance/quality (e.g., optimizing code).
+
+#### 2. By Time:
+
+*   **Scheduled Maintenance:** Planned, periodic maintenance performed at regular intervals.
+*   **Preventive Maintenance:** Proactive measures taken to prevent future errors or performance degradation.
+*   **Emergency Maintenance:** Urgent maintenance performed to address critical issues that require immediate attention (approval may follow later).
+
+#### 3. By Target:
+
+*   **Data/Program Maintenance:** Processing related to data conversion or changes in the program itself.
+*   **Documentation Maintenance:** Updating or changing documentation (e.g., user manuals, technical specifications) to match software changes.
+*   **System Maintenance:** Overall maintenance of the entire system.
+
+---
+
+## III. Software Maintenance Activities
+
+### A. Software Maintenance Procedure
+
+1.  **Understanding Current Software:**
+    *   Analyze program structure, variables, data structures.
+    *   Understand application field and business knowledge.
+    *   Determine maintenance type and strategy (modification vs. new).
+2.  **Requirements Analysis:**
+    *   Identify specific targets for change (e.g., which program needs modification).
+    *   Quickly understand how a maintenance request affects the existing system.
+3.  **Identifying and Modifying the Scope of Impact:**
+    *   Determine how software changes will affect existing functions.
+    *   Perform necessary program changes and modifications.
+    *   This step can be easy or require significant effort, depending on the software's **ease of maintenance**.
+4.  **Test/Maintenance:**
+    *   Perform testing to ensure changes work correctly and don't introduce new issues.
+    *   Update documentation.
+    *   Perform configuration management (version control of changes).
+
+### B. Ease of Maintenance
+
+**Ease of Maintenance:** A characteristic indicating how difficult it is to maintain software. Improving this during development is crucial.
+
+*   **Ease of Use:** How easy it is to understand an application or program.
+*   **Ease of Modification:** How easy it is to change an application or program.
+*   **Ease of Testing:** How easy it is to verify the accuracy of an application or program.
+
+### C. Improving Ease of Maintenance During Development
+
+Systematic activities during development can significantly reduce future maintenance costs:
+
+*   **Analysis Activities:** Clearly define customer requirements and constraints; validate product viability.
+*   **Standards and Guidelines:** Establish various standards and guidelines to simplify future maintenance.
+*   **Design Activities:** Prioritize clarity, modularity, and ease of change in design.
+*   **Implementation Activities:** Apply standard structures and consistent coding styles.
+*   **Supporting Documents:** Provide comprehensive guides and test manuals essential for maintenance activities.
+
+### D. Software Maintenance Organizations
+
+*   **Definition (IEEE/EIA 12207):** An organization or team responsible for performing maintenance activities.
+
+================================================================================
+ORIGINAL TEXT (First 5000 chars)
+================================================================================
+
+--- Page 124 ---
+Software  Development )
+B) Subversion  (SVN)
+Subversion  is an open-source  version control system. It is also abbreviated  as “SVN” using the command  used
+in the command-line  interface. Subversion  was first developed  by CollabNet  Inc. in 2000 to replace  the limited
+CVS.
+Currently,  it is being further  developed  with developer  communities  all over the world as a top-level  Apache
+project. Subversion  is based on  the server-client  model. The server can run in a working  computer  or in
+a separate  computer  connected  over the network.  In the case of centralized  version control systems  like
+Subversion,  multiple  clients check-out  and use files from the central server.
+C) Distributed  repository  (Git)
+Distributed  version control systems  such as Git copy the entire repository,  instead of directly  downloading
+the last snapshot  by the client. If a problem occurs at the server, the server can be restored using the copy
+held by the client. In the case of a distributed  repository,  source codes can be saved in multiple  servers  or the
+local PCs of multiple  developers,  rather than in just one central server. Therefore,  each server or PC becomes
+a source code repository.  The source code saved in each repository  is not the same version, but the code is
+stored in different  branches.  That is, branch versions  A, B, and C can be saved in the server A, whereas  branch
+versions  A, C, and D can be saved in the server B. Therefore,  there is no concept  of a master version in the
+system itself because  the branch versions  in each repository are all different  and the locations  for accessing
+and retrieving  the source code are all different.
+D) TFS (Team Foundation  Server)
+Team Foundation  Server (TFS) is a Microsoft  product  that provides  various features,  such as source code
+management  (Team Foundation  version control), reporting,  requirements  management,  project management
+(agile software  development,  waterfall  model), automated  build, lab management,  testing, and release
+management.  Although  TFS can be used as a backend  for numerous  integrated development  environments,  it
+is designed  to offer the best benefits  when used as a backend  for Microsoft  Visual Studio or Eclipse (Windows
+and non-Windows  platforms).  TFS is an integrated  repository  based on the SQL Server. TSF stores all
+information  related to the software  development  activities  of the development  team - such as source codes,
+deliverables,  development  activities,  etc. - to enable the team to collaborate  more effectively.
+M1 Software  development  123
+
+
+--- Page 125 ---
+ESSENCE
+>> Recent  trends and major issues
+IT companies  spend 60% of their application  lifecycle  costs intensively in the software  maintenance
+phase. Accordingly,  they are more interested  in maintaining  software  systematically  and thus perform
+activities  aimed at extending  the actual use period of software  through  systematic  management  and
+at acquiring  high-quality  software.
+>> Learning  objectives
+1. To be able to explain the concept  and types of software  maintenance.
+2. To be able to explain  the activities  and processes  of software  maintenance.
+>> Keywords
+- Concept  of software  maintenance
+- Process  of software  maintenance
+124 TOPCIT  ESSENCE
+
+
+--- Page 126 ---
+Software  Development )
++ Preview  for practical  business Do we need to maintain  software?
+Maintenance  costs account  for 60% of the entire software  process cost, of which 60% is spent on
+functional  enhancement.  Of the remaining  40%, 17% is spent on error correction,  18% on maintaining
+adaptability  to support  other platforms,  and 5% on refactoring.
+Error correction  -
+17%
+Maintenance  - 60%
+Software  maintenance  is the continuous  modification  and supplementation  of fully developed
+software that is currently  in use, for the purpose  of adapting  it to changes  in the environment,
+correcting  errors, and improving  its performance.  To reduce maintenance,  the system must be
+properly  developed  so that it can flexibly  adapt to environmental  changes.
+After its development,  software  will be continuously  modified  and supplemented  from the beginning
+of its use until its final disuse for various  reasons.  Software  is a system that is directly  connected  to a
+person's  consciousness  or behavior.
+Therefore,  if the software  is not well maintained,  it will lose its vitality, that is, it will no longer be fit
+for use. Therefore,  software  maintenance  is more important  than initial development,  and requires
+more effort and cost.
+(Source: Doosan  Encyclopedia]
+M1 Software  development  125
+
+
+--- Page 127 ---
+ESSENCE
+01 Concept  and Tupes of Software  Maintenance
+A) Definition  of software  maintenance
+Software  maintenance  is the last phase of the SDLC (Software  Development  Life Cycle). It is an operation-
+oriented  operational  phase that extends  the life of software,  and comprises  a series of tasks ...

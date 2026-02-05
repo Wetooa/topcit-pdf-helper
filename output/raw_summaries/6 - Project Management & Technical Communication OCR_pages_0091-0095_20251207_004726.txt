@@ -1,0 +1,201 @@
+LEARNING GUIDE: Pages 91-95
+Generated: 2025-12-07 00:47:26
+PDF: 6 - Project Management & Technical Communication OCR
+
+================================================================================
+LEARNING GUIDE
+================================================================================
+
+Here's a simplified, easy-to-read learning guide based on the provided text, designed for quick study:
+
+---
+
+## Project Schedule Management: Learning Guide (Pages 91-95)
+
+### 1. Core Concept & Importance
+
+*   **Problem**: Overconfidence in resources leads to project delays and missed deadlines.
+*   **Solution**: Project schedules must be realistic, based on the project's **scope** and available **resource capacity**.
+*   **Goal**: Systematically manage the project timeline to ensure completion on time.
+
+### 2. Learning Objectives
+
+By the end of this section, you should be able to:
+1.  Explain the concept and process of schedule management.
+2.  Understand schedule management techniques.
+3.  Identify schedule compression techniques (Crashing, Fast Tracking - mentioned as keywords, but not detailed in this extract).
+
+### 3. Key Terminology
+
+*   **Schedule Management Process**: Planning, activity definition, activity sequencing, activity resource estimation, activity duration estimation, schedule development, schedule control.
+*   **Activity Duration Estimation Techniques**: One-point estimating, three-point estimating, analogous estimating, parametric estimating, expert judgment.
+*   **Schedule Management Techniques**: Critical Path Method (CPM), Critical Chain Method (CCM).
+*   **Compression Techniques**: Crashing, Fast Tracking.
+*   **Schedule**: A display of activity start and finish dates, derived from analyzing durations, relationships, resources, costs, and uncertainties. More than a simple timetable.
+*   **Sprint**: In Agile, a short, iterative development cycle for a part of the project.
+*   **Retrospective**: A meeting at the end of a sprint to discuss progress and adjust future plans.
+
+### 4. Why Schedule Management Matters
+
+*   Projects have a definite **start and end date** (delivery date).
+*   Systematic schedule management helps prevent project failure due to delays.
+*   It breaks down projects into smaller, manageable units, allowing for iterative adjustment.
+*   **Benefits of a well-written schedule**:
+    *   **Feasible Planning**: Sets realistic timelines.
+    *   **Project Overview**: Provides a complete picture for the team and stakeholders (clients, management).
+    *   **Effective Control**: Identifies areas needing focused management.
+    *   **Clear Communication**: Conveys a lot of project information efficiently.
+
+### 5. Modern Approaches: Agile Process
+
+*   Driven by intense market competition and diverse technical development.
+*   **Agile Process** (e.g., XP, Scrum) uses rapid, iterative development.
+*   **Sprints**: Short development cycles for parts of the project, repeated to increase completion.
+*   **Retrospective**: A procedure at the end of each sprint for team communication and realistic adjustment of future plans.
+
+### 6. Understanding the Project Schedule
+
+*   **What is a Schedule?**
+    *   A visual representation (tables, graphs, network diagrams) of project activities' start and finish dates.
+    *   It's based on comprehensive analysis of activity duration, dependencies, resources (human/physical), costs, project uncertainty, and working conditions.
+    *   **Distinction**: A schedule is *not* a simple timetable; it logically links factors affecting project time and cost.
+
+*   **Common Schedule Formats**:
+    *   **Network Schedule**:
+        *   Illustrates relationships between activities.
+        *   Used for project planning.
+        *   Good for showing individual activity progress.
+    *   **Gantt Chart**:
+        *   Mainly for reporting to management.
+        *   Shows when milestones are executed.
+    *   **Milestone Chart**:
+        *   Simplest form, suitable for high-level reporting (clients, management).
+        *   Focuses on important project checkpoints (milestones) with zero duration.
+
+### 7. Schedule Management Process
+
+Schedule management involves a series of steps to plan and control the project timeline:
+
+1.  **Schedule Management Planning**:
+    *   Develop a **Project Schedule Management Plan**.
+    *   This detailed plan is created by sharing project approval, project management plan, and rules for measuring the schedule with the team.
+    *   It's a crucial document; any changes require approval from the project steering committee and must be recorded.
+
+2.  **Activity Definition**:
+    *   Identify and document all activities needed to create project deliverables.
+    *   Based on project scope and requirements.
+    *   Activities are refined iteratively through **Rolling Wave Planning** and **Work Breakdown System (WBS)**.
+
+3.  **Activity Sequencing**:
+    *   Arrange defined activities in a logical order by identifying relationships between them.
+    *   **Logical Relationships between Activities**:
+        *   **Finish-to-Start (FS)**: Successor activity cannot start until predecessor activity finishes. (Most common)
+            *   *Example: Develop product AFTER screen design finishes.*
+        *   **Finish-to-Finish (FF)**: Successor activity cannot finish until predecessor activity finishes.
+            *   *Example: Analysis finishes ONLY when writing AND deletion of text finish.*
+        *   **Start-to-Start (SS)**: Successor activity cannot start until predecessor activity starts.
+            *   *Example: Development activities can start ONLY when planning begins.*
+        *   **Start-to-Finish (SF)**: Successor activity cannot finish until predecessor activity starts.
+            *   *Example: In 3-shift work, Shift B (successor) can leave only when Shift A (predecessor) comes to work.*
+
+4.  **Activity Duration Estimation**:
+    *   Estimate the time required for each activity, considering allocated resources.
+    *   **Estimation Methods**:
+        *   **Expert Judgment**: An expert uses experience from similar projects to estimate resources and duration.
+        *   **Analogous Estimating**: Refers to similar past projects for estimation (less accurate than parametric methods, but good when data is limited).
+        *   **Three-point Estimating**: A risk-based technique, especially useful with limited experience. It uses three estimates:
+            *   **Optimistic (O)**: Best-case scenario, shortest duration.
+            *   **Most Likely (M)**: Realistic estimate, average duration.
+            *   **Pessimistic (P)**: Worst-case scenario, longest duration.
+            *   **Calculation Formula (from PERT)**: `(O + 4M + P) / 6`
+            *   *Example: If O=4 days, M=6 days, P=10 days, then Duration = (4 + 4*6 + 10) / 6 = 6.3 days.*
+            *   **PERT (Program Evaluation and Review Technique)**: The technique behind three-point estimation. It predicts project schedule while considering various risk factors and fluctuations.
+
+5.  **Schedule Development**:
+    *   Create the final project schedule by combining and analyzing activity sequences, estimated durations, resource needs, and any schedule constraints.
+
+6.  **Schedule Control**: (Mentioned as a process step, but details are not provided in this extract).
+    *   This involves monitoring project status, managing changes to the schedule, and influencing factors that create schedule changes.
+
+---
+
+================================================================================
+ORIGINAL TEXT (First 5000 chars)
+================================================================================
+
+--- Page 91 ---
+ESSENCE
+>> Recent  Trends  and Major Issues
+If you are overconfident  about resource  capacity  for scheduling,  it is difficult to comply with the
+delivery  date of the project, if the schedule  is delayed in the latter half of the project. Therefore,  the
+product  schedule  should be based on the scope of requirements  and the capacity  of resources.
+>> Learning  Objectives
+1. To be able to explain the concept  and process  of schedule  management.
+2. To be able to explain schedule  management  techniques.
+3. To be able to explain schedule  compression  techniques.
+>> Keywords
++ Schedule  management  process: schedule  management  planning,  activity definition,  activity
+sequencing,  activity  resource  estimation,  activity  duration  estimation,  schedule  development,
+schedule  control
++ Activity  duration  estimation  techniques:  one-point  estimating,  three-point  estimating,  analogous
+estimating,  parametric  estimating,  expert  judgment
++ Schedule  management  techniques:  Critical Path Method  (CPM), Critical Chain Method  (CCM)
++ Compression  Techniques:  Crashing,  Fast Tracking
+90 TOPCIT  ESSENCE
+
+
+--- Page 92 ---
+Project Management  and Technical  Communication  )
++ Preview  for practical  business
+One of the characteristics  of the project is that “it has the beginning  and the end’, which means
+that “there is a fixed timeline”  or “a delivery  date’. In other words, as time precisely  heads toward  the
+delivery  date, it is necessary  not only to work efficiently  work in the project execution  process, but
+also to minimize  errors or unnecessary  work.
+Nevertheless,  there are cases in which the delivery  date of the project is delayed,  resulting  in a
+“project  failure”.
+Accordingly,  an approach  to systematically  manage  the schedule  is being adopted, and one is to
+break down the project schedule  into smaller  units and repeat them to fulfill the schedule.  In other
+words, you adjust the schedule  according  to the situation  while estimating  the future schedule
+based on the tasks already  completed.  This concept  is nothing  new but has become  more necessary
+as market  competition  intensifies  or technical  development  diversifies.
+One example  is the Agile Process,  which is based on rapid and iterative  development  through
+XP (eXtreme  Programming)  or Scrum. In other words, a short schedule  of developing  part of  the
+whole is called a “sprint”, and these sprints are performed  several times to increase  the degree of
+completion.  At the end of the sprint, there is a procedure  called “retrospective”  to allow participants
+to communicate  in a free atmosphere  and to realistically  adjust future plans.
+M6 Project  Management  and Technical  Communication  91
+
+
+--- Page 93 ---
+ESSENCE
+01 Concept  and Process  of Schedule  Management
+A) Concept  of schedule  management
+@ Schedule
+A schedule  is a display of the start and finish dates of each of the activities  that make up the project  and can
+be expressed  in various  formats  such as tables, graphs,  and network  diagrams.
+However,  the date information  displayed  in the schedule  is determined  based on a comprehensive  analysis  of
+the duration,  sequential  relationships,  human and physical resources  required  of the activities,  input costs, the
+uncertainty  of the project progress,  and the working  conditions.  It is distinct  from the timetable  for a simple
+goal.
+@ Importance  of Schedule
+The schedule  is distinguished  from the timetable  as it describes  in a logical manner  the factors  that affect the
+overall project  execution  time and cost, such as the dependency  between  activities  and the type and quantity
+of resources  required  for each activity,  in addition  to the arbitrary  relationship  between  work and time. Writing
+a schedule  is important  as it functions  as follows:
++ Useful planning:  you can set a feasible  timeline  by reasonably  estimating  the duration  of the project.
++A bird's eye view of the project: you can get a full understanding  of what the project is and how it is
+executed.  In addition,  the completed  schedule  is a good tool to explain the project team's plans to
+stakeholders  such as clients and the management.
++ Effective  control: resources can be concentrated  by identifying  areas that need intensive  management
+through  schedule  analysis.
++ Effective  communication:  the schedule  itself expresses  a lot of information  about the project. Thus, a well-
+written  schedule  allows for effective  communication.
+® Format  of Schedule
+Schedules  can take many formats.  The most common  schedule  formats  in project management  are as follows.
+<Table 39> Pros and Cons of Each Type of Schedules
+Scheduli! Pros and Cons
+Network + Illustrate  the relationship  between  activities.
+schedule + Used for project planning
++ Effective  representation  of the progress  of each activity
+Gantt chart + Mainly used for reporting  to management
++ Describe  merely  w...

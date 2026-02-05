@@ -1,0 +1,30 @@
+ESSENCE
+®loT services  and interface
+It is necessary  to use ontology-based  semantic  web technology,  cloud computing  for large-scale  distributed
+processing,  and open API for accessing  various  services,  to automatically  analyze  and share data collected  from the
+sensor  of an object.
+D) Main loT protocols
+Protocols  for loT require lightweight  the most, and since they have been commonly  used for some time, protocols
+that feature compatibility  and scalability  are preferable.  In particular  CoAP and MQTT are suitable  for small devices
+that need to connect  to the Internet  and transmit  data, due to the nature of loT, and are proposed  as communication
+protocols  in various  architectures.
+@ CoAP (Constrained  Application  Protocol)
+CoAP is a lightweight  application  layer protocol,  developed  by the IETF CORE Working  Group, for communication
+between  objects. Although  it uses the UDP transport  layer above the IP layer, it is designed  independently  of the
+lower layers and can operate  in other networks  and transport  layers. It has reduced  the message  size to reduce end-
+point load and uses binary  encoding  to facilitate  encoding  and decoding.
+Application  Layer
+Transport  Layer
+(TCP/UDP)CoRE WG CoAP REST
+es CoAP Transactions
+Nea  me
+(Pv4/IPv6) ETP Sencar (ow)
+Adaptation  Layer 6LOWPAN  WG
+IEEE 802.15.4
+[Figure 148] CoAP Conceptual  Diagram
+CoAP has attracted  attention  as the main protocol  for loT, since it communicates  with endpoints  using Zigbee, rather
+than fast and stable Ethernet  or Wi-Fi.
+@MQTT  (Message  Queue Telemetry  Transport)
+MQTT is a publish-subscribe-based  protocol  for delivering  lightweight  messages  at low speed in high-latency  and
+unreliable  networks.
+214 TOPCIT  ESSENCE

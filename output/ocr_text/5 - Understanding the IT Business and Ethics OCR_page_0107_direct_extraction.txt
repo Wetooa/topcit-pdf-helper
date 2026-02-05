@@ -1,0 +1,46 @@
+ESSENCE
+and to improve  the IT service life cycle.
+<Table 50> ITIL v3 process
+Process Contents Key activities
++ IT service  strategy  planning.
++ IT service  organization  and relationship
+specification. + Planning  and organization.
+Service  Strategy . IT investment  management. .  Understanding  of customers.
++ Dissemination  of top management's  goals and _ + Determining  the order of priority  of
+policies. competition  and investment.
++ HR management.
+* Compliance  with outside  requirements.
++ Negotiation  and contract  drafting  through « Adoption  and deployment.
+requirement  analysis. + Design based on requirement,
+Service  Design + Service  solution  design. ’
+application,  system,  process
++ Alternative  solution  evaluation  and :
+consideration.procurement  of preferred  solution.
++ Release  planning  and preparation.
++ Build, test and service  pilot.
++ Establishment  and preparation  of transition
+plan.
++ Transition,  adoption  and disposal.
++ Service  transition  review and termination.+ Operation  and support.
++ Transition  plan.
++ Service  verification  and testing.Service  Transition
++ Monitoring  and control
++ Customer  request  processing  and
+communication  management. + Monitoring  efficiency  in
+Service  Operation + Event, incident,  problem  management. management.
++ Service  level metrics  management. + Safety, accessibility  management.
++ Strategy/design/implementation  phase
+participation.
++ Service  report analysis  and trend
+identification.
++ Establishment  of baseline  of performance + Continual  service  improvement.
+Continual  Service  Improvement evaluation  and service  results. + PDCA® Model implementation.
++ Operation  of service improvement  program. + Service  report and measurement.
++ Feedback  across the strategy/design/
+implementation  phases.
+ITIL v3 consists  of 5 process  areas. This 5-step process  of continuous  service improvement  (Service  Strategy  >
+Service Design — Service Implementation  — Service Operations)  is a continuous,  repeated  cycle. In particular,  the
+performance  evaluation  (ROI) area was strengthened  in ITIL v3 because  it was deficient  in v2. By reflecting  the
+performance  results back into service  strategy,  ITIL v3 further  strengthens  the IT service  capabilities  of an enterprise.
+6 PDCA: Plan - Do - Check  - Action cycle model
+106 TOPCIT  ESSENCE

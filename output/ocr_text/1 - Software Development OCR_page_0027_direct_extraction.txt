@@ -1,0 +1,36 @@
+ESSENCE
+@ Testing
++ Testing refers to a series of processes  to inspect  and evaluate  whether  the system satisfies  the prescribed
+requirements,  and how the expected  and actual results differ, using the manual or automated  method.
++ Testing  is the final step in assuring  software  quality. It is a series of tasks designed  to find faults so as to
+ensure software  quality.
++ Testing includes  a quality evaluation  of the developed  software  and a series of modification  tasks for improving
+quality.
+04 Agile Development  Methodology
+A) Types of agile methodologies
+Since the release of the Agile Manifesto  for Software  Development,  various agile methodologies  have emerged.
+Among them, Scrum and Extreme  Programming  (XP) are the most widely adopted  agile methodologies
+throughout  the world. XP was mainly used in the early days, but Scrum and XP are generally used together
+these days, as Scrum has gained popularity.  Recently,  the Lean software  development  methodology,  whereby
+the lean production  method of the Toyota system is applied to software development,  has emerged.  It is
+mainly used with Scrum.
+The main agile methodologies  are as follows:
++ Scrum, Ken Schwaber/Jeff  Sutherland
++ EXtreme  Programming  (XP), Kent Beck/Erich  Gamma
++ Lean software  development  methodology,  Mary Popendic/Tom  Poppendieck
++ Agile Unified Process  (AUP), Scott Ambler
+B) Agile development  methodology  - XP
+@ XP overview
+XP (eXtreme  Programming)  is a methodology  that was established  by Kent Beck and several other engineers
+in the late 1990s, based on the lessons they learned while implementing  projects.  This methodology  is a
+lightweight  development  method generally  suitable for small and medium-sized  development  organizations.
+There is some controversy  about whether  to define XP as a “methodology”  because  it is largely related to
+development  techniques  such as Test-Driven  Development  (TDD), Daily Build, and Continuous  Integration.  In
+Korea, small development  teams usually apply some of the techniques.  In addition,  more teams apply additional
+agile development  methods  such as Scrum together,  rather than insisting  on XP alone. XP is composed  of
+the value and the practice  of achieving  the value when it is applied, and a principle  is needed to maintain  the
+balance between  the two. XP is a kind of iterative  development  methodology.  There are several iterations
+during the course of a project,  and tasks are repeatedly  performed  depending  on the test results.
+@ XP development  procedure  and terminology
+The XP development  procedure  is performed  as shown in the following  figure.
+26 TOPCIT  ESSENCE

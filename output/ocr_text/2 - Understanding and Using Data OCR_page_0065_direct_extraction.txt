@@ -1,0 +1,32 @@
+ESSENCE
+B) Chasm  trap
+@ The chasm trap means that desired information  cannot be found due to the disconnection of the information  flow
+when there is an optional  relationship  rather  than a mandatory  relationship.
+@ ([Figure  26]) shows an example  of the chasm trap.
++ [Figure 26(a)] shows a case in which several branches  are registered  in one branch, with each vehicle being owned
+by one employee.
++ In this case, we can know to which branch the employee  who owns a vehicle belongs,  but we cannot  know to which
+branch the employee  who does not own a vehicle  belongs.
+* To eliminate  the chasm trap, a relationship  that is missing,  even though it is required  in terms of meaning,  should be
+explicitly  linked again ([Figure  26(b)]).
+Branch
+1
+Management
+N
+1 1Vehicle <Giresip> Employee
+(a) Chasm traps exist
+NBranch a <Gwet>
+1
+Management
+N
+1 1
+Vehicle Employee
+(b) Chasm traps are removed
+[Figure  26] Chasm trap
+* However,  in [Figure 26] some employees  own a vehicle,  and some do not.
+08 Object-Relational  Mapping  (ORM)
+Object-relational  mapping  means that the table of the relational  database  corresponds  to the class used in the
+object-oriented  design.
+A) Class conversion
+@ Each class corresponds  to a table.
+64 TOPCIT  ESSENCE

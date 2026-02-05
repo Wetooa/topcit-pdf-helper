@@ -1,0 +1,39 @@
+ESSENCE
+The following  table shows well-known  ports for widely used TCP services.  These services  include FTP for file transfer,
+SSH, for secure remote  login, SMTP, POP3, and IMAP4, to send and receive  e-mail, and HTTP for web services.
+{Table 60) Well-known  TCP Ports
+Service TCP Port Service TCP Port
+FTP [4] 21 (for control)  and 20 (for data) FTP [8] 53 (also using UDP port 53)
+SSH [5] 22 HTTP [9] TCP 80
+Telnet [6] 23 POP3 [10] 110
+SMTP [7] 25 IMAP4 [11] 143
+B) Virtual  TCP operation  scenario
+The figure below shows  a case of data transfer  on the TCP protocol layer when user A enters the my.server.com
+homepage  and downloads  the my.pdf  file The web browser  exchanges  requests  and responses: the transport  layer
+protocol,  TCP deliver an application  layer program,  and the webserver  Httpd. Here, the discussion  focuses  on the
+operation  of the TCP protocol.
+1.1 Connection  Request
+to Webserver
+1.2°GET  / HTTP /1.1° transmitteddicedTransmitting
+NACo RetTransmitting
+@ Connection  Request
+Request  for
+homepage @GET / HTTP  / 1.1
+200 Acknowledgment
+: @ HTTP / 1.1 200 OK (text/html)
+received
+@ Connection  terminated
+2.1 Connection  Request  to
+Webserver
+© SYN + ACK
+@ACK
+® GET / my.pdf HTTP / 1.122 °GET /my.pdf---”
+transmittedRequest  for my.pdf
+segments1
+t
+’ @ my  pdf data segment 1 1 my.pat ¢I/m)
+t+ — Repeat
+1@ mypdf data segment  m I my.paf (m/m)
+i206 Acknowledgment
+received
+182 TOPCIT  ESSENCE

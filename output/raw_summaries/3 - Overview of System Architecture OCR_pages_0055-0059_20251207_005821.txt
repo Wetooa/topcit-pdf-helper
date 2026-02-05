@@ -1,0 +1,232 @@
+LEARNING GUIDE: Pages 55-59
+Generated: 2025-12-07 00:58:21
+PDF: 3 - Overview of System Architecture OCR
+
+================================================================================
+LEARNING GUIDE
+================================================================================
+
+Here's a simplified, easy-to-read learning guide based on the provided text:
+
+---
+
+# Learning Guide: Operating System Concepts
+
+## 1. Scheduling Algorithms (Continued)
+
+This section summarizes various process scheduling algorithms.
+
+*   **Deadline:**
+    *   **Purpose:** Ensures a process completes within a specified time limit.
+    *   **Characteristic:** High overhead; deadline must be recalculated frequently.
+    *   **Type:** Non-preemptive.
+*   **HRN (Highest Response-ratio Next):**
+    *   **Purpose:** Addresses the issue of long jobs waiting too long (common in SJF).
+    *   **Priority Calculation:** `(Waiting time + Execution time) / Execution time`
+    *   **Type:** Non-preemptive.
+*   **MLQ (Multi-Level Queue):**
+    *   **Method:** Uses multiple queues, each with its own unique scheduling algorithm.
+    *   **Processing:** Jobs are processed by time slices within each queue.
+    *   **Type:** Preemptive.
+*   **MFO (Multi-Level Feedback Queue):**
+    *   **Method:** Processes jobs through multiple "feedback" queues.
+    *   **Benefit:** Increases efficiency of CPU and I/O devices.
+    *   **Type:** Preemptive.
+
+---
+
+## 2. Virtual Memory Unit (VMU)
+
+### 2.1 What is Virtual Memory?
+
+*   **Problem:** Operating systems often have limited physical main memory.
+*   **Solution:** Virtual memory makes a small main memory *logically* appear as a large one, by using a large-capacity auxiliary memory (like a hard drive) as if it were main memory.
+*   **VMU:** Not a physical device; it's a technique that maps virtual addresses to physical main memory addresses to execute programs.
+
+### 2.2 Implementing Virtual Memory
+
+*   **Addresses:**
+    *   **Virtual Address:** The address processes refer to.
+    *   **Physical Address:** The actual location in main memory.
+*   **MMU (Memory Management Unit):** A hardware component that quickly converts virtual addresses to physical addresses when a process needs to access memory.
+*   **Techniques (based on memory block configuration):**
+
+    *   **A) Paging Technique:**
+        *   **Main Memory:** Divided into fixed-size blocks called **frames**.
+        *   **Process/Task (in Virtual Memory):** Divided into fixed-size blocks called **pages**.
+        *   **Loading:** Pages are loaded into frames.
+    *   **B) Segmentation Technique:**
+        *   **Process/Task (in Virtual Memory):** Divided into variable-size **segments**, which are logical units.
+        *   **Loading:** Segments are loaded into main memory.
+        *   *Note: Some systems combine both paging and segmentation.*
+
+### 2.3 Page Replacement Techniques
+
+When main memory is full and a new page needs to be loaded, an existing page must be replaced. The choice of technique affects system efficiency.
+
+*   **Optimal Technique:**
+    *   **Method:** Replaces the page that will *not be used for the longest time in the future*.
+    *   **Reality:** Impractical; impossible to predict future behavior. Serves as a theoretical benchmark.
+    *   **Benefit:** Minimum page fault rate.
+*   **FIFO (First In First Out) Technique:**
+    *   **Method:** Replaces the *oldest* page in main memory (the one loaded first).
+*   **LRU (Least Recently Used) Technique:**
+    *   **Method:** Replaces the page that has been *unused for the longest time in the past*. (Assumes past usage predicts future usage).
+*   **LFU (Least Frequently Used) Technique:**
+    *   **Method:** Replaces the page that has been used the *least frequently*. Tracks usage count.
+*   **NUR (Not Used Recently) Technique:**
+    *   **Method:** Replaces pages that haven't been used recently, assuming they are less likely to be used soon.
+
+### 2.4 Factors Affecting Virtual Memory Performance
+
+*   **Locality:**
+    *   **Definition:** The tendency of a program to intensively reference only a small portion of its memory (pages) during execution.
+    *   **Types:**
+        *   **Temporal Locality:** If a memory location is accessed, it's likely to be accessed again soon.
+        *   **Spatial Locality:** If a memory location is accessed, nearby locations are likely to be accessed soon.
+*   **Working Set:**
+    *   **Definition:** The set of pages actively referenced by a process over a specific period.
+    *   **Benefit:** Keeping the working set in main memory reduces page faults and page replacements, improving efficiency.
+*   **Thrashing:**
+    *   **Definition:** A severe performance degradation where the CPU spends most of its time swapping pages in and out of memory (page replacement) instead of doing useful work. CPU utilization drops.
+    *   **Prevention:**
+        *   Reduce the degree of multiprogramming (fewer processes running concurrently).
+        *   Ensure working sets are in main memory.
+
+---
+
+## 3. File System
+
+### 3.1 Understanding the File System
+
+*   **Purpose:** Organizes and stores data (OS programs, user data) for quick retrieval and access. Provides a directory structure for managing all files.
+
+### 3.1.1 Concept of a File
+
+*   **Definition:** A named collection of data stored on auxiliary memory (e.g., disk, tape).
+*   **OS Role:** Maps files to physical storage devices. When data is written to a file, it's permanently stored on a non-volatile physical device.
+
+### 3.1.2 File Attributes
+
+Properties used to identify and manage files:
+
+*   **Name:** A human-readable identifier for the file.
+*   **Location:** Pointer to the device and specific location on disk, including its directory path.
+*   **Size:** Current size (e.g., in bytes) and maximum allowed size.
+*   **Protection:** Controls who can read, write, or execute the file.
+*   **Time, Date, User Identification:** Records creation time, last modification time, last access time, and the user/owner ID.
+
+### 3.2 Concept of a Directory
+
+*   **Definition:** A logical structure used to manage a large number of files (potentially gigabytes or terabytes). It stores information about all files.
+*   **Common Directory Actions:**
+    *   **File Search:** Find a specific file.
+    *   **File Creation:** Add a new file entry.
+    *   **File Delete:** Remove a file entry.
+    *   **Directory List:** Display the contents (files) within a directory.
+    *   **Renaming File:** Change a file's name; the directory entry is updated.
+
+### 3.3 File System Allocation Methods
+
+How the OS allocates space on disk for files, impacting access speed.
+
+*   **A) Contiguous Allocation:**
+    *   **Method:** Each file occupies a single, continuous block of disk addresses.
+    *   **Advantages:** High read speed due to sequential storage.
+    *   **Disadvantages:** Leads to **external fragmentation** (wasted, non-contiguous space between files that cannot be used by new files).
+*   **B) Linked Allocation:**
+    *   **Method:** Files are stored in block units, and each block contains a pointer to the *next* block of the file. The directory only stores pointers to the first and last blocks of the file.
+    *   **Advantages:** Solves external fragmentation (files can be scattered).
+    *   **Disadvantages:**
+        *   Slow read speed for random access because blocks are scattered.
+        *   Requires extra space within each block to store pointers.
+        *   Vulnerable to data loss if pointers are corrupted (breaks the link).
+*   **C) Indexed Allocation:**
+    *   **Method:** Addresses the shortcomings of linked allocation. All pointers to a file's data blocks are collected in a single, dedicated **index block**. The directory then points to this index block.
+    *   **Advantages:**
+        *   No external fragmentation.
+        *   Supports **direct access** (random access) to any part of the file because all block addresses are centrally located in the index block.
+    *   **Disadvantages:** Wastes more storage space compared to linked allocation, as each file requires an entire index block, even for small files.
+
+---
+
+================================================================================
+ORIGINAL TEXT (First 5000 chars)
+================================================================================
+
+--- Page 55 ---
+ESSENCE
+- Amethod  of ensuring  that each process is completed ~ Significant  overhead and complexityDeadline , a since the deadline  must be calculated Non preemptive
+within the given time limit
+each time
+HRN(Hightest Complementing  the problem  of large jobs taking too - Priority  = (Waiting  time + Execution
+Response-ratio . on Non preemptive
+Next) much time in SJF time)/Execution  time
+MLQ(Multi-Level - Each queue using the unique schedulingQueue) - Processing  different  jobs by time slice in each queue algorithm Preemptive
+MFO(Multi-Level  — - Processing  by multiple  feedback  queues  through  a - Increased  CPU and I/O device
+‘ ; PreemptiveFeedback  Queue) readiness  queue efficiencies
+06 Virtual  Memory  Unit
+The technique  to solve the OS's limited memory  space problem uses the main memory  with a small capacity,  as a
+large capacity  with a large amount  of free space. The virtual memory  unit is not a physical  device, but it logically  uses
+a large-capacity  auxiliary  memory  device as the main memory  device. Therefore,  it is necessary  to map the address
+of the virtual memory  unit to the address  of the main memory  unit in order to execute  a program  stored in the virtual
+memory  unit.
+A) Implementing  a virtual memory  unit
+A virtual memory  unit includes  the virtual address  that processes  refer to and the physical  address  that points to
+the available  main memory.  Whenever  a process  accesses  a virtual address,  the system must quickly convert  it
+into the physical  address  through  the memory  management  unit (MMU).It  is divided into a paging technique  and
+segmentation  technique,  according  to the block configuration.  Some systems  may use a combination of both
+techniques  (see [Figure 26]).
++ Paging  technique:  This technique  partitions  the main memory  unit into fixed sizes, called frames,  and also partitions
+the task to the process  stored in the virtual memory  unit into fixed sizes, called pages, and loads them into the
+frame to run the task.
++ Segmentation  technique:  This technique  partitions  the task to the process  stored in the virtual memory  unit into
+size segments,  which are logical units of various  sizes, and then loads them into the main memory  unit to run.
+54 TOPCIT  ESSENCE
+
+
+--- Page 56 ---
+Overview  of System Architecture )
+ee  Distributed| Loading
+Logical  Memory
+Physical  Memory
+Segment Memory  Management  Unit (MMU)
+MemoryaManagement
+Distributed  loading
+according  to size
+Distributed  Loading
+a | vysical Memory
+[Figure  26] Comparison  of Paging  and Segmentation  Memory  Allocations
+B) Page replacement  technique  of the virtual memory  unit
+If all pages are filled in the paging  virtual memory  unit, free space must be created  before loading  new memory  pages
+from the auxiliary  memory  unit. The system selects  a page to replace the page replacement  technique,  affecting  the
+system  efficiency  and performance.
++ Optimal  technique:  This technique  replaces  a page that is not likely to be used for the longest  time. Although  it
+is the optimal replacement  technique  with the minimum  absent page rate, it is not a realistic  technique,  since it is
+difficult  to predict  behavior.
++ First In First Out (FIFO) technique:  This technique  tracks the order of loading  in the main memory  and replaces  the
+first loaded page.
++ Least Recently  Used (LRU) technique:  This technique  replaces  the page that has been unused  for the longest  time.
++ Least Frequently  Used (LFU) technique:  This technique  tracks each page's utilization  frequency  and replaces  the
+least used or least intensively  used page.
++ Not Used Recently  (NUR) technique:  This technique  uses the tendency  that the page not used recently  is less likely
+to be used in the near future, so it replaces  the page.
+M3 Overview  of System  Architecture  55
+
+
+--- Page 57 ---
+ESSENCE
+C) Factors  that affect the virtual memory  unit performance
++ Locality:  A tendency  to intensively  refer to only some pages while a process  is running. It is divided into temporal
+locality  and spatial locality.
++ Working  Set: A set of frequently  referred  to page lists for a certain  period to execute  a process  efficiently.  It reduces
+page absence  and page replacement  by placing  the frequently  referred  to working  sets in the main memory.
++ Thrashing:  A phenomenon  in which the CPU utilization  rate decreases  because  page replacement  takes longer than
+the processing  time. The degree  of multi-programming  is reduced,  the CPU utilization  rate is increased,  or a working
+set is used to prevent  thrashing.
+0? File System
+A) Understanding  of file system
+A file system stores related data to find and access  the OS data and programs  quickly. It is a directory  structure  that
+provides  information  on an aggregation  of files and all files in the system.
+@® Concept  of file
+It is a set of data with a name and stored in an auxiliary  memory  unit, such as a d...

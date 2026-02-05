@@ -1,0 +1,37 @@
+Software  Development )
+changes  can be limited to the data structure inside the module and the actions needed to access it, so that
+users can easily adapt themselves  to the change  and perform  maintenance.
+C) ) Stepwise  refinement
+Stepwise  refinement  is realized by gradually  moving from the program  structure  to the module details. The
+level of abstraction  decreases  during the refining process, and each function is decomposed  to present  a
+solution.  Refinement  is a process  that requires  many efforts and enables  system implementation  by allowing  a
+detailed  description.
+Design is the stepwise  refinement  process  of moving  from a high abstraction  level to a low abstraction  level.
+The flow of engineering,  ranging  from problem  description  to requirements  analysis,  design and programming,
+can also be regarded  as a stepwise  refinement  process.  Another  example  of stepwise  refinement is one in
+which a system is started as a big process  and gradually  subdivided  into small processes  that perform  detailed
+functions,  using the structural  analysis  method.
+D) Modularization
+In most cases, engineering  approaches  a system by dividing  it into components.  The component  of software  is
+a module.  When expressed  in a programming  language,  software  modules  are called subroutines,  procedures,  or
+functions.  Generally,  a system is subdivided  into functions  using a top-down  approach  when modularizing  the
+system.  In this case, a control layer appears  between  the modules.
+In addition,  modularization  enables  us to manage  systems  intelligently  and to solve the problem  of complexity.
+In other words, problems  are divided (according  to the aforementioned  principle  of “Divide and Conquer’)  into
+smaller units (modules) to solve a large and complex  problem.  Modularization  makes system maintenance
+and modification  easier. However,  if the number  of modules  increases,  the size of each module decreases
+proportionately,  system performance  deteriorates,  and overload  occurs due to an increase  in mutual exchange
+between  modules.  Therefore,  how to minimize  the interference  between  modules  by role and then play the role
+effectively  by focusing  on the purpose  becomes  the important  criterion  for module  evaluation.
+E) Structuralization
+Software  systems  can be structuralized  by the division process,  which is related to the principle  of divide and
+conquest  explained  earlier. Division is performed  first during the requirements analysis process,  and detailed
+division  occurs in the design phase.
+Analysts  have the mission of finding and dividing  important  system elements  or functions,  whereas  designers
+have the mission of structuralizing  the results of analysis.  How to divide a system is not a simple matter, and
+there are no complete  guidelines  for this. However,  we can make use of experience and the guidelines for
+existing  systems  by understanding  the characteristics  of the system.
+Several structural  frames can be found from existing  systems  depending  on the characteristics  of the system.
+The amount  of time and effort expended  can be reduced  when making  a system with similar characteristics  by
+using such frames.
+M1 Software  development  55

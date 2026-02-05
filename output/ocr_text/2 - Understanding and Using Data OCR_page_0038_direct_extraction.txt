@@ -1,0 +1,39 @@
+Database )
+Simple  and easy toimplement Easy to implement  using syntax  similar  to SQL, such as for, let, where, and return (FLWR).
+|) Concept  and characteristics  of XLL
+XLL is a standard  language  that performs  link functions  in an XML document,  such as linking XML documents  and
+setting  specific locations  within an XML document.  XLL was introduced  to overcome  the limitations  of HTML-based
+simple hyperlinks  and to provide  various approaches  to using resources  on the web. XLL supports  various hyperlink
+methods  and two-way  links between  link resources.  XLL can use  some of the required  web resources  by using
+XPointer  or XPath, and is used as a core technology  in X-Intemet,  etc.
++ Supports  two types, i.e. Xpointer  when moving  within the same document,  and XInik when moving between
+different  pages, etc.
++ Provides  a two-way  link between  resources.
++ Provides  an extended  pointer  (XPointer)  for resource  locating.
++ Link type: Simple, Extended,  Locator,  Group, Document.
+04 Understanding  Various  Database  Types
+A) Multimedia  database
+The multimedia  database  was developed  to efficiently  search and manage unstructured  multimedia  data
+characterized  by their large capacity  and complexity,  such as text, image, audio, video, etc. Existing  databases  face
+limitations  due to the exponential  increase  of unstructured/multimedia  data, and an object-oriented  approach,  the
+synchronized  representation  of multimedia,  and the concept  of time-dependent  modeling  were used to model various
+types of unstructured  data.
+<Table 17> Building  a multimedia  database
+How to build Main content
+Used for simple search-oriented  VOD (Video On Demand).
+It is difficult  to support  the function  for restoring  concurrent  data access rights (DBMS  functions  are not used.)
+Stores  ASCII text data in the CLOB (Character  Large Object)  field
+Stores the image/video/audio  in the BLOB (Binary  Large Object)  field.
+It is difficult  to build a complete  multimedia  database.
+OODBMS Defines the classes  for each media using the user-defined  class and user-defined  method  function.File based
+RDBMS
+based
+based It is incompatible  with existing  databases
+ORDBMS Supports  the CLOB and BLOB field to store mono media.
+based Defines the types for each media using user-defined  types and functions.
+B) Main memory  database  (MMDB)
+Unlike general commercial  databases  in which a database  is stored on a disk, the main memory  database  manages
+and manipulates  a database  by keeping it in the memory.  The current  trend is that the main memory  database
+is actively used due to business  demands,  such as securing  the competitiveness  of an enterprise  through quick
+decision-making,  and the revolutionary  development  of related technologies  such as the release of 64-bit OS, the
+M2 Database  37

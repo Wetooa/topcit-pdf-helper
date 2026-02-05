@@ -1,0 +1,32 @@
+Information  security )
+OWASP |  GRASP  epg | 10 - 2013 OWASP LL GRASP  ep  Isao Rely)
+- Injection Al: 2017 - Injection
+A2 - Broken  authentication  and sessionmanagement =>  | A2: 2017 - Broken authentication
+A3- Cross Site Scripting (XSS) & | A3: 2017 - Sensitive data exposure
+Ad~ insecure  direct object references  (merged | |  | ad: 2017 - XML external entities (XXE) [New]
+A5 - Security  misconfiguration MAS:  2017 - Broken  access  control [Merged]
+A6 - Sensitive data exposure a | A6: 2017 - Security misconfiguration
+Oe rene Ghee  eee U | AZ: 2017 - Cross Site Scripting  (xSS)
+“AB - “Cross  Site Request Modulation »(CSRF) |e AS: Communtyt deserialization  [New,
+AQ - Using known dnerabie components >| AS: ciecbie with known
+oelnvardaredieciecrstendiantends  A10: 2017- Insufficient  logging  and monitoring
+__ [New, Community]
+[Figure  33] OWASP  TOP 10 2017
+(Source:  https://www.owasp.org/images/b/bd/OWASP_Top_10-2017-ko.pdf)
+C) CWE(Common  Weakness  Enumeration)
+CWE is a classification  system  that MITRE, which is an affiliate of the U.S. Department  of Defense  with the
+support  of the National  Cyber Security  Division  within the Department  of Homeland  Security,  classifies
+software  weakness  items, based on the view, category, vulnerability,  and complex  elements.  (http://cwe.mitre.
+org)
+D) CWSS (Common  Weakness  Scoring  System)
+CWSS is a scoring system for determining  the relative importance  of various vulnerabilities  in architecture,
+design, code, or implementation  in software,  which can be important  security  issues of software.
+E) CVE (Common  Vulnerabilities  and Exposures)
+While CWE is a classification  system for common  vulnerabilities,  CVE is a list of security  vulnerabilities
+discovered  over time. It can be seen as a record history of discovered  security  vulnerabilities,  managed  by the
+identification system  of “CVE-Year-Sequence’”.
+F) CVSS (Common  Vulnerabilities  Scoring  System)
+CVSS is an open framework  used to assess and identify security vulnerabilities.  It consists  of three metric
+groups: basic metric group, temporary  metric group, and environmental  metric group. The result, calculated  by
+the three metric  groups,  becomes  the overall score of the vulnerability  and the priority  of the vulnerability.
+M4 Understanding  Information  Security  71

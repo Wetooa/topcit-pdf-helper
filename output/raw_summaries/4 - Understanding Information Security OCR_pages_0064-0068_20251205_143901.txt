@@ -1,0 +1,225 @@
+LEARNING GUIDE: Pages 64-68
+Generated: 2025-12-05 14:39:01
+PDF: 4 - Understanding Information Security OCR
+
+================================================================================
+LEARNING GUIDE
+================================================================================
+
+Here is a simplified, easy-to-read learning guide based on the provided text:
+
+---
+
+## Learning Guide: Business Security Management Systems
+
+This guide simplifies essential concepts of Information Security Management Systems (ISMS), Risk Management, and Personal Information Protection.
+
+---
+
+### 1. Information Security Management System (ISMS)
+
+#### 1.1 What is ISMS?
+*   **Definition:** A system that continuously manages information security measures to protect the **Confidentiality, Integrity, and Availability (CIA triad)** of information assets.
+*   **Process:** Based on risks, it involves ongoing development, implementation, operation, monitoring, review, and improvement of security systems.
+*   **Benefit:** Helps organizations quickly respond to security breaches and minimize damage by implementing comprehensive security measures.
+
+#### 1.2 Composition of ISMS
+An ISMS generally consists of four main phases:
+1.  **Establishment** of the management system
+2.  **Risk Management**
+3.  **Operation** of the management system
+4.  **Inspection and Improvement** of the management system
+
+#### 1.3 ISMS Certification Standard Overview
+*   The certification standard combines:
+    *   **5 Phases** (management system establishment/operation)
+    *   **12 Certification Criteria** (for the management system)
+    *   **92 Information Security Measures**
+*   **Total:** 104 certification criteria items.
+
+---
+
+### 2. Risk Management
+
+#### 2.1 What is Risk Management?
+*   A process to:
+    1.  **Identify** an organization's information assets.
+    2.  **Identify risks** (legal, administrative, physical, technical) associated with these assets.
+    3.  **Estimate values** for assets and risks.
+    4.  **Prepare protection measures** against risks that exceed an acceptable **Degree of Assurance (DoA)**.
+*   **DoA (Degree of Assurance):** The acceptable level of certainty or confidence in security measures.
+
+#### 2.2 Key Concepts
+*   **Risk:** The possibility that an unexpected situation occurs and negatively impacts an organization.
+*   **Risk Equation:** Risk = Function of (Assets, Threats, Vulnerabilities)
+    *   **Asset:** Something of value that needs protection (e.g., data, hardware, software).
+    *   **Threat:** A potential danger or cause of harm to an asset (e.g., malware, unauthorized access).
+    *   **Vulnerability:** A weakness in an asset or its protection that a threat can exploit (e.g., unpatched software, weak password).
+
+#### 2.3 Risk Identification
+*   Process of estimating the value of each information asset and identifying potential risks for each.
+
+#### 2.4 Risk Assessment
+*   **Purpose:** To analyze and evaluate identified risks.
+*   **Scope:** Selected based on the ISMS scope, considering business, organizational, locational, asset, and technical characteristics.
+*   **Methods:** Can be chosen based on whether risk can be quantified, or the desired approach.
+
+##### A) Risk Assessment Methods (by Quantification)
+*   **Quantitative Technique:**
+    *   **Characteristics:** Measures damages in monetary units, uses past data, mathematical formulas, or probability.
+    *   **Benefits:** Easier for cost-effectiveness analysis and budget planning, logical calculations.
+    *   **Drawbacks:** Difficult to get accurate values, time-consuming.
+*   **Qualitative Technique:**
+    *   **Characteristics:** Expresses damage as intervals (e.g., High, Medium, Low), based on expert experience/knowledge (e.g., Delphi method, scenario method).
+    *   **Benefits:** Used when damage cannot be easily quantified, easier to understand, faster analysis.
+    *   **Drawbacks:** Prone to subjective judgment, difficult for cost-effectiveness analysis.
+
+##### B) Risk Assessment Methods (by Approach)
+*   **Baseline Approach:**
+    *   **Content:** Sets a basic level of information security for all systems and implements standard protective measures.
+    *   **Pros:** Less time and cost, suitable for achieving fundamental security.
+    *   **Cons:** May not suit unique organizational characteristics, potentially leading to suboptimal security levels.
+*   **Expert Judgment Method:**
+    *   **Content:** Risk analysis based on expert knowledge and experience, rather than standardized methods.
+    *   **Pros:** Cost-effective for small organizations.
+    *   **Cons:** Lacks structured approach, making objective assessment difficult.
+*   **Detailed Risk Approach:**
+    *   **Content:** Measures asset values and risk levels, analyzes vulnerabilities, then determines risk levels and establishes specific protective measures.
+    *   **Pros:** Tailored and appropriate protective measures for the organization.
+    *   **Cons:** Requires professional knowledge, significant time, and effort.
+*   **Combined Approach:**
+    *   **Content:** Applies the **Detailed Risk Approach** to major or high-risk systems, and the **Baseline Approach** to other systems.
+    *   **Pros:** Efficient use of time and resources, quick establishment of security strategies.
+    *   **Cons:** Resources can be wasted if the target systems for each method are not clearly defined.
+
+---
+
+### 3. ISMS-P: Integrated Information & Personal Information Security Management System
+
+#### 3.1 Overview of ISMS-P
+*   **Definition:** An integrated certification system that combines the existing **Information Security Management System (ISMS)** and **Personal Information Management System (PIMS)** into a single, unified system for systematic protection.
+
+#### 3.2 Composition of ISMS-P
+*   ISMS-P consists of **102 certification criteria items**, broken down as:
+    1.  **16 criteria** for establishing and operating management systems.
+    2.  **64 requirements** for protective measures.
+    3.  **22 requirements** for each personal information processing stage.
+
+*   **Key Areas within ISMS-P:**
+    *   **Management Systems:** Laying the foundation, risk management, operation, checking, and improvement.
+    *   **Protective Measures:** Policy, organization, asset management, personnel security, outsider security, physical security, authentication/right management, access control, encryption, information system development/introduction, system/service operation/security management, incident prevention/response, disaster recovery.
+    *   **Personal Information Handling:** Protective measures for collecting, holding/using, providing, and destroying personal information, and protecting information owner's rights.
+
+---
+
+### 4. Personal Information Protection (Basic Principles)
+
+#### 4.1 Privacy Policy
+
+##### A) Obtaining Consent for Personal Information Collection
+*   **Timing:** Consent details must be presented *before* the user enters any personal information.
+*   **User Control:** Users must have the option to **accept or reject** consent.
+*   **Required Information for Consent:** When requesting consent, organizations must clearly present:
+    *   The **purpose** of collecting and using personal information.
+    *   The **items** of personal information to be collected.
+    *   The **period** of personal information retention and use.
+    *   Any **disadvantages** the user might face if they reject consent.
+
+##### B) Personal Information Destruction Method
+*   The privacy policy should reflect the method by which personal information will be destroyed (though specific methods are not detailed in this text).
+
+---
+
+================================================================================
+ORIGINAL TEXT (First 5000 chars)
+================================================================================
+
+--- Page 64 ---
+ESSENCE
++ Preview  for practical  business Security  management  system and
+standard
+Assistant  manager  Kim has continuously  check if there is a problem in the information  security
+management  system, by operating  it for two months after installation  and has improved  it through
+internal  audits.
+Since then, he applied for the certification screening  of the information  security  management  system
+and received  certification,  then decided  to confirm that the certification  is valid for three years and
+that the information  security  management  system will be maintained  every year through  a follow-up
+screening.
+Let’s review what the information  security  management  system that he has installed  and operated  is,
+as well as the available  risk management  methods  and related certification  systems  in detail.
+01 Information  security  management  system
+A) Overview  of the information  security  management  system  (ISMS)
+@® Concept  of the information  security  management  system
+The information  security  management  system refers to a system  that manages  information  security  measures
+in order to maintain  the confidentiality,  integrity,  and availability  of information  assets. It continuously
+manages  and operates  various processes,  such as information  security  system development,  countermeasure
+implementation,  operation,  monitoring  and review, and improvement,  based on risks.
+Enterprises  can quickly respond  and minimize  damage  when security  breach incidents  occur, by implementing
+comprehensive  information  security  measures  by building  and operating  the information  security  management
+system.
+@ Composition  of the information  security  management  system
+As shown in [Figure 29], the information  security  management  system consists  of the establishment  of the
+management  system, risk management,  management  system operation,  and management  system inspection
+and improvement.
+64 TOPCIT  ESSENCE
+
+
+--- Page 65 ---
+Information  security )
+Certification  standard  for the information  security  management  system
+5 phases,
+12 certification
+criteriaInformation  security  measures
+92 certification
+criteria| Establishing  information  security 1. Information  security| 7. Physical securitypolicy and setting  the scope policy
+| Executives’  responsibility  and 2. Information  security { 8. System  development
+organization  formation organization security
+4, Information  asset
+classificationImplementing  information  security
+measures | 10, Access control |
+5. Information  security
+education
+12. Breach incident
+6, Personnel  security
+13, IT disaster  recovery
+Number  of
+(occlu iced euler) V7 manent  CeTiseS
+Information  security 92 information  protection  measures=<
+| eee  | - aoe ee  ae Conformity  assessment  on 104 certification
+criteria in total
+[Figure  29] Composition  of the information  security  management  system| Risk management | 3. Outsider security | 9, Password  control |
+| Follow-up  management | 11. Operational  security |
+B) Risk management
+As shown in [Figure 30], risk management  is a series of processes  that estimates  values, by identifying
+information  assets managed  by an organization,  identifies  risks from the legal, administrative,  physical,  and
+technical  aspect by assets, and by preparing  effective  protection  measures  against  the risk that exceeds  an
+acceptable  degree of assurance  (DoA)'.
+Asset Asset
+Threat ThreatDanger Risk Remaining
+k management Wis
+Vulnerability Vulnerability
+[Figure  30] Risk management
+1 DoA: Degree  of Assurance
+M4 Understanding  Information  Security 65
+
+
+--- Page 66 ---
+ESSENCE
+© Risk identification
++ A risk means the possibility  that an unexpected  situation  occurs and affects (damages)  an organization,  and
+can be expressed  as a function  of assets, threats, and vulnerabilities.  The value of each information  asset
+should be estimated,  and risks of each asset should be identified  during the risk identification process.
+@ Risk assessment
++ The scope of risk analysis  should be selected  based on the scope of the information  security  management
+system, according  to the business,  organizational,  locational,  asset, and technical  characteristics  during the
+risk assessment  process.
++ For efficient  risk analysis,  a quantitative  or qualitative  method should be selected,  depending  on whether
+the risk can be quantified  or not. Alternatively,  the baseline  approach,  detailed risk approach,  or combined
+approach  should be selected,  depending  on the approach.
+® Risk assessment  method
++ Risk assessment  method  depending  on risk quantification
+<Table 16> Quantitative  technique  vs. qualitative  technique
+Item Quantitative  technique Qualitative  technique
++ Since the scale of damages  cannot  be measured,Used when the scale of damage  can be measured itis expressed  as an interval  (eg, H:3, M:2, L:1)
+in monetary  units. ora variable
+Characteristics + Past data ap...

@@ -1,0 +1,11 @@
+ESSENCE
+Characteristics Description
++ Agenerative  graphical  model used for machine  learning.
++ Adeep  neural network  that is composed  of the multiple  layers of the latent variable.
++ Adeep  learning  technique  that stacks the Restricted  Boltzmann  Machine  (RBM), a type of
+Boltzmann  machine,  for learning.
++ Astructure  that learns by stacking  RMB, which has a separate  visible  layer and hidden  layer.
+Hidden  layer 3
+(Top layer)
+DBN
+162 TOPCIT  ESSENCEVisible layer

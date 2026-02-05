@@ -1,0 +1,28 @@
+Software  Development )
+01 Concept  and Process  of Testing
+A) Concept  of testing
+Testing is a method of checking  or confirming  that the operation,  performance  and stability  of an application
+or system satisfies  the demands  of the user or customer,  by identifying  or detecting  defects  or faults etc. The
+general  principles  of testing  are as follows.
+@ Testing  shows the presence  of defects
+Testing  activity is designed  to reveal the presence  of defects. However,  it is almost impossible  to prove that
+software  has no defects.
+@ Exhaustive  testing  is not possible
+Even a very simple program  cannot  be tested for all cases.
+© Testing  should start during the initial stages of development
+If tested early, the development  period can be reduced and defect prevention  activities  can be performed,
+eventually  resulting  in a reduction  of costs.
+@ Pesticide  paradox
+The repetitive  use of the same pesticide  mixes to eradicate  insects will over time lead to the insects
+developing  resistance  to the pesticide,  thus rendering  the pesticides  ineffective.  The same applies to software
+testing. If the same set of repetitive  tests is conducted,  the method will be totally ineffective  in discovering
+new defects.
+© Testing  is context  dependent
+The approach  as well as the methodology  and severity  differ for each field.
+© Absence  of error - fallacy
+Finding  and fixing defects  will be of no help whatsoever  if the ‘system  build’ is unusable  and does not fulfill the
+user's needs and requirements.
+B) Testing  process
+Testing should be coordinated  and managed  by emphasizing  a process  comprising  various components.  The
+table below shows the main activities  of the process  concerned.
+M1 Software  development  103

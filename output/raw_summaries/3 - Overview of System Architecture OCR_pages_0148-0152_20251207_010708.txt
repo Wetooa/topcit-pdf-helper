@@ -1,0 +1,202 @@
+LEARNING GUIDE: Pages 148-152
+Generated: 2025-12-07 01:07:08
+PDF: 3 - Overview of System Architecture OCR
+
+================================================================================
+LEARNING GUIDE
+================================================================================
+
+Here's a simplified, easy-to-read learning guide for the Datalink Layer, based on the provided text:
+
+---
+
+# Datalink Layer Learning Guide
+
+## 1. Concept of the Datalink Layer
+
+The Datalink Layer (Layer 2 of the OSI model) is responsible for transmitting data between **peripheral devices** on a network, utilizing the Physical Layer (Layer 1) for signal transmission.
+
+**Key Functions:**
+*   **Address Allocation:** Ensures devices receive signals correctly.
+*   **Error Detection:** Identifies if errors are present in transmitted signals.
+
+**Why it's Important (for developers):**
+*   **Debugging:** Essential for troubleshooting network connection issues or data errors.
+*   **MAC Layer Understanding:** Necessary when dealing with various Medium Access Control (MAC) layer protocols.
+*   **Embedded Software:** Critical for developing drivers and debugging hardware/software integration problems.
+*   **Modern Wireless:** Increasingly important with short-range wireless technologies (e.g., Bluetooth, ZigBee).
+
+## 2. Datalink Layer Encapsulation
+
+**Encapsulation:** The process where the Datalink Layer adds a **header** and a **trailer** to a Network Layer packet, creating a **frame**.
+**Decapsulation:** The reverse process at the receiving end, where the header and trailer are removed.
+
+**Frame Structure:**
+A Datalink Layer frame consists of:
+*   **Header:** Added at the beginning of the packet.
+    *   **Preamble:** For bit synchronization between devices.
+    *   **Start of Frame Delimiter (SFD):** Indicates the beginning of the frame.
+    *   **Destination and Source Addresses:** These are **physical addresses** (MAC addresses).
+        *   **MAC Addresses:** 48-bit, unique to each device, used at Layer 2 (unlike logical IP addresses used at Layer 3).
+*   **Network Layer Packet (Data):** The original data from the layer above.
+*   **Trailer:** Added at the end of the packet.
+    *   **Frame Check Sequence (FCS):** Used to check for errors during data transfer.
+
+## 3. Datalink Layer Configuration: Sub-layers
+
+The Datalink Layer is divided into two sub-layers:
+
+### A. Logical Link Control (LLC) Sub-layer
+*   **Location:** Higher sub-layer of the Datalink Layer.
+*   **Role:** Responsible for the connection between the **MAC sub-layer** and the **Network Layer (Layer 3)**.
+*   **Data Transfer:** Manages data transfer between two adjacent nodes on the network.
+*   **Service Access Points:** Nodes use **Destination Service Access Point (DSAP)** and **Source Service Access Point (SSAP)** at the LLC layer.
+*   **Flexibility:** Allows the Datalink Layer to use various MAC sub-layer protocols, regardless of network topology.
+
+**LLC Service Options:**
+*   **Type 1 (Unconfirmed Datagram Service):** Unconnected service; does not require receipt confirmation.
+*   **Type 2 (Virtual Circuit Access Type):** Connection-oriented; establishes a virtual session before transferring data (similar to TCP).
+*   **Type 3 (Confirmed Datagram Service):** Provides receipt confirmation for point-to-point data transfer.
+
+### B. Media Access Control (MAC) Sub-layer
+*   **Location:** Lower sub-layer of the Datalink Layer.
+*   **Role:** Determines how data is transmitted over the **physical media**.
+
+**MAC Address:**
+*   A 48-bit physical address embedded in network hardware (e.g., Network Interface Card - NIC).
+*   **Structure:**
+    *   First 24 bits: **OUI (Organizationally Unique Identifier)** – identifies the manufacturer.
+    *   Remaining 24 bits: **Serial Number** – unique product identifier from the manufacturer.
+
+**Standardized MAC Protocols:**
+*   **Wired LAN:**
+    *   **IEEE 802.3:** CSMA/CD (Carrier Sense Multiple Access with Collision Detection)
+    *   **IEEE 802.4:** Token Bus
+    *   **IEEE 802.5:** Token Ring
+*   **Wireless LAN:**
+    *   **IEEE 802.11:** CSMA/CA (Carrier Sense Multiple Access with Collision Avoidance)
+
+## 4. MAC Address Search (ARP/RARP)
+
+To send a packet to another host, the transmitting device needs the destination host's MAC address.
+
+*   **ARP (Address Resolution Protocol):**
+    *   **Purpose:** Converts a known **IP address** into its corresponding **MAC address**.
+    *   **Process (Scenario):**
+        1.  If Host A needs Router C's MAC address, Host A sends an ARP **broadcast request** to all devices on its network segment.
+        2.  The ARP request contains Host A's IP and MAC, and the target IP (Router C's IP).
+        3.  Router C, upon receiving the request and recognizing its IP address, sends an ARP **unicast reply** directly back to Host A, containing its MAC address.
+        4.  Both systems then store the learned MAC addresses in their **cache memory** for future use.
+*   **RARP (Reverse Address Resolution Protocol):**
+    *   **Purpose:** Converts a known **MAC address** into its corresponding **IP address**. (Less common now, superseded by DHCP).
+
+## 5. Datalink Layer Error Detection and Correction
+
+**Error Control:** The function of detecting and, if possible, correcting errors that occur during data transmission.
+
+**Types of Transmission Errors:**
+*   **Single-bit error:** Only one bit in the data unit is changed.
+*   **Multi-bit error:** Two or more non-contiguous bits are changed.
+*   **Burst error:** Two or more consecutive bits are changed.
+
+**Error Control Methods:**
+1.  **Forward Error Correction (FEC):**
+    *   The **receiving device** detects and corrects errors on its own.
+    *   The sender transmits extra "spare bits" for error recovery along with the data.
+2.  **Backward Error Correction (BEC):**
+    *   The **receiving device** detects an error and notifies the **transmitting device**.
+    *   The transmitting device then retransmits the affected data.
+
+**Specific Error Detection Methods (using redundancy):**
+These methods add "spare bits" to the data to help detect errors.
+
+| Error Detection Method | Description                                                               |
+| :--------------------- | :------------------------------------------------------------------------ |
+| **VRC (Vertical Redundancy Check)** | - Most widely used, also known as **Parity Check**. <br> - Adds a parity bit to ensure an even or odd number of '1's in each byte. |
+| **LRC (Longitudinal Redundancy Check)** | - Creates a data unit (often an even parity of all bytes) and adds it to the end of a data block. |
+| **CRC (Cyclic Redundancy Check)** | - A powerful detection method using binary division based on a predetermined polynomial. |
+| **Checksum**           | - Used by higher-level protocols. <br> - Based on the redundancy concept (like VRC, LRC, CRC), but calculates a sum value. |
+
+---
+
+================================================================================
+ORIGINAL TEXT (First 5000 chars)
+================================================================================
+
+--- Page 148 ---
+Overview  of System Architecture )
+01 Concept  of Datalink  Layer
+The datalink  layer transmits  data between  peripheral  devices  on the network,  using the physical  layer that transmits
+signals  between  devices,  and is responsible  for address  allocation  and error detection.  The address  allocation  function
+ensures  that devices  properly  receive  signals  from the physical layer on the network,  and the error detection  function
+detects  whether  errors are included  in the transmitted  signals.
+Application  software  developers  have no problem in programming  without  understanding  the datalink  layer and the
+physical  layer. However,  a network  product  may need debugging  for cases where there is no network  connection  or
+data error. If a product  uses various medium access control (MAC) layers, it may be necessary  to understand  each
+standard  protocol.  Moreover,  developing  embedded  software  requires  a basic understanding  of drivers  since it may be
+necessary  to develop  a driver. If the embedded  software  does not operate  normally  after the program  is ported to the
+test environment  prepared  by the hardware  developer,  it is necessary  to perform debugging  to determine  whether
+it is a hardware  or a software  problem.  The developer  needs to perform debugging,  using JTAG, or in the case of a
+network  environment,  check whether  an error occurs in the actual physically  transmitted  bit and datalink  layer. As
+short-range  wireless  communication  technologies,  such as Bluetooth  and ZigBee, have been recently  widely applied,
+understanding  the datalink  layer has become  more important.
+02 Encapsulation  of the Datalink  Layer
+A) Encapsulation  of the datalink  layer
+As shown in the following  figure, the datalink  layer frame adds a header  and a trailer to the network  layer packet.
+This process is called encapsulation  of the datalink  layerThe  process is reversed  on the receiving  end and is called
+decapsulation.
+Network  Layer
+Physical  Layer L2 Data
+[Figure 104] Encapsulation  of the Datalink  Layer
+B) Frame  header  and trailer
+The frame header includes  a preamble  for bit synchronization  between  hosts, a start of frame delimiter (SFD) that
+M3 Overview  of System  Architecture  147
+
+
+--- Page 149 ---
+ESSENCE
+indicates  the start of a frame, and destination  and source addresses,  which are physical  addresses.  Physical  addresses
+have a 48-bit  address  system and have unique values  for each device, unlike logical IP addresses.  It is necessary
+to use the physical  address  to check a device location below layer 2, since IP addresses  are used in layer 3. Trailers
+include  a frame check sequence  (FCS) to check  for errors during a data transfer.
+03 Datalink  Layer Configuration
+A) Sub-layers  of datalink  layer
+A datalink  layer consists  of two sub-layers:  an LLC (Logical  Link Control)  sub-layer  and a MAC (Media Access  Control)
+sub-layer.  The LLC sub-layer  is responsible  for the connection  between  the MAC sub-layer  and the network  layer
+(layer 3). The lower MAC sub-layers  are responsible  for control according  to the topology  on physical layers  or other
+characteristics.
+Network  Layer wert so on
+- Logical Link Control (LLC)
+Datalink  Layer
+=oOao
+ifsBoOgaa°o3aQo=o
+Physical  Layer
+OSI Reference  Model
+[Figure 105] Sub-layers  of datalink  layer
+B) Logical link control  (LLC)
+@® Concept  of LLC
+7 1 6 6 2 1 1° 1or2 Variable 4
+S Destination Source 4 aPreamble E ‘Address Address Length A\A Ctrl DATA FCS
+P|P
+Y Y
+802.3 802.2 802.3
+[Figure 106] IEEE 802.3 Frame Structure
+The sub-layer  is located at a higher level among the sub-layers  of the datalink  layer. It is responsible  for the data
+transfer  between  two adjacent  nodes on the IEEE 802.2 or datalink layer network.  The adjacent  nodes have the
+destination  service access  point (DSAP) and the source service  access point (SSAP) on the LLC layer. The LLC layer
+can use various  MAC sub-layer  protocols  to facilitate  the communication,  regardless  of the network  topology.
+148 TOPCIT  ESSENCE
+
+
+--- Page 150 ---
+Overview  of System Architecture )
+@ Options  of the logical link layer service
+The LLC options include Type 1, Type 2, and Type 3. Type 1 is an unconfirmed datagram  service and called an
+unconnected  service, as it does not require a receipt confirmation  message.  Type 2 is a virtual circuit access type
+and, as a TCP service, transfers  data after establishing  a virtual session.  Type 3 is a confirmed  datagram  service and
+provides  the receipt  confirmed  datagram  in the point-to-point  method.
+C) MAC
+The MAC sub-layer  is responsible  for determining  how to transfer  data through  the physical  media.
+The MAC layer includes  the MAC addresses  of the transmitting  and receiving  systems,  as shown in [Figure 107]
+below. The MAC address  is mainly divided  into two addresses.  The first 224is OUI (Organizationally  Unique Identifier),
+representing  the...

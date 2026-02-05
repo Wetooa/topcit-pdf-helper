@@ -1,0 +1,35 @@
+Information  security )
+Windows  and Android,  and the web platform  based on the web browser.  FIDO server, RP server, and RP client
+are the components  that should be provided  by the server. Therefore,  if they are regarded  as a part of the
+server, the standard  protocol is not needed anymore.  Therefore,  FIDO 2.0 does not use the UAF protocol,  but
+exchanges  messages,  using its own protocol defined by the server. The FIDO client, which was provided  as an
+Android  app in the existing  FIDO 1.0, will be provided  as an API by the operating  system,  or as a JavaScript  API
+by the web browser.
+C) Network  segregation  and network  linking
+Network  segregation  refers to network  blocking,  which separates the business  network  from the external
+network  in order to block illegal access from the external Internet  network  and to prevent  the leakage  of
+internal information.  There are two types - physical  network  segregation  and logical network  segregation.
+<Table 1> Physical  network  segregation  and logical network  segregation
+Item Physical  network  segregation Logical network  segregation
+Operation Physical segregation  of the business  network  and Logical segregation  using virtualization  or other
+method internet  network  (using 2 PCs) methods  (using 1 PC)
+Introduction High (additional k installati ; he installati .none igh (additional  PC, network installation) Low (depending  on the installation  environment)
+Security High security  (basic segregation) Low security  (vulnerabilities  occur)
+Efficiency Low efficiency  (work environment) Easy to manage  (applying  security  policies)
+Detailed | P : 7 7nary 2 PCs, multi-PC,  network  switching  device Server-based,  PC-based
+D) Fraud Detection  System  (FDS)
+The FDS is a system that detects suspicious  transactions  and blocks abnormal  financial  transactions  by
+comprehensively  analyzing  device information,  access information,  and transaction  details used in electronic
+financial  transactions.  Pattern analysis is the core engine of the FDS because  the usual transactions  of the
+user are analyzed,  and abnormal  behavior  is detected  when an action that violates  the analyzed  pattern is
+taken. The FDS has the following  functions.
+© Information  collection
+The FDS collects  user media environment  information  and accident  type information  by collecting  information
+on user information  and behavior.
+@ Analysis  and detection
+The FDS detects  abnormal  behavior  by analyzing  various correlations  by user type and transaction  type, and
+by testing  the pattern,  based on the analysis  of abnormal  behavior,  using the collected  information.
+@ Response
+The FDS blocks an illegal transaction  by blocking  the transaction  or by requiring  additional  authentication  when
+abnormal  behavior  is detected.
+M4 Understanding  Information  Security  19

@@ -1,0 +1,29 @@
+ESSENCE
+@ Graph
+A graph is data structure  that expresses  the many-to-many  relationship  between  the connected  elements,  and
+is a set of vertices  that represent  objects and the edges that connect  those objects. Graph data structures
+often solve problems  based on graph theory by expressing  several complex  problems  on a graph, such as
+electric  circuit analysis,  shortest  distance  search, artificial  intelligence,  etc.
+<Table 11> Types of graphs
+Type Description
+Undirected  | A graph that is connected  by undirected  lines between  the
+graph vertices of the graph.
+Directed A graph whose connection  lines are directional,  where the
+graph sequence  of vertices  expressed  in pairs is important. =)v©)
+[N;| Complete  | A graph that has as many edges as possible  by connecting
+graph all the vertices  with each other on the graph./tNh
+Weighted  | A graph in which a weighted  value is assigned  to the edges
+graph that pass through  the vertices  of the graph.
+The graph is expressed  in memory  using various  graphing  methods  depending  on the function being performed
+or method  of application.
++ Adjacency matrix: A method of graphing  using a sequential  data structure.  The presence  of the edge
+connecting  two vertices  of the graph as a matrix is stored in a matrix by using a two-dimensional array for
+the matrix.
++ Adjacency  List: A graphing  method  using a linked data structure.  Nodes are connected  as many times as the
+sequence  number  of each vertex using a simple linked list created by connecting  adjacent  vertices  for each
+vertex.
+A ; . : Head  of vertex A e-|—> B | e}—>| C | NULLCO9)  B} 1 0 1 Head  of vertex B e+  >{ A | et—>[ C | NULL
+c} 1 1 0 | [Head  of vertex  C e+] A | et—>{B  | NULL
+[Adjacent  matrix] [Adjacent  list]
+[Figure 5] Graphing  method
+42 TOPCIT  ESSENCE

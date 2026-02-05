@@ -1,0 +1,225 @@
+LEARNING GUIDE: Pages 166-170
+Generated: 2025-12-05 14:08:27
+PDF: 5 - Understanding the IT Business and Ethics OCR
+
+================================================================================
+LEARNING GUIDE
+================================================================================
+
+Here is a simplified, easy-to-read learning guide based on the provided text:
+
+---
+
+# IT Business & Ethics Learning Guide
+
+## 1. Fintech
+
+Fintech (Financial Technology) represents a shift where non-financial companies use IT to provide financial services.
+
+### Key Attributes of Fintech:
+*   **Convenience**
+*   **Ease**
+*   **Simplicity**
+
+### Types of Fintech Services:
+*   **Payment Service:** Enables easy money transfers and payments, often linked with credit cards and bank accounts.
+*   **Digital Currency:** Virtual currency (like Bitcoin) exchangeable with real currency, accepted globally for goods/services.
+*   **P2P (Peer-to-Peer) Lending:** Connects investors with borrowers, addressing limitations of traditional bank loans.
+*   **Financial Software:** Enhances financial convenience using Big Data analysis, algorithms, and AI.
+
+### Challenges for Domestic Fintech Industry:
+*   Slow growth compared to overseas markets.
+*   Few independent businesses without financial institution partnerships.
+*   Numerous financial-related regulations.
+*   **Government Role:** Needs to strengthen and impartially enforce regulations to energize the industry and generate value.
+
+## 2. O2O (Online to Offline) and O4O (Online for Offline)
+
+### O2O (Online to Offline)
+*   **Concept:** Customers first check goods/services in offline stores (showrooming), then pay for them online.
+*   **Examples:**
+    *   **Baedal People:** Order and pay for food online, receive food offline.
+    *   **Kakao Taxi:** Book a taxi via a mobile app, take a real taxi offline.
+    *   **Wahome:** Pay online for room and house cleaning services.
+
+### O4O (Online for Offline)
+*   **Concept:** Expands business operations from online to offline. An online service provider leverages its online value to operate an offline business, driving market innovation.
+*   **Example: Amazon Go**
+    *   An offline mart selling groceries.
+    *   **How it works:** Customers activate a mobile app, log in, take items, and leave. Amazon automatically settles the bill through their registered account (requires Amazon Prime) and sends a receipt.
+    *   **Benefit:** Eliminates waiting in line at counters and the need for packing.
+    *   This is a clear O4O case where an online company (Amazon) uses its strengths for offline customer convenience.
+
+## 3. Virtual Currency
+
+### Definitions:
+*   **Digital Currency:** Any currency represented in electronic form (can include legal tender).
+*   **Virtual Currency:** A digital currency *not* represented in legal currency (e.g., loyalty points, game currency).
+*   **Cryptocurrency:** A method of authenticating virtual currency using a distributed ledger and encryption (e.g., Bitcoin).
+*   **General Definition:** Digital or electronic currency used in a virtual network space without physical bills or coins.
+*   **Expert Definition (ECB, U.S. Treasury):** A type of digital currency issued and managed by developers, not government-controlled, used for payment in specific virtual communities. Most cryptocurrencies are both digital and virtual currencies.
+
+### Comparison with Cash and Digital Currency:
+
+| Feature           | Cash            | Digital Currency      | Virtual Currency      |
+| :---------------- | :-------------- | :-------------------- | :-------------------- |
+| **Issuing Body**  | Central bank    | Financial institutions | None                  |
+| **Amount Issued** | Central bank    | 1:1 with legal currency | Determined by algorithm |
+| **Transaction**   | Issuing body    | Issuing body          | P2P network, DLTs     |
+| **Currency Unit** | Legal currency  | Legal currency        | Independent unit      |
+| **Convertibility**| Guaranteed      | Guaranteed            | Allowed, not guaranteed |
+| **Price**         | Fixed           | Fixed                 | Changes (supply/demand)|
+
+### Reasons for Virtual Currency Value Rise:
+*   **Scarcity:** Fixed total issuance, and mining consumes physical resources.
+*   **Network Effect:** Value increases as more people hold it simultaneously.
+*   *Note:* Scarcity and network effects alone don't fully explain value.
+
+### Is it True Currency?
+*   **Currency Functions:** Storage of value, exchangeable, scale of value.
+*   **Challenge:** Virtual currencies (like Bitcoin) have severe price volatility, preventing them from performing the "scale of value" function.
+*   **Expert Opinion:** Virtual currency cannot displace a nation's legal currency.
+*   **Beyond Payment:** Some virtual currencies (like Ethereum) can provide services beyond just payment, and the value of these services can increase the currency's price.
+
+### Major Virtual Currencies:
+*   Over 1,100 types exist, but **Bitcoin** and **Ethereum** account for over 70% of market capitalization.
+    *   **Bitcoin (2009):**
+        *   First distributed ledger-based virtual currency.
+        *   Closed blockchain structure, mainly for transactions.
+        *   Transaction time: ~10 minutes.
+    *   **Ethereum (2014):**
+        *   Improved organic blockchain structure (compared to Bitcoin's closed one).
+        *   Supports smart contracts and other services, not just currency.
+        *   Transaction time: ~10 seconds.
+    *   **Ripple (2009):**
+        *   Developed for bank transfers and low-cost payment services.
+        *   Immediate settlement reduces risk and uses optimal currency conversion rates, reducing fees.
+        *   Used by banks and companies for foreign trades.
+    *   **Litecoin (2011):**
+        *   Technically similar to Bitcoin but with improved speed.
+        *   Up to 4 times faster transaction speed and higher maximum mining volume.
+
+## 4. Linked Data
+
+### Definition:
+*   A structured data model that supports an interconnected Web.
+*   Identifies data on the Web using individual **URI (Uniform Resource Identifier)** and assigns linked information to each URI.
+
+### 4 Rules of Linked Data:
+1.  **Use of URI:** Each individual object (not just documents) has its own URI.
+2.  **Use of HTTP URI:** URIs are accessible via the HTTP protocol to enhance data access.
+3.  **Use of RDF (Resource Description Framework):** Data is structured in a triple model (subject-predicate-object) to formally represent and link web data.
+4.  **Assignment of Linked Information:** Makes the process of linking existing data on the Web easier.
+
+### Usefulness of Linked Data:
+*   **Reusable Data:** Data can be used via its URI, even if it's not one's own.
+*   **Reduced Data Redundancy:** Helps check for existing data, eliminating duplicate information.
+*   **Maximized Interoperability & Data Integration:**
+    *   Issued as a semantic web standard, allowing it to be queried and used like a database.
+    *   Free access and use enable data mash-ups (combining data from different sources).
+*   **Network Effects:** Data expansion through linking leads to accelerated network effects.
+
+## 5. Open Data
+
+### Definition:
+*   Data that anyone can freely use, reuse, and redistribute.
+
+### Conditions for Open Data:
+*   **Availability and Access:**
+    *   Must be downloadable over the internet.
+    *   Transformation of original data or production of new works should be possible at reasonable cost.
+    *   Provided in a convenient, modifiable format.
+*   **Reuse and Redistribution:**
+    *   Must be reusable and redistributable, including when combined with other datasets.
+*   **Universal Participation:**
+    *   Everyone must be able to use, reuse, and redistribute the data.
+    *   No restrictions on "commercial" or "non-commercial" use, or specific purposes (e.g., education).
+
+## 6. Latest H/W-Centered IT Business Service: 3D Printing
+
+### Definition:
+*   A method of printing 3-dimensional objects using 3D digital data.
+*   Also known as **additive manufacturing** because it builds structures by stacking layers of materials (powder, liquid, solid threads/wires/pellets).
+
+### Why Manufacturers are Interested:
+*   **Customized Production:** Suitable for producing small batches of diverse, customized products.
+*   **Consumer Needs:** Improves manufacturing to quickly and easily customize products for diverse consumer demands.
+*   **One-Person Manufacturing:** Enables individuals to make their own products.
+
+### Impact and Benefits:
+*   **Increased Individual/Small Manufacturer Share:** Increases the involvement of individuals and small manufacturers in manufacturing/distribution.
+*   **Reprocessing Industry Development:** Drives the development of industries focused on commercializing 3D-printed products.
+*   **Blurred Boundaries:** Collapses the traditional separation between consumption and manufacturing, meeting small, everyday manufacturing needs (e.g., 3D-printed Button 2.0 with earphone wire grooves).
+
+================================================================================
+ORIGINAL TEXT (First 5000 chars)
+================================================================================
+
+--- Page 166 ---
+Understanding  the IT Business  and Ethics )
+The main attributes  of fintech  are convenience,  ease, and simplicity.  Fintech  is proof that the paradigm  of financial  industry  has
+changed  and now we are in an era where non-financial  companies  armed with IT technologies  are providing  IT services.  The
+types of fintech  services  provided  by companies  are described  in the table below.
+<Table86>Types  of Fintech  services
+Category Description
+Payment  service provides  a function  for transferring  money  or making  payments  easily, and
+Payment  service generally  provides remittance  services in conjunction  with credit cards and bank accounts.
+Like Bitcoin,  this is a virtual currency  that could be exchanged  with the real currency  used in a
+Digital currency country  and as a universal  currency  accepted  across  the world, it can be used for payment  of
+goods and services.
+Asa service  that connects  investors  with people looking  for loans, this service  was developed
+seialheahlio to compensate  for the limitations  of bank loans.
+A service  that increases  the convenience  of finance  through  Big Data analysis  and its own
+Financial  software algorithm  and Al
+In overseas,  the fintech industry  is growing  by leaps and bounds.  But the domestic  fintech industry  has failed to fully
+blossom,  although  a market around mobile payment  settlement  services  and P2P loan services  has been formed.
+There are many difficulties  to the growth of the domestic  fintech industry  because  there are only a few kinds of
+businesses  that could be started  independently  without a partnership  between  financial institutions  and many
+financial-related  regulations.  There are also too many regulations.  The government  needs to strengthen  regulations
+and enforce  them in an impartial  manner  so that the fintech industry  could be energized  and generate  added values.
+@® 020 online to offline) andO40(Online  for Offline)
+020 is the counterpart  to the showrooming  phenomenon  where customers  would first check the goods in offline
+stores such as marts and department  stores and then pay for the same product  in online space. In other words, it
+describes  the behavior  of paying  for goods online and receiving  the good or service  in offline space.
+<Table87>Examples  of 020 services
+Example Description
+Baedal People + Aservice  for ordering  and paying for food online and receiving  the food offline.  The most
+representative  O20 service.
+Kakao  Taxi + Service  for booking  a taxi through  the mobile app and take a real taxi offline.
+Wahome + Users pay online for room and house cleaning  services.
+M5 Understanding  the IT Business  and Ethics 165
+
+
+--- Page 167 ---
+ESSENCE
+* 040(Online  for Offline)
+040 means “Online for Offline” It means expanding  the scope of business  operations  from online to offline. An 040
+service provider  drives market innovation  by operating  an offline business  by leveraging  the value provided to its
+customers  online.
+Amazon  Go is a shocking  example  that illustrates  the value and meaning  of O40. Why did Amazon  Go, an offline mart
+that sells simple groceries  and miscellaneous  goods send such shockwaves  to the offline mart market?
+To use Amazon  Go, customers  must activate  a mobile app and then log in. And then they just have to bring their
+purchases  out of the store. Amazon  Go automatically  settles the bill through  the customer's  account  information
+and delivers  the receipts  to the customer.  Of course,  customers  must be registered  with Amazon  Prime before using
+Amazon  Go.
+Customers  don't have to wait in line at the counter  to pay and don't have to go through  the process  of putting  the
+goods on the counter  and packing  them in a grocery  bag. This is a very clear-cut  case O40 where an online company
+leverages  their strengths  for customer  convenience.
+© Virtual currency  or virtual money
+In recent years, interest in cryptocurrency  has been hot due to the surge in the adoption  of crypto currencies  like
+Bitcoin and Ethereum.  While under the strict definition,  it is correct  to call Bitcoin and Ethereum  cryptocurrencies,  the
+term virtual currency  is often used instead.
+<Table88>Concept  of digital currency,  virtual currency  and crypto currency”
+Digital Currency Virtual  Currency Crypto  Currency
+Digital Currenc -
+All nee shown represented  in Virtual Currency Crypto Currencyelectronic  form Digital currency  that is not represented  | A method  of authenticating  the validity
+(regardless  of whether  or not legal in legal currency using distributed  virtual currency  and
+8 8 (mileage  points for instance) encryptioncurrency  is issued)
+20 Source:Daeshin  Securities
+166 TOPCIT  ESSENCE
+
+
+--- Page 168 ---
+Understanding  the IT Business  and Ethics )
+Virtual currency  or virtual money is defined as a digital currency  or electronic  currency  used in electronic  form in a
+virtual space on a network  without  any...

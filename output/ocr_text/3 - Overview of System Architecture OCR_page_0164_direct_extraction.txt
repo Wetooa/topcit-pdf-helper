@@ -1,0 +1,39 @@
+Overview  of System Architecture )
+B) IPv4 header
+0 1 2 3
+012345678901234567890123456789021
++44  -4-4t-  4-4-4 4 tt tat  ttatitaitttittittatititit  att  tt
+[Version| IHL |Type of Service] Total Length
+tata  t itt  tata  tata  ta tata  t ati  ta ta titi  t batt  apatite  ti  tate  te tata  te
+| Identification |Flags| Fragment  Offset+-4-4-4-4-4-4-4-4-4-4-t  4-4-4  tt  tt  ttt  ttt  tt  it  it ttt
+| Time to Live | Protocol | Header Checksum
+taototatototototatitatitetito  tata  titatitatit  tata  titattitetotite
+| Source  Address
++-4-4-4-4-4-4-4-4-4-4  4-44-44  4-4 tt  tt  tt  tt  tt  ttt
+|
+-
+|
+aeDestination  Address
+—+-4-4+-4-4-4-4+-4+-+-+4+-+-+4+-4-4-4-4-4-4+-4-4-4-4+-4-4-4-4-4-4-4-4-4-
+Options | Padding
+—4-4-4-4-4-4-4-4-4+-4$-4-4+-4-4-4-4-4-4-4-4-4-4+-4-4-4-4-4-4-4-4-4- to +¢— +--+ —- + —-4+¢— 4
+[Figure 118] Network  Packet  Structure  [5]
+In [Figure 118] above, “Version”  refers to the protocol  version  of the datagram,  “IHL” refers to the header  length, and
+“Type of Service” refers to which type of service the host wants in the subnet. “Total length” refers to the sum of
+the header and data lengths in the datagram,  “Time to Live” refers to the packet life limit, and “Protocol’ refers to
+the notification  of TCP or UDP for the recombination  of the datagram  on the network  layer. “Source  Address”  and
+“Destination  Address’  refer to the source and destination  addresses  of the 32-bit datagram.
+03 Packet  Switching  and Network  Layer Protocol/Instruction
+A) Packet  switching
+The methods  of finding the packet path in a packet-exchanging  network,  include the datagram  approach  and the
+virtual circuit approach.  The datagram  approach  is a non-connected  service  that independently  processes  all packets.
+Packets  can be transferred  through  different  paths, and the packet’s  destination  address  determines  the forwarding
+path. The virtual circuit approach  is a connection-oriented  service. It establishes  a virtual path for the datagram
+before the transfer,  and all datagrams  are transmitted  to the same path after the connection.  The forwarding  path is
+determined  by the packet  label (virtual circuit identifier).
+B) Network  layer protocol/command
+The network  layer protocols that convert  the IP and MAC addressesinto  an IP address,  are the ARP (Address
+Resolution  Protocol)  and the RARP (Reverse  Address  Resolution  Protocol).  ICMP (Internet  Control Message  Protocol)
+is a protocol  used to transfer  the network  error information, and IGMP (Internet  Group Management  Protocol)  is the
+protocol  for IP multicast  transfer.
+M3 Overview  of System  Architecture  163

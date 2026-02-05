@@ -1,0 +1,173 @@
+LEARNING GUIDE: Pages 16-20
+Generated: 2025-12-05 14:18:18
+PDF: 1 - Software Development OCR
+
+================================================================================
+LEARNING GUIDE
+================================================================================
+
+Here's a simplified, easy-to-read learning guide based on the provided text:
+
+---
+
+## Software Development: An Essential Guide
+
+### 1. The Growing Importance of Software
+
+**Key Idea:** Software is no longer just a support tool; it's a primary driver of business and innovation across all industries.
+
+*   **Market Growth:** The global software market was valued at **USD 1.27 trillion in 2014**, rapidly increasing its share of the total ICT market.
+*   **"Software is Devouring the World":** This phrase describes how software drives digital transformation and creates new business models.
+    *   **Examples:**
+        *   **Uber & Airbnb:** World's largest transportation and accommodation services, yet they own no cars or hotels – their power comes from software.
+        *   **Traditional Companies:** Even manufacturing giants (GE) and financial institutions (Goldman Sachs) now see themselves as software companies.
+        *   **AI (Artificial Intelligence):** Technologies like Google DeepMind's AlphaGo demonstrate software's immense potential, enriching daily life (communication, education, shopping).
+        *   **Autonomous Driving:** Once dominated by mechanical engineering, cars now rely heavily on software code, with over half the industry moving towards software-centric design.
+*   **Conclusion:** Systematic software development and management are crucial for system quality and development productivity.
+
+### 2. Challenges in Software Development
+
+**Problem:** Despite its growing importance, software quality and development productivity often lag, leading to significant issues.
+
+*   **Quality Concerns:**
+    *   Software, by its nature, is prone to defects.
+    *   Increased use (e.g., mobile apps used by many users simultaneously) can lead to unintended defects when optimizing for efficiency.
+    *   Ensuring quality is critical, especially in life-related applications (e.g., autonomous driving).
+*   **Industry Issues (Common Excuses & Obstacles):**
+    *   **Budget/Manpower Shortages:** Industries often overlook quality due to perceived lack of resources.
+    *   **Cost & Time:** Prioritizing quality naturally increases development time and cost.
+    *   **Pricing Difficulties:** Challenges in accurately pricing software projects.
+    *   **Developer Shortage:** A lack of skilled software developers.
+    *   **SI Project Culture:** A development culture heavily centered on System Integration (SI) projects can hinder best practices.
+*   **Complexity:**
+    *   **Past:** Smaller projects could rely on individual programmer experience.
+    *   **Present:** Large projects with hundreds of developers face communication, schedule, cost, and complex/changing requirements issues.
+
+### 3. Introduction to Software Engineering
+
+**Definition:** Software Engineering is the application of systematic, disciplined, quantifiable approaches to the development, operation, and maintenance of software.
+
+*   **Purpose:** To successfully develop increasingly complex and multi-functional software by providing **systematic management technologies and techniques** across the entire lifecycle (from requirements analysis to maintenance).
+*   **Goal:** To achieve the highest quality software and promote productivity.
+*   **Key Elements for Success (3 Pillars):** To effectively apply software engineering, three elements must be balanced and continuously maintained:
+    1.  **Process & Methods:** Systematic business methods and workflow definitions. (e.g., "Procedures & Methods" in the diagram)
+    2.  **Organization & People:** Personnel equipped with specialized knowledge and skills. (e.g., "Organization & People" in the diagram)
+    3.  **Tools & Infrastructure:** Technology and equipment needed for efficient operation. (e.g., "Tools & Equipment" in the diagram)
+
+### 4. Background and the "Software Crisis"
+
+**Key Concept:** The "Software Crisis" was a period when the demand for software outpaced the ability to produce reliable, high-quality, and cost-effective software.
+
+*   **1950s:** The idea of applying engineering principles (like hardware engineering) to software development first emerged.
+*   **1960s:** **Software Engineering was formally introduced in response to the "Software Crisis."**
+    *   **Causes of the Crisis:**
+        *   Rapidly increasing demand for software.
+        *   Lack of experienced and competent engineers.
+        *   Lack of systematic approaches to software development.
+*   **1970s:**
+    *   Developer scarcity worsened as demand continued to grow.
+    *   Projects often assigned to individuals without formal software development backgrounds.
+    *   **"Coding First and Correction Later" Approach:** A common, flawed belief that software could be easily modified during development, leading to:
+        *   Many defects.
+        *   Unreliable software.
+        *   Costly rework.
+    *   **Response:** This crisis spurred the development of structural and formal techniques, such as the **Waterfall model**, to bring discipline to software development.
+
+---
+
+**Keywords to Remember:**
+
+*   Characteristics of software (e.g., prone to defects, intangible)
+*   Lifecycle of software (requirements, design, implementation, testing, maintenance)
+*   Requirements analysis
+*   Design
+*   Implementation
+*   Testing
+*   Software requirement management
+*   Software maintenance
+*   Software configuration management
+*   Software quality management
+*   Software Crisis
+*   Waterfall model
+
+---
+
+================================================================================
+ORIGINAL TEXT (First 5000 chars)
+================================================================================
+
+--- Page 16 ---
+Software Development
+
+M1 Software development 15
+
+
+--- Page 17 ---
+ESSENCE
+>> Recent  trends and major issues
+In June 2015, Gartner, a research  company  specializing  in the IT field, announced  that the global
+software  market in 2014 was worth USD 1 trillion and 269.2 billion, that software  was occupying
+an ever greater  share of the entire ICT market, and that the influence  of software  in all industries
+was rapidly increasing  as all industries  were becoming  “smart” and using “smart data’. Therefore,
+systematic  software  development  and management  has become  an important  factor in determining
+system  quality  and improving  development  productivity.
+>> Learning  objectives
+1. To be able to explain the characteristics  and problems  of software.
+2. To be able to explain  the background  to and purpose  of software  engineering.
+3. To be able to explain software  development  process  models.
+>> Keywords
+- Characteristics  of software
+- Lifecycle  of software
+- Requirements  analysis,  design, implementation,  testing
+- Software  requirement  management,  software  maintenance,  software  configuration  management,
+software  quality management
+16 TOPCIT  ESSENCE
+
+
+--- Page 18 ---
+Software  Development )
++ Preview  for practical  business What if we don’t have sufficient software
+development  and management  capabilities?
+“Software  is devouring  the world.”
+These words accurately  describe  the current  situation  facing companies.  As we enter the intelligent
+information  society represented  by Industry  4.0, software  has emerged  as a key driver of digital
+transformation  and enterprises  have their competitors  strained in the industry  by creating  a new
+business  model that did not exist before the widespread  adoption  of software.  We can see evidence
+for this in the way that Uber and Airbnb have stablished  themselves  as the providers  of the world’s
+largest transportation  service and its largest accommodation  service, respectively,  even though
+they do not own any cars or hotels. As a result, many enterprises  all over the world are trying to
+strengthen their software  capabilities  for digital business.  The impact is so far-reaching  that even
+the manufacturing  company  GE and the financial company  Goldman  Sachs also see themselves  as
+software  companies.  We can easily find evidence  of the newly elevated  status of software  all around
+us. Artificial  intelligence  (Al) is the most representative  example.  “AlphaGo’,  which was introduced
+to the world by Google DeepMind  a few years ago, became  an important  measure  by which we can
+estimate the extent  to which the power of software  will develop.  At present,  Al enriches  our lives
+considerably  as it is utilized in diverse fields in our daily lives, such as communication,  education,
+shopping,  entertainment,  vehicle  management,  etc.
+Autonomous  driving, which has been actively  researched  and developed  throughout  the world,
+also belongs  to the software  domain. Until very recently,  mechanical  engineering  elements  had a
+dominant  place in the car and electric  apparatus  industries,  which were even referred  to as the “flowers
+of the manufacturing  sector’. However,  more than half of the industries  are now composed  of
+software  code. In particular,  the car industry  depends  increasingly  heavily on software  as self-driving
+technology  is increasingly  incorporated  into new models.
+Even though such important  software  is increasingly  being used in more areas, the pertinent  question
+is whether  software  quality is being managed,  and productivity  being improved,  in proportion  to
+the increased  use. In particular,  it is necessary  to examine  whether  software  functions  are working
+properly  as the use of software  is increasing  even in areas directly  related to human life or property,
+such as autonomous  driving. However,  the reality is that software  quality cannot be considered  in
+the domestic  software  industry.  For example,  more mobile apps are now used as smartphones  have
+become  so popular. However,  these mobiles  apps are not used by a single user but rather are called
+by several users at the same time. Therefore, unintended  defects  can occur while seeking  to improve
+service  efficiency.
+M1 Software  development  17
+
+
+--- Page 19 ---
+ESSENCE
+As such, even though software  is prone to be defective  due to its intrinsic nature, the domestic
+software  industry  tends to overlook  it on such pretexts  as a lack of budget or a shortage  of
+manpower.  One can understand  their view that they don’t have any other options. It is natural
+that the software  development  period and cost increase  when quality is taken into account.  This
+phenomenon  is further aggravated  by continuous  issues that have been pointed  out for a long time,
+but which still have not been resolved,  namely, the difficulty  of getting  the right software  price, the
+lack of developers,  a ...

@@ -1,0 +1,34 @@
+Database )
+Hahei nYel  tT  i140)
+Depending  on the tangible  and intangible... Depending  on the time of occurrence...
+. Action
+: Type Concept Primary/key Center ‘
+lerder  bine) (employee, (organization, (employee, (reception, (order etal,
+, article) place) department) contract)progress)
+Entities  can be efficiently  derived  by grouping  based on a certain  group.
+[Figure 18] Data model expression  method
+D) Classification  of attributes
+Attributes  can be classified  into the basic attribute  which is directly  defined by analyzing  the work, the designed
+attribute  which is identified  during design even though it does not exist in work, and the derived attribute which is
+calculated  or transformed  from other attributes.
+Basic - Original  attributes Designed  - 1:1 substitution Derived  - Calculated  value
+Total number ( 5 Individual  container)
+of containers
+Total amount (> Unit price)
+of containers001-Drug  container
+002-Other  containers
+Product  name
+Manufacturing  date Drug container  code Calculated  value
+Manufacturing  cost
+[Figure 19] Classification  of attributes
+E) Relationship
+© The identifying  relationship  and non-identifying  relationship  are marked  clearly.
+@ The required  relationship  and the optional  relationship  are marked  clearly.
+© Unlike Chen notation,  the attribute  of the relationship  is included  in an entity or by identifying  a separate  entity.
+Cardinality Identifying  relationship Non-identifying  relationship
+tC | ee Se
+1:1(optional) hh See  de
+1:N(required) off peas  sea=, Kk
+1:N(ptional) se 4o----------  oe
+[Figure 20] Relationship  expression  in Crow's  Foot notation
+M2 Database  59

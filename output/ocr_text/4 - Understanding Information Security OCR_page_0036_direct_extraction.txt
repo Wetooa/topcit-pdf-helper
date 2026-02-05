@@ -1,0 +1,37 @@
+ESSENCE
+C) Type of authentication  technologies
+@® Password  authentication
+* Overview  of password  authentication
+The user sets the password  in advance.  After that, the user is authenticated  by comparing  the password
+entered during authentication,  with the set password.  Although  this authentication  technology  is the most
+widely used, it requires  careful attention  when using it because  it is the most insecure  as shown in [Figure 15].
+Social
+engineering Using well-
+known
+wordsStoring  and
+transferring
+in plain text
+8 s 3
+Easy to guess Easy to leak Easy to hijack
+[Figure  15] Vulnerabilities  of the password  authentication  method
++ Password  policy
+When creating  a password,  it should have at least 8 digits by combining  uppercase  letters, lowercase  letters,
+numbers,  and special characters.  The user should be able to remember  the password  easily, but the attacker
+should have difficulty  guessing  it.
+Passwords  should not be saved in plaintext,  but should be saved using a hash function,  rather than a two-
+way encryption  algorithm.  The authentication  system  should limit the number  of failed login attempts.
++ Attack techniques  against  the password
+Attack techniques  against  the password  include brute force attacks,  dictionary  attacks,  Trojan horses, direct
+access  to the password  file, social engineering  techniques,  etc.
++ Countermeasures  against  password  attacks
+Various countermeasures  can be implemented,  such as using a password  generator,  limiting the number  of
+login failures,  changing  passwords  periodically,  using an intrusion  detection  system (IDS) to detect dictionary
+attacks  and brute force attacks,  implementing  security  awareness  training,  using an OTP, etc.
+@ One Time Password  (OTP) authentication
+* Concept  of the OTP
+An OTP is one of the methods  used by the authentication  system to authenticate  users. This authentication
+technology  uses a one-time  password  generator  that generates  and inputs a one-time  password  for each
+session.
++ Type of OTPs
+The OTP can be largely  classified  into the synchronous  and asynchronous  types, as shown in <Table 7>.
+36 TOPCIT  ESSENCE

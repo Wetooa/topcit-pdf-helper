@@ -1,0 +1,228 @@
+LEARNING GUIDE: Pages 124-128
+Generated: 2025-12-05 10:52:16
+PDF: 2 - Understanding and Using Data OCR
+
+================================================================================
+LEARNING GUIDE
+================================================================================
+
+Here is a simplified, easy-to-read learning guide based on the provided text:
+
+---
+
+# Database Transactions and Concurrency Control
+
+This guide covers essential concepts of database transactions, how they are managed concurrently, and common issues like deadlocks.
+
+---
+
+## 1. What is a Transaction?
+
+A **transaction** is a single logical unit of work performed on a database. It consists of multiple operations (like reads, modifications, or deletions) that must all succeed or all fail together. It transforms the database from one consistent state to another.
+
+### A. ACID Properties of Transactions
+
+For reliability, transactions must adhere to the **ACID properties**:
+
+*   **Atomicity:** All or nothing. Either all operations within a transaction complete successfully, or none of them do. If any part fails, the entire transaction is rolled back.
+    *   *Example:* Entering 10 data items. If 9 succeed but 1 fails, the entire entry process must fail.
+*   **Consistency:** A transaction brings the database from one valid state to another. It must preserve database rules and constraints. Controlled using techniques like Locks or Timestamps.
+    *   *Example:* An accounting transaction must ensure debit equals credit, maintaining balance.
+*   **Isolation:** Concurrent transactions must not interfere with each other. Each transaction appears to execute independently, without seeing the partial results of other transactions.
+    *   *Example:* If Younghee is updating 100 data items, Cheolsu cannot modify those same items until Younghee's transaction is finished.
+*   **Durability:** Once a transaction is committed (successfully completed), its changes are permanent and survive system failures (e.g., power loss). Data should be recoverable.
+    *   *Example:* After committing 10 new member entries, the data should remain even if the server crashes.
+
+### B. Finishing a Transaction
+
+*   **Commit Operation:** Permanently saves all changes made by the transaction to the database.
+*   **Rollback Operation:** Undoes all changes made by the transaction, restoring the database to its state before the transaction began. This happens if an error occurs or the user cancels the transaction.
+
+### C. Transaction Execution Considerations
+
+*   **Concurrency:** Running multiple transactions simultaneously (concurrently) improves system performance, throughput, and reduces waiting times.
+*   **Speed:** Transactions should execute as quickly as possible. Longer transactions increase the chance of conflicts and deadlocks due to prolonged locking of resources.
+
+---
+
+## 2. Concurrency Control
+
+**Concurrency Control** is a database system function that manages the simultaneous execution of multiple transactions in a multi-user environment. Its goal is to allow parallel execution while maintaining data integrity and consistency.
+
+### A. Serializable Schedule
+
+A **serializable schedule** means that even if transactions are executed concurrently, the final result is the same as if they had been executed one after another in some sequential order. The aim of concurrency control is to guarantee this serialization.
+
+### B. Purposes of Concurrency Control
+
+*   To ensure transaction serialization.
+*   To maximize data sharing and system activity.
+*   To minimize response time.
+*   To guarantee data integrity and consistency.
+
+### C. Problems Without Concurrency Control
+
+If concurrency is not properly managed, these issues can arise:
+
+*   **Lost Update:** One transaction's update is overwritten and lost by another concurrent transaction before the first one is committed.
+*   **Dirty Read:** A transaction reads data that has been modified by another transaction but not yet committed. If the modifying transaction then rolls back, the read data is invalid.
+*   **Unrepeatable Read:** A transaction reads the same data item multiple times, but gets different values because another transaction modified it in between the reads.
+*   **Cascading Rollback:** If a transaction reads uncommitted data from another transaction, and that first transaction then rolls back, the reading transaction (and any others dependent on it) must also roll back.
+*   **Inconsistency:** A general term for when the database state becomes incorrect due to simultaneous, uncontrolled transactions.
+
+### D. Concurrency Control Techniques
+
+Common techniques include:
+
+*   Lock-based techniques
+*   Timestamp-based techniques
+*   Multi-version techniques
+*   Verification (optimistic) based techniques
+
+### E. 2PL (2-Phase Locking) Technique
+
+**2-Phase Locking (2PL)** is a widely used lock-based concurrency control technique that guarantees transaction serialization by dividing operations into two distinct phases:
+
+1.  **Expansion Phase (Growing Phase):** The transaction can acquire new locks but cannot release any existing locks.
+2.  **Contraction Phase (Shrinking Phase):** The transaction can release existing locks but cannot acquire any new locks.
+
+**Rule:** All lock operations must occur before the first unlock operation.
+
+---
+
+## 3. Transaction Isolation Levels
+
+**Transaction isolation levels** define how and when changes made by one transaction become visible to other concurrent transactions. The ANSI/ISO SQL standard (SQL92) defines four levels, from lowest to highest isolation:
+
+| Isolation Level     | Description                                                                                                                                                                                                    | Dirty Read | Non-repeatable Read | Phantom Read |
+| :------------------ | :------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | :--------- | :------------------ | :----------- |
+| **0. Read Uncommitted** | Allows transactions to read uncommitted changes made by other transactions. (Lowest isolation, highest concurrency risk).                                                                                      | Occurs     | Occurs              | Occurs       |
+| **1. Read Committed**   | Allows transactions to read only data that has been committed by other transactions. Prevents dirty reads.                                                                                                     | X          | Occurs              | Occurs       |
+| **2. Repeatable Read**  | Ensures that if a transaction reads data multiple times, it will always see the same values. Prevents dirty reads and non-repeatable reads.                                                                  | X          | X                   | Occurs       |
+| **3. Serializable**     | Highest isolation level. Ensures a transaction runs as if it were the only one in the system. Prevents dirty reads, non-repeatable reads, and phantom reads (where new rows appear in subsequent reads of a range). | X          | X                   | X            |
+
+*   **Dirty Read:** Reading uncommitted data from another transaction.
+*   **Non-repeatable Read:** Reading the same data twice and getting different values because another transaction modified it.
+*   **Phantom Read:** Reading a range of data twice and getting a different set of rows (some disappeared or new ones appeared) because another transaction inserted or deleted rows in that range.
+
+---
+
+## 4. Deadlock
+
+### A. Definition
+
+A **deadlock** occurs when two or more transactions (or processes) are indefinitely waiting for resources that are held by each other in a circular fashion. None of the involved transactions can proceed, and system resources remain locked. The system must detect and break deadlocks, usually by canceling one of the transactions.
+
+*   *Example:* Transaction T1 holds Resource Y and waits for Resource X (held by T2). Transaction T2 holds Resource X and waits for Resource Y (held by T1).
+
+### B. Deadlock vs. Starvation
+
+*   **Deadlock:** Multiple processes are stuck waiting for each other.
+*   **Starvation (Infinite Waiting):** A specific process is repeatedly denied access to resources, even though they become available.
+
+### C. Causes of Deadlock (Conditions for Deadlock - all four must be present)
+
+1.  **Mutual Exclusion:** Resources are non-sharable; only one process can use a resource at a time.
+2.  **Hold and Wait (Block & Wait):** A transaction holds at least one resource while waiting to acquire another resource that is currently held by another transaction.
+3.  **Non-preemption:** A resource cannot be forcibly taken away from a transaction; it must be voluntarily released by the transaction holding it.
+4.  **Circular Wait:** A circular chain of transactions exists, where each transaction in the chain is waiting for a resource held by the next transaction in the chain.
+
+### D. Solutions to Deadlock
+
+*   **Deadlock Prevention:**
+    *   Design the system to prevent any of the four deadlock conditions from occurring. This is often difficult to implement without reducing concurrency.
+    *   *Example:* Requiring transactions to request all necessary resources at once (eliminates hold and wait).
+*   **Deadlock Avoidance:**
+    *   Allows conditions to exist but dynamically checks if granting a resource request would lead to a deadlock. It only grants requests if a "safe state" can be maintained.
+    *   Often uses algorithms like Wait-Die or Wound-Wait, which use timestamps to decide which transaction should wait or be aborted.
+*   **(Implicit) Deadlock Detection and Recovery:**
+    *   Allow deadlocks to occur, then periodically check for their existence.
+    *   Once detected, recover by aborting one or more transactions (the "victim") to break the cycle and release resources.
+
+---
+
+================================================================================
+ORIGINAL TEXT (First 5000 chars)
+================================================================================
+
+--- Page 124 ---
+Database )
+01 What is a Transaction
+A) Concept  of a transaction
+@A transaction  is a set of several operations  constituting  a logical task unit, which converts  a consistent  state of the
+database  to another  consistent  state.
+@A transaction  is also a unit of performing  a series of read and write operations  in a database,  which should be
+performed  at the same time.
+Unit of business  processing
+(LOGICAL  UNIT OF WORK)
+Start of transaction End of transaction
+Read Modify Delete
+[Figure  42] Conceptual  diagram  of a transaction
+B) ACID properties  of the transaction
+<Table  48> Transaction  properties
+Characteristics Cases of violating  ACID
++ Cheolsu  has to process  the task of entering  10 data as one transaction.  However,  he successfully  enters 9
+Atomicity data but fails to input one datum.
+~All data should be successfully  entered  or failed in one transaction.
++ Ganghee  performs  an SQL operation  with the logic of column 1+ column 2 + column  3 - Column  4, but
+the result varies each time he performs  the operation.
+Consistency —The transaction  result should always be the same expected  value. A transaction  should be controlled
+using Lock, Timestamp,  Validation,  etc. to prevent  other transactions  from intervening  in the middle  of
+processing  the transaction.
++ Younghee  is performing  the task of modifying  100 data and the 35th datum is being updated  in a
+database,  but Cheolsu  accesses  the first modification  datum and modifies  it again.
+Isolation —Another  transaction  should not intervene and process the data until transaction  commit or rollback is
+issued,
++ Cheolsu  has entered 10 items of member  information  and successfully  committed  the transaction,  but
+Durability the data are lost due to a temporary  power failure.
+—The persistence  of a successful  transaction  should be guaranteed.  In this case, the data should be
+restored  using the forward  recovery  algorithm.
+C) when finishing  a transaction
+@ Transaction  commit  operation:  An operation  that completes  a transaction  after permanently  reflecting  the results of
+all SQL statements  in the transaction  to the database.
+@ Transaction  rollback operation:  An operation  that restores  all data values that have been modified by a transaction
+so far to the state prior to executing  the transaction  (that is, aborting  the transaction), when the transaction  cannot
+M2 Database 123
+
+
+--- Page 125 ---
+ESSENCE
+continue  due to a fatal error in the middle of the transaction  or because  the user issues a rollback  command.
+D) Considerations  when executing  a transaction
+@® Implementation  of transaction  concurrency:  Simultaneous  execution  of transactions  can increase  concurrency  by
+increasing  the transaction  throughput  and system utilization  ratio and by reducing  latency.
+@ Executing  a transaction  as quickly as possible:  If a transaction  takes too long, there is a high possibility  that conflicts
+and deadlocks  will occur due to the long locking  time. Locking  should be maintained  long enough  to ensure transaction
+serialization,  but should be executed  quickly  enough  so as not to deteriorate  performance  at the same time.
+02 Concurrency  Control
+A) Definition  of the serializable  schedule  of the transaction
+MA serializable  schedule  means that even if each transaction  is executed  at the same time, the result is the same as
+the sequential  execution  of the transaction.
+@ Guaranteeing  the serialization  of transactions.
+[Transaction 1 ] 1
+No2 No3 SS=
+[Figure  43] Serialization  of transactions
+B) Definition  of concurrency  control
+@ A function  that enables  the successful  execution  of several transactions  at the same time in a database  system that
+supports  a multi-user  environment.
+@A database  system  that supports  a multi-user  environment  must have this function,  which is also called concurrency
+control,
+C) Purposes  of concurrency  control
+© To create a serializable  schedule  or ensure the possibility  of transaction  serialization.
+@ To guarantee  the maximum  sharing  level, minimum  response  time, and maximum  system  activity.
+@ To ensure data integrity  and consistency.
+124 TOPCIT  ESSENCE
+
+
+--- Page 126 ---
+Database )
+D) Problems  that occur when concurrency  is not controlled
+<Table  49> Problems  that occur  when concurrency  is not controlled
+Item Contents
++ Occurs  when transactions  update  the same data simultaneously.
+Lost update + Occurs  when the later transaction  overwrites  the update  value before the previous  transaction
+has completed  the transaction  after updating  the data.
+Dirty read + Other transactions  refer to the intermediate  execution  result of a transaction.
+Inconsistency + A database  remains  inconsistent  when two transactions  are executed  at the same time.
++ When a specific  transaction  cancels  processing  if data is shared by multiple  transactions,  the
+part processed  by other transactions  cannot  be cance...

@@ -1,0 +1,37 @@
+ESSENCE
+@ Data information
++ System  data
++ Test cases
+@ Program  code
++ Module
++ Program
+© Others
++ Cost benefit  analysis
++ User documentation
++ Feasibility  studies
++ Prototype
++ People
+C) Principle  of software  reuse
+@ Generality: Software  should be generally  reusable,  rather  than designed  for a specific  area of application.
+@ Modularity:  The principle  of information  hiding and abstraction.  Software  reuse should have the characteristics of
+minimum  coupling  and maximum  cohesion.
+@ Hardware  independence:  Reused software  should be independent  of execution  hardware  as much as possible.
+@ Software  independence:  Reused  software  should be independent  of the OS or DBMS.
+© Self-documentation:  The accurate  function,  usage, and interface  of the module  should be described.
+© Commonality:  Reused  software  should be commonly  needed  and usable by many developers.
+@ Reliability:  Reused  software  should be reliable  during  use.
+D) Problems  when reusing  software  for practical  business
++ Itis difficult  to find software  modules  that can be used in common.
++ Software  is not very standardized.
++ It is difficult  to understand  the internal  interface  requirements  of the software  module.
++ It is difficult  to understand  the side effects  of the change.
++ The development  of software  components  for reuse can be more costly.
++ The benefits  of software  reuse may only be recognized  after a long time.
++ It is impractical  to extract  components  for reuse from existing  software  components.
+E) Obstacles  to software  reuse and countermeasures
+@ Obstacles  to software  reuse
++ Adverse  reaction  of managers  and developers.
++ Lack of motivation  to apply reuse technology.
++ Lack of software  standardization.
++ Social or legal obstacles.
+34 TOPCIT  ESSENCE

@@ -1,0 +1,37 @@
+Information  security )
+<Table  7> Type of OTPs
+Item Contents
+An authentication  server  generates  a random  number  and sends it
+Synchronous Challenge-response to the client, and the client generates  a one-time  password  using
+the random  number  as an input value.
+The authentication  server  and the client are synchronized,  and a
+Time-synchronous one-time password is created by using the time as an input value.
+Asynchronous The authentication  count record is shared with the authentication
+Event-synchronous server, and a one-time  password  is created by using the
+authentication  count as an input value.
+[Figure 16] shows the OTP operating  procedure  of the time-synchronous  type.
+Synchronize  time between)
+the authentication  server
+and client
+6 Compare
+response
+value
+Y6 User
+Generate authentication
+response  value
+[Figure 16] Operating  procedure  of the time-synchronous  type
+® Biometric  authentication
++ Concept  of biometric  authentication
+Authentication  technology  to extract the measurable  physical  or behavioral  features  of a person, using an
+automated  sensor, and to use it as a means  of authentication.
++ Characteristics  of biometric  authentication
+Universality:  Each person  must have the characteristic  used by the system.
+Distinctiveness:  The characteristic  must be distinguishable.
+Acquisition:  The characteristic  can be measured  and quantified  from the sensor.
+Permanence:  The characteristic  must not change  or modify  during  the human life.
+Accuracy:  The characteristic  that requires  authentication  precision,  regardless  of environmental  changes.
+Acceptability:  The acquisition  phase should not be intrusive  and the system should be user-friendly.
++ Types of biometric  authentication
+As shown in <Table 8>, the types of biometric  authentication  can be divided into a method using body
+information  and a method  using behavioral  characteristics.
+M4 Understanding  Information  Security  37

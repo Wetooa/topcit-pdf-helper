@@ -1,0 +1,198 @@
+LEARNING GUIDE: Pages 169-173
+Generated: 2025-12-07 01:09:21
+PDF: 3 - Overview of System Architecture OCR
+
+================================================================================
+LEARNING GUIDE
+================================================================================
+
+Here is a simplified, easy-to-read learning guide based on the provided text:
+
+---
+
+## Networking Essentials: Protocols and Addressing
+
+### 1. Bellman-Ford Algorithm
+
+*   **Purpose:** Finds the shortest path from a single source vertex (`s`) to all other vertices (`u`) in a weighted graph. It can handle graphs with negative edge weights, unlike Dijkstra's algorithm.
+*   **How it works:**
+    *   Initializes distances from the source.
+    *   Repeatedly "relaxes" all edges `|V| - 1` times (where `|V|` is the number of vertices).
+    *   **Relaxation:** For an edge `(u,v)` with weight `w(u,v)`, if the current distance to `v` (`v.d`) is greater than the distance to `u` (`u.d`) plus the edge weight, `v.d` is updated (`v.d = u.d + w(u,v)`).
+    *   **Negative Cycle Detection:** If, after `|V| - 1` iterations, an edge can still be relaxed, it indicates the presence of a negative-weight cycle reachable from the source.
+
+### 2. Routing Protocol Classification
+
+Routing protocols guide data packets across networks. They are classified by routing type and Autonomous System (AS).
+
+*   **Autonomous System (AS):** A collection of IP networks and routers under the control of one or more network operators, having a single and clearly defined routing policy.
+
+#### A. Routing Types
+
+1.  **Static Routing:** Manual configuration of routes by an administrator.
+2.  **Dynamic Routing:** Routers automatically discover and update routes using routing protocols.
+
+#### B. Dynamic Routing Protocols (Based on AS)
+
+1.  **Interior Gateway Protocol (IGP):**
+    *   Operates *within* a single Autonomous System (AS).
+    *   **Types:**
+        *   **Distance-Vector:** Routers exchange their entire routing tables with neighbors (e.g., RIP, IGRP).
+        *   **Link-State:** Routers share information about their direct links with all other routers in the AS, building a full network topology map (e.g., OSPF, IS-IS).
+        *   **Hybrid:** Combines aspects of both (e.g., EIGRP).
+    *   **Common Protocols:**
+        *   **RIP (Routing Information Protocol):** Distance-vector.
+        *   **OSPF (Open Shortest Path First):** Link-state.
+        *   **IGRP (Interior Gateway Routing Protocol):** Cisco-proprietary distance-vector.
+        *   **EIGRP (Enhanced Interior Gateway Routing Protocol):** Cisco-proprietary hybrid.
+        *   **IS-IS (Intermediate System to Intermediate System):** Link-state.
+
+2.  **Exterior Gateway Protocol (EGP):**
+    *   Operates *between* different Autonomous Systems (ASes).
+    *   **Common Protocol:**
+        *   **BGP (Border Gateway Protocol):** Uses a path-vector algorithm.
+
+#### C. Overview of Specific Routing Protocols
+
+| Protocol | Algorithm Type | Key Characteristics |
+| :------- | :------------- | :-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| **RIP**  | Distance-Vector| - Delivers routing table updates every 30 seconds via broadcasting. <br> - Max hop count: 15 (16 means unreachable). <br> - Does not support VLSM (Variable Length Subnet Masks). <br> - Does not reflect network state (bandwidth, delay). <br> - No load balancing. |
+| **IGRP** | Distance-Vector| - Cisco proprietary, improves on RIP. <br> - Reflects network state (bandwidth, delay, load, reliability). <br> - Max hop count: 255. <br> - Does not support VLSM. <br> - Supports load balancing. |
+| **OSPF** | Link-State     | - Information about changes (e.g., new routes, link failures) spreads quickly. <br> - All routers within an AS have the same network topology information. <br> - Supports VLSM and load balancing. <br> - Uses Dijkstra's algorithm to find shortest paths. |
+| **BGP**  | Path-Vector    | - The primary EGP, connects different ASes (e.g., connecting ISPs). <br> - Uses TCP for reliable communication. <br> - Makes routing decisions based on paths, network policies, and rules. |
+
+### 3. IPv4 (Internet Protocol Version 4) Addresses
+
+#### A. What is an IPv4 Address?
+
+*   A **32-bit numerical identifier** used at the IP layer to uniquely identify devices (routers, hosts) connected to the Internet.
+*   **Structure:** Divided into four 8-bit sections (octets), separated by dots (e.g., 192.168.1.1).
+*   **Components:**
+    *   **IP Address:** The full unique identification for a device on the network.
+    *   **Network ID:** Identifies the specific physical network the device belongs to.
+    *   **Host ID:** Identifies the specific device within that network.
+    *   **Subnet Mask:** A 32-bit mask that distinguishes the network ID from the host ID within an IP address.
+
+#### B. Flexible IP Allocation
+
+*   **CIDR (Classless Inter-Domain Routing, RFC 1519):** An IP addressing method that allows for more flexible allocation of IP addresses by not restricting network parts to fixed 8-bit boundaries. It uses a `/` notation (e.g., `/24`) to indicate the number of bits in the network part.
+*   **Subnetting:** Dividing a single large IP network address into smaller, more manageable subnetworks. This is done by "borrowing" bits from the host ID portion for the network ID.
+*   **Supernetting:** Combining multiple small network IDs into one larger network ID.
+
+#### C. IPv4 Address Designation System (Classes)
+
+Before CIDR, IPv4 addresses were divided into classes based on the first few bits.
+
+*   **Network Address:** Assigned by Internet address resource management organizations.
+*   **Host Address:** Assigned by network administrators to individual hosts.
+
+| Class | Address Range               | Purpose                         | Network/Host Structure (Octets) | Default Subnet Mask |
+| :---- | :-------------------------- | :------------------------------ | :------------------------------ | :------------------ |
+| **A** | 1.0.0.0 - 126.255.255.255   | Large networks                  | Network | Host | Host | Host | 255.0.0.0           |
+| **B** | 128.0.0.0 - 191.255.255.255 | Medium-sized networks           | Network | Network | Host | Host | 255.255.0.0         |
+| **C** | 192.0.0.0 - 223.255.255.255 | Small networks                  | Network | Network | Network | Host | 255.255.255.0       |
+| **D** | 224.0.0.0 - 239.255.255.255 | Multicast (one-to-many communication) | -                               | -                   |
+| **E** | 240.0.0.0 - 255.255.255.255 | Reserved for experimental/future use | -                               | -                   |
+
+#### D. Special IPv4 Addresses
+
+These addresses have specific functions and are not used for general host identification on the public internet.
+
+| Address Type             | Address Pattern            | Usage                                                                 | Routable? |
+| :----------------------- | :------------------------- | :-------------------------------------------------------------------- | :-------- |
+| **Network Address**      | `NetworkID.0.0.0`          | Identifies the entire network.                                        | Yes       |
+| **Directed Broadcast**   | `NetworkID.255.255.255`    | Sends data to all hosts on a specific network.                        | Yes       |
+| **Local Loopback**       | `127.X.X.X` (commonly 127.0.0.1) | Used for internal system testing and communication within a single device. | No        |
+| **Limited Broadcast**    | `255.255.255.255`          | Sends data to all hosts on the local network (within the router's scope). | No        |
+| **"This Host"**          | `0.0.0.0`                  | Used by a host that doesn't know its own IP address (e.g., during DHCP request). | No        |
+| **APIPA**                | `169.254.X.X`              | **Automatic Private IP Addressing:** Automatically assigned when DHCP is unavailable. | No        |
+| **Private IP Addresses** |                            | Used in private networks (LANs) without requiring public registration. | No        |
+| **Class A Private**      | `10.0.0.0 - 10.255.255.255`|                                                                       | No        |
+| **Class B Private**      | `172.16.0.0 - 172.31.255.255`|                                                                       | No        |
+| **Class C Private**      | `192.168.0.0 - 192.168.255.255`|                                                                       | No        |
+
+---
+
+================================================================================
+ORIGINAL TEXT (First 5000 chars)
+================================================================================
+
+--- Page 169 ---
+ESSENCE
+and u, and all (|V|—1) nodes of the graph, excluding  u, can be the shortest  distance  between  s and u. Therefore,  the
+Bellman-Ford  Algorithm  performs  the edge-relaxation  |V|—1 times for all edges.
+(Figure 121] shows Bellman-Ford  Algorithm’s  pseudo-code.
+BELLMAN-FORD  (G, w, s)
+INIT-SINGLE-SOURCE  (G, s)
+fori=1lto  |IGWV| -1
+for each edge (u,v) © G.E
+Relax (u, v, w)
+ifv.d>u.d  + wu, v)
+return  FALSE
+return  TRUE
+[Figure 121] Bellman-Ford  Algorithm’s  Pseudo-code
+C) Routing  protocol  types
+The routing  protocol  is classified  into static routing  and dynamic  routing,  depending  on the routing  type, as shown in
+(Figure 122]. The dynamic  routing  method is divided into the EGP (Exterior  Gateway  Protocol)  method  and the IGP
+(Interior  Gateway  Protocol)  method, according  to the classification  of AS (Autonomous  System).  The IGP (Interior
+Gateway  Protocol)  method  is further  divided into the distance  vector method,  the link-state  method,  and the hybrid
+method,  according  to the routing  setting  method.
+INoDUL a oa mre)Kolac)|
+Static Routing
+EGP IGP.
+{ sce ] [Distance  Vector | | Link  State] | Hybrid |
+| RIP | | OSPF | | EIGRP |
+IGRP ISIS
+[Figure 122] Routing  Protocol  Classification
+The type of routing  protocol  can be divided into an internal  router protocol  and an external  router protocol,  based on
+the autonomous  system (AS). Here, AS refers to networks  with an independent  management  system and the same
+operating  policy.
+168 TOPCIT  ESSENCE
+
+
+--- Page 170 ---
+Overview  of System Architecture )
+When classifying routing protocols,  based on AS, the routing protocol  within the AS is called the inter gateway
+protocol  (IGP). The leading IGP includes  the routing information  protocol  (RIP), using a distance  vector routing
+algorithm,  and the open shortest  path first (OSPF),  using a link-state  routing  algorithm.  The routing  protocol  between
+AS is called the exterior  gateway  protocol  (EGP). The leading  EGP is the border  gateway  protocol  (BGP) that uses a
+path-vector  routing  algorithm.
+D) Routing  protocol  type
+The routing protocol includes  RIP, which uses the distance-vector  routing  algorithm  and delivers  the routing  table
+information  every 30 seconds  through  broadcasting,  IGRP. which improves  some of the RIP problems  by reflecting  the
+network  state (bandwidth,  delay time, load, etc.), OSPF, which uses the link-state  routing  algorithm,  and BGP, which
+connects  between  AS. <Table 50> shows  the details  of each protocol.
+Table 50) Routing Protocol  Types
+Protocol Description
++ RIP uses the distance-vector  routing  algorithm  and delivers  the routing  table information  every 30 seconds
+RIP through  broadcasting.
+(RFC 1058) + The number  of hops is limited (up to 16hop),  VLSM is not supported,  and load balance  is not available.
++ It does not reflect  the network  state (bandwidth,  delay time, load, etc.).
++ IGRP enhances  some of the problems  of RIP.
+IGRP + It reflects  the network  state (bandwidth,  delay time, load, etc.).
++ The number  of hops is increased  (up to 255 hops), VLSM is not supported,  and load balance  is available.
++ OSPF uses the link-state  routing  algorithm.ae  Rec | * Information  on the occurrence  of changes, such as user-specified  routes, the most economical  routes, and
+n 47) multiple  routes, spreads  faster than RIP
++ Topology  information  remains  the same across all routers,  VLSM, and load balancing.
+BGP + EGP method  that connects  AS and the interconnection  of large networks
+(RFC 4271) + Uses the TCP technique,  based on the path-vector  routing
+06 IPv4 Overview
+A) What is an IPv4 (Internet  Protocol  Version  4) address?
+The IPv4 address  is the 32-bit address  used on the IP layer, as shown in [Figure 123]. It is an identifier  that makes the
+router or host connection  to the Internet  unique and universal.
+32 bit
+f Bbit ) i Bbit ) Bbit | f Bbit—_
+[Figure 123] IPv4 Address  Structure
+M3 Overview  of System  Architecture  169
+
+
+--- Page 171 ---
+ESSENCE
+The elements  of the IPv4 address  include an IP address,  which is a unique identification  address  given to all
+communication  networks  that are connected  to the Internet  and computers  connected  to the network, a network
+ID, which identifies  TCP/IP hosts in the same physical  network,  a host ID, which identifies  the TCP/IP host on the
+network,  and the 32-bit subnet mask, which specifies  the network  name for the iP address  from the hostname.
+CIDR (Classless Inter-Domain  Routing,  RFC 1519) is a method  of expressing  the IPv4 address  and one of IP allocating
+methods  that does not divide the network  part from the host part in 8-bit units. Moreover,  subnetting  and
+supernetting  can flexibly  express  the network  and host Ips, according  to the number  of IPs required by the network,
+without  dividing  the IPv4 address  and the network  ID into fixed 8-bit units. Here, subnetting  refers to dividing ...

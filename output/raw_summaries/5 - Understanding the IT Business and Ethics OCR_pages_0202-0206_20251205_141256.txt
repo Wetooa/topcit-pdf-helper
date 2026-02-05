@@ -1,0 +1,213 @@
+LEARNING GUIDE: Pages 202-206
+Generated: 2025-12-05 14:12:56
+PDF: 5 - Understanding the IT Business and Ethics OCR
+
+================================================================================
+LEARNING GUIDE
+================================================================================
+
+Here's a simplified, easy-to-read learning guide based on the provided text:
+
+---
+
+## IT Business and Ethics: Learning Guide
+
+### I. Personal Information Protection
+
+#### A. Obligated Persons for Information Protection
+Certain entities are legally required to manage and protect personal information. You are an **obligated person** if you meet any of these criteria:
+
+*   **Internet Service Providers (ISPs):** Those providing information and communication network services in Seoul and all metropolitan cities.
+*   **Integrated Information and Communications Facility Operators (IOCs):** As per Article 46 of the Telecommunications Business Act.
+*   **Large Organizations (Annual Sales ≥ 150 Billion Won) that are:**
+    *   Superior General Hospitals.
+    *   Schools with over 10,000 enrolled students (as of Dec 31 of previous year).
+*   **Information and Communications Service Sector Companies:** With sales of 10 billion won or more in the previous year.
+*   **High-Traffic Service Providers:** Those with more than 1 million daily users of information and communications services in the 3 months preceding the previous year.
+
+**Voluntary Applicants:** Companies not meeting the criteria can voluntarily establish an information/personal information protection management system and apply for certification.
+
+#### B. Personal Information Protection Management System (PIPMS)
+The PIPMS objectively examines whether institutions and companies have a system to systematically and continuously perform personal information protection tasks, granting certification upon satisfaction of standards.
+
+**PIPMS Structure (Key Components):**
+
+1.  **Establishment & Operation of Management System:**
+    *   1.1 Establishment of management system
+    *   1.2 Risk management
+    *   1.3 Operation of management system
+    *   1.4 Inspection and improvement of management system
+2.  **Requirements for Protection Measures (e.g., Security Aspects):**
+    *   2.1 Policy, organization, asset management
+    *   2.2 Personal security
+    *   2.3 External security
+    *   2.4 Physical security
+    *   2.5 Certification and authority management
+    *   2.6 Access control
+    *   2.7 Encryption application
+    *   2.8 Information system introduction and development security
+    *   2.9 System and service operation management
+    *   2.10 System and service security management
+    *   2.11 Accident prevention and response
+    *   2.12 Disaster Recovery
+3.  **Requirements for Each Stage of Personal Information Processing:**
+    *   3.1 Protection measures for collection of personal information
+    *   3.2 Protection measures for possession and use of personal information
+    *   3.3 Protection measures for provision of personal information
+    *   3.4 Protection measures in case of destruction of personal information
+    *   3.5 Protection of data subject rights
+
+#### C. Handling Personal Information Leakage
+
+**1. Immediate Response (Mandatory for >1,000 data subjects leaked):**
+*   Notify affected data subjects immediately.
+*   Initiate actions: confirm facts, block website, advise password changes.
+*   Be prepared for dispute mediation or lawsuits from victims.
+
+**2. Reporting Leakage to Authorities:**
+*   **Who to report to:** Ministry of Security and Public Administration, Korea Internet & Security Agency (KISA).
+*   **When to report:** Within 5 days (after notifying data subjects and completing initial response).
+*   **How to report:** Via email, fax, or website. Phone reporting is allowed in special circumstances, followed by a report submission.
+*   **What to report:** Institution name, notification status, leaked items & scale, time & course of leakage, damage minimization measures & results, victim self-protection methods, remedy procedures, contact info for the department in charge.
+
+**3. Examples of Past Breaches (Domestic Companies):**
+*   **Mar 2017:** Accommodation reservation hacking, 3.24M cases, 970k victims. Sanctions: 310M won penalty, 25M won fine.
+*   **Aug 2016:** Personal info provided to third-party insurance companies, 180k cases, 29k victims. Sanctions: 180M won penalty, 20M won fine.
+*   **May 2016:** Hacking, 25.4M cases, 20.51M victims. Sanctions: 4.48B won penalty, 25M won fine.
+*   **Sep 2015:** Hacking, 1.95M cases, 1.95M victims. Sanctions: 102M won penalty, 15M won fine.
+*   **May 2015:** Unauthorized use of prepaid phones for foreigners, 870k cases, 780k victims. Sanctions: 360M won penalty.
+
+#### D. Why Personal Information Protection is Essential
+
+*   **Ubiquity of Personal Data:** Used in nearly all public and private IT services.
+*   **Corporate Asset:** Personal information is a valuable asset for companies across various sectors (finance, healthcare, education, etc.).
+*   **Crime & Fraud Prevention:** Prevents illegal trafficking, impersonation, and other criminal abuse.
+*   **Mitigate Corporate Losses:** Reduces financial and reputational damage from leakage incidents and class-action lawsuits.
+*   **National & Social Safety:** Contributes to overall national and social security.
+*   **Global Trend & Growth Engine:** Aligns with international privacy standards and drives national development.
+*   **Industry Importance:** A critical issue impacting all industries.
+*   **Cross-border Exchange:** Essential for safe international data exchange due to FTAs.
+*   **Public Trust & National Brand:** Impacts public administration credibility and national image.
+
+---
+
+### II. Intellectual Property Rights (IPR)
+
+#### A. Introduction to Intellectual Property Rights (IPR)
+IPR encompasses all property rights arising from intellectual activities. It includes:
+*   **Industrial Property Rights:** For industrial development (e.g., patents, trademarks).
+*   **Copyrights:** For cultural development (e.g., literary, artistic works).
+
+IPR are crucial corporate assets, with increasing transactions and new forms emerging due to technological advancements. Understanding them is vital in the IT business.
+
+#### B. Key Concepts & Learning Objectives
+*   **Keywords:** Intellectual property rights, copyrights, author's rights, industrial property rights, new intellectual property rights, business works, software copyrights, prevention of unfair competition, trade secret protection, patent rights.
+*   **Learning Objectives:**
+    1.  Explain copyrights and copyright infringement prevention.
+    2.  Explain intellectual property rights and industrial property rights.
+
+#### C. Trade Secret Protection
+
+**1. Importance and Risks:**
+*   Leakage of trade secrets allows competitors to easily replicate products, engage in dumping, leading to business crises and intensified competition.
+
+**2. Definition of a Trade Secret:**
+*   According to the "Act on the Prevention of Unfair Competition and Protection of Trade Secrets," a **trade secret** is information (e.g., production methods, sales methods, useful technical or business information for business activities) that:
+    *   Is not publicly known.
+    *   Is subject to reasonable efforts to maintain its secrecy.
+    *   Has independent economic value.
+
+**3. Causes of Leaks:**
+*   Surveys show that the majority of trade secret leaks are caused by **internal staff**, often during **employee turnover**.
+
+**4. Legal Penalties for Trade Secret Violation:**
+*   **Criminal Penalties:**
+    *   Up to 5 years imprisonment for domestic cases.
+    *   Up to 10 years imprisonment for overseas cases.
+    *   Fines are also imposed along with imprisonment.
+*   **Attempted/Conspiracy:** Even attempting, intending, or conspiring to commit a crime related to trade secrets is punishable.
+
+**5. The Human Factor in Protection:**
+*   Even with reinforced security technologies, trade secrets are frequently leaked by people. Therefore, comprehensive measures addressing human factors are essential.
+*   A key reason for inadequate protection systems is that executives and employees often lack exact knowledge of the "Unfair Competition Prevention and Trade Secret Protection Act."
+
+---
+
+================================================================================
+ORIGINAL TEXT (First 5000 chars)
+================================================================================
+
+--- Page 202 ---
+Understanding  the IT Business  and Ethics )
+<Table 102> Criteria  for obligated  persons
+Classification Criteria  for obligated  persons
+A person  who has obtained  permission  pursuant  to Article 6 (1) of the Telecommunications  Business
+ISP Act and provides  information  and communications  network  services  in Seoul and all metropolitan
+cities.
+ioc An integrated  information  and communications  facility  operator  pursuant  to Article 46 of the
+Telecommunications  Business  Act
+Among  those with annual sales or revenue  of 150 billion won or more, the following  applies:
++ Superior  General  Hospitals  pursuant  to Article 3-4 of the Medical  Service  Act
++ Schools  pursuant  to Article 2 of Higher  Education  Act with more than 10,000 enrolled  students  as
+A person who meets of December  31 of the previous  year
+any eset A person with a sales of 10 billion won or more in the previous year (or the previous business  year in
+the case of a corporation)  in the information  and communications  service  sector
+Those with more than 1 million daily users of information  and communications  services  in the 3
+months  immediately  preceding  the previous  year
+In addition,  companies  and institutions  that do not meet the criteria, but voluntarily  establish  and operate  an
+information  protection  and personal  information  protection  management  system  are classified  as voluntary  applicants
+and can apply for certification  and receive  certification  examination.
+Whether  institutions  and companies  have a personal  information  protection  management  system  and systematically
+and continuously  perform protection  tasks, and grant certification  when the standards  are satisfied,  are objectively
+examined.
+1.1 Establishment  ofmanagement  system — 12 Risk management
+s “a
+1.4 Inspection  and improvement / ‘ 1.3 Operation  of
+of management  system / \ [ management  system
+| 1, Establishment
+and operation  of
+\ management  system }
+\ (16) /
+2. Requirements  for protection  measures  (64) TM —3 Requirements  for each stage of
+personal  information  processing  (22 items)
+2.1 Palicy, organization,  asset  management.
+22 Personal  security 3.1 Protection  measures  for collection  of personal  infomation
+23 Extemal  security 3.2 Protection  measures  for possession  and use of personal
+2.4 Physical  security information
+25 Certification  and authority  management. 33 Protection  measures  for provision  of personal  information
+26 Access  control 3.4 Protection  measures  in case of destruction  of personal
+27 Encryption  application information
+28 Information  system  introduction  and development  security 3.5 Protection  of data subject  rights
+29 System  and service  operation  management
+2.10 System  and service  security  management
+2.11 Accident  prevention  and response
+2.12 Disaster  Recovery
+[Figure  90] Personal  information  protection  management  system
+M5 Understanding  the IT Business  and Ethics 201
+
+
+--- Page 203 ---
+ESSENCE
+B) Follow-up  measures  for personal  information  controllers
+@ Response  to personal  information  leakage
+If personal  information  is leaked (mandatory  obligation in case of more than one thousand  data subjects  - Article 34
+of the Personal  Information  Protection  Act, Article 39 of the Enforcement  Decree  of the same Act), the data subjects
+must be notified immediately  and actions such as confirmation  of facts, blocking  of the website,  notification  of
+password  change,  etc. must be promptly  initiated.
+In addition,  victims of leakage  may file collective  dispute mediation  with the Dispute Mediation  Committee  or file a
+lawsuit  against  the infringement  of rights to the court, which requires  thorough  preparation.
+@ Notification  of personal  information  leakage
+If personal information  over a certain scale is leaked, it is required  to report to specialized  agencies  such as the
+Ministry  of Security  and Public Administration  and the Korea Internet  & Security  Agency  (KISA) to provide support  for
+damage  prevention  and recovery  technology.
+<Table 103> Notification  of personal  information  leakage
+Who to report If personal  information  of more than 1,000 data subjects  is leaked
+When to report | Within 5 days (notification  to the data subjects  and report of the results of response  measures)
+1) Report  and submit  a report of leakage  via e-mail, fax, or the website
+How to report 2) In case there is not enough  time or of special circumstances:  a leak report  can be submitted  after
+reporting  by phone
+Name of the institution, notification  status, items and scale of leaked personal  information,  time and
+course of leakage,  measures  taken to minimize  leakage  damage  and results, methods  of minimizing
+damage  that can be done by the information  subject  and remedy  procedures,  contact  information  of the
+department  in charge,  etc.What to report
+<Table 104> Details  of personal  information  leakage  f...

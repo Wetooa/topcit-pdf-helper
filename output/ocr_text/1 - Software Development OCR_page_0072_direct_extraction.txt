@@ -1,0 +1,40 @@
+Software  Development )
+02 Object-Oriented  Design  and Principles
+Requirements  analysis  is performed  by creating  from a class diagram and a sequence  diagram to an activity
+diagram  during the process  of object-oriented  analysis.  In general, requirements  analysis  is described  at the
+conceptual  level from the customer's  viewpoint,  while the physical aspect of how it should be stored is not
+described.
+Emphasis  is placed on how to represent  the user requirements  - previously  identified  during the object-oriented
+analysis  process - in the software  in the object-oriented  design phase. Details about implementation  are
+suggested  in the design phase to determine  a specific method of physically  realizing  the requirements.  Object-
+oriented  design has the advantage  of enabling  design without  the need for a large-scale  conversion  process by
+reusing  the notation  used in object-oriented  analysis.
+A) Object  and class
+A class is a collection  of similar objects.  An object represents  a thing that exists independently in the real
+world, for example,  Mr. Kim Cheolsu  (example  of an employee)  or Seoul (example  of a place). Each object is
+described  by a group of specific properties  and is distinguished  from other objects by property  values. For
+example,  Kim Cheolsu  has such properties  and property  values as his social security  number  “830425-1XXXXXX”
+and his date of birth “April 25, 1983”.
+There are sets within a given system that naturally  have similar properties.  For example,  there are many
+students  in a college, and these students  have similar information.  They share the same properties  (e.g.
+student number, major, grade, etc.), and each student  (object) has a unique value for each property.  At this
+time, a set of objects having the same property  is called a class. That is, an instance  of a class is an object.
+For example,  “Kim Cheolsu”  and “Lee Younghee’,  as objects  that belong to the student  class, share the same
+properties  (student  number, major, grade), but “Kim Cheolsu”  has unique property  values such as his student
+number  “925462”,  his major “CS”, and his grade “3.8”, while “Younghee  Lee” also has his own unique property
+values, such as his student  number  “956234”,  major “Mathematics”,  and grade “4.2”.
+When investigating  the characteristics  of data required by the system, it is more convenient  to describe  a
+grouped  class than it is each object. The task of grouping  similar  objects  is called classification,  and the objects
+grouped  through  classification  share the same types of properties,  constraints,  and behaviors.
+B) Encapsulation
+The goal of design is to create software  that is easy to understand  and modify: and in this regard designing
+modules  with a high level of independence  is a starting  point. Software  looks mature when the constituent
+elements  perform their respective  functions  independently.  The functional  independence  of software
+components  is a byproduct  of the modularization  process and the aforementioned  concept  of information
+hiding. The functional  independence  of a module  can be maximized  when the unit modules  are processed  more
+completely  and when the processing  dependency  with other modules  is minimized.
+Encapsulation,  one of the important  concepts  of the object-oriented  development  method,  is both a method
+of obtaining  improved  abstraction  and independence  through information  hiding, and a method of protecting
+properties  and operations  together  as a group. Object-oriented  languages  have a function  that supports
+encapsulation.
+M1 Software  development  71

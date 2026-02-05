@@ -1,0 +1,29 @@
+Information  security )
+able to destroy  the purpose  of conversion  in the design.
++ Secret information,  to be used by the conversion  algorithm,  should be created.
++ A method  for distributing  and sharing  confidential  information  should be developed.
++A security  algorithm  for a specific security  service and a protocol,  to be used by the two communicating
+entities  that will use secret information,  should be designated.
+@® Network  access  security  model
+An attacker  tries to infiltrate  into the information  system to damage it or to destroy  or steal personal
+information.  In addition,  malware,  such as a virus or worm, can infect the information  system through  the
+network.
+Security  response  techniques against such unwanted  access can be divided into two categories,  as shown
+in [Figure 56]. The first category  is the method of denying  access to the information  system, except for the
+authorized  users, using the gate keeper  function.  The log-in procedure  using a password  falls into this category.
+Once accessed  by the user or software,  the second-phase  response  is performed  by the internal security
+control function.  An intrusion  detection  system (IDS) that monitors  the activity status of an information
+system and detects  an intruder  can be selected  as the representative  method of performing  internal security
+control.
+4 Data
+Attacker Process
+~ Hacker Software
+- Virus, worm
+Internal  security  control
+[Figure 56] Network  access  security  model
+(Source:  W. Stallings,  Cryptography  and Network  Security-Principles  and Practice, Prentice  Hall, p.26)
+B) Communication  protocol  layer and security
+@® OSI 7-layer  reference  model and TCP/IP protocol  layer structure
+{Figure 57] shows the OSI (Open System Interconnection)  7-layer reference  model, described  in the ISO/IEC
+7498-1:1994(E)  standard  document,  which indicates  the interconnection  structure  between  open systems.
+M4 Understanding  Information  Security  113

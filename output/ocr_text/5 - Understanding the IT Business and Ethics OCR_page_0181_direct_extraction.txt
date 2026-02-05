@@ -1,0 +1,34 @@
+ESSENCE
+as a developer,  privacy  protection  and information  protection  consciousness.
+@ Professional  Ethics for Software  Developers
+Programmer  and software  development  columnist  Pete Goodliffe  presents  the following  "Becoming  a Better
+Programmer"®,  emphasizing  the ethical consciousness  of programmers.
+<Pledge  to do no harm as an ethical programmer>
++ | swear | will not harm the code of ethics or business  for personal  and professional  gain.
++ | will do my best to perform  my assigned  tasks faithfully,  and will build team harmony.
++ | will be honest  with others and work towards  making  projects  and teams as efficient  and valuable  as possible.
+Also, it asks you as a programmer  to check the following  questions  to check whether  you have professional  ethics.
+1. Do you consider  yourself  an ethical programmer?
+Is there a difference  between  an ethical programmer  and an ethical person?
+2. \s it ethical to create software  that generates  enormous  wealth for bankers  at the expense  of those who don't know
+how to create software?  Does it make any difference  depending  on whether  the trade practice  is legal or not?
+3. What if you are using GPL code that requires  additional  disclosure  obligations  for your products,  but you do not fulfill
+the obligations  of the license terms by withholding  the disclosure  of your own code?
+Do you have to disclose  your company’s  code to meet the license terms? Or should you ask for an alternative
+replacement  of closed source for the GPL code? Should  you become  a whistleblower  and report  a license violation  if
+the product  has already  been shipped?  What if your employment  security  depends  on being silent about it?
+4. What if you recognize  other programmers’  unethical  behavior?  If the programmer  is a co-worker,  a friend, someone
+who has been asked for a referral, or a coder whom you have met but haven't  worked with, how does your answer
+change?
+5. How do software  patents  fit into the world of ethical programming?
+6. Does your passion for software  development  affect how much you care about ethical issues? Will a passionate
+programmer  behave more ethically  than a professional  coder?
+It is difficult  for software  developers  to fully understand  how their code will be used and what the potential  risks may
+be. In addition, it is difficult  to figure out what is right and what is wrong in a rushing  work environment.  In such an
+environment,  a sense of professional  ethics gives a sense of duty and responsibility  for a job and can provide  guidance
+for judgment  in the context  of moral dilemmas.
+02 Ethical  Principles  and Code of IT Business
+A) Code of Ethics Related  to ICT Technology
+@ ACM(Association  for Computing  Machinery)  Code of Ethics and Professional  Conduct
+26 Pete Goodlife,  "Becoming  a Better Programmer’,  p.243-252,  O'Reilly  Media, 2014
+180 TOPCIT  ESSENCE

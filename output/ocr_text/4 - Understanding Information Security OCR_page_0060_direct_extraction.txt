@@ -1,0 +1,39 @@
+ESSENCE
++ Data destruction  phase
+When destroying  big data, the characteristics  of the distribution  and replication  environment  of big
+data should be considered,  and it should be completely  destroyed  in an unrecoverable  way. In addition,  a
+management  system  for monitoring  the data destruction  is needed in terms of internal  control
+© Overview  of personal  information  de-identification
++ Concept  of personal  information  de-identification
+De-identification  refers to processing  that makes it difficult  to identify  a specific individual,  even if individually
+identifiable  information  in data is combined  with other information,  by deleting  some of or all such information,
+or by replacing  some information  with other attributed  information.
++ Targets  of personal  information  de-identification
+De-identification  targets information  that can identify  an individual  by him/herself,  and information  that can
+be easily combined  with other information  to identify an individual,  even if the information  alone cannot
+identify  that individual.
++ Personal  information  de-identification  techniques
+Big data de-identification  techniques  include pseudonymization,  aggregation,  data reduction,  data
+suppression,  and data masking.
+<Table 14> Personal  information  de-identification  techniques
+Processing 7 .technique Detailed  technology Main content
+Heuristic  anonymization, A technique  that makes it difficult  to identify  individuals,  by replacing
+Pseudonymization  | K-anonymization,  encryption, important  identifying  elements  in personal  information,  with other
+exchange  method values.
+Aggregation Aggregation,  sub-aggregation, A technique  that shows the total value of data to prevent  the
+Rounding,  rearranging  data identification  of individual  data values.
+Data reductionSimple anonymization  by deleting
+attribute  values, partially  deleting
+attribute  values, deleting  data
+rows, and removing  identifiersA technique  that removes  unnecessary  values,  or values that are
+important  for identifying  individuals, among  the values configured  in
+the data set,according  to the purpose  of data sharing  and opening.
+Data suppressionData suppression,  random
+rounding  method,  range method,
+control roundingA technique  that prevents  the identification  of individual  data values,
+by converting  data values into category  values.
+Data masking
+60 TOPCIT  ESSENCEAdding  random  noise, replacing
+with spaceA technique  that prevents  the identification  of key personal
+identifiers,  which is highly likely to contribute  to the identification  of
+an individual  in combination  with open information

@@ -1,0 +1,32 @@
+Information  security )
+Two systems,  A and B, that are in a trusted relationship  in the network  environment  can use a service that
+enables  the user to log into system B using the system A account,  which is called trust authentication.
+Authentication  is performed  by the trust service  on the network,  based on the network  address, not the
+password.  That is, the server stores the trusted client IP addresses  and allows log-in without  an ID and
+password,  if the client with the saved IP address  requests  log-in.
+To respond  to IP spoofing,  it is recommended  not to use trust authentication,  except under special
+circumstances,
++ DNS spoofing
+If an attacker  takes control of the DNS server of a certain domain,  the user can be connected  to the system
+designated  by the attacker,  because  the user finally obtains  that IP address  even though the user intended
+to obtain the IP address  of the other system.  That is, the attacker  sniffs the DNS, designated  by the user, to
+request  address  translation  and traffic from the higher-level  DNS site that gives the response,  and it passes
+the IP address  of the attacker's  intended  site as the final response.
+To respond  to DNS spoofing,  the IP address  of the important  access server can be registered  in the host file,
+so the IP address  can be obtained  without  querying  the DNS server. However, it is realistically  impossible  to
+register  and manage  the IP addresses  of all servers.
+02 Security  protocols  and security  solutions
+A) IPSec
+@® Concept
+The |Pv4 (Internet  Protocol  version 4) has no authentication  function  and is vulnerable  to attacks, such as
+eavesdropping  or packet alteration.  IPsec (Internet  Protocol  Security)  was developed  to make up for the
+security  vulnerability  of IP. IPSec provides  security  functions  to all application  programs  because  it supports
+the safe operation  of the IP, by providing  encryption  and authentication  services  to the IP by packet unit. IPsec
+encompasses  three functional  areas: authentication,  confidentiality,  and key management.  It is optional  in Ipv4,
+but implemented  as a basic function  in IPv6.
+@ Composition  and operation
+[Figure 61] shows that when an organization  uses the LAN distributed  in several places, IP traffic is transmitted
+within the LAN, but outgoing  traffic of the LAN is transmitted  using IPSec protocol  for safe communication.
+The IPSec protocol  runs on the device, such as the router or firewall, which is transparently  visible to the
+computers  on the LAN.
+M4 Understanding  Information  Security  119

@@ -1,0 +1,26 @@
+ESSENCE
+Here, “configuration”  generally  refers to the program  created in the process  of software development,  the
+program  description  document,  data, etc. Software  configuration  management  is a management  technique
+designed  to systematically  manage  various  deliverables  created in the software  development  process.  That is,
+it manages  actions  related to the history  of all component  changes  that occur from the software  development
+phase to the maintenance  phase.
+The table below describes  common  problems  that occur when software  configuration  is not (properly)  managed.
+<Table 39> Background  of the necessity  of configuration  management
+Cause  of the problem Contents
+Lack of visibility Software  has no visibility  because  it is intangible.
+Difficulty  in control It is practically  difficult  to control software  development  because  it is invisible.
+Lack of traceability It is difficult  to trace the entire process  of software  development.
+Lack of monitoring It is difficult  to manage  a project  continuously  due to a lack of visibility  and difficulty  in tracking.
+Ceaseless  change Ceaseless  changes  to the user's requirements.
+02 Conceptual  Diagram  and Components  of Configuration  Management
+A) Conceptual  diagram  of configuration  management
+The conceptual  diagram  below describes  the entire activity  and correlation  of configuration  management.
+Library  managementConfiguration
+management  activities
+Identify  configuration
+Meta Data Approve  and
+check changesControl  configuration
+Check configuration Repository Allow changes
+Record  configuration Apply changes
+Integrated  CASE, 00 CASE, intelligent  CASE
+120 TOPCIT  ESSENCE

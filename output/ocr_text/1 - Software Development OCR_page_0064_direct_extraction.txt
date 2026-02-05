@@ -1,0 +1,35 @@
+Software  Development }
++ Preview  for practical  business Roles of the software  architect
+«Creator  of a vision - The requirements  and constraints  should be well understood  and
+understanding  of the realized  technologies  should be improved,  based on a professional
+perspective  and experience  in the type of product  to be made. A software  architect  plays the
+role of completing  the framework  of the software  to be developed.  The architect’s  creativity  is
+important,  and the architect  should be able to present  what has been arranged.
++ Key technical  consultant  - A key technical  consultant  advises  the development  organization
+regarding  technical  matters,  based on his or her expertise.  It is particularly  important  to
+properly  select a design pattern and a development  framework  because  it is the first step in
+ensuring  that the quality  of a software  product  is commensurate  with its characteristics.  To this
+end, continuous  knowledge  realization  and competency  development  are required.
++ Decision  maker  - Ultimately,  an architect  leads a design team in the development  of a software
+product  and makes decisions  about major areas or factors  that affect the overall design.  To this
+end, increasing  knowledge  about the domain  in which the product  will be used or applied  is also
+defined  as an important  factor.
+Recently,  this role has become  more important,  given that a proper  decision  appropriate  to the
+situation  must be made quickly  and evaluated,  such as agile development,  etc.
++ Coaches  - Similar to the role of the key technical  consultant  (described  as the second role),
+the coach trains the defined  architecture  and manages  its improvement  and feedback.  The role
+of the coach, as a technical  leader, and coaching  is exercised  by various sponsorships  and its
+position  is also strengthened.
++ Coordinates  - The different  opinions  of the various  project participants  should be coordinated
+and mediated  to maintain  and ensure design integrity.  A person who can mediate  from the
+technical  standpoint  is required  because  these factors may develop  into an important  risk
+factor. An architect  can be seen as an authoritative  technical  mediator  in this regard.  Therefore,
+proper  communication  skills are also important,  in addition  to technical  competence.
++ Implements  - When introducing  a new technology,  its impact should be evaluated  from
+the design stage, and the feasibility  of its implementation  should also be evaluated  using a
+prototype.  Generally,  developers  grow into architects  by improving  their skills and experience.
++ Advocates  - New architecture  should be continuously  evaluated  and a ground for introducing
+and continuous  investment  should be provided.  Technical  skills and architecture  should be
+advanced  continuously  through  this.
+(Source:  Applied  Software  Architecture)
+M1 Software  development  63

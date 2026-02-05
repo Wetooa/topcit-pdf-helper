@@ -1,0 +1,42 @@
+ESSENCE
+04 Design  pattern
+A) Concept  of the design pattern
+The software  design pattern can be likened to the patterns  used to make clothes.  The design pattern
+(omitting  software)  can be defined as “a general, reusable  solution  to a recurring  problem  in a specific context
+of software  design.”  The design pattern is a description  or a sample of a problem-solving  method  that can be
+used in various  situations.  It formulates  the best practices  that programmers  should implement,  and generally
+represents  the interactions  or relations  between  classes  and objects.
+Classification  by purpose =§_—————______________»
+Creation Structure Behavior
+- Interpreter
+- Template  Method
+- Chain of Responsibility
+- Adoptor(object) - Command
+- Bridge - Interpreter
+- Composite - Mediator
+- Decorator - Memento
+- Facade - Observer
+- Flyweight - State
+- Proxy - Strategy
+- Visitor- Abstract  Factory
+- Builder
+- Prototype
+- Singleton
+<< adoos fq uolqedyIsse|>
+[Figure 18] Classification  of design patterns
+Design patterns  can be classified  as shown in the figure above according  to their purpose  and scope. Design
+patterns  can be divided into the creation  pattern, structural  pattern, or behavioral  pattern depending  on the
+purpose,
+© Creation  pattern:  A pattern involved  in the process  of object  creation.
+@ Structural pattern:  A pattern related to the composition  of classes  or objects.
+@ Behavioral  pattern: A pattern that characterizes  the ways in which classes or objects interact  and distribute
+responsibility.
+Design patterns  can also be classified  according  to their scope. The scope indicates  whether  the pattern is
+mainly applied  to classes  or objects.
+@ Class pattern:  A pattern that handles  the correlation  between  classes and subclasses.  The correlation  is mainly
+inheritance,  and is statically  determined  at compile  time.
+© Object pattern:  A pattern  that handles  the object correlation  and can be changed  at the runtime.  It has dynamic
+characteristics.
+B) Representative  design patterns
+Software  can be effectively  developed  using the design patterns  shown below, in order to improve  the
+74 TOPCIT  ESSENCE

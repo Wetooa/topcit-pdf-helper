@@ -1,0 +1,213 @@
+LEARNING GUIDE: Pages 79-83
+Generated: 2025-12-07 00:46:20
+PDF: 6 - Project Management & Technical Communication OCR
+
+================================================================================
+LEARNING GUIDE
+================================================================================
+
+Here's a simplified, easy-to-read learning guide based on the provided text (Pages 79-83):
+
+---
+
+# Project Management & Technical Communication: Learning Guide
+
+## 1. Project Life Cycles
+
+Project life cycles describe how a project progresses from start to finish. There are three main types:
+
+### A) Predictive Life Cycle (Waterfall)
+*   **Description:** The entire project scope, schedule, and cost are defined upfront at the beginning. Activities are carried out according to a detailed plan.
+*   **Best For:** Projects with mature technology or extensive experience.
+
+### B) Iterative Life Cycle
+*   **Description:** A product is developed in parts, repeatedly, to complete the final product.
+*   **Types:**
+    *   **Incremental Life Cycle:** Project scope is divided into multiple phases. Activities in these phases run in parallel and overlap gradually.
+    *   **Evolutionary Life Cycle:** Project is divided into several phases, and each iteration proceeds sequentially.
+
+### C) Adaptive Life Cycle (Agile)
+*   **Description:** An agile process that responds quickly to external changes. Its purpose is to flexibly adapt to changing requirements to maximize project value.
+
+## 2. Project Initiation: Planning & Execution Stages
+
+Before a project is contracted and started, it typically goes through specific stages:
+
+### A) Key Stages
+1.  **Planning Stage:**
+    *   Preliminary work like feasibility analysis and budget planning.
+2.  **Acquisition Stage:**
+    *   Scope definition.
+    *   **RFP (Request For Proposal):** A document issued to solicit proposals from potential vendors.
+    *   RFP briefing (if necessary).
+3.  **Contracting Stage:**
+    *   Evaluation of submitted proposals.
+    *   Selection of the business operator (vendor).
+    *   Technical negotiations and final contracting.
+
+### B) Importance of Early Planning (Project Cost/Efforts Curve)
+*   **Concept:** Spending adequate time on planning in the early stages helps avoid confusion and exponentially increasing costs/efforts later in the project.
+*   **Benefit:** Allows for predicting risks, establishing response plans, and handling unexpected problems effectively.
+*   **Risk of Poor Planning:** Jumping directly into execution with a poor initial plan can lead to rapid progress initially but cause significant confusion and cost increases later.
+
+### C) The Proposal Process (Developer's View)
+*   **Purpose:** To win a project contract based on the acquirer's RFP.
+*   **Content:** Outlines the proposal, introduces the proposing company, and details project execution and management.
+*   **Process:** Developers submit a proposal, which is evaluated. If selected as the preferred bidder, a contract is concluded after technical negotiation, and the project begins.
+
+## 3. Project Management Methodologies
+
+Common structured approaches to managing projects:
+
+### A) PMBOK (Project Management Body of Knowledge)
+*   **Origin:** Published by PMI (Project Management Institute), a US non-profit.
+*   **Structure (6th Edition):**
+    *   **5 Process Groups:** Initiating, Planning, Executing, Monitoring & Controlling, Closing.
+    *   **10 Knowledge Areas:** Scope, Cost, Schedule, Quality, Risk, Communication, Resources, Procurement, Stakeholder, Integration Management.
+    *   **49 Processes** in total.
+*   **Key Addition (6th Ed.):** Project manager's **Talent Triangle** (Technical Project Management, Leadership, Strategic and Business Management).
+*   **Certification:** PMI offers the PMP (Project Management Professional) qualification.
+
+### B) ISO 21500
+*   **Origin:** An international project management standard established by ISO (International Standard Organization).
+*   **Similarity:** Overall content is similar to PMBOK.
+
+### C) PRINCE2 (PRojects IN Controlled Environments)
+*   **Origin:** Developed in the UK, mainly used in Europe and Australia.
+*   **Approach:** A structured methodology focused on practical project management, emphasizing various participants and outputs beyond just the project manager.
+*   **Components:**
+    *   **7 Principles:** E.g., Continued Business Justification, Learn From Experience, Manage by Stages.
+    *   **7 Themes:** E.g., Business Case, Organization, Risk, Quality.
+    *   **7 Processes:** E.g., Starting Up A Project, Directing A Project, Managing Product Delivery.
+
+## 4. Agile Methodology
+
+### A) Core Concept
+*   **Description:** An adaptive model that continuously creates prototypes, adding and modifying requirements in a timely manner.
+*   **Contrast:** Differs from traditional methods that rely on thorough upfront planning and explicit outputs.
+
+### B) Agile Manifesto Principles
+The core values guiding Agile software development:
+*   **Individuals and interactions** over processes and tools.
+*   **Working software** over comprehensive documentation.
+*   **Customer collaboration** over contract negotiation.
+*   **Responding to change** over following a plan.
+
+### C) Scrum (Most Representative Agile Method)
+*   **Origin:** Adopted in software development by Ken Schwaber and Jeff Sutherland in 1995.
+*   **Approach:** A mutually progressive development methodology for project management.
+*   **Key Processes:**
+    *   Sprint Planning
+    *   Daily Scrum
+    *   Sprint Review
+    *   Sprint Retrospective
+*   **Main Deliverables:**
+    *   Product Backlog
+    *   Sprint Backlog
+    *   Burndown Charts
+*   **Quality Management:** Achieved through repetitive reviews (e.g., daily scrum meetings, sprint reviews).
+
+## 5. PMBOK/ISO 21500 Project Knowledge Areas
+
+This framework divides project management into 10 key areas.
+
+1.  **Project Integration Management:**
+    *   **Focus:** Managing processes and activities to identify, define, and coordinate all aspects of the project.
+2.  **Scope Management:**
+    *   **Focus:** Defining customer requirements and the total products/services provided. Includes designing the **WBS (Work Breakdown Structure)** – a hierarchical decomposition of project work.
+3.  **Schedule Management:**
+    *   **Focus:** Developing a project schedule, allocating resources efficiently, and ensuring project completion within agreed timelines.
+4.  **Cost Management:**
+    *   **Focus:** Managing cost planning, calculation, budgeting, and controlling activities to complete the project within the approved budget.
+5.  **Resource Management:**
+    *   **Focus:** Properly securing and utilizing project resources (people, equipment, materials) in a timely manner.
+6.  **Communication Management:**
+    *   **Focus:** Managing the creation, collection, storage, distribution, control, and monitoring of project information requirements for stakeholders.
+7.  **Quality Management:**
+    *   **Focus:** Managing quality planning, quality assurance, and quality control activities to meet project requirements.
+8.  **Procurement Management:**
+    *   **Focus:** Managing activities related to procuring products and services from outside the project (e.g., contract management, change control, contract closing).
+9.  **Risk Management:**
+    *   **Focus:** Identifying, analyzing, and responding to potential risks to increase the likelihood of project success.
+10. **Stakeholder Management:**
+    *   **Focus:** Identifying all individuals or organizations that influence the project and developing strategies to effectively manage their expectations and interests.
+
+================================================================================
+ORIGINAL TEXT (First 5000 chars)
+================================================================================
+
+--- Page 79 ---
+ESSENCE
+product  development  and architectural  projects  with much accumulated  technology  or experience.  It is a cycle
+in which the entire scope of the project  is defined  at the initiating  stage and the schedule  and cost are carried
+out according  to the plan.
+The iterative  life cycle is a model in which a product  is divided  into parts that are developed  repeatedly  to
+complete  a final product.  Iterative  life cycles can be divided into incremental  and evolutionary  types.
++ Incremental  life cycle: The scope of the project is divided into multiple  phases in which the activities  of the
+project  are run in parallel and overlapped  gradually  and repeatedly.
++ Evolutionary  life cycle: The project is divided into several phases, and the iteration itself proceeds
+sequentially.
+Increment  1
+>| Planning >| Executing >| Closing
+Project
+Delivery of accurateRequirements 
+' information
+Increment  2. i i
+. >| race Ye [eset Yo{ cose  |
+( Increment  3 vy vy vy
+>| Planning >| Executing >| Closing
+Increment  N
+[Figure  22] Incremental  Life Cycle
+Development  of project key areas
+. . Establishin Ist >| Initiatin >| Plannin; >| Executin, | >| S .6 6 6 (Cut-over) completion
+ow Apply improvement
+revolution . Establishing 2nd .Se, Initiating Planning >>| Executing (Cut-over) completion
+“ep
+Apply =3rdProject | revolution Plannin Executin GoaRange 8 > eecxtn (Cut-over) ee
+[Figure  23] Evolutionary  Life Cycle
+The adaptive  life cycle refers to an agile process  that reacts promptly  to external  changes,  and its purpose  is
+to flexibly  respond  to changing  requirements  to fulfill the value of the project.
+B) Project  planning  and executing
+To briefly look at the stages before the project is contracted  and commenced,  it largely goes through  the
+78 TOPCIT  ESSENCE
+
+
+--- Page 80 ---
+Project Management  and Technical  Communication  )
+planning,  acquisition, and contracting  stage.
+In the planning  stage, preliminary  work such as feasibility  analysis  and budget  planning  of the project  is carried
+out. In the acquisition  stage, scope definition  and Request  For Proposal  (RFP) are carried out, and if necessary,
+a RFP briefing  can be held. Subsequently,  in the contracting  phase, the proposal  submitted  to select a business
+operator  is evaluated,  and the final business  operator  selection  and contracting  are conducted  through
+technical  negotiations.
+When planning  a new project,  it is necessary  to approve  the unit project or program  according  to the portfolio
+under management  to achieve  the organization's  enterprise-wide  strategic  goals. In addition,  a high-level  plan
+for the project should be reviewed by considering  whether  there is an integrated  management  program  for
+relevant  projects.
+There is a Project  Cost/Efforts  Curve as shown below that demonstrates  the importance  of the initial project
+planning  stage. If enough  time is spent on planning  in the early stages, unnecessary  confusion  can be avoided
+in the latter stages. This is because,  if you predict  various  risks or issues that may occur during initial planning,
+and establish  a response  plan in advance,  or a process  for handling  unexpected  problems,  you can respond
+effectively  in case of various risks or issues that may arise in the project process.  On the other hand, if the
+initial plan is poorly formulated  and executed  right away, the project may seem to be progressing  quickly at
+first yet cause confusion  at an exponential  rate as it moves through  the latter stages. Many projects  neglect
+the initial planning  stage and jump directly  to the executing  stage, resulting  in a failure of the entire project.
+[Figure  24] Project  Cost/Efforts  Curve
+From the developer's  point of view, a proposal  is made in advance  to initiate a project. A proposal  is the act
+of writing and submitting  a document  to the acquirer  to win the order based on the RFP from the acquirer. It
+contains  the proposal  outline, introduction  of the proposing  company,  project execution and management.
+After the evaluation  of the submitted  proposal,  if it is selected  as the preferred  bidder, the contract  is
+concluded  through  technical  negotiation,  and the project  begins.
+M6 Project  Management  and Technical  Communication  79
+
+
+--- Page 81 ---
+ESSENCE
+O2 Project  Management  Methodology
+A) Project  management  methodology
+Typical project  management  methodologies  include PMBOK,  ISO 21500, and PRINCE2.
+The most representative  PMBOK  (Project  Management  Body of Knowledge)  is a project management  knowl-
+edge system published  by the PMI (Project  Management  Institute),  a non-profit  project management  organi-
+zation in the United States. In September  2017, the 6th edition of PMBOK  was released,  which consists  of five
+process  groups: initiating,  planning,  executing,  monitoring  and controlling,  and closing; 10 knowledge  areas:
+scope, cost, schedule,  quality, risk, comm...

@@ -1,0 +1,31 @@
+Overview  of System Architecture )
+As shown in [Figure 13], these protocols specify communication  with the same protocol layers of other hosts
+connected  through a network.  For communication,  a header  for the exchanging  of data between  protocols  of the
+same layer with data downloaded  from the layer immediately  above are generally  required.
+As shown in [Figure 15], an application  layer can transmit  the user data through  a transport  protocol  TCP (or UDP),
+which is an end-to-end  protocol  connected  to the other host. It requires  a TCP header  (or UDP header).
+The transmission of user data, including a  TCP header, uses IP, which is a network  layer protocol  that has routing
+information  to the network  of the other host, and the IP head has the information.
+The network  layer considers  both the TCP header  and the user data received  from the transport  layer as data. The
+data link protocol,  which has the necessary  information  for physical  delivery  to other hosts in the same network,
+mostly uses Ethernet.  In that case, both the TCP header  and the user data, including  the Ethernet  header  with the
+necessary  information  and the IP header  downloaded  from the network  layer, are regarded  as data. It should be noted
+that each layer uses only the header  that corresponds  to the given function.
+Application  layer User Data
+Transport  Layer CP Headerjuua Ug BE ir.)
+Network  Layer IPHeader TCP Headers US=1g)b)-\«-)
+Datalink  Layer —_[Ethemet  Header| IP Header CP Headerfuma Ug BFir-]
+[Figure 15] Example  of Network  Protocol  Header  and Data Configuration
+03 Internet  Address  System
+Internet  users come across many terms related to numbers, such as a MAC address,  an IP address,  and a port
+number.  It is unnecessary  to memorize  these numbers,  but understanding  the numbers  helps figure out each layer
+protocol.  The MAC address,  IP address,  and port number  in the Internet  address  system  have the following  meanings:
+@ MAC address:  The MAC (medium  access control)  address,  or the address  system used by the data link layer, is used
+to transfer  frames between  the physically  connected  nodes. The information  is generally  stored on the LAN expansion
+card hardware,  called NIC. It is also called the physical  address  or Ethernet  hardware  address  (EHA). It is formed by48
+bits. The first 24 bits represent  the hardware  manufacturer's  unique ID, and the remaining  24 bits represent  the NIC-
+dependent  address.
+@IP address:  The IP address  is the address  system of the network  layer to transfer  datagram  between  two hosts/
+routers. It facilitates  data to be transferred  from the source node to the destination  node, through  multiple  Internet
+networks.  While the MAC address  is a physical address,  the IP address  is a logical address.  Existing IP addresses,  or
+M3 Overview  of System  Architecture  39

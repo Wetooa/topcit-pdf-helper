@@ -1,0 +1,191 @@
+LEARNING GUIDE: Pages 55-59
+Generated: 2025-12-05 14:38:10
+PDF: 4 - Understanding Information Security OCR
+
+================================================================================
+LEARNING GUIDE
+================================================================================
+
+Here's a simplified, easy-to-read learning guide based on the provided text:
+
+---
+
+## Information Security Learning Guide (Pages 55-59)
+
+### I. Advanced Attack Techniques
+
+These are methods attackers use to compromise systems:
+
+*   **Drive-by Download Attack**
+    *   **What it is:** Malware automatically infects a user's PC just by visiting a malicious website, without the user's knowledge or action.
+    *   **How it spreads:** Malicious websites, often those accessed by many users (acting as an attack medium).
+    *   **Impact:** Can cause secondary damage like DDoS attacks, spam email sending, or personal information theft, often without the user realizing.
+
+*   **"Fileless" Attack**
+    *   **What it is:** Attacks systems without installing new files or traditional malware executables.
+    *   **How it works:** Primarily exploits web browser vulnerabilities when a user clicks a malicious link. Leverages built-in Windows tools like:
+        *   **PowerShell:** A scripting language for system management.
+        *   **WMIC (Windows Management Instrumentation Command):** A Windows management command-line tool.
+    *   **Detection Difficulty:** Hard for antivirus software to detect because no new software is installed.
+
+*   **Malvertising (Malware + Advertising)**
+    *   **What it is:** Distributing malware through legitimate online advertising networks or websites.
+    *   **How it works:** Malware is subtly inserted into online ads.
+    *   **Effectiveness:** Online advertising is an ideal channel because it appears on high-traffic sites, attracts user attention, and links to numerous websites, allowing widespread malware distribution without directly hacking each site.
+
+### II. Security Trends in Latest Information Technology
+
+#### A. IoT (Internet of Things) Security
+
+**1. Overview**
+*   **Importance:** Security is fundamental for IoT because more connected devices mean more attack targets.
+*   **High Stakes:** Breaches in critical IoT services (healthcare, industrial control) can lead to physical injury, not just economic damage.
+*   **Privacy Risk:** Connecting everyday objects increases concerns about personal information leakage and privacy invasion.
+*   **Lifecycle Approach:** Security and privacy must be considered from the *design and development* phase through *deployment, operation, and destruction* of IoT devices and services.
+
+**2. Applying Security in Design/Development**
+*   **Security by Design:**
+    *   **Considerations:** Account for IoT devices' low power/performance.
+    *   **Core Principles:** Ensure **confidentiality**, **integrity/authentication**, and **availability**.
+    *   **Key Measures:** Manage device access rights, implement end-to-end communication security, and use proven, standard security technologies.
+    *   **Technology:** Actively integrate both software and hardware security.
+*   **Privacy by Design:**
+    *   **Default Protection:** Privacy protection methods should be built-in by default for IoT devices and services.
+    *   **Data Handling:** For collected privacy information, use **encrypted transmission**, **anonymous storage**, and **integrity/authentication**.
+    *   **Service Features:** Include **de-identification**, **access control/authentication**, **confidentiality**, and **secure storage** for privacy data within the service.
+    *   **Transparency:** Providers must clearly show users how their privacy information is used (scope, period).
+
+**3. Secure Software (S/W) and Hardware (H/W) Development**
+*   **Secure Coding:**
+    *   Apply secure coding practices from the source code phase to prevent vulnerabilities.
+    *   Use language-specific guides (e.g., Java, C/C++) or international standards and analysis tools for other languages.
+*   **Software Security Verification:**
+    *   Verify all software used against known vulnerabilities.
+    *   Apply security patches and follow guidelines for countermeasure verification.
+*   **Secure Hardware Devices:**
+    *   IoT devices are vulnerable (e.g., side-channel attacks, firmware/key extraction) due to their exposed environments.
+    *   **Measures:** Implement firmware/code encryption, execution code domain control, and reverse engineering prevention techniques, tailored to the device's application environment.
+*   **Converging S/W and H/W Security:**
+    *   Create a secure channel (based on trusted authentication) between software and hardware security components.
+    *   Ensure **confidentiality** and **integrity** of transmitted data.
+
+**4. Security by System Component for IoT Services**
+*   **IoT Network:** Apply security specific to the communication/network access protocols used.
+*   **Dedicated IoT Protocol:** Eliminate vulnerabilities in protocol linking. Apply security requirements for standardized IoT data transmission protocols.
+*   **IoT Platform:** Follow security requirements defined by established standard organizations.
+*   **Service Model:** Apply diverse security requirements and legal/regulatory compliance for each unique service.
+
+#### B. Cloud Security
+
+**1. Overview**
+*   **Core Concerns:** The unknown exact location of data and its accumulation in the cloud, especially in public clouds.
+*   **Adoption Barrier:** Doubts about the reliability and stability of storing sensitive data on external cloud infrastructure hinder widespread cloud adoption.
+
+**2. Threats of Cloud Security**
+*   **Hypervisor Infection:** If the hypervisor (which manages virtual machines) is compromised, all virtual machines (VMs) running on it can be damaged.
+*   **Attack Against Virtual Machine:** Interconnected VMs create internal attack paths, allowing attackers to perform packet sniffing, hacking, DDoS attacks, or spread malware between VMs.
+*   **Attacker Tracking Difficulty:** Traditional network security tools (firewall, IPS, IDS) struggle to detect and trace attacks within the virtualized cloud environment.
+*   **Portability of Virtual Machine:** VMs can be easily moved between physical platforms. If an infected VM is moved, malware can spread rapidly to other platforms.
+
+**3. Countermeasures Against Cloud Security Threats**
+*   **Protecting Incoming/Outgoing Data:** Use secure protocols like TLS, SSH, or VPN to maintain the confidentiality of data sent to and from cloud servers.
+*   **Encrypting Stored Data:** Encrypt data *before* storing it in cloud storage. Use strong cryptographic algorithms (e.g., AES-256).
+*   **Access and Authentication:**
+    *   Implement robust access and authentication mechanisms.
+    *   Change administrator passwords regularly.
+    *   Establish and enforce strict access control policies, such as 2-factor authentication.
+*   **Securing Independence Between VMs:**
+    *   Utilize virtual network security to protect against threats to shared repositories and networks.
+    *   Ensure complete isolation between user-accessed VMs.
+*   **Attack and Intrusion Detection:**
+    *   **Hypervisor-type detection:** Analyzes the internal state of each VM via the hypervisor to detect intrusions.
+    *   **VM-type detection:** An agentless virtual security detection technique.
+
+#### C. Big Data Security
+
+**1. Overview**
+*   **Increased Risk:** Rapid big data adoption leads to massive collection and concentration of customer information, increasing personal information leakage risk.
+*   **Sensitive Data:** Big data often includes highly sensitive information (credit, location, behavior).
+*   **Impact of Breach:** A leakage incident will have an inevitably enlarged scope and scale.
+*   **Priority:** Security is crucial for big data adoption (especially in finance).
+*   **Lifecycle Management:** Secure management is essential throughout the entire big data lifecycle, from collection to destruction.
+
+**2. Security Threat and Response by Big Data Lifecycle Phase**
+*   **Big Data Collection Phase:**
+    *   **Consent & De-identification:** For specific individuals' data, de-identify personal information if legal consent is not obtained.
+    *   **Active Collection (e.g., Chukwa, Scribe, Flume):** Require data owner consent and apply access controls.
+    *   **Passive Collection (e.g., Web Robot, Web Crawler):** Comply with robot exclusion standards.
+*   **Big Data Storage and Management Phase:**
+    *   **Encryption:** Encrypt data using techniques suitable for data distribution and replication.
+    *   **Access Control:** Apply technical and physical access controls.
+    *   **Filtering:** De-identify data through filtering before storage.
+*   **Data Processing and Analysis Phase:**
+    *   **De-identification:** Use anonymization techniques like K-anonymity, L-diversity, and differential privacy.
+    *   **Sensitive Information:** Process sensitive information in an encrypted state (e.g., using order-preserving or operation-preserving encryption).
+    *   **Privacy Preserving Data Mining (PPDM):** Use PPDM and similar techniques to protect privacy during big data mining.
+
+---
+
+================================================================================
+ORIGINAL TEXT (First 5000 chars)
+================================================================================
+
+--- Page 55 ---
+Information  security )
+malware or e-mails for spear phishing  attacks using your distributed  e-mail addresses.  In addition,  it is
+necessary  to change  the account  password  periodically,  because  hackers  can send e-mails  for spear phishing
+to the recipients  saved in the e-mail address  book, if the e-mail account  is hacked.
++ Backing  up important  data regularly
+Important  data should be backed up regularly  because  important  documents  and files cannot  be read or used
+if encrypted  after infection  with ransomware.  Anti-virus  programs  may prevent  infection  with malware  or they
+may remove  malware,  butthey  cannot  decrypt  the encrypted  documents.  Therefore, important  documents  or
+files should be backed up regularly  to a separate  external  storage  device and stored in a safe place.
+H) Drive by download  attack
+Recently,  malware  is distributed  using a drive-by  download  method that infects the user PC with malware  as
+soon as the user accesses  a malicious  web site while surfing  the web, instead  of attacking  a vulnerable  service
+through a network.  Malware  distribution,  using the drive-by  download  method, can infect a user’s device
+without  the user’s knowledge,  andit can infect multiple  users at the same time, using the web server accessed
+by multiple  users as an attack medium.  The user PC infected  with malware  in this process  can cause secondary
+damage,  such as the DDoS attack, spam e-mail sending, and theft of personal  information,  without  the user's
+knowledge  in the same way.
+|) “Fileless”  attack  without  malware  installation
+Generally,  when an attached  file is executed  or a malicious  executable  file is clicked, an external attacker
+invades the system and infects it with malware.  Fileless attacks do not execute  a file, but mainly use a
+vulnerability  in a web browser  to infect malware  when a user clicks a link to a malicious  site. This attack
+technique  uses PowerShell*,  which is installed  through  Windows  7, and command  utility (WMIC)**,  which is a
+Windows  management  tool, to make an attack. Such an attack may be difficult  to detect using an anti-virus
+tool because  software  is not installed  on the user’s PC.
+* PowerShell:  A task-based  shell and scripting  language,  specifically  designed  for system management.
+PowerShell  is used to easily control and automate  the management  of Windows  OS and application  programs.
+** WMIC (Windows  Management  Instrumentation  Command):  A system command  input tool for Windows
+management,  provided  by Windows.
+J) Malvertising
+Malvertising  is a compound  word of malware  and advertising.  Malvertising  is a technique  of distributing  malware
+using online advertising.  The malvertising  technique  inserts malware  by spreading  advertising  into the normal
+online advertising  network  or web site. Online advertising  provides  the best environmental  conditions  for
+spreading  malware  because  it displays  the topics that can attract the attention  of visitors,  or it is posted on
+the site with a high number  of visitors. In addition,  the risk of malware  infection  increases  exponentially  in
+online advertising,  because  it is linked with numerous  normally  operated  websites  and can easily distribute
+malware  in large quantities,  even if an attacker  does not directly  hack each website.
+M4 Understanding  Information  Security  55
+
+
+--- Page 56 ---
+ESSENCE
+O2 Security  trends related  to the latest information  technology
+A) loT security
+@ Overview  on loT security
+Security  is a core technology  that must be provided  to promote  loT technology  and to create new services.
+As the number  of devices connected to the Internet  increases,  the number  of attack targets and threat
+elements  also increase.  In particular,  security  technology  is indispensable  for loT devices and communication
+technologies  that are applied  to healthcare  services  or industrial  facility  control services,  because  an injury can
+occur beyond simple economic  damage, if the security  of the service is breached.  In addition,  when ordinary
+things around us are connected  to the Internet,  the range of concerns  about personal  information  leakage  or
+privacy invasion  increases.  It is also obvious  that the level of breach will increase  beyond  comparison  with the
+present.
+Security  and privacy  protection systems  should be considered  from the design and development  phase of the
+loT device and service. In addition,  it should be possible  to block potential  security  threats in advance  in the
+loT device deployment  and installation  phase. Potential  security  threats and vulnerabilities  should be checked,
+and security  should be applied throughout  the entire lifecycle  of the loT device, such as the setup, operation,
+and execution  phase, when the device is actually  used, and during  the destruction  phase.
+® Applying  security  to the design/development  phase ...

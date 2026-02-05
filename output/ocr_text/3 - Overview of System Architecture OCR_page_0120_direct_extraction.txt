@@ -1,0 +1,39 @@
+Overview  of System Architecture )
+@ System  implementation  direction  and basic data survey
++ Basic data on the tasks and system to be implemented  are necessary  to ensure the hardware  capacity  calculation
+accuracy.  To get accurate  information,  cooperation  with the users is crucial, and the basic task analysis  and
+implementation  direction  are establis|
+@ Basic data and task analysis
++ If necessary,  analyze  the newly ad
+determine  each task's expected  loadhed through  consultation  with them.
+ded workload,as  well as the relevance  and complexity  of each work, and
+, through  the basic data and task analysis  results.
+* Calculate  the reference  load by calculating  the sum of the expected  load for each task.
++ Validate  the basic data and task analysis.
+@ Reference  model determination  and server size calculation
++ Select the reference  model suitable or the architecture  type of the calculation  target  system.
+Architecture  Type Calculation  Condition Calculation  Criteria
+Reference  model 1Processing  of all web, application,  and database
+layers in a single serverServer  1: OLTP
+Reference  model 2The web and application  layers processed  in server 1
+and the database  layer processed  in server  2 or the
+web layer processed  in serve 1 and the application
+and database  layers processed  in server  2Server 1: Web/WAS
+Server  2: OLTP
+Reference  mode! 3The web layer processed  in server 1, the application
+layer processed  in server  2, and the database  layer
+processed  in server  3Server 1: Web/WAS
+Server  2: Web/WAS
+Server  3: OLTP
++ Select various  correction  coefficients,  based on the task analysis  data investigated  in Step 2.
++ Calculate  the size for each component  of the server in the reference  model.
+@ Application  of weight  factor  for each reference  model
+After the capacity  calculation  of each item of the server in Step 3, Step 4 applies the weight  factor for each server,
+according  to the architecture  type.
+E) Size calculation  method  for each hardware  component
+This section describes  how to select the size for each server component.  As mentioned  in the section  for the
+procedure  for size calculation,  determine  the server, based on the architecture  type, and calculate  the CPU, memory,
+disk, and storage  sizes for each server.
+Refer to “TTA Guidelines  on Calculating  Information  System  Hardware”  for how to calculate  the detailed  size of each
+element.
+M3 Overview  of System  Architecture  119

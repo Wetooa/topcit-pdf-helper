@@ -1,0 +1,35 @@
+ESSENCE
++ As the number  of projects  and products  in need of development  increased  and became  more difficult  to manage,  it
+became  necessary  to consolidate  the scattered  information.
++ Included  in the centralized  system were a number  of items that served as important  reference  data when designing
+items and products;  such as BOM (bill of materials)  management,  development  process standardization,  and the
+workflow-based  change management  function,  etc. The inclusion  of these items made it possible  to maximize  the
+efficiency  of product  development.
++ Recently,  the trend among  companies  has gravitated  towards  consolidating  the PLM through  the integration  of ERP
+and MDM solutions  for the purpose  of managing  the reference  data from the enterprise-wide  perspective.  In the
+future, PLM will be expanded  to include  the social PLM area by linking it with external  data.
+03 IT Business  Decision-Making  Support  System
+In order for an enterprise  to make a business  decision,  it has to have access to internal/external  information, as the
+collection,  analysis and processing  of such information  is critical to making a rational decision.  Data generated  by a
+general-purpose  work support  system are simply too voluminous  to be analyzed  by hand in the expectation  that
+some meaningful  implications  could be derived from them. In particular,  there are many times when decisions  have
+to be made within  a limited  timeframe:  and, in recent years, the fast changing  nature of business  environments  has
+led to rising uncertainties,  which has in turn forced companies  to frequently  conduct  complex  analyses,  increasing  the
+demand  for systems  capable  of supporting  decision  making.
+The two leading information  systems  that provide such support  to enterprises  are the decision-making  support
+system and the business  intelligence  system.  The decision-making  support  system is used when making make
+decisions  that require a quantitative  analysis,  such as an analysis  of a company’s  return on investment  and its break-
+even points. Meanwhile,  business intelligence  systems  enable companies  to respond with agility by monitoring  the
+business  operating  environment  and detecting  changes  through  the discovery,  extraction,  and analysis of business
+data.
+Before looking  at the two systems,  let's start with the concept  of the enterprise  data warehouse  (EDW), an enterprise
+data repository  that underpins  enterprise  data analytics.
+A) Understanding  EDW
+@ Definition  of EDW
+The enterprise  data warehouse  (EDW) is a system that can address,  by subject  matter, information  analysis  requests
+by users, through  the integration  of internal and external  data. The EDW requires  the construction  of infrastructure
+that serves as the backbone  of enterprise  data. This infrastructure  touches  every area and aspect  of an enterprise’s
+business.
++ In the beginning,  the EDW mostly  encompassed  the internal  data of an enterprise.  Today, however,  it is evolving  into
+a forecasting  system  that integrates  both the internal and external  information  of an enterprise.
+96 TOPCIT  ESSENCE

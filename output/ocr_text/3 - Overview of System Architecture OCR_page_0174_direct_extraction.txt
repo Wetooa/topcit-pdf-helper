@@ -1,0 +1,28 @@
+Overview  of System Architecture )
+D) Subnetting
+@ Concept  of subnetting
+Subnetting  is a method  of dividing  a network  address  into multiple  smaller  networks.  A subnet  mask refers to a mask
+to separate  the network  address  of the IP address  [8].
+Conventional  C
+class address
+subnet  mask : 255 255 255 0(rovtataafrataidg  1111177  [oo000000]
+Using 2 Bits forSubnetting pi  H00000]
+subnet  mask : 255 255 255 192
+[Figure 126] IP Address  Applying  Subnetting
+@ Use of subnet
+Adding  a sub-network  generates  an intermediate  layer in the IP address  in order to separate  the address  into the site,
+subnet,  and host.
+141 . 14 . 192 . 2 | 141 . 14 . 192 . 192 |
+Netid h | Hostid Site | Subnetid} i Hostid_qs oa i. oa an an 4
+<Subnetting  Applied> <Subnetting  Not Applied>
+[Figure 127] Addressing  with and without  a Subnetting  Application
+© Use of subnet (Results  of subnetting  using 2 or 3 bits in a class C address)
+Table 53) Subnetting  Results
+Toe Number  of bits used in the subnetting  address
+yp (Not divided) Using 2 bits Using 3 bits
+Subnet  mask 255.255.255.0 255.255.255.192 255.255.255.254
+Number  of subnets 1 4 8
+Number  of hosts in each a 5: =aunt 256-2 = 254 64-2 = 62 32-2  = 30
+Number  of IP addresses = 7
+that can be assigned 254 4x62 = 248 8x30=240
+M3 Overview  of System  Architecture  173

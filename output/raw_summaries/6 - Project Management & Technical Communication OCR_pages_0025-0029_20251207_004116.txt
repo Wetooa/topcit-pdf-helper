@@ -1,0 +1,226 @@
+LEARNING GUIDE: Pages 25-29
+Generated: 2025-12-07 00:41:16
+PDF: 6 - Project Management & Technical Communication OCR
+
+================================================================================
+LEARNING GUIDE
+================================================================================
+
+Here's a simplified, easy-to-read learning guide based on the provided text:
+
+---
+
+# Learning Guide: Problem Solving and Thinking Techniques
+
+This guide covers core problem-solving steps, various thinking techniques, and essential problem-solving skills.
+
+## I. Core Problem-Solving Process (ESSENCE)
+
+This structured approach helps resolve problems effectively.
+
+*   **Step 1: Problem Definition**
+    *   **Goal:** Clearly decide what problem to solve.
+    *   **Method:**
+        *   Grasp the essence of the problem.
+        *   Apply the **MECE framework** (Mutually Exclusive, Collectively Exhaustive) to break a large problem into subproblems for accurate definition.
+
+*   **Step 2: Cause Analysis**
+    *   **Goal:** Identify and analyze the root causes of the defined problem.
+    *   **Method:**
+        *   Classify and structure the problem logically.
+        *   Use an **Issue Tree** to dissect the problem into smaller, logical components.
+        *   Apply profiling and analysis methods to find root causes from the bottom up.
+        *   **Prioritize** identified causes and remove non-essential ones.
+
+*   **Step 3: Alternative Development & Evaluation**
+    *   **Goal:** Develop various solutions and select the best one.
+    *   **Method:**
+        *   Develop alternatives based on hypotheses and facts (from profiling).
+        *   Evaluate alternatives using defined criteria and weighting.
+        *   Select one or more optimal alternatives.
+
+*   **Step 4: Solution Application & Feedback**
+    *   **Goal:** Implement the chosen solution and verify its effectiveness.
+    *   **Method:**
+        *   Find an efficient **test bed** to verify the alternative.
+        *   Execute the alternative with a detailed work plan.
+        *   Provide **quantitative feedback** on effectiveness to verify validity.
+
+---
+
+## II. Creative Thinking Techniques
+
+These techniques help generate innovative ideas and solutions through horizontal (divergent) thinking.
+
+*   **Brainstorming**
+    *   **Definition:** A meeting method (Alex Osborn, 1940s) for generating ideas freely. "Brainstorming" suggests a storm of ideas in the brain.
+    *   **Purpose:** To produce many ideas without immediate evaluation.
+    *   **Usage:** Applicable to all problem-solving stages (cause analysis, solution derivation, action plans).
+    *   **Flow:** Free presentation of ideas before evaluation.
+
+*   **Six Thinking Hats**
+    *   **Definition:** A method by Edward de Bono where a group adopts different "hat" roles to approach an issue from various perspectives.
+    *   **Purpose:** To ensure comprehensive consideration and optimal decision-making.
+    *   **Hat Roles:**
+        *   **White:** Objective facts and data.
+        *   **Red:** Emotions and feelings.
+        *   **Black:** Negative, critical thinking (cautions).
+        *   **Yellow:** Positive, optimistic thinking (benefits).
+        *   **Green:** Creativity, new ideas.
+        *   **Blue:** Organize results, objective moderation.
+
+*   **Random Word**
+    *   **Definition:** A technique by Edward de Bono that uses randomly chosen words to stimulate new connections and unique ideas.
+
+*   **SCAMPER**
+    *   **Definition:** An acronym checklist (Bob Eberle, derived from Osborn) for generating ideas.
+    *   **Acronym:**
+        *   **S**ubstitute: What can replace it?
+        *   **C**ombine: What can be combined with it?
+        *   **A**dapt: What can be adapted?
+        *   **M**odify/Magnify: What can be changed or made bigger?
+        *   **P**ut To Other Uses: How can it be used differently?
+        *   **E**liminate: What can be removed?
+        *   **R**earrange/Reverse: What can be reordered or done in reverse?
+    *   **Purpose:** Systematically prompts different ways to alter or improve something.
+    *   **Key Difference from Brainstorming:** Ideas are generated from a predefined list, not free association.
+
+*   **TRIZ (Theory Of Inventive Problem Solving)**
+    *   **Definition:** A problem-solving and ideation technique (Dr. Altshuller) based on analyzing thousands of inventions.
+    *   **Purpose:** To model specific problems into generalized issues, find general solutions, and derive innovative solutions.
+    *   **Process:**
+        1.  Abstract a specific problem into a generalized issue.
+        2.  Find a general solution model.
+        3.  Derive a specific solution.
+    *   **Principles:** Uses principles like separation, 40 principles of invention, and 76 standard solutions.
+    *   **ARIZ (Algorithm for Inventive Problem Solving):** A continuous process for solving invention-level problems.
+
+---
+
+## III. Logical Thinking Techniques
+
+These techniques focus on fact-based analysis and structured problem-solving through vertical (convergent) thinking.
+
+*   **MECE (Mutually Exclusive and Collectively Exhaustive)**
+    *   **Definition:** A principle for organizing information or classifying problems so there is **no duplication** among items and **no omission** from the whole.
+    *   **Mutually Exclusive:** Items do not overlap.
+    *   **Collectively Exhaustive:** All possible items are included.
+    *   **Example:** Dividing "time" into Past, Present, Future is MECE. Dividing "beverages" into ionized and carbonated is NOT MECE because other beverage types (e.g., mineral water) are omitted.
+
+*   **The Logic Tree**
+    *   **Definition:** A visual breakdown of key items in a tree format, adhering to the MECE principle.
+    *   **Purpose:** Promotes logical thinking, generates comprehensive ideas, and acts as a checklist for strategy development and problem-solving by ensuring no omissions.
+    *   **Example:** "Status Analysis" can be broken into "Business Environment" and "3C Analysis" (Company, Customer, Competitor), then further detailed.
+
+*   **The 80-20 Rule (Pareto Principle)**
+    *   **Definition:** Discovered by economist Pareto, it states that roughly 80% of effects come from 20% of causes.
+    *   **Meaning:**
+        *   20% of customers generate 80% of sales.
+        *   Solving the core 20% of problems can resolve 80% of all problems.
+    *   **Application:** Concentrate resources on the essential 20% causal variables to solve the majority (80%+) of a problem.
+
+---
+
+## IV. Rational Decision-Making Techniques
+
+These techniques focus on making efficient and effective decisions among multiple alternatives.
+
+*   **Multi-Criteria Decision Making (MADM)**
+    *   **Definition:** A technique for selecting the best alternative by considering various factors or criteria, rather than just one.
+    *   **Process:** Evaluate how well each alternative meets its characteristic attributes (factors) to inform the final decision.
+
+*   **Analytic Hierarchy Process (AHP)**
+    *   **Definition:** A technique that structures complex decision-making information into a hierarchical tree.
+    *   **Process:**
+        1.  Segments complex and non-quantifiable problems.
+        2.  Evaluates segmented problems through **pairwise comparisons** (comparing two elements at a time).
+    *   **Benefits:** Simplifies complex problems, making elements easier for decision-makers to compare and judge.
+
+---
+
+## V. Essential Problem-Solving Skills
+
+These are common competencies for effective problem resolution, emphasizing continuous improvement.
+
+*   **Problem Awareness:** Recognizing the gap between a desired ideal state and the current reality, and actively working to close that gap. This involves continuously striving to raise your "quality threshold."
+
+*   **Key Factors to Enhance Problem Solving:**
+    1.  **Always ask "why":** This is the core of problem recognition. You cannot solve a problem you don't acknowledge.
+    2.  **Develop an active attitude:** Approach problems with positive thinking and the ability to transform ideas. Be open to linking seemingly unrelated concepts for new solutions.
+    3.  **Take ownership of your problems:** See problems as your responsibility and strive to resolve them. Avoid blaming others to effectively solve issues and grow professionally.
+
+---
+
+================================================================================
+ORIGINAL TEXT (First 5000 chars)
+================================================================================
+
+--- Page 25 ---
+ESSENCE
+@ Step 1: Problem  Definition
+In the problem definition  stage, you decide what problem you want to solve. It is necessary  to organize  the
+problem  to grasp its essence,  and whether  the problem  can be fundamentally  resolved  by writing the problem
+description.  For more accurate problem definition,  it is helpful to apply the MECE framework  to break the
+problem  into subproblems,  rather  than defining  it as a single problem.
+@ Step 2: Cause Analysis
+In the stage of cause analysis,  a defined problem  is classified  according  to logical criteria and structured  step
+by step. In order to analyze the cause of a structured  problem in detail, an issue tree is used to dissect  the
+largest problem into smaller  components  in a logical order and organize  it in a tree form. From the bottom of
+the organized  problem,  profiling  and various analysis  methods  are used to find the root cause of the problem.
+In addition,  it is necessary  to prioritize  the finally identified  causes of the problem,  and remove  the ones that
+are not essential  for fundamental  problem  solving.
+© Step 3: Alternative  Development  and Evaluation
+In the alternative  development  and evaluation  stage, various  alternatives  are developed  to address  the cause
+of the problem  finally derived in the cause analysis  stage. Alternatives  developed  by establishing  various
+hypotheses  from the root cause of the problem and comparing  with the facts found through profiling  are
+evaluated  through  evaluation  criteria and weighting  for each criterion,  and one or more alternatives  are finally
+selected.
+@ Step 4: Solution  Application  and Feedback
+In the solution  application  and feedback  stage, the final selected  alternative  is verified.  It is important  to find a
+test bed to verify the established  alternative  the most efficiently,  and prepare  for its execution.  The alternative
+is executed  based on a detailed  workplan  and quantitative  feedback  on its effectiveness  is provided,  to verify
+the validity  of the alternative  and provide  feedback.
+C) Creative  thinking  techniques
+It is important  to clearly define everyday  problems  found in the course of job performance  and to derive solu-
+tions or processes  to address  them through  various ideas. To this end, it is necessary  to consciously  guide
+the flow of thinking  through  appropriate  techniques.  There are the following  ways of thinking  techniques  that
+creatively  solve problems  through  this horizontal  process.
+@ Brainstorming
+In the 1940s, American  advertiser  Alex Osborn invented  brainstorming  as a kind of meeting  method  to come
+up with ideas. The original meaning  of the term brainstorming  refers to the mental derangement  of a mentally
+ill patient. In other words, abnormal  phenomena,  like a storm in the brain, are used as a way of thinking of
+ideas at meetings.  It can be used in the entire process  of problem  solving, such as analyzing  the cause of the
+problem,  deriving  a solution, developing  evaluation  criteria and establishing  an action plan.
+Presentation Presentation  of
+of opinion/Idea opinion/Idea  (free Idea evaluation
+(sequential) speech)Description comment/idea
+[Figure  7] Flow of Brainstorming
+24 TOPCIT  ESSENCE
+
+
+--- Page 26 ---
+Project Management  and Technical  Communication  )
+@ Six Thinking  Hats
+The Six Thinking  Hats is a simple yet effective  way to think, developed  by Edward  de Bono. In other words, it
+is a method  of a group of six people taking different  roles and present  ideas that fit their roles, to approach  an
+issue from various  perspectives  and derive the optimal  decision-making.
+<Table 3> Composition  of Six Thinking  Hats
+Type of Hat Role
+White The role of Explain objective  facts or data in a neutral manner
+Red Emotional  thinking
+Black Negative  or critical thinking
+Yellow Positive and optimistic  thinking
+Green Be creative  and generate  new ideas
+Blue Organize  results in a cool-headed  and objective  manner
+@ Random  Word
+Random  Word is a thinking  technique  devised  by Professor  Edward de Bono. Various  words are presented  until a unique
+idea comes  out, and words are selected  and combined  at random  to create new connections.
+@ SCAMPER
+SCAMPER  is an analysis  method derived from the checklist  of Osborn, the originator  of ideation  method
+brainstorming,  and revised by Bob Eberle. The term SCAMPER  is an acronym  formed from the abbreviation
+of: “Substitute”,  “Combine”,  “Adapt”, “Modify”  or “Magnify”,  “Put To Other Uses’, “Eliminate”,  “Rearrange”  or
+“Reverse”. It is an ideation  method similar to brainstorming  that draws out ideas at random, but it differs in
+that ideas are generated  from a list prepared  in advance.
+© TRIZ(Theory  Of Inventive  Problem  Solving)
+It is a problem-solving  and ideation technique  created by Russian inventor  Dr. Altshuller  through analysis  of
+tens of thousands  of existing  inventions.  TRIZ models a specific ...

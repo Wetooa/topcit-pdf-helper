@@ -1,0 +1,232 @@
+LEARNING GUIDE: Pages 190-194
+Generated: 2025-12-07 01:11:48
+PDF: 3 - Overview of System Architecture OCR
+
+================================================================================
+LEARNING GUIDE
+================================================================================
+
+Here's a simplified learning guide for pages 190-194, focusing on essential information.
+
+---
+
+## Network Protocols Learning Guide: UDP & SCTP
+
+### 1. UDP (User Datagram Protocol)
+
+**A) Characteristics of UDP**
+
+*   **Connectionless:** Sends and receives data without a prior connection setup.
+*   **Unreliable:** Does NOT guarantee delivery, order, or error-free transmission. It's a "best effort service."
+*   **Simple:** Minimal overhead compared to TCP.
+*   **Independent Datagrams:** Each UDP datagram is standalone; no sequence numbers are assigned.
+*   **No Flow Control:** No window mechanism, so packet overflow can occur.
+*   **Limited Error Control:** Only includes a checksum to detect errors. If an error is found, the datagram is discarded.
+*   **No Congestion Control:** Does not manage network congestion.
+*   **Application Layer Responsibility:** Applications using UDP often need to implement their own flow, error, and sequence control if reliability is required (e.g., for real-time video, the application handles frame ordering and discarding delayed/corrupt data).
+*   **Suitable For:** Applications where speed and low overhead are critical, and some packet loss is acceptable (e.g., video/audio streaming, online gaming, DNS).
+
+**B) Common UDP Uses**
+
+*   Simple request-response communication without built-in flow/error control.
+*   Applications that implement their own flow/error control.
+*   Multicasting (sending data to multiple destinations simultaneously).
+*   Network management protocols (e.g., SNMP).
+*   Routing update protocols (e.g., RIP).
+
+**C) Well-Known UDP Ports**
+
+| Service                  | Port | Description                       |
+| :----------------------- | :--- | :-------------------------------- |
+| NTP (Network Time Protocol) | 123  | Corrects host time over the network. |
+| BOOTP Server, DHCP Server | 67   | Network IP address management.    |
+| BOOTP Client, DHCP Client | 68   | Network IP address management.    |
+| TFTP (Trivial FTP)       | 69   | Simpler file transfer than FTP.   |
+| Kerberos                 | 88   | Computer network authentication.  |
+| Syslog                   | 514  | System logging.                   |
+| RIP (Routing Information Protocol) | 520  | Routing protocol.                 |
+| RIPng                    | 521  | IPv6 routing protocol.            |
+| Timed (Time Server)      | 525  | Time synchronization service.     |
+| OLSR (Optimized Link State Routing) | 698  | Routing protocol.                 |
+
+**D) UDP Header Structure**
+
+A UDP packet, called a **user datagram**, has a fixed 8-byte header.
+
+| Field          | Length  | Description                                        |
+| :------------- | :------ | :------------------------------------------------- |
+| **Source Port**    | 2 Bytes | Port number of the sending application (0-65,535). |
+| **Destination Port** | 2 Bytes | Port number of the receiving application.          |
+| **Length**         | 2 Bytes | Total length of the UDP header + data.             |
+| **Checksum**       | 2 Bytes | Value for detecting data errors. (Calculated over pseudo-IP header, UDP header, and data). If zero, checksum is optional. |
+
+### 2. SCTP (Stream Control Transmission Protocol)
+
+**A) Overview & Purpose**
+
+*   A newer transport layer protocol designed for multimedia communication.
+*   Combines advantages of both UDP (multi-streaming) and TCP (reliability, congestion control).
+
+**B) Key Characteristics**
+
+*   **Process-to-Process:** Provides communication between applications.
+*   **Connection-Oriented:** Establishes a connection called an **association**.
+*   **Multi-homing:**
+    *   An association can connect multiple IP addresses at each endpoint.
+    *   Provides network-level fault tolerance (if one path fails, another can be used).
+    *   One IP is primary, others are alternatives.
+*   **Multi-stream:**
+    *   Allows multiple independent streams of data within a single association.
+    *   Prevents "head-of-line blocking" where one blocked message delays all subsequent messages (common in TCP).
+*   **Reliability:** Uses acknowledgments (ACKs) to confirm data arrival and retransmits lost data.
+*   **Full Duplex:** Data can be sent in both directions simultaneously.
+
+**C) SCTP Numbering Systems**
+
+*   **Transmission Sequence Number (TSN):** Used to number individual data chunks for reliable transmission (similar to TCP's sequence number).
+*   **Stream Identifier (SI):** A 16-bit number to distinguish different streams within an association.
+*   **Stream Sequence Number (SSN):** Used to distinguish data chunks belonging to the *same stream* for ordered delivery within that stream.
+*   **Data Units:** SCTP uses "data chunks" instead of bytes (like TCP).
+
+**D) SCTP Functions**
+
+1.  **Association Start and End:**
+    *   Uses a **four-way handshake** to establish an association:
+        1.  Endpoint A sends `INIT`.
+        2.  Endpoint Z sends `INIT ACK` (with a cookie).
+        3.  Endpoint A sends `COOKIE ECHO` (copying the cookie).
+        4.  Endpoint Z sends `COOKIE ACK`.
+    *   **SYN Attack Prevention:** The main system resource (Transmission Control Block - TCB) is only allocated at endpoint Z after receiving a valid `COOKIE ECHO`, preventing Denial of Service (DoS) attacks seen in TCP's three-way handshake.
+
+2.  **Sequenced Delivery:**
+    *   User messages are organized into streams, identified by an **SI**.
+    *   **SSNs** ensure ordered delivery within each stream.
+    *   One stream being blocked does not prevent other streams from transmitting data (multi-stream advantage).
+
+3.  **User Data Fragmentation:**
+    *   Like TCP, user messages are fragmented if they exceed the Path Maximum Transmission Unit (MTU).
+    *   Fragments are reassembled at the SCTP layer.
+
+4.  **Acknowledgment and Congestion Avoidance:**
+    *   Data chunks are assigned a **TSN** for reliability.
+    *   Receiving side acknowledges (ACKs) received TSNs.
+    *   If an ACK is not received within a timeout, packets are retransmitted.
+    *   Congestion avoidance procedures are similar to TCP.
+
+5.  **Chunk Bundling:**
+    *   Allows multiple user data chunks or control chunks to be combined into a single SCTP packet for efficiency.
+
+6.  **Packet Validation:**
+    *   Uses a **Verification Tag (VT)** and a 32-bit checksum in the common header.
+    *   **VT:** A unique value chosen during association setup; all packets in that association must carry the correct VT, or they are discarded.
+    *   **Checksum:** A 32-bit CRC32c checksum (more robust than the 16-bit checksums in UDP/TCP/IP) prevents data corruption.
+
+7.  **Path Management:**
+    *   Manages the transport address, port, and IP address used for destination.
+    *   **Primary Path:** Default path for transmitting/receiving packets.
+    *   **Alternative Path:** If the primary path fails, an available address from the multi-homing setup can be used as an alternative.
+
+**E) SCTP Packet Structure**
+
+*   SCTP packets consist of a **General Header** followed by one or more **Chunks**.
+*   **General Header Components:**
+    *   **Source Port No.:** Same as TCP and UDP.
+    *   **Destination Port No.:** Same as TCP and UDP.
+    *   **Verification Tag (VT):** Identifies the association, repeated in all packets.
+    *   **Checksum:** 32-bit CRC-32 (more robust than 16-bit checksums in TCP/UDP/IP).
+
+*   **Chunks:**
+    *   Carry control information or user data.
+    *   Common fields in all chunks: `Type`, `Flag`, `Length`.
+    *   **Type Field:** Indicates the specific chunk type (e.g., Payload Data, INIT, ACK).
+    *   **Flag Field:** Defines special flags for certain chunks.
+
+**F) Major SCTP Chunk Types**
+
+| Type | Chunk Type      | Description                         |
+| :--- | :-------------- | :---------------------------------- |
+| 0    | Payload Data    | Carries user application data.      |
+| 1    | INIT            | Initiates an association.           |
+| 2    | INIT ACK        | Acknowledges an INIT.               |
+| 3    | SACK            | Selective Acknowledgment.           |
+| 4    | HEARTBEAT       | Used for keep-alive.                |
+| 5    | HEARTBEAT ACK   | Acknowledges a HEARTBEAT.           |
+| 6    | Abort           | Abruptly terminates an association. |
+| 7    | SHUTDOWN        | Initiates graceful shutdown.        |
+| 8    | SHUTDOWN ACK    | Acknowledges SHUTDOWN.              |
+| 9    | ERROR           | Reports an error.                   |
+| 10   | COOKIE ECHO     | Carries the security cookie.        |
+| 11   | COOKIE ACK      | Acknowledges COOKIE ECHO.           |
+
+---
+
+================================================================================
+ORIGINAL TEXT (First 5000 chars)
+================================================================================
+
+--- Page 190 ---
+Overview  of System Architecture )
+03 UDP (User Datagram  Protocol)
+A) Characteristics  of UDP
+User datagram  protocol (UDP) provides  a connectionless  service for sending  and receiving  data without  a pre-
+configuration  process  for connection.  Unlike TCP. it is a protocol  that does not guarantee  the reliability  of the
+transport  layer level.
+Each user datagram  of UDP is an independent  datagram  and is not assigned  a number, unlike TCP. UDP is a very
+simple protocol,  and there is no flow control, so there is no window  mechanism,  and packet overflow  may occur.
+Error Control also has no other error control mechanism,  except for checksum.  When the receiver  detects  an error
+through  a checksum,  the user datagram  is removed,  and congestion  control is not provided.  Due to this nature of the
+UDP transport  protocol,  the application  layer may be necessary  in order to define and implement  the flow control
+and error control. As described  above, since the UDP has a continuous  minimum  transmission  rate, despite some
+packet loss, due to a lack of reception  confirmation  and retransmission  function,  it is suitable  for video play service
+and is considered  to provide the best effort service. In particular,  for playing video that is transmitted  in real time,
+the transmitting  side must separately  include the image frame order in the data. The receiving  side must store it in a
+separate  buffer, according  to the frame order and process  it in order. In the case of a streaming  method,  instead  of a
+download  method,  if there is a delay for more than a certain time, or if only the B and P frames are received  without
+the | frame, the application  layer needs to maintain  the real-time  property  by destroying  the data.
+The UDP protocol  is mainly  used for the following  purposes.
++ Aprocess  requiring  simple request-response  communication,  without  flow and error controls
++ Aprocess  with internal  flow and error control techniques
++ Multicasting  transmission  technology
++ Management  processes,  like SNMP
++ Route update  protocols,  such as the routing information  protocol  (RIP)
+<Table 66> below shows well-known  ports for widely used UDP services.  It supports  the NTP service that corrects
+the host time through  the network,  the BOOTP  and DHCP services  that are network  IP management  protocols,  the
+TFTP service  that is simpler  than FTP, the RIP and OLSR services  that are routing  protocols,  and the Kerberos  service
+that is a computer  network  authentication  protocol.
+{Table 66) Well-known  UDP Ports
+Service TCP port Service TCP port
+NTP [12,13] 123 Syslog 514
+BOOTP Server, DHCP Server [14,15] 67 RIP [18] 520
+BOOTP  Client, DHCP Client [14,15] 68 RIPng 521
+TFTP [16] 69 Timed (Time Server) 525
+Kerberos  [7] 88 OLSR [19] 698
+M3 Overview  of System  Architecture  189
+
+
+--- Page 191 ---
+ESSENCE
+B) UDP protocol
+A UDP packet, called the user datagram,  has a fixed-size  8-byte header  made of four 2-byte (16-bit)  fields, as shown
+below. Each field of the UDP header  is used for the purposes  shown in <Table 67>.
+<Table  67> User Datagram  Header  Fields
+Field Length Description
+Source  Port 2Bytes The port number  of the source packet in the range of 0-65,535
+Destination  Port 2Bytes The port number  of the destination  packet
+Length 2Bytes The length of the entire packet, including  the UDP header  and data fields
+Checksum 2Bytes A value to detect a data error
+Data octets Variable | Storage  of data to be transmitted
+The source port refers to the port of the transmitting  process,  and the destination  port refers to the port of a specific
+destination  host. The length is the sum of the UDP header  (minimum  8) and the data size. The checksum  is the result
+of adding 16-bit 1's complement  to the pseudo-IP  header, UDP header, and data. The checksum  field is filled with
+zeros before the calculation.
+As described  above, unlike TCP. the UDP protocol  is simple to implement  because  it receives  data from the application
+layer and sends it down to the IP layer. It also analyzes  the UDP user datagram,  that is received  from the IP layer, and
+delivers  it to an appropriate  application  program.
+04 SCTP (Stream  Control  Transmission  Protocol)
+A) Characteristics  of SCTP
+The stream control transmission  protocol (SCTP) is a new transport  layer protocol  designed  by combining  UDP
+and TCP advantages  for multimedia  communication  [3]. The service characteristics  of the SCTP are described  in
+the following  table. The SCTP association  is a broader  concept  than the end-to-end  TCP connection. In an SCTP
+association,  one or more IP addresses  can be connected  at each endpoint.  It is called multi-homing,  and it enables
+network-level  fault tolerance. SCTP is called association  in order to highlight  its multi-homing  nature. While a stream
+is transmitted  and received  to an end-to-end  connection  in TCP multiple streams  can be transmitte...

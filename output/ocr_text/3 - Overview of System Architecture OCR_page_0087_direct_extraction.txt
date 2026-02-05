@@ -1,0 +1,19 @@
+ESSENCE
+C) IP-SAN
+@ Concept  of IP-SAN
+This type of SAN uses the gigabit  Ethernet  Internet  protocol  (IP), instead of a fiber channel.  While the SAN requires
+a SAN switch and SAN storage  disks, it increases  interconnectivity,  since it is connected  using the existing  Ethemet
+network.  It can unify the network  management  and overcome  the distance  limitation  of SAN, since it can use an IP
+IP-SAN  includes  FCIP, iFCP, and iSCSI, while iSCSI is the most widely-used  type.
+@ Fiber Channel  over IP (FCIP)
+FCIP is used to connect  a remote  SAN. It encapsulates  data to TCP/IP  for interconnection  when transferring  a frame
+to a remote location.  It groups the scattered  SANs into a massive  fiber channel  fabric. A failure of a SAN can affect
+SANs in other regions  included  in the fabric.
+& = &
+[Figure  55] FCIP
+© Internet  fiber channel  protocol  (iFCP)
+iFCP provides  a TCP/IP connection  dedicated  to regional  SAN, using the iFCP gateway.  Unlike FCIP a SAN failure does
+not affect SAN in other regions,  since it does not create a massive  fabric. Since it converts  protocols  using a gateway
+and can be implemented  without  changing  the infrastructure,  it provides  highly compatible  interconnectivity  in both
+hardware  and software.
+86 TOPCIT  ESSENCE

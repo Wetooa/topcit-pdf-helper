@@ -1,0 +1,44 @@
+ESSENCE
+D) Characteristics  of the NoSQL  data model
+<Table  79> Characteristics  of NoSQL  data modeling  compared  to relational  DB data modeling
+Type Relational  DB data modeling NoSQL data modeling
+Table  01 Table 02 User
+UserInfo Likes
+Name 123 Name Email mM 222
+Address. Order date Jay jp@ebaycom| iphone ipad
+Phone number Person in charge of orders
+Conceptual
+diagram Item
+Table details Table details 2 Userinfo LikedBy
+Check number im Title Desc 123 4556
+Registration  date Processing  number iphone saphone  | ay John
+Issue date
+Key point | » ACID-based  data modeling + BASE-based  data modeling
+Type + Secures  data consistency  using minimal redundancy. + Enables  fast performance  through  data replication.
+Ph + Development  executed after data modeling (design)  | * The data set is designed  in consideration  of the screenase : a .according  to business  characteristics. and development  logic.
+Independence  | + Independent  program  design (data independence  is important).  | + Dependent  program  design  (avoids  data independence).
+Characte- |" A data modeling technique that derives logical | + Data modeling  is closer  to file structural  design, rather
+Natics connection  points using the data composition  method  | than to general data modeling  in which a data set that
+with generalized  notation  and execution  procedures.
+E) Characteristics  of the NoSQL  data model
+@ Definition  of tIhe CAP theoremcan be easily processed  by the program  is created
+- This theory asserts that  as it is impossible  for a distributed  data store to simultaneously  satisfy all of data
+consistency,  availability,  and partition  tolerance,  only two should be strategically  selected.
+@ Composition  and management  strategy  of the CAP theorem
+<Table 80> Composition  and management  strategy  of the CAP theorem
+Characteristics Description
+Garweeiney
+HOLE} QE)
+cA aae Take Zits |
+Configuration 7 Hypertable |
+diagram !
+(718)Two
+vailability/
+i 4artition
+ToleranceAP AB EU)
+Dynamo i
+\ Cassandra”
+\. CouchDB
+SO --NoSQL
+~ Movement
+152 TOPCIT  ESSENCE

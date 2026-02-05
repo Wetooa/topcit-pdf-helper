@@ -1,0 +1,26 @@
+Information  security )
+@ IEEE 802.11i  operation
+IEEE 802.111 operation  may vary depending  on the configuration  and device of the WLAN and can be described
+by a five-step  operation,  as shown in [Figure 69].
+(1) Search: The STA that wants communication,  searches  for the desired WLAN AP to generate  an SA with an
+AP. using the function  that the AP broadcasts  security  policies.
+(2) Authentication:  The STA and AS (authentication  server) authenticate  with each other. At this time, the AP
+only transfers  communication  data between  the STA and the AS.
+(3) Key generation  and distribution:  In this phase, the AS transfers  PMK (Pairwise  Master  Key) to the AP of the
+STA, using the key distribution  protocol,  based on RADIUS (Remote  Authentication  Dial-In User Services).
+After that, the AP and STA generate  and share the cryptographic  key, by exchanging  messages  using the
+802.11x  protocol.
+(4) Secure data transmission:  The STA and the other party’s end station securely  exchange  frames using the
+AP. In this case, data is only transmitted  between  the STA and the AP.
+(5) Disconnection:  The secure connection  of the AP and the STA is released  by exchanging  messages,  and the
+original  connection  is restored.
+STA AP. AS End Station
+i. Ge fel os Tal
+Phase 1-Discovery
+| Phase 2-Authentication
+| Phase 3-Key Management |
+| Phase 4-Protected  Data Transfer
+Phase 5-Connection  Termination
+[Figure  69] IEEE 802.11i  operation  steps
+(Source: W. Stallings,  Network  Security  Essentials,  Pearson,  p.185)
+M4 Understanding  Information  Security  129

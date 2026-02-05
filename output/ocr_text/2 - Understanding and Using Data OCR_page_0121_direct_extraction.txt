@@ -1,0 +1,8 @@
+ESSENCE
+@ ADO
++ ADO, a Microsoft  solution,  is an ActiveX  control that provides  a database  interface  and manages  connection  with a
+database  in the Inter or client/server  environment.
+@ OLE DB
++ Although  OLE DB provides  access  to all types of data including  relational  data (ISAM, VSAM, Excel Data, etc.) using
+a consistent  API, it is limited to MS operating  systems  only.
+120 TOPCIT  ESSENCE

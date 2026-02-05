@@ -1,0 +1,19 @@
+Project Management  and Technical  Communication  )
+C) Schedule  compression  technique  - crashing  and fast tracking
+The most common  cause of schedule  compression  in a typical project is requirements  change. Despite
+frequent  changes  in the requirements,  the project  finish date cannot be changed  in reality, so there are many
+cases where it is necessary  to shorten  the development  schedule  or test schedule  at the end of the project.
+Here are some typical schedule  compression  techniques.
+@ Crashing
+Crashing  is a technique  that compresses  the schedule  by adding extra resources  at minimum  cost. Examples
+of crashing  include approval  of overtime  work, replenishment  of resources,  and payment  for activities  in the
+critical path. Crashing  is effective  only for activities  of which duration  is shortened  by replenishing  resources  in
+the critical path. However,  crashing  may lead to an increase  in cost. It can also lead to an increase  in the risk
+due to sharing  the contents  of an existing  project  for new human resources  or many communication  channels,
+@ Fast Tracking
+Fast Tracking  is a method  of shortening  a certain period  of time in which activities  or steps that are performed
+sequentially  are conducted  simultaneously  in a specific  section of a certain duration.  For example,  it is the
+case where the foundations  are built before all architectural  drawings  are completed.  Fast tracking  can lead to
+rework or an increase  in the risk. Fast tracking is effective  only when activities  can be overlapped  to shorten
+the project  duration.
+M6 Project  Management  and Technical  Communication  101

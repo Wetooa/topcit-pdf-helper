@@ -1,0 +1,29 @@
+Database )
+02 Data Modeling  Procedure
+A) Conceptual  modeling
++ The phase of abstractly  conceptualizing  and expressing  the information  structure  appearing  in the real world.
+* Conceptual  modeling  begins with analyzing  and finding  the data requirements  of the organization  and user, and
+includes  the process  of determining  which data are important  and the form of maintaining  that data.
++ Such data requirements  are used to describe  the phases to be performed  in subsequent  phases, to give shape to
+the conceptual  data model, which is a set of low relevance,  and to discuss the initial requirements  with business
+stakeholders.
++ Finding  the core entities and the relationships between  them is most important,  and the relationships should be
+expressed  as an entity relationship  diagram.
++ The entity, entity identifier,  relationship  between  entities, number  and sequence  of corresponding  relationships,
+entity properties,  etc. can be identified.
+B) Logical  modeling
++ Logical modeling  is the key part of the data modeling  process,  which is a technique  or process  that clearly  expresses
+the logical structure  and rules of business  information.
++ In this phase, the result of conceptual  design, which is created  for human understanding,  is converted  into a logical
+structure  that can be easily stored in a database.
++ The phase in which normalization  is performed  to store data efficiently.
++ The relational  model is mainly used, and the deliverables  of conceptual  modeling  are converted  into the table
+structure  drawing,  Table name, primary  key, foreign key, etc. are defined.
+C) Physical  model
++ The phase that plans how to express  logical data modeling  in a computer  hardware  system  as a data repository.
++ The structure  of physical storage that is expressed  in tables and columns,  the storage  device to be used, and the
+approach  used to extract  data are determined  in the physical  modeling  phase.
++ Performance  is one of the most important  factors to consider  in this phase, and a denormalization  review is
+considered.
++ The data type, constraint,  and index of the column  are defined.
+M2 Database  53

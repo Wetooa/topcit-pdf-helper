@@ -1,0 +1,18 @@
+Overview  of System  Architecture
+>> Recent  trends and issues
+In computer  engineering,  computer  architecture is a conceptual  design and the operational structure  that
+is the basis for computer  systems.  It is a blueprint  that functionally  describes  the design portability  and
+requirements  (especially  speed and interconnection)  of various parts of a computer. It mainly focuses  on
+how the central processing  unit (CPU) performs  and accesses  memory  addresses  internally.
+Modern computer  structures  are based on the Von Neumann  architecture,  and the basic instruction
+processing  structure  has not changed  much. Though parallel processing  and other technologies have
+improved  in their performance,  only recently  have new concepts,  such as neuromorphic  chips and quantum
+computers,  been introduced.
+>> Learning  objectives
+1, To be able to explain  the computer  structure  and the operational  principle.
+2. To be able to explain  the memory  hierarchy  and operational  principle.
+3, To be able to explain  the latest computer  structure  technologies  and trends,
+>> Keywords
+Von Neumann  architecture,  Harvard architecture,  CPU, Memory  unit, Input/Output  device,  CISS, RISC,
+Neuromorphic  chip, quantum  computer
+M3 Overview  of System  Architecture  61

@@ -1,0 +1,39 @@
+ESSENCE
+- It is easy to apply to a project  and manage.
+- A measure  that can effectively manage  the start/end  of development  activities  and the project
+can be clearly  defined.
+- The model emphasizes  project  verification  and validation.  In other words, the model explains  very
+well the association  relationship  between  development  activities,  such as requirements  analysis
+and design, and design activities.  The development  activities  and corresponding  test activities
+are performed  at the same time during  the entire development  cycle.
+- By doing so, we can understand  which phase of the development  activity  should be performed
+again, if a software  fault is found during  the test.
+@ V model with prototyping
++ Prototyping  is a method of developing  a system or a part of a system to understand  a system or to
+solve such issues as risks or uncertainties.  Prototyping  can lead developers and customers  to commonly
+understand  what is needed  and what should be developed.  Prototyping  can be applied to the development
+phase of the Waterfall  model or V model, and can also be used as an independent  lifecycle  model
++ The uncertainty  factors and risks of a project  can be reduced by adding the prototyping  technique  to the V
+model. The uncertainty  factors and risks of a project  include the possibility  of implementing  the requirements
+in the requirement  phase, the status of verifying  system performance  in the design phase, and risk factors
+when introducing  new tools and developing  a system by outsourcing.  The prototyping  technique  can be
+performed  using the following  two approaches.
+- OApproach  1: Seek applicable  solutions  and apply them. This approach  can be applicable  when the
+problem  to be solved is not clear. For example,  this approach  can be used when implementing
+the user interface  of a new device, when seeking  a method  of improving  a system’s  performance,
+or when managing  errors or faults.
+- The general  procedure  for performing  actions  is as follows:
+1. Define  the uncertainty  factors.
+2. Seek a solution  and define how to apply it.
+3. Try to apply the solution.  (It can be reiterated.)
+4. Find the cause of the uncertainty  factor based on the result of step 3.
+OApproach  2: Enumerate  several solution  options  and evaluate  them according  to the established
+standards.  This approach  is appropriate  when there is a risk or uncertainty  factor in the solution  to be
+applied.  For example,  this approach  can be used if middleware  should  be selected  for a specific  function
+or if the performance  of a design for several  environmental  factors  should be taken into account.
+- The general  procedure  for performing  actions  is as follows.
+1. Define  the uncertainty  factors.
+2. Enumerate  the solutions  that can be selected  and define the selection  criteria.
+3. Evaluate  the solutions  according  to the selection  criteria.
+4, Select  the most suitable  solution.
+22 TOPCIT  ESSENCE

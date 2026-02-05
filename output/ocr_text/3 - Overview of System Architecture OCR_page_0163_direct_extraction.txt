@@ -1,0 +1,23 @@
+ESSENCE
+Sales VLAN
+~
+e e e e
+e e e e
+Switch 1 Switch 2
+[Figure 116] VLAN Configuration  [4]
+<Table 42) Comparison  of Switch and Router
+Compared  Items Switch Router
+Reference  table MAC address  table Routing  table
+Reference  PDU Ethemet  frame IP packet
+Reference  field Destination  MAC address Destination  IP address
+Frame used Ethernet Ethernet,  frame relay, PPP, etc.
+2-Layer  header No change Replaced  by a new header
+O2 Network  Layer Encapsulation
+A) Network  layer encapsulation
+As shown in [Figure 117], the packets  on the network  layer are configured  by adding a header  to the transmitting
+layer segment.  This process  is called encapsulation  of the datalink  layer, and the process  is reversed  on the receiving
+end and is called decapsulation.
+162 TOPCIT  ESSENCETransport  Layer
+Datalink  LayerL4 Data
+Network  Layer L4 Data
+[Figure 117] Network  Layer Encapsulation

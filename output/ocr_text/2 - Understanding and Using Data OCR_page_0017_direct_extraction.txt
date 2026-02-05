@@ -1,0 +1,28 @@
+ESSENCE
+B) Recovering  from a distributed  database  2—phase  commit protocol
+03 Database  Backup
+A) Database  backup  overview
+B) Database  backup  requirements  and main tasks
+C) Types and characteristics  of database  backup methods
+XII. Understanding  Database  Analytics
+01 Concept  and Characteristics  of the Data Warehouse  (DW)
+A) Concept  of the data warehouse
+B) Characteristics  of the data warehouse
+02 Data Warehouse  Modeling
+A) Definition  of data warehouse  modeling
+B) Data warehouse  modeling  technique
+03 Concept  of ETL (Extraction,  Transformation,  Loading)
+04 Concept  and Search  Technique  of OLAP (Online  Analytical  Processing)
+A) Concept  of OLAP
+B) OLAP search technique
+05 Concept  and Algorithm  of Data Mining
+XIV. Understanding  Big Data and NoSQL
+01 Big Data Overview
+16 TOPCIT  ESSENCE182
+133
+183
+183
+134
+136
+143
+145

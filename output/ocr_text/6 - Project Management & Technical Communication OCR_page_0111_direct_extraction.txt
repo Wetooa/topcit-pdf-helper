@@ -1,0 +1,35 @@
+ESSENCE
+@ Development  Time) D = c * (Effort Applied)  4
++c and dare coefficients  by project  type (see table below)
+@ People Required)  P = Effort Applied  / Development  Time
+<Table 48> Coefficients  by Project  Type
+Project  Type a b G d
+Organic 24 1.05 25 038
+Semi-Detached 3.0 1.12 25 0.35
+Embedded 3.6 1.2 25 0.32
+The Intermediate,  and Detailed  COCOMO  models  are calculated  by changing  the coefficient  values in the table
+above.
+D) COCOMO  2(Constructive  Cost Model 2)
+COCOMO  2 is a method  of estimating  software  development  costs by improving  the existing  COCOMO  model
+through  such as code reusability,  off-the-shelf  component,  design and development  management,  etc. in ac-
+cordance  with the changing  development  environment.
+COCOMO  2 has three sub-models:  Application  Composition  Model, Early Design Model, and Post-Architecture
+Model.
+<Table 49> Sub-Models  of COCOMO  2
+Type Explanation
++ Applied  to projects  using GUI Tool and CASE Tool for S/W prototyping
+BOC ton Compe  ton MO! + Use component  count, complexity,  object points, etc
++ Applied  to estimate  approximate  cost and schedule  at the design stage
+Early Design Model + Used when there is insufficient  information  on details  of scale, environment,
+manpower,  and process  in the early stages of development
++ Applied  to projects  in which sufficient  data have been prepared  after architecture
+establishment
++ Use unadjusted  function  points and SLOC (Source  Line Of Code) after the
+establishment  of the software  life cyclePost-Architecture  Model
+04 Cost Management  Technique  - Earned  Value Management
+A) Concept  of earned  value
+“Value” means how much something  is “worth”.  In earned value management,  value means how much the work
+done so far is worth, and the budget  allocated  becomes  the value of the work.
++ Value = Monetary  value of work = Budgeted  Cost of Work Performed
+“Earned  Value” means the value of the work actually  done at the point of measuring  performance.  Earned  val-
+110 TOPCIT  ESSENCE

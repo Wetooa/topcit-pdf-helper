@@ -1,0 +1,199 @@
+LEARNING GUIDE: Pages 133-137
+Generated: 2025-12-05 14:05:10
+PDF: 5 - Understanding the IT Business and Ethics OCR
+
+================================================================================
+LEARNING GUIDE
+================================================================================
+
+Here is a simplified, easy-to-read learning guide based on the provided text:
+
+---
+
+## Learning Guide: Understanding IT Business & Ethics
+
+This guide covers key concepts in modern IT business, focusing on Servitization, major IT trends, and foundational web/mobile technologies.
+
+---
+
+### Section 1: Servitization
+
+**What is Servitization?**
+*   A business model transformation where a **product evolves into a service bundle**.
+*   Focus shifts from selling products to **delivering continuous value** throughout the customer lifecycle.
+*   Revenue generation is tied to the **availability, reliability, and performance** of a company's assets.
+
+**Why is it Important?**
+*   Traditional product sales models are becoming less effective.
+*   Companies find it hard to **differentiate products based on merits alone**.
+*   Servitization, especially by **combining products with software**, offers a path to differentiation and competitive edge.
+*   Software convergence capabilities are now crucial for product value and corporate performance.
+
+**Three Software-Convergent Models for Servitization:**
+
+1.  **Product-centered model:** Strengthens service elements *without* abandoning the core product sales model.
+2.  **Usage-based model:** Producer retains ownership but sells the *right to use* the product (e.g., subscription, pay-per-use).
+3.  **Additional sales-oriented model:** Producer sells diverse *value-added services* based on an already sold product.
+
+**Examples of Servitization:**
+
+*   **Apple:** Built a service ecosystem (iTunes, App Store).
+*   **Xerox:** Transformed from facsimile manufacturer to document management systems supplier.
+*   **Philips:** Acquired Health Watch to enter healthcare service.
+*   **GM (OnStar):** Provides telematics services (e.g., navigation, emergency assistance).
+*   **Caterpillar:** Offers remote management for excavators (analysis, parts, fuel efficiency, monitoring).
+*   **Vinci:** Airport/road/parking operation services generate a disproportionately high percentage of operating profits compared to total revenues.
+
+---
+
+### Section 2: Recent Trends & Key IT Issues
+
+**Impact of IT:**
+*   Rapid IT network and infrastructure development drives **IT-based innovations across all industries**.
+*   Existing products gain new value through **convergence with IT**.
+*   Previously overlooked technologies gain relevance through **integration**.
+*   **Smart infrastructures** improve public service efficiency.
+*   **Latest IT business services and technologies** are foundational to these market changes and paradigm shifts.
+
+**Key IT Concepts/Keywords (Important to Know):**
+
+*   **Web & Mobile Services:**
+    *   **HTML5:** Next-gen web standard.
+    *   **SNS:** Social Networking Service.
+    *   **Responsive/Adaptive web:** Websites adjusting to screen sizes.
+    *   **Open API:** Application Programming Interface allowing software components to interact.
+    *   **Semantic web:** Web data linked and understood by computers.
+    *   **OSS (Open Source Software):** Software with publicly available source code.
+    *   **MEAP (Mobile Enterprise Application Platform):** Platforms for building mobile apps for businesses.
+    *   **MDM (Mobile Device Management system):** Software for managing mobile devices in an organization.
+    *   **Mobile commerce:** E-commerce on mobile devices.
+    *   **LBS (Location Based Service):** Services using location data.
+*   **Infrastructure & Emerging Tech:**
+    *   **IoT (Internet of Things):** Network of physical objects embedded with sensors, software for connecting and exchanging data.
+    *   **Cloud computing service:** On-demand delivery of computing services over the internet.
+    *   **Virtualization service:** Creating a virtual version of a resource (e.g., server, OS).
+    *   **Blockchain:** Distributed, decentralized ledger technology.
+    *   **Smart City/Grid/Education/Healthcare:** Applications of smart technology in various sectors.
+*   **Data & AI:**
+    *   **Open data:** Data freely available to everyone.
+    *   **Linked data:** Structured data linked to other data.
+    *   **AI (Artificial Intelligence):** Machine intelligence.
+    *   **Fintech:** Financial technology.
+    *   **Big Data:** Extremely large data sets analyzed for patterns/trends.
+    *   **O2O (Online to Offline) / O4O (Online for Offline):** Strategies connecting online and physical channels.
+    *   **Virtual currency:** Digital currency.
+*   **Advanced Hardware/Manufacturing:**
+    *   **3D printing:** Additive manufacturing.
+    *   **Self-driving cars:** Autonomous vehicles.
+    *   **Smart machines:** Machines with AI capabilities.
+    *   **Wearable devices:** Electronic devices worn on the body.
+    *   **Drones:** Unmanned aerial vehicles.
+
+---
+
+### Section 3: AlphaGo Case Study (AI Impact)
+
+*   **Event:** March 2016 Go match between Lee Sedol (human champion) and AlphaGo (AI).
+*   **Significance:** AlphaGo defeated Lee Sedol, demonstrating **AI's ability to surpass human learning and skills** that evolved over thousands of years.
+*   **Lesson:** A clear sign of the growing power and potential of artificial intelligence.
+
+---
+
+### Section 4: Latest Web & Mobile Services
+
+#### A) Latest Web Technologies
+
+**1. HTML5**
+*   **Definition:** Next-generation HTML standard, overcoming limitations of previous HTML versions.
+*   **Key Benefit:** Allows rich web applications (video, voice, 2D graphics) *without requiring separate plug-ins* (like Flash or ActiveX).
+    *   *Example:* Accessing Kakao Talk or using word processors/games directly via a web browser without installation.
+*   **Overcomes:** Problems associated with older plug-in solutions (e.g., functional expansion through CSS3 and JavaScript APIs).
+*   **Design Principles:** Compatibility, practicality, interoperability, and universal access.
+*   **New Features:**
+    *   **Semantic Markup:** 26 new markups for clearer semantic representation than HTML4.
+    *   **APIs:** New functions like `web form`, `canvas`, and `web socket` for web-based application development.
+*   **Advantages:**
+    *   Less JavaScript code needed for the same functionality compared to HTML4.
+    *   Better for mobile environments (sensitive to network speed).
+    *   Maximizes scalability and efficiency for corporate business solutions.
+
+**2. Responsive Web / Adaptive Web**
+*   **Problem Solved:** Users want consistent web content quality across various devices (desktops, tablets, smartphones) despite different screen sizes and specifications. Developing a separate web version for every device is impossible.
+*   **Definition (Responsive Web):** A web design approach that creates an **optimal user environment by adapting to different devices and screen sizes**.
+    *   The website's layout and content **automatically change size and arrangement** to fit the user's device.
+*   **Current Trend:** Mobile web users now exceed regular internet web users, making responsive design essential.
+
+---
+
+================================================================================
+ORIGINAL TEXT (First 5000 chars)
+================================================================================
+
+--- Page 133 ---
+ESSENCE
+@ Servitization
+The term “servitization”  refers to a fundamental  transformation  of the business  model in which a product  evolves
+into a service bundle that continues  to deliver value throughout  the lifecycle  of a customer  experience.  This means
+that the system of competition  has shifted to around service  whose revenue  generation potential is intimately  tied
+to the availability,  reliability  and performance  of the company’s  assets. In particular,  this phenomenon  is expected  to
+accelerate  in the traditional  manufacturing  sector  where revenues  are generated  from the sales of goods.
+As the traditional  product  sales model gives way to a service model and as companies  find it increasingly  difficult  to
+differentiate  themselves  on the merits of their products  alone, many are striving  to differentiate  themselves  through
+servitization,  ie. by combining  their products  with software.  The software  model for the servitization  of a product  can
+be one of three types, as shown below,
+<Table  65>SW  convergent  model of products
+Type of model Description
+Product-centered  model | A model which features  strengthened  service  elements  without  sacrificing  the sales-oriented  model.
+A model in which the producer  retains  the ownership  but sells the right to use the product  to anUsage-based  model outside  party,
+Additional  sales-oriented  | A model in which the producer  sells diverse  value-added  services  based on a product  that has
+model already been sold.
+Many companies  are strengthening  their software  convergence  capabilities  so as to be able to respond  flexibly  to
+the changing  environment  and secure a competitive  edge in the market  through  servitization.  Software  convergence
+capabilities  are becoming  a key factor in determining  the value of products  and corporate  performance.
+Many companies  are converging  their products  and software  to optimize  their business  models and respond to the
+rapidly changing  consumer  environment.
+<Table 66>Examples  of convergent  products  and services  of major companies®
+Industry Company Description
+Apple Built a service ecosystem  using iTunes, App Store.
+. Transformed  itself from a facsimile  manufacturer  into a supplier  of document  managementElectronics Xerox
+systems.
+Philips Acquired  Health Watch in 2006 to venture into the healthcare  service market.
+Automobile cM Acquired  5.5 million customers  through  OnStar, its subsidiary  company  which supplies
+telematics  services.
+Through  a GPS-based  remote management  system,  Caterpillar  provides  a service  for
+Heavy industry Caterpillar analyzing  the status and history of excavator  equipment,  replacing  parts, improving  fuel
+efficiency,  and monitoring  illegal use
+Airport/road/parking  operation  services  account  for 56% of operating  profits although  they
+tala Vinci only bring in 14% of the total revenues.
+8 Source: KIET, New Growth  Strategies  of Major Industries  in Korea through  Servitization,  2008.
+132 TOPCIT  ESSENCE
+
+
+--- Page 134 ---
+Understanding  the IT Business  and Ethics )
+Built a service  ecosystem  using iTunes,  App Store.
+Transformed  itself from a facsimile  manufacturer  into a supplier  of document  management  systems.
+Acquired  Health Watch in 2006 to venture  into the healthcare  service  market.
+Acquired  5.5 million customers  through  OnStar, its subsidiary  company  which supplies  telematics  services.
+Through  a GPS-based  remote  management  system,  Caterpillar  provides  a service  for analyzing  the status and history
+of excavator  equipment,  replacing  parts, improving  fuel efficiency,  and monitoring  illegal use.
+Airport/road/parking  operation  services  account  for 56% of operating  profits although  they only bring in 14% of the
+total revenues.
+M5 Understanding  the IT Business  and Ethics 133
+
+
+--- Page 135 ---
+ESSENCE
+>> Recent  trends and key issues
+The rapid development  of IT network  and IT infrastructure technologies  has not only brought  about
+a revolution  in the IT industry,  but also introduced  IT-based  innovations  across all industries. Existing
+products  are being reborn as products  with new values through  convergence  with IT technology,  while
+technologies  that received  little or no attention  in the early stages of their development  are now becoming
+a reality and attracting  renewed  interest  due to their integration  with other technologies.  Meanwhile,  public
+services  built around smart infrastructures  have greatly improved  efficiency  in managing  public services.
+Diverse industries  are constantly  turning  out new products  that feature convergence  services.  However, it
+must be understood  that these market  changes  and paradigm  shifts would not have occurred  without  the
+latest IT business  services  and technologies.
+>> Learning  Objectives:
+1. To be able to explain  the latest web and mobile services.
+2. To be able to explain converge...

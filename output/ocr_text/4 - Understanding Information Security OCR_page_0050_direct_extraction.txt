@@ -1,0 +1,41 @@
+ESSENCE
+01 Latest information  security  threats
+A) APT (Advanced  Persistent  Threat)  attacks
+@® Concept  of the APT attack
+Targeting  the subject  of , a: Utilizing  various  attack
+. . . Identifying  vulnerabilities : .
+political,  social, economic, a techniques  and social
+. . by collecting  information . .technological  and military . engineering  hacking
+for a long timeimportance techniques
+Hacking  strategy  to make complex  and intelligent  attacks
+[Figure  27] Concept  of the APT attack
+@ Procedure  of the APT attack
+An APT attack is made through  several processes,  such as infiltration,  search, collection,  and leakage  stages.
++ Stage 1: An attacker  infects  vulnerable  systems  or employee  PCs with malware.
++ Stage 2: The attacker  infiltrates  the internal  network  using malware.
++ Stage 3: The attacker  collects  information  on the infiltrated  internal system and infrastructure  and prepares
+for attacks.
++ Stage 4: The attacker  steals important  information  from the vulnerable  system to destroy  the system and
+make a DoS attack.
+© Cases of the APT attack
++ In Korea, the computing  network  of financial institution  N was paralyzed  in 2011, due to data deletion  by
+hacking.
++ The information  of 1.75  million customers  was leaked, due to the hacking  of financial  institution H.
++ The information  of 35 million customers  was leaked,  due to the hacking  of portal company  N.
+@® Countermeasures  against  the APT attack
+<Table 13> Countermeasures  against  the APT attack
+Countermeasures
+Strengthening
+security  management,
+operation,  and
+education
+Endpoint  security
+50 TOPCIT  ESSENCEContents
++ Analyzing  the overall security  threat  of the organization  and reorganizing  the security  system,  by
+analyzing  various  vulnerabilities,  based on the analysis  of the target security  system.
++ Management  is required,  including  continuous  management,  constant  security  control,  and regular
+mock hacking,  with a focus on the security  management  organization  for continuous  operation.
++ The endpoint  is the primary  target  of the APT attack, and malware  can infiltrate  into the endpoint
+using media, such as the Internet,  e-mail, SNS, messenger,  P2P, USB, etc.
++ OS security  update,  security  software  installation  and operation,  and application  control based on
+the whitelist  are needed.

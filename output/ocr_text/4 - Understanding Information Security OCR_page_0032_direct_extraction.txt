@@ -1,0 +1,43 @@
+ESSENCE
+value, even though  the attacker  finds the hash value of the password  “@Kr5792cc’.  In addition,  if different  salts
+are used for each user, the hash values of the users who use the same password  are generated  differently,
+which significantly  improves  the problem  of the possibility  of recognition.
+The hash values of the salt and password  can be stored in the server database,  then, when the user logs in,
+the input password  can be checked  by hashing  it. It is known that to make salt and digest difficult  to guess, all
+passwords  should have their own salt, and the salt length should be 32 bytes or more.
+© Utilizing  hash functions
++ Integrity  verification  method
+Integrity  verification  methods  in servers or network  security,  are divided into the method of detecting  an
+error that occurs  while transmitting  data, and the method  of preventing  unauthorized  modification,  as shown
+in <Table 6>. A checksum  and cyclic redundancy  check (CRC) are used to test integrity  when an error occurs
+during data transmission.  The checksum  method,  a type of duplicate  test, tests integrity  by adding data to
+obtain a checksum,  converting  it into a certain bit value, then adding it to the message.
+CRC is mainly used as a method of verifying  transmission  data errors in the communication  system, such
+as the Internet.  A checksum  is calculated  at the sending  side, based on polynomials  that are easy to detect
+and corrected  errors, and it is sent after adding it to the header. Then, the receiving  side verifies integrity  by
+calculating  the checksum  again, based on the same polynomial  and comparing  it with the received  checksum.
+<Table  6> Integrity  verification  method
+Cause of change Solution
++ Checksum
+* CRC
+Vv Used for verifying  data
+Vv Generating  numeric  values  with fixed lengthData transmission  error
++ Hash function
+v MD5
+- Expansion  of CRC
+- Supplementing  MD2~4
+~ 128-bit  hash function
+- Recommended  to use SHA
+Vv SHA-1
+- MDS replacement  and extension
+- Security  protocol,  used by programs
+Vv SHA-2
+- Commonly  referred  to as SHA265~512
+- Attack methods  are available  against  SHA1Unauthorized  change
++ File integrity
+To ensure integrity  when sending  files on the Internet  or posting  them on a website,  assistant  manager  Kim
+secured  a method  of verifying  that files are not tampered.  To do so, he also sends, or posts hash values that
+are calculated  by the hash function.  He also decided  to manage  the alteration  status as shown in [Figure 12].
+He makes  a list of important  source files managed  by the server, and stores  the hash value for each file, then
+compares  the hash value in the file list with the original hash value on a regular  basis.
+32 TOPCIT  ESSENCE

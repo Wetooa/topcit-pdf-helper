@@ -1,0 +1,225 @@
+LEARNING GUIDE: Pages 61-65
+Generated: 2025-12-05 14:38:43
+PDF: 4 - Understanding Information Security OCR
+
+================================================================================
+LEARNING GUIDE
+================================================================================
+
+Here is a simplified, easy-to-read learning guide based on the provided text:
+
+---
+
+## Information Security Learning Guide
+
+### I. Personal Information De-identification Technologies
+
+These methods hide or transform personal data to prevent re-identification, reducing privacy risks.
+
+1.  **Heuristic Pseudonymization**
+    *   **What it is:** Hides identifier values (e.g., name, ID) based on pre-defined rules or data handler discretion.
+    *   **Purpose:** Masks direct identifiers.
+    *   **Applies to:** Names, user IDs, company names, addresses, phone numbers, emails, etc.
+
+2.  **K-anonymity**
+    *   **What it is:** Ensures that for any given set of attribute values, there are at least 'k' individuals sharing those same values. This prevents identifying an individual by a unique combination of attributes.
+    *   **Purpose:** Protects privacy by grouping similar data records.
+    *   **Applies to:** Age, height, address, zip code, department.
+
+3.  **Aggregation**
+    *   **What it is:** Reduces data sensitivity by combining individual data into group summaries (e.g., totals, averages).
+    *   **Purpose:** Obscures individual sensitive information.
+    *   **Applies to:** Age, height, income, credit card usage amounts.
+
+4.  **Data Suppression**
+    *   **What it is:** Converts specific personal information into an average or category value, or simply removes it.
+    *   **Purpose:** Hides precise details.
+    *   **Applies to:** Age, height, disease status.
+
+5.  **Adding Random Noise**
+    *   **What it is:** Inserts random numbers or other noise into sensitive identification fields.
+    *   **Purpose:** Prevents exposure of exact identification information.
+    *   **Applies to:** Resident registration numbers, user IDs, names, dates of birth, height, age.
+
+### II. Mobile Security
+
+The open nature of mobile operating systems (like smartphones) creates unique security challenges.
+
+1.  **Mobile Environment Overview**
+    *   Smartphones offer voice, wireless internet, web browsers, and multimedia.
+    *   Open operating systems (OS) allow users to install various apps freely, which introduces security risks.
+
+2.  **Key Mobile Security Threats**
+    *   **Security Vulnerabilities:** Arising from jailbreaking (iOS) or rooting (Android) devices.
+    *   **Theft and Loss:** Physical security risks for smart devices.
+    *   **Malware Infection:** Harmful software, and app forgery/alteration.
+    *   **Sniffing and Session Hijacking:** Interception of data or takeover of user sessions via illegal Wi-Fi Access Points (APs).
+
+3.  **Countermeasures Against Mobile Security Threats**
+
+    *   **General Protections:**
+        *   Regular security updates.
+        *   Running anti-virus programs.
+        *   Applying a personal firewall and Virtual Private Network (VPN).
+
+    *   **Application & Data Protection:**
+        *   Encrypt application program codes and data.
+        *   Apply anti-virus technology.
+        *   Use solutions to prevent memory hacking.
+        *   Implement solutions to prevent personal information leakage.
+        *   Apply app forgery and alteration prevention solutions.
+        *   Block illegal apps using electronic signature technology.
+
+    *   **Device & Network Protection:**
+        *   Apply theft and loss prevention solutions.
+        *   Block illegal Access Points (APs).
+        *   Apply location information protection and data encryption technology.
+
+### III. Information Security Management System (ISMS)
+
+An ISMS is a systematic approach to managing an organization's information security.
+
+1.  **Introduction & Context**
+    *   The ISMS certification system became mandatory in some regions (e.g., South Korea on Feb 18, 2013).
+    *   This has led to a significant increase in ISMS certifications.
+
+2.  **Concept of ISMS**
+    *   **Definition:** A system that manages information security measures to maintain the **confidentiality, integrity, and availability** (CIA triad) of information assets.
+    *   **Process:** Continuously manages and operates processes such as:
+        *   Information security system development.
+        *   Countermeasure implementation.
+        *   Operation, monitoring, and review.
+        *   Improvement, all based on identified risks.
+    *   **Benefit:** Helps organizations respond quickly to security breaches and minimize damage.
+
+3.  **Components of the ISMS**
+    The ISMS is structured around four main phases:
+    *   Establishment of the management system.
+    *   Risk management.
+    *   Management system operation.
+    *   Management system inspection and improvement.
+
+4.  **ISMS Certification Standard (Key Criteria)**
+    The certification process typically involves assessing against a set of criteria. A common standard has:
+    *   **5 Phases** and **12 Certification Criteria** for establishing the management system.
+    *   **92 Information Protection Measures** for implementing security.
+    *   A total of **104 Certification Criteria** for conformity assessment.
+
+    **Key Certification Criteria Examples (grouped by phase):**
+    *   **Establishing the System:**
+        *   Information security policy & scope.
+        *   Executives’ responsibility & organization.
+        *   Information asset classification.
+    *   **Implementing Measures:**
+        *   Outsider security.
+        *   Information security education.
+        *   Personnel security.
+        *   Physical security.
+        *   System development security.
+        *   Password control.
+        *   Access control.
+        *   Operational security.
+    *   **Follow-up Management:**
+        *   Breach incident management.
+        *   IT disaster recovery.
+
+### IV. Risk Management
+
+Risk management is a core part of ISMS, ensuring that security measures are proportionate to the threats.
+
+1.  **Definition**
+    *   A continuous process of identifying an organization's information assets, assessing risks (legal, administrative, physical, technical) associated with those assets, and implementing effective protection measures for risks that exceed an acceptable level (Degree of Assurance - DoA).
+
+2.  **Risk Management Process Flow**
+    The process generally follows this sequence:
+    *   **Asset:** Identify and value information assets.
+    *   **Threat:** Identify potential threats to these assets.
+    *   **Vulnerability:** Identify weaknesses that threats could exploit.
+    *   **Danger:** The potential for a threat to exploit a vulnerability.
+    *   **Risk:** The likelihood and impact of a danger occurring.
+    *   **Risk Management:** Implement controls and measures to mitigate risks.
+    *   **Remaining Risk:** The risk that remains after implementing countermeasures.
+
+---
+
+================================================================================
+ORIGINAL TEXT (First 5000 chars)
+================================================================================
+
+--- Page 61 ---
+Information  security )
+@® Major personal  information  de-identification  technologies  and utilization  methods
++ Heuristic  pseudonymization
+A method of hiding values corresponding  to the identifier,  based on several pre-defined  rules, or hiding
+personal  information  by processing  it at the discretion  of the data handler.  This technique  can be applied to a
+variety of personal  information,  such as the name, user ID, department  (company)  name, institution  number,
+address,  credit rating, mobile phone number,  zip code, e-mail account,  etc.
++ K-anonymity
+A method  of disclosing  data by keeping  k or more data that have the same attribute  value in order to prevent
+a privacy violation  by keeping  the number  of values, which can be held by the designated  attribute,  over a
+certain level. This method can be applied to personal  information,  such as age, height, address,  zip code,
+department  (company),  etc.
++ Aggregation
+A method of reducing  sensitivity  by aggregating  data into a group or part (total, average,  etc.), if the
+collected  information  contains  sensitive  personal  information.  This method can be applied to personal
+information,  such as age, height, income,  credit card use amount,  etc.
++ Data suppression
+A method  of converting  specific  personal  information  data into an average  or category  value to hide it. This
+method  can be applied to personal  information,  such as age, height, disease,  etc.
++ Adding  random  noise
+A method  of preventing  the exposure  of identification  information  by adding noise, such as random numbers,
+to sensitive  personal  identification  items. This method can be applied to personal  information,  such as the
+resident  registration  number,  user ID, name, date of birth, height, age, etc.
+D) Mobile security
+® Security  threats  and countermeasures  in the mobile  environment
+Smartphones,  which are equipped  with a user-oriented  mobile PC platform,provide  voice calls, wireless  Internet
+connections  using mobile communication  and Wi-Fi, web browsers,  and multimedia  content  services.  Open OS
+allows users to freely install various  apps on their devices.  This open web environment  of smartphones  causes
+security  threats,  which become  an issue.
+@ Security  threats  in the smart and mobile environment
++ Security  vulnerabilities,  due  to jailbreaking  and rooting
++ Threats  of smart device theft and loss
++ Malware  infection  and app forgery  and alteration
++ Sniffing  and session  hijacking  through  an illegal AP
+M4 Understanding  Information  Security  64
+
+
+--- Page 62 ---
+ESSENCE
+@® Countermeasures  against  security  threats  in the mobile environment
+<Table 15> Countermeasures  against  security  threats  in the mobile  environment
+Threat Countermeasures
++ Encrypting  application  program  codes and data
+Threat factors of the + Applying theft and loss prevention  solutions
++ Applying  security  updates  and running  an anti-virus  program  regularly
+Threat  factors  of memory . Applying  anti-virus  technology  and memory  hacking prevention  technology
++ Applying  personal  information  leakage  prevention  solutions
+Threat  factors  of web + Applying  app forgery  and alteration  prevention  solutions
+services + Blocking  illegal apps, by applying  electronic  signature  technology
++ Blocking  illegal APs
+Threat tare  of + Applying location information  protection  and data encryption  technology
++ Applying  a personal  firewall and VPN
+62. TOPCIT  ESSENCE
+
+
+--- Page 63 ---
+Information  security
+>>b Subject
+Understanding  security  management  systems  and standards
+>>> Recent  trends and major issues
+The ISMS (Information  Security  Management  System)  certification  system,  which is a domestic
+information  security  management  system, was mandated  on February  18, 2013. A total of 126
+certificates  were issued in 2013 once ISMS certification  became  mandatory,  and the number  of
+certification  issues has increased  remarkably  when compared  to the total of 151 cases issued for 11
+years, since 2002. The number  of companies  that voluntarily  received  certification  increased in 2014
+and 2015, in addition  to the mandatory  companies.
+>>p Learning  objectives
+To be able to explain the concept  of the information  security  management  system.
+To be able to explain personal  information  protection.
+To be able to explain standards  related  to information  security.
+>>> Keywords
+Information  security  management  system, information  security  management  process,  information
+protection  measures,  certification  screening  criteria, control items, |SO27001,  risk identification,  risk
+assessment,  quantitative  technique,  qualitative  technique,  baseline  approach,  detailed  risk approach,
+expert  judgment  method,  combined  approach,  individual  Information,  collection,  use, storage,
+provision,  consignment,  destruction,  uniquely  identifiable  information,  personal  information ...

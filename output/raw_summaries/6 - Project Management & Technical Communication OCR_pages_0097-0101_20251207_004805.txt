@@ -1,0 +1,238 @@
+LEARNING GUIDE: Pages 97-101
+Generated: 2025-12-07 00:48:05
+PDF: 6 - Project Management & Technical Communication OCR
+
+================================================================================
+LEARNING GUIDE
+================================================================================
+
+Here is a simplified, easy-to-read learning guide on Schedule Management Techniques, derived from the provided text.
+
+---
+
+## Learning Guide: Schedule Management Techniques
+
+### 1. Introduction to Schedule Management
+
+Effective schedule management ensures projects are completed on time. Key activities include:
+*   **Reprioritizing tasks** in the project backlog as needed.
+*   **Determining the rate** at which deliverables are produced and accepted per work cycle (e.g., two weeks, one month).
+*   **Monitoring project schedule changes.**
+*   **Managing actual changes** that occur.
+
+### 2. Schedule Development Technique: Critical Path Method (CPM)
+
+CPM is a network analysis technique used to determine the **minimum duration** required to complete a project. It identifies the "critical path" – the longest sequence of activities that must be completed on time for the project to finish by its earliest date.
+
+#### Key Concepts in CPM:
+
+*   **Critical Path:** The sequence of activities that, if delayed, will delay the entire project. It's identified by activities with **Zero Total Float**.
+*   **Forward Pass:** Calculates the earliest possible start and finish dates for activities.
+    *   **Early Start (ES):** The earliest date an activity can begin.
+    *   **Early Finish (EF):** The earliest date an activity can finish.
+*   **Backward Pass:** Calculates the latest possible start and finish dates for activities without delaying the project.
+    *   **Late Start (LS):** The latest date an activity can start without delaying the project's finish date.
+    *   **Late Finish (LF):** The latest date an activity can finish without delaying the project's finish date.
+*   **Total Float (TF):** The amount of time an activity can be delayed or extended without delaying the project's overall finish date.
+    *   **Formula:** `TF = LF - EF` or `TF = LS - ES`
+
+#### Steps to Perform CPM:
+
+**Input:** A Project Schedule Network Diagram showing activity sequence, duration, dependencies, leads, and lags.
+
+**Example Activities:**
+
+| Activity Name | Duration | Predecessor Activity |
+| :------------ | :------- | :------------------- |
+| A             | 3 days   | -                    |
+| B             | 2 days   | A                    |
+| C             | 2 days   | B, D                 |
+| D             | 4 days   | A                    |
+| E             | 6 days   | D                    |
+| F             | 3 days   | E                    |
+
+**1. Activity Definition & Duration Estimation:**
+*   List all project activities.
+*   Estimate duration for each.
+*   Identify predecessor activities (what must finish before this can start).
+*   Draw a network diagram linking activities based on their sequential relationships.
+
+    *(Example diagram for Activities A-F)*
+    ```
+    (A) --- (B) --- (C)
+     |       /
+     |      /
+     (D) --- (E) --- (F)
+    ```
+
+**2. Forward Scheduling (Calculate ES & EF):**
+*   **Purpose:** Determine the earliest possible start and finish for each activity.
+*   **Formulas:**
+    *   `ES = (EF of immediate predecessor activity) + 1`
+    *   `EF = ES of activity + activity duration - 1`
+*   **Rule for Multiple Predecessors:** If an activity has multiple predecessors, its ES is calculated using the **latest** EF of all its immediate predecessors.
+*   **Starting Point:** For the first activity(ies) with no predecessors, ES starts at 1.
+
+| Activity Name | ES             | Duration | EF             |
+| :------------ | :------------- | :------- | :------------- |
+| A             | 1              | 3        | 3 (1+3-1)      |
+| B             | 4 (EF of A + 1)| 2        | 5 (4+2-1)      |
+| C             | 8 (EF of D + 1)*| 2        | 9 (8+2-1)      |
+| D             | 4 (EF of A + 1)| 4        | 7 (4+4-1)      |
+| E             | 8 (EF of D + 1)| 6        | 13 (8+6-1)     |
+| F             | 14 (EF of E + 1)| 3        | 16 (14+3-1)    |
+
+    *For Activity C, predecessors are B (EF=5) and D (EF=7). Take the max EF (7) + 1 = 8.*
+
+**3. Backward Scheduling (Calculate LS & LF):**
+*   **Purpose:** Determine the latest possible start and finish for each activity without delaying the project.
+*   **Formulas:**
+    *   `LS = (LF of activity) - (activity duration) + 1`
+    *   `LF = (LS of successor activity) - 1`
+*   **Rule for Multiple Successors:** If an activity has multiple successors, its LF is calculated using the **earliest** LS of all its immediate successors.
+*   **Starting Point:** For the last activity(ies) with no successors, LF is equal to its EF (the overall project finish date).
+
+| Activity Name | LS             | Duration | LF             |
+| :------------ | :------------- | :------- | :------------- |
+| F             | 14 (16-3+1)    | 3        | 16 (Project End)|
+| E             | 8 (13-6+1)     | 6        | 13 (LS of F - 1)|
+| D             | 4 (7-4+1)      | 4        | 7 (LS of E - 1)*|
+| C             | 12 (13-2+1)    | 2        | 13 (LS of F - 1)|
+| B             | 10 (11-2+1)    | 2        | 11 (LS of C - 1)|
+| A             | 1 (4-3+1)      | 3        | 3 (LS of D - 1)|
+
+    *For Activity D, successors are C (LS=12) and E (LS=8). Take the min LS (8) - 1 = 7.*
+
+**4. Calculate Total Float & Identify Critical Path:**
+*   **Calculate Total Float (TF)** for each activity using `TF = LF - EF` or `TF = LS - ES`.
+*   **Identify Critical Path:** The critical path consists of activities where TF = 0.
+
+| Activity Name | ES | EF | LS | LF | TF (LF-EF) |
+| :------------ | :- | :- | :- | :- | :--------- |
+| A             | 1  | 3  | 1  | 3  | 0          |
+| B             | 4  | 5  | 10 | 11 | 6          |
+| C             | 8  | 9  | 12 | 13 | 4          |
+| D             | 4  | 7  | 4  | 7  | 0          |
+| E             | 8  | 13 | 8  | 13 | 0          |
+| F             | 14 | 16 | 14 | 16 | 0          |
+
+*   **Result:** Activities A, D, E, F have a Total Float of 0.
+*   **Critical Path:** **A - D - E - F**
+*   **Importance:** Any delay to activities on the critical path will delay the entire project. These activities require intense schedule management.
+
+### 3. Schedule Development Technique: Critical Chain Method (CCM)
+
+CCM is a scheduling method that builds upon CPM by specifically accounting for **limited resources** and **uncertainty** in activity durations.
+
+*   **Enhancement over CPM:** CCM adds **buffers** to the schedule to mitigate the effects of resource allocation, optimization, leveling, and duration uncertainty.
+*   **Focus:** Instead of managing total float of network paths, CCM focuses on managing the remaining durations of these buffers against the remaining durations of activity chains.
+
+#### Types of Buffers in CCM:
+
+1.  **Project Buffer:**
+    *   Placed at the **very end** of the critical chain.
+    *   Purpose: To prevent the target project finish date from slipping due to delays on the critical chain.
+2.  **Feeding Buffer:**
+    *   Placed at each point where a **non-critical activity path (feeding chain)** merges into the critical chain.
+    *   Purpose: To protect the critical chain from delays occurring in these feeding paths.
+    *   Size is determined by considering the duration uncertainty of the feeding chain.
+
+---
+
+================================================================================
+ORIGINAL TEXT (First 5000 chars)
+================================================================================
+
+--- Page 97 ---
+ESSENCE
+improvement  if necessary
++ Reprioritization  of remaining  tasks (backlog).  Determining  the rate at which deliverables  are produced,
+verified,  and accepted  at a given time per iteration  (pre-agreed  work cycle, typically  two weeks or one
+month).
++ Determine  whether  the project  schedule  has changed
++ Management  of changes  that actually  happen
+O02 Schedule  Management  Technique
+A) Schedule  development  technique  - critical path method  (CPM)
+The critical path method  is a network  analysis  technique  used to determine  the minimum  duration  of a project.
+It is a technique  of finding  the path that determines  the minimum  duration  of the project among  many, that is,
+the critical path. The critical path technique  is known as Critical Path Method.
+The critical path is the minimum  path connecting  activities  with “Zero” float. Using a Project  Schedule  Network
+Diagram as an input, you take into account  the sequence  of activities,  duration,  dependency,  lead, and delay
+and conduct  Forward  Pass and Backward  Pass analysis  to calculate  Early Start(ES),  Early Finish(EF),  Late
+Start(LS)  and Late Finish(LF).
+<Table  42> Components  of Critical  Path Method
+Component Characteristics  and Explanation
++ A method  of deriving  the expected  finish date based on the project  start date from duration
+Forward  Pass of and the relationship  between  tasks
++ Calculate  Early Start (ES), Early Finish (EF)
++ Amethod  of deriving  the start date based on the project  finish date from duration  of and the
+Backward  Pass relationship  between  tasks
++ Calculate  Late Start (LS), Late Finish (LF)
++ ES, Early Start
+Early Start + The earliest date an activity can possibly begin
+a + EF, Early Finish
+Early Finish + The earliest date an activity can possibly  finish
+Late Start + LS, Late Start
++ The latest date an activity  can start, without  delaying  the finish of the project.
+Late Finish + LF, Late Finish
++ The latest date an activity  can finish, without  delaying  the finish of the project.
++ Total Float
+tk + The amount  of time that an activity  can be delayed or extended  without  delaying  the projectotal Float fnish date
++ Total Float = Late Finish (LF) - Early Finish (EF) = Late Start (LS) - Early Start (ES)
+96 TOPCIT  ESSENCE
+
+
+--- Page 98 ---
+Project Management  and Technical  Communication  )
+In order to calculate  the schedule  by hand using the critical path method,  the activity  is expressed  as follows.
+Activity  Name
+The following  is an example  of calculating  a schedule  using the critical path method.  The critical path method
+will be described  in detail through  the example  below.
+<Table 43> Critical Path Method  (Example)
+Activity  Name Duration Predecessor  Activity
+A 3 days
+B 2 days A
+Cc 2 days B,D
+D 4 days A
+E 6 days D
+F 3 days GE
+@ Activity  Definition,  Duration  Estimation
+If the activities  of the project are defined and the duration  of each activity is estimated,  the activities  are
+linked according  to the sequential  relationship  as follows. Arrange  the identified  activities  according  to the
+sequential  relationship  and enter the activity  name and duration.
+6 /{> E
+[Figure 30] Critical Path Method@  (Example)
+In the case of the activity  name “B’, it is placed after the activity  “A” because  the Predecessor  Activity  is “A”, and the
+duration  of the activity  “B’ is 2 days, so enter 2 in the “Duration”.  Likewise,  for all other activities,  predecessor  activities
+are identified  and arranged  in order, and the duration  of the activity  is written  at the top of the activity  name.
+M6 Project  Management  and Technical  Communication  97
+
+
+--- Page 99 ---
+ESSENCE
+@ Forward  Scheduling
+The Early Start (ES) and Early Finish (EF) of each activity  are calculated,  and the formula  is as follows:
++ ES = EF of immediate  predecessor  activity  + 1
++ EF = ES of activity + activity  duration  - 1
+<Table 44> Result of Forward  Scheduling  by Activity
+Activity  Name ES (Early Start) Duration EF (Early Finish)
+A 1 3 3(1 + 3-1)
+B 4(3 + 1) 2 5(4 + 2-1)
+c apa 2 9(8 + 2-1)
+D 4(3 + 1) 4 7(4 + 4-1)
+E 8(7 + 1) 6 13(8 + 6-1)
+F 14(13 + 1) 3 16(14 + 3-1)
+For Activity  “A’, there is no EF of predecessor  activity,  so ES starts with 1.
+In the case of Activity  “C’, there are two predecessor  activities:  “B’ and “D’. In this case, as Activity  “C” can be
+started after both “B” and “D” activities  are finished,  the EF of the immediate  predecessor  activity  used in the
+ES calculation  is 7, which is the EF of Activity  “D’, which is then added with one to become  eight (7 + 1 = 8).
+After calculating  all ES and EF for each activity,  fill in as shown in the figure below.
+2
+B [-—_—___—_> iC
+1] 3] 3 \ 4 | 3 | t
+4|4 17 s | 6 | 2B /
+D — E
+[Figure 31] Critical Path Method@  (Example)
+@ Backward  Scheduling
+The Late Start (LS) and Late Finish (LF) of each activity  are calculated,  and the formula  is as follows:
++LS =LF of activity  - activity  durati...

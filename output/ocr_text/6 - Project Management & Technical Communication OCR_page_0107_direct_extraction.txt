@@ -1,0 +1,28 @@
+ESSENCE
+Writing screen design 2 days ple eh 0% 4 Kim Jisim
+Delete text | days "ten  , ie.  . 0% 5 Kang Jeongbae
+Modify text | days ea Wel). 0% 6 Kim Seonhwa
+File upload 5 days Wed ae  7 0% 7 Lee Hongcheol
+[Figure 35] Cost Control  Screen (Example)
+In the example  above, the duration  of the [Writing]  activity  was calculated  as five days, and it was planned
+to be completed  by July 31st. As of August Ist, the five days of planning  have not been completed.  If the ac-
+tivity is calculated  as the cost (assuming  KRW 300,000  per day), it is 5 (days) x 0.9 (completion  rate) x KRW
+300,000  = KRW 1,350,000.  In addition,  if the activity had been completed  as scheduled,  it would be, if calcu-
+lated as a cost, KRW 1,500,000.  In other words, as of August Ist, 1,500,000-1,350,000  = KRW 150,000  of work
+has not been completed,  meaning  the cost of KRW 150,000  has been excessively  spent.
+The above cost control management  method is called Earned Value Method,  and cost control management
+applying  EVM is called Earned Value Management.
+03 Cost Estimation  Technique
+The most common  project  cost estimation  techniques  include  Function  Point (FP), Man/Month  (M/M), and COCOMO.
+A) Function  point (FP)
+Function  Point is a method  of estimating  the cost by measuring  the scale of software  development  as a Func-
+tion Point (FP) and multiplying  the unit price per function  point. It is an international  standard  (ISO/IEC  14143)
+that quantitatively  calculates  functions  requested  by and delivered  to users from a user's point of view, and is
+a cost calculation  method  for software  development,  maintenance  and operation.
+Compared  to the LOC (Line Of Code)-based  COCOMO  method or the Man/Month  (M/M) method,  it has the
+characteristic  of grasping  the size of the development  project before initiation  by identifying  the required
+function  of the user.
+Software  functions  are divided into Data Functions  and Transaction  Functions,  and more specifically,  data
+functions  are subdivided  into Internal Logical Files and External  Interface  Files, and transaction  functions  are
+subdivided  into three types: External  Inputs, External  Outputs,  and External  Inquiries.
+106 TOPCIT  ESSENCE

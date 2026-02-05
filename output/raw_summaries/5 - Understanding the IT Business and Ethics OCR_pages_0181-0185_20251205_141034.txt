@@ -1,0 +1,210 @@
+LEARNING GUIDE: Pages 181-185
+Generated: 2025-12-05 14:10:34
+PDF: 5 - Understanding the IT Business and Ethics OCR
+
+================================================================================
+LEARNING GUIDE
+================================================================================
+
+Here's a simplified, easy-to-read learning guide based on the provided text:
+
+---
+
+# Professional Ethics in Computing and Engineering
+
+This guide covers essential ethical principles and codes for professionals in software development, IT, and engineering.
+
+## 1. Professional Ethics for Software Developers
+
+**Core Idea:** Software developers need a strong ethical consciousness. It's often hard to predict how code will be used or its risks, and fast-paced environments make ethical judgments difficult. Professional ethics provide guidance and a sense of duty.
+
+### Pete Goodliffe's "Ethical Programmer Pledge"
+
+*   **Do No Harm:** Avoid harming code, ethics, or business for personal/professional gain.
+*   **Be Faithful:** Perform tasks diligently and foster team harmony.
+*   **Be Honest:** Work towards efficient and valuable projects/teams.
+
+### Why Ethical Reflection Matters
+
+Developers face dilemmas. For example:
+*   Creating software that benefits a few at others' expense.
+*   Violating open-source license terms (e.g., GPL) by not disclosing required code.
+*   Reporting unethical behavior of colleagues, especially if it impacts employment.
+*   Navigating software patents.
+*   Balancing passion with ethical considerations.
+
+## 2. Key Ethical Principles and Industry Codes
+
+### A) ACM (Association for Computing Machinery) Code of Ethics and Professional Conduct
+
+*   **Focus:** Social responsibility and professional leadership in computing.
+*   **Structure:** General Principles, Professional Responsibilities, Professional Leadership Principles, and Compliance.
+
+#### Article 1: General Ethical Principles
+
+1.  **Contribute to Society:** Benefit human well-being, recognizing all people are stakeholders.
+2.  **Avoid Harm:** Prevent harm and, if accidental, reverse/recover it. Report systemic risks immediately.
+3.  **Be Honest & Trustworthy.**
+4.  **Be Fair:** Avoid discrimination.
+5.  **Respect Intellectual Property:** Honor copyrights, trade secrets, patents, licenses, and open-source terms.
+6.  **Respect Privacy.**
+7.  **Honor Confidentiality.**
+
+#### Article 2: Professional Responsibilities
+
+1.  **High Quality Work:** Strive for excellence in processes and products.
+2.  **Maintain High Standards:** Uphold professional competence, conduct, and ethics.
+3.  **Respect Rules:** Know and adhere to relevant professional regulations.
+4.  **Professional Review:** Accept and provide constructive feedback.
+5.  **Thorough Evaluations:** Assess computer systems and their impacts, including risks.
+6.  **Competence:** Work only within your areas of expertise.
+7.  **Public Awareness:** Educate the public about computing and its consequences.
+8.  **Authorized Access:** Use computing resources only when authorized or for the public good.
+9.  **Secure Systems:** Design and implement robust and usable security (prepare for abuse/accidents).
+
+#### Article 3: Principles of Professional Leadership
+
+1.  **Public Good:** Prioritize the public good in all computing work.
+2.  **Social Responsibility:** Encourage and evaluate social responsibilities within organizations.
+3.  **Quality of Working Life:** Manage resources to improve work-life quality.
+4.  **Ethical Policies:** Support and apply policies reflecting the Code's principles.
+5.  **Professional Growth:** Create opportunities for professional development.
+6.  **System Care:** Exercise caution when modifying or retiring systems.
+7.  **Societal Infrastructure:** Recognize and care for systems integrated into society's infrastructure (e.g., social media, cloud).
+
+#### Article 4: Compliance with the Code
+
+1.  **Uphold & Promote:** Support and respect the Code's principles.
+2.  **Address Violations:** Treat Code violations as inconsistent with ACM membership.
+
+### B) NSPE (National Society of Professional Engineers) Code of Ethics for Engineers
+
+*   **Focus:** Ethical standards for engineers regarding the public, customers, and employers. Emphasizes honesty, impartiality, fairness, equity, and public health/safety/welfare.
+
+#### Fundamental Canons (Key Duties)
+
+1.  **Public Welfare First:** Hold paramount the safety, health, and welfare of the public.
+2.  **Competence:** Perform services only within your area of expertise.
+3.  **Truthful Statements:** Issue public statements objectively and truthfully.
+4.  **Loyalty to Employer/Client:** Act as faithful agents or trustees.
+5.  **Avoid Deception:** Do not engage in deceptive acts.
+
+### C) ACM/IEEE-CS Code of Ethics for Software Engineers
+
+*   **Focus:** A standard for software education and practice, promoting software engineering as a beneficial and respected profession, prioritizing public health, safety, and well-being.
+
+#### Eight Ethical Principles (Summary)
+
+1.  **Public:** Act consistently with the public interest.
+2.  **Client & Employer:** Act in their best interest, *consistent with the public interest*.
+3.  **Product:** Ensure products meet the highest professional standards.
+4.  **Judgment:** Maintain integrity and independence in professional judgment.
+5.  **Management:** Promote ethical approaches to software development management.
+6.  **Profession:** Advance the integrity and reputation of the profession.
+7.  **Colleagues:** Be fair to and supportive of colleagues.
+8.  **Self:** Engage in lifelong learning and promote ethical practice within the profession.
+
+### D) ISACA (Information Systems Audit and Control Association) Code of Professional Ethics
+
+*   **Focus:** Guidance for professional and personal conduct in information systems audit and related roles.
+
+#### Key Principles
+
+1.  **Support IT Governance:** Encourage compliance with standards for IT governance and management (audit, control, security, risk management).
+2.  **Objectivity & Care:** Perform duties with objectivity, due diligence, and professional care.
+3.  **Stakeholder Interest:** Serve stakeholders lawfully, maintain high conduct, and uphold the profession's reputation.
+4.  **Privacy & Confidentiality:** Maintain confidentiality of information unless legally required; do not use for personal gain or release to inappropriate parties.
+5.  **Competency:** Maintain expertise and only undertake tasks you can complete competently.
+6.  **Transparent Reporting:** Inform relevant parties of work results, disclosing all significant facts that could distort findings.
+7.  **Educate Stakeholders:** Support education to enhance understanding of IT governance and management.
+
+### E) The Korean Institute of Electrical Engineers (KIEE) Code of Professional Ethics
+
+*   **Focus:** For electrical engineering professionals, emphasizing technology's impact on life, cultural traditions, honesty, fairness, and upholding dignity.
+
+#### Key Pledges/Principles
+
+1.  **Social Responsibility:** Contribute to society and peace, make decisions for public safety/well-being, and take responsibility.
+2.  **Principles of Faith:** Keep business information confidential and protect trust (unless public interest is harmed).
+3.  **Conflicts of Interest:** Disclose and objectively deal with any conflicts that arise.
+4.  **Material Honesty:** Base conclusions on engineering data; do not use false data or plagiarize.
+5.  **Compliance with Laws:** Strictly follow laws, regulations, and contracts; refuse bribery.
+6.  **Respect for Intellectual Property:** Respect others' copyrights and patents, and fairly acknowledge their achievements.
+7.  **Fair Assessment:** Accept fair technical assessments, correct errors promptly, and fairly evaluate others.
+8.  **Non-Discrimination:** Reject prejudice and discrimination based on gender, race, age, background, or disability.
+9.  **Professional Development:** Develop professional knowledge and skills to advance the field.
+10. **Eco-friendly & Sustainable Technologies:** Recognize the need for and promote efforts toward sustainable and eco-friendly technologies.
+
+---
+
+================================================================================
+ORIGINAL TEXT (First 5000 chars)
+================================================================================
+
+--- Page 181 ---
+ESSENCE
+as a developer,  privacy  protection  and information  protection  consciousness.
+@ Professional  Ethics for Software  Developers
+Programmer  and software  development  columnist  Pete Goodliffe  presents  the following  "Becoming  a Better
+Programmer"®,  emphasizing  the ethical consciousness  of programmers.
+<Pledge  to do no harm as an ethical programmer>
++ | swear | will not harm the code of ethics or business  for personal  and professional  gain.
++ | will do my best to perform  my assigned  tasks faithfully,  and will build team harmony.
++ | will be honest  with others and work towards  making  projects  and teams as efficient  and valuable  as possible.
+Also, it asks you as a programmer  to check the following  questions  to check whether  you have professional  ethics.
+1. Do you consider  yourself  an ethical programmer?
+Is there a difference  between  an ethical programmer  and an ethical person?
+2. \s it ethical to create software  that generates  enormous  wealth for bankers  at the expense  of those who don't know
+how to create software?  Does it make any difference  depending  on whether  the trade practice  is legal or not?
+3. What if you are using GPL code that requires  additional  disclosure  obligations  for your products,  but you do not fulfill
+the obligations  of the license terms by withholding  the disclosure  of your own code?
+Do you have to disclose  your company’s  code to meet the license terms? Or should you ask for an alternative
+replacement  of closed source for the GPL code? Should  you become  a whistleblower  and report  a license violation  if
+the product  has already  been shipped?  What if your employment  security  depends  on being silent about it?
+4. What if you recognize  other programmers’  unethical  behavior?  If the programmer  is a co-worker,  a friend, someone
+who has been asked for a referral, or a coder whom you have met but haven't  worked with, how does your answer
+change?
+5. How do software  patents  fit into the world of ethical programming?
+6. Does your passion for software  development  affect how much you care about ethical issues? Will a passionate
+programmer  behave more ethically  than a professional  coder?
+It is difficult  for software  developers  to fully understand  how their code will be used and what the potential  risks may
+be. In addition, it is difficult  to figure out what is right and what is wrong in a rushing  work environment.  In such an
+environment,  a sense of professional  ethics gives a sense of duty and responsibility  for a job and can provide  guidance
+for judgment  in the context  of moral dilemmas.
+02 Ethical  Principles  and Code of IT Business
+A) Code of Ethics Related  to ICT Technology
+@ ACM(Association  for Computing  Machinery)  Code of Ethics and Professional  Conduct
+26 Pete Goodlife,  "Becoming  a Better Programmer’,  p.243-252,  O'Reilly  Media, 2014
+180 TOPCIT  ESSENCE
+
+
+--- Page 182 ---
+Understanding  the IT Business  and Ethics )
++ ACM's Code of Ethics and Professional  Practice,  which largely consists of  general principles  (7), professional
+responsibilities  (9), professional  leadership  principles  (7), and compliance  with the code(2),  and emphasizes  social
+responsibility  and professional  leadership.
+Article 1: General  Ethical Principles
+1.1 Contribute  to society  and to human  well-being,  acknowledging  that all people are stakeholders  in computing.
+1.2 Avoid harm.
+In the event of accidental  or unintentional  damage,  those responsible  for the damage  must try to reverse or
+recover  it as much as possible.
+Any signs of systemic  risk that could lead to damage  should be reported  immediately.
+1.3 Be honest  and trustworthy.
+1.4Be fair and take action not to discriminate.
+1.5Respect  the work required  to produce  new ideas, inventions,  creative  works, and computing  artifacts.  (< More
+general  descriptions  by incorporating  Nos. 6 and 7 of the previous  code of ethics)
+Copyright,  trade secret, patent  right, license,  job invention,  open source (commercial,  personal)
+1.6 Respect  privacy.
+1.7 Honor  confidentiality.
+Article 2: Professional  Responsibilities
+2.1 Strive  to achieve  high quality in both the processes  and products  of professional  work.
+2.2 Maintain  high standards  of professional  competence,  conduct,  and ethical practice.
+2.3 Know and respect  existing  rules pertaining  to professional  work.
+2.4Accept  and provide  appropriate  professional  review.
+2.5Give  comprehensive  and thorough  evaluations of computer  systems  and their impacts,  including  analysis  of
+possible  risks.
+2.6 Perform  work only in areas of competence.  (Added)
+2.7 Foster  public awareness  and understanding  of computing,  related  technologies,  and their consequences.
+2.8 Access  computing  and communication  resources  only when authorized  or when compelled  by the public good.
+2.9 Design and implement  systems  that are robustly  and usably secure. (Added)
+Prepa...

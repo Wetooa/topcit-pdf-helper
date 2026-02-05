@@ -1,0 +1,203 @@
+LEARNING GUIDE: Pages 58-62
+Generated: 2025-12-07 00:58:35
+PDF: 3 - Overview of System Architecture OCR
+
+================================================================================
+LEARNING GUIDE
+================================================================================
+
+Here is a simplified, easy-to-read learning guide based on the provided text, designed for quick study and comprehension.
+
+---
+
+## Learning Guide: System Architecture Essentials
+
+### 1. File System Allocation Methods
+
+File systems decide how to store and quickly access files on disk. Common methods include:
+
+#### A. Contiguous Allocation
+*   **Concept:** Files are stored in a continuous block of addresses on the physical disk.
+*   **Advantage:** Fast reading speed (data is physically together).
+*   **Disadvantage:** **External Fragmentation** – disk space becomes fragmented, making it hard to find large contiguous blocks for new files, even if total free space exists.
+
+#### B. Linked Allocation
+*   **Concept:** Files are stored in block units, with each block containing a pointer to the next block in the file. The directory stores pointers to the first and last blocks.
+*   **Advantage:** Solves external fragmentation (blocks don't need to be contiguous).
+*   **Disadvantages:**
+    *   Slow reading speed (blocks are scattered, requiring jumps).
+    *   Requires extra space to store pointers within blocks.
+    *   Risk of data loss/corruption if a pointer is lost or damaged.
+    *   Does not support direct access (must traverse the chain).
+
+#### C. Indexed Allocation
+*   **Concept:** Addresses the limitations of linked allocation by storing all file block pointers in a central **index block**. The directory points to this index block.
+*   **Advantages:**
+    *   No external fragmentation.
+    *   Supports **direct access** (can directly jump to any block via the index).
+*   **Disadvantage:** Greater storage space waste compared to linked allocation (due to dedicated index blocks).
+
+### 2. Operating System File Systems
+
+Different operating systems use various file systems to manage data storage:
+
+*   **UNIX:** Characterized by components like **Boot block, Super block, Bitmap block, i-node, and Data block**. (Note: These are components within a UNIX-like file system structure rather than specific file system *names* like ext4).
+*   **Linux:** ext, ext2, ext3, ext4, ZFS, ReiserFS, XFS
+*   **Solaris:** ZFS, UFS
+*   **Mac OS:** HFS, HFS+
+*   **Windows:** FAT, NTFS
+
+### 3. UNIX i-node System
+
+In UNIX-like systems, the **i-node** (index-node) plays a crucial role in managing file and directory data.
+
+*   **Role:** Handles allocation, application, creation, linking, and deletion of file/directory data.
+*   **inode:**
+    *   Contains all metadata about a file or directory (owner, access permissions, file size, links, type).
+    *   Does **not** contain the file's data itself.
+*   **inode table (i-list):** A file system table that stores all the inodes for files and directories.
+*   **i-number:** A unique entry number that identifies an inode within the inode table.
+*   **Addressing (Block Location Management):** Inodes manage block locations using 13 fields to point to data blocks:
+    *   **10 Direct data blocks (0-9):** Directly point to the first few data blocks (e.g., up to 96KB data).
+    *   **1 Single indirect data block (10):** Points to a block that contains pointers to other data blocks (e.g., up to 16MB data).
+    *   **1 Double indirect data block (11):** Points to a block that contains pointers to single indirect blocks (e.g., up to 32GB data).
+    *   **1 Triple indirect data block (12):** Points to a block that contains pointers to double indirect blocks (e.g., up to 70TB data).
+    This hierarchical structure allows for very large files.
+
+### 4. Input/Output (I/O) System
+
+The I/O system facilitates communication between the computer and external devices.
+
+*   **Components:**
+    1.  **Input/Output Device:** The physical hardware (e.g., keyboard, printer, disk drive) that handles data transfer.
+    2.  **Input/Output Module (Controller):** An electronic component that interfaces the I/O device with the processor.
+*   **I/O Module Functions:**
+    *   Controls the I/O device.
+    *   Coordinates timing.
+    *   Communicates with the processor.
+    *   Communicates with the I/O devices.
+    *   Performs **data buffering** (temporary storage of data during transfer).
+    *   Detects errors.
+*   **Purpose:** Allows the main processor to easily control multiple I/O devices without direct management of each device's specific intricacies.
+
+### 5. Computer Architecture: Recent Trends & Concepts
+
+**Computer architecture** is the conceptual design and operational structure that forms the basis of computer systems. It's a blueprint describing the design, portability, and requirements (like speed and interconnection) of a computer's various parts. It primarily focuses on how the **Central Processing Unit (CPU)** performs and accesses memory addresses.
+
+*   **Foundation:** Modern computer structures are largely based on the **Von Neumann architecture**, where instructions and data are stored in the same memory space. The basic instruction processing structure has remained largely consistent.
+*   **Evolution:**
+    *   **Parallel processing** and other technologies have significantly improved performance.
+    *   New concepts are emerging, such as:
+        *   **Neuromorphic chips:** Designed to mimic the structure and function of the human brain for AI and machine learning.
+        *   **Quantum computers:** Utilize quantum-mechanical phenomena (superposition, entanglement) to perform computations far beyond classical computers for specific problems.
+
+---
+
+================================================================================
+ORIGINAL TEXT (First 5000 chars)
+================================================================================
+
+--- Page 58 ---
+Overview  of System Architecture )
++ Renaming  file: A file name must be changeable,  and a renamed  file should exist at a point within the directory
+structure.
+C) Allocation  by a file system
+A file system should consider  which space on the disk to use and quickly access the files. An OS's file system
+generally  uses the contiguous  allocation,  linked allocation,  or indexed  allocation.
+* Contiguous  allocation:
+This method  arranges  files as a set of contiguous  addresses  on the physical  disk, as shown in [Figure  27] below. The
+disk addresses  of stored files are defined linearly. This method  has the advantage  of a relatively  high reading  speed,
+since the files are stored in contiguous  addresses.  However,  it creates  an external  fragmentation  problem.
+tr
+12 13 14 15
+16, |i7{_ | 18| | 19
+mail
+20[ | 2i[__ 22{_ jas
+24 25 26) 27
+listDirectory
+file start length
+count count 0 2oi 2 js tr mail 14 3
+f list f 19 6
+4 5 6 7 8 4
+8{ ]9f ji |nf ] 6 2
+28] |29[ |30[ | 31NC
+[Figure  27] Contiguous  Allocation
++ Linked allocation
+This method stores files in block units and links each block to a list, as shown in [Figure 28] below. The directory
+keeps pointers  to the first and last blocks of the files. As shown in the figure, the directory  contains  9 and 25, which
+are the first and last block pointers,  respectively.  Block 9 is linked to blocks 16, 1, 9, 10, and 25 in that order. This
+method can solve the external  fragmentation  problem of the contiguous  allocation  method. However,  the linked
+allocation  method is slow to read and requires  the area to store the pointers  separately,  since data blocks are
+scattered  on the physical  disk. Moreover,  it can cause data errors if the linked pointer  data is lost or corrupt.
+M3 Overview  of System  Architecture  57
+
+
+--- Page 59 ---
+ESSENCE
++ Indexed  allocation
+The linked allocation  cannot support  direct access and is difficult  to manage  the loss, since the block pointer
+addresses  are scattered  throughout  the disk. The indexed allocation  solves the problem by managing  all
+pointer  data of a file in an index block, as shown in [Figure 29]. The indexed allocation  does not create external
+fragmentation  and supports  the direct addresses.  However,  the waste of storage  space is larger than the linked
+allocation  method.
+58 TOPCIT  ESSENCEDirectory
+[Figure 28] Linked Allocation
+Directory
+File Index Block
+jeep 19
+
+
+--- Page 60 ---
+Overview  of System Architecture )
+D) Types of files system  for each OS
+Os File System
+UNIX Boot block, super block, bitmap block, i-node, and data block
+Linux File extension  system (ext, ext2, ext3, and ext4), ZFS, ResierFS,  and XFS
+Solaris ZFS and UFS
+Mac OS HFS and HFS+
+Windows FAT, NTFS
+E) UNIXi-node
+In a UNIX system, inode has the role of allocation,  application,  creation,  link, and deleting  through  the file/directory
+data.
+File and Directo Inode Block Data BlockI< a >\< >|
+File (HardLink)
+Original  file Data
++ inode
++ inode table
++ | number
++ addressing
+File(SymbolLink) ___—_——.  Original File Pointer
+inode Component Description
+nore - Contains  all the data of a file or directory
+- Owner  information,  access information,  file information,  link, and typ
+inode table A file system  table that has all the inodes of files or directories
+i number An entry number  of an inode registered  in the i-list
+Managing  the block location  with 13 fields
++ Ten direct data blocks (O~9): 96kb data
+addressing + One single indirect  data block (10): 16MB
+* One double indirect  data block (11): 32GB
++ One triple indirect  data block (12): 70TB
+08 Input/ Output  System
+The input/output  system includes  an input/output  device and the system’s  input/output  module (controller).
+A physical input/output  device handles  the inputs and outputs  of data and between  the actual processor  and
+the computer  user, and the input/output  module provides  the functions  of input/output  device control, timing
+M3 Overview  of System  Architecture  59
+
+
+--- Page 61 ---
+ESSENCE
+coordination,  communication  with the processor,  communication  with input/output  devices,  data buffering,  and error
+detection,  so the process  can easily control multiple  input/output  devices.
+60 TOPCIT  ESSENCE
+
+
+--- Page 62 ---
+Overview  of System  Architecture
+>> Recent  trends and issues
+In computer  engineering,  computer  architecture is a conceptual  design and the operational structure  that
+is the basis for computer  systems.  It is a blueprint  that functionally  describes  the design portability  and
+requirements  (especially  speed and interconnection)  of various parts of a computer. It mainly focuses  on
+how the central processing  unit (CPU) performs  and accesses  memory  addresses  internally.
+Modern computer  structures  are based on the Von Neumann  architecture,  and the basic instruction
+processing  structure  has not changed  much. Though parallel processing  and other technologies have
+improved  in their performa...

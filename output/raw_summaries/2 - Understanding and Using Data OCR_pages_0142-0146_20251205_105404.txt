@@ -1,0 +1,192 @@
+LEARNING GUIDE: Pages 142-146
+Generated: 2025-12-05 10:54:04
+PDF: 2 - Understanding and Using Data OCR
+
+================================================================================
+LEARNING GUIDE
+================================================================================
+
+Here is a simplified, easy-to-read learning guide based on the provided text:
+
+---
+
+# Data Analytics & Big Data: Learning Guide
+
+## 1. OLAP (Online Analytical Processing)
+
+### 1.1 Concept of OLAP
+*   **What it is:** A process where users directly access and interactively analyze multi-dimensional information for decision-making.
+*   **How it works:** Users analyze operational data (extracted and converted by ETL) stored in data warehouses or data marts.
+    *   **ETL (Extract, Transform, Load):** A process for collecting data from various sources, transforming it into a usable format, and loading it into a destination system (like a data warehouse).
+
+### 1.2 OLAP Search Techniques
+OLAP offers various techniques to analyze data from diverse perspectives and summary levels:
+
+*   **Drill Down:** Moves from a high summary level to a low (detailed) summary level.
+    *   *Example:* Analyzing sales from Year > Month > Day.
+*   **Roll Up:** Moves from a low (detailed) summary level to a high summary level.
+    *   *Example:* Analyzing sales from Day > Month > Year.
+*   **Drill Across:** Uses an analysis viewpoint from one topic to approach another analysis topic.
+*   **Pivot:** Changes the axis or perspective of the analysis.
+*   **Slice:** Creates a subset by selecting specific values for members at one level.
+*   **Dice:** Creates a subset by slicing across more than two dimensions.
+
+## 2. Data Mining
+
+### 2.1 Concept of Data Mining
+*   **What it is:** A series of processes to identify systematic statistical rules or patterns within large amounts of data.
+*   **Purpose:** Converts patterns into meaningful information for corporate decision-making.
+
+### 2.2 Data Mining Algorithms
+*   **Association:**
+    *   **Description:** Discovers patterns of highly relevant data combinations, often in transaction data.
+    *   **Example Algorithm:** Apriori algorithm.
+    *   **Uses:** Product placement in stores, recommending related products online.
+*   **Sequence:**
+    *   **Description:** Extends association analysis by adding the concept of time to find correlations of items over time. Forecasts future transactions based on history.
+    *   **Example Algorithms:** Generalized Sequential Patterns (GSP).
+*   **Classification:**
+    *   **Description:** Creates a tree-type model to categorize values of a specific attribute within a dataset.
+    *   **Example Algorithm:** Decision tree algorithm.
+*   **Clustering:**
+    *   **Description:** Groups records (e.g., customers, products) with similar attributes together.
+    *   **Example Algorithms:** K-Means algorithm, EM algorithm.
+
+## 3. Big Data
+
+### 3.1 Why Big Data Matters
+*   **Increasing Demand:** Growing need for big data analytics and skilled professionals (engineers, data scientists).
+*   **Limitations of Traditional Systems:** Existing database management systems (DBMS) struggle with the processing speed and performance required for tens of PBs of fast-generated, diverse, unstructured data (from multimedia, SNS, sensors, IoT).
+*   **Emergence of New Solutions:** Development of technologies suitable for analyzing this large volume and variety of high-velocity data.
+*   **NoSQL Adoption:** Non-relational databases (NoSQL) are increasingly used for unstructured and large-scale data due to their focus on fast processing (BASE characteristics). Understanding NoSQL is crucial as it differs from traditional relational databases.
+
+### 3.2 Key Terms
+*   Big data, 3V, unstructured data, Distributed File System (DFS), NoSQL, CAP theory.
+
+### 3.3 Definition of Big Data
+*   **General Definition:** Data that exceeds the capacity of traditional database management tools to capture, store, and analyze.
+*   **Technology/Architecture:** Next-generation technologies and architectures designed to extract value from large-scale data efficiently, supporting rapid collection, discovery, and analysis.
+
+### 3.4 Characteristics of Big Data (The 3 Vs)
+Big data is defined by three core elements:
+
+*   **Volume:**
+    *   Refers to extremely large data quantities (tens of terabytes, petabytes, or more).
+    *   Exceeds the processing limits of commonly used software.
+*   **Velocity:**
+    *   Data is generated and collected very quickly.
+    *   Requires real-time or near-real-time processing, storage, and analysis.
+*   **Variety:**
+    *   Encompasses diverse kinds of data.
+    *   Can be structured, semi-structured, or unstructured.
+*   ***Note:* Sometimes expanded to 6Vs:** Volume, Variety, Velocity, Veracity (data quality), Visualization (presenting data), Value (insights derived).
+
+### 3.5 Data Types in Big Data
+*   **Structured Data:**
+    *   Data stored in a fixed, predefined field format (e.g., traditional relational databases).
+*   **Semi-structured Data:**
+    *   Data not stored in a fixed field but contains metadata or schema.
+    *   *Examples:* XML, HTML, CSV, JSON, RDF.
+*   **Unstructured Data:**
+    *   Data that is not stored in any fixed field format.
+    *   *Examples:* Documents, pictures, videos, audio data.
+
+### 3.6 Big Data Life Cycle & Technologies
+| Item                 | Description                                                                  | Detailed Technology                                           |
+| :------------------- | :--------------------------------------------------------------------------- | :------------------------------------------------------------ |
+| **Collection**       | Gathers data from all devices and systems.                                   | Crawling (web robots), ETL, CEP (Complex Event Processing)    |
+| **Storage/Processing** | Stores and processes collected large-scale data using a distributed system. | Distributed File System (DFS), NoSQL, MapReduce processing    |
+| **Analysis**         | Methods to assist businesses and individuals in using big data.                | Natural Language Processing (NLP), Machine Learning, Data mining algorithms |
+| **Visualization**    | Tools to visually represent analyzed results.                                | R, graphs, drawings, dashboards                               |
+
+---
+
+================================================================================
+ORIGINAL TEXT (First 5000 chars)
+================================================================================
+
+--- Page 142 ---
+Database )
+04 Concept  and Search  Technique  of OLAP (Online  Analytical
+Processing)
+A) Concept  of OLAP
+OLAP refers to the process  by which the end user accesses  multi-dimensional  information  without  an intermediary  or
+medium,  and then analyzes  the information  interactively  and uses it for decision  making.  That is, when the operational
+data extracted and converted  by ETL are stored in the data warehouse  or data mart, the end user analyzes  them
+using OLAP.
+B) OLAP search  technique
+OLAP provides  various search techniques  that allow end users to analyze data from diverse perspectives  and
+summary  levels. The table below shows the main search techniques  of OLAP.
+<Table  64> Main OLP search techniques
+Search  technique Description
++ Asearch  technique  that approaches  a specific  analysis  topic in phases  from a high summary  level to
+Drill Down a low (detail) summary  level.
+E.g. Time dimension:  Year > monthr  > day
+* Concept  opposite  to Drill Down
++ Asearch  technique  that approaches  a specific  analysis  topic in phases  from a low summary  level to
+pole a high summary  level.
+E.g. Time dimension:  Day r > month r > year
+Drill Across + Asearch  technique  that uses a certain analysis  viewpoint  on one analysis  topic to approach  another  analysis  topic.
+Pivot + Asearch  technique  that changes  the axis of the analysis perspective  on a specific analysis  topic.
+Slice + Asearch  technique  that creates subsets  by selecting  specific  values for the members  at one level or
+the members  above  that level.
+Dice + Asearch  technique  that creates subsets  by slicing more than two dimensions.
+05 Concept  and Algorithm  of Data Mining
+Data mining refers to a series of processes  that identify  a systematic  statistical  rule or pattern  among  a large amount
+of data, convert  it into meaningful  information, and apply it to corporate  decision-making.  The table below shows the
+major data mining algorithms.
+<Table 65> Data mining  algorithms
+Algorithm Description
++ An analysis  algorithm  that discovers  a pattern  using a combination  of highly relevant  data in
+transaction  data, etc.
+Association + Apriori algorithm,  etc.
++ This algorithm  is mainly used to place products  by analyzing  offline stores, and to recommend
+related  products  automatically  at online shopping  malls, etc.
+M2 Database  141
+
+
+--- Page 143 ---
+ESSENCE
++ An analysis  algorithm  that searches  the correlation  of items over time by adding  the concept  of
+time to association  analysis.
+Sequence + The possibility  of a given transaction  occurring  in the future is forecast  by performing  time series
+analysis  on transaction  history  data.
++ Apriori algorithm,  Generalized  Sequential  Patterns  (GSP), etc.
++ An analysis  algorithm  that creates  a tree-type  model, which classifies  the values (category  values)
+Classification of a specific  attribute  (category  type) by analyzing  a dataset  when it is given.
++ Decision  tree algorithm,  etc.
++ An analysis  algorithm  that groups  records  with similar  attributes,  by considering  several attributes
+Clustering of given records (customers,  products).
++ K-Means  algorithm,  EM algorithm,  etc.
+142 TOPCIT  ESSENCE
+
+
+--- Page 144 ---
+Database
+>> Recent  trends and major issues
+It is essential  to understand  technologies  related to big data analytics  because  the social demand  for
+big data analytics  and big data technicians  (engineers,  data scientists,  etc.) is increasing  significantly.
+In addition,  NoSQL, which has the characteristics  of a BASE focusing  on the fast-processing  speed for
+unstructured  data and large-scale  data, is increasingly  being adopted  in enterprises’  operating  environment.
+Therefore,  it is necessary  to understand  NoSQL (Not Only SQL) as it is based on a different  concept  to
+existing  relational  databases.
+>> Learning  objectives
+1. To be able to explain the concept  of big data and related  technologies.
+2. To be able to explain the concept  and characteristics  of NoSQL.
+>> Keywords
++ Big data, 3V, unstructured  data, Distributed  File System  (DFS), NoSQL,  CAP theory
+M2 Database  143
+
+
+--- Page 145 ---
+ESSENCE
++ Preview  for practical  business Why do we need to understand  big data
+technology?
+Although  interest in data analysis has increased,  the existing  system architecture  and DBMS face
+limitations  in terms of processing  speed and performance  when an existing  analysis  system  processes  tens
+of PBs of unstructured  data generated  by multimedia,  SNS, sensors,  loT, etc., due to the advancement  of IT
+technologies.  As a result, solutions  are being developed  that are suitable  for analyzing  the large volume  of
+unstructured  data (variety)  generated  at high speed (velocity).  Technologies  related to big data, which was
+still in its infancy  only a few years ago, have developed  rapidly and are now being used directly in our real
+life.
+There are many examples  of this. For...

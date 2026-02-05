@@ -1,0 +1,214 @@
+LEARNING GUIDE: Pages 73-77
+Generated: 2025-12-05 14:40:02
+PDF: 4 - Understanding Information Security OCR
+
+================================================================================
+LEARNING GUIDE
+================================================================================
+
+Here is a simplified, easy-to-read learning guide on Application Security and Secure Coding, extracted from the provided text:
+
+---
+
+## Application Security & Secure Coding Learning Guide
+
+### 1. Introduction: Why Secure Coding Matters
+
+*   **Problem:** Most cyber-attacks exploit weaknesses in software.
+*   **Impact:** About **70% of cyber-attacks** use software vulnerabilities.
+*   **Cost Efficiency:** Fixing security vulnerabilities *during* development is **tens of times cheaper** than fixing them after the software is released.
+*   **Solution:** Secure coding is crucial for developing secure applications and preventing cyber-attacks.
+
+### 2. What is Secure Coding?
+
+*   **Definition:** Secure coding is a defensive programming technique used to:
+    *   Reduce software vulnerabilities.
+    *   Minimize hacking risks.
+    *   Achieve this by removing security weaknesses throughout the **Software Development Lifecycle (SDLC)**.
+
+### 3. Key Concepts: Weakness vs. Vulnerability
+
+It's important to distinguish between software weaknesses and vulnerabilities:
+
+*   **Software Weakness:**
+    *   **What it is:** Errors or flaws occurring in the software's design or implementation (e.g., defects, bugs).
+    *   **Effect:** A weakness *can lead to* a security vulnerability.
+    *   **Example:** **Common Weakness Enumeration (CWE)** lists common software weaknesses.
+*   **Security Vulnerability:**
+    *   **What it is:** A specific error in software that can be *exploited* by hackers to gain unauthorized access to a system or network.
+    *   **Effect:** Allows hackers to use the weakness for malicious purposes.
+    *   **Example:** **Common Vulnerabilities and Exposures (CVE)** lists publicly known cybersecurity vulnerabilities.
+
+### 4. Secure Software Development Lifecycle (SSDLC)
+
+The Secure SDLC integrates security activities into every phase of software development, rather than treating security as an afterthought.
+
+**Goals of SSDLC:**
+*   Define security objectives early.
+*   Analyze threats and potential impact.
+*   Design and implement security from the ground up.
+*   Continuously test and verify security.
+
+**Phases and Key Security Activities:**
+
+1.  **Requirement Definition Phase:**
+    *   Define security objectives based on project/software characteristics.
+    *   Analyze potential threats, weaknesses, and their impact.
+    *   Derive specific security requirements for development.
+
+2.  **Analysis/Design Phase:**
+    *   Design the overall security architecture.
+    *   Incorporate security requirements into the architecture design.
+    *   Implement developer security training.
+    *   Plan security testing strategies.
+
+3.  **Coding Phase:**
+    *   Define secure coding rules specific to the programming language being used.
+    *   Conduct static unit tests on developed code to check for adherence to secure coding rules.
+    *   Verify compliance with predefined secure coding standards.
+    *   For commercial packages, check for known security vulnerabilities and recommended actions.
+
+4.  **Testing Phase:**
+    *   Conduct dynamic unit tests on the running program.
+    *   Test the usability of security features in the application.
+    *   Identify and derive improvements by independently checking infrastructure and application vulnerabilities.
+
+5.  **Maintenance Phase:**
+    *   When modifying code, evaluate the security impact of changes.
+    *   Periodically check for new vulnerabilities.
+    *   Derive and apply security improvements as needed.
+
+### 5. Major Secure Coding Techniques (Example: Java)
+
+#### A) Preventing SQL Injection Attacks
+
+**1. Attack Overview:**
+
+*   **How it works:** Attackers exploit web applications that don't properly validate user input.
+*   **Mechanism:** They insert malicious SQL statements into input forms or URL fields.
+*   **Result:** This allows them to read, modify, or delete information from the database without authorization.
+
+**2. Coding Technique (Prevention):**
+
+To prevent SQL Injection, avoid directly concatenating user input into SQL queries.
+
+*   **Use Prepared Statements:**
+    *   **Method:** Use objects like Java's `PreparedStatement`. These compile the SQL query *before* inserting user-provided values.
+    *   **Benefit:** The database treats external input as data, not executable code, preventing it from changing the query's structure.
+*   **Filter Special Characters/Reserved Words:**
+    *   Even with `PreparedStatement`, it's good practice to filter potentially malicious characters or SQL reserved words from user input.
+*   **Leverage Framework Security Modules:**
+    *   If using frameworks (e.g., Struts, Spring), utilize their built-in input validation and security modules to handle external input securely.
+
+**Example: Unsafe vs. Safe Code (Conceptual)**
+
+*   **Unsafe Code:** Directly adds user input (`gubun`) to the SQL query string.
+    ```java
+    // String sql = "select ... where b_gubun =" + gubun + ";";
+    // If gubun is "a' OR '1'='1", the query becomes malicious.
+    ```
+*   **Safe Code:** Uses a placeholder `?` in the query and sets the parameter separately using `PreparedStatement`.
+    ```java
+    // String sql = "select ... where b_gubun = ?";
+    // PreparedStatement pstmt = con.prepareStatement(sql);
+    // pstmt.setString(1, gubun); // 'gubun' is treated purely as data.
+    ```
+
+---
+
+================================================================================
+ORIGINAL TEXT (First 5000 chars)
+================================================================================
+
+--- Page 73 ---
+Information  security
+>>b Subject
+Managing  applications  safely!
+>>> Recent  trends and major issues
+It is analyzed that most cyber-attacks  exploit software  security  vulnerabilities.  Accordingly,  the
+importance  of application  security  is also highlighted.  Understanding  and applying  secure coding to
+practical  businesses  are important,  in order to safely develop  an application.
+>>p Learning  objectives
+To be able to explain security  weaknesses  and security  weaknesses  remaining  in software.
+To be able to understand  the concept,  technique,  and lifecycle  of secure coding.
+To be able to explain secure coding in major languages  and mobile environments.
+>>b> Keywords
+Secure coding,  security  weakness,  security  vulnerability,  secure SDLC
+M4 Understanding  Information  Security  73
+
+
+--- Page 74 ---
+ESSENCE
++ Preview  for practical business
+Recently,  company  A is building  a website  that strengthens  security,  due to the vulnerability  of
+personal  information,  and is considering  secure  coding  to improve  security.
+1) The company  is trying to apply secure SDLC.
+2) The customer  and the development  company  consider  secure coding in the requirement  definition
+stage.
+3) The company  considers  secure design when designing  analysis,  from the perspective  of
+architecture.
+4) Developers  review their codes in the development  phase and the quality control department
+performs  a third-party  security  check.
+5) The company  considers  secure coding  diagnostic  tools for review in the operation  and maintenance
+stage.
+However,  developers  are having difficulty  in the development  process,  due to the lack of
+understanding  on secure  coding  and the lack of training  on security  vulnerabilities.
+Let’s review secure coding that should be applied throughout  the development  lifecycle  to build an
+application  with strong security.
+74 TOPCIT  ESSENCE
+
+
+--- Page 75 ---
+Information  security )
+01 Need for securing  coding
+A) Need for secure  coding
+It was analyzed  that about 70% of cyber-attacks  exploit  the security  vulnerability  of software  itself. It was also
+analyzed  that modification costs can be reduced by tens of times, compared  to the cost of modification after
+the product  release.
+Accordingly,  removing  security  vulnerabilities in the software  development  phase is highlighted  as an effective
+method  before releasing  the product,  to prevent  and respond  to cyber-attacks.
+Secure coding  is a defensive  programming  technique  that reduces  software  vulnerabilities  and hacking  risks, by
+removing  security  weaknesses  in the software  development  lifecycle  (SDLC).
+02 Main content  of secure  coding
+A) Software  security  weakness  and security  vulnerability
+@ Weakness:  Errors occurring  in the design and implementation  phase, such as software  defects, errors, and bugs.
+Software  weakness  can cause software  vulnerabilities.  A representative  example is the Common  Weakness
+Enumeration  (CWE).
+® Vulnerability:  An error in software  that can be accessed  and used by hackers,  by accessing  the system or network.
+Hackers  can exploit  this accessible  security  weakness.  An example  is the Common  Vulnerabilities  and Exposures  (CVE).
+B) Secure SDLC
+Requirement : . . MaintenanceB definition ee  = Coding = Testing operation o> co
+Securit: inirequirements Dearne Static security Dynamic Change
+derivation  and (Including risk test security  test management
+evaluation assessment) i
+: ; *. Secure
+Security z abEe
+y requirement Dynamic Security audit Periodic :
+. security  test recertification
+integration
+Security Code Software v
+activity certification security
+definition certification
+v Vv v
+[Figure 34] Secure  SDLC
+M4 Understanding  Information  Security  75
+
+
+--- Page 76 ---
+ESSENCE
+@® Phase of secure SDLC requirement  definition
+A phase that defines security  objectives,  according  to the characteristics  of the project and software,  and
+analyzes  security  weakness  and impact, according  to the potential  threat. Security  requirements  for software
+development  are derived in this phase.
+@ Secure SDLC analysis/design  phase
+A phase that designs  security  architecture  and security  requirements  in the entire architecture  design process.
+Developer  training  is implemented,  and security  test plans are designed  in this phase in order to build a safe
+security  system.
+© Secure  SDLC coding  phase
+Coding rules are defined by checking  the weaknesses  and strengths  of the used programming  language  from
+a security  perspective.  The static unit test of the developed  code is conducted,  and compliance  with the
+predefined  secure coding rules are verified.  When a commercial  package  is used, security  vulnerability  content
+and action details found in the package  are checked.
+® Secure  SDLC testing  phase
+A dynamic  unit test is conducted  on the developed  program,  and the usability  of the security  applied
+application  is...

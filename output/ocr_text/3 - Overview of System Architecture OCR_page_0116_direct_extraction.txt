@@ -1,0 +1,20 @@
+Overview  of System Architecture )
+technology,  and query language  for the access to and modification  of structural  data. It is large-scale  storage  of
+consolidated  data with minimum  duplication  and is used by multiple  users concurrently.  It provides  independence
+between  application  programs  and data and efficient  access  to data through  queries.  The system  catalog  is the tool
+for database  administrators  (DBAs) and a system  table that lists the definitions  or statements  of all data objects
+stored in the database.  The leading  DBMS products  include  Oracle, MS-SQL,  PostgreSQL,  Maria DB, and Cubrid (see
+[Figure  80)).
+Application Program / e@
+User
+[Fite] oy-1\-9 System Catalog
+02 Information  System  Capacity  Calculation
+When implementing  an information  system,  many hardware  suppliers  or system integrators  use the items and rates
+for sizing calculation,  based on their experience,  leading  to inaccurately  calculated  sizes.
+Moreover,  since the hardware  size must be calculated  according  to the nature of the business,  load increase  rate, and
+use frequency  by the users, it is difficult to determine  the appropriateness  of the hardware  size in the information
+system  implementation  projects.
+For that reason, hardware  sizing has usually been dependent  on the project contractor  or hardware  supplier. It has
+gained relatively  low interest,  compared  to software  development,  although  the share of hardware  in the information
+system  implementation  project  is very large in the total project  cost. Therefore,  there is no way to correct  it, even if a
+M3 Overview  of System  Architecture  115

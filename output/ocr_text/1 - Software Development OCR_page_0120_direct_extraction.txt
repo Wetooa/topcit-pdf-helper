@@ -1,0 +1,26 @@
+Software  Development )
+However,  the software  version of each customer  varied as time went by. In the end, the development
+team was unable to track the customers’  requirements  and software  versions.  The source code was
+patched  frequently,  and bugs that did not exist before began to appear  one by one. The team had to
+perform  tedious  debugging  for each source code line almost every day.
+If they had known and utilized such concepts  as branching  and merging  of configuration  management,
+baseline,  baseline  promotion,  change tracking,  and configuration  audit, they would not have struggled  with
+new bugs that appeared  every day by systematically  responding  to requests  for changes.
+Further  efforts are required  to fully understand  and utilize these concepts,  but the effect is certainly  worth it.
+If you have ever managed  to complete  a software  development  project without configuration
+management,  you must be very lucky. However,  | think all of us must have experienced  this difficulty
+at least once or twice. What if Mr Ko’s team had only started the project after establishing  a software
+development  process, even though it was simple, and established  a configuration  management  plan
+according  to the situation?  It is quite probable  that a ridiculous  thing like this would never have happened.
+In conclusion,  configuration  management  surely helps software  development.  It takes more activities
+to understand  and utilize those concepts,  but the effect is certainly  more than that.
+(Source: Software  changes  determine  quality - ZDNet]
+01 Overview  of Software  Configuration  Management
+A) Definition  of software  configuration  management
+Software  configuration  management  (SCM) is a series of activities  developed  to manage  software  changes
+during the software  development  process.  Software  configuration  management  is the task of finding and
+controlling  the causes of software  changes,  checking  that software  has been properly  changed,  and notifying
+the relevant  person of the result. It is applied to all stages of software  development  and is performed  during
+the maintenance  phase as well as the development  phase so as to reduce the overall cost of software
+development  and guarantee  the minimization  of risk factors  during the development  process.
+M1 Software  development  119

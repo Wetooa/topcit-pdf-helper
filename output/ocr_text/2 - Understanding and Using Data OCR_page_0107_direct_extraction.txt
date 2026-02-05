@@ -1,0 +1,28 @@
+ESSENCE
+<Table  41> Characteristics  of SQL3
+Characteristics Contents
+Relational Newly introduced  data types and conditional  expressions, and a strengthened  type systemcharacteristics ’ .
+Object-oriented . .i eer Supports  the user-defined  type, object, object identifier,  reference  type, function,  and method.
+Newly introduced  concepts  such as the recursive  query.
+Other additional Provides  an active database  function  that supports  a trigger.
+functions Supports  the client-server  environment.
+Improved  security  and view update  functions.
+02 Data Definition  Language  (DDL)
+A data definition  language  is used to describe  the database  schema in such a way that computers  can understand
+it. Specifically,  it manages  the creation,  change, and deletion  of a table structure.  The main statements  of the data
+definition  language  include  CREATE,  DROP. ALTER, and RENAME.
+A) Types of data definition  language
+@ CREATE:  Defining  and creating  an object
+A table, view, index, schema,  function,  etc. can be defined using the CREATE  statement.  A primary  key and foreign
+key can be defined  when creating  a table, and the object should not be the same as other created  objects.
+@ ALTER: Changing  an object
+Once  a table has been created,  it is best to keep its structure  intact. However,  it may be necessary  to add or delete
+columns  and constraints  while using the table due to changes  in the work requirements  or the need for system
+operation.  At this time, the structure  of the table can be changed  using the ALTER  statement.
+© DROP: Deleting  an object
+This command  is used to delete all data and structures  of the table when it has been created incorrectly  or is no
+longer needed. However,  the referenced  constraint  related to the table concerned  should be deleted first before
+deleting  a table. In Oracle, the CASCADE  CONSTRAINT  option can be used to delete it at the same time.
+@ RENAME:  Changing  an object  name
+This command  is used to change  the table name.
+106 TOPCIT  ESSENCE

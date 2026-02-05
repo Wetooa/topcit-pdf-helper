@@ -1,0 +1,26 @@
+Understanding  the IT Business  and Ethics )
++ The focus is on enhancing  the effectiveness  of the decision-making  process  so that
+optimal  solutions  can be obtained,  rather than on a decision-making  process  that is
+efficient.Improves  the effectiveness  of
+decision  making
++ Provides  financial/statistical  models,  simulation  features,  statistical techniques,  and
+Model and DB support analysis tools to help solve complex problems.
+© Configuration  of DSS
+The configuration  diagram below shows how the DSS is made up of a document  system, a model system, and a
+knowledge  system.  These components  interact  with each other to deliver  the necessary  information  to the user.
+Database Model Base
+Deen Man Model base
+0) management  system Document
+os  System|  Knowledge  base |  Knowledge  base
+Knowledge  base
+management  system
+Interaction
+The user obtains  the information  required  to make decisions by accessing  the knowledge  system through  the
+user interface.  In addition,  for model system management  and database  management,  the user must access the
+respective  system  to perform  necessary  tasks
+<Table  46> Constituent  elements  of the DSS
+ConstituentElements Description
+Database + Data generated  by all corporate  activities,  including  corporate  financial  data, accounting  data, revenue/
+management marketing  data, production,  and human resources  data that could be used as the basic data for
+system decision  making.
+M5 Understanding  the IT Business  and Ethics 99

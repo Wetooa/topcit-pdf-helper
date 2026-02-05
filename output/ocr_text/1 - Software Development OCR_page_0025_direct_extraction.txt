@@ -1,0 +1,40 @@
+ESSENCE
+03 Software  Development  Methodology
+The software  development  methodology  defines each development  phase, the activities  to perform in each
+phase, the deliverables,  the verification  procedure  and completion  criteria, and then defines the standardized
+method  and procedure,  and support  tool for the development  plan, analysis,  design, and implementation  phase.
+A) Necessity  of the software  development  methodology
+© Improving  development  productivity  by accumulating  and reusing  development  experience.
+@ Effective  project  management.
+@ Providing  a means of communication  by presenting  formal procedures  and deliverables  and unifying  the standard
+terminology.
+@ Assuring  quality  at a certain level by verifying  each phase and closing  the phase after approval.
+B) Comparison  of software  development  methodologies
+<Table 1> Software  development  methodology
+Information  engineering Object-orientedItem Structural  methodology methodology methodology CBD methodology
+A met hodology  that - A methodology  that
+- : identifies  the relationship
+. Focusing  on business - . develops  a reusableOverview activities Focusing  on data between  object and component  or combines
+class and converts  it into Pr
+: commercial  components
+a design model.
+- Definition  of - Requirement  analysis
+- Information  strate requirements - Analysis  (architecture
+- Abstraction lan BY - Object-oriented definition, use case
+. a Pian analysis (object modeling)Basic -Structuralization - Business  area analysis . : -a . ; modeling,  dynamic ~ Designprinciple - Stepwise  refinement - Business  system ; .
+~ Modularization design modeling,  functional - Development
+25 a development modeling) - Implementation
+¥ - Object-oriented  design _ (release, training)
+- Test/deployment
+- Methodology  of
+supporting  corporate - a
+business support oo gem unit is an - Evolution  of the object
+- The principle of divide systems . Data an d logic methodology
+and conquer - Emphasis  on data integration 8 - Emphasis  on interface
+Character - Centered  on program models =A hone  ed - Interface
+istics logic - Program  logic depends modularization implementation  using a
+- Structured  with on data structure ~ Reuse by inheritance component
+controllable  modules (CRUD) No ga between analysis | Aiming to reuse black
+- Enterprise  integrated Bap ° ¥ boxand design
+data model
+24 TOPCIT  ESSENCE

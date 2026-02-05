@@ -1,0 +1,47 @@
+Software  Development )
+Singleton  java - Class with only 1 instance
+package  DP005_singleton;
+public class Singleton  {1
+2
+3
+4. private static Singleton  singleton  = new Singleton();
+5, //Set to private  to prevent  access  from outside,  and set to static so that it is available  throughout  one program.
+6.
+7
+8.
+9.private  Singleton(  ){ // Declare  the access  modifier  of the constructor  as private  so that it cannot be created  outside.
+System.out.printIn(“An  instance  has been created.”
+}
+10. public static Singleton  getlnstance(  ) {
+11. return singleton;  // Transform  the created  Singleton  instance.
+12. }
+lcm }
+14.
+Main  java - Test class with the Main() method
+package  DP805_singleton; 1
+2
+3. public class Main {
+4 public static void main(String[  ] args)  {
+By System.out.printin(“Start.”);
+6. Singleton  obj1 = Singleton.getInstance(  ); // An instance  is returned.
+7. Singleton  obj2 = Singleton.getInstance(  ); // An instance  is returned.
+8
+9. if(objl == obj2){ // obj1 and obj2 refer to the same value.
+10. System.out.printIn(“obj1  and obj2 are the same instance.”);
+11. Jelsef
+12. System.out.printin(“obj1  and obj2 are different  instances.”);
+iG, }
+14. System.out.  printIn(“End.”);
+@ Structural  patterns
++ Adapter  pattern
+- Definition:  The programming  interface  of a class is changed  to that of another  class. This pattern can be
+used to make irrelevant  classes  work together  in one program.
+- Advantages:  A new class and its function  can be added easily.
++ Bridge pattern
+- Definition:  The class interface  and implementation  contents  are separated,  thus enabling  the developer  to
+change  or replace  the implementation  contents  without  having  to change  the code contents  of the client.
+- Advantages:  Separation  of interface  and implementation.  Implemented  objects can be exchanged  and
+configured  at runtime.  #ifdef~#endif  syntax can be replaced.
++ Composite  pattern
+- Definition:  A pattern  that enables  the user to handle a specific  object and the objects  containing  a specific
+M1 Software  development  77

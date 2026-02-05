@@ -1,0 +1,234 @@
+LEARNING GUIDE: Pages 25-29
+Generated: 2025-12-05 10:42:26
+PDF: 2 - Understanding and Using Data OCR
+
+================================================================================
+LEARNING GUIDE
+================================================================================
+
+Here is a simplified, easy-to-read learning guide based on the provided text:
+
+---
+
+# Database Fundamentals: Concepts & Roles
+
+## 1. Data Independence & The 3-Level Architecture
+
+**What is Data Independence?**
+*   **Definition:** The ability to change the database schema at one level without affecting the schema at higher levels. It's the opposite of data dependency.
+*   **Purpose:**
+    *   Reduce maintenance costs, data complexity, and data duplication.
+    *   Maintain independence between the user interface (screen) and the database.
+    *   Allow continuous evolution of user requirements without breaking the system.
+
+**ANSI-SPARC 3-Level Database Architecture:**
+This architecture separates how users see data from how it's actually stored and managed. It has three distinct phases (or schemas):
+
+1.  **External Phase (External Schema):**
+    *   **Description:** Represents individual users' viewpoints or a personal database schema.
+    *   **Characteristics:** Multiple external schemas can exist, each tailored to specific users or applications.
+    *   **Focus:** User's personalized view of the data.
+
+2.  **Conceptual Phase (Conceptual Schema):**
+    *   **Description:** A single, integrated view of the *entire* organization's database.
+    *   **Characteristics:** Describes all data needed by all application systems and users, including relationships between data. It integrates all users' perspectives.
+    *   **Focus:** The logical structure of the *entire* database.
+
+3.  **Internal Phase (Internal Schema):**
+    *   **Description:** Defines the physical storage structure of the database.
+    *   **Characteristics:** How data is actually stored on storage devices (e.g., file organization, indexing).
+    *   **Focus:** Physical implementation details.
+
+**Benefits of 3-Level Architecture:**
+*   Maintains independence between different views.
+*   Allows changes in one layer without affecting others.
+*   Supports different Data Definition Languages (DDL) and Data Manipulation Languages (DML) for various schemas.
+
+### Types of Data Independence
+
+Based on the 3-level architecture, there are two main types:
+
+1.  **Logical Data Independence:**
+    *   **Definition:** The ability to change the **conceptual schema** without affecting the **external schemas** or **application programs**.
+    *   **Characteristics:** Allows the integrated database structure to change while user views remain unaffected.
+
+2.  **Physical Data Independence:**
+    *   **Definition:** The ability to change the **internal schema** (physical storage) without affecting the **conceptual schema**, **external schemas**, or **application programs**.
+    *   **Characteristics:** Allows the physical storage structure to change without impacting the logical view of the database.
+
+### Mapping and Independence
+
+**Mapping:** Acts as a "bridge" connecting independent concepts between different schema levels.
+
+1.  **External/Conceptual Mapping (Logical Mapping):**
+    *   **Connects:** External view to the conceptual view.
+    *   **Purpose:** Defines the correlation, ensuring that changes in the conceptual view don't automatically alter external view field types.
+
+2.  **Conceptual/Internal Mapping (Physical Mapping):**
+    *   **Connects:** Conceptual view to the stored physical database.
+    *   **Purpose:** Defines the correlation, ensuring that if the physical storage structure changes, this mapping is updated to keep the conceptual schema consistent.
+
+## 2. Key Database Roles: DBA & DA
+
+### Database Administrator (DBA)
+
+The DBA is responsible for the configuration and overall administration of the database system to ensure its proper function.
+
+**Key Tasks and Roles:**
+
+*   **Data Modeling:** Performs physical data modeling, semi-normalization, and performance modeling based on business and storage environment.
+*   **Physical Database Design:** Designs indexes, storage space, clustering, and partitioning based on physical environment and DBMS.
+*   **Tuning (Performance Improvement):** Optimizes performance using index distribution, join relationships, and transaction types.
+*   **Database Building:** Creates table spaces, data file spaces, database objects, sets parameters, and specifies backup structures.
+*   **Database Operation:** Monitors memory and performance regularly.
+*   **Database Standardization:** Defines glossaries and domains; manages database/data standards.
+
+### Data Architect (DA)
+
+The DA establishes, models, and systemizes policies and standards for all data-related elements, including data, database, data standards, and data security.
+
+**Key Roles:**
+
+*   **Establish Data Management System:** Sets up systems for metadata, data distribution/integration, information lifecycle management (ILM), performance/capacity monitoring, log management, and failure management.
+*   **Establish Data Standards:** Defines terms, domains, data dictionaries, and metadata standards to maintain data consistency.
+*   **Data Modeling:** Oversees conceptual, logical, and physical modeling, which is crucial for the entire data architecture.
+*   **Establish Data Security Systems:** Implements systems for user access control (tables, views), data encryption, access logs, and transaction traceability.
+
+## 3. Database Management System (DBMS)
+
+### Concept of DBMS
+
+*   **Evolution:** Invented in the late 1960s to overcome limitations of file systems, such as data dependency and redundancy.
+*   **Definition:** A software system that manages a database, acting as a mediator between application programs and data. It enables data sharing among all applications.
+
+### Functions of a DBMS
+
+*   **Data Duplication Control:** Minimizes redundancy in data storage and during development/maintenance.
+*   **Data Sharing:** Allows multiple users and applications to access and share data concurrently.
+*   **Access Control:** Regulates access to data by unauthorized users (security).
+*   **Diverse Interfaces:** Provides various types of interfaces for different users (e.g., SQL, graphical tools).
+*   **Relationship Expression:** Represents complex relationships between data entities.
+*   **Data Integrity:** Ensures the accuracy, consistency, and validity of data within the database (e.g., through constraints).
+
+### DBMS Components
+
+A DBMS consists of several modules that work together to manage data:
+
+*   **DDL Compiler:** Processes Data Definition Language (DDL) statements, storing schema information (metadata) in the system catalog. All other modules use this catalog.
+*   **Query Processor:** Handles user queries: analyzes, parses, compiles them, then creates database access code for execution by the Runtime DB Handler.
+*   **DML Pre-compiler:** Extracts Data Manipulation Language (DML) commands embedded in application programs and sends them to the DML Compiler.
+*   **DML Compiler:** Parses and compiles DML commands, generating object code for database access.
+*   **Runtime Database Handler:** Manages actual database access during execution, performing operations like searches or updates using the Stored Data Manager.
+*   **Transaction Manager:** Ensures integrity constraints and user rights are upheld during database access. It also handles concurrent transaction control and database restoration in case of failures.
+*   **Stored Data Manager:** Manages access to the user database and the system catalog stored on disk. It interacts with the operating system's file manager.
+
+## 4. Understanding Types of Databases
+
+### Recent Trends and Major Issues
+
+*   **Early Days (late 1960s):** Databases emerged to manage data more efficiently than file systems.
+*   **Evolution of Models:**
+    *   Started with **Network Model**.
+    *   Evolved into **Relational (RDB)** and **Object-Oriented (OODB)** models.
+    *   Currently, the **Object Relational Database (ORDB)** model is widely used.
+*   **Shift in Focus:**
+    *   **Past:** Emphasis on internal data model and database structure.
+    *   **Present:** Increased importance of **database processing performance** and **scalability** due to the rapid growth of large-scale digital data and performance degradation issues.
+*   **Emerging Database Types:** To address new performance and scalability needs, new database types have emerged, such as:
+    *   **Column-type databases:** Prioritize performance and scalability over traditional data relations.
+    *   **NoSQL databases:** A broad category designed for specific data models and flexibility, often for massive, unstructured data.
+
+### Key Database Types (Keywords)
+
+*   Hierarchical Database
+*   Network Database
+*   Relational Database (RDB)
+*   Object-Oriented Database (OODB)
+*   Object Relational Database (ORDB)
+*   XML Database
+*   Multimedia Database
+*   Main Memory Database
+*   Embedded Database
+*   Spatial Database
+*   Column Type Database
+*   Graph Database
+
+---
+
+================================================================================
+ORIGINAL TEXT (First 5000 chars)
+================================================================================
+
+--- Page 25 ---
+ESSENCE
+External phase External Schema #1 External Schema #2 | Extemal  Schema #n
+\ ! Logical data independence
+Conceptual = +e Conceptual  Schema |phase
+Physical  data independence
+Internal  phase Internal  Schema
+[Figure  2] 3-level database  architecture
+To understand  data independence,  it is helpful to understand  the background  to the introduction  of the concept
+of data independence.  The opposite  of data independence  can be defined as data dependency.  Here, the subject
+of dependency  generally  refers to an application  program.  An application  is the interface  object which interacts
+with users and handles  the user requirements.  It can be said that data dependency  has the purpose  of reducing
+continuously  increasing  maintenance  costs, data complexity,  and the number  of duplicated  data. The concept  of
+data independence  was also introduced  to maintain  independence  between  the screen and the database  against  the
+users’ constantly  evolving  requirements.
+It can be said that data independence  is a three-schema  architecture,  which was proposed  by the special
+subcommittee  of the X3 committee  under the American  Standards  Institute  (ANSI) for the DBMS and its interfaces,
+The main purpose  of this three-schema  architecture  was to reduce interference  in changes,  by separating  the
+user's view of the database  from the view by which the database  is actually  expressed.  When data independence  is
+secured,  the independence  of each view can be maintained,  data can be changed  without  affecting  the view by layer,
+and different  DDL (data definition  language)  and DML (data manipulation  language)  can be provided  according  to the
+schema  by phase.
+@ 3-level database  architecture  of ANSI-SPARC
+The data independence  model, which is based on the 3-level database  architecture  proposed  by ANSI/SPARC,
+presents  a model composed  of an external  phase, a conceptual  phase, and an internal  phase, none of which interferes
+with the others.
+<Table 5> External  schema,  conceptual  schema,  and internal  schema
+Item Contents Remarks
++ An external  schema  is composed  of several users’ viewpoints  in the view phase,  | User's viewpoint
+External that is, a personal  database  schema  viewed by everyone  in each user's phase. Schema  composition
+schema + Individual  database  users or the database  accessed  by the application according  to accessed
+programmer  are defined. characteristics
++ Composed  of one conceptual  schema  in the conceptual  phase. The database
+of the entire organization  is described,  which has integrated  all its users’
+Conceptual perspectives.
+schema + The database  of the entire organization  is described,  which has integrated  the
+data needed  by all application  systems  or users, including  the data saved in the
+database  and the schema  that expresses  the relationship  between  the data.Integrated  perspective
+24 TOPCIT  ESSENCE
+
+
+--- Page 26 ---
+Database )
+Internal
+schemaPhysical  storage
+structure
+@ Data independence  of two areas
+As the concept  of data independence  can be separated  into these three phases, there are two terms that specify
+the independence  of each area, namely  ‘logical independence’  and ‘physical independence’.
+<Table  6> Types of independence
+Type Contents Characteristics
++ When a concept  schema  is changed,  an external  schema  | +» Changeable  according  to the users’
+Logical is not affected characteristics.
+independence  | + Anapplication  program  is not affected  by a change  in the | + The integrated  structure  can be
+logical structure. changed.
++ When an internal  schema  is changed,  an external/ + Aconceptual  structure  can be changed
+Physical conceptual  schema is not affected. without  affecting  a physical  structure.
+independence  | + Anapplication  program  and a conceptual  schema  arenot  | » A physical  structure  can be changed
+affected  by a structural  change  of the storage  device. without  affecting  a conceptual  structure.
+@ Relationship  between  mapping  and independence
+The English  word “mapping”  can be translated  into “sasang”  in Korean,  which can be defined  as a “bridge  that connects
+independent  concepts”.  Broadly  speaking,  there are two types of mapping  in data independence.
+<Table  7> Types of mapping
+Finishing Contents Example
+External/conceptual  The correlation  between  the A view can have different  types of fields depending  on the
+mapping
+(logical thought)external  view and the conceptual
+view is defined. changed.user's access  type. The field type of a conceptual  view is not
+The correlation  between  the Conceptual/internal If the structure  of the stored database  changes,  conceptual/
+mapping conceptual  view and the stored internal mapping  should change to keep the conceptual
+(physical  mapping)  _| database  is defined. schema intact.
+C) Definition  and key roles of the database  administrator  (DBA) and data architect  (DA)
+@ Roles of the ...

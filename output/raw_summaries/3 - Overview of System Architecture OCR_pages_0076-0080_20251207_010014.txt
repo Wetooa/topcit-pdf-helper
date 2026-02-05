@@ -1,0 +1,197 @@
+LEARNING GUIDE: Pages 76-80
+Generated: 2025-12-07 01:00:14
+PDF: 3 - Overview of System Architecture OCR
+
+================================================================================
+LEARNING GUIDE
+================================================================================
+
+Here is a simplified, easy-to-read learning guide based on the provided text:
+
+---
+
+# System Architecture Learning Guide (Pages 76-80)
+
+This guide covers essential concepts related to System Architecture, focusing on parallel processing, its classifications, and key technologies.
+
+---
+
+## 1. Overview of System Architecture
+
+### 1.1 Recent Trends & Issues
+*   **Cloud Computing:** Impacts storage, high availability, and graphics.
+*   **AI (Artificial Intelligence):** Relates to parallel processing systems.
+*   **Big Data:** Involves storage technology.
+*   **Overarching Theme:** Data processing technology is crucial across these trends.
+
+### 1.2 Learning Objectives
+*   Explain parallel processing technology and its operational principles.
+*   Explain storage technology and its operational principles.
+*   Explain image/image compression technology and graphics processing.
+
+### 1.3 Key Terms
+*   Flynn's taxonomy
+*   Parallel processing technology
+*   Parallel program technology
+*   Disk scheduling, SAN, NAS, DAS, LTO, VTL, RAID (Storage-related terms, not detailed in this section)
+*   GPGPU (General-Purpose computing on Graphics Processing Units)
+*   Video compression standards
+
+---
+
+## 2. Parallel Processing Systems
+
+### 2.1 Concept of Parallel Processing
+*   **Definition:** One or more independent operating systems manage multiple processors to perform multiple tasks simultaneously.
+*   **Characteristics:**
+    *   **Speed:** Very fast.
+    *   **Memory:** Can share memory units.
+    *   **Resilience:** Less impact from individual hardware failures due to multiple processors.
+*   **Applications:**
+    *   AI (e.g., deep learning) due to large data and complex repetitive operations.
+    *   Military equipment (accurate results in short time).
+    *   Searching services (extracting results from vast data quickly).
+*   **Modern Relevance:** Central to the 4th Industrial Revolution, driven by AI. GPUs (Graphics Processing Units) are key for parallel processing in AI (deep learning), and custom processors like Google's TPUs (Tensor Processing Units) enhance this capability.
+*   **Classification Methods:** Primarily by Flynn’s taxonomy and memory structure.
+
+### 2.2 Flynn's Classification of Parallel Processing Systems
+
+A taxonomy for classifying computer architectures based on instruction and data streams.
+
+1.  **SISD (Single Instruction, Single Data)**
+    *   **Description:** A single processor executes one instruction on one data item at a time sequentially.
+    *   **Architecture:** Conventional von Neumann architecture.
+    *   **Performance:** Can be improved by techniques like **pipelining** (dividing instruction execution into stages) and **superscalar** (executing multiple instructions simultaneously using multiple execution units).
+
+2.  **SIMD (Single Instruction, Multiple Data)**
+    *   **Description:** A single instruction simultaneously performs the same operation on multiple data items.
+    *   **Also known as:** Array processor. Enables synchronous parallel processing.
+    *   **Example:** Intel Pentium processors with MMX instruction sets for multimedia acceleration (fast floating-point arithmetic).
+    *   **Benefit:** High processing speed for operations on multiple data.
+
+3.  **MISD (Multiple Instruction, Single Data)**
+    *   **Description:** Multiple processing units run different instructions on the same data.
+    *   **Example:** Pipeline architecture (though not widely used for this classification).
+    *   **Usage:** Not a widely adopted architecture.
+
+4.  **MIMD (Multiple Instruction, Multiple Data)**
+    *   **Description:** Multiple processors execute different programs on different data simultaneously.
+    *   **Prevalence:** Most parallel computers fall into this category.
+    *   **Further Classification:** Can be divided based on memory usage:
+        *   **Shared Memory Model (Tightly-coupled):** Processors share a common memory space.
+        *   **Distributed Memory Model (Loosely-coupled):** Each processor has its own private memory.
+
+### 2.3 Classification by Memory Structure
+
+How processors access and share memory impacts scalability and programming.
+
+1.  **SMP (Symmetric Multiprocessor)**
+    *   **Memory Model:** Shared memory (all processors use main memory as a common pool).
+    *   **Coupling:** Tightly-coupled system.
+    *   **Pros:** Easy to program as data transfer uses shared memory.
+    *   **Cons:** Poor scalability, potential for **bus bottleneck** (internal bus for memory access can become a choke point).
+
+2.  **MPP (Massive Parallel Processor)**
+    *   **Memory Model:** Distributed memory (each processor has its own independent memory).
+    *   **Coupling:** Loosely-coupled system.
+    *   **Communication:** Data exchanged between processors through a network (e.g., Ethernet). Each node (CPU, memory, I/O) has its own resources.
+    *   **Pros:** Excellent scalability.
+    *   **Cons:** Programming can be more difficult due to explicit data exchange.
+
+3.  **NUMA (Non-Uniform Memory Access)**
+    *   **Memory Model:** Hybrid approach combining shared and distributed characteristics. Each processor has its own **local memory**, but all processors can also access a **global memory address space**.
+    *   **Goal:** Combines the programming ease of SMP (shared memory) with the excellent scalability of MPP.
+    *   **Access Speed:** Accessing local memory is faster than accessing global memory, hence "non-uniform."
+
+### 2.4 Key Parallel Processor Technology
+
+1.  **Instruction Pipelining**
+    *   **Purpose:** Improves CPU performance.
+    *   **Mechanism:** Divides an instruction's execution into several sequential stages. Each stage is handled by a separate hardware unit.
+    *   **Benefit:** Allows multiple *different* instructions to be in various stages of execution simultaneously, improving throughput compared to processing one instruction fully before starting the next.
+
+---
+
+================================================================================
+ORIGINAL TEXT (First 5000 chars)
+================================================================================
+
+--- Page 76 ---
+Overview  of System  Architecture
+>p> Recent  trends and issues
+Technologies  that have recently  become  issues in system architecture  are cloud computing,  Al, and big
+data. The learning  subject related to these is data processing  technology.  The subject  closely related to
+Al is the parallel processing  system. The subject  related to big data is storage  technology.  The subjects
+related to cloud computing  are storage,  high availability  storage  devices,  and graphics.
+>p Learning  objective
+1, To be able to explain  the parallel processing  technology  and operational  principle.
+2. To be able to explain the storage  technology  and operational  principle.
+3, To be able to explain  the image and image compression  technology,  and graphics  processing  technology.
+>> Keywords
+Flynn's taxonomy,  parallel processing  technology,  parallel program  technology,  disk scheduling,  SAN, NAS,
+DAS, LTO, VTL, RAID, GPGPU,  video compression  standards
+M3 Overview  of System  Architecture  75
+
+
+--- Page 77 ---
+ESSENCE
++ Preview  for practical  business “Intel vs. NVIDIA vs. Google,  who will win
+the Al market?  - Targeting  based on parallel processing  capability  and
+market domination, Google looking  to improve  power efficiency  using
+TPU”, Monthly  Electronic  Parts News
+Competition  in parallel processing  technology  is intensifying  as Al has emerged  as a core technology  of the
+4th Industrial  Revolution.  While existing  programs  were implemented  by a CPU-based  serial (sequential)
+processing  method,  GPU-based  programs  use parallel processing  technology,  which simultaneously
+processes  multiple  instructions  and is used to implement  deep learning  of Al. Google is increasing  the
+parallel processing  capability  by adding  its own processor,  called TPU.
+(Source:  Monthly  Electronic  Components  News]
+01 Parallel  Processing  System
+A) Concept  of the parallel  processing  system
+Parallel processing  refers to one or more independent  operating  systems  managing  multiple processors  and
+performing  multiple  tasks. There are separate  programming  languages  and syntax for parallel processing.  Parallel
+processing  is very fast and can  share the memory  unit. Since several processors  operate it, the impact of failed
+hardware  parts on the entire system is small. It is widely used in the field of Al, consisting  of a lot of data and
+repetitive  complex  operations,  military equipment  that is needed to obtain accurate  results in a short time, and
+searching  services  that extract  results from a wide range of data in a short time. Flynn’s  taxonomy  and classification
+by memory  structure  are leading  examples  of parallel processing  system  classification.
+76 TOPCIT  ESSENCE
+
+
+--- Page 78 ---
+Overview  of System Architecture )
+B) Flynn’s  classification  of parallel  processing  systems
+ell  eel oe ltg
+Process  Structure
+| |
+Single Instruction  Stream Single Instruction  Stream Multi-Instruction  Stream  — Multi-Instruction  Stream
+Single Data Stream Multi-Data  Stream Single Data Stream Multi-Data  Stream
+(SISD) (SIMD) (MISD) (MIMD)
+[
+Single Vector Array Shared Distributed
+Processor Processor — Processor Memory Memory
+Symmetric Non uniform
+Multi-Processor|  | Memory  Access Cluster
+(SMP) (NUMA)
+[Figure 41] Structure  of Parallel  Computer  Processor
+@ Single instruction  stream - single data stream,  Single Instruction  Stream  Single Data Stream  (SISD)
+SISD is a single processor  system that sequentially  processes  an instruction  and data, one at a time. It is the
+conventional  computer  architecture  that follows von Neumann's  concept.  The controller  interprets  an instruction
+and operates  the processor  in order to run the instruction  while fetching  a piece of data from the memory  unit and
+processing  it. The performance  may deteriorate,  since it requires  reading  the instruction  each time it acquires  the
+processing  data. The performance  may be improved  by using simultaneous  processing  techniques,  such as pipelining
+and superscalar.
+@ Single instruction  stream - multiple  data stream,  Single Instruction  Stream  Multiple  Data Stream  (SIMD)
+The structure  of processing  multiple data with an instruction  to simultaneously  perform the same operation  on
+multiple  data. It is also called an array processor,  as it enables  synchronous  parallel processing,  Intel’s processor,  made
+in the SIMD structure,  is the Pentium  processor  with the MMX instruction  set. The name is “multimedia  acceleration,”
+which is the code that can quickly process  frequently-used  floating-point  arithmetic  operations.  The processing
+speed is high because  it can process  multiple  operations  with an instruction.
+SISD Instruction  Pool SIMD Instruction  Pool
+Data PoolData Pool
+[Figure  42] SISD Structure [Figure  43] SIMD Structure
+M3 Overview  of System  Architecture  77
+
+
+--- Page 79 ---
+ESSENCE
+© Multiple  instruction  streams  - single data strea...

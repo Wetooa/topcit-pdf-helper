@@ -1,0 +1,231 @@
+LEARNING GUIDE: Pages 139-143
+Generated: 2025-12-07 01:06:21
+PDF: 3 - Overview of System Architecture OCR
+
+================================================================================
+LEARNING GUIDE
+================================================================================
+
+Here is a simplified, easy-to-read learning guide based on the provided text:
+
+---
+
+## Big Data Systems: A Learning Guide
+
+### I. Introduction: Big Data Era & Trends
+
+**A. Big Data 2.0 Era:**
+*   **Shift:** Moved from just collecting big data (Big Data 1.0) to creating practical value from it.
+*   **Sophistication:** Hadoop 2.2 made big data technology more advanced.
+*   **Market:** Increased demand, specialized big data companies, large companies (finance, services) adopting rapidly.
+*   **Business Use:** Companies are using big data for actual business operations, moving beyond just information collection.
+*   **Government Role:** Policies promote R&D, training, industry collaboration, and public data disclosure.
+
+**B. Challenges & Solutions:**
+*   **Side Effects:** Privacy infringement and personal profiling.
+*   **Solution:** Need for new concepts for personal data use and comprehensive policy support.
+
+**C. Learning Objectives (Covered in this Guide):**
+1.  Explain big data systems concepts.
+2.  Describe big data system structure and characteristics.
+3.  Understand recent trends in big data systems.
+
+**D. Key Terms:** Data acquisition, storage, processing, analysis, presentation, Hadoop ecosystem, HDFS, MapReduce, Hadoop support program.
+
+---
+
+### II. Overview of System Architecture
+
+**A. Why Big Data Systems?**
+*   **Business Need:** Companies need to collect, store, analyze, and utilize customer and market data to gain a competitive edge and develop new strategies (e.g., marketing).
+*   **Infrastructure:** Requires expanding infrastructure beyond traditional databases and hiring analysts.
+
+**B. Big Data System Structure: The Hadoop Ecosystem**
+
+*   **Hadoop Definition:** A Java-based, open-source framework for distributed processing of large volumes of data across multiple distributed storage units.
+*   **Initial Components:** Hadoop started with:
+    1.  **HDFS (Hadoop Distributed File System):** For data storage.
+    2.  **MapReduce:** For data processing.
+*   **Evolution (Ecosystem):** As specialists found it difficult to use, various peripheral modules were developed and packaged with Hadoop.
+    *   **Purpose:** These modules support data integration, migration, application management, and system management.
+*   **Key Idea:** The Hadoop Ecosystem is a collection of interrelated open-source projects designed to handle big data challenges (storage, processing, analysis, etc.).
+
+---
+
+### III. Hadoop's Main Technology Elements
+
+**A. HDFS (Hadoop Distributed File System)**
+*   **Purpose:** A distributed file system for storing data across devices in a Hadoop network.
+*   **Key Characteristics:**
+    *   **Data Loss Prevention:** Stores replicated data on multiple nodes.
+    *   **Access:** Requires streaming access to store or query files.
+    *   **Data Integrity:** Stored data is primarily read-only (ensuring integrity). Version 2.0+ allows appending to files.
+    *   **File Management:** Provides interfaces to move, delete, and copy files.
+*   **Architecture:**
+    *   **NameNode (Master):**
+        *   Manages all HDFS metadata (directory names, file names, block locations).
+        *   Clients access files by consulting the NameNode.
+    *   **DataNode (Slaves):**
+        *   Stores actual data blocks.
+        *   Periodically sends "block reports" to the NameNode to confirm normal operation.
+    *   **Client Interaction:** Hadoop applications use HDFS clients (APIs) to store or read files. Clients log into the NameNode to find block locations, then directly query the relevant DataNode for data.
+
+**B. MapReduce**
+*   **Purpose:** A distributed programming model and software framework for parallel processing and analysis of large volumes of data in a distributed computing environment.
+*   **Components:** Programmers write two main methods:
+    1.  **Map:**
+        *   Classifies scattered data into relevant data, typically in <Key, Value> pairs.
+    2.  **Reduce:**
+        *   Removes duplicate data from the Map output.
+        *   Extracts or aggregates the desired data.
+*   **Example Process (Word Count):**
+    1.  **Input Splitting:** Divides input data (e.g., string data by line).
+    2.  **Mapping:** Processes each line, outputting <Word, 1> for each word.
+    3.  **Shuffling:** Groups data by key (e.g., all "DOG" entries together).
+    4.  **Reducing:** Calculates the sum for each key (e.g., counts total occurrences of "DOG").
+    5.  **Final Result:** Combines and stores the output in HDFS.
+
+---
+
+### IV. Hadoop Support Programs (Ecosystem Components)
+
+Hadoop's ecosystem includes various service programs for collecting, storing, utilizing, processing, and managing big data:
+
+**A. Data Collection**
+*   **Unstructured Data Collection:**
+    *   **Flume:** Collects unstructured data (from Cloudera, now Apache).
+    *   **Scribe:** Platform for collecting unstructured data, developed by Facebook for transfer to a centralized server.
+    *   **Chukwa:** Unstructured data collecting platform for distributed data storage in HDFS.
+*   **Structured Data Collection:**
+    *   **Sqoop:** Imports data from relational databases, supports transfer to HDFS, NoSQL, etc.
+    *   **Hiho:** Large-capacity structured data collection and transfer solution.
+
+**B. Distributed Databases**
+*   **Hbase:** HDFS-based, column-based NoSQL database (based on Google's BigTable paper). Used by Yahoo, Twitter, NHN (Linedatabase).
+*   **Cassandra:** Open-source distributed database (NoSQL), hybrid of column-centered and row-centered.
+
+**C. Real-time SQL Query**
+*   **Impala:** Real-time SQL query system developed by Cloudera, uses its own engine instead of MapReduce.
+
+**D. Metadata Management**
+*   **HCatalog:** Big data metadata management.
+
+**E. Data Analysis**
+*   **Hive:** Hadoop-based data warehousing solution, similar SQL-based big data processing (developed by Facebook).
+*   **Pig:** Data analysis tool, provides a proprietary language (Pig Latin) instead of MapReduce.
+
+**F. In-memory Processing**
+*   **Spark:** Open-source cluster computing framework, developed by UC Berkeley's AMPLab.
+
+**G. Data Mining**
+*   **Mahout:** Hadoop-based open-source data mining library.
+
+**H. Workflow Management**
+*   **Oozie:** Big data processing management, Hadoop task management.
+
+**I. Distributed Coordinator**
+*   **Zookeeper:** Big data server system management, mutual coordination service between distributed environment servers.
+
+**J. Serialization**
+*   **Avro:** Framework supporting serialization of RPC (Remote Procedure Call) and data.
+
+**K. Resource Manager**
+*   **YARN:** Resource management platform for distributed computing environments, manages computing resources and schedules user applications within clusters.
+
+---
+
+### V. Commercial Hadoop Solutions
+
+Leading companies develop and distribute commercial Hadoop solutions, often building internal platforms based on Hadoop and forming alliances with existing database and BI companies.
+
+**A. Cloudera**
+*   **CDH (Cloudera Distribution including Hadoop):** Includes Hadoop, Hive, Oozie, Pig, Zookeeper, and other open-source tools.
+*   **Cloudera Manager:** Environmental management tool for CDH (distribution, monitoring).
+    *   **Free Edition:** Includes CDH, supports up to 50-node clusters, limited functions (basic infrastructure/setting management).
+    *   **Enterprise Edition:** Includes CDH, supports unlimited node clusters, active monitoring, and additional data analysis tools.
+
+**B. Hortonworks**
+*   **HDP (Hortonworks Data Platform):** Includes Hadoop, Hive, Oozie, Pig, Zookeeper, and other open-source tools.
+*   **Business Model:** All software is free; revenue comes from education and support programs.
+
+**(Note: Cloudera and Hortonworks merged on October 3, 2018.)**
+
+---
+
+================================================================================
+ORIGINAL TEXT (First 5000 chars)
+================================================================================
+
+--- Page 139 ---
+ESSENCE
+>> Recent  trends and issues
+Modern society had passed the Big Data 1.0 era, when the quantitative  explosion  of big data began and
+entered  the Big Data 2.0 era, which creates  practical  values from big data.
+The introduction  of Hadoop  2.2 has made big data technology  more sophisticated  and diversified  the
+professional  services  of the big data vendors  from the big data supply aspect, leading  to the emergence  of
+companies  that specialize  in big data. The demand  for big data is rapidly increasing  as large companies  are
+quickly  adopting  the technology,  mainly in the financial  and services  industries.
+Companies  that have adopted  big data are practically  using big data for business  through pilot tests,
+beyond  simply using big data for information  collection.  Governments  are implementing  policies  to promote
+R&D and professional  training,  building  industry-academia-R&D  governance,  and public data disclosure.
+Of course, big data expansion  has produced  side effects,  such as privacy  infringement  and personal  profiling,
+Therefore,  it is necessary  to strengthen  theflexibility  of data use by establishing  a new concept  for personal
+data use. Comprehensive  policy support  that reflects  the social and market  environments  is necessary  for
+the big data ecosystem  to evolve.
+>> Learning  objectives
+1, To be able to explain  the concept  of big data systems,
+2. To be able to explain big data system structure  and characteristics,
+3, To be able to discover  the recent trends of big data systems,
+>> Keywords
+Data acquisition, storage,  processing,  analysis,  presentation,  Hadoop  ecosystem,  HDFS, MapReduce,
+Hadoop  support  program
+138 TOPCIT  ESSENCE
+
+
+--- Page 140 ---
+Overview  of System Architecture )
++ Practical  preview
+Company  A is an online retailer Until recently,  it competed  for the No. 1 or 2 position  in the domestic
+market, but has experienced  declining  sales, due to the influence  of cheap imports  from China entering
+the domestic  online market.  Therefore,  the company  needs a new competitive  edge. Firstly, it wants to
+establish  a new marketing  strategy  by collecting and analyzing  customer  data. It intends to expand the
+infrastructure  in order to collect big data beyond the existing  database  and to hire analysts  from outside
+to analyze  the collected  data. This case shows why enterprises  seek to find ways to collect, store, analyze,
+and utilize big data. This chapter  describes  the big data system  in more detail.
+01 Bid Data System  Structure
+A) Hadoop  ecosystem
+Understanding  the big data system structure  begins with understanding  the Hadoop ecosystem.  Hadoop,  the
+abbreviation  of High-availability  distributed  object-oriented  platform,  refers to a Java-based  framework  for the
+distributed  processing  of a large volume  of data in multiple  distributed  storage.  It is an initial solution  and consists  of
+the Hadoop  distributed  file system (HDFS) and Map Reduce.  However,  these two modules  are based on open source,
+and it was difficult  for non-specialists  to utilize big data. The modules  are packaged  with various peripheral  modules,
+as shown in [Figure 100], to solve the problem.  These peripheral  modules  support  data integration  and migration,
+application  management,  and system  management,  and they have been developed  as part of the Hadoop  project.
+Tees Pe Le ieree Peele agaented Baan Taare PrtPeer)  ManeTece ene  te) - esau
+& Coordination)
+SPARK  (In-Memory.  | KAFKA  & STORMPras} cone)
+Sete
+Flume Sqoop
+ee He
+Unstructured/
+Semi-structured  Data Structured  Data
+[Figure 100] Hadoop  Ecosystem
+M3 Overview  of System  Architecture  139
+
+
+--- Page 141 ---
+ESSENCE
+B) Hadoop’s  main technology  elements
+@ HDFS
+HDFS is a distributed  file system  to store data in the devices  connected  to the Hadoop  network.
++ HDFS prevents  data loss by also storing  replicated  data in multiple  nodes.
++ It is necessary  to access  data through  streaming  in order to store files in HDFS or query the stored files.
++ The data integrity  is ensured  as stored data cannot  be modified  and can be read-only.  (Version  2.0 or higher  allows
+appending  to the saved file.)
++ Although  it does not allow data modification, it provides  an interface  to move, delete, and copy files,
+As shown in [Figure 101], HDFS consists  of one NameNode  serverthat  serves as a master, and multiple  DataNode
+servers, that serve as slaves. The NameNode  server manages  all metadata  (the name of the directory  where the
+blocks are stored, the file name, etc.) of HDFS, and the client can access the files stored in the HDFS by using it.
+Hadoop  applications  use HDFS clients  to store files or to read the stored files in HDFS, and they provide  the clients  to
+users in API. The DataNode  server periodically  transfers  a block report (information  of the block stored in the node)
+from the NameNode,  which helps the NameNode  t...

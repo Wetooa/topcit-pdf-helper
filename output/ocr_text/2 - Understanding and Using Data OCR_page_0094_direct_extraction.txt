@@ -1,0 +1,20 @@
+Database
+>> Recent  trends and major issues
+Alan Greenspan,  the former chair of the Federal Reserve (FRB), said that “Bad data is invalidating  the IT
+systems  of Wall Street. One of the causes of the financial  crisis is inadequate  data’. As the scope of the
+information  system  operated  by institutions  and corporations  expands  and its complexity  increases,  data
+quality - including  accuracy,  consistency,  and timeliness  - is becoming  a very important  issue. That is, data
+quality control has become an essential  requirement  for the operation  and management  of information
+systems,  and each institution  is making efforts to present  a management  framework  for data quality
+and perform data quality control based on that framework.  Therefore,  it is very important  to accurately
+understand  a data quality control framework  that can be universally  applied  to multiple  organizations  and
+extended  according  to the characteristics  of a given organization.
+>> Learning  objectives
+1. To be able to explain the concept  of data quality.
+2. To be able to explain the concept  of data standardization.
+3. To be able to design a standardized  database  using a dictionary.
+>> Keywords
++ Data quality: Data value, data structure,  data process  quality
+« Data standardization:  Word, term, code, and domain  standardization
++ Dictionary:  Word dictionary,  glossary,  domain  dictionary
+M2 Database  93

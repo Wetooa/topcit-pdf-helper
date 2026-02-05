@@ -1,0 +1,38 @@
+Information  security )
+E) Procedure  of applying  database  encryption
+A database  is encrypted  with the procedure  of [Figure 49], which consists  of prior consultation,  prior impact
+analysis,  test verification,  build, and stabilization.
+lin eycleie » Application
+ETI and
+monitoring
++ Environmental  survey + Pre-diagnosis + Test environment + Operation  server  application
++ System information + DBMS analysis configuration + Monitoring  and stabilization
+collection + Application  analysis + Unit test + Technology  transfer  and
++ Security  policy consultation + Integrated  test training
++ Schedule  consulation
+[Figure 49] If an insecure  block cipher  algorithm  is used
+@ Prior consultation  for encrypting  a database
+All stakeholders  participating  in the project  should consult  on necessary  matters  in advance  to share necessary
+information  in advance,  such as the database  to be encrypted  to apply the database  application  security,  the
+applicable  environment,  the security  policy, etc., before applying  security  to the DB application.
+@ Analyzing  the impact  of database  encryption
+In this phase, the operational  server is monitored  and the impact on the application  and DBMS is analyzed,
+before applying  security  to the database  application.
+This phase is one of the most important  phases in applying  security  to database  applications.  Before applying
+encryption  to the operating  system, it is necessary  to perform encryption  pre-diagnosis,  such as extracting
+encryption  targets and encryption-related  SQL queries in advance,  running performance  tests on the test
+system, etc. Overall, the DBMS and application  are analyzed  in order to analyze the impact on changes in
+performance  and system  resources  after encryption.
++ Selecting  an encryption  target
+The encryption  target should be determined  by searching  the tables and columns  of the entire operating
+DBMS to extract  the columns  needing  to be encrypted.
++ Analyzing  query statements
+The amount  of data extracted  when executing  query statements  and the time of query statement  execution
+should be analyzed,  and the query statement  expected  to need optimization  should be selected,  by
+extracting  all query statements  used in all operating  DBMS.
++ Analyzing  DBMS
+The resources  used by the DBMS, such as CPU, memory,  and storage,  should be checked,  and the appropriate
+level of additional  resources,  that are required  when applying  encryption,  should be calculated.
++ Analyzing  applications
+The application  modules  that are affected  by the application  of encryption  should be extracted,  and the
+M4 Understanding  Information  Security  95

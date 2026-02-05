@@ -1,0 +1,34 @@
+Information  security )
+File/Data Execute
+(ie periodically
+Execute  once ',
+for the first
+7 HashOe Gi" Hash function 54 ils change aud a function
+(MD5/SHA) ? | (MD5/SHA)
+Hash code Hash code
+Message ONO, MessageSave hash | Digest Digest
+code
+Q Retrieve and compare ib
+hash code
+[Figure 12] Server  file integrity  check
+However, a security  incident  that has occurred  between  the check period cannot be detected  by checking
+integrity  periodically.  The shorter  the integrity  check period, the better. However,  if the number  of files
+increases,  creating and comparing  hash values for each file increases  the server load. Therefore,  it’s not an
+effective  method.
+Introducing  an integrity  check technique  that can detect an error at the kernel level in real time, is an
+alternative  to the periodic  integrity  check method.  That is, it is more effective  to only run an integrity  check
+once and check file alteration  in real time whenever  the file is executed  or loaded into the memory  to check
+whether  the file has been tampered.  In this way, loading the tampered  executable  file into memory  can be
+prevented  without  constantly  causing  a CPU load.
++ Integrity  during transmission
+The integrity  of the message  transmitted  over the network  is also an important  security  issue. A hacker
+can intercept  and alter the transmitted  message  as shown in [Figure 13]. To check the integrity  of the
+transmitted  message,  the sender creates a hash value for the message  and transmits  it along with the
+message.  Upon receipt of the message,  the receiver  checks the integrity  of the message  and, if tampered,
+ignores  the message.
+The hash function  can be used in the form of a message  authentication  code (MAC), if authenticating
+the identity  of the sender is not needed, and only the integrity  of the data that has not been tampered
+during transmission  is needed.  When the sender calculates  the hash value using the message  as an input,
+it becomes  a message  authentication  code. If this message  authentication  code is sent together  with the
+message,  the receiver  can be confident  that the message  has not been tampered  during transmission.
+M4 Understanding  Information  Security  33

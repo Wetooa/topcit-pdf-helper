@@ -1,0 +1,42 @@
+Understanding  the IT Business  and Ethics )
+© Trolley dilemma
+There is a trolley dilemma  suggested  by Philippa Foot, a British ethical philosopher, as a thought  experiment  related
+to the ethical dilemma  of self-driving  cars and drones.  The trolley dilemma  is an experiment  on whether  it is morally
+permissible  to sacrifice  five workers  on the rail on which the train travels, or one other worker  on the other rail, in a
+situation  where the trolley train with broken brakes is running.  This experiment  is often cited in relation to which of
+the drivers  or pedestrians  to protect  in the accident  of an autonomous  vehicle.
+<Table 114> Examples  of the trolley dilemma
+Classification Definition Related Technology
+Soldiers  operating  combat  drones  cannot  afford to engage  sensible
+judgment  even when shooting  ammunition  capable  of killing hundreds
+aoe of thousands  of people, and avoid facing the ethical dilemma by Control a drone as a weapon
+justifying  that they have only performed  the given order.
+Control  issues of autonomous  vehicles
+There are many people (including  small children)  in front of an
+Case 2 autonomous  vehicle  running  at a fast speed. It is difficult  to avoid the Emergency  control of autonomous
+accident  and the driver is highly likely to die when avoiding  it. The vehicles
+vehicle must choose  whom to save between  the driver and the most
+number  of the people in front.
+© Ethical Issues of Clouding  Computing
+<Guidance  for Cloud Computing  Service  Providers>””
+* Cloud computing  service providers  shall endeavor  to protect  user information  and provide reliable cloud computing
+services.
+* Cloud computing  service providers  shall endeavor  to enhance  the quality and performance  of cloud computing
+services  and the level of protection  of information.
++ In case of an infringement  accident,  user data leakage, or service interruption  without  prior notice, the cloud
+computing  service provider  must notify the relevant  users without  delay.
++ Where a cloud computing  service provider  intends  to provide  any user information  to a third party or to use the user
+information  for any purpose  other than for the purpose  of providing  services,  it shall notify the user of the following
+matters  and shall obtain consent  thereto.
++ Where the contract  made with a user terminates, the cloud computing  service provider  shall return the user
+information  to the user and destroy  the user information  possessed  by the cloud computing  service  provider.
++ Where a cloud computing  service provider  intends  to close its business,  it shall notify each user of the closure
+of business,  retum the user information  before the date of closure of business,  and destroy  the user information
+possessed  by the cloud computing  service provider
+<Privacy  Policy for Cloud Computing  Service Providers>“
++ Clearly notify the location of the server where data is stored, applicable  laws and regulations  related to personal
+information,  and the policy for processing  data stored by customers
+47 ACT ON THE DEVELOPMENT  OF CLOUD  COMPUTING  AND PROTECTION  OF ITS USERS
+48 KISA online privacy  portal, Privacy  Policy for Cloud Service  Providers,
+https:  //i-privacykr/images/noti_img/new/cloud/cloud_service_rule.pdf
+M5 Understanding  the IT Business  and Ethics 227

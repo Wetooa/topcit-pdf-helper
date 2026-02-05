@@ -1,0 +1,240 @@
+LEARNING GUIDE: Pages 130-134
+Generated: 2025-12-07 01:05:29
+PDF: 3 - Overview of System Architecture OCR
+
+================================================================================
+LEARNING GUIDE
+================================================================================
+
+Here is a simplified, easy-to-read learning guide derived from the provided text (Pages 130-134), designed for study.
+
+---
+
+## Learning Guide: System Architecture - Cloud & Virtualization Essentials
+
+### 1. Introduction to Cloud Computing & Virtualization
+
+*   **Modern IT Landscape:** Cloud computing and virtualization are now essential technologies.
+*   **Key Trendsetters:**
+    *   Gartner identified virtualization as a strategic technology in 2006, and cloud computing in 2009.
+    *   AWS, launched in 2006, demonstrates the immense growth and necessity of cloud services.
+*   **Foundation for New Technologies:** AI, Big Data, and Blockchain largely rely on cloud services for their scalability and speed.
+*   **Evolution of Server Virtualization:**
+    *   **Traditional:** Hypervisor-based virtualization.
+    *   **Recent:** Container-type virtualization (e.g., Linux Containers (LxC), Docker, Kubernetes, Openshift) is gaining popularity due to being lighter and faster.
+
+### 2. Understanding Cloud Computing
+
+#### 2.1 Definition & Core Concept
+
+*   **Purpose:**
+    *   Efficiently use surplus computer capacity.
+    *   Flexibly respond to uncertain service demands.
+*   **Core Idea:** Users access virtualized computing resources (servers, storage, networks, software) via the Internet as needed, without needing to own or manage the underlying infrastructure.
+*   **Key Advantage:** Provides computing resources through a network in an "invisible" state, allowing users to work anywhere without knowing complex infrastructure details.
+
+#### 2.2 Expected Benefits of Cloud Services
+
+*   **Costs:**
+    *   **CAPEX (Capital Expenditure):** Reduced (less upfront investment in hardware).
+    *   **OPEX (Operating Expenditure):** May increase (pay-as-you-go model).
+    *   **TCO (Total Cost of Ownership):** Reduced (lower overall system ownership and maintenance costs).
+*   **Period:** Reduced development time and product development cycles.
+*   **Operation:** Fewer operating personnel needed, improved resource efficiency.
+*   **Product:** Enhanced product integration capabilities.
+
+#### 2.3 Cloud Computing vs. Cloud Service (TTA Definitions)
+
+*   **Cloud Service:** An on-demand, outsourced IT service that provides a user-centered cloud computing environment.
+*   **Cloud Computing:** A computing environment that leases IT resources through the Internet, based on virtualization and distributed processing technology, with fees paid based on usage.
+
+### 3. Cloud Computing Comparisons with Other Technologies
+
+#### 3.1 Cloud Computing vs. Grid Computing
+
+*   **Similarities:** Both use a distributed computing structure and provide virtualized computing resources.
+*   **Grid Computing Definition:** A structure for virtualizing and integrating resources (computers, data) on a network to dynamically create virtual computers as needed.
+*   **Key Differences:**
+
+| Feature                | Grid Computing                                   | Cloud Computing                                |
+| :--------------------- | :---------------------------------------------- | :--------------------------------------------- |
+| **Computer Location**  | Geographically scattered, managed by different organizations | Geographically scattered, managed by a central organization |
+| **Computer Config.**   | Heterogeneous mixture                           | Mostly homogeneous (same model)                |
+| **Standardization**    | Existing standards for resource/data management | None                                           |
+| **Interconnectivity**  | Important                                       | Not a primary consideration                    |
+| **Resource Ownership** | Uses all computer resources on the Internet     | Uses *only* resources owned by the operator    |
+| **Usage**              | Highly parallel apps (scientific, technical)    | General-purpose applications (e.g., web apps)  |
+
+#### 3.2 Cloud Computing vs. Utility Computing
+
+*   **Similarities:** Both charge for resources used.
+*   **Utility Computing Definition:** Provides computing resources and charges based on the resources consumed.
+*   **Relationship:** Cloud computing evolved by abstracting computing resources, building upon the concept of utility computing.
+
+### 4. Cloud Computing Service Types (XaaS Models)
+
+Cloud services are classified into three main types based on what they provide:
+
+#### 4.1 IaaS (Infrastructure as a Service)
+
+*   **What it Provides:** Fundamental infrastructure resources (servers, storage, network) as a service over the Internet.
+*   **Virtualization:** Typically a virtualized environment, but can also be non-virtualized physical resources (**bare-metal cloud**).
+*   **User Responsibility:** Users must directly manage everything *above* the virtualization layer, including the operating system, middleware, runtime, applications, and data.
+*   **Analogy:** Like renting raw computing power and building your own system on top.
+
+#### 4.2 PaaS (Platform as a Service)
+
+*   **What it Provides:** A complete development and operating environment as a service, including network infrastructure, servers, OS, middleware, and runtime.
+*   **User Responsibility:** Users manage their applications and data. The provider handles all underlying infrastructure and platform components.
+*   **Example:** A developer can use a PaaS service that provides MySQL and Apache Tomcat to quickly set up an environment for a Java web application.
+*   **Analogy:** Like renting a fully equipped workshop where you just bring your tools and materials to build your product.
+
+#### 4.3 SaaS (Software as a Service)
+
+*   **What it Provides:** Fully functional software applications delivered over the Internet.
+*   **Access:** Typically accessed via a web browser, without needing to install software locally.
+*   **User Responsibility:** Users simply use the software's functions; they don't manage any underlying infrastructure, platform, or even the application itself.
+*   **Examples:** Google Docs, SalesForce.com.
+*   **Characteristics:**
+    *   **Web Browser Access:** No local software installation required.
+    *   **Usage-Based Cost:** Fees often based on software usage.
+    *   **On-Demand:** Software is immediately available when needed.
+    *   **IT Optimization:** No user concerns about IT infrastructure management or scalability.
+*   **Analogy:** Like using a taxi service – you just get in and go, without owning, maintaining, or even driving the car.
+
+#### 4.4 Management Scope Comparison (User vs. Provider)
+
+This illustrates who is responsible for managing each layer of the technology stack:
+
+| Layer                 | On-Premises (Internal Infra) | IaaS (User Manages)  | PaaS (User Manages)  | SaaS (User Manages)  |
+| :-------------------- | :--------------------------- | :------------------- | :------------------- | :------------------- |
+| **Data**              | User                         | User                 | User                 | User                 |
+| **Application**       | User                         | User                 | User                 | Provider             |
+| **Runtime**           | User                         | User                 | Provider             | Provider             |
+| **Middleware**        | User                         | User                 | Provider             | Provider             |
+| **Operating System**  | User                         | User                 | Provider             | Provider             |
+| **Virtualization**    | User                         | Provider             | Provider             | Provider             |
+| **Servers**           | User                         | Provider             | Provider             | Provider             |
+| **Storage**           | User                         | Provider             | Provider             | Provider             |
+| **Network**           | User                         | Provider             | Provider             | Provider             |
+
+### 5. Cloud Computing Operation Forms
+
+Cloud services are also classified by how they are deployed and accessed:
+
+*   **Public Cloud:**
+    *   Services disclosed and accessible to the general public over the Internet.
+    *   Examples: AWS, Google Cloud, Microsoft Azure.
+*   **Private Cloud:**
+    *   Cloud services implemented over a closed network, accessible only by authorized users within a specific enterprise or institution.
+    *   Offers greater control and security.
+*   **Hybrid Cloud:**
+    *   A combination of public and private cloud services.
+    *   Allows organizations to use the public cloud for non-sensitive data and scaling, while keeping sensitive data and core operations in a private cloud.
+    *   **Crucial:** Compatibility and the ability to seamlessly move services between public and private domains.
+
+### 6. Server Virtualization Technology
+
+#### 6.1 Definition & Purpose
+
+*   **Conventional Computing:** One operating system installed directly on one physical hardware, running applications.
+*   **Virtualization:** A technology that abstracts computer resources:
+    *   Makes multiple physical computers appear as a single server.
+    *   Makes a single physical computer appear as multiple virtual computers.
+*   **Purpose:** Allows running one or more operating systems on a single physical computer, maximizing resource utilization and management efficiency.
+*   **Role in Cloud:** Cloud services heavily rely on virtualization to provide abstract computing resources to users, overcoming physical limitations (especially x86 virtualization).
+
+#### 6.2 Hypervisor (Virtual Machine Monitor - VMM)
+
+*   **Definition:** The core technology for server virtualization; a logical platform that virtualizes a physical server.
+*   **Host OS:** The physical server on which the hypervisor runs.
+*   **Guest OS:** The virtualized operating systems running on the hypervisor.
+
+#### 6.3 Hypervisor Types (by Installation Method)
+
+*   **Native Type (Type 1 Hypervisor):**
+    *   **Installation:** Installs the VMM directly onto the physical hardware, without needing an underlying host OS.
+    *   **Advantages:** More efficient, saves resources as there's no host OS overhead.
+    *   **Examples:** Xen, XenServer (Citrix), ESXServer (VMware), Power Hypervisor (IBM), Hyper-V (Microsoft), KVM.
+*   **Hosted Type (Type 2 Hypervisor):**
+    *   **Installation:** Installed as software *on top of an existing operating system*.
+    *   **Examples:** VirtualPC (Microsoft), Workstation (VMware), VirtualBox (Oracle).
+
+#### 6.4 Server Virtualization Methods (by Virtualization Technique)
+
+Server virtualization can also be classified by the virtualization technique used:
+*   Full Virtualization
+*   Para-virtualization
+*   OS-level Virtualization
+
+---
+
+================================================================================
+ORIGINAL TEXT (First 5000 chars)
+================================================================================
+
+--- Page 130 ---
+Overview  of System Architecture )
++ Preview  for practical  business
+Gartner, which annually publishes strategic  technologies  for the year, began including  virtualization  in
+“Gartner's  Top Ten Strategic  Technologies’  in 2006 and added cloud computing  in 2009. AWS started its
+service in 2006, achieved  annual sales of 5 trillion won in 2014, and generated  tremendous  sales growth
+every year. Now, cloud services  are becoming  a necessity, not an option. Most of the technologies,  such as
+Al, big data, and blockchain,  which have recently  become  the subject  of conversation,  operate  based on
+cloud services  that basically  provide scalability  and speed. It is why most cloud service providers  provide
+platforms  for new technologies.  The server virtualization  is changing.  In the past, server virtualization
+was performed  using a hypervisor.  In recent  years, container-type  virtualization  has emerged.  It is quickly
+establishing  a position  in the cloud service market because  it is lighter and faster than the existing
+methods.  Typical  container  technologies  include Linux Containers  (LxC), Docker,  Kubernetes,  and Openshift.
+01 Definition  of Cloud Computing
+Cloud computing  was developed  to efficiently  utilize the surplus computer  capacity  of each server  and to flexibly
+respond  to the demand  of uncertain  services  at enterprises.  While users had to own and manage  resources  in order
+to use computer  resources  before the advent of cloud computing,  cloud computing  allows them to use computing
+resources,  provided  through  the Internet,  in a virtualized  form when they need them.
+The key to cloud computing  is that computer  resources  are available  through  the network  and are provided  in an
+invisible  state so that users can work anywhere  using the computer  resources  they need, even without  knowing  the
+complex  interior.  Around 2008, various  services  that utilize computing  resources  on the Internet  were launched,  and
+“cloud computing”  began to be used as a comprehensive  term. Users could access  desired  services  from the Internet
+without  requiring  expertise  in the technology  infrastructure  they support.
+The following  benefits  are expected  from cloud services.
+* Costs: CAPEX® reduction,  OPEX’ increase,  and TCO® reduction
++ Period: Reduced  development  time and product  development  cycle
+* Operation:  Reduced  operating  personnel  and strengthened  resource  efficiency
++ Product:  Improved  product  integration
+Although  the terms “cloud service”  and “cloud computing”  are generally  used interchangeably,  the Korea
+6 CAPEX (Capital  expenditure):  Expenditures  spent to generate  future profits
+7 OPEX: Operating  expenditure
+8 TCO (Total Cost of Ownership):  Total cost of owning  a system,  including  the initial investment  and maintenance  costs
+M3 Overview  of System  Architecture  129
+
+
+--- Page 131 ---
+ESSENCE
+Telecommunication  Association  9TTA defines  them as follows:
+<Table  27) Definitions  of “Cloud Computing”  and “Cloud Service”
+Terms Definition
+Cloud service An on-demand  outsourcing  IT service  that provides  a user-centered  cloud computing  environment
+Cloud computingA computing  environment  that leases IT resources  through  the Internet,  based on virtualization  and
+distributed  processing  technology  and pays a fee, based on usage
+A) Comparison  of cloud computing  and other computing  technologies
+@ Grid computing  and cloud computing
+Grid computing  is defined  as "a structure  for virtualizing  and resources,  such as computers  and data, on a network  for
+integration  and dynamically  creating  virtual computers  if needed.”  Grid computing  and cloud computing  are similar in
+that they use a distributed computing  structure  and provide  virtualized  computing  resources.  The difference  is that
+grid computing  uses all the computer  resources  on the Internet,  whil
+owned by the operator.
+<Table 28) Differentiation  between  Grid Computing  and Cloud Computingle cloud computing  uses only the computing
+Grid Computing Cloud computing
+Computer  location Geographically  scattered  and managed  by Geographically  scattered  but managed  by a
+different  organizations central organization
+Computer  configuration Heterogeneous  mixture Most of the same model
+Standardization  organization  | Existing None
+Technicelctandard Standards  for resource  management, None
+scheduling,  and data management  security
+Interconnectivity Important Not considered
+Usage Highly parallel applications,  such as scientific  and | General-purpose  applications,  such as web
+technical  calculations  and large-scale  operations
+@ Utility computing  and cloud computingapplications
+Utility computing  is a type that provides  computing  resources  and charges  for the resources  used. Utility computing
+and cloud computing  are similar, in that they charge for the resources  used. Cloud computing  has developed  the
+abstrac...

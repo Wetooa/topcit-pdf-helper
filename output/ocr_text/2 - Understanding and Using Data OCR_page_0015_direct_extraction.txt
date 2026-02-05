@@ -1,0 +1,26 @@
+ESSENCE
+A) Comparison  between  dynamic  and static SQL 115
+B) Processing  methods  of dynamic  SQL and static SQL 116
+C) Example  of dynamic  SQL and static SQL code 116
+04 Query Optimization  and Optimizer 117
+A) Query optimization  process 117
+B) Optimizer 117
+C) Roles of the optimizer  in each query processing  phase 117
+D) Classification  of optimizers  according  to criteria 118
+05 Linking  the Web and Database 118
+A) Server expansion  methods 118
+B) Browser  extension  method 119
+XI. Concurrency  Control 121
+01 What is a Transaction 123
+A) Concept  of a transaction 123
+B) ACID properties  of the transaction 123
+C) when finishing  a transaction 123
+D) Considerations  when executing  a transaction 124
+02 Concurrency  Control 124
+A) Definition  of the serializable  schedule  of the transaction 24
+B)  Definition  of concurrency  control 24|
+|
+C) Purposes  of concurrency  control 124
+D) Problems  that occur when concurrency  is not controlled 1
+| E) Concurrency  control  techniques
+14 TOPCIT  ESSENCE

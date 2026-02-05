@@ -1,0 +1,48 @@
+ESSENCE
+<Table 53> Type of Cost of Quality
+Classification Concept Case
+Education,  training,
+Prevention  Costs Cost to prevent defects documentation,
+Cost of Conformanceequipment,  improvement
+schedule
+Appraisal  CostsverificationCost for product  quality  validation/ Test, inspection  and
+destruction  test cost
+Cost of Nonconformance
+® Quality  PlanInternal Failure Costsproduct  deliveryCost of correcting  defects  beforeRework
+Wasted  materials
+(Waste,  waste treatment)
+External  Failure Costs after delivery  products  andCost of correcting  defects  found
+services  to external  customersLiability,  defect  repair,
+business  loss
+Quality Plan is one of the project management  plans prepared  at the beginning  of the project to ensure the
+quality of the result (system)  built by the project  team while complying  with the schedule  (project  duration)  at
+a set cost.
+<Sample  quality control plan>
+Overview Objective
+Objective Quality  requirement  specification
+Role and Responsibility Quality  objective  setting
+Organizational  chart Measurement  and evaluation
+Responsibility  and role Verification  and confirmation  activity
+Quality  objective Quality  assurance  activity
+Quality  assurance  orientation Quality  evaluation
+Quality  activity Corrective  action activity
+Quality  activity  reporting Attachment
+<Sample  quality control plan>
+Quality  feature Quality  requirement Measurement  methodology Target Measurement  date
+Measurement  items of accurate
+function  reflection
+A: No. of function  design reflection
+(Requirements  Traceability  Matrix) .
+B: No. of requirements  on function for 100% At the point of the
+FunctionalityAccuracy  of functiontask comparison  matrix
+Measurement  formula  for accurate
+function  reflectiondesign stage completed
+implementation Measurement  items of function
+implementation
+A: No. of inaccurate  functionality
+requirements
+B: No. of requirements
+Measurement  formula  for inaccurate
+function  implementation0%At the point of delivery
+test completed
+118 TOPCIT  ESSENCE

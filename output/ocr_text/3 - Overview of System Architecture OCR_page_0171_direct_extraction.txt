@@ -1,0 +1,27 @@
+ESSENCE
+The elements  of the IPv4 address  include an IP address,  which is a unique identification  address  given to all
+communication  networks  that are connected  to the Internet  and computers  connected  to the network, a network
+ID, which identifies  TCP/IP hosts in the same physical  network,  a host ID, which identifies  the TCP/IP host on the
+network,  and the 32-bit subnet mask, which specifies  the network  name for the iP address  from the hostname.
+CIDR (Classless Inter-Domain  Routing,  RFC 1519) is a method  of expressing  the IPv4 address  and one of IP allocating
+methods  that does not divide the network  part from the host part in 8-bit units. Moreover,  subnetting  and
+supernetting  can flexibly  express  the network  and host Ips, according  to the number  of IPs required by the network,
+without  dividing  the IPv4 address  and the network  ID into fixed 8-bit units. Here, subnetting  refers to dividing  a given
+IP address  into small subnets,  according  to the network  environment,  and supernetting  refers to combining  multiple
+network  IDs into one network  ID.
+Here, subnetting  refers to dividing  a given IP address into small subnets  to suit the network  environment,  and
+supernetting  refers to combining  multiple  network  IDs into one network  ID.
+B) Network  using IPv4 addresses  (Example)
+5 223.1.1.1
+J)
+223.1.1.2 223.1.1.4 ME}  MAY)FS223.1.2.1
+=
+x
+aig ee 5
+i 2231.13
+223.1.3.1 223.1.3.2
+i)
+223.1.1.1=  11011111 00000001  00000001  00000001LEE  Ed
+223 1 1 1
+[Figure 124] Network  Using IPv4
+170 TOPCIT  ESSENCE

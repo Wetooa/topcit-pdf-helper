@@ -1,0 +1,32 @@
+Overview  of System Architecture )
++ Renaming  file: A file name must be changeable,  and a renamed  file should exist at a point within the directory
+structure.
+C) Allocation  by a file system
+A file system should consider  which space on the disk to use and quickly access the files. An OS's file system
+generally  uses the contiguous  allocation,  linked allocation,  or indexed  allocation.
+* Contiguous  allocation:
+This method  arranges  files as a set of contiguous  addresses  on the physical  disk, as shown in [Figure  27] below. The
+disk addresses  of stored files are defined linearly. This method  has the advantage  of a relatively  high reading  speed,
+since the files are stored in contiguous  addresses.  However,  it creates  an external  fragmentation  problem.
+tr
+12 13 14 15
+16, |i7{_ | 18| | 19
+mail
+20[ | 2i[__ 22{_ jas
+24 25 26) 27
+listDirectory
+file start length
+count count 0 2oi 2 js tr mail 14 3
+f list f 19 6
+4 5 6 7 8 4
+8{ ]9f ji |nf ] 6 2
+28] |29[ |30[ | 31NC
+[Figure  27] Contiguous  Allocation
++ Linked allocation
+This method stores files in block units and links each block to a list, as shown in [Figure 28] below. The directory
+keeps pointers  to the first and last blocks of the files. As shown in the figure, the directory  contains  9 and 25, which
+are the first and last block pointers,  respectively.  Block 9 is linked to blocks 16, 1, 9, 10, and 25 in that order. This
+method can solve the external  fragmentation  problem of the contiguous  allocation  method. However,  the linked
+allocation  method is slow to read and requires  the area to store the pointers  separately,  since data blocks are
+scattered  on the physical  disk. Moreover,  it can cause data errors if the linked pointer  data is lost or corrupt.
+M3 Overview  of System  Architecture  57

@@ -1,0 +1,41 @@
+Understanding  the IT Business  and Ethics )
++ Deep Learning
+Deep learning  is the reason for the recent rapid development  of artificial intelligence.  Deep learning  is a branch of
+machine  learning,  and a method  of solving  problems  similarly  to how humans  solve problems  using an artificial  neural
+network  which performs  the transfer  and processing  of information  with multiple  nodes. This method is based on
+human neural network  theory.
+<Table 84> Characteristics  of Deep Learning
+Characteristics Description
+Pre-processing  for feature The two processes  that were separated  into the pre-processing  and feature  extraction  processes
+extraction are consolidated  into the entire learning  process  as pre-processing  for feature extraction.
+Automatic  extraction  of For data with large dimensions  and high complexity,  such as image data, there was a high
+complex  data information possibility  of loss of information  in the preprocessing  process.
+If the size of a high efficiency  simulation  is increased  for an abstraction  process  that summarizes
+key content  or functions  in a large amount  of data or complex  data, the ability to absorb  large
+amount  of data is improved.Efficient  for high level
+abstractions
+Source:  Overview  of Artificial  Intelligence  (Al) and Technology  Trends,  Financial  Security  Institute,  August,  2016
+@ Use of Big Data
+"Flu Trends" is a quintessential  Big Data service that was launched  by Google  for the general public. In 2008, Google
+hit upon the idea that people search for cold or flu on the Internet if they suspect  that they have the flu. The
+company  released  a service that predicts  cold and flu trends by analyzing  the search information  and the location  of
+the people searching  with keywords  like “flu” and “cold”. Credit card companies  are another  group that rely big time
+on Big Data. They analyze consumption  and behavioral  data of their customers  and use it for marketing,  product
+development,  and product  recommendation.
+Big Data refers to data that is so large that it is difficult  to handle them with traditional  data storage,  management,
+and analysis  methods;  they are data whose size has exceeded  the limits of what could be managed  as a general
+database.  Big Data is difficult to quantify  through  conventional  methods  because  the 3Vs of volume, variety, and
+velocity  are all large, and also include unstructured  or non-metrical  variables,  making it difficult  to analyze population
+trends  or characteristics  through  statistical  analysis.  Big Data is often represented  using visualization  tools.
+<Table85>Characteristics  of Big Data
+Category Characteristics
++ Data greater  than peta byte
+Data size + Millions  and billions  of users
++ Trillions  and tens of billions of data records
++ Unstructured,  non-formal  data
+Data structure + Large volume  of distributed  data
++ Simple data correlation  with plain schema  structure
++ Many data that are related to time
+Type of data + Mission Critical  data
++ Example)system/event  logs, sensor  data, SNS data, web mining  data, etc.
+M5 Understanding  the IT Business  and Ethics 163

@@ -1,0 +1,25 @@
+Overview  of System Architecture )
+Step 3-4) ) On receiving  the packet  from user A’s computer,  wired/wireless  router B, aware
+that the packet is not sent to the router as the final destination,  examines  the
+address  to which the packet must be transmitted.  The IP header  indicates  that
+the packet's  final destination  is myservercom,  and since it does not belong to
+network  192.168.11.0  or 14.32.172.0,  to which wired/Wireless  router B belongs,  it
+transmits  the packet  to router  C, to which it belongs  (routing  protocol).
+On receiving  the packet, router C recognizes  that the packet is sent to
+network  220.17.23.0,  to which the router belongs,  and intends  to transmit  it
+to the webserver’s  IP address  220.17.23.15.  As in Step 3.3, since the packet
+movement  in a network  requires  the physical  address  of my.server.com,  the
+MAC address,  it obtains  the MAC address  corresponding  to the IP address
+of my.server.com,  220.17.23.15,  though the network  broadcasting,  and
+transmits  the packet  (ARP).
+On receiving  the packet, my.server.com  examines  the IP address  and
+recognizes  that the packet  was sent to it. It removes  the header  data, such as
+the IP address,  and sends the remaining  data up to the higher  protocol  layer (IP).
+It determines  which application  of my.server.com  to which the packet
+should be transmitted,  removes  unneeded  data, and sends the remaining
+data to the intended  webserver  application  (TCP).
+computer.
+S99 On receiving  information  in the document  route from the webserver,  the web
+browser  displays  the contents  for user A’s viewing, The user can select the desired
+hyperlink  in the document  to view, including  videos  on a web browser  (HTTP HTML).
+M3 Overview  of System  Architecture  35

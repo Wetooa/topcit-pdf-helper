@@ -1,0 +1,30 @@
+Overview  of System Architecture )
+109]. Forward error correction  (FEC) allows the receiving  device to detect errors and recover  from them by itself,
+by transmitting  a spare bit for error recovery  in the packet. Backward  error correction  (BEC) notifies  an error to the
+transmitting  device  to recover  from the error, when an error occurs  during the data transmission.
+Error Control
+Forward  Error Correction Backward  Error Correction
+| Non-Block  Code | | Block Code | | Detection  Method | | Correction  Method |
+| Turbo Core | | BCH | | Parity Checking | | Stop-and-Wait  ARQ |
+| Convolution  Code | | Hamming  Code | | Block Sum Check | | Go-Back-N |
+| Reed-Solomon | | Cydlic Redundancy Check | | Selective-Repeat |
+Adaptive  ARQ
+H-ARQ
+[Figure 109] Error Control  Types
+B) Error detection  and correction
+@ Error detection
+Error detection uses the redundancy  (spare) concept  by adding a spare bit to detect the destination’s  error. Error
+detection  methods  include VRC (Vertical Redundancy  Check), LRC (Longitudinal  Redundancy  Check), CRC (Cyclic
+Redundancy  Check),  and checksum.  <Table 32> shows details of each detection  method.
+{Table 32) Error Detection  Methods
+Error detection Description
+method
+wre + Vertical Redundancy  Check
++ Most widely used for error detection  and includes  the parity check
++ Longitudinal  Redundancy  Check
+LRC + Amethod  of collecting  the even parity of all bytes to create a data unit and adding it to the end of the
+data block
+ERG * Cyclic redundancy  check
++ A detection  method  using binary division
+Checksum + Amethod  used by higher-level  protocols  and based on the concept  of redundancy  (VRC, LRC, CRC, etc.)
+M3 Overview  of System  Architecture  151

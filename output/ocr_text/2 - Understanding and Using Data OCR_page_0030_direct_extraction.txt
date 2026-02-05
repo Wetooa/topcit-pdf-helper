@@ -1,0 +1,13 @@
+Database )
++ Preview  for practical  business Reasons  to understand  database  types
+The relational  database  and the object relational  database,  which are based on EF. Codd’s normalization
+theory  of 1970, have mainly been used in the existing  workplace,  because  data consistency  was important
+in workplaces  where OLTP (Online Transaction  Processing)  jobs were dominant.  However,  the processing
+of diverse types of data and the rapid processing  of large quantities  of data are required  these days.
+Therefore,  DBMS vendors  are developing  DBMS functions  in such a way that the advantages  of each type
+of database  can be introduced  and applied.
+As a result, if we know the background  to database  development  and the basic concepts  of the major
+types of database,  we can easily understand  the functions  and purposes  of the various DBMSs used for
+various purposes  in the workplace  and get help in strategically  selecting  a DBMS that is optimized  for the
+characteristics  and purposes  of the business  in question.
+M2 Database  29

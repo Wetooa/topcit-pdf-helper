@@ -1,0 +1,34 @@
+Database )
+01 Concept  and Procedure  of Data Modeling
+“Data modeling”  refers to the process  of abstracting  the real world to create a database  and is performed  according
+to the following  procedure:  requirements  analysis,  conceptual  modeling,  logical modeling,  and physical  modeling.  That
+is, modeling  refers to a technique  of expression  that uses a certain notation  to abstract,  simplify,  and clarify the real
+world.
+<Table 20> Characteristics  of modeling
+Item Contents
+Abstraction Expresses  the real world according  to a certain format.
+Simplification Expresses  the real world using agreed protocols,  or limited notation  and language.
+Clarification alee ambiguity  and accurately  describes  a phenomenon  so that everyone  can understand  it
+A) Requirements  collection  and analysis
++ A phase in which ambiguity  is removed  from the requirements  by collecting  and analyzing  the business
+requirements.
++ Arequired  specification  (or job description)  is produced  as a deliverable.
+B) DB design
+Design in the order of conceptual  modeling  -> logical modeling  -> physical  modeling.
+C) Differences  in the academic  world’s  and industry's  understanding  of conceptual/logical  modeling
+@ Understanding  the academic  world
+* Conceptual  modeling  is the phase in which an ERD is produced,  whereas  logical modeling  is the phase in which the
+structural  drawing  of the table is produced.  These two phases are clearly separated.
++ Therefore,  the entities  and relationships  of the ERD are identified  in the conceptual  modeling  phase, and the primary
+keys and foreign keys of the table are identified  in the logical modeling  phase.
++ Normalization  that handles  table structure  should be performed  in the logical modeling  phase.
++ For reference,  “physical  modeling”  refers to the process  of creating  tables suitable  for an actual DBMS.
++ The Chen type of ERD is mainly used.
++ The relationship  itself can have its own properties  in the ERD.
++ All information  shown in the table structure  drawing  is also shown in the ERD.
+@ Understanding  of the industry
++ An ERD is produced  during logical modeling.
++ Conceptual  modeling  further  abstracts  the ERD and summarizes  it at a comprehensive  level including  the subject
+area, core entity, core relationship,  and core attribute.  Conceptual  modeling  is not studied  in the academic  world.
++ The Crow's Foot type of ERD is mainly used.
+M2 Database  51

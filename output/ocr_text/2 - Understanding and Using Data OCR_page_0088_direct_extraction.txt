@@ -1,0 +1,37 @@
+Database )
++ All general  attributes  belonging  to the relationship  is included  in S.
+@® Conversion  of the 1:N relationship
++ It is assumed  that S (N-side)  and  T (1-side)  are two entity  types participating  in the relationship.
++ The primary  key of T is included  as the foreign key of S.
++ All general  attributes  belonging  to the relationship  is included  in S.
+© Conversion  of the M:N relationship
++ Itis assumed  that S and T are two entity types participating  in the relationship.
++ Anew relation  R is created  that corresponds  to the relationship.
++ All general  attributes  belonging  to the relationship  in R.
++ The primary  key of S and T is included  as the foreign  key of R.
++ The primary  key of R is composed  of a combination  of a foreign key from S and a foreign key from T.
+© Conversion  of multi-valued  attributes
++ The relation  R for the multi-valued  attribute  MA is created  that belongs  to the entity type E.
++ MA is created  as the column  of R.
++ K, the primary  key of E, is created  as the foreign key of R.
++ The primary  key of R is composed  of a combination  of the above columns.
+@ Conversion  of N-ary relationship  (N> 2)
++ Anew relation  R is created  for each N-ary relationship.
++ All general  attributes  belonging  to the relationship  is included  as the column  of R.
++ The primary  keys of all entities  participating  in the relationship  are included  as the foreign keys of R.
++ The primary key of S is composed  with a combination  of all foreign keys. (However,  the foreign key of which
+cardinality  is 1 will be excluded  from a combination  of the primary  key.)
+Conversion  of the generalization  relationship
++ Tables are created  that correspond  to the upper entity type and the lower entity type respectively.
++ The primary  key of the table is included  that corresponds  to the upper entity type in the table of the lower entity
+type.
+C) Table design
+@ Table types
++ Heap-organized  table: This table type is used as a standard  table in most commercial  DBMSs. The record storage
+location  in a table is determined  when the record is inserted,  instead  of the value of a specific  attribute.
+* Clustered  index table: A table in which data is stored in the order of the primary  key value or index key value.
++ Partitioned  table: A table designed  to prevent  performance  degradation  and make management  easy, by storing  a
+physical  table that has been split based on specific  criteria (range,  value, hash, etc.), even though  large-scale  data is
+logically  one table.
++ External  table: A database  object  that enables  the user to use external  files as a general  table existing  in the database
+M2 Database  87

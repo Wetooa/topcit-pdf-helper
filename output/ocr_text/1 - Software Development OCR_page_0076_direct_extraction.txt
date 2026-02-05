@@ -1,0 +1,44 @@
+convenience  of reusing  repetitive  codes and to manage  complex  codes more easily.Software  Development )
+<Table 20> Representative  design patterns  and problem  types
+Large category Problem  type (purpose  of use) Related  design  pattern
+Creating  an object by product  family Abstract  Factory
+, Creating  a whole object  by creating  partial objects Builder
+Patters  for object Creating  an object using a delegate function Factory Method
+Creating  an object  through  replication Prototype
+Limiting  object  creation  up to N Singleton
+Changing  an interface  for reusing  the existing  module Adapter
+Clear separation  of interface  and implementation Bridge
+Establishing  and managing  the partial-whole Composite
+Patterns  for structural relationship  between  objects
+improvement Dynamically  adding  and deleting  an object  function Decorator
+Clearly  separating  and defining  a subsystem Facade
+Sharing  small objects Flyweight
+Performing  tasks using delegate  objects Proxy
+Spreading  requests  to executable  objects Chain of Responsibility
+Manipulation  by generalizing  the task to perform Command
+Verification  and work processing  based on simple Interpreter
+grammar
+Sequentially  accessing  several  objects  of the same Iterator
+data type
+Simplifying  a M:N object  relationship  to N:1 Mediator
+Patterns  for behavior Restoring  or storing  the previous  state of an object Memento
+improvement One source multiple use Observer
+Smoothly  changing  behavior  execution  when adding  an State
+object  state
+Selecting  and applying  one of several algorithms  with Strategy
+the same purpose
+Reusing  the basic frame of the algorithm  and changing Template  method
+detailed  implementation
+Efficiently  adding  or changing  a task type Visitor
+@ Object  creation  patterns
++ Abstract  Factory  pattern
+Definition:  When creating  a family of objects  that are either closely related or hardly related, an interface  is
+provided  that can create the object  concerned  without  specifically  knowing  its class.
+- Advantages:  Applied when creating  a specific  object and actually  using it without  specifically  knowing  the
+type of object to which the client codes belong.
+A new product family can be added independently  of the existing  source codes when creating  a new
+product  family.
+- Disadvantages:  All factory  classes  should be modified  when adding  a new product  to the product  family.
+- Use examples:  When developing  a compiler that should be configured  differently  for each system or
+operating  system.
+M1 Software  development  75

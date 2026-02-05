@@ -1,0 +1,33 @@
+Information  security )
+01 Need for securing  coding
+A) Need for secure  coding
+It was analyzed  that about 70% of cyber-attacks  exploit  the security  vulnerability  of software  itself. It was also
+analyzed  that modification costs can be reduced by tens of times, compared  to the cost of modification after
+the product  release.
+Accordingly,  removing  security  vulnerabilities in the software  development  phase is highlighted  as an effective
+method  before releasing  the product,  to prevent  and respond  to cyber-attacks.
+Secure coding  is a defensive  programming  technique  that reduces  software  vulnerabilities  and hacking  risks, by
+removing  security  weaknesses  in the software  development  lifecycle  (SDLC).
+02 Main content  of secure  coding
+A) Software  security  weakness  and security  vulnerability
+@ Weakness:  Errors occurring  in the design and implementation  phase, such as software  defects, errors, and bugs.
+Software  weakness  can cause software  vulnerabilities.  A representative  example is the Common  Weakness
+Enumeration  (CWE).
+® Vulnerability:  An error in software  that can be accessed  and used by hackers,  by accessing  the system or network.
+Hackers  can exploit  this accessible  security  weakness.  An example  is the Common  Vulnerabilities  and Exposures  (CVE).
+B) Secure SDLC
+Requirement : . . MaintenanceB definition ee  = Coding = Testing operation o> co
+Securit: inirequirements Dearne Static security Dynamic Change
+derivation  and (Including risk test security  test management
+evaluation assessment) i
+: ; *. Secure
+Security z abEe
+y requirement Dynamic Security audit Periodic :
+. security  test recertification
+integration
+Security Code Software v
+activity certification security
+definition certification
+v Vv v
+[Figure 34] Secure  SDLC
+M4 Understanding  Information  Security  75

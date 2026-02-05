@@ -1,0 +1,190 @@
+LEARNING GUIDE: Pages 160-163
+Generated: 2025-12-05 10:56:11
+PDF: 2 - Understanding and Using Data OCR
+
+================================================================================
+LEARNING GUIDE
+================================================================================
+
+Here is a simplified, easy-to-read learning guide based on the provided text:
+
+---
+
+## Machine Learning & Deep Learning Essentials
+
+### I. Multi-Layer Perceptron (MLP)
+
+*   **Definition:** An artificial neural network.
+*   **Structure:** Composed of multiple layers, including input, hidden (one or more), and output layers. Sigmoid neurons are commonly used.
+*   **Functionality:**
+    *   Maps discrete or consecutive input signals to output signals.
+    *   Uses error correction for learning.
+    *   Strong against noise.
+*   **Visual:** Typically depicted with an input layer, one or more hidden layers, and an output layer.
+
+### II. Unsupervised Learning
+
+**Purpose:** To find patterns or structures in data without pre-labeled outputs.
+
+#### A. Clustering
+
+*   **Definition:** A technique to group closely related data into subsets called clusters.
+*   **Key Algorithms:**
+    1.  **K-means Clustering:**
+        *   **Method:** Classifies data into similar groups by measuring the distance of data points from the center of each cluster.
+    2.  **Hierarchical Clustering (HC):**
+        *   **Method:** Divides all data into a hierarchical structure.
+        *   **Usefulness:** Particularly useful for visualizing multidimensional data.
+
+### III. Deep Learning
+
+#### A. Background & Definition
+
+*   **Definition:** An advanced AI technology that enables computers to learn autonomously, similar to human learning.
+*   **Approach:** Combines existing supervised learning (requiring human intervention) with more active unsupervised learning.
+*   **Foundation:** Based on Deep Neural Networks (DNN) theory.
+*   **Emergence Factors:**
+    *   **Addressing Machine Learning Limitations:**
+        *   **Lack of Training Data:** Solved by leveraging Big Data analysis (variety/volume, Hadoop algorithms).
+        *   **Overfitting Problem:** Mitigated through techniques like regularization and Backpropagation.
+        *   **Lack of Computing Power:** Overcome by advancements in GPU computing, CUDA, and parallel processing hardware.
+    *   **Applications:**
+        *   Natural Language Processing (NLP).
+        *   Pattern analysis (e.g., video, photo recognition).
+
+#### B. Deep Learning Algorithms
+
+1.  **DNN (Deep Neural Network)**
+    *   **Characteristics:** An Artificial Neural Network (ANN) with **multiple hidden layers** between the input and output layers.
+    *   **Purpose:** To build complex and expressive models, overcoming the limitations of simpler ANNs.
+
+2.  **CNN (Convolutional Neural Network)**
+    *   **Characteristics:** A neural network specifically structured for **image data processing**.
+    *   **Inspiration:** Mimics the mechanical principle of the organism's optic nerve.
+    *   **Typical Layers:** Convolutional layer > Pooling layer > Convolutional layer > Pooling layer > Fully Connected (feedforward) layer.
+
+3.  **RNN (Recurrent Neural Network)**
+    *   **Characteristics:** A neural network where connections between units form a **directed cycle**.
+    *   **Function:** Generates multiple output values from a single input by establishing relationships.
+    *   **Mechanism:** Connects the neural network at the previous time step (T-1) with the current time step (T).
+    *   **Learning:** Uses an algorithm called **Back-Propagation Through Time (BPTT)**, an extension of the standard error back-propagation.
+
+4.  **RBM (Restricted Boltzmann Machine)**
+    *   **Characteristics:** A **generative graphical model** used for machine learning.
+    *   **Structure:** A type of Boltzmann machine consisting of a separate visible layer and a hidden layer.
+    *   **Role:** Often used as a building block for more complex deep learning networks like DBNs.
+
+5.  **DBN (Deep Belief Network)**
+    *   **Characteristics:** A deep neural network composed of **multiple layers of latent variables**.
+    *   **Learning Technique:** Stacks multiple **Restricted Boltzmann Machines (RBMs)** for learning.
+    *   **Structure:** Learns by stacking RBMs, where each RBM has its own visible and hidden layers, often with a "top layer" representing the highest-level hidden layer.
+
+---
+
+================================================================================
+ORIGINAL TEXT (First 5000 chars)
+================================================================================
+
+--- Page 160 ---
+>|
+Pr Input signal Output signal Layer structure,  sigmoid neuron,
+Multi-Layer error correction,  strong againstPerceptron al , :(MLP) noise, discrete/consecutive  I/O
+mapping.
+>|
+Input —- First hidden Second Output
+layer layer hidden layer —_layer
+[figure6-8]  Multi-Layer  Perceptron  with two hidden layers
+@ Unsupervised  leaming
+<Table 85> Unsupervised  Study Table
+Classification Conceptual  diagram Description
+Clustering  is a technique  for finding
+. a group of closely  related  data. A
+listening data set is classified into a subset
+or a cluster.
+©A ° ® © © ® © A clustering  algorithm  that
+classifies  the data of similar  groups
+K-means ¥ by measuring  the distance  of
+the data from the center  of each
+Qo @2x® cluster.
+© « ©
+©e®
+M2 Database  159
+
+
+--- Page 161 ---
+ESSENCE
+Flow of hierarchical
+ap am clustering  execution
+i HC divides  all data into a
+Hierarchical hierarchical  structure.  It is
+Clustering  (HC) useful for the visualization  of
+multidimensional  data.
+Hierarchical  drawing  of
+hierarchical  clustering
+results
+E) Deep learning
+@ Background  and definition  of deep leaming
++ Al technology  that allows computers  to learn on their own, like humans,  by combining  existing  supervised  learning,
+which requires  human intervention,  with more active unsupervised  learning.
++ A series of machine  learning  based on the deep neural networks  (DNN) theory and an algorithm that teaches
+computers  how to think like a human.
+- Varienty/Volume  Data ;>>|  Big data analysis
+cr >) = Major
+~ hadoop algorithm:Lack of training data | ~ In Memory
+- Back
+Deep Learning Overfitting problem |fifepagation
+- regularization Utilization
+Lack of computing - GPU computing
+- CUDASILK++ “VPA (natural language
+L J processing)ee H/W development Pattern analysis (video, photo, etc.)
+Parallel computing B
+—__________> <________>
+Limitations  of existing  machine  leaming Application/Algorithm
+[Figure 46] Deep Learning  Background
+160 TOPCIT  ESSENCE
+
+
+--- Page 162 ---
+Database )
+@ Deep learning  algorithm
+<Table  86> DNN, CNN, RNN, RBM, DBN
+Characteristics Description
+DNN+ An artificial  neural network  that is composed  of multiple  hidden layers between  the input layer
+and the output  layer in order to build a complex  and expressive  model by overcoming  the
+limitations  of ANN.
++ Anartificial  neural network  structure  composed  of multiple  hidden layers.
+input layer
+CNN+ Convolutional  Neural Networks
++ Aneural  network  algorithm  with a structure  suitable  for image data processing,  using the
+mechanical  principle  of the organisms  optic nerve.
++ Itis composed  of the convolution  layer > pooling  layer > convolution  layer > pooling  layer > feed
+forward  layer.
+Feature  maps
+enivahiiiea Subsampling Convolution  Subsampling  Fully connected
+RNN+ Recurrent  Neural Network
++ Aneural  network  in which the connections  between  units, which constitute  an artificial  neural
+network,  compose  a directed  cycle.
++ Analgorithm  that creates  a relationship  which produces  multiple  values  when one value is
+entered.
++ It connects  the past neural network  (T-1) and the current  neural network  (T), and learns using an
+algorithm  called BPTT (Back-Propagation  Through  Time), which is an extension  of error back-
+propagation,  a learning  algorithm  of the existing  artificial  neural network.
+D
+D
+M2 Database  161
+
+
+--- Page 163 ---
+ESSENCE
+Characteristics Description
++ Agenerative  graphical  model used for machine  learning.
++ Adeep  neural network  that is composed  of the multiple  layers of the latent variable.
++ Adeep  learning  technique  that stacks the Restricted  Boltzmann  Machine  (RBM), a type of
+Boltzmann  machine,  for learning.
++ Astructure  that learns by stacking  RMB, which has a separate  visible  layer and hidden  layer.
+Hidden  layer 3
+(Top layer)
+DBN
+162 TOPCIT  ESSENCEVisible layer
+
+

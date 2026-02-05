@@ -1,0 +1,30 @@
+ESSENCE
+RSVP is one of the IETF signaling  protocols,  and data flow is allocated  by a static bandwidth  by signaling  from end-to-
+end. It basically  uses the method  of reserving  the queue space [2]. The RSVP message  starts from the source device
+and is delivered  to all the receiving  devices  on the path. It is a path message  that contains  the necessary  information
+for the receiver  and a message  sent by the receiver  upon receiving  the path message.  A RESV message  reserves  the
+resource  of a router that moves toward the source device (upstream)  to support  RSVP. If a router on the path does
+not support  RSVP, packets  are delivered,  based on the best-effort  delivery  method.
+The priority method,  using the TOS field of IP datagram,  checks the 1-byte TOS field, as shown in [Figure 140], and
+determines  the processing  priority, according  to the set value. The TOS class is divided into eight levels from class 0
+to 7, and the higher the number,  the higher  the processing  priority.
+Precedence,  the first field, indicates  the priority  or importance  of the packet,  and the TOS fields indicate  whether  the
+network  maintains  a balance between  throughput,  delay, reliability,  and cost. The last MBZ (must be zero) field is a
+field that is not currently  used.
+The TOS field is expressed  as a 4-bit binary number.  <Table 73> shows the meaning  of each value.
+(Table 73) TOS Field Values [4]
+Binary  Value Meaning
+1000 Priority  on delay minimization
+0100 Priority  on processing  volume
+0010 Priority  on reliability
+0001 Priority  on cost minimization
+0000 General  service
+O2 Internet  Telephony  Concept  and Call Signal  Protocol
+A) What is VoIP (Voice over Internet  Protocol)?
+VoIP is a communication  technology  that facilitates  voice calls through  packet  data, based on the IP network. [Figure
+142] shows the VoIP system structure.  The main service components  are the media gateway  and the signaling
+gateway.  The media gateway  exchanges  multimedia  data, delivers  the changed  date to the corresponding  network,
+and controls  it through  the media gateway  control protocol (MGCP).  The signaling  gateway  performs  call signaling,
+using protocols,  such as H.323, SIP MGCP, and MEGACO,  and converts  the signals of the PSTN and IP networks, so
+they can be used with each other.
+204 TOPCIT  ESSENCE

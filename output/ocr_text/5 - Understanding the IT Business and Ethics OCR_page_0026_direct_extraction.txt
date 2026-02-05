@@ -1,0 +1,34 @@
+Understanding  the IT Business  and Ethics )
+Corrective  action
+* Identify  needed  improvements + Identify  opportunities  and issues
++ Adjust/modify  IT solution  for + Set goal/scope  of IT business
+supporting  business + Link business  with IT
++ Repeat  cycle
+Check Execution
++ Analyze  IT solution  operational  results + Configure  IT solution
++ Collect  IT solution  operational  data
+[Fig.8] The cyclical  management  of IT business
+The cyclical management  structure  of IT business  is shown in [Fig, 8]. The IT service and  IT infra provide  operational
+support  aimed at enablinga  business  (process)  toachieve  results in its IT business.
+In IT business  management,  new IT business  performance  indicators  are derived from the service quality of the IT
+operational  support  service (IT QoS) and the business  performance  results of the organization.  These indicators  are
+then sent to the IT division.  The IT business  management  provides  support  for the making  and adjusting  of decisions,
+and investments,  to the IT service and  IT infra,thus  ensuring  that the target levels for the performance  indicators  can
+be met.
+Operational
+IT service support Business Performance
+IT infrastructure ; (Process) ;
+1 1
+t Decide, support, 1 IT service quality !
+adjust, invest,etc. ! '
+v \
+!
+1'
+1
+'
+d .
+t [T-business
+[T-business  perfor- management
+mance  metrics
+[Fig.9] The management  and control  structure  of an IT business
+M5 Understanding  the IT Business  and Ethics 25

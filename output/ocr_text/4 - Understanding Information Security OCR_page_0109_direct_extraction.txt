@@ -1,0 +1,18 @@
+Information  security )
+>> Keywords
+Firewall,  Virtual Private Network  (VPN), SSL, traffic attack, denial of service (DOS) attack, Intrusion
+Detection  System (IDS), IPSec, transmission  mode, tunnel mode, sniffing, spoofing,  key management,
+NAT, DMZ, WLAN, IEEE 802.11i,  4-way handshake,  OWASP  top 10, anonymous  FTP
++ Preview  for practical  business Building  a secure network  using the
+firewall and DMZ
+Company  A is a small and medium-sized  company  that utilizes  a network  connected  to 90 computers.
+Currently,  the company  has 126 public IP addresses  (211.82.50.0/25),  one router (211.82.50.126/25),
+a switch, a database  server, and a web server, respectively.  In this situation,  assistant  manager,  Kim,
+was instructed  to introduce  a firewall to configure  the external,  internal, and DMZ network,  in order
+to increase  a network  security  level. Let’s learn how to build a secure network  under the following
+conditions.
++ Set private IPs (192.168.1.0/24)  for 90 internal  PCs and the database  server.
++ Place the web server in the DMZ area, while keeping  the existing  address  (211.82.50.1/25).
++ Subnet  the external  network  and DMZ network  into two existing  IP bands (211.83.50.0/25).
++ Use only one router, one firewall,  and two switches.
+M4 Understanding  Information  Security 109

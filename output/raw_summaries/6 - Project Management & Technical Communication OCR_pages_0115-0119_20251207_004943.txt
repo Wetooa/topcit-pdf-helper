@@ -1,0 +1,214 @@
+LEARNING GUIDE: Pages 115-119
+Generated: 2025-12-07 00:49:43
+PDF: 6 - Project Management & Technical Communication OCR
+
+================================================================================
+LEARNING GUIDE
+================================================================================
+
+Here's a simplified, easy-to-read learning guide based on the provided text:
+
+---
+
+# Software Quality Management: A Learning Guide
+
+## 1. Introduction to Software Quality
+
+### 1.1 Why Quality Matters
+*   Software is increasingly complex, leading to:
+    *   Project delays
+    *   Low customer satisfaction
+    *   High operation/maintenance costs
+*   **Quality awareness** is critical to address these issues.
+
+### 1.2 Learning Objectives
+*   Understand the concept and process of Quality Management.
+*   Describe quality standards and evaluation perspectives.
+*   Explain Quality Assurance and Quality Control.
+
+### 1.3 Key Terminology
+*   **Quality Management Process:** Quality Planning, Quality Assurance, Quality Control, PDCA (Plan-Do-Check-Act cycle).
+*   **Quality Standards:** ISO/IEC 9126, ISO/IEC 12207, CMMI, 6 Sigma, ISO 9000.
+*   **Quality Evaluation Perspectives:** Product Quality, Process Quality, Project Quality.
+
+## 2. Core Concepts of Quality Management
+
+### 2.1 Software Quality
+*   **Definition:** Characteristics and productivity of a software product that meets specified requirements.
+*   **Characteristics:**
+    *   **Relative:** Varies by context.
+    *   **Hard to quantify:** Difficult to measure objectively.
+    *   **Resource-dependent:** Influenced by cost, time, manpower, tools.
+    *   **Correlated:** Different quality aspects are often linked.
+*   **Quality Model:** A hierarchical structure used to define, measure, and evaluate software quality:
+    *   **Layer 1:** User-centric quality targets.
+    *   **Layer 2:** High-level Quality Characteristics (e.g., Functionality).
+    *   **Layer 3:** Specific Subcharacteristics (e.g., Suitability under Functionality).
+
+### 2.2 ISO/IEC 9126-1 Quality Characteristics
+This standard defines common software quality characteristics:
+
+| Quality Characteristic | Subcharacteristics                                     |
+| :--------------------- | :----------------------------------------------------- |
+| **Functionality**      | Suitability, Accurateness, Interoperability, Compliance, Security |
+| **Reliability**        | Maturity, Fault tolerance, Recoverability              |
+| **Usability**          | Understandability, Learnability, Operability           |
+| **Effectiveness**      | Time behavior, Resource behavior                       |
+| **Maintainability**    | Analyzability, Changeability, Stability, Testability   |
+| **Portability**        | Adaptability, Installability, Conformance, Replaceability |
+
+### 2.3 Major Standards Related to Software Quality
+*   ISO/IEC 9126 (Software Product Quality)
+*   ISO/IEC 12207 (Software Life Cycle Processes)
+*   CMMI (Capability Maturity Model Integration)
+*   6 Sigma (Process Improvement Methodology)
+*   ISO 9000 (Quality Management Systems)
+
+### 2.4 Perspectives of Software Quality Evaluation
+*   **Product Quality:** Focuses on the quality of the output itself (measurement, verification, validation, evaluation).
+*   **Process Quality:** Focuses on improving the methods used to create the product (process improvement, audit).
+*   **Project Quality:** Combines product and process quality within the project context.
+
+### 2.5 Quality Control
+*   **Definition:** All techniques and activities performed to ensure a product or service meets user requirements.
+*   **Process:** Establishing quality policies, setting goals, and defining responsibilities to meet user needs ("Fitness for use") in a project.
+
+## 3. Project Quality Management Process
+
+### 3.1 Overview
+Project Quality Management generally consists of three main elements: Quality Planning, Quality Assurance, and Quality Control.
+
+| Classification      | Concept                                                                        | Case (Example)                        |
+| :------------------ | :----------------------------------------------------------------------------- | :------------------------------------ |
+| **Quality Plan**    | Identify necessary activities and plan how to achieve project quality targets. | Quality Planning                      |
+| **Quality Assurance** | Third-party review to confirm results meet user requirements.                  | Design review meeting for wireframe   |
+| **Quality Control** | Find and resolve causes when results fail to meet targets or standards.        | Debugging software errors             |
+
+### 3.2 Key Stages in the Quality Management Process
+
+#### 3.2.1 Quality Planning
+*   **Purpose:** Documents activities the project team must perform to achieve quality targets, and how to do them.
+*   **Timing:** Should be prepared early in the project, as quality is planned, not just inspected afterwards.
+*   **Content (Sample Plan Sections):** Overview, Objective, Role & Responsibility, Quality Objective, Quality Assurance Orientation, Quality Activity, Quality Activity Reporting, Attachment.
+*   **Example Measurement:**
+    *   **Feature:** Functionality (Accuracy of function reflection)
+    *   **Requirement:** 100% of functional requirements reflected in design.
+    *   **Measurement:** (No. of function design reflections / No. of requirements) * 100.
+    *   **Target:** 100%
+    *   **Date:** At design stage completion.
+
+#### 3.2.2 Quality Assurance
+*   **Focus:** Managing quality throughout the project/business process.
+*   **Activities:** Techniques like **Review**, **Inspection**, and **Walk-through**.
+*   **Guidance:** Often performed with guidance from specialized quality management teams (e.g., QA team, PMO).
+*   **PMO (Project Management Office):** Can provide enterprise-wide quality standard guidance and check project quality levels.
+*   **Benefits:**
+    *   Minimizes quality cost.
+    *   Satisfies customer quality targets.
+    *   Reduces **Rework** (repeated work) by clarifying requirements through **Validation** (building the right product) and **Verification** (building the product right).
+    *   Helps **Scope Management** by preventing requirement omissions.
+    *   Improves **Schedule Management** by reducing wasted time.
+
+#### 3.2.3 Quality Control
+*   **Focus:** Checking the quality of outputs before final delivery to the customer.
+*   **Activities:** Identifying and resolving defects or non-conformance.
+*   **Project vs. Manufacturing:**
+    *   **Manufacturing:** Focuses on product quality, managing defects in *many* products.
+    *   **Project (IT):** Focuses on process quality, managing errors in *one or a few* intangible outputs (e.g., a system). Quality control is carried out at *each project stage* (analysis, design, execution, testing, deployment).
+
+## 4. Cost of Quality
+
+*   **Definition:** The total cost of all activities performed by the project team to achieve a predetermined quality target.
+*   **Purpose:** To reduce **Failure Costs** by strategically increasing **Prevention Costs** and **Appraisal Costs**.
+
+### Types of Cost of Quality
+
+| Classification       | Concept                                        | Case (Examples)                                        |
+| :------------------- | :--------------------------------------------- | :----------------------------------------------------- |
+| **Cost of Conformance** | Costs incurred to achieve quality             |                                                        |
+|   **Prevention Costs** | Prevent defects from occurring.               | Education, training, documentation, equipment, improvement schedule |
+|   **Appraisal Costs**  | Validate/verify product quality.              | Tests, inspections, destruction tests                  |
+| **Cost of Nonconformance** | Costs incurred due to poor quality         |                                                        |
+|   **Internal Failure Costs** | Correct defects before product delivery. | Rework, wasted materials (waste, waste treatment)      |
+|   **External Failure Costs** | Correct defects found after delivery to customers. | Liability, defect repair, business loss                |
+
+---
+
+================================================================================
+ORIGINAL TEXT (First 5000 chars)
+================================================================================
+
+--- Page 115 ---
+ESSENCE
+>> Recent  Trends  and Major Issues
+Software  is getting more complex  due to the construction  of a large and highly functional  system.
+Along with problems  such as delays in delivery  of software  construction  projects,  lower customer
+satisfaction,  and excessive  cost for system operation/maintenance,  awareness  of quality is becoming
+more important.
+>> Learning  Objectives
+1. To be able to explain the concept  and process  of quality  management.
+2. To be able to describe  quality  standards  and evaluation  perspectives.
+3. To be able to explain  quality  assurance  and quality control.
+>> Keywords
+* Quality management  process:  quality management  planning,  quality assurance,  quality control,
+PDCA
+* Quality  standards:  ISO/IEC  9126, ISO/IEC  12207, CMMI, 6 Sigma, ISO 9000
+* Quality evaluation  perspective:  product  quality perspective,  process  quality perspective,  project
+quality  perspective
+114 TOPCIT  ESSENCE
+
+
+--- Page 116 ---
+Project Management  and Technical  Communication  )
++ Preview  for practical business
+Just as you frequently  checks for any abnormalities  in a car while driving a long distance,  a series of
+quality control activities  are needed to ensure that the quality target is achieved  by checking  the
+project  quality  level even when implementing  a project.
+In general,  quality management  consists  of quality planning,  quality control, and quality assurance.
+There is no significant  difference  in the overall composition,  but the quality management  of the
+actual project is somewhat  different  from that of the manufacturing  industry.  For example,  if quality
+control in manufacturing  is about product  quality, quality control of project can be seen as process
+quality. This is due to the fact that the working  method differs depending  on the process  in which
+the result is generated.  If the quality control  of the manufacturing  industry  is to manage  the defects
+of a number  of products  produced,  the quality control of the project is to manage  one or a few
+outputs  (e.g., system)  without  errors. Defect management  for many products  can be viewed as
+product  quality management,  and error management  for a few outputs  can be viewed as process
+quality management.  In particular,  in an IT project, as the output is intangible,  quality control for
+intermediate  outputs  should be carried out at each project stage (eg, analysis,  design, execution,
+testing,  deployment  stage, etc.).
+Quality management  activities  for each project stage are carried out through  techniques  such
+as review, inspection,  and walk-through,  which are performed  based on guidance  from specialized
+quality management  organizations  (€.g., quality management  team, quality assurance  team, etc.).
+In particular,  if enterprise-wide  quality control is to lead to the quality control of individual  projects,
+the company  can receive guidance  on enterprise  quality standards  through the PMO (Project
+Management  Office)  or check the quality level.
+If such diverse  quality management  is meticulously  carried out according  to a systematic  procedure,
+quality cost can be minimized  by satisfying  the quality targets  requested  by customers  (eg,
+the acquirer)  at the end of the project. Another  advantage  is that Validation  and Verification  of
+requirements  can reduce Rework  through  clarification.  This helps scope management  by preventing
+omission  of requirements,  and schedule  management  by reducing  wasted  time.
+M6 Project  Management  and Technical  Communication  115
+
+
+--- Page 117 ---
+ESSENCE
+01 Concept  of Quality  Control
+A) Concept  of software  quality
+@® Software  Quality
+It refers to the characteristics  and productivity  of a software  product  that meets a given requirement.
+@ Characteristics  of Software  Quality
+Software  quality is a relative concept,  and it is difficult  to measure  quantitatively,  dependent  on several
+resources  such as cost, time, manpower,  and tools, and correlated  with each other.
+In order to measure  and evaluate  software  quality, a quality model that can first define elements  and
+characteristics  representing  the quality of software  and quantify  quality in an objective  aspect in the
+development  process  is required.  In general, such quality model is represented  in a hierarchical  structure.  The
+first layer is composed  of quality  targets  from the user's point of view, the second layer is composed  of high-
+level Quality Characteristics  that can achieve  the quality targets,  and the third layer is composed  of specific
+Subcharacteristics.
+<Table 51> ISO/IEC  9126-1 Quality  Characteristics
+Quality  Characteristics Subcharacteristics
+Functionality Suitability,  Accurateness,  Interoperability,  Compliance,  Security
+Reliability Maturity,  Fault tolerance,  Recoverability
+Usability Understandability,  Learnability,  Operability
+Effectiveness Time behavior,  Resource  behavior
+Maintainabi...

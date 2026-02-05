@@ -1,0 +1,193 @@
+LEARNING GUIDE: Pages 181-185
+Generated: 2025-12-07 01:10:50
+PDF: 3 - Overview of System Architecture OCR
+
+================================================================================
+LEARNING GUIDE
+================================================================================
+
+Here's a simplified, easy-to-read learning guide based on the provided text:
+
+---
+
+## Transport Layer Protocols Learning Guide
+
+### 1. Introduction to the Transport Layer
+
+*   **Function:** Transmits application data between **end-point hosts** (e.g., your computer and a web server). This is an **end-to-end service**.
+*   **Operation Path:** Protocols operate only between the client and server. **Intermediate nodes (routers) are NOT involved** in the transport layer protocol's operation.
+*   **Key Protocols:**
+    *   **TCP** (Transmission Control Protocol)
+    *   **UDP** (User Datagram Protocol)
+    *   **SCTP** (Stream Control Transmission Protocol) - a newer protocol combining TCP/UDP advantages, but TCP and UDP are most widely used.
+
+### 2. TCP vs. UDP: Key Differences
+
+| Feature           | TCP (Transmission Control Protocol)           | UDP (User Datagram Protocol)                     |
+| :---------------- | :-------------------------------------------- | :----------------------------------------------- |
+| **Connection**    | **Connection-Oriented**: Requires a pre-configuration process (handshake) to establish and terminate a connection before data transfer. | **Connectionless**: No pre-configuration. Data can be sent/received immediately. |
+| **Reliability**   | **Reliable**: Ensures data is delivered correctly and completely. Uses acknowledgment techniques (sequence and acknowledgment numbers) to check receipt. | **Unreliable**: Does not guarantee delivery or order. No built-in error checking for transmitted data. |
+| **Data Flow**     | Manages data flow, error detection, and congestion. | Offers minimal overhead for speed.             |
+
+### 3. TCP (Transmission Control Protocol) in Detail
+
+TCP is a fundamental protocol for reliable communication on the internet.
+
+#### A) Characteristics of TCP
+
+*   **Position:** Operates between the Application Layer and the Network Layer in the TCP/IP model.
+*   **Data Handling:**
+    *   **Stream-based:** Treats data as a continuous stream.
+    *   Uses **transmission and reception buffers** to manage data flow.
+    *   The underlying IP layer transmits data in **segments** (packets).
+*   **Reliability Mechanisms:**
+    *   **Flow Control:**
+        *   **Purpose:** Prevents the sender from overwhelming the receiver.
+        *   **Mechanism:** Controls packet flow volume to prevent packet loss when the receiver's buffer capacity is exceeded. Uses sender/receiver buffers.
+    *   **Error Control:**
+        *   **Purpose:** Detects and corrects data transmission errors.
+        *   **Mechanism:** Detects and discards damaged/duplicate packets, tracks and resends lost packets.
+    *   **Congestion Control:**
+        *   **Purpose:** Manages network load to prevent congestion.
+        *   **Mechanism:** Controls the rate of data transmission to ensure network load is less than network capacity, preventing performance degradation.
+*   **Byte Numbering:**
+    *   TCP numbers data in units of bytes.
+    *   A **sequence number** is assigned to the first byte of data in each segment.
+    *   Sequence numbers range from 0 to 2^m - 1 (where 'm' is the number of bits for the sequence number in the header) and are modular 2^m.
+
+#### B) Well-known TCP Ports
+
+Common services use specific TCP port numbers:
+
+| Service | TCP Port                  | Description             |
+| :------ | :------------------------ | :---------------------- |
+| FTP     | 21 (control), 20 (data)   | File Transfer Protocol  |
+| SSH     | 22                        | Secure Shell            |
+| Telnet  | 23                        | Remote login (unsecure) |
+| SMTP    | 25                        | Email sending           |
+| HTTP    | 80                        | Web services            |
+| POP3    | 110                       | Email receiving         |
+| IMAP4   | 143                       | Email receiving         |
+
+#### C) TCP Protocol Header Components
+
+The TCP header contains critical information for managing connections and data.
+*   **Size:** 20 bytes (without options), up to 60 bytes (with options).
+*   **Key Fields:**
+    *   **Source Port:** 16-bit number identifying the sending application's port.
+    *   **Destination Port:** 16-bit number identifying the receiving application's port.
+    *   **Sequence Number (SEQ):** 32-bit number assigned to the first byte of data in the current segment. Increments by 1 for each byte.
+    *   **Acknowledgment Number (ACK):** 32-bit number indicating the next byte sequence number the sender expects to receive.
+    *   **Header Length:** 4-bit field specifying the TCP header length in 4-byte units (20-60 bytes).
+    *   **Control Flags (6 bits):**
+        *   **URG:** Urgent pointer field is significant.
+        *   **ACK:** Acknowledgment number field is significant.
+        *   **PSH:** Push function (requests immediate delivery).
+        *   **RST:** Reset the connection.
+        *   **SYN:** Synchronize sequence numbers (used to establish connection).
+        *   **FIN:** No more data from sender (used to terminate connection).
+    *   **Window Size:** 16-bit field indicating the amount of data (in bytes) the receiver is willing to accept (max 65,536 bytes). Used for flow control.
+    *   **Checksum:** 16-bit field for error detection across the header and data.
+    *   **Urgent Pointer:** 16-bit field used when urgent data is present (if URG flag is set).
+
+#### D) TCP Connection Establishment: Three-Way Handshake
+
+This procedure establishes a reliable, bidirectional connection between two TCP endpoints (e.g., TCP A and TCP B).
+
+1.  **SYN (Synchronize Sequence Numbers):**
+    *   TCP A (client) sends a `SYN` segment with its initial sequence number (e.g., `SEQ=100`) to TCP B (server).
+    *   This indicates TCP A wants to establish a connection.
+
+2.  **SYN-ACK (Synchronize Acknowledgment):**
+    *   TCP B (server) receives the `SYN`.
+    *   TCP B sends a `SYN-ACK` segment to TCP A. This segment contains:
+        *   Its own sequence number (e.g., `SEQ=300`).
+        *   An acknowledgment number (`ACK=101`), confirming receipt of TCP A's SYN and indicating it expects `SEQ=101` next.
+    *   This indicates TCP B acknowledges TCP A's request and is also requesting to establish a connection with TCP A.
+
+3.  **ACK (Acknowledgment):**
+    *   TCP A (client) receives the `SYN-ACK`.
+    *   TCP A sends an `ACK` segment to TCP B. This segment contains:
+        *   An acknowledgment number (`ACK=301`), confirming receipt of TCP B's SYN-ACK and indicating it expects `SEQ=301` next.
+    *   This completes the handshake, and a bidirectional connection is established.
+
+*   **Role of SEQ/ACK Numbers:** Crucial for flow and error control, ensuring data streams are transferred correctly byte-by-byte.
+*   **TCB (Transmission Control Block):** A system resource allocated by TCP to manage each connection.
+*   **SYN Flooding Attack:** A type of Denial-of-Service (DoS) attack where a malicious actor sends a large number of `SYN` segments without completing the handshake. This exhausts the target server's TCB resources, making it unable to accept new legitimate connections.
+
+---
+
+================================================================================
+ORIGINAL TEXT (First 5000 chars)
+================================================================================
+
+--- Page 181 ---
+ESSENCE
+* Practical  preview Operating  path of transport  layer protocols
+The transport  layer protocols  operate  between  the computer  of user A, and the webserver  myservercom
+that requests  data, i.e., end-to-end  service. Data packets  are delivered  through many hops between  a
+client and a server. The nodes, positioned  between  the terminals,  such as the wired/Wireless  routers,  are not
+involved  in the transport  layer protocol  operation.  TCP [1], UDP [2], and SCTP [3] are the leading  transport
+Transport  Layel
+Network  Layer
+Datalink  Layer
+Physical  Layerlayer protocols.
+Network Layer ~
+Datalink Layer e tJ
+Physical  Layer rit
+on weaponsApplication  Layer Rovter  B
+68.11.0Application  Layer
+Leeson Layerof | Layer Network Layermy Layer Datalink Layer
+14.32.172.0 Physical  LayerRouterc switelbog Hub D
+my.server.com
+220.17.23.15=  Layer
+Datalink  Layer_| 220.17.23.0
+Physical  Layer
+[Figure 130] Protocol  Operation  Path of Transport  Layer
+01 Concept  of Transport  Layer Protocol
+The transport  layer protocol transmits  application  data between  end-point  hosts. The server application  running  on
+the server side receives  a request  from the client side, processes  it, and sends a response  to the client. On the client
+side, a user selects  an application  to receive  the service the user wants, makes a request  to the server, and displays
+the response  to the user. Applications  that traditionally  use networks,  operate in a client-server  structure,  and the
+lowest  protocol,  connecting  the client application  and the server application,  is the transport  layer protocol.
+Transport  layer protocols  that have been widely used are TCP (Transmission  Control Protocol)  [1] and UDP (User
+Datagram  Protocol)  [2]. SCTP (Stream  Control Transmission  Protocol)  [3], which combines  the advantages  of TCP
+and UDP is a new protocol introduced  after 2000. This chapter  focuses  on TCP and UDP which are currently  widely
+used.
+180 TOPCIT  ESSENCE
+
+
+--- Page 182 ---
+Overview  of System Architecture )
+UDP is usually referred to as a connectionless  service. However,  it does not mean that the service is performed
+without  a connection,  but that the pre-configuration  process  for connection  is omitted,  and that data can be sent
+and received  immediately.  On the other hand, TCP is a connection-oriented  service and requires  a pre-configuration
+process  to connect  before sending  and receiving  data. The connection  is terminated  in order to end the service
+between  the client and server  after completing  the data transmission  and reception.
+Reliability  is a factor mentioned,  along with the concept  of connection-orientation,  when referring  to TCP and
+UDP. UDP is generally  considered  an unreliable  protocol,  and TCP is considered  to provide reliable interprocess
+communication.  TCP uses an acknowledgment  technique  that uses a sequence  number  and an acknowledgment
+number  to check whether  the receiving  side has properly  received  the transmitted  data.
+02 TCP
+A) Characteristics  of TCP
+TCP is positioned  between  the application  layer and the network  layer in a TCP/IP  model and provides  communication
+between  the application  layer processes.  TCP is a stream-based  protocol  and has the transmission  buffer and the
+reception  buffer to transfer  data. IP at the lower layer of the TCP protocol,  transmits  data in a packet  format, rather
+than a stream format, by partitioning the data into several segments.  Flow control, error control, and congestion
+control techniques  are defined  to reliably  deliver  data. TCP is numbered  in units of bytes. When a byte is numbered,  a
+sequence  number  is assigned  to the segment.  The maximum  value must be set for a header  to include  the sequence
+number  of each packet. If m bits are set for the sequence  number  in the packet  header,  the sequence  number  ranges
+from 0 to 2m-1. The sequence  number  is modular  2m.
+@ Flow control
+Flow control controls  the packet  flow volume  to prevent  packet loss, due to packet inputs exceeding  the reception
+limit when transmitting  data packets.  The flow control uses transmission  and reception  buffers  that can store packets
+at the sending/receiving  sides, and the sizes of the sending/receiving  buffers are specified  in the files /proc/sys/net/
+core/wmem_max  and /proc/sys/net/core/rmem_max,  respectively  for Linux systems.
+@ Error control
+Error control  detects  code errors, that occur during transmission,  and reproduces  accurate  information.  It detects  and
+discards  damaged  packets,  tracks and resends  lost or removed  packets,  and checks and discards  duplicate  received
+packets.
+© Congestion  control
+Congestion  occurs when the network  load, representing  the number  of packets  transmitted  to the network  per unit
+time, exceeds  the network  capacity,  representing  the number  of packets  that can be processed  by the network  per
+unit time. In TC...

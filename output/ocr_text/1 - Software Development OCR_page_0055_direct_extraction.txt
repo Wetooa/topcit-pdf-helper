@@ -1,0 +1,40 @@
+ESSENCE
+01 Principles  of Software  Design
+The complexity  of the problem area should be reduced by continuously  dividing  the user requirements
+in the software  design phase, and its results should be reassembled  as proper  groups by considering  the
+independence  and dependence  of the role unit. This task is also expressed  as the basic design principle  of “Divide
+and Conquer”.  Complex  problems  can be solved more easily if we mentally  divide a system into separate
+pieces, Also, if the functions  are divided, or the user interface  is logically  divided, an easier solution can be
+found.
+In general, a system component  divided at a higher level is called a subsystem.  The subsystem is a program
+component  that can perform  functions  and be compiled  independently.  The subsystem  means that a system
+has been divided at a higher level of the system structure.  System designers  divide a problem  into subsystems
+so that several designers  and designers  can develop  different  subsystems  independently  later on. The clarity
+of the split process is pursued  to make the entire system work smoothly,  and to facilitate  the integration  of
+subsystems  developed  by different  developers  at a later date.
+A) Abstraction
+Abstraction  means considering  product  implementation  at a higher level first, rather than concerning  oneself
+with implementation  at a detailed  level, in order to access a problem  area gradually  while maintaining  a larger
+flow. Abstraction  enables  us to express  only essential  matters  that are easy to handle, because  abstraction
+eliminates  details that are of no interest  to us or are not essential.  Abstraction  is an important  principle
+that is applied throughout  the entire engineering  process.  Engineering  is a process  of moving from a higher
+abstraction  level to a low level. The types of abstraction  can be divided into data abstraction,  control
+abstraction,  and process  abstraction.
+We need to understand  how components  (or modules)  interact  with each other and the behavior  that
+manifests  itself outside  when a system is divided, before understanding  how the components  are implemented
+inside in detail. That is, the concept  of abstraction  is based on focusing  on the external  interface  by daring to
+omit methods  of component  implementation.
+B) Information  hiding
+Information  hiding is based on the concept  that the content  of each module is hidden, and that messages
+can be transmitted  by the interface  only. It is designed  in such a way that one module or subsystem  does
+not affect other modules,  by limiting  access to internal information.  For example,  when a change  occurs in
+the design process,  information  hiding ensures  that the change  affects the minimum  number  of modules  only.
+That is, if a module is defined by an interface  with the outside,  and detailed  information  including  the internal
+structure  or progress  of the module  is hidden from other modules,  the information  is hidden. Information  hiding
+keeps the modules  independent  of each other.
+Information  hiding does not necessarily require a programming  language equipped  with an information  hiding
+mechanism.  Rather, it is a basic principle  for designing  software,  and the concept  of information  hiding is
+important  in system design in that it keeps the components  independent  of each other. Information  hiding
+hides the internal  structure  of each module  (abstraction),  and the modules  communicate  with each other using
+the predefined  interface  only, without  needing  to know the internal  structure.  If a module  needs to be modified,
+54 TOPCIT  ESSENCE

@@ -1,0 +1,36 @@
+ESSENCE
+and designating  the composite  key of “Student  ID” and “Courses”  as the primary  key.
+Student  ID Name Subject  name |
+1111 Hong Gildong Database
+Student  ID | Name Subject  name 11 Hong Gidong Operation  system
+1111 Hong Gidong, Database,  operating  system | oon Gane Gamch Opera te |
+ang Gamchan eration  system2222 GangGamchan Operating  system, network, data structure 6 ° ‘i
+2222 Gang Gamchan Network
+| 2222 Gang Gamchan Data structure |
+[Figure 29] Example  of the first normalization
+@ Second  normalization  ([Figure  30])
++ The table on the left is not the second normal form.
++ The reason is that there is a partial functional  dependency  of the (course code) —> (course name) in the function
+dependency  of the (student  ID) — (course  name).
++ The second  normal  form table is derived  by dividing  the un-normalized  table into two tables, as shown on the right.
+suétiD | Name "Subject  code | Subject name | Grade | Suen Name | Subject code " Grade Subject  code Subject name |
+1111 | FgGleing Dll Database A 1111 | HongGleeng D11 A D1 Database
+1111 | togGltng «=O22 | Operation  system 1111 HorgGitog. = O22 B | O22 | Operation system
+2222 | GagGanchan 022 Operation  system A | 2222  | GagGanchen 022
+A |
+B |O22 | Operation  system
+N33 Network
+D44 Data structure2222  | GagGanchan N33 Network 2222  | GagGanchen N33
+2222  | Gagtnt © _D44 Data  structure 2222 | Gagtanten ==D44orp
+[Figure 30] Example  of the second  normalization
+© Third normalization  ([Figure  31])
++ The table on the left is not the third normal form.
++ The reason is that there is transitive  dependency  of the (student  ID) > (department),  (department)  — (department
+office).
++ The third normal form table is derived  by dividing  the un-normalized  table into two tables, as shown on the right.
+StudentID + Name Department Department  office | StudentID = Name Department | Department Department  ofice
+1111 | HongGidong | Computerengineering  | Exgeemgbuting 1111 HgGldng | Computer  engineering Computer  engineering  | tgresrgbidng
+2222  | GangGamcran  | Computerengineering  | Engeemgbuting 2222  | GagGanhen  | Computer  engineering Computer  engineering  | fgresrgbidg
+3333  | RyuGwenun Physics Netuel scence uling 3333  | RyGrensn Physics Physics Neue serceuldrg
+[Figure  31] Example  of the third normalization
+72 TOPCIT  ESSENCE

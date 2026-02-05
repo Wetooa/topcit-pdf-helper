@@ -1,0 +1,32 @@
+Overview  of System Architecture )
++ 1/O device: consists  of an input device and an output device to be used as the tool for interaction  between  the
+users and computers.
+Central  Processing  Unit
+(CPU)
+System  Bus
+Memory I/O Devices
+[Figure 30] Computer  Structure
+B) Types of computer  architecture
+The types of computer  architecture  include the von Neumann  architecture,  which is a structure  that applies the
+stored-program  design principle'  , suggested  by von Neumann  in 1945, and the Harvard  architecture  which separates
+instruction  memory  and data memory.  As shown in [Figure 31], these two types have different  memory  structures,
+and each has advantages  and disadvantages.
++ Von Neumann  architecture:  The CPU can read commands  from the memory  and can read and write data both from
+the memory  and to the memory.  Instructions  and data cannot be accessed  simultaneously  because  they use the
+same signal bus and memory.
++ Harvard architecture:  It solves computer  bottlenecks  by storing commands  and data in different memories  and
+improves  performance  by reading  and writing commands  in parallel. However,  the bus system design becomes
+complex.
+CPU CPU
+MemoryControl
+UnitControl
+Unit
+Arithmetic
+and Logic
+UnitArithmetic
+and Logic
+Unit
+[Figure 31] Von Neumann  Architecture  and Harvard  Architecture
+1 Amemory  unit is attached  next to the CPU, and programs  and data stored in the memory  unit are sequentially  fetched and
+processed  according  to the execution  instructions.
+M3 Overview  of System  Architecture  63

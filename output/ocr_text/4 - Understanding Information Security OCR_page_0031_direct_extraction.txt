@@ -1,0 +1,38 @@
+Information  security )
+restored  using the hash  value. That is, the original  text cannot be restored  through computation  using the hash
+value.
+Therefore,  the hash function  is mainly used to safely store sensitive  data, such as the password,  buta bypass
+attack can be made using hash collision, which outputs  the same output  for two different  input values.
+© Types of hash functions
++ MD5(Message  Digest Algorithm  5)
+MD5 is a 128-bit hash function  used for testing the integrity  of the program  or file. It was designated  as
+RFC 1321 of the IETF. However,  it is recommended  to use a safer algorithm  like SHA-2 for hashing  purposes,
+because  several important  defects  were found.
+MDS is frequently  used for saving  a password.  The result  of hashing  a password  with MDS is saved. Therefore,
+a server operator  or a third party cannot know the original password  using the hash result value of the
+password  only stored in the system. If the user correctly  inputs the password,  the same hash value is
+returned,  confirming  that the password  is correct.
++ SHA (Secure  Hash Algorithm)
+MD5, which was developed  from SHA, means  a set of interlinked  hash functions.  It was first designed  by the
+National  Security  Agency  (NSA) in 1993,and  it was designated  as the national standard  in the U.S. It is also
+called SHA-O to distinguish  the first function  from the functions  designed  later. SHA-1, a variant of SHA-O,
+was announced  two years later. Subsequently,  four more variants  were released,  such as SHA-224,  SHA-256,
+SHA-384,  and SHA-512.  These are called SHA-2 as a group. Currently,  SHA-3, which is completely  different
+from SHA-1 and SHA-2, is under development,  and it was confirmed  as SHA-3 in 2012.
+SHA-0 and SHA-1 have a hash value of 160 bits, and SHA-224/256/384/512  provide a hash value of
+224/256/384/512  bits, respectively.  In addition,  it is recommended  to use a hash function  of SHA-256  or
+higher for safety. On the other hand, an attack on SHA-2 has not yet been reported,  but there is a possibility
+of an attack because  SHA-2 functions  use a method  similar  to that of SHA-1.
+@® Supplementing  hash functions
+Salt is an arbitrary  bit string that is added when  a hash function  generates  a hash value. Salting  is to generate
+a hash value by adding  a bit string to the original message.  For example,  a hash value can be created by adding
+salt “topcit”  to the password  “@Kr5792cc’.
+as shown in [Figure 11].
+Password
+@kr5792ccHash
+value Hash
+function
+[Figure 11] Hash function  and saltSalt
+topcit
+When the salting method is used, an attacker  cannot check whether  the password  matches  the salted hash
+M4 Understanding  Information  Security  34

@@ -1,0 +1,28 @@
+ESSENCE
+Hierarchical  Classification
+Work name Period | Starting  date | Finishdate  | Preceding  work  | Resource  name
+The Bulletin Board for IT 19 days 13/07/25 13/08/20
+Competency  Index Project y (Thurs.) (Tues.)
+. 13/07/25 13/08/20Create a bulletin board 19 days (Thurs) (Tues.)
+Write text 5 days nee We Kim Jisim
+13/08/01 13/08/02 Kang
+Delete text 2 days (Thurs.) (Fri.) 3 Jeongbae
+. 13/08/05 13/08/06 KimModify  text 2 days (Mon.) (Tues,) 4 Seonhwa
+. 13/08/07 13/08/20
+File upload 10 days (Wed) (Tues) 5 Lee Hongcheol
+[Figure  26] Example  of WBS (building  an online bulletin  board)
+@ Structure  of Work Breakdown  Structure  (WBS)
+A tree diagram  is the most common  structure  of WBS. It arranges  components  in a parent-to-child  relationship,
+which facilitates  an intuitive  understanding  of the hierarchy.
+@® Components  of Work Breakdown  Structure  (WBS)
+The elements  of the work breakdown  system include Work Package,  Code of Account, WBS dictionary,  and
+RAM, and their explanations  are as follows:
+<Table 37> Components  of Work Breakdown  Structure  (WBS)
+Component Explanation
++ The lowest-level  unit of the work breakdown  structure  for which cost and duration  can beWork Package - :planned,  estimated,  monitored  and controlled
+Code of Account + Aunique  identification  or numbering  system in which unique numbers  are assigned  to each
+unique work package  of the work breakdown  structure
+WBS Dictionary + A detailed  description  of each work package  (outline,  schedule,  person in charge, budget)
+RAM(Responsibility
+Assignment  Matrix) stage, quality reviewer,  and input manager+ It serves as a standard  for who is responsible  for each element,  such as the approver  at each
+88 TOPCIT  ESSENCE

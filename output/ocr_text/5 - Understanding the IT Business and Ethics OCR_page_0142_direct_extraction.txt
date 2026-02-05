@@ -1,0 +1,32 @@
+Understanding  the IT Business  and Ethics )
+<Table73>  Key technologies  of mobile  commerce
+Technology Description Subsidiary  technologies
+Wireless + Wireless  service for sending  and receiving  voice/data/video . 7
+communication information. GSM, IMT-2000,  36, 4G(LTE), 5G
+Mobile  securit + Requirement  for core security  functions  like certification, + Encryption-based  security
+y confidentiality,  integrity  and denial prevention. + Public key-based  security
++ Direct payment  between  parties
+Mobile  payment + Payment  between  parties  through  the banking  system.
++ Payment  between  parties  through  an independent  3rd party.+ Simplified  payment
++ Electronic  wallet
++ A software  platform  for easily developing  and operating
+Mobile application several application  services  in  not just a fixed line
+server communication  environment,  but also in a wireless
+communication  environment.
+@ MEAP (Mobile  Enterprise  Application  Platform)
+Mobile Enterprise  Application  Platform  (MEAP) is a platform  that can support  a wide range  of different  device
+environments  and permit  the sharing  and the reuse of applications.
++ The main reasons  behind the need for MEAP are reuse and cost savings.
+- Allows the same code to be reused for different  smartphone  OS/smartphone  HW/service  provider  environments.
+- Through  the sharing  of a common  platform,  companies  can save money that would others have to be spent on
+duplicate  infrastructure  and middleware  required  for services.
+- Support  for developing  the mobile screens  for different  types of devices.
+- Support  for testing  and interworking
+2, awl)
+[Fig. 57] Concept  diagram  of MEAP
++ Components  of MEAP
+MEAP covers the entire life cycle from mobile development  to execution  and operation.  It is composed  of an
+integrated  development  environment  (IDE), an execution  environment  framework  that acts a middleware, standard
+interface  for integrating  with legacy  system, and a mobile device management  (MDM) for device management  and
+security.
+M5 Understanding  the IT Business  and Ethics 141

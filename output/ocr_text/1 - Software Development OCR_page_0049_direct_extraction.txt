@@ -1,0 +1,35 @@
+ESSENCE
+An array to sort is given.
+8 31 48 73 3 65 20 29 1 15
+Find the largest  number  (73).
+8 31 48 73 3 65 20 29 11 15
+Replace  73 with the  rightmost(5)  number  45)$  $$
+8 31 48 15 3 65 20 29 11 ie
+Find the largest  number(65)  in the numbers  except  the rightmost  number  (65).
+8 31 48 15 3 65 20 29 1
+Replace  65 with the rightmost  number  (11). ——
+8 31 48 15 3 a 20 29 65
+Find the largest  number  in the numbers  except  the rightmost  two numbers  (48).
+8 31 48 15 3 1 20 29 65 73
+[Figure  7] Example  of the selection  sort algorithm
+@ Bubble sort
+Like selection  sort, theFirst loop
+Second  loop
+largest  element  is continuously  moved to the last position.  However,  the number  adjacent  to the
+left is compared  when moving  the largest  element  to the right. If the sequence  is incorrect,  the positions  are changed.
+bubbleSort  (A[ ], 7)
+{
+for last —n downto  2 {
+fori — 1 to last -1
+if (A[i] > Afi + 1]) then A[i] — Afi + 1];
+An array to sort is given.
+3 31 48 73 8 1 20 29 65 15
+Keep on comparing  adjacent  pairs, starting from the left.
+3 31 48 73 8 1 20 29 65 15
+Change  the positions  if numbers  are not in order.
+3 31 48 8 73 1 20 29 65 15
+3 31 48 8 in} 73 20 29 65 15
+3 31 48 8 ml 20 29 65 15 73
+Exclude  the rightmost  number  (73)from the target.
+3 31 48 8 11 20 29 65
+48 TOPCIT  ESSENCE[Figure  8] Example  of the bubble  sort algorithm

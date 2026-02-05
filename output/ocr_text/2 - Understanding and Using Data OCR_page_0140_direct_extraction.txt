@@ -1,0 +1,28 @@
+Database )
+Dimension  table
+B) Data warehouse  modeling  technique+ Asub-table  and a perspective  of analyzing  each fact.
++ Adimension  table has multiple  attributes,  thus allowing  data analysis  from diverse
+perspectives.
+A data warehouse  model organizes  data using fact tables  and dimension  tables to facilitate  the analysis  of
+information.  The technique  can be divided into the ‘star schema’  and the ‘snowflake’  depending  on the dimension
+table normalization  status.
+<Table  62> Data warehouse  techniques
+Operator Description
++ Amodeling  technique  for designing  data by separating  it into fact tables  and dimension  tables.
++ Data duplication  occurs because  dimension  table data are not normalized.
++ The schema  is easy to understand  and has few joins,  thus improving  query performance,  but
+data consistency  problems  may occur.
+Store Period
+Store #
+Store name
+Region #
+Star schema Region name Day
+Products  # M
+Employee  #
+Sales unit price Product
+Sales staff Sales quantity ; ae  #
+Total sales ROGUEL Meme
+oe [|__tlera Infact,  the number of records  in the table: |_Product  famiy  # |
+increases  exponentially  if the dimension  table Product  family name
+increases,  and the search speed decreases.
+M2 Database  139

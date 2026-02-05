@@ -1,0 +1,22 @@
+CONTENTS
+D) Types of parallel processor  technology 79
+E) Parallel programming  technology 81
+F) Parallel programming  technology 82
+G) GPU-based  parallel programming  technology 82
+02 Storage  Technology 83
+A) Concept  of storage 83
+B) Connection  of storage  unit and server 84
+C) IP-SAN 86
+D) Storage  capacity  management 87
+E) Storage  disk scheduling 88
+03 High Availability  Storage 91
+A)Redundant  array of independent  disks (RAID) technology 91
+B) Backup  storage:  LTO and VTL 94
+04 Graphic  Compression  Technology 94
+A) Graphic  compression  type 94
+B) Multimedia  data 95
+VI. Embedded  System 98
+01 Overview  of Embedded  System 99
+A) Definition  of embedded  system 99
+B) Characteristics  of embedded  system 100
+10 TOPCIT  ESSENCE

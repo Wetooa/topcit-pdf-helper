@@ -1,0 +1,29 @@
+ESSENCE
++ Preview  for practical  business How should normalization  be utilized in an
+actual project?
+It is quite rare that data modeling  is performed  as a series of tasks, such as identifying  entities  through
+normalization,  and setting  and diversifying  the relationship.  It is also rare to prove an anomaly  by assigning
+functional  dependency  to each table, as we did when learning  the theory of normalization.  Why, then, is it
+so important  that we should learn the theory  of normalization  and remember  the theory  of normalization?
+Learning  and utilizing  normalization  for practical  business  can be summarized  into two points.
+The first point is that those who learn the theory of normalization  accurately  can identify  objects and
+establish  a relationship  based on the idea of normalization,  even though normalization  is not performed
+according  to the normalization  procedure.
+That is, even though  data modeling  is not performed  according  to the process  of normalization,  those who
+perform data modeling  are clearly aware of the theory and are naturally  aware of functional  dependency.
+Therefore,  they perform data modeling  from that perspective.  Conversely,  those who do not know the
+concept  of normalization  frequently  perform data modeling  that goes against  the first, second, and third
+normalizations  because  they lack the concept  of normalization.  It can be understood  that normalization  is
+utilized  by so-called  “internalized  inner forces”.
+The second point is that the completeness  of the completed  data model is verified using the theory of
+normalization.  It is really important  to test whether  the entire data model has stability for anywhere  from
+50 to 2,000 entities  and relationship  attributes.  At this time, criteria are needed  to test this, and it becomes
+the most important  theory of tool normalization  for the criteria in the data model. When we diagnose
+the data models of a project that has approximately  500 entities, 10 to 40 normalization  violations
+can be found. As such, many unknowingly  made normalization  violations  are found in many projects.
+Besides  artificial denormalization,  there are many models  that are not normalized  without  forecasting  the
+result. Data integrity  is lost because  such a model is applied to table creation  and then to the operating
+environment.  As a result, the quality  of the business  data is deteriorated.
+Therefore,  it should be remembered  that it is also used as a tool to verify the completeness  of the data
+model that has been designed  based on the theory  of normalization.
+68 TOPCIT  ESSENCE

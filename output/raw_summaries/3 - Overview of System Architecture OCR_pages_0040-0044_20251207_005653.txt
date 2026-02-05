@@ -1,0 +1,180 @@
+LEARNING GUIDE: Pages 40-44
+Generated: 2025-12-07 00:56:53
+PDF: 3 - Overview of System Architecture OCR
+
+================================================================================
+LEARNING GUIDE
+================================================================================
+
+This learning guide summarizes the essential information from pages 40-44, focusing on key concepts, definitions, and practical facts.
+
+---
+
+## Learning Guide: System Architecture & Operating Systems
+
+### 1. Network Protocol Architecture
+
+Protocols define how different layers on separate hosts communicate. Each layer adds its specific header to the data received from the layer above.
+
+*   **Application Layer:** Contains user data.
+*   **Transport Layer (TCP/UDP):**
+    *   Adds a **TCP header** (or UDP header).
+    *   Provides **end-to-end communication** between applications on different hosts.
+*   **Network Layer (IP):**
+    *   Adds an **IP header**.
+    *   Contains **routing information** to deliver data across networks.
+    *   Treats the TCP/UDP header and user data as its payload.
+*   **Data Link Layer (e.g., Ethernet):**
+    *   Adds an **Ethernet header**.
+    *   Contains information for **physical delivery** to other hosts within the **same network**.
+    *   Treats the IP header, TCP/UDP header, and user data as its payload.
+*   **Key Principle:** Each layer is responsible for its specific function and only uses its corresponding header.
+
+### 2. Internet Address System
+
+Internet communication relies on various addressing systems.
+
+#### 2.1 MAC Address (Medium Access Control)
+
+*   **Layer:** Data Link Layer.
+*   **Purpose:** Transfers data frames between physically connected nodes (devices on the same local network).
+*   **Location:** Generally stored on the Network Interface Card (NIC) hardware.
+*   **Aliases:** Physical address, Ethernet Hardware Address (EHA).
+*   **Format:** 48 bits long.
+    *   First 24 bits: Hardware manufacturer's unique ID.
+    *   Remaining 24 bits: NIC-dependent address.
+
+#### 2.2 IP Address (Internet Protocol)
+
+*   **Layer:** Network Layer.
+*   **Purpose:** Transfers datagrams (data packets) between two hosts/routers across multiple Internet networks.
+*   **Nature:** A **logical address**, unlike the physical MAC address.
+*   **Versions:**
+    *   **IPv4:** 32-bit system; widely used but faced exhaustion.
+    *   **IPv6:** 128-bit system; introduced to solve IPv4 exhaustion, though IPv4 remains prevalent.
+*   **Management:** ICANN (International Corporation for Assigned Names and Numbers) allocates IP addresses.
+
+#### 2.3 Port Number
+
+*   **Layer:** Transport Layer (implicitly, for application-level connections).
+*   **Purpose:** Transfers messages between specific **processes** (running applications) on two hosts.
+*   **Format:** 16-bit number system, identifying up to 65,535 application programs.
+*   **Categories:**
+    *   **Well-known Ports (0-1023):** Allocated by IANA for common applications (e.g., HTTP, FTP, email).
+    *   **Registration Ports (1024-49,151):** Mostly used by servers for specific services (e.g., IRC 6667, Git 9418).
+    *   **Dynamic/Temporary Ports (49,152-65,535):** Primarily used by clients as temporary connection numbers.
+
+### 3. Internet Standards Organizations
+
+Several organizations establish and maintain Internet-related standards.
+
+*   **IETF (Internet Engineering Task Force):** Defines core Internet protocols (IP, TCP, UDP, HTTP, SSH, FTP, SMTP, POP3, IMAP).
+*   **ISO (International Organization for Standardization):** Global organization for intellectual, scientific, technological, and economic standards.
+*   **ITU-T (International Telecommunications Union - Telecommunication Standards Sector):** Responsible for telecommunication standardization (e.g., OSI reference model).
+*   **IEEE (Institute of Electrical and Electronics Engineers):** Develops national standards in the US, especially for networking (e.g., 802.3 Ethernet, 802.11 Wi-Fi).
+*   **EIA (Electronic Industries Association):** Unifies standards for dimensions, measurement, and labeling (e.g., TIA/EIA-568-B cabling).
+*   **W3C (World Wide Web Consortium):** Establishes web standards for the long-term development of the web (e.g., HTML, CSS).
+*   **OMA (Open Mobile Alliance):** Develops technical specifications for mobile data services.
+
+### 4. Operating System (OS) Fundamentals
+
+The Operating System is crucial for all electronic devices (computers, smartphones, etc.).
+
+#### 4.1 Overview of OS
+
+*   **Definition:** System software that efficiently manages a computer's limited hardware resources and provides an interface for users and applications.
+*   **Importance:** Without an OS, even the best hardware is unusable; the OS allows users to interact with and utilize computer components.
+*   **Role:**
+    *   Controls computer resources.
+    *   Implements usage policies through scheduling.
+    *   Handles data exchange via input/output devices.
+    *   Manages exceptions or errors.
+*   **Key Purposes:**
+    *   **Abstraction:** Simplifies complex hardware by providing standardized Application Programming Interfaces (APIs) to applications.
+    *   **Virtualization:** Enables applications and users to share computer resources and use a single "virtual" computer.
+    *   **Management:** Optimizes computer resource performance while adhering to constraints.
+
+#### 4.2 Main Functions of OS
+
+The OS manages key hardware components through several core functions:
+
+*   **Process Management:**
+    *   **Process:** A running program; a unit of work that allocates, uses, and recovers resources (CPU, storage, files, I/O) to perform tasks.
+    *   **OS Tasks:**
+        *   Create and dispose of user and system processes.
+        *   Terminate and restart processes.
+        *   Facilitate process communication and synchronization.
+        *   Implement techniques to prevent deadlocks.
+*   **Main Memory Unit Management:**
+    *   **Main Memory (RAM):** The storage where the CPU fetches instructions and data. The CPU can only access data present in main memory.
+    *   **OS Tasks:**
+        *   Track and manage memory space and its users.
+        *   Decide which process occupies specific memory space.
+        *   Allocate and recover memory space for processes.
+*   **File Management:**
+    *   **Purpose:** To abstract the diverse physical characteristics of various storage media (e.g., hard disks, flash memory) into logical units called **files**.
+    *   **OS Tasks:**
+        *   Provide a consistent way for users and applications to store and access data, regardless of the underlying physical storage device.
+
+================================================================================
+ORIGINAL TEXT (First 5000 chars)
+================================================================================
+
+--- Page 40 ---
+Overview  of System Architecture )
+As shown in [Figure 13], these protocols specify communication  with the same protocol layers of other hosts
+connected  through a network.  For communication,  a header  for the exchanging  of data between  protocols  of the
+same layer with data downloaded  from the layer immediately  above are generally  required.
+As shown in [Figure 15], an application  layer can transmit  the user data through  a transport  protocol  TCP (or UDP),
+which is an end-to-end  protocol  connected  to the other host. It requires  a TCP header  (or UDP header).
+The transmission of user data, including a  TCP header, uses IP, which is a network  layer protocol  that has routing
+information  to the network  of the other host, and the IP head has the information.
+The network  layer considers  both the TCP header  and the user data received  from the transport  layer as data. The
+data link protocol,  which has the necessary  information  for physical  delivery  to other hosts in the same network,
+mostly uses Ethernet.  In that case, both the TCP header  and the user data, including  the Ethernet  header  with the
+necessary  information  and the IP header  downloaded  from the network  layer, are regarded  as data. It should be noted
+that each layer uses only the header  that corresponds  to the given function.
+Application  layer User Data
+Transport  Layer CP Headerjuua Ug BE ir.)
+Network  Layer IPHeader TCP Headers US=1g)b)-\«-)
+Datalink  Layer —_[Ethemet  Header| IP Header CP Headerfuma Ug BFir-]
+[Figure 15] Example  of Network  Protocol  Header  and Data Configuration
+03 Internet  Address  System
+Internet  users come across many terms related to numbers, such as a MAC address,  an IP address,  and a port
+number.  It is unnecessary  to memorize  these numbers,  but understanding  the numbers  helps figure out each layer
+protocol.  The MAC address,  IP address,  and port number  in the Internet  address  system  have the following  meanings:
+@ MAC address:  The MAC (medium  access control)  address,  or the address  system used by the data link layer, is used
+to transfer  frames between  the physically  connected  nodes. The information  is generally  stored on the LAN expansion
+card hardware,  called NIC. It is also called the physical  address  or Ethernet  hardware  address  (EHA). It is formed by48
+bits. The first 24 bits represent  the hardware  manufacturer's  unique ID, and the remaining  24 bits represent  the NIC-
+dependent  address.
+@IP address:  The IP address  is the address  system of the network  layer to transfer  datagram  between  two hosts/
+routers. It facilitates  data to be transferred  from the source node to the destination  node, through  multiple  Internet
+networks.  While the MAC address  is a physical address,  the IP address  is a logical address.  Existing IP addresses,  or
+M3 Overview  of System  Architecture  39
+
+
+--- Page 41 ---
+ESSENCE
+IPv4 addresses  based on the 32-bit address system, faced exhaustion  as Internet  use increased  rapidly worldwide.
+Although  the IPv6 address system based on 128 bits was introduced  to solve the problem,  IPv4 addresses  are still
+mainly used. Although  the IANA (Internet  Assigned  Numbers  Authority)  was responsible  for IP address  allocation  in the
+past, the ICANN (Intemational  Corporation  for Assigned  Names  and Numbers)  is currently  in charge.
+© Port number:  The port number  used to transfer  messages  between  two processes  (running  applications)  is responsible
+for the connection  between  the web browser  on user A’s computer,  shown in [Figure 10], and the webserver  program
+on myserver.com.  The 16-bit number  system  can identify  up to 65,535 application  programs.  The port numbers  from
+0 to 1023 are called well-known  ports and are allocated  by the IANA. Application  programs,  such as telnet and email,
+use it for sending  and receiving  data. The port numbers  from 1024 to 49,151 are called registration  ports and, like well-
+known ports, are mostly used by servers.  The Internet  chatting  protocol,  IRC (TCP port number  6667), and Git version
+control system (TCP port number  9418) are examples.  The port numbers  from 49,152 to 65,535 are mostly used as a
+temporary  number  by clients, and are called dynamic  ports or temporary  ports.
+04 Internet  Standard
+The IETF (Internet  Engineering  Task Force) is a leading  organization  responsible  for Internet-related  standards.  It
+defines the basic protocols  for Internet  transmissions,  such as IP, TCP, and UDP, as well as the most widely used
+protocols  in the Internet application  layer protocols,  such as HTTP. SSH, FTP, SMTP. POP3, and IMAP. <Table 3> lists
+other international  organizations  responsible  for Internet-related  standardization.
+{Table 3) Internet  Standardization  Organizations
+Standardization
+OrganizationEnactment  StandardDescription (Example)
+* International  Organization  for Standardization
+ISO + An international...

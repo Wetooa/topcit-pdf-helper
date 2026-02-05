@@ -1,0 +1,23 @@
+Database
+>> Recent  trends and major issues
+Most of the databases  we experience  in the field are running  in a multi-user  environment.  Therefore, the
+atomicity  of transactions  should be guaranteed  by controlling  interactions  among transactions  when
+multiple  transactions  are executed  in a database  simultaneously.  To this end, concurrency  control methods
+are used. Most of the DBMSs  we use have these methods.  Therefore,  if transactions  are wrongly  designed
+due to a lack of understanding  of the concurrency  control  technique,  such as the locking  mechanism  applied
+to the DBMS, problems  may occur due to a transaction  delay, such as processing  performance  degradation,
+deadlock,  and so on. And users who are accustomed  to the fast processing  of information  systems  may
+raise complaints  about the service  delay.
+The recent DBMS has several advanced  features  such as a function  that internally ensures  the isolation
+of transactions  and considers  concurrent  processing  performance  or the inclusion  of an algorithm  that
+detects  and handles  deadlocks  quickly. However,  those features  are minimal  and provisional  measures,  not a
+fundamental  solution.  Therefore,  the concepts  of transaction,  concurrency  control, and deadlock  need to be
+clearly understood  in order to develop  a system  that delivers  high performance  in a multi-user  environment.
+1. To be able to explain the concept  and characteristics  of a transaction.
+2. To be able to explain the transaction-commit  operation and the rollback operation  for aborting  a
+transaction.
+3. To be able to explain the purposes,  necessity,  and techniques  of concurrency  control.
+4 To be able to explain 2-phase  locking  (2-PL).
+5. To be able to explain and apply a transaction  isolation  level.
+6. To be able to explain  the causes  of and solutions  to transaction  deadlocks.
+M2 Database  121

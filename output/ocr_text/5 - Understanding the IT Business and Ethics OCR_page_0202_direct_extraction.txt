@@ -1,0 +1,46 @@
+Understanding  the IT Business  and Ethics )
+<Table 102> Criteria  for obligated  persons
+Classification Criteria  for obligated  persons
+A person  who has obtained  permission  pursuant  to Article 6 (1) of the Telecommunications  Business
+ISP Act and provides  information  and communications  network  services  in Seoul and all metropolitan
+cities.
+ioc An integrated  information  and communications  facility  operator  pursuant  to Article 46 of the
+Telecommunications  Business  Act
+Among  those with annual sales or revenue  of 150 billion won or more, the following  applies:
++ Superior  General  Hospitals  pursuant  to Article 3-4 of the Medical  Service  Act
++ Schools  pursuant  to Article 2 of Higher  Education  Act with more than 10,000 enrolled  students  as
+A person who meets of December  31 of the previous  year
+any eset A person with a sales of 10 billion won or more in the previous year (or the previous business  year in
+the case of a corporation)  in the information  and communications  service  sector
+Those with more than 1 million daily users of information  and communications  services  in the 3
+months  immediately  preceding  the previous  year
+In addition,  companies  and institutions  that do not meet the criteria, but voluntarily  establish  and operate  an
+information  protection  and personal  information  protection  management  system  are classified  as voluntary  applicants
+and can apply for certification  and receive  certification  examination.
+Whether  institutions  and companies  have a personal  information  protection  management  system  and systematically
+and continuously  perform protection  tasks, and grant certification  when the standards  are satisfied,  are objectively
+examined.
+1.1 Establishment  ofmanagement  system — 12 Risk management
+s “a
+1.4 Inspection  and improvement / ‘ 1.3 Operation  of
+of management  system / \ [ management  system
+| 1, Establishment
+and operation  of
+\ management  system }
+\ (16) /
+2. Requirements  for protection  measures  (64) TM —3 Requirements  for each stage of
+personal  information  processing  (22 items)
+2.1 Palicy, organization,  asset  management.
+22 Personal  security 3.1 Protection  measures  for collection  of personal  infomation
+23 Extemal  security 3.2 Protection  measures  for possession  and use of personal
+2.4 Physical  security information
+25 Certification  and authority  management. 33 Protection  measures  for provision  of personal  information
+26 Access  control 3.4 Protection  measures  in case of destruction  of personal
+27 Encryption  application information
+28 Information  system  introduction  and development  security 3.5 Protection  of data subject  rights
+29 System  and service  operation  management
+2.10 System  and service  security  management
+2.11 Accident  prevention  and response
+2.12 Disaster  Recovery
+[Figure  90] Personal  information  protection  management  system
+M5 Understanding  the IT Business  and Ethics 201

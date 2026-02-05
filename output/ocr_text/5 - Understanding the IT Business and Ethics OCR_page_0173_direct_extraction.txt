@@ -1,0 +1,39 @@
+ESSENCE
+important  and the collection  of data that was previously  difficult  to collect will become  possible.  Consequently,  the
+production  of customized  personal  contents  will become  possible,  opening  the floodgates  to new types of services.
+The problems  facing wearable  devices  are short battery  life which severely  restricts  the user's ability to appreciate  the
+value of always  wearing  the device, limited content  that can be implemented  in a small screen, and the lack of killer
+content  or services  and the lack of a game changing  function.  However,  wearable  devices  will be able to create core
+values if they converge  with loT, cloud computing,  Big Data, and mobile devices.  The sensing  functions  in wearable
+devices  can be used for gathering  Big Data, Big Data (cloud) analysis can be carried out on the gathered  data, the
+implications  from the analysis  results could be used in customized  services  for users. Also, new business  models like
+smart home service  based on loT, O20 commerce,  and smart car service  will create new markets  and expand  existing
+markets.
+© Self-Driving  Cars
+Self-driving  cars are defined as "automobiles  that can drive safely on their own by recognizing  the surrounding
+environment  on their own without  the driver's intervention,  and can drive safely by recognizing  risks." To be more
+precise, self-driving  cars incorporate  ICT technologies  like software,  Al, communication  and sensor  technologies  to
+minimize  human control  while it is being driven safely.
+The emergence  of self-driving  cars is due to the following  developments:
+- IT companies  and car makers  are accelerating  their cooperation  to bring latest ICT technologies  to cars.
+- The rapid growth of the electrical  parts and telematics  market in response  to demand  for better safety and
+convenience
+- Improvements  in network  and Internet  technology  allow cars to be recognized  as new mobile space and offer new
+UXs to drivers
+<Table  94>Levels  of Autonomous  Driving
+Levels Description Sub Functions
++ Driver always  monitors  the situation  and controls * Traditional  car in which the driver has
+No Automation safety-sensitive  functions  such as brakes, speed to be fully aware,  judge and control
+control,  and steering. the driving.
+. . + Driver has control of the vehicle except  for someFunction-Specific fi d Id hi f ; ,Automation functions during normal driving or when collision is driving assistant  system that
+imminent. provides information  needed for
++ Two or more controls operate harmoniously  in a driving and supports  safe driving
+Combined-Specific driving environment.  But the driver still has the and parking by giving wamings  and
+Automation right to control the vehicle, taking responsibility  for control.
+monitoring  and safety.
++ Under  specific  traffic environment,  the vehicle + Infrastructure-linked  autonomous
+. a. controls  all safety  functions. driving  where cars can be
+Limited  Self Driving + The vehicle has monitoring  authority but autonomously  driven on roadsAutomation : : : .
+whendriver  control is required,  an alarm is sounded equipped  with infrastructure  such as
+the driver takes over the control intermittently. automatic  driving roads.
+172 TOPCIT  ESSENCE

@@ -1,0 +1,35 @@
+ESSENCE
+03 Impact  of Database  Design in the Project  Lifecycle
+Data modeling  can be clearly defined in the project lifecycle because  it is separated  into the analysis phase and the
+design phase. Usually, business-oriented  logical data modeling  is performed in the analysis  phase, and physical  data
+modeling  is performed  by considering  hardware  and performance  in the methodology,  based on information  engineering
+or structural  models, In the spiral model, the logical data model and the physical  data model are performed  on both sides
+according  to the size of the task in the analysis  and design phase. The logical data model is performed  more frequently
+in the analysis  phase.
+Description  of the project  lifecycle  and database  design
+‘ : - The left-hand  side corresponds
+mireirinonisyseem  Dales to the database design and
+~ Mleration?  ) ton/ build field, whereas  the right-
+igration Fieee | DB migration AP installation hand side corresponds  to the
+A A application  design and build
+field.
+T Verification an
+fest DB tuni <<m ——___  Test rm ue a -In general, physical data
+modeling  is performed  in the
+planning  or analysis  phase,
+$F neat conceptual  data modeling  in
+: DB build, change, Verification AP . °Design ] management S > development the analysis phase, and logical
+data modeling  in the designA A
+phase.
+Design Physical data So eeuon AP design8 , modeling modelling . -In real projects, conceptual/
+AA logical data modeling  is
+mostly performed  (without
+ms |/Logald , conceptual  data modeling)  in
+‘ ‘onceptual  / Logical data rocess .[ Analysis ] modelling < — > modeling the analysis phase.
+Verification
+Information  strategy(ISP)  / Process  improvement(PI)  / EA
+[Figure 10] Project  lifecycle  and database  design
+As a project is implemented  by separating  it into the data axis and the application  axis, matters  identified  by both sides
+are mutually  verified  in order to increase  the completeness  by phase. However,  the object-oriented  concept  is performed
+in an integrated  way without  separating  data modeling  and processing  modeling,  because  modeling  is performed  by
+46 TOPCIT  ESSENCE

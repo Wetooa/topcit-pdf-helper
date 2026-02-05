@@ -1,0 +1,33 @@
+ESSENCE
+04 Integrated  Development  Environment  (IDE)
+A) Concept  of an integrated  development  environment  (IDE)
+An Integrated  Development  Environment  (IDE) is a type of software  used for development  purposes  that
+provides  an environment  in which tasks related to all program  development  can be handled  with one software,
+such as coding,  debugging,  compilation,  and distribution.  Separate software  had to be used in the traditional
+development  environment  in order to use such diverse functions  as the compiler,  text editor, debugger,  and
+remote server accessor.  However, the IDE bundles  all these functions  into a single tool and provides  it via an
+interactive  interface.  Visual Studio, Eclipse, and Xcode are popular IDEs that support  various programming
+languages.
+<Table 27> Components  of the integrated  development  environment  (IDE)
+Component Description
+Editor A tool used to input and edit codes for programming.
+A tool used to convert  code written  in programming  languages  into machine-readable  code, such
+as the compiler,  interpreter,  linker, etc.
+Debugger A tool for detecting  errors while running  a program.
+Project  management A tool that is used to manage  a project  by providing  a system  of collaboration  system  between  teams.Build tool
+B) Cl(Continuous  Integration)
+@ Concept  of Cl (Continuous  Integration)
+Continuous  Integration  (Cl) is a software development  activity  that frequently  integrates  the results of a
+team composed  of several members.  Each developer  performs  automated  build and testing,  and then merges
+changes  to the code in the central repository.  Codes are merged several times per day (at least once per day)
+after quickly  checking  and verifying  any errors during automation  build.
+From a software  engineering  perspective,  Cl is performed  to continuously  control quality during software
+development.  Cl aims to minimize  the time required  to improve  software  quality and distribution  by replacing
+the classic method  of quality  control.
+@ Necessity  of Cl (Continuous  Integration)
++ Builds configuration  management.
++ Provides  an environment  in which developers  can concentrate  on development  activities  only.
++ Detects  and eliminates  problems  that may arise when integrating  codes in advance.
++ Supports  a development  process (agile technique,  etc.) that receives  feedback  frequently  based on frequent
+deployment.
+98 TOPCIT  ESSENCE

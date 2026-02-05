@@ -1,0 +1,33 @@
+ESSENCE
++ Characteristics  of blockchain
+Unlike traditional  trading  methods,  transaction  ledger  data are recorded  and managed  and verified in block units on all
+nodes in the network.
+Traditional Blockchain
+trading trading
+aN AA Ror R)
+Fh ws?
+Q ‘ares 2 cy A)
+[Fig.63]  Blockchain  trading
++ Decentralized
+A system  that by itself proves and guarantees  the integrity  of data by having all the nodes on the network  working
+together  without  the presence  of a central server (a central aggregator).
++ Improved  security
+Security  is greatly improved  because  a transaction  is accepted  only after the consent  of more than half of all nodes
+on the network  is obtained.
++ Transparency  of transactions
+The details  of transaction  record are disclosed  because  all nodes participating  in a network  share their ledgers.
++ Enhanced  safety
+Because  of the distributive  nature of the network,  even if an error or abnormality  appears  on some participating
+nodes, the network  can easily recover  itself
++ Improved  economics
+Because  there is no central server, centralized  management  costs and financial  transaction  costs can be reduced.
++ Protection  of personal  data
+The burden of collecting,  security  and leaking  of development  related data caused by system error or hacking  of the
+central system  is reduced.
+1. Awants  to transfer  money  to B 2. The transaction  data are generated 3. The block is shared  with network
+online as a block participantsB a,9B a ;
+Oo =
+4 Participants  conduct  cross-validation  | { 5. The block with validated  transaction 6. Money transfer  from A to B is
+on the transaction  data data is registered  on the chain completeBAoe  | ee Be
+[Fig.64]  Concept  diagram  of Blockchain  transactions
+150 TOPCIT  ESSENCE

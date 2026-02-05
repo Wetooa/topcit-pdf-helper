@@ -1,0 +1,35 @@
+Understanding  the IT Business  and Ethics )
++ Characteristics  of Open API
+- Using the open API, people can gain access  to the functions  of a website.
+- New service  can be designed  by connecting  several APIs.
+- Key factor in the emergence  of mashup  sites? .
+- People  who were  just users of a service  can become  service providers.
+<Table69>Component  elements  of Open API
+Category Description
+What could be Open API Service  that an API provides  to users (weather,  traffic, public information,  map, etc.)
+Server: XML, SOAP, Blooging  API
+How to ‘open’ an API Ciient: XML, Javascript,  DOM, XML Http Request, AJAX, etc.
++ REST (Representational  State Transfer)  API
+REST API is currently  the most widely used Open API.
+REST API is a network-based  architecture  published  in 2000 by Roy Fielding,  one of HTTP's leading authors, to
+properly  utilize the superiority  of the Web (HTTP). REST is a web service architecture  based on the Resource
+Oriented  Architecture  (ROA) and it is composed  of HTTP URI + HTTP Method.  HTTP URI is used to specify  the target
+resource,  and the designation  of actions  for that resource  utilizes the HTTP Method.
+<Table  70> Examples  of REST API Method
+Method Role
+POST Generates  the relevant  resource.
+GET Search  the relevant  resource  and extracts  information.
+PUT Corrects  the relevant  resource.
+DELETE Deletes  the relevant  resource.
+B) Mobile service
+@ Location  Based Service
+Location-based  services  are growing  together  with the smartphone  market, which has seen exponential  growth
+since 2010, and are evolving  into a broad category  of services  by merging  location information,  commerce,  and
+entertainment.  Due to the mobile Big Bang, the availability  of location  detection  capable  devices greatly increased
+and the location  determination  platform  became  open. This led to the rapid evolution  of location-based  services  (LBS)
+In the case of location  detection  mechanism  used in smartphones,  location  detection  technologies  like base stations
+Cell-ID, GPS, and Wi-Fi were combined  with motion sensor-based  precision  guess navigation.  Furthermore,  by
+adopting  maps like Google Map and Apple Map, location-based  services  began to be used for many general purposes.
+9 Mashup site -Websites  that use APIs for product  information,  map information,  etc. from Microsoft,  Google, Yahoo, Amazon,  and
+others and combines  them with their own user interfaces  to come up with new services.
+M5 Understanding  the IT Business  and Ethics 139

@@ -1,0 +1,32 @@
+Database )
+@ The instance  object of a class corresponds  to the record of a table.
+@ The attribute  of a class corresponds  to the column  of a table.
+@ Class operation  has no corresponding  element  and is implemented  in the application  program.
+B) Conversion  of the class relation  into a relational  relationship
+@ Association
++ 1: Mrelationship  - the primary  key on side 1 is mapped  on to the foreign key on side M.
++ 1:1 relationship  - the primary  key of the side that is less frequently  accessed  is mapped  on to the foreign key of the
+side that is most frequently  accessed,  or the two classes  are combined  into one class.
++ M: N relationship  - a new class corresponding  to the relationship  is created.
+@ Aggregation
+The table concerned  is referenced  using the foreign key.
+@ Composition
+Implementing  using a constraint
+@ Generalization
++ The super class and each sub-class  are mapped  on to separate  tables.
++ (Or) A super-class  has all attributes  of the sub-class.
++ (Or) A sub-class  has the attribute  of the super-class.
+09 Integrity  and Key
+Data integrity refers to the need to protect data from lost updates  of data to maintain  their accuracy,  validity,
+consistency,  and stability.  Three to five types of integrity  are defined depending  on the viewpoint.  Three types of
+integrity  include entity, referential,  and domain integrity.  Five types of integrity  are also defined by separating  entity
+integrity  into entity integrity  and key integrity,  and by including  user-defined  integrity.  To main integrity  in this way,
+the primary  and foreign keys should be carefully  selected  and used.
+A) Integrity
+@ Domain integrity:  Domain integrity  means to ensure the integrity  of the field in a table. Data types, allowing  a null
+value, etc. can be defined  and used. The attribute  value has atomicity  and should be a value defined  in the domain.
+@ Key integrity:  All records  in a table should be identifiable  from each other.
+© Entity integrity:  All tables must have a primary  key, and each primary  key must have a unique  value (but not null).
+@ Referential  integrity:  Data in two tables in a reference  relationship  must always have consistent  values. A foreign key
+must be a null value or a value that exists in the primary  key of the table referenced  by the foreign key. If there is a
+M2 Database  65

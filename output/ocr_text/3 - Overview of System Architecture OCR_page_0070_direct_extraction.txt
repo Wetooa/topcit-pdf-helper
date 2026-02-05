@@ -1,0 +1,29 @@
+Overview  of System Architecture )
++ Immediate  addressing  mode
++ Displacement  addressing  mode: Relative  addressing  mode, indexed  addressing  mode, and base-register  addressing
+mode
+E) Locality
+The locality is a tendency  in which programs  intensively  refer to a specific  area in the moment,  rather than uniformly
+accessing  information  in the memory  device.
++ Temporal  locality:  Recently  accessed  programs  or data are more likely to be accessed  again in the near future.
++ Spatial locality:  Data stored adjacent  to the storage  device is more likely to be accessed  continuously,
++ Sequential  locality: Instructions  are fetched  and executed  in the order in which they were stored, unless branched
+(about  20%).
+04 1/0 Device
+A) Concept  of I/O device
+The device is necessary  to perform an input operation  that stores data to be processed  by the CPU in the memory
+unit, as well as an output  operation  that transfers  the processing  results  from the main memory  to an output  medium.
+B) I/O controller  structure  and addressing  methods
+An /O controller  is necessary  to process  inputs and outputs,  as shown in [Figure 36], and it plays the following  roles:
++ I/O device control  and timing  coordination
+* Communication  with the CPU
+* Communication  with the I/O device
++ Data buffering
++ Error detection
+Data {0  }
+Status/Control  Register |<— L >
+Oo ‘ }
+I! Status Signali /O }— >| Control }«—_  Devi }
+Timing and F . Coa,Address Bus 8 Circuit Control Signal | ;
+Control  Signal Control  Circuit > }
+M3 Overview  of System  Architecture  69

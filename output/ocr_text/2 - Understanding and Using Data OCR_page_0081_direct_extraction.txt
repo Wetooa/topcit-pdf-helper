@@ -1,0 +1,43 @@
+ESSENCE
+Denormalization _Type technique Description
+Adding  a duplicate  table: Performance  is improved  by removing  remote  joins, and by
+duplicating  the same table structure,  if the task or server  is different.
+Table Adding  a statistics  table: Performance  is improved  by automatically  performing  SUM, AVG, etc.
+denormali- Adding a table n  advance. . : 5 : 5 .zation Adding  a history  table: The record in the master  table is placed in the history  table in duplicate.
+Adding  a partial table: A partial table is a separate  denormalized  table that collects  frequently
+used and concentrated  columns  frim among  all the columns  of one table, in order to reduce
+disk |/O.
+A duplicate  column  is added to prevent  performance  deterioration  due to join operations,  that
+is, to reduce  join operations.
+Duplicating  the frequently  used column.
+Branch Sales person
+Branch  number Branch  number  (FK)
+Branch name Employee  ID
+Branch  location Name
+Fax number } Address
+Branch  location
++ Shortening  the query path
+Customer
+Adding  a Customer  ID
+duplicate Customer  name
+column Address
+Phone number
+Order list
+Column Order number
+denormali- Product number
+zation - -tee  List quantity
+Order number rz
+Customer  ID ;
+Order quantity Delivery
+Delivery  number
+Order number
+Product  number
+Delivery  method
+Date and time
+Customer  ID
+Values in are calculated  advance  and stored in a column  to prevent  performance  degradation
+caused by calculation  when a transaction  is processed.
+Adding  a Order Order list . Products
+derived  column Order number Order number Order number
+Total order amount Product ——  y | Unit price
+80 TOPCIT  ESSENCE

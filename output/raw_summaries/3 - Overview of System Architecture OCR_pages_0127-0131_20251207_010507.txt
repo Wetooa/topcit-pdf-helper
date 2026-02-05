@@ -1,0 +1,197 @@
+LEARNING GUIDE: Pages 127-131
+Generated: 2025-12-07 01:05:07
+PDF: 3 - Overview of System Architecture OCR
+
+================================================================================
+LEARNING GUIDE
+================================================================================
+
+Here is a simplified, easy-to-read learning guide derived from the provided text:
+
+---
+
+## Learning Guide: System Architecture & Cloud Computing Fundamentals
+
+### 1. Fault-Tolerant Systems
+
+**What it is:** A system designed to continue operating its intended functions even if some of its parts fail.
+*   **How it works:** It can withstand component failures. However, if more components fail, more functions become unavailable. A critical failure will eventually shut the system down.
+
+**Steps to Handle Faults (Troubleshooting):**
+1.  **Fault Detection:** Identify which module caused the fault using comparative logic.
+2.  **Fault Diagnosis:** Determine if the fault is temporary (transient) or permanent (hard). If permanent, exclude the faulty module.
+3.  **Fault Isolation:** Prevent the error from spreading to other parts of the system.
+4.  **Fault Recovery:** Remove the faulty module, then restore and reconfigure the system.
+
+**Fault-Tolerant Techniques:**
+
+*   **General Techniques:**
+    *   **Checkpoint Technique:** Detects errors in the source code that might cause a fault.
+    *   **Protocol Monitoring:** Applies fault tolerance by monitoring and tracking communication protocols.
+*   **Hardware Tolerant Techniques:**
+    *   **Triple Modular Redundancy (TMR):** Three or more processors perform the same operation simultaneously with the same inputs to ensure accuracy.
+    *   **RAID (Redundant Array of Independent Disks):** Achieves fault tolerance through disk mirroring and spreading parity bits across multiple disks.
+    *   **Duplication with Comparison:** Uses redundant hardware for fault detection by comparing outputs.
+    *   **Standby Sparing:** Keeps spare hardware ready to take over if a primary component fails.
+    *   **Watchdog Timer:** A timer that periodically resets the system if it detects a malfunction.
+    *   **Checkpointer:** Allows a system to restart from a previous stable point (checkpoint) if a fault occurs.
+*   **Software Tolerant Techniques:**
+    *   **Recovery Block:** Rolls back and retries an operation on a single processor if it fails.
+    *   **Conversation:** Coordinates processing between multiple processors to ensure consistent results.
+    *   **Distributed Rollback:** A rollback technique used in systems spread across multiple machines.
+
+---
+
+### 2. Disaster Recovery System (DRS)
+
+**What it is:** A comprehensive plan and system to minimize the business impact of a disaster. It involves setting up all or part of the IT infrastructure in a different location to enable quick recovery.
+
+**Types of Disaster Recovery (DR) Centers:**
+
+| Type          | Description                                                                                                                                                                                          | RTO (Recovery Time Objective)   |
+| :------------ | :--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | :------------------------------ |
+| **Mirrored Site** | An exact replica of the main data center (facilities, IT, network) in a remote location. Both sites are active simultaneously (active-active).                                                 | **Immediate**                   |
+| **Hot Site**    | An exact replica of the main data center (facilities, IT, network) in a remote location, kept in a standby state (active-standby). It switches to active if the main site fails. Data is kept updated via real-time mirroring. | **Within 4 hours**              |
+| **Warm Site**   | A DR center with only crucial IT resources. Critical components from the main center are transferred and set up at the DR center during a disaster. Only data is kept in the remote location.       | **Days to Weeks**               |
+| **Cold Site**   | A remote location with minimal resources like power, communication, and network. Computer components and network are procured and established only *after* a disaster occurs.                       | **Weeks to Months**             |
+
+**Disaster Recovery Goals:**
+The two most critical factors for a DR system are:
+*   **RTO (Recovery Time Objective):** The maximum tolerable downtime. It's the target time to restore business operations to normal after a disaster.
+*   **RPO (Recovery Point Objective):** The maximum tolerable data loss. It's the amount of data (often measured in time, e.g., 1 hour of data) that can be lost during a disaster.
+
+---
+
+### 3. Cloud Computing
+
+**Recent Trends & Importance:**
+*   **Shift:** Traditional IT (mainframes, UNIX) is moving rapidly to cloud computing.
+*   **Characteristics:** Virtualization, immediate availability, and linear scalability (scale-out).
+*   **Driving Factors:** Rapid growth of social media, internet services, big data, and IoT.
+*   **Necessity:** Cloud services are now essential, not optional, underpinning new technologies like AI, big data, and blockchain due to their scalability and speed.
+*   **Evolution of Virtualization:** Moving from hypervisor-based server virtualization to lighter, faster container-type virtualization (e.g., Docker, Kubernetes).
+
+**What is Cloud Computing?**
+*   **Purpose:** Developed to efficiently use computer capacity and flexibly respond to uncertain service demands.
+*   **Definition:** Instead of owning and managing IT resources, users access computing resources (servers, storage, networks, applications) over the internet, in a virtualized form, when they need them, and pay based on usage.
+*   **Key Idea:** Resources are available via a network, abstracted (users don't need to know complex internal details), allowing work from anywhere.
+
+**Benefits of Cloud Services:**
+*   **Costs:** Reduces initial capital expenditure (CAPEX), potentially increases operating expenditure (OPEX), leading to lower total cost of ownership (TCO).
+    *   *CAPEX:* Money spent on assets for future profits.
+    *   *OPEX:* Costs of running a business day-to-day.
+    *   *TCO:* Total cost over a system's lifespan (investment + maintenance).
+*   **Time:** Shortens development time and product development cycles.
+*   **Operation:** Decreases the need for operating personnel and improves resource efficiency.
+*   **Product:** Enhances product integration.
+
+**Official Definitions (Korea Telecommunication Association - TTA):**
+*   **Cloud Service:** An on-demand outsourced IT service that provides a user-centered cloud computing environment.
+*   **Cloud Computing:** A computing environment that leases IT resources over the Internet, using virtualization and distributed processing technology, with usage-based fees.
+
+**Cloud Computing Compared to Other Technologies:**
+
+*   **Cloud Computing vs. Grid Computing:**
+    *   **Similarities:** Both use distributed computing and provide virtualized resources.
+    *   **Differences:**
+        | Feature            | Grid Computing                                      | Cloud Computing                                     |
+        | :----------------- | :------------------------------------------------- | :-------------------------------------------------- |
+        | **Computer Location** | Geographically scattered, managed by different organizations | Geographically scattered, but managed by a central organization |
+        | **Configuration**  | Heterogeneous (mixed types)                        | Mostly homogeneous (same models)                    |
+        | **Standardization** | Existing organizations, defined standards          | No specific standardization organizations/standards |
+        | **Interconnectivity** | Important                                          | Not explicitly considered                           |
+        | **Usage**          | Highly parallel applications (e.g., scientific calculations) | General-purpose applications (e.g., web apps)       |
+
+*   **Cloud Computing vs. Utility Computing:**
+    *   **Similarity:** Both charge for resources used.
+    *   **Relationship:** Cloud computing developed the abstraction of computing resources, building upon the "pay-as-you-go" model of utility computing.
+
+**Types of Cloud Computing (by Service Type):**
+Cloud services are commonly categorized into three main types:
+*   **IaaS (Infrastructure as a Service):** Provides fundamental computing infrastructure resources (virtual servers, storage, networks) as a service over the Internet. You manage the operating system, applications, and data.
+
+================================================================================
+ORIGINAL TEXT (First 5000 chars)
+================================================================================
+
+--- Page 127 ---
+ESSENCE
+02 Fault-Tolerant  System
+A) Fault-tolerant  system
+A fault-tolerant  system can continuously  perform  the functions  specified in the design, even if a system part fails. A
+fault-tolerant  system cannot use certain functions  when a component  fails. When components  continue  to fail, the
+unavailable  functions  gradually  increase,  and the system  shuts down when a critical  failure occurs.
+[Table 23] Troubleshooting  Steps
+Step Description
+Fault detection - Analyzes  which module  has caused  fault, through  comparative  logic.
+Fault diagnosis- Determines  whether  the fault is temporary  (transient)  or permanent  (hard) and excludes  the hard
+module  from an operation.
+Fault isolation - Blocks  the spread of errors by fault.
+Fault recovery - Eliminates  the module  that caused  the fault in order to recover  and reconfigure  the system.
+[Table 24] Fault-Tolerant  Technique
+Technique Type Description
+General  faulttolerantCheckpoint  technique Error detection  for source  code that may cause a fault
+Application  of fault-tolerant  technique,  through  protocol  monitoring  andtechnique Protocol monitoring -
+tracking
+Triple modular Configuration  of modules  in triple redundancy  so that three or more
+Redundancy processors  perform the same operation  for the same inputs
+Hardware  tolerant |_RAID Fault tolerance  through  disk mirroring  and distributed  storage  of parity bits
+technique Duplication  with Comparison Hardware  redundancy  for fault detection
+Stand by Sparing Use of spare hardware  for fault detection
+Watchdog  Timer Initialization  with periodic  timer operation
+Checkpointer Rerun from the point of the checkpoint,  when there is a fault
+Software  tolerant Recover  block Rollback  and retry of a single processor
+technique Conversation Processing  between  multiple processors
+Distributed  rollback Rollback  technique  in a distributed  environment
+03 Disaster  Recovery  System  (DRS)
+A) Definition  of DRS
+DRS is an overall plan and system to minimize  the impact of a disaster  on a business,  by locating all or part of the
+information  system  infrastructure  in a location  different  from the disaster  point,then  quickly  recovering  from a disaster
+126 TOPCIT  ESSENCE
+
+
+--- Page 128 ---
+Overview  of System Architecture )
+when it occurs.
+[Table 25] DR Center  Types
+Type Description RTO
+- Construction  of the same facility, IT devices,  and network  resources  as the main center  in a
+Mirrored  site remote  place Immediate
+- Real-time  simultaneous  services  in the active-active  state
+- Construction  of the same facility, IT devices,  and network  resources  as the main center  in a
+remote  place Within 4
+Hot site - Standby  state maintained  (Active-standby) hours
+- Switching  the remote  system into the active state at the time of a disaster  at the main center
+- Keeping  data up to date, through  synchronous  or asynchronous  real-time  mirroring
+- Placing  of only crucial IT resources  at the DR center bays-
+Warm site - Transferring  of critical components  in the main center  to the DR center  for operation  at the
+time of the disaster weeks
+- Only keeping  data in the remote  location,  but not IT resources,  for services  or only keeping
+Cold site minimal  resources,  such as power, communication,  and network Weeks  -
+- Replacing  the failed system by procuring  computer  components  and establish  a network  at months
+the time of disaster
+B) Disaster  recovery  goal
+The most important  factors  to consider  when implementing  a DR system are RTO and RPO. RTO represents  the time
+required  to return to normal operation,  when a disaster  or failure occurs in the operating  system.  RPO represents  an
+indicator  of tolerable  data loss, i.e, the amount  of data that can be lost.
+[Table 26] RTO and RPO
+Type RTO
+RPO Data loss converted  into time at the time of disaster
+RTO Maximum  time to allow downtime
+M3 Overview  of System  Architecture  127
+
+
+--- Page 129 ---
+ESSENCE
+>> Recent  trends and issues
+Conventional  IT environments,  based on high-performance  servers represented  by mainframes,as  well as
+UNIX servers, are rapidly transforming  into cloud computing  environments  characterized  by virtualization,
+immediateness,  and linear scalability  (scale-out).  The importance  of cloud computing  is increasing,
+particularly  with the rapid growth of SNS and Internet  services,  and big data and loT become  keywords
+of IT. Understanding  cloud computing  is essential  in order to respond  quickly to rapidly changing  business
+environments  and to provide  an IT environment  with continuous  scalability.
+>> Learning  objectives
+1. To be able to distinguish  and explain the characteristics,  concepts,  and types of cloud computing.
+2. To be able to explain virtualization  technologies  and components  that are the basis of cloud computing,
+3. To be able to distinguish  types of server virtualization  technologies  for cloud computing  and explain the
+di...

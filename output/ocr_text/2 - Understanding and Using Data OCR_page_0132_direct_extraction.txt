@@ -1,0 +1,33 @@
+Database )
+01 Concept  of Database  Failure  and Recovery
+A) Definition  of data recovery
+Data recovery  refers to the restoration  of the consistency  and integrity  of a database  before the occurrence  of an
+unexpected  (database)  failure while operating  the database.
+B) Types of database  failures
+<Table 54> Types of database  failures
+Type Main content
+Transaction + Logical error: A transaction  cannot be completed  due to an internal error.
+failure + System error: An active transaction  is terminated  by force due to error conditions  such as deadlock.
++ Failure  of power, hardware,  software,  etc.
++ Checks  integrity  to ensure that the stored contents  are not affected  by system  failure.
++ When a part or all of the disk storage  is broken.
++ Re-executes  transactions  (redo) that were completed  after dumping,  using the most recent  dump and log.
++ Occurs  due to the users’ lack of understanding  of the database.
++ DBA’s mistakes  made while managing  the database.System  failure
+Disk failure
+User failure
+C) Basic principles  of database  recovery:  Principle  of information  redundancy
+@ Archive  or dump: Copy and store a database  to another  storage  device.
+@ Log or  journal:  Record  the old values and new values of changing  data each time a database  is changed.
+D) Types of database  recovery  actions
+@ Redo: Archive  copy + log => Status after commit
++ If the contents  of the database  itself are damaged,  the most recent copy is loaded, and any changes  made after
+making  the copy are read from the log and executed  again so that the contents  of the database  can be restored.
++ This corresponds  to the completed  transaction  at the time of failure occurrence.
++ Changed  values are stored in a disk (forward  recovery)  by executing  the write operation  again.
+@ Undo: Log + backward  cancellation  operation  => Start status
++ If contents  that are being changed  or have been changed  cannot be trusted even though the contents  of the
+database  itself have not been damaged,  the database  is restored  to its original state by cancelling  all changes.
++ This corresponds  to the transaction  in progress  at the time of failure occurrence  (incomplete  transaction).
++ Previous  values are restored  by cancelling  the write operation  (backward  recovery).
+M2 Database  131

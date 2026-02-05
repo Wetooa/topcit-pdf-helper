@@ -1,0 +1,22 @@
+B) Changes  in SQL and the characteristics  of SQL3 105
+02 Data Definition  Language  (DDL) 106
+A) Types of data definition  language 106
+03 Data Control  Language  (DCL) 107
+A) Roles of the data control language 107
+B) Types of data control languages 107
+04 Data Manipulation  Language  (DML) 108
+A) Basic DML operations 108
+B) Aggregate  DML operations 108
+C) Advanced  DML join operations 109
+X. Database  Query  Application 111
+01 Stored Procedure 113
+A) Definition  of the stored procedure 113
+B) Strengths  and weaknesses  of the stored procedure 113
+C) Strengths  of the stored procedure 113
+D) Shortcomings  of the stored procedure 113
+02 Embedded  SQL 113
+A) Definition  of embedded  SQL 113
+B) Characteristics  of embedded  SQL 113
+C) Embedded  SQL cursor 114
+03 Dynamic  SQL 115
+M2 Database  13

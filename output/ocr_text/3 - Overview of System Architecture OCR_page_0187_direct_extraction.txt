@@ -1,0 +1,22 @@
+ESSENCE
+<$£§.  Qo __ ACK 2
+Window  size  = 3
+Window  size = 3 oo
+Send 1
+Window  size = 3 rs
+Send 2
+Window size  = 3 Packet 3 is Dropped
+Send 3 ACK 3
+Window size  = 2
+[Figure 134] Example  of Packet  Sending  and Receiving  by Sliding  Window  Protocol
+Sliding Window
+[Figure 135] Concept  of Sliding  Window  Protocol
+{Table 62) Sliding Window  Protocol  Open/Close  Operation
+Operation Description
+; + Means that an ACK has arrived from a sender, and the window's  right boundary  moves  to the right.Open operation a
++ More data can be transmitted  as it increases.
+. + Means  that the data (byte) is transmitted,  and the windows  left boundary  moves  to the right.Close operation
++ The sender  side does not have to intervene  with this data any longer.
+The sliding window  protocol  uses the receiver  window  (RWND)  and the congestion  window  (CWND).  The window  size
+is the lesser of the RWND and CWND.
+186 TOPCIT  ESSENCE

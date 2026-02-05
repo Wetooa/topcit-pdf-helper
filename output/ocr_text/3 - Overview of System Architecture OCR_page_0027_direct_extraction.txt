@@ -1,0 +1,24 @@
+ESSENCE
+O2 Types of System  Architecture
+A) Types of system  architecture
+Various ways of configuring  a system are provided.  System configuration  is changing  in various ways, according
+to the changes  in hardware  and software  technology,  and the changes  to the user environment.  As the use of
+mobile devices,  such as smartphones,  has recently  increased,  most systems  provide services  based on the system
+architecture  centered  around a web service.  Moreover,  the system  layout is also changing  into a centralized  structure,
+as the cloud services  have expanded.
+B) System  architecture  classification  according  to system layout
+Architecture  types can be classified  according  to the information  system  layout. The centralized  architecture  arranges
+all the systems  in a centralized  place. Multi-region  distributed  architecture  operates  the system by distributing
+regional  and application  systems  regionally.
+@ Centralized  architecture
+A centralized  architecture  stores and operates  the system and data from an integrated  center. It configures  an
+integrated database  on a large-capacity  server and it has a relatively  simple system configuration.  Having an
+integrated  database  makes it easy to assure data integrity,  and having all components  in one place makes them
+convenient  to manage  and operate.  It can also quickly respond  to system failures. However,  all business  services  are
+terminated  if the integrated  center  fails. Moreover,  the load is concentrated  during  peak time.
+[Figure  4] Centralized  Architecture
++ Multi-region  distributed  system  architecture
+The multi-region  distributed  architecture  operates  the systems,  and the application  systems  are distributed
+regionally. Each region manages  the distributed  data using small or medium-sized  servers.  This structure  can reduce
+the load of each server, since it distributes  the user load. When there is a failure, only the regional  business  services
+26 TOPCIT  ESSENCE

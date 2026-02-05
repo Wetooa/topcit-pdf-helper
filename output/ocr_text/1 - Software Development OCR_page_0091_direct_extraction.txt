@@ -1,0 +1,41 @@
+ESSENCE
+01 Programming Language  Overview
+A) Concept  of the programming  language
+A programming  language  enables  users to write a program  using a familiar  language,  that is, a language  that is
+similar to the language  they use every day. In other words, programming  languages should be used to enable
+humans  to communicate  with computers.  Thus, programs  written  in each programming  language  are translated
+into machine  language  using a compiler  or an interpreter,  so that computers  can understand  the languages.
+In addition,  it is necessary  to secure the productivity  and quality  goals using a proper programming  language  in
+each area, because  each programming  language  has different  uses.
+<Table 21> Low-level  language  and high-level  language
+Item Description Representative  language
+Low-level  languageMachine-centric  language  that is executed  quickly  and has a
+different  code for each machine.
+There is a machine  language  composed  of a binary system
+that is easily understood  by the computer,  and an assembly
+language  that corresponds  to the machine  language.
+There is no compatibility  between  computer  models.Machine  language,
+assembly  language
+High-level  languageIt is easy to write a program  that is highly readable  and
+productive  compared  to low-level  language  because  it is made
+so as to be similar  to natural language,  which can be easily
+understood  by humans.
+A program  can be written independently  of the machine  and
+converted  into low-level  language  by a compiler  or interpreter.FORTRAN,  COBOL,  BASIC, C, C,
+Java, Python
+The machine  language  is written in only 0 and 1 and can be directly understood  by hardware,  whereas  the
+assembly language  expresses  the machine  language  in simple characters.  Both the machine language  and
+assembly  language  are referred  to as a “low-level  language’.  However,  as it is practically  difficult for humans  to
+manually  write programs  in either machine  language  or assembly  language,  high-level  languages  were created
+to resolve this problem.  High-level  languages,  represented  by C, C++, Java, and Python, enable us to write
+programs  using everyday  languages  and symbols.
+<Table 22> Areas of use of programming  languages
+Area of use Major programming  languages
+Science  and technology
+(used for numerical FORTRAN,  ALGOL60
+calculation)
+Business COBOL
+Artificial  intelligence LISP. PROLOG
+System  programming PL/S, BLISS, ALGOL,  C/C , Java, Python
+Special  purposes GPSS (language  used for simulation)
+90 TOPCIT  ESSENCE

@@ -1,0 +1,33 @@
+ESSENCE
+* Practical  preview Operating  path of transport  layer protocols
+The transport  layer protocols  operate  between  the computer  of user A, and the webserver  myservercom
+that requests  data, i.e., end-to-end  service. Data packets  are delivered  through many hops between  a
+client and a server. The nodes, positioned  between  the terminals,  such as the wired/Wireless  routers,  are not
+involved  in the transport  layer protocol  operation.  TCP [1], UDP [2], and SCTP [3] are the leading  transport
+Transport  Layel
+Network  Layer
+Datalink  Layer
+Physical  Layerlayer protocols.
+Network Layer ~
+Datalink Layer e tJ
+Physical  Layer rit
+on weaponsApplication  Layer Rovter  B
+68.11.0Application  Layer
+Leeson Layerof | Layer Network Layermy Layer Datalink Layer
+14.32.172.0 Physical  LayerRouterc switelbog Hub D
+my.server.com
+220.17.23.15=  Layer
+Datalink  Layer_| 220.17.23.0
+Physical  Layer
+[Figure 130] Protocol  Operation  Path of Transport  Layer
+01 Concept  of Transport  Layer Protocol
+The transport  layer protocol transmits  application  data between  end-point  hosts. The server application  running  on
+the server side receives  a request  from the client side, processes  it, and sends a response  to the client. On the client
+side, a user selects  an application  to receive  the service the user wants, makes a request  to the server, and displays
+the response  to the user. Applications  that traditionally  use networks,  operate in a client-server  structure,  and the
+lowest  protocol,  connecting  the client application  and the server application,  is the transport  layer protocol.
+Transport  layer protocols  that have been widely used are TCP (Transmission  Control Protocol)  [1] and UDP (User
+Datagram  Protocol)  [2]. SCTP (Stream  Control Transmission  Protocol)  [3], which combines  the advantages  of TCP
+and UDP is a new protocol introduced  after 2000. This chapter  focuses  on TCP and UDP which are currently  widely
+used.
+180 TOPCIT  ESSENCE

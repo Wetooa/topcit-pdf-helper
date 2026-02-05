@@ -1,0 +1,37 @@
+ESSENCE
+@ Error correction
+Error correction  methods  include a method in which the receiving  device requests  the sending  device to retransmit
+the entire data, or the receiving  device  automatically  performs  a correction  using an error correction  code.
+{Table 33) Error Correction  Methods
+Correction Description
+Single bit error + The principle  of error correction  is to locate the wrong bit, which is called a parity bit.
+correction + ASCII code requires  a 3-bit redundancy  code.
+Redundant  bit error + Amethod  of checking  the relationship  between  the number  of data bits and the number  of redundant
+correction bits to calculate  the number  of redundant  bits required  to correct the number  of data bits given
+Hamming  code + Amethod  to find the redundant  bit position  in Hamming  code.
+Multi-bit  error + Amethod  of using the redundant  bit, which is calculated  by overlapping  a set of data bits, in order to
+correction correct  the multi-bit  error
+@ Automatic  repeat request  (ARQ)
+ARQis  an algorithm  in which the receiving  side informs  the sending  side of the error, and the sending  side retransmits
+the error frame to correct  the error. Typical ARQ methods  include stop-and-wait  ARQ, Go-back-N  ARQ, and adaptive
+ARQ. Details  of each retransmission  algorithm  type are shown in the <Table 34> below.
+(Table 34) ARQ Types
+ARQ type Description
++ The transmitting  side transmits  one frame to the receiving  side, and the receiving  side transmits  an
+Stop-and-wait  ARPeMERTEIBAe| ACK or NAC signal to the transmitting  side, depending  on the presence  of errors in the received frame.
++ The method  continuously  transmits  frames  to overcome  the disadvantage  of the transmission
+Go-back-N  ARQ efficiency  of the stop-and-wait  ARQ. The transmitting  side assigns  a frame sequence  number  as
+much as the window  size, and continuously  transmits  it to a certain unit.
+. + The method  is similar  to Go-back-N  ARQ but retransmits  only the frame with an error.
+Selective-repeat  ARQ . .
++ The transmission  and receipt  buffers  must be large enough
++ The method  detects  the error rate of the communication  line and dynamically  changes  and
+transmits  the most appropriate  frame length
++ The method  combines  the FEC and REC.
+Hybrid-ARQ + It maintains  the network  efficiency,  by performing  the FEC normally,  and improves  the reliability,  by
+performing  the BEC when an error occurs.Adaptive  ARQ
+06 IEEE 802 Standard
+A) Concept  of IEEE 802
+[Figure 110] shows the services  for each layer ad defined by the IEE Committee.  The LLC layer includes,  Type 3
+unconfirmed  datagram  service,  Type2 virtual circuit service,  and Type 3 confirmed  datagram  service.
+152 TOPCIT  ESSENCE

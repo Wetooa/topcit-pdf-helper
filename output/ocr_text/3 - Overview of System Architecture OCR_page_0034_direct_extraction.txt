@@ -1,0 +1,29 @@
+Overview  of System Architecture )
++ Preview  for practical  business  How to understand  networks
+IpV4 Address:  14.32.172.167
+Subnet  Mask: 255.255.255.0
+Gateway:  14.32.172.254
+DHCP Server: 121.138.7.42
+Server 1: 168.126.63.1
+Server  2: 168.126.63.2Switching  Hub D
+my.server.com
+220.17.23.15
+192.168.11.0
+IPv4 Address:  192.168.11.5
+IPv4 Subnet  Mask: 255.255.255.0
+IPv4 Gateway: 192.168.11.1
+IPv4 DHCP Server: 192.168.11.1
+IPv4 DNS Server: 192.168.11.1
+[Figure 10] Network  between  Users and Servers
+Figure 10] shows  a virtual network  connection  in a situation  where user A connects  to a webserver  (my.
+server.com)  and uses a computer  to locate the data. Although  the situation  frequently  occurs inhomes,
+schools,  or workplaces,  many people use their computer  network  information  without  knowing  it. The
+following  example  shows  a situation  of using a network  service  in detail.
+&/
+@ Request  for homepage
+Homepage  content  transmission
+@ Request  for my.pdf
+My.pdf  transmission
+ooo
+[Figure 11] Web Use by User A
+M3 Overview  of System  Architecture  33

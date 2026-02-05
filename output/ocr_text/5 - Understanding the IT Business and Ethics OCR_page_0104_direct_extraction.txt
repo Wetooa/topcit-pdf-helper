@@ -1,0 +1,33 @@
+Understanding  the IT Business  and Ethics )
+04 Understanding  IT Service  Management
+A) Overview  of IT service  management
+IT service management  is commonly  referred  to as ITSM. ITSM is used as a systemized  method of managing  IT
+services  and the quality  of such services.
+ITIL
+(IT Infrastructure  Library) IT Outsourcing
+Provide  best prac-
+tice in IT service . ITSM
+seecenen  ene >| (IT Service  Management) |/<-------------+
+Submit  require-
+| Sign SLA "ens
+SLM Manage at Control CSRService Level ee Service Level ' Customerlevel level
+[Fig. 41] Interrelationships  of IT service  management  technologies
++ ITSM uses ITIL (IT infrastructure  library), which is the standard  model (best practice)  of the IT service.  Depending  on
+the form of trade between  companies,  ITSM could be outsourced.
++ AnIT service  can only be realized  when a service  level agreement  (SLA) has been signed.
++ The signed SLA becomes  the standard  for measuring  the quality of the IT service, and systematic  management  of
+the IT service  can be pursued  using SLM.
++ The customer  service  request  (CSR) process  is for requesting  an IT service.
+ITSM uses the ITIL (IT infrastructure  library),  which is the standard  model (best practice)  of the IT service. Depending
+on the form of trade between  companies,  ITSM could be outsourced.
+In addition,  an IT service can be only realized  when  a service level agreement  (SLA) has been signed. The signed
+SLA becomes  the standard  and the baseline  for measuring  the quality of the IT service.  Therefore,  it is important  to
+establish  and manage  these standards.
+Once the level of a service  has been decided  between  the user and service supplier,  the IT service  is delivered  at that
+level. User requests  for IT services  will be handled  by the CSR (Customer  Service  Request)  process,
+Some of the leading standards  associated  with IT service management  include eSCM and ISO/IEC 20000. These
+standards  are all rooted in ITIL.
+* The eSCM (eSourcing  Capability  Model) is an international  quality assessment  model used by service providers  to
+objectively  evaluate  quality and capabilities  in order to provide IT services  to customers.  It provides  guidance  on
+implementing  IT services  at all phases  of the business.
+M5 Understanding  the IT Business  and Ethics 103

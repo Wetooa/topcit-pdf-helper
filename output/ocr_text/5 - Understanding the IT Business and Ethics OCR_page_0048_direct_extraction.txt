@@ -1,0 +1,33 @@
+Understanding  the IT Business  and Ethics )
+There may be several causes of this paradox,  but in most cases it is attributable  to the lack of a system for clearly
+explaining  a company’s  business  and IT operations  to its stakeholders  from an overall perspective.  For these reasons,
+enterprises  need an EA, as it can provide  a bird’s eye view of the enterprise’s  business  while simultaneously  creating
+close working  relationships  between  different  information  resources.
+B) Conceptual  diagram  of an EA and its components
+@ Conceptual  diagram  of an EA
+The deployment  of an EA starts with the enterprise  business  strategy.  The enterprise  business  strategy  is converged
+with the IT strategy,  and the EA is the fruit of this convergence.
+"Enterprise  Strategy
+Enterprise  business  strategy <> IT strategy
+“L
+Enterprise  Architecture BA
+(Business  Architecture)
+t
+AA DA TA
+(Application  Architecture) (Data Architecture) (Technical  Architecture)
+[Fig. 19] The concept  diagram  of EA
+@ The components  of an EA
+An EA is delegated  or inherits  the IT governance  control system. To be more precise, the establishment  of an EA
+itself is both an act of IT governance  and an instrument  of IT governance  control.
+In addition  to IT governance,  the key components  of an EA are business  architecture  (BA), applied architecture
+(AA), data architecture  (DA), and technology  architecture  (TA). The standard  profile (SP) is a sub-structure of the
+technology  architecture  and can be understood  as the detailed  specifications  of a list of technologies,
+<Table  7> Components  of an EA
+Components Characteristics Related  reference  model
+iinGovernence - Amethod  of managing  the process  organization  so that IT COBIT
+becomes  aligned  with the business  goals of an enterprise. COSO
+- Activities  for designing  and building  interdependency  among
+Business people, processes  and information  are carried out based on Performance  Reference  Model
+Architecture the findings  of the business  strategy  analysis  and the business (PRM)
+environment  analysis.
+M5 Understanding  the IT Business  and Ethics 47

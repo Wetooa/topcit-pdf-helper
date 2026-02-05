@@ -1,0 +1,35 @@
+ESSENCE
+03 Media Transport  Protocols
+Media transport  protocols  include RTP (Real-Time  Transport  Protocol),  RTCP (Real-Time  Control Protocol),  and RTSP
+(Real-Time  Streaming  Protocol).  RTP is designed  to process  real-time  traffic over the Internet.  It is mainly used to
+transmit  video or audio data in real time over the Internet.  RTCP is a protocol  to control  the RTP (Real-time  Transport
+Protocol)  for streaming  video or audio over the Internet.  RTP and RTCP are specified  in the IETF standard  document
+RFC 1889. RTSP is designed  for use in entertainment  and communication  systems  to control streaming  media
+servers, RTP is used to establish  and control media sessions  between  endpoints,  and it does not actually  transmit
+media streaming  data. Most RTSP servers transfer  actual audio/video data to the transport layer, using the RTP
+protocol.
+A) RTP
+RTP is designed  to process  real-time  traffic over the Internet.  It is mainly used to transmit  video or audio data in real
+time over the Internet.  It is performed  over the UDP (user datagram  protocol)  of the transport  layer.
+In the RTP protocol,  the transmitting  side that sends the media file, converts  the media unit data compressed  with
+the codec into an RTP packet and sends it to the receiving  side, using UDP. Since it is transmitted  using UDP RTP
+does not guarantee  that packets  are delivered  within a specified  time and are not lost. Therefore,  the video and audio
+applications  must process  packets,  using information  included  in the RTP packet  header. RTCP can ensure the QoS of
+RTP and synchronization  of media streams.
+B) RTCP
+RTCP controls  RTP, a protocol  for streaming  video or audio over the Internet.  It is an IETF standard  defined  together
+with RTP in RFC 1889. RTCP packet  types include  the sender  report packet,  receiver  report packet, source  description
+message,  bye message,  and application-specific  packet.
+C) RTSP
+RTSP is an application  layer protocol that transmits  real-time  media. The communication  protocol developed  by
+IETF in 1998 is defined in RFC 2326. It is a communication  protocol  for transmitting  and receiving  audio and moving
+pictures  in real time,as  well as a standard  protocol  for controlling  streaming  data on the Internet.  It is used to remotely
+control media servers. Its commands  are similar  to VCR operations,  such as "PLAY" and "PAUSE",  and it accesses  the
+server, based on time information.
+D) IMS.
+IMS was first proposed  by the 3GPP (3rd Generation  Partnership  Project)  group that develops  international  standards
+in the wireless  communication  field. It is an infrastructure  for providing  IP multimedia  services  and uses SIP protocol-
+based call control as a core technology.
+@ IMS concept
+IMS is a communication  platform  defined  by 3GPP to control multimedia  sessions  and provide services,  based on the
+208 TOPCIT  ESSENCE

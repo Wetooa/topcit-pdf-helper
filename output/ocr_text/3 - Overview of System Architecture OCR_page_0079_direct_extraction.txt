@@ -1,0 +1,24 @@
+ESSENCE
+© Multiple  instruction  streams  - single data stream,  Multiple  Instruction  Stream  Single Data Stream  (MISD)
+Each processing  unit in the MISD parallel computing  architecture  runs different  instructions  and processes  the same
+data. The pipeline  architecture  is an example.  It is not a widely used architecture.
+@ Multiple  instruction  streams  - multiple  data stream,  Multiple  Instruction  Stream  Multiple  Data Stream (MIMD)
+In a MIMD structure,  multiple  processors  process different  programs  and different  data, and most parallel computers
+fall into this category.  It can be classified  into a shared memory  model and a distributed  memory  model, depending  on
+how it uses the memory.  According  to the degree of data interaction,  the shared memory  model is called a tightly-
+coupled  system,  and the distributed  memory  model is classified  as a loosely-coupled  system.
+MISD Instruction  Pool MIMD Instruction  Pool
+Vv
+Data PoolVv v
+Data Pool
+[Figure 44] MISD Structure [Figure 45] MIMD Structure
+C) Classification  of parallel  processing  systems,  according  to the memory  structure
+@ Symmetric  multiprocessor  (SMP)
+SMP is a tightly-coupled  system in which all processors  use the main memory  as the shared memory.  It is easy
+to program  since the data transfer  can use shared memory.  On the other hand, it has poor scalability  and may
+experience  a bus bottleneck,  since it uses an internal  bus to access the main memory  and share the data.
+Shared
+Memory
+Internal  Bus
+[Figure 46] SMP Structure
+78 TOPCIT  ESSENCE

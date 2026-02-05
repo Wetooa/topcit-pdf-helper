@@ -1,0 +1,223 @@
+LEARNING GUIDE: Pages 85-89
+Generated: 2025-12-07 01:01:02
+PDF: 3 - Overview of System Architecture OCR
+
+================================================================================
+LEARNING GUIDE
+================================================================================
+
+Here's a simplified learning guide based on the provided text:
+
+---
+
+## Learning Guide: Storage Systems and Management
+
+### 1. Introduction to Data Storage Systems
+
+*   **Need:** Modern multimedia services require storing increasing volumes of data.
+*   **Solution:** Large-capacity storage systems group multiple disks to handle data beyond a single disk's capacity.
+*   **Classification:** Storage systems are classified based on their connection method to a computer:
+    *   Direct Attached Storage (DAS)
+    *   Network Attached Storage (NAS)
+    *   Storage Area Network (SAN)
+
+### 2. Types of Storage Connection
+
+#### A. Direct Attached Storage (DAS)
+
+*   **Connection:** Directly connects disks to a single computer system via cables (e.g., Fiber Channel, SCSI).
+*   **Management:** The computer system manages the file system directory.
+*   **Analogy:** Works like an external hard disk.
+*   **Advantages:**
+    *   Simple configuration.
+    *   Low cost (no separate switch needed).
+    *   High speed (direct connection).
+*   **Disadvantages:**
+    *   Limited number of disks can be connected.
+    *   Files cannot be shared with other computers (single point of connection).
+
+#### B. Network Attached Storage (NAS)
+
+*   **Connection:** Connects to computer systems over a network (e.g., LAN, WAN) using an Ethernet network interface.
+*   **Key Feature:** Has a separate dedicated file system management server (controller).
+*   **Advantages:**
+    *   Easier data management due to the dedicated server.
+    *   Multiple servers and computer systems on the same network can share and use the storage, regardless of physical location.
+*   **Disadvantages:**
+    *   Speed and capacity are limited by the network speed.
+
+#### C. Storage Area Network (SAN)
+
+*   **Purpose:** Developed to overcome limitations of DAS (disk limit, management) and NAS (network speed delay).
+*   **Connection:** Uses a **dedicated fiber channel switch** for fast connections.
+*   **Key Features:**
+    *   High speed (8Gbps - 16Gbps possible with Fiber Channel).
+    *   Scalability for connecting more servers and storage units.
+    *   Less impact on the general network load.
+*   **Advantages:**
+    *   Very fast data access.
+    *   Highly scalable.
+*   **Disadvantages:**
+    *   High cost (requires dedicated switch and expensive cables).
+    *   Can lead to consistency problems (locking issues) when multiple systems share a specific file.
+
+### 3. IP-SAN: Network-Based SAN
+
+*   **Concept:** A type of SAN that uses the existing **Gigabit Ethernet Internet Protocol (IP)** instead of a dedicated fiber channel.
+*   **Advantages:**
+    *   Increases interconnectivity by using existing Ethernet networks.
+    *   Unifies network management.
+    *   Overcomes distance limitations of traditional SANs (due to IP's reach).
+*   **Main Types:** FCIP, iFCP, and iSCSI (iSCSI is the most widely used).
+
+#### A. Fiber Channel over IP (FCIP)
+
+*   **Purpose:** Connects remote SANs.
+*   **How it Works:** Encapsulates Fiber Channel data into TCP/IP packets for transfer over an IP network.
+*   **Function:** Groups geographically scattered SANs into a large "fiber channel fabric."
+*   **Disadvantage:** A failure in one SAN within the fabric can affect other SANs in different regions.
+
+#### B. Internet Fiber Channel Protocol (iFCP)
+
+*   **How it Works:** Provides a dedicated TCP/IP connection to regional SANs using an **iFCP gateway**.
+*   **Key Difference from FCIP:** Does not create a massive fabric, so a SAN failure in one region does not affect SANs in other regions.
+*   **Advantages:**
+    *   High compatibility (hardware and software).
+    *   Can be implemented without changing existing infrastructure (by converting protocols via a gateway).
+
+#### C. Internet SCSI (iSCSI)
+
+*   **How it Works:** Encapsulates **SCSI commands** (commands for interacting with storage devices) into IP packets and transfers this block data over TCP/IP.
+*   **Reliability:** Uses technologies like IPSec to ensure data integrity.
+*   **Advantages:**
+    *   Reduces network storage implementation cost (uses existing network environment).
+    *   Most widely used IP-SAN type.
+
+### 4. Storage Capacity Management
+
+#### A. Thin Provisioning
+
+*   **Problem:** Traditional "thick logical unit number (LUN)" allocation wastes storage space by pre-allocating more than what's immediately needed.
+*   **Solution:** A storage virtualization technology that allocates data by mapping actual storage space only when data is written, using a "thin LUN."
+*   **Advantages:**
+    *   Flexibly expands disk space as needed by users (common in cloud computing).
+    *   Offers a higher data utilization rate compared to conventional thick LUNs.
+
+#### B. Data De-duplication
+
+*   **Purpose:** Increases disk space efficiency by identifying and removing redundant (duplicated) data when saving it.
+*   **Methods:**
+    *   **Inline Method:** Removes redundant data immediately as it enters the storage system.
+    *   **Offline Method:** Stores all new data first, then identifies and removes redundant data later.
+
+### 5. Storage Disk Scheduling & Performance
+
+#### A. Disk Scheduling
+
+*   **Concept:** A technique to efficiently process multiple Input/Output (I/O) requests made to a disk drive (which uses a rotating magnetic disk). The order of processing requests and head movement significantly impacts performance.
+*   **Goals/Purposes:**
+    *   Maximize the number of I/O requests serviced per unit time.
+    *   Maximize throughput (data processed per unit time).
+    *   Minimize the average response time for requests.
+    *   Minimize the overall response time.
+    *   Minimize the variation (inconsistency) of response times.
+
+#### B. Disk Performance Measurement Indicators
+
+*   These indicators are used to compare different disk scheduling techniques.
+*   **Key Indicators:**
+    *   **Access Time:** Total time to read or write data.
+    *   **Seeking Time (Seek Time):** The time it takes for the disk's read/write head to move from its current position to the track containing the desired data.
+    *   **Rotational Latency (Rotational Delay):** The time it takes for the desired sector (containing the data) to rotate under the read/write head after the head has reached the correct track.
+    *   **Data Transfer Time:** The time taken to actually transfer the data once the head is positioned correctly over the desired sector.
+*   **Note:** Recent disk drives use internal buffers and store all data in a track to minimize rotational latency.
+
+---
+
+================================================================================
+ORIGINAL TEXT (First 5000 chars)
+================================================================================
+
+--- Page 85 ---
+ESSENCE
+iS not corrupted  or lost.
+B) Connection  of storage  unit and server
+Multimedia  services,  using a large volume of data, led to computer  systems  storing an increased  volume of data. A
+large-capacity  storage  system is necessary,  since a single disk cannot  support  the increasing  data capacity.  A storage
+system logically  groups multiple  disks in order to store large capacity  data that a single disk cannot handle. It is
+classified  into DAS, NAS, and SAN, depending  on how it is connected  to the computer.
+@ Direct attached  storage  (DAS)
+The storage  connects  a computer  system with disks directly  through  a fiber channel  or SCSI cable in order to utilize
+the storage  capacity.  It allows the computer  system to manage  the file system directory.  Since the storage is
+directly  connected  to the computer  system, it works like an external hard disk at high speed. Its advantage  is that
+its configuration  is simple, and the cost is low without  a separate  switch, but there is a limitation  in the number  of
+disks that can be connected.  Moreover,  files in the storage  cannot  be shared with other computers,  since it is directly
+connected  to a computer.
+Integrated
+Storage
+Unit
+Server
+[Figure 52] DAS
+@ Network  attached  storage  (NAS)
+The storage has a separate  file system management  server (controller)  to manage  the storage  media such as HDD
+and SSD. It is connected  to a computer  system  through  an Ethernet  network  interface  like LAN or WAN. Since it has
+a separate  file system management  server, it is easier to manage  data, and multiple  servers  can share the storage.
+Moreover,  multiple computer  systems  on the same network  can use the storage,  regardless  of the physical  location.
+As the storage  is connected  over a network,  its speed and capacity  are limited by the network  speed.
+84 TOPCIT  ESSENCE
+
+
+--- Page 86 ---
+Overview  of System  Architecture
+Server 1 Server  2 Dedicateda a File Server Storage
+a a
+LAN, WAN Section SCSI, FC Section
+[Figure 53] NAS
+© Storage  area network  (SAN)
+A disadvantage  of the DAS type is the limitation  of the number  of disks, and the difficulty  of management,  while
+the NAS type has a problem  of possible  speed delay, depending  on the network  connection.  SAN was developed  to
+overcome  the disadvantages. It uses a dedicated  fiber channel switch for fast connection,  and it enabled  the ability
+to scale up the number  of connected  servers and storage,  with less impact to the connected  network  load. Using
+the fiber channel  allows the connection  to speed up to 8Gbps - 16Gbps.  However,  it increases  costs since it requires
+the dedicated  switch and expensive  cables, and it can cause a consistency  problem,  due to locking, when multiple
+computer  systems  share a specific  file.
+SAN Switch
+(e.g.Fiber  Channel)
+M3 Overview  of System  Architecture  85
+
+
+--- Page 87 ---
+ESSENCE
+C) IP-SAN
+@ Concept  of IP-SAN
+This type of SAN uses the gigabit  Ethernet  Internet  protocol  (IP), instead of a fiber channel.  While the SAN requires
+a SAN switch and SAN storage  disks, it increases  interconnectivity,  since it is connected  using the existing  Ethemet
+network.  It can unify the network  management  and overcome  the distance  limitation  of SAN, since it can use an IP
+IP-SAN  includes  FCIP, iFCP, and iSCSI, while iSCSI is the most widely-used  type.
+@ Fiber Channel  over IP (FCIP)
+FCIP is used to connect  a remote  SAN. It encapsulates  data to TCP/IP  for interconnection  when transferring  a frame
+to a remote location.  It groups the scattered  SANs into a massive  fiber channel  fabric. A failure of a SAN can affect
+SANs in other regions  included  in the fabric.
+& = &
+[Figure  55] FCIP
+© Internet  fiber channel  protocol  (iFCP)
+iFCP provides  a TCP/IP connection  dedicated  to regional  SAN, using the iFCP gateway.  Unlike FCIP a SAN failure does
+not affect SAN in other regions,  since it does not create a massive  fabric. Since it converts  protocols  using a gateway
+and can be implemented  without  changing  the infrastructure,  it provides  highly compatible  interconnectivity  in both
+hardware  and software.
+86 TOPCIT  ESSENCE
+
+
+--- Page 88 ---
+Overview  of System Architecture )
+@ Internet  SCSI (iSCSI)
+iSCSI encapsulates  SCSI commands  into IP packets  and transfer  the I/O block data through  TCP/IP. Technologies  like
+IPSec ensure reliability.  It reduces  the network  storage implementation  cost, since it can use the existing  network
+environment  as is.
+iSCSI Switch
+[Figure  57] iSCSI
+D) Storage  capacity  management
+@ Thin provisioning
+The existing  fixed-allocation  storage  technology  uses a thick logical unit number  (LUN) wasted data storage  space.
+Thin provisioning  is a storage  virtualization  technology  that allocates  data by mapping  actual data space into a thin
+LUN. It can flexibly  expand  the disk space required  by users in cloud computing,  and it offers a higher  ...

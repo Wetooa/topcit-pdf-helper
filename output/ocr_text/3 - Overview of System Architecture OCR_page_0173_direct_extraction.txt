@@ -1,0 +1,42 @@
+ESSENCE
+Table 51) IPv4. Address  Designation  System  [7]
+Class Address Description
+Network  ID: First octet
+A 1.0.0.0 ~ 126.0.0.0 Host ID: Last three octets
+Default  subnet  mask: 255.0.0.0
+Network  ID: First two octets
+B 128.0.0.0  ~ 191.255.0.0 Host ID: Last two octets
+Default  subnet  mask: 255.255.0.0
+Network  ID: First three octets
+Cc 192.0.0.0  ~ 223.255.255.0 Host ID: Last one octet
+Default  subnet  mask: 255.255.255.0
+D 224.0.0.0  ~ 239.0.0.0 Multicast  address
+E 240.0.0.0  ~ 255.0.0.0 Experimentally  used
+In the IPv4 address  designation  method,  subnetting  is the address  partition  method used to separate  a network  ID
+into multiple  network  Ids, and supernetting  is a met!hod of integrating  multiple  networks  into a large network.
+The 169.254.0.0  network band is reserved  for automatic  private IP addressing.  For versions  after Windows  2000,
+DHCP automatically  generates  it to set the IPv4address and cannot  be routed on the Internet.  The addressing
+system  is called the automatic  private IP addressing  (APIPA).
+C) Special  IPv4 address
+In IPv4, there is an addressing  system in a different  form from the conventional  A, B, and C class addressing  system.
+These addresses  are called the special IPv4 addresses.  <Table 52> below shows the special IPv4 addresses.
+(Table 52) Special IPv4 Address  [7]
+Network  ID Host ID Address  name Usage
+specific AllO Network  address + Network  address
+specific All “ rected broadcast  to + Used to broadcast  all terminals  of the specific network
+Allo specific | Specific  host on this network + Indicates  a specific  terminal  inside the connected  network
++ Not able to pass through  routers
+17XXX Local loopback  address + Used as the destination  address  for loopback  inside the
+system
++ Used for broadcasting  to all terminals  inside the router
+255.255.255.255 Limited  broadcast network
++ Not able to pass through  routers
++ Used to specify itself when the terminal  does not know its
+0.0.0.0 This host on this network IP address
++ Not able to pass through  routers
+10. ~ An Private address  for Class A
+: y (10.0.0.0 ~ 10.255.255.255)
+Private  address  for Class B i172.16~172.31 Any (172.160.0  ~ 17231255  ,255) Private network  address  usable without  an official approval
+192.168.0  ~ An Private  address  for Class C
+192.168.255 y (192.168.0.0  ~ 192.168.255.255)
+172 TOPCIT  ESSENCE

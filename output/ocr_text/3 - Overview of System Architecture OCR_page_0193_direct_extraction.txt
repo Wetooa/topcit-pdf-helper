@@ -1,0 +1,38 @@
+ESSENCE
+technique  is provided  to resolve it. Each fragment  that has been divided and transmitted  is reassembled  in the SCTP
+layer to become  one user message.
+@ Acknowledgment  and congestion  avoidance
+SCTP transmits  a data chunk by assigning  a TSN to it, regardless  of the stream.  The receiving  side separately  secures
+the transmission  reliability  from the sequenced  stream transmission  by acknowledging  (ACK) all the received  TSNs.
+Acknowledgment  and congestion  control  functions  are related  to packet retransmission  if an acknowledgment  is not
+received  within a given time. Packet retransmission  is performed  according  to a congestion  avoidance  procedure,
+similar  to TCP congestion  control.
+© Chunk bundling
+A chunk with multiple  user data or SCTP control information  may follow an SCTP packet's  common  header,  An SCTP
+user can request  to bundle multiple user messages  in a single SCTP packet. The SCTP chunk bundling  function is
+responsible  for assembling  multiple  chunks  into one SCTP packet  and decomposing  it.
+© Packet  validation
+The SCTP common  header  has a verification  tag (VT) and a 32-bit checksum  field. The VT is a value selected  at
+each endpoint  when setting  up the association. During  the set association,  SCTP packets  must be transmitted  using
+the same VT, and if an SCTP packet with a wrong VT is received,  it is discarded.  Moreover, generating  a CRC32c
+checksum  and transmitting  the SCTP packet  prevents  data corruption  in the network.
+@ Path management
+The transmitting  SCTP user can use the path management  function  to manipulate  the transport  address,  SCTP port
+number,  and IP address,  used in the SCTP packet  destination. When the association  is established,  the primary  path
+of each SCTP endpoint  is defined and used to transmit  and receive SCTP packets. However,  if there is a problem
+with the current path, and available  transmission address  among the addresses,  defined by multi-homing, can be
+designated  as an alternative  path. The path management  and the packet  verification  that uses the VT and checksum
+are performed  simultaneously.
+SCTP packets  have a general  header  and set of blocks called chunks.  There are two types of chunks: control chunks
+and data chunks.  Control  chunks  are delivered  before data chunks.
+The general header  defines the endpoint  of each association  of the packet, guarantees  a packet belonging  to a
+specific  association,  and preserves  the integrity  of the contents  of the packet, including  the header  itself
+<Table 69) SCTP Protocol  Header  Components
+Type Description
+Source  port no. + Same as TCP and UDP
+Destination  port no. + Same as TCP and UDP
+Verification  tag + Used as the identifier  for the association  and repeated  in all packets  during  the association.
+@réem + The  size of a checksum  is 32 bits to enable CRC-32  checksums.
++ (16-bit  checksums  are used in UDP TCP, and IP.
+Control information  and user data are carried in chunks,  and three fields of Type, Flag, and Length are common  in all
+192 TOPCIT  ESSENCE

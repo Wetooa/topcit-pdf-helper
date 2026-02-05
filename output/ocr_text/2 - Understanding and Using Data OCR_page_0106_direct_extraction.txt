@@ -1,0 +1,39 @@
+Database )
+01 Tupes of Relational  Database  Languages
+A) DDL, DCL, DML
+The relational  database  language  processes  the structure  and value stored  in a relational  database  and can be
+classified  into the Data Definition  Language  (DDL), Data Control Language  (DCL), and Data Manipulation  Language
+(OML).
+<Table 39> Types of relational  database  languages
+Poe — MainClassification Description onan  ra
+CREATEie Definition A language  that defines the relationship  between data and is used to create, change, ALTER
+Language) and delete a data structure  like a table in a database. DROP
+RENAME
+A language  that controls  access  to data in a database  and is used to perform  data GRANT
+ion control security, integrity, and concurrency  control REVOKE
+Language) Sometimes,  commit  and rollback,  which controls  nested  transactions,  are separated  into | COMMIT
+TCL (Transaction  Control Language). ROLLBACK
+SELECT
+DML FROM
+(Data A language  that searches,  registers,  deletes, updates,  etc. the data of the database WHERE
+Manipulation user or application  program. INSERT
+Language) UPDATE,
+DELETE
+B) Changes  in SQL and the characteristics  of SQL3
+@ Changes  in SQL
+SQL was developed  by IBM researchers Donald D. Chamberlain  and F. Raymond  Boyce in the early 1970s, and its
+standards  have been changed  periodically  by the ANSI, as follows.
+<Table  40> Changes  in SQL
+Year Name Alias Characteristics
+1986 SQL SQ-86 First SQL standard
+. Adopted  a major revision  (ISO9075)  FIPS 127-2.
+es sQ2 SQis2 Relational  database
+. Object-oriented  database
+rep sas SQL1999 Added the regular expression,  recursive  query, trigger, etc.
+2003 sala SQL-2003 XML-related  characteristics,  Window  functions,  standardized  sequences,  and a
+SQI-2006 column that has an automatically  generated  value
+In progress  | SQL/NM Consistent  access  to the metadata  registry
+@ Characteristics  of SQL3
+The object-oriented  characteristics  of SQL3 can be seen as the common  characteristics  of the object relational
+DBMS..
+M2 Database 105

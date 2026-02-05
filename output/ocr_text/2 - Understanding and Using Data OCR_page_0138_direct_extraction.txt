@@ -1,0 +1,18 @@
+Database )
++ Preview  for practical  business Why do we need to understand  data analysis?
+Recently,  enterprises  in most industries  have begun using analysis  systems  for handling business  and
+diverse  other various purposes,  such as CRM, SCM, etc, in order to analyze  accumulated  data from various
+perspectives,  and to use the information  derived from such analysis directly in their business  operations,
+including  management  decisions,  sales, marketing,  new product  releases,  etc. In fact, data analysis  systems
+are becoming  increasingly  important  as the key system of enterprises’  business.  For example,  Mart A
+analyzes  the shopping  details of individual  customers  and sends them personalized coupons  to induce
+them to make additional  purchases.  Meanwhile,  Investment  & securities  company  B analyzes  the wealth,
+age, residential  area, and investment  product  purchase  history  of its customers  and discovers  that “People
+in their thirties  who have financial  assets of about KRW 30 million and live in rural areas are the most active
+purchasers  of investment  products.”  Therefore,  the company  uses that information  to develop  company
+marketing  strategies  and investment  products.
+In addition,  markets  are calling for more and more experts  who are capable  of building  and operating  data
+analysis  systems.
+As explained,  data is very important  in these days. Therefore,  it is necessary  to understand  data processing
+such as pre-processing,  loading,  analysis,  etc., and to understand  technology  about ETL, DW, and OLAP.
+M2 Database  137

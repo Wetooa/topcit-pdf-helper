@@ -1,0 +1,41 @@
+ESSENCE
+public static void main(String  args[]) throws IOException  {
+// The program  that can be executed  by the application  concerned  is limited to Notepad  and Calculator.
+List<String>  allowedCommands  = new ArrayList<String>();
+allowedCommands.add(“notepad”);
+allowedCommands.add(“calc’):
+if (args.length  == 0) {
+System.errprintin(‘Please  input the name of the program  to execute.”);
+return:
+}
+String cmd = args[0]:
+if (!allowedCommands.contains(cmd))  {
+System.errprintin(“Not  an allowed  command.’);
+Safe code return:
+}
+Process  ps = null:
+InputStream  is = null:
+InputStreamReader  isr = null:
+BufferedReader  br = null:
+try{
+ps = Runtime.getRuntime().exec(cmd);
+An array of predefined  parameters  should be created,  and appropriate  parameters  should be selected,
+according  to the external  input. The possibility  of using an inappropriate  external  input as a command  should
+be removed.
+@® Secure coding  technique  for responding  to the “unrestricted  upload of dangerous  files’ attack
++ Attack overview:
+“Unrestricted  upload of dangerous  files’ is a security weakness  that can control the system by executing
+internal  commands  or connecting  with the outside,  if a script  file (asp, jsp, php file, etc.), that can be executed
+on the server side, can be uploaded,  and the attacker  can manually  execute  this file through  the web.
+‘
+@ File upload (web shell)v
+G-/ el
+Attacker Web server
+( [ i
+@ Executing  web shell, occupying  a
+victim server
+[Figure  38] “Unrestricted  upload of file with dangerous  type” security  vulnerability
+* Coding  technique:
+Allow the upload of the file with the extension  allowed by the whitelist  only. Also remove  execute  attribute,  if
+the file execution  status can be set.
+80 TOPCIT  ESSENCE

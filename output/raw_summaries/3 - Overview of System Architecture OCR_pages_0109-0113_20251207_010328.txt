@@ -1,0 +1,228 @@
+LEARNING GUIDE: Pages 109-113
+Generated: 2025-12-07 01:03:28
+PDF: 3 - Overview of System Architecture OCR
+
+================================================================================
+LEARNING GUIDE
+================================================================================
+
+Here is a simplified, easy-to-read learning guide based on the provided text.
+
+---
+
+## Learning Guide: System Architecture & Information Systems
+
+### 1. Embedded Operating Systems (OS) Trends (2017)
+
+*   **Dominant OS:** Embedded Linux (22%)
+*   **Other Key Players:**
+    *   FreeRTOS (20%)
+    *   In-house/Custom OS (19%)
+    *   Android (5%)
+    *   Debian (Linux) (3%)
+    *   Ubuntu (3%)
+    *   Microsoft (Windows Embedded 7/Standard) (3%)
+    *   Texas Instruments RTOS (3%)
+*   **Trend:** A variety of OSes are used, with Linux variants and custom solutions being prominent.
+
+### 2. Overview of System Architecture
+
+#### 2.1 Recent Trends & Challenges in Information Systems
+
+*   **Growing Demand:** Increasing need for robust information system infrastructure for business efficiency and customer service.
+*   **System Components:** Information systems consist of **hardware, software, and human resources.**
+*   **Web-based Structures:** Recent systems heavily adopt web-based architectures.
+*   **Traditional Procurement Inefficiency:** Historically, procuring servers, storage, network devices, and software separately from different vendors led to:
+    *   Complex integration.
+    *   Time-consuming testing/verification.
+    *   Inefficient construction and management.
+
+#### 2.2 Solutions to Inefficiency: Converged & Hyper-Converged Infrastructure
+
+*   **Converged Infrastructure:** Integrates hardware (storage, servers, networks) with virtualization solutions and management software into a single, pre-validated product.
+    *   **Goal:** Improve efficiency, reduce construction time, and simplify system management.
+*   **Hyper-Converged Infrastructure (HCI):** Further complements converged infrastructure by addressing high investment costs, often by consolidating compute, storage, and networking into a single software-defined platform.
+
+### 3. Information System Capacity Calculation (Practical Importance)
+
+*   **Criticality:** Accurately calculating hardware capacity based on system design and structure is essential.
+*   **Risk of Inaccuracy:** Incorrect calculations can lead to:
+    *   Insufficient hardware capacity during service.
+    *   System inadequacy and performance issues.
+    *   Unplanned budget allocation for infrastructure expansion.
+
+### 4. Information System Structure
+
+#### 4.1 Concept of an Information System
+
+*   **Definition:** Uses Information Technology (IT) to perform business processes, provide necessary information, and offer IT services.
+*   **Components:** Built with IT components (hardware, software) and IT personnel.
+*   **Relies on IT Infrastructure:** Provides services using IT infrastructure, which includes:
+    *   Computing platforms
+    *   Networks
+    *   Hardware
+    *   Software
+    *   IT personnel
+    *   IT services (e.g., system development, security, data management)
+
+#### 4.2 Types of Information System Structures
+
+*   **Leading Examples:** Web system architecture and Client-Server system architecture.
+*   **Modern Standard:** Most recent information systems use a **3-Tier Web System Architecture**.
+
+#### 4.3 3-Tier Web System Architecture
+
+*   **Structure:** Divides the system into physical (hardware) and program (software) areas across three main tiers:
+    1.  **Client Tier (Presentation Layer):**
+        *   **Function:** User interface (UI) for interaction.
+        *   **Components:** Web browser, user interface (UI).
+    2.  **Web/Application Server Tier (Logic Layer):**
+        *   **Webserver:** Handles web requests (e.g., HTTP), serves static content, and forwards dynamic requests to the application server.
+        *   **Application Server (WAS):** Executes business logic, processes transactions, and handles communication with the database.
+        *   **Components:** Web service communication mechanism, business logic, transaction processing, data handling.
+    3.  **Database Server Tier (Data Layer):**
+        *   **Function:** Stores and manages data.
+        *   **Components:** Database Management System (DBMS), tables, triggers, stored procedures.
+
+### 5. Information System Hardware Structure (Physical Domain)
+
+#### 5.1 Servers
+
+*   **Fundamental Component:** Essential for implementing any information system.
+*   **Definition:** A hardware platform that runs server application programs.
+*   **Classification by Performance:**
+    *   **Entry Server:**
+        *   **Cost:** Millions of won.
+        *   **Use:** Webserver, application server.
+        *   **CPU:** 1-2 CPUs per socket.
+    *   **Middle-Range Server:**
+        *   **Cost:** Tens of millions of won.
+        *   **Use:** Database server, enterprise server.
+        *   **CPU:** 4+ CPUs per socket (but not considered high-end).
+    *   **High-End Server:**
+        *   **Cost:** Hundreds of millions to billions of won (very expensive).
+        *   **Use:** Database server, enterprise server.
+        *   **CPU:** Tens of CPUs per socket.
+
+*   **Classification by Configuration:**
+    *   **Rack-mount Server:**
+        *   **Description:** Fits into standardized racks (steel frames) for server/network equipment.
+        *   **Use:** Data centers, server rooms (where multiple devices are present).
+        *   **Standard Sizes:** 1U, 2U, 4U (installed in 19-inch racks).
+        *   **Connections:** Power, network, SAN switch connected separately.
+    *   **Tower Server:**
+        *   **Description:** Similar to a general PC, stands upright.
+        *   **Use:** In-house server rooms, offices, stores.
+        *   **Note:** Low-noise versions exist for office environments.
+    *   **Blade Server:**
+        *   **Description:** Maximizes capacity in minimal size by plugging multiple CPU "blades" into a single chassis/frame.
+        *   **Advantage:** High density (more servers in the same space than rack-mount), reduced and integrated server/network components within the box.
+        *   **Feature:** Often comes with pre-installed operating systems.
+
+#### 5.2 Storage
+
+*   **Definition:** Provides large storage space, high performance, and high availability compared to general disk arrays.
+*   **Classification:** Based on processing capacity, typically into enterprise or mid-range storage.
+
+---
+
+================================================================================
+ORIGINAL TEXT (First 5000 chars)
+================================================================================
+
+--- Page 109 ---
+ESSENCE
+Embedded  Linx a  22°
+FreeRTOS 20%
+In-house/custom 19%
+Android
+Debian(Linux)
+Ubuntu
+Microsoft(Windows  Embedded  7/Standard)
+Texas Instruments  RTOS
+Texas Instruments(DSP/BIOS
+Micrium(uC/OS-IIl
+Microsoft(Windows  7 Compact  or earlier;
+Keil(RTX
+Micrium(uC/OS-Il
+Wind River(VxWorks4% m 2017 (N=619)
+3%
+3%
+3%)
+)
+)
+)
+)
+)
+AnalogDevices(VDK)
+Express  Logic(Threadx)
+Freescale  MQX Only Operating  Systems  with
+2% or more are shown.
+Angstrom(Linux)
+Green Hills(INTEGRITY)
+[Figure  74] Status of Embedded  OS Use (2017)
+108 TOPCIT  ESSENCE
+
+
+--- Page 110 ---
+Overview  of System  Architecture
+>p> Recent  trends  and issues
+With the advent  of the information  age, the social demand  to construct  information  system infrastructure
+is increasing,  and various information  systems  are being implemented  for business  efficiency  and customer
+service improvement.  These information  systems  generally  consist  of hardware,  software,  and human
+resources.  It is necessary  to understand  the concept,  architecture,  and structure  of the information  to
+implement  a successful  information  system.
+Recent information  systems  tend to adopt a large number  of web-based  structures.  In that regard,
+theinformation  system projects  of the planners  (public institutions)  and implementers  (systems  integrators
+and hardware  manufacturers)  need to procure hardware  resources  that suit the project scope in order to
+improve  the efficiency  of investment  in information  systems.
+Information  system infrastructure  is generally  implemented  by purchasing  servers, storage,  and network
+devices  separately  from each vendor, then integrating  them for the project. Moreover,  they also purchase
+software  separately,  and thus need to test and verify if it works properly  with the hardware.
+The complex  structures  and procedures  of constructing  information  system infrastructure  have inevitably
+resulted in inefficiency  in construction  time and system management.  The converged  infrastructure
+that integrates  the hardware,such  as storage,  servers, and networks,  with the virtualization  solution  and
+the management  software  into a product,  and validates  it in advance  for supply to customers, has been
+introduced  to compensate  for it. Moreover,  the hyper-converged  infrastructure  that complements  the high
+investment  cost has also appeared.  These efforts to increase  the efficiency  of system  implementation  are
+ongoing,
+1, To be able to explain information  system  structures,
+2. To be able to calculate  information  system capacity.
+3, To be able to explain the latest OS technologies  and trends,
+M3 Overview  of System  Architecture  109
+
+
+--- Page 111 ---
+ESSENCE
+Server, storage,  network  equipment,  webserver,  WAS server, DB server, hardware  capacity  calculation,  OLTP
+capacity  calculation,  web/WAS  capacity  calculation, memory  capacity  calculation,  disk capacity  calculation,
+storage  capacity  calculation,  converged  infrastructure,  hyper-converged  infrastructure
++ Preview  for practical  business
+Company  A has recently  launched  a new system,  but recognized  that its hardware  capacity  is about 30%
+insufficient  during a service.  An investigation  found that the concurrent  user calculation  of some services
+was inaccurate,  leading to incorrect  hardware  capacity  selection.  The current infrastructure  is expected
+to face inadequacy  within three to four months if the company  operates  the system as is. Therefore,
+Company  A’s Planning  Team decided to allocate the additional  budget to expand the infrastructure  in
+two months.  This case shows the practical  importance  of calculating  the information  system capacity,
+according  to its structural  design and system structure.  This chapter  describes  information  structure  and
+size calculation  in detail.
+01 Information  System  Structure
+A) Concept  of information  system
+An information  system uses information  technology  (IT) to perform  business  procedures,  such as providing  necessary
+information, or business  processing  required  by enterprises.  It creates a system that enables  IT personnel  to provide
+IT services  by using IT components,  such as hardware  and software,  to perform  organizational  business  procedures.
+As shown in [Figure 75], the information  system provides  services  by using the technology  resources  of the IT
+infrastructure.  The IT infrastructure  includes  computing  platforms,  such as networks,  hardware,  software,  IT personnel,
+and IT services.
+110 TOPCIT  ESSENCE
+
+
+--- Page 112 ---
+Overview  of System Architecture )
+IT Service
+(System  Development,  Security  and Risk
+Management,  and Data Management)
+[Figure  75] Information  System  and IT-Based  Structure
+B) Information  system  structure
+There are several types of structures  for an information  system.  A web system architecture  and a client-server
+system architecture  are leading  examples.  The mos...

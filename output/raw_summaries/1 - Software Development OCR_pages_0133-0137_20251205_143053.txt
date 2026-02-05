@@ -1,0 +1,175 @@
+LEARNING GUIDE: Pages 133-137
+Generated: 2025-12-05 14:30:53
+PDF: 1 - Software Development OCR
+
+================================================================================
+LEARNING GUIDE
+================================================================================
+
+Here's a simplified, easy-to-read learning guide based on the provided text:
+
+---
+
+# Open-Source Software & Development Trends
+
+## I. Open-Source Software Licenses
+
+Open-source software licenses share common traits like free use, unrestricted distribution, and permission to acquire and modify source code. However, they differ significantly in obligations regarding the disclosure of derivative works and compatibility with proprietary (closed-source) software.
+
+### A. Types of Open-Source Licenses
+
+#### 1. GNU General Public License (GPL)
+*   **Most stringent** license.
+*   **Key Principle (Viral Effect):** If GPL code is combined with proprietary software, the *entire combined work* (including the proprietary parts) must also be opened under the GPL.
+
+    *   **GPL 2.0**
+        *   **Widely adopted.** Created by the Free Software Foundation (FSF).
+        *   **Obligations:**
+            *   When distributing, specify copyright notice, GPL distribution, and absence of warranty.
+            *   **Any modification or linking (static/dynamic) of GPL code requires the modified/linked source code to be opened under GPL.**
+            *   Cannot receive royalties for patented programs used under GPL.
+
+    *   **GPL 3.0**
+        *   Similar to GPL 2.0 but with additions for **DRM** (Digital Rights Management), **software patents**, and **compatibility**.
+        *   **Obligations:**
+            *   When including GPL 3.0 code in a product, provide **installation information** with the source code.
+            *   **Waive DRM-related interests.**
+            *   Contributors must grant a **non-discriminatory, royalty-free patent license** for their contributions.
+
+#### 2. Lesser General Public License (LGPL)
+*   **Less strict** than GPL, specifically designed for **libraries**.
+*   **Purpose:** Encourages commercial software developers to use open-source libraries without forcing them to open their entire application's source code.
+*   **Obligations:**
+    *   **Linking (static/dynamic) an application program with an LGPL library *does not* require opening the application's source code.**
+    *   Patent handling is similar to GPL.
+
+#### 3. Berkeley Software Distribution (BSD) License
+*   **Permissive license:** Does **not** require developers to disclose their software source code.
+*   **Wide scope of use.**
+*   **Obligations:**
+    *   When distributing software, include copyright notice and absence of warranty.
+    *   **Allows commercial use without limitations; no obligation to disclose modified program source code.**
+
+#### 4. Apache License
+*   Applicable to all Apache Software Foundation (ASF) software (e.g., Apache web server).
+*   **Permissive license:** Does **not** require source code disclosure, similar to BSD.
+*   **Obligations:**
+    *   Do not violate the "Apache" trademark.
+    *   When distributing software, include copyright notice and absence of warranty.
+    *   **Can be combined with GPL 3.0 code.**
+    *   **Allows commercial use without limitations; no obligation to disclose modified program source code.**
+
+#### 5. Mozilla Public License (MPL)
+*   Developed for the Netscape browser.
+*   Defines disclosure scope clearly.
+*   **Obligations:**
+    *   When distributing software, specify copyrights, no warranty, and MPL distribution.
+    *   **Any modifications made to the MPL code *itself* must be distributed under MPL.**
+    *   If MPL code is combined with *other codes*, the source code for the non-MPL parts *does not* have to be disclosed.
+
+### B. Considerations for Using Open-Source Software
+
+Before using open-source software, understand its advantages and disadvantages:
+
+#### 1. Advantages
+*   **Lower Initial Cost:** Source code is often free to download, modify, and redistribute.
+*   **Rapid Development:** Communities share technical information, problems, and solutions, leading to quick and flexible technology development.
+*   **Interoperability:** Often uses open formats/protocols, ensuring compatibility between different software.
+*   **Stability:** Many developers contribute, leading to generally stable programs.
+
+#### 2. Disadvantages
+*   **Documentation:** May not be as systematic or comprehensive as commercial programs.
+*   **Development Roadmap:** Less systematic due to voluntary participation; future development plans need careful consideration.
+*   **Patent Royalties:** Generally requires distribution without patent royalty fees.
+
+## II. Software Development Trends & Efficiency
+
+### A. Recent Trends & Issues
+*   The software industry continuously releases new technologies to improve quality and development productivity.
+*   This is driven by increased demand for business efficiency and effective resource utilization.
+*   **Key areas to understand:** Latest trends in development tools, programming languages, development frameworks, and software architecture (e.g., microservices for independent deployment and scalability).
+
+### B. Why Efficiency Matters
+*   Historically, the IT industry has strived for efficiency to handle increasingly vast and complex systems.
+*   This drive led to the creation of numerous platforms and frameworks (e.g., RAD, Agile, CBD, OOP) and various CASE tools.
+*   **Efficiency is paramount for:**
+    *   Securing higher productivity.
+    *   Improving quality.
+    *   Completing projects within set timeframes.
+*   These tools have significantly helped in achieving better productivity and quality in software development.
+
+---
+
+================================================================================
+ORIGINAL TEXT (First 5000 chars)
+================================================================================
+
+--- Page 133 ---
+ESSENCE
+Scope Obligations
+Internal  useOpening  scope
+Opening  method
+Compatibility
+Modification
+[Figure  27] Obligations  of the open-source  software  license
+B) Comparison  of open-source  software  licenses
+Open-source  software  licenses  have common  characteristics  such as free use, distribution  without  restrictions,
+source code acquisition,  and source code modification.  However,  there are some differences  with each
+license regarding  the obligation  to disclose  secondary  works again, and the combination  of open source with
+proprietary  software.
+The GPL is the most stringent  license,  which specifies  the condition  that combining  GPL code with proprietary
+software  is not allowed. When a program is distributed  under the GPL, which combines  proprietary software
+code and the GPL code, the proprietary  software  code must also be opened.
+@ GPL (GNU General  Public License)  2.0
+GPL 2.0 is the license most frequently  adopted  for open-source  software.  It was created  and distributed  by the
+Free Software  Foundation  (FSF) and is very strict compared  to other open-source  software  licenses. The main
+matters  to be observed  are as follows.
++ When distributing  software, the distributor  should specify the copyright  notice, distribution  under the GPL,
+and the absence  of warranty  liability  for GPL software.
++ When modifying  software  or linking new software  (both static and dynamic  linking),  the source code must be
+opened  in accordance  with the GPL.
++ When distributing  its own patented  program,  a distributor  cannot receive royalties  from users who use the
+program  under the GPL.
+@ GPL (GNU General  Public License)  3.0
+The basic contents  of GPL 3.0 are similar to those of GPL 2.0, but it has been supplemented  with matters
+related to DRM (Digital Rights Management,  technology  and service to protect copyrights),  software  patent
+issues, and compatibility  issues. The main matters  to comply  with are as follows.
+132 TOPCIT  ESSENCE
+
+
+--- Page 134 ---
+Software  Development )
++ When including  the source code under GPL 3.0 in the user’s product  or distributing  it with the user's product,
+installation  information  should be provided  with the source code.
+The interests  related to DRM, which are protected  by the laws of each country, should be waived. If a
+contributor  has improved  the source code, that contributor  should provide a license stating that his/her
+contribution  is non-discriminatory  and does not require any fee with regard to the patent.
+@® LGPL (Lesser  General  Public License)
+The LGPL enables  users to use some libraries  in a way that the source code can be used in a more eased form
+than the GPL. If a strict license such as the GPL is applied,  commercial  software  developers  will be reluctant  to
+use the open-source  library because  they have to open the source code of the software  that uses the library.
+In other words, the LGPL is designed  to encourage  the use of an open-source  library from a strategic  point of
+view. The main matters  to comply  with are as follows.
++ When linking an application  program  with the LGPL library (both static and dynamic  linking), developers  do
+not have to open the source code of the application  program  concerned.
++ The patent is handled  in the same way as the GPL.
+@ BSD (Berkeley  Software  Distribution)  license
+The BSD license is a representative  open software  license that does not require the developer  to disclose  the
+software  source code. The scope of BSD license permission  is wide because  projects  deployed  with the BSD
+license have been implemented  using the financial  resources  provided  by the U.S. government.  As the software
+was paid for with the taxes of U.S. citizens  in advance,  people can use or create the software  in the way they
+want. The main matters  to comply  with are as follows.
++ When distributing  the software,  copyright  notice and absence  of warranty  should be specified.
++ The source code can be used for commercial  software  without  limitations  because  there is no obligation  to
+disclose  the source code of the modified  program.
+© Apache  license
+The Apache  license is applicable  to all software  of the Apache  Software  Foundation  (ASF), including  the Apache
+web server. Like the BSD license, it does not require disclosure  of the source code. The main matters  to comply
+with are as follows.
+- The trademark  right for the name “Apache”  should not be violated.
++ When distributing  the software,  copyright  notice and absence  of warranty  should be specified.
++ The code distributed  under the Apache  license can be combined  with the code distributed  under the GPL 3.0.
++ The source code can be used for commercial  software  without  limitations
+because  there is no obligation  to disclose  the source code of the modified  program.
+© MPL (Mozilla  Public License)
+The MPL was developed  to disclose  the source code of the Netscape  brows...

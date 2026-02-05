@@ -1,0 +1,33 @@
+Software  Development )
+Type Description
+Modifying  multiple  classes  at_ | When minor changes  are required  in several related classes  each time a specific  class is
+the same time modified.
+Data clumps Data that should be handled  together  are not in one class.
+Primitive  obsession Only basic types like int are used without  creating  a class.
+Switch statements Operations  are split using a ‘switch’  statement  or an ‘if statement
+Lazy class A ass that doesn’t  do much.
+Speculative  generality Excessive  generalization  such as “Expansion  will be performed  someday’.
+Class interface  mismatch The class interface  (API) is not appropriate.
+Incomplete  library  class It is difficult  to use existing  library classes.
+Parallel  inheritance  hierarchies Asub-class  should be created  in another  place of the class hierarchy  when a sub-class  is created.
+Comment There are detailed  comments  to explain  the insufficient  code.
+C) Typical refactoring  techniques
+Refactoring  techniques Description
+When there are code snippets  that can be grouped  together,  a separate  methodExtract  Method . .Method is created  with a name that clearly expresses  the purpose  of the code.
+cleanup Replace  Parameter  with | If an object calls a method and passes the result to another  method as a
+Method parameter,  the receiver  calls the method.
+Extract  Class If one class is doing the task that should be performed  by two classes,  a new class is
+Pnetiten created,  and the related fields and methods  are transferred  to it from the old class.
+Transfer If a class has a function  that is used by some instances  only, a sub-class  isE | : : ’between Sue SMaEES created that manages  the functions  used by the instance only.
+Objects If several clients are using the same subset of the interface of one class, theExtract  Interface .subset  is extracted  as an interface.
+Name Rename  Method Aname  with a  built-in  type is changed  to a name that can deliver  the intent well
+without  associating  with the type.
+. Inline Method If the main text of a method  is as clear as the method's  name, delete the method
+en after moving  the main text into the caller that calls the method.
+Collapse  Hierarchy Integrates  the super class and sub-class  if they are not very different.
+Replace  Magic Number  | If there is a numeric  literal that has special meaning,  a constant  is created  with
+with Symbolic  Constant  | the name that reveals  the intent and the number  is replaced  with a constant.
+Duplication Pull Up Field If two sub-classes  have the same field, the field is moved to the superclass.
+If multiple sub-cl have the method that perf th k, the Pull Up Method multiple  sub-classes  have the me od that performs the same task, the
+method  is moved to the superclass.
+M1 Software  development  109

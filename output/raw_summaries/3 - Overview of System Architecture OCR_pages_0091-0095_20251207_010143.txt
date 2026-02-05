@@ -1,0 +1,189 @@
+LEARNING GUIDE: Pages 91-95
+Generated: 2025-12-07 01:01:43
+PDF: 3 - Overview of System Architecture OCR
+
+================================================================================
+LEARNING GUIDE
+================================================================================
+
+Here is a simplified, easy-to-read learning guide based on the provided text:
+
+---
+
+## Learning Guide: System Architecture & Data Management
+
+### 1. Disk Scheduling Algorithms
+
+These algorithms manage how a disk head services requests to minimize access time.
+
+*   **SCAN Disk Scheduling (Elevator Algorithm)**
+    *   **Concept:** The disk head moves in one direction, servicing all requests in its path.
+    *   **Action:** When it reaches the outermost or innermost cylinder, it reverses direction.
+    *   **Benefits:** Reduces response time variation, offers good throughput and mean response time, solves starvation (unlike SSTF).
+    *   **Example:** Services 53 -> 60 -> 120 -> 183 (then reverses) or 53 -> 37 (then reverses).
+
+*   **LOOK Disk Scheduling**
+    *   **Concept:** Similar to SCAN, but more efficient.
+    *   **Action:** The head *changes direction early* if there are no more requests in its current moving direction, *without* reaching the absolute outermost or innermost cylinder.
+
+*   **Circular SCAN (C-SCAN) Disk Scheduling**
+    *   **Concept:** Services requests in a predetermined, single direction only.
+    *   **Action:** After servicing all requests in one direction, the head "jumps" back to the initial/opposite end *without servicing* requests on the return path, then starts servicing again from that end. This creates a "circular" movement.
+    *   **Benefits:** Improves SCAN by providing a more consistent and predictable response time for all requests, reducing response time variation.
+
+*   **Circular LOOK (C-LOOK) Disk Scheduling**
+    *   **Concept:** Combines C-SCAN's circular nature with LOOK's efficiency.
+    *   **Action:** The head moves in a predetermined direction, servicing requests. When no more requests exist in that direction, it "jumps" back to the furthest pending request in the opposite direction *without servicing* during the jump, and without reaching the absolute end of the disk.
+
+### 2. High Availability Storage
+
+#### A) Redundant Array of Independent Disks (RAID) Technology
+
+RAID uses multiple disks to improve performance and reliability.
+
+*   **Definition:** A storage technology that links multiple physical disks to act as a single logical unit, minimizing failure factors and improving access performance.
+*   **Main Features:**
+    *   **Improved Availability:** Supports hot-swapping (replacing a failed disk without system shutdown) and online data recovery.
+    *   **Increased Capacity:** Combines several disks into a large virtual disk.
+    *   **Increased Speed:** Partitions data and transfers it in parallel to multiple disks, increasing overall data transfer rate.
+*   **Widely Used RAID Levels:** RAID-0, RAID-1, RAID-5, RAID-6, RAID-10.
+
+---
+
+**RAID Levels in Detail:**
+
+*   **RAID-0 (Striped Disk Array without Fault Tolerance)**
+    *   **Mechanism:** Data is divided into "stripes" (pieces of a specific size) and stored across two or more drives simultaneously (disk striping).
+    *   **Pros:** Significantly increases I/O speed due to parallel processing.
+    *   **Cons:** **No redundancy/fault tolerance.** If *any* drive fails, all data is lost. Not suitable for critical business environments alone.
+
+*   **RAID-1 (Mirroring and Duplexing)**
+    *   **Mechanism:** Data is redundantly stored on two separate drives (mirroring). Each piece of data is duplicated.
+    *   **Pros:** High data stability; data can be restored if one drive fails. Improves reading performance.
+    *   **Cons:** High cost (only half of the physical capacity is usable, as the other half is for redundancy). Writing performance can be lower due to writing to two places.
+
+*   **RAID-5 (Striping with Distributed Parity)**
+    *   **Mechanism:** Requires at least three drives. Data and parity information (for error checking/recovery) are striped and distributed across *all* drives.
+    *   **Improvement:** Distributes the parity load across all drives, unlike RAID-4 which used a dedicated parity drive.
+    *   **Pros:** Good balance of cost-effectiveness and performance.
+    *   **Cons:** Data cannot be restored if two or more drives fail simultaneously. Rebuilding data on a new drive can be slow, increasing risk.
+
+*   **RAID-6 (Stripe Set with Dual Distributed Parity)**
+    *   **Mechanism:** Similar to RAID-5, but stores *two* independent parities distributed across all drives.
+    *   **Pros:** More durable and safer than RAID-5; can tolerate *two* simultaneous drive failures. This is crucial for large systems where a second drive failure during a lengthy rebuild process is a risk.
+    *   **Cons:** Slightly higher overhead than RAID-5 due to dual parity.
+
+*   **RAID-10 (Striping & Mirroring)**
+    *   **Mechanism:** A combination of RAID-0 and RAID-1, requiring at least four drives.
+        *   **RAID 1+0:** First, drives are mirrored (RAID-1 sets), then these mirrored sets are striped together (RAID-0).
+        *   **RAID 0+1:** First, drives are striped (RAID-0 sets), then these striped sets are mirrored (RAID-1). RAID 1+0 generally offers better stability and is more common.
+    *   **Pros:** Provides both high I/O speed (from RAID-0) and high data stability/redundancy (from RAID-1). Overcomes the main drawbacks of RAID-0 (no fault tolerance) and RAID-1 (high cost/performance limit).
+    *   **Cons:** Very high cost due to significant redundancy (half of the drives are for mirroring).
+
+#### B) Backup Storage Solutions
+
+*   **Linear Tape-Open (LTO)**
+    *   **Definition:** An industry-standard open tape drive technology for data storage.
+    *   **Features:** Supports high-speed data processing and very large storage capacity.
+    *   **Evolution:**
+        *   LTO-1 (2000): 100 GB uncompressed capacity, 20 MB/s speed.
+        *   LTO-8 (Current): 12.8 TB uncompressed capacity, 427 MB/s speed.
+        *   LTO-10 (Expected): 48 TB uncompressed capacity, 1100 MB/s speed.
+
+*   **Virtual Tape Library (VTL)**
+    *   **Definition:** A backup solution that uses disk storage to *emulate* a physical tape library.
+    *   **Purpose:** Addresses limitations of traditional physical tape backups (e.g., performance, scalability, recovery time).
+    *   **Benefits:** Simplifies backup processes and enables high-speed backups through tape virtualization (using disk performance for tape-like operations).
+
+### 3. Graphic Compression Technology
+
+Methods to reduce the size of video and image data.
+
+*   **Lossless Compression (Reversible Compression)**
+    *   **Concept:** A compression method where the original data can be perfectly restored without any loss of information during decompression.
+    *   **Characteristic:** Achieves a lower compression rate compared to lossy compression.
+
+*   **Lossy Compression (Irreversible Compression)**
+    *   **Concept:** A compression method where some data is permanently discarded during compression.
+    *   **Characteristic:** The decompressed data will not be identical to the original data, but the perceived quality may still be acceptable (e.g., for images, video). Achieves higher compression rates.
+
+================================================================================
+ORIGINAL TEXT (First 5000 chars)
+================================================================================
+
+--- Page 91 ---
+ESSENCE
+of the moving  head. It can reduce the response  time variation  of SSTF, and it generally  offers excellent  throughput
+per unit time and mean response  time. On determining  the heading  direction,  the head services  all the requests
+waiting  in the request  queue in the same direction  as the order of the shortest  search distance,  and it changes  the
+seeking  direction  after it reaches  the outermost  or innermost  cylinder. It has improved  both the throughput  per unit
+time and the response  time significantly  compared  to SSTF, and it solved the starvation.
+1 14 37 53 60 120-183 250
+ae Queue = 53, 120, 183, 37,60
+_— Initial Head Position  = 53
+[Figure  62] SCAN Disk Scheduling
+© LOOK disk scheduling
+The technique  is the same as the SCAN disk scheduling,  except  that the head changes  its direction  before reaching
+the outermost  or innermost  cylinder. It checks the waiting queue while moving  the head, and it does not move
+further it changes  direction  when there are no more requests  in the moving  direction.
+ee Queue = 53, 120, 183, 37, 60
+a Initial Head Position  = 53
+[Figure  63] LOOK Disk Scheduling
+@ Circular  SCAN (C-SCAN)  disk scheduling
+The SCAN technique  moves the head by connecting  the inner and outer tracks in a circular  model. Like SCAN disk
+scheduling,  the head services  the request  with the shortest  distance  in its moving  direction  first, then it moves  to the
+initial direction  to service requests  after all the requests  in the moving  direction  are serviced.  It services  all requests
+in a predetermined  service direction.  Since it responds  equally  to input and output requests  by improving  the SCAN
+scheduling,  the response  time variation  is very small, making  it easy to predict  the response  time.
+Circular  LOOK (C-LOOK)  disk scheduling
+Like C-SCAN,  it is a LOOK scheduling  technique  that connects  the inner and outer tracks in an annular  model in order
+to make the head move. The head moves to the initial beginning  position  and services  the next requests,  if there are
+90 TOPCIT  ESSENCE
+
+
+--- Page 92 ---
+Overview  of System Architecture )
+no more requests  in the moving  direction,  even when the head does not reach the end.
+03 High Availability  Storage
+A) Redundant  array of independent  disks (RAID)  technology
+Large-capacity  storage systems  generally  have an error controller  and backup  function  to safely store the massive
+volume of data. RAID technology  is a storage  technology  that minimizes  the factors  that can cause failure, and it
+improves  access performance  by arranging  a number  of disks, and by creating  a separate  disk unit by linking them
+with each other
+The main features  of RAID are improved  availability,  increased  capacity,  and increased  speed. Firstly, the improved
+availability  feature provides  a hot-swap  function  to replace  a failed disk without  shutting  down the system, and it
+recovers  the original data to the replaced  disk online. Secondly,  the increased  capacity  feature  organizes  several disks
+into a large virtual disk, and it recognizes  them as large-capacity  storage  disks. Thirdly, the increased  speed improves
+the overall data transfer  rate by partitioning  reading  and writing  data, and by transferring  it to multiple  disks in parallel.
+RAID implementation  includes  RAID-O, 1, 2, 3, 4, 5, 6, and 10. RAID-0, RAID-1, RAID-5, RAID-6,  and RAID-10  (1+0 or O+1)
+are widely  used technologies,  while RAID-2,  RAID-3,  and RAID-4  are rarely used.
+@ RAID-O  (Striped  disk array without  fault tolerance)
+RAID-O  consists  of two or more drives and uses disk striping,  which stores data by dividing  it into pieces of a specific
+size and saves it on multiple  disks at once. Although  it increases  the I/O speed, it cannot  protect  data because  there
+is no redundancy.  A stripe, which means the size of the stored data, is a unit for dividing  data into pieces of a specific
+size. RAID-O can reduce the I/O time by enabling  parallel processing  of I/O requests.  However,  data is lost if any drive
+fails. Although  the technology  is not used much in business  environments,  RAID-10  uses it by taking its advantages
+and overcoming  its disadvantages.
+RAID 0
+Striping
+Ole S| Mele
+BLOCK BLOCK 6
+see EiMee
+DISK1 DISK2
+[Figure  64] RAID-O
+M3 Overview  of System  Architecture  91
+
+
+--- Page 93 ---
+ESSENCE
+@ RAID-1 (Mirroring  and Duplexing)
+RAID-1 uses a mirroring  technique  that redundantly  stores data on two drives. Since data is stored in redundancy,
+data can be restored,  even if a drive fails. It can improve  the reading  performance,  but the writing performance  is
+somewhat  low, since it performs  reading  operations  on a drive with low I/O. Although  the system is highly stable, the
+cost is high because  only half of the physical  capacity  can be used, as the other half is used for redundant  storage.
+RAID 1
+mirroring
+BLO =i MOlel
+S]MOle BLOCK 4
+DISK1 DISK2
+[Figure...

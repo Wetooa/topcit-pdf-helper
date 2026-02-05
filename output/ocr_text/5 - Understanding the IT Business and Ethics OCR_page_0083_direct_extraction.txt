@@ -1,0 +1,32 @@
+ESSENCE
+01 Summary  of Lessons  Learned
+IT business  services  consist  of a general-purpose  work support system that assists in performing  some of the
+tasks involved  in running  a business;  a system that assists decision  makers when making decisions;  and IT service
+management  (ITSM), a management  technique  for the systematic  management  of IT services.
+The general-purpose  work support  system is composed  of ERP (enterprise  resource  planning),  SCP (supply chain
+management),  and CRM (customer  relationship  management),  all of which can help an enterprise  to maintain  close
+relationships  with its customers  by analyzing  their needs.
+The decision  support  system consists  of the business  intelligence  (Bl) unit and the decision  support  system (DSS) for
+providing  support  when making  decisions.  In both units, the backbone  is the enterprise  data warehouse  (EDW) that
+collects  data internally  and externally  and analyzes  the data.
+ITSM, the IT service manager,  leverages  the IT Infrastructure  Library (ITIL) in defining  the processes  and activities
+of the IT services.  ITSM, when used in combination  with international  standards  like ISO/IEC 20000, can improve
+and enhance  the quality of IT services.  It can also provide IT services  that will satisfy the users, but only when the
+definitions  of service levels and the management  of service levels are installed  in advance.
+O2 IT Business  General-Purpose  Work Support  System
+A) Enterprise  solution
+IT business  is a key enabler  of enterprise  competitiveness  and continuous  innovation. In the past, it was simply a tool
+for supporting  business  activities,  but today it plays an important  role as a tool for survival  within a highly competitive
+environment.
+During the short 30-year  period since the introduction  of enterprise  computing  in the early 1980s, the power of
+computers  has grown exponentially  and enterprises  have left many examples  of how computers  should be used in
+the business  environment.  These examples  have now evolved  into formal solutions.
++ An “enterprise  solution”  is a collective  term for the information  systems  that support  the management  activities
+which an enterprise  must perform in order to maximize  business  efficiency  and gain competitive  advantages  in its
+business  environment.
++ The value and utility of an enterprise  solution  will vary depending  on the business processes  and activities  to be
+defined,  and not by the function  provided  by the information  system.
++ Enterprise  solutions  are a broad concept  encompassing  advance  IT planning,  job specific solutions  that will be
+configured  together  for building  a business  operation  system  using IT systems,  and maintenance&  repair for directly
+operating  the aforementioned  IT system.
+82 TOPCIT  ESSENCE

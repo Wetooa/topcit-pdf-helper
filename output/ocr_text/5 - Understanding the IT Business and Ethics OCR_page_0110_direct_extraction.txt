@@ -1,0 +1,41 @@
+Understanding  the IT Business  and Ethics
+D) Understanding  SLM
+SLM (Service  Level Management)  is one of the core processes  of ITIL. The use of SLM ensures  that the level of
+service quality agreed upon with the customers  can be delivered  and that the process  for increasing  customer
+confidence  and improving  service levels can be managed.
+i Sm a ‘ Certifi-
+: ign up for cation" service gq eSCM
+1 <—+__»>
+I <+_____ Certifi-
+i Provide cation ITIL
+I service
+SLM
+Measure  service  levels
+Report  service  levels
+SLO measurement  and
+contract  infringement
+monitoring
+[Fig. 44] Concept  and scope of SLM
+SLM provides  the ability to manage  service level objectives  (SLO), which are the contents  of an SLA, and to notify an
+enterprise  of any infringements  of the SLA. Therefore,  the implementation  of SLM is essential for managing  the IT
+service  levels.
+<Table 54> Component  elements  of SLM
+Component  elements Concept
+Service  Catalog + Metadata  (document)  that explains  the entire list of services.
++ Service  Level Agreement
+oth -Written contract on the mutually agreed level of IT service.
+slo + Service  Level Objectives
+- List of IT services  covered  by the SLA.
++ Objectives  Level Agreement
+OLA - Agreement  on the interdependent  relationships  between  the internal departments  of a service
+supplier,  which will enable  the internal  departments  to effectively  communicate  and manage  the
+service level agreement.
+Service  Quality  Plan + An internal  plan that describes  everything  required  to ensure the agreed  level of service.
+Service  Report + Periodic  assessment  of violations  of the service level agreement.
++ An automated  engine  for managing  service  levels. The engine measures  the values  of service
+SLM engine level management  metrics,  report automation  function,  and monitors  the service  with real-time
+information.
+When operating  SLAs and SLMs, the evaluation  criteria for established  service levels must be specific, quantitative,
+and objective.  The evaluation  criteria must be verified,  and seamless  setting  of the baseline  and smooth  management
+of any changes  must be ensured.
+M5 Understanding  the IT Business  and Ethics 109

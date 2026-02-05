@@ -1,0 +1,233 @@
+LEARNING GUIDE: Pages 43-47
+Generated: 2025-12-05 14:36:52
+PDF: 4 - Understanding Information Security OCR
+
+================================================================================
+LEARNING GUIDE
+================================================================================
+
+Here is a simplified, easy-to-read learning guide based on the provided text:
+
+---
+
+## **Information Security Learning Guide**
+
+### **1. Public Key Certificates**
+
+*   **Definition:** X.509 standard digital certificates issued by a Public Certificate Authority (CA).
+*   **Purpose:** Used to verify identity and enable secure transactions.
+*   **Key Types:**
+    *   **NPKI Certificates:** For public use (financial, e-commerce).
+    *   **GPKI Certificates:** For administrative agencies (administrative work).
+*   **Recent Enhancements (since 2011):**
+    *   RSA digital signature key length increased: 1,024 bits → **2,048 bits**.
+    *   Hash function updated: SHA-1 (160-bit) → **SHA-256** (256-bit).
+*   **Main Contents of a Public Key Certificate (e.g., NPKI):**
+    *   **Version:** Certificate format version.
+    *   **Serial Number:** Unique identifier from the issuing CA.
+    *   **Algorithm Identifier:** Object Identifier (OID) of the signature algorithm used.
+    *   **Issuer:** Distinguished Name (DN) of the CA that issued the certificate.
+    *   **Period of Validity:** Start and expiration dates.
+    *   **Subject:** DN of the certificate owner.
+    *   **Public-key Information:** Subject's public key and its corresponding algorithm identifier.
+    *   **Signature:** Digital signature created using the CA's private key.
+
+#### **Verifying Certificate Validity**
+
+1.  **CRL (Certificate Revocation List)**
+    *   **What it is:** A list of certificates that have been revoked by the CA.
+    *   **Contents:** Includes serial number, revocation date, and reasons for revocation.
+    *   **Mechanism:** Periodically downloaded from a distribution point.
+    *   **Trade-offs:**
+        *   **Long download cycle:** Revoked certificates might be used unnoticed.
+        *   **Short download cycle:** Increases system overhead.
+
+2.  **OCSP (Online Certificate Status Protocol)**
+    *   **What it is:** Addresses CRL's periodic update shortcomings.
+    *   **Mechanism:** Provides real-time certificate status on request when a user attempts access.
+    *   **Standard:** Defined in RFC 6960.
+    *   **Implementation:** Typically uses a server configured with HTTP.
+
+---
+
+### **2. Access Control Technology**
+
+#### **A) Overview of Access Control**
+
+*   **Concept:** Controlling *who* can access a system and *what tasks* they can perform.
+*   **Three Core Components:**
+    1.  **Identification:**
+        *   **Process:** The system identifies a subject (user) using a unique token.
+        *   **Examples:** User ID, employee card, biometrics.
+    2.  **Authentication:**
+        *   **Process:** The subject verifies its claimed identity to the system.
+        *   **Examples:**
+            *   **Knowledge-based:** Password.
+            *   **Ownership-based:** Certificate, OTP (One-Time Password).
+            *   **Presence-based:** Biometrics.
+    3.  **Authorization:**
+        *   **Process:** The system determines what tasks and objects the authenticated user is allowed to access/perform.
+        *   **Examples:** Mandatory Access Control (MAC), Discretionary Access Control (DAC), Role-Based Access Control (RBAC).
+
+*   **Access Control Procedure:**
+    Subject → **Identification** → **Authentication** → **Authorization** → Object → **Access**
+
+#### **B) Access Control Policy**
+
+*   **Definition:** High-level instructions guiding the design and management of an access control system.
+*   **Purpose:** Defines *who* (subject), *when* (time), *where* (location), *what* (object), and *how* (behavior) is allowed or refused.
+*   **Two Basic Policies:**
+    1.  **Minimum Privilege Policy ("Need-to-Know"):**
+        *   **Principle:** Subjects should only have access to the absolute minimum information required for their activities.
+        *   **Benefit:** Strong control over object access.
+        *   **Drawback:** Can sometimes impose excessive limitations on legitimate users.
+    2.  **Maximum Privilege Policy:**
+        *   **Principle:** Based on maximizing availability to increase benefits of data sharing.
+        *   **Application:** Useful when no special protection is needed due to high reliability of data exchange.
+
+#### **C) Types of Access Control Policies**
+
+1.  **Mandatory Access Control (MAC)**
+    *   **Mechanism:** Security levels are assigned to subjects, and security labels are assigned to objects. Access is determined by predefined rules based on these levels/labels.
+    *   **Primary Use:** Military systems.
+    *   **Pros:** Very strong security.
+    *   **Cons:** Management efficiency is low.
+    *   **Example:** A "Top Secret" subject can access "Top Secret" objects, but an "Unclassified" subject cannot.
+
+2.  **Discretionary Access Control (DAC)**
+    *   **Mechanism:** Access to an object is controlled by the subject's account identity or group membership. The *owner of the object* typically determines permissions.
+    *   **Primary Use:** Unix or Linux system access control.
+    *   **Example:** A file owner can grant read/write permissions to specific users or groups.
+
+3.  **Role-Based Access Control (RBAC)**
+    *   **Mechanism:** Administrators define roles (e.g., "HR Manager," "Sales Person") and map objects/permissions to these roles. Subjects are then assigned roles.
+    *   **Primary Use:** Organizations with frequent changes in personnel or responsibilities.
+    *   **Pros:** Improved management efficiency.
+    *   **Cons:** Can potentially degrade security if roles are poorly defined or assigned.
+    *   **Example:** An "HR Manager" role has access to "Personnel Information." A user assigned the "HR Manager" role automatically gets this access.
+
+#### **D) Access Control Mechanisms**
+
+1.  **Access Control Matrix**
+    *   **Concept:** A table where subjects are rows, objects are columns, and each cell defines the access rights.
+    *   **Management:** Manages all subject-object relationships.
+    *   **Practicality:** Inefficient for large systems; typically implemented using ACLs and CLs.
+
+2.  **ACL (Access Control List)**
+    *   **Mechanism:** Manages access rights based on the *object*.
+    *   **Representation:** Corresponds to a *column* in the Access Control Matrix (listing who can access this specific object and how).
+
+3.  **CL (Capability List)**
+    *   **Mechanism:** Manages access rights based on the *subject*.
+    *   **Representation:** Corresponds to a *row* in the Access Control Matrix (listing what objects this specific subject can access and how).
+
+4.  **SL (Security Label)**
+    *   **Concept:** A set of security attribute information assigned directly to an object.
+
+#### **E) Access Control Models**
+
+1.  **Bell-Lapadula Model**
+    *   **Focus:** **Confidentiality**.
+    *   **Origin:** First mathematical model, supported by the U.S. Department of Defense (MAC policy).
+    *   **Principle:** Emphasizes preventing secret leakage. Prevents information from flowing from higher security levels to lower security levels (e.g., "no read up," "no write down").
+
+2.  **Biba Model**
+    *   **Focus:** **Integrity**.
+    *   **Purpose:** Designed to address the integrity shortcomings of the Bell-Lapadula model.
+    *   **Note:** Does *not* guarantee confidentiality.
+
+3.  **Clark and Wilson Model**
+    *   **Focus:** **Integrity** (for commercial use).
+    *   **Premise:** For some applications, preventing unauthorized alteration is more critical than preventing disclosure.
+    *   **Mechanism:** Only authorized *programs* can access objects, not users directly.
+
+4.  **Chinese Wall Model (Brewer-Nash)**
+    *   **Focus:** Prevents **conflicts of interest**.
+    *   **Principle:** Blocks information flow between competing companies or data sets (e.g., an analyst cannot access both company A's and company B's confidential data if they are competitors).
+    *   **Concept:** Applies task separation to access control.
+
+---
+
+================================================================================
+ORIGINAL TEXT (First 5000 chars)
+================================================================================
+
+--- Page 43 ---
+Information  security )
+© Public key certificate
+Public key certificates  are X. Public key certificates  are issued by a public CA by complying  with the X.509
+standard.  Public certificates  include  the NPKI certificates,  which are used by the public for financial  transactions
+and e-commerce  transactions,  and the GPK! certificate,  which are used by administrative  agencies  for
+administrative  work.
+The public certificate  encryption  system began to be advanced  in 2011, and the length of the digital signature
+key of the RSA algorithm  has been increased  from 1,024 bits to 2,048  bits. The hash function  was replaced  by
+SHA-256  (a hash function  producing  a 256-bit  value), instead of SHA-1 (a hash function  producing  a 160-bit
+value). <Table 12> shows the main contents  included  in the NPKI certificate.
+<Table 12> Main contents  of the public key certificate
+Contents Description
+Version Version of the certificate  format
+Serial number Auunique  integer  value that represents  the certificate  serial number  of the issuing  CA
+Algorithm  identifier A signature  algorithm  OID (Object  Identifier)  used to generate  the certificate
+Issuer The DN (Distinguishing  Name) of the CA that issued the certificate
+Period of validity The validity  period of the certificate.  The start and expiration  dates are represented
+in seconds.
+Subject The DN of the certificate  owner.
+Public-key  information The subject's  public key and the identifier  of the algorithm  that will use this key.
+Signature Signed with CA's private key.
+© Method  of verifying  the validity  of the certificate
+* CRL (Certificate  Revocation  List)
+CRL refers to the list of certificates  revoked by the CA. The list contains  the serial number, the revocation
+date, and the reasons  for revocation.  According  to RFC 3280, the certificate  can be permanently  revoked  or
+temporarily  held. The CRL should be periodically  downloaded  from the CRL distribution  point. If the download
+cycle is too long, a revoked certificate  can be used. If the cycle is too short, the overhead  increases  each
+time the certificate  is used.
+* OCSP (Online  Certificate  Status Protocol)
+This protocol  makes up for the shortcomings  that the CRL should be periodically  updated.  When the user
+attempts  to gain access, the OCSP protocol  immediately  answers  the validity  of the certificate by requesting
+certificate  status information  in real time. The protocol  is defined in RFC 6960, and generally uses a server
+configured  with the HTTP.
+M4 Understanding  Information  Security  43
+
+
+--- Page 44 ---
+ESSENCE
+03 Access  control  technology
+A) Overview  of access  control
+@® Concept  of access  control
+Access control refers to the task of controlling  who can access a system,  and which task the user can perform
+when the user interacts  with the system. Specifically,  access control consists  of three parts: identification,
+authentication,  and authorization.
++ Identification
+A process  of identifying  a subject using its unique token, that is, a process  where the system identifies  the
+subject.  (e.g., ID, employee  card, biometrics)
++ Authentication
+A process  where the subject verifies its identity  to the system,  that is, a process  where the system
+acknowledges  the user who claims his/her  identity  (e.g., password  (knowledge-based),  certificate  (ownership-
+based), OTP (ownership-based),  biometrics  (presence-based)).
++ Authorization
+A process  when the system controls  the task and object, which can be performed  and accessed  by the
+authenticated  user (e.g., mandatory  access control, discretionary  access control, role-based  access control).
+@ Access  control performing  procedure
+An object can be accessed  only when the right to access is obtained  through  the authorization process  after
+identification and authentication.
++)  Identification
+Wi  C's) Certification
+Subject Object
+og SSMS)  Authorization
+Access
+[Figure  22] Procedure  for performing  access  control
+44 TOPCIT  ESSENCE
+
+
+--- Page 45 ---
+Information  security )
+B) Access  control  policy
+The system security  policy is the high-level  instructions  for designing  and managingthe  access control system.
+In general, the policy is the expression  of the basic principles,  desired by the organization,  to protect  target
+system  resources.  That is, the access  control principle  defines  the subject  (who), time (when), location  (where),
+object (what), and behavior  (how) that can be accepted  or refused. The access  control principle,  which limits
+the scope of access,  can be divided into the following  two basic policies:
+@® Minimum  privilege  policy
+This policy is called the “need-to-know’  policy. System  subjects  should use the minimum  amount  of information
+that is needed for their activities.  This policy has the effect of applying  strong control over object access.
+However,  sometimes  this policy may impose  excessive  useless  limitations  on the l...

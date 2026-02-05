@@ -1,0 +1,17 @@
+Overview  of System  Architecture
+>> Recent  trends and issues
+Communication  is established  by transferring  data through  electrical  or optical signals  over physical  media.
+In the OSI 7 hierarchy,  the physical  layer is at the bottom,  and one can understand  the mechanisms  at the
+lower-level  network  by learning  the media and standards  for this physical  layer. Moreover,  it is necessary  to
+understand  the datalink  layer that connects  the physical  media and standards  with the upper layers, and to
+further  learn the media access  control method  and the logical link control method.
+>> Learning  objectives
+1. To be able to explain the sub-layer  (datalink  control and media access  control) of the datalink  layer,
+2. To be able to explain the error detection  on the datalink  layer and error correction  techniques,
+>> Keywords
+LLC, Topology,  CSMA/CD,  CSMA/CA,  ARP, RARP, Forward error correction,  Backward  error correction,
+Turbo code, Convolution  code, BCH, Hamming  code, Reed-Solomon,  Parity test, Checksum  test, Cyclic
+redundancy  check (CRC), Top-standby  ARQ, Go-Back-N,  Selective-repeat,  Adaptive  ARQ, H-ARQ, VRC,
+LRC, Optical cable, IEEE 802.11, DSSS, OFDM, MIMO, 256-QAM,  FHSS, Beamforming,  UHD, IEEE 802.15,
+WPAN, ZigBee,  Bluetooth,  UWB
+M3 Overview  of System  Architecture  145

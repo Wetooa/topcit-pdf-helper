@@ -1,0 +1,205 @@
+LEARNING GUIDE: Pages 94-98
+Generated: 2025-12-05 14:01:05
+PDF: 5 - Understanding the IT Business and Ethics OCR
+
+================================================================================
+LEARNING GUIDE
+================================================================================
+
+Here is a simplified, easy-to-read learning guide based on the provided text:
+
+---
+
+## IT Business Systems: CRM, PLM, and Decision Support
+
+This guide covers essential IT business systems: Customer Relationship Management (CRM), Product Lifecycle Management (PLM), and Enterprise Data Warehousing (EDW) as a foundation for Decision Support Systems.
+
+---
+
+### Section 1: Customer Relationship Management (CRM)
+
+**What is CRM?**
+CRM is a system designed to manage and analyze customer interactions and data throughout the customer lifecycle. Its goal is to improve business relationships with customers, assist in customer retention, and drive sales growth.
+
+**Key Idea:** Customer points of contact (channels) are critical for collecting customer feedback (VoC - Voice of Customer) and communicating back.
+
+**Components of a CRM System:**
+
+*   **Customer Data Warehouse:** Central storage for all customer data, used by all CRM elements for fetching, updating, and adding information.
+*   **OLAP & Data Mining:** Tools for advanced analysis of customer data to understand relationships, support decision-making, and help with customer acquisition.
+    *   **OLAP (Online Analytical Processing):** Allows users to analyze data from different perspectives.
+    *   **Data Mining:** Discovers patterns and insights from large datasets.
+*   **Campaign System:** Provides services tailored to customer needs and recommends profitable business directions.
+*   **Channel System:** Supports 1:1 or 1:N marketing through call centers, emails, and direct mails.
+*   **Sales Support System:** Uses customer information for sales planning, customer management, performance evaluation, and direct sales staff support.
+*   **Customer Service System:** Leverages VoC for customer service support and product maintenance.
+
+**Benefits of CRM Deployment:**
+
+*   **Improved Customer Relationships:** Prevents customer churn and increases loyalty.
+*   **Enhanced Service Quality:** Analyzes customer tastes to provide high-quality, tailored services.
+*   **Increased Sales:** Induces linked sales (cross-selling) and upstream sales (up-selling).
+*   **Competitive Advantage:** Builds a strong position through differentiated products and services.
+*   **Marketing Opportunities:** Attracts new customers, invigorates existing ones, increases earnings and customer lifetime value.
+*   **Effective Marketing Management:** Develops products based on customer requirements, observes market reactions, and strengthens loyalty.
+*   **Optimized Customer Channels:** Secures the best channels, minimizes customer management costs.
+
+---
+
+### Section 2: Product Lifecycle Management (PLM)
+
+**What is PLM?**
+PLM is a solution for managing the entire lifecycle of a product, from its initial design concept through production, service, and disposal. Its aim is to increase a product's added value and reduce costs.
+
+**Definition:** PLM is a support system that integrates and manages all product-related information (e.g., drawings, documents, CAD/CAM data, parts info, design changes, process info) generated throughout an enterprise's product development and manufacturing lifecycle.
+*   **CAD/CAM (Computer-Aided Design/Manufacturing):** Software used for designing and manufacturing products.
+
+**Configuration of PLM:**
+PLM manages the entire product cycle, from planning to post-sales services. It requires integration with other business systems.
+
+**Key PLM Components:**
+
+*   **Project Management:** Manages schedules, outputs, and tasks for product development.
+*   **Drawing Management:** Handles drawing approval, information, revisions, and viewing.
+*   **Design Change Management:** Manages processes for Engineering Change Requests (ECR) and Engineering Change Notices (ECN), and component revisions.
+*   **BOM Management:** Links to CAD, manages Bill of Materials (BOM) revisions, generates and approves Engineering BOM (EBOM) and Manufacturing BOM (MBOM).
+*   **Technology Management:** Manages listing, correction, and revision of technology documents; links to related information.
+*   **Product Information Management:** Manages model, product, and goods codes, product specifications, and related outputs.
+*   **Security Management:** Ensures document/drawing encryption, leakage prevention, security level settings, and Digital Rights Management (DRM)/Data Loss Prevention (DLP).
+
+**PLM Trends:**
+
+*   **Evolution:** Started in the 1990s as storage for engineering design information.
+*   **Consolidation:** Moved towards centralizing scattered information, standardizing development processes, and implementing workflow-based change management for efficiency.
+*   **Integration:** Current trend involves consolidating PLM by integrating it with **ERP (Enterprise Resource Planning)** and **MDM (Master Data Management)** solutions for enterprise-wide data management.
+*   **Future:** Expansion into "social PLM" by linking with external data.
+
+---
+
+### Section 3: IT Business Decision-Making Support Systems
+
+**The Need for Decision Support:**
+In today's fast-changing business environment, enterprises need quick, rational decisions based on vast amounts of internal and external information. Manual analysis of large datasets is impractical, leading to a high demand for systems that can support complex, time-sensitive analyses.
+
+**Main Decision Support Systems:**
+
+1.  **Decision-Making Support System (DSS):**
+    *   **Purpose:** Used for decisions requiring quantitative analysis.
+    *   **Examples:** Analyzing Return on Investment (ROI), break-even points.
+
+2.  **Business Intelligence (BI) System:**
+    *   **Purpose:** Enables agile responses by monitoring the business environment and detecting changes.
+    *   **Method:** Achieves this through discovery, extraction, and analysis of business data.
+
+**Understanding Enterprise Data Warehouse (EDW)**
+
+The EDW is a fundamental component underpinning enterprise data analytics, including DSS and BI.
+
+**What is EDW?**
+EDW is a system that integrates internal and external data to address user information analysis requests by subject matter. It acts as the backbone infrastructure for all enterprise data.
+*   **Evolution:** Initially focused on internal data; now integrates both internal and external information for forecasting.
+
+**Why is EDW Necessary?**
+
+*   **Uniformity of Viewpoint:** Consolidates all critical internal and external information into master data for consistent organizational understanding.
+*   **Strategic Forecasting:** Provides sufficient forecasting capability for strategic choices and responding to changing user requirements and business environments.
+*   **Resource Integration:** Helps integrate information resources and reorganize management systems to prevent data duplication.
+
+**Characteristics of the EDW:**
+
+1.  **Subject-Oriented:**
+    *   Structures the system around specific topics for analysis (e.g., customers, products), rather than daily transactions.
+    *   Extracts and integrates relevant internal and external data.
+
+2.  **Integrated:**
+    *   Combines data from various sources.
+    *   Ensures different data formats are converted and expressed in a uniform format during extraction.
+
+3.  **Time-Variant:**
+    *   Data accuracy is preserved over time.
+    *   Time elements (day, week, month) are properly reflected, allowing for historical analysis.
+
+4.  **Non-volatile:**
+    *   Once data is recorded, its properties generally do not change to maintain analytical consistency.
+    *   Stored data is typically read-only and is not deleted unless specific rules or events require it.
+
+**Configuration of EDW:**
+
+*   **Macro View:** Encompasses the entire process: collecting, transforming, loading data from operational systems; analyzing data to meet requirements; and visualizing results to assist decision-making.
+*   **Micro View:** Refers specifically to the repository where the data is stored.
+
+---
+
+================================================================================
+ORIGINAL TEXT (First 5000 chars)
+================================================================================
+
+--- Page 94 ---
+Understanding  the IT Business  and Ethics )
+Amid this flow of information,  the information  generated  by the work support  system  gets utilized and the operation
+of the work process  occurs  at the same time.
+1D)» ------------
+Tred . Activities of the SEES + tasesrading partners sales employee Order/delivery Consumerum = |» CRM  Hub
+Consumer —> . Order/bid Sales plan, customer  man- y eae + Customer  response agement,  sales  analysis
+PP! > Information Li Marketingy registration =  _> Va  cee
+hesealeearey  + Information  F/B Marketing  plan,  execution
+A > Customer  service
++ Complint/Caim
+Others E-Business > ,ones CS handling
+department
+[Fig. 35] Configuration  of the CRM system
+In CRM, the customer  point of contact  has huge significance.  The customer  point of contact  or channel  collects  the
+customer's  VoC and communicates  the results produced  by the internal process  to the customer.  Therefore,  when
+the component  elements  of CRM must be identified,  it is advisable  to investigate  the channel  first of all, since this is
+the point of contact  with the customers.  Also, if information  analysis  is conducted,  followed  by information  utilization,
+it becomes  very easy to understand  the constituent  elements  of CRM.
+<Table41>Components  of the CRM system
+Components Description
+Customer  data + As the date storage  that keeps customer  data, each constituent  element  of CRM fetches,  updates,  and
+warehouse adds information  to the data warehouse.
+OLaP + Using the information  from the data warehouse,  OLAP and data mining can perform  diverse  analyses
+of customers  and investigate  the relationships  between  the extracted  indicators,  as well as supportData minin; os -8 decision-making  on customer  acquisition
++ Asystem  that provides  services  tailored  to customers’  needs and recommends  business  directions  that
+Campaign  system might generate  profits.
++ Utilizes  methods  like the system  call center  (call center),  which provides  1:1 or 1:N marketing  support,
+Channel system emails, direct mails.
++ Asystem  that uses customer  information  for sales planning,  customer  management  and sales
+ae performance  evaluation  and also provides  sales support to sales staff
+Customer  service + Asystem  that leverages  the VoC (voice of customer)  for customer  service  support  and product
+system maintenance  (A/S), etc.
+M5 Understanding  the IT Business  and Ethics 93
+
+
+--- Page 95 ---
+ESSENCE
+@ Effects  of CRM deployment
+With the introduction  of CRM, enterprises  can improve  their relationships  with their customers  and prevent  customer
+churn, thereby  increasing  customer  loyalty. Furthermore,  enterprises  can provide high-quality  services  by analyzing
+customers’  tastes, and can also induce linked sales and realize upstream  sales. Furthermore,  they can build a
+competitive  edge in terms of customers  through  differentiated  policies  in products  and services.
+<Table  42> Benefits  of CRM deployment
+Item Benefits  of CRM
+Marketin rtunit + Attraction  of new customers  and invigoration  of the existing  customer  base.
+arketing  Opportunity + Increase  of earnings  and customer  lifetime values.analysis -
++ Effective  marketing  based on the customer  life cycle.
+Marketing  management + Development  of products  that satisfy customer  requirements  and changes  in the market.
++ Supplement  the product  after observing  the reactions/results  from the market.
++ Strengthens  customer  loyalty.
+Customer  service + Customer  satisfaction  management.
++ Customer  service  management.
+Customer  channel +* Secures  the most optimal  channel  that meets customer  requirements.
+management + Minimizes  customer  management  costs.
+G) Understanding  PLM
+Product  lifecycle management  (PLM) is a product  life cycle management  solution.  It is a production/design  process
+that increases  a product’s  added value and reduces  costs by uniformly  managing  the entire process  from creation  of
+the product  design drawings  to production  of the final product.  PLM provides  product  information  data management
+server  system,  both of which are related to the product  life cycle and the network  of multiple  client systems.
+@ Definition  of PLM
+PLM can be defined as a support  system that integrates  and manages  information  related to products  - such as
+drawings,  documents,  CAD/CAM  information, basic parts information,  design changes,  and process  information.  These
+forms of information  are generated  throughout  the entire product  life cyclesof  the products  that are developed  and
+manufactured  by an enterprise.
+@ Configuration  of PLM
+Recently,  PLM has come to be understood  as a concept  that includes  not only product  planning,  but also the post-
+sales services  provided  to customers.  Managing  the entire cycle of an individual  product  from the planning  stage
+until it is sold is the key role of PLM. However,  organic  support  from oth...

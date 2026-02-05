@@ -1,0 +1,191 @@
+LEARNING GUIDE: Pages 121-125
+Generated: 2025-12-05 10:51:55
+PDF: 2 - Understanding and Using Data OCR
+
+================================================================================
+LEARNING GUIDE
+================================================================================
+
+Here's a simplified, easy-to-read learning guide based on the provided text:
+
+---
+
+# Database Fundamentals: Transactions & Concurrency Control
+
+## 1. Introduction: Database Access & Multi-User Environments
+
+### 1.1 Database Access Technologies
+*   **ADO (ActiveX Data Objects):**
+    *   Microsoft's ActiveX control.
+    *   Provides a database interface.
+    *   Manages connections in client/server or internet environments.
+*   **OLE DB (Object Linking and Embedding, Database):**
+    *   Provides a consistent API to access various data types (relational, ISAM, Excel, etc.).
+    *   **Limitation:** Primarily restricted to Microsoft operating systems.
+
+### 1.2 Challenges in Multi-User Database Systems
+*   **Problem:** Most databases run in multi-user environments, meaning many transactions execute simultaneously.
+*   **Core Issue:** Guaranteeing **atomicity** (all-or-nothing) of transactions and managing interactions between them is critical.
+*   **Consequences of Poor Design:** Without proper concurrency control (e.g., locking mechanisms), issues like:
+    *   Processing performance degradation.
+    *   Transaction delays.
+    *   Deadlocks.
+    *   User complaints about slow service.
+*   **DBMS Features:** Modern Database Management Systems (DBMS) offer some built-in isolation and deadlock detection. However, these are often *provisional* and not a fundamental solution.
+*   **Solution:** A deep understanding of **transactions**, **concurrency control**, and **deadlocks** is essential for developing high-performance, reliable systems.
+
+## 2. Key Concepts & Terms
+
+### 2.1 Essential Keywords
+*   **Transaction:** A single logical unit of work.
+*   **ACID Properties:** Atomicity, Consistency, Isolation, Durability – properties ensuring transaction reliability.
+*   **Commit Operation:** Saves transaction changes permanently.
+*   **Rollback Operation:** Undoes transaction changes, restoring the original state.
+*   **Concurrency Control Techniques:** Methods to manage simultaneous transaction execution (e.g., lock-based, timestamp-based, optimistic, multi-version).
+*   **Transaction Isolation Levels:** Degrees to which transactions are isolated from each other (e.g., Read Uncommitted, Read Committed, Repeatable Read, Serialization).
+*   **Anomalies:** Problems that can occur without proper concurrency control:
+    *   **Lost Update:** One transaction's update is overwritten by another.
+    *   **Dirty Read:** A transaction reads uncommitted data written by another transaction.
+    *   **Unrepeatable Read:** A transaction reads the same data twice and gets different values because another transaction modified it in between.
+    *   **Inconsistency:** Data becomes incorrect or unreliable.
+    *   **Cascade Rollback:** A rollback in one transaction forces other dependent transactions to roll back.
+*   **Serializable Schedule:** A schedule of concurrent transactions that produces the same result as if they executed sequentially.
+*   **Deadlock:** A situation where two or more transactions are blocked indefinitely, each waiting for the other to release a resource.
+*   **Causes of Deadlock:** Mutual exclusion, block & wait, non-preemption, circular wait.
+*   **Solutions for Deadlock:** Breaking, avoidance, prevention, detection & recovery.
+
+## 3. What is a Transaction?
+
+### 3.1 Concept of a Transaction
+*   A **transaction** is a set of database operations (reads, writes, modifications) that forms a single, logical unit of work.
+*   Its purpose is to convert the database from one **consistent state** to another consistent state.
+*   **Example (Money Transfer):** Transferring money from Account A to Account B involves two internal updates (debit A, credit B). This entire process is a single transaction. If one part fails, the whole transfer must be undone.
+
+### 3.2 ACID Properties (Reliability Guarantees)
+These properties ensure that database transactions are processed reliably.
+*   **A - Atomicity:**
+    *   **Definition:** All operations within a transaction either complete successfully (commit) or none do (rollback). There's no partial completion.
+    *   **Example:** Entering 10 data items: Either all 10 are successfully entered, or if any fail, all entries are undone.
+*   **C - Consistency:**
+    *   **Definition:** A transaction must bring the database from one valid (consistent) state to another. It ensures data integrity rules are maintained.
+    *   **Example:** A calculation (Col1 + Col2 + Col3 - Col4) should always yield the same expected result for a given state. Concurrency control methods (Lock, Timestamp) help maintain this.
+*   **I - Isolation:**
+    *   **Definition:** Concurrent transactions appear to execute independently of each other. The intermediate state of one transaction is not visible to others.
+    *   **Example:** While Younghee is modifying 100 data items, Cheolsu should not be able to modify the same data until Younghee's transaction commits or rolls back.
+*   **D - Durability:**
+    *   **Definition:** Once a transaction is committed, its changes are permanent and will survive any subsequent system failures (e.g., power outage).
+    *   **Example:** After Cheolsu commits 10 member information entries, a power failure should not cause that data to be lost. Recovery algorithms ensure data restoration.
+
+### 3.3 Finishing a Transaction
+*   **Commit Operation:**
+    *   Completes a transaction.
+    *   Permanently applies all changes made by the transaction's SQL statements to the database.
+*   **Rollback Operation:**
+    *   Aborts a transaction.
+    *   Reverts all data values modified by the transaction back to their state *before* the transaction began.
+    *   Occurs due to a fatal error or a user-issued rollback command.
+
+### 3.4 Considerations for Transaction Execution
+*   **Implement Concurrency:**
+    *   Executing transactions simultaneously increases **throughput** (more transactions per second) and **system utilization**.
+    *   Reduces **latency** (time taken for a transaction to complete).
+*   **Execute Transactions Quickly:**
+    *   Long-running transactions increase the chances of conflicts and deadlocks.
+    *   This is because resources (like locks) are held for longer periods.
+    *   Balance holding locks long enough for serialization with releasing them quickly to avoid performance degradation.
+
+## 4. Concurrency Control
+
+### 4.1 Serializable Schedule
+*   **Definition:** Even if multiple transactions run concurrently, the final result is identical to if those transactions had executed one after another in some sequential order.
+*   **Purpose:** To guarantee the correct and consistent outcome of concurrent operations.
+
+### 4.2 Definition of Concurrency Control
+*   A fundamental function in multi-user database systems.
+*   **Purpose:** To enable the successful and correct execution of multiple transactions simultaneously.
+
+### 4.3 Purposes of Concurrency Control
+*   To create a **serializable schedule** or ensure the possibility of transaction serialization.
+*   To guarantee the **maximum sharing level** of data.
+*   To ensure the **minimum response time** for transactions.
+*   To achieve **maximum system activity** (high utilization).
+*   To maintain **data integrity** and **consistency**.
+
+### 4.4 The Isolation Level vs. Performance Trade-off
+*   **Higher Isolation:** Provides stronger guarantees against anomalies (lost updates, dirty reads), ensuring higher data integrity.
+*   **Lower Concurrency:** High isolation often means transactions hold locks for longer, reducing the ability for other transactions to access data simultaneously, thus decreasing overall system performance.
+*   **Decision:** The appropriate isolation level must be carefully selected based on the specific nature of the application and its data integrity requirements versus performance needs (e.g., banking systems require high isolation, while a college course registration might tolerate slightly lower for better performance).
+
+================================================================================
+ORIGINAL TEXT (First 5000 chars)
+================================================================================
+
+--- Page 121 ---
+ESSENCE
+@ ADO
++ ADO, a Microsoft  solution,  is an ActiveX  control that provides  a database  interface  and manages  connection  with a
+database  in the Inter or client/server  environment.
+@ OLE DB
++ Although  OLE DB provides  access  to all types of data including  relational  data (ISAM, VSAM, Excel Data, etc.) using
+a consistent  API, it is limited to MS operating  systems  only.
+120 TOPCIT  ESSENCE
+
+
+--- Page 122 ---
+Database
+>> Recent  trends and major issues
+Most of the databases  we experience  in the field are running  in a multi-user  environment.  Therefore, the
+atomicity  of transactions  should be guaranteed  by controlling  interactions  among transactions  when
+multiple  transactions  are executed  in a database  simultaneously.  To this end, concurrency  control methods
+are used. Most of the DBMSs  we use have these methods.  Therefore,  if transactions  are wrongly  designed
+due to a lack of understanding  of the concurrency  control  technique,  such as the locking  mechanism  applied
+to the DBMS, problems  may occur due to a transaction  delay, such as processing  performance  degradation,
+deadlock,  and so on. And users who are accustomed  to the fast processing  of information  systems  may
+raise complaints  about the service  delay.
+The recent DBMS has several advanced  features  such as a function  that internally ensures  the isolation
+of transactions  and considers  concurrent  processing  performance  or the inclusion  of an algorithm  that
+detects  and handles  deadlocks  quickly. However,  those features  are minimal  and provisional  measures,  not a
+fundamental  solution.  Therefore,  the concepts  of transaction,  concurrency  control, and deadlock  need to be
+clearly understood  in order to develop  a system  that delivers  high performance  in a multi-user  environment.
+1. To be able to explain the concept  and characteristics  of a transaction.
+2. To be able to explain the transaction-commit  operation and the rollback operation  for aborting  a
+transaction.
+3. To be able to explain the purposes,  necessity,  and techniques  of concurrency  control.
+4 To be able to explain 2-phase  locking  (2-PL).
+5. To be able to explain and apply a transaction  isolation  level.
+6. To be able to explain  the causes  of and solutions  to transaction  deadlocks.
+M2 Database  121
+
+
+--- Page 123 ---
+ESSENCE
+> Keywords
++ Transaction
++ ACID properties:  Atomicity,  consistency,  isolation,  durability
++ Commit  operation,  rollback  operation
++ Lost update,  dirty read, unrepeatable  read, inconsistency,  cascade  rollback
++ Serializable  schedule
++ Concurrency  control techniques,  lock-based  technique,  optimistic  or validation-based  technique,
+timestamp-based  technique,  multi-version  technique
++ Transaction  isolation  level: Read uncommitted,  read committed,  repeatable  read, serialization
++ Causes  of deadlock  occurrence:  Mutual exclusion,  block & wait, non-preemption,  circular  wait
++ Solutions  for breaking  deadlock,  deadlock  avoidance,  deadlock  prevention,  deadlock  detection  & recovery
++ Preview  for practical  business Problems  that arise when a transaction  and
+concurrency  control are not properly  understood
+There are some cases in which a set of operations  executed  in a database  is viewed is viewed as a unit
+from the viewpoint  of the database  user. For example,  transferring  money from account  A to account  B
+may look like a single operation  at first glance. However,  the transaction  is internally  composed  of two
+update operations,  ie. changing  the balance  of account  A and changing  that of account  B, respectively.
+What if this operation  fails in the middle of processing,  and the balance  of account  A has been changed
+while that of account  B remains unchanged?  If any operation  fails, all operations relating  to the account
+transfer  task should be either performed normally  as a whole or returned  to the original state prior to
+the operations.  As explained  previously,  a set of operations  that constitute  a logical work unit is called
+a “transaction”.  The important  thing here is that all operations  of the transaction  should be completely
+executed  or returned  to the original state before any transaction  if an error occurs.
+What if the update of the data shared between  transactions  cannot be controlled  in a database  system
+that executes  several transactions  simultaneously? For  example,  what happens  if you transfer  KRW 1,000
+online from an account  with a balance  of KRW 1,000 and withdraw  KRW 1,000 from an ATM at the same
+time? In reality, it is naturally  impossible,  because  the database  system controls  these transactions.  As
+explained  so far, the database  system provides  a concurrency  control method  to secure the isolation  of a
+transaction,  which ensures  that the transaction  is not affected  by the change  made by another  transaction
+at the same time. However,  if the level of transac...

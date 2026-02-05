@@ -1,0 +1,216 @@
+LEARNING GUIDE: Pages 103-107
+Generated: 2025-12-05 14:02:08
+PDF: 5 - Understanding the IT Business and Ethics OCR
+
+================================================================================
+LEARNING GUIDE
+================================================================================
+
+This learning guide transforms the provided text into a concise, easy-to-study format, focusing on essential information.
+
+---
+
+## Learning Guide: Business Intelligence & IT Service Management
+
+### 1. Business Intelligence (BI) Fundamentals
+
+**What is BI?** Business Intelligence involves using data to make better business decisions.
+
+#### 1.1 Types of Business Intelligence (BI)
+
+| Classification | Main Business Focus           | Key Users                     | Measurement Target               | Frequency                  | Types of Data           |
+| :------------- | :---------------------------- | :---------------------------- | :------------------------------- | :------------------------- | :---------------------- |
+| **Strategy BI**    | Realizing long-term goals & targets | CEO, Decision Makers          | Feedback on strategy plans       | Monthly, Quarterly, Annually | Past data, Forecast data |
+| **Analysis BI**    | Analyzing info/data for corporate goals | Task Supervisors, Analysts    | Feedback on strategy execution   | Daily, Weekly, Monthly     | Past data, Forecast data |
+| **Operations BI**  | Managing daily business operations  | Task Specialists, Operators   | Personalized performance insights| On-the-spot, Any time      | Present/Working hours data |
+
+#### 1.2 The BI Dashboard
+
+*   **Definition:** A data visualization tool that displays the status of key quantified metrics and performance metrics for an enterprise on a single screen.
+*   **Purpose:** Helps decision-makers quickly identify areas needing attention (e.g., sales, costs, profits, risks) and make fast, intuitive judgments.
+*   **Features:**
+    *   Easy to customize screen configuration.
+    *   Supports integration with tools like spreadsheets and real-time data analysis.
+*   **Importance:** One of the most critical BI functions for facilitating quick, intuitive decision-making.
+
+### 2. IT Service Management (ITSM)
+
+#### 2.1 Overview of ITSM
+
+*   **Definition:** A systematized method for managing IT services and ensuring their quality. Commonly referred to as ITSM.
+*   **Core Concepts & Relationships:**
+    *   **ITIL (IT Infrastructure Library):** The standard model or "best practice" framework that ITSM uses for guidance.
+    *   **IT Outsourcing:** ITSM functions can be outsourced to external service providers.
+    *   **SLA (Service Level Agreement):** A formal agreement signed between a service provider and a customer, defining the specific level of IT service to be delivered. It serves as the standard for measuring service quality.
+    *   **SLM (Service Level Management):** The systematic process of managing IT services to ensure they meet the agreed-upon standards defined in the SLA.
+    *   **CSR (Customer Service Request):** The process customers use to request an IT service.
+*   **Leading Standards Associated with ITSM (Rooted in ITIL):**
+    *   **eSCM (eSourcing Capability Model):** An international quality assessment model used by service providers to objectively evaluate their quality and capabilities in delivering IT services. It guides IT service implementation across all business phases.
+    *   **ISO/IEC 20000:** An international standard that specifies the requirements for IT service management activities. It was developed from the BS15000 certification.
+
+### 3. IT Infrastructure Library (ITIL)
+
+#### 3.1 Definition of ITIL
+
+*   **What it is:** A comprehensive framework of "best practices" for IT service management. It compiles proven approaches to guide organizations in delivering efficient and effective IT services.
+*   **Origin:** Developed by the Central Computer & Telecommunications Agency (CCTA) of the UK in the late 1980s for public agency users.
+*   **Purpose:** To provide standard guidelines for managing IT services, helping organizations clearly understand their IT service framework and achieve business objectives.
+*   **Status:** An intellectual property and registered trademark managed by the British government, widely recognized as a de-facto global standard for IT service management.
+
+#### 3.2 History of ITIL
+
+*   **Version 1 (1980s):** Developed to address the British government's reliance on IT, published as a collection of specialized IT service documents.
+*   **Version 2 (2000-2001):** Introduced with a focus on two main areas: Service Delivery and Service Support.
+*   **Version 3 (2007/2011):** Announced in 2007 (known as ITIL 2007 edition) and improved in 2011. It introduced a "lifecycle approach" and a stronger focus on business value.
+
+#### 3.3 ITIL v2 Process Areas (Key Elements)
+
+ITIL v2 primarily focused on two core areas:
+
+*   **1. Service Delivery:** Focuses on the strategic and tactical aspects of planning and providing IT services.
+    *   **Service Level Management:** Manages and ensures service quality as dictated by SLAs.
+    *   **Capacity Management:** Estimates required resources and manages transaction loads.
+    *   **Availability Management:** Ensures the continuity and control of IT services.
+    *   **Financial Management:** Manages the quantitative costs and income associated with IT services.
+    *   **IT Service Continuity Management:** Manages efforts for disaster recovery and service resilience.
+*   **2. Service Support:** Focuses on the day-to-day operational support of IT services.
+    *   **Service Desk:** The single point of contact for users to report incidents, problems, and inquiries.
+    *   **Incident Management:** Manages and evaluates the impact and resolution of service malfunctions.
+    *   **Problem Management:** Investigates the root causes of incidents and applies emergency measures to solve them.
+    *   **Change Management:** Manages and controls changes to IT services, programs, and infrastructure.
+    *   **Configuration Management:** Manages information about IT assets and their configurations.
+    *   **Release Management:** Manages the planning, building, testing, and deployment of approved products and services.
+*   **Other Mentioned Areas:** Business Perspective (e.g., business continuity, outsourcing), and ICT Infrastructure Management (e.g., network, operations, system management).
+
+#### 3.4 ITIL v3 Process (Lifecycle Approach)
+
+ITIL v3 evolved from v2 by:
+*   Becoming a **business value model**.
+*   Supporting **IT governance** (a previous deficiency).
+*   Extending IT service management to **all business areas**.
+*   Strengthening service support and delivery, and incorporating requirements from ISO/IEC 20000.
+*   **Goal:** To align IT with business strategies through a lifecycle perspective and continuously improve IT services.
+
+ITIL v3 consists of **five process areas** that form a continuous, repeated lifecycle for service improvement:
+
+*   **1. Service Strategy:**
+    *   **Purpose:** To define the strategic perspective of IT service management, ensuring IT services are aligned with business objectives.
+    *   **Key Activities:** IT service strategy planning, organization and relationship specification, IT investment management, understanding customers, prioritizing competition and investment, HR management, compliance with external requirements.
+*   **2. Service Design:**
+    *   **Purpose:** To design new or changed IT services to meet business requirements and strategic objectives.
+    *   **Key Activities:** Negotiation and contract drafting based on requirement analysis, designing service solutions (applications, systems, processes), evaluating alternative solutions, and procuring preferred solutions.
+*   **3. Service Transition:**
+    *   **Purpose:** To build, test, and deploy new or changed services into the live operational environment.
+    *   **Key Activities:** Release planning and preparation, building/testing/piloting services, establishing and preparing a transition plan, managing the transition/adoption/disposal of services, service verification and testing, transition review and termination.
+*   **4. Service Operation:**
+    *   **Purpose:** To deliver and support IT services efficiently and effectively in the live environment, ensuring services meet customer expectations.
+    *   **Key Activities:** Customer request processing and communication management, event/incident/problem management, service level metrics management, monitoring efficiency (e.g., safety, accessibility management).
+*   **5. Continual Service Improvement (CSI):**
+    *   **Purpose:** To continuously improve the effectiveness and efficiency of IT services and processes across all lifecycle stages.
+    *   **Key Activities:** Participating across strategy/design/implementation phases, analyzing service reports and identifying trends, establishing performance evaluation baselines, implementing the **PDCA Model** (Plan-Do-Check-Action cycle), operating service improvement programs, and providing feedback to earlier lifecycle phases.
+    *   **Note:** ITIL v3 strengthened the performance evaluation (ROI) area significantly compared to v2.
+
+---
+
+================================================================================
+ORIGINAL TEXT (First 5000 chars)
+================================================================================
+
+--- Page 103 ---
+ESSENCE
+<Table  48> Types of BI
+Classification
+Main business
+focus
+Key users
+Measurement
+target
+Frequency
+Types of data
+@ BI dashboardStrategy  Bl
+Realization  of the long-term
+goals and targets.
+CEO, decision  makers
+Tracking  of feedback  on the
+strategy  plans
+Monthly,  quarterly,  annually
+Past data, forecast  dataAnalysis  Bl
+Analysis  of information  and
+data on realizing  the corporate
+goals.
+Task supervisor,  analyst
+Tracking  and analysis  of
+feedback  on strategy
+execution
+Daily, weekly,  monthly
+Past data, forecast  dataOperations  BI
+Management  of daily operations  of
+the business.
+Task specialist,  operator
+Personalized  BI for supervisors  so
+they can gain insights  into their
+performance.
+On the spot, any time of the day
+Present/working  hours
+The BI dashboard  is one of the most important  elements  of the BI functions  because  it permits users to make
+intuitive  judgments.
+This is a data visualization  tool that displays  in one glance the status of key quantified  metrics  and performance
+metrics  for an enterprise.  Through  dashboards,  metrics such as sales, costs, profits, and risk levels in various areas
+are presented  on a single screen so as to help decision  makers make quick decisions  by making  it easier for them to
+identify  the areas they should pay close attention  to.
+In general,  the screen configuration  of dashboards  is easy to customize  as it supports  easy customization  and easy
+integration  with tools such as spreadsheets  and real-time  data analysis.
+102 TOPCIT  ESSENCE
+
+
+--- Page 104 ---
+Understanding  the IT Business  and Ethics )
+04 Understanding  IT Service  Management
+A) Overview  of IT service  management
+IT service management  is commonly  referred  to as ITSM. ITSM is used as a systemized  method of managing  IT
+services  and the quality  of such services.
+ITIL
+(IT Infrastructure  Library) IT Outsourcing
+Provide  best prac-
+tice in IT service . ITSM
+seecenen  ene >| (IT Service  Management) |/<-------------+
+Submit  require-
+| Sign SLA "ens
+SLM Manage at Control CSRService Level ee Service Level ' Customerlevel level
+[Fig. 41] Interrelationships  of IT service  management  technologies
++ ITSM uses ITIL (IT infrastructure  library), which is the standard  model (best practice)  of the IT service.  Depending  on
+the form of trade between  companies,  ITSM could be outsourced.
++ AnIT service  can only be realized  when a service  level agreement  (SLA) has been signed.
++ The signed SLA becomes  the standard  for measuring  the quality of the IT service, and systematic  management  of
+the IT service  can be pursued  using SLM.
++ The customer  service  request  (CSR) process  is for requesting  an IT service.
+ITSM uses the ITIL (IT infrastructure  library),  which is the standard  model (best practice)  of the IT service. Depending
+on the form of trade between  companies,  ITSM could be outsourced.
+In addition,  an IT service can be only realized  when  a service level agreement  (SLA) has been signed. The signed
+SLA becomes  the standard  and the baseline  for measuring  the quality of the IT service.  Therefore,  it is important  to
+establish  and manage  these standards.
+Once the level of a service  has been decided  between  the user and service supplier,  the IT service  is delivered  at that
+level. User requests  for IT services  will be handled  by the CSR (Customer  Service  Request)  process,
+Some of the leading standards  associated  with IT service management  include eSCM and ISO/IEC 20000. These
+standards  are all rooted in ITIL.
+* The eSCM (eSourcing  Capability  Model) is an international  quality assessment  model used by service providers  to
+objectively  evaluate  quality and capabilities  in order to provide IT services  to customers.  It provides  guidance  on
+implementing  IT services  at all phases  of the business.
+M5 Understanding  the IT Business  and Ethics 103
+
+
+--- Page 105 ---
+ESSENCE
++ ISO/IEC 20000 is an international  standard  which clearly defines the requirements  for IT service management
+activities.  It was developed  by modifying  the BS15000  certification  of the BSI (British Standard  Institute),  the de
+facto international  standard  and certification  specification  on IT service  management.
+B) Understanding  ITIL
+@ Definition  of ITIL
+The IT Infrastructure  Library (ITIL) is a guideline  for IT management  developed  by the Central Computer  &
+Telecommunications  Agency (CCTA) of the UK for public agency users in the late 1980s. ITIL is an IT service
+management  framework  which is a compilation  of the best practices  in IT service management,  and which provides
+standard  guidelines  for IT service management.
+It also provides  a process  for clearly  and transparently  identifying  the complex  IT service framework  so that
+enterprises  can realize  their business  objectives.
+@ History  of ITIL
+ITIL is an intellectual  property and a registered  trademark  managed  by the British government,  b...

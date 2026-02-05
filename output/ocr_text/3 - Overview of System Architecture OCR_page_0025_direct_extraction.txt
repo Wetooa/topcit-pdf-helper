@@ -1,0 +1,29 @@
+ESSENCE
+Internet
+(Network)
+Router —< ==] Router
+DDoS fy DDoS
+Firewall Firewall
+IPS IPS
+L4 Switch @ @ L4 Switch
+Switch #1 = fees] Switch #2
+=! Intemal Network =!oe oe
+Application Database
+Webserver Server Server Storage
+[Figure  2] Information  System  Components
++ Server
+A server provides  the computing  power of an information  system. The information  system uses this computing
+power to process  the business  logic and data by running  the application programs.  Server components  include  the
+stacked  structures  of the computer's  hardware,  OS, middleware,  and application  programs.  The system  architecture
+design defines  the server  capacity,  count, layout, and role, and the network  facilitates communication  between  the
+servers. Mainframes,  Unix servers,  and x86 servers are the most commonly  used server types, and the x86 servers
+using Intel CPUs have been used more often as the cloud services  expand.
+For example,  the servers of an information  system providing  web services  include a webserver  that responds  to
+user requests  through  a web browser,  organizes  web pages, and provides  a screen to display  the contents  to users,
+a web application  server (WAS) that processes  business  logic, according  to the user request  and delivers  the results
+to a database  server for storage,  or to a WAS for display, and a database  server that creates, requests,  modifies,
+and deletes  data.
++ Network
+A network  connects  the information  system components  for communication.  Network  devices  process
+communication  between  servers, between  servers and storage  units, and between  the enterprise's  internal and
+24 TOPCIT  ESSENCE

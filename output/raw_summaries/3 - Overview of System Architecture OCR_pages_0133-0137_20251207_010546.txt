@@ -1,0 +1,213 @@
+LEARNING GUIDE: Pages 133-137
+Generated: 2025-12-07 01:05:46
+PDF: 3 - Overview of System Architecture OCR
+
+================================================================================
+LEARNING GUIDE
+================================================================================
+
+Here is a simplified, easy-to-read learning guide based on the provided text:
+
+---
+
+## Cloud Computing & Virtualization: A Learning Guide
+
+This guide covers cloud service classifications, server virtualization technologies, and foundational cloud platforms.
+
+### 1. Cloud Service Types (by Operation Form)
+
+Cloud services are classified into three levels based on how they are operated and accessed:
+
+*   **Public Cloud:**
+    *   **Description:** Services disclosed to the public over the Internet.
+    *   **Access:** Accessible to unspecified masses.
+*   **Private Cloud:**
+    *   **Description:** Services implemented over a closed network within an organization.
+    *   **Access:** Only accessible to authorized users (e.g., enterprise employees).
+*   **Hybrid Cloud:**
+    *   **Description:** Combines both public and private cloud services.
+    *   **Key Aspect:** Compatibility and seamless migration between public and private domains are crucial.
+
+### 2. Server Virtualization Technology
+
+**Definition:** Virtualization is a technology that abstracts computer resources. It can make:
+    *   Multiple computers appear as a single server.
+    *   One computer appear as multiple independent computers.
+
+**Purpose:**
+*   Maximize utilization rate of computer resources.
+*   Improve management efficiency.
+
+**Role in Cloud:** Cloud services heavily rely on virtualization (especially x86 virtualization) to provide abstract computing resources to users, overcoming physical limitations.
+
+#### A) Hypervisor (Virtual Machine Monitor - VMM)
+
+*   **Definition:** A technology and logical platform for virtualizing a physical server. It enables running multiple operating systems on one physical machine.
+*   **Components:**
+    *   **Host OS:** The physical server.
+    *   **Guest OS:** A virtually provided server (runs inside the hypervisor).
+
+#### B) Hypervisor Types (by Installation Method)
+
+1.  **Native Type (Type 1):**
+    *   **Installation:** Installed directly on the physical hardware.
+    *   **Host OS:** Does NOT require a host OS, saving resources.
+    *   **Examples:** Xen, XenServer, VMware ESX, IBM Power Hypervisor, Microsoft Hyper-V, KVM.
+2.  **Hosted Type (Type 2):**
+    *   **Installation:** Installed on an existing operating system, like a conventional program.
+    *   **Examples:** Microsoft VirtualPC, VMware Workstation, Oracle VirtualBox.
+
+#### C) Server Virtualization Methods
+
+Server virtualization can be classified by *how* it virtualizes resources:
+
+1.  **Full Virtualization:**
+    *   **Hardware Emulation:** Completely virtualizes hardware. The hypervisor emulates hardware resources.
+    *   **Guest OS Perception:** Guest OS believes it has direct, exclusive access to hardware.
+    *   **CPU Requirement:** Requires CPU support for virtualization (e.g., Intel VT, AMD-V) for efficient hardware emulation.
+    *   **Guest OS Modification:** No modification needed for the Guest OS, allowing diverse OS types (e.g., Linux and Windows) to run simultaneously.
+    *   **Performance:** Improved by CPU hardware assistance.
+    *   **Association:** Typically used by native hypervisors.
+2.  **Para-virtualization:**
+    *   **Hardware Emulation:** Does NOT completely virtualize hardware; no hardware emulation.
+    *   **Guest OS Access:** Guest OS must communicate with the hypervisor via its API (Hypercall) to access hardware resources.
+    *   **Guest OS Modification:** Requires partial modification of the Guest OS's kernel.
+    *   **Performance:** High performance due to direct hypervisor interaction without emulation overhead.
+    *   **Guest OS Limitation:** Generally limited to open-source Guest OSs due to the need for kernel modification.
+3.  **OS-Level Virtualization (Container Technology):**
+    *   **Approach:** Virtualizes at the OS level, making it appear like multiple isolated environments are running *on* a single OS.
+    *   **Hypervisor:** Does NOT use a hypervisor. It leverages the host OS's built-in container functions.
+    *   **Resource Isolation:** Allocates and isolates resources (memory, storage, network) for each container independently.
+    *   **Host/Guest OS:** The Guest OS within the container *must be the same* as the Host OS.
+    *   **Characteristics:** Lighter and more portable than traditional virtualization.
+    *   **Examples:** Solaris Containers, FreeBSD Jails, Linux Docker (LXC).
+    *   **Advantages:**
+        *   Quick start and finish.
+        *   High density (many containers on one OS).
+        *   Low overhead (userspace isolation, no emulation).
+        *   Supports application-specific container configurations.
+    *   **Disadvantages:**
+        *   Host OS-dependent (Guest OS must match Host OS).
+        *   Cannot configure the kernel individually for each container.
+
+#### D) Comparison: Hypervisor Virtualization vs. OS-Level Virtualization
+
+| Feature                 | Hypervisor Virtualization                    | OS-Level Virtualization              |
+| :---------------------- | :------------------------------------------- | :----------------------------------- |
+| **Hardware Independence** | Fully independent in VM                      | Uses host OS                         |
+| **OS Independence**     | Fully independent from host OS               | Host OS must be same as guest OS     |
+| **Performance**         | High overhead (mitigated by hardware virt.)  | No overhead (lighter)                |
+| **Management**          | Separately managed for each VM               | Centralized management of common software |
+| **Application**         | Heterogeneous (Linux/Windows mixed)          | Resource integration in a single OS environment |
+| **Examples**            | Xen, MS Virtual Server, KVM, VMware ESX      | Solaris, LXC, Docker                 |
+
+### 3. Storage and Network Virtualization Technologies
+
+#### A) Storage Virtualization
+
+*   **Function:** Enables virtual allocation of only the minimum required storage space initially (using **thin-provisioning** technology).
+*   **Benefit:** Allows integration and use of heterogeneous storage systems seamlessly.
+
+#### B) Network Virtualization
+
+*   **Function:** Implements network devices (e.g., L2/L3/L7 switches, firewalls, security devices) as virtual machines, instead of physical hardware appliances.
+*   **Benefit:** Allows networking resources to operate separately through internal virtualization, even when sharing the same physical network infrastructure.
+
+### 4. Cloud Platform
+
+#### A) Definition of Cloud Platform
+
+*   **Role:** A cloud operating system that collects, controls, and operates various resources like servers, storage, networks, and virtualization technologies.
+
+#### B) OpenStack
+
+*   **Definition:** An open-source project and community dedicated to developing software blocks for building public and private cloud computing platforms.
+*   **Goal:** To establish industry standards for cloud computing platforms, independent of specific equipment types or vendor technologies.
+*   **Main OpenStack Projects (Key Components):**
+    *   **Nova:** Core component for automatic control and operation of large-scale virtual computer instances (compute service).
+    *   **Swift:** Implements large-scale, reliable cloud object storage services (object storage).
+    *   **Glance:** Manages virtual disk image files (storage, registration, management, delivery).
+    *   **Keystone:** Provides integrated authentication and authority services (identity service).
+    *   **Cinder:** Offers block storage services, including volume replication and snapshot support (block storage).
+
+---
+
+================================================================================
+ORIGINAL TEXT (First 5000 chars)
+================================================================================
+
+--- Page 133 ---
+ESSENCE
+B) Classification  according  to the cloud operation  form
+Cloud services  can be classified  into three levels, based on the service  operation  form. The following  table shows the
+classification,
+{Table 29) Cloud Service  Type Based on Disclosure  Level
+Cloud service Description
+; + Cloud services  disclosed  to unspecified  masses  over the Internet  and are accessible  by thePublic cloud
+Internet
+: + Cloud services  implemented  over the closed network  by enterprises  and institutions  to allowPrivate  cloudaccess  only to authorized  users
++ Services  that use both cloud services  open to the outside  and closed cloud services,  by
+p combining the public cloud and private cloudHybrid cloud g tne Pi Pp
++ The compatibility  by moving  services  deployed  in the public cloud to the private  cloud domain
+and sending  services  in the private  cloud domain  to the public is very important.
+03 Server  Virtualization  Technology
+The conventional  computing  environment  generally  installs an OS-dependent  on single hardware  and runs
+applications  above the OS. Virtualization  refers to the technology  of abstracting  the computer  resources  of multiple
+computers  to make them look like servers, or by abstracting  the computer  resources  of a computer  to make them
+look like multiple  computers.  Since the server  virtualization  technology  makes it possible  to run one or more operating
+systems  on a computer,  it can maximize  the utilization  rate of computer  resources  and management  efficiency.
+Cloud services  generally  use virtualization  technology  to provide abstract  computer  resources  to users. The x86
+virtualization  technology,  in particular,  has been rapidly spread, based on the technology  and market  maturity,  and has
+become  the basis of the cloud computing  environment  for the logic sharing and allocation  of computing  resources
+beyond  the physical  limitations.
+A) Hypervisor
+In server  virtualization,  a host OS is a physical  server, and a guest OS is a virtually  provided  server. Server  virtualization
+technology  can be classified,  according  to how a virtual server allocates physical  resources in order to make it look
+like a physical server. A hypervisor  is a technology  of virtualizing  a physical server. It is a logical platform  for server
+virtualization.  It is also called a virtual machine  monitor  (VMM). The hypervisor  can be classified  by how it is installed
+and virtualized.
+B) Hypervisor  types
+Hyperviors  are classified  into native types and hosted types, according  to the installation  method.  The native type
+is installed  directly on the hardware,  while the hosted type (see [Figure 95]) is installed  on an OS, like conventional
+programs.
+132 TOPCIT  ESSENCE
+
+
+--- Page 134 ---
+Overview  of System Architecture )
+@ Native type
+This type installs a VMM on physical hardware  and requires  no host OS. It saves resources,  compared  to the
+virtualization  requiring  a host OS, since there is no host OS. The native type is also called type1. The leading  native
+virtualization  technologies  include Xen, XenServer  from Citri, ESXServerBMWare,  Power Hypervisor  from IBM, and
+Hyper-V  and KVM from Microsoft.
+[Figure  95] Native Type Hypervisor
+@ Hosted  type
+The hosted hypervisor  (see [Figure 96]) is software  installed  on an existing  OS. The leading hosted type hypervisor
+includes  VirtualPC  from Microsoft,  Workstation  from VMWare,  and VirtualBox  from Oracle.
+Ca
+. OS 1(Guest  OS) | = OS 2(Guest  OS) | | - |
+[Figure  96] Native  Hypervisor
+C) Server  virtualization  methods
+According  to the virtualization  method,  server  virtualization  technology  can be classified  into full virtualization,  para-
+virtualization,  and OS-level  virtualization.
+M3 Overview  of System  Architecture  133
+
+
+--- Page 135 ---
+ESSENCE
+© Full virtualization
+Full virtualization  completely  virtualizes  the hardware.  Although  the guest OS perceives  that it owns and accesses
+the hardware  directly,  the virtual server  uses the resources  that the hypervisor  emulates  to look like hardware.  If the
+guest OS intends  to monopolize  the hardware,  the hypervisor  must handle  these commands  separately.  A CPU (Intel's
+VT or AMD-V)  that supports  virtualization  is necessary  to emulate  hardware  resources,  other than the CPU, fully.
+The performance  has greatly increased  since the hypervisor, included  in the CPU, handles  it at high speed. There is
+no need to modify  the guest OS, since the CPU handles  full virtualization.  Therefore,  there are no restrictions  on the
+guest OS. Linux-based  guest OS and Windows  guest OS can operate  simultaneously.  The native hypervisor  generally
+corresponds  to full virtualization.
+APP2
+OS Guest OS
+a  OoMSels
+CPU (Intel VI-X, AMD-V)
+[Figure  97] Full Virtualization  Conceptual  Diagram
+@ Para-virtualization
+Para-virtualization  does not completely  virtualize  the hardware,  and the guest OS must ope...

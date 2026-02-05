@@ -1,0 +1,35 @@
+Project Management  and Technical  Communication  )
+<Table 45> Result  of Backward  Scheduling  by Activity
+Activity  Name LS (Late Start) Duration LF (Late Finish)
+: 9(10-1)A 13-3 + 1) 3 3(4-1)
+B 10(11-2 +  1) 2 11(12-1)
+G 12(13-2 + 1) 2 13(14-1)
+_ 11(12-1)D 4(7-4 + 1) 4 7(8-1)
+E 8(13-6 + 1) 6 13(14-1)
+F 14(16-3  + 1) 3 16
+For Activity  “F’, there is no LS of successor  activity,  so LF starts with 16.
+In the case of Activity  “D’, there are two successor  activities:  “C” and “E”. In this case, the “C’” and “E” activities
+can start only after the “D’ activity  ends. The “C’ activity  must start on the 12th at the latest (LS, Late Start),
+and the “E” activity  must start on the 8th at the latest.
+Therefore,  Activity  “D’ must finish on the 7th at the latest (Late Finish), and the faster “E” of the two activities
+can start normally  on the 8th. So, the LF of Activity  “D’ becomes  8 (LS of Activity  “E”) - 1 = 7. Subsequently,
+the LS of Activity  “D’ also becomes  7 - 4 + 1 = 4. After calculating  both the LS and LF of the individual
+activities,  write them as shown in the figure below.
+4 2 5 8 9
+B }——_—__> Cc
+10 a 12 13
+1 3 3 14 3 16
+A F
+1 3 / 14 16
+4 7 8 6 13
+D [>_> E
+4 7 8 13
+[Figure  32] Critical Path Method@  (Example)
+@ Total Float, Critical Path Calculation
+The formula  for calculating  Total Float for each activity  is as follows:
++ TF = LF - EF or
++ TF=LS-ES
+The reason for calculating  Total Float is to determine  the critical path. In other words, the critical path is a path
+that connects  activities  whose Total Float is “zero”. Therefore,  the critical path in this example  becomes  “A-D-
+E-F’ indicated  in red as shown in the figure below.
+M6 Project  Management  and Technical  Communication  99

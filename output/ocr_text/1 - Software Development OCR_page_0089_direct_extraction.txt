@@ -1,0 +1,21 @@
+ESSENCE
+Vill. Programming  Language  and the
+Development  Environment
+>> Recent  trends and major issues
+The use of Java and C-like languages  has become increasingly  popular  among enterprises due to
+the trend of developing  software  and apps on the mobile/cloud.  However,  these languages  have
+been recognized  as the two major programming  languages  and those most frequently  selected  by
+developers.  In addition,  it is important  to learn the related skills beforehand  because  these languages
+are the basis for learning  other programming  languages  and are used in various  business  fields.
+>> Learning  objectives
+1. To be able to describe  the characteristics  of programming  languages  (unstructured  language,
+structured  language,  object-oriented  language).
+2. To be able to compare  the characteristics  of major programming  languages  (C, C++, Java, Python,
+JavaScript).
+3. To be able to understand  the software  development  framework  and explain its types.
+4. To be able to understand  and explain  the integrated  development  environment  (IDE).
+- Programming  language,  compiler,  interpreter
+- Code reuse
+- Software  development,  Spring  and standard  e-government  frameworks
+- Integrated  development  environment
+88 TOPCIT  ESSENCE

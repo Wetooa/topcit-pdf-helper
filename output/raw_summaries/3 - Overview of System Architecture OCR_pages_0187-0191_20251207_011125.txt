@@ -1,0 +1,266 @@
+LEARNING GUIDE: Pages 187-191
+Generated: 2025-12-07 01:11:25
+PDF: 3 - Overview of System Architecture OCR
+
+================================================================================
+LEARNING GUIDE
+================================================================================
+
+Here is a simplified, easy-to-read learning guide based on the provided text:
+
+---
+
+## Learning Guide: Transport Layer Protocols
+
+This guide covers key concepts of TCP, UDP, and SCTP protocols, their mechanisms, and uses.
+
+---
+
+### **1. TCP (Transmission Control Protocol) Mechanisms**
+
+TCP uses several mechanisms to ensure reliable data transfer.
+
+#### **1.1. Sliding Window Protocol**
+
+A method for flow control, allowing multiple packets to be sent without waiting for individual acknowledgements.
+
+*   **Concept:**
+    *   A "window" of packets can be transmitted before waiting for an ACK.
+    *   Window size is determined by the lesser of the Receiver Window (RWND) and Congestion Window (CWND).
+*   **Operations:**
+    *   **Open Operation:** When an Acknowledgment (ACK) arrives, the window's right boundary moves right. This allows more data to be sent.
+    *   **Close Operation:** When data is transmitted, the window's left boundary moves right. The sender no longer needs to manage this data.
+
+#### **1.2. Window Sizes**
+
+*   **RWND (Receiver Window):**
+    *   **Definition:** The maximum packet size the receiver can handle without data loss.
+    *   **Function:** Notifies the sender of its current capacity via ACKs.
+*   **CWND (Congestion Window):**
+    *   **Definition:** The maximum packet size the sender can transmit at once, based on network congestion.
+    *   **Behavior:**
+        *   Decreases if network congestion is high (more data loss).
+        *   Increases if network congestion is low.
+
+#### **1.3. Error Control**
+
+Mechanisms to handle lost, damaged, out-of-order, or duplicated segments.
+
+*   **Tools:**
+    *   **Checksum:** A field in each segment to detect if the segment itself is damaged.
+    *   **Acknowledgment (ACK):** Confirms successful receipt of a data segment. Essential for error control.
+    *   **Resend:** Segments are temporarily stored in a buffer until their ACK is received. If no ACK, the segment is resent.
+
+#### **1.4. Congestion Control**
+
+Aims to prevent network overload by adjusting the traffic volume input to the network. TCP uses two main algorithms:
+
+*   **Slow Start Algorithm:**
+    *   **Goal:** Quickly increase transmission rate without causing congestion initially.
+    *   **Mechanism:** Exponentially increases the Congestion Window (CWND) size until a certain limit is reached.
+*   **Congestion Avoidance Algorithm:**
+    *   **Goal:** Maintain high throughput without causing new congestion once the slow start threshold is passed.
+    *   **Mechanism:** Additively increases the Congestion Window (CWND) size until congestion is detected.
+
+#### **1.5. TCP Timers**
+
+TCP uses four main timers for its operations:
+
+*   **Retransmission Timer:**
+    *   **Purpose:** Set to a Retransmission Time-Out (RTO) value. If no ACK is received within this time, the segment is considered lost and resent.
+*   **Persistence Timer:**
+    *   **Purpose:** Resolves deadlocks between sending and receiving TCPs, especially when a receiver advertises a zero window.
+*   **Keepalive Timer:**
+    *   **Purpose:** Prevents established TCP connections from becoming idle and being closed prematurely due to inactivity. It periodically sends small packets to check if the other end is still alive.
+*   **Time-Wait Timer:**
+    *   **Purpose:** Used during connection termination (specifically, by the side performing an active close). It ensures all packets (including the final ACK) have been exchanged and allows duplicate packets to clear the network, preventing issues with subsequent connections.
+
+---
+
+### **2. UDP (User Datagram Protocol)**
+
+UDP is a simpler, connectionless, and unreliable transport layer protocol.
+
+#### **2.1. Characteristics of UDP**
+
+*   **Connectionless:** Sends/receives data without a pre-established connection.
+*   **Unreliable:** Does not guarantee delivery, order, or error-free data at the transport layer.
+*   **Independent Datagrams:** Each UDP packet (user datagram) is treated independently and is not assigned a sequence number.
+*   **Simple:** Lacks flow control, window mechanisms, and most error control (except checksum).
+*   **No Congestion Control:** Does not adapt its sending rate to network congestion.
+*   **"Best Effort" Service:** Aims for continuous transmission, even with some packet loss.
+*   **Application Layer Responsibility:** If reliability, flow control, or robust error control are needed, the application layer must implement them.
+*   **Suitable for:** Real-time applications like video streaming, where low latency is more critical than guaranteed delivery of every single packet.
+
+#### **2.2. Common Uses of UDP**
+
+*   Simple request-response communication (e.g., DNS queries).
+*   Applications with their own internal flow/error control.
+*   Multicasting (sending to multiple destinations simultaneously).
+*   Network management protocols (e.g., SNMP).
+*   Routing update protocols (e.g., RIP).
+
+#### **2.3. Well-known UDP Ports**
+
+| Service           | Port | Service          | Port |
+| :---------------- | :--- | :--------------- | :--- |
+| NTP (Network Time Protocol) | 123  | Syslog           | 514  |
+| BOOTP/DHCP Server | 67   | RIP              | 520  |
+| BOOTP/DHCP Client | 68   | RIPng            | 521  |
+| TFTP (Trivial File Transfer Protocol) | 69   | Timed (Time Server) | 525  |
+| Kerberos          | 88   | OLSR             | 698  |
+
+#### **2.4. UDP Protocol Header (User Datagram)**
+
+A fixed-size 8-byte header composed of four 2-byte (16-bit) fields.
+
+| Field          | Length  | Description                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                 |
+| :------------- | :------ | :------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
+| Source Port    | 2 Bytes | The port number of the transmitting application process (0-65,535).                                                                                                                                                                                                                                                                                                                                                                                                                                                         |
+| Destination Port | 2 Bytes | The port number of the receiving application process on the destination host.                                                                                                                                                                                                                                                                                                                                                                                                                                       |
+| Length         | 2 Bytes | The total length of the UDP packet, including the 8-byte UDP header and the data. Minimum is 8 bytes (header only).                                                                                                                                                                                                                                                                                                                                                                                                 |
+| Checksum       | 2 Bytes | A value used to detect data errors. It's calculated using a 16-bit one's complement sum over a "pseudo-IP header", the UDP header, and the data. If no checksum is used, this field is filled with zeros. If a receiver detects an error, the datagram is usually discarded.                                                                                                                                                                                                                                              |
+| Data Octets    | Variable | The actual application data being transmitted.                                                                                                                                                                                                                                                                                                                                                                                                                                                                      |
+
+*   **Simplicity:** UDP's simplicity allows it to efficiently pass data between the application layer and the IP layer without complex processing.
+
+---
+
+### **3. SCTP (Stream Control Transmission Protocol)**
+
+SCTP is a newer transport layer protocol designed for multimedia communication, combining features from TCP and UDP.
+
+#### **3.1. Characteristics of SCTP**
+
+*   **Hybrid Design:** Combines the reliability of TCP with some flexibility of UDP.
+*   **SCTP Association:** A broader concept than a TCP connection.
+    *   **Multi-homing:** Allows each endpoint of an association to have one or more IP addresses. This provides network-level fault tolerance (if one path fails, another can be used).
+    *   **Multiple Streams:** Unlike TCP (which uses a single stream per connection), SCTP associations can support multiple independent streams of data. This prevents head-of-line blocking (where one lost packet blocks all subsequent packets, even if they're for a different part of the application).
+
+#### **3.2. SCTP Service Characteristics**
+
+*   **Process-to-Process:** Provides communication between application processes.
+*   **Multi-stream:** Enables multiple independent data streams within a single association.
+*   **Multi-homing:** Allows endpoints to define multiple IP addresses. One is primary, others are alternatives for failover.
+
+---
+
+================================================================================
+ORIGINAL TEXT (First 5000 chars)
+================================================================================
+
+--- Page 187 ---
+ESSENCE
+<$£§.  Qo __ ACK 2
+Window  size  = 3
+Window  size = 3 oo
+Send 1
+Window  size = 3 rs
+Send 2
+Window size  = 3 Packet 3 is Dropped
+Send 3 ACK 3
+Window size  = 2
+[Figure 134] Example  of Packet  Sending  and Receiving  by Sliding  Window  Protocol
+Sliding Window
+[Figure 135] Concept  of Sliding  Window  Protocol
+{Table 62) Sliding Window  Protocol  Open/Close  Operation
+Operation Description
+; + Means that an ACK has arrived from a sender, and the window's  right boundary  moves  to the right.Open operation a
++ More data can be transmitted  as it increases.
+. + Means  that the data (byte) is transmitted,  and the windows  left boundary  moves  to the right.Close operation
++ The sender  side does not have to intervene  with this data any longer.
+The sliding window  protocol  uses the receiver  window  (RWND)  and the congestion  window  (CWND).  The window  size
+is the lesser of the RWND and CWND.
+186 TOPCIT  ESSENCE
+
+
+--- Page 188 ---
+Overview  of System Architecture )
+{Table 63) RWND and CWND
+‘Type Description
+Receiver  window + The size of the packet  that the receiver  can receive without  data loss.
+(RWND) + It notifies  the status to the other end of the segment  containing  an ACK.
+C +i ind + The size of the packet  that can be sent at once, according  to the network  congestion
+one CWND) OW | «The CWND gets smaller, since data loss during the transmission  increases  if the network  congestion  is
+high. It gets larger if the congestion  is low.
+@ Error control
+Error control is activated  when the transmitted  segment  is lost, damaged,  out of order, or duplicated.
+{Table 64) TCP Error Control  Tools
+Tool Description
+Checksum + Each segment  contains  a checksum  field to indicate  if the segment  is damaged.
+Acknowledgment + The acknowledgment  is used to confirm receiving  the data segment.
++ The key to the error control  mechanism.  The segment  is stored in a buffer until the acknowledgment  isResend ;
+received.
+© Congestion  control
+Congestion  control is a mechanism  and technique  of maintaining  the user traffic volume input to the network  to
+ensure that it does not exceed the network  capacity,  TCP performs  the congestion  control, based on the slow start
+algorithm  and the congestion  avoidance  algorithm.
+The slow start algorithm  exponentially  increases  the congestion  window  size for congestion  control, until it reaches
+the limit.
+Client Server
+mH——t=
+1
+Congestion  Window
+RIT
+2
+Congestion  Window
+RIT
+4
+Congestion  Window
+RIT
+8
+Congestion  Window
+[Figure 1362] Concept  of Slow Start
+M3 Overview  of System  Architecture  187
+
+
+--- Page 189 ---
+ESSENCE
+The congestion  avoidance  algorithm  additively increases  the congestion  window  size, until the congestion  stat is
+detected.
+Client Server
+—Coa =
+cwnd
+i=2 LL]
+Congestion  Window
+RIT
+i+1
+Congestion  Window
+RIT
+i+2
+Congestion  Window
+RIT
+ices} ]
+Congestion  Window
+Time Time
+[Figure 137] Concept  of Congestion  Avoidance
+© TCP timer
+TCP mostly  uses four timers  for its operation.
+<Table 65) Types  of TCP Timers
+Timer  Type Description
++ A retransmission  timer is set to a retransmission  time-out  (RTO) value, which is the time to wait for
+acknowledgement  by a segment  for retransmission  of a lost segment.
++ A persistence  timer is used for each TCP connection  to resolve  the deadlock  between  the receivingRetransmission
+Persistenceand sending  TCPs.
+Keepalive + Akeepalive  timer is used to prevent  TCP established  connections  from being idle for long periods  of
+time.
+Time-wait + Itime-wait  timer is used during connection  termination.  TCP performs  an active close, and the time-
+wait timer is activated  when sending  the last ACK.
+188 TOPCIT  ESSENCE
+
+
+--- Page 190 ---
+Overview  of System Architecture )
+03 UDP (User Datagram  Protocol)
+A) Characteristics  of UDP
+User datagram  protocol (UDP) provides  a connectionless  service for sending  and receiving  data without  a pre-
+configuration  process  for connection.  Unlike TCP. it is a protocol  that does not guarantee  the reliability  of the
+transport  layer level.
+Each user datagram  of UDP is an independent  datagram  and is not assigned  a number, unlike TCP. UDP is a very
+simple protocol,  and there is no flow control, so there is no window  mechanism,  and packet overflow  may occur.
+Error Control also has no other error control mechanism,  except for checksum.  When the receiver  detects  an error
+through  a checksum,  the user datagram  is removed,  and congestion  control is not provided.  Due to this nature of the
+UDP transport  protocol,  the application  layer may be necessary  in order to define and implement  the flow control
+and error control. As described  above, since the UDP has a continuous  minimum  transmission  rate, despite some
+packet loss, due to a lack of reception  confirmation  and retransmission  function,  it is suitable  for video play service
+and is considered  to provide the best effort service. In particular,  for play...

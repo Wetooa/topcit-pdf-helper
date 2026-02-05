@@ -1,0 +1,40 @@
+Information  security )
+handshake  protocol  should be used, which will be described  below. A session defines cryptographic  security
+parameters  that are shared by multiple  connections,  which is used to avoid negotiating  required  new security
+parameters  for each connection.
+@ Structure  and operation
++ Structure  of the SSL protocol
+As shown in [Figure 64], SSL is composed  of four protocols,  including  handshake,  change  cipher Spec, record,
+and alert.
+Protocols  Secured  by SSLo——_[yy
+t
+SSL Alert HTTP LDAP
+f Protocol Cie SMTP Application
+' Tao
+ree! areas!  (arate! etc... Layer
+| SSL Record Layer
+| TcP | Transport
+Layer
+| IP | Internet
+Layer
+| Network Access | Network.
+Layer
+[Figure  64] Composition  of the SSL protocol
++ Type of SSL protocols
+<Table 37> shows the functions  by SSL protocol  type.
+<Table 37> Function  of the SSL protocol
+Type Description
++ Mutual authentication  between  the server  and client
++ Negotiating  the encryption  algorithm,  MAC algorithm,  and cryptographic  key to be
+used.
++ Performed  before any application  data transportHandshake  protocol
++ Providing  the confidentiality  and integrity  service  for SSL connections
+Record protocol + Encrypting  messages,  using the determined  secret key cipher algorithm
++ Performing  encryption,  using the distributed  symmetric  key
++ Notifying  the other party that the authentication  and encryption  system,  defined  in the
+Change  cipher  spec protocol cipher  specification,  will be applied  from now on
++ One-byte  long message  with the value of 1
++ Used to deliver  warnings,  while performing  SSL
+Warning  protocol + Awaming  is composed  of 2 bytes, and the first byte conveys  the severity  of the
+message:  Warning(1),  Fatal(2)
+M4 Understanding  Information  Security 123

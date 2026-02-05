@@ -1,0 +1,30 @@
+ESSENCE
+Since the von Neumann  and Harvard  architectures  each has advantages  and disadvantages,  the most recent high-
+performance  CPUs apply both architectures  in their design. In other words, they separate  the cache memory  for
+instruction  and data, and they apply the Harvard  architecture  inside the CPU (CPU and cache) and the von Neumann
+architecture  outside  CPU (CPU and memory),  as shown in [Figure  32].
+02 CPUVon Neumann  Architecture
+Harvard  Architecture
+Control Command
+Unit ——»  | Cache | ————>
+Arithmetic <———— (pata<+—_and Logic Unit ———>>
+CPUMemory
+[Figure  32] Computer  Structure  Applying  Both Architectures
+A) Definition  of CPU
+The CPU is the most important  part of computers,  as it interprets  instructions  and handles arithmetic  or logical
+operations  and data processing.  It plays the key role of running  programs  and processing  data.
+B) CPU execution
+As shown in <Table 9>, the CPU operation  is divided into a function  that commonly  runs for all instructions,  and a
+function  that runs only when necessary,  according  to the instructions.
+{Table 9) CPU Execution
+Type Detailed  Operation Description
+Commonly |” Instruction  fetch Reads instructions  from the memory  unit
+performed + Instruction  decoding Interprets  the fetched instructions  to determine  the action to take
+« Data fetch Reads care from a memory  unit of the I/O unit if the data is necessary
+Performed to run the instruction
+when « Data processin Reads data from a memory  unit of the I/O unit if the data is necessary  to
+necessary pI e tun the instruction
++ Data storage Stores execution  results
+C) CPU components
+As shown in [Figure 33], a CPU consists  of a control unit, an arithmetic  logic unit (ALU), registers,  and buses  that
+64 TOPCIT  ESSENCE

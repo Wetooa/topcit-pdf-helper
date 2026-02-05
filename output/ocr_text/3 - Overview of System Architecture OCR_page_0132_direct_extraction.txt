@@ -1,0 +1,36 @@
+Overview  of System Architecture )
+infrastructure  resources  provided  by laaS are generally  in a virtualized  environment,  it is not a must for laaS. The
+service  that provides  non-virtualized  physical infrastructure  resources  is called a bare-metal  cloud. laaS users must
+directly manage areas beyond the OS. The service is similar to receiving  a server that is hosting  from an existing
+service,  provided  from the user's aspect.
+@ PaaS
+PaaS is a service method in which the concept  of SaaS is applied to the development  environment.  It uses the
+necessary  development  and operating  environment  as a service, without  building a development  and operation
+environment.  The service scope of PaaS ranges, from the application  development  environment,  to the service
+distribution  and operation  environment.  PaaS provides the network  infrastructure  to the runtime for application
+execution,  and the management  scope of the user is the applications  and data above the application  runtime.
+For example,  a user developing  a new Java web application that uses MySQL as a database,  can quickly prepare  a
+development/operation  environment,  and can quickly develop  and service applications,  by using PaaS service that
+provides  MySQL  and Apache  Tomcat.
+@ SaaS
+SaaS is a service that provides  software  and is a model that delivers software  serviced  from the center to users,
+through  a client, such as a web browser. SaaS users can use functions they need, without  knowing  where the
+software  is located,  which OS it uses, and in which language  it is developed.  Leading  examples  of SaaS include  Google
+Docs and SalesForce.com.  SaaS services  generally  have the following  characteristics:
++ Access  with a web browser:  Access  with a web browser,  instead  of an installed  software
++ Usage-based  cost: Paying  fees, based on software  use
+* On-demand:  Needed  software  available  immediately
++ IT requirement  optimization:  No management  and scalability  issues with the IT infrastructure
+[Figure 94] shows the management  scope of laaS, PaaS, and SaaS users and service  providers.
+Internal  Infrastructure laaS PaaS SaaS
+Data A
+Application
+Runtime
+Middleware
+Operating  Systeme
+Virtualization
+Server
+Storage
+Network
+[Figure 94] Management  Scope of in Each Cloud Service  Type
+M3 Overview  of System  Architecture  131

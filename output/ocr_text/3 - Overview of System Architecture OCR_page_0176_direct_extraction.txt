@@ -1,0 +1,34 @@
+Overview  of System Architecture )
+8 Bits: Up to 254 Hosts
+Class C before Supernetting |
+| Network Identifier | Y Host Identifier |
+a
+Supernet  Mask 255.255.248.0
+(11111111.11111111.11111000.00000000)
+After Supernetting Hy
+| Network Identifier [ A Host Identifier |
+11 Bits: Up to 8190 Hosts
+[Figure 129] Supernetting  Method
+G) IPv4 address  allocation
+@ DHCP (Dynamic  Host Configuration  Protocol)
+DHCP is a protocol  that provides  a method of dynamically  allocating  IP addresses,  and other related configuration
+details,  to DHCP-enabled  clients on a network,  using a DHCP server.
+The DHCP server can assign a default gateway,  a DNS server address, a local router, a lease period, and a domain
+name as DHCP options, in addition  to the IP address  and subnet  mask.
+The IPv4 DHCP lease process  is established  through  the exchange  of four UDP messages.  The four UDP messages
+are DHCPDISCOVER,  DHCPOFFER,  DHCPREQUEST,  and DHCPACK.  <Table 54> lists the details.
+{Table 54) DHCP Message  [10]
+Message Description
+DHCPDISCOVER The IP address,  sent by a client, has the address  value of 255.255.255.255.
+DHCPOFFER The DHCP server  delivers information,  such as the IP address,  subnet mask, default  gateway,  and lease period.
+The client sends DHCPREQUEST  to the server, and the message  includes  that the client has selected
+the lease information.
+DHCPACK The DHCP server  sends the DHCPACK  message  to the client to allow the use of the IP address.DHCPREQUEST
+@NAT  (Network  Address  Translation)
+NAT is a function  that interconnects  terminals  on a private network  to communicate  with public networks, such as
+the Internet.  It is defined  in RFC 3022 and RFC 2663.
+The purpose  of using NAT is to hide internal IPs to defend them from outside attacks  while solving insufficient  IP
+addresses. NAPT (Network  Address  Port Translation)  is an extension  of the basic NAT and converts  the packet's
+source  port number.  The reason for using NAPT is to connect  to multiple internal hosts with an IP address.  NAPT can
+theoretically  process  communication  with up to 65,535 internal  hosts with an official IP address.
+M3 Overview  of System  Architecture  175

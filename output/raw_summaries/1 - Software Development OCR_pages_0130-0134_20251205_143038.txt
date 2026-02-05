@@ -1,0 +1,215 @@
+LEARNING GUIDE: Pages 130-134
+Generated: 2025-12-05 14:30:38
+PDF: 1 - Software Development OCR
+
+================================================================================
+LEARNING GUIDE
+================================================================================
+
+Here is a simplified, easy-to-read learning guide based on the provided text:
+
+---
+
+## Open-Source Software (OSS) & License Management: A Study Guide
+
+### 1. The Growing Importance of Open-Source Software (OSS)
+
+#### 1.1 Modern Software Development Trends
+*   **Focus:** Rapid software development and release ("time to service") is crucial for competitiveness.
+*   **Challenge:** Traditional proprietary software development can be too slow.
+*   **Solution:** Open-source software (OSS) enables faster development due to its flexible nature and access to various technologies.
+
+#### 1.2 Why OSS is Pervasive
+*   OSS use is increasing, especially in new technologies like IoT, AI, Big Data, and Cloud computing.
+*   **Benefits:**
+    *   Reduces development time and cost.
+    *   Helps break technological dependence on single vendors.
+
+#### 1.3 The Critical Need for OSS License Management
+*   As OSS use grows, so does the risk of license disputes.
+*   **Consequences of non-compliance:**
+    *   Damage to corporate image.
+    *   Significant financial losses.
+    *   Legal responsibility for copyright infringement.
+*   **Challenge:** Many perceive OSS as "free," leading to insufficient management. There are over 2,000 types of OSS licenses, adding complexity.
+*   **Statistics:** A 2016 NIPA survey found 37% of domestic SMEs violated OSS licenses.
+*   **Solution:** Establish robust OSS license management systems, including governance, license analytics, and verification tools.
+
+#### 1.4 Case Study: Hangul and Computer vs. Artifex
+*   **Incident:** South Korean software company Hangul and Computer (H&C) was sued by U.S. company Artifex for copyright breach.
+*   **Violation:** H&C sold "Hangeul" programs that included "Ghostscript" (a PDF conversion library) developed and distributed by Artifex under a GPL (General Public License). H&C violated the GPL terms.
+*   **Outcome:** H&C's dismissal request was rejected, and they had to pay a settlement.
+*   **Lesson:** This case highlights the serious financial and reputational risks of unauthorized GPL code use and the importance of compliance.
+
+---
+
+### 2. Understanding Open-Source Software (OSS)
+
+#### 2.1 Definition of OSS
+*   **Open-Source Software (OSS):** Software that can be freely used, copied, and modified by anyone, while still protecting the creator's rights.
+*   **Core Idea:** The source code must be shared for joint research and collaboration to make the software "better."
+
+#### 2.2 History and Key Organizations
+*   **1980s:** Restrictions on software use based on intellectual property rights emerged.
+*   **Free Software Movement:**
+    *   **Richard Stallman** founded the **Free Software Foundation (FSF)** to protect users' freedom to use software. This movement is the origin of OSS.
+    *   "Free software" emphasizes user freedom.
+*   **Open Source Initiative (OSI):**
+    *   Formed in 1998, popularized the term "open-source software."
+    *   Manages the promotion and certification of OSS.
+    *   Defines the **Open Source Definition (OSD)**, a minimum standard for OSS licenses.
+    *   Awards an OSI certification mark to compliant OSS.
+
+#### 2.3 Examples of OSS
+*   **Server Software:** Apache web server, PHP, MySQL, Hadoop, Openstack
+*   **Development Tools:** Eclipse, gdb
+*   **Operating Systems:** Linux
+
+---
+
+### 3. Understanding Open-Source Software Licenses
+
+#### 3.1 Definition of OSS Licenses
+*   **OSS License:** An agreement between an open-source developer and a user, outlining how the software can be used and under what conditions.
+*   **Purpose:** To protect the creator's rights and establish conditions for use, often mandating source code disclosure under specific circumstances.
+
+#### 3.2 Scope of License Application
+*   **Crucial Point:** Obligations under an OSS license typically apply **only when the software is distributed or sold externally.**
+*   **Internal Use:** Generally, there are **no obligations** when OSS is used solely within an organization.
+
+#### 3.3 Common Characteristics of OSS Licenses
+*   Free use
+*   Distribution without significant restrictions (though conditions apply)
+*   Ability to acquire source code
+*   Ability to modify source code
+
+#### 3.4 Key Differences Among Licenses
+*   **Primary distinctions:**
+    *   Obligation to disclose "secondary works" (modifications or combined software).
+    *   Rules for combining OSS with proprietary (closed-source) software.
+
+---
+
+### 4. Key Open-Source Software Licenses: A Comparison
+
+Licenses vary in their "stringency" or permissiveness regarding source code disclosure and combination with proprietary software.
+
+#### 4.1 GPL (GNU General Public License)
+*   **Stringency:** The most stringent (strict) license, known for its "viral" nature.
+*   **Core Condition:** If GPL-licensed code is combined with proprietary software and distributed, the **entire combined program (including the proprietary parts) must also be opened under the GPL.**
+*   **GPL 2.0 (Frequently Adopted):**
+    *   **Distribution:** Must include copyright notice, state distribution under GPL, and declare absence of warranty.
+    *   **Modifications/Linking:** If you modify GPL software or link new software (static or dynamic) with GPL code, **all source code must be opened under the GPL.**
+    *   **Royalties:** Cannot receive royalties for patented programs used under the GPL.
+*   **GPL 3.0 (Supplemented Version):**
+    *   Similar to 2.0, but addresses Digital Rights Management (DRM), software patents, and compatibility.
+    *   **Installation Info:** If GPL 3.0 code is included in a product, installation information must be provided with the source code.
+    *   **DRM:** Waives DRM interests protected by national laws.
+    *   **Patents:** Contributors must provide a non-discriminatory, fee-free patent license for their contributions.
+
+#### 4.2 LGPL (Lesser General Public License)
+*   **Stringency:** More permissive than GPL, specifically designed to encourage commercial software developers to use open-source libraries.
+*   **Key Difference from GPL:** When an application program links (static or dynamic) with an LGPL library, developers **do not** have to open the source code of the application program itself.
+*   **Patent Handling:** Same as GPL.
+
+#### 4.3 BSD (Berkeley Software Distribution) License
+*   **Stringency:** Very permissive.
+*   **Key Feature:** **Does NOT require disclosure of the software source code, even for modifications.**
+*   **Reason for Permissiveness:** Often used for projects funded by government resources (e.g., U.S. taxes), implying public ownership.
+*   **Obligations:**
+    *   **Distribution:** Must specify copyright notice and absence of warranty.
+    *   **Commercial Use:** Can be used for commercial software without limitations, as there's no obligation to disclose modified source code.
+
+#### 4.4 Apache License
+*   **Stringency:** Similar to BSD in permissiveness.
+*   **Application:** Used for all software by the Apache Software Foundation (ASF), like the Apache web server.
+*   **Key Feature:** **Does NOT require disclosure of the software source code, even for modifications.**
+*   **Obligations:**
+    *   **Trademark:** Do not violate the "Apache" trademark right.
+    *   **Distribution:** Must specify copyright notice and absence of warranty.
+    *   **Compatibility:** Can be combined with code distributed under GPL 3.0.
+    *   **Commercial Use:** Can be used for commercial software without limitations (no obligation to disclose modified program source code).
+
+#### 4.5 MPL (Mozilla Public License)
+*   **Stringency:** A "middle ground" license, less strict than GPL but more so than BSD/Apache.
+*   **Origin:** Developed to disclose the source code of the Netscape browser.
+*   **Key Feature:** Clearly defines the scope of source code to be disclosed.
+*   **Obligation:** The **modified parts of the MPL code itself** must be distributed under the MPL. This means changes to the MPL-licensed file must remain open-source under MPL, but proprietary code linking to it does not necessarily have to be.
+
+---
+
+================================================================================
+ORIGINAL TEXT (First 5000 chars)
+================================================================================
+
+--- Page 130 ---
+eee
+XIll. Trends  of Open-Source  Software
+>> Recent  trends and major issues
+The recent trend of software  development  is focused on the conviction  that a company’s
+competitiveness  depends  on how quickly it develops  and releases  software  on the market. In this
+respect,  time to service, not time to market, is becoming  a key factor. A quick response  using a
+development  methodology  that is reliant on proprietary  software  is not possible  in this environment.
+As a result, software  development  and the necessity  of using open-source  software  are increasing  as
+several  technologies  can be used.
+1. To be able to explain the concept  and license  of open-source  software.
+2. To be able to understand  and use open-source  software  licenses.
+>> Keywords
+- Concept  of open-source  software,  open-source  software  license
+- Compliance  with the open-source  software  license
+M1 Software  development  129
+
+
+--- Page 131 ---
+ESSENCE
++ Preview  for practical  business Do we need to manage  open-source
+software?
+As more open-source  software  is used, the need for license management  is also increasing,  because
+disputes  over licensing  can damage  a corporate  image and cause financial losses too. In particular,
+the use of open-source  software  seems to be spreading  further in this era of the Fourth Industrial
+Revolution,  which can also increase  dispute  factors.
+As the source code of open-source  software  is opened, there are several benefits when developing
+a technology  or product  that uses it, such as reducing  the development  time and cost, and breaking
+technological  dependence.  However,  though anyone can use an open-source  license, users should
+follow the license terms when distributing  it to a third party intending  to use it for technology  or
+product  development.
+Last year, a domestic  software  company  called Hangul and Computer  was sued for breach of
+copyright  by Artifex in the U.S. on a charge of violating  the open-source  license. Artifex claimed
+that Hangul and Computer  had violated  the license when selling “Hangeul’  programs  equipped  with
+“Ghostscript”  (a PDF conversion  library), which was developed  and distributed  by Artifex with a GPL.
+Artifex filed a lawsuit  in the California  court, and Hangul and Computer's  request  for its dismissal  was
+rejected.  In the end, Hangul and Computer  had to pay the settlement  money  to end the lawsuit.
+One official at the National  IT Industry  Promotion  Agency  said, “This incident  is a case which shows
+how a corporate  image can be damaged  and financial  losses  incurred  by unauthorized  use of the GPL
+code. This case reminded  us again of the importance  of complying  with open source software.’
+One official at the National  IT Industry  Promotion  Agency  said, “The incident  was the case that tells
+us deterioration  of corporate  image and financial  loss due to the unauthorized  use of the GPL code.
+The case reminded  us again of the importance  of complying  with the open-source  software.”
+Disputes  over open-source  licenses are increasing  because  we did not introduce  and manage the
+open-source  license systematically  due to the erroneous  perception that it is free of charge. In
+addition,  open-source  licenses  are complex  as there are more than 2,000 types of license.  According
+to a NIPA survey, 37% of domestic  SMEs violated  the license in 2016.
+It was pointed out that we need to establish  an open-source  license management  system quickly,
+because  the use of open-source  software  seems to be increasing  in the field of new technology  such
+as the Internet  of Things (loT), artificial  intelligence  (Al), big data, cloud, etc.
+It is essential  that enterprises  and public institutions  using open-source  software  take
+countermeasures  such as establishing  governance  and utilizing license analytics  and verification
+tools.
+(Source:  iNews 24, “Misusing  open source software  can be nightmare.  Using open source software  is
+like walking  on a tightrope]
+130 TOPCIT  ESSENCE
+
+
+--- Page 132 ---
+Software  Development )
+01 Concept  of Open-Source  Software
+A) Definition  of open-source  software
+Open-source  software  is free software  that can be used, copied, and modified  by anyone  while protecting  the
+rights of the creator.
+As the software  industry  began to develop, a move was made to impose restrictions  on the use and
+modification  of software  based on the intellectual  property  rights and license agreement  in 1980. To oppose  to
+this move and protect  the rights of free software  use, Richard  Stallman  founded  the Free Software  Foundation
+(FSF) and launched  the free software  movement,  which ultimately  became  the origin of open-source  software.
+Open-source  software  includes FSF free software in Korea. However,  free software  pursues  the meaning  of
+emphasizing  users’ freedom,  while open-source  software pursues  the idea that the source code must be
+s...

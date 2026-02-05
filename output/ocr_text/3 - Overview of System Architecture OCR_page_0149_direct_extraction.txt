@@ -1,0 +1,32 @@
+ESSENCE
+indicates  the start of a frame, and destination  and source addresses,  which are physical  addresses.  Physical  addresses
+have a 48-bit  address  system and have unique values  for each device, unlike logical IP addresses.  It is necessary
+to use the physical  address  to check a device location below layer 2, since IP addresses  are used in layer 3. Trailers
+include  a frame check sequence  (FCS) to check  for errors during a data transfer.
+03 Datalink  Layer Configuration
+A) Sub-layers  of datalink  layer
+A datalink  layer consists  of two sub-layers:  an LLC (Logical  Link Control)  sub-layer  and a MAC (Media Access  Control)
+sub-layer.  The LLC sub-layer  is responsible  for the connection  between  the MAC sub-layer  and the network  layer
+(layer 3). The lower MAC sub-layers  are responsible  for control according  to the topology  on physical layers  or other
+characteristics.
+Network  Layer wert so on
+- Logical Link Control (LLC)
+Datalink  Layer
+=oOao
+ifsBoOgaa°o3aQo=o
+Physical  Layer
+OSI Reference  Model
+[Figure 105] Sub-layers  of datalink  layer
+B) Logical link control  (LLC)
+@® Concept  of LLC
+7 1 6 6 2 1 1° 1or2 Variable 4
+S Destination Source 4 aPreamble E ‘Address Address Length A\A Ctrl DATA FCS
+P|P
+Y Y
+802.3 802.2 802.3
+[Figure 106] IEEE 802.3 Frame Structure
+The sub-layer  is located at a higher level among the sub-layers  of the datalink  layer. It is responsible  for the data
+transfer  between  two adjacent  nodes on the IEEE 802.2 or datalink layer network.  The adjacent  nodes have the
+destination  service access  point (DSAP) and the source service  access point (SSAP) on the LLC layer. The LLC layer
+can use various  MAC sub-layer  protocols  to facilitate  the communication,  regardless  of the network  topology.
+148 TOPCIT  ESSENCE

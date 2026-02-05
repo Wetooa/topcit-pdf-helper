@@ -1,0 +1,40 @@
+Understanding  the IT Business  and Ethics )
++ Develop  the functions.
++ Perform  unit-level  testing.
+Development + Perform regression  testing: testing  of connection  between  existing  modules  and newly developed
+modules.
++ Conduct  outside  link (interface)  integrated  test.
++ Data conversion.
+Implementation + Provide  training  on using the system.
++ Carry out a pilot operation.
+@ ERP deployment  strategy
+There are three approaches  to ERP deployment.  With the Big Bang method,  all modules  and functions  of the ERP.
+system  are deployed  across the place of business  at the same time. In the phased  and function-based  approach,  the
+ERP system modules  are separated  by their functions  and the ERP system is deployed  only on some modules.  In the
+phased and place of business  approach,  the ERP system is deployed  in phases at each place of business.  When the
+operation  of ERP is shown to be stable, its deployment  is then expanded  horizontally  through  the remaining  phases.
+<Table 37> ERP deployment  strategy
+Method Description Strengths Weaknesses
+All modules  and functions  of ERP are Easy integration  of the package Projects  tend to be large-scale
+Big Bang deployed  at the same time for all itself and thus project management  is
+operational  areas of an enterprise. Implementation  is easy. rather  difficult.
+Because  ERP is deployed  in
+Functional ERP modules are deployed by phases, there is little resistance Additional programs should be
+approach, function and in phases to changes in the place of developed  to link to existingphased approach P nangs P systems.
+business.
+Place of . The use of human  resources  is Problems  of project  prolongation
+business  tailored 7 ee  deployedin  each good because they are recycled and high likelihood of redundant.
+approach p pnases. in each phase. work,
+ERP solutions  are supplied by both domestic  vendors  and foreign global vendors.  Depending  on the deployment
+strategy,  the ERP solution could also be developed  in-house.  Leading  foreign ERP solutions  include SAP ERP and
+Oracle ERP, while leading  domestic  ERP solutions  include Younglimwon  ERP and Douzone  ERP. Commercial  ERP.
+products  offer the advantages  of ERP deployment  using standardized  processes;  however,  customized  development
+to match the environment  of an enterprise  is somewhat  difficult. Another  thing worth mentioning  is that when
+adopting  an ERP solution,  an enterprise  must check whether  compliance  with the IFRS (International  Financial
+Reporting  Standards)’  must be observed.
+E) Understanding  SCM
+@ Concept  of SCM
+SCM refers to supply  chain management  solutions.  To understand  SCM, one has to understand  the supply chain. The
+5 IFRS: The International  Financial  Reporting  Standards  (IFRS) published  by the International  Accounting  Standards  Board to ensure
+international  acceptance  of enterprise  accounting  standards.
+M5 Understanding  the IT Business  and Ethics 87

@@ -1,0 +1,31 @@
+Overview  of System Architecture )
+@ OS-level  virtualization
+It is a virtualization  technology  that makes the system look like it’s using another  OS on the OS. It uses the
+virtualization  technology  included in the OS, instead of a hypervisor.  The container  technology  that allocates  and
+isolates  the resources  included  in the OS has gained interest.  The leading  OS-level  virtualization  technologies  include
+Solaris Containers,  FreeBSD  Jails, and Linux Docker. The guest OS must be the same as the host OS, since it uses
+the OS's container  function, instead of a hypervisor.  Containers  on the OS are allocated  resources,  such as memory,
+storage,  and network,  which are independently  operated  between  containers.
+| Application  2 | | Appiiation  2
+| Application  1 | | Application  1
+Container Container
+[Figure  99] OS-Level  Virtualization
+Container  virtualization  technology  can be characterized  as being lighter and more portable  than existing
+virtualization  technologies.  In Linux containers  (LXC), there is kernel space for managing  physical resources,  and a
+user space for executing  user processes  inside the OS. The container  virtualization  technology  partitions  the user
+space into ten and limits the resources  visible in each user process.
+<Table 30) Comparison  of Hypervisor  Virtualization  and OS-Level  Virtualization
+Classification Hypervisor  Virtualization OS-Level  Virtualization
+Hardware : .independence Fully independent  in VM Use of host OS
+OS independence Fully independent  from host OS Host OS to be the same as the guest OS
+High overhead
+Performance Application  of hardware  virtualization  to improve No overhead
+performance
+Management Separately  managed  for each VM Centralized  management  of common  software
+pear Heterogeneous  integration a : .Application Linux and Windows  mixed Resource  integration  in a single OS environment
+Virtualization -technologies Xen, MS Virtual Server, and KVM Solaris,  LXC, and Docker
+OS-level  virtualization  (container  virtualization)  has the following  advantages:
+* Quick start and finish: Very fast compared  to hypervisor-based  virtualization
++ High density:  Minimized  resource  consumption,  since an OS can operate  multiple  containers
++ Low overhead:  Userspace  isolated  without  emulation
+M3 Overview  of System  Architecture  135

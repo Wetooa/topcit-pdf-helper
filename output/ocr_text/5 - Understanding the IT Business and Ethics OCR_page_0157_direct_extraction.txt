@@ -1,0 +1,30 @@
+ESSENCE
+Classification  of smart  transportation
+V2V(Vehicle) Val(infra) V2N(Network)eA c a Ronee Backend server Pity es Q
+e
+(~ Classification  of smart  car partsBEBE  =
+Infotainment Communication  Automotive  body Poverurtand  Chass Diagnosis and mainterance Third-party  supplies
+wegpalgge
+<Source:  Smart  traffic cyber security  guide, Ministry  of Science  and ICT, 2018.5>
+[Fig.68]  Smart  traffic service  classification
++ V2V service
+The V2V service is a service in which vehicles,  the main agents of the traffic system, exchange  information  via
+wireless  communication  with their surrounding  vehicles.  The service allows vehicles  to send/receive  messages  about
+their positions,  traffic flow information,  and road traffic information.  Major V2V services  include roadside  information
+and obstacle  notification  services,  road construction  notification  services,  intersection  traffic signal notification
+services,  nearby  vehicle  information  notification  services,  and emergency  vehicle  access  notification  services.
+V2V service
++ Roadside  information  and obstacle  notification  service
++ Road construction  notification  service
++ Intersection  traffic signal notification  service
++ Nearby  vehicle  information  notification  service
++ Emergency  vehicle  proximity  notification  service
+>  WAVE  communication
+V2V(Vehicle)
+[Fig.69]  V2V service
++ V2I service
+V/2I service refers to communication  between  vehicles,  the main agents of the traffic system,  and the traffic support
+infrastructure.  Vehicles  equipped  with an on board unit (OBU) transmit  and receive messages  with roadside base
+stations  via Wireless  Access in Vehicle Environments  (WAVE) or 4G LTE/5G communication.  The base station
+on the roadside shall be connected  to the back-end  server  of the traffic control center and transmit  and receive
+156 TOPCIT  ESSENCE

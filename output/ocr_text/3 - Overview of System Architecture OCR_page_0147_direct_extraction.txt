@@ -1,0 +1,34 @@
+ESSENCE
++ Preview  for practical  business Operation  path of the datalink  layer
+An initial packet  that contains  the information  for routing  between  networks  is created.
+However,  it must be further  modified  to be transferred  between  networks.  The IPv4
+address  of user A’s computer  is 192.168.11.5  and cannot be transmitted to my.server.
+com directly. It must be transmitted  to the computer's  gateway  wired/wireless  router
+B (192.168.11.1).  However,  an IP address  cannot be used for data transfer  in a network,
+and the MAC address  is needed  for it. After finding the MAC address  corresponding  to
+192.168.11.1,  the gateway’s  IP address,  the packet  is transmitted  to wired/wireless  router  B,
+through  network  broadcasting.
+Upon receiving  the packet, router C recognizes  that the packet  is sent to network  220.17.23.0,
+to which the router belongs,  and intends to transmit  it to the webserver's  IP address
+220.17.23.15,  AS is iniSi=e)ene),  since the packet movement  in a network  requires  the physical
+address of my.server.com,  the MAC address,  it obtains the MAC address  corresponding  to
+myserver.com’s  IP address,  220.17.23.15,  through  the network  broadcasting  and transmits  the
+packet.
+Applic
+SS Transport  Layer
+Network  Layer
+Datalink  Layer
+Physical  Layer
+14.32.172.0
+Router my.server.com
+Network  Layer 220.17.23.15
+Datalink  LayerDatalink  Layer
+wie weno i Physical Layer
+Application R onterB Physical Layer 220.17.23.0
+ico 192.168,11.0 Z——
+Network Layer e@
+Datalink Layer
+Physical Layer
+User A
+[Figure 103] Operation  Path of datalink  Layer
+146 TOPCIT  ESSENCE

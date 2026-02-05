@@ -1,0 +1,31 @@
+Software  Development
+01 Background  to and Purpose  of Software  Engineering
+A) Introduction  to software  engineering
+It is most important  to apply software  engineering  technology  to successfully  develop  software  that becomes
+more multifunctional  and bigger in scale, which provides  technologies  and techniques  that support  systematic
+management  to resolve the expected  difficulties  throughout  the entire process, ranging  from requirements
+analysis  to maintenance.  To effectively  apply software  engineering  technology,  it is necessary  to prepare and
+maintain  three key elements  in a balanced  and harmonious  manner  and make continuous  efforts to maintain
+these three elements,  namely the process  of applying  the definition  of systematic  business  methods  and
+flow, the organization  and people equipped  with specialized  knowledge,  and the infrastructure  and technology
+required  for efficient  operation  of the defined  work methods  and organizational  personnel.
+Procedures  &
+Methods
+SACL aL  ey
+of a successful
+software
+project
+Process  & Tools &
+Organization Equipments
+B) Background  to software  engineering
+Let’s look at the history of software  engineering.  In the 1950s, the concept  of software  engineering,  like hardware
+engineering,  began to be introduced  in order to implement  software  development  projects.  In the 1960s, software
+engineering  was introduced  in earnest  because of the “software  crisis”, which occurred  due to the lack of
+experience  and competence  of the engineers  involved  and the lack of skilled engineers,  while demand  for software
+increased rapidly. In the 1970s, software  developers  became  even scarcer  as the demand  for software  increased
+rapidly. To solve this problem,  many people  who did not major in software  development  were assigned  to projects.
+They adopted a “coding  first and correction  later’ approach,  believing  that software  could be modified  easily
+during its development.
+However,  structural  or formal techniques  were developed  as many defects  were discovered  as a side effect
+of the “coding  first and correction  later” approach.  They began to develop  and use the Waterfall  model, which
+M1 Software  development  19

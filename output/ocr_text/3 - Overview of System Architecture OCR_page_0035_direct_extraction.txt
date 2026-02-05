@@ -1,0 +1,31 @@
+ESSENCE
+[Figure 11] shows user a connecting  to a webserver  (my.server.com)  and searching  for the data. <Table 1>
+describes,  in detail, which changes  occur in the network  at each stage of the operation  in [Figure 11]. The
+standard  protocol  used at each stage is described in parentheses,  and its concept  and detailed  operation
+are described  in the following  chapters.
+This example  shows how a simple network  service,  as shown in [Figure 11], is executed.
+Network  operation  procedure  to “Homepage  request”
+{Table 1) Web Use Scenario  by User A
+User A enters http://my.servercom/  on the web browser  and presses  the Enter key.
+Siy))) The web browser  intends to send User A’s request  to the webserver,
+my.server.com,  but cannot do it because  my.server.com  is an arbitrary
+domain name for users to recognize  easily. The web browser  requests
+the IP address  of my.server.com  to the domain name server to solve the
+problem  (ONS).
+On receiving  the IP address  of my.servercom,  220.17.23.15,  from the DNS, the web
+browser  connects  to the webserver  using the address  and requests  data in the
+document  route (HTTP).
+{ Step  3-1 | The web browser hands over the requested  information  to the TCP protocol
+to request  my.server.com.  The information  is properly  capsulized  and delivered
+to the webserver  program  of my.servercom  (TCP).
+(step  3-2, a2 } Information  created by the TCP protocol is capsulized  to be routed to the
+-220.17.23,0  network,  in which my.server.com  is present,  through  several hoops (IP).
+is created. However,  it must be further  modified  to be transferred  between
+networks,  The IPv4 address  of user A’s computer  is 192.168.11.5  and cannot  be
+transmitted  to my.server.com  directly.  It must be transmitted  to the computer's
+gateway  wired/wireless  router B (192.168.11.1).  However,  an IP address  cannot
+be used for data transfer  within a network, so the MAC address  is needed for
+this.  After finding  the MAC address  corresponding  to 192.168.11.1,  the gateway’s
+IP address,  through  network  broadcasting,  the packet is transmitted  to wired/
+wireless  router  B (ARP, Ethernet,  private network,  and NAT).
+34 TOPCIT  ESSENCE

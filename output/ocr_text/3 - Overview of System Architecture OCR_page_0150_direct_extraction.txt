@@ -1,0 +1,25 @@
+Overview  of System Architecture )
+@ Options  of the logical link layer service
+The LLC options include Type 1, Type 2, and Type 3. Type 1 is an unconfirmed datagram  service and called an
+unconnected  service, as it does not require a receipt confirmation  message.  Type 2 is a virtual circuit access type
+and, as a TCP service, transfers  data after establishing  a virtual session.  Type 3 is a confirmed  datagram  service and
+provides  the receipt  confirmed  datagram  in the point-to-point  method.
+C) MAC
+The MAC sub-layer  is responsible  for determining  how to transfer  data through  the physical  media.
+The MAC layer includes  the MAC addresses  of the transmitting  and receiving  systems,  as shown in [Figure 107]
+below. The MAC address  is mainly divided  into two addresses.  The first 224is OUI (Organizationally  Unique Identifier),
+representing  the manufacturer  identification  code, and the remaining  224 is the serial number  of the NIC produced  by
+the manufacturer.
+Destination  MAC Source  MAC
+e Dea oe ~ -
+OUI: Manufacturer  No, | PID: Product Serial No.
+[Figure 107] MAC Address  Configuration
+The standardized  MAC protocols  include  the CSMA/CD  type IEEE 802.3, the token bus type IEEE 802.4, and the token
+ring type IEEE 802.5 for wired LAN. The CSMA/CA  type IEEE 802.11 MAC sub-layer  is used for wireless  LAN.
+04 MAC Address  Search
+A) IP address  and MAC address  conversion  protocol
+To transfer  a packet to another  host, requires  the host’s MAC address.  ARP (Address  Resolution  Protocol)  is
+responsible  for it. The protocols  to convert  the IP and MAC addresses  are the ARP and RARP (Reverse  Address
+Resolution  Protocol).  The ARP that has the following  address  checks the MAC address  through  the IP address,  and
+RARP is the inverse  address  conversion  protocol  that checks  the IP address  through  the MAC address.
+M3 Overview  of System  Architecture  149

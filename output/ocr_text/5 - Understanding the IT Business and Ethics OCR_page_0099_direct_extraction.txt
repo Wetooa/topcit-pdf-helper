@@ -1,0 +1,25 @@
+ESSENCE
+iia)
+Poe  laoM ice) Pe eM eel ETI Data Consumption
+[Fig. 37] Concept  diagram  of the EDW
+As shown in the figure above, transaction  data are acquired  from the legacy system of the enterprise  and stored in
+the data warehouse.  The analyzed  data carry considerable  value as information  and are made visually  presentable  by
+using BI solutions.
+B) Understanding  the DSS
+@® Concept  of the DSS
+As a system  that supports  decision  making,  the Decision  Support  System  (DSS) provides  interactive  dialogue  support
+to decision  makers  during  the decision-making  process.
+* This is an interactive  dialogue-based  system that assists decision-makers  with solving semi-structural  and non-
+structural  problems  using data and analytical  models.
++ The core elements  of the DSS are the enterprise  data (both internal and external)  and the analytical  model for
+processing  quantitative  data. These perform  a critical role in decision  making.
+@ Characteristics  of the DSS
+The key feature  of the DSS is its ability to solve non-structural  problems  through  interactive  dialogue.  Here, “interactive”
+means that issues can be explained  or expressed  from many different  angles as desired by the user. The focus of the
+DSS is on how analyzed  data should be represented.
+<Table  45> Characteristics  of the DSS
+Characteristics Description
+Resolves  non-structural + The objective  is to resolve  non-structural  and semi-structural  problems  which are primarily
+problems the responsibility  of CEOs and middle managers.
+Easy-to-use  user interface + Improves  user interfaces  by adopting  an interactive  interface  that is easy to use.
+98 TOPCIT  ESSENCE

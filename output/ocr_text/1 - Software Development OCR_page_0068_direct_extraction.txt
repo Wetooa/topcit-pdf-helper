@@ -1,0 +1,14 @@
+Software  Development
+>> Learning  objectives
+1. To be able to understand  the concept  of object-oriented  analysis  and modeling.
+2. To be able to explain  the concept  and principles  of object-oriented  design.
+3. To be able to perform static and dynamic  modeling  and express it in UML (Unified Modeling
+Language).
+4. To be able to list the concepts  of the design pattern  and representative  patterns.
+>> Keywords
+- Use case, sequence  diagram,  activity  diagram
+- Object, class, encapsulation,  inheritance,  polymorphism,  association,  set
+- Class, property,  relationship,  association,  operation,  class diagram
+- Interaction  diagram  (sequence  diagram,  communication  diagram),  state diagram,  activity  diagram
+- Singleton  pattern,  factory  method  pattern,  facade pattern,  strategy  pattern
+M1 Software  development  67

@@ -1,0 +1,25 @@
+ESSENCE
+Operator Sign Description
++ An operation  to create  a new relation  that is composed  of tuples, which is created  by combining
+the tuples of two relations  that meet the join condition  in two or more relations.
++ Theta  join: A join operation  with general  join conditions  (=, <, <, >, =, 4).
+Join pal + Equi-join:  A join that uses the equal condition  (=) only. The common  attribute  used in the join
+appear  in duplicate.
++ Natural  join: A join that uses the equal condition  (=) only. The common  attribute  used in the join
+appear  only once without  duplicates.
+er . + An operation  that separates  and projects  the tuple of R where all tuples  of the relation  S exist,Division + ,when there are two relations  R and S.
+03 Extended  Relational  Algebra  Operations
+Useful operations  can be defined by extending  the basic relational  algebra operations.  Extended  relational  algebra
+operations  such as outer join, semi join, outer union, etc. are generally  used.
+<Table 38> Extended  relational  algebra  operations
+Operator Sign Description
+Semi join+ An operation  that performs  natural  join for the result of projecting  the relation
+after the operator  with join attributes  on to the relation  before  the operator.D< «It has the same effect as projecting  the result of performing  natural join on two
+relations  using the attribute  of the relation  before the operator.
+Outer  join+ In this operation, if a tuple corresponding  to a tuple in one relation  does not exist
+in the other relation,  it is not excluded,  but the other is changed  to a Null tuple to
+pet include it in the result.
++ All tuples of the two join relations  are included  in the result relation
+Outer union
+102 TOPCIT  ESSENCE+ An operation  that creates  a union by expanding  the sequence  number  of two
+U relations that cannot be completely  merged.

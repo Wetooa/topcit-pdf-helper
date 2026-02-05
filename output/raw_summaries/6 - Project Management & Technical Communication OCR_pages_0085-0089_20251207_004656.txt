@@ -1,0 +1,197 @@
+LEARNING GUIDE: Pages 85-89
+Generated: 2025-12-07 00:46:56
+PDF: 6 - Project Management & Technical Communication OCR
+
+================================================================================
+LEARNING GUIDE
+================================================================================
+
+Here is a simplified, easy-to-read learning guide based on the provided text, designed for easy study.
+
+---
+
+## Project Scope Management & WBS Learning Guide
+
+### Introduction: Understanding WBS (Work Breakdown Structure)
+
+*   **Common Misconception:** WBS is often mistakenly seen as a schedule management tool.
+*   **Reality:** WBS is a **deliverable of scope management**, as defined by PMBOK (Project Management Body of Knowledge) from PMI (Project Management Institute).
+*   **Why it Matters:** WBS plays a crucial role in managing scope changes (e.g., new or changed requirements). Using it for scope changes helps manage related elements like schedule, cost, and quality simultaneously.
+*   **Key Takeaway:** Use WBS primarily as a **scope management tool**.
+
+### Section 1: Concept of Scope Management
+
+*   **What is Project Scope Management?**
+    *   One of the three important knowledge areas in project management.
+    *   Essential for project success, as projects are unique, temporary, and goal-driven.
+    *   Involves clearly defining what needs to be done and excluding anything unnecessary, even if requested by the client.
+*   **What is "Scope"?**
+    *   The total sum of products and services provided through the project, or the total work required to successfully complete it.
+    *   **Two Types of Scope:**
+        *   **Project Scope (The HOW):** All the work required to create the specified products, services, and outputs.
+            *   **Completion Measured By:** Project plan.
+        *   **Product Scope (The WHAT):** The features and functions of the product, service, or output itself.
+            *   **Completion Measured By:** Product requirements.
+
+### Section 2: Scope Management Process
+
+The scope management process follows these six steps:
+
+1.  **Scope Management Planning**
+2.  **Requirements Collection**
+3.  **Scope Definition**
+4.  **Work Breakdown Structure (WBS) Formulation**
+5.  **Scope Validation**
+6.  **Scope Control**
+
+### Section 3: Detailed Process Steps
+
+#### 1. Scope Management Planning
+
+*   **Purpose:** To develop the **Project Scope Management Plan**. This plan defines how the project scope will be defined, confirmed, and controlled.
+*   **Key Contents of the Plan:**
+    *   Procedure for describing the project scope.
+    *   How the Work Breakdown Structure (WBS) will be formulated.
+    *   Criteria for verifying and validating deliverables.
+    *   Format and procedure for requesting scope changes.
+*   **Important:** This plan must be shared and agreed upon by both the client and the service provider.
+
+#### 2. Requirements Collection
+
+*   **Objective:** To understand not only *what* the customer needs, but more importantly, *why* they need it.
+*   **Benefit:** Understanding the "why" helps avoid unnecessary development and focuses resources on truly important aspects. (e.g., F-16 example: improving maneuverability for engagement capabilities vs. chasing raw speed).
+*   **Common Techniques:**
+    *   **Interview:** Systematic oral discussions with individuals or groups to gather requirements.
+    *   **Prototyping:** Quickly building a partial or full system model to get user understanding and feedback.
+    *   **Moderator Meeting (Facilitated Workshop):** A group discussion guided by a moderator to generate ideas for products, services, or improvements.
+    *   **Document Analysis:** Reviewing existing documents (e.g., business plans, market research, contracts, RFPs, SOWs, old system designs) to identify system requirements.
+
+#### 3. Scope Definition
+
+*   **Purpose:** To identify the project's key scope after requirements collection and formulate detailed scope statements for both the project and its products. This ensures a common understanding of business functions.
+*   **Scope Statement:** This document specifies the criteria for outputs and delivery, including characteristics like exclusions, constraints, and assumptions. It clearly defines the project boundaries.
+*   **Requirements for a Good Scope Definition:**
+    *   **Clear Scope:** Must be unambiguously defined, preventing different interpretations. It's fundamental for other requirements.
+    *   **Complete Scope:** Should have no missing, excessive, or overlapping parts.
+    *   **Agreed-upon Scope:** All stakeholders must reach a consensus on the scope *before* project execution to avoid issues later.
+    *   **Manageable Scope:** The scope must be defined in a way that allows for easy integration with other plans (like schedule and budget) using the WBS framework.
+        *   **Specifically, manageable means:**
+            *   Duration and cost can be accurately estimated.
+            *   A person in charge can be designated.
+            *   Performance can be realistically evaluated.
+
+#### 4. Work Breakdown Structure (WBS) Formulation
+
+*   **What it is:** The WBS is created by breaking down project deliverables and the entire scope into smaller, more manageable components.
+*   **Importance:** This is considered a critical activity not just for scope management, but for the entire project.
+*   **Benefits:** Helps prevent missing tasks, clarifies relationships between tasks, and enables consistent communication with stakeholders and sponsors.
+
+#### 5. Scope Validation
+
+*   **Purpose:** To formally confirm and gain approval from the client or project leader for the completed project deliverables.
+*   **Activities:**
+    *   **Inspection:** Measuring, examining, and confirming performance to ensure tasks and deliverables meet requirements and delivery criteria (e.g., conducting Reviews and Walkthroughs).
+    *   Technical review by the project team to identify any defects, specifications, or standards issues.
+
+#### 6. Scope Control
+
+*   **Purpose:** To monitor the status of the project and product scope, managing any changes according to formal procedures.
+*   **Key Aspects:**
+    *   Ensures all requested changes, recommended corrective actions, and preventive actions are processed throughout the project.
+    *   Scope changes are frequent and often impact schedule and cost.
+    *   All scope changes must be reported to the **Project Change Control Board (CCB)**, their impacts reviewed, and formally approved.
+
+### Section 4: Work Breakdown Structure (WBS) - Detailed
+
+#### A. Concept of WBS
+
+*   **Definition:** A hierarchical structure of tasks, classified by project deliverables, and broken down into manageable packages.
+*   **Work Package:** The lowest-level subtask item within the WBS.
+    *   **Example:** For an "online bulletin board" project, work packages could be "Write text," "Delete text," "Edit text," and "File upload."
+*   **Structure:** Most commonly represented as a **tree diagram**, which clearly shows parent-to-child relationships and hierarchy for intuitive understanding.
+
+#### B. Components of WBS
+
+*   **Work Package:**
+    *   The lowest-level unit of the WBS.
+    *   For this unit, cost and duration can be planned, estimated, monitored, and controlled.
+*   **Code of Account:**
+    *   A unique identification or numbering system assigned to each work package in the WBS.
+*   **WBS Dictionary:**
+    *   A detailed description for each work package.
+    *   Includes an outline of the work, schedule, person in charge, and budget.
+*   **RAM (Responsibility Assignment Matrix):**
+    *   A standard that defines who is responsible for each element.
+    *   Specifies roles like the approver at each stage, quality reviewer, and input manager.
+
+---
+
+================================================================================
+ORIGINAL TEXT (First 5000 chars)
+================================================================================
+
+--- Page 85 ---
+ESSENCE
++ Preview  for practical business
+Often, the work breakdown  structure (WBS) is misunderstood  as a schedule  management  output or
+tool. This is because  it is used to track progress  of a project  as the start and end dates are specified
+in the work package  (the lowest unit of work), which is a component  of the WBS. Moreover,  it is
+not unusual to think that WBS exists for schedule  management  as the commonly  used schedule
+management  tool of Microsoft  has a structure  that manages  the schedule  with WBS uploaded  in the
+form of a file.
+However,  it is clear that WBS is a deliverable  of scope management  because  it is included  as “Create
+WBS” in PMBOK  (Project  Management  Body of Knowledge)  of PMI (Project  Management  Institute).
+Then, why is it important  to distinguish  “whether  WBS is a deliverable  of scope management  or
+schedule  management.”  This is because  WBS plays a very important  role in scope management.
+When scope changes  in a project,  i.e. when requirements  change  or are added, the first thing to look
+at is the WBS. If you are aware that WBS is used for managing  changes,  you can manage  any related
+elements  from schedule,  cost, and to quality all at once.
+From now on, let's use WBS as a tool for scope management  rather than schedule  management!
+01 Concept  and Process  of Scope Management
+A) Concept  of scope management
+The first of the three important  knowledge  areas in project  management  is scope management.  Since a proj-
+ect is a unique, temporary,  and goal-driven  activity, it is important  to have a clear goal and scope to make it
+successful.
+In a project, it is necessary  to do what needs to be done and exclude  anything  that is unnecessary,  even if demand-
+ed by the client. As a project  manager,  the first thing to do is to clarify and define the scope of his or her work.
+84 TOPCIT  ESSENCE
+
+
+--- Page 86 ---
+Project Management  and Technical  Communication  )
+The scope is “the sum of products  and services provided  through  the project”  and means the range of work
+or the work itself required  to successfully  complete  the project. The scope is divided into project scope and
+product  scope.
++ Scope = project  scope + product  scope
+Project scope refers to all the work required  to create products,  services,  and outputs  of specified  features
+and functions.  The product  range refers to the features  and functions  of the product  distinguished  from other
+products,  services,  and outputs.  The project scope is about how products  and services  are provided,  that is,
+the HOW aspect, and the product  range is about the product  and service itself, that is, the WHAT aspect. The
+criteria for determining  whether  the scope is complete  differs for each project scope and product  scope. The
+completion  of the project scope is measured  based on the project plan, and the completion  of the product
+scope is measured  based on the product  requirements.
+B) Scope management  process
+The scope management  process proceeds  in the order of scope management  planning,  requirements  collec-
+tion, scope definition,  work breakdown  system  (WBS) formation,  scope validation,  and scope control.
+@® Scope Management  Planning
+* Concept  of Scope Management  Planning
+Project scope refers to tasks necessary  for project execution  in order to deliver products  and services,  which
+are the final products  of the project, to customers,  and project scope management  is a process  to develop  a
+project  scope management  plan to define, confirm,  and control the project  scope.
++ Project  Scope Management  Plan
+The project scope management  plan defines  the process  to be carried out by the project stage and the level
+of execution  of each process. The main items of the project scope management  plan are as follows, and the
+scope plan should be shared between  the client and the service provider.
++ A procedure  to describe  project  scope
++ How to formulate  Work Breakdown  System(WBS)
++ Verification  and validation  criteria  for outputs  to be delivered  to customers
++ Explanation  on the format  and procedure  to request  for scope change
+@ Collect  Requirements
+In a project on the ground, it is important  to find out what the customer  needs and why they think they
+need it. The following  is an example  of the development  of an F-16  fighter  jet in the 1970s on why collecting
+requirements  is so important.
+At the time, the F-16 fighter aircraft  was required  to fly at a speed of Mach 2.5. However,  the  fighter  jet, by
+design, was not able to reach the speed above Mach 2. The designer  of the fighter  jet asked the U.S. Air Force
+to clarify the speed requirement  as to why and received  a response  from the U.S. Air Force that it was to
+improve  engagement  capabilities.  The designer  thought  that it would be possible  to improve  maneuverability
+rather than speed to enhance  engagement  capabilities,  and applied fly-by-wire, ...

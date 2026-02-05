@@ -1,0 +1,46 @@
+Information  security )
+void incorrect_password(const  char *user) {
+static const char msg_format[]  = “%s cannot  be authenticated.  \n’:
+size_t len = strlen(user)  + sizeof(msg_format):
+char *msg = (char *)malloc(len);
+if (msg == NULL) {
+/* Error handling  */
+}
+int ret = snprintf(msg,  len, msg_format,  user);
+if (ret < O || ret >= len) {
+Safe code /* Error handling  */
+}
+if (fputs(msg,  stderr) == EOF) {
+/* Error handling  */
+}
+free(msg);
+msg = NULL;
+}
+The example  uses fputs(), instead of fprintf(),  to output msg as stderr, without  treating  is as a
+format  string.
+C) Major secure  coding  techniques  for Android-Java
+@® Secure  coding  technique  for responding  to the attack against  the component  that can be accessed  from the outside
++ Attack overview:
+If android: exported="true’”  is set in the manifest.xml  file for the component  of the Android application,
+intent can be transferred  to the component,  from outside,  to activate  it. In this case, system  security  can be
+breached,  because  the company  starts execution  in an unintended  situation.
+* Coding  technique:
+It is desirable  to not give the access  rights to the component  to the outside.
+<Table 25> Code example
+<manifest  xmins:---.>
+<application  android:icon="@drawable/icon”  android:label="@string/label’>
+<service  android:name=".syncadapterSyncService”  android:exported="true’>
+Unsafe code | . Japplication>
+</manifest>
+Since the attribute  value of the SyncService  service is set to android:exported="true”,  a security  vulnerability
+may occur when the component  is started  from outside.
+<manifest  xmins:---.>
+<application  android:icon="@drawable/icon”  android:label="@string/label’>
+<service  android:name="  syncadapterSyncService”  android:exported=false”>
+Safe code | </appjication>
+</manifest>
+If the Android:exported  property  is set to “false” or the setting  is removed,  the attribute  becomes  “false” and
+access  from the outside  is blocked.
+@ Secure  coding  techniques  for responding  to the access  control pass attack, using the shared ID
++ Attack overview:
+M4 Understanding  Information  Security  83

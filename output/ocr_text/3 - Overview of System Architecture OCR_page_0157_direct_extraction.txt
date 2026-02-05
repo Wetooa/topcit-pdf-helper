@@ -1,0 +1,18 @@
+YAN (=1aW(e) a @ ec  hV(=18
+>p> Recent  trends and issues
+A network  layer is the most closely related to data transmission,  among the network  standard  layers
+and plays an important  role in efficient  data transmission.  Through  this chapter,  you will understand  how
+IP-based  packets  are generated,  how they are efficiently  transmitted  in the Internet  network,  and how
+to move and process  data over the network.  This chapter  describes  the router's basic structure,  which
+is a device of the network  layer, the principle  of packet routing, the routing algorithm,  and the actual
+implemented  routing  protocol.
+>>> Learning  objectives
+1. To be able to explain  the protocol  concept  and equipment  of the network  layer.
+2. To be able to explain the routing protocol  concept,  types, and algorithms,
+3. To be able to understand  the IPv4 address  specification  system and subnetting.
+>> Keywords
+Router, Routing  table, Packet, PDU, Datagram  type, Virtual line type, APIPA, Segment,  Metrics,  MTU, STP,
+ARP, RARP. ICMP, IGMP. QoS, Bandwidth, IntServ, RSVP, DiffServ,  Routing  algorithm,  Routing  protocol,  EGP.
+IGP, Distance  vector, Link state, BGP, RIP. IGRP, OSPF, IPv4, Subnetting,  Supernetting,  APIPA, CIDR, DHCP.
+NAT
+156 TOPCIT  ESSENCE

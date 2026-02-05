@@ -1,0 +1,233 @@
+LEARNING GUIDE: Pages 28-32
+Generated: 2025-12-05 14:34:57
+PDF: 4 - Understanding Information Security OCR
+
+================================================================================
+LEARNING GUIDE
+================================================================================
+
+Here is a simplified, easy-to-read learning guide based on the provided text, designed for efficient studying.
+
+---
+
+## Learning Guide: Cryptographic Algorithms
+
+### I. Public Key Cryptography
+
+**1. Essence**
+*   **Definition:** A cryptographic algorithm using **different keys** for encryption and decryption.
+*   **Origin:** Concept introduced by Diffie and Hellman (1976); practical algorithm (RSA) developed (1978).
+*   **Also Known As:** Asymmetric Key Cryptography.
+
+**2. How it Works (Encryption & Decryption)**
+*   **Key Pair:** Each user has a unique pair of mathematically linked keys:
+    *   **Public Key:** Disclosed to everyone. Used by senders to encrypt data for that user.
+    *   **Private Key:** Kept secret by the user. Used *only* by that user to decrypt data encrypted with their public key.
+*   **Process:**
+    1.  Sender encrypts data using the **receiver's public key**.
+    2.  Sender sends encrypted data (ciphertext) over the network.
+    3.  Receiver decrypts the ciphertext using their **own private key**.
+*   **Characteristic:** Anyone can encrypt information using a public key, but *only* the holder of the corresponding private key can decrypt it.
+
+**3. Key Management**
+*   **Number of Keys:** For 'n' users, 2n total keys are required (each user has one public + one private key).
+*   **User Responsibility:** Each user only needs to manage their *own* private key securely and make their *own* public key available.
+
+**4. Advantages**
+*   **Secure Communication:** Establishes secure communication without needing to pre-share secret keys.
+*   **Authentication:** Useful for various authentication functions, as only the user knows their private key, verifiable by their public key.
+*   **Secure Key Exchange:** Facilitates secure exchange of secret keys for other cryptographic methods.
+
+**5. Representative Public Key Algorithms**
+
+*   **RSA (Rivest, Shamir, Adleman)**
+    *   **Use:** Encryption and authentication.
+    *   **Security Basis:** Difficulty of factoring large integers.
+    *   **Characteristic:** Ciphertext for the same message is always identical (no random numbers used).
+    *   **Key Factor:** Security depends on the selection of large prime numbers (p and q).
+
+*   **ElGamal**
+    *   **Proposed:** 1984 by T. ElGamal.
+    *   **Security Basis:** Difficulty of the discrete logarithm problem.
+    *   **Characteristic:** Encrypted message length doubles.
+    *   **Security Feature:** Different ciphertext is created each time, even for the same message, because it uses random numbers during encryption. This significantly enhances information security.
+
+*   **ECC (Elliptic Curve Cryptosystem)**
+    *   **Security Basis:** Discrete logarithm problem on elliptic curves.
+    *   **Advantages:** High security, fast speed, and smaller key sizes for equivalent security (e.g., 160-bit ECC offers similar security to 1024-bit RSA).
+    *   **Application:** Suitable for mobile communication devices with limited power supply due to its efficiency.
+
+**6. Comparison: Private Key vs. Public Key Cipher**
+
+| Feature              | Private Key Cipher (Symmetric)                                    | Public Key Cipher (Asymmetric)                                   |
+| :------------------- | :---------------------------------------------------------------- | :--------------------------------------------------------------- |
+| **Key Relationship** | Encryption Key = Decryption Key (same key)                        | Encryption Key ≠ Decryption Key (different keys)                 |
+| **Key Type (Sender)**| Private (shared secret)                                           | Public (receiver's public key)                                   |
+| **Key Type (Receiver)**| Private (shared secret)                                           | Private (receiver's private key)                                 |
+| **Total Keys (n users)** | n(n-1)/2                                                          | 2n                                                               |
+| **Keys to Manage (per person)** | n-1 (a unique shared key for each other person you communicate with) | 1 (your own private key)                                         |
+| **Encryption Speed** | High                                                              | Low                                                              |
+| **Key Distribution** | Complex (must securely share keys with each party)                | Simple (public keys can be openly distributed)                   |
+| **Strengths**        | High speed, simpler for small-scale, fewer keys to manage *per pair*. | Easy key distribution, robust for large networks, used for authentication. |
+| **Weaknesses**       | Key management becomes complex as user count increases, keys change frequently. | Slower encryption/decryption, typically requires longer key lengths. |
+
+---
+
+### II. Hash Function
+
+**1. Concept**
+*   **Definition:** A mathematical function that takes an input of **arbitrary size** and outputs a **fixed-length hash value (hash code)**.
+*   **Process:** Compresses input data into a shorter, fixed-length string. (e.g., SHA-1 outputs a 160-bit result).
+*   **Key-less:** Unlike cryptographic algorithms, hash functions **do not use keys**.
+*   **Determinism:** The same input will *always* produce the same output.
+*   **Primary Use:** Verifying data **integrity** (detecting errors or tampering) by generating an unalterable "evidence value."
+
+**2. Properties of a Cryptographic Hash Function**
+*   **Ease of Computation:** Given the function h and input x, h(x) is easy to calculate, consuming relatively few system resources.
+*   **Security Properties (Crucial for stability):**
+    *   **Pre-image Resistance (One-way):** Given a hash value (y), it is computationally difficult to find the original input (x) that produced it.
+    *   **2nd Pre-image Resistance (Weak Collision Resistance):** Given an input (x) and its hash (h(x)=y), it is difficult to find a *different* input (x') that produces the *same* hash value (h(x')=y).
+    *   **Collision Resistance (Strong Collision Resistance):** It is difficult to find *any two different inputs* (x and x') that produce the same hash value (h(x)=h(x')).
+
+*   **Irreversibility:** The original text *cannot* be restored through computation using only its hash value.
+*   **Vulnerability:** Hash collision (where different inputs produce the same output) can be exploited in bypass attacks if not properly mitigated.
+
+**3. Types of Hash Functions**
+
+*   **MD5 (Message Digest Algorithm 5)**
+    *   **Output Length:** 128-bit hash function.
+    *   **Use:** Historically used for integrity testing of programs or files.
+    *   **Status:** Several significant defects have been found; it is **recommended to use safer algorithms like SHA-2** for security purposes.
+    *   **Common Application:** Frequently used for storing password hashes (the server stores the hash, not the actual password).
+
+*   **SHA (Secure Hash Algorithm) Family**
+    *   **Origin:** Developed by the National Security Agency (NSA), U.S. national standard.
+    *   **Versions:**
+        *   **SHA-0 (1993):** The first version.
+        *   **SHA-1 (Later variant):** 160-bit hash value. Replaced MD5 in many applications.
+        *   **SHA-2 (SHA-224, SHA-256, SHA-384, SHA-512):** A group of stronger variants providing different output lengths (224, 256, 384, 512 bits). **Recommended to use SHA-256 or higher** for safety. While no attacks have been reported, its similarity to SHA-1 suggests potential vulnerabilities.
+        *   **SHA-3 (2012):** A completely new and different design from SHA-1 and SHA-2, confirmed as SHA-3.
+
+**4. Supplementing Hash Functions: Salt**
+
+*   **Concept:** A **random, arbitrary bit string** that is added to the original message/password *before* hashing.
+*   **Process (Salting):** `hash_value = HASH_FUNCTION ( password + salt )`
+*   **Purpose:** Significantly improves security, especially for password storage.
+    *   **Prevents Pre-computed Attacks (Rainbow Tables):** Even if an attacker obtains a hash value, they cannot easily match it to a pre-computed table of common password hashes, because the salt makes each hash unique.
+    *   **Distinguishes Identical Passwords:** If different salts are used for each user, users who choose the same password will have different hash values stored. This prevents an attacker from identifying users with identical passwords by comparing hashes.
+*   **Implementation:**
+    *   The salt and the resulting hash value are stored together in the server database.
+    *   During login, the user's input password is combined with the stored salt, hashed, and then compared to the stored hash value.
+*   **Recommendation:** Each password should have its own unique salt, and the salt length should be 32 bytes or more for robust security.
+
+**5. Utilizing Hash Functions for Integrity Verification**
+
+Hash functions are fundamental for ensuring data integrity:
+
+*   **1. Detecting Data Transmission Errors:**
+    *   **Checksum:** A simple method where data is added to produce a checksum. This checksum is then appended to the message. The receiver recalculates the checksum and compares it to the received one to detect basic errors.
+    *   **CRC (Cyclic Redundancy Check):** More robust than a simple checksum. Used widely in communication systems (like the Internet) to detect transmission errors. A checksum is calculated based on polynomials and appended to the data. The receiver performs the same calculation to verify integrity.
+
+*   **2. Preventing Unauthorized Modification (Tampering):**
+    *   **File Integrity Check:**
+        1.  Calculate the hash value of important files (e.g., source code, critical documents) using a strong hash function (like SHA-2).
+        2.  Store these original hash values securely.
+        3.  Periodically recalculate the hash of the current files and compare them with the stored original hash values.
+        4.  Any mismatch indicates that the file has been altered (tampered with or corrupted).
+    *   **Digital Signatures (covered elsewhere, but relies on hashing):** Hashing is a core component of digital signatures to ensure the authenticity and integrity of documents.
+
+---
+
+================================================================================
+ORIGINAL TEXT (First 5000 chars)
+================================================================================
+
+--- Page 28 ---
+ESSENCE
+@ Public key cryptographic  algorithm
+The public-key  cryptographic  algorithm  became the important  element  of modern ciphers, since the
+introduction  of the concept  of the public key cipher by Diffie and Hellman in 1976, and the development  of a
+practical  public key cryptographic  algorithm,  called RSA, in 1978.
+Encryption . Decryption
+key Different key
+: Cryptographic , Cryptographic .
+| Plain text.  -——> algorithm ——>| Ciphertext algorithm Plain text
+[Figure  8] Public key cryptographic  algorithm
+Unlike the private  key encryption,  the sender  and receiver  use different  keys to establish  secret communication,
+as shown in [Figure 8]. The sender  encrypts  data, using the receiver's  public key, and sends the result over the
+network.  The receiver  decrypts  the encrypted  data, using the private key that matches  the receiver's  public
+key, to restore  the plain text.
+Public key . Private key£ Pair
+Pp —  fp
+Asymmetric  key
+Plain text |}——>| Encryption |——>| Ciphertext  |——>| cryptographic Plain text
+algorithm
+ya) ee 4?
+Pair
+Public key Public key
+[Figure  9] Key mechanism  of the public key cryptographic  algorithm
+The public key encryption  system has the advantage  of establishing  secure communication  using the
+cryptographic  algorithm,  even though the key is not shared with other users. Each user discloses  the key
+that will be used to send data to them (called a public key), and has the key that can decrypt  the information
+encrypted  by their public key (called a private key). Therefore,  it has the characteristic  that anyone can
+encrypt  information,  but only those who have a private key corresponding  to the public key can decrypt  the
+information.  For example,  when there are ‘n’ users in the network  environment,  a total of 2n keys are required
+across the network  because  each user holds two keys (a public key and a private key). Each user must hold
+28 TOPCIT  ESSENCE
+
+
+--- Page 29 ---
+Information  security )
+only two keys, that is, their own private key and a public key.
+The public key cipher has the advantage  of being used for various authentication  functions  and secure key
+exchange,  because  only each user knows their private key corresponding  to the public key, which can be
+checked  by everyone.  RSA (Rivest, Shamir  and Adleman),  ElGamal,  and ECC (Elliptic  Curve Cryptosystem)  are
+the representative  public key cryptographic  algorithms.
+*RSA
+The RSA public key cryptosystem  is used for encryption  and authentication.  The safety of this system is:
+based on the difficulty  of factoring  a large integer. RSA has the characteristic  that ciphertext  for the same
+message  is always the same, because  no random numbers  are used in the encryption  process.  Since the
+safety of the RSA system depends  on prime number  p and q, the prime number  selection  conditions  are
+important.
++ ElGamal
+ElGamal was proposed in 1984 by Stanford  University  cryptographer,  T. ElGamal,  and is the first public
+key cryptographic  algorithm,  based on the difficulty  of the discrete  algebra problem.  When a message  is
+encrypted  with ElGamal,  its length is doubled.  However,  different  ciphertext  is created  each time, even
+though the same message  is encrypted  because  random numbers  are used for encryption, which is a great
+advantage  from the perspective  of information  security.
++ ECC
+The Elliptic Curves encryption  system is based on the discrete  logarithm  problem  on the elliptic curve. Since
+its safety is high and its speed is fast, it draws attention  as a new public key encryption  system.  For example,
+it is known that a 1024-bit  key of RSA and a 160-bit key of elliptic curve cipher have the same level of
+security.  In addition,  the ECC system is suitable  for the encryption  of mobile communication,  such as a mobile
+phone with limited power supply.
+@® Comparison  of the private key cryptographic  algorithm  and public key cryptographic  algorithm
+<Table 4> shows the result of comparing  the private key encryption  system and the public key encryption
+system.
+<Table  4> Comparison  of the private key cipher  and public key cipher
+Item Private  key cipher Public key cipher
+Key relationship Encryption  key = decryption  key Encryption  key # decryption  key
+Encryption  key Private Public
+Decryption  key Private Private
+Algorithm Public Public
+Number  of keys n(n-1)/2 2n
+Number  of keys tobe  | __
+managed  per person nl '
+Encryption  speed High speed Low speed
+( dtl aerate) Complex Simple
+. an Easy key distribution.
+Strengths ..  7 a  time Foner number of keys to manage.
+Used in various  fields, such as authentication.
+M4 Understanding  Information  Security  29
+
+
+--- Page 30 ---
+ESSENCE
+The number  of keys to manage  increases  as
+Shortcomings many as the number  of users.
+The key changes  frequently.Slow encryption/decryption  time.
+Long key length.
+The key does not change  frequently.
+F) Hash function
+@® Concept  of the hash function
+A has...

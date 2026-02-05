@@ -1,0 +1,23 @@
+Database )
+A A
+[4 {-—
+B CA CPHa AS
+(a) Exclusive  subtype (b) Comprehensive  subtype
+[Figure  24] Sub-type  expression  in Crow’s  Foot notation
+0? Connection  Trap
+The connection  trap means that desired information  cannot  be accurately  found even though  a relationship  has been
+established  in a data model. Representative  types include  the fan trap and the chasm trap.
+A) Fan trap
+@ The fan trap can occur when there are entity  types A, B, and C, and when there is an N:1 relationship  between  entities
+Aand B, and a 1:N relationship  between  entities  B and C.
+@ An example  of the fan trap is as follows.
++ [Figure 25(a)] shows a case in which each branch is composed  of several departments,  with several employees
+belonging  to each branch.
++ The fan trap is found in this case because  the department  to which each employee  belongs  cannot  be known.
++ The fan trap can be removed  by modifying  it, as shown in [Figure  25(b)].
+N Compo- aTeam sition Branch
+N 1
+Employee Belonging
+(a) Fan traps exist
+[Figure  25] Fan trap
+M2 Database  63

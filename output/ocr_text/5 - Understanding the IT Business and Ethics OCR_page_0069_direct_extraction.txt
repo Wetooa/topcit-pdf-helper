@@ -1,0 +1,33 @@
+ESSENCE
+04 Methods  of Executing  IT Business  Processes
+A) IT business  process  management
+BPM is a key technique  of IT business  process management  that consists  in optimizing  and automating  business
+processes.  In addition,  BAM is a technique  for discovering  and managing  bottlenecks  in business  processes,  while BRE
+is a business  rule engine  that sets and manages  the flow of business  processes.
+| BPM <-
+BAM ——oprrrrrn  > pa
+[Fig. 23] Conceptual  diagram  of IT business  process  management
+@ Understanding  BPM
+Business  process  management  (BPM) is a technique  for the consolidated  management,  optimization  and automation
+of the flow of people, information  resources,  and tasks associated  with IT business  processes,  It is also an important
+means  of implementing  IT business  processes.  How well the overall process  is managed  can have direct repercussions
+for business  performance.  Hence, it is essential  to take a logical and structured  approach  to managing  the IT business
+process.  BPM must be capable  of handling  changes  in the management  environment  and should be designed  to be
+capable  of responding  actively  to changes  in business  processes.
+<Table 21> BPM design stages
+Design  stages Key activities
++ Define  what could be the core processes  and identify  the rules.
+Process definition .Ocess cerinitiol + Analyze  the processes  and establish a method of measurement.
++ Execute,  operate  and manage  the processes  according  to pre-determined  guidelines.
++ Operate  the processes  so that person-to-person,  person-to-system,  and system-to-  system
+connections  can be made.Process  execution,
+operation
++ Monitor  the time points  of job completion,  the quality  of job performance,  and the job execution
+Monitoring  control process.
++ Monitor  the progression  of the process  in real time, keep and manage  a record of the monitoring.
++ Identify  and compare  KPIs for process  performance.
+Process  improvement  — + Conduct  simulations  for the purpose  of improving  the process.
++ Repeat  the cycle of process  execution  and improvement.
+@ Understanding  BAM
+Business  activity  monitoring  (BAM) is a technique  for optimizing  IT business  processes.  It detects  and controls
+68 TOPCIT  ESSENCE

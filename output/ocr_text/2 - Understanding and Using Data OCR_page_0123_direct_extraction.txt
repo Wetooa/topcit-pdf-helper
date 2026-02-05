@@ -1,0 +1,39 @@
+ESSENCE
+> Keywords
++ Transaction
++ ACID properties:  Atomicity,  consistency,  isolation,  durability
++ Commit  operation,  rollback  operation
++ Lost update,  dirty read, unrepeatable  read, inconsistency,  cascade  rollback
++ Serializable  schedule
++ Concurrency  control techniques,  lock-based  technique,  optimistic  or validation-based  technique,
+timestamp-based  technique,  multi-version  technique
++ Transaction  isolation  level: Read uncommitted,  read committed,  repeatable  read, serialization
++ Causes  of deadlock  occurrence:  Mutual exclusion,  block & wait, non-preemption,  circular  wait
++ Solutions  for breaking  deadlock,  deadlock  avoidance,  deadlock  prevention,  deadlock  detection  & recovery
++ Preview  for practical  business Problems  that arise when a transaction  and
+concurrency  control are not properly  understood
+There are some cases in which a set of operations  executed  in a database  is viewed is viewed as a unit
+from the viewpoint  of the database  user. For example,  transferring  money from account  A to account  B
+may look like a single operation  at first glance. However,  the transaction  is internally  composed  of two
+update operations,  ie. changing  the balance  of account  A and changing  that of account  B, respectively.
+What if this operation  fails in the middle of processing,  and the balance  of account  A has been changed
+while that of account  B remains unchanged?  If any operation  fails, all operations relating  to the account
+transfer  task should be either performed normally  as a whole or returned  to the original state prior to
+the operations.  As explained  previously,  a set of operations  that constitute  a logical work unit is called
+a “transaction”.  The important  thing here is that all operations  of the transaction  should be completely
+executed  or returned  to the original state before any transaction  if an error occurs.
+What if the update of the data shared between  transactions  cannot be controlled  in a database  system
+that executes  several transactions  simultaneously? For  example,  what happens  if you transfer  KRW 1,000
+online from an account  with a balance  of KRW 1,000 and withdraw  KRW 1,000 from an ATM at the same
+time? In reality, it is naturally  impossible,  because  the database  system controls  these transactions.  As
+explained  so far, the database  system provides  a concurrency  control method  to secure the isolation  of a
+transaction,  which ensures  that the transaction  is not affected  by the change  made by another  transaction
+at the same time. However,  if the level of transaction  isolation  is high, simultaneous  access  to the database
+(concurrency)  becomes  difficult  and performance  is negatively  affected.  Therefore,  the isolation  level should
+be selected  appropriately  by considering  the nature of the transaction.
+In fact, service failure occurs frequently  in the field due to the problem  with concurrency  control, including
+the case of the college course registration  crisis that occurred  due to the application  of the isolation
+level of the banking  system,  which requires strict transaction  isolation,  to the college course registration
+system.  Therefore,  the concept  of transaction  and concurrency  control should be correctly  understood  to
+determine  the “appropriate”  level of the system  to be developed  and transaction  isolation.
+122 TOPCIT  ESSENCE

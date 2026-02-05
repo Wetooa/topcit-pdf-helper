@@ -1,0 +1,21 @@
+ESSENCE
+>> Recent  trends and major issues
+Relational  algebra is a set of operations  for processing  relations  in a relational  database  and has the
+characteristic  that all operands  of each operation  are relations,  and the result of the operation  is also
+relations.  Basic relational  algebra  operations  are usually divided into set operations  and relation  operations.
+Exact understanding  of relational  algebra operations  is required to use the relational  database  efficiently
+using a language  such as SQL.
+>> Learning  objectives
+1. To be able to explain  the concept  of relational  algebra.
+2. To be able to utilize set operations  and relation  operations.
+3. To be able to utilize extended  relational  algebra  operations.
+>> Keywords
++ Relational  operation,  relational  algebra, relational  calculus,  set operation,  relational  operation,  join,
+extended  relational  algebra
++ Preview  for practical  business
+Most relational  databases  used by the information  systems  of enterprises  and organizations  use SQL as
+the standard  query language.  If an SQL statement  is written without  understanding  relational  algebra,
+which is the theoretical  basis of SQL, the SQL statement  cannot  retrieve  the result intended  by the user,
+and may degrade  performance.  Therefore,  users should fully understand  relational  algebra before writing a
+more optimized  SQL statement.
+100 TOPCIT  ESSENCE

@@ -1,0 +1,29 @@
+ESSENCE
+@® Phase of secure SDLC requirement  definition
+A phase that defines security  objectives,  according  to the characteristics  of the project and software,  and
+analyzes  security  weakness  and impact, according  to the potential  threat. Security  requirements  for software
+development  are derived in this phase.
+@ Secure SDLC analysis/design  phase
+A phase that designs  security  architecture  and security  requirements  in the entire architecture  design process.
+Developer  training  is implemented,  and security  test plans are designed  in this phase in order to build a safe
+security  system.
+© Secure  SDLC coding  phase
+Coding rules are defined by checking  the weaknesses  and strengths  of the used programming  language  from
+a security  perspective.  The static unit test of the developed  code is conducted,  and compliance  with the
+predefined  secure coding rules are verified.  When a commercial  package  is used, security  vulnerability  content
+and action details found in the package  are checked.
+® Secure  SDLC testing  phase
+A dynamic  unit test is conducted  on the developed  program,  and the usability  of the security  applied
+application  is tested. Matters  to improve  security  are derived and applied, by checking  the vulnerability  of the
+infrastructure  and application  program,  independently  of the system.
+@® Secure  SDLC maintenance  phase
+When modifying  codes, according  to the software  change management  procedure,  impact on security  is
+evaluated,  vulnerabilities  are checked  periodically,  and matters  to improve  security  are derived  and applied.
+03 Major secure  coding  techniques
+A) Major secure  coding  techniques  for Java
+@® Secure  coding  techniques  for responding  to the SQL injection  attack
++ Attack overview
+If the validity  of the data entered in the web application  program,  linked with the database,  is not verified,  an
+attacker  can read or  manipulate  information  from the database  by inserting  an SQL statement  into the input
+form and URL field. The SQL injection  attack refers to this security  vulnerability,
+76 TOPCIT  ESSENCE

@@ -1,0 +1,35 @@
+ESSENCE
+blockchain.
+A copy of the transaction  ledger is distributed  among network  members.  Whenever  a new transaction  occurs,
+the transaction  is verified  by the consent  of the members.  The blockchain  uses a P2P network  method instead
+of depending  on the existing  centralized  system. Therefore,  it is not necessary  for a transaction  broker to
+intervene.  As a result, the efficiency  and transparency  of transactions  are increased,  and transactions  can be
+made faster and safer, at a low cost. In addition,  as transaction  information  based on the blockchain  cannot be
+forged and altered,  transaction  reliability  increases,  and transaction  information  can be easily traced.
+L Artes  tae)
+Transaction
+INPUTS ‘OUTPUTS
+Hong Hong »aiden ton.000 Gilseo mco
+Hong 30,000)
+Gildong
+« Cost saving through  distributed, storage,
+«Distributed  and stored ledger
+Cigess! records cannot be forged or=) altered.
+[Figure  2] Conceptual  diagram  of the blockchain« A ledger is composed  of a chain of
+blocks, based on header information
+in the block
+B) FIDO (Fast Identity  Online  Alliance)
+FIDO was established  in July 2012 to set the technical  (De facto) standard  for the authentication  method,  using
+biometrics  in the online environment.  The FIDO standard  separated  local user authentication  in the user device
+from remote  authentication  performed  by the service provider's  server.
+@® FIDO 1.0
+Even though FIDO 1.0 is similar to existing  biometric  authentication,  it provides  two authentication  methods:
+the UAF (Universal  Authentication  Framework)  protocol  that does not store the user’s personal  information  on
+the server, and the U2F (Universal  2nd Factor) protocol  that improves  security  using two-factor  authentication.
+@ FIDO 2.0
+FIDO 2.0 provides  a convenient  authentication  and payment  environment  using bio-information,  instead of the
+password  in the PC and web environment.  It is expected  that more biometric  authentication  devices  will be
+installed  in PCs and laptops, and various device authentication  methods,  using the smartphone  as a key, can
+be provided.  FIDO 2.0 is a universal  authentication  technology  standard  that is developed  to provide the FIDO
+clients and ASM on the platform.  Here, the platform  largely means the operating  system platform,  including
+18 TOPCIT  ESSENCE

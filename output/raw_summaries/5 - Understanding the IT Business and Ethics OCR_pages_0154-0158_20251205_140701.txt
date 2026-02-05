@@ -1,0 +1,215 @@
+LEARNING GUIDE: Pages 154-158
+Generated: 2025-12-05 14:07:01
+PDF: 5 - Understanding the IT Business and Ethics OCR
+
+================================================================================
+LEARNING GUIDE
+================================================================================
+
+Here is a simplified, easy-to-read learning guide based on the provided text:
+
+---
+
+## Learning Guide: IT Business & Ethics (Smart Infrastructure)
+
+This guide covers key concepts related to Smart Grids, Microgrids, Smart Water Grids, and Smart Traffic.
+
+---
+
+### 1. Smart Grid
+
+**Definition & Purpose:**
+*   An intelligent electricity network that optimizes energy efficiency.
+*   Enables bi-directional exchange of real-time information (supply & demand) between energy producers and consumers.
+
+**Components:**
+1.  **Smart Grid Platforms:**
+    *   **Core Function:** Manages distributed and intelligent power grids.
+    *   **Key Technologies:** Intelligent devices, bi-directional communication, sophisticated control systems.
+    *   **Applications Supported:** Renewable energy integration, intelligent electric vehicle (EV) charging, smart metering, power grid monitoring, demand response.
+    *   **Intelligent Storage Devices:** Equipped with electronic sensors/meters and digital intelligence to monitor grid state and make basic decisions autonomously.
+2.  **Smart Grid Applications:** (Services built upon the platform, e.g., smart metering, demand response).
+
+**IT Infrastructure & Requirements:**
+*   **Critical Role:** Acts as the essential IT elements for smart grid operation.
+*   **Benefits:** Optimizes energy efficiency, facilitates real-time information exchange.
+*   **Requirements:**
+    *   **Open System Networks & Protocols:** Essential for creating new value-added products, services, and markets beyond just power supply.
+    *   **End-to-End Communication:** Reliable and steady power supply through communication between intelligent devices.
+    *   **Standard Adherence:** Supports interoperability across various interfaces.
+
+---
+
+### 2. Micro Grid
+
+**Definition:**
+*   An extension of a smart grid, typically for a local area.
+*   **US Department of Energy (DOE):** "A group of interconnected consumers and distributed energy resources (DERs) under clearly defined electrical specifications that can be controlled as a single entity, and that could be connected to the system or made independent."
+
+**Key Characteristics:**
+*   **Local Power Grid:** Connects local electricity users with Distributed Energy Resources (DERs) like wind and solar power.
+*   **Self-Sufficiency:** Can operate independently of the main electric grid, allowing grid owners to be self-sufficient in power.
+*   **Grid Connection:** Can still connect to the regular grid when needed.
+
+**Examples (South Korea):** Jeju Island's smart grid complex, Gapado, Marado, Ulleungdo.
+
+---
+
+### 3. Smart Water Grid
+
+**Definition & Purpose:**
+*   A smart technology that uses Information and Communication Technology (ICT) to manage water resources.
+*   Covers the entire water cycle: production of drinkable water, transportation, processing, and reuse.
+*   Addresses challenges related to climate change and water management.
+
+**Reasons for Emergence:**
+*   **Spread of Cloud Computing:** Enables automatic detection, cloud storage, and automated problem resolution for water systems.
+*   **Intelligent Inspection Infrastructure:** Provides real-time water usage data via remote monitoring, improving fare calculation and reducing water usage.
+*   **Impact of Climate Change:** Addresses agricultural water shortages, changes in river flow rates, and increased uncertainties/damage from drought/flood.
+*   **Growing Global Water Demand:** Driven by increasing world population and industrialization, leading to increased interest in water resource supply.
+
+**Key Technologies:**
+*   Water resource acquisition and distribution technology.
+*   Real-time and automated water supply and demand management technology.
+*   Advanced ICT-convergent water management technology.
+
+---
+
+### 4. Smart Traffic (Intelligent Transportation Systems)
+
+**Definition & Purpose:**
+*   An intelligent transportation service that leverages information exchange.
+*   **Goals:** Improve traffic safety, enhance traffic flow efficiency, and provide user convenience.
+*   **Information Exchange:** Occurs between vehicles (V2V), vehicles and infrastructure (V2I), and vehicles and traffic control servers (V2N).
+
+**Types of V2X Services (Vehicle-to-Everything):**
+
+#### a. V2V (Vehicle-to-Vehicle) Service
+*   **Mechanism:** Vehicles wirelessly exchange information with surrounding vehicles.
+*   **Information Exchanged:** Vehicle positions, traffic flow details, road conditions.
+*   **Communication Technology:** Primarily Wireless Access in Vehicle Environments (WAVE).
+*   **Examples:**
+    *   Roadside information & obstacle notification.
+    *   Road construction notification.
+    *   Intersection traffic signal notification.
+    *   Nearby vehicle information notification.
+    *   Emergency vehicle proximity notification.
+
+#### b. V2I (Vehicle-to-Infrastructure) Service
+*   **Mechanism:** Vehicles communicate with traffic support infrastructure (e.g., roadside base stations).
+*   **Vehicle Component:** On-Board Unit (OBU).
+*   **Communication Technologies:** WAVE, 4G LTE/5G.
+*   **Process:**
+    1.  Vehicles with OBUs send/receive messages to/from roadside base stations.
+    2.  Base stations connect to the traffic control center's backend server.
+    3.  Center system collects, analyzes vehicle/base station data, then sends traffic/road condition info back to base stations.
+    4.  Base stations relay this information to vehicles.
+*   **Examples:**
+    *   Real-time traffic information collection & provision.
+    *   Electronic toll collection.
+    *   Roadside information & obstacle notification.
+    *   Road construction notification.
+    *   Protected zone notification.
+
+#### c. V2N (Vehicle-to-Network) Service
+*   **Mechanism:** Vehicle communicates via a network with a server (in the cloud/Internet) or a mobile device.
+*   **Vehicle Component:** Telecommunication Control Unit (TCU).
+*   **Process:** TCU in vehicle communicates with a backend server, which then communicates with a mobile device.
+*   **Purpose:** Provides information to the user and enables vehicle control.
+*   **Communication Technologies (general network types):** Mobile communication, fixed-line connections, nearfield communication.
+
+---
+
+================================================================================
+ORIGINAL TEXT (First 5000 chars)
+================================================================================
+
+--- Page 154 ---
+Understanding  the IT Business  and Ethics
+Integrated renewable Electricity storage | | \V2G
+P energies
+Smart  Grid
+Application Monitoring/management _
+of electricity  grid through Smart metering Ma agement  eee
+situation awareness y
+Management  of distributive,  intelligent  electricity  grid
+Smart Grid
+Platform
+Intelligent  device, bi-directional  communication,  advanced  control system
+[Fig.65] Smart  Grid configuration*
+Technologies  that make up smart grids can be largely  grouped  under smart grid platforms  and smart  grid applications.
+The platform  has intelligent  devices, bi-directional  communication  and sophisticated  control system for managing
+distributed  and intelligent  power  grid. The platform  is configured  to operate  renewable  energy  applications,  intelligent
+electric  vehicle charging  stations,  smart metering  applications,  power grid monitoring  applications,  demand  response
+applications.  Intelligent  storage  devices have electronic  sensor and meters that monitor  the current state of the
+smart  grid and has digital intelligent  devices  that can make basic decisions  on their own.
+The IT infrastructure  attached  to the power  grid act as the IT elements  that are critical to the operation  of the smart
+grid. It optimizes  energy efficiency  and gets people to consume  energy  through  bi-directional  exchange  of real time
+information  (about the supply and demand  for electricity).  Therefore,  the smart grid must be equipped  with open
+system networks  and protocols  so that its value-added  services  could create new products,  services,  and markets
+and not limited to just providing  power. The communication  infrastructure  should provide end-to-end  services
+between  intelligent  devices and maintain a reliable and steady supply of electric power. Furthermore,  development
+must abide by standards  to support  interoperability  for various  interfaces.
+© Micro Grid
+Microgrid  is an extension  of a smart grid. The US Department  of Energy (DOE) defines a microgrid  as "a group of
+interconnected  consumers  and distributed  energy  resources  (DERs) under a clearly  defined  electrical  specifications  that
+can be controlled  by the system  as a single entity  and that could be connected  to the system  or made independent.”
+An easy way to understand  micro grid is to view it as a power grid constructed  for a local area that connects
+electricity  users with distributed  energy resources  such as wind and solar power. It is a power grid that can make a
+grid owner become  self-sufficient  in power by operating  independently  of existing  electric  grid and still connect  to the
+regular  grid when necessary.  In South Korea, microgrid  pilot testings  are underway  in Jeju Island's  smart  grid complex,
+Gapado,  Marado,  and Ulleungdo.
+14 Source:  TTA, ICT Standardization  Strategy  Map, 2011
+M5 Understanding  the IT Business  and Ethics 153
+
+
+--- Page 155 ---
+ESSENCE
+Solar powerDiesel power :
+generation
+4Electrical generation
+equipment ak
+~
+Microgrid central HVAC system . Ee
+controller Saag
+poocoSoocot
+v
+network I Wind power
+generation
+~ Diesel power
+generation
+SY’ ElectricaluN equipment
+[4] ae storage
+[Fig. 66] Concept  diagram  of Korea Electrical  Safety Corporation's  micro grid system’
+@® Smart water grid
+Due to climate changes  that affect the management  of water, there is growing  interest  in smart water grid, the
+technology  for managing  water with ICT technology.  Smart water grid is a smart technology  that leverages  ICT
+technology  for the management  of water, that essential  substance  for humanity  as well as the water supply and
+sewage  water. ICT is used for informatizing  the entire process  of handling  water from the production  of drinkable
+water, the transportation  of water, the processing  and reuse of water.
+Utilize  traditional  water
+resources. -
+_ a
+oo System Heation and ew fs Microgrid or a  * smart decision  make Wreecy,  et fi mesogrid
+oct ara In case of os- a  as a  water ws@ resources Zi if
+stream water/lake ee ws
+and pond water awe ~t Microgrid  orAeeeee “oe, mesogrid
+Utilize diverse water resources eds a
+we “ae Altemative  waterS tig @ . resources
+ol ih —-wit e
+Underground  — Rainwater/ Reclaimed  sewage Platform Water  treatment
+water Wastewater water/saline  water process  combination
+reclamation  and
+reusing  system
+[Fig.67]  Concept  diagram  of a smart water  grid’®
+15 Reference:  Korea Electrical  Safety  Corporation  website
+16 Reference:  Smart  Water  Grid Research  Group website
+154 TOPCIT  ESSENCE
+
+
+--- Page 156 ---
+Understanding  the IT Business  and Ethics )
++ Reasons  behind the emergence  of smart water grid”
+The smart water grid emerged  as a result of the spread of cloud computing,  the increased  supply of intelligent  meter
+infrastructure,  the impact  of climate  change,  and the growing  interest  in the global water industry.
+<Table 80> Reasons  behind  the emergence  of smart water  grid...

@@ -1,0 +1,29 @@
+ESSENCE
+Presentation | | Business Logic | Data Service
++ User input collection + Including  data processing  rules + Data storage
++ Standard  interface + Definition  of application + Prevention  of mismatching
++ Access  to business  service business  logic with data error
++ Mapping  business  functions  to + Access to the mainframe
+actions  on business  objects database
+[Figure  85] 3-Tier  Architecture
+The government  standard  suggests  three types of reference  architectures, as shown in [Figure 86], to establish  the
+standard  for size calculation  and presents  the size calculation  method  for each layer in the architecture  for each
+architecture  type.
+> Reference  model 1 (Layer 1): Case of the Wed/application/database  layers physically  existing  in a single server
+om @
+WEB / WAS / DB oo R=/
+Internet  Network User
+> Reference  model 2 (Layer 2): Case of the Wed/application/database  layers physically  existing  in two servers
+WEB / WAS 5 -/
+—_—_—_—- —_Internet  Network UserS DB server
+> Reference  model 3 (Layer 3): Case of the Wed/application/database  layers physically  existing in three
+servers  (Server  1: Web layer, Server  2: Application  layer, and Server  3: Database  layer)
+iJ Web servero+~-=-@+3
+f ae
+Client Database  Server
+[Figure  86] Reference  Model for 3-Tier Physical  Server  Configuration
+D) Size calculation  procedure
+Implementation Application  ofReference  ModelDirection  and Basic Data and : Weight  Factor  for
+Reference  Data > Task Analysis > tice =. Each Reference
+Investigation e Model
+118 TOPCIT  ESSENCE

@@ -1,0 +1,27 @@
+Overview  of System Architecture )
+01 Concept  of Datalink  Layer
+The datalink  layer transmits  data between  peripheral  devices  on the network,  using the physical  layer that transmits
+signals  between  devices,  and is responsible  for address  allocation  and error detection.  The address  allocation  function
+ensures  that devices  properly  receive  signals  from the physical layer on the network,  and the error detection  function
+detects  whether  errors are included  in the transmitted  signals.
+Application  software  developers  have no problem in programming  without  understanding  the datalink  layer and the
+physical  layer. However,  a network  product  may need debugging  for cases where there is no network  connection  or
+data error. If a product  uses various medium access control (MAC) layers, it may be necessary  to understand  each
+standard  protocol.  Moreover,  developing  embedded  software  requires  a basic understanding  of drivers  since it may be
+necessary  to develop  a driver. If the embedded  software  does not operate  normally  after the program  is ported to the
+test environment  prepared  by the hardware  developer,  it is necessary  to perform debugging  to determine  whether
+it is a hardware  or a software  problem.  The developer  needs to perform debugging,  using JTAG, or in the case of a
+network  environment,  check whether  an error occurs in the actual physically  transmitted  bit and datalink  layer. As
+short-range  wireless  communication  technologies,  such as Bluetooth  and ZigBee, have been recently  widely applied,
+understanding  the datalink  layer has become  more important.
+02 Encapsulation  of the Datalink  Layer
+A) Encapsulation  of the datalink  layer
+As shown in the following  figure, the datalink  layer frame adds a header  and a trailer to the network  layer packet.
+This process is called encapsulation  of the datalink  layerThe  process is reversed  on the receiving  end and is called
+decapsulation.
+Network  Layer
+Physical  Layer L2 Data
+[Figure 104] Encapsulation  of the Datalink  Layer
+B) Frame  header  and trailer
+The frame header includes  a preamble  for bit synchronization  between  hosts, a start of frame delimiter (SFD) that
+M3 Overview  of System  Architecture  147

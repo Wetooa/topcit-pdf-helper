@@ -1,0 +1,13 @@
+ESSENCE
++ An analysis  algorithm  that searches  the correlation  of items over time by adding  the concept  of
+time to association  analysis.
+Sequence + The possibility  of a given transaction  occurring  in the future is forecast  by performing  time series
+analysis  on transaction  history  data.
++ Apriori algorithm,  Generalized  Sequential  Patterns  (GSP), etc.
++ An analysis  algorithm  that creates  a tree-type  model, which classifies  the values (category  values)
+Classification of a specific  attribute  (category  type) by analyzing  a dataset  when it is given.
++ Decision  tree algorithm,  etc.
++ An analysis  algorithm  that groups  records  with similar  attributes,  by considering  several attributes
+Clustering of given records (customers,  products).
++ K-Means  algorithm,  EM algorithm,  etc.
+142 TOPCIT  ESSENCE

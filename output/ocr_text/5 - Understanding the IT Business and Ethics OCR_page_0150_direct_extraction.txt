@@ -1,0 +1,46 @@
+Understanding  the IT Business  and Ethics )
++ Server  virtualization
+By consolidating  dozens of physical server workloads  within the data center on to several virtual servers,  the
+utilization  of server resources  can be improved  (physical  rack costs, administrative  costs, and green IT).
++ Storage  virtualization
+In place of the physical storage space required,  a technology  called Thin-Provisioning  virtually  allocates  only
+the initial minimum  required  space to enable service implementation.  It also provides  an environment  where
+heterogeneous  storage  systems  can be integrated  and used.
++ Network  virtualization
+L2, L3, L7 switches,  network  firewalls,  and security  equipment  that had existed in the form of hardware  appliances
+are implemented  as virtual machines.  This allows network  resources  to operate internally  through  virtualization,
+even ina single shared physical  environment.
++ Functions  of virtualization
+Virtualization  includes  four basic functions:  sharing,  aggregation,  emulation,  and insulation.
+<Table78>  Virtualization  functions
+Function Description Examples
++ A function  in which many virtual resources  are
+used in one identical  physical  resource.
+Sharing + It is used to allocate  a portion of physical resources
+to each virtualized  resource.  Or use a physical
+resource  by sharing  through  time sharing  method.+ Logical partitioning  (LPARs),
++ Virtual machine  (VM),
++ Virtual disk
++ Virtual LAN(VLANs)
++ The virtualization  concept  that is the opposite
+of sharing,  Virtual resources  exist across multiple
+physical  resources.  Outward  appearance  wise,
+it can increase  the overall capacity.  From a
+holistic perspective,  it can simplify  utilization  and
+management.Aggregation + Storage  virtualization
++ A function  that can make some function  or
+characteristics  in a virtual resource  appear  to have + iSCSI
+existed  from the very beginning  although  they do + virtual tape storage
+not exist in physical  resources.Emulation
++ Intermapping  between  virtualized  and physical
+resources  is a feature  that allows physical
+resources  to be replaced  without  affecting
+virtualized  resources  or users who use them. This
+function  is also called transparent  change  and has
+the effect of preventing  failure (Failure  Proof).Insulation + RAID storage  controller  which uses multi disks
+© Blockchain  service
+The surge in the use of cryptocurrency  Bitcoin in recent years has led to growing  interest  in blockchain,  the core
+technology  behind Bitcoin. Using the concept  of distributive  network-based  decentralization,  Blockchain  is a
+distributed  ledger  network  technology  in which P2P data blocks that are stored on a distributive  network  form chains
+with each other.
+M5 Understanding  the IT Business  and Ethics 149

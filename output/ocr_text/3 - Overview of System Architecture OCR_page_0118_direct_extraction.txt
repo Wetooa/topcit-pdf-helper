@@ -1,0 +1,35 @@
+Overview  of System Architecture )
+the size calculation  target in the capacity  calculation  guidelines  is hardware,  which is defined as servers, not PCs
+or other peripherals.  While there are several hardware  configuration  areas, the four areas - CPU, memory,  disk, and
+storage  - are the most important  in terms of system  price and performance,  and they are defined by sizing areas.
++ CPU: Calculates  the CPU size to process  the necessary  tasks and selects  the server model that shows adequate
+performance.
++ Memory:  Calculate  memory  usage by the system software  and applications  programs  for each server, based on the
+server configuration,  according  to the CPU size.
++ Disk: Calculates  disk usage by the OS, system software,  database,  and database  archive/backup  for each server,
+based on the server configuration,  according  to the CPU size.
++ Storage:  Calculates  the size of the needed  storage,  based on the server size, according  to the CPU.
+System  Type
+OLTP Web/WAS
+CPU Oo Oo
+ea Memory Oo
+Disk System Oo
+Data Oo
+Storage Oo Oo
+[Figure 83] Size Calculation  Target
+Then apply the performance  standard  for each size calculation  target, as shown in [Figure 84].
+CPU
+Subject OLTP or OLTP & Batch Storage
+Application  Server Webserver WAS
+Performance
+tpmC ops IOPS
+measurement
+Reference |
+TPC-C SPECWeb2009 SPECjbb2005 SPC-1
+performance  standard
+[Figure 84] Performance  Standard  Applicable  for CPU and Storage
+C) Reference  architecture  for size calculation
+Since the size is calculated  for each server, the person who calculates  the size needs to understand  the conceptual
+model of the overall system architecture  that is to be implemented.  Most information  systems  nowadays  have
+adopted  the 3-tier architecture,  as shown in [Figure  85].
+M3 Overview  of System  Architecture  117

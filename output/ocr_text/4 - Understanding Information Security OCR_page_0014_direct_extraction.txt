@@ -1,0 +1,36 @@
+ESSENCE
+© Goals  of information  security
+The three goals of information  security  are confidentiality,  integrity,  and availability.  Efforts should be made to
+administratively,  physically  and technically  ensure these attributes.
+Information —____,  Availability z Information
+security  threat
+rra  |
+|
+| |
+Information a
+security  threat Confdentiaity
+Information
+security  threatsecurity  threat
+_—— Information
+Integrity security  threat
+Information
+security  threat
+[Figure 1] Three goals of information  security
+* Confidentiality  means that the original information  is not exposed  to unauthorized  users while being stored and
+transmitted.
++ Integrity  means  that the original information  is maintained  while sending  and receiving  it, without  illegal creation,
+modification,  or deletion.
++ Availability  means that authorized  users can access and use the requested  information  when necessary.
+02 Basic terms of information  security
+A) Authentication
+Authentication  refers to a method  of verifying  whether  the information  exchanged  between  the sender and
+receiver,  who are the subjects  of the information,  has not been altered or deleted,  and whether  the subjects
+(sender  and receiver)  are legitimate.
+B) Non-repudiation
+Non-repudiation  refers to security  technologyto  prevent  the repudiation  after receiving  and sending  a message,
+by verifying  the fact of message  receiving/sending.  Non-repudiation  can be classified  into the following  three
+categories:
+@® Non-repudiation  of origin
+Non-repudiation  of origin refers to the prevention  of the sender’s  claim that the message  was not received
+after actually  receiving  the message.
+14 TOPCIT  ESSENCE

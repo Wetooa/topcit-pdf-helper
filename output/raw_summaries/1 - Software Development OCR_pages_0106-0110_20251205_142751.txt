@@ -1,0 +1,230 @@
+LEARNING GUIDE: Pages 106-110
+Generated: 2025-12-05 14:27:51
+PDF: 1 - Software Development OCR
+
+================================================================================
+LEARNING GUIDE
+================================================================================
+
+Here's a simplified, easy-to-read learning guide based on the provided text, focusing on essential information for study.
+
+---
+
+## Software Development: Testing & Refactoring Learning Guide
+
+### 01. Test Case Design Techniques
+
+Test design techniques are categorized by their origin or "test basis":
+
+*   **Specification-based Techniques:** Based on requirements and specifications.
+    *   **Equivalence Partitioning:** Divide input data into "partitions" (e.g., valid, invalid ranges) and select one representative value from each for testing.
+    *   **Boundary Value Analysis:** Focus on testing values at the boundaries of input ranges (e.g., minimum, maximum, just inside/outside the valid range), as defects are common here.
+    *   **Pairwise Testing:** Design tests by combining input values with other values at least once.
+    *   **Decision Table Testing:** Create a table showing different input conditions and their corresponding actions/outcomes, then test these combinations.
+    *   **State Transition Testing:** Design tests based on a system's state transition diagram, covering events, actions, states, and transitions between them.
+    *   **Use Case Testing:** Extract test cases directly from the system's use cases (scenarios of user interaction).
+*   **Structure-based Techniques:** Based on the internal structure or code.
+    *   **Control Flow Testing:** Test all possible execution paths (control flows) within a component or system.
+    *   **Coverage Testing:** Design tests to achieve a specific level of code or system structure coverage (e.g., line, branch, path coverage).
+    *   **Elementary Comparison Testing:** Test combinations of input values using concepts like Modified Condition/Decision Coverage.
+*   **Experience-based Techniques:** Based on the tester's skill, intuition, and experience.
+    *   **Exploratory Testing:** Testers actively design, execute, and learn from tests simultaneously, using insights gained to create better, unscripted tests.
+    *   **Classification Tree Method:** Combine test cases derived from a classification tree with representative input/output values.
+
+### 02. Testing Types and Techniques
+
+#### A) Testing Types (Test Levels)
+
+Software testing involves different levels, each with specific goals, performers, and environments.
+
+**Test Level Flow:**
+Requirements Analysis → Design → Implementation → **Testing** → Acceptance
+
+**Key Principle:** For each test type, consider the testing subject, purpose, and environment. Define test plans and strategies for each level, including test basis, target, approach, and testers.
+
+| Test Type         | Purpose                                                                | Performer/Organization           | Environment                                  |
+| :---------------- | :--------------------------------------------------------------------- | :------------------------------- | :------------------------------------------- |
+| **Unit Test**     | Detect defects in individual software modules (units).                  | Development organization         | Development environment                      |
+| **Integrated Test** | Find defects in the interfaces and interactions between unit modules.   | Development/Testing organization | Development or specific test environment     |
+| **System Test**   | Check overall functional and non-functional requirements (performance, security, etc.) in an environment similar to the actual user environment. | Test organization                | Environment similar to the actual user environment |
+| **Acceptance Test** | Check compliance with user requirements and ensure the system is fit for purpose. | User                             | User environment                             |
+
+#### B) Testing Techniques
+
+Testing techniques are broadly divided into White Box and Black Box.
+
+##### @ White Box Testing (Structural / Code-based Testing)
+
+*   **Description:** Focuses on the internal structure and logic of the software.
+*   **Usage:** Mainly used in **unit testing** to find defects and verify functions of modules, programs, objects, etc. Can also apply to integration testing.
+*   **Approach:** Uses the source code to perform tests.
+*   **Types of Analysis:**
+    *   **Static Analysis:** Analyzes source code structure without running it to detect pre-defined errors.
+    *   **Dynamic Analysis:** Detects errors during actual program execution.
+*   **Key Techniques:**
+    *   **Structural Technique:** Measures and evaluates the logical complexity of the program (e.g., cyclomatic complexity).
+    *   **Loop Test:** Specifically tests the loop structures (e.g., `for`, `while`) within a program.
+
+##### @ Black Box Testing (Functional / Specification-based Testing)
+
+*   **Description:** Focuses on the external behavior and functionality of the software, based on requirements and specifications.
+*   **Usage:** Mainly used in **system testing** to verify both functional (what the software does) and non-functional (how well it does it) requirements.
+*   **Approach:** Tests are based on requirements specification and external interfaces, *without* knowledge of the internal code structure.
+*   **Key Techniques:**
+    *   **Equivalence Partitioning:** Tests by selecting various input conditions from equivalent classes (e.g., valid numbers, invalid characters).
+    *   **Boundary Value Analysis:** Tests the accuracy of results at the boundaries of input ranges (e.g., for a range of 1-100, test 0, 1, 100, 101).
+    *   **Cause-Effect Graph:** Models the impact of input values (causes) on output values (effects) using a graph to identify potential errors.
+    *   **Error Guessing:** Relies on tester experience and intuition to guess where defects might exist (e.g., testing with no input, invalid data types).
+
+### 03. Refactoring
+
+#### A) Concept of Refactoring
+
+*   **Definition:** Improving a program's internal structure and design *without changing its external behavior or functionality*.
+*   **Two Core Points:**
+    1.  The program's external operation remains unchanged.
+    2.  The program's internal structure is improved (e.g., simplified, clarified).
+*   **Reasons for Refactoring:**
+    *   Makes error detection and debugging easier.
+    *   Enables more effective response to changes in software requirements.
+    *   Simplifies complex code and improves source code readability.
+    *   Boosts program productivity and quality.
+*   **When to Refactor & Procedure:**
+    *   **When:**
+        *   When adding new functions becomes inefficient due to existing code complexity.
+        *   When eliminating bugs.
+        *   During code reviews.
+        *   A common heuristic: Refactor when writing the "third similar code" (i.e., when a pattern of duplication or bad design becomes evident).
+    *   **Procedure (General Steps):**
+        1.  **Target Selection:** Identify areas for improvement (e.g., maintenance, inspection, applying XP methodology).
+        2.  **Mentorship:** Involve experienced developers.
+        3.  **Performance Control:** Manage changes and configurations carefully.
+        4.  **Technique Application:** Apply design patterns or AOP (Aspect-Oriented Programming) if appropriate.
+        5.  **Testing:** Perform thorough unit, integration, and **regression tests** after each refactoring step.
+        6.  **Result Arrangement:** Document changes and ensure they are integrated.
+    *   **Key Practice:** Perform refactoring in small, isolated steps. After each small change, test immediately. If it works, proceed; if not, undo, fix, and re-attempt.
+
+#### B) Concept of a Code Smell
+
+*   **Definition:** A "code smell" is a superficial indicator in the code that often hints at a deeper problem in the design. It makes code harder to read, understand, modify, or expand, suggesting that refactoring is needed.
+*   **Common Code Smells:**
+    *   **Duplicate Code:** Identical code blocks appearing in multiple places.
+    *   **Long Method:** A method with an excessive number of lines of code.
+    *   **Vast Class:** A class that tries to do too many things (too many properties and methods).
+    *   **Long Parameter List:** A method requiring too many parameters.
+    *   **Class Modified for Two Reasons:** A class responsible for more than one unrelated job, causing it to change for different reasons.
+    *   **Modifying Multiple Classes at the Same Time:** A change in one class frequently necessitates minor changes in several other related classes.
+    *   **Data Clumps:** Groups of data fields that consistently appear together but are not encapsulated in their own class.
+    *   **Primitive Obsession:** Using basic data types (like `int`, `string`) for concepts that should be their own classes.
+    *   **Switch Statements:** Long `switch` or `if-else if` constructs, especially when they handle types (often indicating a missing object-oriented solution).
+    *   **Lazy Class:** A class that doesn't do enough to justify its existence.
+    *   **Speculative Generality:** Creating overly general code or hierarchies for anticipated future needs that never materialize.
+    *   **Class Interface Mismatch:** The public interface (API) of a class is awkward or difficult for clients to use.
+    *   **Incomplete Library Class:** An existing library class is almost what you need, but not quite, and you can't modify it.
+    *   **Parallel Inheritance Hierarchies:** When you create a subclass in one hierarchy, you almost always need to create a corresponding subclass in another.
+    *   **Comment:** Overly detailed comments explaining complicated code; often, the code itself should be simpler and self-explanatory.
+
+#### C) Typical Refactoring Techniques
+
+| Category     | Technique                          | Description                                                                                                                              |
+| :----------- | :---------------------------------- | :--------------------------------------------------------------------------------------------------------------------------------------- |
+| **Cleanup**  | **Extract Method**                  | Turn a code snippet into a new method with a name that clearly explains its purpose.                                                       |
+|              | **Replace Parameter with Method**   | If a method receives a parameter that is the result of another method call, let the receiving method call that other method itself.        |
+|              | **Extract Class**                   | If a class has too many responsibilities, create a new class and move related fields/methods to it.                                      |
+|              | **Extract Subclass**                | If a class function is only used by some instances, create a subclass to manage those specific functions.                                 |
+|              | **Extract Interface**               | If multiple clients use only a subset of a class's interface, define that subset as a separate interface.                                |
+| **Name/Clarity** | **Rename Method**                   | Change a method's name to better reflect its intent, making it more descriptive.                                                         |
+|              | **Inline Method**                   | If a method's body is as clear as its name, move its content directly into its callers and delete the original method.                     |
+|              | **Collapse Hierarchy**              | Merge a superclass and its subclass if they are no longer significantly different.                                                       |
+|              | **Replace Magic Number with Symbolic Constant** | Replace numeric literals (magic numbers) with special meaning with clearly named constants.                                              |
+| **Duplication** | **Pull Up Field**                   | Move a common field (instance variable) from two subclasses to their shared superclass.                                                |
+|              | **Pull Up Method**                  | Move a common method (performing the same task) from multiple subclasses to their shared superclass.                                   |
+
+---
+
+================================================================================
+ORIGINAL TEXT (First 5000 chars)
+================================================================================
+
+--- Page 106 ---
+© Test case design techniquesSoftware  Development )
+Test design techniques  can be classified  into specification-based  techniques,  structure-based  techniques,  and
+experience-based  techniques  depending  on the referred  test basis, an origin of the test design.
+<Table 30> Test case design  techniques
+Item Technique Description
+fei A test case is designed  in such a way that a test is performed  with the
+Equivalence  partitioning .representative  value placed in an equally  divided area.
+Boundary  values  are also included  when designing  a test case because  there
+Boundary  value analysis is a high possibility  of a defect  being found in the input value corresponding  to
+the boundary  of the equal division.
+ao. A table is created  in such a way that the values needed  for the test are
+Speciication- Pairwise  testing combined  with other values at least once, and a design is executed using the
+eee tabletechnique - - - - —
+. . A test case tests the combination  of input values indicated  in the decisionDecision  table testing :
+table and the stimuli (cause).
+. . The relationship  between  events,  actions,  activities,  states, and stateState transition  testing a : a
+transitions  are designed  based on a state transition  diagram.
+Test cases are extracted  from use cases when a system  is modeled  as a useUse case testing
+case.
+. I ructur i Control  flow testing All possible  event flow (path) structures  can be tested when executed  using a
+component  or system.
+Structure- : adiTest cases are designed  to achieve  coverage,  which indicates  how far thebased Coverage  testingtechniques system  or software  structure  has been tested by the test suite.
+Elementary  comparison Test cases are identified  in such a way that the combination  of input values is
+testing tested using the concept  of the modified  condition/decision.
+An unofficial  test is designed  that uses the information  obtained  while running
+Experience- Exploratory  testing tests, so that testers  can control the test design actively  while running the
+based test and so that a new and better test can be designed
+techniques The test cases expressed  as a classification  tree are combined  with the
+Classification  tree methodrepresentative  values  of the input and output  domains.
+O2 Testing  Types and Techniques
+A) Testing  types
+There are various  types of testing  depending  on various  levels, as shown in <Table 30>. The overriding  principle
+is that the testing  subject,  testing  purpose,  and test environment  should be considered  for each type.  .
+M1 Software  development  105
+
+
+--- Page 107 ---
+ESSENCE
+<— Test  creation  process  ———S>  <E—$—=|  Test running  process  ———=>
+NOUN eee  Acceptance
+analysis ica
+Functionalelec  aaa  -> (Secu
+MaelSSieiag << -----=--=--=-—  Eom Integrated  test
+Test ;
+mcucncin  < Upti ees
+[Figure  23] Test level types
+Software  testing requires  test plans and strategies  for each test level, which is a set of test activities
+corresponding  to the development  stage. Specific  details, such as the test basis, test target, test approach,
+tester or organization,  etc., which are the development  deliverables  to be referred to when identifying  the
+goals of each test level and test case, should be defined.
+<Table 31> Test types
+Test type Purpose Performing  Tester/Test Environment
+Organization
+Acceptance  test To  check compliance  with the User User environment
+requirements.
+To check the overall functional
+System  test and non-functional  tests in Test organization Environment  similar  to an
+an environment  similar  to the actual user environment
+actual environment.
+To find a defect in the interface  | Development  organization  or | Development  environmentIntegrated  test . : ; -between  the unit modules. testing  organization or test environment
+Unit test To detect any defects in the Development  organization Development  environment
+unit modules.
+B) Testing  techniques
+Testing  techniques  are broadly  divided into white box testing  and black box testing,  which have the following
+characteristics.
+@ White box testing
++ White box testing  is called structural  or code-based  testing.
++ It is mainly used in unit testing  to find defects  in testable  software  (module,  program,  object, class, etc.) and
+to verify the function  of them. The source code is used to perform control flow testing, condition/decision
+coverage  testing,  and elementary  comparison  testing.
++ This technique  can be applied  to integrate  testing  using a structural  approach.
++ White box testing is divided into static analysis,  which is used to detect a pre-defined  error by analyzing  the
+internal structure  of the implemented  source  code, and dynamic  analysis,  which is used to detect  an error
+106 TOPCIT  ESSENCE
+
+
+--- Page 108 ---
+Software  Development )
+that could occur in an actual situation.
++ The table below shows the representative  white box testing  techniques.
+<Table 32> White box testi...

@@ -1,0 +1,264 @@
+LEARNING GUIDE: Pages 109-113
+Generated: 2025-12-07 00:49:09
+PDF: 6 - Project Management & Technical Communication OCR
+
+================================================================================
+LEARNING GUIDE
+================================================================================
+
+Here's a simplified, easy-to-read learning guide based on the provided text:
+
+---
+
+## Software Project Cost Estimation & Management Guide
+
+### 1. Function Point Analysis (FPA)
+
+FPA estimates software development costs based on project functionality.
+
+#### A. Adjusted Function Points (FP)
+
+*   **Formula:** Adjusted FP Count = Unadjusted FP Count × Value Adjustment Factor (VAF)
+*   **VAF:** Determined based on development/enhancement/application type.
+
+#### B. Types of FPA
+
+1.  **Estimated FPA:**
+    *   Used in the **development proposal stage**.
+    *   Calculates cost using **average values** of inputs (EI/EO/EQ) and files (ILF/EIF).
+2.  **Detailed FPA:**
+    *   Applied **after the demand analysis and design stages**.
+    *   Uses a **traditional method** with weighted average complexity ratings (High/Avg/Low).
+*   **Usage:** FPA is often used in public projects to estimate costs based on user functional requirements.
+
+---
+
+### 2. Man/Month (MM) Method
+
+MM measures labor consumed based on similar project experience to calculate cost.
+
+#### A. Project Development Cost Components
+
+*   **Formula:** Project Development Cost = Direct Labor Cost + Overhead Cost + Royalty + Direct Cost
+
+#### B. Cost Breakdown
+
+1.  **Direct Labor Cost:**
+    *   **Definition:** Cost of manpower directly assigned to work packages (lowest unit of WBS).
+    *   **Calculation:** Determined by multiplying required labor by unit price per labor (e.g., average wage of a software engineer published by industry associations).
+2.  **Overhead Cost:**
+    *   **Definition:** Indirect expenses for administrative operations (planning, management, general affairs).
+    *   **Calculation:** Usually **110% to 120%** of the direct labor cost.
+3.  **Royalty:**
+    *   **Definition:** Payment for using technology developed and owned by the software developer.
+    *   **Calculation:** Usually **20% to 40%** of the sum of Direct Labor Cost + Overhead Cost.
+4.  **Direct Cost:**
+    *   **Definition:** Expenses directly required for software development.
+    *   **Examples:** Royalties for computer systems/software tools, professional fees, travel, materials.
+
+#### C. Usage
+
+*   Commonly used in **private projects** to calculate development costs.
+*   Can be used for **mutual verification** with FPA.
+
+---
+
+### 3. COCOMO (Constructive Cost Model)
+
+COCOMO is a software project cost estimation method using regression formulas with parameters like development period, man-months, and maintenance costs.
+
+#### A. Types of COCOMO Models (by calculation complexity)
+
+1.  **Basic:** Simplest, for early estimations.
+2.  **Intermediate:** More detailed, includes cost drivers.
+3.  **Detailed:** Most comprehensive, includes phase-dependent cost drivers.
+
+#### B. Types of Applied Projects (by project characteristics)
+
+1.  **Organic Mode:** Relatively small, simple projects with experienced teams working in a stable environment.
+2.  **Semi-Detached Mode:** Medium-sized projects, mix of experienced and inexperienced personnel.
+3.  **Embedded Mode:** Complex projects, tightly constrained hardware/software, often in a novel environment.
+
+#### C. Basic COCOMO Calculation Method
+
+*   **Effort Applied (E):** Estimated man-months required.
+    *   **Formula:** E = a * (KLOC)^b
+    *   **KLOC (Kilo Line Of Code):** Estimated number of delivered lines of code in thousands.
+    *   `a` and `b` are coefficients that vary by project type (Organic, Semi-Detached, Embedded).
+*   **Development Time (D):** Estimated time to complete the project.
+    *   **Formula:** D = c * (Effort Applied)^d
+    *   `c` and `d` are coefficients that vary by project type.
+*   **People Required (P):** Average staff size.
+    *   **Formula:** P = Effort Applied / Development Time
+
+*   **Intermediate & Detailed COCOMO:** Use the same core formulas but modify coefficient values and incorporate additional cost drivers for more accuracy.
+
+---
+
+### 4. COCOMO 2 (Constructive Cost Model 2)
+
+COCOMO 2 is an improved version of COCOMO, adapted for modern development environments by considering factors like code reusability and component-based development.
+
+#### A. Sub-Models of COCOMO 2
+
+1.  **Application Composition Model:**
+    *   **Application:** Projects using GUI/CASE tools for software prototyping.
+    *   **Estimates based on:** Component count, complexity, object points.
+2.  **Early Design Model:**
+    *   **Application:** Used for approximate cost/schedule estimation in the **early design stage** when detailed information is limited.
+    *   **Used when:** Insufficient details on scale, environment, manpower, and process.
+3.  **Post-Architecture Model:**
+    *   **Application:** Used after architecture is established and sufficient data is available.
+    *   **Estimates based on:** Unadjusted function points and SLOC (Source Line Of Code) after the software life cycle establishment.
+
+---
+
+### 5. Cost Management Technique - Earned Value Management (EVM)
+
+EVM is a project performance management technique that integrates project schedule and cost to analyze performance and predict final project cost and schedule.
+
+#### A. Concept of Earned Value
+
+*   **Value:** Monetary worth of work, equivalent to the budgeted cost allocated to the work.
+*   **Earned Value (EV) / Budgeted Cost of Work Performed (BCWP):** The value of the work *actually* completed at a given point in time.
+
+#### B. Key Terms of EVM
+
+| Term | Explanation                                                                                                 | Formula / Interpretation                                   |
+| :--- | :---------------------------------------------------------------------------------------------------------- | :--------------------------------------------------------- |
+| **PV** | **Planned Value:** The approved (planned) budget for work scheduled to be completed by a given date.        |                                                            |
+| **EV** | **Earned Value:** The budgeted cost of the work actually performed.                                         |                                                            |
+| **AC** | **Actual Cost:** The costs actually incurred for the work completed to date.                                |                                                            |
+| **SV** | **Schedule Variance:** Measures actual progress against expected progress.                                  | **SV = EV - PV** <br/> > 0: Ahead of schedule <br/> < 0: Behind schedule |
+| **SPI** | **Schedule Performance Index:** Ratio of work earned to work planned.                                       | **SPI = EV / PV** <br/> > 1: On or ahead of schedule <br/> < 1: Behind schedule |
+| **CV** | **Cost Variance:** Measures actual cost against the budgeted cost for work performed.                       | **CV = EV - AC** <br/> > 0: Under budget <br/> < 0: Over budget |
+| **CPI** | **Cost Performance Index:** Ratio of work earned to actual cost.                                            | **CPI = EV / AC** <br/> > 1: On or under budget <br/> < 1: Over budget |
+
+#### C. EVM Graph Interpretation
+
+*   A typical EVM graph plots Cumulative Cost (AC, PV, EV) against the Project Schedule.
+*   **SV** is the vertical distance between EV and PV.
+*   **CV** is the vertical distance between EV and AC.
+*   If EV is below PV, the project is behind schedule (SV < 0).
+*   If EV is below AC, the project is over budget (CV < 0).
+
+#### D. Estimate At Completion (EAC)
+
+*   **Definition:** The estimated total cost of the project at its completion.
+*   **Formula:** EAC = Actual Cost (AC) + Estimate To Complete (ETC)
+*   **ETC (Estimate To Complete):** The estimated cost of the remaining work.
+
+#### E. Methods to Calculate ETC
+
+1.  **Using CPI:**
+    *   Assumes future work will be completed at the same cost performance as past work.
+    *   **Formula:** ETC = (Budget at Completion (BAC) - Earned Value (EV)) / Cost Performance Index (CPI)
+2.  **Applying Original Budget without Change:**
+    *   Assumes remaining work will be completed as originally budgeted.
+    *   **Formula:** ETC = (Budget at Completion (BAC) - Earned Value (EV))
+3.  **New Estimate:**
+    *   Used when past performance is irrelevant, and a new, detailed estimate for the remaining work is created.
+    *   **Formula:** ETC = New estimate for the remaining work
+
+---
+
+================================================================================
+ORIGINAL TEXT (First 5000 chars)
+================================================================================
+
+--- Page 109 ---
+ESSENCE
+@ Determination  of Adjusted  Function  Points
++ When the value adjustment  factor (VAF) is determined,  the final adjusted  FP is calculated  by reflecting  the
+VAF according  to the development/enhance  /application  type
++ Adjusted  FP Count = Unadjusted  FP Count x VAF
+Function  Point Analysis  (FPA) is largely divided into Estimated  FPA and Detailed  FPA. In the development
+proposal  stage, cost is calculated  using the average  values of El/EO/EQ  and ILF/EIF, while the cost is calculated
+using the traditional  method  after the stage of demand  analysis  and design.
+Function  Point Analysis
++ Based on weighted  average  complexity  rating + High/Avg/Low  complexity  determined
++ Applied  to the planning  and acquisition  stages + Applied  after the design stage
+[Figure 37] Function  Point Analysis  Method
+In recent practice,  in the case of public projects,  cost estimation  is carried out focusing  on user's functional
+requirements  by utilizing  the FPA.
+B) Man/Month  (MM)
+Man/Month  is a method  of measuring  how much labor is consumed  in a project based on previous  experience
+in similar  projects,  and calculating  the cost based on the manpower  put into the project.
+Project  development  cost = direct labor cost + overhead  cost + Royalty+  direct cost
+Generally,  required manpower  resources  are allocated  for each work package,  the lowest unit of the WBS
+derived  from scope management.
+@ Direct Labor Cost
+When the required  labor is allocated  for each work package,  the unit price per labor must be determined.  In the
+case of Korea, the average  wage of a software  engineer  published  by Korea Software  Industry  Association  is
+applied,  which is determined  by referring  to the table below.
+<Table 47> Average  Wage for SW Engineers  in 2017
+Classification Average  Wage (M/M) Average  Wage (M/H)
+Engineer 9,414,309 56,576
+Principal  Engineer 8,134,214 48,884
+Senior Engineer 6,351,342 38,169
+Intermediate  Engineer 4,981,725 29,938
+108 TOPCIT  ESSENCE
+
+
+--- Page 110 ---
+Project Management  and Technical  Communication  )
+Junior  Engineer 3,979,456 23,915
+Senior Technician 3,976,482 23,897
+Intermediate  Technician 3,296,592 19,811
+Junior  Technician 2,390,211 14,364
+Date Entry Operator 2,370,347 14,245
+@ Overhead  Cost and Royalty
+Overhead  cost is indirect expenses’  incurred in the areas of planning,  management,  and general affairs for the
+administrative operation  of the software  developer.  Usually, it is calculated  as 110 to 120% of the direct labor
+cost. Royalty  is an amount  paid in exchange  for the use and accumulation  of technology  developed  and owned
+by the software  developer,  and it is calculated  as 20 to 40% of the sum of direct labor cost plus overhead
+cost?
+@ Direct Cost
+Direct cost refers to expenses  directly required  for software  development,  such as royalties  for computer
+system or software  tools, software,  professional  expenses,  travel expenses,  and materials  costs, etc. directly
+incurred  for the software  development  project.
+In the field of private projects,  the man month calculation  is used to calculate  project development  cost,
+and also for mutual verification  interchangeably  with the function  point analysis,  which has recently become
+mandatory  in public projects.
+C) COCOMO(Constructive  Cost Model)
+COCOMO  is one of the estimation  methods  of the cost of a software  development  project. It calculates  the
+cost by using a regression  formula  with parameters  such as development  period, man per month, and mainte-
+nance costs that are put into the modules  and subsystems  that make up the system.
+COCOMO  is divided into three types: Basic, Intermediate,  and Detailed,  depending  on the complexity  of the
+calculation  model. In addition,  it is divided into three types: Organic  Mode, Semi-Detached  Mode, and Embed-
+ded Mode, according  to the type of applied project. Each is calculated  by taking into account  the effort, devel-
+opment  time, average  staff size and productivity.
+A brief look at the COCOMO  calculation  method  is as follows:
+Case of the Basic COCOMO  model
+@ Effort Applied)  E = a * (KLOC)  >
+*aand  b are coefficients  by project  type (see table below)
+* KLOC (Kilo Line Of Code) is the estimated  number  of delivered  lines of code in thousands
+8 BH
+ SWAT!
+ CH7EAPS
+ ZFOLE
+ 201714
+ 7HagEE
+9 BH
+ SWAT!
+ CH7EAPS
+ ZFOLE
+ 201714
+ 7HAgEE
+M6 Project  Management  and Technical  Communication  109
+
+
+--- Page 111 ---
+ESSENCE
+@ Development  Time) D = c * (Effort Applied)  4
++c and dare coefficients  by project  type (see table below)
+@ People Required)  P = Effort Applied  / Development  Time
+<Table 48> Coefficients  by Project  Type
+Project  Type a b G d
+Organic 24 1.05 25 038
+Semi-Detached 3.0 1.12 25 0.35
+Embedded 3.6 1.2 25 0.32
+The Intermediate,  and Detailed  COCOMO  models  are calculated  by changing  the coefficient  values in the table
+above.
+D) COCOMO  2(Constructive  Cost Model 2)
+COCOMO...

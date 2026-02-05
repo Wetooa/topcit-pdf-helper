@@ -1,0 +1,204 @@
+LEARNING GUIDE: Pages 127-131
+Generated: 2025-12-07 00:50:46
+PDF: 6 - Project Management & Technical Communication OCR
+
+================================================================================
+LEARNING GUIDE
+================================================================================
+
+## Learning Guide: Software Process & Risk Management
+
+This guide distills essential information from the original text (Pages 127-131) into an easy-to-study format.
+
+---
+
+### Section 1: Software Process Audit & Certification Systems
+
+Software process audit and certification systems evaluate an organization's software development capabilities and maturity.
+
+#### 1.1 Comparison of Major Systems
+
+| Feature              | **SP Certification (Korea)**                    | **CMMI (Overseas - US)**                       | **SPICE (Overseas - International)**          |
+| :------------------- | :---------------------------------------------- | :--------------------------------------------- | :-------------------------------------------- |
+| **Organizer/Standard** | Ministry of Science and ICT (Domestic)          | CMU/SEI (Market Standard)                      | ISO/IEC (International Standard)              |
+| **Characteristic**   | Organizational maturity assessment              | Organizational maturity assessment             | Process maturity assessment                   |
+| **Model Type**       | Staged model                                    | Staged, Continuous model                       | Continuous model                              |
+| **Rating Levels**    | 3 levels (1-3)                                  | 5 levels (1-5)                                 | 6 levels (0-5)                                |
+| **Process Focus**    | Project, development, support, organizational   | Process, Project, Engineering, Support         | Depends on Process Reference Model (PRM)      |
+| **Appraisal Method** | SW process quality certification                | SCAMPI A                                       | SPICE compatibility                           |
+| **Appraisal Target** | Document & Interview                            | Document & Interview                           | Document & Interview                          |
+| **Validity Period**  | 3 years                                         | 3 years                                        | Unlimited                                     |
+| **Auditor**          | Senior auditor (internal/external)              | Senior auditor (external)                      | Senior auditor (external) + auditor (external) |
+| **Cert. Subject**    | Companies with senior auditors                  | LTC (Lead Appraiser)                           | LTC, INTACS, IntRSA                           |
+
+#### 1.2 SPICE (ISO 15504)
+
+*   **Definition:** A model that evaluates the software lifecycle across two dimensions to measure an organization's software process maturity and improvement capability.
+*   **Process Groups (Characteristics):**
+    *   **Primary Process (CUS - Customer-Supplier):** Acquisition, supply, demand creation, and operation between customers and suppliers.
+    *   **Engineering Process (ENG):** System and software development, maintenance.
+    *   **Supporting Process (SUP):** Documentation, configuration management, quality assurance, verification/validation, audit.
+    *   **Management Process (MAN):** Project management, risk management.
+    *   **Organizational Process (ORG):** Organizational improvement, manpower management, measurement tools, and reuse.
+
+---
+
+### Section 2: Project Risk Management
+
+#### 2.1 Introduction & Importance
+
+*   **Trends:** Systematic and effective risk management is crucial for sustainable business growth and successful project completion.
+*   **Business Impact:** Company survival can depend on managing potential large losses from unexpected risks.
+*   **Implementation:** Requires enterprise-level guidelines, continuous effectiveness measurement, and integration with policies, processes, roles, systems, and culture, rather than being a one-time or departmental effort.
+
+#### 2.2 Key Concepts & Definitions
+
+*   **Project Risk:** An uncertain event or condition that, if it occurs, has a positive or negative effect on project objectives (e.g., scope, schedule, cost, quality).
+*   **Risk Management:** The process of defining how to manage risks in a project, including identifying risk levels, types, and their potential impacts.
+
+#### 2.3 Types of Risks
+
+| Feature                 | **Known Risk**                                      | **Unknown Risk**                                      |
+| :---------------------- | :-------------------------------------------------- | :---------------------------------------------------- |
+| **Concept**             | Can be identified in advance.                       | Cannot be identified in advance.                      |
+| **Reserve Allocation**  | **Contingency Reserve:** Allocated per work package; managed by project. | **Management Reserve:** ~10% of total project cost; managed by senior management outside the project. |
+| **Reserve Calculation** | Expected value of probability & impact.             | Percentage of total budget.                           |
+| **Countermeasure**      | Establish and execute a specific risk response plan. | Ad-hoc (as needed).                                   |
+
+#### 2.4 Risk Management Process Overview
+
+Generally carried out in four stages:
+
+1.  **Risk Identification:** Primary risk recognition, categorization, profiling.
+2.  **Risk Analysis:** Evaluate based on probability and impact; assess financial/organizational response.
+3.  **Risk Response:** Plan actions to avoid, mitigate, transfer, or accept risks.
+4.  **Risk Control:** Observe risk response, ongoing assessment, early warning system.
+
+#### 2.5 Risk Response Strategies (Summary from Learning Objectives)
+
+*   **Negative Risks (Threats):**
+    *   **Avoid:** Eliminate the threat or protect the project from its impact.
+    *   **Transfer:** Shift the responsibility for the risk and its impact to a third party.
+    *   **Mitigate:** Reduce the probability or impact of the risk.
+    *   **Acceptance:** Acknowledge the risk and decide not to take any action unless it occurs.
+*   **Positive Risks (Opportunities):**
+    *   **Exploit:** Maximize the probability or impact of an opportunity.
+    *   **Share:** Allocate ownership of an opportunity to a third party who is best able to capture the benefit.
+    *   **Enhance:** Increase the probability or impact of an opportunity.
+    *   **Acceptance:** Acknowledge the opportunity and decide not to take any action to pursue it.
+
+#### 2.6 A) Risk Identification
+
+*   **Purpose:** To find and document potential risks that may affect the project as early as possible.
+*   **Key Actions:**
+    *   Prioritize legally binding elements (contract scope, schedule).
+    *   Cross-check contracts, proposals, and project execution plans for omissions (omissions can violate acceptance criteria).
+*   **Methods:**
+    *   **Documentation Reviews:** Examine plans, assumptions, previous project files, contracts.
+    *   **Information Gathering Techniques:** Brainstorming, Delphi Technique, interviews, root cause analysis.
+    *   **Checklist Analysis:** Use precedents, accumulated knowledge from similar projects, or a Risk Breakdown Structure (RBS).
+    *   **Assumption Analysis:** Evaluate the validity of project assumptions for inaccuracy, instability, inconsistency, or incompleteness.
+    *   **Diagramming Techniques:** Use visual aids like Cause and Effect Diagrams, System/Process Flow Diagrams, or Interrelationship Diagrams.
+    *   **SWOT Analysis:** Investigate Strengths, Weaknesses, Opportunities, and Threats to expand the scope of identified risks, including internal ones.
+    *   **Expert Judgment:** Obtain input from experts with similar project or business experience.
+*   **Risk Register:**
+    *   **Key Output:** A document used to record, track, and manage identified risks systematically.
+    *   **Content:** Includes risk ID, item, probability, impact, exposure, priority, countermeasure, and manager.
+    *   **Usage:** Identified risks are registered, then analyzed (qualitative/quantitative) to prioritize for response planning.
+
+#### 2.7 B) Risk Analysis: Qualitative Risk Analysis
+
+*   **Purpose:** To qualitatively assess the impact of a risk on the project and prioritize risks based on their probability and impact.
+*   **Probability-Impact Matrix:** A technique to evaluate and display the probability of a risk's occurrence and its impact on project objectives in a matrix format.
+    *   **Risk Level Calculation:** Risk Level = Probability of Occurrence (P) × Degree of Impact (I).
+    *   **Scales (Example):**
+        *   Probability: Very low (0.1) to very high (0.9).
+        *   Impact: Very low (0.1) to very high (0.8).
+    *   **Prioritization:** The calculated risk levels are then ranked (e.g., low, moderate, high) to determine risk prioritization.
+
+================================================================================
+ORIGINAL TEXT (First 5000 chars)
+================================================================================
+
+--- Page 127 ---
+ESSENCE
+<Table 61> Comparison  of Domestic  and Overseas  Software  Process  Audit and Certification  Systems
+Classification SP Certification  (Korea) CMMI (Overseas) SPICE (Overseas)
+; . . Software  EngineeringOrganizer Ministry  of Science  and ICT Institute  (CMU/SEl) ISO/IEC
+Operation  and NIPA SW EngineeringManagement Center SEI, CMMI Institute ISO/IEC  JTC1 SC7 WG10
+Domestic  standard Market  standard  (US) International  standard
+Certifi- Characteristic Organizational  maturity Organizational  maturity Process  maturityae assessment assessment assessment
+Institute Staged model Staged,  Continuous  model Continuous  model
+Rating (level) Three levels (Level 1-3) Five levels (Level 1-5) Six levels (Level 0-5)
+Project  management,
+Process development,  support, Process  Management, Depends  on the Process
+Classification organizational Project Management, Reference  Model (PRM)management,  process Engineering,  Support
+improvement
+Appraisal SW process  quality fMethod certification SCAMPI A SPICE compatibility
+Certifi- Appraisal
+cation Target . . . .Method (Type of Document  and interview Document  and interview Document  and interview
+evidence)
+Validity  Period Three years Three years Unlimited
+; Fi Senior auditor  (internal/ .
+a. Senior  auditor - Senior  auditor
+Auditor (external)+auditor(external)  external) ino oD (mostly (external)+auditor(external)
+Certifi- Audit and we Companies  that have secured
+cation Certification Certification  institution senior auditors LTC
+Subject Training andig an aa .
+Specialized  institution :
+Management (NIPA SW Engineering Software Engineering LTC, INTACS, IntRSAof Senior Center) Institute  (CMU/SEl)
+Auditor
+© SPICE(ISO15504)
+It is a model that evaluates  the software  life cycle in two dimensions  as a measure  of the organization's
+software  process  maturity  and improvement  capability.
+<Table 62> Characteristics  of SPICE
+Explanation Process Group
+_ Acquisition,  supply,  demand  creation, and operation
+Primary Process Cus{Customer-Supplier) between customers  and suppliers
+ENG(Engineering) System  and software  development,  maintenance,  etc.
+; Documentation,  configuration  management,  quality
+Supporting  Process SUP(Support) assurance,  verification  and validation, audit
+MAN(Management) Project  management,  risk management
+Organizational Organizational  improvement  activities,  organizational
+Process ORG(Organization) manpower  management,  measurement  tools and
+reuse
+126 TOPCIT  ESSENCE
+
+
+--- Page 128 ---
+Project  Management  and Technical  Communication
+>> Recent  Trends  and Major Issues
+Amidst the changing  business  environment,  systematic  risk management  and effective  risk
+management  capability  is a new buzzword  in business  management.  The level of expectations  and
+demands  for risk management  is on the rise, and it must be managed  in an integrated  manner  for
+sustainable  business  growth.  At the project level, it is essential  to preemptively  identify  and respond
+to any risk that could have an impact  on the project  for its successful  completion.
+>> Learning  Objectives
+1. To be able to describe  the concept  of risk and risk management  process.
+2. To be able to describe  risk management  process  using risk response  strategies.
+>> Concept  summary
++ Risk management  process: risk management  planning,  risk identification,  qualitative  risk analysis,
+quantitative  risk analysis,  risk response  planning,  risk control
++ Negative  risk response  strategy:  Avoid, Transfer,  Mitigate,  Acceptance
++ Positive  risk response  strategy:  Exploit,  Share, Enhance,  Acceptance
+M6 Project  Management  and Technical  Communication  127
+
+
+--- Page 129 ---
+ESSENCE
++ Preview  for practical business
+Risk management  is a very attractive  business  management  technique considering  that the very
+survival of a company  depends  on potential  large losses caused by unexpected  risks. For the
+activation  and effective  application  of risk management,  an execution  guideline  that reflects the
+characteristics  of the company  must be established,  and its effectiveness  must be continuously
+measured  to manage performance,  and risk management  process must be established  at the
+enterprise  level, rather  than at the individual  department  level.
+It must not be a one-time  project and should be done organically  in consideration  of policies,
+management  processes,  definition  of related roles and responsibilities,  support  systems  and culture,
+etc.
+01 Concept  of Risk Management
+Project risk refers to a situation  in which uncertain  events or conditions  occur that negatively  or positively
+affect project  goals, such as scope, schedule,  cost, and quality.
+Risk management  is a process that defines how to manage risks occurring  in such  a project, is an activity
+in which the level and type of risk management,  and risks and their impacts  are identified  by the project
+organization.  The types of risk are as follow...

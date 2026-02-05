@@ -1,0 +1,166 @@
+LEARNING GUIDE: Pages 139-141
+Generated: 2025-12-05 14:31:24
+PDF: 1 - Software Development OCR
+
+================================================================================
+LEARNING GUIDE
+================================================================================
+
+Here is a simplified, easy-to-read learning guide based on the provided text:
+
+---
+
+# Software Development & Architecture Trends Learning Guide
+
+## I. Programming Language Updates & Trends
+
+### A. Java 9
+A significant update to the Java language.
+*   **Key Features:**
+    *   **Modularization:** Optimizes Java for small devices, improves scalability and performance.
+    *   **Ahead of Time (AOT) Compilation:** Compiles code *before* execution, reducing application startup time.
+    *   **REPL (Read-Eval-Print Loop):** Allows real-time feedback on code without full compilation.
+
+### B. Kotlin
+A functional programming language developed by JetBrains (creator of Android Studio). Adopted by Google as the official language for Android in 2017.
+*   **Key Features:**
+    *   Optimal for Android development: Simple yet high-performance.
+    *   Compatible with existing Android APIs; enables concise syntax.
+    *   Similar to Java, making it easy for Java developers to learn.
+
+### C. Swift
+Developed by Apple for its platforms (iOS, macOS, watchOS, tvOS) to enable easier and faster application development.
+*   **Key Features:**
+    *   Simple coding process, leading to excellent performance.
+    *   Interactive and easy to understand.
+
+## II. Technology Trends of Development Frameworks & Software Architecture
+
+### A. Software Development Tools
+
+#### 1. Angular4
+A JavaScript framework developed by Google, primarily used for Single-Page Applications (SPAs).
+*   **Single-Page Application (SPA):** A web application that loads a single HTML page and dynamically updates content, offering a responsive user experience without full page reloads.
+*   **Key Features:**
+    *   Built with TypeScript 2.1, suitable for small applications.
+    *   Supports program logic and backend binding, making it more than a static web page framework.
+
+#### 2. React
+A JavaScript library created by Facebook for developing user interfaces, especially for large-scale applications with frequent page updates.
+*   **Key Features:**
+    *   **JSX (JavaScript XML):** Allows writing markup code directly within JavaScript using an extended syntax.
+    *   **Component-based:** Supports building UIs from independent, reusable view units called components.
+    *   **Virtual DOM:** Enables efficient data processing by using a virtual representation of the UI.
+
+#### 3. Express.js
+A small, flexible web application framework for Node.js, designed to speed up web development.
+*   **Node.js:** An event-based backend server development language that uses Google Chrome's V8 JavaScript engine.
+*   **Key Features:**
+    *   Processes dynamic HTML pages based on template parameters.
+    *   Uses a **middleware structure** written in JavaScript, allowing developers to combine only necessary functions.
+
+### B. Software Architecture
+
+#### 1. Microservice Architecture
+A design approach that breaks down a large application into several small, independent services. Each service has its own data repository and execution environment.
+*   **Benefits:** Facilitates independent development, build, test, deployment, monitoring, routing, and scaling for each service. Allows prompt response to business changes, quick deployment, and easy modifications.
+*   **Key Features:**
+    *   High development productivity due to small, independent service units.
+    *   Flexible deployment: Services can be deployed independently, not as a whole.
+    *   Elaborate system expansion: Units can be expanded independently for precise scaling.
+
+#### 2. Docker
+An open-source platform that automates **Linux Container (LXC)** technology. It provides independent, isolated environments similar to virtual machines but much lighter.
+*   **Linux Container (LXC):** A lightweight virtualization technology that allows multiple isolated Linux systems to run on a single host.
+*   **Key Features:**
+    *   Simplifies packaging, distributing, and managing applications using containers.
+    *   Uses **images:** Packages that include all files and settings needed for container execution.
+    *   Enables simple and fast development configuration, independent of infrastructure requirements.
+    *   Supports multiple cloud platforms.
+
+---
+
+================================================================================
+ORIGINAL TEXT (First 5000 chars)
+================================================================================
+
+--- Page 139 ---
+ESSENCE
+development.  The newly released  Java 9 includes  about 90 new features.
++ Key features  of Java 9
+- Increased  modularization  enables  optimization  in small devices,  and the scalability  and performance  of Java
+have been improved.
+- The Ahead of Time (AOT) compilation  function,  which compiles  the code before execution  in a virtual
+system,  reduces  the startup  time of the application  program.
+- REPL (Real Eval Print Loop) is supported,  which enables  the reception  of feedback  on the program  before
+compilation.
+@ Kotlin
+Kotlin is a functional  programming  language  developed  by JetBrain,  the creator  of Android Studio. It quickly
+gained in popularity  after Google adopted  it as the official programming  language  for Android in 2017. Kotlin
+provides  an optimal environment  for application  development  based on Android,  as it is simple yet offers
+excellent  performance.
++ Key features  of Kotlin
+- Compatible  with the existing  Android  APIs, and an app can be developed  using concise  syntax.
+- Very similar  to Java, thus allowing  Java developers  to use Kotlin quickly  and easily.
+@ Swift
+Swift was developed  by Apple to support  application  development  for its products  such as iOS, macOS,
+watchOS,  and tvOS. It was designed  to support  easier  and faster development  on its platform.
++ Key features  of Swift
+- Easy to develop  an app owing to the simple coding process,  while providing  excellent  performance.
+- Interactive  and easy to understand.
+O2 Technology  Trends of the Development  Framework  and Software
+Architecture
+A) Technology  trends of software  development  tools
+@ Angular4
+Angular4  was developed  by Google,  and uses the JavaScript  framework  for maintenance.  Angular4  is used for
+single-page  application  programs  and responds  to user requests  quickly by extending  the HTML DOM.
+Angular  is a single page application  (SPA) framework,  which means that a view page can be retrieved  and
+used dynamically  without  having  to change  the address  of the page when executing  the web page.
++ Key features  of Angular4
+- Created  using TypeScript  2.1, which is helpful when making  a small application.
+138 TOPCIT  ESSENCE
+
+
+--- Page 140 ---
+Software  Development )
+- Supports  program  logic and the backend  binding  function,  and is not a simple static  web page.
+@ Reacts
+React is a JavaScript  library created  by Facebook  to develop  the Facebook  web. Like Backbone,js  and Angular,
+React provides  a web front framework  needed for developing  an app. React is useful when building  a large-
+scale application  that changes  web pages frequently.
++ Key features  of React
+- Supports  the writing  of the markup  code in JavaScript  using extended  JavaScript  syntax,  which enables  the
+existing  XML called JSX (JavaScript  XML).
+- Supports  components  in individual  view units that constitute  the user interface.
+- Allows  data processing  using the Virtual DOM.
+@ Express,s
+Express  is the web application  framework  of Nodejs,  which is small and flexible and provides  optimal  features
+needed to develop  a web or application.  Express  supports  fast web development  for Node  js.
+Node js is a back-end  server development  language  based on events, which uses the JavaScript  engine of
+Google’s  Chrome  V8.
++ Key features  of Express
+- Enables processing  of the dynamic  view of HTML pages depending  on the parameters  passed to the
+template.
+- Combines  necessary  functions  only by supporting  a middleware  structure  written  in JavaScript  code.
+B) Technology  trends  of software  architecture
+@ Microservice  architecture
+The microservice  architecture  allows  independent  development,  build, test, deployment,  monitoring,  routing,
+and extension  for each service, by dividing  one large application  into several small services  and creating  an
+individual  data repository,  and by creating  an independent  execution  environment.
+Prompt  response  to rapid business  changes,  deployment  within a short period of time, easy improvement  and
+modification  are all possible.
++ Key features  of the microservice  architecture
+- Development  productivity  is high as a service is divided into small units and developed  independently.
+- Flexible  deployment  in units rather  than deployment  of the whole set.
+- Asystem  can be expanded  elaborately  by expanding  the units independently.
+@ Docker
+Docker is an open-source  platform  that automates  the Linux container  (LXC) technology,  which provides
+an independent  and isolated space like a virtual machine,  for ease of use. A company  called Dot Cloud
+(now Docker) has started providing  technical  support  for the first time, while Google is preparing  Docker
+configuration  for enterprises  by implementing  an open source project  called “Kubernetes”.
+M1 Software  development  139
+
+
+--- Page 141 ---
+ESSENCE
+Docker can create a virtualization  environment  that is much lighter than hyp...

@@ -1,0 +1,38 @@
+ESSENCE
+E) Quantum  cryptography
+Quantum  cryptography  is a cryptographic  technology  that utilizes the characteristics  of mechanics.  Unlike
+existing  cryptosystems  that are based on mathematical  complexities,  quantum  cryptography  is based on
+the characteristics  of quantum.  A quantum  cannot be copied or returned  to its original state. Due to these
+properties,  the receiver  can detect an eavesdropping  attempt  when a third party measures  the quantum  for
+eavesdropping  because  its state is changed  if measured.
+F) Trusted  Platform  Module  (TPM)
+The trusted platform  module (TPM) is a standard  established  by the TCG (Trusted  Computing  Group), an
+international  industry  standard  organization,  to overcome  the limitations  of security  technology  that only
+operates  with software.  This module provides  a strong security  environment  that stores important  data
+that requires  security  in a secure space separated  by hardware,  such as the encrypted  key, password,  digital
+certificate.  It ensures  that key management,  encryption  processing,  etc., are only handled inside the security
+device.  The latest TPM 2 was released  in September  2016, which includes  the Mobile  Trusted  Module  (MTM).
+G) Re-identification
+De-identification  is the process or method of converting  data in such way that an  individual  cannot  be
+identified.  Re-identification  is the process  or method of identifying  an individual  from the de-identified  data
+by combining,  analyzing,  and processing  it with other information.  Personal  information  may be disclosed,  due
+to intentional  or accidental  re-identification,  while collecting  information  from SNS or websites,  like search
+engines,  or while companies  that handle personal  information,  such medical and financial institutions,  are
+analyzing  data. Recently,  as big data is being used in various  fields, there is concern  that personal  information
+may be leaked indiscriminately  due to re-identification.
+H) EU-GDPR
+EU-GDPR  is the personal  information  protection  law of the EU (European  Union) that took effect from May
+25, 2018. Since administrative  measures,  such as penalties,  may be imposed  if the law is violated,  Korean
+companies  need to pay attention so as not to violate  this law. The EU has enacted  the General  Data Protection
+Regulation  to protect personal  information  and to provide opportunities for the utilization  of personal
+information  at the same time, using the concept  of general personal  information,  anonymous  information,  and
+pseudonym  information.
+Major changes  to the GDPR are as follows:
+@® Enforcement  regulation  (imposition  of penalties)
+Whereas  the previous  EU Directives  were the regulation  at the recommendation  level, the GDPR is quite
+different,  in that it is a mandatory  regulation  that all member  states must comply  with. (Penalties  are imposed
+if violated.)
+@ Extra-territorial  scope
+The GDPR applies not only to the company  operating  a business  site in the EU, but also to the companies  that
+process  the personal  information  of EU residents  in overseas  countries  through  e-commerce,  etc.
+20 TOPCIT  ESSENCE

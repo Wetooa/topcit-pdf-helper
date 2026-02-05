@@ -1,0 +1,42 @@
+Project Management  and Technical  Communication  )
+The scope is “the sum of products  and services provided  through  the project”  and means the range of work
+or the work itself required  to successfully  complete  the project. The scope is divided into project scope and
+product  scope.
++ Scope = project  scope + product  scope
+Project scope refers to all the work required  to create products,  services,  and outputs  of specified  features
+and functions.  The product  range refers to the features  and functions  of the product  distinguished  from other
+products,  services,  and outputs.  The project scope is about how products  and services  are provided,  that is,
+the HOW aspect, and the product  range is about the product  and service itself, that is, the WHAT aspect. The
+criteria for determining  whether  the scope is complete  differs for each project scope and product  scope. The
+completion  of the project scope is measured  based on the project plan, and the completion  of the product
+scope is measured  based on the product  requirements.
+B) Scope management  process
+The scope management  process proceeds  in the order of scope management  planning,  requirements  collec-
+tion, scope definition,  work breakdown  system  (WBS) formation,  scope validation,  and scope control.
+@® Scope Management  Planning
+* Concept  of Scope Management  Planning
+Project scope refers to tasks necessary  for project execution  in order to deliver products  and services,  which
+are the final products  of the project, to customers,  and project scope management  is a process  to develop  a
+project  scope management  plan to define, confirm,  and control the project  scope.
++ Project  Scope Management  Plan
+The project scope management  plan defines  the process  to be carried out by the project stage and the level
+of execution  of each process. The main items of the project scope management  plan are as follows, and the
+scope plan should be shared between  the client and the service provider.
++ A procedure  to describe  project  scope
++ How to formulate  Work Breakdown  System(WBS)
++ Verification  and validation  criteria  for outputs  to be delivered  to customers
++ Explanation  on the format  and procedure  to request  for scope change
+@ Collect  Requirements
+In a project on the ground, it is important  to find out what the customer  needs and why they think they
+need it. The following  is an example  of the development  of an F-16  fighter  jet in the 1970s on why collecting
+requirements  is so important.
+At the time, the F-16 fighter aircraft  was required  to fly at a speed of Mach 2.5. However,  the  fighter  jet, by
+design, was not able to reach the speed above Mach 2. The designer  of the fighter  jet asked the U.S. Air Force
+to clarify the speed requirement  as to why and received  a response  from the U.S. Air Force that it was to
+improve  engagement  capabilities.  The designer  thought  that it would be possible  to improve  maneuverability
+rather than speed to enhance  engagement  capabilities,  and applied fly-by-wire,  integrated  canopy, digital
+avionics, etc., ultimately  meeting  the requirement  of “improving  engagement  capabilities’.
+On the other hand, there were cases of Soviet military  aircraft  at the time. Soviet  fighter  jets were required to
+be the fastest  in the world. The fighter  aircraft  built to fly at a speed of Mach 3.25 was too fast to be shot down
+from outside,  but as being too expensive,  short-lived  and poorly suited for combat,  it was retired early in 1980.
+M6 Project  Management  and Technical  Communication  85

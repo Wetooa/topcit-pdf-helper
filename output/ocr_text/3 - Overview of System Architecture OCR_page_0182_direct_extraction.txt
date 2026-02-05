@@ -1,0 +1,35 @@
+Overview  of System Architecture )
+UDP is usually referred to as a connectionless  service. However,  it does not mean that the service is performed
+without  a connection,  but that the pre-configuration  process  for connection  is omitted,  and that data can be sent
+and received  immediately.  On the other hand, TCP is a connection-oriented  service and requires  a pre-configuration
+process  to connect  before sending  and receiving  data. The connection  is terminated  in order to end the service
+between  the client and server  after completing  the data transmission  and reception.
+Reliability  is a factor mentioned,  along with the concept  of connection-orientation,  when referring  to TCP and
+UDP. UDP is generally  considered  an unreliable  protocol,  and TCP is considered  to provide reliable interprocess
+communication.  TCP uses an acknowledgment  technique  that uses a sequence  number  and an acknowledgment
+number  to check whether  the receiving  side has properly  received  the transmitted  data.
+02 TCP
+A) Characteristics  of TCP
+TCP is positioned  between  the application  layer and the network  layer in a TCP/IP  model and provides  communication
+between  the application  layer processes.  TCP is a stream-based  protocol  and has the transmission  buffer and the
+reception  buffer to transfer  data. IP at the lower layer of the TCP protocol,  transmits  data in a packet  format, rather
+than a stream format, by partitioning the data into several segments.  Flow control, error control, and congestion
+control techniques  are defined  to reliably  deliver  data. TCP is numbered  in units of bytes. When a byte is numbered,  a
+sequence  number  is assigned  to the segment.  The maximum  value must be set for a header  to include  the sequence
+number  of each packet. If m bits are set for the sequence  number  in the packet  header,  the sequence  number  ranges
+from 0 to 2m-1. The sequence  number  is modular  2m.
+@ Flow control
+Flow control controls  the packet  flow volume  to prevent  packet loss, due to packet inputs exceeding  the reception
+limit when transmitting  data packets.  The flow control uses transmission  and reception  buffers  that can store packets
+at the sending/receiving  sides, and the sizes of the sending/receiving  buffers are specified  in the files /proc/sys/net/
+core/wmem_max  and /proc/sys/net/core/rmem_max,  respectively  for Linux systems.
+@ Error control
+Error control  detects  code errors, that occur during transmission,  and reproduces  accurate  information.  It detects  and
+discards  damaged  packets,  tracks and resends  lost or removed  packets,  and checks and discards  duplicate  received
+packets.
+© Congestion  control
+Congestion  occurs when the network  load, representing  the number  of packets  transmitted  to the network  per unit
+time, exceeds  the network  capacity,  representing  the number  of packets  that can be processed  by the network  per
+unit time. In TCP. the congestion  control controls  issues, such as end-to-end  congestion,  and ensures  that the load is
+smaller  than the network  bandwidth.
+M3 Overview  of System  Architecture  181

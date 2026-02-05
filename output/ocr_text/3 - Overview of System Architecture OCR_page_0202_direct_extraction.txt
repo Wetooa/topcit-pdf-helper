@@ -1,0 +1,18 @@
+Overview  of System  Architecture
+>> Recent  trends and issues
+As high-speed  data transmission  becomes  possible  and various convergence  technologies  emerge,
+cutting-edge  technologies  are also appearing  in the network  field. With the advent of technologies  that
+guarantee  traffic quality in Internet  networks,  multimedia  and Internet  telephony  services have been
+launched.  In recent  years, Internet  of Things  (loT) network-based  technologies  are expanding  together  with
+standardization  organizations  and groups. Moreover,  software-based  networks,  that are differentiated  from
+the existing  network  structure,  are being introduced.  This chapter  discusses  the recent network  trends and
+major issues.
+>> Learning  objectives
+1. To be able to understand  the concept  of multimedia  networks  and Internet  telephony  and explain the related
+protocols.
+2. To be able to explain loT network-based  technologies,
+3, To be able to explain the concept  of software—-pased  networks,
+>> Keywords
+Lossless  compression,  lossy compression,  QoS, SIP, H.323, RTP RTSP, RTCP. IMS, CSCF, HSS, 3GPP, SDN,
+Openflow,  Control  plane, Data plane, NFV, Virtualization  function,  MQTT, CoAP
+M3 Overview  of System  Architecture  201

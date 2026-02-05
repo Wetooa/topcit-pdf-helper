@@ -1,0 +1,37 @@
+ESSENCE
+@ Six Sigma implementation  methodology
+The Six Sigma implementation  methodology  can be separated  into the design program  and the manufacturing
+program.  The design program  uses the DMADV  methodology,  while the manufacturing  program  uses the DMAIC
+methodology.  Another  characteristic  is that the design program  is focused  on preventing  errors and defects,  whereas
+the manufacturing  program  is focused  on reducing  defects  and preventing  recurrences.
+<Table  28> Six Sigma implementation  methodology
+Program Descriptioni
+| + The design program  is for designing  a process  that surpasses  the core requirements  and the customers’
+Design program expectations.  The design program is focused on preventing  errors and defects. It is suitable for
+(DMADV) developing  new products  or processes,  and for redesigning  existing products or processes.
+- (Define)  Establish  the goals of design activities  that satisfy  the requirements  put forth by users.
+- (Measure)  Select  factors  that impact  quality in a critical  way.
+- (Analyze)  Assess  the feasibility  of the design and conduct  analysis  for development  of the best design.
+- (Design)  Detailed  agenda,  optimize  design, and plan for design verification.
+- (Verify)  Activate  testing  of the design and verify the application  of the product  development  process.
+> > a> aa jaa»
++ The manufacturing  program  makes repetitive  improvements  while focusing  on reducing  defects  to the
+M : levels required  by manufacturing,  production  and mass production.  The manufacturing  program  alsoanufacturing . onprogram improves  existing  products  and processes.
+(DMAIC) - (Define) Define the problem,  set the goals, and estimate  CTQ(Critical  to Quality).
+~ (Measure)  Select theitems  for measurement,  establish  the method  of measurement,  and analyze  the
+current  status,
+- (Analyze)  Analyze  the causal relationship  of the identified  problem  and determine  the root cause.
+~ (Improve)  Derive  the optimal  method  for eliminating  the root cause and improving  manufacturing.
+- (Control)  Prevent  recurrence,  maintain  the improved  condition,  and analyze  the effects  of
+improvements.
+D) Understand  TRIZ
+© Overview  of TRIZ
+TRIZ is a systematic  methodology  for solving  the problem  of invention,  which was developed  in the Soviet Union by
+Genrich  Altshuler  In the 1940s, Genrich  Altshuller  worked  for the Soviet Navy as a patent examiner.  He discovered
+that there were some common  rules and patterns  in inventions.  Out of 1.5 million patents  worldwide,  50,000 creative
+patents  were extracted  and analyzed,  resulting  in four important  discoveries  which are summarized  in the table below.
+<Table 29> Four important  discoveries
+Discovery Explanation
+Definition  of invention  problem + The invention  problem  has at least one contradiction
+Level of invention + There are 5 levels of invention.
+76 TOPCIT  ESSENCE

@@ -1,0 +1,50 @@
+Project Management  and Technical  Communication  )
+C) Risk analysis:  quantitative  risk analysis
+Quantitative  risk anallysis is a numeric  estimate  of the overall effect of prioritized  risks on the project objec-
+tives (cost and schedule  objectives)  after the qualitative  risk analysis  is completed.
+<Table 66> Risk Analysis  Method
+Risk Analysis  Method Explanation
+incenvewicel + Rely on experience  and precedents  to quantify  the probability  and impact of risk on project
+objectives
+Probability  Distributions+ Widely  used in modeling  and simulation,  Probability  Distribution  is a measure  of uncertainty
+of values such as the duration  of activities,  cost components,  etc.
+Tornado  Diagrams+ Apply the same ratio to input data to explain the amount  of change in output, and the
+result values are displayed  in a bar graph in order of sensitivity
+Scenario  Analysis+ It describes  future situations  based on assumptions  and used for such as system boundary,
+allocation  method,  description,  time, space and weighting  method.  It analyzes  the impact
+of each assumption  on each calculated  result
+Monte Carlo Simulation+ The distribution  of random  variables  is calculated  by repeatedly  substituting  a range of
+values for parameters  or variable  of the probability  model, to predict  a specific  variable.
++ Statistical  analysis  that creates  a cumulative  distribution  by generating  random  numbers
+according  to the probability  distribution  of input data, and provides  a probabilistic  model by
+analyzing  the cumulative  result.
+EMV Analysis
+D) Risk response
+Risk response  is the pro
+portunities  for project ol
+vance according  to th+ Expected  monetary  value with risks taken into account,  expected  value for possible
+occurrence.
++ EMV requires  a risk-neutral  assumption  that neither  avoids nor pursues  risk, multiplies
+each result by the probability  of occurrence,  and then sums the values, which is generally
+displayed  for decision  tree analysis.
+cess of developing  alternatives  and actions  that can reduce threats  and increase op-
+bjectives.  When  a risk is about to occur or occurs, a response  plan is executed  in ad-
+ie response  strategy.
+The risk response  plan applies  the response  method  according  to the positive  and negative  risks.
+Negative  risk response  strategy  is a method  to minimize  threats  or risks that may negatively  affect the proj-
+ect objectives  and includes  Avoid, Transfer,  Mitigate  and Acceptance.
+<Table 67> Negative  Risk Response  Strategy
+Strategy Explanation
+Avoid+ Amethod  of isolating  or changing  the project's  objectives  from the scope of the risk's impact,
+including  changing  the project  management  plan, in order to completely  eliminate  the risk.
++ For example,  it includes  actions  such as schedule  extension,  strategy  alteration  and scope
+reduction.
+Transfer+ It means  to transfer  the impact  of risk and the subject  of response  to a third party
++ It simply transfers  responsibility  and does not eliminate  the risk.
++ Responsibility  transfer  is the most effective  in dealing  with financial  risk exposure.
++ As a transfer  tool, there are insurance,  performance  bonds, various  warranties  and guarantees.
+MitigateA method  of reducing  the likelihood  of a risk and its impact  on the target up to an acceptable
+threshold
++ Examples  include  taking initial measures,  performing  many tests, selecting  a simple process,
+mitigating  risk, etc.
+M6 Project  Management  and Technical  Communication  131

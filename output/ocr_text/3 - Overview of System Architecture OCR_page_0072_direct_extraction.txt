@@ -1,0 +1,31 @@
+Overview  of System  Architecture
+With DMA, high-speed  |/O devices can increase  system efficiency  by minimizing  the interruption  overhead  that
+reduces  the CPU's actual processing  time.
+aii  sss TS
+V0 c aahontrollerInterface (DMAC)
+@
+® © rie  es 2 © itr O La
+CONTROL  BUS.
+[Figure  39] System  Structure  Including  DMA
+@ DMA operation  sequence
+@® The I/O interface  requests  a DMA service  from the DMA controller.
+@ The bus request  is transferred  to the CPU's HOLD pin, so that the DMA acquires  the control  of the bus (Active High).
+® The bus grant is returned  from the CPU's HLDA (Hold Acknowledge)  pin, to the DMAC (Active  High).
+@® The DMAC loads the contents  of the address  register  into the address  bus.
+© The DMAC transfers  the DMA acknowledgment  to the I/O interface  in order to load the data into the data bus.
+© The address  bus transfers  the data bytes to the identified  memory  location.
+@ The I/O interface  maintains  the data transfer  (Latch).
+The DMAC returns  the bus grant as the bus request  is dropped,  and the HOLD becomes  a low state.
+© The bus grant is dropped,  and HLDA becomes  a low state.
+Afterward,  the address  register  increases  by increments  pf 1, and the byte count decreases  by decrements  of 1.
+@ The process  retums  to Step © if the byte count is not 0, and otherwise  stops.
+@ DMA operation  mode
+Type Description
+- The fast CPU gives the slow DMA the priority  of using the bus to enable  fast inputs and outputs
+Cycle stealing when the DMA controller  and the CPU intend to use the bus at the same time.
+- Itis applied  when transferring  data of about one word during  a DMA operation.
+- It is applied  when transferring  data in blocks during  a DMA operation.
+- It continuously  transfers  blocks  formed by multiple  memory  words.
+- It is applicable  to high-speed  I/O devices.  When a DMA interface  acquires  the bus grant, it
+monopolizes  the bus cycle until the data transfer  is complete.Burst mode
+M3 Overview  of System  Architecture  71

@@ -1,0 +1,37 @@
+Software  Development )
++ When including  the source code under GPL 3.0 in the user’s product  or distributing  it with the user's product,
+installation  information  should be provided  with the source code.
+The interests  related to DRM, which are protected  by the laws of each country, should be waived. If a
+contributor  has improved  the source code, that contributor  should provide a license stating that his/her
+contribution  is non-discriminatory  and does not require any fee with regard to the patent.
+@® LGPL (Lesser  General  Public License)
+The LGPL enables  users to use some libraries  in a way that the source code can be used in a more eased form
+than the GPL. If a strict license such as the GPL is applied,  commercial  software  developers  will be reluctant  to
+use the open-source  library because  they have to open the source code of the software  that uses the library.
+In other words, the LGPL is designed  to encourage  the use of an open-source  library from a strategic  point of
+view. The main matters  to comply  with are as follows.
++ When linking an application  program  with the LGPL library (both static and dynamic  linking), developers  do
+not have to open the source code of the application  program  concerned.
++ The patent is handled  in the same way as the GPL.
+@ BSD (Berkeley  Software  Distribution)  license
+The BSD license is a representative  open software  license that does not require the developer  to disclose  the
+software  source code. The scope of BSD license permission  is wide because  projects  deployed  with the BSD
+license have been implemented  using the financial  resources  provided  by the U.S. government.  As the software
+was paid for with the taxes of U.S. citizens  in advance,  people can use or create the software  in the way they
+want. The main matters  to comply  with are as follows.
++ When distributing  the software,  copyright  notice and absence  of warranty  should be specified.
++ The source code can be used for commercial  software  without  limitations  because  there is no obligation  to
+disclose  the source code of the modified  program.
+© Apache  license
+The Apache  license is applicable  to all software  of the Apache  Software  Foundation  (ASF), including  the Apache
+web server. Like the BSD license, it does not require disclosure  of the source code. The main matters  to comply
+with are as follows.
+- The trademark  right for the name “Apache”  should not be violated.
++ When distributing  the software,  copyright  notice and absence  of warranty  should be specified.
++ The code distributed  under the Apache  license can be combined  with the code distributed  under the GPL 3.0.
++ The source code can be used for commercial  software  without  limitations
+because  there is no obligation  to disclose  the source code of the modified  program.
+© MPL (Mozilla  Public License)
+The MPL was developed  to disclose  the source code of the Netscape  browser. It defines the scope of the
+source code to be disclosed more clearly.  The modified  part of the MPL code itself should be distributed  under
+M1 Software  development  133

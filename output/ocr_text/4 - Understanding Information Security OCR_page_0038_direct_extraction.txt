@@ -1,0 +1,33 @@
+ESSENCE
+<Table 8> Types of biometric  authentication
+Item Type Description
+. . Semiconductor,  optical, and mixed types are available.  Fingerprint  recognition  occupies  the
+Fingerprint
+largest  market  share.
+Iris Iris scanning  recognition  is very accurate  and fast, but it requires  an expensive  biometric
+system.
+cosy Face A face contains and provides recognition  information,  and is the most natural authentication
+method.
+Vein Vein recognition  checks the vein shape to recognize  the pattern.
+DNA DNA is the most accurate  authentication  method.
+Since a signature  has a certain pattern,  it can be identified  not only by the final signature  form,
+i Signature but also by a kind of trajectory of hand movement.Behavior y jectory ;
+Voice Voices are frequently  used by physical access control applications.
++ Process  of biometric  authentication
+As shown in [Figure 17], the biometric  authentication  system  consists  of a “biometric  information  registration
+system’  and a “biometric  authentication  system’.  The user's biometric  information  is stored in the biometric
+database  in advance,  and authentication  is performed  by comparing  the data saved in the biometric
+information  database,  with the biometric  information  extracted  from the user.
+Certification
+, : ——Biometric f : erat
+information F F iA
+extraction Rejection
+system
+>
+Biometric  information  register  system Certification  System
+[Figure 17] Process  of biometric  authentication
+@® Multi-factor  authentication
+As shown in [Figure 18], multi-factor  authentication  is a method of improving  the security  of authentication
+by combining  multiple authentication  technologies  to supplement  the weakness  of a single authentication
+method.
+38 TOPCIT  ESSENCE

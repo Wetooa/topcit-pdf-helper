@@ -1,0 +1,52 @@
+Project Management  and Technical  Communication  )
+Portability PortabilityReplace  with service  accessibility
+compliance  in accordance  with the
+user's internet  environment
+Understandability UnderstandabilityMeasurement  items of understandability
+A: No. of screens  with user guidelines
+accurately  described
+B: No. of screens  with UI design(menu)
+Measurement  formula  for
+understandability100%At the point of delivery
+test completed
+Credibility System  availabilityMeasurement  items of system
+availability
+A: No. of message  notification  in the
+event of errors
+B: No. of message  notification  test case
+in the event of errors
+Measurement  formula  for system
+availability100%At the point of
+integrated  test
+ComplianceWeb cross browsingMeasurement  items of Web cross
+browsing
+Use inspection  tools of web cross
+browsing95%At the point of unit test
+completed
+Web accessibilityMeasurement  items of web accessibility
+Names  of inspection  tools for web
+accessibility95%At the point of unit test
+completed
+OthersCorrective  action
+progress  rateMeasurement  items of corrective  action
+progress  rate
+A: No. of corrective  action completed
+B: No. of corrective  action
+Measurement  formula  for progress  rate100%At the point of quality
+activity
+[Figure  41
+B) Quality  assurance
+@® Concept  of Quality  AssuranceQuality  Plan of the Actual Project  (example)
+It refers to a technique  and activity  that monitors  quality requirements and measurement  results of quality
+control and checks  whether  the quality standards  are applied. Quality  control is classified  as follows.
+<Table 54> Comparison  of Quality  Control  and Quality  Assurance
+Classification Quality Control Quality  Assurance
+Key Activity + Inspection * Quality  Audits
+t + The result of work (Product,  process, + Project  organizationfarget 5 aperformance) + Overall quality management  activities
++ Professional  review agency  outside  the
+Subject + Project  team members organization
++ Professional  reviewer  inside the organization
++ Pass/failure  of product + Lessons  applicable  throughout  the organizationResult 4 Se
++ Process  adjustment + Customer  trust or authentication
+Commonality Quality improvement
+M6 Project  Management  and Technical  Communication  119

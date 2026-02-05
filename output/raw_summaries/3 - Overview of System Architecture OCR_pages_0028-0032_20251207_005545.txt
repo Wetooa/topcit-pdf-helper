@@ -1,0 +1,228 @@
+LEARNING GUIDE: Pages 28-32
+Generated: 2025-12-07 00:55:45
+PDF: 3 - Overview of System Architecture OCR
+
+================================================================================
+LEARNING GUIDE
+================================================================================
+
+Here's a simplified learning guide based on the provided text, designed for easy study:
+
+---
+
+## System Architecture Learning Guide
+
+### 1. System Architecture: Classification by Application Program Provision
+
+This section describes how application programs are structured and delivered.
+
+#### 1.1 Multi-Region Distributed System Architecture
+
+*   **Concept:** Databases are spread across multiple geographical regions.
+*   **Challenge:** Difficult to manage data integrity; system configuration and management become complex.
+
+#### 1.2 Client-Server Architecture
+
+*   **Concept:** System functions are divided between **servers** (providing services) and **clients** (requesting/using services).
+*   **Roles:**
+    *   **Server:** Handles data management, business processes.
+    *   **Client:** Manages presentation (what the user sees) and runs application programs.
+*   **Pros:** Provides a convenient Graphical User Interface (GUI) on the client side.
+*   **Cons:** Complex configuration, difficult development and management due to separation.
+*   **Examples:** Games, chatting applications, FTP servers, terminal servers.
+
+#### 1.3 Web System Architecture
+
+*   **Concept:** **Server** runs application programs; **client** accesses services using a web browser.
+*   **Common Components:**
+    *   Web Server
+    *   Web Application Server (WAS)
+    *   Database Server
+*   **Middleware:** Ensures stable performance and high program reusability.
+*   **Evolution:** Initially for static web services, now supports rich GUI environments (due to HTML5 and PC performance improvements).
+*   **Prevalence:** Most modern information systems use this architecture.
+*   **Client Access:** Accessible from any device with a web browser (PC, mobile).
+
+---
+
+### 2. System Architecture: Classification by System Layer (or Tier)
+
+This section classifies system components by their function and role.
+
+#### 2.1 Layers vs. Tiers
+
+*   **Layers:** Represent functions and rules from a **logical** point of view (e.g., OSI 7-layer model for networks).
+*   **Tiers:** Represent functions and rules from a **physical** point of view.
+*   **Relationship:** Similar concepts, often used interchangeably, but describe different perspectives.
+
+#### 2.2 Logical Information System Layers
+
+Information systems are logically divided into these three layers:
+
+*   **a. Presentation Layer (GUI / Front-End):**
+    *   **Purpose:** Provides service information and the user interface. It's the highest level.
+    *   **Physical examples:** Web servers, client web browsers.
+*   **b. Business Logic Layer (Transaction Tier):**
+    *   **Purpose:** Runs programs that process business rules (business logic); determines data needs.
+    *   **Physical examples:** Application program servers (like WAS).
+*   **c. Data Layer:**
+    *   **Purpose:** Accesses data resources (e.g., databases) to read or write data.
+    *   **Sub-layers (optional):** Can be divided into a data access layer and a data store layer.
+    *   **Physical examples:** Database servers, file systems.
+
+#### 2.3 Physical N-Tier Architectures
+
+These are physical implementations of the logical layers.
+
+#### 2.3.1 Two-Tier Architecture
+
+*   **Structure:** Server stores and processes data; client processes both business logic and presentation.
+*   **Similarity:** Generally the same structure as client-server architecture.
+*   **Pros:** Fast and easy to implement for a small number of users.
+*   **Cons:** Performance degrades with more users, poor scalability, reusability, and resource utilization.
+*   **Examples:** Applications built with 4GL tools like PowerBuilder, Visual Basic, Delphi.
+
+#### 2.3.2 Three-Tier Architecture (Multi-Tier Architecture)
+
+*   **Purpose:** Developed to overcome the limitations of two-tier architecture.
+*   **Structure:** Adds an intermediate tier specifically for **business logic processing** between the presentation tier and the data tier.
+*   **Benefits:**
+    *   Flexible and scalable business logic.
+    *   Improved security (client doesn't directly access the database).
+    *   Easier user authority management.
+    *   Flexible distribution of the presentation tier.
+*   **Cons:**
+    *   Complex development environment.
+    *   Increased cost (requires middleware and additional hardware).
+
+---
+
+### 3. Server's Stack Architecture
+
+This section describes the structure of a server and its historical evolution.
+
+#### 3.1 Server Concept & Evolution
+
+*   **Definition:** A computer or program that provides information or services to users over a network. It supplies computing power for information systems.
+*   **Mainframe Era (IBM):**
+    *   **Concept:** Large, expensive, proprietary systems where one enterprise made all components (CPU, OS, language, applications).
+    *   **Characteristics:** Excellent stability and performance.
+*   **Downsizing (1997 onwards):**
+    *   **Trend:** Mainframes began being replaced by more cost-effective "super Unix servers" (e.g., HP, Sun, Silicon Graphics, often with Power CPUs).
+    *   **Shift:** Rise of servers using Intel CPUs (e.g., Windows NT servers).
+*   **Current Market (Post-2017):**
+    *   **Dominance:** x86 servers (featuring Intel CPUs) dominate the market, accounting for over 70% of server units sold.
+    *   **Division:** Market divided into x86 servers and non-x86 servers.
+
+#### 3.2 Server Stack Structure
+
+Servers are built in layers, from hardware up to applications:
+
+1.  **Computer Hardware (Bottom Layer):**
+    *   Includes CPU, main memory, and auxiliary memory.
+2.  **Operating System (OS):**
+    *   Located above hardware.
+    *   Abstracts hardware and provides services to software.
+3.  **Middleware/Platform:**
+    *   Located above the OS.
+    *   Examples: Web server, Web Application Server (WAS), Database Management System (DBMS) server.
+    *   **Purpose:** Supports flexible expansion, reduces dependency of application programs on specific computer hardware.
+4.  **Application Program (Top Layer):**
+    *   Provides services directly to users, utilizing the middleware below it.
+
+#### 3.3 Brief History of Computer Hardware
+
+*   **Early Concepts:** Turing Machine (1936) by Alan Turing, proving mathematical concepts.
+*   **First Programmable General-Purpose Computer:** ENIAC (1946)
+    *   **Characteristics:** Used 18,000 vacuum tubes, weighed 30 tons, as large as a house.
+*   **First Stored-Program Computer:** EDSAC (1949)
+    *   **Concept:** Embedded programs in a memory unit (based on John von Neumann's proposal).
+*   **Popularization (1980s):**
+    *   Driven by the success of IBM Personal Computers (PCs) and Microsoft's Windows operating system.
+*   **Recent Era:** Rise of mobile computing with smartphones (handheld computers).
+
+---
+
+================================================================================
+ORIGINAL TEXT (First 5000 chars)
+================================================================================
+
+--- Page 28 ---
+Overview  of System Architecture )
+are terminated.  However,  the distributed  databases  make it difficult  to manage  the data integrity,  and both the
+system  configuration  and management  become  complex.
+Head Office
+South Branch East Branch
+oa ==
+[Figure 5] Multi-region  Distributed  System  Architecture
+C) Classification  according  to how the application  programs  are provided
+@ Client-server  architecture
+The architecture  places system functions  in the servers and clients and configures  them to use the service,
+depending  on the business  size or environment.  The server and client's role differs, depending  on where the
+system functions,  such as data management,  business  processes,  and presentation,  are located. It can provide
+the convenience  of a graphical  user interface  by running  the application  program  from the client side. However,  the
+configuration  is complex,  and the development  and management  are difficult because  the architecture  is separated
+into servers  and clients. Service  types include  games, chatting,  messenger,  FTP servers,  and terminal  servers.
+Application *, *
+Client
+Server Application
+[Figure  6] Client-Server  Architecture
+M3 Overview  of System  Architecture  27
+
+
+--- Page 29 ---
+ESSENCE
++ Web system  architecture
+The architecture  runs the server's application  programs,  and the client uses the service with a web browser. It
+generally  consists
+performance,  andof a webserver,  a web application  server, and a database  server. The middleware  assures stable
+the program  reusability is high. Although  the web system architecture  was limited by only
+providing  web services  with a static display, the introduction  of HTML5, and the performance  enhancement  of PC
+environments,  have enabled  them to provide services  in an impressive  GUI environment.  Most recent information
+systems  use websystem architecture.  The client can use all the services  with a PC or mobile device, if the
+environment  runs a web browser.
+Web Service
+Web
+Browser
+[Figure 7] Web System  Architecture
+D) Classification  by system  layer
+The function  and role of each system component  are classified  by tier, or layer The most widely known layer is the
+OSI 7 layer, which shows the network  structure.  Layers and tiers are considered  similar  concepts  because  they both
+represent  functions and rules in a tiered structure.  The most common  difference  is that layers refer to structures
+from a logical point of view, and tiers refer to structures  from a physical  perspective.  An information  system  is divided
+into a presentation ayer, a business  logic layer, and a data layer. This logical layer architecture  can be divided into an
+N-tier structure  as a physical system architecture.  The typical N-tier structures  are a two-tier  structure  and a three-
+tier structure.
+Type
+Presentation  layerDescription
+This layer is at the highest  level of an application  program.  It provides  the service information  and the
+interface  to users. This layer is also called GUI or front-end.  In a physical  tier structure,  webservers  and
+client's  web browsers  belong  to this layer.
+Business  logic layerThis layer runs the program  information  processing  rules that fulfill business  requirements  (business  logic).
+It determines  which data is needed  according  to the business  logic, and it refers them to the data tier.
+This layer is called the transaction  tier. In a physical  tier structure,  application  program  servers,  such as
+WAS, belong to this layer.
+Data layerThis layer accesses  data resources,  such as the database,  and reads or writes data. The data layer may
+be divided into the data access layer and the data store layer. In a physical  tier structure,  the database
+server  or file system  belongs  to this layer.
++ Two-tier  architecture
+Two-tier  architecture  stores and processes  data in the server and processes  business  logic and presentation  for the
+28 TOPCIT  ESSENCE
+
+
+--- Page 30 ---
+Overview  of System  Architecture
+client. It is generally  the same structure  as the client-server  architecture.  Since the client processes  most logic, it
+can be fast and easily implemented  when the number  of users is small. However,  the performance  becomes  poor
+as the number  of users increases,  and the architecture  is disadvantageous  in terms of scalability,  reusability,  and
+resource  use. Actual cases include application implemented  with 4GL tools, such as PowerBuilder,  Visual Basic, and
+Delphi.
+(Presentation  Layer) (Client)
+AO EAS (Business  Logic Layer)
+> a (Data Layer) (Server) (DB)
+Lee  Storage
+Layer (2-Tier) (3-Tier)
+[Figure 8] Types of Information  System  Tier  Architectures
++ Three-tier  architecture
+Three-tier  architecture  is a structure  created  to overcome  the limitations  of two-tier  architecture,  and it is also
+called multi-tier  architecture.  This structure  has an additional  tier between  the presentation  tier and ...

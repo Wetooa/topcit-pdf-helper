@@ -1,0 +1,28 @@
+Overview  of System Architecture )
++ Practical  preview
+Company  A is an online retailer Until recently,  it competed  for the No. 1 or 2 position  in the domestic
+market, but has experienced  declining  sales, due to the influence  of cheap imports  from China entering
+the domestic  online market.  Therefore,  the company  needs a new competitive  edge. Firstly, it wants to
+establish  a new marketing  strategy  by collecting and analyzing  customer  data. It intends to expand the
+infrastructure  in order to collect big data beyond the existing  database  and to hire analysts  from outside
+to analyze  the collected  data. This case shows why enterprises  seek to find ways to collect, store, analyze,
+and utilize big data. This chapter  describes  the big data system  in more detail.
+01 Bid Data System  Structure
+A) Hadoop  ecosystem
+Understanding  the big data system structure  begins with understanding  the Hadoop ecosystem.  Hadoop,  the
+abbreviation  of High-availability  distributed  object-oriented  platform,  refers to a Java-based  framework  for the
+distributed  processing  of a large volume  of data in multiple  distributed  storage.  It is an initial solution  and consists  of
+the Hadoop  distributed  file system (HDFS) and Map Reduce.  However,  these two modules  are based on open source,
+and it was difficult  for non-specialists  to utilize big data. The modules  are packaged  with various peripheral  modules,
+as shown in [Figure 100], to solve the problem.  These peripheral  modules  support  data integration  and migration,
+application  management,  and system  management,  and they have been developed  as part of the Hadoop  project.
+Tees Pe Le ieree Peele agaented Baan Taare PrtPeer)  ManeTece ene  te) - esau
+& Coordination)
+SPARK  (In-Memory.  | KAFKA  & STORMPras} cone)
+Sete
+Flume Sqoop
+ee He
+Unstructured/
+Semi-structured  Data Structured  Data
+[Figure 100] Hadoop  Ecosystem
+M3 Overview  of System  Architecture  139

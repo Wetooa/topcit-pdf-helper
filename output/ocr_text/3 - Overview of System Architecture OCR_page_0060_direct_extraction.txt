@@ -1,0 +1,34 @@
+Overview  of System Architecture )
+D) Types of files system  for each OS
+Os File System
+UNIX Boot block, super block, bitmap block, i-node, and data block
+Linux File extension  system (ext, ext2, ext3, and ext4), ZFS, ResierFS,  and XFS
+Solaris ZFS and UFS
+Mac OS HFS and HFS+
+Windows FAT, NTFS
+E) UNIXi-node
+In a UNIX system, inode has the role of allocation,  application,  creation,  link, and deleting  through  the file/directory
+data.
+File and Directo Inode Block Data BlockI< a >\< >|
+File (HardLink)
+Original  file Data
++ inode
++ inode table
++ | number
++ addressing
+File(SymbolLink) ___—_——.  Original File Pointer
+inode Component Description
+nore - Contains  all the data of a file or directory
+- Owner  information,  access information,  file information,  link, and typ
+inode table A file system  table that has all the inodes of files or directories
+i number An entry number  of an inode registered  in the i-list
+Managing  the block location  with 13 fields
++ Ten direct data blocks (O~9): 96kb data
+addressing + One single indirect  data block (10): 16MB
+* One double indirect  data block (11): 32GB
++ One triple indirect  data block (12): 70TB
+08 Input/ Output  System
+The input/output  system includes  an input/output  device and the system’s  input/output  module (controller).
+A physical input/output  device handles  the inputs and outputs  of data and between  the actual processor  and
+the computer  user, and the input/output  module provides  the functions  of input/output  device control, timing
+M3 Overview  of System  Architecture  59

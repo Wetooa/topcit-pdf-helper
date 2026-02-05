@@ -1,0 +1,23 @@
+oer
+ll. Understanding  Types of Databases
+>> Recent  trends and major issues
+The “database”  was created  in the late 1960s to manage  and use data more efficiently  than the computer
+environment  which used the file system in the early days. Since then, the basic model of database  has
+evolved  continuously  into relational,  object-oriented,  and object relational  types of database,  having  started
+as a network  model. Currently,  the object relational  model is the most widely used model in the market.
+In addition,  the internal data model and the structure  of the database  were a matter of interest  in the
+past. However,  the importance  of database  processing  performance  was highlighted with regard to the
+processing  of large-scale  data, as the problem of performance  degradation became  increasingly  serious
+due to the rapid increase  in the amount  of digital data. Accordingly,  the relevant  technology  has expanded
+to include  new types of databases,  such as the column-type  database  which places emphasis  on database
+performance  and scalability  rather  than data relations,  NoSQL,  etc.
+1. To be able to explain the data model and the structure  of each type of database.
+2. To be able to explain the concept  and characteristics  of the object relational  database  (ORDB).
+3. To be able to understand  and write an XML document.
+4. To be able to explain  various  database  systems.
+>> Keywords
+Hierarchical  database,  network  database,  relational  database  (RDB), object-oriented  database  (OODB),
+object  relational  database  (ORDB)
+XML, multimedia  database,  main memory  database,  embedded  database,  spatial database,  column type
+database,  graph database
+28 TOPCIT  ESSENCE

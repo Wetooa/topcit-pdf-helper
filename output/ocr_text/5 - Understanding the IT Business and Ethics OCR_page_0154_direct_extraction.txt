@@ -1,0 +1,36 @@
+Understanding  the IT Business  and Ethics
+Integrated renewable Electricity storage | | \V2G
+P energies
+Smart  Grid
+Application Monitoring/management _
+of electricity  grid through Smart metering Ma agement  eee
+situation awareness y
+Management  of distributive,  intelligent  electricity  grid
+Smart Grid
+Platform
+Intelligent  device, bi-directional  communication,  advanced  control system
+[Fig.65] Smart  Grid configuration*
+Technologies  that make up smart grids can be largely  grouped  under smart grid platforms  and smart  grid applications.
+The platform  has intelligent  devices, bi-directional  communication  and sophisticated  control system for managing
+distributed  and intelligent  power  grid. The platform  is configured  to operate  renewable  energy  applications,  intelligent
+electric  vehicle charging  stations,  smart metering  applications,  power grid monitoring  applications,  demand  response
+applications.  Intelligent  storage  devices have electronic  sensor and meters that monitor  the current state of the
+smart  grid and has digital intelligent  devices  that can make basic decisions  on their own.
+The IT infrastructure  attached  to the power  grid act as the IT elements  that are critical to the operation  of the smart
+grid. It optimizes  energy efficiency  and gets people to consume  energy  through  bi-directional  exchange  of real time
+information  (about the supply and demand  for electricity).  Therefore,  the smart grid must be equipped  with open
+system networks  and protocols  so that its value-added  services  could create new products,  services,  and markets
+and not limited to just providing  power. The communication  infrastructure  should provide end-to-end  services
+between  intelligent  devices and maintain a reliable and steady supply of electric power. Furthermore,  development
+must abide by standards  to support  interoperability  for various  interfaces.
+© Micro Grid
+Microgrid  is an extension  of a smart grid. The US Department  of Energy (DOE) defines a microgrid  as "a group of
+interconnected  consumers  and distributed  energy  resources  (DERs) under a clearly  defined  electrical  specifications  that
+can be controlled  by the system  as a single entity  and that could be connected  to the system  or made independent.”
+An easy way to understand  micro grid is to view it as a power grid constructed  for a local area that connects
+electricity  users with distributed  energy resources  such as wind and solar power. It is a power grid that can make a
+grid owner become  self-sufficient  in power by operating  independently  of existing  electric  grid and still connect  to the
+regular  grid when necessary.  In South Korea, microgrid  pilot testings  are underway  in Jeju Island's  smart  grid complex,
+Gapado,  Marado,  and Ulleungdo.
+14 Source:  TTA, ICT Standardization  Strategy  Map, 2011
+M5 Understanding  the IT Business  and Ethics 153

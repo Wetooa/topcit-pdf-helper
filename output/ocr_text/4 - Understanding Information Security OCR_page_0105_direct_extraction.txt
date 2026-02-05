@@ -1,0 +1,39 @@
+Information  security )
+The /etc/profile  file is a login script for setting  the default  use environment  of all the log-in users. If the access
+right of the /etc/profile  is incorrectly  set, unauthorized  users can cause a breach incident  by changing  the user
+environment,  using various methods.  Therefore, remove  the writing privilege  for the /etc/profile  from the users,
+other than the root (bin).
++ How to remove  other users’ privileges  of the /etc/profile  file:
+# Is -al /etc/profile
+# chown root /etc/profile
+# chmod o-w /etc/profile
+@ Setting  umask
+To check the umask setting details of the current user, run the “umask”  command  at the command  prompt.
+The umask value should be set to “027” or “022”. If the umask value is set to “027”,  a file is created with the
+access rights of “rw-r-----  ” and if the umask value is set to “022”, a file is created with the access rights of
+“rw-r--r--”.  Therefore,  the umask value should be set to “022” so as not to allow unnecessary  access.
++ How to set umask:
+In SUN, uncomment  the UMASK option in the /etc/default/login  file and set it to 022. For other UNIX
+operating  systems,  add “Umask  022’ in the profile.
+E) Service  security
+@® Stopping  unnecessary  services
+If unnecessary  service ports are open, it can cause security  vulnerability,  Therefore, unused services  should be
+removed.  <Table 34> shows  a list of daemon  services  and service  ports that should be checked  for stopping.
+<Table 34> List of daemon  services  and check ports
+Item Detailed  item
+Echo (7) Simply  sends the received  message  again.
+Ehargen  (19) A service  that returns  a string of random  length.
+Finger  (79) Outputs  user information.
+Network  News Transfer  Protocol  (NNTP) - a standard  service  that can create a discussionNntp (119)group on the Internet.
+Netbios  Dem (138) verso datagram  that is used to broadcast  to the service, host, group, or all of the
+Ldap (389) A service  for accessing  the directory  service.
+Ntalk (518) A service  that enables  a chat between  different  systems.
+Ldaps (636) LDAP over SSL
+Nfsd (2049) - NFS NFS server  daemon  service  when not in use.
+Discard  (9) A service  that discards  the received  data of the random  user.
+Time (37) The TCP version  of the RFC 868 time server  used by the Rdate daemon.
+Sftp (115) Ftp over SSH
+Ntp (123) Network  Time Protocol  (ntp) synchronizes  time between  the client and server.
+Netbios_Ssn  (139) NetBIOS  session  service used to send and receive  actual data, using network  sharing,  etc.
+Printer  (515) Used to spool in a remote  printer.
+M4 Understanding  Information  Security  105

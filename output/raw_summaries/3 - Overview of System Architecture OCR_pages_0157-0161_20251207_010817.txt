@@ -1,0 +1,196 @@
+LEARNING GUIDE: Pages 157-161
+Generated: 2025-12-07 01:08:17
+PDF: 3 - Overview of System Architecture OCR
+
+================================================================================
+LEARNING GUIDE
+================================================================================
+
+Here is a simplified, easy-to-read learning guide based on the provided text:
+
+---
+
+## Network Layer & Routing: Learning Guide
+
+This guide covers the essentials of the network layer, how data is transmitted across networks, and the role of routers.
+
+### 1. Introduction to the Network Layer
+
+*   **Definition:** The third layer in both the **OSI 7-layer model** and **TCP/IP model**.
+*   **Purpose:** Responsible for sending **packets** (data units) from a transmitting device to a receiving device across different networks.
+*   **Key Role:** Efficient data transmission, generating IP-based packets, and routing them through the Internet.
+*   **Devices:** Primarily involves **Routers**.
+
+### 2. How the Network Layer Works: A Scenario
+
+Imagine sending data from your computer (User A) on your local network to a server (`my.server.com`) on a different, remote network.
+
+1.  **Packet Creation:** Data from higher layers (like the Transport Layer's **segments**) is **encapsulated** into an **IP packet** by the Network Layer. This packet contains the destination IP address of `my.server.com`.
+2.  **Local Transmission:** Your computer (e.g., IP: 192.168.11.5) cannot directly send the packet to the remote server. It first sends it to its local **gateway router** (e.g., Router B, IP: 192.168.11.1).
+    *   To send the packet on the local network, the computer needs the **MAC address** (physical address) of Router B. It finds this (e.g., using **ARP** – Address Resolution Protocol).
+    *   The packet is then sent to Router B using its MAC address.
+3.  **Router Forwarding:**
+    *   Router B receives the packet and inspects its **IP header** (the destination IP address).
+    *   It realizes the packet's final destination (`my.server.com`) is not directly connected to its own local networks.
+    *   Based on its internal **routing table**, Router B determines the next best path (e.g., to Router C) and forwards the packet.
+4.  **Hops to Destination:** The packet travels through several **hops** (routers) across the Internet, each router making a forwarding decision based on its routing table.
+5.  **Final Delivery:** The destination server (`my.server.com`) receives the packet, recognizes its own IP address, removes the network layer header, and passes the original data up to its higher layers.
+
+### 3. Network Layer Functions
+
+The network layer performs essential tasks:
+
+*   **Packetizing:**
+    *   **Encapsulation:** The transmitting side wraps the data (**payload**) into a packet with network layer headers (like IP address).
+    *   **Decapsulation:** The receiving side removes these headers to retrieve the original payload.
+    *   Ensures data integrity during transmission.
+*   **Routing:**
+    *   The process of finding the optimal path (route) for a packet to travel from the source to the destination.
+    *   Uses **routing algorithms** to calculate paths.
+*   **Forwarding:**
+    *   The action a router takes when a packet arrives at one of its interfaces.
+    *   The router consults its **routing table** (also called a **forwarding table** or **decision table**) to determine which outgoing interface to send the packet through.
+
+### 4. Internetworking Equipment
+
+**Internetworking** refers to connecting different networks. Various devices operate at different layers:
+
+| Device     | Layer(s) Responsible | Description                                                                          |
+| :--------- | :------------------- | :----------------------------------------------------------------------------------- |
+| **Repeater** | Physical Layer       | Enhances (amplifies or reproduces) signals between connection points.                |
+| **Hub**      | Physical Layer       | Basic device that connects multiple network devices, sending data to all ports.      |
+| **Bridge**   | Data Link Layer      | Connects two LANs, making them appear as one; interprets and converts data formats. |
+| **Switch**   | Data Link Layer      | A multi-port bridge; separates networks based on **MAC addresses**.                  |
+| **Router**   | **Network Layer**    | Finds the **optimal communication path** when connecting heterogeneous networks.     |
+| **Gateway**  | Application Layer    | Connects networks and translates protocols, often performing router functions too.   |
+
+### 5. What is a Router?
+
+*   **Definition:** A network device that forwards traffic (packets) between different networks and determines the best path based on network layer information (IP addresses) and **metrics**.
+
+#### Router Structure
+
+Routers are typically composed of two main planes:
+
+1.  **Router Control Plane:**
+    *   Implemented in software.
+    *   **Determines *where*** packets should be sent.
+    *   Uses **routing tables** and **routing information bases (RIB)** to make decisions.
+    *   Handles routing protocols (e.g., BGP, OSPF, RIP, IGMP/MLD) and management functions (e.g., CLI, SNMP).
+2.  **Forwarding Plane:**
+    *   Actually ***sends*** the packets according to the decisions made by the control plane.
+    *   Uses **forwarding engine abstraction (FEA)** for the physical packet movement.
+
+#### Router Metrics
+
+**Metrics** are data points collected by a router to evaluate the efficiency and desirability of different paths. Routers use these to determine the "optimal" route.
+
+*   **Number of Hops:**
+    *   The count of routers a packet must pass through to reach its destination.
+    *   Fewer hops generally indicate a faster path.
+*   **MTU (Maximum Transmission Unit):**
+    *   The maximum size of a data packet (in bytes) that a protocol can transmit over a network link.
+    *   Important for fragmentation and path discovery.
+*   **Cost:**
+    *   A value derived from factors like transfer time, link reliability, and bandwidth characteristics.
+    *   A higher cost typically means a less efficient or desirable path.
+*   **Latency:**
+    *   Measures the delay encountered by packets (e.g., processing delays, queuing delays) and identifies potential bottlenecks during transfer between routers.
+
+---
+This guide simplifies the verbose text into key concepts, definitions, and functions, making it easier to study and understand.
+
+================================================================================
+ORIGINAL TEXT (First 5000 chars)
+================================================================================
+
+--- Page 157 ---
+YAN (=1aW(e) a @ ec  hV(=18
+>p> Recent  trends and issues
+A network  layer is the most closely related to data transmission,  among the network  standard  layers
+and plays an important  role in efficient  data transmission.  Through  this chapter,  you will understand  how
+IP-based  packets  are generated,  how they are efficiently  transmitted  in the Internet  network,  and how
+to move and process  data over the network.  This chapter  describes  the router's basic structure,  which
+is a device of the network  layer, the principle  of packet routing, the routing algorithm,  and the actual
+implemented  routing  protocol.
+>>> Learning  objectives
+1. To be able to explain  the protocol  concept  and equipment  of the network  layer.
+2. To be able to explain the routing protocol  concept,  types, and algorithms,
+3. To be able to understand  the IPv4 address  specification  system and subnetting.
+>> Keywords
+Router, Routing  table, Packet, PDU, Datagram  type, Virtual line type, APIPA, Segment,  Metrics,  MTU, STP,
+ARP, RARP. ICMP, IGMP. QoS, Bandwidth, IntServ, RSVP, DiffServ,  Routing  algorithm,  Routing  protocol,  EGP.
+IGP, Distance  vector, Link state, BGP, RIP. IGRP, OSPF, IPv4, Subnetting,  Supernetting,  APIPA, CIDR, DHCP.
+NAT
+156 TOPCIT  ESSENCE
+
+
+--- Page 158 ---
+Overview  of System  Architecture
++ Preview  for practical  business Network  layer and routing  protocol
+Operating  path of the network  layer
+Application  Layer
+Transport  Layer
+Network  Layer
+Datalink Layer
+Physical LayerZ
+14.32.172.0
+Switching  Hub D
+Router,my.server.com
+Network Layer 20.17.2315
+Datalink  Layer Datalink  Layer
+Physical Layer Network  Layer Physical Layer
+Daainklayer|| 220.17.23.0
+pees Physical Layerespe 192.168.11.0 o——...
+Network Layer
+Datalink  Layer
+Physical Layer
+[Figure 112] Router  Conceptual  Diagram
+The above sections  described  the network  layer operation  and related scenarios,  as shown in [Figure 112].
+(52) Information  created  by the TCP protocol  is capsulized  in order to be routed to the 220.17.23.0
+network,  in which my.server.com  is present,  through  several hops (IP).
+An initial packet that contains  the information  for routing between  networks  is created.
+However,  it must be further  modified  to be transferred  between  networks.  The IPv4 address  of
+user A’s computer  is 192.168.11.5  and cannot  be transmitted  to my.server.com  directly.  It must
+be transmitted  to the computer's  gateway  wired/wireless  router B (192.168.11.1).  However,  an
+IP address  cannot  be used for data transfer  in a network,  so the MAC address  is needed.  After
+finding  the MAC address  that corresponds  to 192.168.11.1,  the gateway’s  IP address,  the packet
+is transmitted  to wired/wireless  router B, through  network  broadcasting.
+Upon receiving  the packet  from user A’s computer,  wired/wireless  router B, aware that the
+packet  is not sent to the router  as the final destination,  examines  to which address  the packet
+must be transmitted.  The IP header  indicates  that the packet's  final destination  is my.server.
+com, and since it does not belong  to network  192.168.11.0  or 14.32.172.0,  to which wired/
+wireless  router  B belongs,  it transmits  the packet  to router  C, to which it belongs.
+Upon receiving  the packet, my.server.com  examines  the IP address  and recognizes  that
+the packet was sent to it. It removes  the header  data, such as the IP address,  and sends the
+remaining  data up to a higher layer.
+M3 Overview  of System  Architecture  157
+
+
+--- Page 159 ---
+ESSENCE
+01 Network  Layer Overview  and Equipment
+A) What is a network  layer?
+The network  layer is the third layer of the OSI 7 model and TCP/IP and sends packets,  from a transmitting  side, to a
+receiving  side. It receives  a segment  from the transmitting  layer, encapsulates  it, and sends it to the datalink  layer.
+Transport  Layer
+Routing  Protocol
+IP Protocol
+Network
+Layer
+Routing  Table ICMP Protocol
+Link Layer
+Physical  Layer
+[Figure 113] Network  Layer in TCP/IP
+B) Network  layer function
+The transmitting  side of the network  layer performs  payload  encapsulation,  and the receiving  side performs  payload
+decapsulation.  The packetizing  function  is responsible  for ensuring  that there is no change  to the payload  during data
+transmission.  The routing function  finds a path through  which packets can be delivered.  The forwarding  function is
+performed  by a router when a packet arrives through  one interface  on the router. When performing  forwarding,  the
+router creates  a decision  table by applying  the routing  rules. The decision  table is also called the forwarding  or routing
+table.
+<Table 37) Network  Layer Functions
+Function Description
+- The transmitting  side encapsulates  the payload,  and the receiving  side decapsulates  the payload.
+Packetizing - The function  is responsible  for transmitting  a payload,  from the transmitting  side, to the receiving  side,
+without  a cha...

@@ -1,0 +1,43 @@
+ESSENCE
+B) Factors  for performance  evaluation  of memory  unit
++ Capacity
++ Access  time
++ Cycle time
++ Bandwidth  of storage  unit
++ Data transportation
++ Cost
+C) Type and characteristics  of the memory  unit
+Memory  units can be classified  according  to the use, physical storing method,  data retention,  and content
+preservation.
+Table 12) Types of Memory  Units
+Classification  Criteria Description Type
+Main memory  | Memory  device to temporarily  store a program  or RAM and ROM
+device data that a computer  processes
+Usage Auniliary Amemory  device that stores  data semi- /
+permanently  by compensating  for the mainmemory : : ; Magnetic  disk, optical disk, etc.
+. memory’s  insufficient  storage  capacity  and usingdevice : vas
+non-volatile  characteristics
+Magnetic A device  that stores binary data according  to the Magnetic  tape, hard disk, zip drive, etc.magnetic  flux direction  by maintaining  magnetism
+Physical A device that records data on the surface of an cD (Compact  Disc)
+poles Optical aluminum metallic disk using a laser beam DVD (Digital Versatile Disc)method BDA (Blu-Ray  Disk)
+Semiconductor A device  that stores analog  data using integrated RAM, ROM, and flash memory
+circuit technology
+Data aintainable Volatile The memory  that loses all data when power is off | RAM-based  SSD (Solid State Disk)
+when power . The memory  that preserves  stored data even ROM, magnetic  core, and auxiliary
+is off Non-volatile ;when power  is off memory  device
+Sequential To access the required  location  in the memory
+. . Magnetic  tapeaccess space sequentially  from the beginning
+Access  method - -
+, To directly  access  the required  location  in the ,
+Direct access Disk, flash memory,  etc.memory  space
+Destructive The memory  in which the stored data are Magnetic  core
+Preservation  of destroyed  after reading
+data Non- The memory  that retains the stored data even Memory  devices except for the
+destructive after reading magnetic  core
+D) Addressing  mode
+An address is the location  in the main memory  where data is stored. Various addressing  methods  are available  to
+designate  instructions,  using limited instruction  bits and using the memory  unit capacity  efficiently.
++ Direct addressing  mode
++ Indirect  addressing  mode
++ Implied  addressing  mode
+68 TOPCIT  ESSENCE

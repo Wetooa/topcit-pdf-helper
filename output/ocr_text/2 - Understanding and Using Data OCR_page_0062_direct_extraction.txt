@@ -1,0 +1,43 @@
+Database )
+H) Classification  of identifiers
+<Table 23> Classification  of identifiers
+Classification Identifier Description
+Primary A separator  that can distinguish  each occurrence  within an entity, and an identifier  that
+Representa- identifier can connect  a reference  relationship  with other entities.
+tiveness Alternate A separator  that can distinguish  each occurrence  within an entity, but which cannot
+identifier connect  the reference  relationship  because  it has no representativeness.
+ee An identifier  that is created by itself inside an entity.
+Self-generation - - - , i -e Foreign An identifier  that is received from other entities based on the relationship  with other
+identifier entities.
+Single identifier  | An identifier  consisting  of one attribute.
+Number  of Composite
+attributes <omp An identifier  consisting  of more than two attributes.
+identifier
+Natural An identifier  created by work.Replacement identifier
+status Artificial An identifier  that is not created  for work, but which is artificially  created because  the
+identifier original identifier  has a complex  configuration.
+Classification  of identifiers  in the data model
+Primary  identifier -Team Employee ene ence Education  history
+Department  number Employee number a] = Pauli Employee number
+Resident registration  number Se Course dateA Department  number ft
+gPrimary  identifier Alternate  identifier
+Internal  identifier
+Single identifier
+Original  identifierPrimary  identifier
+Composite  identifier
+Purchase  application Primary  identifier Nature  identifier
+Single identifier
+Order number <— Internal identifierForeign  identi
+Employee numbe Artificial identifier
+Order  date ‘ (order number = company number + order
+date + order number)
+[Figure  22] Classification  of identifiers  in the data model
+|) Identifier  relationship  and non-identifier  relationship
+A foreign  identifier  is an attribute  created  in a child entity through  its relationship  with other entities,  not an attribute
+needed by a given entity itself The foreign identifier  acts as a foreign key when creating  a database.  The foreign
+identifier  can be naturally  identified  by a logical relationship  when the relationship  and attribute,  as well as the primary
+identifier,  are defined.  When a primary identifier  is assigned  to an entity and  a relationship  between  the entities is
+established,  the child entity's  attributes  are inherited  from the parent’s  primary  identifier.  At this time, it should be
+determined  whether  the child entity will use the foreign identifier  received  from the parent  identity  as its own primary
+identifier  or not, or whether  it will use it only as a property  that is connected  to the parent.
+M2 Database  61

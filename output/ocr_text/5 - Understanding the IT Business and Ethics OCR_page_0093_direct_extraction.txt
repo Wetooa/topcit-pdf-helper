@@ -1,0 +1,40 @@
+ESSENCE
+Analysis  CRM Operational  CRM
+. Marketing FfOperational Trading a Data Mart Wen ERP SCM paren
+: Data Sales
+° Mensnatcy | Data Mart —
+. eer Marketing SII BSI (es
+Operational Servi eal) Automation  | Automation  | AutomationDBn ervice a efe)
+Data Mart
+{ {
+Collaboration  CRM
+[Fig. 34] CRM classification
+Categorizing  CRM in this way is only done for the purpose  of increasing  people’s  understanding  of CRM. In fact, the
+ultimate  target of CRM is to get inside the minds of the customers.  In order to accurately  read the customers’  minds,
+data analysis  has to be performed,  while assistance  from a business  support  system is also helpful. A diverse set of
+customer  points of contact  (channels)  for interacting  with customers  has to be secured  as well.
+The table below explains  the characteristics  of CRM (by category).
+<Table  40> Comparison  of CRM classifications
+Category Operations  CRM Analysis  CRM Collaboration  CRM
++ Customer  management  support  at + Marketing  analysis  and sales + Provides  customer  points of
+customer  points  of contact. analysis  using data generated contact  channel.
++ Links to marketing  and customer  service during operations.  Linked to DW. + Provides  interconnected
+at customer  point of contact. services  for the purpose  of
+Concept + Provides  front office functions,  automated improving  communication
+function  for business  process  & work and consolidating  tasks
+support. between  customers  and
+companies  and between
+different  departments
+within the same company.
++ Marketing  information  management + Enterprise-wide  DW deployment * Call Center
+Compo- + Campaign  management  system + Data Mining + Mobile collaboration  system
+nents + SFA(Sales  Force Automation) * OLAP * eCRM
++ Customer  service  system
++ Integration  of processes  in each + Provision  of analysis  techniques + Diversification  of channels
+Conside- channel,  integrated  management  of and technologies  for identifying  the +  Provision  of a uniform
+rations the customer  contact  history. needs of customers. service across all channels.
++ Rapid development  of business + Construction  of a knowledge  base
+functions,  access  to back office. and data reliability  are the key.
+© Configuration  of the CRM system
+In CRM, information  begins to flow from the customer  point of contact  and ends at the customer  point of contact.
+92 TOPCIT  ESSENCE

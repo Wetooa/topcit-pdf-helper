@@ -1,0 +1,57 @@
+ESSENCE
+<Table 11> Comparison  of ISP and EA concepts
+Category
+Objectives
+Scope
+Main
+activities
+Key
+outputsIsP
++ Link the management  strategy  with the
+informatization  strategy,  and introduce  new
+information  technologies.
++ The informatization  strategy  can be applied at the
+company-wide  level, service  or department.
++ Analysis  of the business  management  environment
+(organization,  related agencies  and customer
+characteristics,  etc.).
++ Analysis  of the latest trends on information
+technology.
++ Analysis  of tasks (internal  activities  of the organization
+and current  process).
++ Analysis  of the information  system  structure.
++ Establishment  of the information  strategy  and
+information  management  system.
++ Design of the future task handling  process  and
+information  system.
++ Establishment  of a To-Be roadmap.
++ Report  on the analysis  of the business  management
+environment:  report on the analysis  of information
+technology  trends.
++ Report  on the analysis  of the job/information  system,
+IT vision and strategy.
++ Implementation  agenda  and roadmap.EA
++ Blueprint  for seamless  integration  of business  and
+information  resources.
++ Architectures  for a company’s  technology  (ITA),
+business  (BA), application  (AA), data (DA), etc.
++ Establishment  of ITA direction  and guidelines.
++ Establishment  of a reference  model (BRM, SRM, DRM,
+TRM/SP,  PRM).
++ Analysis  of the AS-IS architecture  (BA, AA, DA, TA, SA).
++ Establishment  of the TO-BE  architecture  (BA, AA, DA,
+TA, SA).
++ Establishment  of an implementation  plan
++ Establishment  of an ITA management  system.
++ The vision of the company-wide  architecture,  rules,
+architecture  matrix.
++ The current  and target  architecture
++ (BAAA,  DA, TA, SA).
++ The plan for the implementation  of the target
+architecture.
+In other words, the EA is deployed  under a company’s  target architecture  and incorporates  the latest information
+technology  so that it can align the direction  of its IT with its management  strategy.  Therefore,  the EA must be
+managed  in a way that allows a company  to respond  quickly  to changes  in the business  management  environment,
+and must be flexible, so that the company’s  agenda can be implanted  quickly  through  continuous  updating,  and in a
+way that ensures  that the roadmap  is shared with the rest of the organization.
+52 TOPCIT  ESSENCE

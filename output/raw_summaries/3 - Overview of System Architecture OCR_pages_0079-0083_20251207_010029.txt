@@ -1,0 +1,231 @@
+LEARNING GUIDE: Pages 79-83
+Generated: 2025-12-07 01:00:29
+PDF: 3 - Overview of System Architecture OCR
+
+================================================================================
+LEARNING GUIDE
+================================================================================
+
+Here's a simplified, easy-to-read learning guide based on the provided text:
+
+---
+
+## Parallel Computing Architectures & Technologies
+
+This guide covers fundamental concepts and technologies in parallel processing, from system architectures to programming models and specialized hardware like GPUs.
+
+---
+
+### **1. Parallel Computing Architectures (Flynn's Taxonomy)**
+
+These classifications describe how instructions and data streams are handled by a computing system.
+
+*   **MISD (Multiple Instruction Single Data)**
+    *   **Concept:** Each processing unit runs *different instructions* on the *same data*.
+    *   **Example:** Pipeline architecture.
+    *   **Usage:** Not widely used in general parallel computing.
+
+*   **MIMD (Multiple Instruction Multiple Data)**
+    *   **Concept:** Multiple processors run *different programs* on *different data*.
+    *   **Prevalence:** Most parallel computers fall into this category.
+    *   **Classification:**
+        *   **Shared Memory Model (Tightly-coupled system):** Processors share a common memory space.
+        *   **Distributed Memory Model (Loosely-coupled system):** Each processor has its own memory; data is exchanged via a network.
+
+---
+
+### **2. Classification of Parallel Processing Systems by Memory Structure**
+
+These models describe how memory is organized and accessed by multiple processors.
+
+*   **Symmetric Multiprocessor (SMP)**
+    *   **Type:** Tightly-coupled, shared memory system.
+    *   **Mechanism:** All processors use the main memory as shared memory, accessed via an internal bus.
+    *   **Pros:** Easy to program due to shared data access.
+    *   **Cons:** Poor scalability, potential "bus bottleneck" as more processors contend for the bus.
+
+*   **Massive Parallel Processor (MPP)**
+    *   **Type:** Loosely-coupled, distributed memory system.
+    *   **Mechanism:** Each processor has its *independent memory* and resources (CPU, I/O). Data exchanges happen through a network (e.g., Ethernet).
+    *   **Pros:** Excellent scalability.
+    *   **Cons:** More complex programming due to explicit data communication.
+
+*   **Non-Uniform Memory Access (NUMA)**
+    *   **Concept:** Combines advantages of SMP (ease of programming) and MPP (scalability).
+    *   **Mechanism:** Each processor has its *local memory*, but all processors can also access a *global memory address space*. Accessing local memory is faster than global memory.
+
+---
+
+### **3. Types of Parallel Processor Technology**
+
+Technologies used to enhance processor performance through parallelism.
+
+*   **Instruction Pipelining**
+    *   **Goal:** Improve CPU performance by processing multiple instructions simultaneously.
+    *   **Mechanism:** Divides an operation into several stages, with a dedicated hardware unit for each stage. While one instruction is in a later stage, another can start an earlier stage.
+    *   **Common Type:** Four-stage instruction pipeline.
+    *   **Stages of a Four-Stage Pipeline:**
+        1.  **IF (Instruction Fetching):** Fetches instruction from memory.
+        2.  **ID (Instruction Decoding):** Interprets the fetched instruction.
+        3.  **OF (Operand Fetching):** Fetches data/variables needed for the operation.
+        4.  **EX (Execution):** Runs the specified operation.
+
+*   **Superscalar Processors**
+    *   **Goal:** Speed up the CPU.
+    *   **Mechanism:** Includes multiple instruction pipelines (functional units) to process several instructions *independently* and potentially *out of order*.
+
+*   **Pipeline Hazards**
+    *   **Definition:** Situations that cause the pipeline speed to slow down.
+    *   **Types:**
+        1.  **Data Hazard:** Occurs when an instruction depends on the result of a *previous* instruction that hasn't finished yet. The next instruction must wait.
+        2.  **Control Hazard:** Caused by *branch or jump instructions* that change the normal execution order, making it difficult to pre-fetch subsequent instructions.
+        3.  **Structural Hazard:** Occurs when hardware limitations prevent instructions from being processed in parallel in the same clock cycle (e.g., two instructions need the same hardware resource simultaneously).
+
+---
+
+### **4. Parallel Programming Technology**
+
+Tools and models for developing parallel applications.
+
+*   **OpenMP (Compiler Technology)**
+    *   **Type:** Compiler directive-based parallel programming API (Application Programming Interface).
+    *   **Mechanism:** You add "directives" to a sequential program to specify parts that should run in parallel. The compiler then handles parallelization for these marked sections.
+    *   **Execution Model:** Fork/Join model.
+        *   A single "master thread" runs initially.
+        *   When a directive is met, new "worker threads" are *forked* to execute the parallel section.
+        *   Once the parallel section finishes, the worker threads *join* back into the master thread, and sequential execution resumes.
+
+*   **Message Passing Parallel Programming Model (e.g., MPI)**
+    *   **Suitability:** Ideal for *distributed memory systems* (like MPP).
+    *   **Mechanism:** Nodes (processors) do not share memory directly. They communicate and exchange information by *sending messages* over a network.
+    *   **Performance Factor:** Network communication speed is crucial.
+    *   **Common Use:** Supercomputers requiring high-speed operations.
+    *   **Key Standard:** Message Passing Interface (MPI) is the widely adopted standard. (Other tools include HPF, PVM).
+
+*   **Load Balancing Technologies**
+    *   **Goal:** Distribute jobs effectively across processor cores to maximize multi-core performance.
+    *   **Multiprocessing Models:**
+        *   **AMP (Asymmetric Multiprocessing):** Each processor core runs its own independent operating system (OS).
+        *   **SMP (Symmetric Multiprocessing):** A single OS manages *all* processor cores simultaneously. Application programs can run on *any* available core.
+        *   **BMP (Bound Multiprocessing):** A single OS manages *all* processor cores, but application programs are configured to run on *specific* designated cores.
+
+---
+
+### **5. Graphic Processing Technology**
+
+Specialized hardware for highly parallel computations.
+
+*   **Graphics Processing Unit (GPU)**
+    *   **Primary Purpose:** Hardware specialized for computer graphics calculations, especially 3D rendering.
+    *   **Structure:** Configured with *thousands of small, simple cores* designed for parallel floating-point operations.
+    *   **Performance:** Superior to CPUs for tasks that can be broken into many small, parallel computations (e.g., image processing, scientific simulations).
+    *   **Evolution:** Originally graphics-focused, now evolving into more flexible, programmable units.
+
+*   **General-Purpose GPU (GPGPU)**
+    *   **Concept:** Utilizes GPUs for general computing tasks, not just graphics.
+    *   **Rationale:** GPUs excel at matrix and vector operations, which are common in both graphics and many scientific/engineering domains.
+    *   **Programming Models:** Several models support GPGPU development:
+        *   NVIDIA: CUDA, OpenACC
+        *   Khronos Group: OpenCL
+        *   Microsoft: C++ AMP
+
+*   **Compute Unified Device Architecture (CUDA)**
+    *   **Developer:** NVIDIA (introduced 2006).
+    *   **Concept:** A parallel computing platform and programming model specifically for NVIDIA GPUs.
+    *   **Goal:** Significantly improve computing speed by leveraging the large number of GPU cores.
+
+---
+
+================================================================================
+ORIGINAL TEXT (First 5000 chars)
+================================================================================
+
+--- Page 79 ---
+ESSENCE
+© Multiple  instruction  streams  - single data stream,  Multiple  Instruction  Stream  Single Data Stream  (MISD)
+Each processing  unit in the MISD parallel computing  architecture  runs different  instructions  and processes  the same
+data. The pipeline  architecture  is an example.  It is not a widely used architecture.
+@ Multiple  instruction  streams  - multiple  data stream,  Multiple  Instruction  Stream  Multiple  Data Stream (MIMD)
+In a MIMD structure,  multiple  processors  process different  programs  and different  data, and most parallel computers
+fall into this category.  It can be classified  into a shared memory  model and a distributed  memory  model, depending  on
+how it uses the memory.  According  to the degree of data interaction,  the shared memory  model is called a tightly-
+coupled  system,  and the distributed  memory  model is classified  as a loosely-coupled  system.
+MISD Instruction  Pool MIMD Instruction  Pool
+Vv
+Data PoolVv v
+Data Pool
+[Figure 44] MISD Structure [Figure 45] MIMD Structure
+C) Classification  of parallel  processing  systems,  according  to the memory  structure
+@ Symmetric  multiprocessor  (SMP)
+SMP is a tightly-coupled  system in which all processors  use the main memory  as the shared memory.  It is easy
+to program  since the data transfer  can use shared memory.  On the other hand, it has poor scalability  and may
+experience  a bus bottleneck,  since it uses an internal  bus to access the main memory  and share the data.
+Shared
+Memory
+Internal  Bus
+[Figure 46] SMP Structure
+78 TOPCIT  ESSENCE
+
+
+--- Page 80 ---
+Overview  of System  Architecture
+@ Massive  parallel  processor  (MPP)
+MPP is a distributed memory  type in which each processor  has an independent  memory.  The loosely  coupled  system
+exchanges  data between  processors  through  a network,  such as Ethernet.  The structure  of connecting  nodes, like
+the CPU, memory,  and I/O device, each of which has its own system resources,  through  a network, offers excellent
+scalability  and programming  difficulty.
+Internal  Bus or Ethemet
+[Figure  47] MMP Structure
+@® Non uniform  memory  access (NUMA)
+NUMA is a structure  the combines  the advantages  of the SMP, which is a shared memory  structure  that makes it
+easier to develop  programs  and the MPP structure,  which offers excellent  scalability.  Each processor  has a separate
+local memory  and the global memory  address  space that all processors  can access.
+Internal  Bus or Ethernet
+Global
+Memory
+[Figure  48] NUMA  Structure
+D) Types of parallel  processor  technology
+@ Instruction  pipelining
+The technology  improves  the CPU performance  by dividing  an operation  into several stages and configuring  a
+hardware  unit for processing  each stage separately  in order to process  different  instructions  simultaneously.  In other
+words, it does not process  only one instruction at a time, but it processes  multiple  instructions  simultaneously  by
+M3 Overview  of System  Architecture  79
+
+
+--- Page 81 ---
+ESSENCE
+processing  another  instruction  while still processing  an original instruction.  There are several types of pipelines:  a
+two-stage  instruction pipeline,  a four-stage  instruction pipeline,  and  a six-stage  instruction  pipeline.  The four-stage
+instruction  pipeline  is the most widely  used.
+Although  the instruction  set consists  of two stages in the four-stage  instruction  pipeline, the processing  time of the
+stages is divided into 4 in order to prevent  efficiency  degradation,  which occurs because  the processing  time of the
+pipeline  stages  is not the same.
+The stages of the four-stage  instruction  pipeline are instruction  fetching  (IF), instruction  decoding  (ID), operand
+fetching  (OF), and execution  (EX).
+Instruction Execution  Result
+@ >@
+1 9Clock Cycle | |
+: IF
+Instruction  1 |«<——>}
+Instruction  2 |<—>|
+Instfuction  3|<—>
+EX
+[Figure  49] Pipelining
+The IF stage is a process  that fetches instructions  from the memory  unit. It fetches  an instruction  from the program
+counter's  memory  unit address  and transfers  it to the register  The ID stage interprets  the fetched  instruction  using
+an instruction  decoder.  The OF stage fetches an operand  that becomes  a variable  or data, to be used in operation,
+from the memory  unit. The EX stage runs the operation  specified  by the instruction.
+@ Superscalar  process
+The Superscalar  process is a structure  that includes  a number  of instruction  pipelines  to speed up the central
+processing  unit. It can run instructions  out of order, since it independently  processes  instructions  using multiple
+pipelines.  The superscalar  process  has a basic configuration  in which several functional  units,that  are implemented  as
+superscalar  pipelines,  support  the parallel processing  of instructions.
+80 TOPCIT  ESSENCE
+
+
+--- Page 82 ---
+Overview  of System Architecture )
+Instruction Execution  Result
+@ >| F } >@
+Clock Cycle |
+Instruction ...

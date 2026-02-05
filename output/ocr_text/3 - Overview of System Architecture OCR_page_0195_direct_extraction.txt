@@ -1,0 +1,23 @@
+ESSENCE
+bs
+>p> Recent  trends and issues
+With the advent  of mobile platforms,  such as Android and iOS, since the mid-2000s,  society  has rapidly
+transformed  into the mobile era, as applications  useful for work and personal  leisure have emerged.  Some
+programs  use standard  application  layer protocols,  such as SMTP, POP3, IMAP. and FTP. and some others,
+like SNS, use their own application  layer protocols,  such as KakaoTalk,  Line, and Facebook.  Developers  can
+only develop  user-friendly  application  programs  when they have a good understanding  of the concept  and
+operation  method  of the application  layer protocol  operating  on the transport  layer.
+>> Learning  objectives
+1. To be able to understand  application layer  protocols  and design or utilize them,
+2. To be able to understand  HTTP protocols  for data exchange  between  clients and webservers  and utilize them,
+3. To be able to understand  FTP protocols  for file exchange  between  clients and webservers  and utilize them
+for program  development.  Moreover,  they will be able to use open-source  libraries in order to increase  the
+productivity  of application program  development.
+4. To be able to understand  JSP—based  server programming  techniques  and client programming  techniques
+for web application program  development  and develop  software.
+>> Keywords
+Application  layer protocol,  HTTP, GET method,  POST method,  FTP. Control connection,  Data connection,
+General  transport  mode, Passive  transport  mode, Apache  2.0 license, Web application  program,  server
+programming  technique,  client programming  technique,  JSP, HTML, JavaScript,  AJAX, Scriptlet  expression,
+Scriptlet,  Instruction,  Standard  action, Expression  language,  Tag extension
+194 TOPCIT  ESSENCE

@@ -1,0 +1,34 @@
+ESSENCE
+@ Strengths  of compiler  languages
++ Translated  object codes can be saved.
++ Executable  immediately  after compilation.
++ The reused program  can be executed  quickly  after compilation
+@ Shortcomings  of compiler  languages
+* Conversion  to machine  language  takes  a long time.
++ Memory  is wasted sometimes  because  one line of raw program  is translated  into hundreds  of lines of machine
+language.
+02 Characteristics  of Major Programming  Languages
+A) C language
+® Introduction  to the C language
+The C language  was developed  by Dennis Richie, who worked  at AT&A’s  Bell Lab on the UINX operating  system
+in the 1970s. Most computer  languages  are motivated  by the C language,  and most of the famous operating
+systems,  like iOS and Android,  are written in C.
+@ Characteristics  of the C language
++ Execution  is fast, and memory  can be managed  efficiently  and easily.
++ Functions  can be implemented  with paragraphs  because  the notation  is concise.
++ Procedure-oriented  language:  Programs  are executed  according  to the specified  sequence.
++ More difficult  to use than Java because  a program  in consideration  of the array and memory  is needed.
++ Porting  is difficult  when the execution  environment  and machine  are changed.
+B) C++ language
+@ Introduction  to the C ++ language
+C++ is suitable  for system programming  because  it contains  most of the features  of the C language, and is also
+suitable  for object-oriented  programming  by supporting  classes,  operator  overloading,  and virtual functions.
+If software  is developed  using an object-oriented  programming  technique,  it is easy to write a large-size  program,
+and programs  are easy to read because  software  reusability,  scalability,  and maintainability  are increased.
+@ Characteristics  of the C ++ language
++ Object  orientation  characteristics:  C++ reflects  the characteristics  of object  orientation  as a language  that is
+developed  from the C language  to support  object-oriented  programming.
++ Encapsulation  and data hiding aspects:  The class, a characteristic  of C++, is frequently  used in encapsulated
+form, and the actual internal  working  structure is hidden. Therefore, the user needs to know how to use the
+class without  knowing  how it works.
+92 TOPCIT  ESSENCE

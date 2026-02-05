@@ -1,0 +1,27 @@
+Overview  of System  Architecture
+client. It is generally  the same structure  as the client-server  architecture.  Since the client processes  most logic, it
+can be fast and easily implemented  when the number  of users is small. However,  the performance  becomes  poor
+as the number  of users increases,  and the architecture  is disadvantageous  in terms of scalability,  reusability,  and
+resource  use. Actual cases include application implemented  with 4GL tools, such as PowerBuilder,  Visual Basic, and
+Delphi.
+(Presentation  Layer) (Client)
+AO EAS (Business  Logic Layer)
+> a (Data Layer) (Server) (DB)
+Lee  Storage
+Layer (2-Tier) (3-Tier)
+[Figure 8] Types of Information  System  Tier  Architectures
++ Three-tier  architecture
+Three-tier  architecture  is a structure  created  to overcome  the limitations  of two-tier  architecture,  and it is also
+called multi-tier  architecture.  This structure  has an additional  tier between  the presentation  tier and the data tier,
+in order to process  business  logic to be flexible and scalable.  The problems  of two-tier  structures  include security
+problems  due to the clients’ ability to access the database  through  the network,  the difficulty  of user authority
+management,  and the difficulty  of changing  programs.  In three-tier  architecture,  the client does not have database
+access information.  It is easy to manage  the database  object reference  authority  through  the application  server.
+The distribution  of the separate  presentation  tier becomes  flexible. However,  the development  environment  is
+complex,  and the cost increases  because  of the need to procure  middleware  and additional  hardware.
+03 Server’s  Stack Architecture
+A) Concept  of server's  stack architecture
+“Server”  refers to a computer  or program  that provides  information  or services  to users through  a network.  It provides
+the computer  power needed  for the information  system services.  The concept  of the server was created  when IBM
+started making a server called the mainframe.  The term mainframe  refers to a large steel enclosure,  like a cabinet,
+M3 Overview  of System  Architecture  29

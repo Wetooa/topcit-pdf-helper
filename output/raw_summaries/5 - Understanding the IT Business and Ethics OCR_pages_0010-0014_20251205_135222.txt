@@ -1,0 +1,417 @@
+LEARNING GUIDE: Pages 10-14
+Generated: 2025-12-05 13:52:22
+PDF: 5 - Understanding the IT Business and Ethics OCR
+
+================================================================================
+LEARNING GUIDE
+================================================================================
+
+Here's a simplified, easy-to-read learning guide based on the provided text outline:
+
+---
+
+## IT Business & Service Management: Learning Guide
+
+This guide covers essential concepts in IT business process management, IT services, performance evaluation, environmental transformation, latest services, and professional ethics.
+
+---
+
+### **V. IT Business Process Information Management**
+
+This section focuses on managing information within IT business processes and techniques for improvement.
+
+#### **05 IT Business Process Improvement Techniques**
+Techniques used to optimize and enhance IT-related business processes:
+
+*   **A) Understanding BPR (Business Process Reengineering)**
+    *   **Definition:** Fundamentally rethinking and radically redesigning business processes to achieve dramatic improvements in critical contemporary measures of performance such as cost, quality, service, and speed.
+*   **B) Understanding PI (Process Innovation)**
+    *   **Definition:** The creation of new, more efficient, or effective ways of doing things, or significant improvements to existing processes. It often involves applying new technologies or methods.
+*   **C) Understanding Six Sigma**
+    *   **Definition:** A data-driven methodology for eliminating defects in any process – from manufacturing to transactional and beyond. It aims to improve process output quality by identifying and removing the causes of errors and minimizing variability.
+*   **D) Understand TRIZ (Theory of Inventive Problem Solving)**
+    *   **Definition:** A methodology based on systematic analysis of patterns of invention and evolution in technology. It provides tools and techniques for creative problem-solving and innovation, particularly in technical fields.
+*   **E) Understanding SERVQUAL (Service Quality)**
+    *   **Definition:** A multi-dimensional research instrument designed to capture consumer expectations and perceptions of service quality. It measures quality across dimensions like tangibles, reliability, responsiveness, assurance, and empathy.
+*   **F) Understanding SPC (Statistical Process Control)**
+    *   **Definition:** A method of quality control that uses statistical methods to monitor and control a process. Its goal is to ensure that a process operates efficiently and produces more specification-conforming products with minimal waste.
+
+---
+
+### **VI. Understanding IT Business Services**
+
+This section explores various IT business services, including enterprise solutions and decision support systems.
+
+#### **02 IT Business General-Purpose Work Support System**
+These are comprehensive software systems designed to integrate and manage various aspects of an enterprise's operations.
+
+*   **A) Enterprise Solution**
+    *   **Definition:** Integrated software packages that support the core business processes of an organization, covering areas like finance, human resources, manufacturing, and supply chain.
+*   **B) Types of Enterprise Solutions**
+    *   Common examples include ERP, SCM, CRM, and PLM systems (detailed below).
+*   **C) Business Strategy and Enterprise Solution**
+    *   **Concept:** Enterprise solutions are crucial tools for implementing and supporting an organization's overall business strategy by streamlining operations, improving data flow, and enhancing decision-making.
+*   **D) Understanding ERP (Enterprise Resource Planning)**
+    *   **Definition:** A suite of integrated software applications that an organization can use to manage and integrate the core business processes in real-time, mediated by software and technology. This includes finance, HR, manufacturing, supply chain, and services.
+*   **E) Understanding SCM (Supply Chain Management)**
+    *   **Definition:** The management of the flow of goods and services, from the origin of raw materials to the delivery of the final product to the consumer. It involves optimizing supply-side activities to maximize customer value and achieve a sustainable competitive advantage.
+*   **F) Understanding CRM (Customer Relationship Management)**
+    *   **Definition:** A technology for managing all your company's relationships and interactions with customers and potential customers. The goal is to improve business relationships to grow your business. It focuses on sales, marketing, and customer service.
+*   **G) Understanding PLM (Product Lifecycle Management)**
+    *   **Definition:** The process of managing the entire lifecycle of a product from its conception, through design and manufacture, to service and disposal. PLM integrates people, data, processes, and business systems, providing a product information backbone for companies and their extended enterprise.
+
+#### **03 IT Business Decision-Making Support System**
+Systems designed to aid managers and executives in making informed business decisions.
+
+*   **A) Understanding EDW (Enterprise Data Warehouse)**
+    *   **Definition:** A central repository of integrated data from one or more disparate sources. It stores current and historical data and is used for creating analytical reports for workers throughout the enterprise.
+*   **B) Understanding the DSS (Decision Support System)**
+    *   **Definition:** An interactive computer-based system that gathers and presents data from a wide range of sources to help management make decisions. It provides information, models, and analytical tools to support semi-structured and unstructured decision-making tasks.
+*   **C) Understanding BI (Business Intelligence)**
+    *   **Definition:** A set of strategies and technologies used by enterprises for the data analysis of business information. BI technologies provide historical, current, and predictive views of business operations, often delivered through reporting, dashboards, and analytical tools.
+
+#### **04 Understanding IT Service Management (ITSM)**
+A framework for managing the delivery of IT services to customers.
+
+*   **A) Overview of IT Service Management**
+    *   **Definition:** A discipline for managing information technology (IT) systems and services with a focus on delivering value to customers. It involves designing, delivering, managing, and improving IT services.
+*   **B) Understanding ITIL (Information Technology Infrastructure Library)**
+    *   **Definition:** A widely adopted framework of best practices for IT service management. ITIL provides a comprehensive set of concepts and practices for managing IT services to meet business needs.
+*   **C) Understanding the SLA (Service Level Agreement)**
+    *   **Definition:** A contract between a service provider and a customer that defines the level of service expected from the provider. It outlines metrics, responsibilities, and penalties for non-compliance.
+*   **D) Understanding SLM (Service Level Management)**
+    *   **Definition:** The process within ITIL that involves continually negotiating, monitoring, and managing IT services to ensure they meet agreed-upon business requirements and service levels as defined in SLAs.
+
+---
+
+### **VII. Understanding IT Business Performance Evaluation**
+
+This section covers various techniques for evaluating the performance of IT businesses, from financial metrics to strategic scorecards.
+
+#### **02 Financial Performance Evaluation Technique**
+Methods used to assess the financial health and efficiency of an IT business.
+
+*   **A) Overview of Financial Performance Evaluation**
+    *   **Concept:** Analyzing financial statements and data to gauge the profitability, efficiency, solvency, and stability of an organization.
+*   **B) Types of Financial Performance Evaluation Techniques**
+    *   Includes ratio analysis (e.g., profitability, liquidity, solvency ratios), trend analysis, and comparisons to industry benchmarks.
+
+#### **03 Balanced Scorecard (BSC) Technique**
+A strategic performance management framework.
+
+*   **A) Overview of the BSC Technique**
+    *   **Definition:** A strategic planning and management system that organizations use to translate their vision and strategy into action. It provides a balanced view of organizational performance beyond just financial metrics.
+*   **B) Component Elements of BSC**
+    *   Includes objectives, measures, targets, and initiatives.
+*   **C) Four Perspectives of BSC**
+    *   **Financial:** How do we look to shareholders? (e.g., profitability, revenue growth)
+    *   **Customer:** How do customers see us? (e.g., customer satisfaction, market share)
+    *   **Internal Business Processes:** What must we excel at? (e.g., operational efficiency, quality)
+    *   **Learning and Growth:** How can we continue to improve and create value? (e.g., employee skills, innovation)
+
+#### **04 Balanced IT Performance Evaluation Technique (IT-BSC)**
+Applying the Balanced Scorecard framework specifically to IT performance.
+
+*   **A) Overview of IT-BSC**
+    *   **Definition:** An adaptation of the traditional Balanced Scorecard to measure the performance of an IT department or IT services, linking IT objectives directly to business strategy.
+*   **B) Component Elements of IT-BSC**
+    *   Similar to BSC, but tailored for IT, with perspectives such as:
+        *   **Corporate Contribution:** How IT contributes to business value.
+        *   **Customer Orientation:** How IT meets user needs.
+        *   **Operational Excellence:** How efficient and reliable IT processes are.
+        *   **Future Orientation:** How IT prepares for future needs and innovation.
+
+#### **05 Management of Key Performance Indicators (KPIs)**
+Tools for measuring organizational and individual performance.
+
+*   **A) Overview of KPI**
+    *   **Definition:** Quantifiable measures used to evaluate the success of an organization or a particular activity in meeting its objectives. KPIs are critical for tracking performance against strategic goals.
+*   **B) KPI Establishment Procedure**
+    *   Typically involves defining objectives, identifying relevant metrics, setting targets, collecting data, and regular review.
+*   **C) Precautions to Take When Deriving KPI**
+    *   Ensure KPIs are **SMART** (Specific, Measurable, Achievable, Relevant, Time-bound), aligned with strategic goals, and not too numerous or complex.
+
+#### **06 Goal Management System (MBO - Management by Objectives)**
+A strategic management model that aims to improve the performance of an organization by clearly defining objectives that are agreed to by both management and employees.
+
+*   **A) Key Perspectives of MBO**
+    *   Focus on setting measurable goals, employee participation, and regular performance reviews.
+*   **B) The Main Reasons Why Enterprises Are Adopting MBO**
+    *   To improve employee motivation, align individual goals with organizational goals, enhance communication, and increase accountability.
+*   **C) Component Elements of MBO**
+    *   Goal setting, action planning, self-control, and periodic reviews.
+
+---
+
+### **VIII. IT Business Environmental Transformation and Response**
+
+This section explores changes in the IT business environment and how enterprises adapt.
+
+#### **01 Trends of Change in the IT Business Environment**
+*   **A) Understanding the Transformation of the IT Business Environment**
+    *   **Concept:** The continuous evolution of technology, market demands, regulatory landscape, and global competition significantly impacts the IT sector. Trends include digital transformation, cloud computing, AI, big data, and cybersecurity challenges.
+
+#### **02 Enterprises’ Response to Changes in the IT Business Environment**
+Strategies and activities businesses undertake to adapt and thrive amidst environmental shifts.
+
+*   **A) IT Business Innovation Activities**
+    *   **Concept:** Developing new products, services, processes, or business models leveraging emerging IT. This includes R&D, adopting new technologies (e.g., AI, blockchain), and fostering a culture of continuous improvement.
+*   **B) IT Business Integration and Expansion**
+    *   **Concept:** Strategies like mergers, acquisitions, partnerships, and global market expansion to increase market share, diversify offerings, and gain competitive advantage in a dynamic IT landscape.
+
+---
+
+### **IX. Latest IT Business Service**
+
+This section highlights contemporary IT business services and underlying infrastructure.
+
+#### **01 Latest Web and Mobile Service**
+*   **A) Latest Web Technologies**
+    *   **Concept:** Modern web development trends including progressive web apps (PWAs), single-page applications (SPAs), real-time communication (WebSockets), serverless architecture, and advanced JavaScript frameworks (e.g., React, Angular, Vue.js).
+*   **B) Mobile Service**
+    *   **Concept:** Services delivered via mobile devices, encompassing mobile applications, location-based services, mobile payments, and responsive web design, driven by smartphone penetration and ubiquitous connectivity.
+
+#### **02 Smart Business Infrastructure**
+*   **A) Convergent Infrastructure**
+    *   **Definition:** An IT system that groups multiple components into a single optimized computing package. It combines servers, storage, networking, and virtualization into a pre-integrated unit, simplifying deployment and management.
+*   **B) Smart Infrastructure**
+    *   **Definition:** An infrastructure (e.g., smart cities, smart grids, smart buildings) that leverages IoT devices, sensors, data analytics, and AI to monitor, manage, and optimize operations automatically, improving efficiency, sustainability, and quality of life.
+
+#### **03 Latest IT Business Services**
+*   **A) Latest SW Centered IT Business Services**
+    *   **Concept:** Services primarily driven by software innovations, such as Software-as-a-Service (SaaS), Platform-as-a-Service (PaaS), serverless computing, AI-as-a-Service, blockchain services, and advanced analytics platforms.
+*   **B) Latest IT Business Services that Are H/W Centered**
+    *   **Concept:** Services heavily relying on advanced hardware, including edge computing (processing data closer to the source), specialized AI hardware (GPUs, TPUs), quantum computing, advanced robotics, and sophisticated IoT devices.
+
+---
+
+### **X. Professional Ethics of IT Business**
+
+This section addresses the ethical principles and codes of conduct crucial for IT professionals and businesses.
+
+#### **01 Understanding the Concept of Professional Ethics**
+*   **A) Concept of Professional Ethics**
+    *   **Definition:** A set of moral principles that govern the behavior of professionals in their work. It dictates how professionals should act in certain situations, often setting a higher standard than personal ethics.
+*   **B) Professional Ethics of IT Business**
+    *   **Concept:** Specific ethical considerations for IT professionals, addressing issues like data privacy, intellectual property, system security, algorithmic bias, responsible AI development, and the impact of technology on society.
+
+#### **02 Ethical Principles and Code of IT Business**
+*   **A) Code of Ethics Related to ICT Technology**
+    *   **Concept:** Formal guidelines or statements adopted by professional organizations or companies outlining acceptable ethical behavior and decision-making for individuals working with Information and Communication Technologies (ICT). Examples include principles of honesty, integrity, confidentiality, competence, and public safety.
+
+---
+
+### **XI. Privacy**
+
+This section covers the understanding and protection of personal information.
+
+#### **01 Understanding of Personal Information**
+*   **A) Concept of Personal Information**
+    *   **Definition:** Any information that relates to an identified or identifiable living individual. This includes names, addresses, identification numbers, online identifiers, and factors specific to the physical, physiological, genetic, mental, economic, cultural, or social identity of that individual.
+*   **B) Relevant Domestic Laws and Regulations Related to Personal Information Protection**
+    *   **Concept:** Legal frameworks within a specific country (e.g., GDPR in Europe, CCPA in California, PIPA in Korea) designed to protect individuals' personal data, regulating its collection, processing, storage, and sharing.
+*   **C) Foreign Policy Related to Personal Information Protection**
+    *   **Concept:** International agreements or national laws of other countries that impact how personal data is handled across borders, especially for global businesses.
+
+#### **02 Ex Ante and Ex Post Response Method for Personal Information Infringement**
+Strategies for preventing and responding to personal information breaches.
+
+*   **A) Proactive Measures for Personal Information Controllers (Ex Ante)**
+    *   **Concept:** Preventive actions taken *before* an incident occurs, such as implementing robust security systems, data encryption, access controls, privacy impact assessments, staff training, and developing clear privacy policies.
+*   **B) Follow-up Measures for Personal Information Controllers (Ex Post)**
+    *   **Concept:** Reactive actions taken *after* an incident, including breach notification to affected individuals and authorities, forensic investigation, data recovery, impact mitigation, and reviewing/improving security protocols to prevent future incidents.
+
+---
+
+### **XII. Copyright and Industrial Property Protection**
+
+This section explores intellectual property rights, specifically copyright and industrial property.
+
+#### **01 Understanding of Intellectual Property Rights (IPR)**
+*   **A) Definition of Intellectual Property Rights**
+    *   **Definition:** Legal rights that protect creations of the mind. They grant creators exclusive rights over their inventions, literary and artistic works, designs, and symbols, names, and images used in commerce.
+*   **B) Types of Intellectual Property Rights**
+    *   Includes copyrights, patents, trademarks, and trade secrets.
+
+#### **02 Understanding of Copyright**
+*   **A) Definition and Classification of Copyright**
+    *   **Definition:** A legal right granted to the creator of original literary, dramatic, musical, and artistic works, including software and databases. It grants exclusive rights to reproduce, distribute, perform, display, or license their work.
+    *   **Classification:** Can be economic rights (e.g., reproduction, distribution) and moral rights (e.g., right of attribution, integrity).
+
+#### **03 Understanding of Industrial Property Rights and New Intellectual Property Rights**
+*   **A) Concept of Industrial Property Rights**
+    *   **Definition:** A branch of intellectual property that deals with inventions (patents), trademarks, industrial designs, and geographical indications. It primarily protects the functional and commercial aspects of creations.
+*   **B) Concept of New Intellectual Property Rights**
+    *   **Definition:** Emerging forms of intellectual property protection that address challenges posed by new technologies, such as protection for semiconductor chip layouts, plant varieties, and database rights.
+
+#### **04 Understanding of Unfair Competition Prevention and Trade Secret Protection**
+*   **A) Concept of Unfair Competition Prevention**
+    *   **Definition:** Laws and regulations aimed at preventing deceptive or unlawful business practices that harm competitors or consumers. This includes protection against false advertising, product disparagement, and unauthorized use of business reputation.
+*   **B) Concept of Trade Secret Protection**
+    *   **Definition:** Legal measures to protect confidential business information that provides a competitive edge. This includes formulas, practices, designs, instruments, or compilations of information that are not generally known or reasonably ascertainable by others (e.g., Coca-Cola formula, Google's search algorithm).
+
+---
+
+### **XIII. Ethical Issues of the Latest IT Business Services**
+
+This section focuses on the ethical challenges posed by cutting-edge IT services.
+
+#### **01 Major Ethical Issues of the Latest IT Business Services**
+*   **A) Ethical Issues of the Latest IT Business Services**
+    *   **Concept:** Concerns arising from advanced technologies like AI, big data, IoT, and gene editing. These include:
+        *   **Algorithmic Bias:** AI systems perpetuating or amplifying societal biases.
+        *   **Privacy Erosion:** Extensive data collection and surveillance.
+        *   **Job Displacement:** Automation impacting employment.
+        *   **Autonomous Decision-Making:** Accountability and control of AI systems.
+        *   **Digital Divide:** Unequal access to technology and its benefits.
+        *   **Misinformation and Disinformation:** Spread of false content online.
+        *   **Environmental Impact:** Energy consumption of data centers and hardware.
+        *   **Security Risks:** Vulnerabilities in interconnected systems.
+
+---
+
+================================================================================
+ORIGINAL TEXT (First 5000 chars)
+================================================================================
+
+--- Page 10 ---
+B) IT business  Process  Information  Management 69
+05 IT business  Process  Improvement  Techniques 71
+A) Understanding  BPR 72
+B) Understanding  PI 73
+C) Understanding  Six Sigma 75
+D) Understand  TRIZ 76
+E) Understanding  SERVQUAL 77
+F) Understanding  SPC 78
+VI. Understanding  IT Business  Services 80
+01 Summary  of Lessons  Learned 82
+02 IT Business  General-Purpose  Work Support  System 82
+A) Enterprise  solution 82
+B) Types of enterprise  solutions 83
+C) Business  strategy  and enterprise  solution 84
+D) Understanding  ERP 85
+E) Understanding  SCM 87
+F) Understanding  CRM 90
+G) Understanding  PLM 94
+03 IT business  Decision-Making  Support  System 96
+A) Understanding  EDW 96
+B) Understanding  the DSS 98
+C) Understanding  BI 100
+04 Understanding  IT Service  Management 103
+M5 IUnderstanding  the IT Business  and Ethics 9
+
+
+--- Page 11 ---
+ESSENCE
+A) Overview  of IT service  management
+B) Understanding  ITIL
+C) Understanding  the SLA
+D) Understanding  SLM
+VII. Understanding  the IT Business  Performance  Evaluation
+01 Summary  of Lessons  Learned
+02 Financial  Performance  Evaluation  Technique
+A) Overview  of financial  performance  evaluation
+B) Types of financial  performance  evaluation  techniques
+03 Balanced  Wcore Card Technique
+A) Overview  of the BSC technique
+B) Component  elements  of BSC
+C) Four perspectives  of BSC
+04 Balanced  IT Performance  Evaluation  Technique
+A) Overview  of IT-BSC
+B) Component  elements  of IT-BSC
+05 Management  of the Key performance  Indicators
+A)Overview  of KPI
+B) KPI establishment  procedure
+C) Precautions  to take when deriving  KPI
+06 Goal Management  System
+10 TOPCIT  ESSENCE103
+104
+107
+109
+111
+113
+117
+117
+17
+118
+118
+
+
+--- Page 12 ---
+A) Key perspectives  of MBO 118
+B) The main reasons  why enterprises  are adopting  MBO 119
+C) Component  elements  of MBO 119
+VII. IT Business  Environmental  Transformation  and Response 121
+01 Trends  of change  in the IT business  environment 123
+A) Understanding  the Transformation  of the IT Business  Environment 123
+02 Enterprises’  Response  to Changes  in the IT Business  Environment 124
+A) IT business  innovation  activities 124
+B) IT business  integration  and expansion 129
+IX. Latest  IT Business  Service 134
+01 Latest  Web and Mobile  Service 136
+A) Latest  web technologies 36
+B) Mobile service 39
+02 Smart Business  Infrastructure 143
+A) Convergent  infrastructure 43
+B) Smart infrastructure 151
+03 Latest IT Business  Services 161
+A) Latest  SW centered  IT business  services 61
+B) Latest IT business  services  that are H/W centered 169
+M5 IlUnderstanding  the IT Business  and Ethics 11
+
+
+--- Page 13 ---
+ESSENCE
+X. Professional  Ethics of IT Business
+01 Understanding  the Concept  of Professional  Ethics
+A) Concept  of Professional  Ethics
+B) Professional  Ethics of IT Business
+02 Ethical Principles  and Code of IT Business
+A) Code of Ethics Related  to ICT Technology
+XI. Privacy
+01 Understanding  of Personal  Information
+A) Concept  of Personal  Information
+B) Relevant  domestic  laws and regulations  related to personal  information
+protection
+C) Foreign  policy related  to personal  information  protection
+02 Ex Ante and Ex Post Response  Method  for Personal  Information  Infringement
+A) Proactive  Measures  for Personal  Information  Controllers
+B) Follow-up  measures  for personal  information  controllers
+XII. Copyright  and Industrial  Property  Protection
+01 Understanding  of Intellectual  Property  Rights
+A) Definition  of Intellectual  Property  Rights
+B) Types of intellectual  property  rights
+02 Understanding  of Copyright
+12 TOPCIT  ESSENCE175
+177
+177
+179
+180
+180
+185
+187
+187
+196
+196
+202
+204
+206
+206
+206
+206
+
+
+--- Page 14 ---
+A) Definition  and Classification  of Copyright 206
+03 Understanding  of Industrial  Property  Rights and New Intellectual
+Property  Rights 212
+A) Concept  of Industrial  Property  Rights 212
+B) Concept  of Industrial  Property  Rights 214
+04 Understanding  of Unfair Competition  Prevention  and Trade Secret  Protection 214
+A) Concept  of Unfair Competition  Prevention 214
+XII. Ethical Issues of the Latest  IT Business  Services 217
+01 Major Ethical Issues of the Latest IT Business  Services 219
+A) Ethical issues of the Latest IT Business  Services 219
+M5 IUnderstanding  the IT Business  and Ethics 13
+
+

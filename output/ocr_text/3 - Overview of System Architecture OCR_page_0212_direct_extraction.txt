@@ -1,0 +1,13 @@
+Overview  of System Architecture )
+# Practical  preview
+Network  technologies  are changing  with new technologies,  such as loT, artificial intelligence  (Al), and cloud
+computing.  The recent  topic of the new network  technology  is the software-defined network  (SDN). SDN
+is a technology  for standardizing  software  that is dependent  on existing  hardware  manufacturers  and
+providing  flexible network  services.  It is the core technology  of a software-defined  data center (SDDC).
+Cloud computing  is another  core technology  of SDDC. As such, the network  is the infrastructure  and core
+of new technologies.  Even in Al, the network  performance  determines  the Al performance.  Therefore,  the
+A\ network  uses InfiniBand,  which is a short word for infinite bandwidth.  The existing  network  Ethemet  can
+communicate  with one device at a time, but InfiniBand  can simultaneously  handle communication  between
+multiple  devices. It can reliably  operate,  even if there is a problem  with some equipment.  This section
+discusses  new network  technologies  that have recently  become  a hot topic.
+M3 Overview  of System  Architecture  211

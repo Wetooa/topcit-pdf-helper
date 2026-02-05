@@ -1,0 +1,28 @@
+ESSENCE
+general SQL statement  can retum multiple  tuples as an execution  result, whereas  an embedded  SQL statement  can
+return only one tuple.
+@ The tuple returned  by the embedded  SQL statement  can be stored using a common  variable.
+© The embedded  SQL statement  is separated  and compiled  by a preprocessor  when the host program  is compiled.
+Editor
+Source Program With embedded  SQL statements
+Oracle Precompiler
+Source Program With all SQL statements  replaced  by library calls
+Compiler
+Object  Program
+Oracle run time <<“ 5 Linker ney
+Source
+reer]
+[Figure40]  Conceptual  diagram  of embedded  SQL compilation
+@ The host program  variable  and the database  field can have the same name.
+© The data type of the host program  variable  should match that of the corresponding  database  field.
+© The execution  result, such as success,  failure, or error, is passed as a string (or integer)  value using an implicit SQL
+state variable  called SQLCODE.
+C) Embedded  SQL cursor
+Cursor indicates  a pointer  to the tuples of the table that are returned  as the result of executing  an embedded  SQL
+statement.  Multiple tuples, which can be returned  as the result of executing  an embedded  SQL statement,  can be
+accessed  using cursor.  The main statements  used to operate  cursor  are as follows.
+@ Declare:  A statement  for declaration  related to cursor, such as cursor definition.
+@ OPEN: A statement  used to set cursor  to point to the first tuple of the query result.
+@ FETCH:  A statement  used to move cursor  to the next tuple among  the tuples of the query result.
+@® CLOSE:  A statement  used to close cursor  upon completing  the processing  of the query execution  result.
+114 TOPCIT  ESSENCE

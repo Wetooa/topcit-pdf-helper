@@ -1,0 +1,209 @@
+LEARNING GUIDE: Pages 85-89
+Generated: 2025-12-05 14:41:15
+PDF: 4 - Understanding Information Security OCR
+
+================================================================================
+LEARNING GUIDE
+================================================================================
+
+This learning guide condenses the original text (Pages 85-89) focusing on essential information for database security.
+
+---
+
+## Database Security Learning Guide
+
+### 1. Introduction to Database Security
+
+#### A. Key Issues & Trends
+
+*   **Personal Information Protection Act Amendment (2014):**
+    *   Mandates **encrypted storage of resident registration numbers** (e.g., social security numbers).
+    *   **Goal:** Minimize damage from personal information leaks.
+    *   **Implementation Delay:** Due to high costs, risk of failure, and potential performance degradation post-encryption.
+    *   **Result:** Increased interest in database encryption.
+
+#### B. Learning Objectives
+
+*   Explain database security requirements.
+*   Describe database security control elements.
+*   Choose databases for encryption and apply cryptographic techniques.
+
+#### C. Key Terms
+
+*   **Virtual tables (views):** Restricted windows into database data.
+*   **Database access control:** Regulating who can access what in a database.
+*   **API method:** Application Programming Interface method for encryption.
+*   **Plug-in method:** Encryption integrated via database plug-ins.
+*   **TDE method (Transparent Data Encryption):** Database-level encryption that is transparent to applications.
+*   **Master key:** Primary key used to encrypt other encryption keys.
+*   **Key life cycle:** Management of cryptographic keys from generation to destruction.
+*   **HSM (Hardware Security Module):** Physical computing device that safeguards and manages digital keys.
+*   **Random number generator:** Algorithm or device for producing sequences of numbers that cannot be reasonably predicted.
+
+---
+
+### 2. Importance & Overview of Database Security
+
+#### A. Why Database Security Matters
+
+*   **Critical Asset:** Databases store vast amounts of vital data (personal, corporate confidential).
+*   **Prime Target:** They are key targets for attackers.
+*   **Business Impact:**
+    *   **Sustainable Management:** Prevents enormous economic loss and loss of customer trust from data leaks.
+    *   **Regulatory Compliance:** Mandated by laws like the Personal Information Protection Act, Information Communication Network Act, and Electronic Financial Transaction Act.
+
+#### B. Three Principles of Database Security (CIA Triad)
+
+Database security aims to protect information in three key areas:
+
+1.  **Confidentiality:**
+    *   **Goal:** Prevent unauthorized access or leakage of information.
+    *   **Implementation:** Database privilege management, Database encryption.
+2.  **Integrity:**
+    *   **Goal:** Ensure only authorized persons can modify information; prevent unauthorized changes.
+    *   **Implementation:** Database privilege management.
+3.  **Availability:**
+    *   **Goal:** Ensure continuous and uninterrupted database services.
+    *   **Implementation:** Database redundancy.
+
+---
+
+### 3. Database Security Threats & Countermeasures
+
+#### A. Common Database Security Threats
+
+1.  **Illegal Access:** Unauthorized external users gaining access (e.g., via SQL injection, web shell execution).
+2.  **Vulnerable Identification & Authentication:** Obtaining legitimate user identities through brute-force attempts or social engineering.
+3.  **Data Leakage:** Stealing unencrypted data or decrypting stolen encrypted data.
+4.  **Misuse of Cryptographic Modules:** Decrypting data using unreliable cryptographic tools or incorrect modes.
+
+#### B. Countermeasures
+
+1.  **Access Controls:**
+    *   **Purpose:** Allow only authorized users to access the database and prevent unauthorized access.
+    *   **Examples:** Account management, MAC, DAC, RBAC.
+2.  **Views (Virtual Tables):**
+    *   **Purpose:** Limit user access to only a permitted subset of data within the database.
+    *   **Example:** `CREATE VIEW` statements.
+3.  **Encryption:**
+    *   **Purpose:** Secure important data by encrypting it.
+    *   **Methods:** Using one-way (hashing like SHA-256) or two-way (symmetric/asymmetric like SEED, AES) cipher algorithms.
+
+---
+
+### 4. Database Access Control
+
+#### A. Access Control Policies
+
+1.  **Discretionary Access Control (DAC):**
+    *   **Principle:** Access determined by the subject (user) or group identity.
+    *   **Key Feature:** The **object owner** (e.g., table owner) controls who gets access permissions.
+    *   **Example:** A user who owns a table can grant or revoke privileges to other users.
+
+2.  **Mandatory Access Control (MAC):**
+    *   **Principle:** Access is controlled by the system based on security classifications (e.g., owner's rights to confidential objects).
+    *   **Key Feature:** System-wide security policy dictates access, not the user.
+    *   **Example:** Only a database administrator (DBA) with the highest clearance can access system catalogs.
+
+3.  **Role-Based Access Control (RBAC):**
+    *   **Principle:** Access permissions are assigned to **roles**, and users are assigned to roles.
+    *   **Key Feature:** Central administrator defines roles and their associated privileges. Access is based on a user's role in the organization.
+    *   **Example:** Defining a 'DBA' role with specific privileges and assigning that role to appropriate personnel.
+
+#### B. Methods for Controlling Database Access
+
+1.  **Agent Method:**
+    *   **How it works:** An **agent** (with access control and logging functions) is installed directly on the database server. Users access via a dedicated client.
+    *   **Pros:** Can implement strong access control.
+    *   **Cons:** Can cause **performance degradation** on the database server due to increased traffic/load.
+
+2.  **Gateway Method (Proxy Method):**
+    *   **How it works:** All database connection requests are routed through a central **database access control server (proxy server)**.
+    *   **Pros:** Provides the most powerful access control. Supports redundancy for high availability (work is unaffected even if one proxy server fails).
+    *   **Cons:** Introduces a proxy layer, which can be a single point of failure if not configured redundantly.
+
+3.  **Network Sniffing Method:**
+    *   **How it works:** Uses **TAP equipment** to analyze and log network packets directly.
+    *   **Pros:** No need to install agents on servers or clients; no load added to the database server or network.
+    *   **Cons:** Primarily an monitoring/auditing method; it is **not effective at fundamentally blocking damage to data integrity** caused by improper alterations, as it doesn't actively control access or changes.
+
+---
+
+================================================================================
+ORIGINAL TEXT (First 5000 chars)
+================================================================================
+
+--- Page 85 ---
+Information  security
+>>b Subject
+Managing  database  safely!
+>>> Recent  trends and major issues
+An amendment  to the Personal  Information  Protection  Act, which mandates  the encrypted  storage
+of the resident  registration  number, passed the National  Assembly  plenary session on February
+28, 2014. The content  of the amendment  is that the personal  information  handlers,  who keep the
+resident  registration  number,  are obligated  to encrypt  the resident  registration  number  in order to
+minimize  damage  if the personal  information  is leaked. Matters  concerning  the targets  of encryption
+and application  timing of each target are determined  by Presidential  Decree, considering  the size
+of the personal  information  processing  and the impact of leakage.  However,  its implementation  is
+delayed, because  enormous  costs are required to encrypt  the social security  number, risk of failure,
+and concern  about rapid performance  degradation  after encryption.  Recently,  there has been a spike
+in interest  in database  encryption,  due to these trends and issues.
+>>> Learning  objectives
+To be able to explain database  security  requirements.
+To be able to explain control elements  for database  security.
+To be able to select a database  for encryption  and apply cryptographic  techniques.
+>>b> Keywords
+Virtual tables (views), database  access control, API method,  plug-in method,  TDE method, master
+key, key life cycle, HSM (Hard Security  Module),  random  number  generator
+M4 Understanding  Information  Security  85
+
+
+--- Page 86 ---
+ESSENCE
++ Preview  for practical  business
+Since the database  collects and stores a large amount  of data, from personal  information,  to
+corporate  confidential  information,  it is an important  asset to protect  for an organization,  in addition
+to being a key target for attackers.  Therefore,  database  access  control and encryption  policies  should
+be established,  and countermeasures  should be prepared  to identify  various  security  threat elements
+of the database  and safely protect  important  data from these security  threats.
+Company  A decided  to come up with access control and encryption  measures  to safely manage
+the database  and requested  consulting  by submitting  the following  requirements  to the consulting
+company:
+1) Company  A experiences  frequent  organization  and business  changes.  Therefore,  the company
+needs a database  access  control system  that can be flexibly  applied  to such changes.
+2) Company  A should encrypt  uniquely  identifiable  information,  within the period stipulated  by the
+law, in accordance  with the revision  of the Personal  Information  Protection  Act.
+3) Company  A should thoroughly  analyze  the impact  of encrypting  uniquely  identifiable  information  in
+order to prevent  system failure and performance  degradation.
+Therefore,  let’s review the database  access control system that is desirable  for company  A, and the
+methods  for encrypting  uniquely  identifiable  information  and matters  to consider.
+86 TOPCIT  ESSENCE
+
+
+--- Page 87 ---
+Information  security )
+01 Overview  of database  security
+A) Overview  of database  security
+@ Three  principles  of database  security
+Database  security  means taking administrative,  physical,  and technical  protection  measures  in order to secure
+confidentiality,  integrity,  and availability  from the threat of leakage,  change, or destruction  of organizational
+database  information.
+In the past, the performance  of DB was emphasized,  but safe management  and data protection  is becoming
+especially  important  in recent years, which proves that the value of data is increasing  with the advancement
+of IT services.  Since the database  collects and stores a large amount  of data, from personal  information,  to
+corporate  confidential  information,  it is an important  asset to protect  for an organization,  and a key target for
+attackers.
+<Table 27> Three principles  of database  security
+tl as of Details Implementation  plan
++ Blocking  the leakage  of information  stored in the database Database  privilege
+Confidentiality + Only the authorized  person accesses  the database  to view management
+information Database  encryption
+Integrity + Only authorized  person can change database  information Database  privilegemanagement
+Availability + Ensuring  continuous  and uninterrupted  database  services Database  redundancy
+@ Need for database  security
++ Database  security  for sustainable  management
+Recently,  personal  information  leakage incidents  have occurred  in succession,  such as H capital, S portal, N
+game company,  K telecom,  etc., which emphasize  the necessity  of database  security.  Database  security  is a
+prerequisite  for sustainable  management  because  enormous  economic  loss, along with a decline in customer
+trust, can threaten  the foundation  of a business,  if database  information  is leaked.
++ Databas...

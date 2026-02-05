@@ -1,0 +1,42 @@
+ESSENCE
+<Table 89> Current  status of virtual currencies
+Virtual Date of
+Currency introduction Desc puol
++ First distributed  ledger-based  virtual currency.
+ae + Bitcoin  can only be used as transaction  book because  of closed structure  in which blocks areBitcoin 2009 .
+woven  in a row.
++ 10 minutes  required  for a transaction.
+* Closed blockchain  structure  is improved  to an organic  structure.
++ In addition  to virtual currency,  this currency  can also be expanded  to smart contracts  andEthereum 2014
+services.
+* 10 seconds  required  for a transaction.
++ Developed  mainly  for handling  bank transfers.
++ Provides  a low cost payment  service  and risk is lowered  thanks  to its immediate  settlement
+Ripple 2009 system.
++ When converting  currency,  it uses the best currency  conversion  rate it can find, reducing
+fees. Used by many banks and companies  that do a lot of foreign  trades.
+* Technically  similar  to Bitcoins
+Litecoin 2011 + Improves  the slow computing  speed of Bitcoins  (its major disadvantage)  to achieve
+maximum  mining  volume  and increase  transaction  speed by up to 4 times.
+© Linked data
+Linked data is structured  data model that supports  an interconnected  Web by identifying  data existing  on the Web
+as individual  URI (Uniform  Resource  Identifier)  and assigning  linked information  to each URI.
+<Table 90> 4 rules of linked data
+Rule Description
++ Linked data avoids a URL centered  identification  system  for showing  the location  of a
+Use of URI web document.
++ In other words, each individual  object present  in an individual  document  has its own URI.
++ Proposes  URI that could be accessed  through  HTTP protocol.
+Use of HTTP URI + The objective  is to enhance access to linked data
+Use of RDF + Uses data that is structured  in a triple model, as in RDF.
++ The objective  is to represent  and link up web data in a formalized  structure
+Assignment  of linke + The objective  is to make the job of linking data existing  on the Web a lot easier by
+information assigning  link information.
++ Usefulness  of linked data
+Linked data can be reused, reduce redundancy,  and maximize  interoperability  to achieve data integration.
+Furthermore,  added value can be created  through  linked data and network  effects  will result in data expansion.
+<Table 91> Usefulness  of linked data
+Usefulness Description
+Reusable  data + Data can be used with URI, even if the data is not one’s own.
++ The existence  of data sought  by a user can be checked.  The problem  of redundant  data canReduced  data redundancy be eliminated
+168 TOPCIT  ESSENCE

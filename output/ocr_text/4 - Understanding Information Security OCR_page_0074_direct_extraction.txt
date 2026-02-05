@@ -1,0 +1,18 @@
+ESSENCE
++ Preview  for practical business
+Recently,  company  A is building  a website  that strengthens  security,  due to the vulnerability  of
+personal  information,  and is considering  secure  coding  to improve  security.
+1) The company  is trying to apply secure SDLC.
+2) The customer  and the development  company  consider  secure coding in the requirement  definition
+stage.
+3) The company  considers  secure design when designing  analysis,  from the perspective  of
+architecture.
+4) Developers  review their codes in the development  phase and the quality control department
+performs  a third-party  security  check.
+5) The company  considers  secure coding  diagnostic  tools for review in the operation  and maintenance
+stage.
+However,  developers  are having difficulty  in the development  process,  due to the lack of
+understanding  on secure  coding  and the lack of training  on security  vulnerabilities.
+Let’s review secure coding that should be applied throughout  the development  lifecycle  to build an
+application  with strong security.
+74 TOPCIT  ESSENCE

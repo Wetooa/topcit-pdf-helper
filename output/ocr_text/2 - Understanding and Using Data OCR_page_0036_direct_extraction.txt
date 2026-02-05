@@ -1,0 +1,35 @@
+Database )
+E) XML document  creation  procedure
+Procedure Contents
+- Determines  the type of document  to create.
+SalseeCoeuMEMeeips (Example)  User manual, contract,  catalog, official document,  etc
+- Determines  the purpose  of use.
+frvel\yae Gtecumet - Determines  the logical structure and elements  of the document.
+- Provides  a basic schema  to the database  for linking.
+d he tags defined ) e - - Creates  an XML document  using the tags defined in DTD.
+Gieatis MUL esau - Creates a document  by complying  with the XML grammar.
+@i-eleesiny  ecole- Creates  a procedure  for document  appearance  and the processing
+contents  in the document.
+- Created  independently  of the XML document  and managed  as a different
+file
+[Figure  7] XML creation  procedure
+F) DTD concept  and creation  procedure
+DTD isa file that explicitly  declares  the structure  of an XML document  by defining  the structure  and contents  of that
+document.  There are several  types of DTD declaration,  as shown in the table below.
+<Table 14> Types  of DTD declaration
+Definition Declaration Yes
+Element  type declaration - element  type declaration <!ELEMENT  element  name~>
+Attribute  list declaration - attribute  type declaration <!ATTLIST  element  name~>
+Entity  declaration - entity declaration <!ENTITY  ~>
+Notation declaration Rotation  declaration <INOTATION  name~>-non-xml  data processing:  Images,  etc.
++ DTD creation  procedure
+@ Step 1: DTD declaration  - Describing  the process  of declaring  DTD
+<! DOCTYPE  Root  _Element[ <! DOCTYPE  books[
+<! ELEMENT  Root  _Element(..)> <! ELEMENT  book(title,  author>)>
+<> <! ELEMENT  title(#PCDATA>)>
+<> p
+Pp
+@ Step 2: Declaring  an element  type
+<!ELEMENT  element_name(con  tent_model)> <! ELEMENT  books(book*)>
+[Note] The asterisk  * symbol indicates  a case in which an element  is omitted  or may appear  multiple  times.
+M2 Database  35

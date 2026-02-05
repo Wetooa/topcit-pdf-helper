@@ -1,0 +1,21 @@
+Information  security )
+@ Key storage  stage
+Encryption  keys should be stored using the hardware  storage method,  such as a separate  key management
+server or an HSM (Hard Security  Module), instead of hardcoding  the encryption  key into the application
+program,  saving as a file in the file system,  or storing  the encryption  key inside the DBMS.
+@ Key use stage
+The database  administrator  and security  manager  should apply the principles  of “granting least privilege  and
+separation  of duty”, and they should only allow authorized  persons  to access or modify  the master  key.
+@® Key backup  and recovery  stage
+Backup  and recovery  procedures  for the encryption  key should be prepared  to recover  it when lost or damaged,
+and the encryption  key should be backed up periodically,  according  to the key backup policy.
+© Key replacement  stage
+The security  of the encryption  key should be maintained by  replacing  it periodically,  according  to the internal
+policy of the organization.  Before replacing  the encryption  key, data should be decrypted  with the existing
+encryption  key, and a new encryption  key should be created.  Then, the data should be encrypted  again.
+@ Key destruction  stage
+When the encryption  key is lost or damaged,  the data should be decrypted  using the encryption  key that has
+been backed up by the administrator,  according  to the procedure  stipulated  by the organization  policy. A new
+encryption  key should be generated,  and the data should be encrypted  with the generated  key again. Then,
+the lost or damaged  encryption  key should be destroyed.
+M4 Understanding  Information  Security  97

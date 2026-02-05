@@ -1,0 +1,14 @@
+Database
+>> Recent  trends and major issues
+In the past, many databases  were built to create a “paperless”  environment  in which data recorded  on paper
+are digitalized  and stored in a database.  Recently,  there have been many cases in which databases  have
+been elaborately  built from a digital environment  to a digital environment.  Instead  of simply managing  data
+with a fixed format  or length, there is an increasing  number  of cases in which data are stored and processed
+as various  types of unstructured  data regardless  of the data format  or size.
+>> Learning  objectives
+1. To be able to explain the database  design  and build process.
+2. To be able to explain the matters  to take into consideration  when designing  a database
+>> Keywords
+Requirements  analysis,  conceptual  data modeling, logical data modeling,  physical data modeling,  data
+modeling  subject,  deliverables  for analysis,  impact  of design
+M2 Database  41

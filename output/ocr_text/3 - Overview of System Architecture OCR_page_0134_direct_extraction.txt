@@ -1,0 +1,17 @@
+Overview  of System Architecture )
+@ Native type
+This type installs a VMM on physical hardware  and requires  no host OS. It saves resources,  compared  to the
+virtualization  requiring  a host OS, since there is no host OS. The native type is also called type1. The leading  native
+virtualization  technologies  include Xen, XenServer  from Citri, ESXServerBMWare,  Power Hypervisor  from IBM, and
+Hyper-V  and KVM from Microsoft.
+[Figure  95] Native Type Hypervisor
+@ Hosted  type
+The hosted hypervisor  (see [Figure 96]) is software  installed  on an existing  OS. The leading hosted type hypervisor
+includes  VirtualPC  from Microsoft,  Workstation  from VMWare,  and VirtualBox  from Oracle.
+Ca
+. OS 1(Guest  OS) | = OS 2(Guest  OS) | | - |
+[Figure  96] Native  Hypervisor
+C) Server  virtualization  methods
+According  to the virtualization  method,  server  virtualization  technology  can be classified  into full virtualization,  para-
+virtualization,  and OS-level  virtualization.
+M3 Overview  of System  Architecture  133

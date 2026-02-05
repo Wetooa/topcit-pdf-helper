@@ -1,0 +1,30 @@
+ESSENCE
+and u, and all (|V|—1) nodes of the graph, excluding  u, can be the shortest  distance  between  s and u. Therefore,  the
+Bellman-Ford  Algorithm  performs  the edge-relaxation  |V|—1 times for all edges.
+(Figure 121] shows Bellman-Ford  Algorithm’s  pseudo-code.
+BELLMAN-FORD  (G, w, s)
+INIT-SINGLE-SOURCE  (G, s)
+fori=1lto  |IGWV| -1
+for each edge (u,v) © G.E
+Relax (u, v, w)
+ifv.d>u.d  + wu, v)
+return  FALSE
+return  TRUE
+[Figure 121] Bellman-Ford  Algorithm’s  Pseudo-code
+C) Routing  protocol  types
+The routing  protocol  is classified  into static routing  and dynamic  routing,  depending  on the routing  type, as shown in
+(Figure 122]. The dynamic  routing  method is divided into the EGP (Exterior  Gateway  Protocol)  method  and the IGP
+(Interior  Gateway  Protocol)  method, according  to the classification  of AS (Autonomous  System).  The IGP (Interior
+Gateway  Protocol)  method  is further  divided into the distance  vector method,  the link-state  method,  and the hybrid
+method,  according  to the routing  setting  method.
+INoDUL a oa mre)Kolac)|
+Static Routing
+EGP IGP.
+{ sce ] [Distance  Vector | | Link  State] | Hybrid |
+| RIP | | OSPF | | EIGRP |
+IGRP ISIS
+[Figure 122] Routing  Protocol  Classification
+The type of routing  protocol  can be divided into an internal  router protocol  and an external  router protocol,  based on
+the autonomous  system (AS). Here, AS refers to networks  with an independent  management  system and the same
+operating  policy.
+168 TOPCIT  ESSENCE

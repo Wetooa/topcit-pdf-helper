@@ -1,0 +1,35 @@
+ESSENCE
+01 Overview  of network  security
+A) Concept  of network  security
+@® Type of security  attacks
+X.800 divides security  attacks into passive attacks and active attacks. A passive attack means that an
+attempt  is made to obtain and exploit system information,  but system resources  are not affected.  An active
+attack aims to change  system  resources  and affect system  operations.
++ Passive  attack
+A passive attack refers to the eavesdropping  or monitoring  of transmitted  data and is attempted  to obtain
+the transmitted  data. As shown in [Figure 53], passive  attacks  include message  content  disclosure  and traffic
+attack. Traffic attacks  can also be made against  encrypted  data transmission  for confidentiality.  This attack
+estimates  the nature of communication  by observing  the number  and length of message  exchanges.
+The passive attack has the characteristic  that it is difficult  to detect, because  the attack does not change
+data. Therefore,  prevention  is more important  than detection.
+Read contents  of
+message  from Bob
+to Alice
+Internet  or
+other comms  facility
+(a) Release  of message  contents
+Observe  pattern
+of messages  from
+Bob to Alice
+Internet  or
+other comms  facility
+[Figure  53] Passive  attack
+(Source:  W. Stallings,  Cryptography  and Network  Security  - Principles  and Practice,  Prentice  Hall, p.17)
++ Active attack
+An active attack can be classified  into masquerading,  replay, modification  of message,  and denial of service
+(DOS) attack,  which entail the illegal modification  of transmitted  data or the creation  of false data.
+Masquerading  occurs when one entity pretends  to be another. In general, the masquerading  attack is made
+together  with one of the other active attack  types.
+The replay attack acquires  one message,  by using an inactive  attack method,  and sends the message  again
+to obtain unauthorized  results.
+110 TOPCIT  ESSENCE

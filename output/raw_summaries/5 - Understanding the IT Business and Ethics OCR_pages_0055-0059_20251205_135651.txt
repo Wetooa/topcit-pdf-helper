@@ -1,0 +1,230 @@
+LEARNING GUIDE: Pages 55-59
+Generated: 2025-12-05 13:56:51
+PDF: 5 - Understanding the IT Business and Ethics OCR
+
+================================================================================
+LEARNING GUIDE
+================================================================================
+
+Here is a simplified, easy-to-read learning guide based on the provided text:
+
+---
+
+## IT Business Adoption & Management: A Study Guide
+
+This guide covers essential concepts for understanding and implementing IT business adoption processes, focusing on challenges, standard procedures, and methods.
+
+---
+
+### 1. Challenges in IT Business Adoption & Government Initiatives
+
+**Key Problems:**
+*   **High Costs:** Significant additional costs in public sector IT projects due to excessive work changes.
+*   **Poor Planning:** Inadequate planning and design of information systems.
+*   **Lack of Awareness/Expertise:** People often don't understand the benefits of IT systems or lack the necessary expertise.
+
+**Government & Legislative Responses:**
+*   **Mandatory Requirements:** Legislation now requires issuing a **Detailed RFP** (Request for Proposal – a document inviting proposals from potential suppliers) and implementing a **PMO Program** (Project Management Office – a department that defines and maintains standards for project management within an organization) for IT businesses.
+*   **"Split Order Process" Initiative:**
+    *   **Goal:** Prevent irresponsible work changes and eliminate unfair subcontracting practices.
+    *   **How it Works:** Divides an IT project into two distinct phases:
+        1.  **Planning/Design Phase:** Focuses on detailed requirement analysis, including:
+            *   **ISP (Information Strategy Plan):** A long-term plan for an organization's information systems.
+            *   **ISMP (Information System Master Plan):** A comprehensive plan for developing and implementing IT systems.
+            *   **Basic Design (Logical Design):** Outlines the system's abstract structure and functionality.
+        2.  **Deployment/Development Phase:** Focuses on implementation:
+            *   **Detailed Design (Physical Design):** Specifies the concrete implementation details of the system.
+            *   **System Development (Coding):** Writing the actual software code.
+            *   **Testing:** Verifying the system works as intended.
+
+**Benefits of the Split Order Process:**
+*   Enables more meticulous and systematic planning/design.
+*   Helps overcome the "invisibility of software" (difficulty in perceiving software changes).
+*   Increases understanding of how frequent requirement changes impede IT projects.
+
+---
+
+### 2. Overview of IT Business Adoption
+
+**Core Principles:**
+*   **Strategic Alignment:** IT business adoption must align with a company’s overall IT strategy and plans.
+*   **Adaptability:** Adoption methods and procedures should be tailored to the organization's size and external environment changes.
+*   **Software is Key:** The core value of IT lies in software; successful software development is crucial for successful IT business adoption.
+
+**Role of IT Outsourcing:**
+*   **Benefits:** Improves company competitiveness by leveraging external expert resources, especially for non-core areas.
+*   **Challenges:** Risk of work-related and technology-related "lock-in" (dependency on the external provider), which requires regulatory measures.
+
+**IT Business Adoption Process Components:**
+*   Uses a company's **ordering process** combined with the **SW Development Life Cycle (SDLC)** standard **ISO/IEC 12207**.
+*   **Orderer (Acquirer):** Department or person responsible for issuing requirements.
+*   **Developer (Supplier):** Company's internal IT department or an external expert/outsourcing partner.
+
+---
+
+### 3. The IT Business Ordering Process
+
+**Purpose:** Defines the activities and tasks of the orderer (client) and guides the deployment of IT systems, software, or services. It aims to enhance success rates by providing clear communication and predictability.
+
+**Key Stages:**
+1.  **Plan Order:**
+    *   **Activities:** Describe the system, define requirements & detailed specifications, create an ordering plan.
+    *   **Outputs:** Ordering plan, status analysis, requirements specification.
+2.  **RFP Preparation:**
+    *   **Activities:** Document proposal requirements, describe constraints, establish supplier selection procedures & standards.
+    *   **Outputs:** Request for Proposal (RFP), contracting terms & conditions, supplier evaluation criteria.
+3.  **Proposal Evaluation & Contracting:**
+    *   **Activities:** Issue tender notice, evaluate proposals, select supplier, negotiate, sign contract.
+    *   **Outputs:** Tender notice, proposal evaluation results, contract.
+4.  **Supplier Monitoring:**
+    *   **Activities:** Review & approve project execution plan, inspect supplier's contract fulfillment.
+    *   **Outputs:** Project execution plan, contract implementation inspection report.
+5.  **Acquisition & Completion:**
+    *   **Activities:** Select inspection manager, prepare acquisition plan, conduct inspection & acquisition test, finalize project acquisition & completion.
+    *   **Outputs:** Acquisition plan, test results report, acquisition & project completion report.
+
+---
+
+### 4. ISO/IEC 12207: Software Adoption Lifecycle Standard
+
+**What it Is:** An international standard that provides a standardized and systematic process for acquiring, supplying, developing, operating, and maintaining software.
+
+**Structure:** Consists of three main processes, each with detailed procedures.
+*   **Scope:** Defines *what* processes, activities, and tasks apply to software adoption/development, but *not* the specific naming, form, or content of outputs.
+*   **Enhancement:** Can be used with **SPICE** (Software Process Improvement and Capability Determination) or **CMMI** (Capability Maturity Model Integration) to learn *how* to implement the processes effectively.
+
+**A. Basic Lifecycle Processes:** (5 sub-processes focusing on core software activities)
+1.  **Acquisition:** Defines activities of the software acquirer (client) for systems, outputs, and services.
+2.  **Supply:** Defines activities of the software supplier (developer) to the acquirer.
+3.  **Development:** Defines activities of the software developer and the development team.
+4.  **Operation:** Defines activities of the operator providing operational services.
+5.  **Maintenance:** Defines activities of the manager providing maintenance services.
+
+**B. Support Lifecycle Processes:** (8 sub-processes that support other processes and contribute to quality/success)
+1.  **Documentation:** Activities for recording outputs throughout the lifecycle.
+2.  **Configuration Management:** Managing and tracking configuration details.
+3.  **Quality Assurance:** Checking requirements fulfillment and plan compliance.
+4.  **Verification:** Checking software output from the **developer's perspective**.
+5.  **Validation:** Checking software output from the **user's perspective**.
+6.  **Joint Review:** Comprehensive evaluation of output and progress.
+7.  **Audit:** Examining software's compatibility with plans and contracts.
+8.  **Problem Resolution:** Analyzing and resolving problems encountered in the basic lifecycle.
+
+**C. Organization Lifecycle Processes:** (4 sub-processes configuring the underlying organizational structure, not specific to a project)
+1.  **Management:** Basic management activities, including project management.
+2.  **Infrastructure:** Defines the basic structure for the lifecycle process.
+3.  **Improvement:** Activities for process improvement by stakeholders or the organization.
+4.  **Training:** Activities for providing trained staff.
+
+---
+
+### 5. Tailoring Process
+
+**Definition:** The process of optimizing a software development methodology or adoption procedure by eliminating activities and tasks that are not applicable or deemed unnecessary for a specific context.
+
+**Purpose:** To adapt the adoption procedure, method, and outputs to accommodate internal and external requirements changes. It is particularly critical for unit-level projects to create the best software adoption environment.
+
+**Important Considerations:**
+*   **Reasons for SW Adoption:** Scope of work (e.g., finance, telecom), stakeholder needs, project goals, and direction.
+*   **Timetable and Scope:** Overall scope of adoption, interfacing parts, project timeline, selection of methodology and outputs.
+*   **Environment:** Regulations, laws, IT compliance, security measures, and internal/external environment response strategy.
+*   **Application Technology:** Software application framework, base technology, and inspection of its utilization.
+
+---
+
+### 6. IT Business Adoption Methods
+
+There are two primary methods for adopting an IT business:
+
+**A. In-house Development:**
+*   **Characteristics:**
+    *   Uses internal personnel to set up and develop information systems.
+    *   System is highly customized to internal requirements.
+    *   Accumulates internal know-how.
+*   **Pros:** High degree of control, tailored to specific user needs, builds internal expertise.
+*   **Cons:** Higher adoption costs, success is not guaranteed, can be time-consuming.
+
+**B. Package Purchase:**
+*   **Characteristics:**
+    *   Adopting a pre-existing, standardized software package.
+    *   Benefits from know-how gained from previous implementations of the package.
+    *   System has typically undergone many tests and verifications.
+*   **Pros:** Reduces uncertainty about success, shorter adoption period, relatively low initial cost, built on advanced, standardized processes (improves work efficiency).
+*   **Cons:** Less customizable, potential for higher maintenance costs in the long run, may not perfectly fit unique internal requirements.
+
+---
+
+================================================================================
+ORIGINAL TEXT (First 5000 chars)
+================================================================================
+
+--- Page 55 ---
+ESSENCE
++ Preview  for practical  business
+According  to a 2010 survey by the Ministry  of the Interior  and Safety, 4.4 percent  of the additional  costs
+incurred due to excessive  work changes  were borne by central administrative  agencies,  while 15.3 percent
+were borne by  local governments.  These results have raised concems  that the planning  and design of
+information  systems  for deployment  in the public sector  are performed  poorly.
+Legislation  has been passed requiring  the issuance  of a detailed  RFP and the PMO program  when an
+organization  seeks to deploy an IT business.  However,  the findings  from surveys like the one described
+above suggest  that people are still not aware of the benefits  of deploying  an information  system and that
+most people also lack expertise.
+Recently,  the government  has been working  on introducing  a “split order process”  for the purpose  of
+preventing  irresponsible  work changes  and eradicating  the unfair subcontracting  structure  which involves
+the ordering  agency,  bidding  company,  and sub-contractor
+The split order process  roughly means that when an IT business is adopted,  planning/design  is split from
+deployment/development.  In the planning/design  phase, a more detailed requirement  analysis of the
+Information  Strategy  Plan (ISP) is carried out with the information  system master  plan (ISMP) and the basic
+design (logical design). In the deployment/development  phase, detailed  design (physical  design), system
+development  (coding),  and testing  are carried out.
+Many have voiced their concerns  about the adoption  of the split order process.  Nevertheless,  it is
+significant  in that an environment  can be created in which planning  and design can be done more
+meticulously  and systematically.  This environment  can also overcome  the invisibility  of software and lead
+people  to understand  how frequent  changes  in requirements  can act as impediments  to the adoption  of IT
+business.
+54 TOPCIT  ESSENCE
+
+
+--- Page 56 ---
+Understanding  the IT Business  and Ethics )
+01 Summary  of Lessons  Learned
+The adoption  of an IT business  must be executed  in alignment  with a company’s  IT business  strategy  and plans.
+Methods  and procedures  of IT business  adoption  must be created  in accordance  with the size of the organization  and
+changes  in the external  environment  of the company.  The outsourcing  of IT services  should be considered  for the
+non-core  areas or processes  of the company.
+The IT business  adoption  process utilizes the ordering  process  and the software  development  life cycle of ISO/IEC
+12207. This is because  the core value of IT is implemented  in software,  and the success  of software  development  is
+the key to the successful  adoption  of IT business.
+IT outsourcing  helps with improving  a company’s  competitiveness  because  it relies on external  expert resources.
+However, the work-related  and technology-related  lock-in that outsourcing  entails is a problem that must be
+addressed  through  the introduction  of regulatory  measures.
+O2 IT Business  Adoption  Process
+A company’s  ordering  process is used as the basic procedure  for adopting  an IT business.  The agent that places an
+order is the department  or person responsible  for issuing the requirements,  while the agent of development  is the
+company’s  computer  department  or an external  expert  on outsourcing.
+Furthermore,  it should be mentioned  here that the lifecycle (SDLC, Software  Development  Lifecycle)  of SW after
+adoption  must follow the standard  procedures  defined in ISO/IEC 12207.
+A) IT business  ordering  process
+The IT business  ordering  process  defines  the activities  and tasks of the orderer  and describes  a set of processes  for
+deploying  systems  or software  or services.
+The process  also includes  such activities  as concept  definition  and detailed  specification  of the requirements
+concerning  the items ordered,  preparation  of the RFP, evaluation  of the proposal,  contracting,  supplier  management,
+and acquisition  of the end output.
+Evaluate  pro- snp Handover  and
+Planorder Prepare RFP posal and sign Monitoring  of completion  of
+contract PP project
+[Fig. 20] IT business  ordering  process
+By using the IT business ordering  process,  a company  can define the activities  of the contractor  and supplier  that
+must be performed  when deploying  an information  system and also enhance  the success  rate of the information
+service  business.
+The ordering  process  provides  a means  of communication  between  the orderer  and the supplier,  and lends visibility  to
+M5 Understanding  the IT Business  and Ethics 55
+
+
+--- Page 57 ---
+ESSENCE
+IT business  adoption,  resulting  in a predictable  procedure.
+<Table 12> Detailed  description  of examples  of ordering  processes
+Process Key activities Key outputs
++ Description  of the system to be ordered
+. + Definition  of the requirements  and ...

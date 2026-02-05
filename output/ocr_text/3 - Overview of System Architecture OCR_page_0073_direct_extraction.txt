@@ -1,0 +1,36 @@
+ESSENCE
+05 Latest  Technologies  and Trends
+A) Neuromorphic  chip
+Neuromorphic  chip, a core technology  for neuromorphic  computing,  is a new semiconductor  type that processes
+information  in a way that is similar  to human  thinking,  by implementing  brain behavior  in silicon as much as possible.
++ There are several cores in a semiconductor  chip, and electronic  devices, such as transistors  and memory,  are
+embedded  into the core.
++ Some of the devices  in the core play the role of neurons  and neural cells in the brain, and the memory  chip plays a
+synaptic  function  that links neurons.
++ Since the core, which acts as an artificial  neuron, is configured  in parallel like the human brain, it can process  a large
+amount  of data with little power  and increase  the ability to learn and operate  like the human brain.
+Current  Computer  Chip Neuromorphic  Semiconductor
+Integration  Operation/Storage
+/Communication  Functions  (No Bottleneck)
+Central Processing | Storage  Device y aa ss |
+euron——Unit (CPU) (Memory)
+] (3) crore OS  | | cme
+Communi: | | amBottleneck
+cationTM
+Existing  Semiconductor Neuromorphic  Semiconductor
+Cell (Storage/Operation)  and Bandwidth  (Connection) Structure ,  Neuron (Nerve Function) and Synapse (Signal
+Transmission)
+Storage  and operation Strength + Sensing  image and sound and recognizing  patterns
+Each semiconductor  performing  only a specific  function Function + Storage  and operation  processed  together
+Data
+Serial (Once |/O at a time) Processing  | * Parallel  (Various  data I/Os simultaneously)
+Method
+[Figure 40] Comparison  of Conventional  Semiconductor  and Neuromorphic  Chip
+Neuromorphic  computers  do not only operate  in a preprogrammed  way, like conventional  semiconductor-based
+computers,  but they can develop  their processing  power by detecting  the surrounding  context  and learning
+autonomously.  Since devices  equipped  with the neuromorphic  chip can increase  learning,  operation  capability,  and
+power efficiency,  they can apply intelligence  to all computing,  ranging  from loT, smartphones,  robots, automobiles,
+cloud computing,  and supercomputing.
+However,  there is still a lack of understanding  of how human neural circuits process  data at the system level, and
+neuromorphic  computers  still remain at a level that simulates  single neurons.  There are many problems  to resolve
+72 TOPCIT  ESSENCE

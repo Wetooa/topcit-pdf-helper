@@ -1,0 +1,38 @@
+Project Management  and Technical  Communication  )
+<Table 6> Types of Technical  Documents
+Classification Types of Technical  Documents
++ Business  plan
++ Information  request  form
++ Request  for Proposal
+Project  management + Proposal
++ Project management  plan
+« Requirement  Traceability  Matrix
+« Project  completion  report
++ Analysis
++ Design brief
+Project  development + Development  document
++ Testing  document
++ Manual
+02 Principles  and Methods  of Writing  Technical  Documents
+A) Expression  and description  methods  of writing  technical  documents
+Technical  documents  are documents  that must have accuracy  and logical validity, and they emphasize  strict
+logic and format compared  to other documents.  Therefore,  it is important  to be faithful to the rules of lan-
+guage and formal logic, to make sure there are no errors. You should pay attention  to the following  numbering
+system,  commonly  misspelled  foreign words, and Korean spelling.
+<Table 7> Examples  of Document  Numbering  System
+Classification Numbering
+- First level et ILW.V.
+- Second level 01.23.45.---
+- Third level +1) 2) 3) 4) 5)
+- Fourth level + (1)(23)4)5)
+-  Fifth level *OO0@O::-
+B) Precautions  for writing  technical  documents
+@It should be written in a way that is easy to understand  from the perspective  of the person reading  the
+document  (the reader), and it should be able to help the readers to make accurate  judgments  of the
+technical  document.  For the reader's  accurate  judgment,  the author of technical  documents  should refrain
+from using terminology  and involving  the personal  feelings  and considering  personal  relationships.
+@lt should be written in a way that readers can understand  it without referring  to other documents.  There
+should be no questions  or confusion  while reading  the technical  documentation.
+@®Technical  documents  must be created  according  to the predefined  template.
+C) Writing  articulate  technical  documents
+M6 Project  Management  and Technical  Communication  47

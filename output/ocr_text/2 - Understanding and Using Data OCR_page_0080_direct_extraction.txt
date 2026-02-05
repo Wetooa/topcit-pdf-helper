@@ -1,0 +1,54 @@
+Database )
+DenormalizationType technique Description
+Payment
+Payment  number
+Payment Date of payment
+Payment  number confirmation
+Payment  confirmation  date Payment  method
+Employee  ID of the person in Branch code
+charge of checking  payment Billing number
+Date of payment  check payment Customer  ID
+Method of payment  check Accounting  processing  date
+Date of payment  confirmation Date of acceptance
+Payment  method Information  creation  code
+Branch code Payment  confirmation
+Biling number correction  type
+Customer  ID +
+poe ete Payment c&firmation
+Information  creation branch code Payment  number
+Payment  confirmation  correction Date of payment
+type confirmation
+Employee  ID of the person  in
+charge  of checking  payment
+Date of reflecting  payment
+confirmation
+Payment  confirmation
+method
+Tabl + Horizontal  split: When the schema  is the same, but the method  of using the data value is
+denaprali Splitting  the different  for each row (querying  history by year, etc.)
+zation table Payment  history - January
+Payment  number
+Date of payment
+Date of payment  confirmation
+Employee  ID of the person in
+charge  of checking  payment
+Date of reflecting  payment
+confirmation
+Payment  history  - February
+Payment  number
+Payment  history Date of payment
+Payment  number Date of payment  confirmation
+Date of payment Employee  ID of the person in
+Date of payment charge  of checking  payment
+confirmation Date of reflecting  payment
+Employee  ID of the person in confirmation
+charge  of checking  payment
+Date of reflecting  payment Payment  history  - March
+Confirmation Payment number
+Date of payment
+Date of payment  confirmation
+Employee  ID of the person in
+charge  of checking  payment
+Date of reflecting  payment
+confirmation
+M2 Database  79

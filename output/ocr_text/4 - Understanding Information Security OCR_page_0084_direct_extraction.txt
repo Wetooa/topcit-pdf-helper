@@ -1,0 +1,23 @@
+ESSENCE
+If the android:
+programs  cansharedUserld  attribute  is set for the manifest  tag in the Manifest.xml  file, other application
+access the information  of the program by using the same ID and signature.  Due to this
+weakness,  the integrity  and security  of the program  may be intentionally  and unintentionally  breached.
++ Coding  technique:
+It is desirable  to not set a shared ID.
+<Table 26> Code example
+<manifest  xmlns:android="http://schemas.android.com/apk/res/android”
+Package="com.example.android.apis”
+android:versionCode=
+android:versionName 0
+Unsafe code android:sharedUserld="android.uid.developer1’>
+Since the android:sharedUserld  attribute  is set for the manifest  tag in the Manifest.xml  file, other applications
+with the same shareduserld  tag value and application  program  signature  can access  all the data of this
+program.
+<manifest  xmlns:android="http://schemas.android.com/apk/res/android”
+Package="com.example.android.apis”
+android:versionCode=
+Safe code android:versionName="1.0">
+<!-- Delete android:sharedUserld="android.uid.developer1”.  -->
+84 TOPCIT  ESSENCEPrevent  the risk of data leakage  or inappropriate  access,  due to the shared ID, by not setting  the
+android:sharedUserld  attribute  for the manifest  tag in the Manifest.xm  file.

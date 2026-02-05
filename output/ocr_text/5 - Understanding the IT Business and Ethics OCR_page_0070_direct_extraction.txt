@@ -1,0 +1,34 @@
+Understanding  the IT Business  and Ethics )
+process  bottlenecks  by monitoring  processes  in real time and recognizing  risk factors in advance.
+BAM also uses extended  business intelligence  (BI) techniques  for real-time  analysis,  and monitors  and manages  the
+process  flow for business  process  monitoring  (BPM).
+<Table 22> Base technologies  of BAM
+Base technologies Description
+btgatin eco 1 nos egg  ee  ear  seston
+(Business  Iteligeno  e) Analyze the key business process indicators.
+(Data eek  use) + Identify the risks in business processes  by collecting  and analyzing  statistical  data
+BPM + Analyze  business  events  on the process  and make improvements  to the process.
++ Manage  the network  and integrated  system,
+System Infrastructure + Use the system to collect, analyze and visualize data and to process events.
+© Understanding  BRE
+Business  rule engine (BRE) is a technique  for effectively  managing,  automating,  and optimizing  processes  by
+formalizing  the complex  business  rules and process  flows of an enterprise.  The ever increasing  volume  of information
+processed  by IT business  processes  and the increasing  complexity  of process  flows have led to the need for rule-
+based management.  Rule-based  management  is also needed for service improvements  and cost savings. For this
+reason, the adoption  of BRE can help enterprises  to proactively  manage  changes  in, and reduce the operating  costs
+of, business  processes.
+<Table 23> Component  elements  of BRE
+Component  Elements Description
++ Develops  and manages  business  rules, manages  the process  lifecycle.Rule Manager oo :
++ Manages  the repository  in which business  rules are stored.
+. + Acts as a server  for the rule engine and provides  the interface  between  processes.Rule Service
++ Distributes  rules that are developed  and implemented,  and provides  a rule service.
++ Supports  process  improvement  activities  and the business  rule performance  tuning.
+Rule Monitoring + Provides analysis and statistical  functions.
+Rule Repository + Repository  for storing  business  rules.
+B) IT business  process  information  management
+As IT business  processes  become ever more complex  and have to respond rapidly to environmental  (both external
+and internal)  changes, there is a growing  need for the systematized  management  of the data generated  by
+such processes.  The data generated  by IT business  processes  can be managed  either by information  life cycle
+management  (ILM) or by information  resource  management  (IRM).
+M5 Understanding  the IT Business  and Ethics 69

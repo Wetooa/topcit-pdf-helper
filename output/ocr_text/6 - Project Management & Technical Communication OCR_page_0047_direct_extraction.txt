@@ -1,0 +1,30 @@
+ESSENCE
+01 Concept  and Types of Technical  Documents
+A) Definition  of technical  documents
+Technical  documents  are documents  that record the description  of reference  documents  or product  handling,
+function  and architecture  development/use,  and provide sufficient  information  so that not only end users but
+also administrators  and service/maintenance  technicians  can understand  the interior/exterior  of the product.
+Therefore, it can be defined  as a document  written  by using a lot of terminology  according  to the communica-
+tion method  of specialized  fields such as engineering,  technology,  and science.
+In other words, a technical  document  contains  content  such as explaining  a specific  fact, persuading  the other
+party, or instructing  certain actions. In recent years, the concept  has been expanded  to technical  communi-
+cation, meaning  “any writing  and communication  for business  performance  regardless  of business,  industry,  or
+specialized  field”.
+B) Features  of technical  documents
+@ Clarity
+The meaning  of a word or sentence  should not be interpreted  or distorted  differently  by readers. In particular,
+abstract  and metaphorical  rhetoric  should be avoided in that it may cause confusion  and in order to convey
+accurate  content.
+@ Accuracy
+Technical documents  should be written  with accurate  content  to conform  to objective  facts based on various
+materials or  data. In addition,  the process  of developing  the logic using the materials or data given based on
+rational  thinking  must remain accurate  and consistent.
+@® Structuredness
+As seen in reports, manuals,  and proposals,  technical  documents  often have a certain format. The elements
+(introduction,  body, conclusion,  etc.) that make up the form of the text should be structured  and written so as
+to achieve  overall unity.
+C) Types of technical  documents
+Technical  documents  serve to provide readers with information  or to solve specific  problems.  Technical  doc-
+uments  that are commonly  used in relation to SW development  are closely related to the SW development
+project  and can be classified  as follows.
+46 TOPCIT  ESSENCE

@@ -1,0 +1,33 @@
+Database )
+01 Understanding  the Concept  of Relational  Algebra
+Relational  algebra is largely divided into relational  algebra and relational  calculus.  Unlike relational  analysis,  which is a
+non-procedural  language  that defines  desired information, a relation  operation  has the characteristic  of a procedural
+language  because  it specifies  the order of operations  to be performed in order to obtain desired information.  In
+particular,  as relational  algebra becomes  the theoretical  basis for SQL, the standard  query language  of relational
+databases,  the concept  and principle  of relational  algebra need to be clearly understood.  Therefore,  this module
+introduces  set operation  and relation  operation,  which constitute  the basic relational  algebra, and the extended
+relational  algebra  operation.
+O2 Set Operation  and Relation  Operation
+Relational  algebra is a set of operations  for processing  relations  in a relational  database  and all operands  of each
+operation,  and the result of the operation  is relations.  Basic relational  algebra operations  are usually divided into set
+operations  and relation  operations.
+A) Set operation
+Set operators  include  Union, Intersect,  Difference,  and Cartesian  Product.
+<Table 36> Set operators
+@ Operator @ Sign @ Description
+. + A binary operation  to create a relation  that is composed  of tuples, which belong  toUnion U . ;more than one relation  among  two relations  that can be merged.
++ A binary operation  to create a relation  that is composed  of tuples, which belong  to bothIntersect n ;of the two relations  that can be merged.
+Direrence . + A binary operation  to create a relation  that is composed  of tuples, which exist in one
+relation  but not in the other when there are two relations  that can be merged.
+Cartesian  product x “A binary  operation  to create arelation  that is composed  of a combination  of tuples,
+which can be configured  with two relations.
+B) Relation  operation
+Relation  operators  include  Select, Project,  Join, and Division.
+<Table 37> Relation  operators
+Operator Sign Description
++ Aunary  operation  in which a specific  tuple which satisfies  the condition  is separated  from a
+Select 0 relation.
++ A horizontal  subset  is taken from one relation.
++ Aunary  operation  in which a specific  attribute  is elected  and separated  from a relation.
++ A vertical  subset  is taken from one relation.Project 1
+M2 Database  101

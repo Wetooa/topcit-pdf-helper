@@ -1,0 +1,243 @@
+LEARNING GUIDE: Pages 85-89
+Generated: 2025-12-05 10:48:21
+PDF: 2 - Understanding and Using Data OCR
+
+================================================================================
+LEARNING GUIDE
+================================================================================
+
+Here's your simplified, easy-to-read learning guide for Physical Design and Data Types:
+
+---
+
+## **Learning Guide: Physical Database Design & Data Types**
+
+### **Module 2: Database - Physical Design**
+
+#### **1. Introduction to Physical Design**
+
+*   **What is Physical Design?**
+    *   Converts a logical data model into a physical structure (schema).
+    *   Creates an optimal database object considering the actual Database Management System (DBMS).
+    *   More than just defining data types; it decides data storage, distributed database structure, and directly impacts database performance.
+
+*   **Key Concepts:**
+    *   **B*Tree:** A self-balancing tree data structure used for efficient retrieval of data (often used for indexes).
+    *   **Index:** A special lookup table that the database search engine can use to speed up data retrieval.
+    *   **Distributed Database:** A database where parts of it are stored on multiple computers, located in various physical locations, and connected by a network.
+    *   **Relational Table:** A structured set of data elements (values) organized into rows and columns.
+
+*   **Learning Objectives:**
+    1.  Explain relational table conversion.
+    2.  Design tables.
+    3.  Design data types.
+    4.  Design indexes.
+    5.  Design database views.
+    6.  Design distributed databases.
+
+---
+
+#### **2. Physical Data Modeling vs. Database Design**
+
+These two processes occur during the physical design phase:
+
+*   **Physical Data Modeling:**
+    *   Converts the logical data model into a database storage structure (physical data model).
+    *   Considers specific DBMS characteristics.
+    *   Focuses on the *structure* of data, including its physical appearance.
+
+*   **Database Design:**
+    *   Optimally designs the physical model (design drawing) as *objects* from the DBMS perspective.
+    *   **Examples:** Efficient storage space usage, object partitioning, optimal index design.
+
+*   **Practical Business Perspective:**
+    *   Involves understanding **denormalization** and **performance design** for physical data modeling.
+    *   Applies **relational table conversion**, **table design**, **data type design**, **index design**, **database view design**, and **distributed database design**.
+
+---
+
+#### **3. Relational Table Conversion and Table Design**
+
+There are differences in how physical modeling is understood:
+
+*   **Academic Understanding:**
+    *   Physical modeling: Implementing a *table structure diagram* (from logical modeling) according to an actual DBMS.
+    *   Major tasks: Data type definition, index design.
+    *   Normalization/Denormalization (for table structures) are primarily in logical modeling, though denormalization might be influenced by physical performance needs.
+
+*   **Industry Understanding:**
+    *   Physical modeling: Converting the *ERD (Entity-Relationship Diagram)* (from logical modeling) into a *table structure drawing*.
+    *   Major tasks (more diverse): Table & column definition, Primary Key (PK) & Foreign Key (FK) definition, Normalization & Denormalization, Data type definition, Index design, View design, Distributed design.
+
+##### **A. Relational Table Conversion Rules (from ERD to Tables)**
+
+*   **Entity Type Conversion:**
+    *   Each entity type `E` becomes a relation `R`.
+    *   All general attributes of `E` become columns of `R`.
+    *   Composite attributes: Only their sub-components are included as columns.
+    *   One key attribute of `E` is selected as the Primary Key of `R`.
+
+*   **Weak Entity Conversion:**
+    *   Each weak entity type `W` becomes a relation `R`.
+    *   All general attributes of `W` become columns of `R`.
+    *   The Primary Key of the identifying entity type `E` (of `W`) is included as a Foreign Key in `R`.
+    *   The Primary Key of `R` is a combination of the Primary Key of `E` and the partial key of `W`.
+
+*   **1:1 Relationship Conversion (between S and T):**
+    *   The Primary Key of `T` is included as a Foreign Key in `S`.
+    *   All general attributes belonging to the relationship are included as columns in `S`. (Note: Can also be placed in T, or a new table, but this rule specifies S).
+
+*   **1:N Relationship Conversion (between S (N-side) and T (1-side)):**
+    *   The Primary Key of `T` (1-side) is included as a Foreign Key in `S` (N-side).
+    *   All general attributes belonging to the relationship are included as columns in `S`.
+
+*   **M:N Relationship Conversion (between S and T):**
+    *   A **new relation `R`** is created specifically for the relationship.
+    *   All general attributes belonging to the relationship are included as columns in `R`.
+    *   The Primary Keys of `S` and `T` are included as Foreign Keys in `R`.
+    *   The Primary Key of `R` is a combination of the Foreign Key from `S` and the Foreign Key from `T`.
+
+*   **Multi-valued Attributes Conversion (for attribute MA of entity E):**
+    *   A **new relation `R`** is created for the multi-valued attribute `MA`.
+    *   `MA` is created as a column of `R`.
+    *   `K` (the Primary Key of entity `E`) is created as a Foreign Key of `R`.
+    *   The Primary Key of `R` is a combination of `K` and the `MA` column.
+
+*   **N-ary Relationship (N > 2) Conversion:**
+    *   A **new relation `R`** is created for each N-ary relationship.
+    *   All general attributes belonging to the relationship are included as columns of `R`.
+    *   The Primary Keys of all entities participating in the relationship are included as Foreign Keys of `R`.
+    *   The Primary Key of `R` is a combination of all Foreign Keys (excluding those with cardinality 1, if any).
+
+*   **Generalization Relationship Conversion:**
+    *   Tables are created for both the upper (superclass) entity type and the lower (subclass) entity type.
+    *   The Primary Key of the upper entity table is included as a Foreign Key in the lower entity table.
+
+##### **B. Table Design**
+
+*   **Common Table Types:**
+    *   **Heap-organized table:** Standard table where record storage location is determined at insertion, not by attribute value.
+    *   **Clustered index table:** Data is physically stored in the order of its Primary Key or index key value.
+    *   **Partitioned table:** A large logical table split into multiple physical tables based on specific criteria (e.g., range, value, hash) to improve performance and manageability.
+    *   **External table:** A database object that allows users to access external files as if they were regular database tables.
+    *   **Temporary table:** A table that stores and processes data for the duration of a single transaction or session.
+
+*   **Considerations for Table Design (especially Vertical Splitting):**
+    *   **Vertical Split:** Dividing a table's columns into two or more new tables. Consider this if:
+        *   The sum of column data length exceeds 1 block size.
+        *   A specific column has extraordinarily high usage frequency.
+        *   Different user groups use only specific columns.
+    *   **Caveat for Vertical Partitioning:** Avoid splitting if a single transaction frequently processes all split tables simultaneously, or if frequent join operations are required between the split tables, as this can degrade performance.
+
+---
+
+#### **4. Data Type Design**
+
+Careful data type and size selection is crucial during database design to avoid application development difficulties and performance issues.
+
+##### **A. Character Data Types:**
+
+*   **Fixed-length character type:** Allocates and uses the declared amount of space, regardless of actual data length. (e.g., `CHAR(10)` will always use 10 bytes).
+*   **Variable-length character type:** Allocates and uses only the space needed for the actual data stored, up to the declared maximum length. (e.g., `VARCHAR(10)` storing "hello" uses 5 bytes).
+*   **Character Large Object (CLOB):** Designed for very large text data (e.g., books, articles). The actual large text is stored *outside* the table, and the table column stores only a reference (address) to its location.
+
+##### **B. Numeric Data Types:**
+
+*   **Real type:** Represents real numbers (decimals) using floating-point or variable-point formats. (e.g., `FLOAT`, `DOUBLE`).
+*   **Integer type:** Represents whole numbers within a defined maximum size range. (e.g., `INT`, `SMALLINT`).
+
+##### **C. Binary Data Types:**
+
+*   **Fixed-length binary data type:** Stores a defined amount of binary data. (e.g., `BINARY(10)`).
+*   **Variable-length binary data type:** Stores binary data using only the space needed for the actual storage size, up to a defined maximum. (e.g., `VARBINARY(10)`).
+*   **Binary Large Object (BLOB):** Designed for very large binary data (e.g., images, video, sound files). Like CLOBs, the large binary data is stored *outside* the table, and the table column stores only a reference (address) to its location.
+
+##### **D. Date Data Types:**
+
+*   **Date and Time data type:** Stores temporal information, including time, date, or a combination of both. (e.g., `DATE`, `TIME`, `DATETIME`, `TIMESTAMP`).
+
+---
+
+================================================================================
+ORIGINAL TEXT (First 5000 chars)
+================================================================================
+
+--- Page 85 ---
+ESSENCE
+bs
+>> Recent  trends and major issues
+Physical  design consists  of physical modeling  in which a logical data model is converted  into a physical
+structure  (schema),  and a database  design process  in which an optimal object is created  by considering
+the actual DBMS based on the physical  model. Many people misunderstand  physical  modeling  as a simple
+process  of defining data type, length, and domain value, etc., but the data storage space, distributed
+database  build, etc. are actually  decided.  Therefore,  physical  design is directly  related  to database  operation
+performance.
+>> Learning  objectives
+1. To be able to explain the concept  and process  of relational  table conversion.
+2. To be able to design  a table.
+3. To be able to design a data type.
+4. To be able to design an index.
+5. To be able to design a database  view.
+6. To be able to design a distributed  database.
+>> Keywords
++ B*Tree,  index, distributed  database,  relational  table
+84 TOPCIT  ESSENCE
+
+
+--- Page 86 ---
+Database )
++ Preview  for practical  business
+Physical  data modeling  and database  design are performed  in the database  physics  design phase. Physical
+data modeling  consists  in converting  the logical data model into a database storage structure  (physical
+data model) by considering  the characteristics  of each DBMS to be used. Here, the concept  of physical
+data modeling  and database  design can be summarized  as follows: Physical  data modeling  consists  in
+designing  matters related to the structure  of data including  the physical appearance,  whereas  database
+design consists  in optimally  designing  the physical model (design drawing)  as objects  from the DBMS
+perspective.  Examples  of database  design include the plan for using the storage  space for each object
+efficiently,  object partitioning  design, and optimal index design, etc. In terms of practical  business,  physical
+design consists  in understanding  the denormalization  and performance  design for physical data modeling,
+and in understanding  and applying  relational  table conversion,  table, data type, index, database  view, and
+distributed  databases  for database  design.
+M2 Database  85
+
+
+--- Page 87 ---
+ESSENCE
+01 Relational  Table Conversion  and Table design
+Like logical modeling,  the academic  world and the industrial  world have a quite different  understanding  of the scope
+of physical  modeling.  In particular,  the process  of creating  a table structure  diagram  corresponding  to the ERD, that
+is, the process  of relational  table conversion,  is quite different. The academic  world understands  this phase as logical
+modeling, whereas  industry  understands  this process  as physical modeling.  It is recommended  to understand  this
+difference  and check the things to be done in each phase according  to the two perspectives.
+A) Differences  between  the academic  world’s  and industry's  understanding  of physical  modeling
+@ Understanding  of the academic  world
++ Physical  modeling  refers to the process  of implementing  a table structure  diagram,  which is an output of logical
+modeling,  according  to an actual DBMS.
++ Major tasks of physical  modeling:  Data type definition, index design, etc.
++ Normalization  and denormalization,  which handle table structures,  are performed in the logical modeling  phase.
+However,  denormalization  is performed  in logical modeling  due to the requirements  of physical  modeling,  because
+denormalization  is performed  in consideration  of performance.
+@ Understanding  of industry
++ Physical modeling  refers to the process  of converting  the ERD, which is an output of logical modeling,  into a table
+structure  drawing.
++ The major tasks of physical modeling  are more diverse than those of the academic  world, including  table and
+column definition,  primary  key and foreign key definition,  normalization  and denormalization,  data type definition,
+index design,  view design, and distributed  design.
+B) Relational  table conversion
+@ Entity type conversion
++ the relation R is created that corresponds  to each entity type E and all general attributes  of E are included  as the
+columns  of R.
++ Each sub-component  is included  only for the composite  attribute.
++ After selecting  one of the key attributes  of E, it is selected  as the primary  key of R.
+@ Conversion  of the weak entity
++ The relation R is created  that corresponds  to each weak entity type W, and including  all general attributes  of W as
+the columns  of R.
++ The primary  key of E is included  as the foreign  key of R, regarding  the identifying  entity type E of W
++ The primary  key of R is composed  with a combination  of the primary  key of E and the partial key of W.
+© Conversion  of the 1:1 relationship
++ It is assumed  that S and T are two entity types participating  in the relationship.
++ The primary  key of T is included  as the foreign key of S.
+86 TOPCIT  ESSENCE
+
+
+--- Page 88 -...

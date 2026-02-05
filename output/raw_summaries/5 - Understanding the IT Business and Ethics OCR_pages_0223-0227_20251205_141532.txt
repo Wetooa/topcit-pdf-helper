@@ -1,0 +1,217 @@
+LEARNING GUIDE: Pages 223-227
+Generated: 2025-12-05 14:15:32
+PDF: 5 - Understanding the IT Business and Ethics OCR
+
+================================================================================
+LEARNING GUIDE
+================================================================================
+
+Here is a simplified, easy-to-read learning guide based on the provided text:
+
+---
+
+## IT Business and Ethics Learning Guide
+
+### 1. Foundational Ethical Principles in IT
+
+For IT developers and businesses, key ethical considerations include:
+
+*   **Design & Development:**
+    *   Accuracy, clarity, fairness, faithfulness to business needs.
+    *   Refuse bribery.
+    *   Ensure fair assessment, equitable treatment.
+*   **Quality & Supply:**
+    *   Conduct quality certification.
+    *   Ensure product safety, health, and welfare.
+*   **Maintenance & Upgrades:**
+    *   Maintain responsibility for products.
+    *   Provide continuous upgrades.
+    *   Fair use of materials.
+*   **Malfunction Countermeasures:**
+    *   Develop and provide solutions against malfunctions.
+    *   Ensure safety, health, welfare.
+*   **Global Standards & Knowledge Sharing:**
+    *   Comply with global technology standards.
+    *   Enhance understanding and share knowledge.
+    *   Consider operational conditions, legal compliance.
+*   **Universal Social Responsibility:**
+    *   Integrity, discretion, respect for property rights.
+    *   Refuse bribery in public speech.
+    *   Nonmaleficence (doing no harm).
+    *   Contribute to the field of expertise.
+    *   Cooperation, eco-friendliness.
+
+### 2. Asimov's Three Laws of Robotics
+
+These foundational principles, introduced by Isaac Asimov, are **moral codes embedded within AI robots at the manufacturing stage**, not ethics for AI developers. They dictate a robot's behavior:
+
+*   **First Law:** A robot may not injure a human being or, through inaction, allow a human being to come to harm.
+*   **Second Law:** A robot must obey orders given by humans, *unless* those orders conflict with the First Law. (First Law takes precedence).
+*   **Third Law:** A robot must protect its own existence, *unless* such protection conflicts with the First or Second Law. (First and Second Laws take precedence).
+
+**Later Addition (1984):** "A robot may not harm humanity, or, by inaction, allow humanity to come to harm." (Often referred to as the "Zeroth Law," preceding the others).
+
+### 3. The Asilomar AI Principles (by Future of Life Institute - FLI)
+
+These principles are divided into three categories:
+
+#### A. Research Issues
+1.  **Research Goal:** Create *beneficial* intelligence, not just undirected intelligence.
+2.  **Research Funding:** Investments in AI should include funding for safety research.
+3.  **Science-Policy Link:** Foster healthy exchange between AI researchers and policymakers.
+4.  **Research Culture:** Promote cooperation, trust, and transparency among AI developers.
+5.  **Race Avoidance:** Teams developing AI should cooperate to avoid compromising safety standards.
+
+#### B. Ethics and Values
+1.  **Safety:** AI systems must be safe and secure throughout their operational life, verifiably so.
+2.  **Failure Transparency:** If an AI causes harm, it must be possible to ascertain why.
+3.  **Judicial Transparency:** Autonomous systems in judicial decisions need auditable explanations for humans.
+4.  **Responsibility:** Designers/builders of advanced AI are responsible for its moral implications (use, misuse, actions).
+5.  **Value Alignment:** Highly autonomous AI must be designed so its goals and behaviors align with human values.
+6.  **Human Values:** AI systems should be compatible with human dignity, rights, freedoms, and cultural diversity.
+7.  **Personal Privacy:** People should control the data they generate, especially given AI's analytical power.
+8.  **Liberty and Privacy:** AI use of personal data must not unreasonably restrict people's liberty.
+9.  **Shared Benefit:** AI technologies should benefit and empower as many people as possible.
+10. **Shared Prosperity:** Economic prosperity from AI should be broadly shared across humanity.
+11. **Human Control:** Humans should choose how and whether to delegate decisions to AI.
+12. **Non-subversion:** AI power should improve, not undermine, social and civic processes.
+13. **AI Arms Race:** An arms race in lethal autonomous weapons must be avoided.
+
+#### C. Longer-Term Issues
+1.  **Capability Caution:** Avoid strong assumptions about future AI capabilities, as no consensus exists.
+2.  **Importance:** Advanced AI is a profound change; plan for and manage it with commensurate care.
+3.  **Risks:** Catastrophic or existential AI risks require significant planning and mitigation efforts.
+4.  **Recursive Self-Improvement:** AI designed for self-improvement/replication needs strict safety and control.
+5.  **Common Good:** Superintelligence should be developed for widely shared ethical ideals and the benefit of *all humanity*, not just one entity.
+
+### 4. Ethical Issues of Big Data
+
+Big data, while a core of industrial growth, can create harmful data if not managed ethically. It requires ethical operation throughout its lifecycle: collection, management, use, and disposal.
+
+#### Key Ethical Concerns:
+*   **Abuse Prevention:** Ensure ethical operation and prevent misuse of big data systems.
+*   **Data Security:** Implement access control, safe storage, anonymization/encryption, prevent privacy infringement, and ensure safe data destruction.
+*   **Sensitive Information:** Restrict creation of big data on sensitive individual information (ideologies, beliefs, political opinions).
+*   **Purpose Limitation:** Prohibit using analyzed information for purposes other than intended; prevent unauthorized use.
+*   **Personal Information:** Prevent misuse and leakage of personal information.
+*   **Ownership & Rights:** Establish policies on big data ownership and rights.
+*   **Commercial vs. Public Good:** Address the balance of using big data for commercial profit versus public benefit (e.g., health equality, medical systems).
+
+#### Cloudera's Four Key Principles for Ethical Data Use:
+1.  **Adjust Expectations:** Align expectations between organizations and individuals on data usage.
+2.  **Best Practices:** Establish strong data management best practices.
+3.  **Set Boundaries:** Clearly define limitations on data use.
+4.  **Supervision & Regulation:** Government, industry, or self-regulation is needed.
+
+#### Guidelines for De-identification of Personal Data:
+This ensures personal data safety when utilized in big data.
+1.  **Preliminary Review:** Verify if data is personal data. Non-personal data can be used freely.
+2.  **De-identification:** Apply measures (delete/replace elements) to make individuals unidentifiable. Remove attributes unrelated to data use purpose.
+3.  **Adequacy Assessment:** A panel assesses if de-identified data can be easily re-identified by combining it with other data.
+4.  **Follow-up Management:** Implement safety measures and monitor for re-identification during use.
+    *   **Managerial Safety:** Designate a person-in-charge, prohibit data sharing, destroy data after use.
+    *   **Technical Safety:** Restrict access, manage access records, install security programs.
+    *   **Leakage Protection:** Analyze cause, implement further safety measures, withdraw/destroy leaked data.
+
+### 5. Ethical Issues of Autonomous Vehicles (Self-Driving Cars)
+
+Autonomous vehicles offer stability, convenience, and efficiency by reducing accident rates. However, they introduce significant ethical challenges:
+
+*   **Ethical Dilemma in Accidents:** Controversy over how to handle unavoidable accidents and determine fault/responsibility.
+*   **Safety Issues:** Ensuring adequate reaction to pedestrians and obstacles; occupant protection.
+*   **Hacking Risks:** Remote control attacks and system availability threats due to hacking.
+*   **Life and Property Loss:** Potential for life and property loss from hacking incidents.
+*   **Privacy Invasion:** Leakage of personal information (travel routes, address) collected by in-vehicle sensors.
+*   **Abuse as Surveillance:** Potential for vehicles to be misused as unmanned monitoring devices, invading privacy.
+
+### 6. Ethical Issues Related to Drones
+
+Drones are increasingly used for hobbies, filming, and industrial purposes (delivery, monitoring, agriculture), offering real-time command, surveillance, and high-definition recording. This widespread use brings ethical concerns:
+
+*   **Physical Accidents:** Increased crashes, collisions with buildings, and flying in restricted zones.
+*   **Hacking:** Disruption of remote control, theft of captured imagery/data (e.g., combat drone data, intelligence footage).
+*   **Privacy Invasion:** Illegal filming, collection, and transmission of videos related to personal life.
+
+**Crucial Point:** Before operating drones, understanding drone-related regulations and ethical guidelines is essential.
+
+---
+
+================================================================================
+ORIGINAL TEXT (First 5000 chars)
+================================================================================
+
+--- Page 223 ---
+Understanding  the IT Business  and Ethics )
+1) Design and develop in @ Refuse bribery @® Employer and | @ Integrity, @  Principle  ofaccurately,  clearly, fairly, and © Fair assessment customer Credibilit fairness
+faithfully  to the business © 3 ‘i I ‘t tment usto tability | @ Fai y Principle  oforder equitable treatmen accountability ‘airness equitableness
+2) Conduct  the quality
+certification  process  and
+supply  Al (robot) to the
+business  operator
+3) Maintain  a sense of
+‘bill @ Safety, .
+responsibility  for the product  | @ Safety, health, health @ Fair use of
+and provides  continuous welfare ean, materialswelfareupgrades
+4) Prepare  a countermeasure © Safety, health, @ Safety,
+Devel- against malfunction  and welfare health,
+oloper provide  within the product welfare
+5) Comply with global standard © enhance ieunderstanding  of :design and implementation @ Operational
+F technology neas much as possible  and © Operational Conditions
+share knowledge Persofa
+Conditions
+© Legal
+compliance
+@ Integrity @ Be discreet | © Property ® leenetee
+6) fulfill universal  social @ Refuse bribery in public rights pertya. @ Contribute
+responsibility © Nonmaleficence speech © Intellectual@ Cooperation © Cooperation Property to held ofexpertise
+@ Eco-
+friendliness
+From the ethical point of view, the most fundamental  of the identity  of artificial intelligence  (robots)  and its relations
+with humans,  is the Three Laws of Robotics  by Isaac Asimov.
+The Three Laws of Robotics  is a set of principles  that regulate  the behavior  of robots, which must be observed  for
+every robot and present  an ethical perspective  on the identity  and function  of artificial intelligence  robots and their
+relationship  with humans.
+Mr. Asimov  first introduced  the rules in his 1942 short science fiction story "Runaround”  and then came up with the
+Three Laws of Robotics  in the 1950 collection  “I, Robot.”
+The Three Laws of Robotics  is an “command”  that is put into an Al robot at the manufacturing  stage. It is not an
+ethics that an Al developer  must follow, but a “moral code” that the Al itself to be developed  must have. The three
+commands  or the three laws are as follows.
+Asimov's  Three Laws of Robotics
++ First Law: A robot may not injure a human being or, through  inaction,  allow a human  being to come to harm
++ Second  Law: A robot must obey the orders given it by human  beings except  where such orders  would conflict  with the First
+Law. (However,  the First law takes precedence  over the Second.)
++ Third Law: A robot must protect  its own existence  as long as such protection  does not conflict  with the First or Second  Law.
+(However,  the First and Second  laws take precedence  over the Third.)
+M5 Understanding  the IT Business  and Ethics 221
+
+
+--- Page 224 ---
+ESSENCE
+Asimov  later revised the rules in 1984 with the addition  of the principle  that "A robot may not harm humanity,  or, by
+inaction,  allow humanity  to come to harm."
+The Asilomar  Al Principles“  published  by FLI (Future of Life Institute)  in the United States are largely divided into
+three issues.
+Items 1-5 are composed  of Research  Issues, 6-18 are Ethics and Values, and items 19-23 are Longer-term  Issues.
+<Table 112> The Asiloma  Al Principles
+Classification Principle Explanation
+The goal of Al research  should be to create not undirected  intelligence,  but beneficialResearch  Goal -
+intelligence.
+Investments  in Al should be accompanied  by funding  for research  on ensuring  its beneficialResearch  Funding ice
+Research Science-Policy There should be constructive  and healthy  exchange  between  Al researchers  and policy-
+Issues Link makers.
+A culture  of cooperation,  trust, and transparency  should be fostered  among  researchers  andResearch  Culturedevelopers  of Al.
+Race Avoidance Teams developing  Al systems  should actively  cooperate  to avoid corner-cutting  on safety
+standards.
+Al systems  should be safe and secure  throughout  their operational  lifetime,  and verifiably  soSafetywhere applicable  and feasible.
+Failure If an Al system causes harm, it should be possible  to ascertain  why.
+Transparency
+Judicial Any involvement  by an autonomous  system in judicial decision-making  should provide a
+Transparency satisfactory  explanation  auditable  by a competent  human authority.
+Designers  and builders  of advanced  Al systems  are stakeholders  in the moral implications
+Responsibility of their use, misuse, and actions,  with a responsibility  and opportunity  to shape those
+implications.
+. Highly autonomous  Al systems  should be designed  so that their goals and behaviors  can beValue Alignment va . ;assured  to align with human  values throughout  their operation.
+Ethics Human Values Al systems  should be designed  and operated  so as to be compatible  with ideals of human
+and dignity, rights, freedoms,  and cultural diversity.
+Values
+Personal  PrivacyPeople should have the right to access, manage  and control  th...

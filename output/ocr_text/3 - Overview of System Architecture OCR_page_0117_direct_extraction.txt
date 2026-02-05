@@ -1,0 +1,39 @@
+ESSENCE
+hardware  component  is over or underestimated  by a project  contractor  or a hardware  supplier.
+As such, this chapter  reflects  the government  guidelines  for calculating  hardware  size.
+A) Concept  of size calculation
+System sizing is to estimate  or calculate  a system’s  size using a mathematical  methodology,  based on actual
+work and applications.  It can be defined as a lower-level  concept  of capacity  planning  or capacity  management  to
+determine  performance  requirements  and performance  based on the system architecture  application,  as shown in
+[Figure 81]. Sizing is temporarily  performed  for a specific  system  or server, and it is also called size estimation  because
+it has a predictive  nature.
+Subject Definition Viewpoint Time Factor
+F To generate  current  and future capacity  plans to meet business .Se aa requirements  and balancing  cost and balance cost and capacity Organization ae
+A plan to determine  the performance  requirements  and performance Organization
+Capacity  plan needed for the system based on the outlined system architecture 8 Continuousand systemand application  work
+Sra acteysten To convert  the given basic capacity  and performance  requirements System Temporary
+into system  requirements
+[Figure  81] Comparison  of Size Calculation  Concepts
+Sizing is a matter of prediction,  and the calculation  method significantly  affects the accuracy  of the calculation.
+Hardware  size calculation  methods  are generally  classified  into the mathematical  calculation,  reference,  and simulation
+methods,  as shown in [Figure 82]. It is necessary  to apply an appropriate  sizing method  to get accurate  sizing. This
+guideline  uses a mathematical  calculation  method.  However,  it is necessary  to use all three methods  appropriately  for
+size calculation,  in order to increase  the accuracy  of the calculation  results and objectivity.
+Subject Concept Strength Weakness
+If the correction  factor is
+To calculate  capacity  based on . . incorrect,  the calculation  result
+Mathematical factors for sizing, such as the The basis for sizing can be clearly can far off from the desiredpresented,  and the calculation  is . .method number  of users, and apply the value, and it is difficult  to provide
+simpler  than other methods. -
+correction  factor accurate  evidence  for the
+correction  factor.
+To calculate  the similar  size by
+Reference comparing  the approximate Relatively  safe size calculation The evidence  is weak since the
+7 size based on the reference since it is possible  to compare result is by comparison  instead  of
+method data according  to the workload with the existing  business  system  | calculation.
+(number  of users and DB size)
+Simulation To model the workload  for the Relatively  accurate values canbe | Requires relatively much time" target  job and calculate  the size obtained and cost
+method by simulating  it
+[Figure 82] Hardware  Size Estimation
+B) Size calculation  targets
+* Generally,  the target for sizing includes  not only hardware,  but also software  or network.  As shown in [Figure 83],
+116 TOPCIT  ESSENCE

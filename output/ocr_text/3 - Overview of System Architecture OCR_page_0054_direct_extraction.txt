@@ -1,0 +1,48 @@
+Overview  of System Architecture )
+05 Scheduling
+OS supporting  multiple  programming  uses scheduling  to allocate  processes  to the CPU efficiently,
+A) Purpose  of scheduling
++ Fairness  to processes
++ Maximizing  throughput  per unit time
++ Minimizing  response  time
++ Predictable  execution  time
++ Preventing  system  overload
++ Balanced  resource  utilization
++ Preventing  indefinite  process  execution
++ Implementing  priority  schemes
+B) Type and characteristics  of scheduling
+<Table 8> shows the types and characteristics  of scheduling  algorithms.
++ Preemptive  scheduling:  A process  can take CPU resources  while another  process  is occupying  them.
++ Non-preemptive  scheduling:  If a CPU resource is allocated  to a process,  it cannot  be allocated  to another  process
+until the task has been completed.
+<Type 8) Types and Characteristics  of Scheduling  Algorithms
+Type Method Characteristics Class
+~ The simplest  scheduling  technique  to allocate  CPU
+resources  according  to the order in which they are
+FIFO. requested
+(First In First Out) - Amethod  of allocating  CPUs in the order in which they
+entered  the rows (queue  matrix)  of resource  requesting
+processes- Not suitable  for interactive
+- Simple and fair Non preemptive
+- Prediction  of response  speed
+- Fixed priority
+- Variable  priority Non preemptive
+- Purchased  priorityPriorit - Amethod  of assigning  the priority  to each process  and
+y allocating  the CPU resources  to the highest priority
+- Advantageous  to jobs with the short.
+execution  time and a long time Non preemptive
+expected  for large jobsSJF (Shortest  Job — - Amethod  of allocating  CPU resources  to the process  with
+First) the shortest  expected  job time
+- Amethod  of allocating  CPU resources  to the process  with - Job processing  is the same as SJF,
+the shortest  expected  remaining  job time but it theoretically  requires  the least Non preemptive
+- Can be considered  as preemptive  SJF waiting  time.SRT(Shortest.
+Remaining  Time)
+Like FIFO, it allocates  CPU resources  according  to the order
+in which they are requested,  but each process canuse the Effective  for TSS
+CPU only for the specified period It canbe considered  asa”  22” € 2S FIFO ifthe specified allocation
+R-R(Round  Robin) y p P time is large Preemptive
+preemptive  FIFO process.
+The most suitable  method  for time series segmentation
+(TSS)- Context  exchange  frequently  occurs if
+the allocated  time is short.
+M3 Overview  of System  Architecture  53

@@ -1,0 +1,37 @@
+ESSENCE
+O2 Security  trends related  to the latest information  technology
+A) loT security
+@ Overview  on loT security
+Security  is a core technology  that must be provided  to promote  loT technology  and to create new services.
+As the number  of devices connected to the Internet  increases,  the number  of attack targets and threat
+elements  also increase.  In particular,  security  technology  is indispensable  for loT devices and communication
+technologies  that are applied  to healthcare  services  or industrial  facility  control services,  because  an injury can
+occur beyond simple economic  damage, if the security  of the service is breached.  In addition,  when ordinary
+things around us are connected  to the Internet,  the range of concerns  about personal  information  leakage  or
+privacy invasion  increases.  It is also obvious  that the level of breach will increase  beyond  comparison  with the
+present.
+Security  and privacy  protection systems  should be considered  from the design and development  phase of the
+loT device and service. In addition,  it should be possible  to block potential  security  threats in advance  in the
+loT device deployment  and installation  phase. Potential  security  threats and vulnerabilities  should be checked,
+and security  should be applied throughout  the entire lifecycle  of the loT device, such as the setup, operation,
+and execution  phase, when the device is actually  used, and during  the destruction  phase.
+® Applying  security  to the design/development  phase of the loT device
++ Security  by design
+A method should be considered  that can reduce the weight of the loT device while minimizing  the misuse
+of information  and device, such as confidentiality,  integrity/authentication,  and availability,  considering  the
+low power/low  performance  characteristics  of the loT device. The loT service should provide a method of
+managing  device access rights, end-to-end  communication  security,  and providing integrity/authentication
+that is suitable  for the service operating  environment  for the loT device and information.  The application  of
+software  security  technology  and hardware  security  technology  should be actively  reviewed,  and standard
+security  technology,  with proven safety, should be used.
++ Privacy  by design
+The privacy  protection methodology  of the user should be applied  to the loT device and loT service  operation
+policy by default. The method of encrypted  transmission,  anonymous  storage,  and integrity/authentication
+application  should be included  in the privacy information  collected  by the loT device. The loT service should
+include the method of de-identification,  access control/authentication,  confidentiality,  and secure storage
+of collected  privacy information.  loT service providers  should guarantee  transparency  to the maximum  by
+visualizing  the operation  policy, including  the scope and period  of privacy  information  use, to the user.
+© Applying  and verifying  the secure S/W and H/W development  technology.
+Secure coding, software  and application  security  verification,  and secure hardware  device should be used when
+designing  and developing  loT products  and services.
+56 TOPCIT  ESSENCE

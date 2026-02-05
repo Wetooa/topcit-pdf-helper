@@ -1,0 +1,8 @@
+ESSENCE
+>> Learning  objectives
+1. To be able to explain the HA/FT technology  and operational  principle.
+2. To be able to explain the DR configuration  and utilization.
+>> Keywords
+SPOF, Hot-standby,  Mutual takeover,  Concurrent  access, Mirror site, Hot site, Warm site, Cold site, RPO,
+RTO, Fault-tolerant  technique
+122 TOPCIT  ESSENCE

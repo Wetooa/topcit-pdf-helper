@@ -1,0 +1,38 @@
+ESSENCE
++ This is an analytical  tool developed  to consistently  solve similar  types of problems.  Quantified  models
+ilcridanel perform complex calculations  that result in increased efficiency  and accuracy of problem solving.
+system + Model base management  systems include statistical models, forecasting  models, linear planning
+models,  simulation  models,  etc.
+Knowledge  base + This system provides support  for solving unstructured  decision-making  problems  that are difficult  toa quantify  through the role of providing  qualitative  information.
+User interface « The user interface  is a window  that includes  all forms of communication  between  the decision
+management maker  and the decision-maker  support  system. The interface  ensures  flexibility,  performance,  and
+system convenience.
+@ DSS data model
+The data model in the DSS provides  a framework  for analyzing  data, along with the data with which decision  makers
+can make rational  decisions.  Different  types of data models are generated  from different  types of algorithms  and are
+continuously  being developed  and improved.  In recent  years, the DSS has been evolving  in the direction  of actively
+employing  Al for better  forecasting,  and the types of models  are also diversifying.
+<Table  47> Types  of DSS data models
+Type of model Description
+For a specific  resolution  method,  the what-if  analysis  investigates  how changes  in a given
+What-if  Analysis variable  could impact  another  variable.  This is a useful technique  for testing  assumptions
+about uncertain  future situations.
+This is a technique  for observing  how changes  to one or two variables  affect the rest of the
+Sensitivity  Analysis variables  in an equation model consisting  of input and result variables.
+. After setting  a goal, this technique  is used to find the values of variables  that will enable anGoal-seeking :enterprise  to achieve  its goal.
+oe 5 This i hnique for ining  th imal  value  of  one or more tar; riables given Optimization  Analysis s is a technique  for obtaining the optimal  value  of one or more target  variables  given a
+particular  constraint.
+C) Understanding  BI
+@® Concept  of BI
+Business  intelligence  (Bl) is a set of processes  that seeks to improve  the quality  of business  decisions  and business
+performance  through  the summarization,  analysis  and use of enterprise  data and information.  If the DSS is the
+system for decision makers, and the traditional  concept  is a support system for decision-making,  then BI is the
+decision  support  system  that can be adopted  for use by regular  employees.
++ In the narrow sense of the term, BI is a system that improves  the quality of decision-making  in business
+management  and improves  the performance  of a business  by summarizing  and analyzing enterprise  data and
+information.
++ Intelligence  is the ability to understand  the interrelationships  between  given facts, which could produce  guidance  for
+achieving  a desired  goal. (Hans Luhn, IBM, 1958)
++ The general consensus  is that today’s BI evolved from the DSS. Analysis  technologies  such as data warehouses,
+OLAPs,  and BI began to be developed  in the late 1980s based on the DSS.
+100 TOPCIT  ESSENCE

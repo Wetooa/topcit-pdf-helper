@@ -1,0 +1,38 @@
+Overview  of System Architecture )
+@ Dijkstra  algorithm
+[Figure 120] shows the pseudo-code  of the Dijkstra  Algorithm,  the leading  link-state  routing  algorithm.
+£
+u
+Initialization
+Tree = {root} Tree is made only  of the root
+for (y=1 to N) N is the number of  nodes
+{
+if (y is the root)
+Diy] =0 D|y] is shortest  distance  from root to node y
+else if (y is a neighbor)
+Dly] = c[root][y] c[x]ly] is cost between  nodes x and y in LSDB
+else
+Diy] =«
+Calculation
+repeat
+t
+find a node w, with D[w]
+Tree = Tree U {w} Add w to tree
+Update distances  for all neighbors  of w
+for (every node x, which is a neighbor  of w and not in the Tree)
+{
+D[x] = min{D[x],  (D[w] + c[w][x]}
+n
+5
+} until (all nodes included  in the Tree)
+} //End of Dijkstra
+[Figure 120] Pseudo  Code of Dijkstra’s  Algorithm
+@ Bellman-Ford  Algorithm
+The Bellman-Ford  Algorithm  is the leading  distance  vector  routing  algorithm.
+The shortest  path can be decomposed  as follows, by expanding  the optimal substructure  of the shortest  path
+problem.  The shortest  path from the starting  node s to v, is the sum of the shortest  path from s to u, and the weight
+factor (distance)  between  u and v.
+D(s, v) = D(s, u) + w(u, v)
+The Bellman-Ford  Algorithm  performs  edge relaxation  of all edges in the graph, when calculating  the shortest  path
+between  s and u. Then, how many times should it be performed?  The shortest  path between  s and u may be only s
+M3 Overview  of System  Architecture  167

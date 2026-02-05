@@ -1,0 +1,25 @@
+A) Concept  of a cipher 24
+B) Encryption  and decryption 24
+C) Classification  of cryptographic  techniques 24
+D) Cryptographic  algorithm  and cryptosystem 2
+E) Private key encryption  and public key cryptographic  algorithm 26
+F) Hash function 30
+02 Authentication  technology 34
+A) Concept  of authentication 34
+B)  Type of authentication  methods 35
+C)  Type of authentication  technologies 36
+D) Electronic  signature 39
+E) PKI (Public Key Infrastructure) 4O
+03 Access  control  technology 44
+A) Overview  of access control 44
+B) Access  control policy 45
+C) Types of access  control policies 45
+D) Access  control mechanisms 46
+E) Access  control models 47
+Ill. Latest information  security  technology 48
+01 Latest  information  security  threats 50
+A) APT (Advanced  Persistent  Threat) attacks 50
+B) Pharming 51
+C) Qshing 51
+D) Smishing 52
+M4 Understanding  Information  Security  7

@@ -1,0 +1,219 @@
+LEARNING GUIDE: Pages 199-203
+Generated: 2025-12-07 01:12:35
+PDF: 3 - Overview of System Architecture OCR
+
+================================================================================
+LEARNING GUIDE
+================================================================================
+
+Here is a simplified, easy-to-read learning guide based on the provided text:
+
+---
+
+## Learning Guide: Network Protocols & Multimedia
+
+### Section 1: File Transfer Protocol (FTP)
+
+**1. What is FTP?**
+*   A protocol for transferring files (or parts of files) between systems.
+*   **Key Feature:** Uses two separate connections:
+    *   **Control Connection:** Port 21 (TCP). Used for commands and responses. Maintained throughout the FTP session.
+    *   **Data Connection:** Port 20 (TCP) by default, or higher (e.g., 1024+) in passive mode. Established only when a file transfer begins.
+
+**2. FTP Transfer Modes**
+
+FTP has two main modes that handle how the data connection is established:
+
+| Feature      | General Transfer Mode (Active)                                   | Passive Transfer Mode (PASV)                                         |
+| :----------- | :--------------------------------------------------------------- | :------------------------------------------------------------------- |
+| **Concept**  | Server connects to a specific client port for data transfer.     | Client connects to a specific server port for data transfer.         |
+| **Firewall** | **Problematic** with firewalls (server tries to connect to client). | **Firewall-Friendly** (client initiates all connections).            |
+| **Purpose**  | General FTP use.                                                 | FTP from a secured client (e.g., behind a firewall or proxy server). |
+| **Data Port**| 20 (default)                                                     | 1024 or higher                                                       |
+
+**3. FTP Command Processing**
+*   Uses the control connection (port 21) for communication between server and client control processes.
+*   **Interactive Process:** User commands are sent to the server, and the server sends responses back.
+    *   **Client Command:** `Command Message: Instruction`
+    *   **Server Response:** `Response Code + Meaning`
+
+**4. Types of FTP Commands**
+
+| Command Type           | Examples                                          |
+| :--------------------- | :------------------------------------------------ |
+| **Access**             | USER, PASS, QUIT, ABOR                            |
+| **File Management**    | CWD (Change Dir), DELE (Delete), LIST, MKD (Make Dir), PWD (Print Working Dir), RMD (Remove Dir) |
+| **Data Forming**       | TYPE, STRU, MODE                                  |
+| **Port Definition**    | PORT, PASV (Passive)                              |
+| **File Transfer**      | GET, PUT, RETR (Retrieve), STOR (Store), APPE (Append) |
+| **Other**              | HELP, NOOP                                        |
+
+**5. FTP Operation Sequence**
+
+*   **General (Active) Transfer Mode:**
+    1.  **Client (Port 21):** Connects to server's control port (21) and tells the server which *second port* it will use for data.
+    2.  **Server:** Acknowledges (ACK).
+    3.  **Server (Port 20):** Attempts to connect to the client's specified *second port*.
+    4.  **Client:** Acknowledges (ACK).
+    *   *Note: This fails if a firewall blocks the server's incoming connection attempt to the client.*
+
+*   **Passive (PASV) Transfer Mode:**
+    1.  **Client (Port 21):** Connects to server's control port (21).
+    2.  **Client:** Sends `PASV` command to the server.
+    3.  **Server:** Responds with `OK` and informs the client which *second port* it will use for data (e.g., 32567).
+    4.  **Client:** Opens another port and attempts to connect to the server's *specified second port*.
+    5.  **Server:** Acknowledges (ACK).
+    *   *Note: This works with firewalls because the client always initiates the connection.*
+
+---
+
+### Section 2: Recent Network Trends & Issues
+
+*   **Overview:** High-speed data, convergence technologies, and new network advancements are emerging.
+*   **Key Areas:**
+    *   **Multimedia Networks & Internet Telephony:** Technologies guaranteeing traffic quality (QoS) for services like video streaming and VoIP.
+    *   **Internet of Things (IoT) Networks:** Expansion of IoT network-based technologies.
+    *   **Software-Based Networks:** New network structures (e.g., SDN, NFV) different from traditional hardware-centric designs.
+
+*   **Keywords for these topics (to be explored later):**
+    *   Lossless/Lossy compression, QoS, SIP, H.323, RTP, RTSP, RTCP, IMS, CSCF, HSS, 3GPP, SDN, Openflow, Control plane, Data plane, NFV, Virtualization function, MQTT, CoAP.
+
+---
+
+### Section 3: Multimedia Network
+
+**1. Graphic Compression Types**
+*   Most multimedia network traffic is video data, which relies heavily on compression.
+*   Two main types:
+
+    *   **A) Lossless Compression (Reversible Compression)**
+        *   **Concept:** Restores a compressed image/data **without any information loss**; the decompressed data is identical to the original.
+        *   **Characteristic:** Lower compression rate compared to lossy.
+        *   **Methods:**
+            *   **Run-length encoding (RLE):** Expresses repeated symbols by the symbol and its repetition count.
+            *   **Dictionary coding:** Creates a dictionary, and sends code values (indexes) instead of repeating character strings.
+            *   **Huffman coding:** Assigns short binary codes to frequent symbols and longer codes to less frequent ones.
+            *   **Arithmetic coding:** Maps the entire message to a small section in [0,1] and encodes that section.
+
+    *   **B) Lossy Compression (Irreversible Compression)**
+        *   **Concept:** Restored data is **not identical to the original** because some redundant or unnecessary data is permanently lost during compression.
+        *   **Characteristic:** Higher compression rate, achieved by compromising some accuracy.
+        *   **Types:**
+            *   **Prediction Coding:** Used for digitizing analog signals. Quantizes the *difference* between samples (instead of the samples themselves), requiring fewer bits.
+            *   **Transform Coding:** Transforms a signal from one domain (e.g., time/space) to another (e.g., frequency) for compression.
+
+**2. Multimedia Data Components**
+*   Includes text, image, video, and audio data.
+
+    *   **Text:**
+        *   Forms: Plain text, non-linear hypertext.
+        *   Standard: Unicode (for symbols).
+        *   Compression: Uses lossless methods.
+
+    *   **Image (Still Image):**
+        *   Refers to photos, fax pages, or video frames.
+        *   **Transmission Process:**
+            1.  Original Image
+            2.  Transformation Process
+            3.  Quantization Process
+            4.  Encoding Process
+            5.  Binary Data Transmission
+            6.  (Reverse process to reconstruct image)
+
+================================================================================
+ORIGINAL TEXT (First 5000 chars)
+================================================================================
+
+--- Page 199 ---
+ESSENCE
+03 File Transfer  Protocol
+FTP is a protocol  for transferring  a file, or part of a file, from one system to another  [1]. Unlike other application layer
+protocols,  FTP has two connections.  They are control connection  and data connection,  which use ports 21 and 20,
+respectively.  The control connection  is maintained  until the client or FTP session is terminated.  The data connection
+establishes  a TCP connection  when a file transfer  starts. The data port number  can be a number, other than 20,
+depending  on the method  used.
+FTP connection  is largely divided  into general  transfer  mode and passive  transfer  mode (PASV). The general  transfer
+mode requests  a connection  to a client to establish  a data connection,  and a problem  occurs when it connects  with
+an external  server system through a system, such as a firewall.  In contrast,  the client first requests  a connection
+to the server  through a channel other than the basic data channel in the passive transfer  mode. Since the client
+requests  to establish  an FTP connection, it can pass through  the firewall without  a problem.  It is applicable,  even
+when the client's IP is not visible from the outside  because  the client network  uses a proxy server.
+<Table 71) Comparison  of General  Transfer  Mode and Passive  Transfer  Mode
+Type General  Transfer  Mode Passive  Transfer  Mode
+Data transfer,  by a server  connecting  to the client’s Data transfer,  by a client connecting  to the server'sConcept « “e
+specific  port specific  port
+Purpose  | General FTP use FTP use from a secured  client
+Application  | Support  of Active and Passive  of general  FTP tools FTP connection  from a web browser
+Control  port: 21 Control  port: 21peed Data port: 20 Data port: 1024 or higher
+This section  describes  the FTP command  processing  and available  FTP commands.
+FTP command  processing
++ FTP uses the control  connection  to facilitate  communication  between  a server  control process  and a client
+control  process
+Control  Connection Command  Messageaan
+ii 4 LF Hor H Media Variable H sp f Instruction [> “os
+LF Cient < Response Code H SP H Meaning cr }
+Response  MessageServer
++ It is processed  interactively  and is divided into a command  that a user gives to the server as well as a
+response  to it.
+198 TOPCIT  ESSENCE
+
+
+--- Page 200 ---
+Overview  of System Architecture )
+Command  types included  in FTP command  messages
+Command  Form Command  Type
+Access  command USER, PASS ACCT, REIN, QUIT, ABOR
+File management  command CWD, CDUP, DELE, LIST, NLIST, MKD, PWD, RMD, RNFR, RNTO, SMNT
+Data forming  command TYPE, STRU, MODE
+Port definition  command PORT, PASV
+File transfer  command GET, PUT, MGET, MPUT, RETR, STOR, APPE, STOU,  ALLO, REST, STAT
+Other  commands HELP, NOOP SITE, SYST
+The general  transfer  mode and passive  transfer  mode operate  in the time sequence  shown in the figure below.
+General  transfer  mode operation
+FTP Server FTP CLient2 Ge
+20 21
+DATA COMMAND 5150 5151
+“PORT 5151"
+9  OK
+DATA CHANNEL
+”“ok
+1) The client connects  to the server's  port 21 and informs  the server  of the second  port it intends  to use.
+2) The server  responds  with ACK.
+3) The server's  port 20 attempts  to connect  to the second  port informed  by the client.
+4) The client responds  with ACK.
+M3 Overview  of System  Architecture  199
+
+
+--- Page 201 ---
+3Passive  FTP mode operation
+FTP Server FTP CLient> ]= I]
+20 21
+DATA COMMAND 5150 5151
+3267 “pASY
+“OK 32567"
+1) The client attempts  to connect  to the command  port.
+2) The server  informs  the second  port it intends  to use.
+) The client opens another  port and attempts  to connect  to the port informed  by the server,
+4) The server responds  with ACK.
+200 TOPCIT  ESSENCE
+
+
+--- Page 202 ---
+Overview  of System  Architecture
+>> Recent  trends and issues
+As high-speed  data transmission  becomes  possible  and various convergence  technologies  emerge,
+cutting-edge  technologies  are also appearing  in the network  field. With the advent of technologies  that
+guarantee  traffic quality in Internet  networks,  multimedia  and Internet  telephony  services have been
+launched.  In recent  years, Internet  of Things  (loT) network-based  technologies  are expanding  together  with
+standardization  organizations  and groups. Moreover,  software-based  networks,  that are differentiated  from
+the existing  network  structure,  are being introduced.  This chapter  discusses  the recent network  trends and
+major issues.
+>> Learning  objectives
+1. To be able to understand  the concept  of multimedia  networks  and Internet  telephony  and explain the related
+protocols.
+2. To be able to explain loT network-based  technologies,
+3, To be able to explain the concept  of software—-pased  networks,
+>> Keywords
+Lossless  compression,  lossy compression,  QoS, SIP, H.323, RTP RTSP, RTCP. IMS, CSCF, HSS, 3GPP, SDN,
+Openflow,  Control  plane, Data plane, NFV, Virtualization  function,  MQTT, CoAP
+M3 ...

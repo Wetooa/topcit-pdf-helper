@@ -1,0 +1,41 @@
+Software  Development )
+(CPU, HDD) of the computer  using the facade (computer).
+/* Complex  parts */
+class CPU {
+public void freeze( ) { ... }
+public void jump(long  position)  { ... }
+public void execute()  { ... }
+}
+class Memory  {
+public void load(long  position,  byte[ ] data)  {
+}
+}
+class HardDrive  {
+public byte[ ] read(long  Iba, int size) {
+}
+}
+/* Facade  */
+class Computer  {
+public void start Computer(  ) {
+CPU cpu = new CPU( );
+Memory  memory  = new Memory(  );
+HardDrive  hardDrive  = new HardDrive(  );
+cpu.freeze(  );
+memory.  load(BOOT_ADDRESS,  hardDrive.read(BOOT_SECTOR,  SECTOR_SIZE));
+cpu, jump (BOOT_ADDRESS);
+cpu.execute(  );
+}
+/* Client  */
+class You {
+public static void main(String[  ] args) throws ParseException  {
+Computer  facade  = /* grab a facade  instance  */;
+facade.start  Computer(  );
+}
++ Flyweight  pattern
+- Definition:  A design that separates  information  into shareable  and non-shareable  information  in order to
+share information,  and which defines  shareable  information  as an object  and performs  information  sharing.
+- Advantages:  Storage  space can be reduced,  and multiple  objects  can be handled  easily.
++ Proxy pattern
+- Definition:  A pattern used to represent  a complex  object or an object that takes time to create within a
+simpler  object. As creating  an object uses many resources  and/or takes a lot of time, this pattern delays
+M1 Software  development  79

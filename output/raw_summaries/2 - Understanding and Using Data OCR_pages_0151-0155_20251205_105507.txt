@@ -1,0 +1,237 @@
+LEARNING GUIDE: Pages 151-155
+Generated: 2025-12-05 10:55:07
+PDF: 2 - Understanding and Using Data OCR
+
+================================================================================
+LEARNING GUIDE
+================================================================================
+
+Here is a simplified, easy-to-read learning guide based on the provided text (Pages 151-155), focusing on NoSQL databases and an introduction to AI.
+
+---
+
+## NoSQL Databases: A Learning Guide
+
+### 1. NoSQL: Definition & Core Characteristics
+
+**Definition:**
+NoSQL (Not Only SQL) is a non-relational, distributed data repository. Unlike traditional relational databases (RDBMS) that use tabular relations, NoSQL provides alternative processing methods. It's designed for handling unstructured and ultra-high-capacity data, focusing on high write speed and horizontal scalability.
+
+**Key Characteristics:**
+
+*   **Schema-less / Flexible Schema:** Data can be saved freely without a predefined fixed schema. Data is stored in simplified forms like key-value pairs, graphs, or documents.
+*   **Massive Scalability (Elasticity):**
+    *   Supports **scale-out** (adding more servers) using inexpensive commodity hardware.
+    *   Allows easy expansion of system scale and performance.
+    *   Distributes I/O load, enabling large-scale data creation, updates, and queries without downtime.
+    *   **Partitioning** allows gradual node increase.
+*   **High Availability:**
+    *   Data is automatically divided and replicated across a cluster.
+    *   No single point of failure; data remains available even if a node goes down.
+*   **High Performance:**
+    *   Achieved through memory-based caching, non-blocking writes, and low complexity algorithms.
+    *   Quick response speeds, even for large-scale queries.
+*   **Simplified Interface:**
+    *   No complex query language like SQL.
+    *   Provides a simple API or HTTP interface.
+*   **Flexible Integrity:**
+    *   Doesn't prioritize strict ACID properties (like RDBMS).
+    *   Allows the application to manage some data integrity, providing "as much integrity as needed."
+*   **Atomicity:** Each write operation is atomic (indivisible).
+*   **Consistency:** Strong consistency is not always required; eventual consistency is often sufficient.
+*   **Persistence:** Data is stored reliably on disk, not just volatile memory.
+*   **Deployment Flexibility:**
+    *   Automatic data loading when nodes are added/deleted.
+    *   No constraints on distributed file systems, shared storage, or special hardware.
+    *   Operable in heterogeneous hardware environments.
+*   **Modeling Flexibility:** Conveniently models various data types (key-value, hierarchical, graphs).
+*   **Query Flexibility:** Supports various queries like multiple GETs for key sets or range-based queries.
+
+### 2. BASE Attributes of NoSQL
+
+NoSQL databases often prioritize BASE attributes over ACID (Atomicity, Consistency, Isolation, Durability) found in RDBMS.
+
+**BASE stands for:**
+
+*   **B**asically **A**vailable:
+    *   Emphasizes availability, even with multiple failures.
+    *   Copies of data are stored in multiple locations.
+    *   Ensures the system remains operational.
+*   **S**oft state:
+    *   Node status is determined by external information.
+    *   State can change over time even without input due to eventual consistency.
+*   **E**ventually **C**onsistent:
+    *   Consistency is maintained optimally, even if temporarily lost.
+    *   Updates between distributed nodes are propagated over time; eventually, all nodes will reflect the same data.
+
+**Comparison of BASE vs. ACID Attributes:**
+
+| Attribute           | BASE (NoSQL)                  | ACID (RDBMS)                  |
+| :------------------ | :---------------------------- | :---------------------------- |
+| **Application Field** | NoSQL                         | RDBMS                         |
+| **Scope**           | Characteristics of entire system | Limited to individual transactions |
+| **Consistency**     | Weak/Eventual consistency     | Strong/Immediate consistency  |
+| **Main Focus**      | Availability                  | Commit (data integrity)       |
+| **System Aspect**   | Performance                   | Strict data management        |
+| **Efficiency Focus** | Query design                  | Table design                  |
+
+### 3. NoSQL Storage Methods (Types of NoSQL)
+
+NoSQL databases are categorized by their data models:
+
+1.  **Key-value based:**
+    *   Most basic NoSQL type.
+    *   Stores data as simple key-value pairs.
+    *   Provides fast Get, Put, and Delete functions.
+    *   *Examples:* Dynamo, Redis, MemcacheDB.
+2.  **Column-family based:**
+    *   Stores data in rows within "column families" (similar to tables).
+    *   Highly scalable for wide-column data.
+    *   *Examples:* Cassandra, HBase, SimpleDB.
+3.  **Document based:**
+    *   Stores "documents" (like XML, JSON, BSON) as values in a key-value store.
+    *   Documents are self-describing and hierarchical.
+    *   *Examples:* MongoDB, CouchDB.
+4.  **Graph based:**
+    *   Expresses relational database entities as "nodes" and relationships as "edges" between nodes.
+    *   Ideal for highly connected data (social networks, recommendation engines).
+    *   *Examples:* Neo4J, Flock DB.
+
+### 4. NoSQL Data Modeling vs. Relational DB
+
+| Feature            | Relational DB Data Modeling            | NoSQL Data Modeling                   |
+| :----------------- | :------------------------------------- | :------------------------------------ |
+| **Key Point**      | ACID-based data modeling               | BASE-based data modeling              |
+| **Consistency**    | Secures data consistency with minimal redundancy | Fast performance through data replication |
+| **Phase**          | Development after data modeling (design based on business needs) | Data set designed considering screen and development logic (more agile) |
+| **Independence**   | Independent program design (data independence) | Dependent program design (avoids data independence for performance) |
+| **Characteristics** | Derives logical connection points using generalized notation | Closer to file structural design; creates data sets easily processed by programs |
+
+### 5. The CAP Theorem
+
+**Definition:**
+The CAP theorem states that it's impossible for a distributed data store to simultaneously satisfy all three properties: **C**onsistency, **A**vailability, and **P**artition Tolerance. You must strategically choose only two.
+
+**Components:**
+
+*   **Consistency (C):** All nodes show the same data at the same time. Every user always views the same, most recent data.
+*   **Availability (A):** Even if some nodes fail, the system remains operational, and all users can always read and write data.
+*   **Partition Tolerance (P):** The system continues to operate normally even if there are network failures (message loss) separating parts of the system (partitions).
+
+**Management Strategies (Choosing Two):**
+
+*   **C + A (Consistency + Availability):**
+    *   Highly reliable, prevents message loss.
+    *   Essential when transactions require strong consistency.
+    *   *Typically found in:* General RDBMS (though RDBMS are usually not distributed in a way that prioritizes P).
+*   **C + P (Consistency + Partition Tolerance):**
+    *   Prioritizes consistency even during network partitions.
+    *   If a partition occurs, availability might be sacrificed (some nodes might become unavailable to maintain consistency).
+    *   *Typically found in:* Google's BigTable, HyperTable, HBase.
+*   **A + P (Availability + Partition Tolerance):**
+    *   Prioritizes availability and partition tolerance.
+    *   If a partition occurs, consistency might be sacrificed (different nodes might show slightly different data temporarily) until the partition is resolved and data syncs.
+    *   Essential for asynchronous store operations.
+    *   *Typically found in:* Dynamo, Apache Cassandra, CouchDB, Oracle Coherence.
+
+**Note:** NoSQL systems are often composed of distributed systems that exhibit characteristics of A+P and C+P, usually leaning heavily towards A+P to ensure high availability and scalability.
+
+---
+
+## Next Topic: Artificial Intelligence (AI)
+
+### Introduction to AI
+
+**Definition:**
+Artificial Intelligence (AI) is a technology that studies how computers can think, learn, and develop capabilities similar to human intelligence.
+
+**Applications:**
+AI is now applied across almost all industrial sectors, including military, aviation, medical, manufacturing, communication, public administration, and life services.
+
+**Current Considerations:**
+Beyond technical issues, ethical and institutional issues surrounding AI must be carefully considered.
+
+### Learning Objectives for AI
+
+1.  Explain the concepts of AI and machine learning.
+2.  Explain the concept and algorithm types of deep learning.
+
+### Keywords for AI
+
+*   Artificial intelligence, Turing test, Asilomar principles, machine learning, supervised learning, unsupervised learning, reinforcement learning, deep learning, DNN, RNN, RBN, DBN.
+
+---
+
+================================================================================
+ORIGINAL TEXT (First 5000 chars)
+================================================================================
+
+--- Page 151 ---
+ESSENCE
+03 NoSQL
+A) Definition  and characteristics  of NoSQL
+A NoSQL database  provides  other means of processing  than the tabular  relations  used in relational  databases.  NoSQL
+is anon-relational  distributed  data repository  that can be expanded  horizontally,  such as data replication  and distributed
+storage  on multiple  servers  focusing  on the write speed for processing  unstructured  and ultra-high-capacity  data.
+<Table  75> Characteristics  of NoSQL
+Characteristic Description
+fee  of  lager - Provides a loose data structure that allows data to be processed  at the petabyte level.
+Use of flexible - Saves data relatively  freely without  a predefined  schema.
+schemas - Saves (data) in a simplified  form such as the key value, graph, and document  structure.
+Inexpensive  cluster - Supports  scale-out,  data replication,  and distributed  storage  using multiple  servers  composed  of
+configuration Pc-level commercial  hardware.
+Simple  CLI (Call Level | - No query language  like SQL in existing  relational  databases  is provided.
+Interface) - Asimple  interface  is provided  by calling a simple API or HTTP.
+High availability - NoSQL loads data by automatically  dividing  data items into the cluster  environment.
+Allows as much - While the relational  DBMS focuses  on ensuring  logical structure  and ACID, NoSQL makes  the
+integrity  as needed application  process  some of the integrity  works instead of assigning  them all to the DBMS.
+The methods  of saving  data are largely divided into column,  value, document,  and chart, using a
+Schema-less function  that allows data storage  and access using the key values, without  the fixed data schema for
+data modeling.
+NoSQL  has a structure  that allows expansion  of the system's  scale and performance  and distribution
+Elasticity of the I/O load more easily,  so that large-scale  data can be created, updated,  and queried,  while not
+causing  downtime  for any clients and application  systems  that access  the system,  even if the system
+fails partially.
+NoSQL  provides  query language,  related processing  technology,  and API that can efficiently  search
+Query and process  data according  to the characteristics  of data even in a system composed  of tens or
+thousands  of servers.
+NoSQL  has a structure  in which memory-based  caching  technology  is very important,  and which can
+Caching provide a high-performance  response  speed even for large-scale  queries and be consistently  applied
+to development  and operation.
+High scalability Partitioning  allows a gradual  node increase.
+: Sees There is no single point of failure, and data are available  even though  a certain node is down because
+High availability .they are replicated.
+5 The result should be quickly  returned  based on memory  instead  of disk, which can be achieved  byHigh performanceusing the non-blocking  write and low complexity  algorithm.
+Atomicity Each write operation  needs to be atomic.
+Consistency Strong consistency  is not needed, but the resulting  consistency  is sufficient  (Read-Your-Writes).
+Persistence Data should be kept on a disk, not just in a volatile memory  only.
+Deploment When a node is added or deleted,  data should be automatically  loaded  without  the need for data
+flexibility distribution  or manual mediation,  and there should be no constraints,  such as distributed  file system  or
+shared storage,  or any need for special hardware.  Hardware  should be operable  in heterogeneous  hardware.
+Modeling  flexibilityData of various  types such as key-value  pairs, hierarchical  data, and graphs  should be modeled
+conveniently.
+Query  flexibility
+150 TOPCIT  ESSENCEMultiple  GET that obtains  a set of values  for the provided  key from a query, and queries  that obtain
+data based on a specific  range of keys, are needed.
+
+
+--- Page 152 ---
+Database )
+B) BASE attributes  of NoSQL
+@ BASE attributes  of NoSQL
+<Table  76> Description  of NoSQL’s  BASE properties
+Item Contents
+- Emphasis  is placed on availability  and the use of optimistic  locking  and queue.
+- Availability  is ensured  even with multiple  failures  and copies  are stored in multiple  storages.
+- Node status is determined  by the information  transmitted  from outside.Basically  Available
+et - Updates between distributed  nodes are updated when data reach the node.
+Eventually . . ; ; . .Consistent The property  of maintaining  consistency  optimally  even though  consistency  is lost temporarily.
+@ Comparison  of BASE attributes  and ACID attributes
+<Table  77> Comparison  of BASE attributes  and ACID attributes
+Attribute BASE ACID
+Application  field - NoSQL - RDBMS
+Scope - Characteristics  of the entire system. ~ Limited  to transactions.
+Consistency  aspect ~ Weak consistency. - Strong  consistency.
+Main points ~ Focused  on ‘availability’. - Focused  on “commit”.
+System  aspect - Focused  on “performance”. - Focused  on “strict data management’.
+Efficiency - “Query design’ is...

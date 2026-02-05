@@ -1,0 +1,226 @@
+LEARNING GUIDE: Pages 58-62
+Generated: 2025-12-05 13:57:07
+PDF: 5 - Understanding the IT Business and Ethics OCR
+
+================================================================================
+LEARNING GUIDE
+================================================================================
+
+Here is a simplified, easy-to-read learning guide based on the provided text, designed for efficient study.
+
+---
+
+## IT Business and Ethics: Learning Guide (Pages 58-62)
+
+### I. Core IT Lifecycle Processes
+
+These define the fundamental activities in software and IT services.
+
+*   **Development:** Activities of software developers, defining software output and team tasks.
+*   **Operation:** Activities of operators providing operational services.
+*   **Maintenance:** Activities of maintenance managers providing maintenance services.
+
+#### A. Support Lifecycle Process
+
+*   **Purpose:** Supports other processes, contributing to output quality and success.
+*   **Key Sub-processes (8 total):**
+    *   **Documentation:** Recording outputs generated during the lifecycle.
+    *   **Configuration Management:** Managing configurations and details.
+    *   **Quality Assurance:** Checking fulfillment of requirements and plan compliance.
+    *   **Verification:** Verifying software output from the developer's perspective.
+    *   **Validation:** Checking software output from the user's perspective.
+    *   **Joint Review:** Evaluating output and progress comprehensively.
+    *   **Audit:** Examining software compatibility with plans and contracts.
+    *   **Problem Resolution:** Analyzing and resolving problems found in the basic lifecycle.
+
+#### B. Organization Lifecycle Process
+
+*   **Purpose:** Configures the underlying organizational structure for business, independent of specific projects or contracts.
+*   **Key Sub-processes (4 total):**
+    *   **Management:** Basic management activities, including project management.
+    *   **Infrastructure:** Defines the basic structure of the lifecycle process.
+    *   **Improvement:** Activities carried out by stakeholders or participating organizations.
+    *   **Training:** Activities for providing trained staff.
+
+#### C. Tailoring Process
+
+*   **Definition:** The process of eliminating activities and tasks that are not applicable or unnecessary in the lifecycle.
+*   **Purpose:** Optimizing software adoption procedures, methods, and outputs, especially for unit-level projects, to accommodate changing requirements.
+*   **Important Considerations:**
+    *   **Reasons for SW adoption:** Work scope, stakeholder considerations, establish goals.
+    *   **Timetable and Scope:** Project timeline, scope of adoption, interfacing parts, select methodology.
+    *   **Internal/External Environment:** Regulations, laws, IT compliance, security measures, response strategy.
+    *   **Application Technology:** SW application framework, base technology, utilization inspection.
+
+### II. IT Business Adoption Methods
+
+There are two primary methods for adopting an IT business, often used in a hybrid approach.
+
+#### A. In-House Development
+
+*   **Definition:** Companies use internal personnel to set up and develop information systems.
+*   **Characteristics:**
+    *   **Goal:** Actively reflects a company’s internal requirements.
+    *   **Manpower:** Centered on own company manpower.
+    *   **Dependency:** Know-how accumulates internally; user requirements are satisfied.
+    *   **Advantages:**
+        *   Full reflection of user needs.
+        *   Accumulates internal know-how.
+        *   Company information/processes can be guarded.
+        *   Scope of adoption is easily adjusted.
+    *   **Disadvantages:**
+        *   Higher adoption costs.
+        *   Success not guaranteed.
+        *   Deployment costs are relatively high.
+        *   Scope of work improvements is relatively narrow.
+
+#### B. Package Purchase
+
+*   **Definition:** Adopting a pre-developed system (software package).
+*   **Characteristics:**
+    *   **Goal:** Uses advanced processes and cases.
+    *   **Manpower:** Uses experts on the package.
+    *   **Dependency:** Risk of technology dependence.
+    *   **Advantages:**
+        *   Easy absorption of industry know-how.
+        *   System has undergone many tests, reducing uncertainty.
+        *   Short adoption period.
+        *   Relatively low initial cost.
+        *   Work processes can be innovated.
+        *   Advanced management processes can be integrated.
+    *   **Disadvantages:**
+        *   Maintenance costs tend to increase.
+        *   Company's confidential information could be leaked.
+        *   Company's internal processes may need to be altered to meet package requirements.
+
+#### C. Hybrid Approach
+
+*   **Trend:** Companies increasingly use a hybrid approach.
+*   **Method:** In-house development for the overall approach, combined with packaged products for specific component technologies.
+*   **Benefits:** Reduces costs and risks.
+
+### III. IT Business Outsourcing Service
+
+#### A. Overview
+
+*   **Purpose:** To respond quickly to changing environments, allowing companies to focus on core competencies.
+*   **Strategy:**
+    *   **In-house:** For strategic areas or processes where the company has a competitive edge.
+    *   **Outsource:** For non-strategic or weak areas, subcontracting work to external experts or third-party companies.
+*   **Definition:** Subcontracting IT resources, IT management, and IT operations to external providers.
+
+#### B. Adoption Process
+
+1.  **Preparation/Identification:** Identify core competencies and select tasks to be outsourced.
+2.  **Select Target Tasks:** Choose specific tasks for outsourcing.
+3.  **Select Outsourcing Company:** Choose the best vendor.
+4.  **Negotiations & Contracting:** Sign a contract; crucial to agree on **Service Level Index (SLI)** management.
+5.  **Contract Control Phase:** Manage and improve performance, transfer technology, build experience database.
+6.  **Transition & Implementation:** Realistic management and clear handover.
+
+#### C. Forms of Outsourcing
+
+*   **Total Outsourcing:**
+    *   **Description:** Entire IT functionality outsourced to a single vendor.
+    *   **Pros:** Clear accountability, improved efficiency.
+    *   **Cons:** Lack of competition can lead to monopolistic issues.
+*   **Selective Outsourcing:**
+    *   **Description:** Selected functions or job units outsourced to multiple vendors.
+    *   **Pros:** Price and quality improvements due to vendor competition.
+    *   **Cons:** Accountability issues when problems occur, communication difficulties for exact requirements.
+*   **IT Subsidiary Company Outsourcing:**
+    *   **Description:** IT functionality outsourced to a subsidiary company specializing in IT.
+    *   **Pros:** Improved communication and unity among employees.
+    *   **Cons:** Increased associated costs, risk to parent company if subsidiary is not profitable.
+*   **Co-Sourcing:**
+    *   **Description:** IT planning, strategy, and service activities are separated.
+    *   **Pros:** Advantages in rapidly evolving environments, addresses some total outsourcing problems.
+    *   **Cons:** Coordination may be needed if there's a gap between strategy and performance.
+
+#### D. Considerations for Adopting Outsourcing
+
+*   **Continuous Oversight:** Requires continuous monitoring of the vendor using standards like **eSCM** (e-Sourcing Capability Model) and **ISO/IEC 20000** (IT Service Management).
+*   **Security & Quality:** Establish a security system to prevent information leaks; continuously monitor and manage service levels for optimal quality.
+*   **Business Process Outsourcing (BPO):** If outsourcing a whole or part of a business process (not just a specific job category), BPO should be adopted.
+
+#### E. Issues and Considerations (Summary Table)
+
+| Category    | Problems                                                               | Considerations                                                                     |
+| :---------- | :--------------------------------------------------------------------- | :--------------------------------------------------------------------------------- |
+| **Management** | - Weak control over subcontractors <br/> - Dependency on vendor <br/> - Difficulty in accumulating know-how <br/> - Inter-company disputes <br/> - Increased management costs | - Set up control system using **IT Governance** <br/> - Evaluate from **BSC** (Balanced Scorecard) viewpoint <br/> - Set up evaluation system using standards (eSCM, ISO20000) |
+| **Contracts** | - Unclear scope and R&R (Roles & Responsibilities) <br/> - Uncertainty over estimated costs <br/> - Difficulty in awarding bonus points and imposing sanctions | - **SLA** (Service Level Agreement) for level agreement and management <br/> - Set up plan for change management <br/> - Adopt systematic method for cost estimation |
+| **Operations** | - Security concerns over corporate information <br/> - Insufficient fulfillment of requirements | - Set up security training program and control system <br/> - Set up technology transfer process <br/> - Set up service quality management |
+
+---
+
+================================================================================
+ORIGINAL TEXT (First 5000 chars)
+================================================================================
+
+--- Page 58 ---
+Understanding  the IT Business  and Ethics )
++ Defines  the activities  of the software  developer.
+Development + Defines software output and the activities  of the development  team.
+Operation + Defines  the activities  of the operator  who provides  operations  services.
+Maintenance + Defines  the activities  of the maintenance  manager  who provides  maintenance  services.
+@ Support  lifecycle  process
+The support  lifecycle  process  consists  of eight sub-processes  and plays the role of supporting  other processes.  It
+contributes  to the quality and success  of the outputs.
+<Table14>Detailed  process  of the support  lifecycle  process
+Process Description
+Documentation Defines  recording  activities  for output  generated  during the lifecycle  period process.
+Configuration  Management Defines  configuration  management  activities  and configuration  details.
+Defines  quality  assurance  activities  related to checking  the fulfillment  of the requirements  and
+Quality Assurance compliance  with the plan.
+Verification Defines  activities  for verifying  the software  output  from the developer's  perspective.
+Validation Defines  activities  for checking  the software  output from the user’s perspective.
+Joint Review Defines  activities  for comprehensively  evaluating  output  and progress.
+Audit Defines  activities  for examining  the software’s  compatibility  with the plans and contracts
+Problem  Resolution Define activities  for analyzing  and resolving  problems  found in the basic life cycle process.
+© Organization  lifecycle  process
+The organization  lifecycle process  consists  of four sub-processes  which serve to configure  the underlying  structure
+of the organization  lifecycle  process  for the business,  without  being constrained  by a specific  project or information
+system  deployment  contract.
+<Table 15> Detailed  description  of the organization  lifecycle  process
+Process Description
+Management Defines  the basic management  activities  including  project management  activities.
+Infrastructure Defines  the basic structure  of the lifecycle  process.
+Defines  the improvement  activities  carried out by the stakeholders  or the organization  which is
+Improvement participating  in the process.
+Training Defines  the basic activities  that must be completed  when providing  trained staff.
+C) Tailoring  process
+In addition  to the main processes  described  above, there is also the tailoring2  process,  The tailoring  process  defines
+the basic activities  required  for tailoring.  It is the process  of eliminating  activities  and tasks that are not applied or
+perceived  as unnecessary  in the life cycle process.
+Although  the tailoring  process  is generally  known as the optimization  of the software  development  methodology,  this
+M5 Understanding  the IT Business  and Ethics 57
+
+
+--- Page 59 ---
+ESSENCE
+section  explains  the part of tailoring  that has to do with software  adoption.
+Before software  is adopted,  the adoption  procedure,  method,  and outputs must be optimized  to accommodate
+changes  in the internal and external  requirements.  The need for tailoring  becomes  most acute for unit-level  projects.
+In these situations,  the best software  adoption  environment  can be created  through  tailoring.
+<Table 16> Important  considerations  for the tailoring  process
+Considerations Explanation
+Reasons  for SW — Work scope (ex. Finance,  Telecom,  etc.), stakeholder  considerations
+adoption - Establish  the goal and direction  of SW adoption.
+Timetable  and Scope of adoption,  interfacing  parts, project  timetable  considerations
+scope - Select  the methodology  and output.
+Int Ifext | Environmental  considerations,  e.g. regulations  and laws, IT compliance,  etc.
+vervionm  ent - Establish  the scope of application  of security measures,  and the internal/external  environment  response
+strategy.
+Application SW application  framework  and base technology  considerations
+technology -Select the framework  and attributes,  inspect its utilization,  and select the application  base technology.
+03 IT Business  Adoption  Method
+There are two distinct methods  of adopting  an IT business:  in-house  development  and package  purchase.  The
+advantage  of in-house  development  is that it allows a company  to fully reflect the needs of users by utilizing  its own
+internal personnel.  A purchased  package  has the advantage  of being based on a standardized  advanced  process
+which is conducive  to improving  work efficiency.
+@ Characteristics  of in-house  development
+This is a form of adoption  that allows companies  to set up and develop  information  systems  using their own
+manpower,  resulting  in a system  that is faithful to the internal  requirements  of the company.  While know-how  can be
+accumulated  with this method,  it involves  relatively  higher adoption  costs, while success  cannot  be guaranteed.
+@ Characteristics  of package  purchase
+This i...

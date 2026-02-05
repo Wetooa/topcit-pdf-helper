@@ -1,0 +1,29 @@
+Overview  of System Architecture )
+© Routing  table
+A routing table is a database  that stores the output interface  of each destination  network  and the next hop IP
+address.
+1.0.0.0 2.0.0.0 3.0.0.0 4.0.0.0
+Routing  Table Routing  Table Routing  Table
+1.0.0.0 EO 0 2.0.0.0 so 0 3.0.0.0 so 0
+2.0.0.0 so 0 3.0.0.0 S| 0 4.0.0.0 EO 0
+3.0.0.0 Si} 1 1.0.0.0 Si) 1 2.0.0.0 Ss 1
+4.0.0.0 0) 2 4.0.0.0 St 1 1.0.0.0 Ss 2
+[Figure 115] Routing  Table
+E) What is a switch?
+A switch is a device that connects  network  units. A switch device has an important  role in MAC address learning,
+filtering,  and loop prevention.  Other switch functions  include port mirroring  and VLAN. Port mirroring,  also called
+port monitoring,  is the function  of sending  a replicate  of the data sent from a specific  port to a mirrored  port. It is an
+important  function  used by administrators  to monitor  network  traffic through  the mirrored  port.
+<Table 41) Main Switch Functions
+Function Description
+Address  learning - Learning  the MAC address  of all systems  that are connected  to a port
+Filtering - Filtering  data traffic to a specific port using the MAC address
+Wooneevention - Preventing  a network  loop when multiple  paths to a destination  are generated
+PP - The system usesa spanning  tree protocol (STP) to prevent  the network loop.
+F) Virtual local area network  (VLAN)
+VLAN is a method  of configuring  a logical network,  desired by the user, to overcome  the physical and regional
+constraints  of the existing  networks. In other words, it uses the IP unit, protocol  unit, MAC address,  and connecting
+port to configure  a logical network, instead of separating  networks  by spatial and geographical  locations.  The VLAN
+protocols  of a switch include ISL, 802.1Q,  and VTP. ISL and 802.1Q are the VLAN tagging  protocols,  and VTP is a
+VLAN management  protocol.
+M3 Overview  of System  Architecture  161

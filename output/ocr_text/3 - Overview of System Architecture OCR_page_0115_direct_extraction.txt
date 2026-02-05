@@ -1,0 +1,21 @@
+ESSENCE
+HTTP RequestPN
+Web server Browser
+[Figure  78] Webserver
++ Web application  server (WAS): A WAS is a middleware  that enables  the stable transaction  processing  of web
+client requests  and helps develop  the distributed  systems.  It is an engine for database  queries or business  logic
+processing,  which supports  component  development  and use, application  development,  web, distributed  objects,
+security,  IED, system management,  and interface  to legacy systems.  Leading  WAS products  include Tomcat,  Jetty,
+JEUS, JBoss, WebLogic,  WebSphere,  and Node js (see [Figure  79]).
+Web Application  Server
+a A I Container
+<<
+Webserver
+Server
++ Transaction  processing  (TP) monitor:  A TP-monitor  is transaction  management  middleware  that supports  the
+distributed  transaction  processing  and monitors  transactions,  which are the minimum  processing  units between
+active sessions  and systems  in various protocols,  in order to maintain  them consistently.  Most TP-monitor
+products  comply  with the DTP (distributed  transaction  process)  model specified  by X/Open,  the UNIX environment
+standardization  organization.  The leading  TP-monitor  products  include  Tmax and Tuxedo.
++ DB server (Database  management  system,  DBMS): A DB server provides  the database  type, database  management
+114 TOPCIT  ESSENCE

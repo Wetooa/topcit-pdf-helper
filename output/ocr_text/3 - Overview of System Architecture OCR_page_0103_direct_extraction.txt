@@ -1,0 +1,41 @@
+ESSENCE
+System  Requirement
+Analysis
+System
+Requirement  Test
+Hardware/Software .
+Common Design Model eel
+System  Design  Test
+i Narn  part Interface Software :
+' ene Item Item '
+‘ " Development Development :
+Functional  Physical
+System Integration  and ot
+Testing er
+InspectionEvaluation  and e
+Acceptance  Verification
+Maintenance  and
+Functional  Evaluation
+Embedded  System
+Production  and Utilization
+[Figure 72] Embedded  System  Development  Procedure
+<Table 18> below shows details of the above development  procedure.
+{Table 18) Detailed  Tasks of Embedded  System Development
+Stage Task Products
+- Commercial  feasibility  determination an
+Product planning (Price, technology,  and marketing  review) pt :
+: and timing— Determining  rough product  specificationschart
+- Hardware  team: Selects  hardware  parts (CPU, memory,  and other peripherals)
+. Hardware
+Penteciection —  Selecting  hardware  parts that meet requirements  at the lowest cost and OS
+- Software  team: Selects  the OS. Checks  if the product  under  development  requires :
+specificationsan OS and selects  one, according  to characteristics.
+Parcwarctcreni - Hardware  team: Generates  the circuit diagram
+generation  and (Disposal  of all produced  products  if there is a hardware  error Hardware
+software  structure — Led by skilled personnel). circuit diagram
+design - Software team: Designs module-to-module  interfaces,  and checks required libraries.
+- Hardware  team: Performs  the artwork  using the circuit diagram.
+Code design for each_| ~ Artwork:  The task of generating  data to connect  actual parts on the circuit diagram  | Codes  artwork
+artwork  module (Actual part size, connector  shape, part location selection,  and wiring) results.
+- Software  team: Designs  the code of each module,  while considering  the interface.
+102 TOPCIT  ESSENCE

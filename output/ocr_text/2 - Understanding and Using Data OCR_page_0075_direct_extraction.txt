@@ -1,0 +1,32 @@
+ESSENCE
+C) Targets  of the fourth normalization
+Preconditions  for table design
+- If you want to manage  the holding  technology  and the support  project  of the employee,  but the holding  technology  and
+support  project  are not related.
+That is, the employee  and the holding  technology  are related (0). The employee  and the project  are related (0).
+The holding  technology  and the project  are not related (X).
++ If only one table is designed  despite  these business  rules, the following  data model and structure  of data values are
+identified.
+Item Structure  of the table's data values
+Employee Support  details Project
+Employee  number Employee  ID (FK) Project  code
+Employee  name +——-  pines  is  im Project name
+Address —_—
+Data model |
+| Skill code
+| Skill name
+Employee  number Technology  code Project  code
+slStructure  of the 10 MODELING 60
+table's data values PA
+DBA20 XML PA
+[Figure  33] Example  of the fourth normalization
++ The focus of this example  is placed on the relationship,  but on the multi-valued  dependency  in which each data
+value in the support  detail table produces  several data values due to the previous  value. It can be expressed  as
+follows, if it is expressed  as a table in a database.
+| Employee  number Technology  code Project  code
+| 10 MODELING AND
+| 10 MODELING 00
+| 10 DBA PA
+20 DBA PA
+20 XML PA
+74 TOPCIT  ESSENCE

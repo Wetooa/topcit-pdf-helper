@@ -1,0 +1,34 @@
+ESSENCE
+B) Data structure
+@® Conceptual  data model: A model that defines  the subject  area, key entity, and key relationship  of the data that meet
+business  requirements.
+@ Data reference  model: A model that defines a set of standard  data and control items by business  area and subject
+area for the purpose  of establishing  and maintaining  the data architecture,  of interoperating  the data models used by
+organizations,  and of referring  to and reusing  other organization  data models.
+© Logical  data model: A model that defines the logical data set, control item, and relationship  by specifying  the
+conceptual  data model.
+@ Physical  data model: A model that actualizes the logical data model by considering  the characteristics  and
+performance  of the DBMS.
+© Database:  A result of implementing  a physical  model and a data repository  that stores actual build data.
+© User view: A screen or output of the information  system  that provides  data.
+C) Data management  process
+@ Data standard  management:  An activity  that cleans and improves  data by defining,  changing,  and managing  the
+standard  word dictionary,  domain dictionary,  standard  term dictionary,  standard  code, data-related  element  standard,
+etc., which are defined according  to the data standardization  principle,  into the form that is most suitable  for the
+institution, and by checking  compliance  with data standards.
+@ Requirements  management:  The task of collecting,  classifying,  and reflecting  user requirements  in the related
+applications  and the overall system  as well as data.
+@® Data model management:  The task of reflecting  the data structure,  which is changed by data requirements
+management,  in a model; and the task of maintaining  a data model in the same way as the database  system  structure.
+@ Data flow management:  The task of managing  the process  of manually  creating  source data, storing the data or
+processing  the data through  extraction,  conversion,  and loading.
+© Database  management:  The task of stably operating  and managing  a database.
++ This includes  such tasks as backup,  security,  tuning,  and monitoring,  etc.
+© Database  security  management:  The task of protecting  a database  and loaded data from a series of unauthorized
+actions.
+* This includes  such tasks as authentication,  access control,  log analysis,  and auditing.
+@ Data utilization  management:  The task of measuring  quality by selecting  the data to be measured  and the quality
+index and by analyzing  the cause of a failure to comply  with the quality requirements.
+D) Data quality  management  maturity  model
+To access data quality  control systematically,  the level of data quality  control should be measured  based on objective
+96 TOPCIT  ESSENCE

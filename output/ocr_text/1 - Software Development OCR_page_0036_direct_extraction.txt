@@ -1,0 +1,36 @@
+Software  Development )
+@ Obstacles  to software  reuse and measures  to remove  the obstacles
++ Technical  plan
+- Use of a new design and development  methodology.
+- Development  of the reuse software  library.
+- Use of the automation  tool (CASE).
++ Administrative  and institutional  methods
+- Establishment  of a compensation  system.
+- Active management  strategy.
+- Organizational  change.
+F) Considerations  when reusing  software
++ Reuse software  if productivity  can be improved.
++ Software  development  process  based on systematic  software  reuse.
++ Establishment  of a system  for promoting  a reuse culture.
++ Creation  of a reuse environment  through  initial investment.
+* Continual  improvement  and enhancement  of the library.
++ Software  reuse that is supported  by tools.
++ Software  productivity  evaluation  and measures,
++ Management  of a set of information  on reused components.
++ Deliverables  for software  reuse:
+Architecture,  source code, data, designs,  documents,  estimates  (templates),  human interfaces,  plans,
+requirements,  test cases
++ Top-down/bottom-up  development  approach.
++ Granularity  of reusable  components.
+G) Effects  of software  reuse
++ Reduces  the TCO of software  production.
+* Creates  sharing  and utilization  effects  for producing  high-quality  software.
++ Promotes  the sharing of information  on system development  and the sharing of deliverables  from other
+projects.
++ Has an educational  effect on the system  structure  and the method  of developing  a good system.
+O2 Reverse  Engineering
+A) Definition  of reverse  engineering
+Reverse  engineering  is a field of software  engineering  in which a developed  system  is deconstructed  to reveal its documents,
+design  techniques,  etc. Reverse  engineering  is a series of activities  aimed at understanding  and modifying  a system,  which
+are performed  during  the software  maintenance  phase. That is, information  or a document  corresponding  to the deliverables
+M1 Software  development  35

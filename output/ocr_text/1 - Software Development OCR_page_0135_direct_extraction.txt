@@ -1,0 +1,26 @@
+ESSENCE
+the MBL again, but there is no obligation  of disclosure  if the modified  part is combined  with other codes or if
+new codes are written.  The main matters  to comply  with are as follows.
++ When distributing  the software,  copyrights,  no warranty,  and distribution  under the MPL should be specified.
++ The part that modified  the MPL code should be distributed  under the MPL again.
++ When the MPL code and another  code are combined,  the source code for the combined  program  excluding
+the MPL code does not have to be disclosed.
+C) Considerations  when utilizing  the open-source  software  license
+Individual  enterprises  should clearly understand  the advantages  and disadvantages  of using open-source
+software  before using an open-source  software  license.
+The major advantages  are as follows:
++ The initial development  cost is low because  the source code can be downloaded  from the web, and modified
+and redistributed  free of charge.
++ Technology  can be developed  quickly and flexibly  as the latest technical  information,  problems,  and solutions
+are shared between  communities.
++ Interoperability  between  different  software  is guaranteed  because  the open format or protocol  are mainly
+used.
+* Open source programs  are relatively  stable compare  to proprietary  programs  because many outstanding
+developers  are participating  in development.
+The major disadvantages  are as follows:
++ Documents  are not as systematic  as those of commercial  programs.
+* The development  roadmap  is not systematic  because  the source code is developed  on the web freely based
+on voluntary  participation.  To utilize open-source  software,  the future development  plan of the software
+concerned  needs to be considered.
++ Generally,  it is required  that open-source  software  should be distributed  without  a patent royalty.
+134 TOPCIT  ESSENCE

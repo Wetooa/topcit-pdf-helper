@@ -1,0 +1,29 @@
+Database )
+04 ER Notation  Based on the Chen Model
+The ER model presented  by Chen was the first data modeling  method  to represent  data configuration  and correlation.
+This model is useful for understanding  the theoretical  concepts  of data modeling.
+Entity Attribute —C)> Derived attribute
+Weak entity LC] Key attribute —Z
+A p Partial key Complex po
+Relationship <> attribute attribute
+Identifying Multiple  value
+relationship <> attribute a)
+[Figure 12] ER model notation
+A) Entity
+@ An entity refers to a meaningful  unit of information  in the real world.
+@ An entity includes  both physical  objects  and conceptual  objects.
++ Physical  object: student,  car, classroom
++ Conceptual  object: project,  job, subject
+@ In general,  an entity has its own identifier  (key attribute)  and is represented  using a rectangle.
+@ An entity without  its own identifier  is called a “weak entity’,  which is represented  using a two-line  rectangle.
+B) Relationship
+@ A relationship  refers to the correlation  between  entities  and is represented  using a diamond
+Example)  The relationship  between  [student]  and [course]  is represented  as follows.
+class
+[Figure 13] Relationship  notation
+@ The degree  of the relationship  represents  the number  of entities  participating  in the relationship.
++ Unary, binary, ternary, ---, N-ary
+@ The cardinality  of the relationship  represents  the maximum  number  of relationship  instances  that can participate  in
+the relationship.
++ There are one-to-one,  one-to-many  and many-to-many  relationships.
+M2 Database  55

@@ -1,0 +1,42 @@
+ESSENCE
+<Table 61> Comparison  of Domestic  and Overseas  Software  Process  Audit and Certification  Systems
+Classification SP Certification  (Korea) CMMI (Overseas) SPICE (Overseas)
+; . . Software  EngineeringOrganizer Ministry  of Science  and ICT Institute  (CMU/SEl) ISO/IEC
+Operation  and NIPA SW EngineeringManagement Center SEI, CMMI Institute ISO/IEC  JTC1 SC7 WG10
+Domestic  standard Market  standard  (US) International  standard
+Certifi- Characteristic Organizational  maturity Organizational  maturity Process  maturityae assessment assessment assessment
+Institute Staged model Staged,  Continuous  model Continuous  model
+Rating (level) Three levels (Level 1-3) Five levels (Level 1-5) Six levels (Level 0-5)
+Project  management,
+Process development,  support, Process  Management, Depends  on the Process
+Classification organizational Project Management, Reference  Model (PRM)management,  process Engineering,  Support
+improvement
+Appraisal SW process  quality fMethod certification SCAMPI A SPICE compatibility
+Certifi- Appraisal
+cation Target . . . .Method (Type of Document  and interview Document  and interview Document  and interview
+evidence)
+Validity  Period Three years Three years Unlimited
+; Fi Senior auditor  (internal/ .
+a. Senior  auditor - Senior  auditor
+Auditor (external)+auditor(external)  external) ino oD (mostly (external)+auditor(external)
+Certifi- Audit and we Companies  that have secured
+cation Certification Certification  institution senior auditors LTC
+Subject Training andig an aa .
+Specialized  institution :
+Management (NIPA SW Engineering Software Engineering LTC, INTACS, IntRSAof Senior Center) Institute  (CMU/SEl)
+Auditor
+© SPICE(ISO15504)
+It is a model that evaluates  the software  life cycle in two dimensions  as a measure  of the organization's
+software  process  maturity  and improvement  capability.
+<Table 62> Characteristics  of SPICE
+Explanation Process Group
+_ Acquisition,  supply,  demand  creation, and operation
+Primary Process Cus{Customer-Supplier) between customers  and suppliers
+ENG(Engineering) System  and software  development,  maintenance,  etc.
+; Documentation,  configuration  management,  quality
+Supporting  Process SUP(Support) assurance,  verification  and validation, audit
+MAN(Management) Project  management,  risk management
+Organizational Organizational  improvement  activities,  organizational
+Process ORG(Organization) manpower  management,  measurement  tools and
+reuse
+126 TOPCIT  ESSENCE

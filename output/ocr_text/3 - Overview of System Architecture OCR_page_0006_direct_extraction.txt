@@ -1,0 +1,20 @@
+C) Embedded  system  development  process 101
+02 Embedded  Hardware 103
+A) Microprocessor,  the key to embedded  systems 103
+B) Technical  trends of embedded  hardware 104
+03 Embedded  Software 105
+A) Definition  of embedded  software  and technology  application 105
+B) Characteristics  of embedded  software 105
+04 Embedded  OS 106
+A) Concept  of embedded  OS 106
+B) Embedded  OS structure  and applied  technology 106
+C) Types and trends  of embedded  OS 107
+Vil. Information  System  Implementation 109
+01 Information  System  Structure 110
+A) Concept  of information  system 110
+B) Information  system  structure 111
+02 Information  System  Capacity  Calculation 115
+A) Concept  of size calculation 116
+B) Size calculation  targets 116
+C) Reference  architecture  for size calculation 117
+M3 Overview  of System  Architecture  11

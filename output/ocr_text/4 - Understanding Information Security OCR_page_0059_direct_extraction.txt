@@ -1,0 +1,36 @@
+Information  security )
++ Securing  independence  between  VMs
+A system  should be protected  by utilizing  the strengths  of a V's virtual network  security  against  the threat
+to the shared repository  and shared network  to the maximum  extent, and complete  isolation between  the
+VMs accessed  by users should be provided.
++ Attack and intrusion  detection
+Attacks and intrusions  should be detected  by applying  the hypervisor  type detection  technique,  which
+analyzes  the internal state of each virtual machine  and detects  intrusions  using the hypervisor,  and the VM
+type detection  technique,  which is an agentless  virtual security  detection  technique.
+C) Big data security
+@® Overview  of big data security
+As big data is introduced  at a rapid rate, the risk of personal  information  leakage is also increasing  because
+an enormous  amount  of customer  information  is collected  and concentrated.  Unlike existing  data types, big
+data extensively  collects and analyzes  sensitive  personal  information,  such as credit information,  location
+information,  and behavior information.  Therefore,  the scope and scale of a leakage incident  are inevitably
+enlarged  if it occurs. Hence, security  should be ensured  most of all to spread the use of big data in the financial
+sector. The safe management  of big data by lifecycle,  from big data collection  to destruction,  is important.
+@ Security  threat and response  by the phase of the big data lifecycle
++ Big data collection  phase
+If the data of a specific individual  is to be collected,  the individual’s  personal  information  should be de-
+identified  if it is not allowed  by the law or agreed to by the owner in advance.
+When collecting  big data using active data collection  technologies,  such as Chukwa,  Scribe, and Flume, the
+owner of the data to be connected  should consent,  and access  controls  should be applied to the data. When
+using passive data collection  technologies,  such as Web Robot or Web Crawler, robot exclusion  standards
+should be complied  with.
++ Big data storage  and management  phase
+Data should be encrypted  using a cryptographic  technique  suitable for data distribution  and replication,
+technical  and physical  access controls  should be applied, and data should be de-identified  through  data
+filtering  before being stored.
++ Data processing  and analysis  phase
+Data anonymization  techniques,  such as K-anonymity,  L-diversity,  and differential  privacy, should be used
+to de-identify  data in the processing  and analysis  phase. Sensitive  information  should be processed  in an
+encrypted  state, using order preserving  encryption,  operation  preservation  encryption,  etc. In addition,
+privacy should also be protected  when mining big data, by using the Privacy Preserving  Data Mining (PPDM)
+technique,  etc.
+M4 Understanding  Information  Security  59

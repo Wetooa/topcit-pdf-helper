@@ -1,0 +1,32 @@
+Database )
+01 Stored  Procedure
+A) Definition  of the stored procedure
+A stored procedure  is a set of queries  for executing  a series of queries like a single function.  The stored procedure
+organizes  a series of operations  in a database  and stores the result in a relational  database  management  system,  and
+is also called a “persistent  storage  module”.
+B) Strengths  and weaknesses  of the stored procedure
+Most DBMS vendors  provide a function  that can describe  a procedure  using an extended language  of the
+specifications  for static and dynamic  SQL, including  cursor handling  and control statements,  exception  handling,  etc.
+The external  procedure  function  is also implemented  by calling a function  or a class method  from an external  module
+(shared  libraries)  compiled  based on C language  and Java class libraries.
+C) Strengths  of the stored procedure
++ Reduces  the network  load by executing  several SQL statements  using a single request.
++ Reduces  the processing  time as syntax analysis  and internal intermediate  code conversion  are performed  in
+advance.
++ Maintains  the referential  integrity  of data with complex  rules by combining  it with a trigger.
++ Improves  the readability  of the source code as the host  language like Java and SQL statements  are clearly
+distinguished.
++ Easy to maintain  as the website  can be modified  during operation  by replacing  the stored procedures.
+D) Shortcomings  of the stored procedure
++ Reusability  is low as a code asset because  products  are less compatible.
++ The definition  of the stored procedure  needs to be changed  together  with the external  application program  when
+work is changed,  which is used as a part of the business  logic. That is, additional  efforts are needed  when a change
+occurs, and a failure may occur due to mistakes  in the change  process.
+02 Embedded  SQL
+A) Definition  of embedded  SQL
+When an SQL statement  that defines  or accesses  data is included  in an application  program  code such as PASCAL,
+COBOL,  C, C++, Visual Basic, Java, etc. and executed  together  at the time of program  execution,  the inserted  SQL
+statement  is called an “embedded  SQL”, and the application  program  is called a “host program’.
+B) Characteristics  of embedded  SQL
+@ Embedded  SQL statements  can be used anywhere  in the host program  code if there is an execute  statement.  A
+M2 Database  113

@@ -1,0 +1,196 @@
+LEARNING GUIDE: Pages 94-98
+Generated: 2025-12-05 10:49:12
+PDF: 2 - Understanding and Using Data OCR
+
+================================================================================
+LEARNING GUIDE
+================================================================================
+
+Here is a simplified, easy-to-read learning guide based on the provided text:
+
+---
+
+# Data Management Learning Guide
+
+## 1. Introduction to Data Quality
+
+**Key Idea:** Poor data quality (inaccuracy, inconsistency, untimeliness) can lead to major problems in information systems, even causing financial crises. Effective data quality control and a clear framework are essential for any organization.
+
+**Learning Objectives:**
+1.  Explain the concept of **Data Quality**.
+2.  Explain the concept of **Data Standardization**.
+3.  Design a standardized database using a dictionary.
+
+**Keywords & Brief Explanations:**
+*   **Data Quality:** Refers to the characteristics of data, including its value, structure, and the quality of the processes that manage it.
+*   **Data Standardization:** Establishing and applying common principles for data names, definitions, formats, and rules across an organization.
+*   **Dictionary:** Tools like a word dictionary, glossary, or domain dictionary used to enforce data standardization.
+
+## 2. Importance of Data Quality & Standardization
+
+### 2.1 Problems with Poor Data Quality & Lack of Standardization
+
+When data quality deteriorates or data is not standardized, it leads to confusion, distrust, and inefficiencies:
+*   **Inconsistent Information:** Results differ depending on who requests the data.
+*   **Lack of Trust:** Information from IT systems cannot be fully relied upon.
+*   **Increased Costs:** Time and money are spent correcting inaccurate data, with no guarantee of reliability.
+*   **Slow Decisions:** Inaccurate data hinders quick decision-making.
+*   **Data Duplication & Inconsistency:** Data is repeated and varies across systems, work, or organizations.
+*   **Integration Challenges:** Difficulties in data integration, system changes, and maintenance.
+*   **Misunderstanding Data:** More time is needed to understand data meanings, slowing down information provision.
+
+### 2.2 Benefits of Good Data Quality Control & Standardization
+
+Managing data quality and standardizing data brings significant positive impacts:
+*   **Business Growth:** Increases sales, productivity, and market share.
+*   **Customer Satisfaction:** Improves service quality and product competitiveness.
+*   **Cost Reduction:** Decreases business, IT, and rework costs.
+*   **Risk Mitigation:** Helps prevent accidents, ensures compliance with regulations, and maintains market confidence.
+*   **Clear Communication:** Unifies names and meanings, improving clarity.
+*   **Efficient Data Access:** Reduces time and effort to find necessary data.
+*   **Consistent Data:** Applies consistent formats and rules, improving overall data quality.
+*   **Easier Integration:** Reduces costs for data conversion and cleansing between systems.
+
+## 3. Data Quality Control Framework
+
+**Definition:** A set of activities aimed at improving data quality. Data quality can be controlled across its value, structure, and management processes.
+
+### 3.1 Data Quality Control Areas
+
+The framework targets different aspects of data:
+
+#### A) Data Value
+These are the actual content and characteristics of the data.
+*   **Standard Data:** Data that defines common terms, domains, codes, and elements for consistent use.
+    *   **Standard Word Dictionary:** Defines basic, meaningful units of words used in business.
+    *   **Standard Domain Dictionary:** Defines the range of acceptable values for an attribute.
+    *   **Standard Term Dictionary:** Defines common business terms by combining standard words.
+    *   **Standard Code:** Symbols replacing various data values (e.g., 'M' for Male, 'F' for Female).
+    *   **Data Standard Element:** Standards for data elements needed to design and build systems.
+*   **Model Data:** Data needed to operate and manage data models (e.g., metadata, DBMS object information). Managed for completeness, consistency, traceability, etc.
+*   **Management Data:** Data needed to effectively operate databases (e.g., usage, security, performance, quality control data).
+*   **Business Data:** Data used for daily operations, classified by flow (source, operational, analysis data).
+
+#### B) Data Structure
+These describe how data is organized and related.
+*   **Conceptual Data Model:** Defines high-level business entities and their relationships (subject areas, key entities).
+*   **Data Reference Model:** Standard model defining data and control items by business/subject area, for architectural consistency and reuse.
+*   **Logical Data Model:** A detailed model specifying the conceptual model's entities, attributes, and relationships without considering specific DBMS technology.
+*   **Physical Data Model:** An actualized logical model, optimized for a specific Database Management System (DBMS) performance.
+*   **Database:** The implementation of a physical model; a repository storing actual data.
+*   **User View:** The screen or output from an information system that presents data to users.
+
+#### C) Data Management Process
+These are the activities involved in managing data throughout its lifecycle.
+*   **Data Standard Management:** Defining, managing, and ensuring compliance with standard words, terms, domains, codes, and data elements.
+*   **Requirements Management:** Collecting and reflecting user data requirements into systems and applications.
+*   **Data Model Management:** Updating and maintaining data models to align with changing requirements and database structures.
+*   **Data Flow Management:** Managing the process of data creation, storage, extraction, conversion, and loading.
+*   **Database Management:** Tasks for stable database operation (e.g., backup, tuning, monitoring, security).
+*   **Database Security Management:** Protecting the database from unauthorized actions (e.g., authentication, access control, auditing).
+*   **Data Utilization Management:** Measuring data quality by analyzing adherence to quality requirements.
+
+## 4. Data Quality Management Maturity Model
+
+**Purpose:** To systematically assess and improve an organization's data quality control level. It provides guidelines for achieving higher maturity.
+
+**Key Elements:**
+*   **Data Quality Standard:** Defines what good quality means.
+    *   **Data Validation Aspect:** Accuracy, consistency.
+    *   **Data Utilization Aspect:** Usability, accessibility, timeliness, security.
+*   **Data Quality Control Process:** Identifies the processes needed to achieve the quality standards (e.g., processes for improving accuracy, usability).
+*   **Data Quality Control Maturity Level:** A defined scale (typically 1 to 5) indicating how systematically and elaborately data is managed. Higher levels mean more sophisticated management.
+
+## 5. Data Standardization
+
+**Definition:** Establishing and applying consistent principles for the name, definition, format, and rules of data elements across an entire organization.
+
+**Overview & Purpose:**
+*   Data is crucial for strategic decision-making, increasing interest in data integration and quality.
+*   Data standardization helps clarify data meanings and resolve conflicting opinions about data.
+
+**Necessity (Benefits):**
+*   **Improves Communication Clarity:** Achieved by unifying data names.
+*   **Reduces Search Time:** Makes it easier to find necessary data.
+*   **Enhances Data Quality:** Ensures consistent data formats and rules.
+*   **Lowers Integration Costs:** Reduces efforts for data conversion and cleansing when integrating systems.
+
+---
+
+================================================================================
+ORIGINAL TEXT (First 5000 chars)
+================================================================================
+
+--- Page 94 ---
+Database
+>> Recent  trends and major issues
+Alan Greenspan,  the former chair of the Federal Reserve (FRB), said that “Bad data is invalidating  the IT
+systems  of Wall Street. One of the causes of the financial  crisis is inadequate  data’. As the scope of the
+information  system  operated  by institutions  and corporations  expands  and its complexity  increases,  data
+quality - including  accuracy,  consistency,  and timeliness  - is becoming  a very important  issue. That is, data
+quality control has become an essential  requirement  for the operation  and management  of information
+systems,  and each institution  is making efforts to present  a management  framework  for data quality
+and perform data quality control based on that framework.  Therefore,  it is very important  to accurately
+understand  a data quality control framework  that can be universally  applied  to multiple  organizations  and
+extended  according  to the characteristics  of a given organization.
+>> Learning  objectives
+1. To be able to explain the concept  of data quality.
+2. To be able to explain the concept  of data standardization.
+3. To be able to design a standardized  database  using a dictionary.
+>> Keywords
++ Data quality: Data value, data structure,  data process  quality
+« Data standardization:  Word, term, code, and domain  standardization
++ Dictionary:  Word dictionary,  glossary,  domain  dictionary
+M2 Database  93
+
+
+--- Page 95 ---
+ESSENCE
++ Preview  for practical  business
+Problems  with practical  business  that occur when data quality  deteriorates
+Deterioration  in data quality  brings about confusion  and distrust,  as follows.
++ The result value becomes  different  depending  on the requesting  department  (supervisory  authority,  etc.).
++ The information  provided  by IT cannot  be fully trusted.
++ It takes time and money  to improve  or adjust inaccurate  data.
++ Data reliability  cannot  be guaranteed  even with an additional  budget.
++ Decisions  cannot  be made quickly  due to inaccurate  data.
++ It is difficult  to understand  the exact number  for a specific  situation.
+Effects  of data quality  control
+If data quality  is managed  well, it can positively  affect an entire business  including  its information  system.
++ Sales increase,  productivity  improves,  and the market  share increases.
++ Customer  satisfaction  increases,  service  quality  improves,  and product  competitiveness  increases.
++ Business  costs decrease,  IT costs are reduced,  and rework  costs are reduced.
++ Accident  prevention,  compliance  with government  regulations,  maintenance  of market  confidence.
+What if database  quality  control  and standardization  are not understood?
+The importance  of quality control and standardization,  which constitute  the basis of information  systems,
+is being increasingly  emphasized  as information  systems  become  larger and more complex.  If database
+quality control is not clearly understood,  the information  provided by IT cannot be fully trusted because
+the result value will differ depending  on the requesting  department.  In addition,  decisions  cannot be made
+quickly  because  it takes a lot of time and money  to improve  and adjust inaccurate  data. On the other hand,
+an inappropriate  understanding  of data standardization  can cause data duplication  and data inconsistency
+for each organization,  work, and system. In addition,  information  cannot be provided  in time as it takes
+more time to understand  the meaning  of data. Also, data integration,  information  system change, and
+maintenance  become  very difficult  if data are not properly  standardized.  Therefore,  it is very important  to
+understand  the concept  and process  of database  quality  control  and standardization.
+94 TOPCIT  ESSENCE
+
+
+--- Page 96 ---
+Database )
+01 Data Quality  Control  Framework
+“Data quality control”  refers to a series of activities  undertaken  to improve  the quality of data. Data quality can be
+controlled  over the data value, data structure,  and data management  process.
+<Table 35> Data quality  control  framework
+Organization Target Data value Data structure Data management  process
+ClO / EDA .(overview  perspective) Data management  policy
+DA Standard data Conceptual  data model Data standards  management
+(conceptual  perspective) Data reference  model Requirements  management
+Modeler . Data model management
+(logical perspective) Model data Logical data model Data flow management
+Database  managementDBA Physical  data model(physical  perspective) Management  data Database Database  security
+management
+, esl P Business  data User view Data utilization  management(operational  perspective)
+A) Data value
+@ Standard  data: Data related to standards,  which define and use the terms, domains,  codes, and other data-related
+elements  used in the information  system  based on the common  format  and content.
++ Standard  word dictionary:  A dictionary  that defines the ba...

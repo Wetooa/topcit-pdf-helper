@@ -1,0 +1,23 @@
+Overview  of System Architecture )
+general,  an embedded  system's  overall structure  is intentionally  simplified  to reduce cost, compared  to the hardware
+of general-purpose  computer  systems.  For example,  embedded  systems  often use peripherals  controlled  by a serial
+bus that is 1024 times slower  than the conventional  peripheral  interfaces  that are used in personal  computers.
+@ Resource  constraints
+Programs  on embedded  systems  usually  operate  with real-time  constraints  on limited hardware  resources.  There is
+often no disk drive, operating  system,  keyboard,  or screen on the system.  It may not have a file system,  or it may use
+a flash drive as a storage  medium.  Even if there is a user interface,  it could be a small keypad  or LCD.
+@ Stability
+Embedded  systems  are designed  to run reliably, without error, for many years. Therefore,  firmware  goes through
+a more careful development  and testing process  than the software  used in personal  computers.  Most embedded
+systems  avoid the use of parts damaged  by mechanical  actions,  such as disk drives, switches,  and buttons.  Instead,
+they use chip materials  that are relatively  free from physical  damage,  such as flash memory.
+© Resilience
+Embedded  systems  may be applied in places  where it is difficult  for humans  to immediately  and directly  control, such
+as oil boreholes  and outer space. Therefore,  an embedded  system must be able to restart itself, even in the worst-
+case scenario,  An electronic  part, called a watchdog  timer, enables  such an emergency  recovery.
+C) Embedded  system  development  process
+An embedded  system is developed  by the procedure,  shown in [Figure 72]. Unlike conventional  information  system
+development,  it includes  a hardware  development  process.
+5 Watchdog  Timer (WDT): An electronic  timer used to detect and recover  computer  failure. Computers  in normal operation  restart  the
+watchdog  timer periodically  to prevent  a timeout.
+M3 Overview  of System  Architecture  101

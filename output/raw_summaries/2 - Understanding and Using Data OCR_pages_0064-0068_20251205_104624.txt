@@ -1,0 +1,223 @@
+LEARNING GUIDE: Pages 64-68
+Generated: 2025-12-05 10:46:24
+PDF: 2 - Understanding and Using Data OCR
+
+================================================================================
+LEARNING GUIDE
+================================================================================
+
+Here is a simplified, easy-to-read learning guide based on the provided text:
+
+---
+
+# Database Concepts: Simplified Learning Guide (Pages 64-68)
+
+## 1. Connection Traps
+
+A **Connection Trap** occurs when you cannot accurately retrieve desired information, even though relationships exist in your data model.
+
+### A) Fan Trap
+*   **Description:** Happens with three entity types (A, B, C) and specific relationships:
+    *   A has an N:1 relationship with B (Many A's linked to one B).
+    *   B has a 1:N relationship with C (One B linked to many C's).
+*   **Problem:** You can't determine the specific link between A and C through B.
+    *   *Example:* If an Employee (A) belongs to a Branch (B) (N:1), and a Branch (B) has many Departments (C) (1:N), you might not know which Department a specific Employee belongs to directly from these links.
+*   **Solution:** Modify or restructure the relationships to clarify the path, often by adding a direct link or adjusting cardinality.
+
+### B) Chasm Trap
+*   **Description:** Occurs when the flow of information is broken due to an **optional relationship** rather than a mandatory one.
+*   **Problem:** You cannot find information for entities that *do not participate* in the optional part of the relationship.
+    *   *Example:* If "Employee owns Vehicle" is optional, and "Vehicle is managed by Branch" is a link, you can find the branch for employees who own vehicles. However, you cannot find the branch for employees who *don't* own vehicles if that's the only path.
+*   **Solution:** Explicitly add missing relationships that are logically required to connect all necessary information paths.
+
+## 2. Object-Relational Mapping (ORM)
+
+**Object-Relational Mapping (ORM)** is a technique that links a relational database table to a class in object-oriented design.
+
+### A) Class Conversion Rules
+*   An **Object-Oriented Class** maps to a **Database Table**.
+*   A **Class Instance Object** maps to a **Table Record (row)**.
+*   A **Class Attribute** maps to a **Table Column (field)**.
+*   **Class Operations (methods)** are implemented in the application program and do not have a direct database table element equivalent.
+
+### B) Converting Class Relations to Relational Relationships
+
+#### Association
+*   **1:M Relationship (One-to-Many):** The **Primary Key (PK)** of the "one" side becomes a **Foreign Key (FK)** on the "many" side table.
+*   **1:1 Relationship (One-to-One):**
+    *   Option 1: The PK of the less frequently accessed class is used as an FK in the more frequently accessed class.
+    *   Option 2: The two classes (and their corresponding tables) are combined into a single class/table.
+*   **M:N Relationship (Many-to-Many):** A new class (and corresponding table, often called a "junction" or "join" table) is created specifically to represent this relationship.
+
+#### Aggregation
+*   Implemented by referencing the related table using a **Foreign Key**.
+
+#### Composition
+*   Implemented using a **constraint** (e.g., `ON DELETE CASCADE` in SQL) to ensure that when a "parent" object/record is deleted, its "child" objects/records are also deleted.
+
+#### Generalization (Inheritance)
+*   **Option 1:** The superclass and each subclass are mapped to separate tables.
+*   **Option 2:** The superclass table includes all attributes from all its subclasses.
+*   **Option 3:** Each subclass table includes the attributes of its superclass.
+
+## 3. Data Integrity and Keys
+
+**Data Integrity** refers to the measures taken to protect data and ensure its accuracy, validity, consistency, and stability.
+
+### A) Types of Integrity
+
+There are typically three to five types of integrity:
+*   **Three types:** Entity, Referential, Domain.
+*   **Five types:** Entity, Key, Referential, Domain, User-defined.
+
+1.  **Domain Integrity:**
+    *   Ensures the integrity of individual fields (columns) within a table.
+    *   Involves defining data types, allowing/disallowing `NULL` values, and ensuring attribute values are atomic (indivisible) and fall within a specified range or set of values.
+2.  **Key Integrity:**
+    *   Ensures that every record in a table can be uniquely identified.
+3.  **Entity Integrity:**
+    *   Dictates that every table must have a **Primary Key (PK)**.
+    *   The PK value must be **unique** for each record and **cannot be NULL**.
+4.  **Referential Integrity:**
+    *   Maintains consistency between data in related tables.
+    *   A **Foreign Key (FK)** value must either be `NULL` or match an existing Primary Key value in the table it references.
+    *   If a Primary Key is referenced by an FK, it typically cannot be deleted or modified in a way that would break the link (e.g., `RESTRICT` delete, `CASCADE` delete).
+5.  **User-defined Integrity:**
+    *   Specific business rules or custom constraints that are not covered by the other standard integrity types.
+
+### B) Types of Keys
+
+1.  **Super Key:**
+    *   An attribute or a set of attributes that can uniquely identify a record within a table.
+2.  **Candidate Key:**
+    *   A **Super Key** that is both **unique** and **minimal**.
+    *   Minimal means no attribute can be removed from it without losing its unique identification capability.
+    *   These are potential choices for the Primary Key.
+3.  **Primary Key (PK):**
+    *   A unique identifier chosen from the **Candidate Keys** to specifically distinguish records in a table.
+    *   Must be **unique**, **minimal**, and **NOT NULL**.
+    *   **Selection Considerations:**
+        *   Choose fields whose values are **stable** and do not change frequently.
+        *   Choose fields with **simple and short data domains** to minimize comparison costs.
+4.  **Foreign Key (FK):**
+    *   An attribute or set of attributes in one table (the referencing table) that links to a unique key (usually the Primary Key) in another table (the referenced table).
+    *   **Properties:**
+        *   Its value, if not `NULL`, **must exist** as a Primary Key value in the referenced table.
+        *   An FK **can have duplicate values** (e.g., many employees can belong to the same department).
+        *   An FK **can be NULL** if the relationship it represents is optional.
+
+## 4. Normalization and Denormalization
+
+*   **Normalization:** A fundamental database theory that removes data redundancy and anomalies (like update, insertion, and deletion problems). It ensures stable and consistent data management.
+    *   Normal forms (1NF, 2NF, 3NF, Boyce-Codd, 4NF, 5NF) are based on functional and semantic dependencies between attributes.
+*   **Denormalization:** A design technique used to intentionally introduce redundancy into a normalized database. Its main purpose is to **improve query performance** by reducing the need for complex joins.
+
+---
+
+================================================================================
+ORIGINAL TEXT (First 5000 chars)
+================================================================================
+
+--- Page 64 ---
+Database )
+A A
+[4 {-—
+B CA CPHa AS
+(a) Exclusive  subtype (b) Comprehensive  subtype
+[Figure  24] Sub-type  expression  in Crow’s  Foot notation
+0? Connection  Trap
+The connection  trap means that desired information  cannot  be accurately  found even though  a relationship  has been
+established  in a data model. Representative  types include  the fan trap and the chasm trap.
+A) Fan trap
+@ The fan trap can occur when there are entity  types A, B, and C, and when there is an N:1 relationship  between  entities
+Aand B, and a 1:N relationship  between  entities  B and C.
+@ An example  of the fan trap is as follows.
++ [Figure 25(a)] shows a case in which each branch is composed  of several departments,  with several employees
+belonging  to each branch.
++ The fan trap is found in this case because  the department  to which each employee  belongs  cannot  be known.
++ The fan trap can be removed  by modifying  it, as shown in [Figure  25(b)].
+N Compo- aTeam sition Branch
+N 1
+Employee Belonging
+(a) Fan traps exist
+[Figure  25] Fan trap
+M2 Database  63
+
+
+--- Page 65 ---
+ESSENCE
+B) Chasm  trap
+@ The chasm trap means that desired information  cannot be found due to the disconnection of the information  flow
+when there is an optional  relationship  rather  than a mandatory  relationship.
+@ ([Figure  26]) shows an example  of the chasm trap.
++ [Figure 26(a)] shows a case in which several branches  are registered  in one branch, with each vehicle being owned
+by one employee.
++ In this case, we can know to which branch the employee  who owns a vehicle belongs,  but we cannot  know to which
+branch the employee  who does not own a vehicle  belongs.
+* To eliminate  the chasm trap, a relationship  that is missing,  even though it is required  in terms of meaning,  should be
+explicitly  linked again ([Figure  26(b)]).
+Branch
+1
+Management
+N
+1 1Vehicle <Giresip> Employee
+(a) Chasm traps exist
+NBranch a <Gwet>
+1
+Management
+N
+1 1
+Vehicle Employee
+(b) Chasm traps are removed
+[Figure  26] Chasm trap
+* However,  in [Figure 26] some employees  own a vehicle,  and some do not.
+08 Object-Relational  Mapping  (ORM)
+Object-relational  mapping  means that the table of the relational  database  corresponds  to the class used in the
+object-oriented  design.
+A) Class conversion
+@ Each class corresponds  to a table.
+64 TOPCIT  ESSENCE
+
+
+--- Page 66 ---
+Database )
+@ The instance  object of a class corresponds  to the record of a table.
+@ The attribute  of a class corresponds  to the column  of a table.
+@ Class operation  has no corresponding  element  and is implemented  in the application  program.
+B) Conversion  of the class relation  into a relational  relationship
+@ Association
++ 1: Mrelationship  - the primary  key on side 1 is mapped  on to the foreign key on side M.
++ 1:1 relationship  - the primary  key of the side that is less frequently  accessed  is mapped  on to the foreign key of the
+side that is most frequently  accessed,  or the two classes  are combined  into one class.
++ M: N relationship  - a new class corresponding  to the relationship  is created.
+@ Aggregation
+The table concerned  is referenced  using the foreign key.
+@ Composition
+Implementing  using a constraint
+@ Generalization
++ The super class and each sub-class  are mapped  on to separate  tables.
++ (Or) A super-class  has all attributes  of the sub-class.
++ (Or) A sub-class  has the attribute  of the super-class.
+09 Integrity  and Key
+Data integrity refers to the need to protect data from lost updates  of data to maintain  their accuracy,  validity,
+consistency,  and stability.  Three to five types of integrity  are defined depending  on the viewpoint.  Three types of
+integrity  include entity, referential,  and domain integrity.  Five types of integrity  are also defined by separating  entity
+integrity  into entity integrity  and key integrity,  and by including  user-defined  integrity.  To main integrity  in this way,
+the primary  and foreign keys should be carefully  selected  and used.
+A) Integrity
+@ Domain integrity:  Domain integrity  means to ensure the integrity  of the field in a table. Data types, allowing  a null
+value, etc. can be defined  and used. The attribute  value has atomicity  and should be a value defined  in the domain.
+@ Key integrity:  All records  in a table should be identifiable  from each other.
+© Entity integrity:  All tables must have a primary  key, and each primary  key must have a unique  value (but not null).
+@ Referential  integrity:  Data in two tables in a reference  relationship  must always have consistent  values. A foreign key
+must be a null value or a value that exists in the primary  key of the table referenced  by the foreign key. If there is a
+M2 Database  65
+
+
+--- Page 67 ---
+ESSENCE
+foreign  key that refers to a primary  key, the data cannot  be deleted  or changed.
+Credit  card}
+Credit card number Cardholder  | Issue date
+9411-1111-2222-3333  | HongGildong  | 2012-11-11
+8723-4999-3999-2999  | Yang Soyu ...

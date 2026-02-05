@@ -1,0 +1,32 @@
+Overview  of System Architecture )
+B) Flynn’s  classification  of parallel  processing  systems
+ell  eel oe ltg
+Process  Structure
+| |
+Single Instruction  Stream Single Instruction  Stream Multi-Instruction  Stream  — Multi-Instruction  Stream
+Single Data Stream Multi-Data  Stream Single Data Stream Multi-Data  Stream
+(SISD) (SIMD) (MISD) (MIMD)
+[
+Single Vector Array Shared Distributed
+Processor Processor — Processor Memory Memory
+Symmetric Non uniform
+Multi-Processor|  | Memory  Access Cluster
+(SMP) (NUMA)
+[Figure 41] Structure  of Parallel  Computer  Processor
+@ Single instruction  stream - single data stream,  Single Instruction  Stream  Single Data Stream  (SISD)
+SISD is a single processor  system that sequentially  processes  an instruction  and data, one at a time. It is the
+conventional  computer  architecture  that follows von Neumann's  concept.  The controller  interprets  an instruction
+and operates  the processor  in order to run the instruction  while fetching  a piece of data from the memory  unit and
+processing  it. The performance  may deteriorate,  since it requires  reading  the instruction  each time it acquires  the
+processing  data. The performance  may be improved  by using simultaneous  processing  techniques,  such as pipelining
+and superscalar.
+@ Single instruction  stream - multiple  data stream,  Single Instruction  Stream  Multiple  Data Stream  (SIMD)
+The structure  of processing  multiple data with an instruction  to simultaneously  perform the same operation  on
+multiple  data. It is also called an array processor,  as it enables  synchronous  parallel processing,  Intel’s processor,  made
+in the SIMD structure,  is the Pentium  processor  with the MMX instruction  set. The name is “multimedia  acceleration,”
+which is the code that can quickly process  frequently-used  floating-point  arithmetic  operations.  The processing
+speed is high because  it can process  multiple  operations  with an instruction.
+SISD Instruction  Pool SIMD Instruction  Pool
+Data PoolData Pool
+[Figure  42] SISD Structure [Figure  43] SIMD Structure
+M3 Overview  of System  Architecture  77

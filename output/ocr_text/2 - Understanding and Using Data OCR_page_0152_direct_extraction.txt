@@ -1,0 +1,35 @@
+Database )
+B) BASE attributes  of NoSQL
+@ BASE attributes  of NoSQL
+<Table  76> Description  of NoSQL’s  BASE properties
+Item Contents
+- Emphasis  is placed on availability  and the use of optimistic  locking  and queue.
+- Availability  is ensured  even with multiple  failures  and copies  are stored in multiple  storages.
+- Node status is determined  by the information  transmitted  from outside.Basically  Available
+et - Updates between distributed  nodes are updated when data reach the node.
+Eventually . . ; ; . .Consistent The property  of maintaining  consistency  optimally  even though  consistency  is lost temporarily.
+@ Comparison  of BASE attributes  and ACID attributes
+<Table  77> Comparison  of BASE attributes  and ACID attributes
+Attribute BASE ACID
+Application  field - NoSQL - RDBMS
+Scope - Characteristics  of the entire system. ~ Limited  to transactions.
+Consistency  aspect ~ Weak consistency. - Strong  consistency.
+Main points ~ Focused  on ‘availability’. - Focused  on “commit”.
+System  aspect - Focused  on “performance”. - Focused  on “strict data management’.
+Efficiency - “Query design’ is important. - “Table design’ is important.
+C) Storage  method  of NoSQL
+NoSQL  databases  can be divided as follows  from the viewpoint  of the data model that stores data.
+<Table  78> Types of NoSQL
+Type Description
++ The most basic NoSQL  database  that provides  simple and fast Get, Put, and Delete
+Key-value  based functions  based on the key-value.
++ Dynamo,  Redis, MemcacheDB,  etc.
++ An NoSQL  database  that stores data in rows in the column  family, which corresponds
+Column  family  based to the table in the relational  database.
++ Cassandra,  HBase, SimpleDB,  etc.
++ An NoSQL  database  that stores documents  such as XML, JSON, BSON, etc. in the
+value part of the key-value  database,  such as NoSQL  DB, MongoDB,  CouchDB,  etc
++ An NoSQL  database  that expresses  the entry attribute  of the relational  database  as
+a node and the relationship  as the edge between  nodes, such as Neo4J, Flock DB, etc.Document  based
+Graph based
+M2 Database  151

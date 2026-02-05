@@ -1,0 +1,27 @@
+Overview  of System Architecture )
+within the buffer. The data transfer  time indicates how long it takes to transfer  the read data to the main memory.
+The access time is the sum of the seeking  time, the rotational  latency, and the data transfer  time. This section
+describes  techniques  to minimize  the access  time by minimizing  the seeking  time and the rotational  latency.
+@ First come first serve (FCFS) disk scheduling
+FCFS services  the requests  in the order they are received.  The head position moves in the order of the requested
+tracks in the disk standby  queue. It is easy to program  and provides  fair service to all requests.  However,  the head
+movement  may be inefficient,  and it can unnecessarily  increase  the response  time. The execution  sequence  does not
+change,  even when it receives  a priority  request.
+1 4 37 53 60 120 183 250
+Queue = 53, 120, 183, 37, 60
+Initial Head Position  = 53
+[Figure  60] FCFS Disk Scheduling
+@ Shortest seeking time first (SSRF) disk scheduling |
+The scheduling  technique  first services  the request  that is closest  to the current  head position,  among  the requested
+services  waiting  in the queue. It minimizes  head movement  because  it takes a lot of time to move the head in the
+disk drive. It maximizes  the service response  rate per unit time by minimizing  the head movement  in order to process
+the queue requests.  The response  time variation  can increase  depending  on where the requested  input or output
+data is on the disk. It can cause starvation  for the requests  seeking  data that are positioned  in the inner or outer
+cylinder. It offers a higher processing  rate and a shorter  mean response  time than FCFS.
+1 14 37 53 60 120 183 250
+Queue = 53, 120, 183, 37, 60
+Initial Head Position  = 53
+[Figure 61] SSTF Disk Scheduling
+© SCAN disk scheduling
+The scheduling  technique  first services  the request  that has the shortest  seeking  distance  from the current  direction
+M3 Overview  of System  Architecture  89

@@ -1,0 +1,201 @@
+LEARNING GUIDE: Pages 94-98
+Generated: 2025-12-07 00:47:44
+PDF: 6 - Project Management & Technical Communication OCR
+
+================================================================================
+LEARNING GUIDE
+================================================================================
+
+Here's a simplified, easy-to-read learning guide based on the provided text:
+
+---
+
+# Project Schedule Management: Learning Guide
+
+This guide covers the essential concepts and processes of project schedule management.
+
+## 1. Introduction to Project Schedule Management
+
+*   **Goal:** To complete a project within the time agreed with the client.
+*   **Approach:**
+    *   If the finish date is pre-determined: Planning is "top-down," where activities are adjusted to fit the timeline.
+    *   **Key Principle:** Project schedules must be **feasible**, considering the project scale and available resources. Avoid neglecting activity relationships or arbitrary stage weighting, which can lead to problems.
+
+## 2. The Schedule Management Process
+
+This process involves several interconnected steps:
+
+1.  **Schedule Management Planning**
+2.  **Activity Definition**
+3.  **Activity Sequencing**
+4.  **Activity Duration Estimation**
+5.  **Schedule Development**
+6.  **Schedule Control**
+
+*(Note: In PMBOK 6th edition, "Activity Resource Estimation" is now part of Resource Management.)*
+
+### 2.1. Schedule Management Planning
+
+*   **Action:** Formulate a **Project Schedule Management Plan**.
+*   **Detailing:** Share the project management plan, approval details, and rules for measuring the schedule with the team.
+*   **Control:** This plan is crucial for quality control. Any changes to the confirmed schedule require approval from the project steering committee and the plan must be updated.
+
+### 2.2. Activity Definition
+
+*   **Action:** Identify and document all activities necessary to produce project deliverables.
+*   **Basis:** Project scope and requirements.
+*   **Method:** Since it's hard to define everything upfront, activities are refined incrementally using:
+    *   **Work Breakdown Structure (WBS):** Decomposing project work into smaller, manageable components.
+    *   **Rolling Wave Planning:** Detailing activities only as they become clearer and closer in the project lifecycle.
+
+### 2.3. Activity Sequencing
+
+*   **Action:** Identify relationships between defined activities and connect them in a logical order.
+*   **Logical Relationship Types:**
+    *   **Finish-to-Start (FS):** A successor activity cannot start until its predecessor activity has finished.
+        *   *(Most common.)* Example: Develop product **after** screen design finishes.
+    *   **Finish-to-Finish (FF):** A successor activity cannot finish until its predecessor activity has finished.
+        *   Example: Analysis **completes only when** writing and deleting text are completed.
+    *   **Start-to-Start (SS):** A successor activity cannot start until its predecessor activity has started.
+        *   Example: Development activities **can start only when** planning begins.
+    *   **Start-to-Finish (SF):** A successor activity cannot finish until its predecessor activity has started.
+        *   Example: In a 3-shift system, a worker (successor) can leave **only when** the next worker (predecessor) arrives.
+
+### 2.4. Activity Duration Estimation
+
+*   **Action:** Estimate the time required to perform each activity with allocated resources.
+*   **Estimation Methods:**
+    *   **Expert Judgment:** Rely on internal or external experts with similar project experience.
+    *   **Analogous Estimating:** Use data from similar past projects to estimate the current one. *(A risk-based technique.)*
+    *   **Three-point Estimating:** Estimates duration using three values, especially useful when experience is limited or risks are high.
+        *   **Optimistic (O):** Best-case scenario, shortest duration.
+        *   **Most Likely (M):** Realistic or average duration.
+        *   **Pessimistic (P):** Worst-case scenario, longest duration.
+        *   **Formula (Beta Average):** `(O + 4M + P) / 6`
+        *   **Origin:** Derived from **PERT (Program Evaluation and Review Technique)**, a technique developed in 1958 for complex projects, which helps predict schedules considering risks and fluctuations.
+
+### 2.5. Schedule Development
+
+*   **Action:** Create the overall project schedule.
+*   **Process:** Combine the sequenced activities, their estimated durations, resource requirements, and any schedule constraints. A common tool for visualization is a **Gantt Chart**.
+
+### 2.6. Schedule Control
+
+*   **Action:** Monitor the status of project activities and manage changes to ensure the schedule stays on track.
+*   **Key Focus Areas (General):**
+    *   Determine the current status of the schedule.
+    *   Adjust factors causing schedule changes.
+    *   Identify if the schedule has actually changed.
+    *   Manage approved changes.
+*   **Key Focus Areas (Agile Methodology):**
+    *   Compare work completed against estimated work in a given time period.
+    *   Perform **retrospective reviews** to learn from the process and make improvements.
+    *   **Reprioritize remaining tasks (backlog).**
+    *   Determine **velocity** (the rate at which deliverables are produced, verified, and accepted per iteration, e.g., every two weeks or month).
+    *   Manage actual changes.
+
+## 3. Schedule Management Technique: Critical Path Method (CPM)
+
+### 3.1. What is CPM?
+
+*   **Definition:** A network analysis technique used to determine the **minimum duration** required to complete a project.
+*   **Critical Path:** The sequence of activities that determines the project's overall minimum duration. These activities have **"Zero" float**, meaning any delay to them will delay the entire project.
+*   **Inputs:** Project Schedule Network Diagram, activity sequences, durations, dependencies, leads, and delays.
+*   **Analysis:** Involves **Forward Pass** and **Backward Pass** calculations.
+
+### 3.2. Key Components of CPM
+
+*   **Forward Pass:** Calculates the earliest possible dates for activities.
+    *   **Early Start (ES):** The earliest date an activity can possibly begin.
+    *   **Early Finish (EF):** The earliest date an activity can possibly finish.
+*   **Backward Pass:** Calculates the latest possible dates for activities without delaying the project.
+    *   **Late Start (LS):** The latest date an activity can start without delaying the project's finish.
+    *   **Late Finish (LF):** The latest date an activity can finish without delaying the project's finish.
+*   **Total Float (Slack):** The amount of time an activity can be delayed or extended without delaying the project's overall finish date.
+    *   **Formula:** `Total Float = Late Finish (LF) - Early Finish (EF)`
+    *   **Formula:** `Total Float = Late Start (LS) - Early Start (ES)`
+
+### 3.3. CPM Example Setup (Conceptual)
+
+To calculate a schedule using CPM:
+
+1.  List all project activities, their durations, and their predecessor activities.
+2.  Draw a network diagram, visually linking activities based on their sequential relationships.
+3.  Place the activity name and its duration on the diagram.
+    *   For example, if Activity B has a predecessor Activity A, B is placed after A, with its duration noted.
+4.  Once the diagram is complete, perform Forward and Backward Pass calculations to identify ES, EF, LS, LF, and Total Float for each activity, ultimately revealing the critical path.
+
+---
+
+================================================================================
+ORIGINAL TEXT (First 5000 chars)
+================================================================================
+
+--- Page 94 ---
+Project Management  and Technical  Communication  )
+the relationship  between  each activity  to develop  a schedule,  with the goal of completing  the project within
+the time agreed  with the client.
+If the finish date has already  been specified,  the schedule  management  process  is ignored,  and the schedule  is
+planned  in a top-down  manner,  the activities  to be performed  will be determined  based on the project  timeline.
+The schedule  may get tight as the correlation  between  each activity is neglected  and it is divided by weighting
+each stage of the project, which can eventually  fall into a vicious  cycle. Project  schedule  should be feasible  and
+planned  in consideration  of scale and resource  capacity.
+B) Schedule  management  process
+The schedule  management  process  includes  project  schedule  management  planning,  activity  definition,  activi-
+ty sequencing,  activity  duration  estimation,  schedule  development,  and schedule  control.  The existing  activity
+resource  estimation  process  has been moved to the knowledge  area of resource  management  in the PMBOK
+6th edition.
+@® Schedule  Management  Planning
+For schedule  management  planning,  a project schedule  management  plan is formulated.  A detailed plan is
+made by sharing  the project management  plan, project approval,  and rules for measuring  the project  schedule
+with the team members.
+In addition,  as the project schedule  management  plan is an important  deliverable  for quality control or
+supervision,  any change in the confirmed schedule  requires an approval  from the project steering  committee
+and the plan must be updated  and kept in a record.
+@ Definition  of Activity
+It is a process  of identifying  and documenting  the relevant  activities  to be performed  to produce  the project
+deliverables.  The project  teams define the activities  based on the project scope and requirements  statement.
+Since it is difficult  to define all activities  at the beginning  of the project,  the project  activities  are elaborated  in
+a repetitive  and incremental  manner  through  division and Rolling Wave Planning  based on the work breakdown
+system  (WBS).
+@® Sequencing  of Activity
+It is a process of identifying  the relationship  between  subdivided  activities  and connecting  them in a logical
+order.
+The logical relationship  between  activities  is divided into the following  types:
+<Table 40> Logical Relationship  between  Activities
+Item Content Case
+Finish-to-Start + A Successor  Activity  cannot  start until a
+cos Predecessor  Activity  has finished + Develop  a product  after screen designRelationship
++ The most commonly  used
+Finish-to-Finish « A Successor  Activity  cannot  finish until a + Analysis  is completed  only when writing and
+Relationship Predecessor  Activity  has finished deletion  of a text are completed
+Start-to-Start + A Successor  Activity  cannot  start until a + Development  activities  can be initiated  only
+Relationship Predecessor  Activity  has started. when planning  begins
+M6 Project  Management  and Technical  Communication  93
+
+
+--- Page 95 ---
+ESSENCE
++ In case of three-shift  work, B (successor
+activity)  can take turns and leave work only
+when  A (preceding  activity)  comes  to workStart-to-Finish + A Successor  Activity  cannot finish until a
+Relationship Predecessor  Activity  has started
+@ Estimation  of Activity  Duration
+Activity  duration  estimation  is a process  of estimating  the time it will take to perform each activity  with the
+allocated  resources.  The estimation  method is as follows:
+<Table 41> Characteristics  of Activity  Duration  Estimation  Methods
+Estimation  Method Characteristics  and Explanation
++ Amethod  that a resource  estimation  expert  uses internal or external  resources  with similarExpert  Judgmentexperience  to calculate  the resources  to be put into the activity.
+Analogous  Estimating + Amethod  of estimation  by referring  to similar  projects  performed  in the past
++ Risk-based  estimation  technique
+Three-point  Estimating + Estimate  the beta average  of Optimistic  value, Most Likely value, Pessimistic  value
++ Commonly  used in case of lack of experience
+Expert Judgment  and Analogous Estimating  are common  methods  used by practitioners  and those with
+extensive  experience  in the field. Three-point  Estimating  is a method  of measuring  the optimistic,  pessimistic,
+and most likely values for each activity  in consideration  of risks, which allows more accurate  estimation.  The
+term “Three-point”  has the following  meanings:
++ Optimistic,  O: the best-case  estimate,  the shortest  duration
++ Most likely, M: the most likely estimate,  the average  duration
++ Pessimistic,  P: the worst-case  estimate,  the longest  duration
+In the three-point  estimation  method,  the most likely estimate  receives  a multiplier of 4 to come up with the
+final estimate  of an activity. If an activity  takes 4 days to be opti...

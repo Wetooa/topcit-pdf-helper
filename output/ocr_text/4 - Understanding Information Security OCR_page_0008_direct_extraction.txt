@@ -1,0 +1,25 @@
+ESSENCE
+E) Spear phishing 53
+F) Cryptojacking 53
+G) Ransomware 53
+H) Drive by download  attack 55
+|) “Fileless”  attack without malware  installation 55
+J) Malvertising 55
+02 Security  trends  related  to the latest information  technology 56
+A) loT security 56
+B) Cloud security 58
+C) Big data security 59
+D) Mobile security 61
+IV. Security  management  system  and standard 63
+01 Information  security  management  system 64
+A) Overview  of the information  security  management  system (ISMS) 64
+B) Risk management 65
+C) Information  security  and information  security management  system (ISMS-P) 67
+02 Personal  information  protection 68
+A) Privacy policy 68
+03 Information  security  standards  and related systems 69
+A) ISO 27001:2013 69
+B) OWASP  TOP 10 70
+C) CWE(Common  Weakness  Enumeration) 71
+D) CWSS (Common  Weakness  Scoring System) 7
+8 TOPCIT  ESSENCE

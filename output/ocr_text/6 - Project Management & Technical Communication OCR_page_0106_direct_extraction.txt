@@ -1,0 +1,38 @@
+Project Management  and Technical  Communication  )
+<Table 46> Cost Estimation  Method
+Cost Estimation
+TechniqueCharacteristics  and Explanation
+Analogous  Estimating+ Amethod  of estimating  the cost of the current  project  based on the scope, cost, budget,
+and duration  of similar projects  in the past
+Bottom-up  Estimating+ Amethod  of estimating  the sum of the lowest-level  work packages  to come up with upper-
+level cost
++ It is affected  by the size and complexity  of an individual  activity  or work package  and time-
+consuming  but enables  accurate  cost estimation.
+Expert  Judgment+ Amethod  of presenting  information  about the project  including  labor costs, raw materials
+costs, inflation  and risk factors,  based on the surrounding  environment  and information  about
+previous  similar projects
+Three-point  Estimating
+C) Budgeting+ Amethod  of estimating  project  cost using the most likely, optimistic,  and pessimistic  values.
+It takes into account  uncertainty  and risk in cost estimation.
+It is a process’  of creating  an approved  cost baseline  by collecting  individual  activities  and work packages  of
+cost estimation,  or estimated  costs, in order to manage  all costs in an integrated  manner. The cost baseline
+is the approved  version  of the project  budget,  excluding  management  reserves.  After all, the project  budget  is
+the sum of the management  reserves  and the cost baseline.
+Contingency  reserves,  used in case of contingencies  other than planned  activities  by project  managers,  are in-
+cluded in the cost baseline.  However,  management  reserves  are an expense  that can be enforced  by the Chief
+Technical  Officer  (CTO), sponsor,  or CEO.
+D) Cost control
+Project  cost control is a process  of monitoring  the status of project  cost management  and baseline  changes.
+Work name Period | Startingdate  | Finish date Completion  rate Preceding  work Resource  name
+The Bulletin Board for IT 13/07/25 13/08/27
+Competency  Index Project 24 days (Thurs.) (Tues.) 16%
+. 13/07/25 13/08/27Create a bulletin board | 24 days (Thurs) (Tues) 16%
+: 13/07/25 13/08/20Analysis 19 days (Thurs) (Tues) 24%
+. 13/07/25 13/07/31 aWrite text 5 days (Thurs) (Wed) 90% Kim Jisim
+13/08/01 13/08/02 Kang
+Sooo 2 days (Thurs.) (Fri) 0% 4 Jeongbae
+. 13/08/05 13/08/06 KimSa 2 days (Mon.) (Tues.) 0% 5 Seonhwa
+File upload 10 days Meu ie 0% 6 Lee Hongcheol
+: 13/08/01 13/08/27Design 19 days (Thurs) (Tues) 0%
+7 3H, PMP HfOlS, SHYOICIO}
+M6 Project  Management  and Technical  Communication  105

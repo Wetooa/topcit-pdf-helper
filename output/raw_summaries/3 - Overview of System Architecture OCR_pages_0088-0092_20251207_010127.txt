@@ -1,0 +1,215 @@
+LEARNING GUIDE: Pages 88-92
+Generated: 2025-12-07 01:01:27
+PDF: 3 - Overview of System Architecture OCR
+
+================================================================================
+LEARNING GUIDE
+================================================================================
+
+Here is a simplified, easy-to-read learning guide based on the provided text, designed for efficient study.
+
+---
+
+## Learning Guide: System Architecture - Storage & Disk Management
+
+This guide extracts essential information, definitions, and key concepts to help you understand storage technologies and disk management principles.
+
+---
+
+### **1. Storage System Architecture Overview**
+
+#### **1.1 Internet SCSI (iSCSI)**
+*   **Definition:** A network protocol that encapsulates **SCSI** (Small Computer System Interface) commands into **IP packets** and transmits block I/O data over standard **TCP/IP** networks.
+*   **Purpose:** Allows servers to connect to storage devices over an existing Ethernet network.
+*   **Benefits:**
+    *   Reduces storage implementation cost by utilizing existing network infrastructure.
+    *   Ensures data reliability through technologies like **IPSec**.
+
+#### **1.2 Storage Capacity Management**
+
+##### **1.2.1 Thin Provisioning**
+*   **Problem:** Traditional "thick LUN" (Logical Unit Number) storage allocates a fixed, often over-estimated amount of space, leading to wasted storage.
+*   **Definition:** A storage virtualization technology.
+*   **How it Works:** Allocates storage space on demand. It presents a large logical capacity to users but only consumes physical disk space as data is actually written.
+*   **Benefits:**
+    *   Flexibly expands disk space as users' needs grow.
+    *   Achieves a significantly higher data utilization rate.
+
+##### **1.2.2 Data De-duplication**
+*   **Definition:** A technology that improves disk space efficiency by identifying and removing redundant (duplicated) data when saving it.
+*   **Methods:**
+    *   **Inline De-duplication:** Removes redundant data immediately as it enters the storage system.
+    *   **Offline De-duplication:** Stores new data first, then processes it later to remove redundancies.
+
+---
+
+### **2. Storage Disk Scheduling**
+
+#### **2.1 Introduction to Disk Scheduling**
+*   **Context:** Disk drives, using rotating magnetic disks, have performance heavily influenced by the order of I/O requests and the resulting head movement.
+*   **Definition:** A technique to efficiently manage and process multiple I/O requests to a disk drive.
+*   **Primary Goals:**
+    *   Maximize I/O requests serviced per unit time.
+    *   Maximize data throughput per unit time.
+    *   Minimize the average response time for requests.
+    *   Minimize the variation in response times.
+
+#### **2.2 Disk Performance Measurement Indicators**
+*   **Access Time:** The total time to complete a read/write operation. It is the sum of:
+    *   **Seeking Time:** Time for the disk head to move from its current position to the correct data track.
+    *   **Rotational Latency (Rotational Delay):** Time for the desired data sector on the track to rotate directly under the disk head.
+        *   *Note:* Modern disks often use internal buffers to minimize this.
+    *   **Data Transfer Time:** Time to transfer the actual data from the disk to main memory.
+
+#### **2.3 Disk Scheduling Algorithms**
+
+##### **2.3.1 First Come First Serve (FCFS)**
+*   **Principle:** Services I/O requests in the exact order they arrive in the queue.
+*   **Pros:**
+    *   Simple to implement.
+    *   Provides fair service to all requests.
+*   **Cons:**
+    *   Often results in inefficient head movement (long seeks).
+    *   Can lead to unnecessarily long response times.
+    *   Cannot prioritize urgent requests.
+
+##### **2.3.2 Shortest Seeking Time First (SSTF)**
+*   **Principle:** Services the request that requires the shortest head movement (i.e., is closest) from the current head position.
+*   **Pros:**
+    *   Minimizes total head movement, maximizing service rate.
+    *   Achieves higher processing rates and shorter average response times than FCFS.
+*   **Cons:**
+    *   Can lead to high variability in individual request response times.
+    *   **Starvation:** Requests located far from the current head position may be perpetually delayed if new, closer requests continuously arrive.
+
+##### **2.3.3 SCAN (Elevator Algorithm)**
+*   **Principle:** The disk head moves in one direction (e.g., inwards), servicing all requests in its path until it reaches the end of the disk (innermost/outermost cylinder). It then reverses direction and services requests on the way back.
+*   **Pros:**
+    *   Reduces response time variation compared to SSTF.
+    *   Generally provides good throughput and average response time.
+    *   Eliminates starvation.
+
+##### **2.3.4 LOOK**
+*   **Principle:** Similar to SCAN, but more efficient. The head moves in one direction, servicing requests. It changes direction *before* reaching the physical end of the disk if there are no more requests in its current direction. It "looks" for pending requests.
+*   **Pros:** More efficient than SCAN by avoiding unnecessary travel to the disk's absolute ends when no requests are present there.
+
+##### **2.3.5 Circular SCAN (C-SCAN)**
+*   **Principle:** Services requests only while moving in a single predetermined direction (e.g., always outwards). When it reaches the outermost cylinder, it immediately jumps back to the innermost cylinder *without servicing any requests* on the return trip, then restarts servicing outwards.
+*   **Pros:**
+    *   Provides a more uniform and predictable response time for all requests.
+    *   Improves fairness compared to SCAN.
+
+##### **2.3.6 Circular LOOK (C-LOOK)**
+*   **Principle:** Combines C-SCAN and LOOK. The head services requests in one direction. When no more requests are ahead in that direction, it jumps back to the *lowest pending request* in the opposite direction (not necessarily the physical end of the disk) and resumes servicing in the original direction.
+*   **Pros:** Offers the uniformity of C-SCAN with the added efficiency of LOOK, avoiding unnecessary full-disk traversals.
+
+---
+
+### **3. High Availability Storage**
+
+#### **3.1 Redundant Array of Independent Disks (RAID) Technology**
+*   **Definition:** A storage technology that combines multiple physical disk drives into one or more logical units to improve performance, enhance data reliability, and increase availability.
+*   **Main Features:**
+    *   **Improved Availability:**
+        *   **Hot-swap function:** Allows replacing a failed disk without system downtime.
+        *   Recovers data online to the replacement disk.
+    *   **Increased Capacity:** Multiple physical disks are presented as a single, larger virtual disk.
+    *   **Increased Speed:** Data is partitioned and transferred to multiple disks in parallel (**striping**), boosting overall transfer rates.
+*   **RAID Levels:** Various levels exist (e.g., RAID-0, 1, 5, 6, 10) each offering different trade-offs in performance, capacity, and fault tolerance.
+
+##### **3.1.1 RAID-0 (Striped Disk Array Without Fault Tolerance)**
+*   **How it Works:**
+    *   Requires two or more drives.
+    *   Employs **disk striping**: Data is divided into blocks (stripes) and written simultaneously across all drives in the array.
+*   **Pros:**
+    *   Significantly increases I/O speed due to parallel processing.
+*   **Cons:**
+    *   **No data protection or redundancy.**
+    *   If *any single drive* in the array fails, all data on the RAID-0 volume is lost.
+*   **Usage:** Not suitable for critical data due to its lack of fault tolerance. Its speed benefits are often integrated into other RAID levels, such as RAID-10, which provide redundancy.
+
+================================================================================
+ORIGINAL TEXT (First 5000 chars)
+================================================================================
+
+--- Page 88 ---
+Overview  of System Architecture )
+@ Internet  SCSI (iSCSI)
+iSCSI encapsulates  SCSI commands  into IP packets  and transfer  the I/O block data through  TCP/IP. Technologies  like
+IPSec ensure reliability.  It reduces  the network  storage implementation  cost, since it can use the existing  network
+environment  as is.
+iSCSI Switch
+[Figure  57] iSCSI
+D) Storage  capacity  management
+@ Thin provisioning
+The existing  fixed-allocation  storage  technology  uses a thick logical unit number  (LUN) wasted data storage  space.
+Thin provisioning  is a storage  virtualization  technology  that allocates  data by mapping  actual data space into a thin
+LUN. It can flexibly  expand  the disk space required  by users in cloud computing,  and it offers a higher  data utilization
+rate than the conventional  thick LUN type.
+e@ e e
+OTB
+: storage
+: sharingPOOL
+M3 Overview  of System  Architecture  87
+
+
+--- Page 89 ---
+ESSENCE
+[Figure 58] Inexpensive  Thin Provisioning
+@ Data de-duplication
+The technology  provides  a high efficiency  of disk space used by removing  any duplicated  data when saving the data.
+The removal methods  include  an inline method,  which immediately  removes  redundant  data as it enters the storage
+system,  and an offline method,  which removes  the redundant  data after storing  the new data.
+E) Storage  disk scheduling
+@ Disk scheduling
+A disk drive that stores data is a device using a rotating  magnetic  disk. When inputs and outputs  are requested  to this
+disk drive, the system performance  varies significantly,  according  to which request  is processed  first, and the process
+in moving  the head to access the data. Disk scheduling  is a technique  of efficiently  processing  I/O requests,  when
+multiple  users request  them, in order to process  different  tasks. Using disk scheduling  has the following  purposes:
+- Maximization  of I/O requests  to service  during  a unit time
+- Maximization  throughput  per unit time
+- Minimization  of the mean response  time
+- Minimization  of response  time
+- Minimization  of the variation  of response  time
+@ Disk performance  measurement  indicator
+Disk scheduling  can be compared  with the indicators  that measure  disk performance.  Disk performance  measurement
+indicators  include the access  time, seeking  time, rotational  delay or rotational  latency,  and data transfer  time.
+Search Time
+Original  Position——_/—_ Rotation
++) Standby  Time
+‘ Data to Search for
+[Figure 59} Disk  Performance  Measurement  Indicators
+The seeking  time indicates  how long it takes to move the head from the current head position,  to the track
+containing  the data. The rotational  latency  indicates how long it takes from the moment  the head begins rotating  to
+move to the track containing  the data, to the moment  it reaches  the sector  that contains  the data.
+Seeking  time is the time it takes to move the head from the current head position,  to the track containing  the data.
+Recent  disk drives minimize  the rotational  latency  by having an internal  buffer, and by storing  all the data in the track
+88 TOPCIT  ESSENCE
+
+
+--- Page 90 ---
+Overview  of System Architecture )
+within the buffer. The data transfer  time indicates how long it takes to transfer  the read data to the main memory.
+The access time is the sum of the seeking  time, the rotational  latency, and the data transfer  time. This section
+describes  techniques  to minimize  the access  time by minimizing  the seeking  time and the rotational  latency.
+@ First come first serve (FCFS) disk scheduling
+FCFS services  the requests  in the order they are received.  The head position moves in the order of the requested
+tracks in the disk standby  queue. It is easy to program  and provides  fair service to all requests.  However,  the head
+movement  may be inefficient,  and it can unnecessarily  increase  the response  time. The execution  sequence  does not
+change,  even when it receives  a priority  request.
+1 4 37 53 60 120 183 250
+Queue = 53, 120, 183, 37, 60
+Initial Head Position  = 53
+[Figure  60] FCFS Disk Scheduling
+@ Shortest seeking time first (SSRF) disk scheduling |
+The scheduling  technique  first services  the request  that is closest  to the current  head position,  among  the requested
+services  waiting  in the queue. It minimizes  head movement  because  it takes a lot of time to move the head in the
+disk drive. It maximizes  the service response  rate per unit time by minimizing  the head movement  in order to process
+the queue requests.  The response  time variation  can increase  depending  on where the requested  input or output
+data is on the disk. It can cause starvation  for the requests  seeking  data that are positioned  in the inner or outer
+cylinder. It offers a higher processing  rate and a shorter  mean response  time than FCFS.
+1 14 37 53 60 120 183 250
+Queue = 53, 120, 183, 37, 60
+Initial Head Position  = 53
+[Figure 61] SSTF Disk Scheduling
+© SCAN disk scheduli...

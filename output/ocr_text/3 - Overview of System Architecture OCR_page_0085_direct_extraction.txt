@@ -1,0 +1,26 @@
+ESSENCE
+iS not corrupted  or lost.
+B) Connection  of storage  unit and server
+Multimedia  services,  using a large volume of data, led to computer  systems  storing an increased  volume of data. A
+large-capacity  storage  system is necessary,  since a single disk cannot  support  the increasing  data capacity.  A storage
+system logically  groups multiple  disks in order to store large capacity  data that a single disk cannot handle. It is
+classified  into DAS, NAS, and SAN, depending  on how it is connected  to the computer.
+@ Direct attached  storage  (DAS)
+The storage  connects  a computer  system with disks directly  through  a fiber channel  or SCSI cable in order to utilize
+the storage  capacity.  It allows the computer  system to manage  the file system directory.  Since the storage is
+directly  connected  to the computer  system, it works like an external hard disk at high speed. Its advantage  is that
+its configuration  is simple, and the cost is low without  a separate  switch, but there is a limitation  in the number  of
+disks that can be connected.  Moreover,  files in the storage  cannot  be shared with other computers,  since it is directly
+connected  to a computer.
+Integrated
+Storage
+Unit
+Server
+[Figure 52] DAS
+@ Network  attached  storage  (NAS)
+The storage has a separate  file system management  server (controller)  to manage  the storage  media such as HDD
+and SSD. It is connected  to a computer  system  through  an Ethernet  network  interface  like LAN or WAN. Since it has
+a separate  file system management  server, it is easier to manage  data, and multiple  servers  can share the storage.
+Moreover,  multiple computer  systems  on the same network  can use the storage,  regardless  of the physical  location.
+As the storage  is connected  over a network,  its speed and capacity  are limited by the network  speed.
+84 TOPCIT  ESSENCE

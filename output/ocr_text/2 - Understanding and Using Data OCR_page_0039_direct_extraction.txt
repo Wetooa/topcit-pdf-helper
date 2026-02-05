@@ -1,0 +1,41 @@
+ESSENCE
+reduction  of memory  prices, etc.
+The MMDB has the following  characteristics  due to the fact that the database  runs in the main memory.
+* Disk I/O does not occur because  all operations  are performed  in the main memory.
++ Performance  is good because  disk I/O, which degrades  performance  in the disk-based  database,  is rare.
++ Hardware-based  error recovery  techniques  are used due to the volatility  of the main memory.
++ Adisk is used for backup  and logging.
++ Hashing  and T-tree indexing  algorithm  optimized  for a memory  environment  is used.
++ Types of commercial  main memory  databases  can be updated  at [https://en.wikipedia.orgwiki/List_of_in-memory_
+databases].
+C) Embedded  database
+General commercial  databases  are not suitable  for the embedded  system, which has limited memory  and special
+performance  goals. The embedded  database  was developed  for the embedded  system, so as to allow specific
+functions  to be used in a limited embedded  environment.
+As aresult,  the embedded  database  has the following  technical  characteristics.
++ It provides  essential  functions  only after reducing  overheads  to use minimum  RAM and disk.
++ It supports  communication  between  different  devices  to allow communication  with the database  in a central server.
++ It supports  porting  to the various  platforms  of the embedded  system.
+* It satisfies  the performance  requirements  of the real-time  OS of the embedded  system.
++ The list of commercial  embedded  databases  can be updated  at [http://embedded-databases.com].
+D) Mobile database
+The mobile database  is exclusively  used by mobile devices.  The mobile database,  which is installed  in a mobile device,
+processes  the data generated  during field work and sends them to the central server for synchronization.  Due to
+the distinct  characteristics of  installation  in a mobile device, a  mobile database  should be independent  from various
+platforms  and operation  systems,  should recover  quickly from failures, and should be optimized  for a limited mobile
+environment.
+As a result, the mobile database  has the following  characteristics.
++ The database  can be installed  in a small capacity  device equipped  with a limited CPU and memory.
++ Itis provided  as an embedded  form that integrates  data and applications.
++ It has the function  of data replication  and synchronization  with the database  of the existing  server.
++ Commercial  mobile databases  include Sybase SQL Anywhere,  Oracle Lite, Microsoft  SQL Server Compact,  SQLite,
+and IBM DB2 Everyplace.
+E) Spatial  database
+A spatial database  is a set of non-spatial  data represented  by letters and numbers  and spatial data represented  by
+coordinate  values. The spatial database  was initially developed  because  a technology  for processing  “unstructured
+data’, such as the geographic  information  system, was needed as a core technology  for a type of guided missile
+that strikes a preset target by tracking  the target’s location  using geographical  information.  Thereafter,  the spatial
+database  was introduced  full scale, as the market  was expanded  to include  services  that store and manage  values for
+specific  locations  using geographical  information,  such as GIS and location  information  check.
+The spatial database  has the following  characteristics.
+38 TOPCIT  ESSENCE

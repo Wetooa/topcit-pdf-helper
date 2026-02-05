@@ -1,0 +1,38 @@
+ESSENCE
+object in the same way as if a directory  and files were combined  and treated  as a directory  entry.
+- Advantages:  Convenient  because  the basic object and the constituent  object do not have to be separated
+when writing  a source code.
++ Decorator  pattern
+- Definition:  A class structure  used to dynamically  add a function  to a specific  object or to delete the added |
+function.
+- Advantages:  Quite simple and flexible  when adding  a function  to an object.
++ Facade  pattern
+- Definition:  When several classes  have a close relationship  and play a role as a whole, this method  enables
+the user to receive  the desired  function  using the representative  class even when no class to represent  the
+role has been defined,  and external  clients  do not directly  handle each class.
+- Advantages:  A simple interface  can be provided  for a complex  subsystem. A complex  or recursive
+dependency  relationship  can be removed  by stratifying  the dependency  relationship  between  classes.
++ Facade  class diagram
+Package1
+- Class  1.class
+—
+Package2 <<includes  >>
+- Class2.class
+Package3
+- Class3.class
+- Java source  code
+The following  example  of Java code is an abstract  example  in which the user (you) accesses  the internal  parts:
+78 TOPCIT  ESSENCE. ,~<<includes  >>
+doSomething()
+Facade |e
+*doSomething(  )
+doSomething()
+uo? <<includes  >> .Client2
+Client1
+doSomething(  ) {
+Class1 cl = new Class1();
+Class2 c2 = new Class2();
+Class3 c3 = new Class3();
+c1.doStuff(c2);
+c3.setX(cl.getX());
+return c3.getY();

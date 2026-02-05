@@ -1,0 +1,50 @@
+ESSENCE
+Physical  database Index design, storage  space design.Physical  design according  to the physical
+space environment,  server, DBMS - Playsdesign Clustering  design, partition  design, etc. the role of the designer
+Tuning  (performance Improvement  of performance  according  to the index
+improvement) distribution  chart,  join relationship,  and type and number Plays the role of the tuner.
+of transactions.
+Database  buildingCreation  of a table space and a data file space.
+Creation  of a database  object.
+Setting  of parameters  and specifying  of a backupPlays the role of the developer.
+structure.
+Backup/restoration.
+Database  operation  | Monitoring  of memory  and performance  on a regular Plays the role of the operator.
+basis.
+Database Definition  of a glossary  and a domain. Manages  the database  or data
+standardization
+@ Roles of the data architect  (DA)
+A data architect  establishes,  models, and systemizes  the policies  and standManagement  of enterprise  meta-data.
+data, database,  data standard,  and data security.
+<Table  9> Roles of the data architect
+Role Detailsstandardization.
+ards for data-related  elements  such as
+Key roles
+Establishment  of a
+data management
+systemEstablishment  of systems  for metadata,  data distribution/
+integration,  information  lifecycle  management  (ILM), performance
+and capacity  monitoring  system,  log management  system,  failure
+management  system,  etc.Establishment  of data
+governance
+Establishment  ofEstablishment  of standards  related to entire data, such as
+definitions  of terms and domains,  data dictionary,  metadataMaintaining  consistency  is very
+data standards in standards,  etc. important.
+Performance  of data ; . . . Important  roles in the structure
+“ > > ‘ . modeling Conceptual  modeling  > Logical modeling  > Physical  modeling of the entire data architecture
+Establishment
+of data security
+systemsEstablishment  of systems  for controlling  user access, tables,
+views, etc., data encryption,  access  logs, transaction  traceability,
+etc.
+D) Concept  and functions  of the DBMS (Database  Management  System)
+@® Concept  of the DBMSManagement  of data security
++ Asystem  contrived  to solve the problem  of the file system,  dependency  and redundancy.
++ A software  system that manages  the database  so that it can be shared by all application programs  as a mediator
+between  the application  program  and data.
+@ Functions  of the DBMS
+There is a file structure  that stores a database,  and memory  and major processes  to process  the file structure  in
+DBSM.
++ Controls  duplication  from the aspects  of data storage,  and development  and maintenance.
++ Enables  data sharing  among  multiple  users.
+26 TOPCIT  ESSENCE

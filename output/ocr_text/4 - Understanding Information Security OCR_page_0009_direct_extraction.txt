@@ -1,0 +1,21 @@
+E) CVE (Common  Vulnerabilities  and Exposures) 71
+F) CVSS (Common  Vulnerabilities  Scoring  System) 71
+G) SANS (SysAdmin,  Audit, Networking, and Security)  Top 25 val
+V. Application  security 73
+01 Need for securing  coding 75
+A) Need for secure coding 71D
+02 Main content  of secure  coding 75
+A) Software  security  weakness  and security  vulnerability 715
+B) Secure SDLC 71D
+03 Major secure  coding  techniques 76
+A) Major secure coding techniques  for Java 76
+B) Major secure coding techniques  for C language 81
+C) Major secure coding techniques  for Android—Java 88
+VI. Data Security 85
+01 Overview  of database  security 87
+A) Overview  of database  security 8/
+B) Database  security  threats and responses 87
+02 Database  access  control 88
+A) Database  access  control policy 88
+B) Method of controlling access  to the database 89
+M4 Understanding  Information  Security  9

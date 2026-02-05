@@ -1,0 +1,13 @@
+Software  Development
+>> Recent  trends and major issues
+The importance  of software  configuration  management  is gradually  attracting  the interest  of
+enterprises,  as it is now recognized  as an important  factor that affects  quality.  The use of CASE tools
+for configuration  management  is regarded  as important,  and configuration  management  becomes  an
+issue when implementing  a large-scale  project  based on a distributed  computing  environment.
+>> Learning  objectives
+1. To be able to explain the concepts  and activities  of software  configuration  management.
+2. To be able to use software  configuration  management  tools.
+>> Keywords
+- Software  configuration,  software  configuration  management  elements,  change  control procedure
+- Version  management  tool, configuration  management  tool
+M1 Software  development  117

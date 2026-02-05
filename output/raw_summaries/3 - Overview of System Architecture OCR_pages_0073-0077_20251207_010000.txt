@@ -1,0 +1,203 @@
+LEARNING GUIDE: Pages 73-77
+Generated: 2025-12-07 01:00:00
+PDF: 3 - Overview of System Architecture OCR
+
+================================================================================
+LEARNING GUIDE
+================================================================================
+
+Here is a simplified, easy-to-read learning guide based on the provided text:
+
+---
+
+# Learning Guide: Latest Technologies & System Architecture
+
+## 05 Latest Technologies and Trends
+
+### A) Neuromorphic Chip
+
+*   **Definition:** A new type of semiconductor chip designed to process information like the human brain, implementing brain behavior (neurons, synapses) in silicon.
+*   **How it Works:**
+    *   Chip cores act as artificial **neurons**.
+    *   Memory chips perform **synaptic functions**, linking neurons.
+    *   Configured in **parallel** (like the human brain) to process large data efficiently.
+*   **Key Features & Advantages:**
+    *   **Low Power Consumption:** Processes large data with little power.
+    *   **Enhanced Learning & Operation:** Increases ability to learn and operate similar to the human brain.
+    *   **Autonomous Learning:** Detects context and learns autonomously, not just pre-programmed.
+    *   **No Bottleneck:** Combines operation, storage, and communication, unlike conventional chips.
+    *   **Parallel Processing:** Handles various data inputs/outputs simultaneously.
+*   **Comparison with Conventional Chips:**
+    | Feature         | Conventional Semiconductor       | Neuromorphic Semiconductor                 |
+    | :-------------- | :------------------------------- | :----------------------------------------- |
+    | **Structure**   | CPU (Operation), Memory (Storage) | Integrated (Operation/Storage/Communication) |
+    | **Bottleneck**  | Yes (between CPU & Memory)       | No                                         |
+    | **Function**    | Specific functions (separate)    | Neuron (nerve), Synapse (signal transmission); combined storage/operation; senses image/sound, recognizes patterns |
+    | **Data Processing** | Serial (one I/O at a time)       | Parallel (various I/Os simultaneously)     |
+*   **Applications:** IoT, smartphones, robots, automobiles, cloud computing, supercomputing.
+*   **Challenges:**
+    *   Limited understanding of human neural circuits at a system level.
+    *   Currently simulates only single neurons; far from brain's complexity.
+    *   Ongoing global research, but no clear leader or superior technology yet.
+
+### B) Quantum Computer
+
+*   **Definition:** A new conceptual computer that processes vast amounts of information at high speed using principles of **quantum mechanics**:
+    *   **Overlapping (Superposition):** Qubits can exist in multiple states simultaneously (0, 1, or both).
+    *   **Entanglement:** Qubits become linked, affecting each other instantly regardless of distance.
+*   **Basic Unit:** **Qubit** (quantum bit) – unlike a classical bit (0 or 1), a qubit can be 0, 1, or a superposition of both.
+*   **Key Advantage:** **Quantum Parallel Processing** exponentially increases information processing and computation speed.
+*   **Comparison with Conventional Computers:**
+    | Feature               | Conventional Computer       | Quantum Computer                            |
+    | :-------------------- | :-------------------------- | :------------------------------------------ |
+    | **Information Express.** | 0 or 1                      | Overlapping 0's and 1's                     |
+    | **Operation**         | Sequential calculation      | Simultaneous calculation (instantaneous)    |
+    | **Basic Unit**        | Bit (0 or 1)                | Qubit                                       |
+    | **Calculation Method**| Logic table                 | Matrix function                             |
+    | **Error Correction**  | Easy to correct errors      | Difficult to correct errors                 |
+    | **Memory (n bits)**   | Remembers only one value out of 2^n | Remembers all 2^n values (overlap)          |
+    | **Operational Throughput (e.g., 3 units)** | Processes 1 info (repeated calc.) | Processes 8 info simultaneously (for 3 qubits) |
+*   **Types of Quantum Computers:**
+    *   **1. Analog Type (Specialized):**
+        *   **Quantum Annealing (e.g., D-Wave Systems):**
+            *   **Application:** Combination optimization, sampling (AI).
+            *   **Principle:** Quantum phase transition.
+            *   **Temperature:** Cryogenic (10mK).
+            *   **Status:** Commercialized (D-Wave 2000Q, Google developing Annealer Ver. 2).
+        *   **Quantum Neural Network (QNN) / Laser Network:**
+            *   **Application:** Combination optimization, sampling (AI).
+            *   **Principle:** Hamilton insulation change.
+            *   **Temperature:** Room temperature (300K).
+            *   **Status:** Japan's ImPACT disclosed a system.
+    *   **2. Digital Type (Universal, in principle):**
+        *   **Quantum Gate:**
+            *   **Application:** Factorization (decryption), quantum simulation (chemistry), etc.
+            *   **Principle:** Unitary rotation of status vector.
+            *   **Temperature:** Cryogenic (10mK).
+            *   **Error Correction:** Finalized (in principle).
+            *   **Status:** IBM offers "IBM Q" in the cloud, Google disclosed a 72-qubit processor.
+
+## Recent Trends & Learning Objectives
+
+*   **Recent Trends & Issues in System Architecture:** Cloud Computing, AI, Big Data.
+*   **Related Learning Subjects:**
+    *   **Data Processing Technology:** Core to all three.
+    *   **Parallel Processing System:** Closely related to AI.
+    *   **Storage Technology:** Related to Big Data.
+    *   **High Availability Storage Devices & Graphics:** Related to Cloud Computing.
+*   **Learning Objectives:**
+    1.  Explain parallel processing technology and its operational principle.
+    2.  Explain storage technology and its operational principle.
+    3.  Explain image/image compression technology and graphics processing technology.
+*   **Keywords to Know:**
+    *   Flynn's taxonomy, parallel processing technology, parallel program technology, disk scheduling, SAN, NAS, DAS, LTO, VTL, RAID, GPGPU, video compression standards.
+
+## 01 Parallel Processing System
+
+### A) Concept of the Parallel Processing System
+
+*   **Definition:** One or more independent operating systems managing multiple processors to perform multiple tasks simultaneously.
+*   **How it Differs:** Moves beyond traditional **serial processing** (CPU-based, sequential tasks) to **simultaneous processing** (often GPU-based).
+*   **Advantages:**
+    *   **Very Fast:** Processes multiple instructions concurrently.
+    *   **Memory Sharing:** Processors can share memory units.
+    *   **Fault Tolerance:** If one hardware part fails, its impact on the entire system is small.
+*   **Applications:**
+    *   **Artificial Intelligence (AI):** Deals with large amounts of data and repetitive complex operations (e.g., deep learning).
+    *   **Military Equipment:** Requires accurate results in a short time.
+    *   **Search Services:** Extracts results from vast data ranges quickly.
+*   **Classification Methods:**
+    *   Flynn's taxonomy.
+    *   Classification by memory structure.
+
+---
+
+================================================================================
+ORIGINAL TEXT (First 5000 chars)
+================================================================================
+
+--- Page 73 ---
+ESSENCE
+05 Latest  Technologies  and Trends
+A) Neuromorphic  chip
+Neuromorphic  chip, a core technology  for neuromorphic  computing,  is a new semiconductor  type that processes
+information  in a way that is similar  to human  thinking,  by implementing  brain behavior  in silicon as much as possible.
++ There are several cores in a semiconductor  chip, and electronic  devices, such as transistors  and memory,  are
+embedded  into the core.
++ Some of the devices  in the core play the role of neurons  and neural cells in the brain, and the memory  chip plays a
+synaptic  function  that links neurons.
++ Since the core, which acts as an artificial  neuron, is configured  in parallel like the human brain, it can process  a large
+amount  of data with little power  and increase  the ability to learn and operate  like the human brain.
+Current  Computer  Chip Neuromorphic  Semiconductor
+Integration  Operation/Storage
+/Communication  Functions  (No Bottleneck)
+Central Processing | Storage  Device y aa ss |
+euron——Unit (CPU) (Memory)
+] (3) crore OS  | | cme
+Communi: | | amBottleneck
+cationTM
+Existing  Semiconductor Neuromorphic  Semiconductor
+Cell (Storage/Operation)  and Bandwidth  (Connection) Structure ,  Neuron (Nerve Function) and Synapse (Signal
+Transmission)
+Storage  and operation Strength + Sensing  image and sound and recognizing  patterns
+Each semiconductor  performing  only a specific  function Function + Storage  and operation  processed  together
+Data
+Serial (Once |/O at a time) Processing  | * Parallel  (Various  data I/Os simultaneously)
+Method
+[Figure 40] Comparison  of Conventional  Semiconductor  and Neuromorphic  Chip
+Neuromorphic  computers  do not only operate  in a preprogrammed  way, like conventional  semiconductor-based
+computers,  but they can develop  their processing  power by detecting  the surrounding  context  and learning
+autonomously.  Since devices  equipped  with the neuromorphic  chip can increase  learning,  operation  capability,  and
+power efficiency,  they can apply intelligence  to all computing,  ranging  from loT, smartphones,  robots, automobiles,
+cloud computing,  and supercomputing.
+However,  there is still a lack of understanding  of how human neural circuits process  data at the system level, and
+neuromorphic  computers  still remain at a level that simulates  single neurons.  There are many problems  to resolve
+72 TOPCIT  ESSENCE
+
+
+--- Page 74 ---
+Overview  of System Architecture )
+from the technical  aspect in order for them to have the same level of complex  and highly integrated  structure  as the
+human brain. Research  on neuromorphic  processors  with various materials  and structures  is ongoing  worldwide,  but
+there is no clear leading  group with clear superior  competitiveness.
+B) Quantum  computer
+A quantum  computer  is a new conceptual  computer  that can simultaneously  process  a large volume  of information  at
+a high speed, based on the principle  of ultra-high-speed,  large-capacity  computing  technology  optimized  for specific
+operations,  according  to the principle  of overlapping  and entanglement  inherent  in quantum  mechanics.
+Quantum  parallel processing,  which uses quantum  bits (qubits)  as a basic unit of information  processing,  exponentially
+increases  information  processing  and computation  speed. <Table 13> shows the difference  from conventional
+computer  structures.
+{Table 13) Comparison  of Conventional  and Quantum  Computers
+Subject Existing  Computer Quantum  Computer
+Expression  of information  in 0 or 10 ol i Overlapping  0’s and 1’s
+Sequential CH 1 FE 0 % Om | combi| eB n n combiningOperation calculation ra  te 0 I OBFO OMFO  | an
+concept diagram OMf0 0 0 OME OMo one  ata : calculating
+BDORHORMOooom  | | MOOMMOMMOOMoOO  jtra =a
+Much time required Instantaneous  calculation
+Basic unit Bit (0 or 1) Qubit
+ee Calculation  with a logic table Calculation  by matrix function
+External  noise Easy to correct  errors Difficulty  correcting  errors
+n bits of oneieanetion Remember  only one value out of 0 - 2-1 Remembering  all values of 2n (overlap)
+One operation  of n bit ALU 2° operations  of n qubit ALU
+Operational Eight information One information  processing
+throughput Processing  In the case [fj “4 | [dj in the case of 3 qubits
+of 3 bits (Repeated (Simultaneous  calculation)
+calculation)
+A quantum  computer  can be an analog  or digital type. <Table 14> shows the characteristics  of each type.
+Table 14) Types of Quantum  Computer  and Comparison
+Subject Features
+Analog  type
+(Quantum  ising
+machine)Quantum  Annealing  type- Low versatility  (Combination  optimization
+calculation)
+- Commercialized  by D-Wave  Systems  in 2011
+Quantum  neural network  (QNN)- Low versatility  (Combination  optimization
+Laser network  type calculation)
+- Operated  at room temperature  and low cost
+M3 Overview  of System  Architecture  73
+
+
+--- Page 75 ---
+ESSENCE
+Superconductive  qubit type
+Digital type Quantum  gate type Spin qubit...

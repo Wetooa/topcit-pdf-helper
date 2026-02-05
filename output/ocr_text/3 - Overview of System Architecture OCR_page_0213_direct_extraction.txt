@@ -1,0 +1,22 @@
+ESSENCE
+01 loT Network-Based  Technology
+A) loT concept
+loT (Internet  of Things)  is a concept  that embeds  sensors  and communication  functions  in various  objects  to connect
+to the Intemet.  It refers to the technology  that can perform  sensing,  networking,  and information  processing,  through
+cooperation,  without  explicit human intervention.  At the same time, the ubiquitous  technology  that allows access
+to information  and communication  networks,  regardless  of time and place as a concept  that exists anywhere  at the
+same time and is ubiquitous  and the machine-to-machine  (M2M) technology  that enables  intelligent  communication
+between  objects  have evolved  further. As such, loT enables all things to exchange  information  through  the Internet,
+without  boundaries  between  people  and objects.
+Internet  of Things
+Doctor/Care Tae  Mei hy ese
+giver Rie  eee
+Policy  Makers Industrialists
+[Figure 146] loT Applications
+B) loT standardization  trend
+3GPP and ETSI have established  mobile communication-based  loT standards,  but since 2012, they have been led
+by an international  consultative  body called, oneM2M.  The Open Mobile  Alliance  (OMA) proposed  a communication
+method,  based on a server-client  structure,  by establishing  the Lightweight  M2M (LWM2M)  protocol.  oneM2M  has
+released  LWM2M,  which applies CoAP (Constrained  Application  Protocol)  and HTTP for data transfer,  as the latest
+standard.
+212 TOPCIT  ESSENCE

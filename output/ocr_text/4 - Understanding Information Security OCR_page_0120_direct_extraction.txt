@@ -1,0 +1,29 @@
+ESSENCE
+ie eas croum Ies\—rel0 te
+Header  | Header  | Payload Public(Internet)
+or Private a
+User system
+with IPsec
+IP
+Pi&
+==zz
+| XY —we Networking
+, Networking—  | device 5 device= with IPsec .— a a with IPseci ms
+[Figure  61] IPSec operation
+(Source:  W. Stallings,  Network  Security  Essentials,  Pearson,  p.272)
+[Figure 62] shows the structure  of IPSec. IPSec is largely composed  of Internet  Key Exchange  (IKE) for Security
+Association  (SA) negotiation,  a repository  of Sas - Security  Association  Database  (SAD), Security  Policy
+Database  (SPD) that stores security  policies that define how IP traffic is associated  with a specific SA, AH
+(Authentication  Header) protocol,  providing an actual authentication  service, and the Encapsulating  Security
+Payload  (ESP) protocol,  providing  authentication  and encryption  services.
+Key exchange
+IKEv2 ——_ IKEv2
+Security Security
+policy ; policy
+database Security Security database
+association association
+<<m ——_
+ESP protects  data
+[Figure  62] IPSec structure
+(Source:  W. Stallings,  Network  Security  Essentials,  Pearson,  p.276)
+120 TOPCIT  ESSENCE

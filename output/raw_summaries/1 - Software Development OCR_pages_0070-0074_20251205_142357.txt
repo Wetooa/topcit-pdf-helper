@@ -1,0 +1,207 @@
+LEARNING GUIDE: Pages 70-74
+Generated: 2025-12-05 14:23:57
+PDF: 1 - Software Development OCR
+
+================================================================================
+LEARNING GUIDE
+================================================================================
+
+Here's a simplified, easy-to-read learning guide based on the provided text:
+
+---
+
+# Software Development: Object-Oriented Analysis & Design
+
+## 1. Object-Oriented Analysis and Modeling
+
+### 1.1 Object Orientation (OO)
+*   **Concept:** Views a problem as a collection of real-world objects interacting with each other. It virtualizes real-world problems for computers.
+*   **Advantages:**
+    *   Increases object reusability.
+    *   Deepens understanding of system participants.
+    *   Applies a consistent methodology (analysis, design, programming) throughout development.
+*   **Analysis Technique:** Identifies software objects by examining them from three viewpoints (information, dynamic, functional) to discover their properties and behaviors.
+
+### 1.2 What is Modeling?
+*   **Definition:** The process of simplifying a system's performance/operation (often diagrammatically) or expressing its characteristics mathematically for analysis. It helps express and understand the real world in software development.
+*   **Purpose:**
+    *   Forms a core part of requirements specifications.
+    *   Provides information for subsequent project phases.
+    *   Facilitates communication between users and developers.
+    *   Aids in identifying project requirements and understanding system structure.
+
+### 1.3 Three Viewpoints of Modeling
+Software views can be expressed from these perspectives:
+1.  **Functional Viewpoint:** Describes what the software *does* – its functions, input/output, operations, and constraints.
+2.  **Dynamic Viewpoint:** Focuses on *how* the software operates and controls. It describes system states and the events (e.g., user input, time) that cause state changes.
+3.  **Information Viewpoint:** Understands the *static structure* of information. It identifies data objects, their characteristics, and relationships between them.
+
+### 1.4 Use Case
+*   **Definition:** A technique in object-oriented analysis that describes how an actor (a user or external system role) interacts with the system to achieve a specific goal. It's like a "use example."
+*   **Benefits:**
+    *   Improves communication between customers and developers.
+    *   Effectively captures customer requirements.
+    *   Encourages customer participation.
+    *   Helps determine functional requirements early in the project.
+*   **Components:**
+    *   **Actors:** Homogeneous groups of stakeholders (users or systems) with distinct roles and uses of the system.
+    *   **Scenarios:** Detailed steps or flows of events within a use case, describing interactions, exchanged information, and environmental context.
+*   **Purpose:** Verifies user requirements by clearly showing user-system interaction and system behavior.
+
+### 1.5 Modeling Types (Applying the Viewpoints)
+
+#### 1.5.1 Information Modeling (Static)
+*   **Process:** Uses information from use case scenarios to identify data that needs to be stored and managed within the system.
+*   **Result:** A **UML Class Diagram** (Unified Modeling Language), which shows the basic classes needed in the system, their properties (attributes), and the relationships between them.
+
+#### 1.5.2 Dynamic Modeling
+*   **Process:** Builds upon identified classes. It focuses on how objects interact and change state, finding the *operations* (methods) of classes.
+*   **UML Tool:** **Sequence Diagram**.
+    *   Expands on use case scenarios by showing the chronological interaction process *between objects inside* the system.
+    *   Typically, one sequence diagram is created for each use case.
+
+#### 1.5.3 Functional Modeling
+*   **Process:** Deals with complex logic within the operations identified by dynamic modeling.
+*   **UML Tool:** **Activity Diagram**.
+    *   Expresses the various logics performed within an operation as activities.
+    *   Used to understand event handling processes within a class, complex procedures, and identify additional class operations.
+
+---
+
+## 2. Object-Oriented Design and Principles
+
+### 2.1 Object-Oriented Design (OOD)
+*   **Role:** Transforms the conceptual requirements from Object-Oriented Analysis (customer viewpoint) into concrete implementation details. It describes *how* user requirements will be physically realized in the software.
+*   **Advantage:** Reuses the same notation as OO analysis, minimizing conversion effort.
+
+### 2.2 Core Object-Oriented Principles
+
+#### 2.2.1 Object and Class
+*   **Object:** An individual, tangible entity in the real world (e.g., "Mr. Kim," "Seoul"). It has specific properties and unique values that distinguish it.
+*   **Class:** A blueprint or collection of similar objects that share common properties, constraints, and behaviors (e.g., "Student," "Employee").
+    *   An object is an **instance** of a class.
+    *   **Classification:** The act of grouping similar objects into a class.
+
+#### 2.2.2 Encapsulation
+*   **Goal:** To create software modules that are highly independent, easy to understand, and modify.
+*   **Definition:** A key OO concept that bundles data (properties) and the methods (operations) that operate on the data into a single unit (an object), hiding the internal details from the outside world (**information hiding**).
+*   **Benefits:** Achieves improved abstraction and independence.
+
+#### 2.2.3 Inheritance
+*   **Concept:** A mechanism where a new class (subclass) derives properties and behavior from an existing class (superclass).
+*   **Generalization:** The process of identifying common properties and operations among several classes and defining a new, more general class (superclass) to contain them.
+    *   **Superclass:** The parent class that shares common attributes/operations (e.g., "People").
+    *   **Subclass:** The child class that inherits from the superclass and adds its unique attributes/operations (e.g., "Student," "Professor").
+*   **Benefits:** Simplifies class definition, promotes code reuse, allows creating new classes from pre-defined ones.
+
+#### 2.2.4 Polymorphism
+*   **Definition:** "Many forms." It means operations with the same name can behave differently depending on the class of the object they are called on. A single function name or operator can serve multiple purposes.
+*   **Context:** Primarily used in inheritance hierarchies.
+*   **Mechanism:** Allows subclasses to provide their own unique implementation for an operation defined in their superclass. The superclass can call a method, and the specific subclass implementation is executed.
+*   **Types:**
+    *   **Overriding:** A subclass redefines a method that is already defined in its superclass.
+    *   **Overloading:** Defining multiple methods with the same name but different parameter types or numbers within the same class.
+*   **Run-time Binding:** The determination of which specific method to execute happens automatically at runtime, based on the actual type of the object.
+*   **Importance:** Crucial for understanding design patterns.
+
+---
+
+## 3. Static Modeling and Dynamic Modeling (Recap & Details)
+
+### 3.1 Static Modeling
+*   **Focus:** Reveals the unchanging, structural information of objects without considering time.
+*   **Purpose:** Describes the data structure required by the system, identifying basic objects, their properties, and relationships.
+*   **UML Tool:** **Class Diagram** – explicitly shows the static information structure, including classes, their attributes, operations, and relationships.
+*   **Sources:** Problem descriptions and use case scenarios are used to identify classes, properties, and relationships.
+
+### 3.2 Dynamic Modeling
+*   **Focus:** Explores how objects interact and change state over time. It identifies the operations (behaviors) of classes.
+*   **Purpose:** To understand system behavior and interaction processes.
+*   **UML Tools:**
+    *   **Sequence Diagram:** Shows the temporal sequence of messages exchanged between objects to handle events.
+    *   **Collaboration Diagram:** Shows the structural organization of objects and their message exchanges, emphasizing interrelations.
+        *   *Both Sequence and Collaboration diagrams are known as **Interaction Diagrams**.*
+    *   **Activity Diagram:** Accurately visualizes the flow of activities, processes, and event handling within a class or system, including dependencies. Useful for complex internal object operations.
+
+### 3.3 UML Diagram Summary
+
+| Model Type      | Diagram             | Contents                                                              |
+| :-------------- | :------------------ | :-------------------------------------------------------------------- |
+| **Functional**  | Use Case Diagram    | Expresses interactions between actors and the system (use cases).     |
+| **Static**      | Class Diagram       | Shows structural relationships between classes and interfaces.        |
+|                 | Object Diagram      | Represents the structural state of objects at a specific point in time. |
+|                 | Component Diagram   | Shows relationships between software component structures.            |
+|                 | Deployment Diagram  | Expresses the physical architecture (hardware, software, network).    |
+| **Dynamic**     | Sequence Diagram    | Illustrates timed messages exchanged between objects to handle events. |
+|                 | Collaboration Diagram | Shows cooperative relations and message exchanges between objects.    |
+|                 | Activity Diagram    | Visualizes the flow of activities and processes within the system.    |
+|                 | Statechart Diagram  | Expresses state transitions within a system or object.                |
+| **Other**       | Package Diagram     | Shows relationships between packages (groups of model elements).      |
+
+---
+
+================================================================================
+ORIGINAL TEXT (First 5000 chars)
+================================================================================
+
+--- Page 70 ---
+Software  Development )
+01 Object-Oriented  Analysis  and the Modeling  Concept
+Object orientation  takes a given problem area as a set of objects  that are present in the real world and
+represents  the interaction  between  those objects.  This can be understood  as a virtualization  process  that
+moves the problem  area to the computer  world in the same way as viewing  the real world. It has the advantage
+of increasing  the reusability  of an object and deepening  the understanding  of the participants.  The object-
+oriented  analysis  technique  identifies  an object required  by software  by applying  three viewpoints  (information,
+dynamic,  and functional  viewpoints),  and finding  the properties  and behavior  of the object. The object-oriented
+development  method has the advantage  of applying  the same methodology  and expression  technique  to the
+entire software  development  process,  ranging  from analysis  to design and programming.
+@® What is modeling?
+Modeling  is the process of simply diagraming  the performance  or operation  process  of the target system in
+order to analyze  it, or expressing  the characteristics  of the target system  mathematically.  We have to express
+the real world to understand  it, and modeling  enables  us to express  the real world.
+We should be able to  provide software  views from various perspectives  and understand  the requirements  of
+software.  Modeling  results become  the key part of the requirements  specification  and provide  the information
+needed to carry  out the next phase of the project. Modeling  results are used as a tool for dialogue  between
+users and developers,  and are of great help in identifying  the requirements  needed  when starting  a project  and
+in understanding  the system outline and frame that are needed in the development  stage (including  design,
+implementation,  and testing).
+@ Three viewpoints  of modeling
+The use of software  varies depending  on the view. The view of software  can be expressed  in the following
+three perspectives.
+<Table 18> Three viewpoints  of modeling
+View Contents
+The functional  model describes  a system from the viewpoint  of the functions
+Functional  viewpoint performed  by software.  The functional  model is a viewpoint  about the output  of the
+given input, and describes  the related  operations  and constraints.
+The dynamic  viewpoint  describes  the state of the system  and the causes  of changesOe  eo (event, time, etc.) in its state by focusing  on the operation  and control of software.
+The information  viewpoint  is used to understand  the static information  structure
+IIOHRa  LIOR Venecint of software.  It finds an information  object used by the system  and clarifies  the
+oe characteristics  of that object as well as the relations and associations  between
+objects.
+@ Use case
+If the use case technique,  which is well-known  in object-oriented  analysis,  is used, communication  between
+customers  and system developers  can be smooth and customer  requirements  can be effectively  understood.
+Use cases can provide many benefits  to the various stakeholders  of a given project, including  the customer,
+M1 Software  development  69
+
+
+--- Page 71 ---
+ESSENCE
+project manager,  developers,  designers,  and so forth. By understanding  the customer  requirements  quickly,
+customers  can be induced  to participate  actively  using the use case technique,  the functional  requirements  of
+the system can be determined  at the beginning  of the project, and the results can be documented.
+The use case technique  identifies  stakeholders,  classifies  them into homogeneous  groups according  to their
+roles, and classifies  them into an actor. Each actor has a different  view and use of the system. A use case,
+which is the use of the system by an individual  actor, can be identified  based on this. A use case corresponds
+to a “use example’  that shows for what use (purpose)  each actor uses the system. Each use case is a set of
+scenarios  used by a particular  actor to accomplish  a certain  function  or task.
+Scenarios  should be created for each use case. A scenario  represents  the flow and process of an event,
+and can include information  exchanged  between  systems and actors, and the situation,  environment,  and
+background,  etc. in which interactions  occur. The use case technique  is used to verify user requirements
+because it represents  the interaction  between  the user and the system and can clearly express  what the
+system  performs.
+@ Information  modeling
+Information  exchanged  between  actor and system can be found using the use case scenario.  Using the
+information,  information  modeling  should be performed  to identify  the information  that should be saved and
+managed  inside the system, and the result should be displayed  as a class diagram  of UML (Unified Modeling
+Language).  By using information  modeling,  the basic classes required  in the system can be iden...

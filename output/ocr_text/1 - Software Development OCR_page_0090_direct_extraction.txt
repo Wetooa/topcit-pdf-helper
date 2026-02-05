@@ -1,0 +1,29 @@
+Software  Development )
++ Preview  for practical  business
+Selecting  a programming  language
+In a real enterprise  environment,  the selection  criteria for programming  languages  for the
+development  of products  and services  are determined  in various ways. Hardware,  OS environment,
+introduced  solutions,  business characteristics,  application  of the latest development  languages,
+and the status of available  developers are just some of these criteria. However,  it is true that an
+alternative  language  is selected  if there are only a few developers  and labor costs are excessively
+high, even though  the given development  language  is eminently  usable.
+For example,  if Java is selected  to implement  all the functions  of a given project  to develop  a system
+with numerous  batch-like  tasks, then the project is likely to face the difficult  problem  of having to
+improve batch performance.  Alternatively,  if the C language  is selected in order to improve  speed
+only, there is a high possibility  that the project  will be faced with the difficult  problem  of productivity
+and test coverage.
+Therefore,  the reality is that many projects  select a programming  language  based on experience,
+and various languages  and architectures  are applied in the same project.  In particular,  complexity  and
+diversity  increase  significantly  in recent development  projects  that require mobile services in various
+fields.
+Software  development  framework  and integrated  development  environment  (IDE)
+These days, software  developers  collaborate  with developers  around the world who use different
+languages  and different  versions  of the compiler  and may have to write new codes or maintain
+the software,  which itself may use an old library that is more than 10 years old. To adapt to the
+rapidly changing  business  environment,  the methods  of collaboration,  customer  support,  and coding
+are changing.  Also, an integrated  development  environment based on a continuous  integration
+environment  is created to provide services  on time. The framework  consists  of an execution
+environment,  development  environment, operation  environment, and management  environment.  It
+also improves  development  productivity  by maximizing  modularization  and reusability,  and provides
+various  libraries  that can improve  software  quality.
+M1 Software  development  89

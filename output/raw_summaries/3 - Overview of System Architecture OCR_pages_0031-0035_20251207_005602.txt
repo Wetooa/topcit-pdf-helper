@@ -1,0 +1,202 @@
+LEARNING GUIDE: Pages 31-35
+Generated: 2025-12-07 00:56:02
+PDF: 3 - Overview of System Architecture OCR
+
+================================================================================
+LEARNING GUIDE
+================================================================================
+
+Here is a simplified, easy-to-read learning guide based on the provided text:
+
+---
+
+# System Architecture Learning Guide (Pages 31-35)
+
+## 1. Server Types & Evolution
+
+*   **Mainframe Servers:**
+    *   **Characteristics:** Excellent stability, high performance.
+    *   **Cost:** Very expensive due to proprietary, enterprise-made components (CPU to OS, development language, applications).
+    *   **Downsizing (1997):** Began to be replaced by less expensive super Unix servers (e.g., HP, Sun).
+    *   **CPU Shift:** Unix servers initially used Power CPUs, then shifted to Pentium CPUs. Windows NT servers (Intel CPU) gained popularity.
+    *   **Current Dominance (2017):** x86 servers (using Intel CPUs) now dominate the server market, especially Unix servers.
+    *   **Market Share:** x86 servers account for over 70% of server units sold, though the market is broadly split into x86 and non-x86 types.
+
+## 2. Information System Server Stack Structure
+
+Information systems are built in layers:
+
+1.  **Computer Hardware (Bottom Layer):**
+    *   Includes CPU, main memory, and auxiliary memory.
+2.  **Operating System (OS):**
+    *   Sits above hardware.
+    *   **Function:** Abstracts (hides complexities of) hardware and provides services to software.
+3.  **Middleware/Platform:**
+    *   Sits above the OS (e.g., web servers, WAS, DBMS servers).
+    *   **Purpose:** Provides flexibility for expansion, reduces application program dependencies on specific hardware, simplifies development.
+4.  **Application Programs (Top Layer):**
+    *   Sits above middleware.
+    *   **Function:** Provides services directly to users by utilizing the underlying middleware.
+
+## 3. History of Computer Hardware
+
+*   **Origin:**
+    *   **Turing Machine (1936):** Devised by Alan Turing, proved mathematical concepts and calculation processes, considered the start of modern computers.
+*   **First Programmable General-Purpose Computer:**
+    *   **ENIAC (1946):** Weighed 30 tons, used 18,000 vacuum tubes, as large as a house.
+*   **First Stored-Program Computer:**
+    *   **EDSAC (1949):** Implemented John von Neumann's idea of embedding a program in memory.
+*   **Popularization:**
+    *   **1980s:** Began with the success of IBM's PC and Microsoft's Windows OS.
+*   **Recent Trend:**
+    *   **Handheld Computers:** Rise of mobile computers in smartphones, opening the era of widespread handheld computing.
+
+## 4. Network Technology Trends & Importance
+
+*   **Evolution:**
+    *   From 56kbps wired media to hundreds of Mbps and even Gbps wireless and mobile communication.
+*   **Impact:**
+    *   Communication is now an inseparable part of daily life and business due to various connected devices.
+*   **Software & Networks:**
+    *   Software often relies heavily on networks and mutual communication between systems.
+*   **Learning Necessity:**
+    *   Understanding and utilizing standard network protocols is crucial for designing and developing efficient and optimized software.
+
+## 5. Chapter Learning Objectives
+
+By studying this chapter, you will be able to:
+
+1.  Explain the concept of the Internet and open protocols.
+2.  Explain how the OS manages processes.
+3.  Explain the concept of virtual memory and its management techniques.
+4.  Explain storage units, file systems, and input/output (I/O).
+5.  Explain the latest OS technologies and trends.
+
+## 6. Key Networking Concepts & Terms
+
+*   **Protocols:** Sets of rules for communication.
+*   **Internet:** Global system of interconnected computer networks.
+*   **Standard Organizations:** IETF, 3GPP, 3GPP2, ITU-T (develop communication standards).
+*   **OSI Reference Model:** A conceptual framework for understanding network communication, with 7 layers:
+    *   Application, Presentation, Session, Transport, Network, Datalink, Physical.
+*   **Internet Protocol (IP) Layer Model:** A simpler model (often TCP/IP model) with layers like:
+    *   Application, Transport, Internet, Network Interface.
+*   **Network Addressing:**
+    *   **MAC Address:** Hardware address unique to each network interface card.
+    *   **IP Address:** Logical address used to identify devices on a network (IPv4, IPv6).
+    *   **Port Number:** Identifies specific applications/services on a device.
+*   **Networking Concepts:**
+    *   **Private Network:** A network using private IP address ranges, not directly routable on the public Internet.
+    *   **NAT (Network Address Translation):** Translates private IP addresses to public ones, allowing private networks to access the Internet.
+    *   **CIDR (Classless Inter-Domain Routing):** A method for allocating IP addresses and routing IP packets more efficiently.
+    *   **RFC (Request for Comments):** Documents that describe Internet standards and protocols.
+
+## 7. Understanding Networks: A Web Use Scenario
+
+Let's trace how a user accesses a webpage (`http://my.server.com/`) in detail:
+
+1.  **User Action:** User A types `http://my.server.com/` into a web browser and presses Enter.
+2.  **DNS Request (Domain Name Resolution):**
+    *   The browser needs the IP address of `my.server.com` (domain names are user-friendly, but computers use IPs).
+    *   The browser sends a request to a **DNS (Domain Name Server)** to get the corresponding IP address.
+3.  **Connect to Webserver & HTTP Request:**
+    *   The DNS server returns the webserver's IP address (e.g., `220.17.23.15`).
+    *   The browser uses this IP address to connect to the webserver.
+    *   It then sends an **HTTP (Hypertext Transfer Protocol)** request to fetch the homepage data.
+4.  **TCP Protocol (Transport Layer):**
+    *   The browser hands the request information to the **TCP (Transmission Control Protocol)**.
+    *   TCP encapsulates the information into segments, ensuring reliable delivery to the correct webserver program on `my.server.com`.
+5.  **IP Protocol & Network Routing (Internet Layer):**
+    *   The TCP segment is further encapsulated into an **IP (Internet Protocol)** packet.
+    *   This IP packet is routed across the network towards the `220.17.23.0` network where `my.server.com` resides.
+6.  **Local Network Transfer (Network Interface Layer):**
+    *   **Private IP:** User A's computer (e.g., `192.168.11.5`) often uses a private IP address, which cannot be directly sent to a public IP like `220.17.23.15`.
+    *   **Gateway:** The packet must first be sent to the local network's **gateway** (e.g., `192.168.11.1` - a wired/wireless router).
+    *   **MAC Address:** Within the local network, IP addresses alone are not enough; **MAC addresses** are needed for direct device-to-device communication.
+    *   **ARP (Address Resolution Protocol):** The computer uses ARP to find the MAC address corresponding to the gateway's IP address (`192.168.11.1`) via network broadcasting.
+    *   **Packet Transmission:** The packet is then transmitted to the gateway router B, involving **ARP, Ethernet, private networking, and NAT**.
+
+---
+
+================================================================================
+ORIGINAL TEXT (First 5000 chars)
+================================================================================
+
+--- Page 31 ---
+ESSENCE
+that houses the CPU and the main memory.  The mainframe  features  excellent  stability  and performance,  but it is
+very expensive  because  an enterprise  made all the elements  from the CPU to OS, the development  language,  and
+the application  programs,  The mainframe  began downsizing  gradually  in 1997 when the attention  to super Unix
+servers, such as HP, Sun, and Silicon Graphics,  increased.  Downsizing  refers to replacing  a mainframe  server with a
+super Unix server, While Unix servers  were generally  equipped  with a Power CPU, it is worth noting  that more mid- to
+large-sized  servers  began featuring  Pentium  CPU in the server market  in 1997. It was around  this time that Windows
+NT servers, using Intel CPU, were on the sharp rise. Twenty  years later, in 2017, x86 servers,  featuring  Intel CPU, are
+dominating  the Unix server  market. Currently,  the server  market is divided into x86 servers and non-x86  servers.
+Although  the market  is divided  into two major server  types in terms of sales,x86  servers  account  for more than 70%
+when comparing  the number  of server  units sold.
+This server has a stack structure.  The computer  hardware,  consisting  of a CPU, main memory,  and auxiliary  memory
+is at the bottom.  An OS that abstracts  computer  hardware  and provides  services  to software  is located above it.
+On top of the OS, middleware,  such as a webserver,  WAS, and DBMS server to support  the flexibility  of convenient
+expansion,  as well as the reduction  of application  programs  and independence  of computer  hardware,  is located.
+Application  programs  provide  services  to users using this middleware.
+Information  System  Layer
+Application  Program
+Middleware/Platform
+[Figure 9] Information  System  Server's  Stack Structure
+B) Computer  hardware
+While some argue that an abacus used in calculations  in ancient  times is the origin of computers,  the Turing Machine,
+devised by the English mathematician  Allen Turing in 1936, is generally  regarded  as the beginning  of modern
+computers.  This Turing Machine  proved the mathematical  concepts  and calculation  processes.  Afterward,  ENIAC,
+created in 1946, is known as the first programmable  general-purpose  computer.  Using 18,000 vacuum tubes, it
+weighed  30 tons and was literally as large as a house. Later, EDSAC,  the first computer  that embedded  the program
+30 TOPCIT  ESSENCE
+
+
+--- Page 32 ---
+Overview  of System Architecture )
+in a memory  unit, as proposed  by John von Neumann,  was developed  in 1949. While computers  were mostly used
+for military  purposes  in the past, the popularization  of computers  began in the 1980s when a PC, developed  by IBM,
+and the Windows  operating  system,  developed  by MS, were successful. In recent  years, mobile computers  installed  in
+smartphones  have become  popular  and opened  the era of handheld  computers.
+[Figure 10] ENIAC,  the First Electronic  Vacuum  Tube Computer
+M3 Overview  of System  Architecture  31
+
+
+--- Page 33 ---
+ESSENCE
+>> Recent  trends and issues
+In network  technology  have evolved  from data communication,  through existing  56kbps wired media, to
+wireless networks  and mobile  communication  of hundreds  of Mbps and even Gbps. Moreover,  the advent
+of various  connected  terminals  has led people to in an inseparable  relationship  with communication  in their
+daily lives, as well as in more diverse  business  areas. Accordingly,  software  used in a terminal  or system has
+a close relationship  with a network,  and it is based on mutual communication.  It is necessary  to understand
+and utilize the standard  protocols  used by networks  to design and develop  organic  and optimized  software,
+based on this network  concept.
+>> Learning  objectives
+1. To be able to explain  the concept  of the Internet  and the open protocol.
+2. To be able to explain how the OS manages  processes.
+3. To be able to explain the concept  of virtual memory  and management  techniques.
+4. To be able to explain  the storage  unit, file systems,  and input/output  (I/O).
+5. To be able to explain  the latest OS technologies  and trends.
+>> Keywords
+Protocol,  Internet,  IETF, 3GPP, 3GPP2, ITU-T, OSI reference  model, Application  layer, Presentation  layer,
+Session  layer, Transport  layer, Network  layer, Datalink  layer, Physical  layer, Internet  protocol  layer, Application
+layer, Internet  layer, Network  interface  layer, Internet  address  scheme,  MAC address,  IP address,  Port
+number,  IPv4 address,  IPv6 address,  Private  network,  NAT, CIDR, RFC
+32 TOPCIT  ESSENCE
+
+
+--- Page 34 ---
+Overview  of System Architecture )
++ Preview  for practical  business  How to understand  networks
+IpV4 Address:  14.32.172.167
+Subnet  Mask: 255.255.255.0
+Gateway:  14.32.172.254
+DHCP Server: 121.138.7.42
+Server 1: 168.126.63.1
+Server  2: 168.126.63.2Switching  Hub D
+my.server.com
+220.17.23.15
+192.168.11.0
+IPv4 Address:  192.168.11.5
+IPv4 Subnet  Mask: 25...

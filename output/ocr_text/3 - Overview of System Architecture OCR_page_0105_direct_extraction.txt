@@ -1,0 +1,36 @@
+ESSENCE
+in daily life. It is also used in mechanical  keyboards  that provide  functions,  such as various shortcut  keys and infinite
+key inputs. It is also in a TV or air conditioneras  well as in the remote  control that controls  the TV and air conditioner.
+Moreover,  it is in game consoles,  car trip computers,  and smart keys.
+While Intel and AMD are everything  when it comes to CPU for computers,  many companies  make MPUs. Many
+companies,  like Broadcom,  Mediatek,  Samsung  Electronics,  Apple, Nvidia, Qualcomm,  and Texas Instruments,  make
+MPUs used in electronic  devices.
+As shown in <Table 19>, various  CPU architectures,  from 8-bit to 64-bit, such as ARM, MIPS, ColdFire/68K,  PowerPC,
+x86, PIC microcontroller,  and 8051, are used for embedded  systems.  That is what differentiates  the embedded  system
+market  from the personal  computer  market.
+Moreover, one of the latest trends of embedded  systems  is the System on Chip (SoC) concept  that integrates  all
+ICs for a specific  field into a single CPU chip in order to eliminate  the need to mount separate  peripheral  chips on the
+board.
+{Table 19) Embedded  Processor  Types
+Processor Manufacturer Type
+8051 train Atmel, Cirrus, Intel, Tl, etc. 8051
+PowerPC  series Freescale MPC860,850,8260
+ARM series ARM ARM7, ARM9, ARM10,  ARM11,  and Cortex
+feeeleenee intel ook  a Xscale (PXA255),  and Bulverde
+Samsung  series Samsung  Korea $3C2410,  S3C2440,  etc.
+MIPS series MIPS MIPS32, MIPS63,  etc.
+B) Technical  trends  of embedded  hardware
+@ Expanded  connectivity
+Studies  of applying  connectivity  technologies,  such as WiFi, LTE, BLE, and ZigBee, used by mobile devices and
+servers/PCs,  to embedded  systems,  have increased  with the convergence  of the IT industry.  Traditional  industries  and
+interoperability  between  devices,  such as loT and M2M sensor  networks,  have also become  important.
+@ Low-power  32-bit processor
+Processors  for embedded  systems  were mostly converted  from 8 bits to 32 bits. As such, the number  of
+embedded  systems  using an OS has rapidly increased,  and the portion of general-purpose  OS, like Linux, has
+significantlyincreased.
+© Polarization  of lightweight/general-purpose  OS
+Embedded  operating  systems,  supporting  wearables  and loT devices, require lighter weight and lower power
+consumption,  while operating  systems  applied to conventional  embedded  devices  include middleware,  related to high
+functionality,  and stability  and convenience  functions  like 3D acceleration  GUI and multimedia.  As a result, technology
+polarization  is accelerating.
+104 TOPCIT  ESSENCE

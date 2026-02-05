@@ -1,0 +1,270 @@
+LEARNING GUIDE: Pages 133-137
+Generated: 2025-12-05 10:53:16
+PDF: 2 - Understanding and Using Data OCR
+
+================================================================================
+LEARNING GUIDE
+================================================================================
+
+Here is a simplified, easy-to-read learning guide based on the provided text (Pages 133-137), focusing on essential information for study.
+
+---
+
+## Database Management Learning Guide: Recovery & Backup
+
+### 1. Database Recovery Techniques
+
+Database recovery ensures data consistency and availability after failures.
+
+#### A) Types of Database Recovery Techniques
+
+| Technique          | Concept                                   | Characteristics                                                                | Recovery Process                                     | Speed  |
+| :----------------- | :---------------------------------------- | :----------------------------------------------------------------------------- | :--------------------------------------------------- | :----- |
+| **Log-based**      | Uses transaction log files.               | Checks all logs for Redo/Undo operations. Can be time-delayed.                 | May Redo transactions that don't need it. Uses Redo/Undo. | Slow   |
+| **Checkpoint**     | Uses log files *and* checkpoints.         | Faster than log-based. Creates consistent "checkpoint" states.                 | Uses Undo operations.                                | Faster |
+| **Shadow Paging**  | Uses shadow page tables (copies of pages). | Simple Undo, no Redo needed. Fast execution. Difficulty alone with multiple transactions. Overhead from copying tables. | Replaces current pages with shadow copies.           | Fastest|
+
+### 2. Distributed Database Recovery: 2-Phase Commit Protocol
+
+In a distributed database, a single transaction can span multiple databases (sites). Maintaining **atomicity** (all or nothing) is crucial.
+
+#### A) Distributed Transactions
+
+*   Accesses multiple databases, each potentially with different recovery methods.
+*   **Atomicity:** All participating databases must either complete the transaction together, or none of them should complete it.
+*   Prevents inconsistent states if one site commits and another aborts.
+*   **2-Phase Commit Protocol (2PC)** is widely used for this.
+
+#### B) 2-Phase Commit Protocol (2PC)
+
+A protocol to ensure atomicity in distributed transactions.
+
+*   **Coordinator (C):** Manages the transaction across participating databases (e.g., A, B).
+*   **How it Works:**
+    *   **Phase 1: Prepare**
+        1.  Coordinator (C) asks all participating databases (A, B) if they can *prepare* to commit the transaction.
+        2.  Each database replies with "ready" (can commit) or "not ready" (cannot commit/abort).
+    *   **Phase 2: Commit / Abort**
+        1.  **If all databases replied "ready":** Coordinator sends a "commit" signal to all.
+        2.  **If any database replied "not ready" (abort):** Coordinator sends an "abort" signal to all.
+*   **Outcome:** Either all complete the transaction or all cancel it, even if a failure occurs during the process.
+
+### 3. Database Backup
+
+#### A) Definition & Purpose
+
+*   **Definition:** The process of creating duplicate copies (all or part) of a database to recover from failures.
+*   **Common Frequency:** Daily, weekly, monthly using incremental, differential, or full backups.
+*   **Purposes:**
+    *   **Prevent Data Loss:** Enables recovery to a previous state.
+    *   **Secure Business Continuity:** Minimizes business disruption due to IT failures.
+
+#### B) Database Backup Requirements & Management
+
+*   **Key Requirements:**
+    *   **Business:**
+        *   **MTTR (Mean-Time-To-Recovery):** How quickly systems must be restored.
+        *   **MTBF (Mean-Time-Between-Failures):** How long systems can operate without failure.
+    *   **Operational:** 24x365 service operation, backup for test/verification environments.
+    *   **Technical:** Backup of OS images, database objects (logical), database configuration.
+    *   **Disaster Recovery:** Consider frequency based on transaction volume, potential impact of disasters (earthquake, flood, fire).
+
+*   **Backup Management Contents:**
+    *   **Backup Policy:** Defines backup cycle (daily, weekly, monthly), scope, strategies, technologies, equipment, and recovery time minimization.
+        *   *Example:* Daily archive logs, Weekly OS/user data, Monthly full DB/AP/CM backup.
+    *   **Backup Configuration:** Technical architecture (e.g., disk, tape, VTL, SAN, mirror configurations).
+    *   **Performing Backup & Managing History:** Execute backups, record results in logs, regularly analyze logs.
+    *   **Estimating Backup Capacity:** Backup data volume can be 2-6 times the original due to duplication. Plan storage (disks/tapes) accordingly.
+
+### 4. Types of Database Backup Methods
+
+#### A) By Service Interruption Status
+
+*   **Offline Backup:**
+    *   **Description:** Database is stopped during backup.
+    *   **Advantages:** Simple to perform.
+    *   **Disadvantages:** Database is unavailable (service interruption).
+*   **Online Backup:**
+    *   **Description:** Database remains operational during backup.
+    *   **Advantages:** No service disruption.
+    *   **Disadvantages:** Increased CPU/memory usage during backup.
+
+#### B) By Backup Range
+
+*   **Full Backup:**
+    *   **Description:** Copies the entire database.
+    *   **Advantages:** Easiest recovery (only one file needed).
+    *   **Disadvantages:** Takes a long time, high cost, large data volume.
+*   **Differential Backup:**
+    *   **Description:** Copies all changes made since the *last full backup*.
+    *   **Advantages:** Less data than full backup. Faster recovery than incremental (only latest full + latest differential needed).
+    *   **Disadvantages:** Requires a full backup. Backs up more data than incremental as changes accumulate.
+*   **Incremental Backup:**
+    *   **Description:** Copies only data changed or created since the *previous backup activity* (could be a full or another incremental backup).
+    *   **Advantages:** Least data backed up, least duplicate data.
+    *   **Disadvantages:** Requires a full backup. Recovery time increases significantly (latest full + *all* subsequent incremental backups needed). Recovery fails if any incremental file is missing.
+*   **Archive Log Backup:**
+    *   **Description:** Backs up log files that record transaction execution details.
+    *   **Advantages:** Allows recovery to a specific point in time (point-in-time recovery). Minimizes data loss by restoring right before a failure.
+    *   **Disadvantages:** Does not back up the actual database data; requires a separate data copy if the database itself is damaged.
+
+---
+
+### 5. Introduction to Analytics Systems (Upcoming Topics)
+
+Recent trends show a shift towards faster and more accurate decision-making using analytical systems.
+
+#### A) Overview of Trends
+
+*   **From Seller-centered to Buyer-centered:** Drives need for quick, accurate analysis of customer data.
+*   **Analytical Systems:** Support data collection, storage, processing, presentation, and utilization.
+*   **Evolution of Data Warehouses:** From area-specific to Enterprise Data Warehouses (EDW) and semi-real-time systems.
+*   **Big Data Integration:** Coexistence of Hadoop systems with existing analytical data warehouses.
+
+#### B) Key Concepts Introduced
+
+*   **Data Warehouse (DW):** Stores large amounts of corporate information accumulated over time.
+*   **OLAP (Online Analytical Processing):** Diversely analyzes and utilizes data from a user's perspective.
+*   **Data Mining:** Finds new business insights from data.
+
+#### C) Future Learning Objectives
+
+1.  Explain Data Warehouse (DW) concepts and characteristics.
+2.  Explain data warehouse modeling (e.g., star schema, snowflake).
+3.  Explain ETL (Extract, Transform, Load) / ETT.
+4.  Explain OLAP (Online Analytical Processing) concepts and search techniques.
+5.  Explain Data Mining concepts and algorithms (e.g., association analysis, sequential analysis, classification, clustering).
+
+#### D) Keywords
+
+*   Data warehouse (DW)
+*   Star schema
+*   Snowflake
+*   ETL
+*   ETT
+*   OLAP
+*   Search technique
+*   Data mining
+*   Association analysis
+*   Sequential analysis
+*   Classification
+*   Clustering
+
+---
+
+================================================================================
+ORIGINAL TEXT (First 5000 chars)
+================================================================================
+
+--- Page 133 ---
+ESSENCE
+02 Database  Troubleshooting  Method
+A) Database  recovery  technique
+Check point recovery  technique Siar (oo retell area -ceoN IVa eunla (C0 Log-based  recovery  technique
+Instant  update Delayed  update
+technique technique
+[Figure  46] Types of database  recovery  techniques
+<Table 55> Comparison  of database  recovery  techniques
+Item Concept Characteristics Recovery  process Recovery  speed
+Log-based
+techniqueRecovery  using log
+files.Checks  all logs to determine
+Redo and Undo.
+Time delay.
+Redo of the transaction  that
+does not need RedoUses Redo and
+Undo.Slow
+Checkpoint
+recovery
+techniqueRecovery  using log
+files and checkpoints.Relatively  faster recovery  speed
+than log-based  recovery.Uses Undo. Faster  than logs
+Shadow  paging
+technique
+B) Recovering  from a distributed  database  2-phase  commit  protocolRecovery  using
+shadow  page tables.
+© Transaction  of the distributed  databaseSimple Undo and no need for
+Redo.
+Fast execution  speed and
+simple.
+Difficulty in using it alone
+when several transactions  are
+executed  at the same time.
+Used along with log-based  or
+checkpoint  techniques.
+Overhead  occurs  while copying
+and recording  shadow  page
+tables.Replaces  shadow
+tables.Faster  recovery
+from copies and
+backups
++ This transaction  accesses  more than two databases,  and each DBMS can use different  recovery  techniques  and
+transaction  managers.
++ The atomicity  of transactions  is an important  issue when building  multiple  database  systems.
++ If a certain transaction  is executed  across two sites and the transaction  is not professionally  designed,  an
+inconsistent  state can be caused when one site completes  the transaction  while the other site cancels the
+transaction.
++ The 2-phase  commit  protocol  should be used to maintain  the atomicity  of multiple  database  transactions.
+132 TOPCIT  ESSENCE
+
+
+--- Page 134 ---
+Database )
+~ Either all participating  databases  should complete  the transaction,  or none of them should complete  it.
+~ Even though  a failure  occurs in any participating  database,  recovery  to the transaction  completion  state or
+cancellation  state is possible.
+@ 2-Phase  commit  protocol
+This is the transaction  completion  protocol  that is most widely used to maintain  the atomicity  of transactions  in a
+distributed  database.
+<Table 56> Execution  of the 2-phase  commit  protocol
+Phase 1 Phase  2
+Commit? Commit
+C —COTCOT-. Cc rd
+Yes
+Coordinator CoordinatorCommit
++ Step 1: When  a transaction  is started  by transaction  coordinator  C, coordinator  C sends a message  asking  whether
+the transaction  can be completed  to databases  A and B, and database  A and B reply  with the “ready” status.
++ Step 2: If all participating  databases  are “ready’, the coordinator  sends a “completion  (commit)’  signal. If one or more
+participating  databases  signals a “not ready (abort)’  signal, the coordinator  sends  a “cancellation  (abort)’  signal.
+03 Database  Backup
+A) Database  backup  overview
+@ Definition  of database  backup
++ The task of storing  all or a part of a database  in duplicate  in order to recover  the database  in the event of a failure.
++ In general,  the database  is backed  up every day, week, or month in units of incremental,  differential,  or full.
+@ Purposes  of backup
++ Prevent  data loss: Recovers  a database  using duplicated  data in the event of a failure.
++ Secure  business  continuity:  Minimizes  business  disruption  caused by IT failure while processing  business.
+B) Database  backup  requirements  and main tasks
+@ Database  backup requirements
+M2 Database 133
+
+
+--- Page 135 ---
+ESSENCE
+<Table 57> Requirements  by item
+Item
+Business  requirements+ Mean-Time-To-Recovery  (MTTR)
++ Mean-Time-Between-Failures  (MTBF)Requirement
+Operational  requirements+ Service  operation  requirements  (e.g, 24x365).
++ Backup  requirements  at the test and verification  level.
+Technical  requirements+ Physical  copy of the OS image.
++ Logical  copy of database  objects.
++ Database  configuration  backup.
+of transactions  that occur.+ Considers  how frequently  the database  should be backed  up depending  on the number
+Matters  related to disaster
+recovery
+@ Contents  of database  backup  management
+<Table 58> Contents  of backup  management
+Item Contents+ Analyzes  how much a business  is affected  by a disaster.
++ When computer  equipment  is completely  lost due to earthquake,  flood, fire, etc.
+Example
+Backup  policy+ The backup policy describes  the backup  cycle
+(daily, weekly,  or monthly)  and scope of backup (e.g.
+considers  scattering  to the outside).
++ The policy mentions  concrete  backup  strategies,
+technologies,  and equipment.
++ The policy describes  the backup  strategy  forDaily: Database  archive  information
+Weekly:  OS/user  data backup
+Full backup: DB/AP/CM  full backup
+minimizing  recovery  time.
+Back + A technical  backup  architecture  that can provide Technologies  apply to disk, tape, VTIaD...

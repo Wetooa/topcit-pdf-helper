@@ -1,0 +1,218 @@
+LEARNING GUIDE: Pages 97-101
+Generated: 2025-12-07 01:02:24
+PDF: 3 - Overview of System Architecture OCR
+
+================================================================================
+LEARNING GUIDE
+================================================================================
+
+Here's a simplified, easy-to-read learning guide based on the provided text:
+
+---
+
+# Learning Guide: Data Compression & Embedded Systems
+
+## 1. Data Compression Fundamentals
+
+Data compression is essential for efficient storage and transmission. This section covers video and audio data compression techniques and common standards.
+
+### 1.1 Video Data Compression
+
+Video files, being composed of many images (frames), require high transmission rates. Compression reduces this need.
+
+*   **Spatial Compression:**
+    *   Compresses each video frame independently, much like compressing a single image (e.g., JPEG for still images).
+*   **Temporal Compression:**
+    *   Removes redundant data between consecutive frames.
+    *   Frames are categorized:
+        *   **I-frames (Independent frames):** Complete, stand-alone images.
+        *   **P-frames (Predictive frames):** Store only changes from a previous I-frame or P-frame.
+        *   **B-frames (Bi-directional frames):** Store changes from both preceding and following I-frames or P-frames, offering higher compression.
+
+### 1.2 Audio Data Digitization
+
+Analog audio signals are converted into digital data using an **Analog-to-Digital Converter (ADC)**. This involves two main processes:
+
+*   **Sampling:** Measuring the analog signal's amplitude at regular intervals.
+*   **Quantization:** Assigning a discrete numerical value to each sampled amplitude.
+
+### 1.3 Video Compression Standards (MPEG)
+
+The **Moving Picture Experts Group (MPEG)** is an international organization that sets standards for video and audio compression.
+
+| Standard Type  | Key Features                                   | Common Applications                  |
+| :------------- | :--------------------------------------------- | :----------------------------------- |
+| **MPEG-1**     | Audio and video compression/decompression      | MP3, Video CD                        |
+| **MPEG-2**     | Compression/decompression for DTV broadcasting | Digital TV (DTV), DVD                |
+| **MPEG-4**     | Mobile phone video compression                 | IMT2000, Internet broadcasting       |
+| **AVC/H.264**  | Twice the compression rate of MPEG-2           | HDTV, mobile phone video             |
+| **MPEG-V**     | VR media presentation and control              | 4D movies, Virtual Reality (VR)      |
+| **MPEG-DASH**  | Internet-based video streaming                 | Internet image streaming             |
+| **HEVC/H.265** | Twice the compression rate of AVC              | UHDTV, Smart TV                      |
+| **3D Audio**   | Adds dimensions to existing surround audio     | UHDTV, Smart TV (part of newer MPEG) |
+
+### 1.4 Advanced Video Codecs
+
+*   **AVC (Advanced Video Coding) / H.264:**
+    *   A video compression technology developed jointly by ITU-T (named H.264) and ISO (named MPEG4 Part 10/AVC).
+*   **HEVC (High Efficiency Video Coding) / H.265:**
+    *   The successor to AVC, offering significantly higher compression efficiency.
+
+## 2. Introduction to Embedded Systems
+
+An embedded system is a specialized computer system designed to perform a dedicated function within a larger mechanical or electronic system.
+
+### 2.1 Definition of an Embedded System
+
+*   A **computer system** built into a product to perform a **specific function** for controlling a machine or other systems.
+*   Contains a **microprocessor** and a program tailored for that function.
+*   More than just simple circuits; it's a dedicated computing unit.
+
+### 2.2 Why Embedded Systems are Important
+
+*   **Market Growth:** The market for embedded systems is growing explosively, driven by the **Internet of Things (IoT)**. It's predicted to reach $2.587 trillion by 2023.
+*   **Key Growth Areas:** Demand is rapidly increasing in **automotive (connected cars)** and **medical fields**.
+*   **Ubiquitous Applications:** Embedded systems are integral to almost every industry, from home appliances and smartphones to industrial control and aerospace.
+
+### 2.3 Security Concerns in Embedded Systems
+
+*   **Major Challenge:** Linking various embedded systems introduces security vulnerabilities.
+*   **Critical Impact:** Security breaches in medical equipment and automobiles can have severe consequences for public safety.
+*   **Necessity:** Protecting embedded systems from unauthorized software, theft, and privacy breaches is crucial, requiring continuous development of security measures.
+
+### 2.4 Embedded System Configuration
+
+An embedded system consists of both hardware and software components.
+
+#### Embedded Hardware
+
+The physical components that make up the system:
+
+*   **Microprocessor/Microcontroller:** The "brain" (equivalent to a CPU).
+*   **Memory:** For storing programs and data.
+*   **Input/Output (I/O) Devices:** For interacting with the external world.
+*   **Network Device:** For communication.
+*   **Sensors:** To gather data from the environment.
+*   **Drivers:** To control other devices.
+
+#### Embedded Software
+
+The programs that run on the hardware:
+
+*   **Operating System (OS):** Directly controls hardware and manages software (e.g., **RTOS**, **Embedded Linux**, **Windows CE**).
+*   **System Software:** Programs that manage and maintain the computer and its resources.
+*   **Application Software:** Programs that perform the specific tasks the embedded system is designed for.
+*   **Key Characteristic:** Designed to respond appropriately to the physical world, often considering factors like time, energy, and permanence.
+
+### 2.5 Examples of Embedded Systems
+
+Embedded systems are used in a vast range of devices:
+
+*   **Offices:** Telephones, fax machines, copiers, scanners.
+*   **Games:** Arcade and console game machines.
+*   **Industry/Control:** Automation systems, industrial accident diagnosis, fire systems.
+*   **Vehicles/Transportation:** Engine controls, navigators, Intelligent Transportation Systems (ITS), subway electrical controls.
+*   **Logistics/Finance:** Point-of-Sale (POS) systems, ATMs, card readers.
+*   **Medicine:** Diabetes meters, ECG meters, MRI systems.
+*   **Wearable:** Smartwatches, health bands.
+*   **Digital Advertising:** Signage systems, Digital Information Displays (DID).
+*   **Aviation/Shipbuilding:** Control systems, signal systems.
+*   **Robots/Drones:** Industrial robots, educational robots, filming drones.
+
+### 2.6 Characteristics of Embedded Systems
+
+Embedded systems are designed with specific goals in mind, leading to distinct characteristics:
+
+*   **Optimized for Specific Tasks:** Designed to perform a dedicated function, allowing for highly tailored and efficient designs.
+*   **Low Cost:** Many embedded systems are mass-produced, so minimizing production costs is crucial. This often involves using slower processors and smaller memory sizes if high raw performance isn't required for the task.
+*   **Resource-Efficient Design:** Performance is often optimized for the specific mission, rather than aiming for general-purpose high performance. This means components are selected to meet the task requirements while keeping cost, power consumption, and size down.
+*   **High Reliability:** Essential for critical applications (e.g., medical, automotive) where failure can have serious consequences.
+*   **Small Form Factor:** Often designed to be compact to fit within the device they control.
+*   **Low Power Consumption:** Critical for battery-powered or energy-constrained devices.
+
+---
+
+================================================================================
+ORIGINAL TEXT (First 5000 chars)
+================================================================================
+
+--- Page 97 ---
+ESSENCE
+(oes) _> 1010101010Transformer Quantizer© (Lossless) (Lossy)
+. Inverse 1010101010 —> | > ~) —_> transformer
+[Figure 70] Image Data Transformation  Process
+Video data is composed  of several  frames.  Since each frame is an image, a video file requires  a high transmission  rate.
+Video data can be compressed  with a spatial compression  or a temporal  compression  method.  JPEG performs  spatial
+compression  of each frame, and each frame is compressed  independently.  Temporal  compression  removes  redundant
+frames and configures each frame into I-frames,  which are independent  frames, B-frames,  and P-frames,  which
+reference  other I-frames  to compress  data temporally.
+Analog  audio signals  are digitized  using an analog-to-digital  converter  (ADC), and the ADC consists  of two processes:
+sampling  and quantization.
+@ Video compression  standard
+The Moving Picture Experts  Group (MPEG) is an international  standardization  organization.  The official name of the
+standard  is ISO/IEC  JTC1/SC29/WG11.  MPEG created  the following  compression  formats  and additional  standards.
+<Table 16> Compression  Format  and Additional  Standard
+Type Key Features Application
+MPEG-1 + Audio and video compression  and decompression + MP3 and video CD
+MPEG-2 + Compression  and decompression  for DTV + Digital TV and DVD
+broadcasting
+MPEG-4 + Mobile phone video compression  and decompression + IMT2000  and Internet  broadcasting
+AVC/H.264 + Twice the compression  rate, compared  to MPEG-2 + HDTV and mobile phone video
+MPEG-V + VR media presentation  and control + 4D movies and VR
+MPEG-DASH + Internet-based  video streaming + Internet  image streaming
++ Next-generation  media  transfer  standard  t |wr | nega nee arse seme eres | uot antsna
+HEVC/H.265 + Twice the compression  rate, compared  to AVC + UHDTV  and smart TV
+3D Audio + Added dimensions  to existing  surround  audio + UHDTV  and smart TV
+@ Advanced  video coding (AVC) and high efficiency  video coding (HVEC)
+96 TOPCIT  ESSENCE
+
+
+--- Page 98 ---
+Overview  of System Architecture )
+AVC codec is a video compression  technology  jointly proposed  by the international  standard  organizations  ITU-T
+and ISO. It uses the name H.264, proposed  by ITU-T, or MPEG4  Part10/AVC,  proposed  by ISO. The standard  name for
+HEVC is ISO/IEC  23008-2  by ISO/IEC
+M3 Overview  of System  Architecture  97
+
+
+--- Page 99 ---
+ESSENCE
+>> Recent  trends  and issues
+With the advent of the loT (Internet  of Things), represented  by technological  innovation  in various
+industries,  the embedded  system market  is expected
+the automobile  (or connected  car) and medical  fields.to grow explosively,  due to the increased  demand  in
+A market research  firm predicts  that the global embedded  systems  market will grow by 5.6% per year,
+reaching  $2,587 billion by 2023. The reason for this gi
+the automotive  and medical  fields is expected  to increrowth is that the demand  for embedded  systems  in
+ase rapidly, thanks  to the recently  emerged  loT.
+Embedded  systems  are widely utilized in information  home appliances,  information  terminals,
+communication  equipment,  aviation/military,  logistics/ inance, vehicle/transportation,  office work, industrial/
+control, medical  care, games,  and robots. In other words, embedded  systems  have become  an integral  part
+of any industry.  Among  various applications,  the auto
+the growth  of the embedded  system  market  in the fu
+However,  solving security  problems  that may arisemotive and medical industries  are expected  to drive
+ture.
+from linking various embedded  systems,  through
+technological  innovation,  has emerged  as a challenge.  Embedded  systems  mostly  operate  home appliances,
+transportation,  aviation,  machinery,  medical  equipmen
+all equipment,  machines,  and vehicles  are being connt, automobiles,  and communication  devices.  Recently,
+ected to an OS, a webserver,  a remote control, and
+smart devices.  Among these, medical equipment  and automobiles  are very important  because  their
+security  vulnerabilities  can have a great impact  on pubic safety.
+It is essential  to protect  embedded  systems  from unauthorized  software  and other vulnerabilities,  such as
+theft and privacy  protection.  Accordingly,  continuous
+theft and data hackers  and to solve them.
+>> Learning  objectivesefforts are being made to protect  the systems  from
+1, To be able to explain  system  structure  and characteristics,
+2. To be able to explain embedded  OS.
+98 TOPCIT  ESSENCE
+
+
+--- Page 100 ---
+Overview  of System Architecture )
+> Keywords
+Embedded  hardware,  Microprocessor,  Microcontroller,  Low power, Lightweight,  Small form factor, RTOS,
+Embedded  Linux Windows  CE
++ Preview  for practical  business
+Company  A specializes  in developing  embedded  systems  that control industrial  equipment  and home
+appliances.  Since embedded  systems  are applicable  to a wide range of devices,  such as sensors,  cont...

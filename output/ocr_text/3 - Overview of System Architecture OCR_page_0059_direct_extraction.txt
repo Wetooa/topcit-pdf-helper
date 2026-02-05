@@ -1,0 +1,12 @@
+ESSENCE
++ Indexed  allocation
+The linked allocation  cannot support  direct access and is difficult  to manage  the loss, since the block pointer
+addresses  are scattered  throughout  the disk. The indexed allocation  solves the problem by managing  all
+pointer  data of a file in an index block, as shown in [Figure 29]. The indexed allocation  does not create external
+fragmentation  and supports  the direct addresses.  However,  the waste of storage  space is larger than the linked
+allocation  method.
+58 TOPCIT  ESSENCEDirectory
+[Figure 28] Linked Allocation
+Directory
+File Index Block
+jeep 19

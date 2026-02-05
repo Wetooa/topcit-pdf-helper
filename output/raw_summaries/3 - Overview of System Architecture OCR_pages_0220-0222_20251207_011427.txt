@@ -1,0 +1,166 @@
+LEARNING GUIDE: Pages 220-222
+Generated: 2025-12-07 01:14:27
+PDF: 3 - Overview of System Architecture OCR
+
+================================================================================
+LEARNING GUIDE
+================================================================================
+
+Here is a simplified, easy-to-read learning guide based on the provided text:
+
+---
+
+## Learning Guide: Network Function Virtualization (NFV) & Its Relationship with SDN
+
+### 1. Introduction to NFV
+
+#### 1.1. Background: Why NFV?
+Internet Service Providers (ISPs) faced challenges with traditional network equipment:
+*   **Space & Power:** Rapidly increasing equipment requires more physical space and power.
+*   **Lifespan & Profit:** Equipment lifespans are short, making it hard to profit from new introductions.
+NFV was created to solve these issues using **virtualization technology**.
+
+#### 1.2. What is NFV?
+*   NFV runs on a **high-performance x86 platform** (standard computer processor architecture).
+*   It allows users to activate necessary network functions **on-demand**.
+*   It creates **Virtual Machines (VMs)** or service profiles to virtualize network functions using x86 capabilities.
+
+### 2. NFV Architecture Framework
+
+The NFV architecture consists of three main function groups:
+
+1.  **VNF Group (Virtual Network Functions)**
+    *   Software implementations of network functions (e.g., router, firewall).
+    *   A set of network features to support multiple applications.
+
+2.  **NFVI (NFV Infrastructure)**
+    *   Provides physical hardware resources: computing, storage, and networking.
+    *   Includes functions to support virtualization and VNF execution.
+
+3.  **Management & Orchestration (MANO)**
+    *   Manages hardware and software resources.
+    *   Handles delivery and management of VNFs.
+
+### 3. NFV Application Cases
+
+*   NFV implements network equipment functions using virtualization.
+*   It operates on **general high-performance x86 server platforms** instead of specialized hardware.
+*   **Example:** A firewall function can run on common servers and switches, virtualized as a VNF.
+
+### 4. SDN and NFV: A Complementary Relationship
+
+*   **Origins:**
+    *   **SDN (Software-Defined Networking):** Started with researchers and data center designers.
+    *   **NFV:** Developed by Internet Service Providers (ISPs).
+*   **Current Trend:** ISPs now combine both technologies due to their complementary nature.
+*   **Benefits:**
+    *   **SDN:** Creates an abstracted network, enabling **faster innovation and changes**.
+    *   **NFV:** Reduces **CAPEX (Capital Expenditures)**, **OPEX (Operating Expenditures)**, and resource consumption (space, power).
+*   **Independence:** While complementary, NFV and SDN can also be configured and used independently.
+
+### 5. Comparison: SDN vs. NFV
+
+| Classification       | SDN                                                                      | NFV                                                                                                |
+| :------------------- | :----------------------------------------------------------------------- | :------------------------------------------------------------------------------------------------- |
+| **Technology Objective** | Software implementation of network functions by separating control and data planes, centralizing network control. | Virtualization of existing dedicated network devices using VMs and high-performance x86 server platforms. |
+| **Target Audience**  | Initially Campuses, data centers, cloud services; now also telecommunication carriers. | Primarily network devices of telecommunication carriers from the beginning.                          |
+| **Target Equipment** | Network equipment like routers and switches (middle to large scale).     | Network equipment like routers and switches (middle to large scale).                               |
+| **Implemented Functions** | Router, firewall, gateway, CDN, WAN accelerator.                         | Cloud orchestration, networking SLA compensation.                                                  |
+| **Protocol**         | OpenFlow-centered.                                                       | None (not protocol-specific).                                                                      |
+| **Leading Org.**     | ONF (Open Networking Foundation).                                        | ETSI NFV Working Group.                                                                            |
+
+---
+
+================================================================================
+ORIGINAL TEXT (First 5000 chars)
+================================================================================
+
+--- Page 220 ---
+Overview  of System Architecture )
+@ Background  of NFV
+With the increase  in network speed and the emergence  of various services,  securing  space and power to
+accommodate  the rapidly increasing  network  equipment  has become  a crucial issue for Internet  service providers.
+Moreover,  the lifespan of network  equipment  is shortened,  making  it increasingly  difficult  to secure profits after
+introducing  new equipment.  NFV was introduced  to solve these problems  through  virtualization  technology.
+@ Concept  of NFV
+NFV runs on a high-performance  x86 platform  and allows users to activate  the necessary  network  functions  as
+needed.  It creates  a VM (Virtual Machine)  or service profile and implements  virtualization  on the network  by utilizing
+the x86 capabilities,
+@® NFV architecture  framework  structure
+As shown in <Table 76>, the NFV architecture  framework  consists of  three function  groups: VNF group, NFV
+infrastructure,  and management  and orchestration.
+NFV Managam  ent and Orchestration
+NFV
+Orchestrator
+Or-Vnim
+VNF
+Manager(s)
+Virtual Virtual
+Computing Storage Network
+( VirtualisatisationLayer ) Virtualisedaaa = Infrastructure
+> Manager(s)
+Hardwareresources
+Computing Storage Network
+Hardware Hardware Hardware
+e@—e Execution  reference  points ----{---- Other reference  points —— Main NFV reference  points
+[Figure 153] NFV Architecture  Framework  (Five VNF Interface  Types) [7]
+(Table 76) NFV Architecture  Framework  Configuration
+Type Description
++ Virtual network  functions
++ Network  feature  set software  to support  multiple  application  programs
++ NFV infrastructure
+NFVI + Provides  physical hardware  resources  to support  computing,  storage,  and network  functions  as well as
+functions  to support  virtualization  and VNF executionVNFs
+Management  &ORenCaTion + Provides  hardware  and software  resource  management,  delivery,  and VFN management  functions
+M3 Overview  of System  Architecture  219
+
+
+--- Page 221 ---
+ESSENCE
+@ NFV application  cases
+NFV uses virtualization  to implement  network  equipment  functions.  It not only operates  on specialized  equipment,
+but also implements  the network  equipment  functions  in a general high-performance  x86 server platform,  as shown
+in [Figure 154].
+Functions Firewall
+Common  Hardware
+(Servers  & Switches)
+[Figure 154] NFV Implementation
+D) SDN and NFV
+Initially, SDN was developed  mainly by researchers  and data center designers,  and NFV was developed  by Internet
+service providers  (ISPs). However,  SDN and NFV technologies  are complementary  to each other, and ISPs currently
+combine  the two technologies  and apply them to networks.
+@ Relationship  between  NFV SDN
+Creates
+ae Creates  network
+innovative (ojo—ia) abstractions  to
+applications HaTaey7=(eln} enable  faster
+by third innovation
+parties
+Network
+Functions
+AV (iu Wri  (0)a)Reduces  CAPEX,  OPEX, Space & Power
+Consumption
+[Figure 155] Relationship  between  NFV SDN [8]
+SDN enables  faster change by creating  an abstracted  network,  and NFV reduces  capital expenditures  (CAPEX),
+operating  expenditures  (OPEX), and space and resource  consumption.  NFV and SDN have a complementary
+relationship  and can be independently  configured.
+220 TOPCIT  ESSENCE
+
+
+--- Page 222 ---
+Overview  of System Architecture )
+@ Comparison  of NFV and SDN
+Classification SDN NFV
+Technolo Software  implementation  of network  functions, Implementation  of existing  dedicated  network  devices,
+obje  Pree through a separation  of control and data and using the VM and high-performance  x86 server
+centralization  of network  control platform
+Target Although the technology  began at Campuses,  data . The technology  targeted network devices ofconten centers,  and cloud services,  telecommunication  carriers communication  operators  from the beginnin
+have recently  used it. INNING,
+Target Network  equipment,  such as middle to large routers Network  equipment,  such as middle to large routers
+equipment  | and switches and switches
+Implemented ; . Router, firewall, gateway,  CDN, WAN accelerator,  and a Cloud orchestration  and networking SLA compensation
+Protocol OpenFlow  centered None
+Leading .organization ONF ETSI NFV Working  Group
+M3 Overview  of System  Architecture  221
+
+

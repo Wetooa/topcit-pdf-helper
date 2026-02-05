@@ -1,0 +1,197 @@
+LEARNING GUIDE: Pages 100-104
+Generated: 2025-12-05 14:27:00
+PDF: 1 - Software Development OCR
+
+================================================================================
+LEARNING GUIDE
+================================================================================
+
+Here is a simplified, easy-to-read learning guide based on the provided text, focusing on essential information for studying.
+
+---
+
+# Software Development & Testing: A Learning Guide
+
+## Part 1: Software Development Basics
+
+### 1. Continuous Integration (CI)
+**Definition:** CI is a software development practice where developers frequently merge their code changes into a central repository, after which automated builds and tests are run.
+
+**Components of CI:**
+*   **SCM (Source Control Management):** Manages source code versions (e.g., Git).
+*   **Artifacts:** The outputs of a build process (e.g., executable files, libraries).
+*   **Configuration Repository:** Stores configuration files.
+*   **Deployment:** The process of making software available for use.
+
+**CI Server:**
+*   **Purpose:** Required to perform Continuous Integration.
+*   **Functions:** Conducts daily builds.
+*   **Requirements:**
+    *   At least one accessible source code repository.
+    *   Build script sets and build procedures.
+    *   A test suite for built artifacts.
+
+### 2. Software Build
+**Definition:** The process of converting source code files into independent, executable software artifacts.
+
+**Benefits of a Software Build (especially daily builds):**
+*   Reduces integration risks.
+*   Prevents quality deterioration.
+*   Monitors initial fault analysis progress.
+*   Boosts developer morale.
+
+### 3. Daily Build & Operation Test
+**Definition:** The process of comprehensively compiling software daily and running tests to verify basic operation.
+
+**Benefits:**
+*   Increases project efficiency.
+*   Improves customer satisfaction.
+*   Reduces risks like:
+    *   Software integration failure.
+    *   Poor quality.
+    *   Low project visibility.
+*   Saves time.
+
+**Applicability:** Can be used for all project sizes (large, small, off-the-shelf, business systems).
+
+### 4. Software Deployment
+**Definition:** Any activity involved in creating a software system to be used. The exact procedures vary by system and customer requirements.
+
+**Common Deployment Activities:**
+*   Release
+*   Installation & Activation
+*   Deactivation
+*   Uninstallation
+*   Update (including built-in updates)
+*   Version Tracking
+*   Retirement
+
+---
+
+## Part 2: Introduction to Software Testing
+
+### 1. Recent Trends & Importance
+*   **Increased Investment:** Time, money, and effort spent on software testing are steadily rising.
+*   **Specialized Teams:** IT companies recognize testing's importance by forming dedicated QA (Quality Assurance) teams or departments.
+
+### 2. Why Testing Fails: Common Challenges in Enterprises
+Despite its importance, software testing often faces issues:
+*   **High Cost vs. Low Focus:** Testing can account for 40-60%+ of total development cost, but developers often prioritize fixed tasks, showing little interest beyond unit testing.
+*   **Resource Constraints:** Development often runs with insufficient personnel, resources, and shorter-than-actual schedules, leaving little room for testing investment.
+*   **Lack of Tester Knowledge:** Testers sometimes lack deep knowledge of testing principles and techniques.
+*   **Managerial Misunderstanding:** Decision-makers/managers may not fully recognize testing's importance, sometimes halting efforts.
+*   **Organizational Issues:** Irrational contracts, frequent requirement changes, unreasonable customer demands, limited organizational support, impractical procedures, and excessive reporting hinder effective testing.
+*   **Increased Workload:** Service operation and development teams internally handle testing; limited staff, more channels, increasing workloads, and shortened test periods lead to incomplete services and higher maintenance costs.
+*   **Perception as Expense:** Companies often view testing as an unnecessary additional expense rather than a vital investment.
+
+### 3. The Shifting Landscape: Modern Demands
+*   **Software's Expansion:** Software is moving beyond traditional domains into IoT, big data, mobile, and cloud (home appliances, medical devices, etc.).
+*   **Increased Emphasis:** Enterprises now place greater importance on improving development/operation efficiency and software quality.
+*   **Rising Expectations:** Users' expectations are higher, demanding systematic software testing.
+*   **Consequences:** This leads to increased investment, recruitment of professional staff, use of automated tools, and establishment of robust testing processes.
+
+---
+
+## Part 3: Understanding Software Testing
+
+### 1. Concept of Testing
+**Definition:** A method to check or confirm that an application or system's operation, performance, and stability satisfy user/customer demands by identifying defects or faults.
+
+### 2. General Principles of Testing
+These principles guide effective software testing:
+
+1.  **Testing shows the presence of defects:** Testing helps find defects, but it's almost impossible to prove the *absence* of all defects.
+2.  **Exhaustive testing is not possible:** Even simple programs cannot be tested for all possible cases due to the sheer number of combinations.
+3.  **Testing should start early in development:** Early testing (shifting left) reduces the development period, prevents defects, and lowers costs.
+4.  **Pesticide Paradox:** Repeatedly using the same tests will eventually stop finding *new* defects, just as insects become resistant to pesticides. Test cases must be regularly reviewed and updated.
+5.  **Testing is context-dependent:** The approach, methodology, and severity of testing vary significantly based on the software's field or purpose (e.g., medical device software vs. a simple mobile app).
+6.  **Absence of error - fallacy:** Finding and fixing many defects is useless if the "system build" doesn't meet the user's actual needs or is unusable. The right problems must be solved.
+
+### 3. The Testing Process
+*   Testing requires a coordinated and managed process.
+*   This process comprises various components and main activities (e.g., planning, design, execution, reporting).
+
+================================================================================
+ORIGINAL TEXT (First 5000 chars)
+================================================================================
+
+--- Page 100 ---
+Software  Development
+© Composition  of Cl (Continuous  Integration)
+Project Deliverable
+Configuration RepositoryDeployment
+alre(cia
+SCM
+Artifacts
+Project
+Source  Control enenes
+Repository
+Sonnet
+Continuous  Integration  Server
+A Cl server is required  to perform Cl (Continuous  Integration)  that can conduct  daily build, which requires at
+least one accessible  source code repository,  as well as build script sets and build procedures,  and a test suite
+for built artifacts.
+C) Software  build
+“Software  build’ refers to the process  of converting  source code files into independent  software  artifacts  that
+can be executed  on a computer, or the results thereof. As one of the software  quality assurance  activities,
+a daily build reduces integration  risks, prevents quality deterioration,  monitors  the progress  of initial fault
+analysis, and boosts  the morale of developers.
+D) Daily build and operation  test
++ The process  of comprehensively  compiling  software  products  again every day and running  a series of tests to
+verify basic operation.
++ Daily build can simultaneously  increase  a project's  efficiency  and improve  customer  satisfaction,  primarily  by
+reducing  such risks as software  integration  failure, poor quality, and low project  visibility,  and by saving time.
+* The daily build and operation  test can be utilized for all projects,  including  large-size  projects,  small-size
+projects,  off-the-shelf  software,  and business  systems.
+E) Software  deployment
+“Software  deployment’  refers to any act of creating  a software  system to be used, where the deployment
+process  is composed  of interactions  together  with possible  transitions  between  them. These activities  can
+take place either from the developers’  point of view or the consumers’  point of view. It is difficult  to define with
+any exactitude  the deployment  procedures  for each activity  because  deployment  is unique to every software
+system. Therefore,  “deployment”  should be understood  as a general procedure  that can be defined by the
+specific requirements  or characteristics  of the customer  or user. Software  deployment  activities  include release,
+installation  and activation,  deactivation,  uninstallation,  update,  built-in update,  version  tracking, and retirement.
+M1 Software  development  99
+
+
+--- Page 101 ---
+ESSENCE
+bs
+>> Recent  trends and major issues
+Recently,  the amount  of time, money and effort expended  on software  testing when developing
+software  has been rising steadily.  IT companies  also recognize  its importance  to such an extent  as to
+form a QA (Quality  Assurance)  team or department  specializing  in software  testing.
+>> Learning  objectives
+1. To be able to explain the concept  of testing  and compare  test case design methods.
+2. To be able to describe  test levels (types)  and purposes.
+3. To be able to explain  the concepts  of software  refactoring  and major refactoring  activities.
+>> Keywords
+- Testing  process,  testing  type
+- Specification-based  technique,  structure-based  technique,  experience-based  technique
+- White box testing,  black box testing
+- Software  code smell and refactoring
+100 TOPCIT  ESSENCE
+
+
+--- Page 102 ---
+Software  Development }
++ Preview  for practical  business The necessity  of software  testing  and
+the reality of enterprises
+In March 2005, bus companies  lost KRW 500 million won per day in free rides caused by faults or
+failures  of T-Money  bus terminal  software.
+In October  2007, Toyota Motors  paid with an operator  USD 1.6 billion in compensation  due to the
+sudden  unintended  acceleration  of the “Camry”  model’s  ECM firmware  fault.
+In August 2009, the launch of “Naro”, Korea’s  first space launch vehicle,  was delayed  due to a
+software  fault in the automatic  launch device software  related  to pressure  measurement.
+The abovementioned  incidents  are widely publicized  cases of software  faults. Software is ubiquitous
+and directly related to the existence  of companies  and the daily life of countless  individuals.  The
+most obvious  question  that springs to mind is why such faults even occur when software  is so
+important.  Everyone  thinks they know software  testing well. However,  when software  testing is
+actually  performed,  it is not performed  as well as expected due to various problems.  Currently,
+enterprises  are facing many problems  due to the irrationality  of the contract  itself, frequent  changes
+to the requirements  and the unreasonable  demands  of customers,  the limitations  of support at
+the organizational  level, impractical  procedures  and paperwork,  numerous  cases of reporting  and
+meetings,  and reports on such reporting  and meetings.  More specifically,  enterprises  have difficulty  in
+running  software  testing  due to the following  reasons.
++ It is a well-known  fact that anywhere  from 40% to 60% or more of the total development  cost is
+spent on software  testing, ...

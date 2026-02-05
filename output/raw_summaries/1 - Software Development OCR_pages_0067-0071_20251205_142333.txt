@@ -1,0 +1,214 @@
+LEARNING GUIDE: Pages 67-71
+Generated: 2025-12-05 14:23:33
+PDF: 1 - Software Development OCR
+
+================================================================================
+LEARNING GUIDE
+================================================================================
+
+Here is a simplified, easy-to-read learning guide based on the provided text:
+
+---
+
+# Software Architecture & Development: Learning Guide
+
+## I. Software Architecture Design Principles & Methods
+
+### D) Hierarchy
+A system structured in layers, each providing a specific service.
+*   **Advantages:**
+    *   Easier problem-solving (check specific layers).
+    *   Compatibility with other standardized equipment.
+*   **Example:** OSI (Open System Interconnection) model with its seven layers.
+
+### 03. Methods of Expressing Software Architecture Design
+
+#### A) Context Model
+*   **Purpose:** Defines the boundary between the system and its external environment.
+*   **Represents:** The system as a single large process before division.
+*   **Focus:** Input/Output (I/O) data exchanged between the system and the external environment.
+*   **Key Idea:** Prioritizes understanding user-system data exchange and interfaces before analyzing the system's internal details.
+
+#### B) Component Diagram
+*   **Component:** A reusable part that can be purchased and plugged into a system.
+*   **Goal:** Speed up software development and increase productivity through reuse.
+*   **Requirement:** Components must communicate and cooperate with other systems/devices. Standards ensure interoperability.
+*   **Components Association:** The process of assembling components.
+    *   **Types:** Sequential, hierarchical, additional.
+
+#### C) Package Diagram
+*   **Package:** A subsystem, often a commercial software release, composed of functionally related classes.
+*   **Purpose:**
+    *   Minimize dependency between subsystems by hiding internal details.
+    *   Represent high-level abstraction of subsystems.
+    *   Reduce complexity by minimizing object dependence.
+*   **Represents:** The dependency relationships between subsystems.
+
+## II. Software Development Fundamentals
+
+### Learning Objectives
+1.  Understand object-oriented analysis and modeling concepts.
+2.  Explain object-oriented design concepts and principles.
+3.  Perform static and dynamic modeling using UML (Unified Modeling Language).
+4.  List design pattern concepts and representative patterns.
+
+### Keywords
+*   Use case, sequence diagram, activity diagram
+*   Object, class, encapsulation, inheritance, polymorphism, association, set
+*   Class, property, relationship, association, operation, class diagram
+*   Interaction diagram (sequence diagram, communication diagram), state diagram, activity diagram
+*   Singleton pattern, factory method pattern, facade pattern, strategy pattern
+
+## III. Object-Oriented Design Principles (SOLID)
+
+### + OCP (Open Closed Principle)
+*   **Principle:** A class should be **open for extension** but **closed for modification**.
+*   **Application:** Improve functions through inheritance rather than direct modification. Implement abstract classes to accommodate logic changes.
+*   **Related to:** Polymorphism and abstraction.
+
+### + LSP (Liskov Substitution Principle)
+*   **Principle:** Subtypes must be substitutable for their base types without altering the correctness of the program.
+*   **Application:** Ensures that if a class inherits from another (IS-A relationship), the superclass can always refer to the subclass without issues.
+*   **Focus:** Important for robust inheritance design.
+
+### + ISP (Interface Segregation Principle)
+*   **Principle:** Clients should not be forced to depend on interfaces they do not use.
+*   **Application:** Design different, specific interfaces for different types of users/clients (e.g., separate interfaces for general users and administrators).
+*   **Focus:** Communication between objects via exposed interfaces.
+
+### + DIP (Dependency Inversion Principle)
+*   **Principle:** Depend upon abstractions, not concretions. High-level modules should not depend on low-level modules; both should depend on abstractions.
+*   **Application:** Use interfaces (abstractions) to make designs flexible, minimizing the impact of changes in lower-level "used" classes on higher-level "using" classes.
+
+## IV. Object-Oriented Analysis and Modeling
+
+### 01. Object-Oriented Analysis and the Modeling Concept
+
+#### What is Object Orientation?
+*   Views a problem area as a set of interacting real-world **objects**.
+*   **Advantages:** Increased reusability and deeper understanding.
+*   **Process:** Identifies objects, their properties, and behaviors using three viewpoints (information, dynamic, functional).
+*   **Benefit:** Applies a consistent methodology across the entire software development process (analysis, design, programming).
+
+#### What is Modeling?
+*   **Definition:** The process of simplifying a target system's performance, operation, or characteristics (often diagrammatically or mathematically).
+*   **Purpose:** To understand and express the real world within the computer world.
+*   **Benefits:**
+    *   Provides various software views.
+    *   Clarifies software requirements.
+    *   Forms the core of requirements specifications.
+    *   Facilitates dialogue between users and developers.
+    *   Helps understand system outlines for development stages.
+
+#### Three Viewpoints of Modeling
+
+| Viewpoint           | Contents                                                                                             |
+| :------------------ | :--------------------------------------------------------------------------------------------------- |
+| **Functional**      | Describes the system from the perspective of its **functions** (output for given input, operations, constraints). |
+| **Dynamic**         | Describes the system's **states** and causes of state changes (events, time) by focusing on software operations and control. |
+| **Information**     | Understands the **static information structure** by identifying information objects, their characteristics, and relationships. |
+
+#### Use Case
+*   **Definition:** A technique in object-oriented analysis representing how an actor uses a system to achieve a goal. Corresponds to a "use example."
+*   **Benefits:**
+    *   Smooth communication between customers and developers.
+    *   Effective understanding of customer requirements.
+    *   Engages customers in the project.
+    *   Determines functional requirements early.
+*   **Actor:** A homogeneous group of stakeholders with a different view/use of the system.
+*   **Scenario:** A detailed flow of events for each use case, including interactions, environment, and background.
+*   **Purpose:** Verifies user requirements by showing user-system interaction and what the system performs.
+
+### V. Specific Modeling Techniques
+
+#### Information Modeling
+*   **Process:** Identifies information that needs to be saved and managed within the system, often derived from use case scenarios.
+*   **Output:** **Class Diagram** (UML) – displays classes, their properties, and relationships.
+*   **Benefits:** Identifies basic classes, their correlations, and properties.
+
+#### Dynamic Modeling
+*   **Process:** Focuses on changes to object states, operations, or interactions between objects to find class operations.
+*   **Tool:** **Sequence Diagram** (UML) – identifies interactions between objects.
+*   **Relationship to Use Cases:** Sequence diagrams expand on use case scenarios by showing internal object interactions, whereas use cases treat the system as a "black box."
+
+#### Functional Modeling
+*   **Process:** Expresses the various complex logics performed within an operation (identified by a sequence diagram) as activities.
+*   **Tool:** **Activity Diagram** (UML) – identifies potential or new activities.
+*   **Purpose:** Accurately understand event handling processes within a class, understand complex procedures, or identify additional class operations.
+
+---
+
+================================================================================
+ORIGINAL TEXT (First 5000 chars)
+================================================================================
+
+--- Page 67 ---
+ESSENCE
+D) Hierarchy
+A hierarchy  can be defined as a system composed  of several layers that provide  its own specific service. It has
+the advantage  of making  problem  solving  easier when applied.  If a problem  occurs, it can be checked  in an easy
+layer. Also, it is compatible  with other equipment  because  the equipment  is standardized.  The seven layers of
+the OSI (Open System Interconnection)  model, a network  protocol  developed  by the International  Standards
+Organization  (ISO), is a representative  example  of the hierarchical  structure.
+03 Method  of Expressing  Software  Architecture  Design
+A) Context  model
+The boundary  between  the initial requirements  analysis  system and the external  environment  should be set.
+The context  diagram represents  a system as a large process before dividing  the system. This model shows
+system IO data by describing the system area that should be developed,  determining  the boundary  between
+the system and the external  environment,  and presenting  the interface  with the outside.
+This model focuses  on the interface  between  the system and the external  environment.  When beginning  an
+analysis,  analysts  should focus on understanding  the data exchanged  between  the user and the system, as
+well as the type of mutual exchange,  first. When the boundary  of the system is set, the inside of the system is
+analyzed  to realize it. It is the same as giving priority  to goals in developing  a system.
+B) Component  diagram
+A component  is a part that can be reused, so that a well-made  part can be purchased  from other fields
+and plugged in, to speed up software  development  and increase  productivity.  In essence, reusability  is the
+foundation  of this technology.  Reuse technology  is designed  to speed up software  development  and increase
+productivity  by reusing  proven parts as much as possible.
+Components  should communicate  and cooperate  with other systems  or external  devices. The standard for
+component  implementation  and documentation  should be established  to guarantee  the interoperability  of the
+components.  Here, “components  association”  is a process  of assembling  components.  There are several types
+of association  including  sequential  association,  hierarchical  association,  and additional  association.
+C) Package  diagram
+Commercial  software  developed  for a large number  of users is called a “package”,  and subsystems  are often
+released  as packages.  Once defined as a package,  the relationship  of dependence  between  packages  can be
+minimized  by hiding the inner details of the package  from the outside.  The package  composed  of a subsystem
+is a set of functionally  related classes.
+The package  diagram represents  the relationship  of dependence  between  subsystems.  It is suitable  for
+representing  software  architecture  because  it represents  a subsystem  that is abstracted  at a higher level. If
+subsystems  are divided to minimize  the association  relationship  between  subsystems,  dependence  between
+objects  can be minimized  and complexity  can be reduced.
+66 TOPCIT  ESSENCE
+
+
+--- Page 68 ---
+Software  Development
+>> Learning  objectives
+1. To be able to understand  the concept  of object-oriented  analysis  and modeling.
+2. To be able to explain  the concept  and principles  of object-oriented  design.
+3. To be able to perform static and dynamic  modeling  and express it in UML (Unified Modeling
+Language).
+4. To be able to list the concepts  of the design pattern  and representative  patterns.
+>> Keywords
+- Use case, sequence  diagram,  activity  diagram
+- Object, class, encapsulation,  inheritance,  polymorphism,  association,  set
+- Class, property,  relationship,  association,  operation,  class diagram
+- Interaction  diagram  (sequence  diagram,  communication  diagram),  state diagram,  activity  diagram
+- Singleton  pattern,  factory  method  pattern,  facade pattern,  strategy  pattern
+M1 Software  development  67
+
+
+--- Page 69 ---
+and enormous  in an actual environment,  so it is better  to apply it in the form of a utility.
++ OCP (Open Closed Principle)
+A class should be closed to modifications  and open to extensions.  It is related to
+polymorphism  and abstraction,  which are the representative  characteristics  of object-oriented
+programming.  When improving  functions,  it is desirable  to improve  inheritance  rather than
+direct modification.  In addition,  abstract  classes should be implemented  in consideration  of
+changes  in logic.
++ LSP (Liskov  Substitution  Principle)
+This is the most important  principle  among the design for inheritance.  This principle  should
+be followed  because  the IS-A relationship  is established  when a class is inherited.  That is, it is
+related  to inheritance  which the superclass  can always refer to the subclass.
++ ISP (Interface  Segregation  Principle)
+Communication  between  objects is established  using the interface  of t...

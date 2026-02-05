@@ -1,0 +1,243 @@
+LEARNING GUIDE: Pages 73-77
+Generated: 2025-12-05 10:47:11
+PDF: 2 - Understanding and Using Data OCR
+
+================================================================================
+LEARNING GUIDE
+================================================================================
+
+Here's a simplified, easy-to-read learning guide for database normalization based on the provided text:
+
+---
+
+# Database Normalization: Learning Guide (2NF, 3NF, BCNF, 4NF, 5NF)
+
+Normalization is the process of organizing the columns and tables of a relational database to minimize data redundancy and improve data integrity.
+
+## 1. Second Normal Form (2NF)
+
+**Goal:** Eliminate partial functional dependencies.
+
+*   **Condition for NOT being in 2NF:**
+    *   A table is not in 2NF if a non-key attribute (an attribute not part of any candidate key) depends only on *part* of a composite primary key.
+    *   This is called a **partial functional dependency**.
+*   **How to achieve 2NF:**
+    *   Divide the table into two or more tables.
+    *   One table will contain the partial dependency (e.g., the part of the composite key and the non-key attribute that depends on it).
+    *   The other table(s) will contain the remaining attributes and the full primary key.
+
+**Example (Simplified from Figure 29, assumes composite key of `StudentID` and `Subject code`):**
+
+| Student ID | Subject code | Student Name | Subject name | Grade |
+| :--------- | :----------- | :----------- | :----------- | :---- |
+| 1111       | D11          | Hong Gildong | Database     | A     |
+| 1111       | O22          | Hong Gildong | OS           | B     |
+
+*   **Problem:** `Student Name` depends only on `Student ID` (part of the composite key). `Subject name` depends only on `Subject code` (part of the composite key).
+*   **Solution (2NF):** Decompose into three tables:
+    1.  **Student:** `StudentID` (PK), `Student Name`
+    2.  **Subject:** `Subject code` (PK), `Subject name`
+    3.  **Enrollment:** `StudentID` (FK, PK), `Subject code` (FK, PK), `Grade`
+
+## 2. Third Normal Form (3NF)
+
+**Goal:** Eliminate transitive functional dependencies.
+
+*   **Precondition:** The table must already be in 2NF.
+*   **Condition for NOT being in 3NF:**
+    *   A table is not in 3NF if a non-key attribute depends on another non-key attribute.
+    *   This is called a **transitive dependency**: A → B and B → C, then A → C.
+*   **How to achieve 3NF:**
+    *   Divide the table into two or more tables.
+    *   One table will contain the original primary key and the attributes that directly depend on it.
+    *   Another table will contain the non-key attribute that is the determinant of the transitive dependency, and the attributes that depend on it. Establish a foreign key relationship.
+
+**Example (Simplified from Figure 31, assumes `StudentID` is PK):**
+
+| StudentID | Name         | Department          | Department Office    |
+| :-------- | :----------- | :------------------ | :------------------- |
+| 1111      | Hong Gildong | Computer Engineering| Engineering Building |
+| 3333      | Ryu Gwenun   | Physics             | Natural Science Bldg |
+
+*   **Problem:** `Department Office` depends on `Department`, and `Department` depends on `StudentID`. This is a transitive dependency: `StudentID` → `Department` → `Department Office`.
+*   **Solution (3NF):** Decompose into two tables:
+    1.  **Student:** `StudentID` (PK), `Name`, `Department` (FK)
+    2.  **Department:** `Department` (PK), `Department Office`
+
+## 3. Boyce-Codd Normal Form (BCNF)
+
+**Goal:** Stricter version of 3NF, handles cases where 3NF might still have anomalies involving overlapping candidate keys.
+
+*   **Precondition:** The table must already be in 3NF.
+*   **Condition for NOT being in BCNF:**
+    *   A table is not in BCNF if there is a functional dependency (X → Y) where X is not a **candidate key**.
+    *   (A **candidate key** is any attribute or set of attributes that can uniquely identify a row in a table.)
+*   **How to achieve BCNF:**
+    *   Identify functional dependencies where the determinant is not a candidate key.
+    *   Decompose the table into new tables such that the determinant becomes the primary key of a new table, and the dependent attributes move with it.
+
+**Example (Simplified from Figure 32, assumes `(Professor, Subject name)` is PK):**
+
+| Professor | Subject name | Textbook name |
+| :-------- | :----------- | :------------ |
+| P1        | Data Structure | Book1         |
+| P1        | Network      | Book2         |
+| P2        | Network      | Book3         |
+
+*   **Problem:**
+    *   `(Professor, Subject name)` → `Textbook name` (This is fine, as `(Professor, Subject name)` is the PK).
+    *   However, `Textbook name` → `Subject name` also exists (e.g., Book1 is always for Data Structure).
+    *   Here, `Textbook name` is a determinant, but it is NOT a candidate key.
+*   **Solution (BCNF):** Decompose into two tables:
+    1.  **Professor_Textbook:** `Professor` (FK, PK), `Textbook name` (FK, PK)
+    2.  **Textbook_Subject:** `Textbook name` (PK), `Subject name`
+
+## 4. Fourth Normal Form (4NF)
+
+**Goal:** Eliminate multi-valued dependencies (MVDs).
+
+*   **Precondition:** The table must already be in BCNF.
+*   **Concept:**
+    *   4NF is concerned with removing **multi-valued dependencies** (MVDs) when more than two occur in a single relation (table).
+    *   It addresses situations where attributes are independent of each other but both depend on a third attribute.
+*   **Characteristics:**
+    *   Applies when there's a semantic association constraint between attributes.
+    *   Established when all attributes are primary identifiers (meaning it's focused on keys and how they relate).
+    *   MVDs occur with three or more associated attributes.
+    *   Normalization is based on *semantic association*, not functional dependency.
+*   **Problem Scenario:**
+    *   Imagine attributes A, B, C.
+    *   Relationships: A-B are related, A-C are related, but C-B are *not* related.
+    *   If these are put into one table, it creates MVDs.
+    *   **Example:** An `Employee` (A) has `Holding Technology` (B) and works on `Support Project` (C). `Employee` is related to `Technology`, `Employee` is related to `Project`, but `Technology` and `Project` are *independent* of each other.
+*   **Anomalies caused by MVDs:**
+    *   **Input error:** To add a new project for an employee, you might have to repeat all their technologies for that project, even if the tech isn't related to the project.
+    *   **Modification error:** If an employee's project changes, you have to update multiple rows for each technology they hold.
+    *   **Deletion error:** Deleting a technology might inadvertently delete project history if they are linked without direct relationship.
+*   **How to achieve 4NF:**
+    *   Separate unrelated multi-valued attributes into their own tables.
+    *   **Example:**
+        *   **Employee:** `Employee Number` (PK), `Employee Name`, `Address`
+        *   **Holding Skills:** `Employee Number` (FK, PK), `Technology Code` (FK, PK)
+        *   **Support Project:** `Employee Number` (FK, PK), `Project Code` (FK, PK)
+        *   (Optional lookup tables like `Skill` and `Project` for details)
+
+## 5. Fifth Normal Form (5NF) / Project-Join Normal Form (PJNF)
+
+**Goal:** Eliminate join dependencies; prevent loss of information when joining tables back together.
+
+*   **Precondition:** The table must already be in 4NF.
+*   **Concept:**
+    *   A table is in 5NF if every join dependency in it is implied by the candidate keys.
+    *   It's for complex situations where a table can be losslessly decomposed into smaller tables, but those smaller tables cannot be joined back without creating spurious (incorrect) tuples, unless a specific **join dependency** exists.
+*   **Characteristics:**
+    *   Normalization occurs in the primary key.
+    *   Requires a join relationship between independent attributes.
+    *   Created after being separated into associative relations.
+*   **Problem Scenario:**
+    *   Imagine attributes A, B, C.
+    *   Relationships: A-B are related, A-C are related, C-B are related.
+    *   However, A-B-C (all three together) are *not* directly related in all combinations.
+    *   **Example:** `Supplier` (A), `Part` (B), `Project` (C).
+        *   A supplier supplies a certain part (A-B).
+        *   A supplier supports a certain project (A-C).
+        *   A certain part is used for a certain project (B-C).
+        *   But, there is *no direct association* for how a *certain supplier* has used a *certain part* for a *certain project*. (A-B-C is not universally true or implied).
+*   **Anomalies:** Designing this as a single table leads to input, modification, and deletion errors similar to 4NF if the three-way relationship doesn't inherently exist for all data.
+*   **How to achieve 5NF:**
+    *   Decompose the table into multiple tables, each representing a true, direct many-to-many relationship (binary or ternary) between attributes, such that joining them back together is lossless and doesn't create spurious information.
+    *   **Example:** Instead of a single (Supplier, Part, Project) table, decompose into:
+        1.  **Supplier_Part:** `Supplier ID` (PK, FK), `Part ID` (PK, FK)
+        2.  **Supplier_Project:** `Supplier ID` (PK, FK), `Project ID` (PK, FK)
+        3.  **Part_Project:** `Part ID` (PK, FK), `Project ID` (PK, FK)
+
+---
+
+================================================================================
+ORIGINAL TEXT (First 5000 chars)
+================================================================================
+
+--- Page 73 ---
+ESSENCE
+and designating  the composite  key of “Student  ID” and “Courses”  as the primary  key.
+Student  ID Name Subject  name |
+1111 Hong Gildong Database
+Student  ID | Name Subject  name 11 Hong Gidong Operation  system
+1111 Hong Gidong, Database,  operating  system | oon Gane Gamch Opera te |
+ang Gamchan eration  system2222 GangGamchan Operating  system, network, data structure 6 ° ‘i
+2222 Gang Gamchan Network
+| 2222 Gang Gamchan Data structure |
+[Figure 29] Example  of the first normalization
+@ Second  normalization  ([Figure  30])
++ The table on the left is not the second normal form.
++ The reason is that there is a partial functional  dependency  of the (course code) —> (course name) in the function
+dependency  of the (student  ID) — (course  name).
++ The second  normal  form table is derived  by dividing  the un-normalized  table into two tables, as shown on the right.
+suétiD | Name "Subject  code | Subject name | Grade | Suen Name | Subject code " Grade Subject  code Subject name |
+1111 | FgGleing Dll Database A 1111 | HongGleeng D11 A D1 Database
+1111 | togGltng «=O22 | Operation  system 1111 HorgGitog. = O22 B | O22 | Operation system
+2222 | GagGanchan 022 Operation  system A | 2222  | GagGanchen 022
+A |
+B |O22 | Operation  system
+N33 Network
+D44 Data structure2222  | GagGanchan N33 Network 2222  | GagGanchen N33
+2222  | Gagtnt © _D44 Data  structure 2222 | Gagtanten ==D44orp
+[Figure 30] Example  of the second  normalization
+© Third normalization  ([Figure  31])
++ The table on the left is not the third normal form.
++ The reason is that there is transitive  dependency  of the (student  ID) > (department),  (department)  — (department
+office).
++ The third normal form table is derived  by dividing  the un-normalized  table into two tables, as shown on the right.
+StudentID + Name Department Department  office | StudentID = Name Department | Department Department  ofice
+1111 | HongGidong | Computerengineering  | Exgeemgbuting 1111 HgGldng | Computer  engineering Computer  engineering  | tgresrgbidng
+2222  | GangGamcran  | Computerengineering  | Engeemgbuting 2222  | GagGanhen  | Computer  engineering Computer  engineering  | fgresrgbidg
+3333  | RyuGwenun Physics Netuel scence uling 3333  | RyGrensn Physics Physics Neue serceuldrg
+[Figure  31] Example  of the third normalization
+72 TOPCIT  ESSENCE
+
+
+--- Page 74 ---
+Database )
+@ Boyce-Codd  normalization  ([Figure  32])
++ It is assumed  that there is a functional  dependency  relationship  between  (professor,  course name) — (text material
+name), (text material  name) — (course  name) in the table on the left.
++ In this case, the table on the left is not the Boyce-Codd  normal  form.
++ The reason is that there is functional  dependency  (text material  name) — (course  name) wherein  the determinant  is
+not a candidate  key,
++ The Boyce-Codd  normal form table is derived  by dividing  the un-normalized  table into two tables, as shown on the
+right.
+Professor Subject name Textbook  name Professor Textbook  name | Textbook  name Subject  name
+PI Data structure Book1 Pl Book1 Book1 Data structure
+PI Network Book2 Pl Book2 Network
+P2 Network Book3 P2 Books Network
+P2 Programming Book4 P2 Book4 Programming
+P3 Programming Book4 P3 Book4
+[Figure32]  Example  of Boyce-Codd  normalization
+04 Database  Design  in Which Normalization  is Applied - (4th Normalization)
+A) Concept  of the fourth normalization
+The fourth normalization  is the process  of removing  more than two multi-valued  dependencies  (MVD) if they occur in
+one relation.
+B) Characteristics  of the fourth normalization
+@ The fourth normalization  is possible  only when there is a semantic  association  constraint  between  attributes.
+@ It is established  when all attributes  are primary  identifiers.  (Primary  key)
+© Multi-valued  dependency  can be established  when there are three or more associated  attributes.
+@ It corresponds  to normalization  by semantic  association,  not by the functional  dependency  relationship.
+@© When there are three attributes,  A, B, and C, there is a semantic  relationship  as follows. However,  an anomaly  occurs
+when creating  a table using these attributes.
++ Relationship  between  A and B: A and  B are related.
++ Relationship  between  A and C: A and C are related.
++ Relationship  between  C and B: C and B are not related.
+M2 Database  73
+
+
+--- Page 75 ---
+ESSENCE
+C) Targets  of the fourth normalization
+Preconditions  for table design
+- If you want to manage  the holding  technology  and the support  project  of the employee,  but the holding  technology  and
+support  project  are not related.
+That is, the employee  and the holding  technology  are related (0). The employee  and the project  are related (0).
+The holding  technology  and the project  are not related (X).
++ If only one table is designed  despite  these business  rules, the following  data model and structure  of data values are
+identified.
+Item Structure  of the table's data va...

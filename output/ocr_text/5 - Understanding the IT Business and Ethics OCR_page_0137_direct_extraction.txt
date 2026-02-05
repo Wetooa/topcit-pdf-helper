@@ -1,0 +1,38 @@
+ESSENCE
+01 Latest  Web and Mobile  Service
+A) Latest  web technologies
+@HTML5
+Typically,  a separate  program must be installed  when a person wants to use a particular  service or program on a
+smartphone  or PC. Kakao Talk is a leading messenger  program  that is widely used in South Korea and exists in
+different  versions  for PC, Android  and iOS. As such, a separate  program  must be installed  for each type of OS in order
+to use Kakao Talk. However,  if HTMLS is used, there is no need to install a separate  program,  and Kakao Talk can be
+accessed  directly  through  the web browser.  Furthermore,  word processors  and games can be used without  having to
+install with the help of HTML5.
+The HTMLS standard  is a next-generation  HTML standard  that overcomes  the limitations  of previous  HTML
+standards,  allowing  rich web applications  such as video, voice, and 2D graphics,  without  requiring  a separate  plug-in.
+Plug-ins  and Active X control were very popular  as solutions  for overcoming  the limitations  of the previous  HTML:
+However,  each came with its own set of problems,  which could only be overcome  through  functional  expansion  and
+combination  through  the advanced  CSS3 and JavaScript  APIs.
+HTML5  was designed  around the principles  of compatibility,  practicality,  interoperability,  and universal  access. The
+contents  of the HTML standard  cover the document  structure,  markup standards,  and API standards.  When the
+semantic  markup  part and the API part of the HTML5  standard  are examined  separately,  26 new markups  have been
+added to the semantic  markup part to enable much clearer semantic  representation than conventional  HTML4.
+HTMLS5 allows various services  or applications  based on web content,  such as search engines,  to provide improved
+functionality,  In the case of APIs, new functions  such as web form, canvas,  and web socket  were added to support  the
+development  of web-based  applications.  HTML5 uses much less JavaScript  code than HTML4  to support  the same
+functionality,  making it easier to use in mobile environments  where network  speed is a sensitive  factor. Recently,  a
+growing  number  of cases have arisen in which corporate  business  solutions  are transitioning  to an HTML5-based
+environment  so as to maximize  scalability  and efficiency.
+@ Responsive  web/Adaptive  web
+With the growing  use of mobile devices such as tablet PCs and smartphones,  interest in the mobile web is also
+increasing.  Users want to enjoy the same web contents  at the same level of quality, irrespective  of the type of mobile
+device or PC being used. However,  it was not easy to provide  the same quality of service  for different  environments
+resulting  from different  mobile phone specifications  and the restrictions  that come with different  mobile phone screen
+sizes. It is also impossible  to develop  a web that is optimized  for all types of mobile devices. The responsive  web
+emerged  as one approach  to solving  this conundrum.
+The responsive  web is an approach  to web design that results in the most optimal user environment,  i.e. one that
+meets the requirements  of many different  devices - from desktops  through monitors  to mobile phones. In other
+words, it is a web whose size changes  to fit any device environment,  making  it easy for users to read the contents.
+With the recent trend towards  carrying  mobile devices as the primary  or first device, the number  of mobile web
+users has grown to exceed the number  of regular  Internet  web users. Web designers  have responded  by minimizing
+136 TOPCIT  ESSENCE

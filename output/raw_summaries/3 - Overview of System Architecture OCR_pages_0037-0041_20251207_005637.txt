@@ -1,0 +1,210 @@
+LEARNING GUIDE: Pages 37-41
+Generated: 2025-12-07 00:56:37
+PDF: 3 - Overview of System Architecture OCR
+
+================================================================================
+LEARNING GUIDE
+================================================================================
+
+## Network Protocols & System Architecture: A Learning Guide
+
+This guide condenses essential information about network protocols and system architecture for easy learning.
+
+---
+
+### 1. What is a Protocol?
+
+*   **Definition:** A standardized communication rule for sending and receiving data over a network.
+*   **Purpose:** Ensures different devices (PCs, servers, routers) can understand and exchange data reliably.
+*   **Standardization Bodies:**
+    *   **IETF (Internet Engineering Task Force):** Most Internet-related protocols (e.g., IP, TCP, HTTP).
+    *   **3GPP (Third Generation Partnership Project) & 3GPP2:** Wireless communication protocols (e.g., GSM, LTE).
+    *   **ITU-T (International Telecommunication Union Telecommunication Standardization Sector):** Telephone-related protocols.
+*   **Layered Operation:**
+    *   **Physical Layer:** Directly interacts with hardware (wires, switches) using electrical signals.
+    *   **Protocol Layers (above Data Link):** Implemented and operated in software.
+    *   Understanding these layers is crucial for network software development.
+
+---
+
+### 2. OSI Reference Model and TCP/IP Protocol Layer Structure
+
+Networking communication is often described using layered models.
+
+#### 2.1 OSI Reference Model
+
+*   **OSI (Open Systems Interconnection):** A conceptual model that standardizes communication functions.
+*   **Layers:** 7 distinct layers, each responsible for specific tasks.
+
+| Layer               | Example Protocols        | Function                                                                |
+| :------------------ | :----------------------- | :---------------------------------------------------------------------- |
+| **7. Application**  | HTTP, SMTP, SNMP, FTP    | Provides services like user interfaces, email, database management.     |
+| **6. Presentation** | JPEG, MPEG, XDR          | Handles data syntax, encoding translation, and encryption/decryption.   |
+| **5. Session**      | TLS, SSH, RPC, NetBIOS   | Establishes, maintains, and synchronizes communication sessions.        |
+| **4. Transport**    | TCP, UDP, SCTP           | Ensures reliable message transfer between end-to-end processes, error control. |
+| **3. Network**      | IP, IPX, ICMP, ARP, OSPF | Supports packet transmission between networks (source to destination). |
+| **2. Data Link**    | Ethernet, PPP, HDLC      | Manages physical addressing (MAC), error detection within a local network. |
+| **1. Physical**     | PSTN, DSL, T1            | Transfers actual bits through physical media (cables, radio waves).     |
+
+#### 2.2 TCP/IP Protocol Suite (ARPANET Reference Model)
+
+*   A more practical, 4/5-layer model based on the ARPANET, predating OSI.
+*   Combines some OSI layers for simplicity.
+
+| TCP/IP Layers       | Corresponding OSI Layers   | Example Protocols               | Description                                                                  |
+| :------------------ | :------------------------- | :-------------------------------- | :--------------------------------------------------------------------------- |
+| **4. Application**  | Application, Presentation, Session | HTTP, FTP, SMTP, DNS, RIP, SNMP | Handles application-specific services and data formatting.                 |
+| **3. Transport**    | Transport                  | TCP, UDP, SCTP                    | Manages data exchange between applications (ports); ensures reliability (TCP) or speed (UDP). |
+| **2. Internet**     | Network                    | IP (IPv4, IPv6), ICMP, ARP, OSPF | Handles addressing and routing of packets across different networks.       |
+| **1. Network Interface** | Data Link, Physical        | Ethernet, Wi-Fi (802.11), Frame Relay | Sends/receives TCP/IP packets over physical media; includes MAC functions. |
+
+#### 2.3 Data Encapsulation (Headers)
+
+*   **Concept:** As data travels down the layers (from Application to Physical), each layer adds its own header to the data received from the layer above. This process is called encapsulation.
+*   **Purpose:** Each header contains information specific to that layer's function (e.g., port numbers for Transport, IP addresses for Network, MAC addresses for Data Link).
+*   **Example Flow:**
+    1.  **Application Layer:** User Data
+    2.  **Transport Layer:** Adds `TCP Header` to User Data.
+    3.  **Network Layer:** Adds `IP Header` to (TCP Header + User Data).
+    4.  **Data Link Layer:** Adds `Ethernet Header` to (IP Header + TCP Header + User Data).
+*   **Note:** Each layer only uses the header that corresponds to its function.
+
+---
+
+### 3. Internet Address System
+
+Different layers use different addressing systems to identify communication endpoints.
+
+#### 3.1 MAC Address (Medium Access Control Address)
+
+*   **Layer:** Data Link Layer
+*   **Purpose:** Transfers frames between physically connected nodes on the same local network.
+*   **Nature:** A **physical address**, generally stored on the Network Interface Card (NIC) hardware. Also called Ethernet Hardware Address (EHA).
+*   **Format:** 48 bits (e.g., `00:1A:2B:3C:4D:5E`)
+    *   **First 24 bits:** Hardware manufacturer's unique ID.
+    *   **Remaining 24 bits:** NIC-dependent address.
+
+#### 3.2 IP Address (Internet Protocol Address)
+
+*   **Layer:** Network Layer
+*   **Purpose:** Transfers datagrams between two hosts/routers across multiple Internet networks (source to destination).
+*   **Nature:** A **logical address**, assigned by network administrators.
+*   **Versions:**
+    *   **IPv4:** 32-bit address system (e.g., `192.168.1.1`). Facing exhaustion due to rapid Internet growth.
+    *   **IPv6:** 128-bit address system (e.g., `2001:0db8:85a3:0000:0000:8a2e:0370:7334`). Introduced to solve IPv4 exhaustion, but IPv4 is still widely used.
+*   **Allocation:** Currently managed by **ICANN (International Corporation for Assigned Names and Numbers)** (formerly IANA).
+
+#### 3.3 Port Number
+
+*   **Layer:** Transport Layer
+*   **Purpose:** Transfers messages between specific processes (running applications) on two hosts. Identifies *which* application on a host should receive the data.
+*   **Format:** 16-bit number system, identifying up to 65,535 application programs.
+*   **Categories (IANA allocated):**
+    *   **Well-Known Ports (0-1023):** Reserved for common services (e.g., HTTP-80, FTP-21, SSH-22, SMTP-25, DNS-53).
+    *   **Registered Ports (1024-49151):** Can be registered by companies/developers for specific applications (e.g., IRC-6667, Git-9418). Mostly used by servers.
+    *   **Dynamic/Temporary Ports (49152-65535):** Used by clients as temporary source ports when initiating connections.
+
+---
+
+### 4. Internet Standardization Organizations
+
+These organizations define and maintain the standards that enable global network communication.
+
+| Organization | Description & Examples                                                     |
+| :----------- | :------------------------------------------------------------------------- |
+| **IETF**     | Leading organization for Internet standards (IP, TCP, UDP, HTTP, SSH, FTP). |
+| **ISO**      | International Organization for Standardization. Established 1946 for intellectual, scientific, technological, and economic cooperation. (e.g., OSI reference model). |
+| **ITU-T**    | International Telecommunications Union-Telecommunication Standards Sector. Responsible for telecommunication standardization. (e.g., G.711 for audio). |
+| **IEEE**     | Institute of Electrical and Electronics Engineers. Develops national standards in the US. (e.g., IEEE 802.3 Ethernet, IEEE 802.11 Wi-Fi). |
+| **EIA**      | Electronic Industries Association. Plans to unify standards for dimensions, measurement methods, and labeling (e.g., TIA/EIA-568-B for cabling). |
+| **W3C**      | World Wide Web Consortium. International consortium established in 1994 for long-term web development by establishing web standards (e.g., HTML, CSS). |
+| **OMA**      | Open Mobile Alliance. Develops technical specifications and verifies interoperability for global mobile data services (e.g., Push-to-talk over Cellular). |
+
+================================================================================
+ORIGINAL TEXT (First 5000 chars)
+================================================================================
+
+--- Page 37 ---
+ESSENCE
+01 What is the Protocol?
+<Table 1> above showed many standard  protocols,  such as ARP, IP TCP, HTTP, DNS, and NAT. A protocol is a
+standardized  communication  rule for sending  and receiving  data through  a network. The Internet,  as we know, is a
+large group of networks  that connect  multiple  PCs and servers.
+For tens or hundreds  of thousands  of PCs, servers, and routers that connect  them to exchange  data, it is necessary
+to have a common  protocol  that can be found by each other, and there are several international  organizations  that
+standardize  these protocols.
++ IETF (Internet  Engineering  Task Force) is responsible  for most Internet-related  standard  protocols.
++ 3GPP (Third Generation  Partnership  Project)  and 3GPP2 are responsible  for wireless  communication  protocols  such
+as GSM, CDMA, UMTS, LTE, and LTE-A.
++ ITU-T (International  Telecommunication  Union Telecommunication  Standardization  Sector) is responsible  for
+protocols  related to telephones.
+Therefore,  it is necessary  to have the competitiveness  to understand  and implement  (if necessary)  the standard
+protocols  enacted  by these standardization  organizations  to develop  software  in the network/communication  sector.
+[Figure 12] below shows the details of [Figure 11] by reflecting  the network  protocol  concepts  described  above. When
+a user searches  through  a web browser,  data requests  and response  data flow in the network  through  devices,  such
+as the user’s computer,  a wired/wireless  router, a switching  hub, and a router, using the related protocols.  While the
+physical layer is directly  connected  with hardware,  such as wires and switches,  and operates  with electric  signals, the
+protocol  layer above the data link layer is implemented  and operated  in software.  Understanding  how many software
+components  are connected  to each other for operation  should enable application  programs  or system  software  over
+a network.  Later sections  describe  in detail how each protocol  layer shown in [Figure 12] works with the others in
+each stage.
+Datalink  Layer14.32.172.0 sabesHub D Physical Layer
+Router my.server.com
+220.17.23.15
+FTNetwork  Layer
+Datalink  Layer 220.17.23.0
+Physical Layer
+36 TOPCIT  ESSENCE
+
+
+--- Page 38 ---
+Overview  of System Architecture )
+02 OSI Reference  Model and TCP/IP  Protocol  Layer Structure
+[Figure 13] shows  the concept  of the OSI reference  model communication,  which includes  the open relay system
+described  in the standard  document  ISO/IEC  7498-1:1994(E)  [8]. The diagram  is often used when discussing  ISO's OSI
+reference  model, or OSI layer, which is commonly  referred  to when dealing  with networks.  Here, ISO is derived  from the
+Greek word “iooc (isos)’, meaning  ‘identical’,  andshould not be confused  with the English name of the International
+Organization  for Standardization  (IOS). OSI is an abbreviation  of Open Systems  Interconnection.
+Open
+System
+Application  —————»>
+Presentation  ————>-
+Session  ———_—_—>
+Tehkpor—$—> ———— SEP Vv
+Network  ——> <> <>
+Data Link —————_—_> <> <>
+Physical —————_—_—»> <> <>_m —-H  A
+esOpen
+SystemRelay open system
+TISO2930-94/d11{ Physical media for OS! __t
+[Figure 13] Communication  Concept  of OSI Reference  Model Containing  Relay Open System
+<Table 2> shows in detail the protocol  and its function  of each OSI reference  model layer [1].
+<Table 2) Protocol  and Function  of Each Layer of the OSIReference  Model
+Layer Protocol Function
+a HTTP. SMTP. SNMP. FTP The application  layer provides  services,  such as a user interface,  email,Application  layer
+Telent, etc. and database  management.
+Presentation  layer JPEG, MPEG, XDR, etc.The presentation  layer supports  the syntax  of data exchanged  between
+two systems  and the encoding  translation  and encryption  related to the
+semantic.
+TLS, SSH, RPC, NetBIOS,Session  layery etc.The session  layer is for communication  sessions.  It establishes,
+maintains,  and synchronizes  the interaction  between  communication
+devices.
+Transport  layer TCP, UDP, SCTP §The transport  layer provides  functions  like the reliable  message  transfer
+between  end-to-end  processes,  as well as error control.
+Network
+layerIP. IPX, ICMP, X.25, ARP,
+OSPF, etc.The network  layer supports  packet  transmission  between  networks
+from the sending  point to the destination.
+M3 Overview  of System  Architecture  37
+
+
+--- Page 39 ---
+ESSENCE
+Data link layer
+Physical  layer The physical  layer transfers  the actual bits through  physical  media.PSTN, etc.
+As shown in [Figure 5], the Internet  protocol layer is based on the ARPANET  reference  model, which was released
+before the OSI layer model [3][9][10].  While documents  use slightly  different  terms for each layer, this section uses
+the most commonly  used terms.
+© Application  layer
+Application  programs,  such as web (HTTP),  DNS, telnet, FTP, and email sending/receiving  (SMTP/POP3/IMAP4),  allow
+access to se...

@@ -1,0 +1,18 @@
+Database )
+© Adjusting  the primary  key
++ The business  key is replaced  with a system key if it is complex.
++ Business  key: A key has business  meaning  such as the resident  registration  number,  student  ID, etc., which is helpful
+in understanding  the work.
++ System key: A key given by the system according  to the predefined  rules set in the order in which instances  are
+occurred.
+@ Changing  the data model structure
++ Performance  improvement  through  normalization
++ Performance  improvement  through  denormalization
++ Performance  improvement  through  data model simplification
+© Improving  performance  related to the index
++ The designer  efficiently  specifies  the order of attributes  constituting  the primary  key.
++ The designer  generates  indexes  for foreign key columns.
++ The designer  uses function-based  indexes.
++ Proper  selection  of the numbering  method:  The designer  uses the numbering  table, the maximum  value of table
+and the system  object.
+M2 Database  83

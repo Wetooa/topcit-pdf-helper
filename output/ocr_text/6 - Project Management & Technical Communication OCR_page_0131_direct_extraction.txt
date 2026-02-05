@@ -1,0 +1,36 @@
+ESSENCE
+Risk Identification Explanation
+Method
+. Investigate  the project  in terms of SWOT so that the scope of the identified  risks can be
+SWOT Analysis expanded  to include internal risks.
+Expert  Judgment Activities  in which experts  with similar project  or business  experience  directly  identify  risks
+Risk, which is a key output of risk identification,  is described  as initially identified  in the Risk Register.  The
+identified  risks are registered  in the risk register,  and qualitative/quantitative  analysis  is performed  to prioritize
+the risks for risk response  planning.  The results of these activities  are recorded  in the risk register  so that
+risks can be systematically  tracked/managed.
+<Table 65> Example  of Risk Register
+ID Risk Item Probability  | Impact  | Exposure Priority Countermeasure Manager
+RoOI Unclarified 9 9 81 1 Documentation  and periodic Hong
+~ requirements management  of requirements Gildong
+Non-verified  new Selection  and introduction HongBoe software 8 7 56 2 through BMT Gilsoon
+Resource  leveling  for HongR003 | Tight schedule 8 6 48 3 scheduling Gildong
+B) Risk analysis:  qualitative  risk analysis
+Qualitative  risk analysis means qualitatively  analyzing  how much impact the risk has on the project at the
+beginning.  Qualitative  risk analysis  refers to a method of prioritizing  risks by evaluating  the probability  and
+impact  of risks after risk identification  is complete.  Probability-Impact  Matrix is a technique  that qualitatively
+evaluates  the probability  of a risk and its impact  on the objective  and analyzes  it in a matrix form.
+0.9 0.09 0.18 0.36 0.54 0.72
+> 07 0.07 0.14 0.28 0.42 0.56
+2 0.5 0.05 0.10 0.20 0.30 0.40
+3 03 0.03 0.06 0.12 0.18 0.24
+a 0.1 0.01 0.02 0.04 0.06 0.08
+0.1 0.2 0.4 0.6 0.8
+Impact
+| | Low [| | Moderate aa High
+[Figure  45] Probability-Impact  Matrix (Example)
+The risk level is “F(probability,  impact)  = probability  of occurrence  (P) X degree of impact  (I)’.
+The probability  of occurrence  ranges from very low (0.1) to very high (0.9).
+The impact  on the objective  ranges  from very low (0.1) to very high (0.8).
+The risk level is calculated  by “probability  of occurrence  X impact” and the ratings are ranked as low, moder-
+ate, and high for risk prioritization.
+130 TOPCIT  ESSENCE

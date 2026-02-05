@@ -1,0 +1,203 @@
+LEARNING GUIDE: Pages 31-35
+Generated: 2025-12-05 14:20:06
+PDF: 1 - Software Development OCR
+
+================================================================================
+LEARNING GUIDE
+================================================================================
+
+Here's a simplified, easy-to-read learning guide based on the provided text:
+
+---
+
+# Software Development: Software Reuse Learning Guide
+
+This guide focuses on **Software Reuse**, a key concept in modern software development.
+
+## 1. Introduction & Overview
+
+### 1.1 Recent Trends in Software Development
+*   **Globalization & Software Reuse:** Enterprises increasingly reuse software to develop and maintain new features. This leverages proven knowledge to reduce costs and improve productivity and quality.
+
+### 1.2 Learning Objectives (What you should know)
+*   Understand the concept, purpose, methods, effects, and considerations of **Software Reuse**.
+*   Understand **Reverse Engineering** (concept, necessity, strengths, considerations).
+    *   *(Note: This guide primarily covers Software Reuse as Reverse Engineering details were not provided in the source text.)*
+
+### 1.3 Key Terms
+*   **Software Reuse:** Using existing software or knowledge to build new software.
+*   **Reverse Engineering:** (Not detailed in provided text, but related to understanding existing systems).
+*   **Code Reuse:** Specifically reusing software code.
+*   **Software Standardization:** Establishing norms for software to facilitate reuse and quality.
+*   **Software Maintenance:** Modifying software after delivery to correct faults, improve performance, or adapt to a changed environment.
+
+---
+
+## 2. Software Reuse: Core Concepts
+
+### 2.1 What is Software Reuse?
+*   **Definition:** Developing new software using existing software or validated software knowledge. It involves standardizing development knowledge (functions, modules, configuration) for repeated use.
+*   **Reusable Assets:** This includes not just code, but also:
+    *   Design
+    *   Requirements
+    *   Inspection plans
+    *   Architecture
+
+### 2.2 Why is Software Reuse Important? (Background & Purpose)
+*   **Background:**
+    *   Addresses issues like **deteriorating quality and productivity** (the "software crisis").
+    *   Supported by advances in **automation technology** (e.g., CASE tools).
+    *   Drives efforts for **software development standardization** and quality assurance.
+*   **Purpose / Benefits:**
+    *   **Responsibility:** Uses components with proven performance (functions, stability, speed).
+    *   **Scalability:** Easier to upgrade based on proven functions.
+    *   **Productivity:** Improves the overall development process, reducing:
+        *   Cost
+        *   Time
+        *   Risk
+
+### 2.3 What Can Be Reused? (Targets of Software Reuse)
+*   **General Knowledge:** Environmental information, external project knowledge.
+*   **Design Information:** System architecture, system design.
+*   **Data Information:** System data, test cases.
+*   **Program Code:** Modules, programs.
+*   **Other Deliverables:** Cost-benefit analyses, user documentation, feasibility studies, prototypes.
+*   **People:** Leveraging human expertise and experience.
+
+### 2.4 Principles of Effective Software Reuse
+For software to be truly reusable, it should adhere to these principles:
+*   **Generality:** Designed to be broadly applicable, not just for a specific use case.
+*   **Modularity:** Follows principles of information hiding and abstraction, with:
+    *   **Minimum coupling:** Components are independent.
+    *   **Maximum cohesion:** Components perform a single, well-defined task.
+*   **Hardware Independence:** Works regardless of the execution hardware.
+*   **Software Independence:** Not tied to a specific Operating System (OS) or Database Management System (DBMS).
+*   **Self-documentation:** Clear descriptions of its function, usage, and interfaces.
+*   **Commonality:** Fills a common need and is usable by many developers.
+*   **Reliability:** Proven to be dependable during use.
+
+---
+
+## 3. Challenges & Solutions for Software Reuse
+
+### 3.1 Common Problems in Practical Business Reuse
+*   **Finding Components:** Difficult to locate suitable, common software modules.
+*   **Lack of Standardization:** Software often isn't standardized enough for easy reuse.
+*   **Understanding Interfaces:** Difficulty understanding internal interface requirements of modules.
+*   **Side Effects:** Hard to predict unintended consequences of changes to reused components.
+*   **Cost of Creation:** Developing high-quality, reusable components can be more expensive upfront.
+*   **Delayed Benefits:** Benefits of reuse might only become apparent in the long term.
+*   **Extraction Difficulty:** Challenging to extract reusable components from existing, non-reusable software.
+
+### 3.2 Obstacles to Software Reuse
+*   **People-Related:**
+    *   Adverse reactions from managers and developers.
+    *   Lack of motivation to adopt reuse technology.
+*   **Technical/Organizational:**
+    *   Lack of software standardization.
+*   **External:**
+    *   Social or legal obstacles.
+
+### 3.3 Strategies for Establishing a Reuse Culture (Countermeasures)
+To overcome obstacles and foster reuse, organizations need to change perceptions and implement policies:
+*   **Form a Reuse Management Organization:**
+    *   Establishes reuse-based development methods.
+    *   Introduces and enforces reuse procedures and standards.
+    *   Enacts policies to increase reusability.
+*   **Provide Regular Reuse Training:**
+    *   Educate developers, project managers, and organization managers.
+    *   Content should be tailored to each role.
+*   **Implement a Reward System:**
+    *   Introduce incentives (e.g., bonuses, recognition) to encourage and reward reuse.
+*   **Ensure Reliability of Reused Components:**
+    *   Guarantee the quality and reliability of components in the reuse library.
+    *   Provide tools and support to help developers find and trust suitable components.
+
+---
+
+================================================================================
+ORIGINAL TEXT (First 5000 chars)
+================================================================================
+
+--- Page 31 ---
+ESSENCE
+implementing  user stories using the planning  poker.
++ Empirical  model: Scrum has its own process  model, but many techniques  place emphasis  on the experience  of
+the individuals  participating  in the project. As each project  has its own intrinsic  situation  and characteristics,
+it is difficult  to understand  the project  situation  using the existing  standardized  process.  Scrum accepts  that
+something  can actually  be different  for each team even though  the basic structure  is the same.
+30 TOPCIT  ESSENCE
+
+
+--- Page 32 ---
+Software  Development
+>> Recent  trends and major issues
+We can see that enterprises  are increasingly  reusing their software  as their business  becomes
+globalized.  Software  is reused to develop  and maintain  new features  using knowledge  proven in the
+past. Many enterprises  are considering  how to increase  the reuse rate because  it is a highly  effective
+means of reducing  costs through productivity  and quality improvements  thanks to reproduction  of
+software  in a short period of time.
+>> Learning  objectives
+1. To understand  the concept,  purpose,  and target of software  reuse, the actual method  of
+application,  and its effects,  considerations,  etc.
+2. To understand  the concept  of reverse engineering,  the reason for its necessity,  strengths,  and
+considerations.
+>> Keywords
+- Reuse,  reverse  engineering
+- Code reuse, software  standardization
+- Software  maintenance
+M1 Software  development  31
+
+
+--- Page 33 ---
+ESSENCE
++ Preview  for practical  business Establishing  a system for creating  a
+reuse culture
+Development  teams need to change their perception  and culture in order to incorporate  software
+reuse into the development  process.  To reuse software,  developers  are required  to change  their way
+of thinking,  and a new culture should be created  from the organization  and policy perspectives.  The
+following  should be performed  to fully establish  the system.
+- Composition  of the reuse management  organization:  The reuse management  organization  is
+needed to establish  the reuse-based  method of software  development.  This organization  should
+introduce  and establish  procedures  and standards  related  to reuse and enact and implement  a policy
+for increasing  reusability.
+- Training  on reuse: Training  on software  reuse should be conducted  on a regular basis to create an
+atmosphere  or culture conducive  to software  reuse within the organization.  The training  should be
+also provided  to project  managers  and organization  managers,  in addition  to developers.  In terms of
+content,  the training  for managers  should differ from that intended  for developers.
+- Introduction  of a reward system to increase  reusability:  Reuse may be perceived  with extreme
+discomfort  when first introduced. Therefore,  a method should be devised  to increase reusability  by
+policy. Introducing  an incentive  system  for reuse is the representative  method  in this regard.
+- Securing  reliability  for reused components:  To make developers  trust reused components,  the
+reliability  of the components  managed  in the reuse library should be sufficiently  guaranteed  and
+measures  to help them find suitable  components  should be prepared,  in addition  to the change of
+developer's  awareness.
+32 TOPCIT  ESSENCE
+
+
+--- Page 34 ---
+Software  Development )
+01 Software  Reuse
+A) Overview  of software  reuse
+The term “software  reuse” means to develop new software  using existing  software  or software  knowledge.
+Reusable  software  or software  knowledge  is a reusable  asset comprising  design, requirements,  inspection,  and
+architecture.
+@ Background  to software  reuse
++ Deterioration  of quality and productivity  due to a software  crisis.
++ Increased  use of CASE tools due to the development  of automation  technology  in software  development.
++ Efforts  to comply  with software  development  standardization  and secure quality.
+@ Definition  of software  reuse
++ Software  reuse is a method of standardizing  knowledge  about software development  (function,  module,
+configuration,  etc.) and configuring  it to be suitable for repeated  use in order to increase  development
+productivity.
++ Countermeasures  that increase  the quality, productivity,  and reliability  of newly developed  software and
+reduce the development  schedule  and cost by reusing  all or a part of software  that has been recognized  for
+its development  functions,  performance,  and quality.
++ A concept  whereby  developed  modules,  programs  and deliverables  are directly reused or reused after some
+modifications  in the same application  field, or are reused for different  application  duties or by different
+companies
+@ Purpose  of software  reuse
+Goal Contents
+Responsibility Performance  such as functions,  stability,  speed, etc. has already  been proved.
+Scalability Easy to upgrade  based on proven functions.
+Productivity Improvement  of the...

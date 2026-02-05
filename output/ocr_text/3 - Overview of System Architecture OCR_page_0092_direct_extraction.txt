@@ -1,0 +1,30 @@
+Overview  of System Architecture )
+no more requests  in the moving  direction,  even when the head does not reach the end.
+03 High Availability  Storage
+A) Redundant  array of independent  disks (RAID)  technology
+Large-capacity  storage systems  generally  have an error controller  and backup  function  to safely store the massive
+volume of data. RAID technology  is a storage  technology  that minimizes  the factors  that can cause failure, and it
+improves  access performance  by arranging  a number  of disks, and by creating  a separate  disk unit by linking them
+with each other
+The main features  of RAID are improved  availability,  increased  capacity,  and increased  speed. Firstly, the improved
+availability  feature provides  a hot-swap  function  to replace  a failed disk without  shutting  down the system, and it
+recovers  the original data to the replaced  disk online. Secondly,  the increased  capacity  feature  organizes  several disks
+into a large virtual disk, and it recognizes  them as large-capacity  storage  disks. Thirdly, the increased  speed improves
+the overall data transfer  rate by partitioning  reading  and writing  data, and by transferring  it to multiple  disks in parallel.
+RAID implementation  includes  RAID-O, 1, 2, 3, 4, 5, 6, and 10. RAID-0, RAID-1, RAID-5, RAID-6,  and RAID-10  (1+0 or O+1)
+are widely  used technologies,  while RAID-2,  RAID-3,  and RAID-4  are rarely used.
+@ RAID-O  (Striped  disk array without  fault tolerance)
+RAID-O  consists  of two or more drives and uses disk striping,  which stores data by dividing  it into pieces of a specific
+size and saves it on multiple  disks at once. Although  it increases  the I/O speed, it cannot  protect  data because  there
+is no redundancy.  A stripe, which means the size of the stored data, is a unit for dividing  data into pieces of a specific
+size. RAID-O can reduce the I/O time by enabling  parallel processing  of I/O requests.  However,  data is lost if any drive
+fails. Although  the technology  is not used much in business  environments,  RAID-10  uses it by taking its advantages
+and overcoming  its disadvantages.
+RAID 0
+Striping
+Ole S| Mele
+BLOCK BLOCK 6
+see EiMee
+DISK1 DISK2
+[Figure  64] RAID-O
+M3 Overview  of System  Architecture  91

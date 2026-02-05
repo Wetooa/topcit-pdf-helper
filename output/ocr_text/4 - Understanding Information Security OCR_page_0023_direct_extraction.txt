@@ -1,0 +1,16 @@
+Information  security )
+Encryption  algorithm,  private key encryption,  public key encryption,  hash function,  authentication,
+digital signature, PKI, access  control, cryptographic  protocol,  DES, AES, RSA, ECC, hash collision,  public
+certificate,  multi factor authentication,  session  key
++ Preview  for practical  business  Managing  information  safely
+Assistant  manager  Kim, working  for web application  program  development  company  A, has been in
+charge of developing, deploying,  and maintaining  Java-based  source  programs.  He should check the
+web pages and servers on a regular basis when processing  his work. However,  he is not safe from
+various security  threats  that are becoming  diversified  and intelligent  by regular  check only.
+He also should exchange  source programs  with partners  while doing his work and should ensure that
+those source programs  are not disclosed  to other competitors.
+In such a situation,  confidentiality  must be ensured so that a large number  of source programs,
+managed  by Kim, are not disclosed  to unauthorized  third parties during storage or transmission.
+To do this, let’s see what steps Kim should take, and how to apply the concept  of confidentiality  in
+practice.
+M4 Understanding  Information  Security  23

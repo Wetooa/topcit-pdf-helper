@@ -1,0 +1,225 @@
+LEARNING GUIDE: Pages 160-164
+Generated: 2025-12-05 14:07:46
+PDF: 5 - Understanding the IT Business and Ethics OCR
+
+================================================================================
+LEARNING GUIDE
+================================================================================
+
+Here is a simplified, easy-to-read learning guide based on the provided text:
+
+---
+
+## IT Business and Ethics: Learning Guide (Pages 160-164)
+
+### 1. Digital Textbooks
+
+*   **Definition:** Digital versions of traditional paper textbooks.
+*   **Added Features:** Include videos, interactive functions, and automatic scoring capabilities.
+*   **Examples:** Show moving images of molecular actions, or zoomable images of Earth from space.
+
+### 2. Smart Healthcare
+
+*   **Definition:** A field combining digital and IT devices ("smart") with medical services ("healthcare").
+*   **Future Growth:** Expected to advance significantly when integrated with core 4th Industrial Revolution technologies like IoT, Cloud Computing, Big Data, and AI.
+*   **Core Process:**
+    1.  Consumers/patients generate or measure data (e.g., via wearables).
+    2.  Specialized firms collect and analyze this data (e.g., using Big Data techniques).
+    3.  Based on analysis, medical institutions provide services (e.g., counseling, treatment).
+    4.  Communication/data platform companies facilitate data exchange.
+
+#### 2.1 Growth Factors
+
+*   **Technology:** User growth and advancements in wireless mobile communications and mobile devices.
+*   **Data:** Increased importance of Big Data analysis and the rise of a hyper-connected society.
+*   **Demographics:** Decreasing birth rates, rapidly aging populations, and a continuous rise in new and chronic diseases.
+*   **Economy/Culture:** Increased demand for healthcare due to cultural and economic development.
+
+#### 2.2 Key Areas
+
+*   **Digital Medical Devices:** Products for diagnosis, treatment, and prevention of diseases (e.g., digital diagnosis, software for managing diabetes/asthma).
+*   **Wearable Devices:** Biometric measuring devices developed for the consumer market.
+*   **Telemedicine (Remote Healthcare):** Healthcare services provided remotely, including remote patient monitoring.
+*   **Big Data Analysis:** Integrating and analyzing diverse ranges of health-related data.
+*   **Consumer Healthcare Contract Management:** Managing agreements related to consumer health services.
+
+#### 2.3 Core Technologies
+
+*   Health Information Measurement Technology
+*   Customized Diagnosis and Field Diagnosis Technology
+*   Open Healthcare Platform Technology
+*   Remote Healthcare Service Technology
+
+---
+
+### 3. Latest IT Business Services
+
+#### 3.1 Artificial Intelligence (AI)
+
+*   **Definition (Modern):** The method of making computers or machines mimic human intelligence (cognition, inference, learning), or the technology researching its feasibility.
+*   **Original Definition (John McCarthy, 1956):** Making a machine behave in ways that would be called intelligent if a human were so behaving.
+*   **Everyday Examples:**
+    *   **Translation Services:** Google Translator, Naver Translator (using artificial neural networks).
+    *   **Image Classification/Machine Vision:** Kakao's flower search, Naver's smart lens, Google Lens.
+    *   **Other Services:** Music recognition, watermark removal, auto-draw.
+
+#### 3.1.1 Key AI Technologies
+
+*   **Characteristics:** Ability to reason, generality, vastness, inaccuracy, knowledge use.
+*   **Current Focus Areas:** Pattern recognition, machine learning, and deep learning.
+
+#### 3.1.2 Pattern Recognition
+
+*   **Definition:** The process of separating learned data into multiple groups based on specific criteria of input values.
+*   **Stages:**
+    1.  **Learning Stage:** Extract key information for distinguishing patterns by analyzing characteristics of a given dataset.
+    2.  **Recognition Stage:** Classify and recognize new data using the patterns identified during the learning stage.
+
+#### 3.1.3 Machine Learning
+
+*   **Definition:** The field of developing algorithms that enable machines to learn. It's about systems autonomously improving performance using empirical data gathered through environmental interaction.
+*   **Main Categories:**
+    *   **1. Supervised Learning:** Learns from labeled data (input-output pairs) to predict future outcomes.
+        *   **Algorithms:**
+            *   **Regression Analysis:** Models relationships between data by minimizing error margins.
+            *   **Decision Tree:** Generates a tree-shaped model to derive decisions based on data properties.
+            *   **Artificial Neural Network (ANN):** Mimics biological neural networks (input, hidden, output layers) by updating node weights.
+            *   **Bayes Theorem:** Applies Bayes theorem (assuming independence) for classification and prediction.
+            *   **Support Vector Machine (SVM):** Finds the optimal decision boundary using margins.
+    *   **2. Unsupervised Learning:** Learns from unlabeled data to find hidden patterns or structures.
+        *   **Algorithms:**
+            *   **Clustering:** Groups similar data points into clusters.
+            *   **Dimensionality Reduction:** Summarizes or represents data in a lower dimension while preserving key information.
+    *   **3. Semi-supervised Learning:** Combines aspects of both supervised and unsupervised learning, often using a small amount of labeled data with a large amount of unlabeled data.
+        *   **Algorithms:** Often combines supervised algorithms with clustering; Expected Value Maximization for probability models with unobserved variables.
+
+#### 3.1.4 Deep Learning
+
+*   **Definition:** A branch of machine learning responsible for recent AI advancements. It solves problems similarly to humans using multi-layered artificial neural networks.
+*   **Basis:** Human neural network theory.
+*   **Key Characteristics:**
+    *   **Consolidated Feature Extraction:** Pre-processing and feature extraction steps are integrated into the overall learning process.
+    *   **Automatic Complex Data Information Extraction:** Reduces information loss when processing high-dimensional, complex data (e.g., images).
+    *   **Efficient for High-Level Abstractions:** Improved ability to absorb large and complex datasets by scaling high-efficiency simulations.
+
+#### 3.2 Use of Big Data
+
+*   **Definition:** Data sets so large and complex that traditional data storage, management, and analysis methods are insufficient. They exceed the limits of general databases.
+*   **Challenges:** Difficult to quantify using conventional methods due to its defining "3Vs":
+    *   **Volume:** Extremely large size (e.g., petabytes, billions of records).
+    *   **Variety:** Diverse data types (unstructured, non-formal, distributed data, simple correlation with plain schema).
+    *   **Velocity:** Data generated at high speed and often time-sensitive (e.g., system logs, sensor data, SNS data).
+*   **Representation:** Often visualized using specialized tools.
+*   **Examples:**
+    *   **Google "Flu Trends" (2008):** Predicted flu outbreaks by analyzing popular search queries related to flu and cold, along with user locations.
+    *   **Credit Card Companies:** Analyze customer consumption and behavioral data for marketing, product development, and personalized recommendations.
+
+---
+
+================================================================================
+ORIGINAL TEXT (First 5000 chars)
+================================================================================
+
+--- Page 160 ---
+Understanding  the IT Business  and Ethics )
+<Table81>  Teaching  method  and tools for smart education
+Teaching  method Explanation
+Power  point, Hangul,  Google  Apps, teacher  maker, Lectora,  e-textbook  authoring  tool, movie
+Production maker (video editing), PDF document  production,  SNS, Evernote, Prezi, traditional  CD
+Search Naver, Google, IP-TV, Fastel, YouTube
+Analysis Fastel, Google document  tool
+Presentation Class-ting,  twitter, mirroring,  LMS solution,  Google  document  tool, SNS, messenger,  electronic
+blackboard
+Evaluation Fastel, Google document  tool, quizzes
+Sharing Fastel, class-ting,  Google  document  tool
+Communication SNS, LMS messaging  function,  twitter, Facebook,  Google Driver, Classting,  school website  bulletin
+board
+Source: Survey  of Technology  Based Research  University,  2013, Korea Education  and Research  Information  Service
++ Digital textbooks
+Digital textbooks  contains  the digital versions  of the contents  in existing  paper textbooks  and adds videos,
+interactive functions,  and automatic  scoring  functions.  For example,  a digital textbook  could show moving images
+of molecular  action between  liquids, solids, and gases, or an image of the Earth from outer space that zooms out by
+moving  scrolling  key.
+@ Smart health care
+Smart healthcare  is a field that combines  digital devices  and IT devices  that connote  ‘smart’ and ‘healthcare’  which
+refers to medical services.  Smart healthcare  is anticipated  to make a great leap forward  when it gets combined  with
+loT, cloud computing,  Big Data, and Al, the so called core technologies  of the 4th Industrial  Revolution.  Therefore,
+if interpreted  another  way, in smart health care, there is a set of data that are produced  by or measured  from
+consumers  or patients.  Collecting  this data and analyzing  them using techniques  like Big Data are the specialized
+firms. Then, based on the findings,  medical  institutions  provide  services  to consumers.
+Data collection/
+analysis
+9 Health counseling
+Remote/face  to face Bio R&D companies,  diagnosis acompanies
+companieshealth management 2
+Y
+R
+Consumer
+i r Pharmaceutical/
+Remotefface  to face Medical institutions 7 ‘wearable
+medical  care companiesCounselling  and
+treatment Data generation
+Communication/
+data platform  companies
+[Fig.73]  Smart healthcare  structure”
+18 Source:  ETRI Future Research  Strategy  Research  Center
+M5 Understanding  the IT Business  and Ethics 159
+
+
+--- Page 161 ---
+ESSENCE
++ Growth  factors  in the smart healthcare  industry
+St ens  oatCernyina  ata
+PaarCreme
+Citapt  na aoe ean Pro
+Rotana esc)
+Caen eetPonca Teer
+MACHINE naeera reerReem  enaPe
+ro Pred
+rr .Peed aaa Comet  ageres
+CNTsSee  mar comer
+TANTS
+ber Weert  erat  ad
+<X}=> The Digital Health Hype Cycle 2017 November  15, 2017.
+[Fig.74]  Digital healthcare  hype cycle 2017
++ Key areas of smart healthcare
+In order to secure technological  superiority  and cooperation  in the smart healthcare  sector, it is necessary  to create
+an open ecosystem  for each major sector that will play a major role in smart healthcare.  The major areas of smartUser growth  and technological  advances  in wireless  mobile communications  and mobile devices.
+The importance  of analysis  using Big Data and entry into a hyper connected  society,
+Decreased  birth rates, rapid entry into an aging society,  and continuous  increase  in new and chronic  diseases.
+Increased  demand  for healthcare  due to the development  of culture  and economy.
+Pee  in
+Briers
+CaaS
+Ped
+era  ace i
+Ca  acd
+Peas
+Nt  atiag
+toa
+ROCs  cerita
+healthcare  are medical  devices,  wearable  devices,  telemedicine,  Big Data, and contract  management.
+<Table82>Key  areas of healthcare
+Area Description
+Digital medical devices Concept includes digital diagnosis.
+Digital therapy (Ex:SW for managing  diabetes,  asthma)Product  for diagnosing,  treating  and preventing  diseases.
+A product  for obtaining  specific  clinical results in treatment.
+Wearable Biometric  measuring  device developed  for the consumer  market.
+Remote  health care Healthcare  service  that is provided  remotely
+Concept  included  monitoring  remote  patients.
+Analysis  &Big Data Integrate  and analyze  a diverse  range of data
+Others Consumer  healthcare  contract
+Source:  ‘Digital Healthcare’,  A Global Contest,  iPnomics,  March, 2016
++ Core technologies  behind smart heath care
+The key technologies  for smart healthcare  can be divided into "health information  measurement  technology",
+“customized  diagnosis  and field diagnosis  technology”,  “open health care platform  technology’,  and "remote  health
+care service  technology’,  each of which is listed in the table below.
+160 TOPCIT  ESSENCE
+
+
+--- Page 162 ---
+Understanding  the IT Business  and Ethics )
+03 Latest IT Business  Services
+A) Latest  SW centered  IT business  services
+© Artificial  Intelligence  (Al)
+Recently,  services  using artificial intelligence  are proliferating.  Trans...

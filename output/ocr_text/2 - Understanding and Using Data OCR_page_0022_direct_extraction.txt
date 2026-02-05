@@ -1,0 +1,36 @@
+Database )
++ System-centered  processing  method.  (Low processing  cost and high system  performance  are required.)
++ Preparatory  work is required.  (Collecting,  classifying,  and organizing  raw data -> Writing  in a file)
++ Standby  time is required.  (Immediate  processing  is not supported.)
++ The procedure  of modifying  changes  is complex  and difficult  until files are processed  collectively.
++ Example:  Payroll processing  system,  grade processing  system,  utility bill processing  system,  etc.
+@ Online processing  system
++ When data are transferred  to a computer,  the computer  immediately  processes  the data. (Real-time  processing
+system)
++ User-centered  processing  method.  (It incurs a high processing  cost and low system  performance  is required.)
++ Preparatory  work is not required.
++ Data currency  is maintained.
+* Difficult  to maintain,  repair, or restore,
++ Example:  Seat reservation  processing  systems  for airlines and railroads,  bank deposit  processing  systems,  stock
+account  systems  for securities  companies,  etc.
+@ Distributed  processing  system
++ Data are processed  by connecting  processors  and databases,  which are geographically  dispersed,  over the network.
++ Operated  in the form of a client/server  system.
++ Improves  the operation  speed and reliability.
++ Increases  the efficient  use of resources.
++ Software  development  is difficult,  and the security  level and degree  of design complexity  are relatively  high.
+O2 Understanding  the Database
+A) Concept  and characteristics  of the file processing  system
+The term ‘file processing  system’  refers to a method  of storing  and retrieving  paper documents  that was widely used
+before the computer  was invented.  However,  the meaning  of the term began to include  computerized  records  in the
+1960s. Such  a file system is designed  to arrange and manage the data recorded  by the user on a physical disk. In
+general,  a hierarchical  file system  with a directory  structure  is used.
+Each application program  in a file system accesses  an individual  file to process,  in order to search, input, delete, and
+modify  it.
+For example,  if a file system is used when a certain web service system saves the user’s log-in history,  the application
+program  that saves the login history has a unique form according  to the characteristics of the application program,
+depending  on the sequence  in which the information  to be saved is arranged,  and the unit of classification  of such
+information.
+@ Characteristics  of the file processing  system
++ The application  program  should directly  implement  the logical file structure  designed  by the application  programmer
+M2 Database  21

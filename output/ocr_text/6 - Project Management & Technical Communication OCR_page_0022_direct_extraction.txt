@@ -1,0 +1,33 @@
+Project Management  and Technical  Communication  )
+Deductive  reasoning  is a method of deriving  a specific  fact from general premises  that are already known.
+There is direct reasoning  that derives  one fact from one premise,  and indirect  reasoning  that derives  concrete
+facts from two or more premises  (First premise,  Second premise).  The example  below is a representative  ex-
+ample of deductive  indirect  reasoning.
+All men are mortal. (First premise)
+Socrates  is a man. (Second  premise)
+Therefore,  Socrates  is mortal. (Conclusion)?
+Inductive  reasoning  is a method  of reasoning  invented  by Francis Bacon in 1620. According  to Bacon, it refers
+to a method  of making  guesses  or hypotheses  and principles  from empirical  facts and judging  truth/falsehood
+with empirical  facts.* In other words, it is a method of deriving  a general principle  from several concrete  facts.
+The example  below is a representative  example  of inductive  reasoning.
+Socrates  is dead. (Concrete  fact)
+Socrates  is a man.
+Therefore,  a man is mortal. (General  principle)
+Both deductive  and inductive  reasoning  are methods  of reasoning  for logical explanation,  but logical explana-
+tion alone is not enough  to persuade  stakeholders.  In order to effectively  persuade  stakeholders,  there is more
+to be needed  than logical explanation.
+In some cases, it is necessary  to explain or verify an established  hypothesis  using a statistical  method,  and
+the two mutually  exclusive  statements  used in this case are the null hypothesis  and the alternative  hypoth-
+esis. The null hypothesis  is an initial argument  that is recognized  based on existing  knowledge, while the al-
+ternative  hypothesis  is a new argument  that we hope to prove as a new truth through  testing. For example,
+if there is an existing  claim that “the average  life expectancy  of men in Korea is 70 years old”, and there is a
+claim that “the average  life expectancy  of men in Korea has recently  increased  to over 70 years”, we can con-
+sider the following  null and alternative  hypotheses,
+The Null Hypothesis:  The average  life expectancy  of men in Korea is 70 years old.
+The Alternative  Hypothesis:  The average  life expectancy  of men in Korea is not 70 years old.
+Based on the above two hypotheses, the  hypothesis  is adopted  or rejected  through  statistical  hypothesis
+testing. In the example  above, if the null hypothesis  is rejected  and the alternative  hypothesis  is adopted,  the
+average  life expectancy  is not 70 years old.
+3 Source:  Wikipedia  (https://ko.wikipedia.org/wiki/¢424)
+4 Source:  Wikipedia  (https://ko.wikipedia.org/wiki/It)
+M6 Project  Management  and Technical  Communication  21

@@ -1,0 +1,40 @@
+ESSENCE
+project manager,  developers,  designers,  and so forth. By understanding  the customer  requirements  quickly,
+customers  can be induced  to participate  actively  using the use case technique,  the functional  requirements  of
+the system can be determined  at the beginning  of the project, and the results can be documented.
+The use case technique  identifies  stakeholders,  classifies  them into homogeneous  groups according  to their
+roles, and classifies  them into an actor. Each actor has a different  view and use of the system. A use case,
+which is the use of the system by an individual  actor, can be identified  based on this. A use case corresponds
+to a “use example’  that shows for what use (purpose)  each actor uses the system. Each use case is a set of
+scenarios  used by a particular  actor to accomplish  a certain  function  or task.
+Scenarios  should be created for each use case. A scenario  represents  the flow and process of an event,
+and can include information  exchanged  between  systems and actors, and the situation,  environment,  and
+background,  etc. in which interactions  occur. The use case technique  is used to verify user requirements
+because it represents  the interaction  between  the user and the system and can clearly express  what the
+system  performs.
+@ Information  modeling
+Information  exchanged  between  actor and system can be found using the use case scenario.  Using the
+information,  information  modeling  should be performed  to identify  the information  that should be saved and
+managed  inside the system, and the result should be displayed  as a class diagram  of UML (Unified Modeling
+Language).  By using information  modeling,  the basic classes required  in the system can be identified,  and
+the correlation  between  classes can be found from the relationships  between  classes, and the properties  of
+each class can be found. Generally,  a class diagram can be obtained  in this phase, which expresses classes,
+properties  inside the classes,  and the relationships  between  the classes  only.
+© Dynamic  modeling
+In the previous  section, the properties  and relationships  of the classes, which constitute  the system, were
+displayed  in the class diagram by performing  information  modeling.  Based on this, the method of performing
+dynamic  analysis can be described  as follows. Dynamic  analysis is the process of finding the operations  of
+classes by paying attention  to changes  to the state or operations  of the objects  constituting  the system, or
+the interactions  between  objects.
+UML identifies  interactions  between  objects using the sequence  diagram,  and then identifies  the operation  of
+each class based on the identified  interactions.  It is common  to create a sequence  diagram  for each use case.
+Use case scenarios  are created by regarding  a system as a black box, whereas  sequence  diagrams  further
+expand use case scenarios  and represent  the process  of interaction  between  objects  inside the system.
+© Functional  modeling
+Sometimes,  various  functions  should be performed  to carry out an event (operation)  identified  by a sequence
+diagram.  Internally,  these functions  contain  complex  logic, and can be expressed  as operations  in a function  on
+a smaller scale. The activity  diagram can identify a potential  or new activity  by expressing  the various  logics
+performed  within an operation  as an activity.  The activity  diagram  is used to accurately  understand  the process
+of handling  events  in a class. The diagram  is used to understand  the complex  process  handling  procedure  or to
+identify  the additional  operations  of a class.
+70 TOPCIT  ESSENCE

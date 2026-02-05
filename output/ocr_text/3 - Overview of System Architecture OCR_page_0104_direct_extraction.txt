@@ -1,0 +1,49 @@
+Overview  of System Architecture )
+- Hardware  team: Manufactures  the PWB using the artwork.
+- PWB:
+Making  the PWB A circuit board is made by melting  other parts with chemicals  and the necessary
+(printed  wiring board) parts using a copper  disk. A machine  uses artwork  data to draw the circuit on the
+‘ PWB
+and integrating board and make the PWB.
+modules - Software team: Integrates  modules.
+(For example,  embedded  Linux software  integrates  the bootloader,  Linux kernel, and
+apps.)
+- Hardware  team: Mounts  parts like the CPU and memory  on the PWB.
+- Software  team: Tests if the actual hardware  operates  as intended.
+Part mounting  and rn . . .
+hardware  testing (Since it is not realistic  to test all designed  and completed  codes, a test program  is Test results
+made to check the normal  operation  of hardware  parts on the PCB, each CPU port,
+the memory  unit, and I/O devices.)
+- Installation  of software  on hardware
+(Hardware  power  supply  > Bootloader  execution  Bootloader  OS execution  > OS
+performs  intended  action, according  to the system  input value.)
+- Solving  the identified  problem  until the mass production
+- Establishing  countermeasures  to unexpected  problems,  such as the increasing  part
+defect  rate and part termination
+- Conducted  after functional  stabilization  (six months  before  the mass-production
+testing)
+- Conducted  in various  environments  (high temperature/high  humidity  and sub-zero
+environments)  for about six months  — For worldwide  export
+- EMI: Inspection  of the interference  of the electromagnetic  wave on other electronic
+Specification parts (Change  of channel  when using a mobile phone)
+inspections,  such as - Safety: Product  stability  testIntegrated  testing  and
+debugging
+Mass-production
+testing
+Quality  inspection
+EMI and safety
+results
+EMI and safety - The designer  includes the EMI Team data in the debugging  circuit during the
+integrated  testing  and debugging  for EMI debugging.
+Product  shipment - Finished  product  shipment
+02 Embedded  Hardware
+A) Microprocessor,  the key to embedded  systems
+An embedded  system can handle more functions  and performance  because  the processor  provides  the performance
+required  to drive the device. Early microprocessor  units (IMPUs) were made in a single chip, in which registers  data
+processing,  arithmetic  logic unit (ALU) for mathematical  operation,  and flags for storing  result values were integrated
+into a chip. Although  CPU and MPU were separated  according  to use and purpose in the past, the boundaries  now
+are somewhat  ambiguous.  Since then, microcontrollers,  with a built-in processor,  memory,  and control interface  on a
+single chip, have emerged  to be used for real-time  operating  systems  or automatic  controls.
+It is not far-fetched  to consider  that the MPU is included in all the electronic  devices that are open to user
+intervention  in its use or configuration.  It is currently  used in smartphones,  smart bands, and tablet PCs that are used
+M3 Overview  of System  Architecture  103

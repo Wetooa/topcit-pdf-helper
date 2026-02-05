@@ -1,0 +1,38 @@
+ESSENCE
+ta oe
+AP 1 vo AP 2 ws
+: .
+7 .
+7 .
+Basic Service / Basic Service \
+Set(BSS) , Set(BSS) Y
+1 \
+1 1a A 1 a A 1
+1 i
+STA2 STA4 \ STAI STA8. |5 ; ‘a 5 i. ‘
+. /a > yy A A
+STA3 S. STAG STAT ef
+. +
+[Figure 66] Extended  service  set of IEEE 802.11
+(Source:  W. Stallings,  Network  Security  Essentials,  Pearson,  p.180)
+B) Security  threats  and responses
+Since wireless  LAN communication  uses radio waves, physical  access control on the communication  medium
+is impossible.  Therefore, anyone can use wireless  LAN services and various security  threats can be caused by
+radio wave collection  and disturbance.  [Figure 67] shows various  security  threats  in the wireless  LAN.
++ Access  without
+P important  system rights
++ Free internet  << 5 « Eavesdropping/snipping
+- Wireless  DoSoe ’ + Mac spoofing° Ww . Cyber security incident + Hacking a Internal
+occurs in the Wi-Fi zone. information
+OPENAP collectiona eg IPPBX Web server pe 8 + Snipping, etc.
+-_ <~_ w
+Internet Fd =
+networkRogue  AP
+Ww External  AP
+Fon EL
+: w
+&IPS Groupware _— D
+@ servermisconfigured  AP <=
+[Figure  67] Wireless  LAN security  threats
+(Source:  Baek Jonghyeon,  Domestic  Wi-Fi Security  Status  and Guide to Safe Wireless  LAN Usage,  TTA Journal)
+126 TOPCIT  ESSENCE

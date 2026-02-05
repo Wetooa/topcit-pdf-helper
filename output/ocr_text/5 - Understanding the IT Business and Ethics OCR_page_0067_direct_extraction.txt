@@ -1,0 +1,33 @@
+ESSENCE
+B) Business  process
+An enterprise  is a formal organization  whose objective  is the pursuit  of profits through  the sale of goods or services
+at prices higher  than the costs required  to produce  them.
+Furthermore,  an enterprise  can be viewed as a collection  of interrelated  business  functions  (or activities)  defined by
+various business  rules with the aim of realizing  some objectives.  Here, the term “business  rules” refers to the rules
+that determine  when, how, in what order, and which rules should be applied. Business  rules (ie. processes)  have a
+significant  impact  on an organization's  management,  performance,  and value creation.
+The step of describing  the method and the job of organizing  work in an enterprise  is called the “business  process”.
+Examples  of common  business processes  by function  (such as manufacturing  and production,  sales and marketing,
+finance,  and HR management)  are described  in the table below.
+<Table 20> Relationships  between  the functions  and business  processes  of an enterprise
+Functions  of an enterprise Business  Processes
+| + Product  assembly + Ordering  and procurement  management
+Manufacturing  and * Quality inspections * Production  planning management
+Production
++ Raw material  list production + BOM management
++ Customer  identification + Product  sales
+Sales and Marketing + Customer  product  management + Distribution  management
+* Cost estimation  management + Prepayment/borrowing  management
++ Issuance  of bonds + Settlement  of payment
+Finance/Accounting + Process payment + Tax invoice issuance
++ Production  of financial  statements + Cost management
++ Recruitment + Employee  welfare  management
+HR Management + Appointment + Performance  evaluation
+* ardiness  and absenteeism  management + Wage management
+03 Examples  of the IT Business  Process
+The figure below is a diagram  of the typical service process of a company  that sells multifunctional  printers.If  a
+customer  encounters  a problem with the multifunctional  printer he/she has been using, he/she requests  a repair
+service by contacting  the customer  center. The center assigns  a member  of the service personnel if a visit to the
+customer's  site is deemed  to be warranted. The service personnel  assigned  to the task talks to the customer  to
+determine  the symptoms  and schedule  the visit.
+66 TOPCIT  ESSENCE

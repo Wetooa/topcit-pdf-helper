@@ -1,0 +1,33 @@
+Understanding  the IT Business  and Ethics )
+01 Summary  of Lessons  Learned
+The adoption  of an IT business  must be executed  in alignment  with a company’s  IT business  strategy  and plans.
+Methods  and procedures  of IT business  adoption  must be created  in accordance  with the size of the organization  and
+changes  in the external  environment  of the company.  The outsourcing  of IT services  should be considered  for the
+non-core  areas or processes  of the company.
+The IT business  adoption  process utilizes the ordering  process  and the software  development  life cycle of ISO/IEC
+12207. This is because  the core value of IT is implemented  in software,  and the success  of software  development  is
+the key to the successful  adoption  of IT business.
+IT outsourcing  helps with improving  a company’s  competitiveness  because  it relies on external  expert resources.
+However, the work-related  and technology-related  lock-in that outsourcing  entails is a problem that must be
+addressed  through  the introduction  of regulatory  measures.
+O2 IT Business  Adoption  Process
+A company’s  ordering  process is used as the basic procedure  for adopting  an IT business.  The agent that places an
+order is the department  or person responsible  for issuing the requirements,  while the agent of development  is the
+company’s  computer  department  or an external  expert  on outsourcing.
+Furthermore,  it should be mentioned  here that the lifecycle (SDLC, Software  Development  Lifecycle)  of SW after
+adoption  must follow the standard  procedures  defined in ISO/IEC 12207.
+A) IT business  ordering  process
+The IT business  ordering  process  defines  the activities  and tasks of the orderer  and describes  a set of processes  for
+deploying  systems  or software  or services.
+The process  also includes  such activities  as concept  definition  and detailed  specification  of the requirements
+concerning  the items ordered,  preparation  of the RFP, evaluation  of the proposal,  contracting,  supplier  management,
+and acquisition  of the end output.
+Evaluate  pro- snp Handover  and
+Planorder Prepare RFP posal and sign Monitoring  of completion  of
+contract PP project
+[Fig. 20] IT business  ordering  process
+By using the IT business ordering  process,  a company  can define the activities  of the contractor  and supplier  that
+must be performed  when deploying  an information  system and also enhance  the success  rate of the information
+service  business.
+The ordering  process  provides  a means  of communication  between  the orderer  and the supplier,  and lends visibility  to
+M5 Understanding  the IT Business  and Ethics 55

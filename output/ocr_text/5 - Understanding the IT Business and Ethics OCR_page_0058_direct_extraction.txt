@@ -1,0 +1,36 @@
+Understanding  the IT Business  and Ethics )
++ Defines  the activities  of the software  developer.
+Development + Defines software output and the activities  of the development  team.
+Operation + Defines  the activities  of the operator  who provides  operations  services.
+Maintenance + Defines  the activities  of the maintenance  manager  who provides  maintenance  services.
+@ Support  lifecycle  process
+The support  lifecycle  process  consists  of eight sub-processes  and plays the role of supporting  other processes.  It
+contributes  to the quality and success  of the outputs.
+<Table14>Detailed  process  of the support  lifecycle  process
+Process Description
+Documentation Defines  recording  activities  for output  generated  during the lifecycle  period process.
+Configuration  Management Defines  configuration  management  activities  and configuration  details.
+Defines  quality  assurance  activities  related to checking  the fulfillment  of the requirements  and
+Quality Assurance compliance  with the plan.
+Verification Defines  activities  for verifying  the software  output  from the developer's  perspective.
+Validation Defines  activities  for checking  the software  output from the user’s perspective.
+Joint Review Defines  activities  for comprehensively  evaluating  output  and progress.
+Audit Defines  activities  for examining  the software’s  compatibility  with the plans and contracts
+Problem  Resolution Define activities  for analyzing  and resolving  problems  found in the basic life cycle process.
+© Organization  lifecycle  process
+The organization  lifecycle process  consists  of four sub-processes  which serve to configure  the underlying  structure
+of the organization  lifecycle  process  for the business,  without  being constrained  by a specific  project or information
+system  deployment  contract.
+<Table 15> Detailed  description  of the organization  lifecycle  process
+Process Description
+Management Defines  the basic management  activities  including  project management  activities.
+Infrastructure Defines  the basic structure  of the lifecycle  process.
+Defines  the improvement  activities  carried out by the stakeholders  or the organization  which is
+Improvement participating  in the process.
+Training Defines  the basic activities  that must be completed  when providing  trained staff.
+C) Tailoring  process
+In addition  to the main processes  described  above, there is also the tailoring2  process,  The tailoring  process  defines
+the basic activities  required  for tailoring.  It is the process  of eliminating  activities  and tasks that are not applied or
+perceived  as unnecessary  in the life cycle process.
+Although  the tailoring  process  is generally  known as the optimization  of the software  development  methodology,  this
+M5 Understanding  the IT Business  and Ethics 57

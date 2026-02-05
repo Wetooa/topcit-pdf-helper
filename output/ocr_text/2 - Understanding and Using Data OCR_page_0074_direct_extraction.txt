@@ -1,0 +1,31 @@
+Database )
+@ Boyce-Codd  normalization  ([Figure  32])
++ It is assumed  that there is a functional  dependency  relationship  between  (professor,  course name) — (text material
+name), (text material  name) — (course  name) in the table on the left.
++ In this case, the table on the left is not the Boyce-Codd  normal  form.
++ The reason is that there is functional  dependency  (text material  name) — (course  name) wherein  the determinant  is
+not a candidate  key,
++ The Boyce-Codd  normal form table is derived  by dividing  the un-normalized  table into two tables, as shown on the
+right.
+Professor Subject name Textbook  name Professor Textbook  name | Textbook  name Subject  name
+PI Data structure Book1 Pl Book1 Book1 Data structure
+PI Network Book2 Pl Book2 Network
+P2 Network Book3 P2 Books Network
+P2 Programming Book4 P2 Book4 Programming
+P3 Programming Book4 P3 Book4
+[Figure32]  Example  of Boyce-Codd  normalization
+04 Database  Design  in Which Normalization  is Applied - (4th Normalization)
+A) Concept  of the fourth normalization
+The fourth normalization  is the process  of removing  more than two multi-valued  dependencies  (MVD) if they occur in
+one relation.
+B) Characteristics  of the fourth normalization
+@ The fourth normalization  is possible  only when there is a semantic  association  constraint  between  attributes.
+@ It is established  when all attributes  are primary  identifiers.  (Primary  key)
+© Multi-valued  dependency  can be established  when there are three or more associated  attributes.
+@ It corresponds  to normalization  by semantic  association,  not by the functional  dependency  relationship.
+@© When there are three attributes,  A, B, and C, there is a semantic  relationship  as follows. However,  an anomaly  occurs
+when creating  a table using these attributes.
++ Relationship  between  A and B: A and  B are related.
++ Relationship  between  A and C: A and C are related.
++ Relationship  between  C and B: C and B are not related.
+M2 Database  73

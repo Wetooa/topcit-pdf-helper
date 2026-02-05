@@ -1,0 +1,38 @@
+ESSENCE
+@ Secure  coding  technique  for responding  to the Cross Site Scripting  (XSS) attack
++ Attack overview:
+An attacker  can insert a malicious script into a web page to induce the user to execute  it. For example,  if an
+unverified  external  input is used to create a dynamic  web page, it can cause an attack, such as information
+leakage, because  inappropriate  script is executed  with the rights of the person who views the transmitted
+dynamic  webpage.
+lalicious  script’
+is stored onTos
+@ Posting Executing
+[Malicious  script] @ Request melee  ss
+> < a
+( ) execution  in
+© Web seve oe—/ @ Response =
+Attacker [Including  malicious User
+script]
+[Figure  36] XSS security  vulnerability
++ Coding  technique:
+Special  characters  such as <>& “, should be replaced  with &lt; &gt; &amp; &quot: using a character  conversion
+function  or method,  in order to prevent  script insertion  into the external  input value. If a bulletin board allows
+HTML tags, allowed  HTML tags should be created  as a whitelist  to support  only those tags.
+<Table 10> Safe coding  example
+String name = request.getParameter(‘name’);
+if(name  != null)
+{
+name = name.replaceAlll("<”,  “&lt:”);
+name = name.replaceAll(">”,  “&gt:’);
+(8, “&amp;’);
+("Safe code name = name.replacedl
+name = name.replaceAlll("\"\"”,  “&quot:”);
+}
+Strings  related  to script in the ‘name’,  which is entered  by the user, should be filtered  and converted.
+® Secure coding  techniques  for responding  to the OS command  injection  attack
++ Attack overview:
+If the user input, that has not been properly  verified, is configured  and executed  as part or all the operating
+system  commands,  unintended  system commands  may be executed,  which may improperly  change  the rights
+or negatively  affect the system  operation.
+78 TOPCIT  ESSENCE

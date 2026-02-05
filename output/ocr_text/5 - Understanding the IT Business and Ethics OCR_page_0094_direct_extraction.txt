@@ -1,0 +1,33 @@
+Understanding  the IT Business  and Ethics )
+Amid this flow of information,  the information  generated  by the work support  system  gets utilized and the operation
+of the work process  occurs  at the same time.
+1D)» ------------
+Tred . Activities of the SEES + tasesrading partners sales employee Order/delivery Consumerum = |» CRM  Hub
+Consumer —> . Order/bid Sales plan, customer  man- y eae + Customer  response agement,  sales  analysis
+PP! > Information Li Marketingy registration =  _> Va  cee
+hesealeearey  + Information  F/B Marketing  plan,  execution
+A > Customer  service
++ Complint/Caim
+Others E-Business > ,ones CS handling
+department
+[Fig. 35] Configuration  of the CRM system
+In CRM, the customer  point of contact  has huge significance.  The customer  point of contact  or channel  collects  the
+customer's  VoC and communicates  the results produced  by the internal process  to the customer.  Therefore,  when
+the component  elements  of CRM must be identified,  it is advisable  to investigate  the channel  first of all, since this is
+the point of contact  with the customers.  Also, if information  analysis  is conducted,  followed  by information  utilization,
+it becomes  very easy to understand  the constituent  elements  of CRM.
+<Table41>Components  of the CRM system
+Components Description
+Customer  data + As the date storage  that keeps customer  data, each constituent  element  of CRM fetches,  updates,  and
+warehouse adds information  to the data warehouse.
+OLaP + Using the information  from the data warehouse,  OLAP and data mining can perform  diverse  analyses
+of customers  and investigate  the relationships  between  the extracted  indicators,  as well as supportData minin; os -8 decision-making  on customer  acquisition
++ Asystem  that provides  services  tailored  to customers’  needs and recommends  business  directions  that
+Campaign  system might generate  profits.
++ Utilizes  methods  like the system  call center  (call center),  which provides  1:1 or 1:N marketing  support,
+Channel system emails, direct mails.
++ Asystem  that uses customer  information  for sales planning,  customer  management  and sales
+ae performance  evaluation  and also provides  sales support to sales staff
+Customer  service + Asystem  that leverages  the VoC (voice of customer)  for customer  service  support  and product
+system maintenance  (A/S), etc.
+M5 Understanding  the IT Business  and Ethics 93

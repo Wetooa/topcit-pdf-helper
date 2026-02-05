@@ -1,0 +1,36 @@
+Database )
+A) Requirements  collection  and analysis
+@ Collect  and analyze  the business  requirements  of the user.
+@ Create a requirement  statement  as a phase deliverable.
+@ Identify  both static and dynamic  structural  requirements.
++ Static structure  requirements:  Entity, property,  relationship,  constraint,  etc.
++ Dynamic  structure  requirements:  Transaction  type, frequency,  etc.
+B) DB design
+A data model is a design document  for building a database  that has a clear goal. In the real world, a database  is
+created  over time, as shown below. Depending  on the level of abstraction,  the design can be divided into a conceptual
+data model, a logical data model, and physical  data.
+From the real world to the database...
+NcclnWredi(e| Conceptual  world
+Conceptual  data modeling
+Entity —_ >} > | Conceptual  structure
+Logical  data
+Physical  (computer)  world modeling
+Physical  data modelingStorage < Logical structuredatabase
+[Figure  9] Process  of creating  a database  in the real world
+First, conceptual  data modeling  is performed  to embody  the database  at the higher level that has a high level of
+abstraction  in the real world. The conceptual  data model has a high level of abstraction,  focuses  on business,  and
+performs  modeling  at the comprehensive  level. This model is frequently  used for enterprise  data modeling  and EA
+establishment.  For reference, when deploying  EA-based  enterprise  data modeling,  general data modeling,  which is a
+higher level, is performed  first, after which conceptual  data modeling  is performed  for each business  area. When an
+entity-centered  data model is completed  at the higher level, a data model with a focus on concrete  business  can be
+created  according  to a concrete  business  aspect  and flow, which is called “logical data modeling’.  In addition,  a method
+that considers  the tablespace  according  to the storage  structure  of the database  is called “physical  data modeling”.
+<Table 19> Types of data modeling
+Data modeling Contents Level
+A. Conceptual Has a high level of abstraction,  focuses  on business,  and performs  modeling  at the comprehen-  | Abstract
+data modeling  | sive level. Often used for enterprise  data modeling,  and establishing  the enterprise  architecture a~
+B. Logical  data Accurately  expresses  keys, attributes,  relationships,  etc. for the work to develop  a system,
+modeling and the data model is highly reusable.
+C. Physical  data Design in which physical  characteristics  are considered  in order to improve  performance  and v
+modeling storage  efficiency,  so that the data can be actually  ported to a database. Concrete
+M2 Database  43

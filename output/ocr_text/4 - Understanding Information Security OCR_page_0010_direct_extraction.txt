@@ -1,0 +1,33 @@
+ESSENCE
+03 Database  encryption
+A) Considerations  when applying  database  encryption
+@) Target and method of database  encryption
+) Types of database  encryption
+D) Applying  database  encryption
+E) Procedure  of applying  database  encryptionoO
+04 Database  encryption  key management
+A) Type of database  encryption  keys
+B) Management  methods  by encryption  key lifecycle
+VII. System  Architecture  Security
+01 Windows  system  security
+A) Overview  of Windows  system security
+B) Account  and password  management
+C) Access  control
+D) System security
+E) Service security
+F) Checking  the terminal  service
+02 Unix-like  system  security
+A) Overview  of Unix-like  system security
+B) Account  and password  management
+C) Access  control
+D) System security
+E) Service  security
+10 TOPCIT  ESSENCE90
+90
+90
+91
+92
+95
+96
+96
+96

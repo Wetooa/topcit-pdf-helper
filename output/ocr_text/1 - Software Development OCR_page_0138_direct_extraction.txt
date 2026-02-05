@@ -1,0 +1,36 @@
+Software  Development )
+01 Technology  Trends  of Software  Development  Tools and Programming
+Languages
+A) Technology  trends  of software  development  tools
+@ Highlighting  the cloud-based  integrated  development  environment
+Integrated  development  environment  software  supports  all tasks related to programs  and development,  such
+as coding, debugging,  compilation,  and deployment,  in one unified program  development  environment.  It has
+been highlighted  as a development  tool capable  of meeting  the calls of open source and global IT companies
+for rapid development.  This environment  is evolving  into a cloud-based  one, such as Codenvy,  GoormIDE,
+and Cloud9,  which enables  development  regardless  of the location  and does not require the installation  of an
+integrated  development  program.
+@ Integrating  software  development  tools and ALM (Application  Lifecycle  Management)
+Performance  management  tools, requirements  management  tools, issue management  tools, etc. that support
+development  were designed  to manage  specific purposes  and specific steps. Since the introduction  of the
+cloud, it has been evolving  into a tool that encompasses  development/test/operation  due to the complexity
+of the infrastructure  and the market environment,  which demands  ever faster IT services.  The main purpose
+of the performance  management  tool was to prevent  application  delays and improve  performance.  Recently,
+such tools have been integrated  with ALM, which detects  changed  codes and manages  the changes,  and
+supports  build/distribution  comprehensively.
+B) Technology  trends  of programming  languages
+® TypeScript,  an extended  version  of JavaScript
+JavaScript  is one of the most popular  and powerful  programming  languages  in the world. It is often used to
+make an interactive  web page by adding some effects to a web page, creating  a game, animation,  or drop-
+down menu, and effectively  controlling  the web interface.  This programming  language  is basically  useful for
+front-end  development  and is used by 88% of all websites.
+Recently,  TypeScript  has been highlighted  as an extended  version  of JavaScript.  TypeScript  is an open source
+project  created  by Microsoft  in 2012, and is used as the base language  of Angular.
++ Key features  of TypeScript
+- It includes  the functions  of JavaScript  as it is based on JavaScript.
+- Itis a “static type” language  that checks types at the time of compilation.
+- It offers ease of compilation  in all browsers  and environments,  making  it highly useful.
+- It enables  easy coding  and learning  because  everything  is a class or component.
+- It is applicable  to large-size  application  programs.
+@ ava 9 release
+Java is an object-oriented  programming  language  and has become  the most widely used language  in web
+M1 Software  development  137

@@ -1,0 +1,35 @@
+Database )
+Computers  design by creating  their own learning.
+7 Present and future of A\ They reuse data to be learned for other problems.2010's Machine  learning,  deep data th | data i d. and hardleaming Big data that processes  a large amount  of data is spread, and hardware
+C) Distinguishing  Al
+@ Definition  of the Turing test
++ Atest of a machine's  ability to exhibit  intelligent  behavior  equivalent  to, or indistinguishable  from, that of a human.
++ In a given problem-solving  thinking  situation,  if the evaluator  cannot reliably tell the machine  from the human,  the
+machine  is said to have thought  in the same way as a human being.
+@ Principles  of the Turing  test
++ The Turing test is a kind of game designed  to test whether  a machine  can have intelligence.
++ In the ‘Imitation  Game’, people and machines  are isolated  in different  rooms and communicate  by teletype.
++ The people try to confirm  that the other party is a machine  by asking it questions,  and the machine  tries to lead
+the people to believe  that it is a real human through  its answers.
++ If the machine  wins the game, the machine  can be said to have Al.
+D) Machine  learning
+@ Definition  of machine  learning
++ Aprogram  that can solve problems  in a new situation  while learning  new knowledge.
++ Science and technology  study a system that improves  its performance  by itself using empirical  data based on
+interactions  with the environment.
+@ Classification  of machine  learning
+<Table 83> Supervised  learning,  unsupervised  learning,  reinforcement  learning
+Classification Description Learning  problem
+A machine  learning  method  that uses learning  data, which describes  theintended  result. Classification,  regression,
+au Learning a function that maps the input from learning examples,  which are Sion diagnosis,
+composed  of a pair of |/O, and the output. oul network model. SVM
+A learning  method  that presents  input x and its target output  y. ,
+A machine  learning  method  that uses learning  data, which does not
+describe  the intended  result.
+Applicable to the clust blem  bi \ ti be built . . . pplicable to the clustering  problem because learning  data can be bui Clustering,  density  function
+Unsupervised easily ia though pladipaeats  Poor. i h estimation, dimensionallearning For example,  input is given, but there is no corresponding  output. The reduction,  feature extraction,
+purpose  of learning  is to understand  the common  characteristics  of input
+patterns.
+A leaming  method  in which only input x is given and target output  y for it
+is not presented.K-means
+M2 Database 157

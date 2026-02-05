@@ -1,0 +1,47 @@
+ESSENCE
+<Table 59> ISO 12207 Life Cycle Process
+Classification Content
+Acquisition Define the activities  to be performed  by organizations  that acquire  systems,  software
+4 products,  or software  services
+Sane Define the activities  to be performed  by organizations  that supply systems,  software
+PP products  or software  services
+Development Define the activities  to be performed  by development  organizations  that define and build
+software  products
+0 ; Define  the activities  to be performed  by organizations  that provide  information  systemperation - ‘ : > .operation  services  in an actual environment  (product  environment)  for users
+Mai Define the activities  to be performed  by organizations  that provide maintenance  services  forjaintenancesoftware  products
+The following  is an acquisition/management  process  framework  among  SW standard  processes  for acquisition
+and managing  public projects  based on ISO/IEC 12207. The acquisition/management  process  framework  is a
+system that defines  basic activities  in the entire life cycle for software  introduction,  and procedures  and activ-
+ities for performing  basic activities  from a managerial  and engineering  perspective.  The framework  consists  of
+three life cycle processes:  primary:  supporting  and organizational,  and 20 subprocesses.
+5, Primary  Life Cycle Processes
+6. Supporting  Life Cycle Processes
+Acquisition 6.1 Documentation  Process
+5.1 Acquisition  Process
+6.2 Configuration  Management  Process(Ctataton ] (Request or propos peparaion } (Convectrepoaton  ard paate ) (Suppiermontoing  ) (Aezepanc  ard conscton ) (ca  contraon nseenene  Pees
+5.2 Supply  Process Quality  Management
+5 Contract preparation 5 Execution and Review and Delivery and Wity Assurence Prroposal preparation ond upiate Planning en reve one completa 6.3 Quality Assurance Process
+6.4 Verification  Process
+Contract Operation 6.5 Validation  Process
+5.6 Information  Strategy  Planning  Process 5.4 Operation  Process
+66 Joint Review  Process
+Process | Current  system} { Target  system  } { implementation  plan Process] { Operational  | System  |{ User
+implementation  || analysis definition establishment implementation  || Testing || operation  || support (67 avait Process }
+Engineering (68 Problem Resolution  Process
+5.3 Development  Process 5.5 Maintenance  Process
+System system system system
+requirements  analysis  || architectural  design integration  || qualification testing
+Software Software ‘Software ‘Software Software
+requirements  analysis  || architectural  design  || detailed  design  || integration  || qualification  testing
+Software  coding  and unit testing
+7, Organizational  Life Cycle Processes
+Planning
+7.5 Informatization  Planning  Process Necessity proposal] (Base planestabishment  ) [_ Implementation plan  estabishment
+Management
+7.1 Management  Process
+[intiaon  and scope definition J pemng)  (Beaton  and cont7.2 Infrastructure  Process 7.4 Training  Process
+Review  and evaluation Closure
+7.6 Performance  Management  Processrocess
+Process
+assessment
+124 TOPCIT  ESSENCE[Figure  42] ISO 12207 Framework

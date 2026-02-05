@@ -1,0 +1,221 @@
+LEARNING GUIDE: Pages 103-107
+Generated: 2025-12-05 10:50:05
+PDF: 2 - Understanding and Using Data OCR
+
+================================================================================
+LEARNING GUIDE
+================================================================================
+
+Here's a simplified, easy-to-read learning guide based on the provided text:
+
+---
+
+# Database Essentials: Relational Algebra & SQL Basics
+
+## 1. Relational Algebra Operations
+
+Relational algebra uses operators to create new relations (tables) from existing ones.
+
+### Basic Relational Algebra Operations
+
+*   **Join (⋈):** Combines tuples from two relations based on a specified condition.
+    *   **Theta Join (⋈θ):** Joins using any comparison condition (e.g., `=`, `<`, `>`, `≠`).
+    *   **Equi-Join (⋈=):** Joins using only equality (`=`) conditions. Common attributes appear in duplicate columns.
+    *   **Natural Join (⋈*):** Joins using only equality (`=`) conditions on common attributes, which appear only once in the result.
+*   **Division (÷):** Selects tuples from one relation (R) that are associated with *all* tuples in another relation (S).
+
+### Extended Relational Algebra Operations
+
+These offer more advanced ways to combine or filter data.
+
+*   **Semi Join (⋉):** Returns tuples from the first relation (R) that have a match in the second relation (S) based on common attributes.
+*   **Outer Join (⋈+):** Includes all tuples from both relations, even if there's no match. Unmatched fields are filled with `Null` values.
+*   **Outer Union (∪+):** Combines two relations even if they have different numbers of attributes. It expands relations by adding `Null` values for missing attributes so they can be merged.
+
+---
+
+## 2. Introduction to SQL and Database Management
+
+SQL (Structured Query Language) is crucial for managing and processing data in databases.
+
+### Recent Trends & SQL Importance
+
+*   **Relational Databases Dominant:** Most corporate systems still run on relational databases.
+*   **SQL Proficiency Needed:** Software developers must be proficient in SQL for efficient data processing.
+
+### SQL Origin
+
+*   Developed by IBM researchers Donald D. Chamberlain and F. Raymond Boyce in the early 1970s.
+*   Originally named **SEQUEL** (Structured English Query Language).
+
+### Learning Objectives
+
+After studying, you should be able to utilize:
+*   Data Definition Language (DDL)
+*   Data Control Language (DCL)
+*   Data Manipulation Language (DML) for basic operations, group functions, and advanced joins.
+
+### Key Terms
+
+*   SQL
+*   Data Definition Language (DDL)
+*   Data Control Language (DCL)
+*   Data Manipulation Language (DML)
+
+### Practical Business Relevance
+
+Developers often handle all aspects of database management (creation, modification, deletion of tables and data processing). Therefore, a strong understanding of DDL, DCL, and DML is essential for smooth project execution.
+
+---
+
+## 3. Types of Relational Database Languages (SQL Categories)
+
+SQL is categorized into three main language types based on their function.
+
+| Classification              | Purpose                                                      | Main Commands (Examples)           |
+| :-------------------------- | :----------------------------------------------------------- | :--------------------------------- |
+| **DDL** (Data Definition Language) | Defines the database schema (structure of data). Used to create, alter, and delete database objects like tables. | `CREATE`, `ALTER`, `DROP`, `RENAME` |
+| **DCL** (Data Control Language)   | Controls access to data, manages security, integrity, and concurrency. | `GRANT`, `REVOKE`                  |
+| **DML** (Data Manipulation Language) | Manipulates data within the database (search, insert, update, delete). | `SELECT`, `INSERT`, `UPDATE`, `DELETE` |
+
+**Note on TCL:** Sometimes, `COMMIT` and `ROLLBACK` (for transaction control) are separated into a **TCL (Transaction Control Language)** category.
+
+### Evolution of SQL Standards
+
+SQL standards have been periodically updated by ANSI.
+
+*   **1986 (SQL-86):** First SQL standard.
+*   **1992 (SQL-92):** Major revision, focusing on relational databases.
+*   **1999 (SQL:1999):** Added features like regular expressions, recursive queries, and triggers.
+*   **2003 (SQL:2003):** Included XML-related features, window functions, standardized sequences, and auto-generated values.
+*   **2006 (SQL:2006):** Further refinements.
+*   **SQL/NM (In Progress):** Focuses on consistent access to metadata.
+
+### Characteristics of SQL:1999 (SQL3)
+
+SQL:1999 introduced features often found in object-relational database management systems (ORDBMS).
+
+*   **Relational Characteristics:**
+    *   New data types and conditional expressions.
+    *   Strengthened type system.
+*   **Object-Oriented Characteristics:**
+    *   Support for user-defined types (UDTs), objects, object identifiers.
+    *   Reference types, functions, and methods.
+*   **Other Additional Functions:**
+    *   Recursive query support.
+    *   Active database functions (e.g., triggers).
+    *   Client-server environment support.
+    *   Improved security and view update functions.
+
+---
+
+## 4. Data Definition Language (DDL) Details
+
+DDL commands are used to define and manage the structure (schema) of your database.
+
+### DDL Commands
+
+*   **`CREATE`:**
+    *   **Purpose:** To define and create new database objects.
+    *   **Examples:** Creating a table, view, index, schema, or function.
+    *   **Key points:**
+        *   Primary and foreign keys can be defined when creating a table.
+        *   Object names must be unique within their scope.
+
+*   **`ALTER`:**
+    *   **Purpose:** To modify the structure of an existing database object.
+    *   **Examples:** Adding or deleting columns, or modifying constraints in a table.
+
+*   **`DROP`:**
+    *   **Purpose:** To delete a database object and all its associated data and structure.
+    *   **Key points:**
+        *   Before dropping a table, any constraints that reference it must be deleted first.
+        *   Some systems (like Oracle) allow `CASCADE CONSTRAINT` option to delete related constraints simultaneously.
+
+*   **`RENAME`:**
+    *   **Purpose:** To change the name of an existing database object (e.g., a table).
+
+---
+
+================================================================================
+ORIGINAL TEXT (First 5000 chars)
+================================================================================
+
+--- Page 103 ---
+ESSENCE
+Operator Sign Description
++ An operation  to create  a new relation  that is composed  of tuples, which is created  by combining
+the tuples of two relations  that meet the join condition  in two or more relations.
++ Theta  join: A join operation  with general  join conditions  (=, <, <, >, =, 4).
+Join pal + Equi-join:  A join that uses the equal condition  (=) only. The common  attribute  used in the join
+appear  in duplicate.
++ Natural  join: A join that uses the equal condition  (=) only. The common  attribute  used in the join
+appear  only once without  duplicates.
+er . + An operation  that separates  and projects  the tuple of R where all tuples  of the relation  S exist,Division + ,when there are two relations  R and S.
+03 Extended  Relational  Algebra  Operations
+Useful operations  can be defined by extending  the basic relational  algebra operations.  Extended  relational  algebra
+operations  such as outer join, semi join, outer union, etc. are generally  used.
+<Table 38> Extended  relational  algebra  operations
+Operator Sign Description
+Semi join+ An operation  that performs  natural  join for the result of projecting  the relation
+after the operator  with join attributes  on to the relation  before  the operator.D< «It has the same effect as projecting  the result of performing  natural join on two
+relations  using the attribute  of the relation  before the operator.
+Outer  join+ In this operation, if a tuple corresponding  to a tuple in one relation  does not exist
+in the other relation,  it is not excluded,  but the other is changed  to a Null tuple to
+pet include it in the result.
++ All tuples of the two join relations  are included  in the result relation
+Outer union
+102 TOPCIT  ESSENCE+ An operation  that creates  a union by expanding  the sequence  number  of two
+U relations that cannot be completely  merged.
+
+
+--- Page 104 ---
+Database
+>> Recent  trends and major issues
+Even though the types of databases  have been diversified  recently,  most of the information  systems  used
+by corporations  and organizations  are still running  on relational  databases.  Therefore, software  developers
+should be familiar  with relational  database  language  and query processing  methods  and should be able to
+use them proficiently  in order to process  data efficiently.
+SQL was developed  by IBM researchers  Donald D. Chamberlain  and F. Raymond  Boyce in the early 1970s.
+SQL began with the name of SEQUEL  (Structured  English  Query Language)  and was devised  to manipulate
+and receive  the data stored in System  R, which was the semi-relational  database  management  system of
+IBM. Recently,  interest  in acquiring  SQL-related  certifications  has been increasing  because  the importance
+of SQL has been highlighted.
+>> Learning  objectives
+1. To be able to utilize a Data Definition  Language  (DDL).
+2. To be able to utilize a Data Control Language  (DCL).
+3. To be able to utilize the basic operation,  group function,  and advanced  join of a Data Manipulation
+Language  (DML).
+>> Keywords
++ SQL, Data Definition  Language  (DDL), Data Control  Language  (DCL), Data Manipulation  Language  (DML)
+M2 Database  103
+
+
+--- Page 105 ---
+ESSENCE
++ Preview  for practical  business
+Since most of the recent information  systems  store data in a database,  an adequate  database  processing
+language  is needed  to process  values by linking a program  to a database.  In particular,  as more than 90%
+of the databases  adopted  by a project  are mostly  relational  databases  in the majority  of cases, developers
+should be familiar with the relational  database  language.  So how well should developers  familiarize
+themselves  with the relational  database  language?  Objects  such as tables and views are managed  by the
+data architect  (DA) or the database  administrator  (DBA) in some large-scale  projects;  however,  developers
+manage  everything  from table creation/change/delete  to data processing  in most projects.  Therefore,
+it is desirable  for the developer  to know all of the data definition  language  (DDL), data control language
+(DCL), and data manipulation  language  (DML) of the relational  database,  in order to perform those tasks
+smoothly.  That is, relational  database  languages  are one of the key database  build and operation  areas that
+developers  should know well, and it is recommended  for developers  to learn those languages  to such a level
+that they can use the syntax  quite freely,
+104 TOPCIT  ESSENCE
+
+
+--- Page 106 ---
+Database )
+01 Tupes of Relational  Database  Languages
+A) DDL, DCL, DML
+The relational  database  language  processes  the structure  and value stored  in a relational  database  and can be
+classified  into the Data Definition  Language  (DDL), Data Control Language  (DCL), and Data Manipulation  Language
+(OML).
+<Table 39> Types of relational  database  languages
+Poe — MainClassification Description onan  ra
+CREATEie Definition A language  that d...

@@ -1,0 +1,43 @@
+ESSENCE
+B) Deletion  anomaly
+C) Update  anomaly
+02 Concept  of Functional  Dependency  and Rule of Inference
+A) Functional  dependency
+B) Armstrong's  axioms
+03 Database  Design in Which Normalization  is Applied  (1st, 2nd, 3rd, Boyce-Codd)
+A) Normalization  process  ([Figure  28))
+B) Example  of normalization
+04 Database  Design in Which Normalization  is Applied  - (4th normailzation)
+A) Concept  of the fourth normalization
+B) Characteristics  of the fourth normalization
+C) Targets  of the fourth normalization
+D) Performing  the fourth normalization
+05 Database  Design to Which Normalization  is Applied  - (Sthnormalization)
+A) Concept  of the fifth normalization
+B) Characteristics  of the fifth normalization
+C) Performing  the fifth normalization
+D)Performing  the fifth normalization
+06 Denormalization
+A) Concept  and procedure  of denormalization
+B) Actual denormalization
+07 Considerations:  for Performance  Design
+10 TOPCIT  ESSENCE69
+69
+70
+70
+“
+71
+71
+a
+73
+13
+73
+14
+1S
+76
+16
+76
+76
+77
+78
+82

@@ -1,0 +1,23 @@
+>|
+Pr Input signal Output signal Layer structure,  sigmoid neuron,
+Multi-Layer error correction,  strong againstPerceptron al , :(MLP) noise, discrete/consecutive  I/O
+mapping.
+>|
+Input —- First hidden Second Output
+layer layer hidden layer —_layer
+[figure6-8]  Multi-Layer  Perceptron  with two hidden layers
+@ Unsupervised  leaming
+<Table 85> Unsupervised  Study Table
+Classification Conceptual  diagram Description
+Clustering  is a technique  for finding
+. a group of closely  related  data. A
+listening data set is classified into a subset
+or a cluster.
+©A ° ® © © ® © A clustering  algorithm  that
+classifies  the data of similar  groups
+K-means ¥ by measuring  the distance  of
+the data from the center  of each
+Qo @2x® cluster.
+© « ©
+©e®
+M2 Database  159

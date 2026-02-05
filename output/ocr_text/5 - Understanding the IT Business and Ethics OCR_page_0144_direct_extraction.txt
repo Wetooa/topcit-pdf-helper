@@ -1,0 +1,40 @@
+Understanding  the IT Business  and Ethics )
+<Table76>  Component  elements  of MDM and roles
+Component  elements Roles
++ Located  in the DMZ or the screened  subnet,  the server  functions  as the authentication
+MDM Gateway  Server connection  between  the internal  network  and the mobile  device.
++ Gateway  role for communication  like direct push update.
++ Role of managing  and operating  mobile device.
++ The server  plays the role of a functional  hub for distributing  group policies  and software.  The
+server  also plays the role of communicating  with other enterprise  infrastructures.MDM Device Management
+Server
++ Assigns  authentication  to mobile devices  that had been recalled  or upon receiving  a certification
+MDM Enrollment  Server request. The device certification  is carried out using OTP.
++ Stores the databases  for managing,  configuring,  working,  and setting  up the mobile device on
+Databases the MDM Device Management  Server and the MDM Enrollment  Server
++ MDM deployment  effects
+By deploying  MDM, enterprises  will gain flexibility  and expandability.  They will able to connect  to diverse services,
+manage  devices at PC level, ensure consistency  in security,  provide remote support  easily, trouble shoot issues and
+provide  OS/language/system  support.
+02 Smart Business  Infrastructure
+A) Convergent  infrastructure
+@ Machine  to Machine  (M2M)
+Machine-to-Machine  (M2M) refers to machine  to machine  communication.  M2M integrates  information  to network  and
+platform  to provide a service  that monitors  the status of objects,  controls  the situation  and sends information  about
+the status of objects to users. Network  communication  networks  are used to provide people or intelligent  devices
+with information  about  objects  or to let them control the objects.  Typical  types of M2M services  are described  below.
+Solutions  that use communication  and IT
+technology  to connect  to devices,  peopleand | © ===  ==="  =" === aes  = .
+the environment  in remote  locations  and check
+up on their status.
+‘Type Type
+Environment-SoCRemote . i jiasce
+meterin; Remote metering 7 doreat tons 7 ov Asset management
+8 Security/vending  machine
+Remote  Control | Remote  Control m-POS
+credit  card payment Wireless
+Fleet management Fleet management
+Remote  monitoring  | Remote  monitoring
+Delivery management Delivery  management Subject
+[Fig. 59] Types of machine-to-machine  services  and market  status
+M5 Understanding  the IT Business  and Ethics 143

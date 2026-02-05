@@ -1,0 +1,206 @@
+LEARNING GUIDE: Pages 67-71
+Generated: 2025-12-05 10:46:38
+PDF: 2 - Understanding and Using Data OCR
+
+================================================================================
+LEARNING GUIDE
+================================================================================
+
+Here is a simplified, easy-to-read learning guide based on the provided text:
+
+---
+
+# Database Concepts: Integrity, Keys, and Normalization
+
+## 1. Data Integrity
+
+Data integrity ensures data quality and consistency within a database.
+
+### Types of Integrity:
+
+1.  **Entity Integrity:**
+    *   Ensures that a primary key (PK) is unique and not NULL.
+    *   No two rows can have the same PK value.
+    *   Each row must have a unique identifier.
+2.  **Referential Integrity:**
+    *   Ensures consistency between related tables (parent-child relationship).
+    *   A foreign key (FK) in a child table must refer to an existing primary key value in the parent table, or be NULL.
+    *   **Example:** If a `Use History` record refers to a `Credit Card` number, that `Credit Card` record cannot be deleted or changed if `Use History` still references it.
+3.  **User-Defined Integrity:**
+    *   Specific business rules defined by the user that don't fit into other integrity categories.
+
+## 2. Keys in Databases
+
+Keys are attributes or sets of attributes used to uniquely identify records and establish relationships.
+
+*   **Super Key:**
+    *   A subset of all fields in a table.
+    *   An attribute or set of attributes that can uniquely identify a record.
+*   **Candidate Key:**
+    *   A super key that is unique and minimal.
+    *   "Minimal" means if you remove any attribute from it, it loses its uniqueness.
+    *   Candidates for the Primary Key.
+*   **Primary Key (PK):**
+    *   A unique identifier chosen from the candidate keys to distinguish a specific record.
+    *   Must be unique and minimal (like a candidate key).
+    *   **Cannot be NULL.**
+    *   **Selection Criteria (if multiple candidate keys):**
+        *   Choose a field whose values are **not frequently changed**. (Frequent changes require uniqueness checks).
+        *   Choose a field whose values are **relatively simple and short** (less complex data domain for efficient comparison).
+*   **Foreign Key (FK):**
+    *   An attribute or set of attributes in one table (Table A) that refers to a primary key (or unique key) in another table (Table B).
+    *   Establishes a link between Table A and Table B.
+    *   Can have duplicate values or NULL values (unless restricted by specific constraints).
+    *   Must refer to a field with a unique value in Table B.
+
+---
+
+## 3. Database Normalization
+
+Normalization is a fundamental theory for building stable and efficient database systems.
+
+### A. Core Concept & Importance
+
+*   **Purpose:** Removes data redundancy and associated anomalies to ensure stable data management.
+*   **Foundation:** The starting point is First Normal Form (1NF), which addresses basic data duplication.
+*   **Types of Normalization:**
+    *   **Based on Functional Dependency:** 1NF, 2NF, 3NF, Boyce-Codd Normal Form (BCNF).
+    *   **Based on Semantic Association:** 4NF, 5NF.
+*   **Normalization vs. Denormalization:**
+    *   **Normalization:** Removes anomalies by removing data redundancy.
+    *   **Denormalization:** A design technique to intentionally introduce redundancy to improve query performance (done carefully, post-normalization).
+
+### B. Practical Utilization in Business
+
+Normalization is crucial for developers in two ways:
+
+1.  **Internalized Design Thinking:**
+    *   Developers who understand normalization intuitively apply its principles when modeling data, even if not following a strict step-by-step process.
+    *   This leads to better initial designs, recognizing functional dependencies naturally.
+2.  **Data Model Verification:**
+    *   Used as a tool to verify the completeness and stability of a designed data model.
+    *   Helps identify "normalization violations" in large, complex data models, preventing data integrity issues later.
+
+---
+
+## 4. Anomalies Caused by Poor Design
+
+Poor database design, especially without considering attribute dependencies, can lead to various anomalies during data operations.
+
+### Types of Anomalies:
+
+1.  **Insertion Anomaly:**
+    *   **Definition:** Unintended information must be inserted when trying to insert specific information.
+    *   **Example (Mixed Student/Department Table):** To add a new department (`Management Information`, `Management Building`), you'd also have to create a new student record for that department, or the `Student ID` (PK) would be NULL, violating entity integrity.
+2.  **Deletion Anomaly:**
+    *   **Definition:** Necessary information is unintentionally deleted when deleting certain information.
+    *   **Example (Mixed Student/Department Table):** If student `3333` (Physics Department) is the *only* student in that department, deleting their record also deletes the `Physics Department`'s office location (`Natural Science Building`).
+3.  **Update Anomaly:**
+    *   **Definition:** The same content must be updated multiple times across several data records when modifying information.
+    *   **Example (Mixed Student/Department Table):** If the `Computer Engineering` department office changes to `Future Building`, every student record belonging to `Computer Engineering` must be individually updated.
+
+---
+
+## 5. Functional Dependency & Inference
+
+Functional dependency is a key criterion for decomposing tables to prevent anomalies.
+
+### A. Functional Dependency (FD)
+
+*   **Definition:** For a table R, if a set of attributes X uniquely determines a set of attributes Y, then Y is **functionally dependent** on X.
+*   **Expression:** `X → Y` (Y is functionally dependent on determinant X).
+*   **Example:** `(Resident Registration Number) → (Name)`
+    *   If two records have the same resident registration number, they must have the same name.
+
+### B. Types of Functional Dependency (Relevant for Normal Forms)
+
+*   **Full Functional Dependency (used in 2NF):**
+    *   An attribute Y is fully functionally dependent on X if Y is functionally dependent on X, AND Y is not functionally dependent on any proper subset of X.
+    *   **Partial Functional Dependency:** Occurs when Y *is* dependent on a proper subset of X (problematic for 2NF).
+*   **Transitive Dependency (used in 3NF):**
+    *   Occurs when attributes A, X, and Y exist in a relation R, such that `A → X` and `X → Y`, implying `A → Y`.
+    *   This is problematic if X is not a candidate key.
+    *   **Example:** `(Supplier Number) → (Place of Location)` and `(Place of Location) → (Transport Distance)` implies `(Supplier Number) → (Transport Distance)`.
+*   **Boyce-Codd Normal Form (BCNF):**
+    *   A stricter form of 3NF.
+    *   For every functional dependency `X → Y`, X must be a candidate key.
+
+---
+
+================================================================================
+ORIGINAL TEXT (First 5000 chars)
+================================================================================
+
+--- Page 67 ---
+ESSENCE
+foreign  key that refers to a primary  key, the data cannot  be deleted  or changed.
+Credit  card}
+Credit card number Cardholder  | Issue date
+9411-1111-2222-3333  | HongGildong  | 2012-11-11
+8723-4999-3999-2999  | Yang Soyu 2012-01-02
+5452-0800-0700-0600_|  Jeong Wuchi_| 2013-08-11.  |
+Use history] » Delete
+Approval
+number
+9411-1111-2222-3333  2017-11-11 | LM122 24,000
+8723-4999-3999-2999  2017-11-11 | 10494 36,000
+5452-0800-0700-0600  2017-11-11  | OM998  | 12,000Credit card number Date Amount
+Deletion  is not allowed  because  it is referenced  by the FK.
+[Figure  27] Referential  integrity
+© User-defined  integrity:  A specific  work rule, which does not fall into other integrity  categories,  is defined.
+B) Key
+© Super key: A sub-set  of all fields in a table. It is an attribute  or set of attributes  that can uniquely  identify  a record.
+@ Candidate  key: A candidate  for the primary  key. It is a super key that satisfies  uniqueness  and minimality.  That is, if
+any attribute  is removed  from a super key, the super key loses its nature and becomes  a candidate  key.
+@ Primary  key: A unique identifier  selected  from among  candidate  keys to distinguish  a specific  record in the table. Like
+the candidate  key, the primary  key has the attribute of  uniqueness  and minimality,  but a null value is not allowed. If
+there are multiple  candidate  keys, a primary  key is selected  by considering  the following  two points.
++ Selecting  a field in which values  are not frequently  changed:  Each time the value of the field selected  as the primary
+is changed,  it should be checked  whether  the value concerned  is a unique value or not. Therefore,  a column  without
+frequent  change  is more suitable.
++ Selecting  a field in which values are not relatively  complex:  If a field selected  as a primary  key has a complex  data
+domain,  the cost of comparing  the primary  key increases.  Therefore,  it is more suitable to select a domain with a
+relatively  short and simple form.
+@ Foreign key: When Table A refers to Table B, the foreign key of Table A refers to a key that can uniquely  identify  a
+record of Table B. A foreign key consists  of one field or a subset  of all fields, and cannot  have duplicate  values or a null
+value. Also, you must refer to a field that has a unique  value in Table B.
+66 TOPCIT  ESSENCE
+
+
+--- Page 68 ---
+Database
+>> Recent  trends and major issues
+The “normalization”  theory is the foundation  of completing  a system and is one of the most important
+theories  that need to be understood  when building  a system in the field. The theory  of first normalization  is
+the starting  point for normalization,  which removes  duplication  from a file system  in order that data can be
+processed  stably. This situation  occurs frequently  in the actual project site, so it is necessary  to learn the
+details in depth. The first, second,  and third Boyce-Codd  normalizations  are performed  based on function
+dependency,  whereas  the fourth and fifth normalizations  are performed by  the semantic  association
+between  attributes.  Data should be managed  stably when building  a system.  Normalization  is an important
+theory that everyone  should know when developing  an information  system, because  normalization  is the
+most important  and basic theory  for ensuring  stable data management.
+>> Learning  objectives
+1. To be able to explain the concept  and characteristics  of file dependency.
+2. To be able to explain abnormal  normalization.
+3. To be able to design a database  by applying  normalization.
+4. To be able to explain denormalization.
+5. To be able to explain the points to be taken into consideration  for performance  design.
++ Normalization  removes  anomalies  by removing  data redundancy.
++ Denormalization  is a design technique  for improving  query performance,
+M2 Database  67
+
+
+--- Page 69 ---
+ESSENCE
++ Preview  for practical  business How should normalization  be utilized in an
+actual project?
+It is quite rare that data modeling  is performed  as a series of tasks, such as identifying  entities  through
+normalization,  and setting  and diversifying  the relationship.  It is also rare to prove an anomaly  by assigning
+functional  dependency  to each table, as we did when learning  the theory of normalization.  Why, then, is it
+so important  that we should learn the theory  of normalization  and remember  the theory  of normalization?
+Learning  and utilizing  normalization  for practical  business  can be summarized  into two points.
+The first point is that those who learn the theory of normalization  accurately  can identify  objects and
+establish  a relationship  based on the idea of normalization,  even though normalization  is not performed
+according  to the normalization  procedure.
+That is, even though  data modeling  is not performed  according  to the process  of normalization,  those who
+perform data modeling  are clearly aware of the theory...

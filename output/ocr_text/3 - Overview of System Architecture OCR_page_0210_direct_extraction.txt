@@ -1,0 +1,21 @@
+Overview  of System Architecture )
+SIP It is a core network  for providing  integrated  services  in wired/wireless  multiple  access  network  environments.
+@IMS service  goals
+IMS provides  multimedia  content,  such as voice, audio, video, and data, based on the IP protocol,  and it supports
+quick service development  and change. It uses general-purpose  Internet-based  technology  to improve  the price
+competitiveness  of services  and enable easy interface  with various 3rd party applications,  based on an efficient
+session  management  function  and expansion  of business  areas, through  global linking between  services.
+© IMS network  structure
+The logical structure  of an all-IP network  is divided into a radio network  domain,  a GPRS-based  packet-switching
+service domain, and an IP multimedia  service domain.  The GPRS-based  packet-switching  service domain can be
+replaced  with an IP network  by a packet router outside the 3GPP scope. The wireless  domain can be replaced  with
+other wireless  network  access domains  and data network  access domains,  as Wibro and mobile-LAN  that are out
+of the 3GPP scope. The IMS service domain consists  of the call session control function  (CSCF) that registers  and
+processes  multimedia  calls using the IETF’s SIP protocol  and the home subscriber  server (HSS) that integrates  the
+home location register  (HLR) function  of the legacy  mobile network  with the function  to mobility  management  and
+authentication  of IP multimedia  users.
+@ MS's role in the convergence  aspect
++ ID and authentication  system  in the convergence  environment,  using the IMS infrastructure
++ Bidirectional  channel  for service  control
++ Service  session  connection,  through  the independent  service infrastructure
+M3 Overview  of System  Architecture  209

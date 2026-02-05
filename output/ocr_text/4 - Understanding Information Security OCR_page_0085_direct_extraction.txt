@@ -1,0 +1,22 @@
+Information  security
+>>b Subject
+Managing  database  safely!
+>>> Recent  trends and major issues
+An amendment  to the Personal  Information  Protection  Act, which mandates  the encrypted  storage
+of the resident  registration  number, passed the National  Assembly  plenary session on February
+28, 2014. The content  of the amendment  is that the personal  information  handlers,  who keep the
+resident  registration  number,  are obligated  to encrypt  the resident  registration  number  in order to
+minimize  damage  if the personal  information  is leaked. Matters  concerning  the targets  of encryption
+and application  timing of each target are determined  by Presidential  Decree, considering  the size
+of the personal  information  processing  and the impact of leakage.  However,  its implementation  is
+delayed, because  enormous  costs are required to encrypt  the social security  number, risk of failure,
+and concern  about rapid performance  degradation  after encryption.  Recently,  there has been a spike
+in interest  in database  encryption,  due to these trends and issues.
+>>> Learning  objectives
+To be able to explain database  security  requirements.
+To be able to explain control elements  for database  security.
+To be able to select a database  for encryption  and apply cryptographic  techniques.
+>>b> Keywords
+Virtual tables (views), database  access control, API method,  plug-in method,  TDE method, master
+key, key life cycle, HSM (Hard Security  Module),  random  number  generator
+M4 Understanding  Information  Security  85

@@ -1,0 +1,41 @@
+ESSENCE
+@® Hybrid method
+To compensate  for the shortcomings  of each method,  a hybrid method  of mixing each method is commonly
+used to control database  access. The hybrid method  is used in the form of agent + gateway  method,  gateway
++ network  sniffing  method,  agent + gateway  + network  sniffing  method.
+03 Database  encryption
+A) Considerations  when applying  database  encryption
+When applying  database  encryption,  data column  to encrypt,  encryption  algorithm  to use, impact  of encryption
+on performance,  and encryption
+<Table 30> Considerations  when appl
+Matters  to considerkey management  method  should be considered.
+lying database  encryption
+Description
+Encryption  target  and methodSelecting  the data designated  by domestic  laws and regulations  and other important
+data
+Cryptographic  algorithmAn algorithm,  recommended  by cryptography  research  institutes  at home and abroad,
+should be applied.  A one-way  algorithm  (SHA-256  or higher)  should be applied  to
+passwords,  and a two-way  algorithm  (SEED, ARIA, AES, etc.) should be applied  to other
+information.
+Search  and performanceWhen applying  encryption,  performance,  such as index maintenance,  should be
+considered.  Also, a method  of applying  partial encryption,  etc. should be considered
+Encryption  key managementEncryption/decryption  keys and master  keys should be safely managed,  from its
+generation,  to its destruction.
+B) Target  and method  of database  encryption
+Data, designated  by domestic laws and regulations,  and other important  data should be selected  as an
+encryption  target first. The database  information  to encrypt, in accordance  with each law and regulation,
+includes  passwords,  bio informat
+foreign registration  numbers,  creion, resident  registration  numbers,  passport  numbers,  driver's license numbers,
+dit card numbers,  account  numbers,  transaction  logs, etc. Different  encryption
+methods  are required,  according  to the characteristics  of information,  and a database  should be encrypted/
+decrypted,  using a cryptographic  algorithm  that fits each characteristic.
+<Table 31> Target  and method  of database  encryption
+Item Target Encryption  method
+Common Passwords Storage  after one-way  encryption
+Passport  numbers
+Driver's  license  numbers
+Personal  Information Foreign registration  numbers  | Storing  after encryption,  with a secure two-way  cipher
+Protection  Act Resident  registration algorithm
+numbers
+Bio information
+90 TOPCIT  ESSENCE

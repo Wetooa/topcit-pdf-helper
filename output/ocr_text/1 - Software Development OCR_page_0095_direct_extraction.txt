@@ -1,0 +1,39 @@
+ESSENCE
+E) JavaScript  language
+® Introduction  to the JavaScript  language
+JavaScript  is an object-based  script programming  language  that is mainly used in the web browser. It includes  a
+function  for accessing  the built-in objects  of other application  programs.  JavaScript  is also used for server-side
+network  programming  such as the Node js runtime  environment.
+@® Characteristics  of the JavaScript  language
++ Programming  is simple, but it may be vulnerable  to security.
++ Highly scalable  and useable due to active sharing among developers  because  it is operated  as an open
+source,
++ Easy to learn because  no separate  compilation  process  is required.
++ Recently,  more and more developers  have started using libraries  and frameworks  related to JavaScript,  such
+as Angularjs,  D3js, Nodejs,  and Reacts.
+03 Software  Development  Framework
+A) Concept  of the software  development  framework
+A software  development  framework  is a set of code libraries,  interface  protocols,  and configuration  information,
+all of which is used to develop  an information  system efficiently  and to provide the basic framework  for
+software  composition.  This framework  is the representative  technology  to which the concept  of “Inversion  of
+Control” (loC) is applied, and it enables developers  to complete  an application  by extending  the upper-level
+application  functions  (business  logic, etc.)
+That is, this framework  provides  an environment  in which developers  can create software  easily, by providing
+structured  tools and libraries  for data display on the screen, a method of handling  data, and interfacing  with
+external  modules,  instead  of developing  software  from scratch.
+The software  development  framework  solves the problem  of integration  and consistency  that occurs while
+developing  a set of classes  and interfaces  which can cooperate  with each other to solve the specific problem
+of software,  and reduces  the coding work of developers  while increasing  their development  productivity.  The
+framework  also standardizes  developers  upwards  to guarantee  a certain level of quality and reduce the risk of
+new software  development  using proven technology.
+The table below shows the advantages  of using the software  development  framework.
+<Table 23> Advantages  of using the software  development  framework
+Strengths Description
+Defines  and handles  in advance  parts that can be written  incorrectly  during repetitive  coding
+work, thus improving  code quality  by minimizing  the risk of bugs when writing  codes.
+Maximizes  development  productivity  by providing  various  functions  necessary  for development
+in advance,  such as components,  communication  processing  methods,  and data handling
+methods,  etc.Improves  code quality
+Increases  development
+productivity
+94 TOPCIT  ESSENCE

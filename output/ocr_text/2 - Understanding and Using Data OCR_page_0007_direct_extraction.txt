@@ -1,0 +1,22 @@
+|. Understanding  Data and Databases 18
+01 Understanding  Data 20
+A) Concept  and characteristics  of data, information,  and knowledge 20
+B) Concept  and characteristics  of data processing  types 20
+02 Understanding  the Database 21
+A) Concept  and characteristics  of the file processing  system 2l
+B) Concept  and characteristics  of the database 22
+03 Understanding  the Database  System 23
+A) The concept  and components  of the database  system (DBS) 23
+B) Data independence  and ANSKSPARC’s  3-level database  architecture 23
+C) Definition  and key roles of the database  administrator  (DBA) and data architect  (DA) 25
+D) Concept  and functions  of the DBMS (Database  Management  System) 26
+ll. Understanding  Types of Databases 28
+01 Types of Databases 30
+A) Development  process  of the database 30
+B) Major types of databases 30
+02 Object  relational  Database 32
+A) Object relational  database  (ORDB) 32
+03 Understanding  XML 32
+A) Concept  and characteristics  of XML (Extensible  Markup Language) 32
+B) Schematic  diagram  and components  of XML 383
+6 TOPCIT  ESSENCE

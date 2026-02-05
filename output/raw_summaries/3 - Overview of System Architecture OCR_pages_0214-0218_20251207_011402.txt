@@ -1,0 +1,211 @@
+LEARNING GUIDE: Pages 214-218
+Generated: 2025-12-07 01:14:02
+PDF: 3 - Overview of System Architecture OCR
+
+================================================================================
+LEARNING GUIDE
+================================================================================
+
+Here is a simplified, easy-to-read learning guide based on the provided text:
+
+---
+
+# IoT System Architecture & Software-Based Networks
+
+## Part 1: IoT System Architecture Overview
+
+### 1. IoT Core Technologies
+
+The main technologies enabling IoT are:
+
+1.  **Sensing Technology:**
+    *   **Purpose:** Collect information from objects (e.g., temperature, humidity, gas, light, ultrasonic waves).
+    *   **Key Requirement:** Minimize power consumption for long operational life.
+    *   **Evolution:** Physical sensors → **Smart Sensors** (with standardized interfaces, information processing, and virtual sensing capabilities).
+    *   **Market Trend:** Growing use of **Open-Source Hardware (OSHW)** for easy sensor connection, control, and communication.
+2.  **Wired/Wireless Communication & Network Infrastructure:**
+    *   **Wired Options:** Ethernet, Power Line Communication (PLC).
+    *   **Wireless Options (preferred for convenience & mobility):**
+        *   **Short-range:** WLAN, Bluetooth, ZigBee, UWB.
+        *   **Mobile:** 3G, LTE.
+    *   **New Sensor Networking Technologies:**
+        *   **BLE (Bluetooth Low Energy / Bluetooth Smart):** Low-power, short-range wireless communication. Compatible with Bluetooth 4.0, but not older Bluetooth versions.
+        *   **Z-Wave:** Protocol for intelligent mesh networks. Features: no master node, low power, low bandwidth.
+3.  **IoT Services & Interface:**
+    *   **Purpose:** Automatically analyze and share sensor data.
+    *   **Key Enablers:**
+        *   **Ontology-based semantic web technology:** For data understanding and relationships.
+        *   **Cloud computing:** For large-scale distributed processing.
+        *   **Open API:** For accessing various services.
+
+### 2. Main IoT Protocols
+
+IoT protocols require lightweight design, compatibility, and scalability. **CoAP** and **MQTT** are especially suitable for small, internet-connected devices.
+
+1.  **CoAP (Constrained Application Protocol):**
+    *   **Type:** Lightweight application layer protocol for object communication.
+    *   **Developed by:** IETF CORE Working Group.
+    *   **Transport Layer:** Uses UDP (above IP layer), but designed to be independent of lower layers.
+    *   **Design Features:** Reduced message size, uses binary encoding for efficient processing.
+    *   **Usage:** Popular for communicating with endpoints via technologies like Zigbee, rather than just fast Ethernet or Wi-Fi.
+    *   **Topology:** 1:1 (Server and client).
+    *   **Operation:** Requesting and responding.
+    *   **Data Type:** Status Information.
+    *   **Standard:** IETF CoRE.
+2.  **MQTT (Message Queue Telemetry Transport):**
+    *   **Type:** Publish-subscribe-based protocol.
+    *   **Purpose:** Delivers lightweight messages at low speed, suitable for high-latency and unreliable networks.
+    *   **Operation:**
+        *   Clients **publish** messages to specific **topics**.
+        *   Other clients **subscribe** to topics to receive messages.
+        *   An **MQTT Broker** facilitates message distribution between publishers and subscribers.
+    *   **Topology:** N:M (many-to-many) type, using a broker and multiple clients.
+    *   **Operation:** Publishing and subscribing.
+    *   **Data Type:** Event-driven.
+    *   **Transport:** Mostly uses TCP.
+    *   **Standard:** OASIS.
+
+#### Comparison: MQTT vs. CoAP
+
+| Feature        | MQTT                      | CoAP                        |
+| :------------- | :------------------------ | :-------------------------- |
+| **Purpose**    | Message protocol for IoT  | Message protocol for IoT    |
+| **Topology**   | N:M type (many-to-many)   | 1:1 type                    |
+| **Config.**    | Broker and multiple clients | Server and client           |
+| **Operation**  | Publishing and subscribing | Requesting and responding   |
+| **Data**       | Event                     | Status Information          |
+| **Transport**  | Mostly TCP                | Mostly UDP                  |
+| **Standard**   | OASIS standard            | IETF CoRE standard          |
+
+---
+
+## Part 2: Software-Based Network (SDN & NFV)
+
+**SDN (Software-Defined Networks)** and **NFV (Network Function Virtualization)** are crucial technologies revolutionizing network management. They aim to open up the network market, allowing more third-party software and equipment providers to enter.
+
+### 1. Limitations of Existing Network Environments
+
+Traditional networks face several challenges:
+
+*   **Changing Traffic Patterns:** Modern applications generate high traffic, accessing many servers and databases, shifting from simple client-server to complex multi-system interactions.
+*   **Virtualization Impact:** Virtualization increased connected servers, complicating assumptions about physical host locations.
+*   **Increased Complexity:** Networks are becoming more complex due to numerous computers and discrete protocol sets.
+*   **Difficult Design & Management:** Dynamic traffic patterns make it hard to predict network size, making initial design (using link oversubscription) challenging.
+*   **Dependence on Manufacturers:** The core network market is dominated by a few major equipment manufacturers, hindering the introduction of new services or technologies.
+
+### 2. SDN (Software-Defined Network)
+
+**Definition:** SDN is a next-generation network technology that allows network routing, control, and complex operation management to be configured and operated through software programming.
+
+*   **Origin:** First proposed at the Open Network Summit in October 2010. Gained attention with **OpenFlow** technology.
+*   **Core Concept:** SDN separates the network's control functions from its data forwarding functions.
+    *   **Control Plane:** Guides network traffic, determines "where packets go."
+    *   **Data Plane:** Forwards packets to their specific destinations.
+*   **Mechanism:**
+    *   SDN uses switches that support industry-standard control protocols (like OpenFlow).
+    *   These switches can be programmed by a central **SDN Controller**.
+*   **OpenFlow Technology:**
+    *   **Function:** Separates packet control and transfer.
+    *   **Components:** Consists of a **Controller** and a **Switch**.
+    *   **Operation:** The Controller issues commands to the Switch. The Switch then performs data flow tasks (e.g., sending or modifying packets to a destination) according to these commands.
+
+---
+
+================================================================================
+ORIGINAL TEXT (First 5000 chars)
+================================================================================
+
+--- Page 214 ---
+Overview  of System Architecture )
+[Figure 147] shows  the standard  scope of each standardization  organization  for protocol  layers.
+M2M Device / Gateway M2M Platform
+Application No}  oler-ii(ola)
+ETSI
+coca (oN) cocoa)
+1
+<— “ar i Network
+wer Aeros _ |
+1
+Core network
+(IP. network)
+Biaseoe a =
+[Figure 147] Standard  Scope  of Each loT Standardization  Organization  [10]
+C) Core loT technologies
+loT’s main technologies  are a sensing  technology,  a wired and wireless  communication  and network  infrastructure
+technology,  and an loT service  and interface  technology.
+@ Sensing  technology
+Sensors  collect object information.  Various sensors, such as temperature,  humidity,  heat, gas, illuminance,  and
+ultrasonic  waves, are installed  in the object  to obtain information  about  the surrounding  situation.  Sensors  are needed
+to minimize  power consumption  in order to operate  for a long time. Physical  sensors  have evolved  into smart sensors
+with a standardized  interface and information  processing  capability,  and they include  a virtual sensing  function  that
+extracts  specific information  from the sensed data. As the sensor layer's role has increased,  the hardware  platform
+market  is evolving  to facilitate  connecting  various sensors,  control,  and communication,  using open-source  hardware
+(OSHW).
+@ Wired/wireless  communication  and network  infrastructure  technology
+Although  objects generally  use wired means, such as Ethernet  or power line communication  (PLC), to access the
+Internet,  wireless  communication  is more efficient  when considering  the installation  convenience  and mobility.  Short-
+range wireless  communication,  such as WLAN, Bluetooth,  ZigBee, and UWB, and mobile communication,  such as 3G
+and LTE, are available.  Moreover,  new technologies  for sensor  networking  are constantly  being proposed.
++ BLE (Bluetooth  Low Energy):  Also called Bluetooth  Smart, it is low-power,  short-range  wireless  communication  that
+is not compatible  with existing  Bluetooth  but is compatible  with Bluetooth  4.0.
++ Z-Wave: It is a protocol  for devices  that use intelligent  mesh network  topology,  do not have a master  node, and
+require low power and low bandwidth.
+M3 Overview  of System  Architecture  213
+
+
+--- Page 215 ---
+ESSENCE
+®loT services  and interface
+It is necessary  to use ontology-based  semantic  web technology,  cloud computing  for large-scale  distributed
+processing,  and open API for accessing  various  services,  to automatically  analyze  and share data collected  from the
+sensor  of an object.
+D) Main loT protocols
+Protocols  for loT require lightweight  the most, and since they have been commonly  used for some time, protocols
+that feature compatibility  and scalability  are preferable.  In particular  CoAP and MQTT are suitable  for small devices
+that need to connect  to the Internet  and transmit  data, due to the nature of loT, and are proposed  as communication
+protocols  in various  architectures.
+@ CoAP (Constrained  Application  Protocol)
+CoAP is a lightweight  application  layer protocol,  developed  by the IETF CORE Working  Group, for communication
+between  objects. Although  it uses the UDP transport  layer above the IP layer, it is designed  independently  of the
+lower layers and can operate  in other networks  and transport  layers. It has reduced  the message  size to reduce end-
+point load and uses binary  encoding  to facilitate  encoding  and decoding.
+Application  Layer
+Transport  Layer
+(TCP/UDP)CoRE WG CoAP REST
+es CoAP Transactions
+Nea  me
+(Pv4/IPv6) ETP Sencar (ow)
+Adaptation  Layer 6LOWPAN  WG
+IEEE 802.15.4
+[Figure 148] CoAP Conceptual  Diagram
+CoAP has attracted  attention  as the main protocol  for loT, since it communicates  with endpoints  using Zigbee, rather
+than fast and stable Ethernet  or Wi-Fi.
+@MQTT  (Message  Queue Telemetry  Transport)
+MQTT is a publish-subscribe-based  protocol  for delivering  lightweight  messages  at low speed in high-latency  and
+unreliable  networks.
+214 TOPCIT  ESSENCE
+
+
+--- Page 216 ---
+Overview  of System  Architecture
+Access
+Control
+SystemSubscribe:
+Topic Open Door
+Camera .Publish: PImage f Par Subscribe:
+Sensor eae Topic Intrusion image Meta data—= Subscribe: ;
+Topic Intrusion  image Meta data Video
+MQTT Broker Management
+Subscribe: System_ Topic Open Door
+aun Publish:
+Sensor Topic Open Door
+Building
+Subscribe: Energy
+Topic Open Door = Management
+System
+[Figure 149] MQTT  Applications
+MQTT is a flexible data transfer  model between  multiple  endpoints  and multiple  servers and operates  by publishing
+and subscribing  to necessary  topics. [Figure 149] shows a conceptual  diagram  of transmitting  the topic of the door
+opening  and closing, by sending pressure sensor data to the access control system, video security  system, and
+building  energy control system, using Arduino and the metadata  topic that is generated  by the camera’s  image
+sensor  to multiple  system...

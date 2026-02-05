@@ -1,0 +1,35 @@
+Software  Development )
+02 Software  Maintenance  Activities
+A) Software  maintenance  procedure
+Software  is generally  maintained  in the following  order.
+<Table  45> Maintenance  procedure
+Maintenance  procedure Contents
++ Program  structure  analysis,  variable/data  structure,  application  field, business
+knowledge.
++ Maintenance  type, strategy  establishment  (modification/new).
++ Identifying  targets  such as the changed  program.
+Identifying  and modifying  the scope + Impact  of software  change  on existing  functions
+of impact + Program  change,  modification.
+Test/maintenance + Performing  document  modification,  configuration  management,  and maintenance.Understanding  current  software
+Requirements  analysis
+“Requirements  analysis”,  which is an important  activity  in the above maintenance  sequence,  aims to quickly  understand  how a
+maintenance  request  affects  the current  system.  “Identifying  the scope of impact”  may be easy or require  tremendous  efforts,
+as described  in the example,  depending  on how easy it is to maintain  the software  in the existing  system.  Ease of maintenance
+is a characteristic  that indicates  the level of difficulty  in maintaining  software,  and there are the following  types.
++ Ease of use: A characteristic  that indicates  how easy it is to understand  an application  or program.
++ Ease of modification:  A characteristic  that indicates  how easy it is to modify an application  or program.
++ Ease of testing:  A characteristic  that indicates  how easy the process  is to show the accuracy  of an
+application  or program.
+Therefore,  if systematic  activities  are performed  to improve  ease of maintenance  while developing  software,  as shown in the
+following,  the requirements  of users or customers  can be continuously  satisfied,  and rapidly  increasing  maintenance  costs can
+be handled  economically  even in the event of changes  in the environment  in the future.
++ Analysis  activities:  Determining  the customer's  requirements  and constraints,  and proving  the validity  of the
+product  to be developed.
++ Standards  and guidelines:  Establishing  various kinds of standards  and guidelines  to facilitate  software
+maintenance.
++ Design activities:  Emphasizing  and making  use of clarity, modularity,  and ease of change.
++ Implementation  activities:  A standard  structure  and coding style should be applied.
++ Supporting  documents:  The guide and test manual required  for maintenance  activities.
+B) Types of software  maintenance  organizations
+IEEE/EIA  12207 defines  maintenance  personnel  as “an organization  that performs  maintenance  activities”.  The term
+M1 Software  development  127

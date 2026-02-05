@@ -1,0 +1,202 @@
+LEARNING GUIDE: Pages 148-152
+Generated: 2025-12-05 14:06:35
+PDF: 5 - Understanding the IT Business and Ethics OCR
+
+================================================================================
+LEARNING GUIDE
+================================================================================
+
+Here is a simplified, easy-to-read learning guide based on the provided text:
+
+---
+
+## IT Business & Ethics: Key Concepts
+
+### 1. Cloud Computing
+
+Cloud computing allows users to access shared IT resources over the internet, improving efficiency and reducing costs.
+
+**1.1 Core Cloud Technologies**
+
+*   **Cloud Client:** Technology for users to access cloud services (e.g., mobile apps, lightweight terminals).
+*   **Cloud Service & Applications:** Software or applications provided as services.
+*   **Cloud Platform:** Provides an environment for developing and running services.
+*   **Cloud Infrastructure:** Provides fundamental resources like servers, storage, and networks as services.
+
+**1.2 Cloud Service Models (Based on IT Resource Nature)**
+
+*   **SaaS (Software as a Service):**
+    *   **Definition:** Users access applications via the internet/web browser without installing them.
+    *   **Examples:** Google Gmail, MS Office 365.
+*   **PaaS (Platform as a Service):**
+    *   **Definition:** Provides an environment (platform) for developers to build and run web applications. Requires modularized and standardized app development technologies.
+    *   **Examples:** Salesforce.com's Force.com, Google App Engine.
+*   **IaaS (Infrastructure as a Service):**
+    *   **Definition:** Provides virtualized computing resources like servers, storage, and networks. Users can provision resources on demand.
+    *   **Requirements:** Large data centers, capital, good electrical infrastructure.
+    *   **Examples:** Amazon EC2 & S3, Gabia's cloud hosting.
+
+**1.3 Cloud Deployment Models (Based on Configuration)**
+
+*   **Public Cloud:**
+    *   **Definition:** Services shared by multiple users over the internet. Managed by a cloud service provider.
+*   **Private Cloud:**
+    *   **Definition:** IT environment exclusively deployed on a company's/organization's intranet. Controlled by the company.
+*   **Hybrid Cloud:**
+    *   **Definition:** Combines public and private cloud services, offering scalability and flexibility for specific applications.
+
+**1.4 Benefits of Cloud Computing**
+
+*   Users can directly purchase, design, and install IT resources without IT manager intervention.
+*   Improves efficiency by sharing IT resources.
+*   Avoids costs associated with owning IT resources.
+*   Enables new business models by merging with different services.
+
+### 2. Virtualization
+
+**2.1 Definition**
+Virtualization is a technique to abstract computer resources. It hides physical resource characteristics, allowing:
+*   Multiple logical resources from one physical resource.
+*   A single logical resource from multiple physical resources.
+
+**2.2 Types of Virtualization**
+
+*   **Application Virtualization:** Users access applications instantly without local installation.
+*   **Desktop Virtualization:**
+    *   **Server-side:** Users get virtual desktops (e.g., Windows OS) from a central server.
+    *   **Client-side:** Enables virtual desktops on individual PCs.
+    *   **Benefit:** Separates personal and corporate workspaces.
+*   **Server Virtualization:** Consolidates multiple physical server workloads onto fewer virtual servers, improving resource utilization, reducing rack costs, and administrative efforts.
+*   **Storage Virtualization:**
+    *   Uses **Thin-Provisioning** to allocate only the minimum required physical space initially.
+    *   Integrates heterogeneous (different types of) storage systems into a unified environment.
+*   **Network Virtualization:** Network hardware (switches, firewalls) are implemented as virtual machines, allowing virtual network operation within a single shared physical environment.
+
+**2.3 Functions of Virtualization**
+
+*   **Sharing:** Many virtual resources use one physical resource (e.g., Virtual Machines, Virtual LANs).
+*   **Aggregation:** Virtual resources span multiple physical resources, increasing overall capacity and simplifying management (e.g., Storage virtualization).
+*   **Emulation:** Virtual resources appear to have functions/characteristics they don't physically possess (e.g., virtual tape storage).
+*   **Insulation (Transparent Change/Failure Proof):** Allows physical resources to be replaced without affecting virtual resources or users, preventing failures (e.g., RAID storage controller).
+
+### 3. Blockchain Service
+
+**3.1 Definition**
+Blockchain is a distributed ledger network technology. It uses a decentralized, peer-to-peer (P2P) network where data blocks are stored and linked together in chains. It's the core technology behind cryptocurrencies like Bitcoin.
+
+**3.2 Key Characteristics of Blockchain**
+
+*   **Decentralized:** No central server. All network nodes work together to verify and guarantee data integrity.
+*   **Improved Security:** Transactions are accepted only after consent from more than half of all network nodes.
+*   **Transparency:** All nodes share their ledgers, making transaction records openly disclosed.
+*   **Enhanced Safety (Self-Recovery):** The distributed nature allows the network to recover easily even if some nodes experience errors.
+*   **Improved Economics:** Reduces centralized management costs and financial transaction costs due to the absence of a central server.
+*   **Personal Data Protection:** Reduces risks of data collection, security breaches, or leaks associated with central systems.
+
+**3.3 Blockchain Transaction Process**
+
+1.  User A wants to transfer money to User B.
+2.  Transaction data is generated as a "block."
+3.  This block is shared with all participants on the network.
+4.  Participants independently validate the transaction data (cross-validation).
+5.  Once validated by the majority, the block is registered and added to the existing chain.
+6.  The money transfer from A to B is complete.
+
+**3.4 Immutability**
+Because all nodes are involved in block creation and verification, and transactions require majority approval, it's virtually impossible to arbitrarily modify or manipulate transactions on a blockchain.
+
+### 4. Smart Infrastructure
+
+**4.1 Smart City**
+
+*   **Definition:** An urban model that uses new technologies like ICT (Information and Communication Technology) and Big Data to solve urban problems and improve quality of life.
+*   **Purpose:** Addresses challenges like aging infrastructure, energy shortages, environmental pollution, and crime.
+*   **Key Technologies:** AI, Big Data, 5G mobile technologies.
+*   **Service Areas:** Smart traffic, smart environment, public safety, public welfare, smart energy.
+*   **Role:** A leading example of smart infrastructure.
+
+**4.2 Smart Grid**
+
+*   **Definition:** A next-generation power system that integrates IT with existing power grids. It monitors and controls power supply and demand in real-time to match production and consumption.
+*   **Contrast with Traditional Power Systems:**
+    *   **Traditional:** Centralized power generation; producers unilaterally supply power. Plants are built to meet estimated maximum consumption.
+    *   **Smart Grid:** Decentralized control; optimizes power generation and consumption, making the system more efficient and responsive.
+
+---
+
+================================================================================
+ORIGINAL TEXT (First 5000 chars)
+================================================================================
+
+--- Page 148 ---
+Understanding  the IT Business  and Ethics )
+Cloud services  are made up of the following  technologies.  "°
+* Cloud client is a technology  for utilizing  cloud computing  services  like cloud lightweight  terminal  platform  technology,
+cloud-mobile  technology,  and cloud push agents.
++ Cloud service and applications  are technologies  for providing  the many types of cloud computing  services  in SW or
+application  format.
++ Cloud platform  is a cloud computing  technology  for providing  in service format,  the platform  of basic functions  for
+easily developing  services.
++ Cloud infrastructure  is a cloud technology  that provides  resources  such as Servers, storage,  and networks  as
+services  to users.
+Bs  pin  ee
+Cloud Client neh
+Cloud service/app er
++ Cloud SLA
++ Cloud interoperability
+Cloud Platform « Cloud security
+‘SanG/PanS/AanS/NaaS + Cloud service platform  API
+ftatiomy + Sensor cloud platform ; /
+Universal  platform (billing, certification,  etc) + Large-scale  data distributive  parallel processing
++ Cloud metadata  management
++ Virtualization:  input/output  device, computing  system, storage
++ Management:  cloud network  support,  cloud storage,  cloud
+system
+Bp a ms  Core treatin Biers) = Bcn ES © broadcasting s
+[Fig.62] Hierarchy  diagram  of cloud service"
+Cloud computing  is sub-category  of next-generation  computing.  It has been standardized  around cloud security,
+cloud clients, and cloud platform  virtualization,  which means different  cloud services  are compatible  with each other.
+In addition,  guidelines  for managing  quality indicators  needed for service operations  have been established  and are
+the focus of a lot of effort because  such guidelines  are the key to stimulating  the growth  of the market.
+@ Cloud computing  service
+Cloud service  model can be put into 3 classifications,  based on the nature of the IT resources.
+10 Source:  TTA, ICT Standardization  Strategy  Map, 2011
+11 Source:  TTA, ICT Standardization  Strategy  Map, 2011
+M5 Understanding  the IT Business  and Ethics 147
+
+
+--- Page 149 ---
+ESSENCE
+- SaaS(Software  as a Service)
+- PaaS(Platform  as a Service)
+- laaS(Infrastructure  as a Service)
+Saa& is a service that lets people use applications  through  the Internet  and web browser.  Saas is one of the top
+tier services  that cloud service companies  can provide and leading services  include Google’s  Gmail and MS Office
+365. PaaS is a service that lets companies  provide as a service, an environment  for developing  and running  web
+applications.  In order to provide this kind of service, the technologies  for app development  must be modularized  and
+standardized.  Leading  Paa include Salesforce.com's  Force.com and Google's  Google App Engine. laaS is principally
+an enterprise  service that provides  a virtualized  environment  of resources  like servers, storages,  and networks  to
+companies  who are permitted  to use the resources  whenever  needed. laaS service requires the ability to build and
+operate  servers for large data centers,  capital, and a very good electrical  grid environment.  Examples  of laaS include
+Amazon  EC2 and S3, as well as Gabia’s  cloud hosting  service.
+Cloud service  can be divided into one of the following  categories,  depending  on how it is configured.
+- Public Cloud
+- Private  Cloud
+- Hybrid Cloud
+A public cloud is a service shared by multiple  users over the Internet,  and a cloud service provider  provides the
+services  and has management  responsibilities.  A private cloud is an IT environment  that is exclusively  deployed  on
+a company’s  or an organization’s  intranet. It is controlled  by the company  or organization.  Hybrid cloud is a form of
+cloud service that has scalability  and combines  the best of public cloud services  and private cloud services,  It can be
+used in parallel  for special  purpose  applications.
+With cloud computing,  users can directly  purchase,  design and install without  the need for intervention  by an IT
+manager.  By sharing  IT resources  that could be used by everybody,  cloud computing  improves  efficiency  and the cost
+associated  with owning IT resources  could be avoided. Due to these advantages,  cloud computing  can be merged
+with different  types of services  and evolve into new business  models.
+© Virtualization
+Virtualization  is the abstraction  of computer  resources  on a computer  and it could be defined as "a technique  for
+hiding  the characteristics  of physical  computer  resources  from the method  other systems,  applications,  and end users
+use when they interact  with the resources” It is a technology  that can create multiple logical resources  from a single
+physical  resource  or create a single logical resource  from multiple  physical  resources.
++ Application  virtualization
++ Through  the virtualization  of applications  installed in individual  PCs, users gain immediate  access  to needed
+applications  without  having  to in...

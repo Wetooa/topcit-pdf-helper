@@ -1,0 +1,208 @@
+LEARNING GUIDE: Pages 49-53
+Generated: 2025-12-05 13:56:11
+PDF: 5 - Understanding the IT Business and Ethics OCR
+
+================================================================================
+LEARNING GUIDE
+================================================================================
+
+Here's a simplified learning guide extracted from the provided text:
+
+---
+
+## Learning Guide: Enterprise Architecture (EA) & Information Strategic Planning (ISP)
+
+### 1. Enterprise Architecture (EA) Reference Models
+
+Reference models provide guidance for developing different aspects of an EA.
+
+*   **Application Architecture (Service Component Reference Model - SRM):**
+    *   Extracts information needed for tasks.
+    *   Defines activities for processing/managing information.
+    *   Creates standards for application development functions, characteristics, and environment.
+    *   Identifies necessary documents for business model activities.
+*   **Data Architecture (Data Reference Model - DRM):**
+    *   Designs data models by understanding relationships between information, data, and structures.
+*   **Technology Architecture (Technology Reference Model - TRM):**
+    *   Defines criteria for selecting infrastructure to support business, data, applications, and other technologies.
+    *   Defines technical support services.
+*   **Standard Profile:**
+    *   Defines a detailed technology list for the Technology Architecture (e.g., JAVA architecture version: JDK 2.0).
+
+**Purpose of Reference Models:**
+*   Provide early reference cases from similar industries/sectors to guide EA deployment.
+*   **Government EA Reference Model:** Used for government-wide EA, also as a reference for departmental EAs.
+    *   **Note:** Government-wide EA includes **Security Architecture** in addition to the four above.
+
+### 2. EA Frameworks
+
+Frameworks provide structured approaches for establishing an Enterprise Architecture. Key frameworks include:
+
+*   **Zachman Framework:**
+    *   **Most often used** for establishing an EA.
+    *   Defined as a matrix using "view" and "perspective."
+    *   **5 Perspectives:** Planner, Owner, Designer, Builder, Subcontractor.
+    *   **6 Ways of Describing Each Perspective:** Data, Function, Network, People, Time, Motivation.
+*   **TOGAF (The Open Group Architecture Framework):**
+    *   An open framework focused on **interoperability between companies**.
+    *   **Components:**
+        *   Architecture Development Method (ADM) cycle.
+        *   Technology Reference Model (TRM).
+        *   Standards Information Point (SIP) - a database of summarized standards.
+    *   Uses a "building block" concept to resolve component-level problems.
+*   **FEAF (Federal Enterprise Architecture Framework):**
+    *   Developed by the U.S. CIO Council (1998).
+    *   **Structure:** 8 components and a 4-step progressive structure.
+    *   Manages all Zachman Framework model contents.
+    *   **Defines 5 Reference Models:** Business Reference Model (BRM), Performance Reference Model (PRM), Data Reference Model (DRM), Service Component Reference Model (SRM), Technology Reference Model (TRM).
+    *   These models are interrelated and based on the Zachman Framework.
+    *   Forms the basis of Japan's EA framework.
+    *   Includes an approach for each segment, implementation plan, and AS-IS/TO-BE gap analysis.
+
+### 3. Information Strategic Planning (ISP)
+
+#### A) Overview of ISP
+*   **Definition:** Information Strategic Plan. Often referred to as "ISP establishment."
+*   **Purpose:** To define a **vision for the information system and management structure** that supports an enterprise's mid-to-long-term goals and business plan. It's a rough sketch of IT system deployment direction for long-term objectives.
+
+#### B) ISP Deployment Procedure
+1.  **Environment Analysis:**
+    *   **Company Environment:** Analyze external/internal factors using tools like SWOT, 5-Force, 7S, 4C.
+    *   **Information Environment:** Review technology requirements, trends, and new technology application feasibility.
+2.  **Current Operation Analysis:**
+    *   Analyze existing business processes to identify problems and areas for improvement.
+    *   Analyze existing information systems.
+    *   Gather stakeholder requirements and improvement agenda.
+    *   **Benchmarking:** Compare with similar industries to correct missing/distorted information.
+3.  **Informatization Plan:** Use analysis results to determine improvement directions, develop improved procedures, and create an informatization plan.
+
+#### C) Basic Composition of ISP (Key Activities by Step)
+
+| Step                      | Activity                               | Details                                                                                                                              |
+| :------------------------ | :------------------------------------- | :----------------------------------------------------------------------------------------------------------------------------------- |
+| **1. Analysis**           | Management Environment Analysis        | Identify opportunities & threats (internal/external environment). Determine CSF (Critical Success Factors) & OIR (Official Information Required). |
+|                           | Information Technology Environment Analysis | Study IT trends, analyze new IT application feasibility, identify informatization requirements.                                      |
+|                           | Work Analysis                          | Analyze organizational role & work structure; identify current problems & improvement areas.                                         |
+|                           | Information System Analysis            | Analyze current IT systems & resource management; identify problems & needed improvements.                                           |
+|                           | Benchmarking                           | Conduct benchmarking from work & IT system viewpoints.                                                                               |
+|                           | Gap Analysis                           | Identify business process & IT infrastructure requirements from early cases; study gaps with company's requirements; determine improvement direction. |
+| **2. Future Model Design** | Future Business Process Design         | Establish a plan for improving business processes (ideal future model, new processes).                                               |
+|                           | Establishment of Information Strategy  | Establish informatization vision, goals, execution strategy; define rules for IT system deployment, technology, and management.      |
+|                           | Information System Future Structure Design | Establish an ideal application service/IT-based structure for strategic IT system deployment.                                        |
+|                           | Information Resource Management System Design | Organize resource management for efficient operation of the established IT system.                                                    |
+|                           | Establishment of Business Process Improvement Plan | Establish business process based on a future model.                                                                                  |
+| **3. Deployment Plan**    | Establishment of Information System Deployment Plan | Establish execution strategy, implementation system, schedule, investment budget, and evaluate investment benefits.                  |
+| **4. Detailed Cost**      | Development Service                      | Calculate development costs for each item.                                                                                           |
+|                           | Equipment Purchase                       | Details of technical specifications, quantity, amount for SW/HW.                                                                     |
+|                           | Maintenance and Repair during Operations | Cost of post-deployment operations, maintenance, disposal.                                                                           |
+|                           | Calculation of Function Score            | Calculate function scores needed for deployment.                                                                                     |
+| **5. Feasibility Analysis** | Economic Feasibility Analysis          | Conduct economic analysis (B/C, NPV, etc.).                                                                                          |
+|                           | Alternative Analysis                     | Analyze at least 2 alternatives for changes in business volume/cost, business development approach.                                  |
+
+#### D) Key Output of ISP Deployment
+*   **Most Valuable Output:** A blueprint for a future process model and a set of activities for achieving company goals.
+*   **Typical Outputs:**
+    *   **Analysis Stage:**
+        *   Report on business management environment analysis (strategic direction, environment).
+        *   Report on enterprise status analysis (business process problems, improvement areas).
+        *   Report on IT analysis (IT system problems, improvement areas).
+    *   **Strategy Establishment Stage:**
+        *   Informatization goal model specification form (new information model).
+        *   Master plan for building the "To-Be" work system (complete ISP, define & prioritize projects).
+
+### 4. Comparison of ISP and EA Concepts
+
+| Category       | ISP (Information Strategic Planning)                                                               | EA (Enterprise Architecture)                                                                                    |
+| :------------- | :----------------------------------------------------------------------------------------------- | :-------------------------------------------------------------------------------------------------------------- |
+| **Objectives** | Link management strategy with informatization strategy; introduce new IT.                      | Blueprint for seamless integration of business and information resources.                                        |
+| **Scope**      | Informatization strategy; can be company-wide, service, or departmental.                         | Architectures for technology (ITA), business (BA), application (AA), data (DA), etc., company-wide.             |
+| **Main Activities** | - Analysis of business management environment, IT trends, tasks, IT system structure. <br> - Establishment of IT strategy & management system. <br> - Design future task handling process & IT system. <br> - Establish To-Be roadmap. | - Establish ITA direction & guidelines, reference models (BRM, SRM, DRM, TRM/SP, PRM). <br> - Analyze AS-IS architecture (BA, AA, DA, TA, SA). <br> - Establish TO-BE architecture (BA, AA, DA, TA, SA). <br> - Establish implementation plan & ITA management system. |
+| **Key Outputs** | - Reports on analysis (business environment, IT trends, job/IT system). <br> - IT vision & strategy. <br> - Implementation agenda & roadmap. | - Company-wide architecture vision, rules, architecture matrix. <br> - Current & target architecture (BA, AA, DA, TA, SA). <br> - Plan for target architecture implementation. |
+
+**Key Relationship:**
+*   ISP deals with plans that fall within the scope of EA but are **more microscopic** and focused on the **informatization strategy**.
+*   EA is deployed under a company's target architecture, aligning IT direction with management strategy using the latest IT.
+
+**EA Management:**
+*   EA must be managed to **respond quickly to changes** in the business management environment.
+*   It needs to be **flexible** for quick implementation of company agendas through continuous updating.
+*   The EA roadmap must be **shared** across the organization.
+
+---
+
+================================================================================
+ORIGINAL TEXT (First 5000 chars)
+================================================================================
+
+--- Page 49 ---
+ESSENCE
+Application
+Architecture- Stage of extracting  information  needed  on the job, and of
+identifying  and defining  the activities  for processing  and managing
+such information. Service  Component  Reference
+- Create standards  that define the functions  needed  for developing Model (SRM)
+an application,  and the characteristics  and the environment  of the
+application  task.
+- Finds which documents  are needed  for the activities  defined  in
+the business model. Data Reference  Model
+Dota ane este - Design data model by understanding  the interrelationships (ORM)
+between  all information,  data, and data structures.
+- Defines  the criteria  for selecting  the infrastructure  that supports
+Technology the business  and data application  and other technologies.- Technology  Reference  Model
+Architecture - Technology  architecture  also defines the technical support (TRM)
+services  for the above.
+- Defines  the detailed  technology  list for the technology
+Standard  Profile architecture  (TA).
+- Example)  JAVA architecture  version: JDK 2.0
+There is a reference  model for each individual  architecture,  namely  the performance  reference  model (PRM), service
+component  reference  model, data reference  model, and technology  reference  model, respectively.  The reference
+model provides  early reference  cases in an identical  business sector  or similar industries  that a company  could use
+as a guide when it seeks to deploy an EA. There is also a government  EA reference  model for government-wide  EA,
+which is used as a reference  when EAs are deployed  at the departmental  level.
+As a side note, the government-wide  EA includes  security  architecture  in addition  to the four abovementioned
+architectures.
+C) The EA framework
+The Zachman  Framework,  TOGAF (The Open Group Architecture),  and FEAF (Federal  Enterprise Architecture
+Framework)  are some of the leading EA frameworks  in use today. The Zachmann  Framework  is the one used
+most often when estab!
+interoperability  between
+help of the Jacquesmanishing an EA. TOGAF, created by The Open Group, is an open framework  that focuses  on
+companies.  FEAF is also a framework  developed  in 1998 by the U.S. CIO Council with the
+Framework  and Spewak.
+<Table8>Types  of EA framework
+EA framework Description
++ This is the framework  used most often when establishing  an EA. It is defined  as a matrix using
+Zachmann view and perspective.
+Framework + 5perspectives:  Planner, Owner, Designer,  Builder,  Subcontractor.
++ 6 ways of describing  each perspective:  Data, Function,  Network,  People,  Time, Motivation.
++ This framework  consists  of an architecture  development  method  (ADM) cycle, a technology
+TOGAE reference  model(TRM),  and an SIP (standards  information  point), which is a DB containing
+summarized  standards  information.  It is structured  to resolve  problems  at the component  unit
+level by employing  an approach  that uses the concept  of building  blocks.
+48 TOPCIT  ESSENCE
+
+
+--- Page 50 ---
+Understanding  the IT Business  and Ethics )
+« This framework  consists  of eight components  and a 4-step progressive  structure,  and manages
+all of the model contents  of the Zachmann  framework.
++ FEAF defines  five reference  models  (BRM, PRM, DRM, SRM, TRM), which are interrelated  and
+based on the Zachmann  Framework.  FEAF forms the basis of Japan's  EA framework.
++ The framework  includes  a unique  approach  for each segment,  and an implementation  plan and
+process  through  AS-IS and TO-BE  gap analysis.FEAF
+04 Concept  of ISP
+A) Overview  of ISP (Information  Strategic  Planning)
+The literal meaning  of the acronym  ISP is “Information  Strategy  Plan’. Generally,  the term “ISP establishment”  is used
+more frequently  as an overarching  concept.
+ISP can present  a vision for the information  system and information  management  structure  that can support  an
+enterprise  or organization  when it is developing  its mid-to-long  term vision and goals and business  plan. In other
+words, it can be understood  as a plan that provides  a rough sketch of the direction  of information  system deployment
+to aid the enterprise  in realizing  its long-term  objectives.
+B) ISP deployment  procedure
+In order to deploy an ISP, the external/internal  environment  of the company  and the information  environment  must be
+analyzed  first of all. When analyzing  the environment  of a company,  tools like SWOT, 5-Force,7S  and 4C are commonly
+used. In addition,  when analyzing  the information  environment,  the technology  requirements  corresponding  to the
+purpose  and background  of a project  must be reviewed  in detail by studying  the technology  trends and analyzing  the
+application  of new technologies.
+The next step consists  in analyzing  the current  operation  of the company.  The most important  item that must be
+checked  in this analysis  is the business  process.  A careful study of the business  process in its current  ...

@@ -1,0 +1,34 @@
+ESSENCE
++ Builder  pattern
+- Definition:  Used when the returned  objects  are not the simple inheritance  target of the basic output  object,
+but are completely  different  user interfaces  composed  of different  combinations  of objects.
+- Advantages:  An object having  different  expression  methods  can be created  in the same way.
+- Disadvantage:  It is easy to create a new object, but it is very tricky to modify  each component  of the object.
+- Use examples:  When developing  a translator  system that translates  entered Korean into various languages
+and outputs  the result.
++ Factory  Method  pattern
+- Definition:  A method of indirectly  creating  an object using a proxy function,  rather than directly  calling the
+object  constructor.
+- Advantages:  Programming  is possible  using the same form, regardless  of the object to be created.
+Therefore,  it is flexible and scalable.
+- Disadvantages:  A new subclass  must be defined  each time the type of object  to be created  changes.
+- Use examples:  When a program  is double  clicked in the OS, the program  is operated  by the OS.
++ Prototype  pattern
+- Definition:  A method  of creating  an object by duplicating  an existing  object.
+- Advantages:  There is no need to create a separate  class to create an object. An object can be added and
+deleted  at runtime.
+- Disadvantage:  All classes, which are the data types of objects  to be created,  should implement  the Clone()
+member  function.
+- Use examples:  When creating  a graphic  editor like MS Visio.
++ Singleton  pattern
+- Definition:  Used when fixing the number  of class objects  at less than N.
+- Advantages:  Easy to manage  the number  of objects  in the class.
+- Use examples:  When a device manager,  which needs only a single object, manages  objects.
++ Diagram  of the Singleton  example  class
+<<Java  Class>> <<Java  Class>>
+Singleton Singleton
+DPO0S_singleton DPO0S_singleton
+- Singleton - Singleton + Main()
++getInstance():Singleton +main(Stringf):void
+x 0.1
+76 TOPCIT  ESSENCE

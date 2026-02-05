@@ -1,0 +1,22 @@
+Overview  of System  Architecture
+@ Massive  parallel  processor  (MPP)
+MPP is a distributed memory  type in which each processor  has an independent  memory.  The loosely  coupled  system
+exchanges  data between  processors  through  a network,  such as Ethernet.  The structure  of connecting  nodes, like
+the CPU, memory,  and I/O device, each of which has its own system resources,  through  a network, offers excellent
+scalability  and programming  difficulty.
+Internal  Bus or Ethemet
+[Figure  47] MMP Structure
+@® Non uniform  memory  access (NUMA)
+NUMA is a structure  the combines  the advantages  of the SMP, which is a shared memory  structure  that makes it
+easier to develop  programs  and the MPP structure,  which offers excellent  scalability.  Each processor  has a separate
+local memory  and the global memory  address  space that all processors  can access.
+Internal  Bus or Ethernet
+Global
+Memory
+[Figure  48] NUMA  Structure
+D) Types of parallel  processor  technology
+@ Instruction  pipelining
+The technology  improves  the CPU performance  by dividing  an operation  into several stages and configuring  a
+hardware  unit for processing  each stage separately  in order to process  different  instructions  simultaneously.  In other
+words, it does not process  only one instruction at a time, but it processes  multiple  instructions  simultaneously  by
+M3 Overview  of System  Architecture  79

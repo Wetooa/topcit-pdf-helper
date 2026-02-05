@@ -1,0 +1,222 @@
+LEARNING GUIDE: Pages 25-29
+Generated: 2025-12-05 14:19:39
+PDF: 1 - Software Development OCR
+
+================================================================================
+LEARNING GUIDE
+================================================================================
+
+Here is a simplified, easy-to-read learning guide based on the provided text:
+
+---
+
+## Software Development & Agile Methodologies: A Learning Guide
+
+This guide covers core software development concepts and popular Agile methodologies, focusing on essential information for effective learning.
+
+---
+
+### **03. Software Development Methodology**
+
+A **Software Development Methodology** defines the structured approach for creating software. It outlines development phases, activities, deliverables, verification procedures, and standards from planning to implementation.
+
+#### A) Why We Need Software Development Methodologies:
+*   **Boost Productivity:** Accumulate and reuse past development experience.
+*   **Effective Management:** Facilitate efficient project oversight.
+*   **Improve Communication:** Provide formal procedures, standard terminology, and clear deliverables.
+*   **Ensure Quality:** Verify and approve each phase to maintain a certain quality level.
+
+#### B) Comparison of Software Development Methodologies:
+
+| Item                    | Structural Methodology               | Information Engineering Methodology | Object-Oriented Methodology           | CBD Methodology                       |
+| :---------------------- | :----------------------------------- | :---------------------------------- | :------------------------------------ | :------------------------------------ |
+| **Overview/Focus**      | Focuses on activities/processes.     | Focuses on data.                    | Focuses on objects and classes.       | Develops/combines reusable components. |
+| **Key Principles**      | Requirements definition, structuralization, stepwise refinement, modularization. | Information strategy, business analysis, system design. | Analysis, design, development, testing based on object concepts. | *(Implicit: Component reuse, modularity)* |
+| **Characteristics**     | Divide and conquer, program logic-centric, structured modules. | Supports business systems, data integration focus, program logic linked to data. | Data and logic unified (objects), emphasizes interfaces, reuse via inheritance, smooth analysis-design transition. | Modular interfaces, component-based implementation, aims for "black box" reuse. |
+| **Major Deliverables**  | Data Flow Diagrams (DFD), Entity-Relationship Diagrams (ERD), program specifications. | Business process/conceptual diagrams, data structure diagrams. | Use case, sequence, class diagrams.     | Use case, sequence, class, component diagrams, reuse plans. |
+| **Sample Tools**        | Teamwork, SA                         | Cool Gen, SA                        | Rose, SA, Plastic, Cool Joe, Together | Component, EJB                        |
+| **Supported Languages** | COBOL, C, VB, PASCAL                 | COBOL, C, VB, PASCAL                | C++, JAVA, VB                         | Generally language-agnostic.          |
+
+#### C) Software Development Phases:
+
+1.  **Requirements Analysis:**
+    *   **Goal:** Understand exactly what the user needs the software to do. This is often the hardest part.
+    *   **Importance:** It's the critical first step. Thorough analysis early on significantly reduces overall development costs, shortens development time, and prevents quality issues later.
+
+2.  **Design:**
+    *   **Goal:** Translate conceptual requirements into a physical system structure.
+    *   **Process:** Determines the system's architecture, breaks it into sub-systems, and allocates components (hardware/software).
+    *   **Importance:** Directly impacts software quality and stability. Poor design leads to unstable, difficult-to-maintain systems.
+
+3.  **Implementation:**
+    *   **Goal:** Write the program code based on the design specifications to satisfy the requirements.
+    *   **Key Task:** Adhere strictly to detailed design and user guides. Establishing and following a clear **coding standard** is crucial for code clarity and consistency.
+
+4.  **Testing:**
+    *   **Goal:** Inspect and evaluate the system to ensure it meets requirements and identify any discrepancies between expected and actual results (manually or automatically).
+    *   **Purpose:** The final step in assuring software quality. It's a series of tasks designed to find faults and facilitate modifications for quality improvement.
+
+---
+
+### **04. Agile Development Methodology**
+
+**Agile Methodologies** are a set of approaches to software development that emerged from the Agile Manifesto. They prioritize iterative development, collaboration, and responsiveness to change.
+
+#### A) Types of Agile Methodologies:
+*   **Most Widely Adopted:**
+    *   **Scrum:** (Ken Schwaber/Jeff Sutherland) – Popular for project management.
+    *   **eXtreme Programming (XP):** (Kent Beck/Erich Gamma) – Popular in early days, now often used with Scrum.
+*   **Other Key Types:**
+    *   **Lean Software Development:** (Mary Popendieck/Tom Poppendieck) – Applies lean production principles to software, often used with Scrum.
+    *   **Agile Unified Process (AUP):** (Scott Ambler)
+
+#### B) Agile Development Methodology - eXtreme Programming (XP):
+
+#### 1. XP Overview:
+*   **Creator:** Established by Kent Beck and others in the late 1990s.
+*   **Nature:** A lightweight, iterative development method.
+*   **Suitability:** Best for small to medium-sized development teams.
+*   **Focus:** Emphasizes specific development techniques like Test-Driven Development (TDD) and Continuous Integration.
+*   **Application:** Often combined with other agile methods like Scrum rather than used in isolation.
+*   **Structure:** Built upon core values and practices designed to achieve these values.
+
+#### 2. XP Development Procedure & Terminology:
+*   **User Stories:** Brief descriptions of desired functions from a user's perspective, used for requirements gathering and communication.
+*   **Spike:** A simple, experimental program created to explore difficult requirements or potential technical solutions, reducing risk.
+*   **Release Planning:** Establishes the project's overall deployment plan, dividing it into regular, short iterations (1-3 weeks).
+*   **Acceptance Test:** Testing performed by the customer before a release to verify it meets their needs.
+*   **Smaller Releases:** Frequent, small-scale deployments that provide early benefits and value to the customer.
+
+#### 3. XP Values:
+*   **Communication:** Essential for team success; fosters problem-solving and stronger team dynamics among customers, developers, and managers.
+*   **Simplicity:** Always aim for the simplest possible solution that meets current requirements, avoiding unnecessary complexity.
+*   **Feedback:** Seek frequent and rapid feedback to enable continuous, gradual improvement, rather than striving for initial perfection.
+*   **Courage:** Be brave enough to adapt to changes, actively solve problems, and deliver solutions quickly. This value underpins simplicity and feedback.
+*   **Respect:** The fundamental value; mutual respect among all team members is crucial for a project's success.
+
+#### 4. Extreme Programming Practices:
+XP suggests 12 core practices:
+
+| Practice                  | Description                                                                  |
+| :------------------------ | :--------------------------------------------------------------------------- |
+| **Simple Design**         | Design only for current needs, keeping it as simple as possible.             |
+| **Test-Driven Development (TDD)** | Write automated tests *before* writing the actual code.                  |
+| **Refactoring**           | Improve the internal structure of existing code without changing its external behavior. |
+| **Coding Standard**       | Use consistent coding standards for clarity and effective team communication. |
+| **Pair Programming**      | Two developers work together at one computer, collaboratively writing code.  |
+| **Collective Code Ownership** | All team members share responsibility for all code and can improve any part of it. |
+| **Continuous Integration** | Integrate code changes frequently (multiple times a day) to detect issues early. |
+| **Planning Game**         | Collaborative planning that balances business and technical needs, updated iteratively with feedback. |
+| **Small Release**         | Deliver small, functional releases frequently to customers.                  |
+| **Metaphor**              | Use simple analogies or stories to describe the system's architecture and functionality. |
+| **40 Hours/Week**         | Maintain a sustainable 40-hour work week to ensure quality and prevent burnout. |
+| **On-Site Customer**      | A customer representative works directly with the development team at the development site. |
+
+#### C) Scrum:
+
+#### 1. Scrum Overview:
+*   **Purpose:** An agile project management methodology; an empirical approach based on estimation and continuous adjustment.
+*   **Origin:** Modeled after "The New Product Development Game" (1986). Formalized for software development by Ken Schwaber and Jeff Sutherland in 1995.
+*   **Structure:** Composed of three fundamental units (roles).
+
+#### 2. Type of Scrum Units (Roles):
+
+| Role             | Description                                                                                                                                                                                                                                                                     |
+| :--------------- | :------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
+| **Product Owner** | Represents stakeholders, defines and prioritizes the **Product Backlog** (a list of all desired product features). They are key in sprint planning but should minimize involvement in the development team's daily operations once a sprint begins.                                  |
+| **Scrum Master** | A facilitator who helps the development team follow Scrum principles and values. Their primary responsibility is to remove any obstacles (**impediments**) that hinder the team's progress and ensures the Scrum process is understood and enacted. |
+
+---
+
+================================================================================
+ORIGINAL TEXT (First 5000 chars)
+================================================================================
+
+--- Page 25 ---
+ESSENCE
+03 Software  Development  Methodology
+The software  development  methodology  defines each development  phase, the activities  to perform in each
+phase, the deliverables,  the verification  procedure  and completion  criteria, and then defines the standardized
+method  and procedure,  and support  tool for the development  plan, analysis,  design, and implementation  phase.
+A) Necessity  of the software  development  methodology
+© Improving  development  productivity  by accumulating  and reusing  development  experience.
+@ Effective  project  management.
+@ Providing  a means of communication  by presenting  formal procedures  and deliverables  and unifying  the standard
+terminology.
+@ Assuring  quality  at a certain level by verifying  each phase and closing  the phase after approval.
+B) Comparison  of software  development  methodologies
+<Table 1> Software  development  methodology
+Information  engineering Object-orientedItem Structural  methodology methodology methodology CBD methodology
+A met hodology  that - A methodology  that
+- : identifies  the relationship
+. Focusing  on business - . develops  a reusableOverview activities Focusing  on data between  object and component  or combines
+class and converts  it into Pr
+: commercial  components
+a design model.
+- Definition  of - Requirement  analysis
+- Information  strate requirements - Analysis  (architecture
+- Abstraction lan BY - Object-oriented definition, use case
+. a Pian analysis (object modeling)Basic -Structuralization - Business  area analysis . : -a . ; modeling,  dynamic ~ Designprinciple - Stepwise  refinement - Business  system ; .
+~ Modularization design modeling,  functional - Development
+25 a development modeling) - Implementation
+¥ - Object-oriented  design _ (release, training)
+- Test/deployment
+- Methodology  of
+supporting  corporate - a
+business support oo gem unit is an - Evolution  of the object
+- The principle of divide systems . Data an d logic methodology
+and conquer - Emphasis  on data integration 8 - Emphasis  on interface
+Character - Centered  on program models =A hone  ed - Interface
+istics logic - Program  logic depends modularization implementation  using a
+- Structured  with on data structure ~ Reuse by inheritance component
+controllable  modules (CRUD) No ga between analysis | Aiming to reuse black
+- Enterprise  integrated Bap ° ¥ boxand design
+data model
+24 TOPCIT  ESSENCE
+
+
+--- Page 26 ---
+Software  Development )
+Item Structural  methodology eet  eels eee CBD methodology
+- Domain  analysis  report ~ Business  process/
+~ Domain  analysis  report ERD - Business  process/ conceptual  diagram
+Major - Data flow di gram  Pe - Function chart conceptual  diagram - Diagrams  (use case,
+deliverables - Structural  drawings Pica  structure - Diagrams  (use case, sequence,  class,
+- Program  specification iagram a sequence,  class, component,  etc.)
+- Program  specification component,  etc.) - Reuse plan
+- Table definition/list - ent, EJB
+Supporting Teamwork,  SA Cool Gen, SA Rose, SA, Palstic Cool Joe, Together
+Major In principle,  the choice of
+supported § COBOL,  C, VB, PASCAL COBOL,  C, VB, PASCAL C++, JAVA, VB development  language  is
+language unimportant.
+C) Software  development  phases
+Software  development  activities  are defined  by the software  lifecycle.
+@ Requirements  analysis
++ The hardest  thing in software  development  is deciding  exactly  what to develop.
++ Software  requirements  analysis is practically  the first step in software  development  and is the phase of
+understanding  what the user needs.
++ Itis a critical phase that can reduce the development  costs in the entire development  phase.
++ If investment  is channeled  into analyzing,  defining  and managing  the requirements  well in the early stages,
+the entire software  development  period can be shortened  and excessive  costs and quality deterioration  can
+be prevented  in advance.
+@ Design
++ The software  requirements  analysis  process  is a conceptual  step, whereas  the design process  is the first step
+in physical  realization.
++ When designing  a system,  the structure  of a system,  which is composed  of sub-systems,  is determined,  and
+sub-systems  are allocated  to the components,  such as hardware  or software.
++ Design directly  affects  quality.
++ If a system  is not designed  properly,  its stability  deteriorates.
++ Unstable  systems  are difficult  to maintain
+@® Implementation
++ The goal of the software  implementation  phase is to program it in a way that the requirements  can be
+satisfied based on the design specification.
++ The program  should be written according  to the description  in the detailed  design and user’s guide.
+* One of the most important  tasks in the implementation  phase is to decide on a coding standard  and write
+the code clearly based on that standard.
+M1 Software  development  25
+
+
+--- Page 27 ---
+ESSENCE
+@ Testing
++ Testing refers to a series of processes  to inspect  and evaluate  w...

@@ -1,0 +1,22 @@
+F) Search algorithm 49
+G) Graph search algorithms 49
+H) Minimum  spanning  tree 51
+lV. Software  Design Principles  and Structural  Design 52
+01 Principles  of Software  Design 54
+A) Abstraction 54
+B) Information  hiding 54
+C) Stepwise  refinement 55
+D) Modularization 55
+E) Structuralization 56
+02 Cohesion  and Coupling 56
+A) Cohesion 56
+B) Coupling 57
+03 Structural  Design Method 59
+A) Transform  flow-oriented  design 59
+B) Transaction  flow—oriented  design 61
+V. Software  Architecture  Design 62
+01 Software  Architecture  Design 64
+A) Software  architecture  overview 64
+B) Software  architecture  design procedure 64
+02 Software  Architecture  Style 65
+8 TOPCIT  ESSENCE

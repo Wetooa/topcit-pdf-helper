@@ -1,0 +1,50 @@
+ESSENCE
+B) Processing  methods  of dynamic  SQL and static SQL
+<Table  46> Comparison  of the processing  methods  of dynamic  SQL and static SQL
+STATIC  SQL DYNAMIC  SQL
+Create a SQL statement
+through  logic processing
+ft
+CURSOR  OPEN
+ft
+CURSOR  FETCHa
+Save data in RECORDCreate  variables  to
+contain SQR statementsyo
+Create  a SQL statement
+through  logic processing
+oY
+Save dynamic  SQL in REF
+CURSOR
+—_—____ yo
+REF CURSOR  OPEN
+—___y
+REF CURSOR  FETCH
+oY TYPE
+Save data in RECORD
+TYPE
+yO
+CURSOR  CLOSE REF CURSOR  CLOSE
+C) Example  of dynamic  SQL and static SQL code
+@ Example  of static SQL
+Init main{)
+iv
+«* Input your employee  ID: ;
+TO) F
+R NOT FOUND GOTO notfound;
+ENAME INTO -ename
+= tempno;
+Printé  |" Employee  name: & n", ename)  ;
+Notitound:
+Printé  ('%d isan invalid employee  ID. -.n",  empne)  ;
+I
+@ Example  of dynamic  SQL
+Int main()
+Mt
+Char select_stmt\[50\]  = “SELECT  ENAME FROM EMP WHERE EMPNO = :empno";
+ARE sql stmt FROM -:select_stmt  ;
+OPEN emp_cursor  USING :empno ;
+FETCH emp_cursor  INTO :eneme ;
+E CLOSE emp_cursor  ;
+Printt("  Employee  name: $s_\n", ename) ;
+\}
+116 TOPCIT  ESSENCESQL DECLARE  emp cursor  CURSOR  SQL sql stmt ;&select_stmt)  ; ? SQLThe  SQL statement  canbe  entered  dynamically.

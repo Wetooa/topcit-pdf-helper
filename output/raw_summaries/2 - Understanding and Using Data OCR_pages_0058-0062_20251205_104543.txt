@@ -1,0 +1,267 @@
+LEARNING GUIDE: Pages 58-62
+Generated: 2025-12-05 10:45:43
+PDF: 2 - Understanding and Using Data OCR
+
+================================================================================
+LEARNING GUIDE
+================================================================================
+
+Here is a simplified, easy-to-read learning guide based on the provided text:
+
+---
+
+## Database Learning Guide: ER & EER Models
+
+### 1. Extended ER (EER) Model Concepts
+
+The EER model enhances the basic ER model with additional concepts:
+
+*   **Composite Attribute:** An attribute that can be broken down into smaller, meaningful parts (e.g., "Address" into "Street," "City," "Zip Code").
+*   **Generalization/Specialization:**
+    *   **Generalization:** Combining multiple *sub-entity types* (sub-types) into a higher-level *super-entity type* (super-type).
+    *   **Specialization:** Breaking down a *super-entity type* into multiple *sub-entity types*.
+    *   These are inverse processes.
+    *   **Relationship Type:** Called an **IS-A** relationship (e.g., "A Car IS-A Vehicle").
+    *   **Inheritance:** Concepts like attributes and relationships can be inherited from the super-type by sub-types.
+*   **Aggregation:**
+    *   Defines a *new entity* using a collection of *multiple existing entities*.
+    *   **Relationship Type:** Called an **IS-PART-OF** relationship (e.g., "A Line Item IS-PART-OF an Order").
+    *   **Inheritance:** Does **not** apply to aggregation.
+
+### 2. Crow's Foot ERD Notation (Industry Standard)
+
+While Chen's notation is academic, Crow's Foot is widely used in industry.
+
+#### A. Entity, Attribute, Identifier Representation
+
+*   **Entity Name:** Written *outside* the top of the rectangle.
+*   **Attribute Names:** Written *inside* the rectangle.
+*   **Identifier (Primary Key - PK):** Listed in the *top section* of the rectangle, separated from general attributes.
+*   **General Attributes:** Listed in the *bottom section*.
+
+**Example:**
+```
++-------------+
+|   Student   |
++-------------+
+| Student ID (PK)
+| Name
+| Address
+| Contact Info
+| Grade
++-------------+
+```
+
+#### B. Characteristics of an Entity
+
+An entity must:
+
+*   Represent information relevant to the work and needing management.
+*   Be uniquely identifiable by an identifier.
+*   Represent a set of *two or more* permanent instances (not just one).
+*   Be used by a work process.
+*   Have at least one attribute.
+*   Have at least one relationship with another entity.
+
+#### C. Classification of Entities
+
+Entities can be classified:
+
+*   **By Tangible/Intangible Type:**
+    *   **Tangible Entity:** Something physical (e.g., Employee, Article).
+    *   **Concept Entity:** An abstract idea (e.g., Organization, Place, Department).
+    *   **Event Entity:** Occurrences or transactions (e.g., Reception, Contract, Order, Progress).
+*   **By Time of Occurrence:**
+    *   **Fundamental/Key Entity:** Core entities.
+    *   **Main Entity:** Central to a process.
+    *   **Active Entity:** Dynamic, often event-driven.
+
+#### D. Classification of Attributes
+
+Attributes are categorized by their origin:
+
+*   **Basic Attribute:** Directly defined from business analysis (e.g., Product Name, Manufacturing Date).
+*   **Designed Attribute:** Identified during design, often a 1:1 substitute for a basic attribute for specific purposes (e.g., Drug Container Code from Container ID).
+*   **Derived Attribute:** Calculated or transformed from other attributes (e.g., Total Number of Containers, Manufacturing Cost).
+
+#### E. Relationship Notation (Crow's Foot)
+
+Crow's Foot clearly marks different relationship types:
+
+*   **Identifying Relationship:** The child entity inherits the parent's primary key as *part of its own primary key*.
+*   **Non-Identifying Relationship:** The child entity inherits the parent's primary key as a *non-key attribute* (foreign key).
+*   **Required Relationship:** Denoted by a straight line, meaning participation is mandatory.
+*   **Optional Relationship:** Denoted by a circle on the line, meaning participation is optional.
+
+**Cardinality Symbols:**
+
+| Cardinality   | Notation on Relationship Line | Description                                 |
+| :------------ | :---------------------------- | :------------------------------------------ |
+| **1:1 (Required)** | `-----|------|-----`       | Exactly one on each side. Both mandatory.   |
+| **1:1 (Optional)** | `-----O------O-----`      | Zero or one on each side. Both optional.    |
+| **1:N (Required)** | `-----|------<-----`      | One on the left, one or more on the right.  |
+| **1:N (Optional)** | `-----O------<-----`      | Zero or one on the left, one or more on the right. |
+| **0 or 1**    | `O` (Circle on line)          | The entity at this end can have zero or one. |
+| **Exactly 1** | `|` (Straight line)           | The entity at this end must have exactly one. |
+| **0 to Many** | `<` (Crow's Foot & Circle)  | The entity at this end can have zero or many. |
+| **1 to Many** | `<` (Crow's Foot & Line)    | The entity at this end must have at least one, and can have many. |
+
+#### F. How to Read Relationships
+
+Read relationships from the source entity to the target entity, describing participation and options:
+
+*   **"Each/One [Source Entity] [Relationship Option (always/sometimes)] [Relationship Name] [Number of Target Entities (one/several)] [Target Entity]."**
+
+**Example:**
+*   "Each Employee *always belongs to* one Department." (Required, 1:1)
+*   "Each Employee *sometimes belongs to* several Teams." (Optional, 1:N)
+
+### 3. Identifiers
+
+An identifier uniquely distinguishes instances within an entity.
+
+#### A. Characteristics of a Primary Identifier
+
+A primary identifier must have:
+
+*   **Uniqueness:** Every instance within the entity must have a distinct value (e.g., Employee Number).
+*   **Minimality:** It should consist of the fewest possible attributes while maintaining uniqueness.
+*   **Invariability:** Its value should ideally not change once assigned to an instance.
+*   **Presence (Non-Null):** It must always have a value; it cannot be null (empty).
+
+#### B. Classification of Identifiers
+
+Identifiers can be classified by various aspects:
+
+*   **By Representativeness:**
+    *   **Primary Identifier:** Uniquely identifies instances *and* can link to other entities (acts as a Foreign Key).
+    *   **Alternate Identifier:** Uniquely identifies instances *but cannot* link to other entities effectively.
+*   **By Generation Source:**
+    *   **Internal (Self-Generated) Identifier:** Created within the entity itself.
+    *   **Foreign Identifier:** Received from another entity through a relationship.
+*   **By Number of Attributes:**
+    *   **Single Identifier:** Composed of one attribute.
+    *   **Composite Identifier:** Composed of two or more attributes.
+*   **By Creation Status:**
+    *   **Natural Identifier:** An identifier that naturally arises from the business process (e.g., Order Number).
+    *   **Artificial Identifier:** An identifier created specifically for system use when a natural identifier is complex or unsuitable (e.g., a system-generated `Employee_PK`).
+
+#### C. Identifier Relationship vs. Non-Identifier Relationship
+
+*   A **foreign identifier** is an attribute in a child entity that originates from the primary identifier of a parent entity through a relationship. It becomes a **foreign key** in the database.
+*   When a child entity receives a foreign identifier from a parent:
+    *   **Identifying Relationship:** The child entity uses the received foreign identifier as *part of its own primary identifier*. This makes the child entity existentially dependent on the parent.
+    *   **Non-Identifying Relationship:** The child entity includes the received foreign identifier as a *regular attribute* (a foreign key), but it does not become part of the child's primary identifier. The child entity can exist independently of the parent's primary key.
+
+---
+
+================================================================================
+ORIGINAL TEXT (First 5000 chars)
+================================================================================
+
+--- Page 58 ---
+Database )
+© Composite  attribute
+A composite  attribute  refers to an attribute  that can be decomposed  into two or more elements,  and is distinguished
+from general  attributes  (simple  attribute)  by displaying  the links between  the attributes.
+05 Extended  ER (EER: Extended  Entity-Relationship)  Model
+The EER model adds several  useful concepts  to the basic ER model.
+A) Generalization/Specialization
+@ Generalization:  Separation  of one entity type (super  type) into multiple  sub-level  entity types (sub-type).
+@ Specialization:  Integration  of multiple  entity types (sub type) into one upper-level  entity type (super-type).
+© Generalization  and specialization  have an inverse relationship.  The generalization/specialization  relationship  is called
+the IS-A relationship.
+@ The concept  of inheritance  applies.
+Specialization
+Generalization
+B) Aggregation
+@ Aggregation  defines  a new entity with a set of multiple  entities.  It is called an IS-PART-OF  relationship.
+@ The concept  of inheritance  does not apply.
+M2 Database  57
+
+
+--- Page 59 ---
+ESSENCE
+06 Another  Type of ERD Notation:  The Crow’s  Foot Model
+Chen's ERD (described  above) is mainly used in the academic  world, whereas  information  engineering  notation,  also
+known as Crow’s Foot notation,  is mainly used in industry.
+A) Entity, attribute,  identifier
+© Specify  the entity name outside  the rectangle.
+@ Specify  the attribute  name inside the rectangle.
+© The rectangle  is divided into top/bottom.  Specify  the identifier  attribute  at the top and the general attributes  at the
+bottom.
+Student  ID (PK)
+Name
+Address
+Contact
+information
+Grade
+[Figure 17] Crow's Foot notation  of entity, property,  and identifier
+B) Characteristics  of the entity
+@ Information  must be required  by the work concerned  and should be the information  to be managed. (Example:
+Patient,  number  of times TOEIC exams are taken, etc.)
+@ An entity should be identifiable  by a unique identifier.
+@ Anentity  should be a set of instances  that exist permanently.
+(Not “one”, but “two or more’)
+@ Anentity  should be used by the work process.
+© Anentity  must have an attribute.
+© An entity should have at least one relationship  with other entities.
+C) Classification  of entities
+@ Classification  by tangible  and intangible  type - Generally,  entities  can be classified  into tangible  entities,  concept
+entities, and event entities  depending  on whether  they are tangible  or intangible.
+Classification  by the time of occurrence  - Entities can be classified  into fundamental  entities/key  entities, main
+entities, and active entities  depending  on the time of occurrence.
+58 TOPCIT  ESSENCE
+
+
+--- Page 60 ---
+Database )
+Hahei nYel  tT  i140)
+Depending  on the tangible  and intangible... Depending  on the time of occurrence...
+. Action
+: Type Concept Primary/key Center ‘
+lerder  bine) (employee, (organization, (employee, (reception, (order etal,
+, article) place) department) contract)progress)
+Entities  can be efficiently  derived  by grouping  based on a certain  group.
+[Figure 18] Data model expression  method
+D) Classification  of attributes
+Attributes  can be classified  into the basic attribute  which is directly  defined by analyzing  the work, the designed
+attribute  which is identified  during design even though it does not exist in work, and the derived attribute which is
+calculated  or transformed  from other attributes.
+Basic - Original  attributes Designed  - 1:1 substitution Derived  - Calculated  value
+Total number ( 5 Individual  container)
+of containers
+Total amount (> Unit price)
+of containers001-Drug  container
+002-Other  containers
+Product  name
+Manufacturing  date Drug container  code Calculated  value
+Manufacturing  cost
+[Figure 19] Classification  of attributes
+E) Relationship
+© The identifying  relationship  and non-identifying  relationship  are marked  clearly.
+@ The required  relationship  and the optional  relationship  are marked  clearly.
+© Unlike Chen notation,  the attribute  of the relationship  is included  in an entity or by identifying  a separate  entity.
+Cardinality Identifying  relationship Non-identifying  relationship
+tC | ee Se
+1:1(optional) hh See  de
+1:N(required) off peas  sea=, Kk
+1:N(ptional) se 4o----------  oe
+[Figure 20] Relationship  expression  in Crow's  Foot notation
+M2 Database  59
+
+
+--- Page 61 ---
+ESSENCE
+F) How to read relationships
+To read a data model, the identifier reads one or each source entity participating  in the relationship,  followed  by the
+number  of target entities  (one, more than one), relationship  options,  and relationship  names.
++ The identifier  reads one or each source entity.
++ The identifier reads the degree of the target entity's participation  in relationships,  that is, the number  (one, more
+than one).
++ The identifier  reads the relationship  option and the relationship  name.
+Each
+/One
+G) Characteristic  ofRelationshipSource entity order
+employee
+depar...

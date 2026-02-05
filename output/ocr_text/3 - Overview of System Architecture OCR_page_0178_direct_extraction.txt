@@ -1,0 +1,38 @@
+Overview  of System Architecture )
+<Table 56) Prefix of IPv6 Address  Format
+Format  prefix Description
+0000 001 Reserved  for NSAP (Network  Service  Access  Point)
+0000 010 Reserved  for IPX (Internetwork  Packet  Exchange)
+001 Integrated  global unicast  address
+11111110  10 Link-local  address
+11111110  11 Site local address
+W111 Multicast  address
+The IPv6 addresses  are classified  into link-local,  unicast,  multicast,  and anycast  addresses,  according  to use. <Table
+57> summarizes  the IPv6 address  notation.
+{Table 57) IPv6 Address  Notation
+Address  format Description
++ An address  that can only be used within the internal network
++ The address  can only be used within a network  and is used to identify  within that network  only.
+Link FE80:0000:0000:0000:2CDA:D834:CBAQ|
+Local addres SSy Fill with Os up to 64bit J
+10bit Prefic EUI-64 ID
++ While the link-local  addresses  can only be used intemally,  the global unicast  addresses  can be used externally.
+2001:DBB:131F:0000:0000:070D:126A:140B  / 64
+Global unicast  address i 1 T
+Vv y v
+@ Network  Address @ Interface  ID @ Prefix
++ Delivers  packets  to all interfaces  that are registered  in the multicast  group.
++ FP is FF with 8 bits, followed  by a 4-bit flag, a 4-bit scope, and a 112-bit  group ID.
++ The upper 3 bits of the 4-bit flag are not used. If the last bit is 0, it means it is a well-known  multicast
+address. If it is 1, it means it is a temporarily  used multicast  address.Multicast  address
++ It is similar  to a multicast  address,  in that it designates  multiple  interfaces,  but packets  are only
+Anycast  address delivered  to the nearest  interfaces,  rather  than to all the hosts in the group.
++ It is expressed  as n-bit FP and 0 of (128-n)  bits.
+B) IPv6 header  structure
+<Table 58> describes  the IPv6's basic header  structure  and component.  IPv6 can have extended  headers,  in addition
+to the basic header.
+Version(4) Traffic class(8) Flow label(20)
+Payload  length(16) Next header(8) Hop limit(8)
+Source  address(128  bits)
+Destination  address(128  bits)
+M3 Overview  of System  Architecture  177

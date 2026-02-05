@@ -1,0 +1,37 @@
+Database )
+D) Problems  that occur when concurrency  is not controlled
+<Table  49> Problems  that occur  when concurrency  is not controlled
+Item Contents
++ Occurs  when transactions  update  the same data simultaneously.
+Lost update + Occurs  when the later transaction  overwrites  the update  value before the previous  transaction
+has completed  the transaction  after updating  the data.
+Dirty read + Other transactions  refer to the intermediate  execution  result of a transaction.
+Inconsistency + A database  remains  inconsistent  when two transactions  are executed  at the same time.
++ When a specific  transaction  cancels  processing  if data is shared by multiple  transactions,  the
+part processed  by other transactions  cannot  be canceled.
++ When a transaction  executes  the same query twice, the query results differ because  other
+transactions  have modified  or deleted  the value in the middle.Cascading  rollback
+Unrepeatable  read
+E) Concurrency  control  techniques
+@ Lock-based  technique
+@ Timestamp-based  technique
+@ Multi-version  technique
+@ Verification  (optimistic)  based technique
+F) What is the 2PL (2-Phase  Locking)  technique?
+@ The 2-phase  locking  technique  controls  concurrency  by guaranteeing  serialization  and follows  the 2PL protocol,  which
+performs  jobs by dividing  ‘lock’ and ‘unlock’  operations  into the expansion  and contraction  phases.
++ Expansion  phase: A phase in which a transaction  can perform  locking  only, and cannot  perform  unlocking.
++ Contraction  phase: A phase in which a transaction  can perform  unlocking  only, and cannot  perform  locking.
+lock unlock
+lock & unlock
+lock es unlock
+oe
+Time
+1 2 3 4 5 6 7 8
+t t +
+Start Operation End
+Expansion  phase | Blocking  phase | zzz:—Contraction  phase¢—_  ———
+[Figure  44] Conceptual  diagram  of 2PL
+@If all lock operations  (Read_lock,  Write_lock)  appear  before the first unlock operation,  the transaction  conforms  to the
+2PL protocol.
+M2 Database 125

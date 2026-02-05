@@ -1,0 +1,37 @@
+ESSENCE
++ In case of three-shift  work, B (successor
+activity)  can take turns and leave work only
+when  A (preceding  activity)  comes  to workStart-to-Finish + A Successor  Activity  cannot finish until a
+Relationship Predecessor  Activity  has started
+@ Estimation  of Activity  Duration
+Activity  duration  estimation  is a process  of estimating  the time it will take to perform each activity  with the
+allocated  resources.  The estimation  method is as follows:
+<Table 41> Characteristics  of Activity  Duration  Estimation  Methods
+Estimation  Method Characteristics  and Explanation
++ Amethod  that a resource  estimation  expert  uses internal or external  resources  with similarExpert  Judgmentexperience  to calculate  the resources  to be put into the activity.
+Analogous  Estimating + Amethod  of estimation  by referring  to similar  projects  performed  in the past
++ Risk-based  estimation  technique
+Three-point  Estimating + Estimate  the beta average  of Optimistic  value, Most Likely value, Pessimistic  value
++ Commonly  used in case of lack of experience
+Expert Judgment  and Analogous Estimating  are common  methods  used by practitioners  and those with
+extensive  experience  in the field. Three-point  Estimating  is a method  of measuring  the optimistic,  pessimistic,
+and most likely values for each activity  in consideration  of risks, which allows more accurate  estimation.  The
+term “Three-point”  has the following  meanings:
++ Optimistic,  O: the best-case  estimate,  the shortest  duration
++ Most likely, M: the most likely estimate,  the average  duration
++ Pessimistic,  P: the worst-case  estimate,  the longest  duration
+In the three-point  estimation  method,  the most likely estimate  receives  a multiplier of 4 to come up with the
+final estimate  of an activity. If an activity  takes 4 days to be optimistic,  10 days to be pessimistic,  and 6 days
+to be the most likely, the duration  of the activity using the three-point  estimation  method is calculated  as
+(4+4*6+10)/6  = 6.3 days.
+(P+ 4M  +0)
+Average  =8 6
+The three-point calculation  formula is derived from the existing  PERT (Program  Evaluation  and Review
+Technique)  technique.  PERT is a technique  developed  by Booz Allen Hamilton  in 1958 for the U.S. Navy Special
+Projects  Office to track  and manage  the progress  of the Polaris nuclear  submarine  project. It is widely used
+in new projects  and is an analytic  technique  that supports  predicting  the project schedule  in consideration  of
+various  risk factors  and fluctuations.
+© Schedule  Development
+Schedule  development  is a process  of creating  a project schedule  by analyzing  the sequence  of activities,  the
+estimated  duration,  resource  requirements,  and schedule  constraints.
+94 TOPCIT  ESSENCE

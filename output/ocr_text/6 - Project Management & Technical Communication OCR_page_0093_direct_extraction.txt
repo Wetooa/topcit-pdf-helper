@@ -1,0 +1,38 @@
+ESSENCE
+01 Concept  and Process  of Schedule  Management
+A) Concept  of schedule  management
+@ Schedule
+A schedule  is a display of the start and finish dates of each of the activities  that make up the project  and can
+be expressed  in various  formats  such as tables, graphs,  and network  diagrams.
+However,  the date information  displayed  in the schedule  is determined  based on a comprehensive  analysis  of
+the duration,  sequential  relationships,  human and physical resources  required  of the activities,  input costs, the
+uncertainty  of the project progress,  and the working  conditions.  It is distinct  from the timetable  for a simple
+goal.
+@ Importance  of Schedule
+The schedule  is distinguished  from the timetable  as it describes  in a logical manner  the factors  that affect the
+overall project  execution  time and cost, such as the dependency  between  activities  and the type and quantity
+of resources  required  for each activity,  in addition  to the arbitrary  relationship  between  work and time. Writing
+a schedule  is important  as it functions  as follows:
++ Useful planning:  you can set a feasible  timeline  by reasonably  estimating  the duration  of the project.
++A bird's eye view of the project: you can get a full understanding  of what the project is and how it is
+executed.  In addition,  the completed  schedule  is a good tool to explain the project team's plans to
+stakeholders  such as clients and the management.
++ Effective  control: resources can be concentrated  by identifying  areas that need intensive  management
+through  schedule  analysis.
++ Effective  communication:  the schedule  itself expresses  a lot of information  about the project. Thus, a well-
+written  schedule  allows for effective  communication.
+® Format  of Schedule
+Schedules  can take many formats.  The most common  schedule  formats  in project management  are as follows.
+<Table 39> Pros and Cons of Each Type of Schedules
+Scheduli! Pros and Cons
+Network + Illustrate  the relationship  between  activities.
+schedule + Used for project planning
++ Effective  representation  of the progress  of each activity
+Gantt chart + Mainly used for reporting  to management
++ Describe  merely  whether  and when milestones  are executed
+Milestone + A milestone  is an important  checkpoint  of a project  with zero duration.
+chart + The most simplified  form of schedule
++ Suitable  for summary-level  reporting  to clients and management.
+@ Definition  of Schedule  Management
+Schedule  management  is the process  of efficiently  allocating  resources, defining  project activities,  identifying
+92 TOPCIT  ESSENCE

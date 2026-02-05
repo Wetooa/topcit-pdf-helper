@@ -1,0 +1,35 @@
+Information  security )
+@® Major personal  information  de-identification  technologies  and utilization  methods
++ Heuristic  pseudonymization
+A method of hiding values corresponding  to the identifier,  based on several pre-defined  rules, or hiding
+personal  information  by processing  it at the discretion  of the data handler.  This technique  can be applied to a
+variety of personal  information,  such as the name, user ID, department  (company)  name, institution  number,
+address,  credit rating, mobile phone number,  zip code, e-mail account,  etc.
++ K-anonymity
+A method  of disclosing  data by keeping  k or more data that have the same attribute  value in order to prevent
+a privacy violation  by keeping  the number  of values, which can be held by the designated  attribute,  over a
+certain level. This method can be applied to personal  information,  such as age, height, address,  zip code,
+department  (company),  etc.
++ Aggregation
+A method of reducing  sensitivity  by aggregating  data into a group or part (total, average,  etc.), if the
+collected  information  contains  sensitive  personal  information.  This method can be applied to personal
+information,  such as age, height, income,  credit card use amount,  etc.
++ Data suppression
+A method  of converting  specific  personal  information  data into an average  or category  value to hide it. This
+method  can be applied to personal  information,  such as age, height, disease,  etc.
++ Adding  random  noise
+A method  of preventing  the exposure  of identification  information  by adding noise, such as random numbers,
+to sensitive  personal  identification  items. This method can be applied to personal  information,  such as the
+resident  registration  number,  user ID, name, date of birth, height, age, etc.
+D) Mobile security
+® Security  threats  and countermeasures  in the mobile  environment
+Smartphones,  which are equipped  with a user-oriented  mobile PC platform,provide  voice calls, wireless  Internet
+connections  using mobile communication  and Wi-Fi, web browsers,  and multimedia  content  services.  Open OS
+allows users to freely install various  apps on their devices.  This open web environment  of smartphones  causes
+security  threats,  which become  an issue.
+@ Security  threats  in the smart and mobile environment
++ Security  vulnerabilities,  due  to jailbreaking  and rooting
++ Threats  of smart device theft and loss
++ Malware  infection  and app forgery  and alteration
++ Sniffing  and session  hijacking  through  an illegal AP
+M4 Understanding  Information  Security  64

@@ -1,0 +1,34 @@
+Software  Development )
+01 Software  Reuse
+A) Overview  of software  reuse
+The term “software  reuse” means to develop new software  using existing  software  or software  knowledge.
+Reusable  software  or software  knowledge  is a reusable  asset comprising  design, requirements,  inspection,  and
+architecture.
+@ Background  to software  reuse
++ Deterioration  of quality and productivity  due to a software  crisis.
++ Increased  use of CASE tools due to the development  of automation  technology  in software  development.
++ Efforts  to comply  with software  development  standardization  and secure quality.
+@ Definition  of software  reuse
++ Software  reuse is a method of standardizing  knowledge  about software development  (function,  module,
+configuration,  etc.) and configuring  it to be suitable for repeated  use in order to increase  development
+productivity.
++ Countermeasures  that increase  the quality, productivity,  and reliability  of newly developed  software and
+reduce the development  schedule  and cost by reusing  all or a part of software  that has been recognized  for
+its development  functions,  performance,  and quality.
++ A concept  whereby  developed  modules,  programs  and deliverables  are directly reused or reused after some
+modifications  in the same application  field, or are reused for different  application  duties or by different
+companies
+@ Purpose  of software  reuse
+Goal Contents
+Responsibility Performance  such as functions,  stability,  speed, etc. has already  been proved.
+Scalability Easy to upgrade  based on proven functions.
+Productivity Improvement  of the overall development  process, such as cost, time, risk, etc.
+B) Target  of software  reuse
+Various  subjects  can utilize software  reuse.
+@ General  knowledge
++ Environmental  information:  Knowledge  obtained  through  education  and use.
++ External  knowledge:  Knowledge  obtained  by participating  in the development  and the specific  field.
+@ Design information
++ System  architecture
++ System  design
+M1 Software  development  33

@@ -1,0 +1,45 @@
+ESSENCE
+Big Data Type Key Main Function
+Technology
+Real-time  SQL ” eevoberen  eae SQL query system
+query Impala Deve loped by Cloudera /
+- Use of internally  developed  engine, instead  of MapReduce
+Metadata =management HCatalog Big data metadata  management
+- Hadoop-based  data warehousing  solution
+Hive - Similar  SQL-based  big data processing
+Data analysis - Developed  by Facebook  and disclosed  in opensource
+Pj - Data analysis
+8 ~ To provide the proprietary  language  of Pig Latin, instead of MapReduce
+In-memory Spark - Open-source  cluster computing  framework
+processing P - First developed  by UC Berkley’s  AMPLab
+- Data miningDame Mahout - Hadoop-based  open source
+Workflow Oozie - Big data processing  management
+management - Hadoop  task management
+Distributed Zookeeper - Big data server system management
+coordinator P - Mutual coordination  service between  distributed  environment  servers
+Serialization Avro - A framework  that supports  serialization  of RPC (Remote  Procedure  Call) and data
+- Resource  management  platform
+Resource YARN - Distributed  computing  environment
+manager - Management  of computing  resources  inside clusters
+- User's application  scheduling  management
+D) Commercial  Hadoop  solutions
+Leading  companies  that develop  and distribute  open-source  commercial  Hadoop  solutions  include  Cloudera,
+Hortonworks,  and Map R. These companies  create internal  platforms,  based on Hadoop,  and distribute  solutions
+through  the strategic  alliance  with existing  databases,  data warehousing,  and business  intelligence  solution  companies  ®
+Commercial  Hadoop Features
+version
+- CDH: Includes  Hadoop,  Hive, OOzie, Pig, Zookeeper,  and other open-source  tools, but not internal
+products
+- Cloudera  Manager:  CDH environmental  management  tool (Support  for CHD distribution  and
+CDH, monitoring,  free and enterprise  versions).
+Cloudera
+Manager + Free edition: Includes CDH, supports  up to 50-node  cluster, and limited functions,  other than the
+Hadoop  infrastructure  service  and setting  management.
++ Enterprise  edition: Includes  CDH, supports  unlimited  node cluster,  active monitoring,  and an
+additional  data analysis  tool.
+Hortonworks
+Data Includes  Hadoop,  Hive, OOzie, Pig, Zookeeper,  and other open-source  tools, but not internal products
+Tater All software  is free of charge and income  is from education  and support  programs
+HDP)
+9 Cloudera  and HortonWorks  were merged  on October  3, 2018.
+142 TOPCIT  ESSENCE

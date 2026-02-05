@@ -1,0 +1,14 @@
+Overview  of System  Architecture
+>p> Recent  trends and issues
+As 4G wireless  communication  services  have become  popular, voice communication  is also implemented
+through  data communication,  such as VoIP. The protocol  layer directly related to these applications  is
+the transport  layer, and the network  can be used effectively,  only by selecting and using an appropriate
+transport  layer protocol,  according  to the application  characteristics.
+>> Learning  objectives
+1, To be able to understand  the purpose  and functions  of transport  layer protocols  and use them,
+2. To be able to understand  the concepts,  services,  and control techniques  of TCP and use them.
+3 To be able to understand  the concepts,  services,  and control techniques  of UDP and use therm.
+4. To be able to explain  the concepts  and basic operations  of SCTP.
+TCP, UDP, SCTP, Flow control,  Error control, Congestion  control,  Slow start, SNMP. Multicasting,  NTP DHCP
+Kerberos,  Multi-homing.
+M3 Overview  of System  Architecture  179

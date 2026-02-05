@@ -1,0 +1,31 @@
+ESSENCE
+4 2 5 8 2 9
+B [> c
+10 6 1 12 4 13 \
+1 3 3 14 3 16
+A F
+1 0 3 / 14 0 16
+4 7 8 6 13
+[->-———_——>
+4 0 7 8 0 13
+[Figure 33] Critical Path Method@  (Example)
+Any delay in activities  on the critical path will result in a delay in the overall project  schedule.  Hence, activities
+on the critical path become  intensive  targets  of schedule  management.
+B) Schedule  development  technique  - critical chain method  (CCM)
+Critical Chain Technique  or Critical Chain Method  is a scheduling  method  that allows the project  team to buf-
+fer the project  schedule  in consideration  of limited resources  and uncertainty.
+In order to consider  the effects  of resource  allocation,  optimization  and leveling,  and activity duration  un-
+certainty  on the critical path determined  by the Critical Path Method,  the concept  of buffering  and buffering
+management  is added to the CPM.
+The figure below shows how Buffer is added to the example  of the CPM assuming  the uncertainty  of the du-
+ration of the activities.
+[Figure  34] Critical  Chain Method  (Example)
+The buffer  added at the end of the critical chain is called Project  Buffer, and it its to prevent  the target finish date from
+slippage  along the critical chain.
+An additional  buffer, called Feeding  Buffer, is placed at each point at which non-critical  activities which don’t belong to
+the critical chain (red line in the figure) merges into the critical chain. The size of the feeding  buffer should be deter-
+mined by taking into account  the uncertainty  over the duration  of the feeding  chain linked up to that buffer.
+After determining  the buffer schedule,  the activities scheduled  for the latest possible  start and finish dates should be
+scheduled.  As a result, the critical chain method  focuses  on managing  remaining  buffer durations  against  the remaining
+durations  of chains of activities,  instead  of the total float of network  paths.
+100 TOPCIT  ESSENCE

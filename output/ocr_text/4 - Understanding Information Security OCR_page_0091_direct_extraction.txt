@@ -1,0 +1,28 @@
+Information  security )
+Resident  registration
+Information  and numbers . . . |OmmMtin  ication etwor Storing after encryption,  with a secure two-way  cipher
+Act Account  numbers algorithm
+Bio information
+Electronic  financialsupervision  regulations Transaction  logs Storage  after encryption
+C) Types of database  encryption
+There are various  types of database  encryption,  such as the API type, plug-in type, TDE type, and hybrid type
+or proxy type, that combines  the API and plug-in type.
+@ API method
+API type database  encryption  performs  encryption/decryption  by installing  an encryption/decryption  module
+inside an application  program  server. It requires  the modification  of multiple  application  programs,  and data is
+transmitted  after encryption  between  the AP server and database  server. There is a low possibility  that a load
+is created  in the database  server, but a load is likely to be created  in the AP server.
+Web Sever Application  Server DBMS Server
+G  | [Get] |G
+Firewall oh Cryptographic
+module
+=z, Management
+console
+[Figure  42] API type database  encryption
+If the application  program is easy to modify and the performance  of the database  server is poor, it is
+recommended  to select this type, as data is transmitted  after being encrypted  through  the network.
+@ Plug-in  type
+When the plug-in type is used, the encryption/decryption  module is installed  inside the database  server in
+order to perform  encryption/decryption.  A load on the database  server may be created and data is exchanged
+between  the AP server and database  server in plain text when it is encrypted/decrypted.
+M4 Understanding  Information  Security  94

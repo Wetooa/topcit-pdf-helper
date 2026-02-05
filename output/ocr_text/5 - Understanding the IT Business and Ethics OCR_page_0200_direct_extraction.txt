@@ -1,0 +1,42 @@
+Understanding  the IT Business  and Ethics )
+< Example  > Identifier
++ Unique identification  information  (resident  registration  number,  passport  number,  alien
+registration  number,  driver's  license  number)
++ Name (including  Chinese/English  name, pen name, etc.)
++ Detailed  address  (address  included  up to the district(gu)  unit)
++ Date information:  birthday  (yang/lunar  calendar),  anniversary  (marriage,  first birthday,  sixtieth
+birthday,  etc.), date of certificate, etc.
++ Phone number  (mobile  phone number,  home phone number,  company  phone number,  fax
+number)
++ Medical  record number,  health insurance  number,  welfare  recipient  number
++ Account  number,  credit card number
++ Various  qualifications  and license numbers
++ Vehicle number,  registration  number  & serial number  of various  devices
++ Photos  (still photos,  videos,  CCTV footage,  etc.)
++ Body identification  information  (fingerprint, voice, iris, etc.)
++ Email address,  IP address,  Mac address,  homepage  URL, etc.
++ Identification  code (ID, employee  number,  customer  number,  etc.)
+* Other unique identification  number: military  serial number,  business  registration  number  of sole
+proprietorship,  etc.
+[Figure  87] Examples  of Personal  Information  Identifiers
++ Methods  of De-identification:  A range of methods  including  pseudonymization,  aggregation,  data suppression and
+data masking  can be used individually  or in combination.  There are various kinds of technology  in place to realize
+each method.  The most suitable methods  and specific  techniques  need to be chosen and utilized based on the
+purpose  of data usage, and strengths  and weaknesses  of each method.
+<Example>  De-identification  Methods
+Processing  Method Example Detailed  technology
++ Hong Gil-dong,  35 years old, live in Seoul,
+attend  Korea University1. Heuristic  pseudonymization
+Pseudonymization —Lim Kkeokjeong,  30s, live in Seoul, 7 enaypien
+attend International  University - wappng
++ Lim Kkeokjeong  180cm, Hong Gil-dong
+170cm, Lee Kongji 160cm, Kim Patji 4. hyo .Aggregation 150cm 5. Micro Aggregation
+6. Rounding— Sum of height  among  physics  major
+students:  660cm,  average  height 165cm
++ Resident  registration  number  901206-7, Rearrangement
+1234567 8. Identifier  deletion
+Data Reduction — 90's born, male 9. Identifier  partial deletion
++ Date information  related to individuals 10. Reducing  records
+(date of final pass, etc.) is processed 11. Complete  deletion  of identifiers
+annually
+M5 Understanding  the IT Business  and Ethics 199

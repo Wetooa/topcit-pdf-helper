@@ -1,0 +1,43 @@
+ESSENCE
+for secure communication  in one direction,  two SAs are needed for two communication  entities in order to
+establish  two-way  communication.
+<Table 36> shows the communication  process  between  system  A and B, while the SA is stored. It is assumed
+that system A initiates  communication  in this table.
+<Table 36> Communication  phase in the IPSec environment
+Sequence Description
+Phase 1 System  A finds the SA of system  B by searching  for its own SAD in order to establish  secure communication
+with system  B.
+Phase 2 Check the encryption  key and algorithm  to be used, using the SA information  of system  B, encrypt  the IP
+datagram  to be transported  using them, and insert a SPI into the IPSec header  and send it to system  B.
+Phase 3 Check the encryption  key and algorithm  to be used using the SA information  of system  B, encrypt  the IP
+datagram  to be transported  using them, and insert a SPI into the IPSec header  and send it to system  B.
+Phase 4 Upon receiving  the encrypted  IP datagram,  system  B searches  for the corresponding  SA in its SAD using the
+SPI and source  address  A in the IPSec header.
+Check the encryption  key and algorithm  to be used in the information  of the corresponding  SA and decryptPhase 5 ; :the IP datagram  in the received  packet  using them.
++ IKE
+Key management  of |
+are needed  for commPSec includes  the cryptographic  key determination  and distribution  function.  Four keys
+unication  between  two applications.  That is, a pair of the sending  and receiving  keys is
+needed  for integrity  and confidentiality.
+Let IKE create and s
+communication  by ex
+modify, and remove  t
+® Utilization
+Implementing  VPN and‘ore the SA through  secure authentication  between  two applications  to enable IPSec
+changing  messages.  IKE defines  procedures  and packet formats  to establish,  negotiate,
+|e SA.
+IPSec, using IPSec, also provides  security  for application  layer services,  such as secure
+remote  access, e-commerce  security,  etc.
+B) SSL
+@ Concept
+SSL is a protocol developed  by Netscape’s  Hickman in 1994 and standardized  by the Internet  Engineering
+Task Force (IETF) after the SSL version 3.0 and named as TLS (Transport  Layer Security).  Most web browsers
+support  SSL. The SSLprotocol  is positioned  between  the application  layer and the transport  layer in the TCP/
+IP protocol  structure.  The protocol  is designed  to use TCP to provide  reliable end-to-end  secure services.  Even
+though SSL can be us'ed in various application  layer protocols,  it is actually  most widely used by the HTTP
+application.  When HTTP uses SSL, it is called HTTPS.
+The two important  concepts  of SSL are connection  and session.
++ SSL connection:  SSLconnection  refers to transport  providing  appropriate  services.  A connection in SSL is a
+peer-to-peer  relationship  and is temporary,  and all connections  are associated  with one session.
++ SSL session: An SSL
+422 TOPCIT  ESSENCEsession refers to an association  between  a client and a server. To start a session,  the

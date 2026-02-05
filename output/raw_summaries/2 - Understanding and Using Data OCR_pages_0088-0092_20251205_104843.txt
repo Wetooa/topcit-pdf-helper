@@ -1,0 +1,290 @@
+LEARNING GUIDE: Pages 88-92
+Generated: 2025-12-05 10:48:43
+PDF: 2 - Understanding and Using Data OCR
+
+================================================================================
+LEARNING GUIDE
+================================================================================
+
+Here is a simplified, easy-to-read learning guide based on the provided text:
+
+---
+
+## Database Learning Guide
+
+### 1. Database Object Conversion (ER Model to Relational Model)
+
+This section explains how different components of an Entity-Relationship (ER) model are converted into relational tables.
+
+*   **1:N (One-to-Many) Relationship Conversion**
+    *   Assume two entity types: **S** (N-side) and **T** (1-side).
+    *   The **Primary Key (PK)** of T is added as a **Foreign Key (FK)** in S.
+    *   Any attributes of the relationship itself are included in S.
+*   **M:N (Many-to-Many) Relationship Conversion**
+    *   Assume two entity types: S and T.
+    *   A **new relation (table) R** is created specifically for the M:N relationship.
+    *   Any attributes of the relationship itself are included in R.
+    *   The **PKs of S and T** are included as **FKs in R**.
+    *   The **PK of R** is a composite key, formed by combining the FKs from S and T.
+*   **Multi-valued Attributes Conversion**
+    *   For a multi-valued attribute (MA) belonging to entity E, a **new relation (table) R** is created.
+    *   MA becomes a column in R.
+    *   The **PK of E (let's call it K)** is included as a **FK in R**.
+    *   The **PK of R** is a composite key, formed by combining MA and K.
+*   **N-ary Relationship Conversion (N > 2)**
+    *   A **new relation (table) R** is created for each N-ary relationship.
+    *   Any attributes of the relationship are included as columns in R.
+    *   The **PKs of all participating entities** are included as **FKs in R**.
+    *   The **PK of R** is a composite key, formed by combining all FKs (excluding any FKs where the cardinality from that entity to the relationship is 1).
+*   **Generalization Relationship Conversion**
+    *   Separate tables are created for both the **upper entity type (superclass)** and the **lower entity type (subclass)**.
+    *   The **PK of the upper entity's table** is included in the lower entity's table (usually as a FK that is also part of its PK).
+
+### 2. Table Design
+
+This section covers different types of tables and important design considerations.
+
+#### Table Types
+
+*   **Heap-Organized Table:**
+    *   Standard table in most DBMSs.
+    *   Record storage location is determined at insertion, not by a specific attribute's value.
+*   **Clustered Index Table:**
+    *   Data is physically stored in the order of the Primary Key (PK) or index key values.
+*   **Partitioned Table:**
+    *   A large logical table is split into smaller physical segments (partitions) based on criteria (e.g., range, value, hash).
+    *   Designed to improve performance and manageability for large datasets.
+*   **External Table:**
+    *   A database object that allows users to access external files (e.g., flat files) as if they were regular tables within the database.
+*   **Temporary Table:**
+    *   Stores and processes data for the duration of a specific transaction or session.
+
+#### Design Considerations (Vertical Partitioning)
+
+Vertical splitting divides a table's columns into multiple tables. Consider this when:
+
+*   The sum of column data lengths exceeds 1 block size.
+*   A specific column is accessed with exceptionally high frequency.
+*   Different user groups exclusively use different sets of columns.
+
+**Avoid vertical partitioning if:**
+*   Split tables are frequently processed simultaneously by a single transaction.
+*   Join operations between the split tables occur frequently.
+
+### 3. Data Type Design
+
+Choosing the correct data type is crucial for application development and database performance.
+
+#### Character Data Types
+
+*   **Fixed-length character type (e.g., CHAR):**
+    *   Allocates a predefined amount of space, regardless of the actual data length. Wastes space if data is shorter than declared.
+*   **Variable-length character type (e.g., VARCHAR):**
+    *   Allocates space based on the actual length of the stored data. Efficient with space.
+*   **Character Large Object (CLOB):**
+    *   Designed for very large text data (e.g., entire books).
+    *   Actual data is stored outside the main table; the table column stores only a reference address to its location.
+
+#### Numeric Data Types
+
+*   **Real type (e.g., FLOAT, REAL):**
+    *   Represents real numbers using floating-point or variable-point formats.
+*   **Integer type (e.g., INT, INTEGER):**
+    *   Represents whole numbers within a defined range.
+
+#### Binary Data Types
+
+*   **Fixed-length binary data type (e.g., BINARY):**
+    *   Stores a predefined amount of binary data.
+*   **Variable-length binary data type (e.g., VARBINARY):**
+    *   Stores binary data, allocating space based on the actual size within a defined maximum.
+*   **Binary Large Object (BLOB):**
+    *   Designed for very large binary data (e.g., images, video, sound).
+    *   Like CLOB, actual data is stored outside the table; the table column stores only a reference address.
+
+#### Date Data Type
+
+*   **Date and Time data type (e.g., DATE, TIME, DATETIME, TIMESTAMP):**
+    *   Stores information related to time, date, or a combination of both.
+
+### 4. Index Design
+
+Indexes are data structures that improve the speed of data retrieval.
+
+#### Functions of an Index
+
+*   Organizes database record information to perform **quick search operations**.
+*   Allows finding desired information quickly **without scanning all data**. Search speed remains consistent even as data grows.
+*   Sorted by the indexed column's value, containing **pointers to the actual data location** in the table.
+*   **Main function:** Speed up data searches by reducing the access path.
+
+#### Index Design Procedure
+
+1.  **Collect Access Paths:** Identify all ways data is accessed in the table.
+2.  **Select Candidate Columns:** Choose columns suitable for indexing based on data distribution (e.g., uniqueness, frequency of use in WHERE clauses).
+3.  **Decide on Access Path:** Determine which specific access patterns the index will optimize.
+4.  **Decide on Column Combination and Order:** For composite indexes, choose the columns and their order within the index.
+
+#### Types of Index Structures
+
+*   Tree-based Index (e.g., B-tree, B+ tree)
+*   Function-based Index
+*   Bitmap Join Index
+*   Domain Index
+
+### 5. View Design
+
+A view is a virtual table based on the result set of an SQL query.
+
+#### Characteristics of a Database View
+
+*   A **virtual table** created by querying data from one or more existing tables.
+*   Allows efficient performance of **repetitive data manipulations** by pre-defining frequently used queries.
+*   Users can **focus only on the data they are interested in**.
+*   Can display **calculated or derived information**.
+*   Can **limit the data** users are allowed to see (security mechanism).
+
+#### View Creation
+
+*   Views are created using the `CREATE VIEW` statement.
+    ```sql
+    CREATE VIEW View_name
+    [(column_name [,column_name...])]
+    [WITH ENCRYPTION]
+    AS select_statement [WITH CHECK OPTION];
+    ```
+*   **`WITH CHECK OPTION`:** Ensures that all data modifications made through the view comply with the conditions defined in the `SELECT` statement of the view.
+*   **`WITH ENCRYPTION`:** Prevents users from seeing the SQL text used to create the view. To decrypt, the view must be deleted and recreated.
+
+#### Constraints for Views
+
+*   The user creating/using the view must have `SELECT` privilege on the underlying tables.
+*   `SELECT INTO` statements cannot be used with views.
+*   Views cannot be created on temporary tables.
+*   Triggers or indexes cannot be created directly on views.
+*   A view can reference up to 250 columns.
+
+#### Modifying Data with a View
+
+*   A view does **not store its own copy of data**.
+*   Any update made through a view directly **affects the original base table(s)**.
+
+#### Constraints for Modifying Data via Views
+
+*   An update through a view can only affect **one original table** at a time.
+*   Columns that are calculated values, use built-in functions, or aggregation functions **cannot be updated** via a view.
+*   An error occurs if a view update attempts to affect a table that has a `NOT NULL` column, but no value is provided for it.
+*   For columns without an input value during an update, a **default value must be defined or `NULL` must be allowed**.
+
+#### Other Considerations for Views
+
+*   If new columns are added to the original base table after a view is defined, these **new columns will not automatically appear in the view**.
+*   To change a view's definition, you must **delete the existing view and recreate it**.
+*   A view is **not automatically deleted** if its original underlying table is deleted; it must be manually deleted.
+
+### 6. Distributed Database
+
+A distributed database system manages data spread across multiple networked computers, while making it appear as a single, unified database to users.
+
+#### Characteristics of a Distributed Database
+
+*   **Logically integrated, physically distributed:** Data is stored across multiple machines in a network but presented as a single database.
+*   **Distributed Database Management System (DDBMS):** Manages information exchange between local databases so they can be recognized as one logical database.
+*   Often involves a schema hierarchy: Global schema → Location-independent schema → Fragment schema → Local schema.
+
+#### Strengths of a Distributed Database
+
+*   **Reduces dependence on remote data:** Local control over local data.
+*   **Processes large data volumes:** Can handle data sizes impossible for a single server.
+*   **Supports scale-up:** Easily add more servers to expand capacity.
+*   **Improved reliability and availability:** If one site fails, only its local data is affected; other parts of the system remain operational.
+
+#### Shortcomings of a Distributed Database
+
+*   **Increased complexity:** Higher software development and management costs.
+*   **Weak control functions:** More challenging to implement global control.
+*   **Higher possibility of error:** Due to the distributed nature of processing.
+*   **Variable response speed:** Performance can depend on the condition of physically remote systems.
+*   **Difficult to ensure full data integrity:** Maintaining consistency across distributed sites is complex.
+
+#### Data Transparency
+
+*   **Definition:** The characteristic that allows users to access data without needing to know its physical location or the specific access methods required. Users perceive multiple physical databases as one logical database.
+*   **Types of Transparency provided by DDBMS:** Partitioning, location, replication, failure, and concurrency transparency.
+
+---
+
+================================================================================
+ORIGINAL TEXT (First 5000 chars)
+================================================================================
+
+--- Page 88 ---
+Database )
++ All general  attributes  belonging  to the relationship  is included  in S.
+@® Conversion  of the 1:N relationship
++ It is assumed  that S (N-side)  and  T (1-side)  are two entity  types participating  in the relationship.
++ The primary  key of T is included  as the foreign key of S.
++ All general  attributes  belonging  to the relationship  is included  in S.
+© Conversion  of the M:N relationship
++ Itis assumed  that S and T are two entity types participating  in the relationship.
++ Anew relation  R is created  that corresponds  to the relationship.
++ All general  attributes  belonging  to the relationship  in R.
++ The primary  key of S and T is included  as the foreign  key of R.
++ The primary  key of R is composed  of a combination  of a foreign key from S and a foreign key from T.
+© Conversion  of multi-valued  attributes
++ The relation  R for the multi-valued  attribute  MA is created  that belongs  to the entity type E.
++ MA is created  as the column  of R.
++ K, the primary  key of E, is created  as the foreign key of R.
++ The primary  key of R is composed  of a combination  of the above columns.
+@ Conversion  of N-ary relationship  (N> 2)
++ Anew relation  R is created  for each N-ary relationship.
++ All general  attributes  belonging  to the relationship  is included  as the column  of R.
++ The primary  keys of all entities  participating  in the relationship  are included  as the foreign keys of R.
++ The primary key of S is composed  with a combination  of all foreign keys. (However,  the foreign key of which
+cardinality  is 1 will be excluded  from a combination  of the primary  key.)
+Conversion  of the generalization  relationship
++ Tables are created  that correspond  to the upper entity type and the lower entity type respectively.
++ The primary  key of the table is included  that corresponds  to the upper entity type in the table of the lower entity
+type.
+C) Table design
+@ Table types
++ Heap-organized  table: This table type is used as a standard  table in most commercial  DBMSs. The record storage
+location  in a table is determined  when the record is inserted,  instead  of the value of a specific  attribute.
+* Clustered  index table: A table in which data is stored in the order of the primary  key value or index key value.
++ Partitioned  table: A table designed  to prevent  performance  degradation  and make management  easy, by storing  a
+physical  table that has been split based on specific  criteria (range,  value, hash, etc.), even though  large-scale  data is
+logically  one table.
++ External  table: A database  object  that enables  the user to use external  files as a general  table existing  in the database
+M2 Database  87
+
+
+--- Page 89 ---
+ESSENCE
++ Temporary  table: A temporary  table that can store and process  data for each transaction  or session.
+@ Considerations  when designing  a table
++ If the sum of the column  data length is more than 1 block size, vertical  split needs to be considered.
++ If the use frequency  of a specific  column  is extraordinarily  high, vertical  split needs to be considered.
++ If different  user groups use a specific  column  only, vertical  split needs to be considered.
++ When considering  vertical partitioning,  there should be no case in which a split table is processed  simultaneously  by
+one transaction  or join operations  occur frequently.
+O2 Data Type Design
+Data are stored in a database  in various forms such as characters,  numbers, dates, and images. If a data type
+is incorrectly  selected when designing  a database,  it makes the development  of an application  more difficult  or
+deteriorates  performance.  Therefore,  it is very important  to carefully  determine  the data type or size in the database
+design phase.
+A) Character  data type
+@ Fixed-length  character  type: A type of data for which as much space is allocated  and used as data are declared.
+@ Variable-length  character  type: A type of data for which as much space is allocated  and used as data are actually
+stored,
+© Character  large object: A type of data that is designed  to be stored as large character  type data. As it is too big, the
+actual type column is not stored in a database,  but stored outside  the table, and the table column stores the address
+that references  the data location only. This type of data can be useful when storing large amounts  of text, such as a
+book or publication.
+B) Numeric  data type
+@ Real type: A type of data that represents  real numbers  in floating  point and variable  point formats.
+@ Integer  type: A type of data that represents  an integer  within the range of the maximum  size.
+C) Binary  data type
+@ Fixed-length  binary data type: A type of data that can store as much binary data as has been defined.
+@ Variable-length  binary data type: A type of data that can be stored in the form of binary data by allocating  as much
+space as the actual storage  size within the defined  size.
+@ Binary large object: A ty...

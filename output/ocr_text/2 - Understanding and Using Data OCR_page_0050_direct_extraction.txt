@@ -1,0 +1,18 @@
+Database )
+> Learning  objectives
+1. To be able to explain the concept  of data modeling.
+2. To be able to design a database  according  to the data modeling  procedure.
+3. To be able to design entities, attributes,  and identifiers  in data modeling  according  to the business
+requirements.
+. To be able to design relationships  in data modeling  according  to the business  requirements.
+. To be able to explain and solve the problem  of the connection  trap.
+. To be able to explain how to express  the Entity Relationship  Diagram  (ERD).4
+5.
+6. To be able to explain how to convert  object-relational  mapping  (ORM).
+7
+8. To be able to explain the extended  entity-relationship  (ER) type.
+9. To be able to explain data integrity.
+10. To be able to designate  primary  keys and foreign keys.
+> Keywords
++ Data modeling,  entity, property,  relationship,  identifier,  connection  trap, ERD, extended  ER
+M2 Database  49

@@ -1,0 +1,29 @@
+Project Management  and Technical  Communication  )
++ Preview  for practical business
+Just as you frequently  checks for any abnormalities  in a car while driving a long distance,  a series of
+quality control activities  are needed to ensure that the quality target is achieved  by checking  the
+project  quality  level even when implementing  a project.
+In general,  quality management  consists  of quality planning,  quality control, and quality assurance.
+There is no significant  difference  in the overall composition,  but the quality management  of the
+actual project is somewhat  different  from that of the manufacturing  industry.  For example,  if quality
+control in manufacturing  is about product  quality, quality control of project can be seen as process
+quality. This is due to the fact that the working  method differs depending  on the process  in which
+the result is generated.  If the quality control  of the manufacturing  industry  is to manage  the defects
+of a number  of products  produced,  the quality control of the project is to manage  one or a few
+outputs  (e.g., system)  without  errors. Defect management  for many products  can be viewed as
+product  quality management,  and error management  for a few outputs  can be viewed as process
+quality management.  In particular,  in an IT project, as the output is intangible,  quality control for
+intermediate  outputs  should be carried out at each project stage (eg, analysis,  design, execution,
+testing,  deployment  stage, etc.).
+Quality management  activities  for each project stage are carried out through  techniques  such
+as review, inspection,  and walk-through,  which are performed  based on guidance  from specialized
+quality management  organizations  (€.g., quality management  team, quality assurance  team, etc.).
+In particular,  if enterprise-wide  quality control is to lead to the quality control of individual  projects,
+the company  can receive guidance  on enterprise  quality standards  through the PMO (Project
+Management  Office)  or check the quality level.
+If such diverse  quality management  is meticulously  carried out according  to a systematic  procedure,
+quality cost can be minimized  by satisfying  the quality targets  requested  by customers  (eg,
+the acquirer)  at the end of the project. Another  advantage  is that Validation  and Verification  of
+requirements  can reduce Rework  through  clarification.  This helps scope management  by preventing
+omission  of requirements,  and schedule  management  by reducing  wasted  time.
+M6 Project  Management  and Technical  Communication  115

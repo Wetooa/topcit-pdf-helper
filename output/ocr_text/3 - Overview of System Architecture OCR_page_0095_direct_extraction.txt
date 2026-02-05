@@ -1,0 +1,33 @@
+ESSENCE
+B) Backup  storage:  LTO and VTL
+@ Linear  tape-open  (LTO)
+LTO is a standard  open tape drive technology  that supports  high-speed  data processing  and  a large capacity.
+Although  LTO refers to physical devices  and technology,  they are also used interchangeably.  It is also called the tape
+backup machine,  tape media machine,  LTO machine,  LTO library, and LTO. LTO-1, first released in 2000, provided  a
+maximum  speed of 20 MB/s at an uncompressed  capacity  of 100 GB. The LTO-8 that is currently  available,  supports
+the performance  of a maximum  speed of 427MB/s  based on an uncompressed  capacity  of 12.8TB. The LTO-10 is
+expected  to provide  a maximum  speed of 1100MB/s  at an uncompressed  capacity  of 48TB.
+@ Virtual tape library (VTL)
+VTL is a backup solution  that emulates  disk storage and makes it into a virtual tape device to compensate  for
+problems  such as limited performance,  scalability,  and the recovery  time of existing  tape backup devices. Backup is
+simplified,  and high-speed  backup  is enabled  through  tape virtualization.
+Recovery Server Server Server Soe
+Server
+Fiber Channel
+VTL Appliance
+First Backup Second  Backup
+& * Virtual ~ Physical
+Backup — Tape Tape
+ase
+as)
+Disk Array
+[Figure 69] VTL Conceptual  Diagram
+04 Graphic  Compression  Technology
+A) Graphic  compression  type
+Video data compression,  which accounts  for most of the traffic in a multimedia  network,  can be divided  into lossless
+compression  (reversible  compression)  and lossy compression  (irreversible  compression).  Lossless  compression  is also
+called reversible  compression.It  refers to a method  of restoring  a compressed  image without  information  loss from the
+original data while decompressing.  It is characterized  by a lower compression  rate than lossy compression.
+Lossy compression  is also called irreversible  compression.It  refers to a compression  method when the compressed
+data is restored,  but it does not match  the original  data before the compression  because  some data is lost.
+94 TOPCIT  ESSENCE

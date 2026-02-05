@@ -1,0 +1,229 @@
+LEARNING GUIDE: Pages 88-92
+Generated: 2025-12-05 14:25:46
+PDF: 1 - Software Development OCR
+
+================================================================================
+LEARNING GUIDE
+================================================================================
+
+Here is a simplified, easy-to-read learning guide based on the provided text:
+
+---
+
+## Software Development Essentials: A Learning Guide
+
+This guide condenses key information on UI/UX, programming languages, and development environments.
+
+---
+
+### **1. UI/UX Fundamentals**
+
+**UX (User Experience):**
+*   **Definition:** The feeling, attitude, and behavior of the user when interacting with a product. It's about the overall experience and how visible elements work.
+*   **Focus:** Improvements based on user statistics and studies.
+
+**UI (User Interface):**
+*   **Definition:** The environment where the user directly interacts with the interface. It's the visible part.
+*   **Focus:** Realization of UX improvement studies; the interface itself.
+
+**Key Differences between UX and UI:**
+
+| Feature   | UX (User Experience) | UI (User Interface)      |
+| :-------- | :------------------- | :----------------------- |
+| **Nature**  | Process              | Result                   |
+| **Metaphor**| Dish (concept)       | Food (tangible item)     |
+| **Action**  | Planning             | Design                   |
+| **Driver**  | Emotion              | Reason                   |
+
+---
+
+### **2. UI/UX Design Tools**
+
+These tools help organize ideas, analyze services, run tests, and improve work efficiency.
+
+**A) MAKE - Turning Ideas into Products:**
+*   **Organizing Information:** GitHub, Trello
+*   **Wire-frames:** Microsoft Visio, Moqups
+*   **Prototyping:** Adobe Photoshop, Sketch3
+
+**B) CHECK - Checking User Analysis & Response Methods:**
+*   **Visual Analytics:** Beusable, Clicktale
+*   **Analytics & Metrics:** Google Analytics, Mixpanel
+*   **A/B Testing:** Google Optimize, Optimizely
+*   **Record Users:** Beusable, Hotjar
+
+**C) THINK - Continuous Market Feedback:**
+*   **Recruiting Users:** Pivot Planet, Clarity
+*   **Online Surveys:** Polldaddy, Hotjar
+*   **Capture In-site Feedback:** LiveChat, Mouseflow
+*   **Testing Layouts Remotely:** Chalkmark, UsabilityHub
+
+---
+
+### **3. Programming Languages & Development Environment**
+
+**Recent Trends:**
+*   **Popularity:** Java and C-like languages are dominant, especially for mobile/cloud development.
+*   **Importance:** These languages are foundational for learning others and are widely used in business.
+
+**Learning Objectives:**
+*   Understand characteristics of programming languages (unstructured, structured, object-oriented).
+*   Compare major languages (C, C++, Java, Python, JavaScript).
+*   Understand software development frameworks and their types.
+*   Understand Integrated Development Environments (IDEs).
+
+**Practical Considerations: Selecting a Programming Language**
+*   **Criteria:** Hardware, OS, existing solutions, business needs, latest languages, available developers.
+*   **Reality:** Often based on experience. Multiple languages and architectures are common in a single project, especially for complex mobile services.
+*   **Trade-offs:**
+    *   **Java for batch tasks:** Can face performance issues.
+    *   **C for speed:** May lead to productivity and test coverage problems.
+*   **Key takeaway:** No single "best" language; selection involves balancing various factors.
+
+**Software Development Framework and Integrated Development Environment (IDE)**
+*   **Modern Development:** Involves global collaboration, diverse languages/versions, and maintaining old code.
+*   **Adaptation:** Collaboration, customer support, and coding methods are evolving to meet rapid business changes.
+*   **IDE Role:** Supports continuous integration to deliver services on time.
+*   **Framework Components:** Execution, development, operation, and management environments.
+*   **Benefits:** Improves productivity by maximizing modularization and reusability, and offers libraries for better software quality.
+
+---
+
+### **4. Programming Language Overview**
+
+**A) Concept of a Programming Language:**
+*   **Purpose:** Enables humans to communicate instructions to computers using human-like language.
+*   **Translation:** Programs are translated into machine language (0s and 1s) by a **compiler** or **interpreter** so computers can understand them.
+*   **Selection:** Choosing the right language is crucial for achieving productivity and quality goals, as each language has specific uses.
+
+**B) Low-level vs. High-level Languages:**
+
+| Item              | Low-Level Language                                | High-Level Language                                      |
+| :---------------- | :------------------------------------------------ | :------------------------------------------------------- |
+| **Description**   | Machine-centric; fast execution.                  | Easy to write; human-readable; highly productive.        |
+| **Readability**   | Difficult for humans.                             | Similar to natural language; easy for humans.            |
+| **Compatibility** | Machine-specific (different code for each machine). | Machine-independent; translated by compiler/interpreter. |
+| **Examples**      | Machine Language (0s and 1s), Assembly Language.  | FORTRAN, COBOL, BASIC, C, C++, Java, Python.             |
+
+**C) Areas of Use of Programming Languages:**
+
+| Area of Use          | Major Programming Languages |
+| :------------------- | :-------------------------- |
+| Science & Technology | FORTRAN, ALGOL60            |
+| Business             | COBOL                       |
+| Artificial Intelligence | LISP, PROLOG                |
+| System Programming   | PL/S, BLISS, ALGOL, C/C++, Java, Python |
+| Special Purposes     | GPSS (for simulation)       |
+
+---
+
+### **5. Language Translation Methods**
+
+**A) Interpreter Languages:**
+*   **Process:** Directly convert and execute source programs into a low-level language **without** an intermediate compiled step. Executes line by line.
+    *   *Simplified:* Write code → Load into memory → Execute directly.
+*   **Examples:** LISP, PROLOG.
+*   **Strengths:**
+    *   Programs execute immediately without waiting for full translation.
+    *   Memory can be saved as the source form is maintained until execution.
+*   **Shortcomings:**
+    *   Slower execution for repeated runs because the code must be decoded (translated) every time.
+
+**B) Compiler Languages:**
+*   **Process:** Translates the entire high-level source code into a machine-language "object module" (binary file) first. This module is then linked, loaded, and executed as an independent program.
+    *   *Simplified:* Write code → Compile (creates executable program) → Load into memory → Execute.
+*   **Examples:** FORTRAN, PASCAL, C/C++.
+*   **Key steps:**
+    1.  **Compilation:** High-level code → Machine Language (object module).
+    2.  **Linking/Loading:** Object module combined with libraries to create an executable program.
+    3.  **Execution:** The executable program runs.
+
+---
+
+================================================================================
+ORIGINAL TEXT (First 5000 chars)
+================================================================================
+
+--- Page 88 ---
+Software  Development )
+work to make invisible  things  visible. In addition,  UX is the feeling, attitude,  and behavior  of the user, whereas
+Ulis the environment  in which the user faces the interface  directly.  UX is also a study on improvements  based
+on statistics  relating  to user experience,  while UI is the realization  of such improvement  studies. That is, UX
+refers to experience  of what is visible, whereas  UI refers to the interface  itself that is shown to the user. The
+main differences  between  UI/UX can be briefly summarized  as follows.
+UX UI
+Process. Result
+Dish Food
+Planning Design
+Emotion Reason
+03 UI/UX Design  Tools
+The following  summarizes  the representative  UI/UX tools that can be used to organize  and visualize  the
+thoughts  and ideas of users and designers,  analyze  developed  services  and run user tests, and can improve  or
+accelerate  their work.
+A) MAKE - Turning  ideas into products
+@ Organizing  information  - GitHub,  Trello
+@ Wire-frames  - Microsoft  Visio, Moqups
+@ Prototyping  - Adobe Photoshop,  ketch3
+B) Check  - Checking  user analysis  and response  methods
+@ Visual analytics  - Beusable,  Clicktale
+@ Analytics  & metrics  - Google  Analytics,  Mixpanel
+@ AB testing  - Google  Optimize,  Optimizely
+@ Record users - Beusable,  hotjar
+C) Think - Checking  market  feedback  continuously
+@ Recruiting  users - Pivot Planet, Clarity
+@ Online surveys  - Polldaddy,  hotjar
+© Capture  in-site feedback  - LiveChat,  mouseflow
+@ Testing  layouts  remotely  - Chalkmark,  UsabilityHub
+M1 Software  development  87
+
+
+--- Page 89 ---
+ESSENCE
+Vill. Programming  Language  and the
+Development  Environment
+>> Recent  trends and major issues
+The use of Java and C-like languages  has become increasingly  popular  among enterprises due to
+the trend of developing  software  and apps on the mobile/cloud.  However,  these languages  have
+been recognized  as the two major programming  languages  and those most frequently  selected  by
+developers.  In addition,  it is important  to learn the related skills beforehand  because  these languages
+are the basis for learning  other programming  languages  and are used in various  business  fields.
+>> Learning  objectives
+1. To be able to describe  the characteristics  of programming  languages  (unstructured  language,
+structured  language,  object-oriented  language).
+2. To be able to compare  the characteristics  of major programming  languages  (C, C++, Java, Python,
+JavaScript).
+3. To be able to understand  the software  development  framework  and explain its types.
+4. To be able to understand  and explain  the integrated  development  environment  (IDE).
+- Programming  language,  compiler,  interpreter
+- Code reuse
+- Software  development,  Spring  and standard  e-government  frameworks
+- Integrated  development  environment
+88 TOPCIT  ESSENCE
+
+
+--- Page 90 ---
+Software  Development )
++ Preview  for practical  business
+Selecting  a programming  language
+In a real enterprise  environment,  the selection  criteria for programming  languages  for the
+development  of products  and services  are determined  in various ways. Hardware,  OS environment,
+introduced  solutions,  business characteristics,  application  of the latest development  languages,
+and the status of available  developers are just some of these criteria. However,  it is true that an
+alternative  language  is selected  if there are only a few developers  and labor costs are excessively
+high, even though  the given development  language  is eminently  usable.
+For example,  if Java is selected  to implement  all the functions  of a given project  to develop  a system
+with numerous  batch-like  tasks, then the project is likely to face the difficult  problem  of having to
+improve batch performance.  Alternatively,  if the C language  is selected in order to improve  speed
+only, there is a high possibility  that the project  will be faced with the difficult  problem  of productivity
+and test coverage.
+Therefore,  the reality is that many projects  select a programming  language  based on experience,
+and various languages  and architectures  are applied in the same project.  In particular,  complexity  and
+diversity  increase  significantly  in recent development  projects  that require mobile services in various
+fields.
+Software  development  framework  and integrated  development  environment  (IDE)
+These days, software  developers  collaborate  with developers  around the world who use different
+languages  and different  versions  of the compiler  and may have to write new codes or maintain
+the software,  which itself may use an old library that is more than 10 years old. To adapt to the
+rapidly changing  business  environment,  the methods  of collaboration,  customer  support,  and coding
+are changing.  Also, an integrated  development  environment based on a continuous  integration
+environment  is created to provide services  on time. The framework  consist...

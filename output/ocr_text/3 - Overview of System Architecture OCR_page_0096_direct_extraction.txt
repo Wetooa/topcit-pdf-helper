@@ -1,0 +1,40 @@
+Overview  of System Architecture )
+@ Lossless  compression
+Since the compression  and decompression  algorithms  are exactly  the opposite  of each other, the compression
+method preserves  the original data’s integrity,  and no part of the data is lost during processing.  Leading  lossless
+compression  methods  include run-length  decoding,  dictionary  decoding,  Huffman  coding, dictionary  coding, and
+arithmetic  coding.
+(Table 15) Lossless  Compression
+Compression  method Description
+Runrlenath Sli + Run-length  encoding  (RLE)
+al “RL ine + Amethod  expressing  consecutively  repeated symbols in terms of the symbol and repetition  count
+(run-length)
++ Dictionary  coding
++ Amethod  that creates  a dictionary  while scanning  a message,  and if an entry character  string in the
+Pistenenyeceiing dictionary  is found in the message,  the code value (index value) of the entry is sent instead of the
+string
++ Huffman  coding
+Huffman  coding + Amethod  that encodes  data in a binary pattern  and allocates  short codes to symbols  that occur more
+frequently  and long codes to symbols  that occur less frequently
++ Arithmetic  coding
+Arithmetic  coding + Amethod  that maps the entire message  to a small section in [0,1] and encodes  the small section ina
+binary pattern
+@ Lossy compression
+The lossy compression  method  compromises  some accuracy  to increase  the compression  rate, by allowing  the loss of
+redundant  or unnecessary  data. There are two types of lossy compression  methods:  prediction  coding  and transform
+coding. The prediction  coding method is used for digitizing  the analog signal. Instead of separately  quantizing  the
+PCM (Pulse Code Modulation)  samples,  it quantizes  the difference.  The difference values are smaller  than the actual
+sample  values, so fewer bits are required.  The transform  coding  method  transforms  a signal from one domain  (mainly
+a time and space domain)  to another  domain  (mainly  a frequency  domain),  then compresses  it.
+B) Multimedia  data
+Multimedia  data includes  text, image, video, and audio data. The text has the form of plain text and non-linear
+hypertext.  The basic language  is Unicode  for expressing  symbols,  and it uses a lossless  compression  method.
+In multimedia,  an image is called a still image and refers to a photo, fax page, or a video frame. As shown in [Figure
+70], an image is transmitted  as binary data through a transformation  process,  a quantization  process,  and an
+encoding  process,  before being converted  back into an image through  the reverse  process.
+In the transformation  process,  the JPEG uses DCT (Discrete  Cosine Transform)  in the first stage of compression,  and
+the decompression  uses the inverse DCT method.  The transformation  and inverse  transformation  apply 8 X 8 blocks.
+The quantization  process  creates integers  from the real number  of the DCT transform  output and converts  some
+values to zero. The coding process  arranges  data in a zigzag order after quantization  and before encoder  input, then
+lossless  compression  is performed  using run-length  decoding  and arithmetic  coding [1].
+M3 Overview  of System  Architecture  95

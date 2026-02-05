@@ -1,0 +1,24 @@
+ESSENCE
++ Preview  for practical  business Why do we need to understand  big data
+technology?
+Although  interest in data analysis has increased,  the existing  system architecture  and DBMS face
+limitations  in terms of processing  speed and performance  when an existing  analysis  system  processes  tens
+of PBs of unstructured  data generated  by multimedia,  SNS, sensors,  loT, etc., due to the advancement  of IT
+technologies.  As a result, solutions  are being developed  that are suitable  for analyzing  the large volume  of
+unstructured  data (variety)  generated  at high speed (velocity).  Technologies  related to big data, which was
+still in its infancy  only a few years ago, have developed  rapidly and are now being used directly in our real
+life.
+There are many examples  of this. For instance,  the US movie Minority  Report,  which was released  in 2002,
+portrayed  futuristic  crime prediction  by “precogs’  in the year 2054, yet something  akin to this technology
+was actually  realized as a crime prevention  system in San Francisco  as early as 2009. (However,  the
+concept  of “big data” had only been introduced  at that time for the study of genomes,  and prediction  based
+on big data analytics  had not yet been thought  of) Other commonly  known examples  include Google's  flu
+map, the US presidential  election  case, ZARA, the DHL case, and distribution  demand  forecasting.
+Furthermore  big data technology  was unfamiliar  to IT workers  until relatively  recently  to the extent that
+they only needed to know the definition  of big data. However,  with the rapid development  of big data
+technology,  terms such as crawler, Hadoop,  MapReduce,  R, and NoSQL, as well as the 3V characteristics
+of big data, have become  familiar  technical  terms, and IT workers  now experience  big data systems
+more frequently  in the workplace.  Therefore,  IT workers  need to understand  at least the concepts  of the
+technical  terms for each phase of big data analytics,  if not the detailed  technical  principles,  in order to
+quickly  adapt to the changed  workplace.
+144 TOPCIT  ESSENCE

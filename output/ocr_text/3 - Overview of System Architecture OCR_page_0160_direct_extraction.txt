@@ -1,0 +1,30 @@
+Overview  of System Architecture )
+<Table 38) Internetworking  Equipment
+Equipment Description
+Repeater A device that enhances  (amplifies  or reproduces)  the signals between  AN connection  points
+Bridge A device that connects  two LANs and makes them look like one, through interpretation  and format conversion
+Switch A device that has the concept  of a multi-port  bridge to separate  the network,  based on the MAC address
+Router A device that finds the optimal  communication  path when connecting  to a heterogeneous  network
+This section describes  for which of the OS! 7 layers and TCP/IP 4 layers these internetworking  devices are
+responsible.  The router performs  packet routing  through  the IP address  on the network  layer. The bridge and switch
+are responsible  for frame transfer  on the datalink layer, while the hub and repeater  transfer  physical signals on the
+physical  layer. <Table 39> compares  the function  of each device  with the protocol  layer.
+{Table 39) Protocol  Layers and Device for Each Layer
+OS! 7 Layers TCP/IP  4 Layers Equipment
+Application
+Presentation Application
+Gateway
+Session
+Transport Transport
+Network Internet Router
+. Bridge,Data Link Network Sain h
+Access
+Physical Hub, Repeater
+D) What is a router?
+A router forwards  traffic and determines  the optimal path, using one or more metrics. In other words, it forwards:
+packets  from one network,  to another,  based on the network  layer information.
+@ Router  structure
+As shown in [Figure 114], a router mostly  consists  of a router control plane and a forwarding  plane. The control plane,
+implemented  in the software  in a router, determines  where to send the packets  it receives  and uses tables to decide.
+The forwarding  plane actually  sends the packets  according  to the requirements  created  by the control  plane.
+M3 Overview  of System  Architecture  159

@@ -1,0 +1,41 @@
+ESSENCE
+<Table 57> Quality  Control  Technique
+Classification Explanation
++ Histogram  sorted by frequency  of occurrence  to prioritize  a problem
++ It is based on the principle  that relatively  frequent  causes  generally  lead to most of the problems  or
+defects.
++ It displays  the cause, frequency,  and share of the problemreo  ee . Cumulative
+3074 1 se Frequency
+25}! ' 29 (29+1)
+' ' 7 (2742)
+2 ' \ 22 (22+5)Pareto Chart 1 (12#10)
+5) 12 I The percentage  of
+iol! 1 Item 1 (12 cases)
+1 1 is 40% of the total
+s|t 1 (=12/30)
+1 1
+1 item1 tem 2 Item 3 Item 4 Item 5
+1 1as 0 @ 1 10 5 2 1ss  4
++ Diagram  designed  to represent  how the cause and effect relate to and affect each other
++ Known as Cause and Effect Diagram,  Fishbone  Diagram,  and Ishikawa  diagram, it is generally  used for
+preventing  defects  in product  design and quality  to identify  possible  causes  for an effect.
+Manpower Unskilled  worker
+Cause ro
+elopment
+\ ae Equipment.
+Cause and Customer \ Platform
+Effect Diagram Lack of interest Configuration
+Excessive  attentionQuality
+fel teirctel-lalela)
+Communication Design
+interpretation
+7 Cause
+Environment
+Control  Chart+ As a tool to determine  whether  a process  maintains  a certain level of quality, it is judged to be in an
+unstable  state when the number  of defects  exceeds  the control limit.
+Upper Control  Limit
+Target  Value
+Lower  Control  limit
+Scatter  Diagram- As a tool used to identify  the impact between  two variables,  it is used to identify  the cause (factor)
+and effect (characteristic)  relationship  between  the two variables  and visually  express  the relationship.
+122 TOPCIT  ESSENCE

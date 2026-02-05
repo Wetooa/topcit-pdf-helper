@@ -1,0 +1,247 @@
+LEARNING GUIDE: Pages 151-155
+Generated: 2025-12-07 01:07:30
+PDF: 3 - Overview of System Architecture OCR
+
+================================================================================
+LEARNING GUIDE
+================================================================================
+
+Here is a simplified, easy-to-read learning guide based on the provided text:
+
+---
+
+# Data Link Layer: Addressing and Error Control
+
+## 1. ARP (Address Resolution Protocol)
+
+ARP is used to find a MAC address when only the IP address is known.
+
+### ARP Packet Structure
+An ARP packet is structured with various fields, including:
+*   **Destination MAC Address:** 6 bytes
+*   **Source MAC Address:** 6 bytes
+*   **Ethernet Protocol Type:** 2 bytes
+*   **Hardware Type:** 2 bytes
+*   **Protocol Type:** 2 bytes
+*   **Hardware Address Length:** 1 byte
+*   **Protocol Address Length:** 1 byte
+*   **Operation Code:** 2 bytes
+*   **Sender Hardware Address:** 6 bytes
+*   **Sender Protocol Address (IP):** 4 bytes
+*   **Target Hardware Address:** 6 bytes
+*   **Target Protocol Address (IP):** 4 bytes
+*   **Padding:** 18 bytes
+
+### MAC Address Search Scenario (How ARP Works)
+1.  **Need for MAC:** If two devices (e.g., computer A and Router C) are on the same network and need to communicate, computer A needs Router C's MAC address.
+2.  **ARP Request (Broadcast):** Computer A sends an ARP request packet, broadcast to all systems in its network segment.
+3.  **ARP Reply (Unicast):** Router C, recognizing its IP address, unicasts (sends directly) its MAC address back to computer A in an ARP reply.
+4.  **Caching:** Both systems store the MAC address in their cache memory for future use. Network devices like routers also store a port-MAC address table.
+
+---
+
+## 2. Datalink Layer Error Control
+
+Errors can occur during data transmission over the data link layer. Error control detects and corrects these errors.
+
+### A) Concept of Error Control
+
+*   **Types of Errors:**
+    *   **Single-bit error:** Only one bit changes.
+    *   **Multi-bit error:** Two or more non-contiguous bits change.
+    *   **Burst error:** Two or more consecutive bits change.
+*   **Error Control Function:** Detects and corrects errors when transmitted data is corrupted.
+*   **Error Control Methods:**
+    *   **Forward Error Correction (FEC):** Receiver detects errors and recovers by itself, using extra error recovery bits transmitted with the data.
+    *   **Backward Error Correction (BEC):** Receiver notifies the transmitting device about an error, requesting retransmission of the corrupted data.
+
+### B) Error Detection
+
+Error detection uses **redundancy** (adding spare bits) to allow the receiver to identify errors.
+
+*   **Error Detection Methods:**
+    *   **VRC (Vertical Redundancy Check):** Widely used, includes **parity check** (adding a bit to make the total number of 1s even or odd).
+    *   **LRC (Longitudinal Redundancy Check):** Collects the even parity of all bytes in a data unit and adds it to the end of the data block.
+    *   **CRC (Cyclic Redundancy Check):** A powerful detection method using binary division.
+    *   **Checksum:** Used by higher-level protocols, also based on redundancy.
+
+### C) Error Correction
+
+Error correction involves either the receiver requesting retransmission or automatically correcting the error using specific codes.
+
+*   **Self-Correction Methods (using error correction codes):**
+    *   **Single-bit error correction:** Locates and corrects the wrong bit, often using **parity bits**. (e.g., ASCII code might require 3-bit redundancy).
+    *   **Redundant bit error correction:** Calculates required redundant bits based on the number of data bits to correct errors.
+    *   **Hamming code:** A specific method used to find the redundant bit position for error correction.
+    *   **Multi-bit error correction:** Uses redundant bits calculated by overlapping data bits to correct multiple errors.
+
+*   **Automatic Repeat Request (ARQ):**
+    An algorithm where the receiver informs the sender of an error, and the sender retransmits the corrupted frame.
+    *   **ARQ Types:**
+        *   **Stop-and-wait ARQ:** Sender transmits one frame, then waits for an ACK (acknowledgment) or NACK (negative acknowledgment) before sending the next. Simple but inefficient.
+        *   **Go-back-N ARQ:** Sender continuously transmits multiple frames within a "window size." If an error is detected, the receiver sends a NACK, and the sender retransmits *all* frames starting from the error point. More efficient than Stop-and-wait.
+        *   **Selective-repeat ARQ:** Similar to Go-back-N, but only the *specifically corrupted* frame is retransmitted. Requires larger transmission and receipt buffers.
+        *   **Adaptive ARQ:** Detects the communication line's error rate and dynamically adjusts the frame length for optimal transmission.
+        *   **Hybrid-ARQ (H-ARQ):** Combines FEC and BEC. FEC is performed normally to maintain network efficiency, and BEC is used for retransmission when FEC fails, improving reliability.
+
+---
+
+## 3. IEEE 802 Standard
+
+The IEEE 802 committee defines standards for Local Area Networks (LANs) and Metropolitan Area Networks (MANs).
+
+### A) Concept of IEEE 802
+
+IEEE 802 standards specify sublayers of the Data Link Layer and the Physical Layer:
+*   **Logical Link Control (LLC) Layer (IEEE 802.2):** Provides interface to network layer.
+    *   **Type 1:** Unconfirmed datagram service (no acknowledgment).
+    *   **Type 2:** Virtual circuit service (connection-oriented, reliable).
+    *   **Type 3:** Confirmed datagram service (acknowledgment for each frame).
+*   **Media Access Control (MAC) Layer:** Manages access to the shared physical medium.
+    *   **IEEE 802.3:** CSMA/CD MAC (Ethernet)
+    *   **IEEE 802.4:** Token Bus MAC
+    *   **IEEE 802.5:** Token Ring MAC
+*   **Physical Layer:** Defines physical transmission characteristics.
+    *   Different MAC types are associated with specific physical media (e.g., coaxial, twisted pair, optical fiber).
+
+### B) IEEE 802.3 Standard (Ethernet)
+
+*   **Most widely used** IEEE 802 standard.
+*   **Protocol Stack:**
+    *   **LLC Layer:** IEEE 802.2
+    *   **MAC Layer & Physical Layer:** IEEE 802.3 (e.g., Ethernet)
+
+### C) IEEE 802.11 Standard (Wi-Fi)
+
+*   The standard for **wireless LAN (WLAN)**, commonly known as **Wi-Fi**.
+*   Developed to minimize wiring and maintenance costs associated with wired LANs.
+
+*   **Key IEEE 802.11 Protocols:**
+    *   **802.11b:**
+        *   **Frequency:** 2.4 GHz
+        *   **Max Speed:** 11 Mbps
+        *   **Modulation:** DSSS (Direct Sequence Spread Spectrum)
+    *   **802.11a:**
+        *   **Frequency:** 5 GHz
+        *   **Max Speed:** 54 Mbps
+        *   **Modulation:** OFDM (Orthogonal Frequency-Division Multiplexing)
+    *   **802.11g:**
+        *   **Frequency:** 2.4 GHz
+        *   **Max Speed:** 54 Mbps
+        *   **Modulation:** OFDM (and DSSS for compatibility)
+    *   **802.11n:**
+        *   **Frequency:** 2.4 GHz & 5 GHz
+        *   **Max Speed:** Up to 600 Mbps (using MIMO)
+        *   **Technology:** MIMO (Multiple-Input, Multiple-Output) - uses multiple antennas for increased speed and range.
+    *   **802.11ac:**
+        *   **Frequency:** 5 GHz
+        *   **Theoretical Max Speed:** Up to 6.93 Gbps
+        *   **Technologies:** 80/160 MHz bandwidth, Multi-user MIMO (MU-MIMO), multi-spatial stream MIMO, 256-QAM modulation, Beamforming.
+    *   **802.11ad:**
+        *   **Frequency:** 60 GHz
+        *   **Speed:** Gigabit speeds
+        *   **Purpose:** High-speed, short-range communication, often for uncompressed video.
+    *   **(Future):** Standards for gigabit wireless LAN technology to transmit UHD video and handle high-speed wireless data are continuously being developed.
+
+### D) IEEE 802.15 Standard (WPAN)
+
+*   Standard for **Wireless Personal Area Networks (WPANs)** – short-range wireless communication.
+*   Aims to establish wireless networks for mobile communication devices, PCs, and peripherals within a home/personal space.
+*   **Sub-organizations:** WPAN research group (max Mbps), WPAN HSRC (max 20 Mbps).
+
+*   **Leading WPAN Technologies:**
+    *   **IEEE 802.15.1 (Bluetooth):** Short-range wireless for exchanging information between mobile devices (phones, laptops).
+    *   **IEEE 802.15.3 (UWB - Ultra-Wideband):** Wireless technology for quickly transmitting large volumes of digital data at low power over ultra-broadband frequencies for short distances.
+    *   **IEEE 802.15.4 (ZigBee):** Standard technology for home automation and data networks with low data transmission rates, focusing on low power consumption and mesh networking.
+
+---
+
+================================================================================
+ORIGINAL TEXT (First 5000 chars)
+================================================================================
+
+--- Page 151 ---
+ESSENCE
+i 32 bits >|
+8 | 8 8 8
+Hardware Type | Protocol Type
+Hardware Protocol
+Address Length  | Address Length | Operation
+Sender  Hardware  Address
+(OCTETS  0-3)
+Sender  Hardware  Address Sender  IP Address
+(OCTETS  4-5) (OCTETS  0-1)
+Sender IP Address | Target Hardware  Address
+(OCTETS  2-8) (OCTETS  0-1)
+Target Hardware  Address
+(OCTETS  2-5)
+Target IP Address
+[Figure 108] ARP packet structure
+The ARP packet is organized  of the 6-byte destination  MAC address,  6-byte source MAC address,  2-byte Ethernet
+protocol  type, 2-byte hardware  type, 2-byte protocol  type, 1-byte hardware  address  length, 1-byte protocol  address
+length, 2-byte operation  code, 6-byte sender hardware  address,  4-byte sender  protocol  address,  6-byte target
+hardware  address,  4-byte  target protocol  address,  and 18-byte  padding.
+B) MAC address  search scenario
+Since Router  C and computer  with user A are in the same network  section,  with user A, as shown in [Figure 103], the
+MAC address  is required  for communication.  In that case, the computer  with user A sends an ARP request  through
+broadcasting  to all systems  in the network  section. The data section of the frame, transferred  through the ARP
+request,  contains  the ARP packet, as shown in [Figure 108]. On receiving  the response,  router C transfers  its MAC
+address  in the ARP packet  to the computer  with user A through  unicast,  to find each other's  MAC address.  The MAC
+address  is stored in each system's  cache memory.  In that case, wired/wireless  router B stores the port-MAC  address
+table of the system  connected  to its cache memory  ports.
+05 Techniques  of Datalink  Layer error Detection  and Correction
+A) Concept  of error control
+Transferring  frames through  the data link layer can cause various  errors, depending  on the network  condition  or the
+operation  of the transmitting  and receiving  device. Types of errors include single-bit  errors, in which only one bit of
+the data part is changed,  multi-bit  errors, in which two or more non-contiguous  bits are changed  in the data unit, and
+burst errors, in which two or more consecutive  bits are changed.
+Error control is the function  of detecting  and correcting  errors when transmitted  data does not arrive properly,  or
+when an error occurs during transmission.  Error control methods  can be divided into two types, as shown in [Figure
+150 TOPCIT  ESSENCE
+
+
+--- Page 152 ---
+Overview  of System Architecture )
+109]. Forward error correction  (FEC) allows the receiving  device to detect errors and recover  from them by itself,
+by transmitting  a spare bit for error recovery  in the packet. Backward  error correction  (BEC) notifies  an error to the
+transmitting  device  to recover  from the error, when an error occurs  during the data transmission.
+Error Control
+Forward  Error Correction Backward  Error Correction
+| Non-Block  Code | | Block Code | | Detection  Method | | Correction  Method |
+| Turbo Core | | BCH | | Parity Checking | | Stop-and-Wait  ARQ |
+| Convolution  Code | | Hamming  Code | | Block Sum Check | | Go-Back-N |
+| Reed-Solomon | | Cydlic Redundancy Check | | Selective-Repeat |
+Adaptive  ARQ
+H-ARQ
+[Figure 109] Error Control  Types
+B) Error detection  and correction
+@ Error detection
+Error detection uses the redundancy  (spare) concept  by adding a spare bit to detect the destination’s  error. Error
+detection  methods  include VRC (Vertical Redundancy  Check), LRC (Longitudinal  Redundancy  Check), CRC (Cyclic
+Redundancy  Check),  and checksum.  <Table 32> shows details of each detection  method.
+{Table 32) Error Detection  Methods
+Error detection Description
+method
+wre + Vertical Redundancy  Check
++ Most widely used for error detection  and includes  the parity check
++ Longitudinal  Redundancy  Check
+LRC + Amethod  of collecting  the even parity of all bytes to create a data unit and adding it to the end of the
+data block
+ERG * Cyclic redundancy  check
++ A detection  method  using binary division
+Checksum + Amethod  used by higher-level  protocols  and based on the concept  of redundancy  (VRC, LRC, CRC, etc.)
+M3 Overview  of System  Architecture  151
+
+
+--- Page 153 ---
+ESSENCE
+@ Error correction
+Error correction  methods  include a method in which the receiving  device requests  the sending  device to retransmit
+the entire data, or the receiving  device  automatically  performs  a correction  using an error correction  code.
+{Table 33) Error Correction  Methods
+Correction Description
+Single bit error + The principle  of error correction  is to locate the wrong bit, which is called a parity bit.
+correction + ASCII code requires  a 3-bit redundancy  code.
+Redundant  bit error + Amethod  of checking  the relationship  between  the number  of data bits and the number  of redundant
+correction bits to calculate  the number  of redundant  bits required  to correct the number  of data bits given
+Hamming  code + Amethod  to find the redundant  bit position  in Hamm...

@@ -1,0 +1,37 @@
+Database )
++ Input error, modification  error, and deletion  error can occur even without  performing  the fourth normalization.
+<Table 28> Classification  of anomalies
+Type Anomaly
+When an employee  is assigned  to a new project,  the technical  code should be entered  regardless
+Input error of the project.  At this time, if the employee  has supported  several projects,  the technology  code
+should be entered  as many times as the number.
+If the project  code experienced  by an employee  needs to be changed,  it should be changed  as
+many times as the number  of holding  technologies.
+When the technology  held by an employee  is deleted,  the project  to which the employee  was
+assigned  is also deleted,  making  the project  history unknown.  Also, when deleting  the holding
+technology,  the modification  should be made as many times as the number  of technologies  used
+for the project.Modification  error
+Delete  error
+D) Performing  the fourth normalization
+The fourth normalization  can be performed  as follows.
+Employee ee Project
+Employee  number Employee  ID (Fk) Project  code
+Employee  name +—_<<k  Project code (FK) ~>——+  Project name
+Address an
+Holding  skills Holding  skills Support  project
+Employee  number Technology  code Employee  number Project  code
+Employee  ID (Fk)
+Skill code (FK) |  ————>> 10 MODELING 10 SI
+10 DBA 10 00
+10) 20 DBA 10 PA
+20 XML PI
+Skill *0 ”
+Skill code
+Skill name |
+[Figure  34] Performing  the fourth normalization
+<Table  29> Association  rules
+Rule Association  rule Table
+1 An employee  supports  a project. (A and B are related.) Created
+2 An employee  has a certain  technology.  (A and  C are related.) Created
+3 The technology  used in the project  is not set. (B and C are not related.) Not created
+M2 Database  75

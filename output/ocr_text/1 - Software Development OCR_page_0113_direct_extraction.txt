@@ -1,0 +1,31 @@
+ESSENCE
+01 Requirements  Management
+A) Definition  of requirements  management
+Requirements  engineering  can be largely divided into requirements  development  and requirements
+management.  Requirements  development  consists  in defining  what to do, while requirements  management
+consists  in checking  whether  the planned and defined requirements  are accurately  reflected  and in managing
+changes  to the first requirements  on a continuous  basis.
+B) Importance  of requirements  management
+Proper requirements  management  should provide an effective  means  of communication  among the
+stakeholders,  prevent  delivery  delays and going over budget through systematic  requirements management
+from the initial phase of the project,  and execute  and manage  the user requirements  specification.
+C) Purposes  of requirements  management
+Requirements  management  aims to satisfy the customer’s  requirements  by understanding  them from the
+customer's  point of view and to produce  high-quality  software  within  a limited schedule  and period.
+D) Requirements  management  process
+The figure below illustrates  the requirements  management  activities  in the entire software  development  life
+cycle.
+\ EB \ Frexinme\ i “\ Va \ i ‘\
+/ SW request | sw / SW design/  | = \
+\ extraction | requirement  | (ppeciication  and} \ architecture }> \im cena)  Sen|\ SW test ] \ \gmrss 7] ey)  ] Ww _Z \ Z
+SW requirement  definition  activity SW requirement  change  management
+Overall requirements  engineering  activities
+[Figure  24] Requirements  management  activities
+The table below describes  the detailed activities  and corresponding  deliverables  of the requirements
+management  process.
+<Table 35> Details  of requirement  management  activities
+Process Description Deliverables
+Reaaiemente + Defining  the business  requirements.
+q A + Identifying  the participants. Candidate  requirementextraction 5 es
++ Extracting  the initial requirements.
+112 TOPCIT  ESSENCE

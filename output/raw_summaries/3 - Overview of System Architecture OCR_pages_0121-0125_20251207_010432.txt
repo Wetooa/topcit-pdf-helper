@@ -1,0 +1,198 @@
+LEARNING GUIDE: Pages 121-125
+Generated: 2025-12-07 01:04:32
+PDF: 3 - Overview of System Architecture OCR
+
+================================================================================
+LEARNING GUIDE
+================================================================================
+
+Here is a simplified, easy-to-read learning guide based on the provided text:
+
+---
+
+## IT Infrastructure & System Availability: Learning Guide
+
+This guide covers modern IT infrastructure trends (CI, HCI) and strategies for ensuring system continuity (HA, DR).
+
+---
+
+### Part 1: Modern IT Infrastructure Trends
+
+#### 1. Traditional IT Infrastructure: The Problem
+
+*   **Process:** Servers, storage, network devices, and software are purchased separately from different vendors.
+*   **Integration:** IT staff or resellers integrate components on-site.
+*   **Issues:**
+    *   Complexity and inefficiency.
+    *   Long implementation times.
+    *   Difficult system management.
+    *   Requires extensive testing for hardware-software compatibility.
+    *   Maintenance and support from multiple suppliers.
+
+#### 2. Converged Infrastructure (CI)
+
+*   **Concept:** An approach to solve traditional IT infrastructure problems.
+*   **Integration:** Hardware (servers, storage, network) is integrated with virtualization and management software into a *single product*.
+*   **Supplier Role:** Vendors pre-validate the integrated product before supplying it to customers.
+*   **Advantages:**
+    *   Faster service implementation due to pre-integration and validation.
+*   **Disadvantages:**
+    *   **High Cost:** Integrates expensive external storage.
+    *   **Poor Performance** relative to input resources.
+    *   **Limited Scalability**.
+
+#### 3. Hyper-Converged Infrastructure (HCI)
+
+*   **Concept:** Overcomes the limitations of CI by eliminating expensive external storage.
+*   **How it Works:**
+    *   Uses **direct attached storage (DAS)** from standard x86 servers.
+    *   Combines DAS from multiple servers using **Software-Defined Storage (SDS)** technology over an IP network.
+    *   Creates a unified storage pool, similar to a Storage Area Network (SAN), but without dedicated external storage hardware.
+*   **Advantages:**
+    *   Eliminates costly external storage.
+    *   Reduces overall costs.
+    *   Simplifies architectural complexity.
+
+---
+
+### Part 2: High Availability (HA) & Disaster Recovery (DR)
+
+#### Learning Objectives:
+
+1.  Explain High Availability (HA) and Fault Tolerance (FT) technology and operational principles.
+2.  Explain Disaster Recovery (DR) configuration and utilization.
+
+#### The Importance of System Continuity
+
+*   Information systems are critical; failures can have huge impacts (e.g., bank system outages, data center fires).
+*   **Goal:** Ensure information systems provide services safely and continuously.
+*   **Strategy:** Implement High Availability (HA) configurations and Disaster Recovery (DR) centers.
+*   **Redundancy:** Most major systems are built with redundancy. Critical systems also include spare systems (often via DR centers).
+
+#### Key Metrics for Recovery: RPO & RTO
+
+*   **Recovery Time Objective (RTO):**
+    *   **Definition:** The maximum acceptable time to restore normal service after a failure or disaster.
+    *   **Focus:** How quickly can the system be back online.
+*   **Recovery Point Objective (RPO):**
+    *   **Definition:** The maximum acceptable amount of data loss that can occur during a failure or disaster.
+    *   **Focus:** How much data can be lost (i.e., how recent must the recovered data be).
+
+#### 1. High Availability (HA)
+
+*   **Concept:** Ensuring uninterrupted service.
+*   **Reality:** Achieving 100% availability is difficult. HA focuses on making services available even when components fail.
+*   **Strategy:** Prepare for failures by configuring redundant systems, typically using **clustering** (two or more systems working together).
+*   **HA Criterion: "5 Nines" (99.999% Availability)**
+    *   Represents less than 5 minutes and 15 seconds of unplanned service downtime per year.
+    *   The level of HA is often expressed by the number of "nines."
+*   **Availability Calculation Formula:**
+    *   **A = MTBF / (MTBF + MTTR)**
+        *   **A (Availability):** The percentage of time a system is operational.
+        *   **MTBF (Mean Time Between Failures):** The average time a system operates without failure.
+        *   **MTTR (Mean Time To Repair):** The average time it takes to restore a system after a failure.
+
+    *(Visualizing the Indicators: MTBF is the period between failures, MTTF is Mean Time To Failure, MTTR is the time spent repairing.)*
+
+#### 2. HA Configuration Types: Hot Standby
+
+*   **Also known as:** Active-Standby.
+*   **Structure:** The simplest HA clustering setup.
+    *   **Active Server:** Processes all operations.
+    *   **Standby Server:** Powered on and running its operating system, ready to take over. (Sometimes used for development when not active).
+*   **Fail-over Operation:**
+    *   If the active server fails (due to hardware, network, or process issues), the failure is detected (often via a "heartbeat" network).
+    *   All HA service operations are **automatically switched (fail-over)** to the standby server.
+
+---
+
+================================================================================
+ORIGINAL TEXT (First 5000 chars)
+================================================================================
+
+--- Page 121 ---
+ESSENCE
+03 Latest  Technology  and Trends  of Information  Systems
+Information  system infrastructure  is generally  implemented  by separately  purchasing  servers, storage, and network
+devices  from each vendor, then integrating  them for the project. Moreover,  they also separately  purchase  software,
+thus they need to test and verify if it works properly  with the hardware.  However,  such a complex  structure  and
+procedure  inevitably  have led to inefficiency  from the implementation  time and system management  aspect.
+The converged  infrastructure  is a concept  introduced  to solve the problem.  It integrates  the hardware,  like storage,
+server, and network,  with the virtualization  solution and the management  software,  supplied  by each vendor, into a
+product  and validates  it in advance  for supply  to customers  (see [Figure  87]).
+Traditional  IT infrastructure
+(Oly)
+IWFecTeNVANiceciuAU  (ole E cdConverged  Infrastructure  (Cl)
++ Traditional  type of IT infra-
+structure+ Servers,  storage, networking,
+and software  supplied  in single
++ Introduced  as separate
+components  (server, storage,
+networking,  and software)
++ Configured  and integrated
+on-site by the reseller  or the
+customer's  IT staff
++ Maintenance  and support  by
+each supplierSKUs
+(Separate  individual  SKUs in the
+case of reference  architecture)
++ Integrated  at the factory  by
+the manufacturer  or reseller
+and supplied  to the customer
++ Configured  on customer’  site
+in the case of the reference
+architecturefor some solutions
+Integrated  operation  and
+Management  system  based on
+software-defined  technology
+[Figure  87] Conventional  Infrastructure  vs. Converged  Infrastructure
+However,  despite the advantage  that the converged  infrastructure  enabled  quick service implementation,  through
+the integration and validation  in advance,  it was not actually  well received  in the market,due  to its poor performance
+compared  to input resources.  Since the product  integrates  the server, the network,  and the external  storage,  the cost
+was exceptionally  high, and the system had a problem  with scalability.  In particular,  the high-performance  external
+storage  was a severe burden from the cost and structural  aspect.
+The hyper converged  infrastructure  (HCI) is a concept  that overcomes  the limitations  of Cl by eliminating  the
+120 TOPCIT  ESSENCE
+
+
+--- Page 122 ---
+Overview  of System  Architecture
+expensive  external  storage.  As shown in [Figure 88], HCI groups the direct attached  storage  (DAS), which is located
+under a general-purpose  x86 server, with the software-defined  storage  (SDS) technology  through  the IP-based
+network  and uses it as a storage pool, similar to a storage  area network  (SAN). The architecture  eliminates  the
+structural  complexity  and reduces  costs most of all by eliminating  external  storage.
+cial  eo SIN) Hyper-Converged  Infrastructure
+Dedicated  Storage  Configuration Server  Disk Configured  as Shared  Storage
+SDS Shared Storage
+[Figure 88] Converged  Infrastructure  vs. Hyper  Converged  Infrastructure
+M3 Overview  of System  Architecture  121
+
+
+--- Page 123 ---
+ESSENCE
+>> Learning  objectives
+1. To be able to explain the HA/FT technology  and operational  principle.
+2. To be able to explain the DR configuration  and utilization.
+>> Keywords
+SPOF, Hot-standby,  Mutual takeover,  Concurrent  access, Mirror site, Hot site, Warm site, Cold site, RPO,
+RTO, Fault-tolerant  technique
+122 TOPCIT  ESSENCE
+
+
+--- Page 124 ---
+Overview  of System Architecture )
++ Preview  for practical  business Information  system  failure at Bank  A lasting
+until late in the afternoon.
+“Blocked  wagesfer’,  The Hankyore.
+Information  systems  have the role of not only supporting  business,  but also creating  business.  A failed bank
+information  system can have an enormous  impact. A fire at OO Card's IDC center in 2014 is a similar  case.
+Enterprises  must improve  the availability of information  system services,  through a high availability  (HA)
+configuration  or disaster  recovery  (DR) center in order to ensure that their information  system safely and
+continuously provides  service. Most major information  systems  are basically  configured  with redundancy.
+An important  banking  system has a spare system, in addition  to redundancy,  to ensure that the reserve
+system can continue  to provide information  services  at the time of disasters,  such as an earthquake  or
+a fire. The DR center is a place that provides  such a spare system.  DR centers are configured  in different
+ways, depending  on the importance  of the information  system.  When  a failure or disaster  occurs, the time
+required  to recover  in order to provide normal service is called the recovery  time objective  (RTO). Moreover,
+the tolerable  level of data loss in a failure or disaster  is called a recovery  point objective  (RPO). The DR
+center is classified  into a mirror, hot, warm, or cold site...

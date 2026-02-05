@@ -1,0 +1,35 @@
+Software  Development )
+E) Data structure  selection  criteria
+@Data processing  time
+@Data size
+@Data utilization  frequency
+@Data update frequency
+Ease  of programming
+F) Utilization  of data structures
+Data structures  are mainly used in data sorting, search, file organization,  and index. The utilization  fields by data
+structure  can be summarized  as follows.
+@ List: Array implementation,  DBMS index, problems  such as search or sorting,  etc.
+@ Stack: Interrupt  handling,  sequence  control of the recursive  program,  saving the retum address  of the subroutine,
+calculating  an expression  represented  in postfix  notation,  undo function  of the text editor, etc.
+@® Queue: Job scheduling  of the operating  system,  queue processing,  asynchronous  data exchange  (file I/O, pipes,
+sockets),  keyboard  buffer use, spool operation,  etc.
+@ Deque: A data structure  that makes the most of the strengths  of the stack and queue only, and which is mostly
+used in the fields related  to the stack and queue.
+© Tree: Problems  like search and sorting,  grammar  parsing,  Huffman  code, decision  trees, games,  etc.
+© Graph: Computer  network  (local area network,  internet,  web, etc.), electric circuit analysis,  binary relation,
+simultaneous  equations,  etc.
+02 Algorithm
+A) Algorithm  overview
+@ Algorithm  definition
+An algorithm  is a description  of a series of processing  procedures  used to solve a given problem  by stages.  It is
+a specification  that logically  describes  a step-wise  procedure  by abstracting  the problem-solving  method.  The
+algorithm  is not designed simply to obtain the desired result, but also to develop  an efficient  method in terms
+of processing  time and storage  space use.
+@ Conditions  of algorithms
+<Table 12> Conditions  of algorithms
+Condition Description
+Input More than one data that are needed  to execute  an algorithm  should be entered  from outside.
+Output More than one result should be output after executing  an algorithm.
+7 Instructions  for each processing  step of the algorithm,  indicating  the content  and sequence  of the jobDefiniteness ;to perform,  should be clearly specified.
+Finiteness An algorithm  must be terminated  after execution
+M1 Software  development  43

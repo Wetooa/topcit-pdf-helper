@@ -1,0 +1,23 @@
+A) Entity, attribute,  identifier 58
+B) Characteristics  of the entity 58
+C) Classification  of entities 58
+D) Classification  of attributes 59
+E) Relationshio 59
+F) How to read relationships 60
+G) Characteristic  of the identifier 60
+H) Classification  of identifiers 61
+|) Identifier  relationship  and non-identifier  relationship 61
+J) Super—type  and sub-type 62
+07 Connection  Trap 63
+A) Fan trap 63
+B) Chasm trap 64
+08 Object-Relational  Mapping  (ORM) 64
+A) Class conversion 64
+B) Conversion  of the class relation into a relational  relationshio 65
+09 Integrity  and Key 65
+A) ntegrity 65
+B) Key 66
+V. Normalization  and Denormalization 67
+01 Normalization  and Anomalies 69
+A) Insertion  anomaly 69
+M2 Database  9

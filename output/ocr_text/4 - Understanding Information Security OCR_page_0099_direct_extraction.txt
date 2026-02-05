@@ -1,0 +1,19 @@
+Information  security )
++ Preview  for practical  business
+All systems  of major domestic  broadcasting  companies  and financial  companies  were paralyzed,  due
+to exposure  to cyber terror, on March 20, 2013. The internal computer  networks  of 3 broadcasting
+companies  and 4 financial  companies  were down all at once, around 2 pm on this day, and serious
+confusion  occurred.  As computer  networks  at similar institutions  were down at the same time,
+the police suspected  a high possibility  of cyber terror and began an investigation.  The Korea
+Communications  Commission  announced  that the incident  was caused by malware,  distributed  by
+the update management  server (PMS), and the extent of the damage  was so enormous  that it was
+difficult  to estimate.
+Financial  company  A, a hacking  victim, analyzed  three major causes  of hacking  damage:
+1) The administrator  PC was not secure enough and servers  could be accessed  from the IP address,
+other than that of the administrator.
+2) Security  patches  were not applied properly,  and authentication  of the updated  server  was weak.
+3) Default passwords  were used, and the use of unnecessary  commands  were not restricted.
+Let’s learn how to set security,  according  to the system characteristics,  to effectively  respond  to
+cyber-attack  damage,  such as in the case of company  A, and how to manage systems  safely, based
+on such understanding.
+M4 Understanding  Information  Security  99

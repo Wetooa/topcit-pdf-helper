@@ -1,0 +1,19 @@
+ESSENCE
+bs
+>> Recent  trends and major issues
+Physical  design consists  of physical modeling  in which a logical data model is converted  into a physical
+structure  (schema),  and a database  design process  in which an optimal object is created  by considering
+the actual DBMS based on the physical  model. Many people misunderstand  physical  modeling  as a simple
+process  of defining data type, length, and domain value, etc., but the data storage space, distributed
+database  build, etc. are actually  decided.  Therefore,  physical  design is directly  related  to database  operation
+performance.
+>> Learning  objectives
+1. To be able to explain the concept  and process  of relational  table conversion.
+2. To be able to design  a table.
+3. To be able to design a data type.
+4. To be able to design an index.
+5. To be able to design a database  view.
+6. To be able to design a distributed  database.
+>> Keywords
++ B*Tree,  index, distributed  database,  relational  table
+84 TOPCIT  ESSENCE

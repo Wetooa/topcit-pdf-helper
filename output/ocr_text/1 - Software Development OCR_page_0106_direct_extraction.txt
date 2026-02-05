@@ -1,0 +1,34 @@
+© Test case design techniquesSoftware  Development )
+Test design techniques  can be classified  into specification-based  techniques,  structure-based  techniques,  and
+experience-based  techniques  depending  on the referred  test basis, an origin of the test design.
+<Table 30> Test case design  techniques
+Item Technique Description
+fei A test case is designed  in such a way that a test is performed  with the
+Equivalence  partitioning .representative  value placed in an equally  divided area.
+Boundary  values  are also included  when designing  a test case because  there
+Boundary  value analysis is a high possibility  of a defect  being found in the input value corresponding  to
+the boundary  of the equal division.
+ao. A table is created  in such a way that the values needed  for the test are
+Speciication- Pairwise  testing combined  with other values at least once, and a design is executed using the
+eee tabletechnique - - - - —
+. . A test case tests the combination  of input values indicated  in the decisionDecision  table testing :
+table and the stimuli (cause).
+. . The relationship  between  events,  actions,  activities,  states, and stateState transition  testing a : a
+transitions  are designed  based on a state transition  diagram.
+Test cases are extracted  from use cases when a system  is modeled  as a useUse case testing
+case.
+. I ructur i Control  flow testing All possible  event flow (path) structures  can be tested when executed  using a
+component  or system.
+Structure- : adiTest cases are designed  to achieve  coverage,  which indicates  how far thebased Coverage  testingtechniques system  or software  structure  has been tested by the test suite.
+Elementary  comparison Test cases are identified  in such a way that the combination  of input values is
+testing tested using the concept  of the modified  condition/decision.
+An unofficial  test is designed  that uses the information  obtained  while running
+Experience- Exploratory  testing tests, so that testers  can control the test design actively  while running the
+based test and so that a new and better test can be designed
+techniques The test cases expressed  as a classification  tree are combined  with the
+Classification  tree methodrepresentative  values  of the input and output  domains.
+O2 Testing  Types and Techniques
+A) Testing  types
+There are various  types of testing  depending  on various  levels, as shown in <Table 30>. The overriding  principle
+is that the testing  subject,  testing  purpose,  and test environment  should be considered  for each type.  .
+M1 Software  development  105

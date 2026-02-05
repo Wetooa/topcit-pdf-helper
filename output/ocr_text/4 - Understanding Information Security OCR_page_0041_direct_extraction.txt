@@ -1,0 +1,49 @@
+<Table 10> PKI componentsInformation  security )
+Composition Details
+Policy approval  authority  | Creating  and setting  up policies  and procedures  comprehensively  used for PKI (Ministry  of
+(PAA) Security  and Public Administration)
+Policy certification Establishing  detailed  policies  for the policy approved  by the PAA (Korea Internet  & Security
+authority  (PCA) Agency)
+tee . Issuing  user’s public key certificates  and managing  the list of revoked  certificates  (Koreaaie  ety Information  Certificate  Authority,  Koscom, Korea Financial Telecommunications  and Clearings
+Institute, Korea Electronic  Certification  Authority,  KTNET)
+Registration  authority  (RA) Doing  business  for certification  authorities  and receiving  public certificate  registration
+applications  (banks, securities  companies)
+Certificate  holder The owner  of the public key certificate  who receives  a certificate, and signs and encrypts
+electronic  documents.
+User Auser who verifies  the authentication  path and electronic  signature,  using the public key of the
+certification  authority.
+Public key certificate  and
+CRL repository
+@® Pk! operationUsing the certificate  standard  that complies  with the X.509 v3 standard.
+An electronic  file that proves the relationship  between  the electronic  signature  verification  key
+and the key owner.
+ACRL  repository  to manage  the list of revoked  certificates
+When the user requests  certificate  issuance  to the RA after applying  for subscription  and checking identity
+at the RA branch, the RA sends the issuance  and registration  request  information  to the CA. The CA issues a
+private key signed with the CA's private key, and posts it to the directory  serverthen  sends it to the user, via
+the RA. The user stores the issued certificate  in a hard disk or a removable  disk of a PC and uses it in financial
+transactions  and electronic  commerce.  At this point, financial  institutions  verify the certificate  by contacting
+the public CA. [Figure 20] shows the participants  of the PKI and the workflow  between  them.
+EE
+2 =a
+' Certificate  verified SS on Certificate  verified
+by the public = by the public
+: Certification & & & GB A ' certification
+v authority Se y authority
+LeU o) Cemecsl  aati  ceri a(0))
+authority authority
+Register  applicati
+information
+@ in-person  check
+@ Apply forVerify subscriber's
+certificate
+Qe Submit  electronic
+ICcreisi  nee]  oO la ey <c1  NTN certificate  issue signature e-Commerce  company
+(bank, securities (bank, securities
+(oo)n]  Yl ARciKen} e fete ertificate Request  electronic company,  etc.)
++ Apply  for certificate  issue by proxy
++ Check identitysignature  on 
+itransaction  information e Spemeete  trapsaction
+verifying  electronic
+[Figure  20] Participation  factors  and workflow  of the PKI
+M4 Understanding  Information  Security  44

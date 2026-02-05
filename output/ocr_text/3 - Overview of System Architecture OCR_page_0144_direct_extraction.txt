@@ -1,0 +1,32 @@
+Overview  of System Architecture )
+Includes  Hadoop,  Hive, OOzie, ZooKeeper,  and other open-source  tools
+M3, - M3: Free version, NFS access, integrated  management  UI, and improved  scalability
+M5, and - M5: Paid version (subscription),  no single points of failure, mirroring,  snapshots,  NFS HA, and data
+M7 placement  control
+- M7: HBase improvement  and improved  speed, scalability,  and stability
+02 Big Data Dystem  Trends  and Forecast
+A) Big data system  trends
+@ Formation  of system  ecosystem,  based on the strengths  of each enterprise
+Big data system service providers  form a corporate  ecosystem  by promoting  strategies  to solve problems, such as
+real-time  processing,  memory-based  processing,  ease of query, and accessibility  to various  file systems  that big data
+must overcome,
+* Companies  like Amazon,  that have already secured  cloud capabilities,  are trying to build unique platforms  by linking
+their cloud and open source-based  big data solutions.
++ IBM, Microsoft,  and others, that were leaders in corporate  information  systems,  have modified their strategies  to
+focus on big data, utilizing  their existing  competency.
++ Google, Apple, and other mobile-based  emerging  companies,  are building  big data analysis  systems,  based on
+existing  servers  and user data to provide  their services.
+@ Differentiation  of big data service  delivery  domain
+Companies  that are implementing  big data systems  are divided into those that provide  a total solution and those
+that provide  solutions  in a specific  area.
++ Companies  like Amazon,  IBM, and Google create internal platforms  that support  the entire process  of big data
+analysis  and provide  consulting  to other enterprises,  based on them generating  revenue.
++ Solution  companies  like Teradata  and Good Data that implement  functions, such as analysis  and visualization  for big
+data, also strive to implement  unique performance.
+B) Forecast  of big data systems
+@ Still low versatility  of big data systems
+Many technologies  related to Hadoop,  the leading technology  for big data, are currently  being developed to the
+extent  that it has the Hadoop  ecosystem.  However,  it is still technically  too difficult  for non-engineers  to use, without
+significant  help from engineers.
+@ Growth  of open-source  big data systems
+M3 Overview  of System  Architecture  143

@@ -1,0 +1,44 @@
+ESSENCE
+<Table 28> Main activities  of the testing  process
+Process Main activities
++ Reviewing  the test basis.
++ Identifying  test situations/requirements/data
+Analyzing  and designing  tests + Assigning  a test technique.
++ Evaluating  testability.
++ Creating  a test environment.
++ Specifying  test cases: Priority  selection,  data creation,  procedure  writing.
+Implementing  and executing + Preliminary  testing,
+tests + Running  tests and recording  the results.
++ Comparing  expected  results.
+Evaluating  and reporting + Checking  whether  the completion  conditions  are met.
+completion  conditions + Creating  the first test report.
++ Checking  the deliverables  and storing  the test ware.
++ Evaluating  the test process.
++ Setting  the test purposes/goals  and researching  the targets.
+Planning  and controlling  tests + Developing  test strategies  and analyzing  the risks.
++ Establishing  strategies  and test completion  conditions.
+—— . + Planning tests and controlling test management.Estimating  tests and forming e € 8organizations + Reporting  and planning/designing  reporting.
++ Reporting  progress.Test deadline  activities
+C) Test design
+@ Test design overview
+The test design is used to check to what extent the target has been tested by identifying  and executing  test
+cases. How to proceed  with the test design depends  on the testing  context,  such as the composition  of the
+test organization,  the maturity  of the testing  and development  process,  time constraints,  and the number  of
+participants  in the test. The test basis is analyzed  to identify  the test conditions,  and the test cases and test
+data are designed  and specified  using the test design technique  based on the test conditions  identified  during
+the test analysis  process.
+@ Composition  of test cases
+A test case is composed  of a set of input values, pre-conditions  when executing,  execution  procedures,
+expected  results,  and conditions  after execution.  It is prepared  to check a specific  test condition.
+<Table 29> Components  of a test case
+Component Contents
+Test case ID A number  or an identifier  used to identify  a test case.
+Test case name A simple and clear description  of the test content.
+Precondition Information  on the preconditions,  such as the environment  required  to run a test, or test data.
+Test running  procedure A concrete  test running  procedure  composed  of up to 7 steps.
+Expected  result A basis for deciding  whether  the test has been performed  as intended.
+Result (pass/fail) The result of running  the test case.
+Traceability Information  on requirements  related to the test case and applied techniques.
+Importance The criteria for selecting  a test target  when time is limited.
+Remarks Description  related of the intent and purpose  of creating  test cases.
+104 TOPCIT  ESSENCE

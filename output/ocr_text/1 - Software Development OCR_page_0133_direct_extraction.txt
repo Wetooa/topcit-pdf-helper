@@ -1,0 +1,30 @@
+ESSENCE
+Scope Obligations
+Internal  useOpening  scope
+Opening  method
+Compatibility
+Modification
+[Figure  27] Obligations  of the open-source  software  license
+B) Comparison  of open-source  software  licenses
+Open-source  software  licenses  have common  characteristics  such as free use, distribution  without  restrictions,
+source code acquisition,  and source code modification.  However,  there are some differences  with each
+license regarding  the obligation  to disclose  secondary  works again, and the combination  of open source with
+proprietary  software.
+The GPL is the most stringent  license,  which specifies  the condition  that combining  GPL code with proprietary
+software  is not allowed. When a program is distributed  under the GPL, which combines  proprietary software
+code and the GPL code, the proprietary  software  code must also be opened.
+@ GPL (GNU General  Public License)  2.0
+GPL 2.0 is the license most frequently  adopted  for open-source  software.  It was created  and distributed  by the
+Free Software  Foundation  (FSF) and is very strict compared  to other open-source  software  licenses. The main
+matters  to be observed  are as follows.
++ When distributing  software, the distributor  should specify the copyright  notice, distribution  under the GPL,
+and the absence  of warranty  liability  for GPL software.
++ When modifying  software  or linking new software  (both static and dynamic  linking),  the source code must be
+opened  in accordance  with the GPL.
++ When distributing  its own patented  program,  a distributor  cannot receive royalties  from users who use the
+program  under the GPL.
+@ GPL (GNU General  Public License)  3.0
+The basic contents  of GPL 3.0 are similar to those of GPL 2.0, but it has been supplemented  with matters
+related to DRM (Digital Rights Management,  technology  and service to protect copyrights),  software  patent
+issues, and compatibility  issues. The main matters  to comply  with are as follows.
+132 TOPCIT  ESSENCE

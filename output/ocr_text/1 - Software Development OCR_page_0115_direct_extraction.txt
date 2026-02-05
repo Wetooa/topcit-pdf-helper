@@ -1,0 +1,50 @@
+ESSENCE
+B) Principles  and main contents  of requirements  specification
+The IEEE (Institute  of Electrical  and Electronics  Engineers)  explains  the content  and quality of the
+recommended  software  requirem ents specification  and provides  overview  samples  of various requirements.
+The specification  principle  can use the requirements  shown below as the criteria  for quality  checks.
+<Table 37> Requirements  specification  principles
+Principle Description
+Verifiability + The requirements  specification  should be verifiable
+Modifiability + The requirements  specification  should be modifiable.
+Clarity + The requirements  specification  should be presented  to each stakeholder.
+Accuracy + The requirements  specification  should be accurately  described.
+Traceability + The source and principle  of the requirements  specification  should be traceable.
+Consistency + There should be no conflicts  between  the requirements.
++ All important  details, such as functionality,  performance,  and constraints,  should beSe  ees documented.
+Interpretability + Requirements:  Should provide consistency  of interpretation.
+Understandability + The requirements  specification  should be easy for the stakeholders  to understand.
+The table below describes  the main contents  of the requirements  specification  defined as a standard  by the
+IEEE. It can be referred  to as the contents  and details  when creating  a requirements  specification.
+<Table 38> Requirements  specification
+Contents Description
+_ 1.  Overview
+4 .2 Related  teams/Persons
+concerned
+1.3 Development  scope* Overall  description  of the software
++ Purpose  of the software  requirements  specification
+* Intended  audience  of the software  requirements  specification
++ Relationship  with the software  purpose,  constraints,  characteristics,  profits,  business
+strategy,  and common  goals
+* (overall software  description)
+2. Overall  description
+2.1 Project  perspective
+2.2 Product  functions
+2.3 Characteristics  of users
+2.4 Software  operating
+environment
+2.5 Decision  and deployment
+2.8 User scenarioDescribes  the list of functions  only. The full details are described  in Chapter  4.
++ Describes  the users’ characteristics  (experience,  educational  level, disposition,  etc.)
++ Describes  user frequency  by user.
+Describes  the hardware  environment  to run software,  OS, software  environment,  etc
++ Hardware  constraints,  memory  constraints,  specific  technology  use, multilingual
+support,  security
++ Design conventions,  programming  conventions
+Assumptions  that affect this software
+(Describes  dependency  on outsourced  components,  components  of other projects)
+put/output  data by point of view
+Scenario  from the user's viewpoint  that can describe  this system
+_  3. Interface
+3.1 User interface
+114 TOPCIT  ESSENCE

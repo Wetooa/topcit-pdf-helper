@@ -1,0 +1,23 @@
+ESSENCE
++ Preview  for practical  business
+John Doe, who works for company  A, is a software  engineer  with four years of development  experience.
+Java is the programming  language  he generally  uses, but he was recently  given a task that required him
+to program  using C. Since the Java language  managed  memory  in a runtime  environment,  called the Java
+Virtual Machine  (JVM), it was not necessary  to pay much attention  to memory  during programming,  When
+developing  with the C language,  he had to leam the concept  of memory,  such as memory  allocation  and
+retum. Most importantly,  he had to learn the memory  address  system through  pointers.  He had to be
+familiar  with computer  structure  to be able to develop  software  in C effectively.  This chapter  describes  the
+computer  structure  in detail.
+01 Computer  Structure  and Architecture
+A) Basic computer  structure
+The basic function of a computer  is to run a program  code in the specified  sequence.  In other words, it reads,
+processes,  and stores the needed  data. [Figure 30] shows the main components  of a computer.
++ Central Processing  Unit (CPU): Also, commonly  known as a processor,  it plays a key role of the program  running  and
+data processing.
++ Memory:
+- Main memory:  Closely located to the CPU, it consists  of memory  semiconductor  chips. It can be accessed  at a
+high speed and can be used only as temporary  storage  because  it has no permanent  storage  capabilities.
+- Auxiliary  storage device: The secondary  storage device can be accessed  at a low speed because  it includes
+mechanical  devices.  It has a high storage  density,  and it is moderately  priced. Disks and magnetic  tapes are some
+examples.
+62 TOPCIT  ESSENCE

@@ -1,0 +1,28 @@
+Database )
+~ Either all participating  databases  should complete  the transaction,  or none of them should complete  it.
+~ Even though  a failure  occurs in any participating  database,  recovery  to the transaction  completion  state or
+cancellation  state is possible.
+@ 2-Phase  commit  protocol
+This is the transaction  completion  protocol  that is most widely used to maintain  the atomicity  of transactions  in a
+distributed  database.
+<Table 56> Execution  of the 2-phase  commit  protocol
+Phase 1 Phase  2
+Commit? Commit
+C —COTCOT-. Cc rd
+Yes
+Coordinator CoordinatorCommit
++ Step 1: When  a transaction  is started  by transaction  coordinator  C, coordinator  C sends a message  asking  whether
+the transaction  can be completed  to databases  A and B, and database  A and B reply  with the “ready” status.
++ Step 2: If all participating  databases  are “ready’, the coordinator  sends a “completion  (commit)’  signal. If one or more
+participating  databases  signals a “not ready (abort)’  signal, the coordinator  sends  a “cancellation  (abort)’  signal.
+03 Database  Backup
+A) Database  backup  overview
+@ Definition  of database  backup
++ The task of storing  all or a part of a database  in duplicate  in order to recover  the database  in the event of a failure.
++ In general,  the database  is backed  up every day, week, or month in units of incremental,  differential,  or full.
+@ Purposes  of backup
++ Prevent  data loss: Recovers  a database  using duplicated  data in the event of a failure.
++ Secure  business  continuity:  Minimizes  business  disruption  caused by IT failure while processing  business.
+B) Database  backup  requirements  and main tasks
+@ Database  backup requirements
+M2 Database 133

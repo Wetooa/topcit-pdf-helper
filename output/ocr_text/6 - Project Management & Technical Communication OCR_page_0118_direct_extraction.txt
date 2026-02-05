@@ -1,0 +1,34 @@
+Project Management  and Technical  Communication  )
+<Table 52> Three elements  of Project  Quality  Management
+Classification Concept Case
+Activities  to identify  activities  necessary  to achieve  the
+Quality Plan quality targets  given in the project  and to plan decisions Quality  Planning
+on how to perform  them
+Activities  to review  from the point of view of a third party
+whether  the user requirements  and the results performed  | Design review meeting  for
+by the project  team are consistent  (Review,  Inspection, wireframe
+Walk-through)
+Activities  to find and resolve  the cause when the project
+Quality  Control team's results do not meet the quality  targets  or conform  | Debugging  software  errors
+to the standardsQuality  Assurance
+O02 Quality  Management  Process
+Quality  Plan Quality  Assurance Quality  Control
++ Management Process + Product  Delivery
+Planning
+[Figure  40] Quality  Management  Process
+The quality management  process  can be largely divided into three stages: quality planning,  quality assurance,
+and quality  control. In other words, the quality planning  stage establishes  an overall process  and plan for quality
+management.  Quality  assurance  is the process  of managing  quality in the process  throughout  the business  or
+manufacturing  process.  Quality  control is the stage of checking  the quality before the final product  or service
+is delivered  to the customer.  Let's look at more details one by one below.
+A) Quality  plan
+@ Quality  Planning
+Quality planning  is the task of documenting  a plan that identifies  the activities  the project  team must perform
+to achieve a given quality target, and determines  how to perform it. The quality of the project should be
+planned  in advance  rather than inspected  afterwards, so a quality plan should be prepared  early in the project.
+@ Cost of Quality
+Cost of Quality is a concept  of calculating  the cost of all activities  of the project team to achieve a
+predetermined  quality target. The purpose  of quality cost management  is to reduce Failure cost of a project,
+and accordingly,  the cost (Prevention  cost) for activities  to prevent  defects and the cost (Appraisal  cost) for
+activities  to check/verify  the quality  of the product  relatively  get higher.
+M6 Project  Management  and Technical  Communication  117

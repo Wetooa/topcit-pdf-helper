@@ -1,0 +1,34 @@
+ESSENCE
+development.  The newly released  Java 9 includes  about 90 new features.
++ Key features  of Java 9
+- Increased  modularization  enables  optimization  in small devices,  and the scalability  and performance  of Java
+have been improved.
+- The Ahead of Time (AOT) compilation  function,  which compiles  the code before execution  in a virtual
+system,  reduces  the startup  time of the application  program.
+- REPL (Real Eval Print Loop) is supported,  which enables  the reception  of feedback  on the program  before
+compilation.
+@ Kotlin
+Kotlin is a functional  programming  language  developed  by JetBrain,  the creator  of Android Studio. It quickly
+gained in popularity  after Google adopted  it as the official programming  language  for Android in 2017. Kotlin
+provides  an optimal environment  for application  development  based on Android,  as it is simple yet offers
+excellent  performance.
++ Key features  of Kotlin
+- Compatible  with the existing  Android  APIs, and an app can be developed  using concise  syntax.
+- Very similar  to Java, thus allowing  Java developers  to use Kotlin quickly  and easily.
+@ Swift
+Swift was developed  by Apple to support  application  development  for its products  such as iOS, macOS,
+watchOS,  and tvOS. It was designed  to support  easier  and faster development  on its platform.
++ Key features  of Swift
+- Easy to develop  an app owing to the simple coding process,  while providing  excellent  performance.
+- Interactive  and easy to understand.
+O2 Technology  Trends of the Development  Framework  and Software
+Architecture
+A) Technology  trends of software  development  tools
+@ Angular4
+Angular4  was developed  by Google,  and uses the JavaScript  framework  for maintenance.  Angular4  is used for
+single-page  application  programs  and responds  to user requests  quickly by extending  the HTML DOM.
+Angular  is a single page application  (SPA) framework,  which means that a view page can be retrieved  and
+used dynamically  without  having  to change  the address  of the page when executing  the web page.
++ Key features  of Angular4
+- Created  using TypeScript  2.1, which is helpful when making  a small application.
+138 TOPCIT  ESSENCE

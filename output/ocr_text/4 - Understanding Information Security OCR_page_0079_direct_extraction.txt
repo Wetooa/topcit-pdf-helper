@@ -1,0 +1,44 @@
+Information  security )
+-_
+i y@ Inserting  the manipulated@ operating  system command— / into the request
+usr_name=tom:/bin/Is a
+Attacker Web server
+( [% MN
+@ Executing  the operating  system
+Attack pattern command  requested  by attacker
+[Figure 37] OS command  injection  security  vulnerability
+* Coding  technique:
+An application  program  should be configured  in a way that system commands  are not transferred  to the
+inside of the server  through  the web interface.  The value received  from the outside  should not be used as an
+internal system command,  without  verification.  If a command  is generated  or selected  according  to external
+input, the values required  for command  generation  should be specified  in advance  and selected,  according  to
+the external  input.
+<Table  21> Code example
+public static void main(String  args[]) throws IOException  {
+if (args.length  == 0) {
+System.errprintin(‘Please  input the name of the program  to execute.’);
+return;
+}
+// All programs  passed  as a parameter  can be executed,  because  there is no limit in the program  to be
+executed  by the program  concerned.
+String cmd = args[0]:
+Process  ps = null;
+InputStream  is = null;
+InputStreamReader  isr = null:
+BufferedReader  br = null:
+try{
+Unsafe  code | PS= Runtime.getRuntime().exec(cmd).
+is = ps.getinputStream();
+isr = new InputStreamReader(is);
+br = new BufferedReader(isr);
+String line = null:
+while (line = brreadLine())  != null) {
+System.outprintin(line);
+}
+}
+.. (Appropriate  exception  handling  and resource  release  handling) + + +
+}
+Programs  are executed  using the Runtime.getRuntime().exec()  command,  and the argument  value received
+from the outside  is used to create the command.  However,  an attacker  can execute  any programs,  because
+the program  concerned  does not restrict  the program  that can be executed.
+M4 Understanding  Information  Security  79

@@ -1,0 +1,229 @@
+LEARNING GUIDE: Pages 121-125
+Generated: 2025-12-07 00:50:14
+PDF: 6 - Project Management & Technical Communication OCR
+
+================================================================================
+LEARNING GUIDE
+================================================================================
+
+Here is a simplified, easy-to-read learning guide based on the provided text, focusing on essential information.
+
+---
+
+## Software Quality Assurance & Control: A Study Guide
+
+This guide covers key concepts in software quality assurance techniques, project activities, quality control, and relevant quality standards.
+
+---
+
+### **1. Types of Quality Assurance (QA) Techniques**
+
+QA techniques ensure software quality and can be classified by *timing* and *purpose*.
+
+#### **A. Classification by Timing**
+
+*   **Prevention:** Inspection performed *before* errors occur in intermediate deliverables. Aims to stop problems early.
+*   **Inspection:** Inspection performed *before* delivery to the customer. Aims to find errors in final deliverables.
+
+#### **B. Classification by Purpose (Specific Techniques)**
+
+| Technique           | Purpose                                                                 | Participants         | Leadership    | Data Volume      | Deliverable                      |
+| :------------------ | :---------------------------------------------------------------------- | :------------------- | :------------ | :--------------- | :------------------------------- |
+| **Technical Review** | Assess conformity to specifications/plans; ensure integrity of changes. | Developer participant | Senior engineer | Big (depends on purpose) | Technology Review                |
+| **Software Inspection** | Find defects and verify solutions.                                      | Developer participant | Moderator     | Relatively small | Inspection Report & Defects List |
+| **Walkthrough**     | Find defects; verify alternatives.                                      | Developer participant | Developer     | Relatively small | Review Report                    |
+
+---
+
+### **2. Project Quality Assurance Activities**
+
+These are common activities performed in a project for software quality assurance.
+
+*   **Configuration Management:**
+    *   Identifies, controls, and audits configuration items (e.g., program sources, deliverables).
+    *   Starts by setting a baseline for management.
+*   **Document Management:**
+    *   Establishes procedures for document creation, storage, and management.
+    *   Distinguishes client deliverables from internal project work products.
+*   **Quality Assurance Plan:**
+    *   Establishes, executes, and records the results of the QA plan.
+*   **Quality Record:**
+    *   Provides test results (unit, integrated, system tests) to customers.
+*   **Joint Review:**
+    *   Review project progress against milestones.
+    *   Conducted via weekly/monthly reports and occasional reports.
+*   **Verification and Validation (V&V):**
+    *   Activities performed at the end of each project stage (analysis, design, development, testing).
+    *   Done regularly and non-regularly (for major events).
+*   **Corrective Action:**
+    *   Solutions and actions taken as feedback on QA results.
+    *   Supplements activities for errors and improvements.
+*   **Risk Management:**
+    *   Activities to resolve realistic risks impacting project activities.
+*   **Issue Management:**
+    *   Analyzes issues like changes in customer requirements, alternative development, and responses.
+
+---
+
+### **3. Quality Control (QC)**
+
+#### **A. Concept of Quality Control**
+
+*   **Definition:** Activities and procedures that record and monitor quality activity results to achieve quality targets.
+*   **Purpose:** Verify project results meet quality standards, measure variances (performance, schedule, cost), analyze nonconformity, and suggest corrective actions.
+
+#### **B. Quality Control Tools and Techniques (The 7 Basic Quality Tools)**
+
+These tools use statistical information to identify and solve quality problems, often within the PDCA (Plan-Do-Check-Action) cycle.
+
+1.  **Pareto Chart:**
+    *   **Purpose:** Prioritize problems by sorting defects/causes by frequency of occurrence.
+    *   **Principle:** Relatively few causes (the "vital few") generally lead to most problems (the 80/20 rule).
+    *   **Visual:** Histogram showing frequency, with a cumulative percentage line.
+2.  **Cause and Effect Diagram (Fishbone Diagram / Ishikawa Diagram):**
+    *   **Purpose:** Represent how causes and effects relate. Identifies possible causes for a specific effect (problem).
+    *   **Use:** Commonly used for preventing defects in product design and quality.
+    *   **Structure:** Looks like a fishbone, with the "effect" at the head and main "causes" branching off.
+3.  **Control Chart:**
+    *   **Purpose:** Determine if a process maintains a certain level of quality (is "in control").
+    *   **Indicator:** A process is judged unstable if the number of defects exceeds control limits (upper/lower control limits, target value).
+4.  **Scatter Diagram:**
+    *   **Purpose:** Identify the impact and relationship between two variables.
+    *   **Use:** Visually expresses the cause (factor) and effect (characteristic) relationship between variables.
+5.  **Other Basic Tools:** Flowchart, Check Sheet, Histogram (mentioned but not detailed in text).
+
+---
+
+### **4. Quality Evaluation Perspective & Standards**
+
+#### **A. Quality Evaluation Perspective**
+
+*   **Product Quality:**
+    *   **Focus:** Evaluates the functionality and reliability of the final product.
+    *   **Standards:** ISO/IEC 9126 (now 25000-2) and 6 Sigma are common.
+*   **Process Quality:**
+    *   **Focus:** Evaluates whether the development process is well-defined and properly operated (belief: good products come from good processes).
+    *   **Standards:** ISO 9000, ISO/IEC 12207, and CMMI are widely used.
+
+#### **B. Quality Standards**
+
+1.  **ISO/IEC 9126 (Currently ISO/IEC 25000-2): Software Product Quality**
+    *   **Purpose:** Defines software quality characteristics and metrics from a *user's point of view*.
+    *   **Structure:**
+        *   **ISO 9126-1:** Core model with 6 quality characteristics and 21 sub-characteristics. Helps stakeholders define and evaluate software product quality.
+        *   **ISO 9126-2 (External metrics):** Measures properties appearing during software use (final product from user/manager view).
+        *   **ISO 9126-3 (Internal metrics):** Measures internal software properties of interim products at each development stage.
+        *   **ISO 9126-4 (Quality in use metrics):** Measures if goals for efficiency, productivity, safety, and satisfaction are met when using the finished software.
+
+2.  **ISO 12207: Software Life Cycle Processes**
+    *   **Purpose:** A standard for *software processes* providing guidelines across the Software Life Cycle (SDLC) for systematic acquisition, supply, development, operation, and maintenance.
+    *   **Focus:** Defines a high-level framework for communication among software practitioners.
+    *   **Key Life Cycle Processes:**
+        *   **Acquisition:** Activities for organizations acquiring systems/software.
+        *   **Supply:** Activities for organizations supplying systems/software.
+        *   **Development:** Activities for organizations defining and building software products.
+        *   **Operation:** Activities for organizations providing information system operation services in an actual environment.
+        *   **Maintenance:** Activities for organizations providing maintenance services for software products.
+    *   **Framework:** Consists of three main process categories: Primary, Supporting, and Organizational Life Cycle Processes, with 20 subprocesses in total.
+
+================================================================================
+ORIGINAL TEXT (First 5000 chars)
+================================================================================
+
+--- Page 121 ---
+ESSENCE
+@ Types of Quality  Assurance  Technique
+Quality assurance  techniques  can be classified  into Prevention"  and Inspection''  depending  on the timing of
+quality assurance  activities,  and can be divided into Review, Inspection,  and Walkthrough  as follows depending
+on the purpose  of quality  assurance.
+<Table 55> Quality  Assurance  Technique
+Classification Technical  Review Software  Inspection Walkthrough
+Assess  conformity  to
+Purpose specifications  and plans and Find defects and verify solutions Find defects:  verity altematves,
+ensure the integrity  of changes 8
+Pe Formally  documentedParticipant Developer participant Developer
+Leadership Senior engineer Moderator Developer
+Data Volume Big depending  on purpose Relatively  small Relatively  small
+Deliverable Technology  Review Inspection  Report & Defects  List Review Report
+@ Case of Project  Quality  Assurance  Activity
+In a project, the following  activities  for software  quality  assurance  are performed.
+<Table 56> Case of Project  Quality  Assurance  Activity
+Project  Quality
+Assurance  Activity Detail
+Management  activities  for configuration  items such as configuration  item identification,  control,  audit,
+and
+Configuration — :
+management & Project site sketch
+It mainly performs  configuration  management  for program  sources  and deliverables  and starts with
+setting  a baseline  for management.
+Document  management  procedure  establishment,  document  creation, document  storage,  document
+Document . ” :
+management & Project site sketch
+It distinguishes  deliverables  officially  offered  to the client from work products  required  for project
+execution  after the project  is completed.
+Establishing,  executing,  and recording  the results of quality assurance  plan
+= Project  site sketch
+Test results such as unit tests for unit program  modules,  integrated  tests for systems,  and system
+tests must be provided  to customers.Quality  record
+Joint review of project  progress  according  to milestones
+Joint revie .
+inv review = Project site sketch
+Performed  through  weekly  work report, monthly  work report, and occasional  report
+10 Prevention:  Inspection  performed  to prevent  errors in intermediate  deliverables
+11 Inspection:  Inspection  for errors before delivery  of project  deliverables  to the customer
+120 TOPCIT  ESSENCE
+
+
+--- Page 122 ---
+Project Management  and Technical  Communication  )
+Project  Quality
+Assurance  Activity
+Verification  andDetail
+Veriation and validation  activities  by project  stage
+= Project  site sketch
+validation Performed  at the end of each of the analysis, design, development,  and testing stage of the project
+on the regular  basis, and performed  when major events  occur on a non-regular  basis
+Establishing  a solution  and taking action
+Corrective  action | © Project  site sketch
+As a feedback  on quality  assurance  results,  supplementary  activities  performed  on errors and
+improvements  in quality  assurance  results
+Risk management
+Issue managementAnalysis  of issues such as changes  in customer  requirements,  alternative  development  and response
+=> Project  site sketch
+Conduct  activities  to resolve realistic risks or restrictions  on the performance  of project  activities
+C) Quality  control
+@® Concept  of Qua’ity Control
+Quality control refers to activities  and procedures  that record and monitor  the results of quality activities  to
+achieve  quality  targets.
+In order to verify that the project result satisfies  the quality standard  requirements,  performance,  schedule
+and cost variance
+suggested.are measured,  and quality nonconformity  factors are analyzed,  and corrective  actions are
+@ Quality  Control  Tools and Techniques
+Quality  control validation  (inspection)  uses the concept  of statistical  information  extraction  such as Pareto
+Chart, Cause and Effect Diagram,  Control  Chart, and Scatter  Diagram  as shown in the table below. Added with
+Flowchart,  Check sheet, and Histogram,  they comprise  of the 7 Basic Quality  Tools.
++ The 7 Basic Quality  Tools: The seven basic quality tools, also known as 7QC tools, are used to solve quality-
+related problems within the PDCA (Plan-Do-Check-Action)  cycle.
+M6 Project  Management  and Technical  Communication  121
+
+
+--- Page 123 ---
+ESSENCE
+<Table 57> Quality  Control  Technique
+Classification Explanation
++ Histogram  sorted by frequency  of occurrence  to prioritize  a problem
++ It is based on the principle  that relatively  frequent  causes  generally  lead to most of the problems  or
+defects.
++ It displays  the cause, frequency,  and share of the problemreo  ee . Cumulative
+3074 1 se Frequency
+25}! ' 29 (29+1)
+' ' 7 (2742)
+2 ' \ 22 (22+5)Pareto Chart 1 (12#10)
+5) 12 I The percentage  of
+iol! 1 Item 1 (12 cases)
+1 1 is 40% of the total
+s|t 1 (=12/30)
+1 1
+1 item1 tem 2 Item 3 Item 4 Item 5
+1 1as 0 @ 1 10 5 2 1ss  4
++ Diagram  designed  to represent  how the cause and effect relate to and af...

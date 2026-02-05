@@ -1,0 +1,35 @@
+ESSENCE
+Open Open
+System Relay open system System
+Application  ——————> <>
+Presentation —> <—_______}______________y»
+Session  -——> <<] TY?
+Transport-—4!» ——_  EE
+° v
+Network» < ;
+Data Link —_»> < ,
+Physical  -——  > < >
+t___  physical media for ost TISO2930-94/d11
+[Figure 57] OSI 7-layer  reference  model
+<Table 35> shows the protocols  and functions  corresponding  to each layer of the OSI 7-layer  reference  model.
+<Table 35> Protocols  and functions  of each layer of tlhe OSI 7-layer  reference  model
+Layer Protocol Function
+Application HTTP, SMTP, SNMP, FTP, Provides  services,  such as user interface,  e-mail, and database
+layer Telnet, SSH, DNS, etc. management,  to users.
+ae JPEG, MPEG, XDR, etc. Converts  transmitted  data using a common presentation  method.
+Session  layer TLS, RPC, NetBIOS,  etc.Manages  communication  sessions.  Sessions  between  communication
+devices  are established,  maintained,  and synchronized.
+Transport  layer TCP, UDP, SCTP etc.Perform  data transmission  and error control between  the source and
+destination  (end-to-end)  process.
+Network  layerIP. IPX, ICMP, X. 25, ARP, OSPF,
+etc.Responsible  for transferring  packets,  from the source,  to the destination
+host, in multiple  network  environments.
+Data link layerEthernet,  Token Ring, wireless
+LAN, etc.Transfers  frames  from one device  to another,  without  errors
+Physical  layerRadio wave, coaxial cable, UTP
+optical fiber, etc.Converts  bits into signals  and transmits  them using physical  media.
+The structure of the TCP/IP used for the ARPANET  reference model that appeared  earlier than the OSI 7-layer
+reference  model and is composed  of three layers, as shown in [Figure 56].
++ Application  layer: Provides  application  services,  including  web (HTTP), DNS, Telnet, FTP, e-mail sending/
+receiving  (SMTP/POP3/IMAP4),  etc. This layer runs using the services  provided  by the lower layer and the
+114 TOPCIT  ESSENCE

@@ -1,0 +1,25 @@
+Overview  of System Architecture )
+0? IPv4 Address  Designation  System  and Subnetting
+A) IPv4 expression
+10000000 00001011 00000011 00011111
+128.11.3.31
++ Binary  expression:  01110101  10010101  00011101  00000010
++ Dotted  decimal  notation
+B) IPv4 address  designation  system
+Class A Network | Host | Host | Host
+1.0.0.0 ~ 126.255.255.255
+Class B Network | Network | Host | Host
+128.0.0.0  ~ 191.255.255.255
+Class C Network | Network | Network | Host
+192.0.0.0  ~ 223.255.255.255
+Class D Multicast
+224.0.0.0  ~ 239.255.255.255
+Class E R&D
+240.0.0.0  ~ 255.255.255.255
+[Figure 125] IPv4 Address  Designation  System
+The IPv4 addressing  system consists  of a network  address,  assigned  by an Internet  address  resource  management
+organization,  and a host address,  assigned  by a network  administrator  to identify  individual  hosts on the network.
+As shown in <Table 51>, it is divided into Classes  A, B, C, D, and E, depending  on the network  size or the number  of
+hosts. Classes  A, B, and C are for network  configuration  assigned  to general  users, Class  D is for multicast,  and Class
+E is an address  reserved  for future use.
+M3 Overview  of System  Architecture  171

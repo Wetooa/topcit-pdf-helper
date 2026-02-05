@@ -1,0 +1,27 @@
+ESSENCE
+© lf all transactions  comply with the 2PL protocol,  the serialization  of all transactions  is guaranteed,  but the reverse
+does not hold.
+@ The 2PL protocol  is most widely used as a protocol  that can guarantee  serialization.
+03 Transaction  Isolation  Level
+The following  are the four transaction  isolation  levels defined  in the ANSI/ISO  SQL standard  (SQL92).
+A) Read uncommitted:  Allows other transactions  to read the data that are still being processed  by the
+transaction  (not yet completed).
+B) Read committed:  Allows other transactions  to read the data that are confirmed  by the completed
+transaction  only.
+C) Repeatable  read: When a query is executed  more than twice in a transaction,  the record in the first
+query does not disappear  or the value is not changed.
+D) Serializable  read: When a query is executed  more than twice in a transaction,  the record in the first
+query does not disappear  or the value is not changed,  and no new record appears  either.
+<Table 50> Concurrency  according  to the transaction  isolation  level
+Isolation  Level Dirty Read Non-repeatable  Read Phantom  Read
+Leve | 0 Read Uncommited Occurs: Occurs Occurs.
+Level 1 Read Committed x Occurs Occurs
+Level 2 Repeatable  Read Xx X Occurs.
+Level 3 Serializable x Xx x
+04 Deadlock
+A) Definition  of deadlock
+@ Multiple processes  or transactions  are waiting for the allocation  of a specific resource infinitely  in a multi-processing
+environment  or a multi-transaction  database  system.
+@ Transactions  in a deadlock  can never end execution  and cannot start another  task because  system resources  are
+locked.  Therefore,  when a deadlock  occurs,  the system must cancel one of the two transactions.
+126 TOPCIT  ESSENCE

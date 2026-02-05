@@ -1,0 +1,26 @@
+Overview  of System Architecture )
+{Table 36) IEEE 802,15 Protocol  Standards
+WPAN Bluetooth UWB ZigBee
+Standard IEEE 802.15.1 IEEE 802.15.3 IEEE 802.15.4
+Frequency 2.4GHz 3.1~10.6GHz 868MHz
+frente Different  according  to the version 480Mbps 20/40/250Kbps
+Transmissionats eWeD 10~100m 10m 10~75m
+Utilization Voice and file transfer Multimedia Sensor  communication
+Embedded  software  developers  should be able to select the chipset and the communication  method  to control
+the chipset, and to check which development  tools are available,  and have a broad understanding  of the chipset  by
+reviewing  the specification  of ZigBee  and Bluetooth.
+In general,  the software  developer  should check the following  in the chipset  specification:
++ Block diagram:  Understanding  of the overall configuration  and flow of the chipset
+* Communication  method:  Chipset  control  methods,  such as SPI, I2C, etc.
++ Memory:  RAM, ROM, and memory  size available  to developers,  address  methods,  etc.
++ GPIO: Port type and setting  method  for external  signal input and output  control
++ Development  tool: Tools necessary  to develop  with the chipset
+According  to the application  field, the hardware  developer  reviews  the initial chipset  to develop  an embedded  product
+and reviews  the entire circuit configuration  through  the chipset.  The hardware  developer  reviews  the chipset  in terms
+of electrical  characteristics,  reliability,  complexity  in circuit configuration,  and chipset package  according  to device
+design, and cost. The software  developer  reviews  if the chipset meets the standard,  whether  the control method  is
+convenient,  whether  the existing  control method  can be reused,  whether  the memory  capacity  is adequate,  whether
+the number  of ports for I/O control required  by the target product is sufficient,  whether  the chipset should be
+separated,  and whether  it is preferable  to have multiple  functions  in a chipset.  The software  developer  should select
+the optimal  chipset  after sufficient  consultation  with the hardware  developer.
+M3 Overview  of System  Architecture  155

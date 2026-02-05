@@ -1,0 +1,38 @@
+Software  Development )
++ Diagram  of the Observer  pattern  class
+Subject
+Observer. |---|  + observerCollection
++registerObserver(observer)
+tnotifyO +unregisterObserver(observer)
++notifyObservers(  )
+notifyObservers(  ) IN
+for observer  in observerCollection
+call observer.notify()
+Concrete  ObserverA Concrete  ObserverB
++notify() +notify()
+- Example  of Java source code
+/* File name: EventSource.  java */
+package  obs;
+import  java.util,  Observable;  // This is the subject  that sends asignal  to the observer.
+import  java.io. BufferedReader;
+import  java.io, |OException;
+import  java.io, InputStreamReader;
+public class Event Source  extends  Observable  implements  Runnable
+{
+public void run()
+{
+try
+{
+final InputStreamReader  isr = new InputStreamReader(  System.  in );
+final BufferedReader  br = new BufferedReader  ( isr );
+while (true )
+{
+final String response  = br.readLine(  );
+setChanged(  );
+notifyObservers(  response  );
+}
+}
+catch (IOException  e)
+e.printStackTrace(  );
+}
+M1 Software  development  81

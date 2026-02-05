@@ -1,0 +1,35 @@
+ESSENCE
+The owner of the object determines  access permission.  This policy is mainly used for the system access
+control of Unix or Linux systems.
+Subject Object
+General  manager  Lee Personnel  information
+Assistant  manager  Kim Business  information
+Employee  Park In-house  notice
+[Figure  24] Discretionary  access  control
+@® Role-Based  Access  Control  (RBAC)
+The administrator  defines roles in advance  and maps the object that can access each role. Then, a role is given
+to the subject  for access control.  This policy can be used by organizations  or systems  with frequent  changes.
+Management  efficiency  can be improved,  but security  can be degraded.
+Subject Roles Object
+General  manager  Lee --———————>  Person  in charge  of HR Personnel  information
+Assistant  manager  Kim _—«  Person in charge  of Business  information
+sales
+Employee  Park In-house  notice
+[Figure  25] Role-based  access  control
+D) Access  control mechanisms
+@ Access  control matrix
+Subjects  and objects are represented  in rows and columns,  and each entry in the matrix represents  access
+rights. All relationships  between  the subjects  and the objects are managed  in a matrix. Since it is inefficient
+to search a matrix to access a specific  resource,  it is divided into a capability  list and an access control list for
+easy management.
+Object
+Object  1 Object  2 Object  3 Object  4
+Read, write Read Read, write No access
+Read, write Read, write Read, write Read, write
+Read No access No access No access
+Read, write Read, write No access No access
+[Figure  26] Access  control  matrix
+@ ACL(Access  Control  List)
+The access rights of the subject  are managed  based on the object. The list corresponds  to the column of the
+access control matrix.
+46 TOPCIT  ESSENCE

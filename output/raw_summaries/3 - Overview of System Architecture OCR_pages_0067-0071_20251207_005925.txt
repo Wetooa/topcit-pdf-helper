@@ -1,0 +1,273 @@
+LEARNING GUIDE: Pages 67-71
+Generated: 2025-12-07 00:59:25
+PDF: 3 - Overview of System Architecture OCR
+
+================================================================================
+LEARNING GUIDE
+================================================================================
+
+Here is a simplified, easy-to-read learning guide extracted from the provided text:
+
+---
+
+## Learning Guide: System Architecture Overview
+
+### 1. Instruction Cycle
+
+The **Instruction Cycle** describes the basic steps a CPU performs to execute an instruction. It involves different CPU components at each stage.
+
+**Phases of the Instruction Cycle:**
+
+*   **Fetch Cycle:**
+    *   **Operation:** Fetches an instruction from the memory location pointed to by the Program Counter (PC).
+    *   **CPU Components:** PC (Program Counter), MAR (Memory Address Register), MBR (Memory Buffer Register), IR (Instruction Register), CPU internal bus.
+*   **Execution Cycle:**
+    *   **Operation:** Decodes the fetched instruction and performs the required operation.
+    *   **CPU Components:** AC (Accumulator), ALU (Arithmetic Logic Unit), Control Unit.
+*   **Interruption Cycle:**
+    *   **Operation:** Checks for interrupt requests, saves the current PC data onto the stack, and loads the Interrupt Service Routine's (ISR) starting address into the PC.
+    *   **CPU Components:** MBR, PC, MAR, SP (Stack Pointer).
+*   **Indirect Cycle:**
+    *   **Operation:** Reads the actual data address from memory *before* the execution cycle begins (for instructions with indirect addressing).
+    *   **CPU Components:** MAR, IR, MBR, CPU internal bus.
+
+### 2. Instruction Set Structure: CISC vs. RISC
+
+An **Instruction Set Architecture (ISA)** defines the machine language instructions a microprocessor can recognize, understand, and execute. It includes data types, instructions, registers, addressing modes, etc.
+
+The two main types of ISAs are CISC and RISC.
+
+*   **CISC (Complex Instruction Set Computer):**
+    *   Embeds many complex instructions into hardware.
+    *   Can process complex operations as a single instruction.
+*   **RISC (Reduced Instruction Set Computer):**
+    *   Embeds a few simple instructions into hardware.
+    *   Processes complex operations as a set of simple instructions.
+
+**Comparison of CISC and RISC:**
+
+| Feature                | CISC (Complex Instruction Set Computer)                               | RISC (Reduced Instruction Set Computer)                               |
+| :--------------------- | :-------------------------------------------------------------------- | :-------------------------------------------------------------------- |
+| **Instruction Length** | Variable length. Stores only needed info, reduces wasted code.        | Fixed to 32 bits. Easier to apply pipelining.                         |
+| **Control System**     | Micro-program type (uses microcode to interpret complex instructions) | Hard-wired type (control logic implemented directly in hardware)      |
+| **Compiler Structure** | Simple                                                                | Complex                                                               |
+| **Number of Registers**| Few                                                                   | Many                                                                  |
+| **Examples**           | Intel series (x86)                                                    | ARM, MIPS                                                             |
+
+### 3. Memory
+
+#### A. Memory Unit's Hierarchical Structure
+
+Memory units are organized in a hierarchy based on speed, cost, and capacity. Levels closer to the CPU are faster, more expensive, and smaller.
+
+**Hierarchy (from fastest/most expensive to slowest/cheapest):**
+
+1.  **Registers:** Fastest, highest price/bit, smallest capacity, shortest access time, highest CPU access frequency.
+2.  **Internal Memory (Cache):** Fast, high price/bit, small capacity, short access time, high CPU access frequency.
+3.  **Main Memory (RAM):** Moderate speed/price/capacity.
+4.  **External/Auxiliary Memory (e.g., HDD, SSD):** Slowest, lowest price/bit, largest capacity.
+
+#### B. Factors for Memory Performance Evaluation
+
+Key factors to consider when evaluating memory units:
+
+*   **Capacity:** How much data it can store.
+*   **Access Time:** Time taken to retrieve data.
+*   **Cycle Time:** Minimum time between two successive memory accesses.
+*   **Bandwidth:** Rate at which data can be read from or written to memory.
+*   **Data Transportation:** Efficiency of moving data.
+*   **Cost:** Price per bit or per unit of storage.
+
+#### C. Types and Characteristics of Memory Units
+
+Memory units can be classified based on various criteria:
+
+1.  **By Usage:**
+    *   **Main Memory:** Temporarily stores programs/data for CPU processing (e.g., RAM, ROM).
+    *   **Auxiliary Memory:** Stores data semi-permanently, compensating for main memory's limited capacity (e.g., Magnetic disk, optical disk).
+2.  **By Physical Storing Method:**
+    *   **Magnetic:** Stores binary data using magnetic flux direction (e.g., Magnetic tape, Hard Disk Drive (HDD)).
+    *   **Optical:** Records data on a metallic disk surface using a laser beam (e.g., CD, DVD, Blu-Ray Disk (BDA)).
+    *   **Semiconductor:** Stores data using integrated circuit (IC) technology (e.g., RAM, ROM, Flash memory).
+3.  **By Data Maintainability (when power is off):**
+    *   **Volatile Memory:** Loses all data when power is off (e.g., RAM-based SSD).
+    *   **Non-volatile Memory:** Preserves stored data even when power is off (e.g., ROM, magnetic core, auxiliary memory).
+4.  **By Access Method:**
+    *   **Sequential Access:** Accesses data sequentially from the beginning (e.g., Magnetic tape).
+    *   **Direct Access:** Directly accesses the required location in memory (e.g., Disk, Flash memory).
+5.  **By Preservation of Data (after reading):**
+    *   **Destructive Read:** Stored data is destroyed after reading (e.g., Magnetic core).
+    *   **Non-destructive Read:** Stored data is retained after reading (most modern memory devices).
+
+#### D. Addressing Modes
+
+An **address** is a specific location in main memory where data is stored. Addressing modes are methods to specify the location of an operand in an instruction, allowing for efficient use of memory and limited instruction bits.
+
+**Types of Addressing Modes:**
+
+*   Direct Addressing Mode
+*   Indirect Addressing Mode
+*   Implied Addressing Mode
+*   Immediate Addressing Mode
+*   Displacement Addressing Mode:
+    *   Relative Addressing Mode
+    *   Indexed Addressing Mode
+    *   Base-Register Addressing Mode
+
+#### E. Locality
+
+**Locality** is the tendency for programs to access specific areas of memory intensively at a given time, rather than uniformly accessing all information.
+
+*   **Temporal Locality:** Recently accessed programs or data are likely to be accessed again in the near future.
+*   **Spatial Locality:** Data stored adjacent to a recently accessed memory location is likely to be accessed continuously.
+*   **Sequential Locality:** Instructions are typically fetched and executed in the order they are stored, unless a branch occurs.
+
+### 4. I/O Device
+
+#### A. Concept of I/O Device
+
+An **I/O (Input/Output) Device** is essential for:
+*   **Input operations:** Storing data to be processed by the CPU into memory.
+*   **Output operations:** Transferring processing results from main memory to an output medium.
+
+#### B. I/O Controller Structure and Addressing Methods
+
+An **I/O Controller** is a dedicated circuit that manages communication between the CPU and I/O devices.
+
+**Roles of an I/O Controller:**
+
+*   I/O device control and timing coordination.
+*   Communication with the CPU.
+*   Communication with the I/O device itself.
+*   Data buffering (temporary storage of data).
+*   Error detection.
+
+**I/O Device Addressing Methods:**
+
+Each I/O device requires at least two addresses: one for its status/control register and one for its data register. How these addresses are allocated defines the addressing method.
+
+1.  **Memory Mapped I/O:**
+    *   **Method:** A portion of the CPU's main memory address space is allocated to the I/O controller's registers.
+    *   **Advantage:** Easier programming (CPU uses standard memory instructions).
+    *   **Disadvantage:** Reduces the total available address space for actual memory.
+2.  **I/O Mapped I/O (Port-Mapped I/O):**
+    *   **Method:** The I/O device address space is entirely separate from the memory address space.
+    *   **Advantage:** Does not reduce the available memory address space.
+    *   **Disadvantage:** Requires special I/O instructions for the CPU, making programming more complex.
+
+#### C. DMA (Direct Memory Access)
+
+**Concept of DMA:**
+
+**Direct Memory Access (DMA)** is a method that allows I/O devices to directly access the system's main memory *without* involving the CPU for each data transfer.
+
+*   **How it Works:** A **DMA controller** manages the bus. The I/O device and memory transfer information directly, freeing up the CPU to perform other tasks. This significantly improves performance for large data transfers.
+
+================================================================================
+ORIGINAL TEXT (First 5000 chars)
+================================================================================
+
+--- Page 67 ---
+ESSENCE
+Memory
+Withdrawal
+Processor Execution
+[Figure 34] Instruction  Cycle Conceptual  DiagramInterruptWithdrawal
+<Table 10> shows  the entire instruction  cycle. The CPU components  needed in each cycle are different.
+<Table 10) Relationship  between  Instruction  Cycle Types and CPU Components
+Type Detailed  Operation Related  CPU Component
+Fetch cycle+ The cycle fetches  an instruction  from the memory  unit location
+pointed  to by the PC.- Register  (PC, MAR, MBR, and IR)
+~ CPU internal  bus
+Execution  cycle+ The CPU decodes  the fetched  instruction  code and performs  the
+needed  operation,  according  to the result.- Register  (AC)
+- ALU
+- Control  unit
+Interruption  cycle+ The cycle inspects  the interruption  request  signal, stores the
+current  PC data in the stack, and loads the ISR’s beginning
+address  to the PC.- Register  (MBR, PC, MAR, SP)
+Indirect  cycle+ The cycle is the process  of reading  the actual data address  from
+the memory  unit before the execution  cycle begins.
+E) Instruction  set structure,  CISC and RISC
+Instruction  set, or ins’- Register  (MAR, IR, MBR)
+- CPU internal  bus
+ruction set architecture  (ISA), refers to the machine  language  instructions  that a microprocessor
+can recognize,  understand  its function,  and execute.  The ISA is part of the programming-related  computer
+architecture,  and it includes  data types, instructions,  registers,  addressing  modes, memory  structures,  interruptions,
+exception  handling,  and external  input/output.
+The leading ISAs are the complex  instruction  set computer  (CISC) and the Reduced  instruction  set computer  (RISC).
+<Table 4> shows the concepts  and differences  in these structures,
+* CISC:A complex  instruction-type  computer  that embeds  many complex  instructions  into the hardware  in order to
+process  the complex  instructions  as a single instruction.
+* RISC: A reduced instruction-type  computer  that embeds  a few simple instructions  into the hardware  to process
+complex  instructions  as a set of simple instructions.
+66 TOPCIT  ESSENCE
+
+
+--- Page 68 ---
+Overview  of System Architecture )
+{Table 11) Comparison  of CISC and RISC
+Type CISC RISC
+( (Data  ‘\ = DataXK Path Z XC!  Path ) Cache
+Se We “
+System i)
+Configuration BaaSProgam \\ Va oe. commen
+\ cont 7 {Contra 2 - es
+1Byte { OP-CODE }
+2 Byte (_OP-CODE |(_OP-CODE OP-CODE  )  { OPERAND1) OPERAND2 )
+OP-CODE  |( OPERAND
+= = (OPERAND  ~ Fixed to 32 BitsConfiguration  3Byte  ( OP-CODE  ) OP-CODE \( OPERAND
+of Number  of OP-CODE \( OPERAND  ){ OPERAND
+Commands  | 4 Byte (OP-CODE  )(  OP-CODE \( OPERAND  \( OPERAND
+Since only the needed information  is stored as It is easier  to apply the pipeline  since the instruction
+instruction  in a variable length, it can reduce  wasted size is fixed to 32 bits.
+code, and the program  size decreases  accordingly.
+Control  system | Micro-program  type Hard-wired  type
+Compiler Simple structure Complex  structure
+Number of registers  | Few Many
+Example Intel series (x86) ARM and MIPS
+03 Memory
+A) Memory  unit’s hierarchical  structure
+As shown in [Figure 35], the memory  unit at a higher level has a higher price per bit, less capacity,  a shorter  access
+time, and a higher access  frequency  by the CPU.
+Fast High Priced Small
+Register
+Internal  Memory cetera , ~ co
+ccess_ | Price rage
+Speed | /Bit Capacity
+Main Memory
+External  Memory
+Auxiliary  Memory
+Slow LowPrice Large Quantity
+[Figure  35] Memory  Unit's Hierarchical  Structure
+M3 Overview  of System  Architecture  67
+
+
+--- Page 69 ---
+ESSENCE
+B) Factors  for performance  evaluation  of memory  unit
++ Capacity
++ Access  time
++ Cycle time
++ Bandwidth  of storage  unit
++ Data transportation
++ Cost
+C) Type and characteristics  of the memory  unit
+Memory  units can be classified  according  to the use, physical storing method,  data retention,  and content
+preservation.
+Table 12) Types of Memory  Units
+Classification  Criteria Description Type
+Main memory  | Memory  device to temporarily  store a program  or RAM and ROM
+device data that a computer  processes
+Usage Auniliary Amemory  device that stores  data semi- /
+permanently  by compensating  for the mainmemory : : ; Magnetic  disk, optical disk, etc.
+. memory’s  insufficient  storage  capacity  and usingdevice : vas
+non-volatile  characteristics
+Magnetic A device  that stores binary data according  to the Magnetic  tape, hard disk, zip drive, etc.magnetic  flux direction  by maintaining  magnetism
+Physical A device that records data on the surface of an cD (Compact  Disc)
+poles Optical aluminum metallic disk using a laser beam DVD (Digital Versatile Disc)method BDA (Blu-Ray  Disk)
+Semiconductor A device  that stores analog  data using integrated RAM, ROM, and flash memory
+circuit technology
+Data aintainable Volatile The memory  that loses all data when power is off | RAM-based  SSD (Solid State Disk)
+when power . The memory  that preserves  stored data even ROM, magnetic  core, and auxiliary
+is off Non-volat...

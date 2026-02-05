@@ -1,0 +1,34 @@
+Database )
+01 Data Quality  Control  Framework
+“Data quality control”  refers to a series of activities  undertaken  to improve  the quality of data. Data quality can be
+controlled  over the data value, data structure,  and data management  process.
+<Table 35> Data quality  control  framework
+Organization Target Data value Data structure Data management  process
+ClO / EDA .(overview  perspective) Data management  policy
+DA Standard data Conceptual  data model Data standards  management
+(conceptual  perspective) Data reference  model Requirements  management
+Modeler . Data model management
+(logical perspective) Model data Logical data model Data flow management
+Database  managementDBA Physical  data model(physical  perspective) Management  data Database Database  security
+management
+, esl P Business  data User view Data utilization  management(operational  perspective)
+A) Data value
+@ Standard  data: Data related to standards,  which define and use the terms, domains,  codes, and other data-related
+elements  used in the information  system  based on the common  format  and content.
++ Standard  word dictionary:  A dictionary  that defines the basic unit of the world that is used for business  by
+enterprises  or institutions  and which has a certain meaning.
++ Standard  domain  dictionary:  A range of values  that satisfy  the condition  defined  in the attribute.
++ Standard  term dictionary:  A term that is frequently  used for work and is defined  by combining  standard  words.
++ Standard  code: Data are replaced  with a symbol within  a limited range according  to the defined  criteria, in order to
+standardize  the data value that can be expressed  in various  ways.
++ Data standard  element:  A standard  for the data-related  elements  that are needed  to design and build a system.
+@ Model data: Data required  to operate  and manage  the data model.
++ Model data include metadata  and DBMS object information,  etc., regarding  the data reference  model, conceptual
+data model, and logical data model.
++ Completeness,  consistency,  traceability, interrelation,  up-to-dateness,  and compatibility  are managed.
+@® Management  data: Data required  to operate  and manage  a database  effectively.
++ Usage management  data, failure and security  management  data, performance  management  data, flow
+management  data, quality  control  data, etc. are included.
+@ Business  data: Data needed  to conduct  the work or business  of institutions  or companies.
++ Business  data are classified  into source  data, operational  data, and analysis  data according  to the data flow.
+M2 Database  95

@@ -1,0 +1,39 @@
+ESSENCE
+Condition Description
+Effectiveness All instructions  of the algorithm  should be basic and implementable.
+B) Algorithm  analysis  criteria
+@Correctness
+The correct  result should be produced  for valid input by the algorithm  within a finite time.
+@Amount  of work done:
+The number  of instances  of execution  undertaken  to execute an algorithm;  The amount  of work done
+should be measured  with important  operations  only that become  the core of the flow in the entire algorithm,
+excluding  general  operations  included  by default.
+@Amount  of space used:
+An amount  of computer  memory  needed  to store data and information  while an algorithm  is being executed.
+@  Optimality
+The expression  “A certain algorithm  is optimal’ means that the algorithm  is the most appropriate  considering
+the usage environment  (execution  times, memory  usage, etc.) of the system  that will apply the algorithm.
+©Simplicity
+Simplicity  means the clarity and ease of understanding  of an algorithmic  expression.  A simple algorithm  makes
+it easy to prove an algorithm’s  accuracy  and to carry out program  writing and debugging.
+C) Algorithm  expression  method
+<Table 13> Algorithm  expression  method
+Expression  method Description
+Description  Chart An algorithm is expressed  using words or texts used in everyday life.
+language
+Flow chart An algorithm  is expressed  using graphical  representation,  such as a flow chart or NS (Nassi-
+representation Shneiderman)  chart.
+Peendorende An algorithm  is expressed  in a simpler  way than the natural  language  description  method  by using
+code written in a form like programming  language.
+D) Algorithm  performance  analysis
+Algorithm  performance  is analyzed  by estimating  space complexity,  whereby  performance  is analyzed  in terms
+of the space required  for execution,  and by estimating  time complexity,  whereby  performance  is analyzed  in
+terms of the time required  for execution.
+@ Space complexity
+Space complexity  refers to the total amount  of storage space or memory  needed to execute  and complete  an
+algorithm  using a program,  which can be calculated  by adding the amount  of fixed space and the amount  of
+variable  space.
+Space complexity  = Amount  of fixed space + Amount  of variable  space
++ Amount  of fixed space: Storage  space that is needed permanently,  regardless  of the program  size or number
+of input/output  times, such as programs,  variables,  constants,  etc.
+44 TOPCIT  ESSENCE

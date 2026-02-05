@@ -1,0 +1,30 @@
+ESSENCE
+certifications  in the information  security  sector. As shown in <Table 18>, the checklist  in the annex has been
+changed  from 133 control items in 12 fields, to 114 items in 14 fields.
+<Table 18> ISO 27001 control  fields
+ISO/IEC  27001:2013  2.0
+Control  field Number  of control  items
+Information  security  policy 2
+Information  security  organization 7
+Asset  management 10
+Personnel  security 6
+Physical  and environmental  security 15
+Communication  security 7
+Access  control 14
+Acquiring,  developing,  and maintaining  the B
+information  system
+Managing  information  security  accidents 7
+Managing  business  continuity 4
+Compliance 8
+Supplier  relationship 5
+Password  control 2
+Operational  security 14
+Sum 114
+B) OWASP  TOP 10
+The OWASP  Top 10 - 2017 is primarily  based on over 40 sets of data submitted  by companies  specializing  in
+application  security,  and on the survey on more than 500 persons  in the industry.  The data encompasses  the
+vulnerabilities  collected  from hundreds  of organizations  as well as more than 100,000  real-world  applications
+and APIs. The Top 10 items are selected  and ranked, according  to the prevalent  data, which is compensated
+with the estimated  value of the possibility,  detectability, and level of impact  of the attack.
+[Figure 33] shows the OWASP  2017 version,  compared  to the previous  version in 2013.
+70 TOPCIT  ESSENCE

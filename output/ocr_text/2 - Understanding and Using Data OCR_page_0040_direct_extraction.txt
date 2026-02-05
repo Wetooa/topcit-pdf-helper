@@ -1,0 +1,29 @@
+Database )
++ Geometry,  a geographical  object, and topology  for the spatial relationship  between  objects  are included.
++ Unstructured  data can be processed;  large amounts  of data can be processed  quickly.
++ Spatial (topological,  geometric)  characteristics  are reflected,
++ New index and operation  (R-tree  index) are used to sort data that cannot  be sorted.
++ Expressive  data model that can express  complex  information.
++ Supports  the combination  of spatial data and non-spatial  data.
+F) Column  base database
+A column base database  physically  stores data based on columns.  The data storage method of the relational
+database  is not defined  as row base or column base, but general relational  databases  use a physical  storage  structure
+based on rows. However,  a way to store data with this structure  reached  the limit in analyzing  large-scale  data at
+high speed because  its physical  structure  required  that unnecessary  data should be also read. The concept  of column
+storage  did not suddenly  appear  recently.  Rather,  this concept  was studied  relatively  early on, including  TAXIR, which
+was developed  in 1969 for searching  biological  information.  Recently,  as the demand  for the rapid processing  of large
+amounts  of data increased,  a function  that partially borrowed  the concept  of the column store such as the column
+store index, column store base DBMS, and hybrid DBMS supporting both structures  were developed  from the mid-
+2000s. Column base database  technology  is now being actively used in the DBMS market, together  with the main
+memory  database.
+The column  base database  has the following  structure  and characteristics  compared  to the row-based  database.
+<Table 18> Comparison  of the column  base database  and row base database
+fon Row-based Column-based
+Database Database
+page page page
+Column-store |B  |
+Physical
+storage
+structure
+Row-store
+M2 Database  39

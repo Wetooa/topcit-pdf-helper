@@ -1,0 +1,26 @@
+ESSENCE
+As mentioned  earlier, 3D printing  is an industry  for producing  small quantities  of a wide variety  of products  and is also
+suited for personalized  manufacturing.3D  printing  is creating  a new form of production/distribution/consumption  that
+is markedly  different  from traditional  manufacturing  with its strengths  in economies  of scale and low labor costs.
+While existing  manufacturing  processes  are advantageous  for mass production  and is perfected  suited for especially
+simple-shaped  products,  3D printing manufacturing  processes  are advantageous  for small-volume,  large variety
+production.  A single equipment  can produce  many different  types of products.
+The 3D printing  process  consists  of the following  steps:
+- The process  of modeling  the product.
+- The process  of printing  the stereoscopic  shape by stack printing  the layers that makes up the digitized  model.
+- Post-processing  process  for polishing  or dyeing  the surface  of the printed object.
+The 3D model data required  for 3D printing  can be generated  by a 3D scanner  when it scans the shape of objects
+or the developer  can create the 3D model using a 3D modeling  program.  Prior to printing, the 3D model data is
+converted  to thin layers of data by a program  called slicer. When the data converted  by the slicer is sent to a 3D
+printer, a solid output is created through  the process  of stacking  thin layers of material by stacking  or hardening.
+The final product is produced  through post-processing  processes,  such as removing  the temporary  supports  that
+had been inserted  to support  the 3D output, shaking  off the hot powder  on the surface,  or dipping  it in an adhesive
+solution  to solidify  the output.
+Various technologies  are needed at each process  of 3D printing, and the critical component  technologies  for
+each process  are as follows: the modeling  process  requires a  technology  for scanning  or designing  objects and for
+converting  the design into data. The printing  process requires the highly complex  technology  for spraying  the raw
+material  in the right location and controlling  the energy source needed for hardening  the raw material.  In materials,
+work must be done on developing  a material  that is compatible  with the technology  used in the printing  process  while
+also meeting  the product  requirements  dictated  by the customer.  Today, materials  research  for 3d printing  is focused
+on alloys and bio-materials  due to the fact that they are materials  that create high values.
+170 TOPCIT  ESSENCE

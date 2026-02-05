@@ -1,0 +1,24 @@
+Overview  of System  Architecture
+>p> Recent  trends and issues
+Merely ten years ago, nobody  could have imagined  web surfing, shopping,  or watching  movies in bed.
+The introduction  of the smartphone  made these things possible,  as it was a computer  for your hand. A
+smartphone  is also a computer  system  that runs on the OS. Most mobile  operating  systems  have recently
+disappeared,  and iOS and Android have become  the two dominant  operating  systems  on the market.
+These two operating  systems  are in a heated battle for the diversity  of functions  and user-friendliness.
+Apple and Google,  who provide  these two operating  systems,  are two global enterprises  among  the top ten
+global companies  in market  value. In the past, when smartphones  were unknown,  Microsoft,  who provided
+operating  systems  for personal  computers,  and IBM, who provided  operating  systems  for servers,  such as
+mainframes  and UNIX, were in the top ten companies  in the world in terms of market  value. The operating
+system (OS) is the base platform  of a computer  system for providing  information  services.  Any company
+that can monopolize  this platform  can gain tremendous  added value using this platform.  As such, the
+essential  knowledge  for understanding  the system  architecture,  is the operating  system.
+>> Learning  objectives
+1, To be able to explain the concept  and role of the OS.
+2. To be able to explain how the OS manages  processes,
+3, To be able to explain the concept  of virtual memory  and management  technique.
+4, To be able to explain the storage unit, file system, and input/output  (|/O),
+5. To be able to explain the latest OS technologies  and trends.
+>> Keywords
+Flynn's taxonomy,  parallel processing  technology,  parallel program  technology,  disk scheduling,  SAN, NAS,
+DAS, LTO, VTL, RAID, GPGPU,  video compression  standards
+M3 Overview  of System  Architecture  41

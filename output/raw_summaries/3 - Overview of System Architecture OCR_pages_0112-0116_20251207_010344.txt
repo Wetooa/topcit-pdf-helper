@@ -1,0 +1,199 @@
+LEARNING GUIDE: Pages 112-116
+Generated: 2025-12-07 01:03:44
+PDF: 3 - Overview of System Architecture OCR
+
+================================================================================
+LEARNING GUIDE
+================================================================================
+
+Here is a simplified, easy-to-read learning guide based on the provided text:
+
+---
+
+## Learning Guide: System Architecture Overview
+
+This guide covers the fundamental structure of information systems, including hardware and software components, and introduces challenges in system capacity planning.
+
+---
+
+### 1. Information System Structure
+
+Information systems are structured in various ways. A common modern approach is the **3-Tier Web System Architecture**, which divides the system into **physical areas (hardware)** and **program areas (software)**.
+
+**Key Components of a 3-Tier Web System Architecture:**
+
+*   **Client:** User's device (e.g., web browser) interacting with the system.
+*   **Webserver:** Handles web requests (e.g., HTTP), serves static content.
+*   **Application Server:** Processes business logic and dynamic content requests.
+*   **Database Server:** Manages and stores data.
+
+---
+
+### 2. Information System Hardware Structure (Physical Domain)
+
+The most fundamental hardware component is the **server**, which runs application programs. Other devices like storage and backup disks are added as needed.
+
+#### 2.1 Server Classification by Performance:
+
+Servers are categorized by their processing power and cost:
+
+*   **Entry Server:**
+    *   **Cost:** Relatively lower (e.g., millions of won).
+    *   **CPU:** 1-2 CPUs per socket.
+    *   **Use:** Typically for web servers or application servers.
+*   **Middle-range Server:**
+    *   **Cost:** Medium (e.g., tens of millions of won).
+    *   **CPU:** 4+ CPUs per socket.
+    *   **Use:** For database servers or enterprise servers (not considered high-end).
+*   **High-end Server:**
+    *   **Cost:** Very expensive (e.g., hundreds of millions to billions of won).
+    *   **CPU:** Tens of CPUs per socket.
+    *   **Use:** Mostly for critical database servers or enterprise servers.
+
+#### 2.2 Server Classification by Configuration:
+
+Servers are also classified by their physical design:
+
+*   **Rack-mount Server:**
+    *   **Design:** Fits into standardized racks (steel frames) in data centers or server rooms.
+    *   **Sizes:** Standardized (e.g., 1U, 2U, 4U for 19-inch racks).
+    *   **Connectivity:** Power, network, and SAN switch connected separately.
+*   **Tower Server:**
+    *   **Design:** Similar to a general personal computer (PC).
+    *   **Use:** For in-house server rooms, offices, or stores. Low-noise versions are available for office environments.
+*   **Blade Server:**
+    *   **Design:** Maximizes capacity in minimal space. Multiple CPU blades plug into a single frame.
+    *   **Integration:** Server and network components are integrated into a compact unit.
+    *   **Advantage:** High density, allowing more servers in the same space compared to rack-mount.
+
+#### 2.3 Storage:
+
+*   Provides large storage space, high performance, and high availability.
+*   Classified as enterprise or mid-range based on processing capacity.
+
+---
+
+### 3. Information System Software Structure (Program Domain)
+
+This domain comprises various software components that enable the system to function.
+
+*   **Operating System (OS):**
+    *   **Definition:** System software that manages the application platform and provides an interface between applications and hardware.
+    *   **Server OS Examples:** Linux, UNIX (BSD, Solaris), Windows.
+    *   **Market Trend:** Linux and UNIX are dominant in the server market, unlike the desktop market (Windows).
+
+*   **Webserver:**
+    *   **Definition:** Delivers web content (HTML, text, images, video) to web clients (browsers).
+    *   **Protocol:** Uses HTTP.
+    *   **Examples:** Apache, Nginx, IIS.
+
+*   **Web Application Server (WAS):**
+    *   **Definition:** Middleware that ensures stable transaction processing for web client requests and supports distributed systems. It acts as an engine for database queries and business logic.
+    *   **Functions:** Supports component development, application development, web, distributed objects, security, system management, and legacy system interfaces.
+    *   **Examples:** Tomcat, Jetty, JEUS, JBoss, WebLogic, WebSphere, Node.js.
+
+*   **Transaction Processing (TP) Monitor:**
+    *   **Definition:** Transaction management middleware for distributed transaction processing. It monitors transactions (minimum processing units) to maintain consistency across various sessions and systems.
+    *   **Standard:** Most products comply with the X/Open DTP (Distributed Transaction Process) model.
+    *   **Examples:** Tmax, Tuxedo.
+
+*   **DB Server (Database Management System - DBMS):**
+    *   **Definition:** Manages and provides access to structured data. It's a large-scale, consolidated storage system designed for minimum duplication and concurrent use by multiple users.
+    *   **Functions:** Ensures independence between application programs and data, and enables efficient data access through queries.
+    *   **System Catalog:** A system table used by database administrators (DBAs) that lists definitions of all data objects in the database.
+    *   **Examples:** Oracle, MS-SQL, PostgreSQL, MariaDB, Cubrid.
+
+---
+
+### 4. Information System Capacity Calculation
+
+*   **Challenge:** Hardware sizing is often inaccurate because it relies on past experience rather than a detailed analysis of business needs, load increase rates, and user frequency.
+*   **Problem:** Despite hardware being a significant portion of total project costs, its sizing often receives less attention than software development. This can lead to inappropriate hardware sizes and system performance issues.
+
+---
+
+================================================================================
+ORIGINAL TEXT (First 5000 chars)
+================================================================================
+
+--- Page 112 ---
+Overview  of System Architecture )
+IT Service
+(System  Development,  Security  and Risk
+Management,  and Data Management)
+[Figure  75] Information  System  and IT-Based  Structure
+B) Information  system  structure
+There are several types of structures  for an information  system.  A web system architecture  and a client-server
+system architecture  are leading  examples.  The most recent information  systems  are generally  composed  of a 3-tier
+web system architecture,  and these information  systems  can be divided into physical areas (hardware)  and program
+areas (software),  as shown in [Figure 76], from a structural  viewpoint.
+@om cs Glo A flo &Domain ; a
+Client Webserver Application Database Database
+Server Server
+Web Browser Web Service Communication DBMS Table
+User VF Mechanism. Trigger
+Communication Business  Logic
+eacer=tr- Mechanism Transaction Stored
+Domain Processing procedure
+Datebase
+Handling
+[Figure  76] 3-Tier  Web System  Architecture
+M3 Overview  of System  Architecture  111
+
+
+--- Page 113 ---
+ESSENCE
+@ Information  system hardware  structure  (Physical  domain)
+A server is the most fundamental  component  required  when implementing  an information  system,  and devices,such
+as storage  and backup disks, are added and configured  as needed.  A server is a hardware  platform  that runs server
+application  programs  and is classified  in various  ways, according  to performance  and type as follows.
+* Classification  according  to performance
+Classification Description
+Entry serverAn entry server, typically  priced in millions  of won, is used by a webserver  or application  server.
+It usually refers to a server  that can mount  one or two CPUs per socket.
+Middle-range  serverA middle range server, typically  priced in tens of millions  of won, is used by a database  server  or
+enterprise  server.
+Servers  that can mount  four or more CPUs per socket,  and are not considered  high-end  servers,  are
+called the middle-range  server.
+High-end  serverA high-end  server  is a very expensive  server, typically  priced in hundreds  of millions  or billions of won. It is
+mostly  used by a database  server  or enterprise  server.
+It usually refers to a server  that can mount  tens of CPUs per socket.
+* Classification  according  to the configuration
+Classification
+Rack-mount  serverDescription
+A rack-mount  server  fits into a rack, which is a steel frame for storing  servers  or network  equipment.  It
+is used in places where multiple  server/network  equipment  is placed, such as in a data center  or server
+room. Rack-mount  server  sizes are standardized.  Standard  rack-mount  servers  are generally  1U, 2U, and
+AU sized installed  in a 19-inch  rack. Power, network,  and SAN switch are separately  connected.
+A tower server is installed  in an in-house  server room, an office, or a store. It is similar  to a general PC.
+Tower  server When a tower server  is installed  in a space where people reside or work, such as an office or a store, a
+low-noise  server, developed  for office installation,  may be a good option.
+A blade server  maximizes  capacity  while minimizing  the size, by plugging  several CPU blades into a
+Badeeenen frame. The server  and network  are reduced  and integrated  into a box, and the operating  system  is pre-
+installed.  The biggest  advantage  of blade servers  is their small size. A blade server  can be more densely
+integrated  than a rack-mount  server in the same space.
+Storage  is classified  into enterprise  or mid-range  storage,  according  to processing  capacity,  It provides  a large storage
+space, high performance,  and high availability,  compared  to general  disk arrays.
+[Figure 77] below shows an example  of an information  system hardware  configuration,  using a server  and various
+devices.  A system architecture  or technical  architecture  design describes  its details.
+112 TOPCIT  ESSENCE
+
+
+--- Page 114 ---
+Overview  of System Architecture )
+Backup  Development AP Server System
+Server Server Management
+: Py Server
+SSO Server Portal Server
+Email Server
+Serverwk
+pa [EB
+[Figure  77] Information  System  Hardware  Configuration  (Example)
+@ Information  system  software  structure  (Program  domain)
++ OS: An OS is defined as system software  that operates  and manages  an application  platform  and that provides
+an interface  between  an application  program  and the platform.  The OS for the server includes  Linux, UNIX (BSD,
+Solaris, etc.), Windows,  and macOS.  The OS for the server  market  is quite different  from the desktop  market,  which
+is dominated  by Windows.  Linux and UNIX are the most widely used OS, followed  by Windows.  UNIX servers have
+replaced  most mainframes,  and they were followed  by Linux, which is a UNIX-like  OS.
++ Webserver:  A webserver  provides  media content,  such as HTML and text, images, and video, to web clients, like
+web browsers.  It provides  data through  the HTTP protocol  to enable a web brow...

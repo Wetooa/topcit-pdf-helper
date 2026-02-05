@@ -1,0 +1,35 @@
+Overview  of System Architecture )
+01 What is Application  Layer Protocol?
+Anyone managing  a network  system or developing  a network  application  program  often encounters  application
+layer technology.  The application  layer protocol  is used to exchange  necessary  information  between  application
+programs.  Widely used application  layer protocols  include FTP [1] for file transfer,  telnet [2] for terminal  connection,
+SMTP [3], POP3 [4], and IMAP [5] for e-mail transmission  and access, DNS [6] for mapping  hostnames  and IP
+addresses,  and SNMP [7] for network  management.  HTTP [8], which is used for data transmission  between  web
+clients and webservers,  is also an application layer  protocol.  The BitTorrent  protocol  is also a widely used application
+layer protocol,  although  it is a P2P (peer-to-peer)  protocol,  not a method  of accessing  network  infrastructure,  as
+conventional  communication  protocol  does.
+02 HTTP
+HTTP (Hypertext  Transfer  Protocol)  is an application  layer protocol  for a hypermedia  information  system that
+connects  text with video and audio files. It has been used for transferring  web contents  since the early 1990s [8].
+The first version, HTTP/0.9,  was a simple protocol  for low-level  data transfer  through  the Internet,  but MIME-type
+messages  have been defined and used since HTTP/1.0 (RFC  1945). HTTP/1.1 is the current  version in use and is
+designed  to be more reliable  than HTTP/1.0.
+Like most standard  application  protocols,  the HTTP protocol  implements  a request/response  protocolthat  is suitable
+for a client-server  environment.  Since web browsers,  such as Microsoft’s  Internet  Explorer,  Google Chrome,  Mozilla
+Firefox, and web servers, such as Apache HTTP Server, implement  the HTTP protocol,  users generally  have no
+difficulty  using the web without  fully knowing  the HTTP protocol implementation.  However,  when developing  an
+Internet  application  or a new application  protocol,  it is helpful to know text-based  application layer protocols,  such as
+HTTP since they are good design and implementation  tools.
+The HTTP protocol  uses a request/response  protocol.  The client sends a request  message,  in the form of <request
+method,  URI, protocol  version, MIME type information  message>,  to the server, and the server responds  with a
+status line that includes  protocol  version,  success  or error code, MIME type server information,  etc. to the client as a
+response  message. Here, the current  HTTP/1.1  version is mainly used.
+The method,  designated  in Request-Line  of an HTTP request message,  specifies  the HTTP protocol  operation.
+Although  RFC 2616 defines  eight methods,  they can be extended  as needed.  The most commonly  used methods  are
+GET and POST. The GET method is mainly used to search for content  in the server after accessing  a website.  The
+POST method  is mainly used to deliver  user input information, such as a form, to a webserver.
+Refer to RFC 2616 for more details on the HTTP response  message.  The Status-Code  information  of a status line
+informs  how the HTTP request  message  has been processed.  Codes starting  with 2, such as 200 (OK) or 206 (Partial
+Content),  indicate that the request  was processed  successfully,  while codes starting  with 4 or 5 indicate  client or
+server  errors, respectively.
+M3 Overview  of System  Architecture  197

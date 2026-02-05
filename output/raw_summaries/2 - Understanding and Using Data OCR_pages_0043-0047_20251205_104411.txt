@@ -1,0 +1,220 @@
+LEARNING GUIDE: Pages 43-47
+Generated: 2025-12-05 10:44:11
+PDF: 2 - Understanding and Using Data OCR
+
+================================================================================
+LEARNING GUIDE
+================================================================================
+
+This learning guide transforms the provided text into a concise, easy-to-understand format for study purposes.
+
+---
+
+## Database Design and Build Process: A Learning Guide
+
+### 1. Why Good Database Design Matters
+
+**Problem:**
+Treating a database like a simple file system (e.g., Excel) where tables depend directly on specific applications, screens, or reports.
+
+**Consequences of Poor Design:**
+*   **Loss of Database Advantages:** Cannot utilize integration, shared storage, efficient operation, or data sharing.
+*   **Increased Application Complexity:** Harder to manage.
+*   **Higher Development Costs.**
+*   **Data Integrity Issues:** Inconsistency due to data duplication.
+*   **Poor Data Processing Performance.**
+
+**Solution:**
+Understand database definition and characteristics (integration, storage, operation, sharing) and apply them through proper design to maximize benefits and prevent problems.
+
+---
+
+### 2. The Database Design and Build Process
+
+The process involves four main phases:
+
+1.  **Requirements Collection & Analysis**
+2.  **Database Design** (Detailed into Conceptual, Logical, Physical)
+3.  **Database Building** (Implementation)
+4.  **Operation & Maintenance**
+
+---
+
+### 3. Detailed Design Phases
+
+#### A. Requirements Collection & Analysis
+*   **Goal:** Understand user business needs.
+*   **Activities:**
+    *   Collect and analyze business requirements.
+    *   Identify **static structure requirements**:
+        *   **Entity:** A real-world object or concept (e.g., a "Book").
+        *   **Property/Attribute:** A characteristic of an entity (e.g., "Book Title," "Author").
+        *   **Relationship:** How entities connect (e.g., "Author writes Book").
+        *   **Constraint:** Rules governing data.
+    *   Identify **dynamic structure requirements**: Transaction types, frequency of operations.
+*   **Deliverable:** Requirement Statement.
+
+#### B. Database Design (Data Modeling)
+A **data model** is a design document that defines the database structure. Design progresses through increasing levels of detail:
+
+1.  **Conceptual Data Modeling**
+    *   **Level:** High abstraction, focuses on the real-world business context.
+    *   **Purpose:** Abstract conceptualization of information structure, often used for enterprise-wide data modeling (e.g., Enterprise Architecture - EA).
+    *   **Activities:**
+        *   Identify entities, entity identifiers (unique labels for entities), relationships, cardinality (number/sequence of relationships), and entity properties.
+    *   **Representation:** Generally uses an **Entity-Relationship (ER) model**.
+    *   **Deliverable:** Conceptual data model.
+
+2.  **Logical Data Modeling**
+    *   **Level:** Business-focused, less abstract than conceptual, but independent of specific database technology.
+    *   **Purpose:** Convert the conceptual design into a logical structure easily storable in a database. Accurately expresses details needed for system development.
+    *   **Activities:**
+        *   Determine **table names** (representing entities).
+        *   Define **Primary Key (PK)**: A unique identifier for each record in a table.
+        *   Define **Foreign Key (FK)**: A field in one table that refers to the Primary Key in another table, establishing relationships.
+        *   Perform **Normalization:** A process of organizing columns and tables in a relational database to minimize data redundancy and improve data integrity.
+    *   **Models Used:** Relational model (most common), network, hierarchical, object-oriented models.
+    *   **Deliverable:** Logical schema.
+
+3.  **Physical Data Modeling**
+    *   **Level:** Concrete, focuses on how the database will be physically stored and accessed on a specific database system (e.g., Oracle, SQL Server).
+    *   **Purpose:** Optimize performance and storage efficiency.
+    *   **Activities:**
+        *   Determine the physical storage structure.
+        *   Define **data types** for columns (e.g., INT, VARCHAR).
+        *   Define constraints (e.g., NOT NULL, UNIQUE).
+        *   Design access methods and paths for specific data (e.g., indexes).
+        *   Perform transaction analysis, view design, index design, capacity design, and approach design.
+        *   May include **Semi-normalization** or **Denormalization**: Intentionally introducing redundancy to improve read performance, usually done in specific performance-critical areas.
+    *   **Deliverable:** Physical schema, Table Definition Document.
+
+#### C. Database Building (Implementation)
+*   **Goal:** Create the actual database based on the physical design.
+*   **Activities:**
+    *   Write and execute SQL statements to configure the database structure.
+    *   Collect, classify, index, and process data.
+    *   Enter and save the processed data into the database.
+
+#### D. Operation & Maintenance
+*   **Goal:** Ensure the database runs effectively and securely over time.
+*   **Activities:**
+    *   Manage and monitor database quality.
+    *   Establish strategies for database recovery and restoration (backup and restore).
+    *   Establish security policies.
+    *   Perform continuous maintenance and follow-up evaluations.
+
+---
+
+### 4. Key Considerations for Database Design
+
+Database design is a critical phase; clear execution and accurate deliverables are essential.
+
+#### A. Deliverables per Design Phase:
+*   **Conceptual Model:** Conceptual Data Model (defining subject area, key entities, relationships).
+*   **Logical Model:** Final Entity-Relationship Diagram (defining attributes, keys, history management).
+*   **Physical Model:** Physical Schema, Table Definition Document (reflecting performance considerations, potentially semi-normalization).
+
+#### B. Key Roles in Database Design:
+*   **Data Architect (DA):**
+    *   Leads the database design phase.
+    *   Involved from requirements collection.
+    *   Establishes data management system and standards.
+    *   Manages overall conceptual, logical, and physical data models.
+*   **Database Administrator (DBA):**
+    *   Focuses on the physical implementation and performance.
+    *   Reviews and provides input on physical structure aspects like indexes, partitions, clustering storage, and denormalization.
+*   **Collaboration:** DA and DBA must work together to determine the optimal final physical model for efficient and stable performance.
+
+---
+
+### 5. Database Design in the Project Lifecycle
+
+Data modeling is integral to the project lifecycle, often separated into analysis and design phases.
+
+*   **Traditional Models (e.g., Information Engineering, Structured Models):**
+    *   **Analysis Phase:** Business-oriented Logical Data Modeling.
+    *   **Design Phase:** Physical Data Modeling (considering hardware and performance).
+*   **Spiral Model:** Logical and Physical Data Modeling are performed iteratively based on task size during analysis and design, with Logical Data Modeling often more frequent in the analysis phase.
+*   **Real-world Projects:** Conceptual and Logical Data Modeling are often performed together, or even merged, primarily during the analysis phase.
+*   **Project Structure:** Projects often separate "data axis" (database design) and "application axis" (application design), with mutual verification between them to ensure completeness.
+*   **Object-Oriented Concept:** Data modeling and processing modeling are often integrated, not separated, as modeling focuses on objects that encapsulate both data and behavior.
+
+---
+
+================================================================================
+ORIGINAL TEXT (First 5000 chars)
+================================================================================
+
+--- Page 43 ---
+ESSENCE
++ Preview  for practical  business
+There are many cases in which a database  is used like an existing  file system,  and tables are created  in the
+database,  but each table is actually  dependent  on individual  applications,  screens,  and reports.
+For example,  when developing  a book management  system for each team, a booklist  table can be created
+for each team during implementation  of database  in the same way as books are managed  using Excel files.
+If tables are designed  in the same way as Excel files, the advantages  of the database,  including  integration,
+storage,  operation,  and sharing,  cannot  be utilized  at all.
+In this case, the complexity  of the application  program  also increases,  causing  symptoms  that can lead to
+serious  problems,  such as an increase  in development  costs, problems  with data integrity  (lack of consistency
+due to data duplication),  and the deterioration  of data processing  performance.  Therefore,  these problems.
+should be prevented  and the advantages  of the database  can be maximized  and applied to the development
+of a system only when we understand  the definition  and characteristics  of the database  (integration,  storage,
+operation,  sharing)  and the advantages  of the database,  and then apply them to practical  business.
+01 Database  Design  and Build Process
+In general, the database  design and build process is performed  in the phases of collecting  and analyzing  the
+requirements,  designing  the database,  building the database,  and operating  and maintaining  it. In particular,  the
+analysis/design  phase is performed  in detailed  stages, such as conceptual  design, logical design, and physical  design.
+The details  of the three design phases  will be described  in greater  detail in the next topic [Data modeling].
+DB Design
+Conceptual  design
+Collect  and analyze > Operation  and
+requirements Physical  design maintenance
+[Figure 8] Database  design and build process
+42 TOPCIT  ESSENCE
+
+
+--- Page 44 ---
+Database )
+A) Requirements  collection  and analysis
+@ Collect  and analyze  the business  requirements  of the user.
+@ Create a requirement  statement  as a phase deliverable.
+@ Identify  both static and dynamic  structural  requirements.
++ Static structure  requirements:  Entity, property,  relationship,  constraint,  etc.
++ Dynamic  structure  requirements:  Transaction  type, frequency,  etc.
+B) DB design
+A data model is a design document  for building a database  that has a clear goal. In the real world, a database  is
+created  over time, as shown below. Depending  on the level of abstraction,  the design can be divided into a conceptual
+data model, a logical data model, and physical  data.
+From the real world to the database...
+NcclnWredi(e| Conceptual  world
+Conceptual  data modeling
+Entity —_ >} > | Conceptual  structure
+Logical  data
+Physical  (computer)  world modeling
+Physical  data modelingStorage < Logical structuredatabase
+[Figure  9] Process  of creating  a database  in the real world
+First, conceptual  data modeling  is performed  to embody  the database  at the higher level that has a high level of
+abstraction  in the real world. The conceptual  data model has a high level of abstraction,  focuses  on business,  and
+performs  modeling  at the comprehensive  level. This model is frequently  used for enterprise  data modeling  and EA
+establishment.  For reference, when deploying  EA-based  enterprise  data modeling,  general data modeling,  which is a
+higher level, is performed  first, after which conceptual  data modeling  is performed  for each business  area. When an
+entity-centered  data model is completed  at the higher level, a data model with a focus on concrete  business  can be
+created  according  to a concrete  business  aspect  and flow, which is called “logical data modeling’.  In addition,  a method
+that considers  the tablespace  according  to the storage  structure  of the database  is called “physical  data modeling”.
+<Table 19> Types of data modeling
+Data modeling Contents Level
+A. Conceptual Has a high level of abstraction,  focuses  on business,  and performs  modeling  at the comprehen-  | Abstract
+data modeling  | sive level. Often used for enterprise  data modeling,  and establishing  the enterprise  architecture a~
+B. Logical  data Accurately  expresses  keys, attributes,  relationships,  etc. for the work to develop  a system,
+modeling and the data model is highly reusable.
+C. Physical  data Design in which physical  characteristics  are considered  in order to improve  performance  and v
+modeling storage  efficiency,  so that the data can be actually  ported to a database. Concrete
+M2 Database  43
+
+
+--- Page 45 ---
+ESSENCE
+@ Conceptual  data modeling
++ Abstract  conceptualization  of the information  structure  appearing  in the real world.
++ The entity, entity identifier,  relationship  between  entities, number  and sequence  of corresponding  relationships,
+entity prope...

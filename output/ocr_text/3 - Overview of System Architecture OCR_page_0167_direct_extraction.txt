@@ -1,0 +1,35 @@
+ESSENCE
+@ Admission  control
+It is a procedure  used by the control unit of a communication  network  to determine  whether  to accept a connection
+request.
+© Service  quality model and protocol
+Service quality models include  the integrated  service (IntServ)  model and the differentiated  service (DiffServ)  model.
+The service  quality  protocol  is the resource  reservation  protocol  (RSVP).
+Table 48) Service  Quality Model and Protocol  [6]
+Service  quality  model Description
+Integrated  service - Flow-based  quality model that explicitly  reserves  resources,  such as bandwidth  for the given data
+(IntServ) flow
+Resource  reservation - A protocol  standardized  to reserve  and secure the bandwidth  needed  by the application  programs
+Protocol  (RSVP) between  terminals  (RFC 2110)
+Differentiated  service - Class-based  service quality  model that specifies  the required  service type each time a packet is
+(DiffServ) transmitted,  and operates  according  to packet priority
+05 Routing  Protocol  Algorithm  and Type
+A) What is a routing  protocol?
+Routing  protocol  defines  the types of messages  exchanged  between  routers,  exchange  procedure,  and actions  when
+receiving  a message,  for efficient  setting  and updating  of the routing  tables.
+B) What is a routing  algorithm?
+The routing algorithm  finds the low-cost  path between  a source router and a destination  router in a graphical
+network,  connected  by links with a cost between  routers. The low-cost  path refers to the path of minimum  value
+among  the sum of link costs out of all possible  paths from the source to the destination.  <Table 49> shows the types
+of routing  algorithms.
+Table 49) Routing  Algorithm  Types
+Algorithm Description
++ Link state routing  algorithm
++ Each router calculates  the low-cost  path to all destinations  with the configuration  and link-state  information
+of the entire network.Link state
+Routing
++ Distance  vector routing  algorithm
+Distance  vector + Each router maintains  the low-cost  path table (vector)  to all destination  routers.
+Routing + The initial router path cost table only maintains  the cost data of the directly  connected  routers, and the
+router notifies  the path cost data to the neighboring  routers.
+166 TOPCIT  ESSENCE

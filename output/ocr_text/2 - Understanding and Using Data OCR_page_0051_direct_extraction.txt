@@ -1,0 +1,25 @@
+ESSENCE
++ Preview  for practical  business
+A data model that is as complex  as a maze can ruin a project.  A complex  maze, like the one shown below
+left, means that countless  trials and errors will be required  to find a fast path. Such a data model does
+not consider  business  characteristics  and physical  characteristics.  As a result, the model has to undergo
+countless  trials and errors to obtain the desired  result because  the path to the data is not clear. Also, even
+if the same number  of paths is passed,  join operations  are generated  by checking  additional  conditions
+only, without  passing  through  the optimized  path. In the end, multiple  join operations  further  degrade
+performance.
+In addition,  if an entity is expressed  unnecessarily  in large numbers,  data are processed  inefficiently  because
+an SQL statement  should read several tables, while the intended  result can be obtained  by reading  and
+processing  data from one table alone.
+Start
+Fol
+Lhy
+—
+If we check the data only, the two kinds of problems  that arise due to increased  data can be summarized
+as follows:
+- Increased  data — Data duplication  > Problems  occur in data consistency.
+- Increased  data — Fall in SQL response  speed — Performance  declines.
+These two problems  become  more important  as the number  of data grows, and can be solved by
+optimizing  data modeling,  which is the ideal way to fundamentally  resolve the problem.  However,  data
+modeling  cannot  be performed  at any time. Therefore,  when data modeling  is performed  again, it should be
+optimized  for efficiently  processing  data.
+50 TOPCIT  ESSENCE

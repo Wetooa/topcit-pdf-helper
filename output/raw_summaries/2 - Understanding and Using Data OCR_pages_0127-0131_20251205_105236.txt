@@ -1,0 +1,226 @@
+LEARNING GUIDE: Pages 127-131
+Generated: 2025-12-05 10:52:36
+PDF: 2 - Understanding and Using Data OCR
+
+================================================================================
+LEARNING GUIDE
+================================================================================
+
+Here's a simplified, easy-to-read learning guide based on the provided text:
+
+---
+
+## Database Concurrency & Recovery Learning Guide
+
+### 1. Two-Phase Locking (2PL) Protocol
+
+*   **Purpose:** Guarantees that if all transactions follow the 2PL protocol, their execution will be **serializable** (meaning the final state is the same as if transactions ran one after another).
+*   **Significance:** It's the most widely used protocol to ensure transaction serialization.
+*   **Important Note:** While 2PL guarantees serialization, not all serialized executions necessarily use 2PL.
+
+### 2. Transaction Isolation Levels
+
+The ANSI/ISO SQL standard (SQL92) defines four levels of transaction isolation, determining how transactions interact with each other's data changes.
+
+*   **A) Read Uncommitted (Level 0):**
+    *   Allows a transaction to read data that is still being processed and has not yet been committed by another transaction (prone to "dirty reads").
+*   **B) Read Committed (Level 1):**
+    *   Allows a transaction to read only data that has been confirmed (committed) by completed transactions.
+    *   Prevents "dirty reads" but can still experience "non-repeatable reads" and "phantom reads."
+*   **C) Repeatable Read (Level 2):**
+    *   Ensures that if a query is executed multiple times within the same transaction, the records found will not disappear or have their values changed by other committed transactions.
+    *   Prevents "dirty reads" and "non-repeatable reads" but can still experience "phantom reads."
+*   **D) Serializable Read (Level 3):**
+    *   The highest isolation level. Guarantees "repeatable reads" and also ensures that no new records (phantoms) appear when a query is executed multiple times within the same transaction.
+    *   Prevents all concurrency issues: "dirty reads," "non-repeatable reads," and "phantom reads."
+
+**Concurrency Problems & Isolation Levels Summary:**
+
+| Isolation Level  | Dirty Read (Reading uncommitted data) | Non-repeatable Read (Reading changed/deleted committed data) | Phantom Read (New rows appearing for the same query) |
+| :--------------- | :------------------------------------ | :--------------------------------------------------------- | :--------------------------------------------------- |
+| Read Uncommitted | Occurs                                | Occurs                                                     | Occurs                                               |
+| Read Committed   | **X** (Prevented)                     | Occurs                                                     | Occurs                                               |
+| Repeatable Read  | **X**                                 | **X**                                                      | Occurs                                               |
+| Serializable     | **X**                                 | **X**                                                      | **X**                                                |
+
+### 3. Deadlock
+
+**A) Definition of Deadlock:**
+
+*   A situation in a multi-processing or multi-transaction system where multiple processes or transactions are indefinitely waiting for resources that each other holds.
+*   No transaction can proceed, leading to a standstill.
+*   **Consequence:** Transactions in a deadlock can never finish, locking system resources. The system must intervene by canceling one of the involved transactions.
+*   **Example:** Transaction T1 locks data Y and waits for data X (which T2 holds). Transaction T2 locks data X and waits for data Y (which T1 holds). Both wait forever.
+
+**B) Deadlock vs. Starvation (Infinite Waiting):**
+
+| Feature      | Deadlock                                                 | Starvation (Infinite Waiting)                                |
+| :----------- | :------------------------------------------------------- | :----------------------------------------------------------- |
+| **Definition** | Multiple processes wait indefinitely for each other's resources, forming a cycle. | A specific process waits indefinitely for a single resource. |
+| **Causes**   | Mutual exclusion, Hold & Wait, Non-preemption, Circular Wait (all four). | Unfair resource allocation policy.                           |
+| **Solution** | Prevention, Avoidance, Detection & Recovery.             | Aging technique (e.g., increasing priority over time).       |
+
+**C) Causes of Deadlock (Conditions for Occurrence):**
+Deadlock occurs only when all four of these conditions are met simultaneously:
+
+1.  **Mutual Exclusion:** Resources are held exclusively; only one process can use a resource at a time.
+2.  **Hold and Wait (Block & Wait):** A process holds at least one resource while waiting for an additional resource currently held by another process.
+3.  **Non-preemption:** Resources cannot be forcibly taken away from a process; they can only be released voluntarily by the holding process.
+4.  **Circular Wait:** A set of processes (P1, P2, ..., Pn) exists such that P1 is waiting for a resource held by P2, P2 for P3, ..., and Pn for a resource held by P1.
+
+**D) Solutions to Deadlock:**
+
+1.  **Deadlock Prevention:**
+    *   Aims to prevent one or more of the four deadlock conditions from ever occurring.
+    *   **Methods:**
+        *   **Mutual Exclusion:** Difficult to prevent for non-shareable resources.
+        *   **Hold & Wait:** Require processes to request all resources at once or release all resources before requesting more.
+        *   **Non-preemption:** Allow the OS to forcibly take resources if needed.
+        *   **Circular Wait:** Assign a numerical order to resources and require processes to request resources in increasing order.
+    *   **Avoidance Techniques:** Use algorithms (e.g., Wait-Die, Wound-Wait, often using timestamps) to dynamically decide whether to grant a resource request, aborting a transaction if it could lead to deadlock.
+
+2.  **Deadlock Detection and Recovery:**
+    *   Allows deadlocks to occur, then detects them, and recovers by breaking the cycle.
+    *   **Detection:** The system periodically checks for the existence of a deadlock (e.g., by building and checking a "wait-for" graph for cycles).
+    *   **Recovery:**
+        *   **Victim Selection:** Identify one or more transactions involved in the deadlock to terminate. Criteria often include minimizing cost (e.g., transaction with least work done, fewest resources held).
+        *   **Rollback:** The chosen victim transaction is aborted and rolled back to a safe state, releasing its resources and breaking the deadlock.
+
+### 4. Database Recovery: Why it's Essential
+
+**A) Purpose:**
+*   To restore the database to a consistent and correct state after any type of failure (e.g., hardware, software, power outage, transaction errors).
+*   Ensures the **Atomicity** (all-or-nothing) and **Durability** (committed changes persist) properties of transactions.
+*   **Crucial for:** Business continuity, data integrity, and minimizing service downtime.
+
+**B) Key Concepts & Methods:**
+
+*   **Database Failure Types:**
+    *   **Transaction Failure:** An individual transaction fails (e.g., aborts, encounters an error).
+    *   **System Failure:** Hardware or software issues cause the DBMS to crash (e.g., power outage, OS crash).
+    *   **Media Failure:** Permanent damage to storage devices (e.g., disk crash, head crash).
+*   **Recovery:** The process of restoring the database to a valid state.
+*   **Redundancy:** Storing duplicate information (e.g., logs, backups) to facilitate recovery.
+*   **Log:** A sequential record of all database changes (transactions, updates, commits, aborts). Essential for undoing or redoing operations.
+*   **Undo:** Reversing the effects of an uncommitted or aborted transaction using the log.
+*   **Redo:** Reapplying the effects of committed transactions that were not yet written to disk, using the log.
+*   **Database Recovery Techniques:**
+    *   **Log-based Recovery:** Uses the transaction log for undo and redo operations.
+        *   *Deferred Update:* Changes are written to the database only after a transaction commits.
+        *   *Immediate Update:* Changes are written to the database during transaction execution, before commit.
+    *   **Checkpoint Recovery:** Periodically writes all modified buffers to disk and records a "checkpoint" in the log, reducing the amount of log to process during recovery.
+    *   **Shadow Paging:** Maintains two copies (current and "shadow") of the database pages; new transactions modify the current copy, only replacing the shadow copy upon commit.
+*   **Distributed Database Recovery:**
+    *   **2-Phase Commit (2PC) Protocol:** A protocol used to ensure atomicity in distributed transactions, where changes across multiple databases are either all committed or all aborted.
+*   **Database Backup Methods:**
+    *   **Full Backup:** Copies the entire database.
+    *   **Differential Backup:** Copies only data that has changed since the last full backup.
+    *   **Incremental Backup:** Copies only data that has changed since the last *any* backup (full or incremental).
+    *   **Archive Log Backup:** Backs up the transaction logs.
+    *   **Hot Backup (Online Backup):** Backup performed while the database is online and actively used.
+    *   **Cold Backup (Offline Backup):** Backup performed when the database is shut down.
+
+**C) Real-World Importance:**
+
+*   Failures (hardware, power, software defects) are common and unavoidable.
+*   Loss of data can lead to severe financial and operational damages (e.g., the 9/11 WTC attack example where IT losses were substantial).
+*   Robust backup and recovery systems (like Disaster Recovery Systems) are essential for rapid restoration, minimizing downtime, and ensuring business survival.
+
+================================================================================
+ORIGINAL TEXT (First 5000 chars)
+================================================================================
+
+--- Page 127 ---
+ESSENCE
+© lf all transactions  comply with the 2PL protocol,  the serialization  of all transactions  is guaranteed,  but the reverse
+does not hold.
+@ The 2PL protocol  is most widely used as a protocol  that can guarantee  serialization.
+03 Transaction  Isolation  Level
+The following  are the four transaction  isolation  levels defined  in the ANSI/ISO  SQL standard  (SQL92).
+A) Read uncommitted:  Allows other transactions  to read the data that are still being processed  by the
+transaction  (not yet completed).
+B) Read committed:  Allows other transactions  to read the data that are confirmed  by the completed
+transaction  only.
+C) Repeatable  read: When a query is executed  more than twice in a transaction,  the record in the first
+query does not disappear  or the value is not changed.
+D) Serializable  read: When a query is executed  more than twice in a transaction,  the record in the first
+query does not disappear  or the value is not changed,  and no new record appears  either.
+<Table 50> Concurrency  according  to the transaction  isolation  level
+Isolation  Level Dirty Read Non-repeatable  Read Phantom  Read
+Leve | 0 Read Uncommited Occurs: Occurs Occurs.
+Level 1 Read Committed x Occurs Occurs
+Level 2 Repeatable  Read Xx X Occurs.
+Level 3 Serializable x Xx x
+04 Deadlock
+A) Definition  of deadlock
+@ Multiple processes  or transactions  are waiting for the allocation  of a specific resource infinitely  in a multi-processing
+environment  or a multi-transaction  database  system.
+@ Transactions  in a deadlock  can never end execution  and cannot start another  task because  system resources  are
+locked.  Therefore,  when a deadlock  occurs,  the system must cancel one of the two transactions.
+126 TOPCIT  ESSENCE
+
+
+--- Page 128 ---
+Database )
+a00ty
+[Figure  45] Conceptual  diagram  of a deadlock
+@ All transactions  are waiting  indefinitely  without  making  any progress  at all.
++ T1 waits for T2 to unlock  data x.
+* T2is locking  data x.
++ T2 waits for T1 to unlock  data y,
++ T1is locking  data y.
+<Table 51> Comparison  of deadlock  and infinity
+Item Deadlock Starvation  (infinite  waiting)
+ae Multiple  processes  are waiting  for a certain  event A specific  process  is waiting  indefinitely  forDefinition - : . : :indefinitely  without  doing anything. resource  allocation.
+Causes  of Mutual exclusion,  hold and wait, non-preemption, . . ;nnn circular  wait. Weighted  resource  allocation  policy.
+Solution Prevention,  avoidance,  detection,  recovery. Aging technique.
+B) Causes  of deadlock
+<Table 52> Deadlock  occurrence  conditions  within a system (Deadlock  occurs  when certain  conditions  are met at the same time.)
+Cause Details
+As processes  occupy  a certain resource  exclusively,  other processes  cannot  use that
+resource.Mutual  exclusion
+A process  has been allocated  and is occupying  a certain  resource  but requests
+another  resource.
+The resource  allocated  to the process  cannot  be taken by force, and the resource
+can be released  by the occupying  process  itself only.
+Circular  wait The resource  requests  between  processes  form a circular  shape.Block & wait
+Non-preemption
+C) Solutions  to deadlock
+<Table 53> Solutions  to deadlock
+Solution Details
++ Use a protocol  that ensures  no deadlock  will occur ina system
++ Use this when there is a relatively  high possibility  that the system is likely to be ina
+deadlock.
++ Prevent  mutual exclusion,  partial allocation,  non-preemption,  and circular  wait.
++ Avoidance  techniques:  Use the Wait-Die,  Wound-Wait  technique  that uses a
+timestamp.Deadlock  prevention
+M2 Database 127
+
+
+--- Page 129 ---
+ESSENCE
+Deadlock  detection  and
+recovery
+128 TOPCIT  ESSENCE
+
+
+--- Page 130 ---
+Database
+>> Recent  trends and major issues
+A database  has the property  that once it has been built, it should process  actual business  data stably.
+However,  data can be corrupted  due to a certain problem  when they are digitalized  and saved. In this case,
+it is vital to have a technology  that can restore  the database  stably. This chapter  explains  how to process  a
+database  stably and the concept  and techniques  of backing  up and restoring  data.
+The recent DBMS essentially  operates  database  backup policies for stable data processing.  In addition,
+backup  methods  are also evolving  continuously  to enable rapid backup,  such as using the VTL (Virtual Tape
+Library).
+>> Learning  objectives
+1. To be able to explain the concept  and types of database  failures.
+2. To be able to explain the concept  and methods  of database  recovery.
+3. To be able to explain how to recover  a distributed  database.
+4 To be able to explain and apply the types and characteristics  of database  backup  methods.
+>> Keywords
++ Database  failure: Transaction  failure, media failure, system  failure
++ Recovery,  redundancy,  redo , undo, log
++» Database  recovery  techniques:  Log-based  recovery  technique  (deferred  update, immediate  update),
+...

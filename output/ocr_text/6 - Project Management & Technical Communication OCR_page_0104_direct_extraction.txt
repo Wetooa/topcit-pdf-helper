@@ -1,0 +1,43 @@
+Project Management  and Technical  Communication  )
++ Preview  for practical business
+How much SW engineers  in Korea be paid?
+Korea Software Industry  Association  surveys  the actual wages of working  SW engineers  in order to
+identify  the wage trends of SW engineers  and use them as basic data for policy making,  or provide  them
+to the relevant  companies  and related organizations  so that they can be applied as the unit of wages of
+the engineers  mobilized  in software  projects.
+The information can be found in the notification  section of the Korea Software Industry  Association
+website  (www.sw.orkr),  and the following  is a breakdown  of the recently  announced  average  wage for SW
+engineers.
+Average  Software  Engineer  Salary (daily, monthly,  hourly) in the "2015 SW Engineer  Salary Survey
+(Statistics  Approval  No.37501),  pursuant  to Article 27 (Announcement  of Statistics)  of the Statistical  Act.
+(Unit: No. of people, KRW, %)
+Average  monthly  wage (M/D) Average Average
+Classification Number monthly hourly wage
+2017 2018 (% change)  | wage (M/M) (M/H)
+Engineer 295 452,611 462,072 (2.1) 9,611,098 57,759
+Principal  Engineer 15,526 391,068 | 406,342 (3.9) 8,451,914 50,793
+Senior  Engineer 8,742 305,353 305,433 (0.0) 6,353,006 38,179
+ie 9104 | 239506 | 239748 (0.1) 4986758 29,969
+Junior Engineer 11,363 191,320 215681 (12.7) 4,042,272 29,960.
+Senior  Technician 99 191,177 194,340 (1.7) 3,298,818 24,293
+betula 200 | 158490 | 158,597 (0.1) 2515718 19.825
+Junior Technician 233 114914 120948 (5.3) 2,436,616 15,119
+Date Entry Operator 204 113,959 117,145 (2.8) 2,436,616 14643
+Total/Average 45,766 289,473 302,665 (4.6) 6,295,432 37,833
+<Notes  for the utilization  of the survey in SW project  cost estimation>
+The results  of this survey  are not mandatory  for software  business.
+The average  wages by rank will not be announced  in 2019, but the average  wages by IT profession  will be
+announced.
+*The average  wages of software  engineers  refer to the “unit wages of software  engineers”  under Article
+22 (Payment  for Software  Business)  (4) of the Software  Industry  Promotion  Act.
+*The average  wages of software  engineers  include base pay, allowance,  bonus, allowance  for severance
+and retirement  benefits,  and corporate  contribution.
+*The average monthly  wage is calculated  as the daily average  * working  days (20.8 days), and hourly
+average  wage is calculated  as the daily average  + 8 hours.
+*The average number  of working days per month is the average  of the reported  working  days of the
+company,  not including  holidays  and legal holidays,  as well as vacation.
+*The average  wages of software  engineers  increased  by 4.6% compared  to 2017.
+*The base pay of the average  wages of data entry operators,  referenced  in the Guidance  of Cost
+Estimation  Model for the Digital Document  Database  Construction  Project,  is KRW 93,287 in 2018.
+[Enforcement  date] Effective  from September  1, 2018 to August  31, 2019
+M6 Project  Management  and Technical  Communication  103

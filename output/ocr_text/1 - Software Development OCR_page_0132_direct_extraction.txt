@@ -1,0 +1,33 @@
+Software  Development )
+01 Concept  of Open-Source  Software
+A) Definition  of open-source  software
+Open-source  software  is free software  that can be used, copied, and modified  by anyone  while protecting  the
+rights of the creator.
+As the software  industry  began to develop, a move was made to impose restrictions  on the use and
+modification  of software  based on the intellectual  property  rights and license agreement  in 1980. To oppose  to
+this move and protect  the rights of free software  use, Richard  Stallman  founded  the Free Software  Foundation
+(FSF) and launched  the free software  movement,  which ultimately  became  the origin of open-source  software.
+Open-source  software  includes FSF free software in Korea. However,  free software  pursues  the meaning  of
+emphasizing  users’ freedom,  while open-source  software pursues  the idea that the source code must be
+shared  for joint research  to make software  “better”.
+The term “open-source  software”  was widely used at the time  the Open Source Initiative  (OSI) was formed
+in 1998. The OSI manages  the promotion  and certification  of open-source  software. The OSI has defined the
+minimum  standard  with which the license should comply (Open Source Definition,  OSD), and awards an OSI
+certification  mark to open-source  software  certified  by the OSI.
+Server software  such as the Apache  web server, PHP, MySQL,  Hadoop,  and Openstack,  development  tools such
+as Eclipse  and gdb, and operating  systems  such as Linux are representative  types of open-source  software.
+B) Definition  of the open-source  software  license
+An open-source  software  license refers to an agreement  made between  an open-source  developer  and a
+user on the method  of use and the scope of the conditions  of use. Open-source  software  should be used by
+protecting  and preserving  the rights of the creator  and complying  with the conditions  set by the open-source
+developer.  If the user violates  these conditions,  the user must assume legal responsibility  for violation  of the
+license and infringement  of the copyright.
+Representative  licenses include the General Public License (GPL), Lesser General Public License (LGPL),
+Berkeley  Software  Distribution  (BSD), and Mozilla Public License  (MPL). These open-source  licenses  have been
+created  and imposed  to force disclosure  of the source code within the legal boundaries.
+O02 Open-Source  Software  License
+A) Application  scope of the open-source  software  license
+We need to understand  the scope of using open-source  software  before understanding the license
+classification.  Obligations  are not imposed  when open-source  software  is used internally;  rather, they are
+applied only when open-source  software  is distributed  and sold outside.
+M1 Software  development  131

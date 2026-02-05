@@ -1,0 +1,37 @@
+ESSENCE
+i 32 bits >|
+8 | 8 8 8
+Hardware Type | Protocol Type
+Hardware Protocol
+Address Length  | Address Length | Operation
+Sender  Hardware  Address
+(OCTETS  0-3)
+Sender  Hardware  Address Sender  IP Address
+(OCTETS  4-5) (OCTETS  0-1)
+Sender IP Address | Target Hardware  Address
+(OCTETS  2-8) (OCTETS  0-1)
+Target Hardware  Address
+(OCTETS  2-5)
+Target IP Address
+[Figure 108] ARP packet structure
+The ARP packet is organized  of the 6-byte destination  MAC address,  6-byte source MAC address,  2-byte Ethernet
+protocol  type, 2-byte hardware  type, 2-byte protocol  type, 1-byte hardware  address  length, 1-byte protocol  address
+length, 2-byte operation  code, 6-byte sender hardware  address,  4-byte sender  protocol  address,  6-byte target
+hardware  address,  4-byte  target protocol  address,  and 18-byte  padding.
+B) MAC address  search scenario
+Since Router  C and computer  with user A are in the same network  section,  with user A, as shown in [Figure 103], the
+MAC address  is required  for communication.  In that case, the computer  with user A sends an ARP request  through
+broadcasting  to all systems  in the network  section. The data section of the frame, transferred  through the ARP
+request,  contains  the ARP packet, as shown in [Figure 108]. On receiving  the response,  router C transfers  its MAC
+address  in the ARP packet  to the computer  with user A through  unicast,  to find each other's  MAC address.  The MAC
+address  is stored in each system's  cache memory.  In that case, wired/wireless  router B stores the port-MAC  address
+table of the system  connected  to its cache memory  ports.
+05 Techniques  of Datalink  Layer error Detection  and Correction
+A) Concept  of error control
+Transferring  frames through  the data link layer can cause various  errors, depending  on the network  condition  or the
+operation  of the transmitting  and receiving  device. Types of errors include single-bit  errors, in which only one bit of
+the data part is changed,  multi-bit  errors, in which two or more non-contiguous  bits are changed  in the data unit, and
+burst errors, in which two or more consecutive  bits are changed.
+Error control is the function  of detecting  and correcting  errors when transmitted  data does not arrive properly,  or
+when an error occurs during transmission.  Error control methods  can be divided into two types, as shown in [Figure
+150 TOPCIT  ESSENCE

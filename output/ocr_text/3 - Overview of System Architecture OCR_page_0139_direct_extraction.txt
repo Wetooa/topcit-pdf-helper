@@ -1,0 +1,23 @@
+ESSENCE
+>> Recent  trends and issues
+Modern society had passed the Big Data 1.0 era, when the quantitative  explosion  of big data began and
+entered  the Big Data 2.0 era, which creates  practical  values from big data.
+The introduction  of Hadoop  2.2 has made big data technology  more sophisticated  and diversified  the
+professional  services  of the big data vendors  from the big data supply aspect, leading  to the emergence  of
+companies  that specialize  in big data. The demand  for big data is rapidly increasing  as large companies  are
+quickly  adopting  the technology,  mainly in the financial  and services  industries.
+Companies  that have adopted  big data are practically  using big data for business  through pilot tests,
+beyond  simply using big data for information  collection.  Governments  are implementing  policies  to promote
+R&D and professional  training,  building  industry-academia-R&D  governance,  and public data disclosure.
+Of course, big data expansion  has produced  side effects,  such as privacy  infringement  and personal  profiling,
+Therefore,  it is necessary  to strengthen  theflexibility  of data use by establishing  a new concept  for personal
+data use. Comprehensive  policy support  that reflects  the social and market  environments  is necessary  for
+the big data ecosystem  to evolve.
+>> Learning  objectives
+1, To be able to explain  the concept  of big data systems,
+2. To be able to explain big data system structure  and characteristics,
+3, To be able to discover  the recent trends of big data systems,
+>> Keywords
+Data acquisition, storage,  processing,  analysis,  presentation,  Hadoop  ecosystem,  HDFS, MapReduce,
+Hadoop  support  program
+138 TOPCIT  ESSENCE

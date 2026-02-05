@@ -1,0 +1,34 @@
+ESSENCE
+@ Conceptual  data modeling
++ Abstract  conceptualization  of the information  structure  appearing  in the real world.
++ The entity, entity identifier,  relationship  between  entities, number  and sequence  of corresponding  relationships,
+entity properties,  etc. can be identified.
++ Generally  represented  by an entity-relationship  (ER) model.
+@ Logical  data modeling
++ Conversion  of the result of the conceptual  design,  which is created  for human understanding,  into a logical structure
+that can be easily stored in a database.
++ There are the relational,  network,  hierarchical  and object-oriented  models, of which the relational  model is most
+generally  used.
++ In case of the relational  model,  the table name, primary  key (PK), foreign key (FK), etc. are determined  in the logical
+design phase.
++ A logical schema  is created  as a phase deliverable.
++ Normalization  is performed  according  to the requirement  level.
+© Physical  data modeling
++ Determination  of the physical  storage  structure  of the database  created  using logical structure  design.
+* Definition  of the data type of the column,  constraints,  and access method  and path for specific  data.
++ A technology  for converting  the structure  according  to the performance  requirements  is needed.
++ Specifically,  transaction  analysis,  view design, index design,  capacity  design, and approach  design are performed.
++ A physical  schema  is created  as a phase deliverable.
+C) Database  building
+@ Also called the “database  implementation’  or “database  development”  phase.
+Creation of a database  that can accommodate  the user requirements  by writing and executing  SQL statements
+needed  to configure  a database.
+@ Collection  and processing  of data to be built.
+* Classification,  index, abstract,  etc. are created.
+© Collected  and processed  data are entered  and saved.
+D) Operation  and maintenance
+@ Management  and monitoring  of database  quality.
+@ Establishment  of a strategy  for database  recovery  and restoration.
+@ Establishment  of security  policies
+@ Continuous  maintenance  and follow-up  evaluation: Deliverables  to be analyzed,  design subject,  impact  of design.
+44 TOPCIT  ESSENCE

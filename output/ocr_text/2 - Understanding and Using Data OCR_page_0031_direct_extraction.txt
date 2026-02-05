@@ -1,0 +1,34 @@
+ESSENCE
+01 Types of Databases
+A) Development  process  of the database
+The hierarchical  and network  databases  that developed  the data structure  used in existing  applications  were the
+main types of database  used in the early days. However,  these databases  had a big problem  in that it was difficult  to
+maintain  consistency.  To resolve these problems,  relational  databases  appeared  in the 1970s. Since then, databases
+have developed  continuously  around relational  database  technology.
+In the 1990s, user-defined  data and multimedia  data needed  to be managed,  but existing  relational  data models  could
+not handle such complex  data. Accordingly,  an object-oriented  database  combining  object-oriented  technology,  which
+began to gain attention  from the mid-1980s,  and a database  appeared.  Since then, an object-oriented  database
+that combines  the advantages  of both the relational  database  and the object-oriented  database  has appeared  and
+been widely used until now. Databases  are evolving  from simple business  applications  to large-capacity  and complex
+business  environment  supports  to respond  to changes  in the IT market  and technology,  such as the XML database,
+which emerged  as a response  to the development  of the Internet  environment,  and the NoSQL,  which was developed
+to process  big data.
+NoSOL
+XML DBMS
+Object  relational  DBMS
+Type Object-oriented  DBMS
+Network  DBMS
+Hierarchical  DBMS
+File system
+1960 1970 1980 1990 2000 Year
+[Figure 4] Application  area of the database  by era
+B) Major  types of databases
+@ Hierarchical  database
+A hierarchical  database  hierarchically  stores data in a tree format of the relationship  between  subordinates  and
+superiors. Although  this database  has the advantages  of rapid data access and easy prediction  of data usage, it
+cannot  adapt to changing  business  processes  easily.
+The major characteristics  of the hierarchical  database  are as follows.
++ Itis the oldest  database  with a hierarchical  structure  (1960s).
++ Each hierarchical  structure  maintains  a dependent  relationship  by connecting  with physical  pointers.
++ Itis difficult  to change  the data structure  when the business  process  is changed  after building  a database.
+30 TOPCIT  ESSENCE

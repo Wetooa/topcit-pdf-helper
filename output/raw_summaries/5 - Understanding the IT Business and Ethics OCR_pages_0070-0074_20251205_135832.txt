@@ -1,0 +1,210 @@
+LEARNING GUIDE: Pages 70-74
+Generated: 2025-12-05 13:58:32
+PDF: 5 - Understanding the IT Business and Ethics OCR
+
+================================================================================
+LEARNING GUIDE
+================================================================================
+
+Here is a simplified, easy-to-read learning guide based on the provided text:
+
+---
+
+## IT Business Monitoring, Management, and Improvement Techniques
+
+This guide covers key concepts related to monitoring, managing, and improving IT business processes.
+
+---
+
+### **Section 1: IT Business Monitoring & Management**
+
+#### **1.1 Business Activity Monitoring (BAM)**
+
+*   **What it is:** A technique that monitors business processes in real-time to identify bottlenecks and recognize risks in advance.
+*   **Purpose:** Uses advanced business intelligence (BI) for real-time analysis and manages process flow for Business Process Monitoring (BPM).
+*   **Base Technologies:**
+    *   **Business Intelligence (BI):** Analyzes key business process indicators.
+    *   **Data Warehouse:** Collects and analyzes statistical data to identify risks.
+    *   **Business Process Management (BPM):** Analyzes business events and suggests process improvements.
+    *   **System Infrastructure:** Manages the network and integrated system, collects, analyzes, and visualizes data and events.
+
+#### **1.2 Business Rule Engine (BRE)**
+
+*   **What it is:** A technique to manage, automate, and optimize processes by formalizing complex business rules and process flows.
+*   **Why it's needed:** Addresses the increasing volume of information and complexity of process flows, enabling rule-based management.
+*   **Benefits:** Helps enterprises proactively manage changes, reduce operating costs, and improve services.
+*   **Component Elements:**
+    *   **Rule Manager:** Develops and manages business rules, handles the process lifecycle, and manages the rule repository.
+    *   **Rule Service:** Acts as a server for the rule engine, provides interfaces between processes, and distributes implemented rules.
+    *   **Rule Monitoring:** Supports process improvement, performance tuning, and provides analysis/statistical functions.
+    *   **Rule Repository:** A storage location for business rules.
+
+---
+
+### **Section 2: IT Business Process Information Management**
+
+As IT business processes become more complex and respond rapidly to changes, systematized data management is crucial. This is achieved through ILM or IRM.
+
+#### **2.1 Information Life Cycle Management (ILM)**
+
+*   **What it is:** A series of processes for managing storage media by separating data based on its changing value throughout its life cycle.
+*   **Purpose:** To reduce data management costs and systematically manage data as its volume increases but its value changes over time.
+*   **Constituent Elements:**
+    *   **Management Policies:**
+        *   **IT Governance:** Provides guidelines for data generation, storage, and disposal.
+        *   **IT Compliance:** Ensures adherence to legal, regulatory, and policy standards.
+        *   **Enterprise Data Management Policy:** Defines data operation policies, often related to Enterprise Architecture (EA).
+    *   **Technology Elements:**
+        *   **1st Storage:** High-performance, expensive storage for high-utilization, frequently accessed data.
+        *   **2nd Storage:** Lower-performance, less expensive storage for data with relatively low utilization and value.
+        *   **Data Archiving:** Technology for periodic, automatic archiving of data.
+        *   **Backup:** Separate storage (e.g., tape library, affordable disk) for data protection.
+
+#### **2.2 Information Resource Management (IRM)**
+
+*   **What it is:** The efficient and integrated management of all IT resources.
+*   **Goals:**
+    *   Prevent redundant IT investments.
+    *   Increase returns on IT investments (ROI).
+    *   Manage diverse IT resources, including human resources, equipment, budgets, and outputs.
+*   **Why it's needed:** Addresses the growing complexity and scale of enterprise information systems and the need for systematized management.
+*   **Function:** Provides a common standard and management system for all informatization procedures (planning, development, performance evaluation).
+*   **Relationship with Enterprise Architecture (EA):** IRM provides the framework for information resources to EA, while EA gives IRM guidelines for enterprise resource schemes. They complement each other.
+*   **IRM Process for EA (Key Activities & Outputs):**
+    *   **Information Resource Planning:** Develop strategies and objectives.
+        *   *Output:* Information resource management plan.
+    *   **Set up Organization Structure:** Form teams and committees, appoint chief architect.
+        *   *Output:* Team organization chart, work assignment chart.
+    *   **Set up Architecture:** Define AS-IS (current state) and To-BE (future state) architectures, plan conversion.
+        *   *Output:* Architecture analysis report, conversion plan.
+    *   **Utilize Architecture:** Implement investment plans, develop and use information resources.
+        *   *Output:* Utilization guidelines.
+    *   **Architecture Maintenance:** Continuously update and manage the architecture, evaluate its link to information resources.
+        *   *Output:* Report on information resource utilization.
+    *   **Evaluation of Information Resource Management:** Assess performance, develop improvement plans.
+        *   *Output:* Evaluation report.
+
+---
+
+### **Section 3: IT Business Process Improvement Techniques**
+
+Enterprises constantly seek to improve business processes for competitiveness, efficiency, and developing new business models.
+
+#### **3.1 Business Process Reengineering (BPR)**
+
+*   **Origin:** Introduced by Professor Michael Hammer in 1990 to address declining competitiveness by rethinking fundamental business processes.
+*   **Concept:** A technique for **fundamentally redesigning business processes** to achieve **radical improvements** in performance indicators like cost, quality, service, and speed.
+*   **Four Attributes of BPR:**
+    *   **Basic:** Addresses core problems, questions the fundamental purpose of tasks, and identifies inefficiencies.
+    *   **Zero Base:** Designs entirely new ways of performing tasks by abandoning existing procedures.
+    *   **Dramatic Improvement:** Aims for absolute, radical innovation, not gradual enhancements.
+    *   **Process:** Focuses on improving task processes, not just jobs, workers, or organizational structures, to internalize business values.
+*   **Implementation Procedure:**
+    1.  **Set Corporate Objectives:** Define vision and redesign goals (e.g., reduce costs, save time, improve quality).
+    2.  **Select Target Process:** Identify and prioritize key processes for redesign.
+    3.  **Understand Current Process:** Analyze how the selected process currently operates and evaluate its performance.
+    4.  **Select Process Goals:** Link corporate vision to specific improvement goals for the process.
+    5.  **Design Improved Process:** Create a new process design to achieve the selected goals, and pilot a prototype.
+    6.  **Develop Change Model:** Address potential resistance from employees or technological issues.
+    7.  **Implement:** Transition from the old process to the new, improved one, including strategies for risk reduction.
+    8.  **Operate:** Run the new prototype and establish quality control management.
+
+#### **3.2 Process Innovation (PI)**
+
+*   **Origin:** Introduced by David Port in 1993.
+*   **Concept:** Activity focused on improving the business environment to maximize corporate value by eliminating unnecessary elements (in processes, organization, and IT) and rebuilding effective business processes.
+*   **BPR vs. PI:**
+    *   Similar to BPR but places **greater emphasis on the integration of information technology**.
+    *   Aims to build a structure that can respond to changes by making processes more customer-centric, improving information, logistics, and value flows.
+    *   Internationally, BPR is widely used; in South Korea, PI gained popularity, often used in a broader sense than BPR (e.g., with ERP deployments).
+*   **Example of PI Implementation Procedure (integrates IT):**
+    1.  **AS-IS Analysis:** Analyze current systems, processes, and human resources; set Critical Success Factors (CSFs) and Key Performance Indicators (KPIs).
+    2.  **PI To-BE Process Design:** Design the future-state process, focusing on achieving the defined CSFs and KPIs.
+    3.  **Organization/Strategy (Information Strategy Plan - ISP):** Establish IT strategies aligned with business goals; develop mid-term and long-term information system plans and an IT architecture roadmap.
+    4.  **Implementation (Detailed Plan):** Create a detailed plan for establishing the integrated information system.
+    5.  **Deployment:** Step-by-step deployment of the integrated information system (e.g., ERP, CRM).
+
+---
+
+================================================================================
+ORIGINAL TEXT (First 5000 chars)
+================================================================================
+
+--- Page 70 ---
+Understanding  the IT Business  and Ethics )
+process  bottlenecks  by monitoring  processes  in real time and recognizing  risk factors in advance.
+BAM also uses extended  business intelligence  (BI) techniques  for real-time  analysis,  and monitors  and manages  the
+process  flow for business  process  monitoring  (BPM).
+<Table 22> Base technologies  of BAM
+Base technologies Description
+btgatin eco 1 nos egg  ee  ear  seston
+(Business  Iteligeno  e) Analyze the key business process indicators.
+(Data eek  use) + Identify the risks in business processes  by collecting  and analyzing  statistical  data
+BPM + Analyze  business  events  on the process  and make improvements  to the process.
++ Manage  the network  and integrated  system,
+System Infrastructure + Use the system to collect, analyze and visualize data and to process events.
+© Understanding  BRE
+Business  rule engine (BRE) is a technique  for effectively  managing,  automating,  and optimizing  processes  by
+formalizing  the complex  business  rules and process  flows of an enterprise.  The ever increasing  volume  of information
+processed  by IT business  processes  and the increasing  complexity  of process  flows have led to the need for rule-
+based management.  Rule-based  management  is also needed for service improvements  and cost savings. For this
+reason, the adoption  of BRE can help enterprises  to proactively  manage  changes  in, and reduce the operating  costs
+of, business  processes.
+<Table 23> Component  elements  of BRE
+Component  Elements Description
++ Develops  and manages  business  rules, manages  the process  lifecycle.Rule Manager oo :
++ Manages  the repository  in which business  rules are stored.
+. + Acts as a server  for the rule engine and provides  the interface  between  processes.Rule Service
++ Distributes  rules that are developed  and implemented,  and provides  a rule service.
++ Supports  process  improvement  activities  and the business  rule performance  tuning.
+Rule Monitoring + Provides analysis and statistical  functions.
+Rule Repository + Repository  for storing  business  rules.
+B) IT business  process  information  management
+As IT business  processes  become ever more complex  and have to respond rapidly to environmental  (both external
+and internal)  changes, there is a growing  need for the systematized  management  of the data generated  by
+such processes.  The data generated  by IT business  processes  can be managed  either by information  life cycle
+management  (ILM) or by information  resource  management  (IRM).
+M5 Understanding  the IT Business  and Ethics 69
+
+
+--- Page 71 ---
+ESSENCE
+@ Understanding  ILM
+Information  life cycle management  (ILM) is a series of processes  for separating  and managing  storage media, which is
+necessitated  by ongoing  changes  in the value of data or information  throughout  its life cycle.
+As the volume of data increases,  so does the cost of managing  data. In contrast,  the value of data changes  as it
+goes through  its life cycle. Thus, enterprises  are tuning  to ILM in order to reduce their data management  costs and
+manage  data in a more systematic  way.
+| IT compliance | | IT governance | | Management  poy
+Regulations Regulations
+leanne Data management [4-------------* P
+: Usage
+co) (base | ~~
+[Fig. 24] Conceptual  diagram  of ILM
+The constituent  elements  of ILM belong to one of two categories,  ie. the management  policy category  or the
+technology  element  category.
+<Table 24> Constituent  elements  of ILM
+Category Element Role
+IT governance Provides  guidelines  on the generation,  storage  and disposal  of data.
+Management IT compliance Provides  legal, regulatory  and policy standards.
+policies Enterprise  dataEA's DA‘ system and data operation  policy,management  policy
+The utilization  rate of the storage  is high, and it must be used repeatedly:
+] : .st storage therefore,  only high-performance,  expensive  storage solutions  are used.
+2nd storage The utilization  rate and value are relatively  low: therefore  low-performance  low-
+Technology ei priced storage solutions  are used.
+elements
+A technology  that allows data to be archived  periodically  and processedData archiving automatically  by the system.
+Backup Store separately  using a tape library or an affordable  disk (backup  policy).
+@ Understanding  IRM
+The purpose  of information  resource  management  (IRM) is the efficient  and integrated  management  of IT resources.
+Here, efficient  and integrated  management  means preventing  redundant  investments  in IT resources  and increasing
+returns  on investments.  It also means managing  all types of IT resources  from HT resources  to IT equipment,  budgets
+and outputs.
+3 EA: Enterprise  Architecture.
+4 DA: As one of the component  elements  of the EA, the DA describes  the architecture  of data.
+70 TOPCIT  ESSENCE
+
+
+--- Page 72 ---
+Understanding  the IT Business  and Ethics )
+Faced with the increasing  complexity  and sca...

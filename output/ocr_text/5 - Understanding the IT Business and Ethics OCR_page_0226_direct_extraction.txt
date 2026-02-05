@@ -1,0 +1,37 @@
+ESSENCE
+Data’. This suggests  standards  on methods  of de-identification  for big data utilization  to ensure the safety of
+personal  data, and for businesses  who intend to use and provide  de-identified  personal  data.
+<Procedure  for de-identification  for big data utilization>
+@  (Preliminary  Review)  Verify whether  specific  data is personal  data or not. Data that is confirmed  to be non-personal
+data can be used as freely as possible  without  any legal restrictions.
+@ (De-identification)  Take measures  to make individuals  unidentifiable  by means of, for example,  deleting  or replacing
+all or some of the elements  from dataset.  If the attributor  included  in the dataset  is not related to the purpose  of
+data use, it is deleted  in principle.
+@(Adequacy  Assessment)  Assess whether  an individual  is identifiable  by easily combining  de-identified  data with
+other data by the “De-identification  Adequacy  Assessment  Panel”
+@ (Follow-up  Management)  Take necessary  measures  such as safety measures  for de-identified  data and monitoring
+likelihood  of re-identification  to prevent  re-identification  in the process  of using de-identified  data.
+Managerial Safety Measures:  Need to designate  a person in charge of de-identified  data files, prohibit  sharing  of
+data on de-identification,  and destroy  data once a purpose  of usage is achieved.
+Technical  Safety Measures:  Need to restrict access to de-identified  data files, manage  access records, and install
+and operate  security  programs.
++ Protective  measures  when de-identified  data is leaked: Analyze  cause of leakage,  and implement  both managerial
+and technical  safety measures  to prevent  additional  leakage,  Withdraw  and destroy  leaked de-identified  data
+@ Ethical Issues of Autonomous  Vehicles
+Self-driving  cars are integrated  with technology  that collects information  from the external  environment,
+communication  technology  among vehicles  and between  vehicles  and road infrastructure,  and advanced  information
+processing  technology  and excellent  algorithms.
+Self-driving  cars store information  gathered  from sensors in the cloud and analyze them with big data to find the
+optimal route. Since it reduces  the accident  rate from the user's point of view, it provides  stability  and saves users
+the time to concentrate  on driving, providing  convenience  and efficiency.
+However,  like the recent incident  on the Internet  where a company  hacks and remotely  controls  autonomous  vehicles,
+problems  such as remote control attacks  by hacking  and information  leakage due to malicious  code infection  are
+emerging  as related issues. The major ethical issues related  to self-driving  cars are as follows.
++ The ethical dilemma  of self-driving  cars (controversy  on how to deal with accidents  and who is the cause of the
+accident)
++ Safety issues of autonomous  vehicles (reaction  to detection  of pedestrians  and obstacles  in the vehicle path,
+occupant  protection  and safety)
++ Remote  control attack and availability  threat due to hacking
++ Threat  of life and property  loss due to hacking,  real-time  exposure  of user information
++ Privacy  invasion  due to leakage  of personal  information  collected  by in-vehicle  sensors  and computers  such as travel
+224 TOPCIT  ESSENCE

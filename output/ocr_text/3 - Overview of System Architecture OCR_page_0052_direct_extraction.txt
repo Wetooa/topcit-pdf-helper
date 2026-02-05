@@ -1,0 +1,34 @@
+Overview  of System Architecture )
+recollection  can result in memory  space that is wasted without  being used. Using the first-fit, best-fit,  and worst-
+fit techniques  to allocate  the memory  unit can cause external  fragmentation,  as shown in [Figure 22]. Let us assume
+that a process  requests  64.450 bytes when there are 64,500 bytes of available space. In that case, 50 bytes of
+available  space remains  after allocating  the requested  space. If the memory  is partitioned  into a fixed size to provide
+multiple  fixed-sized  available  spaces to processes,  it may be slightly larger than the required space. The remaining
+space is called the internal  fragmentation,  as shown in [Figure 23].
+Operating  System
+Request  for available Process 1
+space of 64,450  bytes
+Request  for available
+space of 64,450  bytes
+Process  50
+[Figure  22] Case of External  Fragmentation
+Fixed Partition Fixed Partition
+65,000 Bytes 65,000  Bytes
+facia mre elmic)  on)
+(30,000 Bytes) ee ee ey
+; , Section  in Use Section  in Use
+Available  Section
+Request aa
+65,000 Bytes
+Unused  Section
+Use
+65,000 Bytes J
+Unused  Section Internal Fragmentation
+(30,000 Bytes)
+65,000 Bytes 65,000  Bytes
+Section in Use Section in Use
+100,000  Bytes 100,000  Bytes
+Request Fragmentation  after
+Allocation
+[Figure 23] Case of Internal  Fragmentation
+M3 Overview  of System  Architecture  51

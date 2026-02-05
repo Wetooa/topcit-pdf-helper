@@ -1,0 +1,30 @@
+Understanding  the IT Business  and Ethics )
+unnecessary  elements  of regular  web pages for the sake of improving  the screen size, network  speed and quality, and
+the user mode of the mobile devices  (the common  limitations  of the mobile environment); that is, they have begun
+to focus more on the functions  that should be provided  on the mobile web. While responsive  webs typically  focus
+on how changes  in layout and style take place from one device to another,  there also exist responsive  webs that
+reconfigure  web contents  strictly  from a mobile  first perspective.
+21024 768-1023
+480-767 <480
+EJ
+[Fig. 55] The responsive  web can configure  the same contents  in different  ways.
+In addition  to the responsive  web, adaptive  web technology  is attracting  a lot of interest  as a technology  that enables
+websites  to provide a seamless  transition  of information  for different  screen sizes. The adaptive  web is a server-
+based or client-based  technology  that checks  the device that is trying to access the web. By using images tailored
+for the device  of the user, the adaptive  web allows website  access  on a mobile device at high speeds.
+© Semantic  web
+Web that enables  intelligent  data processing  and the accumulation  of knowledge  through  the defining  and building  of
+structured  data (ontology)  and data linking among  the structured  data is called semantic  web.
+The web, which only displays  web documents  in HTML language,  has severe limitations  in expressing  resources,  and
+the relationship  between  web documents  is defined. Hence computers  cannot understand  semantic.  Since there
+are problems  in recognizing  all objects  with just URL alone, semantic  web was developed  as a way to efficiently  use
+information  from distributed  webs, extract  meaningful  data from flood of information, and as a means for structuring
+and interpreting  the huge amounts  of data produced  on the web.
+<Table  67>Application  areas of semantic  web
+Area Descriptions Examples
+e-commerce Connection  to e-commerce  frameworks  like ebXML e-Commerce,  e-Catalog
+Data Mining Web mining  for the entire web e-CRM,  e-MarketPlace
+Knowledge Collect  and distribute  large volumes  of knowledge  using Subject  Map, Taxonomy
+processing agent
+Web service Link with enterprise  business  service  components UDDI, Registry
+M5 Understanding  the IT Business  and Ethics 137

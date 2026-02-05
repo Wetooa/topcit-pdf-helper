@@ -1,0 +1,234 @@
+LEARNING GUIDE: Pages 142-146
+Generated: 2025-12-07 01:06:37
+PDF: 3 - Overview of System Architecture OCR
+
+================================================================================
+LEARNING GUIDE
+================================================================================
+
+Here is a simplified, easy-to-read learning guide derived from the provided text (Pages 142-146).
+
+---
+
+## Big Data System Architecture & Ecosystem
+
+### 1. MapReduce Word Count Process
+
+MapReduce is a programming model for processing large datasets in parallel across a cluster. Here's how it works for counting words:
+
+1.  **Input:** Raw data (e.g., a character string).
+2.  **Splitting:** Divides the input data into smaller chunks (e.g., by line).
+3.  **Mapping:**
+    *   Processes each chunk independently.
+    *   Takes each line, extracts words, and outputs them as `<Key, Value>` pairs (e.g., `<DOG, 1>`, `<CAT, 1>`).
+4.  **Shuffling:**
+    *   Gathers all values for the same key from across different mappers.
+    *   Groups them together (e.g., `DOG -> [1, 1, 1]`).
+5.  **Reducing:**
+    *   Processes the grouped data for each key.
+    *   Calculates the sum of frequencies for each key (e.g., `DOG -> 3`).
+    *   Outputs the final `<Key, Value>` pairs (e.g., `<DOG, 3>`).
+6.  **Final Result:** Combines the output from all reducers and stores it (e.g., in Hadoop Distributed File System - HDFS).
+
+### 2. Hadoop Support Programs (Ecosystem Technologies)
+
+Hadoop's ecosystem includes various support programs for collecting, storing, utilizing, processing, and managing big data:
+
+#### A. Data Collection
+*   **Unstructured Data:**
+    *   **Flume:** Collects unstructured data (developed by Cloudera, now Apache).
+    *   **Scribe:** Collects unstructured data for transfer to a centralized server (developed by Facebook).
+    *   **Chukwa:** Collects unstructured data to store in HDFS.
+*   **Structured Data:**
+    *   **Sqoop:** Imports data from relational databases and transfers it to repositories like HDFS and NoSQL.
+    *   **Hiho:** Solution for large-capacity structured data collection and transfer.
+
+#### B. Distributed Database
+*   **HBase:** HDFS-based, column-oriented NoSQL database (based on Google's BigTable paper). Used by Yahoo, Twitter, NHN.
+*   **Cassandra:** Open-source distributed database management system. A NoSQL database that blends column-centered and row-centered approaches.
+
+#### C. Real-time SQL Query
+*   **Impala:** Real-time SQL query system (developed by Cloudera). Uses its own engine, not MapReduce.
+
+#### D. Data Management & Analysis
+*   **HCatalog:** Manages big data metadata.
+*   **Hive:** Hadoop-based data warehousing solution. Provides SQL-like query capabilities for big data processing (developed by Facebook).
+*   **Pig:** Data analysis tool that uses its own language, Pig Latin, instead of MapReduce for processing.
+*   **Spark:** Open-source cluster computing framework for in-memory processing (developed by UC Berkeley's AMPLab).
+*   **Mahout:** Hadoop-based open-source data mining library.
+
+#### E. System Management & Coordination
+*   **Oozie:** Manages big data processing workflows and Hadoop tasks.
+*   **Zookeeper:** Provides mutual coordination services for servers in a distributed big data environment.
+*   **Avro:** Framework supporting serialization for Remote Procedure Calls (RPC) and data.
+*   **YARN (Yet Another Resource Negotiator):** Hadoop's resource management platform. Manages computing resources within clusters and schedules user applications in a distributed computing environment.
+
+### 3. Commercial Hadoop Solutions
+
+Leading companies offer commercial Hadoop solutions, often building platforms based on Hadoop and forming alliances with existing database, data warehousing, and business intelligence companies.
+
+*   **Cloudera:**
+    *   **CDH (Cloudera Distribution including Hadoop):** Includes Hadoop, Hive, Oozie, Pig, Zookeeper, and other open-source tools.
+    *   **Cloudera Manager:** A tool for managing and monitoring the CDH environment.
+        *   **Free Edition:** Supports up to 50-node clusters with limited functions for infrastructure service and setting management.
+        *   **Enterprise Edition:** Supports unlimited node clusters, active monitoring, and additional data analysis tools.
+        *   *Note: Cloudera and Hortonworks merged on October 3, 2018.*
+
+*   **Hortonworks (HDP - Hortonworks Data Platform):**
+    *   Includes Hadoop, Hive, Oozie, Pig, Zookeeper, and other open-source tools.
+    *   All software is free; revenue comes from education and support programs.
+
+*   **MapR:**
+    *   **M3:** Free version, offers NFS access, integrated management UI, and improved scalability.
+    *   **M5:** Paid subscription version, features include no single points of failure, mirroring, snapshots, NFS High Availability (HA), and data placement control.
+    *   **M7:** Enhancements for HBase, offering improved speed, scalability, and stability.
+
+---
+
+## Big Data System Trends & Forecast
+
+### 1. Big Data System Trends
+
+*   **Ecosystem Formation:** Service providers build corporate ecosystems by addressing big data challenges like real-time and memory-based processing, ease of query, and varied file system accessibility.
+    *   **Cloud Providers (Amazon):** Link their cloud capabilities with open-source big data solutions to create unique platforms.
+    *   **Enterprise Leaders (IBM, Microsoft):** Adapt strategies to focus on big data, leveraging existing competencies.
+    *   **Mobile-based Companies (Google, Apple):** Build analysis systems based on existing servers and user data to enhance services.
+*   **Service Delivery Differentiation:**
+    *   **Total Solution Providers (Amazon, IBM, Google):** Develop internal platforms supporting the entire big data analysis process and offer consulting services.
+    *   **Specialized Solution Companies (Teradata, Good Data):** Focus on specific functions like analysis and visualization for big data, striving for unique performance.
+
+### 2. Forecast of Big Data Systems
+
+*   **Low Versatility:** Despite the growth of the Hadoop ecosystem, it remains technically complex for non-engineers, often requiring significant help from engineers.
+*   **Growth of Open-Source Systems:** The rise of open-source technologies creates a competitive landscape, enabling small venture companies offering user-centered customized software and traditional cloud companies to thrive.
+*   **Strengthened Linkage with AI:**
+    *   Industrial use of AI (e.g., IBM Watson, Google AlphaGo) is increasing.
+    *   Cloud companies are integrating their infrastructure with AI and forming expanded ecosystems through cooperation with competitors.
+
+---
+
+## Networking Fundamentals (Introduction)
+
+This section introduces concepts related to network communication, particularly at the lower layers of the OSI model.
+
+### Recent Trends & Issues
+
+*   Communication involves transferring data via electrical or optical signals over physical media.
+*   Understanding the **Physical Layer** (bottom of OSI 7 hierarchy) and its media/standards is crucial for comprehending low-level network mechanisms.
+*   Understanding the **Datalink Layer** is essential, as it connects the physical media to upper layers and involves methods for media access control and logical link control.
+
+### Learning Objectives
+
+1.  Explain the sub-layers of the Datalink Layer: **Datalink Control** and **Media Access Control (MAC)**.
+2.  Explain **error detection** and **error correction** techniques at the Datalink Layer.
+
+### Key Networking Terms
+
+*   **OSI Layers:** LLC (Logical Link Control), MAC (Media Access Control)
+*   **Network Topologies:** Topology
+*   **Media Access Methods:** CSMA/CD (Carrier Sense Multiple Access with Collision Detection), CSMA/CA (Carrier Sense Multiple Access with Collision Avoidance)
+*   **Address Resolution:** ARP (Address Resolution Protocol), RARP (Reverse Address Resolution Protocol)
+*   **Error Correction Techniques:** Forward error correction, Backward error correction, Turbo code, Convolution code, BCH, Hamming code, Reed-Solomon
+*   **Error Detection Techniques:** Parity test, Checksum test, Cyclic Redundancy Check (CRC), VRC (Vertical Redundancy Check), LRC (Longitudinal Redundancy Check)
+*   **Automatic Repeat Request (ARQ) Protocols:** Stop-and-wait ARQ, Go-Back-N, Selective-repeat, Adaptive ARQ, H-ARQ (Hybrid ARQ)
+*   **Physical Media & Wireless Standards:** Optical cable, IEEE 802.11 (Wi-Fi), DSSS (Direct-Sequence Spread Spectrum), OFDM (Orthogonal Frequency-Division Multiplexing), MIMO (Multiple-Input Multiple-Output), 256-QAM (Quadrature Amplitude Modulation), FHSS (Frequency-Hopping Spread Spectrum), Beamforming, UHD (Ultra High Definition)
+*   **Wireless Personal Area Network (WPAN) Standards:** IEEE 802.15, WPAN, ZigBee, Bluetooth, UWB (Ultra-Wideband)
+
+================================================================================
+ORIGINAL TEXT (First 5000 chars)
+================================================================================
+
+--- Page 142 ---
+Overview  of System Architecture )
+[Figure 102] below shows an example  of MapReduce  outputting  the frequency  of words included  in a character  string.
+The process  consists  of dividing  the string data by line (splitting)  > Receiving  the string by line and outputting  it in the
+form of <Key, Value> (mapping)  — Separating  data by the key (shuffling)  >Calulating  the sum of the frequency  of each
+key and outputting  it (reducing) Combines  the output  data and stores it in the Hadoop  file system (final result).
+The overall MapRediuce  word count process
+Input Splitting Mapping Shuffling Reducing Final result
+[--->| DOG,2
+DOG CAT RAT |--->|
+ANCA --->| CARCARRAT |--->|
+DOG  CAR CAT
+DOG CAR  CAT |--->
+[Figure 102] Process  of Outputting  the Frequency  of Words Included  in a Character  String through  MapReduce
+C) Hadoop  support  program
+As shown in <Table 31>, Hadoop  support  service  programs  to collect, store, utilize, process,  and manage  big data, are
+in development.
+<Table 31) Hadoop  Support  Service  Programs
+Big Data Type Key Main Function
+Technology
+Flume - Collection  of unstructured  data
+, - Developed  by Cloudera  and currently  included  in Apache  Incubation
+Ses m dats Scribe - A platform to collect unstructured  data
+- Developed  by Facebook  as a transfer  to the centralized  server
+Chuckwa - Unstructured  data collecting  platform  to store distributed  data in HDFS
+- Structured  data collection
+Structured  data Sqoop - Import of data from a relational  database
+collection - Support  for data transfer  to various repositories,  such as HDFS and NoSQL
+Hiho - Large-capacity  structured  data collection  and transfer  solution
+- Distributed  database
+- HDFS-based  column-based  NoSQL  database  developed,  based on Google’s  paper on
+. Hbase BigTable
+Distributed - Used by Yahoo and Twitter, and NHN’s Linedatabase —
+- Open-source  distributed  database  management  system
+Cassandra - Hybrid of a Column-centered  database  and a row-centered  database
+- One of the NoSQL  databases
+M3 Overview  of System  Architecture  141
+
+
+--- Page 143 ---
+ESSENCE
+Big Data Type Key Main Function
+Technology
+Real-time  SQL ” eevoberen  eae SQL query system
+query Impala Deve loped by Cloudera /
+- Use of internally  developed  engine, instead  of MapReduce
+Metadata =management HCatalog Big data metadata  management
+- Hadoop-based  data warehousing  solution
+Hive - Similar  SQL-based  big data processing
+Data analysis - Developed  by Facebook  and disclosed  in opensource
+Pj - Data analysis
+8 ~ To provide the proprietary  language  of Pig Latin, instead of MapReduce
+In-memory Spark - Open-source  cluster computing  framework
+processing P - First developed  by UC Berkley’s  AMPLab
+- Data miningDame Mahout - Hadoop-based  open source
+Workflow Oozie - Big data processing  management
+management - Hadoop  task management
+Distributed Zookeeper - Big data server system management
+coordinator P - Mutual coordination  service between  distributed  environment  servers
+Serialization Avro - A framework  that supports  serialization  of RPC (Remote  Procedure  Call) and data
+- Resource  management  platform
+Resource YARN - Distributed  computing  environment
+manager - Management  of computing  resources  inside clusters
+- User's application  scheduling  management
+D) Commercial  Hadoop  solutions
+Leading  companies  that develop  and distribute  open-source  commercial  Hadoop  solutions  include  Cloudera,
+Hortonworks,  and Map R. These companies  create internal  platforms,  based on Hadoop,  and distribute  solutions
+through  the strategic  alliance  with existing  databases,  data warehousing,  and business  intelligence  solution  companies  ®
+Commercial  Hadoop Features
+version
+- CDH: Includes  Hadoop,  Hive, OOzie, Pig, Zookeeper,  and other open-source  tools, but not internal
+products
+- Cloudera  Manager:  CDH environmental  management  tool (Support  for CHD distribution  and
+CDH, monitoring,  free and enterprise  versions).
+Cloudera
+Manager + Free edition: Includes CDH, supports  up to 50-node  cluster, and limited functions,  other than the
+Hadoop  infrastructure  service  and setting  management.
++ Enterprise  edition: Includes  CDH, supports  unlimited  node cluster,  active monitoring,  and an
+additional  data analysis  tool.
+Hortonworks
+Data Includes  Hadoop,  Hive, OOzie, Pig, Zookeeper,  and other open-source  tools, but not internal products
+Tater All software  is free of charge and income  is from education  and support  programs
+HDP)
+9 Cloudera  and HortonWorks  were merged  on October  3, 2018.
+142 TOPCIT  ESSENCE
+
+
+--- Page 144 ---
+Overview  of System Architecture )
+Includes  Hadoop,  Hive, OOzie, ZooKeeper,  and other open-source  tools
+M3, - M3: Free version, NFS access, integrated  management  UI, and improved  scalability
+M5, and - M5: Paid version (subscription),  no single points of failure, mirroring,  snapshots,  NFS HA, and data
+M7 placement  control
+- M7: HBase imp...

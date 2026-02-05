@@ -1,0 +1,22 @@
+Information  security )
+e.g.,) Defining  DBA roles and granting  RBA roles and necessary  privileges  to a specific  person.
+B) Method  of controlling  access  to the database
+@ Agent  method
+A method of accessing  a database,  using a dedicated  client for database  access, after installing  an agent
+with the access control and logging function in the database  server itself. This method  can implement  strong
+access  control,  but it can cause performance  degradation  of the database  server, due to the traffic therein.
+User aac Database
+[dedicated  client] [agent]
+[Figure  39] Database  access  control  by the agent method
+@ Gateway  method
+A method  of passing  all database  server  connection  requests  through  the database  access  control server (proxy
+server). This method provides  the most powerful  access control function.  As the database  access control
+server can be configured  in redundancy,  work is not affected,  even when  a failure  occurs.
+[Figure  40] Database  access  control  by the gateway  method
+© Network  sniffing  method
+A method  of analyzing  and logging network  packets,  using TAP equipment,  etc. There is no need to install a
+separate  agent between  the database  server and client, and a system can be built, without  any load on the
+network.  However,  it is not easy to fundamentally  block the damage  to the data integrity  caused by improper
+alteration.
+[Figure  41] Database  access  control  by the network  sniffing  method
+M4 Understanding  Information  Security 89

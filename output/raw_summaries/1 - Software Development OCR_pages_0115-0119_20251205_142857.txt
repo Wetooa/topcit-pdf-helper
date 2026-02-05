@@ -1,0 +1,218 @@
+LEARNING GUIDE: Pages 115-119
+Generated: 2025-12-05 14:28:57
+PDF: 1 - Software Development OCR
+
+================================================================================
+LEARNING GUIDE
+================================================================================
+
+Here's a simplified learning guide based on the provided text:
+
+---
+
+## Software Requirements Specification & Management
+
+This guide covers essential principles, contents, and management of software requirements.
+
+### A. Requirements Specification Principles
+
+The IEEE (Institute of Electrical and Electronics Engineers) defines principles for high-quality software requirements specifications. These ensure the specification is useful and manageable:
+
+*   **Verifiability:** Requirements can be checked to ensure they are met.
+*   **Modifiability:** Requirements can be easily changed when needed.
+*   **Clarity:** Requirements are presented clearly to all stakeholders.
+*   **Accuracy:** Requirements are described precisely and correctly.
+*   **Traceability:** The origin and rationale of each requirement can be tracked.
+*   **Consistency:** There are no conflicts between requirements.
+*   **Completeness:** All important details (functionality, performance, constraints) are documented.
+*   **Interpretability:** Requirements have a consistent meaning for everyone.
+*   **Understandability:** Requirements are easy for stakeholders to comprehend.
+
+### B. Main Contents of a Requirements Specification (IEEE Standard)
+
+A typical requirements specification is structured as follows:
+
+1.  **Overview**
+    *   Overall software description.
+    *   Purpose and intended audience of the specification document.
+    *   Relationship to software goals, constraints, business strategy.
+
+2.  **Overall Description**
+    *   **Project Perspective:** Software's relationship to its purpose, constraints, and benefits.
+    *   **Product Functions:** List of major functions (detailed later).
+    *   **User Characteristics:** Description of user experience, education, disposition, and frequency of use.
+    *   **Software Operating Environment:** Hardware, OS, and software environment requirements.
+    *   **Constraints:** Hardware, memory, technology use, multilingual support, security, design/programming conventions.
+    *   **Assumptions/Dependencies:** Assumptions affecting the software (e.g., outsourced components).
+    *   **User Scenario:** Describes the system from a user's viewpoint.
+
+3.  **Interface**
+    *   **User Interface:** How users interact with the software (screens, commands).
+    *   **Hardware Interface:** Protocols and interaction between system hardware components and software.
+    *   **Software Interface:** Data/messages accessed by this software from other software components.
+    *   **Communications Interface:** How the software communicates externally.
+
+4.  **Functional Requirements**
+    *   Detailed requirements for each function listed in the "Product Functions" section.
+    *   For each function:
+        *   **Purpose:** Reason for the function.
+        *   **Inputs:** Data entering the function (with validation checks).
+        *   **Outputs:** Data exiting the function (with error messages, parameter ranges, formats).
+
+5.  **Non-Functional Requirements**
+    *   **Performance Requirements:** Speed, response time, resource usage.
+    *   **Security Requirements:** Access control, data protection.
+    *   **Software Quality Requirements:** Availability, flexibility, interoperability, maintainability, portability, reliability, usability, etc.
+
+6.  **Other Requirements**
+    *   Operation rules, business standards, legal compliance.
+
+---
+
+### C. Requirements Change and Tracking Management
+
+Once requirements are finalized and a project begins, changes are inevitable.
+
+1.  **Requirements Change Management**
+    *   The process of formally controlling all changes to the established requirements baseline.
+    *   Ensures consistency and integrity of changes throughout the project.
+
+2.  **Reasons for Requirements Changes/Errors**
+    *   Initial requirements errors, conflicts, or inconsistencies.
+    *   Participants gain a deeper understanding of the system over time.
+    *   Changes in the system environment or organization.
+    *   New technical, time, or cost problems arise.
+
+3.  **Requirements Traceability**
+    *   **Definition:** The ability to track a requirement through its lifecycle, from origin to implementation and testing.
+    *   **Granularity:** Not just tracing entire documents, but tracing *each sentence* or individual requirement within documents.
+    *   **Example:** Tracking how a marketing requirement leads to a system requirement, then a subsystem requirement, and finally influences a specific design decision.
+
+4.  **Benefits of Requirements Traceability**
+    *   **Reduces Rework:** Prevents omission of higher-level requirements in downstream deliverables.
+    *   **Improves Quality:** Enhances clarity, traceability, and testability of individual requirements.
+    *   **Impact Analysis:** Allows analysis of the impact of proposed changes.
+    *   **Collaboration:** Enables effective teamwork between different teams/companies.
+    *   **Test Coverage:** Ensures all requirements are covered by test cases, improving product quality.
+    *   **Consistency:** Maintains consistency across all project deliverables.
+    *   **Productivity:** Reduces miscommunication and errors caused by changes.
+
+---
+
+### D. Software Configuration Management (SCM)
+
+SCM is increasingly recognized as crucial for software quality.
+
+1.  **Importance & Trends**
+    *   Critical for quality in software development, especially for large, distributed projects.
+    *   Often involves using CASE tools (Computer-Aided Software Engineering) for management.
+
+2.  **Learning Objectives**
+    *   Understand the concepts and activities of SCM.
+    *   Learn to use SCM tools (e.g., version management tools).
+
+3.  **Key Concepts/Keywords**
+    *   **Software Configuration:** The specific set of components that make up a software system at a particular point in time.
+    *   **Software Configuration Management Elements:** Components of SCM (e.g., source code, documents, build scripts).
+    *   **Change Control Procedure:** Formal process for managing modifications to configuration items.
+    *   **Version Management Tool:** Software to track and manage changes to files over time (e.g., Git, SVN).
+    *   **Configuration Management Tool:** Software to manage complete configurations of a system (combines version control with build, deployment, etc.).
+
+4.  **Why SCM is Essential: Lessons from a Failed Project Scenario**
+    *   **Lack of Centralized Management:** Distributed storage of source code and documents leads to loss (e.g., virus infection, individual PC failure).
+    *   **No Version Control:** Difficulty identifying the latest working version, leading to lost work and wasted time.
+    *   **Poor Documentation:** Absence of proper documents makes onboarding new team members difficult and slows down projects.
+    *   **Reliance on Individual Developers:** Key project knowledge residing solely with individuals creates single points of failure.
+    *   **Inefficient Change Handling:** Modifying source code directly on demand without a formal process leads to inconsistencies and errors.
+    *   **Impact on Trust & Deadlines:** All these issues lead to project delays, rework, increased costs, and loss of customer trust.
+
+**In summary, SCM provides systematic control over software assets, ensuring integrity, traceability, and efficient collaboration, preventing the chaos and failures seen in the example project.**
+
+================================================================================
+ORIGINAL TEXT (First 5000 chars)
+================================================================================
+
+--- Page 115 ---
+ESSENCE
+B) Principles  and main contents  of requirements  specification
+The IEEE (Institute  of Electrical  and Electronics  Engineers)  explains  the content  and quality of the
+recommended  software  requirem ents specification  and provides  overview  samples  of various requirements.
+The specification  principle  can use the requirements  shown below as the criteria  for quality  checks.
+<Table 37> Requirements  specification  principles
+Principle Description
+Verifiability + The requirements  specification  should be verifiable
+Modifiability + The requirements  specification  should be modifiable.
+Clarity + The requirements  specification  should be presented  to each stakeholder.
+Accuracy + The requirements  specification  should be accurately  described.
+Traceability + The source and principle  of the requirements  specification  should be traceable.
+Consistency + There should be no conflicts  between  the requirements.
++ All important  details, such as functionality,  performance,  and constraints,  should beSe  ees documented.
+Interpretability + Requirements:  Should provide consistency  of interpretation.
+Understandability + The requirements  specification  should be easy for the stakeholders  to understand.
+The table below describes  the main contents  of the requirements  specification  defined as a standard  by the
+IEEE. It can be referred  to as the contents  and details  when creating  a requirements  specification.
+<Table 38> Requirements  specification
+Contents Description
+_ 1.  Overview
+4 .2 Related  teams/Persons
+concerned
+1.3 Development  scope* Overall  description  of the software
++ Purpose  of the software  requirements  specification
+* Intended  audience  of the software  requirements  specification
++ Relationship  with the software  purpose,  constraints,  characteristics,  profits,  business
+strategy,  and common  goals
+* (overall software  description)
+2. Overall  description
+2.1 Project  perspective
+2.2 Product  functions
+2.3 Characteristics  of users
+2.4 Software  operating
+environment
+2.5 Decision  and deployment
+2.8 User scenarioDescribes  the list of functions  only. The full details are described  in Chapter  4.
++ Describes  the users’ characteristics  (experience,  educational  level, disposition,  etc.)
++ Describes  user frequency  by user.
+Describes  the hardware  environment  to run software,  OS, software  environment,  etc
++ Hardware  constraints,  memory  constraints,  specific  technology  use, multilingual
+support,  security
++ Design conventions,  programming  conventions
+Assumptions  that affect this software
+(Describes  dependency  on outsourced  components,  components  of other projects)
+put/output  data by point of view
+Scenario  from the user's viewpoint  that can describe  this system
+_  3. Interface
+3.1 User interface
+114 TOPCIT  ESSENCE
+
+
+--- Page 116 ---
+Software  Development )
+Contents Description
+BY tercvarelntertace Protocol  exchange,  interaction  between  system  hardware  components  and software
+| rots
+3.3 Software  interface Defines  the data or message  that access  this software  from other software  components.
+4, Functional  requirements. __| + Describes  the detailed  requirements  for the functions  listed in Chapter  2.
++ Purpose:  Purpose  of/reason  for the function
++ Inputs: Data coming  into the function
+4.1 <Function  Name> (validation  check, troubleshooting)
+* Outputs:  Data coming  out of the function
+(process  error message,  parameter  range, form, shape, distance,  volume  output)
+5. Non-functional  requirements
+5.1 Performance  requirements
+5.2 Security  requirements
+5.3 Software  quality Availability,  flexibility,  interoperability,  maintainability,  portability,  reliability,  usability,  etc.
+requirements Describes  the software  quality  requirements.
+Operation  rules, standards  when individuals/organizations  do business  using softwareBenes  ee CBP (Current Biz Process)  and FPM (Future Process Model)
+03 Requirements  Change  and Tracking  Management
+A) Overview  of requirements  traceability
+Once the requirements  baseline is established  and the project starts, changes  to the requirements  will
+inevitably  occur. Requirements  change management  is the process  of formally  controlling  all changes  that
+occur based on the requirements  baseline.  The consistency  and integrity  of changes  can be provided  by
+controlling  and tracking  formal changes  to the requirements  that arise in the course of executing  the project.
+Errors occur while changing  the requirements  for the following  reasons:
++ Requirements  errors, conflicts,  and inconsistencies  occur.
++ The participants  develop  a deeper  understanding  and greater  knowledge  of the system
++ Changes  occur in the system  environment  and organization.
++ Technical,  time, and cost problems  arise.
+The above types of errors can be reduced by defining  and configuring  the traceability  of the requirements.
+Tracking  the requirements  does no...

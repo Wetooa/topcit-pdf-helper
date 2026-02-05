@@ -1,0 +1,211 @@
+LEARNING GUIDE: Pages 118-122
+Generated: 2025-12-05 14:03:27
+PDF: 5 - Understanding the IT Business and Ethics OCR
+
+================================================================================
+LEARNING GUIDE
+================================================================================
+
+Here's a simplified learning guide based on the provided text:
+
+---
+
+## **IT Business and Ethics: Learning Guide**
+
+### **1. IT-BSC and BSC Link Structure**
+
+**Purpose:**
+*   Help managers make decisions.
+*   Provide a balanced view of IT performance evaluation.
+*   Link IT performance to financial indicators.
+
+**BSC Link Structure of IT-BSC:**
+
+| Perspective             | Measurement Focus                                                      | BSC Link (Traditional)    |
+| :---------------------- | :--------------------------------------------------------------------- | :------------------------ |
+| **Financial/Enterprise** | Create enterprise value from IT investments.                           | Financial perspective     |
+| **User**                | Maximize value for IT service providers and users.                     | Customer perspective      |
+| **Operational Process** | Ensure efficient delivery of IT products and services.                 | Internal process perspective |
+| **Future-Oriented**     | Provide IT service/technology development support for continuous growth. | Learning and growth perspective |
+
+### **2. Key Performance Indicators (KPI)**
+
+#### **A) Overview of KPI**
+
+*   **Definition:** A quantifiable indicator that measures achievement of a goal and contains a Critical Success Factor (CSF).
+*   **Purpose:**
+    *   Accurately reflect organizational goals.
+    *   Selected from elements critical to realizing goals.
+    *   Determine success in competition and strategy.
+*   **Importance:** Widely used in performance evaluations; influences employee behavior.
+
+#### **B) KPI Establishment Procedure**
+
+KPIs should align with organizational vision and objectives, act as strategic drivers, and provide organization-wide guidance.
+
+1.  **Define KPI Area:**
+    *   Specify characteristics of the organization/operational unit.
+    *   Select participants.
+    *   *Output:* KPI establishment plan, organizational chart.
+
+2.  **Collect Data:**
+    *   Collect and review vital documents.
+    *   Develop interview questions and execute interviews.
+    *   *Output:* Interview questionnaire, KPI portfolio.
+
+3.  **Analyze:**
+    *   Create activity description sheets.
+    *   Analyze affinity (relationships).
+    *   Develop topics.
+    *   *Output:* Job-KPI affinity analysis chart.
+
+4.  **Derive KPIs:**
+    *   Derive the initial KPIs.
+    *   Refine, classify, and integrate them.
+    *   *Output:* KPI list, KPI derivation.
+
+5.  **Verify KPIs:**
+    *   Establish criteria for comparison.
+    *   Develop a comparison matrix.
+    *   Compare associative relations.
+    *   Set targets.
+    *   *Output:* KPI verification matrix.
+
+#### **C) Precautions for Deriving KPIs**
+
+1.  **Top Management Support:** KPIs require strategic support from top management to ensure they reflect the organization's strategic vision. Don't delegate solely to middle management.
+2.  **Don't Imitate:** KPIs must be unique to your enterprise, matching its specific goals and strategies. A great company's KPIs might not work for another.
+3.  **Continuous Improvement:** KPI derivation is an ongoing process. Start with a balanced set, evolve them gradually, and be prepared to modify them to respond to business environment changes.
+
+### **3. Goal Management System (MBO)**
+
+#### **A) Key Perspectives of MBO**
+
+*   **Definition:** Management by Objective (MBO) is a system for managing organizational goals. It's a business management technique for setting, controlling, and managing goals to improve individual performance and capabilities.
+*   **Characteristics:**
+    *   Employees set their own quantitatively measurable goals.
+    *   Goals are set in a "bottom-up" fashion, then finalized through discussions with supervisors to align with enterprise goals.
+    *   Meeting individual goals positively contributes to achieving corporate goals.
+
+#### **B) Main Reasons for Adopting MBO**
+
+| Reason                 | Description                                                                                                                                              |
+| :--------------------- | :------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| **Goal Alignment**     | Systematically links overall enterprise goals with individual goals to improve both individual and enterprise performance.                                 |
+| **Motivation Driver**  | Employees are motivated by voluntarily and creatively setting and working towards their goals, contributing to enterprise goal achievement.                  |
+| **Organizational Integration** | Develops employee abilities and improves job performance, creating a unified direction for all employees. |
+
+*   **Caution:** MBO goals may not align with enterprise goals if guidelines are absent. Also, conflicting individual goals can lead to disputes. Careful implementation is crucial.
+
+#### **C) Component Elements of MBO**
+
+| Component Element  | Description                                                                                                                                                            |
+| :----------------- | :--------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| **Setting Objectives** | Objectives must be: <br/>- Measurable, specific, and achievable. <br/>- Established in a direction that allows for continuous yearly improvement. <br/>- Within the organization's overall goals and capabilities. |
+| **Participation**  | Encourages interaction among employees (especially supervisors and subordinates) during goal setting and execution to align with enterprise strategies.                 |
+| **Feedback**       | Requires continuous feedback (evaluations and encouragement) throughout the evaluation period to help employees continuously improve their performance.                 |
+
+### **4. Recent IT Business Trends and Key Issues**
+
+*   **Rapid Transformation:** The IT business environment is rapidly changing, driven by smart mobile technology.
+*   **IT as a Business Core:** IT is no longer just a support function; it now leads business as the core service in many new business models.
+*   **Accelerated Transformation:** The combination of mobile, open-source, and social services with infrastructure like cloud, big data, IoT, and AI is accelerating business environment transformation.
+
+#### **Learning Objectives:**
+
+1.  Explain the trend in the transformation of the IT business environment.
+2.  Explain enterprise activities for responding to transformations of the IT business environment.
+
+#### **Keywords:**
+
+*   Disruptive innovation
+*   Crowd sourcing
+*   Open innovation
+*   Business platform
+*   API economy
+*   Servitization
+
+---
+
+================================================================================
+ORIGINAL TEXT (First 5000 chars)
+================================================================================
+
+--- Page 118 ---
+Understanding  the IT Business  and Ethics )
+relationships  exist among the indicators  within a structure  where results are shared. IT-BSC and BSC not only help
+managers  to make decisions,  but also provide a balanced  view of performance  evaluation  in the IT sector because
+they are ultimately  linked to the financial  indicators.
+<Table 59> BSC link structure  of IT-BASC  as seen from different  perspectives
+Perspective Measurement BSC link
+n Nn : 7 7 . an  ‘to the + Create enterprise  value from IT investments. + Financial perspective
+enterprise
+User perspective + Maximize  the value of IT service  providers  and users. + Customer  perspective
+Operational  process
+perspective + Ensure efficient  delivery  of IT products  and services. + Internal process  perspective
++ Provide  IT service  and technology  development  support  for — + Learning  and growth
+Future-oriented  perspective continuous  development. perspective
+0S Management  of the Key Performance  Indicators
+A) Overview  of KPI
+KPI stands for key performance  indicator  and is a quantifiable  indicator  that contains  the critical success  factor (CSF)
+of an organization.  The KPI is used to measure  the achievement  of a goal. Therefore,  KPIs must accurately  reflect
+the goals of the organization  and they must be selected  from among  the elements  that are critical to realizing  those
+goals, KPls are the factors  (means  or determinants)  that could determine  victory  in competition  as well as the factors
+(ends or results)  related to the success  of the selected  strategy.  Generally  set by the organization  and its employees,
+KPls are important  indicators  that are widely used in performance  evaluations.  Therefore,  depending  on which KPIs are
+selected,  the employees  could start behaving  differently  at work.
+B) KPI establishment  procedure
+The right KPIs should be compatible  with the vision and objectives  of the organization,  should  function  as strategic
+drivers,  and should allow the members  of the organization  to move forward  in accordance  with the same purpose  and
+strategy.  Therefore,  KPls should be able to provide  guidance  for the entire organization,  and should not be limited to
+specific  areas. The derived KPls should be made to match the strategy  and goals of the organization  after undergoing
+a validation  process.
+M5 Understanding  the IT Business  and Ethics 117
+
+
+--- Page 119 ---
+ESSENCE
+<Table  60> KPI establishment  procedure
+Stage Key activities Output
++ Specify  the characteristics  of the entire organization
+Definition  of the KPI area or the operational  unit.
++ Select the participants.+ KPI establishment  plan
++ Organizational  chart
++ Collect  and review  vital documents.
+Collect  data + Develop  interview  questions.
++ Establish  and execute  the interview  plan.+ Interview  questionnaire
++ KPI portfolio
++ Create an activity  description  sheet.
+Analyze + Analyze  affinity. + Job-KPI  affinity  analysis  chart
++ Develop  the topic.
++ Derive the KPIs.
++ Refine, classify and integrate  the KPIs. * KPI list,KPI derivation
++ Establish  criteria  for comparison.
++ Develop  a comparison  matrix
++ Compare  associative  relations.
++ Set the target.KPI verification + KPI verification  matrix
+C) Precautions  to take when deriving  KPI
+@ KPls need the strategic  support  of top management
+KPls should be kept separate  from legacy processes  and instituted  as an internal  process  that could lead to the best
+performance  from the organization  as a whole. The task of managing  the KPls should not be delegated  to a task
+force composed  of middle-level  managers:  rather, it should be the responsibility  of the top management,  who must
+make sure the strategic  vision of the organization,  is reflected  in the KPIs.
+@ Use a reference  model but do not imitate it!
+Even a set of KPls from a great company  is of no use to another  enterprise  because  the goals and strategies  are
+different  for each enterprise.  Therefore,  an enterprise  must develop  its own KPI which matches  its strategies.
+@® KPI derivation  is a process  of making  continuous  improvements.
+Starting  with a balanced  set of KPls, the KPIs should be derived in gradual steps so as to allow them to evolve into
+a mature set of KPIs. It must be possible  to modify  a set of KPIs in order to allow enterprises  to respond  promptly  to
+changes  in the business  environment.
+06 Goal Management  System
+A) Key perspectives  of MBO
+MBO (Management  by Objective)  is a system for managing  the goals of an organization.  MBO is also a business
+management  technique  for setting  goals and controlling/managing  the path to meeting  those goals for the purpose
+of improving  individual  performances  and capabilities.
+118 TOPCIT  ESSENCE
+
+
+--- Page 120 ---
+Understanding  the IT Business  and Ethics )
++ MBO sets goals whose levels can be measured  quantitatively  by the employees  through  their own decision.
++ Because,  in MBO, ...

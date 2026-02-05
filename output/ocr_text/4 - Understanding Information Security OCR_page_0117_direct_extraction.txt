@@ -1,0 +1,41 @@
+Information  security )
+system must process  all those small packets.  As a result, it takes a lot more load than the normal Ping
+command,  and the performance  of the system is degraded.
+This attack can be responded  to by blocking  ICMP protocols,  which sends the Ping command,  using  a firewall
+and other devices.
++ Syn flooding  attack
+Syn flooding  attacks exploit the vulnerability  that half-open  connection  can establish  during the 3-way
+handshaking  process (TCP connection  setup process).  The system, under this attack, can no longer accept
+connection  requests  from outside.  Therefore,  normal services  cannot be provided.  Not only Windows  systems,
+but all systems  that provide  TCP-based  services on the Internet  (for example,  web server, FTP server, mail
+server, etc.), can be damaged  by this attack.
+This attack can be responded  to by reducing  the waiting time of the SYN reception  status in the target
+system,  or by installing  an intrusion  prevention  system.
++ Boink attack
+The Boink attack is a DoS attack  that modifies  Boink. Assuming  that the packet  size is 100 bytes, 1 is sent as.
+the sequence  number  (which is the byte number)  of the first packet.  After that, 101 is sent as the sequence
+number  of the next packet, and 201 is normally  sent as the next packet. Then, 2002 is abnormally  sent as
+the 20th packet, and 101 is normally  sent as the 21st packet. Then, 2002 is abnormally sent as the 22nd
+packet, and so on. As a result, the overload  of repeatedly  sending  and combining  packets is applied to the
+attack  target system.
+The countermeasures  against  this attack are similar to those against  the ping of dead attack or Syn flooding
+attack.
+The DDoS (Distributed  DOS) attack is the evolved type of the DoS attack. The DDoS attack is a DoS attack
+that has multiple  attack sources.
+@ Sniffing  attack
+Sniffing is based on the concept  of eavesdropping,  etc., and is also known as a passive attack. All systems
+connected  to the Internet,  that is, LAN, have an IP address (layer 3 address)  and a MAC (medium  access
+control) address (layer 2 address)  implemented  in a network  interface  card. Since every MAC address  on the
+Internet  has a different  value, each system can be uniquely  identified.
+All hosts on the same LAN share the same communication  line. Therefore,  computers  on the LAN can view all
+the communication  traffic of other computers.
+Due to this characteristic,  network interface  cards (commonly  referred to as LAN cards) have  a filtering
+function  that ignores  a frame without  its own MAC address.  This filtering  function  ensures  that only traffic with
+its own MAC address  can be received.
+However,  users can set the function that enables  all traffic to be viewed, using the LAN card in case of special
+circumstances,  which is called promiscuous  mode. Sniffing is an attack that eavesdrops  on all traffic on a
+specific  LAN, by setting  the LAN card to promiscuous  mode.
+When a LAN uses a switch, traffic is sent to a specific destination  computer.  Therefore,  even if the LAN card
+is set to promiscuous  mode, traffic of other destinations  cannot be received.  In this case, sniffing can be
+performed  using the method  of switch  jamming,  ARP redirect,  ICMP redirect,  MAC spoofing,  etc.
+M4 Understanding  Information  Security 117

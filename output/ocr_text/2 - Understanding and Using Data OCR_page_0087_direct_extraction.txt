@@ -1,0 +1,36 @@
+ESSENCE
+01 Relational  Table Conversion  and Table design
+Like logical modeling,  the academic  world and the industrial  world have a quite different  understanding  of the scope
+of physical  modeling.  In particular,  the process  of creating  a table structure  diagram  corresponding  to the ERD, that
+is, the process  of relational  table conversion,  is quite different. The academic  world understands  this phase as logical
+modeling, whereas  industry  understands  this process  as physical modeling.  It is recommended  to understand  this
+difference  and check the things to be done in each phase according  to the two perspectives.
+A) Differences  between  the academic  world’s  and industry's  understanding  of physical  modeling
+@ Understanding  of the academic  world
++ Physical  modeling  refers to the process  of implementing  a table structure  diagram,  which is an output of logical
+modeling,  according  to an actual DBMS.
++ Major tasks of physical  modeling:  Data type definition, index design, etc.
++ Normalization  and denormalization,  which handle table structures,  are performed in the logical modeling  phase.
+However,  denormalization  is performed  in logical modeling  due to the requirements  of physical  modeling,  because
+denormalization  is performed  in consideration  of performance.
+@ Understanding  of industry
++ Physical modeling  refers to the process  of converting  the ERD, which is an output of logical modeling,  into a table
+structure  drawing.
++ The major tasks of physical modeling  are more diverse than those of the academic  world, including  table and
+column definition,  primary  key and foreign key definition,  normalization  and denormalization,  data type definition,
+index design,  view design, and distributed  design.
+B) Relational  table conversion
+@ Entity type conversion
++ the relation R is created that corresponds  to each entity type E and all general attributes  of E are included  as the
+columns  of R.
++ Each sub-component  is included  only for the composite  attribute.
++ After selecting  one of the key attributes  of E, it is selected  as the primary  key of R.
+@ Conversion  of the weak entity
++ The relation R is created  that corresponds  to each weak entity type W, and including  all general attributes  of W as
+the columns  of R.
++ The primary  key of E is included  as the foreign  key of R, regarding  the identifying  entity type E of W
++ The primary  key of R is composed  with a combination  of the primary  key of E and the partial key of W.
+© Conversion  of the 1:1 relationship
++ It is assumed  that S and T are two entity types participating  in the relationship.
++ The primary  key of T is included  as the foreign key of S.
+86 TOPCIT  ESSENCE

@@ -1,0 +1,27 @@
+ESSENCE
+@ RAID-1 (Mirroring  and Duplexing)
+RAID-1 uses a mirroring  technique  that redundantly  stores data on two drives. Since data is stored in redundancy,
+data can be restored,  even if a drive fails. It can improve  the reading  performance,  but the writing performance  is
+somewhat  low, since it performs  reading  operations  on a drive with low I/O. Although  the system is highly stable, the
+cost is high because  only half of the physical  capacity  can be used, as the other half is used for redundant  storage.
+RAID 1
+mirroring
+BLO =i MOlel
+S]MOle BLOCK 4
+DISK1 DISK2
+[Figure 65] RAID-1
+@RAID-5
+RAID-4 has a separate  parity drive and collects and stores parities for data verification  and recovery.  RAID-5 is
+an improvement  of RAID-4 by distributing  the load of the drive that stores the parities. At least three drives are
+required,  and the data and parity are stored by distributing  them to different  drives. It is highly effective  in cost and
+performance,  and recently,  most SSDs are configured  in RAID-5.  If three drives are configured,  data cannot  be restored
+if two or more drives  fail.
+RAID 5
+Parity  across  disks
+BLOCK la [= ]Kole@} |=] Mele @r-) ao
+OCK 1b BLOCK 2b e-Tiog
+lng EiOe' Glee
+uss uss Gs
+DISK1 DISK2 DISK3 DISK4ErEEE
+[Figure  66] RAID-5
+92 TOPCIT  ESSENCE

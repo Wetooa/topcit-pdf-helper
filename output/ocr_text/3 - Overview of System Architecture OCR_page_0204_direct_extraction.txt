@@ -1,0 +1,29 @@
+Overview  of System  Architecture
+In the transformation  process,  the JPEG uses DCT (Discrete  Cosine  Transform)  in the first stage of compression,  and
+the decompression  uses the inverse DCT method.  The transformation  and inverse  transformation  apply 8 X 8 blocks.
+The quantization  process integerizes  the real number  of the DCT transform  output and converts  some values to
+zero. The coding process  arranges  data in a zigzag order after quantization  and before encoder  input, and lossless
+compression  is performed  using run-length  decoding  and arithmetic  coding  [1].
+ransiorme! Quantizer 010101010
+(Lossy)
+1010101010 —> —) —> Se >|, Inverse
+ransformer
+[Figure 140] Image Data Transformation  Process
+Video data is composed  of several  frames.  Since each frame is an image, a video file requires  a high transmission  rate.
+Video data can be compressed  with a spatial compression  or a temporal  compression  method.  JPEG performs  spatial
+compression  of each frame, and each frame is compressed  independently.  Temporal  compression  removes  redundant
+frames and configures  each frame into I-frames,  which are independent  frames, and B-frames  and P-frames,  which
+reference  other I-frames  in order to compress  data temporally.
+Analog  audio signals are digitized  using an analog-to-digital  converter  (ADC), and ADC consists  of two processes:
+sampling  and quantization.
+C) QoS (Quality  of Service)
+Methods  for guaranteeing  QoS in a multimedia  network  include the RSVP (resource  reservation  protocol)  and the
+TOS (type of service)  field utilization.  As shown in [Figure 141], the RSVP method  processes  data transmission  with
+fixed network  bandwidth  allocation  from the source  to the destination.  The TOS field utilization  designates  the TOS
+field class in each packet  to determine  the processing  priority.
+Delivery  in the best effort if
+the RSVP is not supported
+End Points Send UnicastYo Signaling Messages(RSVP  PATH + RESV) NX @
+RSVP PATH Messages
+[Figure 141] QoS Utilizing  RSVP
+M3 Overview  of System  Architecture  203

@@ -1,0 +1,230 @@
+LEARNING GUIDE: Pages 19-23
+Generated: 2025-12-05 10:41:47
+PDF: 2 - Understanding and Using Data OCR
+
+================================================================================
+LEARNING GUIDE
+================================================================================
+
+Here's a simplified, easy-to-read learning guide based on the provided text:
+
+---
+
+## M2 Database Fundamentals: Learning Guide
+
+### 1. Introduction & Overview
+
+**1.1. Recent Data Trends & Importance**
+*   **Growth:** Domestic data-related market is growing steadily.
+*   **Interest:** Increasing interest in data diversity and availability.
+*   **Demand:** Steady growth in data utilization, database construction, and data solutions across industries.
+*   **Personnel:** Significant increase expected in data-related job requirements.
+*   **Business Trends:**
+    *   Cloud platform spread in data environments.
+    *   Increased focus on data quality management.
+    *   More decision-making based on data.
+*   **Key Takeaway:** Competence in data processing and utilization is crucial.
+
+**1.2. Learning Objectives**
+By studying this guide, you will be able to:
+1.  Explain concepts and characteristics of Data, Information, and Knowledge.
+2.  Explain concepts and characteristics of Data Processing.
+3.  Explain concepts and characteristics of File Handling Systems.
+4.  Explain concepts and characteristics of Databases.
+5.  Explain concepts and components of Database Systems.
+6.  Explain the ANSI-SPARC 3-level Database Architecture.
+7.  Explain Data Independence.
+8.  Explain roles of a Database Administrator (DBA) and Data Architect (DA).
+9.  Explain concepts and functions of a Database Management System (DBMS).
+
+**1.3. Key Terms**
+*   Data, Information, Knowledge
+*   Database
+*   Batch Processing, Online Processing, Distributed Processing
+*   DBMS (Database Management System)
+*   Data Independence
+*   ANSI-SPARC 3-level Database Architecture
+
+---
+
+### 2. Practical Business Context: Why Databases Are Important
+
+**2.1. The Problem with Treating Databases Like File Systems**
+*   **Scenario:** Many use databases by creating tables, but these tables are often dependent on individual applications, screens, or reports (like managing books with separate Excel files for each team).
+*   **Issue:** If tables are designed this way, core database advantages are lost.
+*   **Consequences:**
+    *   Increased application program complexity.
+    *   Higher development costs.
+    *   Data integrity problems (e.g., inconsistencies due to data duplication).
+    *   Deterioration of data processing performance.
+
+**2.2. Benefits of Proper Database Understanding**
+*   Understanding the **definition and characteristics** of a database (integration, storage, operation, sharing) is essential.
+*   **Goal:** Prevent problems, maximize database advantages, and apply them effectively in system development.
+
+---
+
+### 3. Understanding Data
+
+**3.1. Data, Information, and Knowledge**
+
+*   **Data**
+    *   **Concept:** Raw, collected resources; basic facts discovered, investigated, or created in the real world.
+    *   **Characteristic:** A natural state, free of human judgment.
+    *   **Key Point:** Phenomenon, Factual data.
+
+*   **Information**
+    *   **Concept:** Data that has been organized, classified, and systematized for a specific purpose according to certain rules.
+    *   **Characteristic:** Created when raw data are processed into a specific form to achieve a purpose.
+    *   **Key Point:** Treatment and Processing.
+
+*   **Knowledge**
+    *   **Concept:** Generalized matter derived from several pieces of concrete information; created by analyzing the meaning and relationships of informational data.
+    *   **Characteristic:** Requires establishing correlations between information. Involves human interpretation, meaning, and value judgment. Used for decision-making or creating added value.
+    *   **Key Point:** Added value, Generalization, Decision-making, Internalized ability (wisdom).
+
+**3.2. Types of Data Processing Systems**
+Data processing systems are categorized by how data is organized and accessed.
+
+*   **Batch Processing System**
+    *   **Concept:** Data is collected over a period or in a certain amount, then processed all at once.
+    *   **Characteristics:**
+        *   System-centered (focus on high system performance, low processing cost).
+        *   Requires preparatory work (collecting, classifying, organizing raw data into a file).
+        *   Requires standby time (no immediate processing).
+        *   Modifying changes before collective processing is complex.
+    *   **Examples:** Payroll, grade processing, utility bill processing.
+
+*   **Online Processing System (Real-time Processing System)**
+    *   **Concept:** Data is processed immediately upon transfer to the computer.
+    *   **Characteristics:**
+        *   User-centered (focus on immediate response, higher processing cost, lower system performance requirements).
+        *   No preparatory work needed.
+        *   Maintains data currency (up-to-date).
+        *   Difficult to maintain, repair, or restore.
+    *   **Examples:** Airline/railroad seat reservations, bank deposit processing, stock trading systems.
+
+*   **Distributed Processing System**
+    *   **Concept:** Data is processed by connecting geographically dispersed processors and databases over a network.
+    *   **Characteristics:**
+        *   Operates in a client/server model.
+        *   Improves operation speed and reliability.
+        *   Increases efficient use of resources.
+        *   Software development is difficult.
+        *   Relatively high security level and design complexity.
+
+---
+
+### 4. Understanding the Database
+
+**4.1. The File Processing System**
+
+*   **Concept:**
+    *   Historically, a method of storing and retrieving paper documents.
+    *   Since the 1960s, includes computerized records.
+    *   Designed to arrange and manage user-recorded data on a physical disk, often using a hierarchical directory structure.
+    *   Each application program accesses an individual file for searching, inputting, deleting, and modifying data.
+
+*   **Characteristics:**
+    *   Application programs must directly implement the logical file structure as a physical file structure.
+    *   Application programmers need extensive knowledge of the physical data structure to implement data access methods.
+    *   Data sharing is difficult because each application often has its own data; typically, one file exists for one application only.
+
+*   **Problems with File Systems:**
+    *   **Lack of Data Independence (Program Dependent):** Changes to file structure require changes to all programs accessing it.
+    *   **Data Inconsistency:** Data can differ depending on when it's retrieved (e.g., duplicated data in different files might not be updated simultaneously).
+    *   **Data Integrity Issues:** Semantically identical values might not be consistent across different files.
+    *   **Low Sharing & Use Convenience:** Difficult to share, poor security management, and low economic feasibility due to redundancy and maintenance.
+
+**4.2. The Database**
+
+*   **Concept & Core Characteristics:**
+    *   A database manages data centrally to minimize duplication.
+    *   It has four fundamental characteristics:
+        *   **Integrated Data:** Data is stored in one place as intensively as possible, eliminating or minimizing duplication (controlled redundancy).
+        *   **Stored Data:** Data is saved in computer-accessible storage media (e.g., disk).
+        *   **Operational Data:** Data required to perform an organization's unique functions (not temporary input/output data).
+        *   **Shared Data:** Data jointly owned, maintained, and used by multiple application programs within an organization.
+
+*   **Database Characteristics:**
+    *   **Real-time Accessibility:** Supports immediate responses to occasional and informal queries.
+    *   **Continuous Evolution:** Constantly changing due to data input, modification, and deletion (dynamic characteristics, accurately reflecting the current state).
+    *   **Concurrent Sharing:** Supports multiple users accessing and sharing the same data simultaneously in different ways.
+    *   **Content Reference:** Data can be accessed and retrieved by using its contents (e.g., searching for a specific value).
+
+---
+
+================================================================================
+ORIGINAL TEXT (First 5000 chars)
+================================================================================
+
+--- Page 19 ---
+ESSENCE
+>> Recent  trends and major issues
+According  to the annual White Paper on the Data Industry  published  by the Korea Data Agency,  the
+domestic  data-related  market is showing  a steady growth trend. The trend also shows that interest  in
+the diversity  and availability  of data is increasing  significantly.  Considering  this trend, the fields of data
+utilization,  database  construction,  and data solutions  seem to be maintaining  a steady rate of growth
+in all industries  in Korea. It is also obvious  that personnel  requirements  in the related fields will increase
+significantly  in the coming  years. Likewise,  we can anticipate  the main trends of business,  such as the
+spread of the cloud platform  to the data environment,  increased  interest  in data quality management,  and
+increased  decision-making  based on data. Judging  from these trends, it is evident  that competence  related
+to the processing  and utilization  of data is becoming  increasingly  important.
+>> Learning  objectives
+1. To be able to explain the concepts  and characteristics  of data, information,  and knowledge  in the
+Information  Age.
+2. To be able to explain the concept  and characteristics  of data processing.
+3. To be able to explain the concept  and characteristics  of the file handling  system.
+4. To be able to explain the concept  and characteristics  of the database.
+5. To be able to explain the concepts  and components  of the database  system.
+6. To be able to explain the 3-level database  architecture  of ANSI-SPARC.
+7. To be able to explain data independence.
+8. To be able to explain  the roles of the database  administrator  (DBA) and the concept  of the data architect  (DA).
+9. To be able to explain the concept  and functions  of the DBMS (Database  Management  System).
+>> Keywords
+Data, information,  knowledge,  database,  batch processing,  online processing,  distributed  processing,  DBMS,
+data independence,  ANSI-SPARC  3-level database  architecture
+18 TOPCIT  ESSENCE
+
+
+--- Page 20 ---
+Database )
++ Preview  for practical  business
+There are many cases in which a database  is used like an existing  file system,  and tables are created  in the
+database,  but each table is actually  dependent  on individual  applications,  screens,  and reports.
+For example,  when developing  a book management  system  for each team a booklist  table can be created
+for each team during implementation  of the database  in the same way as managing  books using Excel files.
+However,  if tables are designed  in the same way as Excel files, the advantages  of the database,  including
+integration,  storage,  operation,  and sharing,  cannot  be utilized at all.
+In this case, the complexity  of the application  program  also increases,  causing  problems  that can lead to
+serious symptoms,  such as an increase  in the development  cost, problems  with data integrity  (lack of
+consistency  due to data duplication),  and deterioration  of data processing  performance.  Therefore,  these
+problems  can be prevented,  and the advantages  of the database  can be maximized  and applied  to system
+development  only when we understand  the definition  and characteristics  of the database  (integration,
+storage,  operation,  sharing)  and its advantages,  and apply them to practical  business.
+M2 Database  19
+
+
+--- Page 21 ---
+ESSENCE
+01 Understanding  Data
+A) Concept  and characteristics  of data, information,  and knowledge
+@ Data
+Data refers to the collected  resource  itself, which are the basic data discovered,  investigated, collected,  and created
+in the real world. That is, data are related  to a fact, which refers to a natural  state free of the values  and judgments  of
+human beings.
+Q Information
+Information  refers to various data that are organized,  classified,  and systematized  for certain purposes  according  to
+certain rules. When data are processed  in a certain form, the information  necessary  for achieving  a specific  purpose  is
+created,
+@ Knowledge
+Knowledge  refers to matter  that is generalized  from several  items of concrete  information.  It is created  while analyzing
+and studying  the meaning  and relationship  of informational  data. Correlations  between  information  should be
+established  to convert  information  into knowledge.  Therefore,  information  can vary significantly  depending  on how one
+assigns  meaning  to informatized  data, analyzes  the relationship,  and judges  the values of the human  being. Enterprises
+and institutions  manage  such information  or knowledge  in such a way as to make decisions  or create  added value.
+<Table 1> Data, information,  and knowledge
+Item Definition  and characteristics Key point
+Fact + A state of disorder  in reality. Something  that exists without  being observed  by others. | Phenomenon
+Data + Realistic  data that exist widely in the real world. Factual data
++ Several simple facts that have not yet been evaluated  for a specific ...

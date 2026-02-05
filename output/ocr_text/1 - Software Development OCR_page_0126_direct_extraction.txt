@@ -1,0 +1,20 @@
+Software  Development )
++ Preview  for practical  business Do we need to maintain  software?
+Maintenance  costs account  for 60% of the entire software  process cost, of which 60% is spent on
+functional  enhancement.  Of the remaining  40%, 17% is spent on error correction,  18% on maintaining
+adaptability  to support  other platforms,  and 5% on refactoring.
+Error correction  -
+17%
+Maintenance  - 60%
+Software  maintenance  is the continuous  modification  and supplementation  of fully developed
+software that is currently  in use, for the purpose  of adapting  it to changes  in the environment,
+correcting  errors, and improving  its performance.  To reduce maintenance,  the system must be
+properly  developed  so that it can flexibly  adapt to environmental  changes.
+After its development,  software  will be continuously  modified  and supplemented  from the beginning
+of its use until its final disuse for various  reasons.  Software  is a system that is directly  connected  to a
+person's  consciousness  or behavior.
+Therefore,  if the software  is not well maintained,  it will lose its vitality, that is, it will no longer be fit
+for use. Therefore,  software  maintenance  is more important  than initial development,  and requires
+more effort and cost.
+(Source: Doosan  Encyclopedia]
+M1 Software  development  125

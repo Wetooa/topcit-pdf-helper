@@ -1,0 +1,39 @@
+Overview  of System Architecture )
+from the technical  aspect in order for them to have the same level of complex  and highly integrated  structure  as the
+human brain. Research  on neuromorphic  processors  with various materials  and structures  is ongoing  worldwide,  but
+there is no clear leading  group with clear superior  competitiveness.
+B) Quantum  computer
+A quantum  computer  is a new conceptual  computer  that can simultaneously  process  a large volume  of information  at
+a high speed, based on the principle  of ultra-high-speed,  large-capacity  computing  technology  optimized  for specific
+operations,  according  to the principle  of overlapping  and entanglement  inherent  in quantum  mechanics.
+Quantum  parallel processing,  which uses quantum  bits (qubits)  as a basic unit of information  processing,  exponentially
+increases  information  processing  and computation  speed. <Table 13> shows the difference  from conventional
+computer  structures.
+{Table 13) Comparison  of Conventional  and Quantum  Computers
+Subject Existing  Computer Quantum  Computer
+Expression  of information  in 0 or 10 ol i Overlapping  0’s and 1’s
+Sequential CH 1 FE 0 % Om | combi| eB n n combiningOperation calculation ra  te 0 I OBFO OMFO  | an
+concept diagram OMf0 0 0 OME OMo one  ata : calculating
+BDORHORMOooom  | | MOOMMOMMOOMoOO  jtra =a
+Much time required Instantaneous  calculation
+Basic unit Bit (0 or 1) Qubit
+ee Calculation  with a logic table Calculation  by matrix function
+External  noise Easy to correct  errors Difficulty  correcting  errors
+n bits of oneieanetion Remember  only one value out of 0 - 2-1 Remembering  all values of 2n (overlap)
+One operation  of n bit ALU 2° operations  of n qubit ALU
+Operational Eight information One information  processing
+throughput Processing  In the case [fj “4 | [dj in the case of 3 qubits
+of 3 bits (Repeated (Simultaneous  calculation)
+calculation)
+A quantum  computer  can be an analog  or digital type. <Table 14> shows the characteristics  of each type.
+Table 14) Types of Quantum  Computer  and Comparison
+Subject Features
+Analog  type
+(Quantum  ising
+machine)Quantum  Annealing  type- Low versatility  (Combination  optimization
+calculation)
+- Commercialized  by D-Wave  Systems  in 2011
+Quantum  neural network  (QNN)- Low versatility  (Combination  optimization
+Laser network  type calculation)
+- Operated  at room temperature  and low cost
+M3 Overview  of System  Architecture  73

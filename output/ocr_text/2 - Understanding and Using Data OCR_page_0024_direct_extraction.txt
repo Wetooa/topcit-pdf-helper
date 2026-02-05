@@ -1,0 +1,25 @@
+Database )
+Refer to processing  the contents  of data requested  by the user, (that is, by values)So eee rather than by location or address.
+03 Understanding  the Database  System
+A) The concept  and components  of the database  system  (DBS)
+@ Definition  of the database  system
+The term ‘DBS’ refers to a computer-centered  system that creates necessary  information  by storing and managing
+data in a database.
+User Database  Lanaguage
+Database  (DB) Database  Management  System  (DBMS)
+[Figure 1] Database  system  (DBS)
+@ Components  of the database  system
+As regards  the processing  of data stored in a database,  there is a user who processes  it, a language  that can
+manipulate  and read data in the database,  and DBMS software  that enables  the processing  of all data.
+That is, a database  system is composed  of four attributes:  database,  database  language,  user, and database
+management  system (DBMS).
+<Table  4> DBS components
+Item Contents
+A set of operational  data integrated  and stored with minimal redundancy,  so that theDatabase : mane . .
+multiple  application  systems  of an organization  can share it.
+Database  language A tool that provides  an interface  between  people and system
+Users Database  administrator  (DBA), database  application  programmer,  database  user.
+Database  management : . ae .system  (DBMS) System  software  that provides  database  construction  and utilization  functions.
+B) Data independence  and ANSI-SPARC’s  3-level  database  architecture
+@ Background  to introduction  of the concept  of data independence  (reason  for its necessity)
+M2 Database  23

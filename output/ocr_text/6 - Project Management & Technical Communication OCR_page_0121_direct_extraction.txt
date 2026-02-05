@@ -1,0 +1,41 @@
+ESSENCE
+@ Types of Quality  Assurance  Technique
+Quality assurance  techniques  can be classified  into Prevention"  and Inspection''  depending  on the timing of
+quality assurance  activities,  and can be divided into Review, Inspection,  and Walkthrough  as follows depending
+on the purpose  of quality  assurance.
+<Table 55> Quality  Assurance  Technique
+Classification Technical  Review Software  Inspection Walkthrough
+Assess  conformity  to
+Purpose specifications  and plans and Find defects and verify solutions Find defects:  verity altematves,
+ensure the integrity  of changes 8
+Pe Formally  documentedParticipant Developer participant Developer
+Leadership Senior engineer Moderator Developer
+Data Volume Big depending  on purpose Relatively  small Relatively  small
+Deliverable Technology  Review Inspection  Report & Defects  List Review Report
+@ Case of Project  Quality  Assurance  Activity
+In a project, the following  activities  for software  quality  assurance  are performed.
+<Table 56> Case of Project  Quality  Assurance  Activity
+Project  Quality
+Assurance  Activity Detail
+Management  activities  for configuration  items such as configuration  item identification,  control,  audit,
+and
+Configuration — :
+management & Project site sketch
+It mainly performs  configuration  management  for program  sources  and deliverables  and starts with
+setting  a baseline  for management.
+Document  management  procedure  establishment,  document  creation, document  storage,  document
+Document . ” :
+management & Project site sketch
+It distinguishes  deliverables  officially  offered  to the client from work products  required  for project
+execution  after the project  is completed.
+Establishing,  executing,  and recording  the results of quality assurance  plan
+= Project  site sketch
+Test results such as unit tests for unit program  modules,  integrated  tests for systems,  and system
+tests must be provided  to customers.Quality  record
+Joint review of project  progress  according  to milestones
+Joint revie .
+inv review = Project site sketch
+Performed  through  weekly  work report, monthly  work report, and occasional  report
+10 Prevention:  Inspection  performed  to prevent  errors in intermediate  deliverables
+11 Inspection:  Inspection  for errors before delivery  of project  deliverables  to the customer
+120 TOPCIT  ESSENCE

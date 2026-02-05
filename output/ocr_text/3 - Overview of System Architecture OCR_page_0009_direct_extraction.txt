@@ -1,0 +1,29 @@
+ESSENCE
+D) Commercial  Hadoop  solutions
+02 Big Data System  Trends  and Forecast
+A) Big data system  trends
+B) Forecast  of big data systems
+XI. Datalink  Layer
+01 Concept  of datalink  layer
+02 Encapsulation  of the Datalink  Layer
+A) Encapsulation  of the datalink  layer
+B) Frame header  and trailer
+03 Datalink  Layer Configuration
+A) Sub-layers  of datalink  layer
+B) Logical link control (LLC)
+C) MAC
+04 MAC Address  Search
+A) IP address  and MAC address  conversion  protocol
+B) MAC address  search scenario
+05 Techniques  of Datalink  Layer Error Detection  and Correction
+14 TOPCIT  ESSENCE145
+147
+147
+148
+148
+148
+149
+149
+149
+150
+150

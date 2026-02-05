@@ -1,0 +1,24 @@
+ESSENCE
++ The memory  occupied  by a process  can be shared, and another  thread can access the same memory  address  in a
+multi-thread  system.
++ The cost of thread creation  and context  exchange  is more economical  than the process,
++ Threads  increase  the parallel attributes  of the process  and enable the utilization  of multiprocessors.
+[Figure  20] Single Thread and Multi-thread
+03 Process  Synchronization  and Deadlock
+A) Concept  of process  synchronization
+A race condition  refers to two or more parallel processes  simultaneously  accessing  and changing  the same data,
+or the order of manipulating  the data affecting  the execution  result. In a race condition,  only one process  must be
+protected  to manipulate  data, and process  synchronization  is necessary  for its protection.
+B) Critical  section  problem
+For process  synchronization,  each process  defines a critical section in a part of the code and performs  the task of
+changing  the data that is shared with other critical section processes.  Two or more processes  that are mutually
+exclusive  cannot run in the critical section at the same time. [Figure 21] shows the structure  of the critical and
+remainder  sections.
+do {
+entry section
+critical  section // Critical  section
+exit section
+remainder  section  // Remainder  section
+} while (TRUE):
+[Figure 21] Critical Section  Structure  in a Process  Code
+48 TOPCIT  ESSENCE

@@ -1,0 +1,36 @@
+ESSENCE
+1.5.2 Interfe . 9,ple ation 13days  | 4/01/08(Wed,)  | 14/01/24(Fri) Lee Seonyeong 0%
+1.5.3 Consultation  screen  | 86 days | 13/11/25(Mon.)  | 4/03/26(Wed.) Kim Hyeonhwan 1%
+[Figure  46] Project  Progress  Tracking  Management  Tool (example)
+B) Risk management  system,  RMS
+Project  managers  must monitor  and control the project  from initiation  to the end of the project for numerous
+issues and risks. In the same way that requirements are managed  using a Requirement  Traceability  Matrix,
+issues and risks are also managed  using an issue management  tool, and the figure below is an issue and re-
+quirements  management  software.
+Key Summary Status eee Creation date | Update date | Updated version
+SUSRQ- [Local]improve  validity period2663 structure  Sales force Registered  | Unresolved  | 2013/08/23  | 2013/08/23 Developed
+eae) Pe commission  for the Store | Registered  | Unresolved  | 2013/08/19  | 2013/08/22  | To be reviewed
+[CEO work order] Web-related
+SUSRQ- issues of customer  center, .2580 admin FAQ-related  functionality Registered  | Unresolved  | 2013/08/08  | 2013/08/23  | To be reviewed
+implementation
+SUSRQ-  | [Store] Feature  for buyers related
+2577 to shipping  destination  of buyers In progress  | Unresolved  | 2013/08/08  | 2013/08/08  | Being planned
+Se Automatic  estimation  of retum Registered  | Unresolved  | 2013/08/07  | 2013/08/23  | To be reviewed2565 shipping  cost
+SUSRQ- Automatic  reflection  into FN of
+2552 whether  actual shipping  has been | Registered  | Unresolved  | 2013/08/06  | 2013/08/23  | Being planned
+made
+oe Shipping  cost promotion  system Registered  | Unresolved  | 2013/07/31  | 2013/08/07  | To be reviewed
+rae Low price guarantee In progress | Unresolved  | 2013/07/22  | 2013/08/23 QA
+oye Immediate  discount Registered  | Unresolved  | 2013/07/18  | 2013/08/19  | Waiting
+SUSRQ- [Local] Improve  validity  period
+2389 structure In progress  | Unresolved  | 2013/07/16  | 2013/08/23 Developed
+ere Road name address conversion Registered  | Unresolved  | 2013/07/11  | 2013/08/19  | Being planned
+in Create icons for cautions  for use Registered  | Unresolved  | 2013/07/09  | 2013/08/07 Waiting
+os Bundle delivery Registered  | Unresolved  | 2013/07/08  | 2013/08/23  | To be planned
+[Figure  47] Project  Issue and Risk Management  Tool (example)
+C) Configuration  management  system,  CMS
+Configuration  management  tool is a management  tool that systematically  manages  source codes or deliver-
+ables in an environment  where several people work at the same time to prevent  duplicate  revisions  or loss of
+updated  contents.  It mainly tracks the history of source codes or deliverables  and performs  version control.
+The most popular  tools include CVS, Subversion,  and Git.
+136 TOPCIT  ESSENCE

@@ -1,0 +1,218 @@
+LEARNING GUIDE: Pages 163-167
+Generated: 2025-12-05 14:08:07
+PDF: 5 - Understanding the IT Business and Ethics OCR
+
+================================================================================
+LEARNING GUIDE
+================================================================================
+
+Here's a simplified, easy-to-read learning guide based on the provided text:
+
+---
+
+## Learning Guide: Modern IT & Business Concepts
+
+### 1. Machine Learning (ML)
+
+*   **Definition:** Algorithms that enable machines to learn and improve performance autonomously using data.
+*   **Main Categories:**
+    *   **Supervised Learning:** Learns from labeled data to predict outcomes.
+    *   **Unsupervised Learning:** Finds patterns in unlabeled data.
+    *   **Semi-supervised Learning:** Combines aspects of both (uses a small amount of labeled data with a large amount of unlabeled data).
+
+#### Key Machine Learning Algorithms:
+
+*   **Supervised Learning Algorithms:**
+    *   **Regression Analysis:** Models relationships between data by minimizing error between given data and estimated values.
+    *   **Decision Making Tree:** Creates a tree-shaped model based on data properties to make decisions.
+    *   **Artificial Neural Network (ANN):** Mimics biological neural networks with input, intermediate, and output layers; updates weighted node values.
+    *   **Bayes Theorem (e.g., Naive Bayes):** Applies Bayes theorem (often assuming independence between characteristics) for classification and prediction.
+    *   **Support Vector Machine (SVM):** Finds the best decision boundary by defining an object function using margins.
+*   **Unsupervised Learning Algorithms:**
+    *   **Clustering:** Groups similar data points into "clusters" to classify data.
+    *   **Dimensionality Reduction:** Summarizes or represents data in a lower dimension while retaining essential information.
+*   **Semi-supervised Learning Algorithms:**
+    *   Often combines supervised learning with clustering.
+    *   **Expected Value Maximization (EM Algorithm):** An iterative algorithm for finding parameters in probabilistic models with unobserved (latent) variables.
+
+---
+
+### 2. Deep Learning (DL)
+
+*   **Definition:** A branch of Machine Learning that uses Artificial Neural Networks (ANNs) with multiple layers to process information and solve problems, mimicking how humans learn. It's a key driver of recent AI advancements.
+*   **Characteristics:**
+    *   **Consolidated Feature Extraction:** Combines pre-processing and feature extraction into a single, integrated learning process.
+    *   **Automatic Complex Data Information Extraction:** Efficiently extracts information from high-dimensional, complex data (e.g., images), reducing information loss.
+    *   **Efficient for High-Level Abstractions:** Improved capability to absorb and summarize key content or functions from large, complex datasets.
+
+---
+
+### 3. Big Data
+
+*   **Definition:** Data sets so large and complex that traditional data processing applications are inadequate. They exceed the limits of general databases.
+*   **Key Characteristics (The 3 Vs):**
+    *   **Volume:** Extremely large amount of data (peta bytes, trillions of records).
+    *   **Variety:** Diverse data types, including unstructured (e.g., text, images, video) and non-metrical variables.
+    *   **Velocity:** High speed of data generation and processing.
+*   **Examples of Use:**
+    *   **Google Flu Trends:** Predicted flu trends by analyzing search queries and locations.
+    *   **Credit Card Companies:** Analyze customer consumption and behavior for marketing, product development, and recommendations.
+*   **Detailed Characteristics:**
+    *   **Data Size:** Millions/billions of users, trillions of records.
+    *   **Data Structure:** Often unstructured, non-formal, large volume of distributed data; simple data correlation with plain schema.
+    *   **Type of Data:** Includes time-related data and mission-critical data (e.g., system logs, sensor data, social media data, web mining data).
+
+---
+
+### 4. FinTech (Financial Technology)
+
+*   **Definition:** A composite of "Financial" and "Technology," referring to services that integrate IT into traditional financial services like payments, remittances, asset management, crowdfunding, and loans.
+*   **Evolution:** Originally described large vendors for financial institutions; now refers to innovative services from financial startups.
+*   **Advantages over Traditional Finance:**
+    *   Leverages smartphone-based mobile devices.
+    *   Uses Big Data analysis for financial management and credit risk assessment at lower costs.
+    *   Offers convenient and secure accessibility for payment services.
+*   **Growth Factors:**
+    *   Popularization of mobile services, open-source software, and cloud technology.
+    *   Increasing consumer demand for new financial services.
+    *   Low initial investment and labor costs due to internet-based nature.
+    *   Consumer shift to faster and cheaper mobile financial transactions.
+*   **Threat to Traditional Financial Companies:**
+    *   **Payment & Remittance:** Easy customer acquisition and service accessibility via scalable platforms.
+    *   **Lending & Investments:** High predictability provided by social and Big Data.
+    *   FinTechs often use payment/remittance services as a platform to expand into other financial services (e.g., Alibaba's Alipay).
+*   **Main Attributes:** Convenience, ease, and simplicity. It signifies a paradigm shift where non-financial companies with IT expertise provide financial services.
+
+#### Types of FinTech Services:
+
+*   **Payment Service:** Enables easy money transfer or payments, often linked with credit cards and bank accounts.
+*   **Digital Currency:** Virtual currency that can be exchanged for real currency and used for payments globally (e.g., Bitcoin).
+*   **P2P (Peer-to-Peer) Lending:** Connects investors directly with borrowers, offering an alternative to traditional bank loans.
+*   **Financial Software:** Enhances financial convenience through Big Data analysis, proprietary algorithms, and AI.
+
+#### Domestic Challenges (e.g., South Korea):
+
+*   Limited scope for independent businesses without partnerships with financial institutions.
+*   Extensive financial regulations hindering growth.
+*   Need for government support to energize the industry and foster value creation.
+
+---
+
+### 5. O2O (Online to Offline) and O4O (Online for Offline)
+
+#### O2O (Online to Offline)
+
+*   **Definition:** Customers pay for goods or services online and then receive or consume them in an offline physical space. It's the opposite of "showrooming" (browsing offline, buying online).
+*   **Examples:**
+    *   **Baedal People:** Ordering and paying for food online, then receiving it offline.
+    *   **Kakao Taxi:** Booking a taxi via a mobile app, then taking a physical taxi offline.
+    *   **Wahome:** Paying online for house cleaning services that are performed offline.
+
+#### O4O (Online for Offline)
+
+*   **Definition:** An online company leverages its online strengths (data, technology, customer base) to operate or innovate an offline business, expanding its scope from online to offline.
+*   **Example:**
+    *   **Amazon Go:** An offline grocery store operated by Amazon. Customers use a mobile app to enter, pick items, and walk out. Their Amazon account is automatically charged, eliminating queues and cashiers. This leverages Amazon's online technology for offline customer convenience.
+
+---
+
+### 6. Virtual Currency, Digital Currency, and Crypto Currency
+
+*   **Digital Currency:** The broadest term. Refers to any currency represented in electronic form, regardless of whether it's a legal tender or not.
+*   **Virtual Currency:** A type of digital currency that is *not* issued or represented by a legal currency. Examples include mileage points or in-game currencies.
+*   **Crypto Currency:** A specific type of virtual currency that uses distributed ledger technology (like blockchain) and cryptography (encryption) to secure transactions and verify the validity of its units. Examples include Bitcoin and Ethereum.
+
+---
+
+================================================================================
+ORIGINAL TEXT (First 5000 chars)
+================================================================================
+
+--- Page 163 ---
+ESSENCE
+Test data
++ Machine  learning
+Machine  learning  is the field of developing  algorithms  that machines  use for learning.  It could be defined as "science
+and technology  of studying  systems  that autonomously  improve  their performance  using empirical  data gathered
+through  interaction  with the environment."
+Machine  learning  can be generally  divided into @ supervised  learning  @ unsupervised  leaming  @ semi-supervised
+learning.Learning  Classifier
+RecognitionClassification/Recognition results
+[Fig.75] Pattern  recognition  process”
+<Table 83> Machine  learning  algorithm  classification
+Category
+Supervised
+learning
+Unsupervised
+learning
+Semi-
+supervised
+learningAlgorithm
+Regression  analysis
+Decision  making  tree
+Artificial  neural
+network
+Bayes  Theorem
+Support  Vector
+Machine
+Clustering
+Dimensionality
+reduction
+Prediction  and
+classification
+Expected  value
+maximizationDescription
+Regression  analysis  carries out the repeat process  of minimizing  the margin of error
+between  given data and the estimated  values and models  the relationship  between  the
+data.
+Generates  a tree-shaped  decision  learning  model based on the properties  of the data
+and derives  final decisions  on a given problem  through  iterations.
+Algorithms  that mimic the structure  and function  of a living entity's  neural network
+Consisting  of an input layer, an intermediate  connecting  layer, and result output  layer,
+the artificial  neural network  updates  the weighted  value of the interconnecting  nodes in
+each layer and outputs  the results.
+An algorithm  that extends/applies  Bayes theorem  assuming  independence  between
+characteristics  to solve clusters  and prediction  problems.
+Using margin, support  vector  machine  defines  the object  function  of learning  to find the
+best decision  boundary.
+Clustering  is a method  of classifying  data by creating  clusters  that maximize  the
+similarity  between  given data.
+While identifying  the eigen structure  of the data is similar  to clustering,  the objective  of
+dimensionality  reduction  is to summarize  or represent  data in a dimension  lower than
+the original information.
+Semi-supervised  learning,  supervised  learning  algorithm  are sometimes  combined  with
+clustering  algorithm.  (See clustering  algorithm)
+An iterative  algorithm  for finding  parameters  with maximum  possible  or maximum  post-
+probability  in probability  models  that rely on unobserved  latent variables.
+19 Source:“Pattern  Recognition  and Machine  Learning’,  Park Hye-young,  Lee Gwan-yong.
+162 TOPCIT  ESSENCE
+
+
+--- Page 164 ---
+Understanding  the IT Business  and Ethics )
++ Deep Learning
+Deep learning  is the reason for the recent rapid development  of artificial intelligence.  Deep learning  is a branch of
+machine  learning,  and a method  of solving  problems  similarly  to how humans  solve problems  using an artificial  neural
+network  which performs  the transfer  and processing  of information  with multiple  nodes. This method is based on
+human neural network  theory.
+<Table 84> Characteristics  of Deep Learning
+Characteristics Description
+Pre-processing  for feature The two processes  that were separated  into the pre-processing  and feature  extraction  processes
+extraction are consolidated  into the entire learning  process  as pre-processing  for feature extraction.
+Automatic  extraction  of For data with large dimensions  and high complexity,  such as image data, there was a high
+complex  data information possibility  of loss of information  in the preprocessing  process.
+If the size of a high efficiency  simulation  is increased  for an abstraction  process  that summarizes
+key content  or functions  in a large amount  of data or complex  data, the ability to absorb  large
+amount  of data is improved.Efficient  for high level
+abstractions
+Source:  Overview  of Artificial  Intelligence  (Al) and Technology  Trends,  Financial  Security  Institute,  August,  2016
+@ Use of Big Data
+"Flu Trends" is a quintessential  Big Data service that was launched  by Google  for the general public. In 2008, Google
+hit upon the idea that people search for cold or flu on the Internet if they suspect  that they have the flu. The
+company  released  a service that predicts  cold and flu trends by analyzing  the search information  and the location  of
+the people searching  with keywords  like “flu” and “cold”. Credit card companies  are another  group that rely big time
+on Big Data. They analyze consumption  and behavioral  data of their customers  and use it for marketing,  product
+development,  and product  recommendation.
+Big Data refers to data that is so large that it is difficult  to handle them with traditional  data storage,  management,
+and analysis  methods;  they are data whose size has exceeded  the limits of what could be managed  as a general
+database.  Big Data is difficult to quantify  through  conventional  methods  because  the 3Vs of vol...

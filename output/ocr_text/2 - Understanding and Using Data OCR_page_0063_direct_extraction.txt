@@ -1,0 +1,36 @@
+ESSENCE
+Parent  entity
+Child entitParent attribute BTEC Child saeParent attribute
+Parent attribute
+¥ SQL  join,v Business  characteristics, »
+v Child entity primary  identifier  composition1
+1
+1
+1
+1
+-<¢qaaa Parent attribute
+The type of relationship  between  entities is determined by  business  characteristics,  child entity's primary identifier
+composition,  and SQL strategy.child entity Y Parent entity Child entity
+Child  attribute Child attribute
+[Figure  23] Adjustment  of the identifier/non-identifier  relationship
+The following  table compares  the identifier  relationship  and the non-identifier  relationship.
+<Table  24> Identifier  relationship  and non-identifier  relationship
+Item Identifier  relationship Non-identifier  relationship
+Purpose To express  a strong relationship. To express  a weak relationship.
+Impact  on the . ,
+child’s primary Included in the composition  of the childs primary Included in the child’s general attributes.identifier identifier.
+Notation Indicated  by a solid line Indicated  by a dotted line.
+- Weak subordinate  relationship.
+- Configures  the child’s primary  identifier
+- Must be dependent  on the parent  entity. independently.
+- The parent’s  primary  identifier  needs to be - Composition  of the parent’s  primary  identifier  is
+Considerations  for included  in the composition  of the child's primary needed in the composition  of the child’s primary
+connection identifier. identifier.
+- The inherited  primary  identifiers  attributes  need | - The inherited  primary  identifier's  attributes  need
+to be transferred  to another  entity. to be blocked  from other entities.
+- Parents’  participation  in the relationship  is
+optional.
+J) Super-type  and sub-type
+@ Exclusive  sub-type:  A super-type  is associated  with one sub-type  only, ([Figure  26(a)])
+@ Comprehensive  sub-type:  A super-type  can be associated  with more than two sub-types.  ([Figure  26(b)})
+62 TOPCIT  ESSENCE

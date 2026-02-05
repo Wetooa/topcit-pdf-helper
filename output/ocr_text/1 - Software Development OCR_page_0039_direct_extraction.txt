@@ -1,0 +1,33 @@
+ESSENCE
++ Preview  for practical  business
+In 2003, a massive  blackout  occurred  in the northeastern  United States, plunging  seven states in
+the US. and one province  in Canada into darkness.  When the incident  was investigated,  it was found
+that the power outage had been caused by a software  error in the XA/21 system, which occurs in
+the multi-process  method.  That is, the “race condition’  (a type of deadlock)  caused the blackout.
+The error occurred  because  two programs  in the XA/21 system simultaneously  wrote and accessed
+the same data structure.  The error corrupted  the data structure,  which in turn put the alarm process
+into an infinite loop, and even an alarm processing  failure was not notified.  The alarm queue increased
+indefinitely,  and all available  memory  was consumed  after 30 minutes.  At that time, the main server
+was down. A failover  mechanism  was activated,  and the backup server became  the main server.
+However,  the backup server  also failed because  it couldn't  handle the infinitely increasing  queue.
+This incident  is a representative  case of software  causing  a fatal error resulting  in tremendous
+damage  to real life, because  the software  was developed  without  a proper understanding  of basic
+software  technologies  such as the data structure  and algorithm.
+A data structure,  which is a way of structurally  expressing  data in programming,  presents  a way to
+conveniently  access data and store or organize  them for the purpose  of changing  the data structure.
+An algorithm  refers to a well-defined  calculation  process  to output after solving  the problem  by
+receiving  a certain  value.
+For example,  let’s consider  a case in which a house is built with blocks. We can build the best house
+only when we select and stack the most appropriate  block for a given design, such as material,  color,
+and shape among several blocks, depending  on the structure  or shape of the house. However,  what is
+far more important  than this is that we have to properly  understand  the materials  and characteristics
+of each block and the various utilization  methods.  If we don’t use the blocks in the right place, a
+shoddy and faulty construction  is inevitable  when the house is completed. The data structure  and
+algorithm  are like these blocks. Various  basic technologies  are available  that keep pace with the rapid
+development  of information  systems.  Therefore,  we can expect high-quality  software  that is optimal
+for a given environment,  if we develop  software  by adopting  and applying  the most appropriate  data
+structure  and algorithm.
+The data structure is an important  technique  in terms of coding efficiency.  An algorithm  enables  us
+to select more easily a data structure  that can solve a given problem,  and also allows us to handle a
+given problem  efficiently,  considering  the processing  time and storage  location.
+38 TOPCIT  ESSENCE

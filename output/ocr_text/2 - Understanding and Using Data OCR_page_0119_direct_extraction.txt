@@ -1,0 +1,35 @@
+ESSENCE
+<Table  47> Roles of the optimizer  in each query processing  phase
+Query processing  phase Processing  details
+Checks  whether  a more effective  query execution  plan is available  or not, merges  the sub-query
+and view, and performs  OR expansion.
+Query  optimization Determines  the access  path for the query.Query  rewrite
+D) Classification  of optimizers  according  to criteria
+@ Rule-based  optimizer  (RBO)
+The rule-based  optimizer  sets the optimal path based on the ranking  according  to the index structure  or comparison
+operator. It enables  the user to accurately  predict the path because  the optimizer’s  decision  is very regular  and clear.
+However,  it has the limitation  that a serious  judgment  error may occur in terms of execution  performance  because
+the realistic  factor (statistical  information)  is not considered.
+@ Cost-based  optimizer  (CBO)
+The cost-based  optimizer  calculates  the cost of each processing  method and selects the method  that costs the
+least. Even though there is the advantage  of guaranteeing  minimum  performance  without having to have a deep
+understanding  of the optimizer  through optimization control based on statistical  information  management  and
+decision-making  in consideration  of reality, it has a limitation  in that an execution  plan cannot be forecast  and
+controlled  easily.
+05 Linking  the Web and Database
+Web browser  components  and a gateway  that connects  the DBMS are required to link the web and database.
+Depending  on the method of implementing  the gateway,  the methods  of linking the web and database  are divided
+into server  extension  methods  and browser  extension  methods.
+A) Server  expansion  methods
+The server  extension  method  is also called a stateless  method.  A database  is connected  through  the web server, and
+a connection  is established  each time a request  is made. These methods  include the CGI executable  file method,  CGI
+application  server  method,  extended  API method,  and servlet  method.
+@ CGl executable  file method
++ The CGI executable  file method  executes  the database  application  program  as a CGI (Common  Gateway  Interface)
+executable  file. The CGI directly  accesses  the DBMS to retrieve  data. One application  process is created  for each
+request.
+* This method has the advantage  that the structure  is simple, and the method  can be implemented  using most
+programming  languages.  In addition,  users can select one of the connection  methods  provided  by various database
+vendors,  and it is very convenient  because  the user only has to modify  the CGI program  when expanding  the system.
++ However,  this method has the disadvantages  that the cost of content  replacement  increases  exponentially  when
+118 TOPCIT  ESSENCE

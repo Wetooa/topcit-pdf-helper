@@ -1,0 +1,36 @@
+ESSENCE
+improvement  if necessary
++ Reprioritization  of remaining  tasks (backlog).  Determining  the rate at which deliverables  are produced,
+verified,  and accepted  at a given time per iteration  (pre-agreed  work cycle, typically  two weeks or one
+month).
++ Determine  whether  the project  schedule  has changed
++ Management  of changes  that actually  happen
+O02 Schedule  Management  Technique
+A) Schedule  development  technique  - critical path method  (CPM)
+The critical path method  is a network  analysis  technique  used to determine  the minimum  duration  of a project.
+It is a technique  of finding  the path that determines  the minimum  duration  of the project among  many, that is,
+the critical path. The critical path technique  is known as Critical Path Method.
+The critical path is the minimum  path connecting  activities  with “Zero” float. Using a Project  Schedule  Network
+Diagram as an input, you take into account  the sequence  of activities,  duration,  dependency,  lead, and delay
+and conduct  Forward  Pass and Backward  Pass analysis  to calculate  Early Start(ES),  Early Finish(EF),  Late
+Start(LS)  and Late Finish(LF).
+<Table  42> Components  of Critical  Path Method
+Component Characteristics  and Explanation
++ A method  of deriving  the expected  finish date based on the project  start date from duration
+Forward  Pass of and the relationship  between  tasks
++ Calculate  Early Start (ES), Early Finish (EF)
++ Amethod  of deriving  the start date based on the project  finish date from duration  of and the
+Backward  Pass relationship  between  tasks
++ Calculate  Late Start (LS), Late Finish (LF)
++ ES, Early Start
+Early Start + The earliest date an activity can possibly begin
+a + EF, Early Finish
+Early Finish + The earliest date an activity can possibly  finish
+Late Start + LS, Late Start
++ The latest date an activity  can start, without  delaying  the finish of the project.
+Late Finish + LF, Late Finish
++ The latest date an activity  can finish, without  delaying  the finish of the project.
++ Total Float
+tk + The amount  of time that an activity  can be delayed or extended  without  delaying  the projectotal Float fnish date
++ Total Float = Late Finish (LF) - Early Finish (EF) = Late Start (LS) - Early Start (ES)
+96 TOPCIT  ESSENCE

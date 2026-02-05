@@ -1,0 +1,189 @@
+LEARNING GUIDE: Pages 43-47
+Generated: 2025-12-07 00:57:09
+PDF: 3 - Overview of System Architecture OCR
+
+================================================================================
+LEARNING GUIDE
+================================================================================
+
+Here is a simplified, easy-to-read learning guide based on the provided text.
+
+---
+
+## Operating Systems (OS) Learning Guide
+
+### 1. Introduction to Operating Systems (OS)
+
+*   **What are Computers?**
+    *   Electronic devices like desktops, laptops, smartphones, and tablet PCs are all considered "computers."
+    *   They all require an Operating System (OS) and major hardware components.
+*   **Importance of an OS:**
+    *   An OS is **indispensable software**. Without it, even the best hardware is useless.
+    *   It's the **medium** that allows users to access the full performance of a computer.
+    *   It **controls** all device operations, from power-on to power-off.
+    *   It **commands hardware** (CPU, memory, storage) to perform tasks, allowing users to run programs and applications.
+*   **Definition of OS:**
+    *   A **system software** that efficiently manages a computer's limited hardware resources.
+    *   It provides an **interface** for users and application programs to access these resources.
+*   **Historical Context:**
+    *   Early computers lacked an OS and ran only **single-purpose programs**.
+    *   Developers had to manually implement every interface and resource allocation, making development slow and difficult.
+*   **Main Purposes of OS:**
+    *   **Abstraction:** Simplifies complex hardware by providing standardized interfaces (APIs) for applications.
+        *   *API (Application Programming Interface):* A set of rules and protocols for building and interacting with software applications.
+    *   **Virtualization:** Allows multiple applications and users to share computer resources, making a single physical computer appear as multiple virtual ones.
+    *   **Management:** Maximizes computer resource performance while managing constraints, providing resources to applications efficiently.
+
+### 2. Main Functions of an OS
+
+The OS abstracts and virtualizes hardware to manage resources efficiently. Its main functions include:
+
+*   **Process Management:**
+    *   **What is a Process?** A running program. It's a system work unit that allocates, uses, and recovers resources (CPU, storage, files, I/O) to perform tasks.
+    *   **Tasks:**
+        *   Creating and disposing of user and system processes.
+        *   Terminating and restarting processes.
+        *   Providing techniques for process communication and synchronization.
+        *   Preventing deadlocks (situations where processes are stuck waiting for each other).
+*   **Main Memory Unit Management:**
+    *   **What is Main Memory?** (Often called RAM) A high-speed storage where the CPU fetches commands and data. The CPU can only access data directly if it's in main memory.
+    *   **Tasks:**
+        *   Tracking and managing memory space usage.
+        *   Deciding which process occupies memory space.
+        *   Allocating and recovering memory space.
+*   **File Management:**
+    *   Abstracts various physical storage devices (magnetic tape, disks, flash memory) into **files**, which are logical storage units.
+    *   **Tasks:**
+        *   Creating and disposing of files.
+        *   Creating and disposing of directories (folders).
+        *   Providing basic file and directory management.
+        *   Mapping files from auxiliary memory (like hard drives) for OS use.
+        *   Storing files on non-volatile storage (data persists even when power is off).
+*   **Input/Output (I/O) System Management:**
+    *   Helps users easily use various input/output devices (mouse, keyboard, printer, speaker) without needing to know their specific characteristics.
+*   **Auxiliary Memory Unit Management:**
+    *   Manages large volumes of data stored on secondary storage devices (e.g., hard drives, SSDs) as main memory capacity is limited.
+    *   **Tasks:**
+        *   Managing empty space on storage.
+        *   Allocating storage space.
+        *   Disk scheduling (optimizing how data is read/written to disks).
+*   **Networking:**
+    *   Integrates scattered computer resources into a distributed system (multiple processors/memory units communicating at high speed).
+    *   **Purpose:** Improves calculation speed, shares data, and enhances reliability.
+*   **Command-Interpreter System:**
+    *   A system program that allows users to access main OS functions by entering commands (e.g., MS-DOS, UNIX shell).
+
+### 3. Types of Main Operating Systems
+
+| Type        | OS             | Description                                                                                                                                                                                                                                                              |
+| :---------- | :------------- | :----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| **PC OS**   | Windows        | Developed by Microsoft. Known for stable and standardized Graphical User Interface (GUI). Supported by many third-party programs.                                                                                                                                          |
+|             | Mac OS         | Developed by Apple. Optimized for Apple's hardware.                                                                                                                                                                                                                      |
+| **Mobile OS** | Android        | Developed by Google. High openness (allows apps from various sources, e.g., APK files).                                                                                                                                                                                 |
+|             | iOS            | Developed by Apple. Very secure. Apps can generally only be installed from the official App Store.                                                                                                                                                                        |
+| **Server OS** | UNIX           | Developed by AT&T. Multi-user environment. Often used for commercial products due to being relatively inexpensive. Server developers often create and install proprietary UNIX versions.                                                                                 |
+|             | Linux          | Many open-source versions available with disclosed source code. Low-cost implementation. Compatible with UNIX. Types include RedHat, CentOS, Ubuntu, Fedora, Suse.                                                                                                       |
+|             | Windows Server | Developed by Microsoft. Provides a Windows interface for consistent UI/UX. Supports many application programs.                                                                                                                                                            |
+
+### 4. Process and Thread
+
+#### A) Understanding a Process
+
+*   **Early vs. Modern Systems:**
+    *   Early computers ran only one program at a time, monopolizing all resources.
+    *   Modern systems run multiple programs **concurrently** (at the same time). The OS manages resources for stable concurrent operation.
+*   **Process Definition:**
+    *   A **running program**. In a concurrent, multi-process environment, it's a work unit in a time-sharing system.
+*   **Process Status:** A process goes through different stages during its lifecycle:
+    *   **Created:** Process is generated but not yet running by the OS.
+    *   **Preparing (Ready):** Process is waiting for the CPU to be allocated so it can run.
+    *   **Running:** Process has been allocated the CPU and is actively executing instructions.
+    *   **Finished:** Process has completed its execution, and the CPU allocation is released.
+    *   **Standby (Waiting/Blocked):** Process was running but is now waiting for an event to complete (e.g., an input/output operation).
+*   **Process Control Block (PCB):**
+    *   A data structure that stores all information necessary for the OS to manage a specific process.
+    *   A unique PCB is created when a process starts and removed when it finishes.
+    *   **Includes:** Process Identification Number (PIC), process status, program counter (next instruction to run), scheduling priority, registered information, main memory unit information.
+
+#### B) Process Management Techniques
+
+*   **Process Creation:**
+    *   Processes can be created and removed dynamically and run in parallel.
+    *   A running process can create new processes using the **`fork()` system call**.
+    *   The creator is the **parent process**, and the new one is the **child process**.
+    *   This forms a **tree structure** where a child can also become a parent.
+*   **Process Termination:**
+    *   When a process finishes its code, it requests the OS to delete it using the **`exit()` system call**.
+    *   A parent process can use the **`wait()` system call** to receive data from its child process before the child terminates.
+    *   The OS then **recollects all resources** allocated to the terminated process.
+
+---
+
+================================================================================
+ORIGINAL TEXT (First 5000 chars)
+================================================================================
+
+--- Page 43 ---
+ESSENCE
++ Preview  for practical  business Operating  systems,  the start and end of
+computer  operation
+As of 2016, Korea’s computer  user rate was 85.7%, meaning  that more than 8 out of 10 people were
+using computers.  During  the same period, the smartphone  user rate grew much faster than PCs, reaching
+88.5%. With the rapid proliferation  of mobile devices,  the PC user rate is gradually  decreasing,  and the us of
+laptopswhich  have gradually  replaced  desktops,  have also continued  to decline  after exceeding  30% for the
+first time in 2014. Smartphones  and tablet PCs are increasingly  taking  over the place of computers.
+Electronic  devices,  such as desktops,  laptops,  and smartphones,  are collectively  referred  to as “computers”
+and they have things that are commonly  applied to them. They contain indispensable  software,  an
+operating  system (OS), and major hardware.  Having  the best processor  and components  is useless  without
+an OS. The OS is a medium  that delivers  close to 100% of the outstanding  performance  of a manufacturer's
+computer  to users.
+The elements,  such as the CPU, mainboard,  memory,  graphics  card, and storage  device, that make up a
+computer  cannot  do anything  by themselves.  Users can get work done with a word processor  and can enjoy
+playing  World of Warcraft,  only when the OS gives the commands  of what to do to each piece of hardware.
+The operating  system, which is software,  is responsible  for the device operation  from start to finish. It is
+the OS's role from the moment  it recognizes  the power supply, until it shuts off the power on command.
+Without  an OS, the user must manually  turn the power on or off in an analog way, like the older products.
+Commands  for device operation  are mechanical, and the device can only perform  one function  with an
+input. In today’s  electronic  devices,  which have been mostly  converted  to operate  electronically,  the volume
+and power buttons  remain manual.
+(Source:  EPNC, 2018/05)
+01 Operating  System  (OS)
+A) Overview  of OS
+OS is a system software  that provides  a computer  resource  interface  to users or application programs  by efficiently
+managing  the limited resources  of computer  hardware.
+The first computers  were set to operate single-purpose  programs,  as they did not have an OS. The programs
+42 TOPCIT  ESSENCE
+
+
+--- Page 44 ---
+Overview  of System Architecture )
+ran slowly and were difficult  to develop  in this form, since the developer  needed to implement  every interface  for
+accessing  the computer's  resources  and allocating  and recovering  resources.  OS implements  input, control,  memory,
+operation,  and output functions  to provide services  in order to use computer  resources  efficiently.  In other words,
+an OS controls  the computer's  resources  and implements  usage policies to allocate resources  to users through
+scheduling,  It exchanges  data through  input/output  devices,  or outputs  exceptions  or errors. The purposes  of using
+the operating  system  are as follows.
++ Abstraction:  Provides  standardized  API to application  programs  by abstracting  the complexity  of the computer's
+hardware.
++ Virtualization:  Provides  a virtualization  function to enable application  programs  and users to share computer
+resources,  and to use a single virtual computer  hardware.
++ Management:  Maximizes  computer  resource  performances  and provides  them to application  programs,  while
+meeting  computer  resource  constraints.
+B) Main functions  of OS
+OS abstracts  and virtualizes  computer  hardware  to provide resources  to application  programs,  or to manage  them
+efficiently.  Therefore,  OS can be understood  by the functions  of managing  main hardware  components.  The main
+functions  of OS are described  as follows.
+@ Process  management
+In simple terms, a process is a running  program.  However,  it is actually more than just a program,  as a process  is a
+system  work unit that allocates,  uses, and recovers  various  resources,  such as the CPU, storage  unit, files, and input/
+output  units to perform  its tasks. An OS manages  processes  and performs  the following  tasks:
+- Creating  and disposing  of user and system processes
+- Terminating  and re-running  processes
+- Providing  a technique  for process  communication  and synchronization
+- Providing  techniques  to prevent  deadlock
+@ Main memory  unit management
+A hard disk (HDD) is the hardware  that most people think of when they consider  a storage unit. However,  the main
+memory  is a different  type of storage. The main memory  is a depository  that allows the CPU to fetch commands
+and data to use from the instructions,  The addresses  that the CPU uses to access data are only available  in the main
+memory.  Even if the CPU intends  to retrieve  data in an HDD, it cannot read the data if it is not stored in the main
+memory.  The main memory  must handle the following  management  function...

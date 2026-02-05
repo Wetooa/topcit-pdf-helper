@@ -1,0 +1,30 @@
+Understanding  the IT Business  and Ethics )
+@ Configuration  of Bl
+Webservice (5 | Feed &Messaging '. <r
+Applications r..4 ittegay  a =>Custom) = J Pod ! |
+Parlier
+Data Base 2& Files Cetera) aaron) Peed[em a
+SaaS i a ie li es
+& Partners =.TSA atching = o
+- =|
+RSS & aSocial  Activity
+Analytics, Event Retrieval
+Capture Time Series
+[Fig. 39] Configuration  of Bl
+BI provides  ETL (Extraction,  Transformation,  Load) operations  on data with which enterprises  can maintain  the
+consistency  and compatibility  of OLTP (Online Transaction  Processing)  data. These features,  naturally  enough, are
+also included  in the EDW described  earlier; and, as indicated  by the component  elements,  it needs to be understood
+that the set of processes  for collecting,  analyzing  and visualizing data, as well as the functions  for supporting
+decision-making,  are in an organic  relationship  with each other.
+BI consists  of a data warehouse  that stores data, a data mart where different  perspectives  can be applied and
+analyzed  in multi-dimensions,  analysis tools, and dashboards  that generate  charts, simulations,  statistical  analysis,
+and predictions  for visualization.
+In addition,  for decision  makers, Bl can supply them with a visual presentation  of an analysis  of key management
+metrics  that would normally  be released  as a standardized  summary  report. For managers  in the field, Bl provides  a
+multidimensional  analytical  tool called OLAP with which they can perform  expert-level  analyses.
+® Types of Bl
+The types of Bl can be explained  by separating  them into 3 following  areas. They are BI, which represents  the
+goals and strategies  of an enterprise:  analysis  Bl, which is about data-driven  analysis Bl; and operational  BI, which
+is centered  on the day-to-day  operations  of the personnel  in charge of a specific operation.  These types of BI are
+summarized  in detail as follows.
+M5 Understanding  the IT Business  and Ethics 101

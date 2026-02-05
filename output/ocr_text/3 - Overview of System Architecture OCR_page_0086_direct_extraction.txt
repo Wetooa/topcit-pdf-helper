@@ -1,0 +1,16 @@
+Overview  of System  Architecture
+Server 1 Server  2 Dedicateda a File Server Storage
+a a
+LAN, WAN Section SCSI, FC Section
+[Figure 53] NAS
+© Storage  area network  (SAN)
+A disadvantage  of the DAS type is the limitation  of the number  of disks, and the difficulty  of management,  while
+the NAS type has a problem  of possible  speed delay, depending  on the network  connection.  SAN was developed  to
+overcome  the disadvantages. It uses a dedicated  fiber channel switch for fast connection,  and it enabled  the ability
+to scale up the number  of connected  servers and storage,  with less impact to the connected  network  load. Using
+the fiber channel  allows the connection  to speed up to 8Gbps - 16Gbps.  However,  it increases  costs since it requires
+the dedicated  switch and expensive  cables, and it can cause a consistency  problem,  due to locking, when multiple
+computer  systems  share a specific  file.
+SAN Switch
+(e.g.Fiber  Channel)
+M3 Overview  of System  Architecture  85

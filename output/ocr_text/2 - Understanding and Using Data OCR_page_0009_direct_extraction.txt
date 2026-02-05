@@ -1,0 +1,40 @@
+ESSENCE
+03 Impact  of database  design in the project  lifecycle
+IV. Data Modeling
+01 Concept  andProcedure  of Data Modeling
+A) Requirements  collection and analysis
+B) DB design
+C) Differences  in the academic  world’s and industry's  understanding  of
+conceptual/logical  modeling
+D) Concept  of process  modeling
+E) Concept  of correlation  modeling
+02 Data Modeling  Procedure
+A) Conceptual  modeling
+B) Logical  modeling
+C) Physical model
+03 Types of ER Notations
+04 ER Notation  Based on the Chen Model
+A) Entity
+B) Relationshio
+C) Attribute
+05 Extended  ER (EER: Extended  Entity-Relationship)  Model
+A) Generalization/Specialization
+B) Aggregation
+8 TOPCIT  ESSENCE46
+48
+51
+51
+51
+51
+52
+52
+53
+B88 8
+54
+55
+55
+55
+56
+57
+57
+57

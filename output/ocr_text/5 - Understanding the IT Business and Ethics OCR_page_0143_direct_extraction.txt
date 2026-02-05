@@ -1,0 +1,73 @@
+ESSENCE
+<Table  74> Component  elements  of MEAP
+Category Component  elements
+Integrated  development
+Development  — environment
+environment
+Mobile Framework
+Distribution  management
+Executionenvironment  Execution  framework
+Back end integrated  interface
+MDM
+Operations (Mobile  Device Management)
+environmentService  operations  and
+management
+@ MDM (Mobile  Device Management)Description
++ Project  set up, coding, simulator  for testing
++ Provides  meta (abstraction)  layer for one source multi use
++ Distribution  of mobile  app and management  of versions
++ Function  for executing  code which is independent  of platform  and device
+(a sort of middleware),  provides  wrapper  for device API
++ Standard  interfacing  with existing  application  and reuse
++ Device management,  device app management,  security  management,
+access  control  and lost device management
++ Integrated  interface  monitoring  and management
+MDM is a solution  for efficiently  managing  all the diverse mobile devices and applications  used in enterprise
+operations.  It is a system that can be used to manage  mobile devices  anytime,  anywhere  through  over-the-air  (OTA)
+transmissions  (although  the device must be in the power  on state).
+<Table  75> Main functions  of MDM
+Function
+Device  management
+Registration  for use and
+tracking  management
+Establish  and enforce
+security  policy
+Join mobile device to a
+based on the policies  ofSoftware  distribution
+:?7@
+“ €&>x Wireless& communication,
+‘,
+‘.
+‘,
+XN,
+‘,GB
+Registered
+mobile device‘\
+N
+N
+\
+. @)
+&>
+Wifi
+142 TOPCIT  ESSENCEDescription
+Collect  information  related to the mobile device/  manage  distribution
+(identify  the mobile device ID)
+Function  for the registration/approval/recall  of mobile  devices.
+Function  for freezing  the use of a mobile  device  when a loss/theft  is reported.
+Join mobile device to a company’s  internal  active directory.  Establish  and enforce  security  policy
+based on the policies  ofthe group company.
+company’s  internal  active directory.  Establish  and enforce  security  policy
+the group company.
+Authentication
+serverMobile registration
+server[—  XXXX
+DB serveroom
+Mobile management.
+l=" serverx,
+\
+Gateway —_Firewall-1
+serverDomain ow
+SS.~<-5
+Work server TEHOTES
+DMZ Network enter
+[Fig. 58] Configuration  of MDM

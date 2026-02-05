@@ -1,0 +1,38 @@
+Software  Development )
+03 Structural  Design  Method
+The process  of transferring  the results of structured  analysis,  a functional  modeling  technique,  to structured
+design is called data flow-oriented  design. When a structural  method is applied, a system is logically  divided
+and modularized  at an early stage of design, and top-down  refinement  is performed  by subdividing  the system
+from top to bottom.
+The notation  used in the structured  analysis process to represent  the data flow is called a “bubble chart” or
+a “data flow diagram”  (DFD). The DFD used in the structured  analysis  technique  describes  the data flow and
+function  from a logical point of view, whereas  the structure  chart used in structured  design represents  the
+structure  and design of software  in detail.
+The structure  diagram is a notation  frequently  used to represent  the structure  of a program.  Actually,  the
+structure  diagram also includes  other contents,  in addition  to the representation  of the program  structure.
+The structure  diagram shows the flow of data and control between  modules,  and represents  aspects  of the
+program  control structure  - such as iteration  and selection.
+The structure  diagram shows the exchange  of data and control information  between  modules,  major loops,
+and decision  making,  and is a model that represents  the contents  of interaction  between  the module  system
+and the modules  at the design stage. The data flow and the control flow can be distinguished  in the structure
+diagram  as follows.  Data are used in calculations  to create new data or modify them. However,  controls  are not
+used directly in calculations,  but instead  represent  the sequence  or condition  of calculations.  The flag that is
+commonly  used in programming  has the value of “on” or “off’, and is a control signal used to imply condition
+occurrence  or demarcate  the boundary.
+Structured  design presents  guidelines  for converting  a requirements  specification  into a design document.  The
+conversion  is determined  by the type of information  flow in the system. The information  flow can be largely
+divided into two types, transform-based  and transaction-based  information  flow. A design document  can
+be created using these two types of characteristics  that are present  in the requirements  specification  while
+moving  from analysis  to design.
+A) Transform  flow-oriented  design
+Transform  flow-oriented  design is a technique  that maps the system,  which receives  and processes  information
+and outputs  the result to the outside  world and the corresponding  computer  structure.  This technique  divides
+a system into components  and creates a hierarchy  between  the modules  that perform the basic functions.
+Transform  flow-oriented  design can divide a system into the following  three parts: The first part receives  input
+and refines it as data that can be used by the system.  The second part executes  the data processing  function.
+Most of the processes  that perform  calculations  belong  to this category.  The third part receives  the processed
+information  and converts  and outputs it as a proper output. A system is largely divided into three parts in
+this way. A set of processes  that manages  input is called an “incoming  flow’, a set of processes  that handles
+the input information  is called the “transform  center’, and a set of processes  that outputs  the processed
+information  is called an “outgoing  flow’.
+M1 Software  development  59

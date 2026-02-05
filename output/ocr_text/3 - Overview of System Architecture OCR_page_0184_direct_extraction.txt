@@ -1,0 +1,40 @@
+Overview  of System Architecture )
+The connection  request  in step © is actually  a simple drawing  of steps © through  @, and the connection  termination
+in step @ is also a simple drawing  of steps @ through  @. Steps @ through  © and  © through  @ are application  layer
+data that is immediately  appended  after the TCP header. According  to the HTTP protocol,  this data is generated  by
+the web browser  on user A’s computer  and the my.server.com  web server program.  The following  section describes
+he TCP protocol  and corresponding  steps in detail.
+TCP flow control is important  when a large volume of data, such as PDF files, is transmitted  simultaneously,  as
+shown in steps  © through  @, because  IP packets  can be transmitted  through  multiple network  paths. Error control
+is crucial to cope with transmission  errors. Moreover,  it is also necessary  to understand  congestion  control, since the
+ransmission  of more packets  that can be processed  per unit time in the network,  greatly  affects  TCP performance.
+C) TCP protocol
+The header  format used in the TCP protocol  is shown in the following  figure [1].
+When adding an option, it is necessary  to add a padding  byte to fit the 4-byte unit. When there is no option,  the TCP
+header  is 20 bytes, which is the same size as the IP header. Therefore,  the TCP/IP header is 40 bytes and must be
+sent, even when sending  one byte of user data. For effective network  transmission  in an application  layer program,
+data larger than an appropriate  size must be sent to the transport  layer.
+{Table 61) TCP Protocol  Header  Components
+Type Description
++ Defines  the port number  of the host application  sending  the segment  (16 bits)
++ Performs  the same purpose  as the source port number  in the UDP header
++ Defines  the port number  of the host application  receiving  the segment  (16 bits)Source  port address
+Destination  port address  | | porforms  the same purpose as the destination  port number in the UDP header
+Se eeenol + Defines the number  assigned  to the first byte of data contained  in the segment  (32 bits)
+BSG + The byte number  that the segment  sender expects to receive (32 bits)
++ TCP header  expressed  as the number  of 4 bytes (4 bits)
++ (Header  length: 20 - 60 bytes)
+Control + 6 different  control fields or flag bit definition
++ The window  size in bytes that the other party must maintain
++ 16-bit  long. The maximum  window  size is 65,536 bytes.Header  length
+Windows + The data size that can be sent to the segment, used by the windowing  mechanism
++ Buffer size
+Checksum + Error detection  for all checksums  and segments  (16 bits)
+Urgent  pointer + Valid only when the urgent  flag value is set (16 bits)
++ Used when the segment  contains  urgent  data
+The sequence  number  SEQ (sequence  number)  increases  by increments  of 1 for each 8-bit octet and performs  the
+unsigned  module  2” calculation.  Therefore,  the sequence  value changes  to make 0 > 2” - 10>:
+The six flags for control have the following  meanings.  The SYN, ACK, and FIN control  flags are widely used in the TCP.
+protocol.
++ URG: The urgent  pointer  field is meaningful.
+M3 Overview  of System  Architecture  183

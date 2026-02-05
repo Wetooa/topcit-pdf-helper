@@ -1,0 +1,193 @@
+LEARNING GUIDE: Pages 112-116
+Generated: 2025-12-05 10:51:01
+PDF: 2 - Understanding and Using Data OCR
+
+================================================================================
+LEARNING GUIDE
+================================================================================
+
+Here's a simplified, easy-to-read learning guide based on the provided text:
+
+---
+
+## Database Advanced Concepts: Learning Guide
+
+This guide focuses on essential concepts beyond basic SQL, including stored procedures, embedded SQL, dynamic SQL, and query optimization.
+
+---
+
+### **Introduction: The Power of SQL**
+
+*   **SQL's Importance:** SQL is the primary and most powerful tool for relational databases. It significantly improved database programming productivity by allowing DBMS to manage details when desired data is specified.
+*   **Challenges of Complex SQL:** Modern SQL statements can be highly complex, involving intricate calculations, aggregations, and conditional processing.
+*   **Impact of Poor SQL:** Incorrectly written SQL (e.g., repetitive calls in loops, ignoring index characteristics, excessive subqueries) can severely degrade database performance.
+*   **Writing Effective SQL:** Requires a deep understanding of the database system, data model, index structures, and SQL syntax.
+
+---
+
+### **Learning Objectives**
+
+By the end of this guide, you should be able to:
+1.  Explain Stored Procedures.
+2.  Explain Embedded SQL.
+3.  Explain Dynamic SQL.
+4.  Understand characteristics of query optimization and optimizers.
+5.  Understand techniques for linking web and databases (though not fully covered in this specific text selection).
+
+---
+
+### **Key Terms**
+
+*   **Stored Procedure:** Pre-compiled SQL query set.
+*   **Embedded SQL:** SQL statements within host programming languages.
+*   **Dynamic SQL:** SQL statements constructed and executed at runtime.
+*   **Query Optimization:** Process of finding the most efficient way to execute a query.
+*   **Optimizer:** Component that performs query optimization.
+*   **Cursor:** A pointer used to navigate through a result set.
+*   **Host Program:** An application program that contains embedded SQL.
+*   **Tuple:** A row in a database table.
+
+---
+
+### **1. Stored Procedures**
+
+A **stored procedure** is a collection of SQL queries or statements that are grouped together and stored in the database. It executes a series of operations like a single function and is also known as a "persistent storage module."
+
+#### **Strengths**
+
+*   **Reduced Network Load:** Executes multiple SQL statements with a single request, minimizing network traffic.
+*   **Faster Processing:** Syntax analysis and internal code conversion are done in advance (pre-compiled), reducing runtime overhead.
+*   **Data Integrity:** Can be combined with **triggers** (database objects that automatically execute when a specific event occurs) to maintain complex data rules.
+*   **Improved Code Readability:** Clearly separates host language code (e.g., Java) from SQL logic.
+*   **Easier Maintenance:** Stored procedures can be modified and replaced during operation without requiring changes to the external application program.
+
+#### **Weaknesses**
+
+*   **Low Reusability:** Often has poor compatibility across different database products, limiting code asset reuse.
+*   **Maintenance Effort:** Changes in business logic require modifications to both the stored procedure and the external application program, increasing effort and potential for errors.
+
+---
+
+### **2. Embedded SQL**
+
+**Embedded SQL** refers to SQL statements (for defining or accessing data) that are directly inserted into an application program written in a host language (e.g., C, Java, PASCAL). These SQL statements are executed along with the application program. The application program is called the **host program**.
+
+#### **Characteristics**
+
+*   **Placement:** Can be used anywhere within the host program code where an `execute` statement is allowed.
+*   **Result Set:** Unlike general SQL which can return multiple **tuples** (rows), embedded SQL statements typically return only *one tuple* per execution.
+*   **Variable Storage:** The returned tuple can be stored using common variables within the host program.
+*   **Compilation Process:**
+    1.  A **preprocessor** first separates and processes the embedded SQL statements.
+    2.  The SQL statements are replaced with library calls.
+    3.  The modified source code is then compiled by the host language compiler.
+    4.  The object program is linked with Oracle runtime libraries.
+*   **Naming Convention:** Host program variables and database fields can have the same names.
+*   **Data Type Matching:** The data type of the host program variable must match that of the corresponding database field.
+*   **Error Handling:** Execution results (success, failure, or error) are passed as a string or integer value via an implicit SQL state variable called `SQLCODE`.
+
+#### **Embedded SQL Cursor**
+
+A **cursor** acts as a pointer to the tuples (rows) returned as a result of an embedded SQL statement. It allows you to access multiple tuples one by one.
+
+**Main Cursor Statements:**
+
+*   `DECLARE`: Defines the cursor and its associated query.
+*   `OPEN`: Sets the cursor to point to the first tuple of the query result.
+*   `FETCH`: Moves the cursor to the next tuple in the result set.
+*   `CLOSE`: Closes the cursor after processing all desired tuples.
+
+---
+
+### **3. Dynamic SQL vs. Static SQL**
+
+**Dynamic SQL** statements are processed at runtime based on program logic, offering flexibility. This contrasts with **Static SQL**, where statements are fixed and defined during development. There's a trade-off between performance (Static SQL) and flexibility (Dynamic SQL).
+
+#### **Comparison**
+
+| Feature           | Static SQL                                                               | Dynamic SQL                                                                       |
+| :---------------- | :----------------------------------------------------------------------- | :-------------------------------------------------------------------------------- |
+| **Overview**      | SQL is hardcoded within the program; not assigned to a variable. Processed statically (e.g., with `CURSOR`). | SQL is assigned to a string variable and processed dynamically. Can change at runtime or be user-provided. |
+| **Development**   | Declared in `CURSOR` clause; data processed in a loop.                   | `NVL(0)` processing not needed as syntax can change.                             |
+| **Flexibility**   | Columns and `WHERE` clauses cannot be changed at runtime.                | Variables, columns, and other SQL parts can be freely processed with logic at runtime. |
+| **Execution Plan**| Optimizer creates a complex plan (e.g., handling `NVL()` conditions leads to more `CONCATENATION` steps), requiring longer "hard parsing" time. | Optimizer creates a simpler plan (pure access paths) because `WHERE` conditions are precise, minimizing "hard parsing" time. |
+| **Strengths**     | - Faster execution speed. <br/> - SQL statements can be checked in advance during development. <br/> - Higher code readability (more intuitive). | - Access plan uses the most recent statistical information. <br/> - More diverse and flexible applications possible (SQL determined at runtime). |
+| **Weaknesses**    | - All SQL statements must be defined during development. <br/> - Requires pre-compilation and binding processes. | - Slower processing speed. <br/> - SQL type, syntax, and privileges cannot be checked before execution, leading to potential runtime errors. <br/> - Higher development difficulty and longer development time. |
+
+---
+
+================================================================================
+ORIGINAL TEXT (First 5000 chars)
+================================================================================
+
+--- Page 112 ---
+Database
+>> Recent  trends and major issues
+SQL is the most important  and powerful  tool in a relational  database.  It is not an exaggeration  to say that
+the strengths  of the relational  database  are being increasingly  highlighted  thanks  to the strong  function  of
+SQL, which prevents  the relational  database  from being changed  to the object-oriented  DBMS or another
+DBMS easily. Prior to the introduction  of SQL, the procedural  programming  language  had to be used for
+simple data processing  only by writing a long programming  code. Since the introduction  of SQL, however,
+the productivity  of database  programming  has improved  significantly,  because  the DBMS manages
+everything  when the desired  data are specified.
+>> Learning  objectives
+1. To be able to explain the concept  and characteristics  of the stored procedure.
+2 To be able to explain the concept  and characteristics  of the embedded  SQL.
+3. To be able to explain the concept  and characteristics  of the dynamic  SQL.
+4 To be able to explain the characteristics  of each query optimization  phase.
+5. To be able to explain the characteristics  of the optimizers  by type.
+6 To be able to explain the technique  of linking the web and the database.
+>> Keywords
++ Stored procedure,  embedded  SQL, dynamic  SQL, query optimization,  optimizer,  web database  linkage
+M2 Database  111
+
+
+--- Page 113 ---
+ESSENCE
++ Preview  for practical  business
+SQL is the language  that must be used  to process data when using  a relational  database.  In the past,
+SQL statements  were simply used to input, modify, delete, or retrieve data. Now, the composition  of
+a statement  is becoming  too complex  to process  complex  calculations,  aggregations,  and processing
+according  to the conditions.  In fact, SQL statements  processing  such a complex  procedure  are written
+as long as several A4 pages. SQL statements  that are not properly  written may cause a deterioration  of
+performance,  thus creating  a problem  in the entire project. For example,  the performance  of the entire
+database  system can be degraded  if SQL statements  are called repetitively  while processing  a loop in a
+program,  or if the characteristics  of the index are not considered  when writing  SQL statements,  or if SQL
+statements  are excessively  long due to the indiscriminate  use of subqueries.  A full understanding  of the
+database  system,  data model, index structure,  as well as SQL syntax, is required  to write correct SQL
+statements  according  to the characteristics  required  by the business.
+112 TOPCIT  ESSENCE
+
+
+--- Page 114 ---
+Database )
+01 Stored  Procedure
+A) Definition  of the stored procedure
+A stored procedure  is a set of queries  for executing  a series of queries like a single function.  The stored procedure
+organizes  a series of operations  in a database  and stores the result in a relational  database  management  system,  and
+is also called a “persistent  storage  module”.
+B) Strengths  and weaknesses  of the stored procedure
+Most DBMS vendors  provide a function  that can describe  a procedure  using an extended language  of the
+specifications  for static and dynamic  SQL, including  cursor handling  and control statements,  exception  handling,  etc.
+The external  procedure  function  is also implemented  by calling a function  or a class method  from an external  module
+(shared  libraries)  compiled  based on C language  and Java class libraries.
+C) Strengths  of the stored procedure
++ Reduces  the network  load by executing  several SQL statements  using a single request.
++ Reduces  the processing  time as syntax analysis  and internal intermediate  code conversion  are performed  in
+advance.
++ Maintains  the referential  integrity  of data with complex  rules by combining  it with a trigger.
++ Improves  the readability  of the source code as the host  language like Java and SQL statements  are clearly
+distinguished.
++ Easy to maintain  as the website  can be modified  during operation  by replacing  the stored procedures.
+D) Shortcomings  of the stored procedure
++ Reusability  is low as a code asset because  products  are less compatible.
++ The definition  of the stored procedure  needs to be changed  together  with the external  application program  when
+work is changed,  which is used as a part of the business  logic. That is, additional  efforts are needed  when a change
+occurs, and a failure may occur due to mistakes  in the change  process.
+02 Embedded  SQL
+A) Definition  of embedded  SQL
+When an SQL statement  that defines  or accesses  data is included  in an application  program  code such as PASCAL,
+COBOL,  C, C++, Visual Basic, Java, etc. and executed  together  at the time of program  execution,  the inserted  SQL
+statement  is called an “embedded  SQL”, and the application  program  is called a “host program’.
+B) Characteristics  of embedded  SQL
+@ Embedded  SQL statements  can be used anywhere  in the host program ...

@@ -1,0 +1,219 @@
+LEARNING GUIDE: Pages 13-17
+Generated: 2025-12-05 14:33:03
+PDF: 4 - Understanding Information Security OCR
+
+================================================================================
+LEARNING GUIDE
+================================================================================
+
+Here is a simplified, easy-to-read learning guide based on the provided text:
+
+---
+
+# Information Security Learning Guide
+
+This guide covers essential concepts, terms, and solutions in information security.
+
+---
+
+## 1. Overview of Information Security
+
+### 1.1. Concept
+*   **Information Security:** Protecting information (administratively, physically, technically) from damage, alteration, or leakage during collection, processing, storage, and transmission.
+
+### 1.2. Need for Information Security
+*   Increasing need for privacy guarantees and prevention of cybercrimes.
+*   Growing concerns about leakage of domestic technologies and information due to globalization and internet connectivity.
+
+### 1.3. Goals of Information Security (CIA Triad)
+The three primary goals are:
+*   **Confidentiality:** Preventing unauthorized users from accessing or viewing original information while it's stored or transmitted.
+    *   *Example:* Encryption of customer data.
+*   **Integrity:** Ensuring information remains accurate and unaltered during transmission and storage. Preventing unauthorized creation, modification, or deletion.
+    *   *Example:* Using hash functions to detect changes.
+*   **Availability:** Ensuring authorized users can access and use information when needed.
+    *   *Example:* Maintaining server uptime and application functionality.
+
+---
+
+## 2. Basic Information Security Terms
+
+### 2.1. Authentication
+*   **Authentication:** Verifying the identity of subjects (sender/receiver) and confirming that exchanged information has not been altered or deleted.
+
+### 2.2. Non-repudiation
+*   **Non-repudiation:** Security technology to prevent a sender or receiver from falsely denying sending or receiving a message.
+    *   **Non-repudiation of Origin:** Prevents the sender from denying they sent a message.
+    *   **Non-repudiation of Delivery:** Prevents the receiver from denying they received a message.
+    *   **Non-repudiation of Receipt:** Prevents the receiver from denying they received a message.
+
+### 2.3. Cryptography
+*   **Cryptography:** Techniques and protocols for secure communication in the presence of adversaries.
+    *   **Cryptographic Techniques:**
+        *   **Symmetric Key Cryptosystem:** Uses the *same* key for both encryption and decryption.
+        *   **Public Key Cryptosystem:** Uses *different* keys (a public key for encryption, a private key for decryption).
+    *   **Cryptographic Protocols:** Rules or procedures using cryptographic techniques to achieve security goals like authentication, confidentiality, integrity, and non-repudiation.
+
+### 2.4. Digital Signature
+*   **Digital Signature:** Provides data integrity and signature authentication.
+    *   **How it works:** A hash value of a document is calculated, then signed using the sender's private key.
+    *   **Efficiency:** Signing the hash value is more efficient than signing the entire message repeatedly.
+    *   **Security:** Difficult to find another message with the same hash value, making the signature reliable.
+
+### 2.5. Hash Function
+*   **Hash Function (Hash Algorithm):** A mathematical function that converts an input of any length into a fixed-length, short output (hash value/code).
+    *   **Key Characteristic:** Does not use a key, and the same input always produces the same output.
+    *   **Use:** Primarily for integrity verification; can detect if an input message has been altered.
+
+### 2.6. Malware
+*   **Malware:** Malicious software designed to perform harmful actions against computers, file systems, or networks.
+    *   **Worms:** Independent malware that replicates and spreads itself to other computers.
+    *   **Viruses:** Malicious code inserted into other programs; it performs harmful actions and spreads when the host program runs.
+    *   **Trojan Horse:** A program that appears legitimate but contains hidden malicious code, which executes when the user runs the program.
+
+---
+
+## 3. Major Security Solutions
+
+### 3.1. Firewall
+*   **Firewall:** A security solution placed between a public network (e.g., internet) and a private network to protect the private network.
+    *   **Types:**
+        *   **Packet Filtering Gateway:** Blocks or allows packets based on a set of rules.
+        *   **Proxy Server:** Provides authentication for specific hosts to access a private network.
+        *   **Combined:** Uses both methods for increased security.
+
+### 3.2. Intrusion Prevention System (IPS)
+*   **IPS:** Detects and blocks unauthorized or abnormal behaviors (intrusions) in real-time within a target system or network.
+    *   **Purpose:** Real-time detection and blocking of illegal activities like hacking, and defending against attacks that may bypass firewalls.
+
+### 3.3. Virtual Private Network (VPN)
+*   **VPN:** Technology allowing secure use of public networks as if they were a private network, providing access control, authentication, and confidentiality without building physical private networks.
+    *   **Representative Technologies:** IPSec, SSL.
+    *   **Implementation:** Can be implemented in dedicated systems, routers, or firewalls.
+
+### 3.4. Single Sign-On (SSO)
+*   **SSO:** Allows a user to log in once to one system or site and then access other linked systems or sites without re-authenticating.
+    *   **Purpose:** Integrates user authentication across multiple systems that typically manage user information separately.
+
+### 3.5. Web Application Firewall (WAF)
+*   **WAF:** A security solution positioned in front of a web server.
+    *   **Function:** Monitors incoming HTTP/HTTPS traffic and blocks malicious attacks targeting web applications (e.g., SQL Injection, XSS) before they reach the web server.
+
+### 3.6. Network Access Control (NAC)
+*   **NAC:** Checks if a user's computer complies with security policies (e.g., user authentication, anti-virus installation) when attempting to access an internal network.
+    *   **Function:** Controls network access based on pre-defined security policies if compliance is not met.
+
+### 3.7. Wireless Intrusion Prevention System (WIPS)
+*   **WIPS:** Continuously monitors a wireless LAN to automatically detect and block access from unauthorized wireless devices.
+    *   **Purpose:** Enhances wireless LAN stability and enables integrated management by detecting and blocking intrusion attempts via unauthorized access points (APs) or user devices.
+
+### 3.8. Enterprise Security Management (ESM)
+*   **ESM:** Integrates security management functions to provide a consistent administrator and user interface.
+    *   **Aim:** Build an efficient, policy-oriented, and systematic integrated security management system for all enterprise systems.
+
+### 3.9. Security Information and Event Management (SIEM)
+*   **SIEM:** Extends ESM by providing an early warning and monitoring system for intelligent threats.
+    *   **Function:** Offers correlation analysis and forensic capabilities on large amounts of data, helping to trace threats rather than just collecting and analyzing logs. Includes corporate compliance response functions.
+
+---
+
+## 4. New Technical Terms
+
+### 4.1. Blockchain
+*   **Blockchain:** A distributed ledger designed so that network participants can store and verify data.
+    *   **Structure:** Transactions occurring over a certain period (e.g., 10 minutes) are collected into a "block." These blocks are then sequentially linked together to form a "chain."
+    *   **Purpose:** Used in cryptocurrency systems (like Bitcoin) to record all transactions in a public, distributed ledger.
+
+---
+
+================================================================================
+ORIGINAL TEXT (First 5000 chars)
+================================================================================
+
+--- Page 13 ---
+Information  security )
++ Preview  for practical  business
+Assistant  manager  Kim, working  for company  A has overseen  the development,  deployment,  and
+maintenance  of Java source programs.  He used to check web pages and servers  on a regular  basis.
+In this process, he should ensure the availability  of numerous  source codes that he is managing,  and
+he should manage  the performance  and capacity  to ensure the availability  of the server, so that the
+applications  can work properly.  He should also take technical  protection  measures,  like encryption,  to
+maintain  the confidentiality  of customer  information  that is saved by the application.
+He is trying to ensure confidentiality,  integrity,  and availability  of business  information.  Let’s take a
+closer look at the concepts  and goals of information  security.
+01 Overview  of information  security
+A) Overview  of information  security
+@® Concept  of information  security
+Information  security  refers to protecting  information  administratively,  physically,  and technically  in order
+to prevent  damage,  alteration,  and leakage  of information  while being collected,  processed,  stored, and
+transmitted  information.
+@ Need for information  security
+The need to guarantee  privacy  and prevent  crimes on the Internet  is gradually  increasing.  Concerns  about the
+leakage  of major domestic  technologies  and information are also increasing,  due to globalization,  as the entire
+world is connected  through  the Internet.
+M4 Understanding  Information  Security  13
+
+
+--- Page 14 ---
+ESSENCE
+© Goals  of information  security
+The three goals of information  security  are confidentiality,  integrity,  and availability.  Efforts should be made to
+administratively,  physically  and technically  ensure these attributes.
+Information —____,  Availability z Information
+security  threat
+rra  |
+|
+| |
+Information a
+security  threat Confdentiaity
+Information
+security  threatsecurity  threat
+_—— Information
+Integrity security  threat
+Information
+security  threat
+[Figure 1] Three goals of information  security
+* Confidentiality  means that the original information  is not exposed  to unauthorized  users while being stored and
+transmitted.
++ Integrity  means  that the original information  is maintained  while sending  and receiving  it, without  illegal creation,
+modification,  or deletion.
++ Availability  means that authorized  users can access and use the requested  information  when necessary.
+02 Basic terms of information  security
+A) Authentication
+Authentication  refers to a method  of verifying  whether  the information  exchanged  between  the sender and
+receiver,  who are the subjects  of the information,  has not been altered or deleted,  and whether  the subjects
+(sender  and receiver)  are legitimate.
+B) Non-repudiation
+Non-repudiation  refers to security  technologyto  prevent  the repudiation  after receiving  and sending  a message,
+by verifying  the fact of message  receiving/sending.  Non-repudiation  can be classified  into the following  three
+categories:
+@® Non-repudiation  of origin
+Non-repudiation  of origin refers to the prevention  of the sender’s  claim that the message  was not received
+after actually  receiving  the message.
+14 TOPCIT  ESSENCE
+
+
+--- Page 15 ---
+Information  security )
+@ Non-repudiation  of delivery
+Non-repudiation  of delivery  refers to the prevention  of the receiver's  claim that the message  was not delivered
+after actually  sending  the message.
+® Non-repudiation  of receipt
+Non-repudiation  of receipt refers to the prevention  of the receiver's  claim that the message  was not received
+after actually  receiving  the message.
+C) Cryptography
+Cryptography  is largely  classified  into cryptographic  techniques  and encryption  protocol  techniques.
+@® Cryptographic  techniques
+Cryptographic  techniques  can be divided into the symmetric  key cryptosystem,  in which the encryption
+key and the decryption  key are the samewhile  in the public key cryptosystem,  the encryption  key and the
+decryption  key are different,  depending  on whether  the encryption  key and the decryption  key are the same.
+@® Cryptographic  protocols
+Cryptographic  protocols  refer to the protocols  that use cryptographic  techniques.  As a protocol  means a series
+of finite phases  where more than 2 persons  participate  to achieve  a certain purpose,  the cryptographic  protocol
+should prevent  repudiation  by a participant,  or a third party, to ensure a certain purpose  of the concerned
+cryptographic  protocol  (authentication,  confidentiality,  integrity,  non-repudiation,  etc.), as well as the meaning
+of each message.
+D) Digital signature
+A digital signature  is the method  of providing  both data integrity  and signature  authentication,  by performing
+a hash operation  on a specific document,  using the signature’s  private key. Signing  the entire message  is very
+inefficient  because  the public key opera...

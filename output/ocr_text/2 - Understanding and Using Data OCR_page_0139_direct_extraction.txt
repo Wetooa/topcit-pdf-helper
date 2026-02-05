@@ -1,0 +1,36 @@
+ESSENCE
+01 Concept  and Characteristics  of the Data Warehouse  (DU).
+A) Concept  of the data warehouse
+A data warehouse  is an integrated  system or database  that enables  the user to instantly  analyze internal data
+and external data generated  by the operation  system of an enterprise  over time, without  the need for separate
+programming  from multiple  points of view, by integrating  data by subject.
+B) Characteristics  of the data warehouse
+Unlike the data repository  of OLTP for OLTP systems,  the data warehouse  generally  has the following  characteristics.
+<Table  60> Characteristics  of the data warehouse
+Characteristics Description
+Subject-oriented+ Among  the multiple  types of operation  system  data that are managed  by data business
+functions,  the data of a specific  subject  needed  for decision-making  activities  from an enterprise
+perspective  is saved, while other data are not included.
+Integrated+ The structure  of a data warehouse  is characterized  by data consistency  and physical  unity
+through  company-wide  data standardization.
++ When obtaining  data from the operation  system,  a series of data conversion  tasks are performed
+to integrate  the data.
+Time variant+ To analyze  past and present  trends and forecast  the future, a data warehouse  retains  data for a
+long time in the form of a series of snapshots.
++ Users can understand  the process  of data change  over time using the data history.
+Non-volatile+ A data warehouse  is a read-only  database  that cannot  be deleted  or modified  once it has been
+loaded from the operation  system  database.
++ When a modification  occurs  in the operation  system  data, existing  data are deleted.  The data in
+the data warehouse  stores the history  of data at each point in time.
+02 Data Warehouse  Modeling
+A) Definition  of data warehouse  modeling
+Unlike general ER modeling  for OLTP systems,  data warehouse  modeling  refers to a data modeling  technique  that,
+from a data analysis perspective,  enables users to analyze large-scale  data from various  viewpoints.  Data are
+generally  organized  into fact tables and dimension  tables so that end users or analysts  can easily analyze  information.
+The table below shows  the main components  of data warehouse  modeling.
+<Table 61> Components  of data warehouse  modeling
+Item Description
++ Acore  table composed  of a set of highly relevant  measures.
+Fact table + As measurement  data, a Measure  can observe  the goal of information  analysis,  such as
+the amount,  number,  time, etc.
+138 TOPCIT  ESSENCE

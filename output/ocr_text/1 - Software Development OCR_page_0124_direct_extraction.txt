@@ -1,0 +1,29 @@
+Software  Development )
+B) Subversion  (SVN)
+Subversion  is an open-source  version control system. It is also abbreviated  as “SVN” using the command  used
+in the command-line  interface. Subversion  was first developed  by CollabNet  Inc. in 2000 to replace  the limited
+CVS.
+Currently,  it is being further  developed  with developer  communities  all over the world as a top-level  Apache
+project. Subversion  is based on  the server-client  model. The server can run in a working  computer  or in
+a separate  computer  connected  over the network.  In the case of centralized  version control systems  like
+Subversion,  multiple  clients check-out  and use files from the central server.
+C) Distributed  repository  (Git)
+Distributed  version control systems  such as Git copy the entire repository,  instead of directly  downloading
+the last snapshot  by the client. If a problem occurs at the server, the server can be restored using the copy
+held by the client. In the case of a distributed  repository,  source codes can be saved in multiple  servers  or the
+local PCs of multiple  developers,  rather than in just one central server. Therefore,  each server or PC becomes
+a source code repository.  The source code saved in each repository  is not the same version, but the code is
+stored in different  branches.  That is, branch versions  A, B, and C can be saved in the server A, whereas  branch
+versions  A, C, and D can be saved in the server B. Therefore,  there is no concept  of a master version in the
+system itself because  the branch versions  in each repository are all different  and the locations  for accessing
+and retrieving  the source code are all different.
+D) TFS (Team Foundation  Server)
+Team Foundation  Server (TFS) is a Microsoft  product  that provides  various features,  such as source code
+management  (Team Foundation  version control), reporting,  requirements  management,  project management
+(agile software  development,  waterfall  model), automated  build, lab management,  testing, and release
+management.  Although  TFS can be used as a backend  for numerous  integrated development  environments,  it
+is designed  to offer the best benefits  when used as a backend  for Microsoft  Visual Studio or Eclipse (Windows
+and non-Windows  platforms).  TFS is an integrated  repository  based on the SQL Server. TSF stores all
+information  related to the software  development  activities  of the development  team - such as source codes,
+deliverables,  development  activities,  etc. - to enable the team to collaborate  more effectively.
+M1 Software  development  123

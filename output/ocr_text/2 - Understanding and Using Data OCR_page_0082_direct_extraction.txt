@@ -1,0 +1,39 @@
+Database )
+Denormalization _Type technique Description
+A functional  column (recent  value status,  start and end date, etc.) is added to the history  table
+to prevent  performance  degradation  that may occur when querying  an unspecified  date or a
+recent  value when processing  large amounts  of data.
+Order list Order list history
+: - Order  number Order number
+ani aniston Product number Product number
+Product name Change date
+Order quantity
+Person in charge of
+registration
+Progress  status
+Occurs  when a primary  key with multiple  meanings  is configured  with a single
+attribute.  Performance  may deteriorate  if a specific  value is separately  queried in a
+single primary  key. “Adding  a column  by PK” is the method  of including  data as general
+attributes  for improving  performance  even though  data already  exist in the primary  key.
+Adding  a
+column  by PK | Receipt Receipt
+Receipt  number Receipt  number
+Customer  ID Customer  ID
+Column  _ Progress status Progress status
+eon al Office numberzation [Figure 7-34] Composite  PK
+[Figure  7-34] Composite  PK - Adding  a column
+A technique  of temporarily  storing previous  data in duplicate,  if the user wants to restore  the
+original  value after having processed  data incorrectly,  even though  it is meaningless  for the work.
+Foundation  work Roof construction
+ye mW
+Interim  sett
+Adding a [Figure 7-37] Adding a column to process  incorrect  input
+column  to
+prevent Construction  work
+application Construction  number
+malfunction Construction  name
+Construction  commencement  date
+Construction  status
+Previous  construction  status
+[Figure 7-38] Adding  a column  to process  incorrect  input
+M2 Database  81

@@ -1,0 +1,37 @@
+Software  Development )
+Test scenario
+User story
+Customer
+approvalRequire New user story
+ments Project speedBug Latest
+version
+Release
+Structural figgit)olatelg plan NV iiaYolmAcceptance
+Italy
+Uncertain Reliable
+estimate estimateNext cycle
++ User stories: Refers to a tool for collecting  requirements  and communication.  User stories briefly describe
+necessary  matters  regarding  functions.
++ Spike: A simple program  that considers  difficult  requirements  or potential  solutions.  Spike aims to increase
+the reliability  of user stories while reducing  the risk of technical  problems.
++ Release planning:  Establishes  a deployment  plan for an entire project and divides one iteration  into one to
+three weeks,  and then keeps the iterations  evenly.
++ Acceptance  test: An acceptance  test performed  by the customer  before release.
++ Smaller  releases:  The final phase of the XP cycle. If frequently  released  on a small scale, several benefits  can
+be provided  to the customer  in the early stages.
+@ XP values
+Basically,  eXtreme  Programming  proposes  the following  five values.
+* Communication:  Communication  is the most important  thing in software  development  at the team level.
+Communication  errors are typically  found in failed projects.  Problems  should be solved, and team building
+should be strengthened  through  communication  between  customers,  developers  and managers.
++ Simplicity:  Always ask “What is the simplest  thing possible?”.  Keep the design simple and clear by removing
+unnecessary  complexity.
++ Feedback:  Gradual improvement  is more effective  than pursuing  perfection,  considering  the flow of changes
+which causes yesterday's  output or value to become  useless  today. Create as many feedback  as possible
+quickly  as long as they can be handled  by the team and use them for improvement.
++ Courage:  Cope with changes  to the requirements  and technology  to reflect them as quickly as possible
+and deliver to the customer.  The courage to actively  solve a problem entails simplicity,  and the courage  to
+present  the solution  concretely  reinforces  feedback.
++ Respect:  Respect  is the value that hides behind the first four. A person cannot implement  the project
+properly  without  respecting  the other members  of the team. (Source: Korea Developer's  Hope Report)
+M1 Software  development  27

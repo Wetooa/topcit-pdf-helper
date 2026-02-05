@@ -1,0 +1,26 @@
+ESSENCE
+@ Partitioning  transparency
++ Partitioning  transparency  informs  users how the global schema  has been split.
++ Users do not have to know how the global schema  has been split because  the global query entered  by the user is
+converted  into several  fragment  queries.
++ Vertical  partitioning  splits a relation  into relations  made up of a subset  of attributes.
++ Horizontal  partitioning  splits a relation  into relations  made up of a subset  of tuples.
+@ Location  transparency
++ Location  transparency  means that users or applications  do not need to know the physical location of data in a
+distributed  database.
++ That is, users should be able to access data using the same command  regardless  of the location of data or the
+input system.
+@© Replication  transparency
++ Replication  transparency  means that users should not need to know which data are redundant  or where the
+redundant  data are stored.
++ That is, users should be able to think that they are using logically  unique data.
+© Failure  transparency
++ Failure transparency  means that data integrity  should be guaranteed  even if a failure occurs in each distributed
+computer  system  or network.
++ The distributed  database  should maintain  the atomicity  of transactions  regardless  of a component  failure.
+@ Concurrency  transparency
+* Concurrency  transparency  means that the consistency  of the results is maintained  even though multiple
+transactions  are executed  at the same time.
++ To maintain  the consistency  of distributed  transactions,  the distributed  database  management  system mainly uses
+locking  and timestamp  methods.
+92 TOPCIT  ESSENCE

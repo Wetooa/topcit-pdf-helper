@@ -1,0 +1,17 @@
+Database )
++ All nodes should show the same data at the same time.
+ons Stency (Each user should always view the same data.)
+Availability + Even if some nodes are down, it should not affect the other nodes.
+y (All users should always be able to read and write data.)
+Pernice  + Even if some messages  are lost, the system  should operate  normally.
+(The system  should work properly  in a physically  distributed  network  environment.)
++ An exceptionally  reliable  type in which message  loss can be prevented  even if the system  is down.
+C+A + Essential  when a transaction  is required.
++ General  RDBMS.
++ A performance  type in which all nodes must perform  well together.
++ Google's  BigTable,  HyperTable,  HBase.
++ Essential  for asynchronous  store operations.
++ Dynamo,  Apache  Cassandra,  CouchDB,  Oracle  CoherenceC+P
+A+P
++ NoSQL  systems  are composed  of distributed  systems  that have the characteristics  of AtP and C+P.
+M2 Database 153

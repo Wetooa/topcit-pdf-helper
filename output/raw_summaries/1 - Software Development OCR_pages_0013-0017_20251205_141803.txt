@@ -1,0 +1,245 @@
+LEARNING GUIDE: Pages 13-17
+Generated: 2025-12-05 14:18:03
+PDF: 1 - Software Development OCR
+
+================================================================================
+LEARNING GUIDE
+================================================================================
+
+Here is a simplified, easy-to-read learning guide based on the provided text:
+
+---
+
+# Software Development & Management: A Learning Guide
+
+## Introduction: Why Software Matters
+
+Software's influence is rapidly growing across all industries, leading to a massive global market. This emphasizes the critical need for systematic software development and management to ensure system quality and improve development productivity.
+
+### Learning Objectives
+
+By studying this guide, you will be able to:
+1.  Explain the **characteristics and common problems of software**.
+2.  Understand the **background and purpose of software engineering**.
+3.  Describe various **software development process models**.
+
+### Key Concepts to Understand
+
+*   Characteristics of software
+*   Lifecycle of software
+*   Requirements analysis, design, implementation, testing
+*   Software requirement management
+*   Software maintenance
+*   Software configuration management
+*   Software quality management
+
+---
+
+## I. Software Requirements Management
+
+This section covers how to manage the needs and expectations for a software system.
+
+### 1. Requirements Management Basics
+
+*   **Definition:** What requirements management is.
+*   **Importance & Purposes:** Why it's crucial and its goals.
+*   **Process:** The steps involved in managing requirements.
+*   **Principles:** Guiding rules for effective requirements management.
+
+### 2. Requirements Specification
+
+*   **Techniques:** Methods used to clearly document requirements.
+*   **Principles & Contents:** Key guidelines and what should be included in a requirements specification document.
+
+### 3. Requirements Change & Tracking Management
+
+*   **Requirements Traceability:** Understanding how to link requirements through the development lifecycle and track changes.
+
+---
+
+## II. Software Configuration Management (SCM)
+
+This section focuses on managing changes to software artifacts throughout the development process.
+
+### 1. SCM Overview
+
+*   **Definition:** What software configuration management is.
+
+### 2. SCM Concepts & Components
+
+*   **Conceptual Diagram:** Visual understanding of SCM.
+*   **Components:** The main parts that make up an SCM system.
+
+### 3. SCM Activities
+
+*   **Activities:** The tasks performed during SCM.
+*   **Effects:** The benefits and outcomes of effective SCM.
+*   **Considerations:** Important factors to keep in mind when implementing SCM.
+
+### 4. SCM Tools
+
+*   **General Tools:** Overview of tools used for SCM.
+*   **Specific Examples:**
+    *   **Subversion (SVN):** A centralized version control system.
+    *   **Distributed Repository (Git):** A popular distributed version control system.
+    *   **TFS (Team Foundation Server):** Microsoft's collaborative development platform.
+
+---
+
+## III. Software Maintenance
+
+This section explores the activities performed on software after its initial release.
+
+### 1. Concept & Types of Software Maintenance
+
+*   **Definition:** What software maintenance means.
+*   **Purposes:** The goals behind maintaining software.
+*   **Types:** Different categories of software maintenance (e.g., corrective, adaptive, perfective, preventive).
+
+### 2. Software Maintenance Activities
+
+*   **Procedure:** The steps involved in performing software maintenance.
+*   **Organization Types:** Different ways maintenance teams are structured.
+
+---
+
+## IV. Trends of Open-Source Software (OSS)
+
+This section examines open-source software and its licensing.
+
+### 1. Open-Source Software Concepts
+
+*   **Definition of OSS:** What open-source software is.
+*   **Definition of OSS License:** What makes a software license "open-source."
+
+### 2. Open-Source Software Licenses
+
+*   **Application Scope:** Where and how OSS licenses apply.
+*   **Comparison:** Key differences between various OSS licenses (e.g., MIT, GPL, Apache).
+*   **Considerations:** Important points to think about when using or contributing to OSS.
+
+---
+
+## V. Trends in Software Development
+
+This section covers the latest advancements in software development tools, languages, frameworks, and architecture.
+
+### 1. Technology Trends: Tools & Programming Languages
+
+*   **Software Development Tools:** Current and emerging trends in development tools (e.g., IDEs, testing tools, build automation).
+*   **Programming Languages:** Popularity shifts and new features in programming languages.
+
+### 2. Technology Trends: Development Frameworks & Software Architecture
+
+*   **Development Frameworks:** Trends in frameworks that provide a foundation for building applications (e.g., web frameworks, mobile frameworks).
+*   **Software Architecture:** Evolving patterns and principles for structuring software systems (e.g., microservices, serverless).
+
+---
+
+================================================================================
+ORIGINAL TEXT (First 5000 chars)
+================================================================================
+
+--- Page 13 ---
+ESSENCE
+C) Typical refactoring  techniques 109
+X. Software  Requirements  Management 110
+01 Requirements  Management 112
+A) Definition  of requirements  management 112
+B) Importance  of requirements  management 112
+C) Purposes  of requirements  management 12
+D) Requirements  management  process 112
+E) Principles  of requirements  management 113
+02 Requirements  Specification 113
+A) Requirements  specification  techniques 113
+B) Principles  and main contents  of requirements  specification 114
+03 Requirements  Change  and Tracking  Management 115
+A) Overview  of requirements  traceability 115
+XI. Software  Configuration  Management 117
+01 Overview  of Software  Configuration  Management 119
+A) Definition  of software  configuration  management 119
+02 Conceptual  Diagram  and Components  of Configuration  Management 120
+A) Conceptual  diagram  of configuration  management 120
+B) Components  of configuration  management 121
+03 Configuration  Management  Activity 121
+12 TOPCIT  ESSENCE
+
+
+--- Page 14 ---
+A) Configuration  management  activity
+B) Effects of configuration  management
+C) Considerations  for configuration  management
+04 Configuration  Management  Tools
+A) Configuration  management  tools
+B) Subversion  (SVN)
+C) Distributed  repository  (Git)
+D) TFS(Team  Foundation  Server)
+XIl. Software  Maintenance
+01 Concept  and Types of Software  Maintenance
+A) Definition  of software  maintenance
+B) Purposes  of software  maintenance
+C) Type of software  maintenance
+02 Software  Maintenance  Activities
+A) Software  maintenance  procedure
+B) Types of software  maintenance  organizations
+XIII. Trends  of Open-Source  Software
+01 Concept  of Open-Source  Software
+A) Definition  of open-source  software
+B) Definition  of the open-source  software  license
+02 Open-Source  Software  License
+M1 Software  development  13
+
+
+--- Page 15 ---
+ESSENCE
+A) Application  scope of the open-source  software  license
+B) Comparison  of open-source  software  licenses
+C) Considerations  when utilizing the open-source  software  license
+XIV. Trends  of Software  Development
+01 Technology  Trends  of Software  Development  Tools and
+Programming  Languages
+A) Technology  trends of software  development  tools
+B) Technology  trends of programming  languages
+02 Technology  Trends  of the Development  Framework  and Software
+Architecture
+A) Technology  trends of software  development  tools
+B) Technology  trends of software  architecture
+14 TOPCIT  ESSENCE131
+132
+134
+135
+137
+137
+137
+138
+189
+
+
+--- Page 16 ---
+Software Development
+
+M1 Software development 15
+
+
+--- Page 17 ---
+ESSENCE
+>> Recent  trends and major issues
+In June 2015, Gartner, a research  company  specializing  in the IT field, announced  that the global
+software  market in 2014 was worth USD 1 trillion and 269.2 billion, that software  was occupying
+an ever greater  share of the entire ICT market, and that the influence  of software  in all industries
+was rapidly increasing  as all industries  were becoming  “smart” and using “smart data’. Therefore,
+systematic  software  development  and management  has become  an important  factor in determining
+system  quality  and improving  development  productivity.
+>> Learning  objectives
+1. To be able to explain the characteristics  and problems  of software.
+2. To be able to explain  the background  to and purpose  of software  engineering.
+3. To be able to explain software  development  process  models.
+>> Keywords
+- Characteristics  of software
+- Lifecycle  of software
+- Requirements  analysis,  design, implementation,  testing
+- Software  requirement  management,  software  maintenance,  software  configuration  management,
+software  quality management
+16 TOPCIT  ESSENCE
+
+

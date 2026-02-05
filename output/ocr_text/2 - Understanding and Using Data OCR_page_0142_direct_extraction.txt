@@ -1,0 +1,37 @@
+Database )
+04 Concept  and Search  Technique  of OLAP (Online  Analytical
+Processing)
+A) Concept  of OLAP
+OLAP refers to the process  by which the end user accesses  multi-dimensional  information  without  an intermediary  or
+medium,  and then analyzes  the information  interactively  and uses it for decision  making.  That is, when the operational
+data extracted and converted  by ETL are stored in the data warehouse  or data mart, the end user analyzes  them
+using OLAP.
+B) OLAP search  technique
+OLAP provides  various search techniques  that allow end users to analyze data from diverse perspectives  and
+summary  levels. The table below shows the main search techniques  of OLAP.
+<Table  64> Main OLP search techniques
+Search  technique Description
++ Asearch  technique  that approaches  a specific  analysis  topic in phases  from a high summary  level to
+Drill Down a low (detail) summary  level.
+E.g. Time dimension:  Year > monthr  > day
+* Concept  opposite  to Drill Down
++ Asearch  technique  that approaches  a specific  analysis  topic in phases  from a low summary  level to
+pole a high summary  level.
+E.g. Time dimension:  Day r > month r > year
+Drill Across + Asearch  technique  that uses a certain analysis  viewpoint  on one analysis  topic to approach  another  analysis  topic.
+Pivot + Asearch  technique  that changes  the axis of the analysis perspective  on a specific analysis  topic.
+Slice + Asearch  technique  that creates subsets  by selecting  specific  values for the members  at one level or
+the members  above  that level.
+Dice + Asearch  technique  that creates subsets  by slicing more than two dimensions.
+05 Concept  and Algorithm  of Data Mining
+Data mining refers to a series of processes  that identify  a systematic  statistical  rule or pattern  among  a large amount
+of data, convert  it into meaningful  information, and apply it to corporate  decision-making.  The table below shows the
+major data mining algorithms.
+<Table 65> Data mining  algorithms
+Algorithm Description
++ An analysis  algorithm  that discovers  a pattern  using a combination  of highly relevant  data in
+transaction  data, etc.
+Association + Apriori algorithm,  etc.
++ This algorithm  is mainly used to place products  by analyzing  offline stores, and to recommend
+related  products  automatically  at online shopping  malls, etc.
+M2 Database  141

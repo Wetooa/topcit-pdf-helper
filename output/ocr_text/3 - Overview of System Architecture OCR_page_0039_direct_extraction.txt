@@ -1,0 +1,37 @@
+ESSENCE
+Data link layer
+Physical  layer The physical  layer transfers  the actual bits through  physical  media.PSTN, etc.
+As shown in [Figure 5], the Internet  protocol layer is based on the ARPANET  reference  model, which was released
+before the OSI layer model [3][9][10].  While documents  use slightly  different  terms for each layer, this section uses
+the most commonly  used terms.
+© Application  layer
+Application  programs,  such as web (HTTP),  DNS, telnet, FTP, and email sending/receiving  (SMTP/POP3/IMAP4),  allow
+access to services  on other layers. In the OSI reference  model, this layer's concept  includes  the presentation  layer
+and the session  layer.
+@ Transport  layer
+Also called the host-to-host  transport  layer, the transport  layer is responsible  for data exchange  between  abstract
+ports, managed  by application  programs  such as TCP, UDP. and SCTP protocols.  It is equivalent  to the transport  layer
+in the OSI reference  layer.
+@ Internet  layer
+Also called the network  layer, it is responsible  for addressing  and routing functions.  It is equivalent  to the network
+layer in the OSI reference  layer.
+@ Network  interface  layer
+Also called the network  access layer, the network  interface  layer has the role of actually  sending  and receiving  TCP/IP
+packets  through  physical  media, such as IEEE 802.3 and IEEE 802.11 WiFi. It includes  the data link layer responsible  for
+the MAC function  in the OSI reference  model, as well as the physical  layer that defines  electric  signals.
+TCP/IP  Protocol  Suite
+OSI model layers DARPA  layers j
+Application  Layer
+Presentation  Layer Application  Layer HTTP FIP SMTP DNS RIP SNMP
+Session  Layer
+Transport  Layer TCP UDP
+Transport  Layer
+IGMP ICMP ND_| MLD
+Network  Layer Internet  Layer ICMPv6
+ARP IP (IPv4) IPv6
+Data Link  Layer ao
+Network  Interface  | | 802.11
+Layer | Ethernet wireless Frame Relay
+Physical  Layer
+[Figure 14] TCP/IP Protocol  Layers: Based on the ARPANET  Reference  Model [10]
+38 TOPCIT  ESSENCE

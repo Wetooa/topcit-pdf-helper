@@ -1,0 +1,234 @@
+LEARNING GUIDE: Pages 205-209
+Generated: 2025-12-07 01:13:13
+PDF: 3 - Overview of System Architecture OCR
+
+================================================================================
+LEARNING GUIDE
+================================================================================
+
+Here's a simplified, easy-to-read learning guide based on the provided text:
+
+---
+
+## Learning Guide: Network Signaling & Multimedia Protocols
+
+This guide covers key signaling, voice over IP (VoIP), and media transport protocols essential for modern network communication.
+
+---
+
+### 1. Resource Reservation & Priority
+
+#### 1.1 RSVP (Resource ReSerVation Protocol)
+*   **Type:** IETF signaling protocol.
+*   **Purpose:** Allocates static bandwidth for data flow end-to-end. Reserves queue space.
+*   **How it Works:**
+    *   **Path Message:** Sent from source to all receiving devices on the path, containing necessary information for receivers.
+    *   **RESV Message:** Sent by receiver upstream towards the source, reserving router resources to support RSVP.
+*   **Behavior without RSVP:** If a router on the path doesn't support RSVP, packets are delivered using the best-effort method (no guarantees).
+
+#### 1.2 IP TOS Field (Type of Service)
+*   **Location:** 1-byte field in an IP datagram.
+*   **Purpose:** Determines packet processing priority.
+*   **Structure:**
+    *   **Precedence (First Field):** Indicates priority/importance (higher number = higher priority).
+    *   **TOS Fields:** Indicate network preferences for throughput, delay, reliability, or cost.
+    *   **MBZ (Must Be Zero):** Unused field.
+*   **Priority Levels:** Divided into 8 classes (0 to 7), with class 7 being the highest priority.
+*   **Common TOS Field Values (4-bit binary):**
+    *   `1000`: Priority on **delay minimization**
+    *   `0100`: Priority on **processing volume** (throughput)
+    *   `0010`: Priority on **reliability**
+    *   `0001`: Priority on **cost minimization**
+    *   `0000`: **General service**
+
+---
+
+### 2. VoIP (Voice over Internet Protocol)
+
+#### 2.1 What is VoIP?
+*   **Definition:** Communication technology enabling voice calls over IP networks using packet data.
+*   **Key Components:**
+    *   **Media Gateway:**
+        *   Exchanges multimedia data.
+        *   Delivers data to the corresponding network.
+        *   Controlled by MGCP (Media Gateway Control Protocol).
+    *   **Signaling Gateway:**
+        *   Performs call signaling using protocols like H.323, SIP, MGCP, MEGACO.
+        *   Converts signals between PSTN (Public Switched Telephone Network) and IP networks for interoperability.
+
+#### 2.2 VoIP Call Signaling Protocols
+
+##### A) SIP (Session Initiation Protocol)
+*   **Type:** Application layer signaling protocol (RFC 3261).
+*   **Purpose:** Establishes, modifies, and terminates multimedia communication sessions.
+*   **Key Features:**
+    *   Used by intelligent terminals to identify, locate, and manage sessions.
+    *   Independent of lower-layer transport protocols (can run over TCP/UDP).
+    *   Scalable, text-based (similar to HTTP).
+    *   Supports text-based addressing (URLs, E-mail format).
+*   **Protocol Stack:** Operates over TCP/UDP, alongside RTP/RTCP.
+*   **Core Components:**
+    *   **SIP:** Defines the protocol.
+    *   **SDP (Session Description Protocol):** Sets multimedia session parameters (RFC 4566/3264).
+    *   **Audio Codecs (e.g., G.711A, G.723.1, G.729A):** For voice coding and system compatibility.
+    *   **Video Codecs (e.g., H.263, MPEG-4, H.264):** For video coding.
+    *   **RTP/RTCP:** For real-time media transport and control.
+*   **Message Structure:**
+    *   Uses SIP URI (like an email address) for user identification, independent of IP addresses.
+    *   `START LINE`: Describes request method type and SIP URI.
+    *   `HEADER`: Sets session control values.
+    *   `BODY`: Contains content, type set in Content-Type.
+    *   `CR/LF`: Blank space between HEADER and BODY.
+
+##### B) H.323
+*   **Type:** ITU-T standard.
+*   **Purpose:** Provides voice, data, and video services over LANs, even those not guaranteeing quality.
+*   **Advantage:** Widely used by startup VoIP providers because it allows multimedia services without changing existing network infrastructure.
+*   **Key Components:**
+    *   **Terminals:** End-user devices (telephones, fax machines, PCs with multimedia equipment).
+    *   **Gatekeeper:**
+        *   Converts between E.164 (PSTN numbers) and IP addresses.
+        *   Performs call redirection and authentication.
+        *   Manages components and bandwidth.
+    *   **Gateway:** Performs logical connection mapping (encoding, protocol, call control) between different networks (e.g., IP, PSTN, ISDN, ATM).
+
+---
+
+### 3. VoLTE (Voice over LTE)
+
+*   **Definition:** Technology providing data and voice services exclusively through the LTE network.
+*   **Nature:** As LTE is an all-IP, data-only network, VoLTE voice services are implemented as digital data.
+*   **Implementation:** Transmits voice, text, video chat, and multimedia content using SIP.
+*   **Architecture:** Provides voice and text services (as data) through the **IMS (IP Multimedia Subsystem)**.
+*   **Early Challenges:**
+    *   Incomplete LTE infrastructure.
+    *   Difficulty transmitting voice over existing WCDMA/GSM (3G) networks seamlessly.
+    *   Lack of standard agreements for roaming and interconnection between LTE and 3G networks.
+*   **Solutions/Evolution Steps:**
+    1.  **Circuit-Switched Fallback (CSFB):** Initially, calls were established mainly over WCDMA/GSM circuit networks. LTE terminals and carriers performed minimal roaming. Multimedia communication was not supported at this stage.
+    2.  **Evolution to Multimedia:** As LTE coverage expands, multimedia communication services are implemented through solutions like 3GPP MMTel (Multimedia Telephony).
+
+---
+
+### 4. Media Transport Protocols
+
+#### A) RTP (Real-Time Transport Protocol)
+*   **Purpose:** Designed to process and transmit real-time traffic (video/audio data) over the Internet.
+*   **Transport Layer:** Operates over UDP (User Datagram Protocol).
+*   **How it Works:** The transmitting side converts codec-compressed media into RTP packets and sends them via UDP.
+*   **Guarantees:** Since it uses UDP, RTP does not guarantee packet delivery within a specified time or prevent loss. Applications rely on information in the RTP packet header to process packets.
+*   **Standard:** Defined in IETF RFC 1889 (with RTCP).
+*   **QoS & Sync:** RTCP is used to ensure QoS (Quality of Service) for RTP and synchronization of media streams.
+
+#### B) RTCP (Real-Time Control Protocol)
+*   **Purpose:** Controls RTP for streaming video/audio over the Internet.
+*   **Standard:** IETF standard, defined with RTP in RFC 1889.
+*   **Packet Types:** Includes sender report, receiver report, source description message, bye message, and application-specific packets.
+
+#### C) RTSP (Real-Time Streaming Protocol)
+*   **Type:** Application layer protocol (IETF RFC 2326, 1998).
+*   **Purpose:** Controls streaming media servers (e.g., for entertainment and communication systems).
+*   **Functionality:** Its commands are similar to VCR operations (e.g., "PLAY", "PAUSE"). It accesses the server based on time information.
+*   **Important Note:** RTSP establishes and controls media sessions between endpoints but *does not actually transmit the media streaming data itself*. Most RTSP servers use RTP for the actual audio/video data transfer.
+
+#### D) IMS (IP Multimedia Subsystem)
+*   **Origin:** First proposed by 3GPP (3rd Generation Partnership Project) for wireless communication standards.
+*   **Purpose:** Infrastructure for providing IP multimedia services.
+*   **Core Technology:** Uses SIP protocol-based call control.
+*   **Concept:** A communication platform defined by 3GPP to control multimedia sessions and provide IP-based services.
+
+---
+
+================================================================================
+ORIGINAL TEXT (First 5000 chars)
+================================================================================
+
+--- Page 205 ---
+ESSENCE
+RSVP is one of the IETF signaling  protocols,  and data flow is allocated  by a static bandwidth  by signaling  from end-to-
+end. It basically  uses the method  of reserving  the queue space [2]. The RSVP message  starts from the source device
+and is delivered  to all the receiving  devices  on the path. It is a path message  that contains  the necessary  information
+for the receiver  and a message  sent by the receiver  upon receiving  the path message.  A RESV message  reserves  the
+resource  of a router that moves toward the source device (upstream)  to support  RSVP. If a router on the path does
+not support  RSVP, packets  are delivered,  based on the best-effort  delivery  method.
+The priority method,  using the TOS field of IP datagram,  checks the 1-byte TOS field, as shown in [Figure 140], and
+determines  the processing  priority, according  to the set value. The TOS class is divided into eight levels from class 0
+to 7, and the higher the number,  the higher  the processing  priority.
+Precedence,  the first field, indicates  the priority  or importance  of the packet,  and the TOS fields indicate  whether  the
+network  maintains  a balance between  throughput,  delay, reliability,  and cost. The last MBZ (must be zero) field is a
+field that is not currently  used.
+The TOS field is expressed  as a 4-bit binary number.  <Table 73> shows the meaning  of each value.
+(Table 73) TOS Field Values [4]
+Binary  Value Meaning
+1000 Priority  on delay minimization
+0100 Priority  on processing  volume
+0010 Priority  on reliability
+0001 Priority  on cost minimization
+0000 General  service
+O2 Internet  Telephony  Concept  and Call Signal  Protocol
+A) What is VoIP (Voice over Internet  Protocol)?
+VoIP is a communication  technology  that facilitates  voice calls through  packet  data, based on the IP network. [Figure
+142] shows the VoIP system structure.  The main service components  are the media gateway  and the signaling
+gateway.  The media gateway  exchanges  multimedia  data, delivers  the changed  date to the corresponding  network,
+and controls  it through  the media gateway  control protocol (MGCP).  The signaling  gateway  performs  call signaling,
+using protocols,  such as H.323, SIP MGCP, and MEGACO,  and converts  the signals of the PSTN and IP networks, so
+they can be used with each other.
+204 TOPCIT  ESSENCE
+
+
+--- Page 206 ---
+Overview  of System Architecture )
+Signaling
+Gateway— IP Device
+RTP/RTCP
+H.323,SIP @ SS7-@- -m-
+SiGTran
+aot MGCP/
+@ =e @> « > «
+RTP / RTCP
+7 IP networkMedia r
+GatewayPSTN PSTN
+SSP Bs sa «< >
+[Figure 142] VoIP System  Structure
+B) VoIP call signal protocol
+VoIP call signaling  protocols  include SIP (Session  Initiation  Protocol)  and H.323. The SIP protocol  is an application
+layer signaling  protocol  that specifies  a procedure  for intelligent  terminals  that are communicating  on the Internet  in
+order to identify  each other, find their locations,  and create or delete a multimedia  communication  session between
+them. The H.323 protocol  is an ITU-T standard  for providing  voice, data, and video services  on a LAN that does not
+guarantee  quality. Startup  VoIP service providers  use it widely because  it can provide multimedia  services  without
+changing  the existing  network's  underlying  structure.
+@ SIP
+SIP is an application  layer signaling  protocol,  used to establish,  modify, and terminate  multimedia  sessions.  It operates
+independently  of the lower-layer  transport  protocols  and has scalability  as an HTTP text-based  protocol.
+It controls  sessions  to enable call control in a circuit-switched  data network  in a packet-switching  network  and
+multimedia  applications  on the Intemet,  which is a packet network.  It can support  text-based  addressing  methods  in
+URL and E-mail format  and message  parsing  or extension.
+(Figure 143] shows the SIP protocol  stack located on top of the transport  layer protocols  TCP and UDP<Table  74>
+shows the SIP protocol  components.
+SIP API
+Audio Video
+SIP Codec Codec
+RTP { —sRTP/RTCP Cd; RTCP
+TCP / UDP UDP }
+IP
+Physical
+[Figure 143] SIP Protocol  Stack
+M3 Overview  of System  Architecture  205
+
+
+--- Page 207 ---
+ESSENCE
+Table 74) SIP Protocol  Components
+Type Description
+SIP + Definition  of RFC 3261 and SIP
++ Session  Description  Protocol,  RFC 4566/3264SDP . ain
++ Setting  multimedia  session  parameters
+Audio Codec * G7IIA,  G.723.1,  and G.729A
++ Voice coding, many specifications  for compatibility  with various  systems
+WideolGoded + H.263, MPEG-4,  and H.264
++ Video coding  commonly  H.263 and H.264 as the latest version
+RTPIRTCP + Realtime  transport  (control)  protocol,  RFC 3550, and RFC 3551
++ Real-time  communication  protocol
+@ SIP message  structure
+SIP uses an SIP uniform resource  identifier  (URI), similar to an e-mail address,  to identify  users to provide services,
+without  being dependent  on IP addresses.  A SIP message  contains  the START LINE to describe  the meth...

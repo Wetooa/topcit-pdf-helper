@@ -1,0 +1,24 @@
+ESSENCE
+Marketing  requirements System  requirements Subsystem  requirements Detailed  design requirements
+FEi/|
+wineSee | |
+atki/
+invy i I |
+<Figure  25> Example  of traceability  by sentence
+When traceability  is given to each requirement  in the development  deliverables,  as shown above, we can clearly
+understand  how the marketing  requirements  are reflected  in the system requirements,  and which subsystems
+are allocated  and reflected  in the design. In addition,  we can estimate  the addition  development  M/M caused by
+changes  to the marketing  requirements  requested  by the user; understand  how the upper-level  requirements
+are affected  when developers  try to change some of the design requirements  at their own discretion;  and
+identify  the requirements  that were omitted  in the intermediate  steps.
+The tracking  of requirements is only effective  when managed in units. The following  values can be obtained
+when tracking  management  is performed  for each requirement  in all the document  deliverables  requiring
+tracking  management.
++ Reduces  the need for re-working  by preventing  the omission  of higher-level  requirements.
++ Raises the quality  of individual  requirements  by securing  traceability  (clarity,  traceability,  testability,  etc.).
++ Analyzes  the impact  of changes.
++ Enables  effective  collaboration  between  various  teams/companies.
++ Secures  test coverage  and improves  product  quality by securing  traceability  with test cases.
++ Secures  consistency  between  deliverables  via the management  of various  changes.
++ Increases  productivity  by reducing  incorrect  communication  caused by changes.
+116 TOPCIT  ESSENCE

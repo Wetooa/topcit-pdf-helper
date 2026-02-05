@@ -1,0 +1,37 @@
+ESSENCE
+C) Components  of data standardization
+@ Standardization  components:  Data standard,  data management  organization,  data standardization  procedure
+@ Target  for data standard  management:  Terms, words, domains,  and codes
+@® Management  functions
++ Data standard  management  function:  Word management,  term management,  domain  management,  standard  code
+management,  multi-standard  management
++ Data structure  management  function:  ER model structure  management,  database  schema management,  variable
+attribute  management,  history  management,  model comparison  management
++ Process  management  function: Standard  registration,  model registration
+D) Defining  data standards
+@ Overview  of deriving  standard  words
++ Standard  words are derived  from all terms that are dispersed  in each information  system by dividing  them into word
+units.
++ Standard  words are extracted  from each of the entities and attributes  that are managed  throughout  the
+organization.
++ The extracted  words are managed  along with physical names and similar terms based on logical names after
+reorganizing  homophones  and synonyms.
++ The standard  word dictionary  should also define the structure  between  such words as synonyms,  antonyms,  etc. in
+addition  to individual  words.
+@ Word split
++ Splitting  the collected  terms into the basic words that are used for business  and have a certain meaning.
+Eg. Resident  registration  number  — resident  + registration  + number
+@ Processing  synonyms
++ Selecting  one representative  word for words with the same meaning  as a standard  word.
++ All words that are finally derived  should be unique in both their Korean  and English  abbreviations.
+E.g. Unification  of the secret number,  passcode,  password  into the password.
+@ Deriving  a standard  domain  dictionary
++ Each attribute  should be assigned  to a certain domain,  and cannot  be assigned  to more than one domain.
++ When a new attribute  is added, the domain  of that attribute  should be selected  and registered.
+Eg. (Term) Resident  registration  number  - (Domain  name) Registration  number  - (Type) Char(13)
+© Deriving  a standard  code dictionary
++ Standard  codes are defined  by checking  and integrating  the same codes after collecting  all of the codes used
+throughout  the organization.
++ Derived  codes can be defined  from the standard  codes (e.g. Color code- wrapping  paper color).
+© Deriving  a standard  term dictionary
+98 TOPCIT  ESSENCE

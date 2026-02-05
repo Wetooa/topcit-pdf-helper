@@ -1,0 +1,199 @@
+LEARNING GUIDE: Pages 10-14
+Generated: 2025-12-05 14:32:33
+PDF: 4 - Understanding Information Security OCR
+
+================================================================================
+LEARNING GUIDE
+================================================================================
+
+Here is a simplified, easy-to-read learning guide for Information Security, based on the provided text.
+
+---
+
+## Learning Guide: Understanding Information Security
+
+### 1. Introduction to Information Security
+
+**Subject:** Understanding the fundamental concepts of information security.
+
+**Why it's important:**
+*   Rapid advancements in IT (Cloud, Big Data, AI, IoT) lead to new technologies and services.
+*   Security technology often lags behind, increasing the risk of security breaches involving new tech.
+*   Urgent need to develop and apply security measures for modern technologies.
+
+**Learning Objectives:**
+*   Explain the concept of information security.
+*   Explain the goals and importance of information security.
+
+**Keywords:**
+Information Security, Administrative Security, Technical Security, Physical Security, Confidentiality, Integrity, Availability, Non-repudiation, Authentication, Access Control.
+
+### 2. Overview of Information Security
+
+**A. Concept of Information Security**
+*   **Definition:** Protecting information (administratively, physically, and technically) from damage, alteration, or leakage.
+*   **Scope:** Applies to information during its entire lifecycle: collection, processing, storage, and transmission.
+
+**B. Need for Information Security**
+*   **Privacy & Crime Prevention:** Increasing global demand to guarantee privacy and prevent cybercrimes.
+*   **Protection of Assets:** Essential for protecting sensitive domestic technologies and information, especially with global internet connectivity.
+
+### 3. Goals of Information Security (CIA Triad)
+
+The three primary goals of information security are Confidentiality, Integrity, and Availability. These attributes must be ensured through administrative, physical, and technical measures.
+
+*   **Confidentiality:**
+    *   **Definition:** Ensuring that original information is not exposed to unauthorized users.
+    *   **When:** Applies during storage and transmission.
+    *   **Example:** Encrypting customer data to prevent unauthorized viewing.
+
+*   **Integrity:**
+    *   **Definition:** Maintaining the original information without unauthorized creation, modification, or deletion.
+    *   **When:** Applies during sending and receiving.
+    *   **Example:** Using digital signatures to confirm data hasn't been tampered with in transit.
+
+*   **Availability:**
+    *   **Definition:** Ensuring that authorized users can access and use requested information and resources whenever needed.
+    *   **When:** When users require access.
+    *   **Example:** Maintaining server uptime and network access so applications run smoothly.
+
+### 4. Basic Terms of Information Security
+
+**A. Authentication**
+*   **Definition:** A method to verify two things:
+    1.  The legitimacy of the communicating parties (sender and receiver).
+    2.  That the exchanged information has not been altered or deleted.
+*   **Purpose:** Confirms identity and data validity.
+
+**B. Non-repudiation**
+*   **Definition:** Security technology that prevents an individual or entity from denying their actions (e.g., sending or receiving a message). It provides undeniable proof of an action.
+*   **Categories:**
+    *   **Non-repudiation of Origin (or Sending):** Prevents the sender from falsely denying that they sent a message. (e.g., proof that Bob sent a message).
+    *   *(Note: The original text's definition for Non-repudiation of Origin was confusing and possibly incorrect. This definition reflects the standard understanding.)*
+
+---
+
+================================================================================
+ORIGINAL TEXT (First 5000 chars)
+================================================================================
+
+--- Page 10 ---
+ESSENCE
+03 Database  encryption
+A) Considerations  when applying  database  encryption
+@) Target and method of database  encryption
+) Types of database  encryption
+D) Applying  database  encryption
+E) Procedure  of applying  database  encryptionoO
+04 Database  encryption  key management
+A) Type of database  encryption  keys
+B) Management  methods  by encryption  key lifecycle
+VII. System  Architecture  Security
+01 Windows  system  security
+A) Overview  of Windows  system security
+B) Account  and password  management
+C) Access  control
+D) System security
+E) Service security
+F) Checking  the terminal  service
+02 Unix-like  system  security
+A) Overview  of Unix-like  system security
+B) Account  and password  management
+C) Access  control
+D) System security
+E) Service  security
+10 TOPCIT  ESSENCE90
+90
+90
+91
+92
+95
+96
+96
+96
+
+
+--- Page 11 ---
+VIII. Understanding  Network  Security 108
+01 Overview  of network  security 110
+A) Concept  of network  security 10
+B) Communication  protocol layer and security 113
+C) Types of network  attacks and countermeasures 116
+02 Security  protocols  and security  solutions 119
+A) IPSec 119
+B) SSL 122
+03 WLAN security 125
+A) Characteristics  of the WLAN 125
+B) Security  threats and responses 126
+C) Wireless  LAN security 127
+M4 Understanding  Information  Security  11
+
+
+--- Page 12 ---
+ESSENCE
+>>p Subject
+Understanding  the concept  of information  security
+>>> Recent  trends and major issues
+IT-related  technologies,  such as the popularization  of the cloud, promotion  of big data, and the
+artificial intelligence  industry,  are gradually  advancing,  as well as full-scale  development  of the loT
+industry.  Various  convergence  technologies  and services  are also emerging.  However,  as information
+security  technology  is not being applied to keep pace with this, various incidents  of security
+infringement,  using new technology  and convergence  technology,  are expected  to increase.  As a
+result, various security  technologies  and security  services  need to be urgently  developed  for the
+information  security  of new technologies  and convergence  technologies.  Therefore,  we need to
+understand  the concept  of information  security,  which becomes  the foundation.
+>>> Learning  objectives
+To be able to explain the concept  of information  security.
+To be able to explain the goal and importance  of information  security.
+>>> Keywords
+Information  security, administrative/technical/physical  information  security,  confidentiality,  integrity,
+availability,  non-repudiation,  authentication,  access control
+{2 TOPCIT  ESSENCE
+
+
+--- Page 13 ---
+Information  security )
++ Preview  for practical  business
+Assistant  manager  Kim, working  for company  A has overseen  the development,  deployment,  and
+maintenance  of Java source programs.  He used to check web pages and servers  on a regular  basis.
+In this process, he should ensure the availability  of numerous  source codes that he is managing,  and
+he should manage  the performance  and capacity  to ensure the availability  of the server, so that the
+applications  can work properly.  He should also take technical  protection  measures,  like encryption,  to
+maintain  the confidentiality  of customer  information  that is saved by the application.
+He is trying to ensure confidentiality,  integrity,  and availability  of business  information.  Let’s take a
+closer look at the concepts  and goals of information  security.
+01 Overview  of information  security
+A) Overview  of information  security
+@® Concept  of information  security
+Information  security  refers to protecting  information  administratively,  physically,  and technically  in order
+to prevent  damage,  alteration,  and leakage  of information  while being collected,  processed,  stored, and
+transmitted  information.
+@ Need for information  security
+The need to guarantee  privacy  and prevent  crimes on the Internet  is gradually  increasing.  Concerns  about the
+leakage  of major domestic  technologies  and information are also increasing,  due to globalization,  as the entire
+world is connected  through  the Internet.
+M4 Understanding  Information  Security  13
+
+
+--- Page 14 ---
+ESSENCE
+© Goals  of information  security
+The three goals of information  security  are confidentiality,  integrity,  and availability.  Efforts should be made to
+administratively,  physically  and technically  ensure these attributes.
+Information —____,  Availability z Information
+security  threat
+rra  |
+|
+| |
+Information a
+security  threat Confdentiaity
+Information
+security  threatsecurity  threat
+_—— Information
+Integrity security  threat
+Information
+security  threat
+[Figure 1] Three goals of information  security
+* Confidentiality  means that the original information  is not exposed  to unauthorized  users while being stored and
+transmitted.
++ Integrity  means  that the original information  is maintained  while sending  and receiving  it, without  illegal creation...

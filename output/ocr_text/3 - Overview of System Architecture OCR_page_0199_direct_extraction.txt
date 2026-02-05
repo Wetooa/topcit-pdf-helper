@@ -1,0 +1,31 @@
+ESSENCE
+03 File Transfer  Protocol
+FTP is a protocol  for transferring  a file, or part of a file, from one system to another  [1]. Unlike other application layer
+protocols,  FTP has two connections.  They are control connection  and data connection,  which use ports 21 and 20,
+respectively.  The control connection  is maintained  until the client or FTP session is terminated.  The data connection
+establishes  a TCP connection  when a file transfer  starts. The data port number  can be a number, other than 20,
+depending  on the method  used.
+FTP connection  is largely divided  into general  transfer  mode and passive  transfer  mode (PASV). The general  transfer
+mode requests  a connection  to a client to establish  a data connection,  and a problem  occurs when it connects  with
+an external  server system through a system, such as a firewall.  In contrast,  the client first requests  a connection
+to the server  through a channel other than the basic data channel in the passive transfer  mode. Since the client
+requests  to establish  an FTP connection, it can pass through  the firewall without  a problem.  It is applicable,  even
+when the client's IP is not visible from the outside  because  the client network  uses a proxy server.
+<Table 71) Comparison  of General  Transfer  Mode and Passive  Transfer  Mode
+Type General  Transfer  Mode Passive  Transfer  Mode
+Data transfer,  by a server  connecting  to the client’s Data transfer,  by a client connecting  to the server'sConcept « “e
+specific  port specific  port
+Purpose  | General FTP use FTP use from a secured  client
+Application  | Support  of Active and Passive  of general  FTP tools FTP connection  from a web browser
+Control  port: 21 Control  port: 21peed Data port: 20 Data port: 1024 or higher
+This section  describes  the FTP command  processing  and available  FTP commands.
+FTP command  processing
++ FTP uses the control  connection  to facilitate  communication  between  a server  control process  and a client
+control  process
+Control  Connection Command  Messageaan
+ii 4 LF Hor H Media Variable H sp f Instruction [> “os
+LF Cient < Response Code H SP H Meaning cr }
+Response  MessageServer
++ It is processed  interactively  and is divided into a command  that a user gives to the server as well as a
+response  to it.
+198 TOPCIT  ESSENCE

@@ -1,0 +1,27 @@
+ESSENCE
+Management  Functions
+router manager cLI SNMP
+BGP 4+ ~~ sd PIM-SM
+OSPF 4 t
+RIP tt IGMP/MLD
+IS-IS FEA Multicast  Routing
+Unicast  Routing
+Forwarding  Plane Somos
+RIB = routing  information  base FEA = forwarding  engine abstraction
+[Figure 114] Router  Conceptual  Diagram
+<Table 39> shows the shapes of a router. Small networks  mostly use cisco 2500, while larger networks  use cisco
+7300.
+{Table 39) Router Shape [2]
+@ Router  metrics
+It refers to the data collected  by a router at a given time, when the traffic passes through  the path. <Table 40>
+shows the metric  types.
+{Table 40) Routing Metrics [3]
+Metric Description
+It refers to the number  of routers  to pass through  in order to reach the destination.  The processing
+speed is higher  when there are fewer routers.
+MTU Maximum  Transmission  Unit. It refers to the maximum  data that the protocol  can transfer.
+The cost according  to the transfer  time, link reliability,  and band characteristics  is determined.  A higher
+cost means  lower efficiency.
+Latency The packet  delay records  and bottlenecks  during the transfer  between  routers are determined.Number  of hops
+Cost
+160 TOPCIT  ESSENCE

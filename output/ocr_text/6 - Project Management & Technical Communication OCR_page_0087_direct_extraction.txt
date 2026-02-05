@@ -1,0 +1,40 @@
+ESSENCE
+The Collect  Requirements  process  focuses  on what needs to be developed.  Of course,  “What” is important,  but
+understanding  the “Why it needs to be developed”  is more important.  That way, you can avoid unnecessary
+development  and focus more on what's important.
+® Scope Definition
+Scope definition  is a process of identifying  the key scope of the project after requirements  collection  and
+defining  the scope based on a common  understanding  of the business  functions  to be included  in the project.
+Scope definition  is a process of formulating  detailed scope statements  for projects  and products.  The scope
+statement  specifies  the criteria for outputs and delivery,  and includes  characteristics  such as exclusions,
+constraints,  and assumptions.  In other words, it is an activity  that clearly distinguishes  the boundaries  of the
+project  scope from others.
+The requirements  for scope definition are as follows:
++ Clear Scope: The project scope must be clearly defined. Being clear means that it is not interpreted
+differently  from person to person. Clarity is fundamental  to other requirements:  being complete,  agreed-
+upon, and manageable.
+* Complete  Scope: Being complete  means that there should be no missing,  excessive,  or overlapping  parts.
++ Agreed-upon  Scope: Opinions  on the scope often vary depending  on the stakeholder.  The problem  is that if
+there is a disagreement  of stakeholders  on the scope of the project during project execution,  the process
+of coordinating  it causes various side effects. Therefore, the entire scope of the project must go through a
+process  of collecting  opinions  of all stakeholders  and reaching  a consensus  before execution.
++ Manageable  Scope: WBS provides  a basic framework  for other plans. Therefore,  if the scope is not defined  to
+be manageable,  it becomes  difficult  to incorporate  plans from other areas such as schedule,  budget,  etc. The
+term “manageable”  specifically  means the following:
+- Duration  and cost are accurately  estimated.
+- The person in charge  is designated
+- Performance  is evaluated  realistically.
+@ Work Breakdown  Structure  Formulation
+WBS is an output created by decomposing  deliverables  and the entire scope of the project into manageable
+components.  WBS creation can be regarded  as the most important  not only for scope management,  but
+also among  the entire project activities.  By breaking  down the tasks to be accomplished  by the project  team
+and defining  the deliverables  for each stage of execution,  it is possible  to prevent  missing  tasks, identify the
+relationship  between  tasks, and consistently  communicate  with stakeholders  and sponsors.
+© Scope Identification
+Scope identification  is the process  of confirming  approval  with the client or the project leader for deliverables
+to be handed over to the client. For official validation  of the project scope, inspection and technical  review by
+the project  team are conducted  to identify  defective  products,  specifications  and standards  and the confirmed
+results are derived as outputs.
++ Inspection
+It is an act to measure,  examine,  and confirm  performance  to check whether  the tasks and deliverables  meet
+86 TOPCIT  ESSENCE

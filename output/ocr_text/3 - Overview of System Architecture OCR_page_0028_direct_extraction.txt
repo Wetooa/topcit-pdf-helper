@@ -1,0 +1,20 @@
+Overview  of System Architecture )
+are terminated.  However,  the distributed  databases  make it difficult  to manage  the data integrity,  and both the
+system  configuration  and management  become  complex.
+Head Office
+South Branch East Branch
+oa ==
+[Figure 5] Multi-region  Distributed  System  Architecture
+C) Classification  according  to how the application  programs  are provided
+@ Client-server  architecture
+The architecture  places system functions  in the servers and clients and configures  them to use the service,
+depending  on the business  size or environment.  The server and client's role differs, depending  on where the
+system functions,  such as data management,  business  processes,  and presentation,  are located. It can provide
+the convenience  of a graphical  user interface  by running  the application  program  from the client side. However,  the
+configuration  is complex,  and the development  and management  are difficult because  the architecture  is separated
+into servers  and clients. Service  types include  games, chatting,  messenger,  FTP servers,  and terminal  servers.
+Application *, *
+Client
+Server Application
+[Figure  6] Client-Server  Architecture
+M3 Overview  of System  Architecture  27

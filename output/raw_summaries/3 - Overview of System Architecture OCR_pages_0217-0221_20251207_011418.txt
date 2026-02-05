@@ -1,0 +1,187 @@
+LEARNING GUIDE: Pages 217-221
+Generated: 2025-12-07 01:14:18
+PDF: 3 - Overview of System Architecture OCR
+
+================================================================================
+LEARNING GUIDE
+================================================================================
+
+## Learning Guide: Software-Based Networks (SDN & NFV)
+
+This guide summarizes key concepts of Software-Defined Networks (SDN) and Network Function Virtualization (NFV), two essential technologies transforming modern networks.
+
+---
+
+### 1. Introduction: Software-Based Networks
+
+*   **Key Technologies:** Software-Defined Networks (SDN) and Network Function Virtualization (NFV) are leading innovations in networking.
+*   **Impact:** These technologies promote network openness and virtualization, aiming to reduce the dominance of large equipment manufacturers and encourage innovation from third-party software and equipment providers.
+*   **Korea's Efforts:** Since 2012, Korea (led by ETRI) has invested in R&D and standardization for SDN and NFV to boost national competitiveness.
+
+---
+
+### 2. Why a Paradigm Shift? (Limitations of Traditional Networks)
+
+Traditional network environments face several challenges:
+
+*   **Changing Traffic Patterns:** Modern applications generate vast, dynamic traffic by accessing various servers and databases, shifting from simple client-server models to complex multi-system interactions.
+*   **Increased Network Complexity:** Virtualization technology dramatically increased server numbers and complex network structures, making network design and management harder.
+*   **Difficult Network Management:** Predicting dynamic traffic patterns is challenging, making traditional network design (e.g., link oversubscription) difficult to optimize.
+*   **Vendor Dependence:** The core network often relies heavily on a few major equipment manufacturers, hindering the introduction of new services or technologies.
+
+---
+
+### 3. Software-Defined Networking (SDN)
+
+SDN is a next-generation network technology that allows network control and management through software programming.
+
+*   **Origin:** First proposed at the Open Network Summit in 2010. The Open Networking Foundation (ONF) was formed in 2011 to promote and standardize SDN and OpenFlow technology.
+*   **Core Concept: Control Plane & Data Plane Separation**
+    *   **Traditional:** Network devices integrate both control and data plane functions.
+    *   **SDN:** Separates the **control plane** (decision-making, guiding where traffic goes) from the **data plane** (forwarding packets to a destination).
+    *   **Mechanism:** An **SDN controller** manages the control plane, programming network behavior. Network devices (switches) handle the data plane, following commands from the controller using standard protocols like OpenFlow.
+*   **SDN Architecture:**
+    *   **Application Layer:** Network applications utilize SDN services.
+    *   **Control Layer:** The SDN Controller centralizes network control.
+    *   **Infrastructure Layer:** Network devices (switches, routers) forward data.
+    *   **Interface:** The Control Data Plane Interface (e.g., OpenFlow) connects the Control Layer to the Infrastructure Layer.
+*   **OpenFlow Technology:**
+    *   Plays a key role as an interface standard for SDN operations.
+    *   It allows the SDN controller to issue commands to network switches, directing how they process and forward packets.
+*   **SDN Application:**
+    *   Network devices become simpler, focusing only on packet forwarding (data plane).
+    *   The centralized controller performs all complex routing and operational management tasks.
+    *   **Example:** Routers can be simplified to perform only basic switching functions, with a central controller dictating their behavior.
+
+---
+
+### 4. Network Function Virtualization (NFV)
+
+NFV virtualizes network functions, allowing them to run on general-purpose hardware instead of dedicated, specialized equipment.
+
+*   **Background/Motivation:**
+    *   Rapid growth in network speed and services led to increased demand for space and power for network equipment.
+    *   Shortened equipment lifespans made it harder for service providers to profit.
+    *   NFV addresses these issues by leveraging virtualization.
+*   **Concept:**
+    *   Runs network functions (e.g., firewalls, routers) as software on high-performance x86 servers.
+    *   Creates Virtual Machines (VMs) or service profiles to activate necessary network functions on demand.
+*   **NFV Architecture Framework:** Comprises three main function groups:
+    1.  **VNFs (Virtual Network Functions):**
+        *   Software implementations of network functions (e.g., virtual firewall, virtual router).
+        *   Designed to support multiple applications.
+    2.  **NFVI (NFV Infrastructure):**
+        *   Provides the environment for VNFs to run.
+        *   Includes physical hardware resources (computing, storage, network) and a virtualization layer to abstract these resources.
+    3.  **NFV Management & Orchestration (MANO):**
+        *   Manages and orchestrates all NFV components.
+        *   Handles hardware/software resource management, VNF deployment, lifecycle management, and service delivery.
+*   **NFV Application:**
+    *   Instead of dedicated hardware appliances, network functions are implemented as software applications on common, high-performance x86 servers and switches.
+    *   **Example:** A firewall, traditionally a specialized hardware box, can be deployed as a VNF on a standard server.
+
+---
+
+### 5. SDN & NFV: Complementary Technologies
+
+While developed by different groups (SDN by researchers/data centers, NFV by ISPs), SDN and NFV are highly complementary and often deployed together.
+
+*   **Individual Strengths:**
+    *   **SDN:**
+        *   Creates **network abstractions**, simplifying network management.
+        *   Enables **faster innovation** and changes by allowing third parties to create innovative applications.
+    *   **NFV:**
+        *   **Reduces CAPEX** (capital expenditures) by using general-purpose hardware.
+        *   **Reduces OPEX** (operating expenditures), space, and power consumption by consolidating functions onto fewer, virtualized platforms.
+*   **Combined Benefits:** ISPs combine these technologies to leverage SDN's agile control over NFV's flexible, virtualized infrastructure.
+*   **Relationship:** They can be configured independently but offer significant benefits when used together.
+
+================================================================================
+ORIGINAL TEXT (First 5000 chars)
+================================================================================
+
+--- Page 217 ---
+ESSENCE
+02 Software-Based  Network
+The technologies  that have recently  received  the most attention  in the network  field are software-defined  networks
+(SDN) and network  function  virtualization  (NFV). Network  openness  and virtualization  technologies  are expected  to
+change  the era when certain large equipment  makers  dominated  the global network  equipment  market  and increase
+3rd party software  providers  and equipment  makers  to enter the market.
+Korea has planned smart Internet-related  R&D and standardization  projects  focusing  on SDN and NFV to enhance
+national  SDN technology  competitiveness,  led by ETRI, since 2012. Organizations,  such as the TTA Future Internet
+Project  Group (PG220) and the Smart Internet  Technology  Standardization  Council actively  promote  domestic
+standards  and reflect  international  standards.
+A) Limitations  of the existing  communication  environment  and paradigm  shift
+@ Changes  in traffic patterns
+Current  applications  generate  a large volume  of traffic, by accessing  various  application  servers  and databases  before
+providing  users data. The environment  is changing  from the limited communication  between  the client and the server
+to access  between  various  systems.
+@ Virtualization  technology
+Virtualization  technology  has dramatically  increased  the number  of servers  connected  to the network,  fundamentally
+changing  the assumptions  about the host's physical  location.
+@ Networks  getting  more complex
+Network  structures  are becoming  more complex,  as a large number  of computers  are configured  of discrete protocol
+sets,
+@ Difficulties  in network  design and management
+Initial designs use  a link oversubscription  method that considers  the expected  traffic patterns  and the number
+of concurrent  users. However,  it is becoming  more difficult  to predict the network  size, as traffic patterns  change
+dynamically.
+© Increasing  dependence  on equipment  manufacturers
+In particular,  the core network  has had difficulties  in introducing  new services  or technologies  as certain major
+equipment  manufacturers  dominated  the communication  market.
+B) SDN (Software  Defined  Network)
+SDN is a next-generation  network  technology  that can set the network  routing and control and complex  operation
+management  through software  programming.  The technology  attracted  attention  when ONF introduced  the
+OpenFlow  technology,  and international  standardization  organizations,  such as IETF and ITU-T, began to develop
+standards  for SDN-related  core technologies.  There is heated competition  in the industry  for securing  leadership  in
+216 TOPCIT  ESSENCE
+
+
+--- Page 218 ---
+Overview  of System Architecture )
+SDN technology  standards.
+@ Introduction  of SDN
+SDN was first proposed  at the Open Network  Summit,  a conference  specializing  in SDN and open flow, held at
+Stanford  University  in October  2010. SDN and OpenFlow  are technologies  that program and configure  or operate
+networks,  like computers.  They have attracted  attention  as new innovative  communication environmental
+technologies.  In March 2011, ONF (Open Networking  Foundation)  was formed  to promote  and standardize  OpenFlow
+and SDN.
+@ Concept  of SDN
+As shown in [Figure 150], SDN enables  programming  networks  by separating  the control plane (to guide the network
+to which it goes) from the data plane (to send packets  to a specific destination).  The basis of SDN is a switch that
+uses industry  standard  control protocols,  such as OpenFlow,  and can be programmed  through  an SDN controller.
+APPLICATION  LAYER
+SUS  laosow\eel(e-i(egsy
+{ar { API { API
+CONTROL  LAYER SDN
+Control
+Software Network  Services
+Control Data Plane interface
+(e.g,.0penFlow)
+Ne Nee D\e-) Ne  eee  \(e-) Ne Meee  \(e-)
+Network  Device Network  DeviceINFRASTRUCTURE  LAYER
+[Figure 150] SDN Architecture  [5]
+© OpenFlow  technology
+As shown in [Figure 151], the OpenFlow  technology  separates  the functions  to control and transfer  the packets  and
+controls  the network  through programming.  OpenFlow  consists  of a controller  and a switch. The controller issues
+commands  to the switch, and the switch performs  tasks related to data flow, such as sending  or modifying  packets
+to the destination,  according  to the commands.
+M3 Overview  of System  Architecture  217
+
+
+--- Page 219 ---
+ESSENCE
+(Ooi cel og
+A
+OpenFlow  Protocol
+OpenFlow Group
+Channel Table
+Flow ai Flow
+Table Pipeline Table
+OpenFlow  Switch
+[Figure 151] Main Components  of OpenFlow  Switch [6]
+@ SDN applications
+As shown in [Figure 152], network  devices  have had a control plane and a data plane implemented  in one device until
+now. However,  when SDN is applied,  the controller  performs  the control plane function  of each network  device, and
+only the data plane function  remains  in the actual physical  network  device.
+Here, OpenFlow  plays a role as an interface  standard  technology  ...

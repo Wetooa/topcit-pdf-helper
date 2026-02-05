@@ -1,0 +1,31 @@
+ESSENCE
+Network
+InterfaceNetwork
+Network  Interface
+(Ethernet)
+Physical
+<Table 43) Network  Layer Protocols
+Protocol Description
+ARP - Address  Resolution  Protocol(RFC  826)
+- Conversion  of an IP address  into a MAC address
+RARP - Reverse  Address  Resolution  Protocol(RFC  903)
+- Conversion  of a MAC address  into an IP address
+- Internet  Control  Message  Protocol(RFC  792)ICMP . ;
+- Transfer  of network  error information
+IGMP - Internet  Group Management  Protocol(RFC  1112)
+- IP multicasting
+C) Network  layer command
+<Table 44> shows commands  to check the network  layer status or perform  a specific  action.
+(Table 44) Network  Layer Commands
+Number  of a
+Commands aed
+Pin + Acommand  that uses an ICMP message  to test the connectivity  to the network  layer.
+8 + It uses the echo request  and replies to messages  from the ICMP message.
+Tracert/ + Acommand  to find the path to the desired destination.
+Traceroute * It checks  which network  section  caused the bottleneck,  if there is a problem  in connecting  a specific  site.
+Route + Acommand  to allow manual modification  of the routing  table.
+Ipconfig/ + Acommand  to check the computer's  TCP/IP network  settings.
+lfconfig + It is used to check and update  the DHCP and DNS settings.
+Netstat + Acommand  to check the network  connection,  routing  table, and network  interface  status.
+Arp + Acommand  that shows or changes  the local ARP cache.
+164 TOPCIT  ESSENCE

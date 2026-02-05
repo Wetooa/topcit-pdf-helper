@@ -1,0 +1,301 @@
+LEARNING GUIDE: Pages 4-8
+Generated: 2025-12-07 00:53:12
+PDF: 3 - Overview of System Architecture OCR
+
+================================================================================
+LEARNING GUIDE
+================================================================================
+
+This learning guide condenses the provided content into essential, easy-to-digest information.
+
+---
+
+## **Learning Guide: System Architecture & Data Technologies**
+
+### **I. System Architecture Fundamentals**
+
+#### **CPU Fundamentals**
+*   **CPU Components:** The essential parts of the Central Processing Unit (e.g., Arithmetic Logic Unit (ALU), Control Unit, Registers, Cache).
+*   **Instruction Cycle:** The fundamental process a CPU executes to perform a single instruction: Fetch, Decode, Execute, Write-back.
+*   **Instruction Set Structure (CISC & RISC):**
+    *   **CISC (Complex Instruction Set Computer):** Processors with many complex instructions, often performing multiple operations per instruction.
+    *   **RISC (Reduced Instruction Set Computer):** Processors with a smaller, highly optimized set of simple instructions, each executing very quickly.
+
+#### **03 Memory**
+*   **Memory Hierarchy:** A structured arrangement of computer memory, ordered by speed, cost, and capacity (e.g., registers, cache, main memory, secondary storage).
+*   **Memory Performance Factors:** Key metrics for evaluating memory, such as access time, cycle time, bandwidth, and cost per bit.
+*   **Memory Types & Characteristics:** Different categories of memory (e.g., RAM, ROM, Flash) and their specific properties (e.g., volatility, speed, write cycles).
+*   **Addressing Mode:** How the CPU determines the effective memory address of an operand (e.g., direct, indirect, immediate, register).
+*   **Locality:** The principle that programs tend to access data and instructions that are spatially or temporally close to recently accessed ones.
+
+#### **04 I/O Device**
+*   **Concept of I/O Device:** Hardware components that allow a computer to interact with the external world (e.g., keyboards, monitors, printers, network cards).
+*   **I/O Controller Structure & Addressing:** A dedicated hardware component that manages data flow between the CPU/memory and I/O devices, including how devices are identified and accessed.
+*   **DMA (Direct Memory Access):** A capability that allows I/O devices to transfer data directly to and from main memory without involving the CPU, improving efficiency.
+
+#### **05 Latest Technologies & Trends (System Architecture)**
+*   **Neuromorphic Chip:** Hardware designed to mimic the structure and function of the human brain, optimized for AI and machine learning.
+*   **Quantum Computer:** A novel type of computer leveraging quantum mechanics (superposition, entanglement) to solve complex problems intractable for classical computers.
+
+### **II. Data Processing Technology**
+
+#### **01 Parallel Processing System**
+*   **Concept:** A system that executes multiple computations simultaneously to achieve higher processing speeds and throughput.
+*   **Flynn’s Classification:** A taxonomy for parallel computer architectures based on instruction and data streams:
+    *   **SISD (Single Instruction, Single Data):** Traditional uniprocessor systems.
+    *   **SIMD (Single Instruction, Multiple Data):** Processors performing the same operation on different data elements simultaneously (e.g., GPUs).
+    *   **MISD (Multiple Instruction, Single Data):** Rare; multiple processors perform different operations on the same data.
+    *   **MIMD (Multiple Instruction, Multiple Data):** Multiple processors executing different instructions on different data simultaneously (e.g., multi-core CPUs, clusters).
+*   **Memory Structure Classification:** Categorizes parallel systems based on how memory is accessed:
+    *   **Shared Memory Systems:** Processors share a common memory space.
+    *   **Distributed Memory Systems:** Each processor has its own private memory, communicating via messages.
+*   **Parallel Processor Technology Types:** Different architectural approaches for implementing parallelism (e.g., multi-core processors, many-core accelerators).
+*   **Parallel Programming Technology:** Methods and tools for developing software that can utilize parallel processing systems (e.g., OpenMP, Message Passing Interface (MPI)).
+*   **GPU-based Parallel Programming:** Utilizing Graphics Processing Units (GPUs) for general-purpose computing due to their highly parallel architecture (e.g., CUDA, OpenCL).
+
+#### **02 Storage Technology**
+*   **Concept of Storage:** The process and methods of digitally recording and retaining data for future retrieval and use.
+*   **Storage Unit & Server Connection:** How storage devices are physically and logically linked to servers (e.g., Direct Attached Storage (DAS), Network Attached Storage (NAS), Storage Area Network (SAN)).
+*   **IP-SAN (Internet Protocol Storage Area Network):** A type of SAN that uses IP-based networks for data transfer, commonly employing the iSCSI protocol.
+*   **Storage Capacity Management:** The process of planning, monitoring, and optimizing storage resources to meet current and future data demands efficiently.
+*   **Storage Disk Scheduling:** Algorithms used by operating systems to determine the order in which pending disk I/O requests are serviced to optimize performance and fairness.
+
+#### **03 High Availability Storage**
+*   **RAID (Redundant Array of Independent Disks) Technology:** Combines multiple physical disk drives into one or more logical units to improve performance, provide data redundancy, or both.
+*   **Backup Storage (LTO and VTL):**
+    *   **LTO (Linear Tape-Open):** A magnetic tape data storage technology widely used for archiving and backup duearing its high capacity and low cost.
+    *   **VTL (Virtual Tape Library):** A data storage virtualization technology that emulates tape libraries on disk storage, offering faster backup and recovery capabilities than physical tapes.
+
+#### **04 Graphic Compression Technology**
+*   **Graphic Compression Types:** Methods used to reduce the file size of images and graphics by removing redundant or less important data (e.g., JPEG, PNG, GIF, TIFF).
+*   **Multimedia Data:** Digital data that integrates various forms such as text, images, audio, and video, often requiring compression for efficient storage and transmission.
+
+### **III. Embedded System**
+
+#### **01 Overview of Embedded System**
+*   **Definition:** A specialized computer system designed to perform a dedicated function within a larger mechanical or electrical system, often in real-time.
+*   **Characteristics:** Typically real-time constraints, resource-constrained (memory, processing power), dedicated functionality, high reliability requirements, low power consumption.
+*   **Development Process:** The lifecycle encompassing design, implementation, testing, and deployment of embedded systems, often iterative and highly specialized.
+
+#### **02 Embedded Hardware**
+*   **Microprocessor (Key to Embedded Systems):** The central processing unit specifically designed for embedded applications, optimized for cost, power efficiency, or specific tasks.
+*   **Technical Trends:** Current advancements in embedded hardware, including integration with IoT, AI accelerators, enhanced security features, and ultra-low power designs.
+
+#### **03 Embedded Software**
+*   **Definition & Technology Application:** Software specifically developed for embedded systems, controlling hardware and performing the system's dedicated functions. Often acts as firmware.
+*   **Characteristics:** Typically firmware, direct hardware interaction, real-time constraints, strict memory management, high reliability and robustness, often written in low-level languages.
+
+#### **04 Embedded OS**
+*   **Concept:** An operating system tailored for embedded systems, providing scheduling, resource management, and a level of hardware abstraction to the application software.
+*   **Structure & Applied Technology:** Design principles and technologies used in embedded operating systems (e.g., Real-Time Operating Systems (RTOS), bare-metal programming).
+*   **Types & Trends:** Various embedded OS options (e.g., FreeRTOS, VxWorks, Embedded Linux, Android Embedded) and their evolution towards connectivity and AI capabilities.
+
+### **IV. Information System Implementation**
+
+#### **01 Information System Structure**
+*   **Concept:** An integrated set of components (people, hardware, software, data, networks) working together to collect, process, store, and distribute information.
+*   **Structure:** The arrangement and interconnections of these components within an information system (e.g., client-server architecture, database, application layer, user interface).
+
+#### **02 Information System Capacity Calculation**
+*   **Concept of Size Calculation:** The process of estimating the necessary resources (e.g., CPU, memory, storage, network bandwidth) to support an information system's workload and user demands.
+*   **Size Calculation Targets:** What specific resources or performance metrics need to be calculated (e.g., number of concurrent users, transaction volume, data growth, response times).
+*   **Reference Architecture for Size Calculation:** Standardized models or proven architectural patterns used as a baseline for capacity planning and estimation.
+*   **Size Calculation Procedure:** The systematic steps involved in performing a capacity calculation, from gathering requirements to generating resource estimates.
+*   **Size Calculation Method for Each Hardware Component:** Specific approaches and formulas used to estimate capacity for different hardware components (e.g., CPU utilization based on transactions, memory footprints per user, storage growth rates).
+
+#### **03 Latest Technology & Trends of Information Systems**
+*   Current and emerging developments influencing information systems, such as cloud-native architectures, AI integration, blockchain, hyperautomation, and edge computing.
+
+### **V. Fault Response Technology**
+
+#### **01 High Availability (HA)**
+*   **Concept of HA:** The ability of a system or service to remain operational for a high percentage of the time, minimizing downtime and ensuring continuous service.
+*   **HA Configuration Type:** Different architectures and strategies to achieve high availability (e.g., failover clusters, load balancing, redundancy at multiple levels).
+
+#### **02 Fault-Tolerant System**
+*   **Definition:** A system designed to continue operating correctly and without interruption even when one or more of its components fail, often achieved through extensive redundancy.
+
+#### **03 Disaster Recovery System (DRS)**
+*   **Definition of DRS:** A comprehensive set of policies, tools, and procedures to enable the rapid recovery or continuation of vital technology infrastructure and systems following a major disaster.
+*   **Disaster Recovery Goal:** The primary objectives of a DRS, typically defined by:
+    *   **RTO (Recovery Time Objective):** The maximum tolerable downtime before services must be restored.
+    *   **RPO (Recovery Point Objective):** The maximum acceptable amount of data loss (i.e., how much data can be lost from the point of failure).
+
+### **VI. Cloud Computing Technology**
+
+#### **01 Definition of Cloud Computing**
+*   **Definition:** The on-demand delivery of IT resources (e.g., compute power, storage, databases, networking) over the internet with pay-as-you-go pricing.
+*   **Comparison with Other Computing Technologies:** Contrasting cloud computing with traditional on-premise, client-server, or grid computing regarding aspects like scalability, cost model, management, and resource elasticity.
+
+#### **02 Cloud Computing Types**
+*   **Service Type Classification:** Categorization based on the level of service and management provided:
+    *   **IaaS (Infrastructure as a Service):** Provides virtualized computing resources over the internet (e.g., virtual machines, storage, networks).
+    *   **PaaS (Platform as a Service):** Offers a platform allowing customers to develop, run, and manage applications without the complexity of building and maintaining the infrastructure.
+    *   **SaaS (Software as a Service):** Delivers ready-to-use software applications over the internet, managed by the provider.
+*   **Cloud Operation Form Classification:** Categorization based on deployment and ownership models:
+    *   **Public Cloud:** Services offered over the public internet and available to anyone.
+    *   **Private Cloud:** Services run exclusively for a single organization, either on-premise or by a third party.
+    *   **Hybrid Cloud:** A mix of public and private clouds, connected by technology that allows data and applications to be shared between them.
+    *   **Community Cloud:** Cloud infrastructure shared by several organizations with common concerns.
+
+#### **03 Server Virtualization Technology**
+*   **Hypervisor:** A software layer that creates and runs virtual machines (VMs), abstracting the underlying physical hardware from the operating systems running within VMs.
+*   **Hypervisor Types:**
+    *   **Type 1 (Bare-Metal):** Runs directly on the host hardware, controlling the hardware and managing guest OSs (e.g., VMware ESXi, Microsoft Hyper-V).
+    *   **Type 2 (Hosted):** Runs on top of a conventional operating system (host OS) like a normal application, which then hosts guest OSs (e.g., VirtualBox, VMware Workstation).
+*   **Server Virtualization Methods:** Techniques used to virtualize servers, including full virtualization, paravirtualization, and hardware-assisted virtualization.
+
+#### **04 Storage & Network Virtualization Technologies**
+*   **Storage Virtualization:** Abstracting physical storage resources to present them as a single, logical pool, simplifying management, improving utilization, and adding flexibility.
+*   **Network Virtualization:** Creating a logical network abstraction over physical network hardware, enabling dynamic network configuration, segmentation, and isolation.
+
+#### **05 Cloud Platform**
+*   **Definition of Cloud Platform:** A comprehensive environment or framework that provides services and tools for building, deploying, running, and managing applications in a cloud environment.
+*   **OpenStack:** A collection of open-source software projects providing components for building and managing private and public clouds (e.g., compute, networking, storage).
+*   **CloudStack:** An open-source cloud computing software that enables organizations to deploy and manage large networks of virtual machines, acting as a cloud orchestrator.
+*   **Kubernetes:** An open-source container orchestration system for automating the deployment, scaling, and management of containerized applications.
+*   **Mesos:** An open-source cluster management system that abstracts CPU, memory, storage, and other compute resources away from machines, enabling efficient resource sharing.
+
+### **VII. Big Data System**
+
+#### **01 Big Data System Structure**
+*   **Hadoop Ecosystem:** A collection of open-source software tools and utilities designed for distributed storage and processing of very large datasets across clusters of computers.
+*   **Hadoop’s Main Technology Elements:**
+    *   **HDFS (Hadoop Distributed File System):** A distributed file system designed to store very large files across multiple machines.
+    *   **MapReduce:** A programming model for processing large data sets with a parallel, distributed algorithm on a cluster.
+    *   **YARN (Yet Another Resource Negotiator):** A resource management layer that allocates resources to applications and schedules jobs.
+*   **Hadoop Support Program:** Additional tools and frameworks that extend Hadoop's capabilities for specific tasks (e.g., Hive for data warehousing, Pig for high-level scripting, Spark for fast processing).
+
+================================================================================
+ORIGINAL TEXT (First 5000 chars)
+================================================================================
+
+--- Page 4 ---
+C) CPU components 64
+D) Instruction  cycle 65
+E) Instruction  set structure,  CISC and RISC 66
+03 Memory 67
+A) Memory  unit’s hierarchical  structure 67
+B) Factors  for performance  evaluation  of memory  unit 68
+C) Type and characteristics  of the memory  unit 68
+D)Addressing  mode 68
+E) Locality 69
+04 I/O Device 69
+A) Concept  of I/O device 69
+B) I/O controller  structure  and addressing  methods 69
+C) DMA) 70
+05 Latest  Technologies  and Trends 72
+A) Neuromorphic  chip 72
+B) Quantum  computer 73
+V. Data Processing  Technology 75
+01 Parallel  Processing  System 76
+A) Concept  of the parallel processing  system 76
+B) Flynn’s classification  of parallel  processing  systems 77
+C) Classification  of parallel processing  systems,  according  to the memory  structure 78
+M3 Overview  of System  Architecture  9
+
+
+--- Page 5 ---
+CONTENTS
+D) Types of parallel processor  technology 79
+E) Parallel programming  technology 81
+F) Parallel programming  technology 82
+G) GPU-based  parallel programming  technology 82
+02 Storage  Technology 83
+A) Concept  of storage 83
+B) Connection  of storage  unit and server 84
+C) IP-SAN 86
+D) Storage  capacity  management 87
+E) Storage  disk scheduling 88
+03 High Availability  Storage 91
+A)Redundant  array of independent  disks (RAID) technology 91
+B) Backup  storage:  LTO and VTL 94
+04 Graphic  Compression  Technology 94
+A) Graphic  compression  type 94
+B) Multimedia  data 95
+VI. Embedded  System 98
+01 Overview  of Embedded  System 99
+A) Definition  of embedded  system 99
+B) Characteristics  of embedded  system 100
+10 TOPCIT  ESSENCE
+
+
+--- Page 6 ---
+C) Embedded  system  development  process 101
+02 Embedded  Hardware 103
+A) Microprocessor,  the key to embedded  systems 103
+B) Technical  trends of embedded  hardware 104
+03 Embedded  Software 105
+A) Definition  of embedded  software  and technology  application 105
+B) Characteristics  of embedded  software 105
+04 Embedded  OS 106
+A) Concept  of embedded  OS 106
+B) Embedded  OS structure  and applied  technology 106
+C) Types and trends  of embedded  OS 107
+Vil. Information  System  Implementation 109
+01 Information  System  Structure 110
+A) Concept  of information  system 110
+B) Information  system  structure 111
+02 Information  System  Capacity  Calculation 115
+A) Concept  of size calculation 116
+B) Size calculation  targets 116
+C) Reference  architecture  for size calculation 117
+M3 Overview  of System  Architecture  11
+
+
+--- Page 7 ---
+ESSENCE
+D) Size calculation  procedure
+E) Size calculation  method  for each hardware  component
+03 Latest  Technology  and Trends  of Information  Systems
+vil. Fault Response  Technology
+01 High Availability  (HA)
+A) Concept  of HA
+B) HA configuration  type
+02 Fault-Tolerant  System
+A) Fault-tolerant  system
+03 Disaster  Recovery  System  (DRS)
+A) Definition  of DRS
+B) Disaster  recovery  goal
+IX. Cloud Computing  Technology
+01 Definition  of Cloud Computing
+A) Comparison  of cloud computing  and other computing  technologies
+02 Cloud Computing  Types
+]2 TOPCIT  ESSENCE118
+119
+120
+122
+123
+126
+126
+126
+128
+129
+130
+130
+
+
+--- Page 8 ---
+A) Classification  according  to the service  type 130
+B) Classification  according  to the cloud operation  form 132
+03 Server  Virtualization  Technology 132
+A) Hypervisor 132
+B) Hypervisor  types 132
+C) Server  virtualization  methods 133
+04 Storage  and Network  Virtualization  Technologies 136
+A) Storage  virtualization 136
+B) Network  virtualization 136
+05 Cloud Platform 136
+A) Definition  of cloud platform 136
+B) Openstack 136
+C) CloudStack 137
+D) Kubernetes 137
+F) Mesos 137
+X. Big Data System 138
+01 Bid Data System  Structure 139
+A) Hadoop  ecosystem 139
+B) Hadoop’s  main technology  elements 140
+C) Hadoop  support  program 141
+M3 Overview  of System  Architecture  13
+
+

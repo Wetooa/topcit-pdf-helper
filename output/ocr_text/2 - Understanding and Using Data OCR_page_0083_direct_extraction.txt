@@ -1,0 +1,42 @@
+ESSENCE
+DenormalizationType technique Description
+Data can be processed  by passing via several paths. However,  an additional  relationship  is
+established  to prevent  performance  deterioration.
+Customer
+Customer  ID
+Customer  name
+Address | etree  nc cones
+[Phone  number  _| | Reiteceletocni-mel  neuen
++ {TE WonsaiomsreMolfecirereheks  neces
+Relation- Adding a i | Eleecscarotiicy
+ship denor- duplicate Order Q
+malization relationship Order number
+Customer  ID
+Order quantity Delivery
+Delivery number
+Product  number
+Order list Delivery  method
+Order number Date and time
+Product  number + |--------------  ~~ Customer  ID
+List quantity | Order number
+0? Considerations:  for Performance  Design
+@ Performance  improvement  goals
++ Throughput:  The workload  performed  per unit time.
++ Throughput  time: Time required  to perform  a unit work.
++ Response  time: Time required from the moment  when the user presses a key for input until the time when the
+system responds.
++ Load time: Time required  to load data into a database.
+@ Integrating  and splitting  an entity: Integrating  similar  entities  into one.
+<Table 34> Advantages  and disadvantages  of entity integration
+Key benefits  of entity integration Key shortcomings  of entity integration
+It is easy to query comprehensive  information.
+Improves  performance  by removing  unnecessary  joins.
+Removes  duplicates  between  entities  caused by similar
+attribute  integration.
+The ERD is simplified.
+The number  of physical  tables  is reducedThe scalability  of the data model is reduced  due to changes
+to the work.
+It is difficult  to understand  the workflow  using the data model.
+Performance  may deteriorate  due to the concentration  of
+large amounts  of data.
+82 TOPCIT  ESSENCE

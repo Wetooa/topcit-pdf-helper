@@ -1,0 +1,38 @@
+Project Management  and Technical  Communication  )
+03 Quality Evaluation  Perspective  and Quality  Standard
+A) Quality  evaluation  perspective
+Quality  evaluation  perspective  can be divided into product  quality  and process  quality.
+@ Product  Quality
+It is technique that evaluates  the functionality  and reliability  of a product  made by a project, and ISO/IEC  9126
+and 6 Sigma are the most common  quality  standards.
+@ Process  Quality
+It is a technique  that evaluates  whether  a process is defined and properly  operated  from the viewpoint  that
+a good product  comes from a good process,  and ISO 9000, ISO/IEC 12207, and CMMI are widely used quality
+standards,
+B) Quality  standard
+@ ISO/IEC  9126 (currently  known as ISO/IEC  25000-2)
+It is a quality model created  through  standardization  on software  quality characteristics  from the  user's point
+of view by ISO(International  Organization  for Standardization),  an international  standardization  organization,  as
+a specific  definition  for standardization  and quality assurance  of quality  characteristics  and metrics  is required.
+<Table 58> ISO/IEC  9126 (currently  known as ISO/IEC  25000-2)
+Classification Content
+ISO 9126-1[Consists  of 6 quality  characteristics  and 21 subcharacteristics]
+Enable those involved  in purchasing,  requirements,  development,  use, evaluation,  support,  maintenance,
+quality  assurance,  and software  auditing  to define and evaluate  the quality  of software  products  from
+different  perspectives.
+ISO 9126-2[External  metrics]
+It refers to the external  properties  that appear  while in use, and measures  the final product,  which is the
+closing  stage of software,  from the user’s and manager's  point of view
+ISO 9126-3[Internal  metrics]
+Interim products  are measured  by creating  a measurement  table for each evaluation  factor by
+development  stage based on internal software  properties
+ISO 9126-4It measures  whether  the goals for efficiency,  productivity,  safety and satisfaction  are met when using the
+finished  software
+@ ISO 12207
+As a standard
+Development
+maintenance.ization for software  process, it is a quality model that provides  standards across the Software
+Life Cycle (SDLC) for systematic  software  acquisition,  supply, development,  operation,  and
+The basic framework  for communication  by software  practitioners  in development  and management  was
+defined  and presented  at a high level.
+M6 Project  Management  and Technical  Communication  123

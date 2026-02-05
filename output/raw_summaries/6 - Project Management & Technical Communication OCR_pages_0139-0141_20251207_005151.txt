@@ -1,0 +1,169 @@
+LEARNING GUIDE: Pages 139-141
+Generated: 2025-12-07 00:51:51
+PDF: 6 - Project Management & Technical Communication OCR
+
+================================================================================
+LEARNING GUIDE
+================================================================================
+
+Here is a simplified, easy-to-read learning guide derived from the provided text:
+
+---
+
+## **Learning Guide: Project Evaluation**
+
+This guide covers the essentials of project evaluation, its stages, and benefits.
+
+### **1. What is Project Evaluation?**
+
+*   **Definition:** Project evaluation is the comprehensive process of assessing a project from its beginning (investment) to its completion and even after, including post-completion analysis.
+*   **Purpose:** To systematically manage and assess projects, especially given their significant investment and resource requirements.
+*   **Three Key Perspectives for Evaluation:**
+    1.  **Financial:** Evaluates project investment and Return on Investment (ROI).
+    2.  **Management:** Assesses project progress in terms of schedule, scope, quality, and risk management.
+    3.  **Technical:** Examines the technologies and solutions applied within the project.
+
+### **2. Role of the Project Management Office (PMO)**
+
+The **PMO (Project Management Office)** is central to integrated project management and evaluation. Its functions include:
+
+*   **Investment:** Decision-making, entry, management, and evaluation.
+*   **Planning & Execution:** Scope, schedule, cost, and quality management.
+*   **Resources:** Resource acquisition, manpower management, and purchase management.
+*   **Collaboration:** Communication and stakeholder management.
+*   **Risk Management.**
+*   **Analysis:** Results analysis and gap analysis.
+
+### **3. Key Project Evaluation Items**
+
+A fair evaluation after a project is completed is crucial due to the substantial resources invested. This helps assess the project's value and how it's perceived. Common evaluation items include:
+
+*   **Return on Investment (ROI)**
+*   **Consistency with Business Strategy**
+*   **Sales Increase Effect**
+*   **Cost Reduction Effect**
+*   **User Satisfaction**
+*   **Competitive Differentiation**
+*   **Process Improvement**
+*   **Recycle/Reusability**
+
+*Project managers* must use project plans and Business Cases to quantitatively assess if project goals were met, which supports continuous process improvement.
+
+### **4. Project Evaluation Stages**
+
+Project evaluation is performed at different times throughout its lifecycle to analyze its contribution to business goals.
+
+| Evaluation Stage     | Timing & Purpose                                                                      | Key Focus / Activities                                                                                                     |
+| :------------------- | :------------------------------------------------------------------------------------ | :------------------------------------------------------------------------------------------------------------------------- |
+| **Ex-ante Evaluation** | **Before Project Start:** To analyze feasibility and support IT investment decisions.    | *   Assess project feasibility in advance. <br> *   Prioritize multiple potential projects. <br> *   Decide whether to proceed with an IT project and select alternatives. <br> *   Often done annually for budget allocation.         |
+| **Interim Evaluation** | **During the Project:** To monitor progress, supervise, and manage risks.               | *   Frequent evaluation to ensure project alignment. <br> *   Supervision, inspection, and risk management during execution. <br> *   Manage IT investment risks to achieve goals.                                                     |
+| **Ex-post Evaluation** | **After Project Completion:** To verify effectiveness, confirm management goals, and plan improvements. | *   Conducted a specific period after completion (e.g., quarterly, semi-annually, annually). <br> *   Check if company management goals for IT investment were achieved. <br> *   Confirm project effectiveness and investment feasibility. <br> *   Establish future improvement plans and enhance IT operation efficiency. |
+
+### **5. Benefits of Project Evaluation**
+
+The three-step evaluation process provides significant advantages:
+
+*   **Verifies IT Investment Effectiveness:** Confirms that IT investments successfully support business goals.
+*   **Captures Lessons Learned:** Gathers insights to improve performance for future projects.
+*   **Identifies Improvement Points:** Pinpoints areas for project progress enhancement and helps develop improvement plans.
+*   **Fosters Continuous Improvement:** Leads to the progressive and ongoing enhancement of the overall project management process.
+
+================================================================================
+ORIGINAL TEXT (First 5000 chars)
+================================================================================
+
+--- Page 139 ---
+ESSENCE
+and third, a technical  perspective.  From a financial  standpoint,  investment  and ROI are evaluated.  From a
+management  point of view, the process  of project progress  (schedule,  scope, quality, risk management,  etc.)
+is evaluated,  and from a technical  point of view, it is evaluated  from the perspective  of technologies  and solu-
+tions applied to the project.
+B) Project  evaluation
+As a project  requires a lot of investment  management,  companies  generally  run multiple projects  and require
+systematic  management.  Project  evaluation means evaluating  everything  from the start of the project  to the
+project  investment  after the end of the project.
+PMO(Project  Management  Office)
+Integrated  management
+Investment  decision-making Scope management Investment  evaluation
+(4C, 75, SWOT analysis) Schedule  management management
+Entry and management Cost management Results analysis
+Resource  acquisition Quality management Gap analysis
+Manpower  management.
+Communication  management
+Risk management
+Purchase  management
+Stakeholder  Management
+Execution
+[Figure  49] Project  Investment  Evaluation  Process  through  PMO
+Just because  the project is completely  finished,  it doesn't  mean that everything  is finished.  Since a large num-
+ber of personnel  and costs were invested  in one project,  it is necessary  to carry out a fair ex-post  evaluation
+process.  The example  below shows evaluation  items for the value and perception  of the project information
+system.
+138 TOPCIT  ESSENCE
+
+
+--- Page 140 ---
+Project Management  and Technical  Communication  )
+Return on investment  (IN  51%
+Business  strategy  consistency  (NS  38%
+Sales increase  effect JN  27°
+Cost reduction  effect JINN  22%
+User satisfaction  JN  20%
+Competitive  differentiation ns 13%
+Process  improvement  fo 16%
+Recycle | 13%
+0% 10% 20% 30% 40% 50% 60%
+[Figure  50] Project  Evaluation  Items (example)
+The result of the project below is an example  of evaluating  the project  goals speculated  in the project  charter
+and the actual results after 4 months.  This helps to measure  monthly  project performance  based on monthly
+sales and to derive future operations  and improvements  along with investment  evaluation  of the project.
+30
+20.1 19.2
+20
+15.2
+13.0}
+10.0}
+10
+7.0
+5.0
+3.6
+tT 0.00 0.00
+0
+April May June July August | September
+[Figure 51] Four-month  Performance  Measurement  of OO Project  (X-axis:  period, Y-axis: sales (in billions))  (example)
+Project managers  should check the project plan and Business  Case to determine  quantitatively  whether  the
+project has reached  its goals, through project management  tools and evaluation,  thereby  actively  managing
+and supporting  continuous  process  improvement.
+C) Project  evaluation  stage and focal point
+The project  evaluation  stage is a task that analyzes  how much the IT project  has contributed  to the achieve-
+ment of business  goals from the three points of view previously  examined.  It can be divided into Ex-ante  eval-
+uation, Interim evaluation,  and Ex-post  evaluation  depending  on when the project  is evaluated.
+M6 Project  Management  and Technical  Communication  139
+
+
+--- Page 141 ---
+ESSENCE
+<Table 70> Project  Evaluation  Stage
+Evaluation  Stage Explanation
+Ex-ante  Evaluation
+Interim Evaluation+ Analyze  the feasibility  of the project  in advance  and support  decision-making  on IT
+investments
++ Prioritize  multiple  projects
++ Evaluation  is carried out frequently  to decide  whether  to proceed  with the IT project  and
+select alternatives
++ Companies  priorities  projects  every year to establish  the budget  for next year
++ Conducted  in the form of evaluation,  supervision,  and inspection  during the project
++ IT investment  risk management  for achieving  goals
+Ex-post  Evaluation+ Performed  in a certain  period of time after the project is completed
++ Check whether  the company’s  management  goals for IT investment  are achieved
+* Confirmation  of project  effectiveness  and investment  feasibility
+* Quarterly,  semiannual,  and annual evaluation
++ Establish  future improvement  plans and improve  IT operation  efficiency  after evaluation
+The following  four advantages  are obtained  through  the three-step  evaluation  process.
++ Verifying  the effectiveness  of IT investment  in supporting  business  goals
++ Lessons  learned to improve  future project  performance
++ Develop  improvement  points for project  progress  and prepare  improvement  plans
++ Progressive,  continuous  improvement  of the project  management  process
+140 TOPCIT  ESSENCE
+
+

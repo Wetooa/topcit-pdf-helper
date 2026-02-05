@@ -1,0 +1,36 @@
+Information  security )
+@ Non-repudiation  of delivery
+Non-repudiation  of delivery  refers to the prevention  of the receiver's  claim that the message  was not delivered
+after actually  sending  the message.
+® Non-repudiation  of receipt
+Non-repudiation  of receipt refers to the prevention  of the receiver's  claim that the message  was not received
+after actually  receiving  the message.
+C) Cryptography
+Cryptography  is largely  classified  into cryptographic  techniques  and encryption  protocol  techniques.
+@® Cryptographic  techniques
+Cryptographic  techniques  can be divided into the symmetric  key cryptosystem,  in which the encryption
+key and the decryption  key are the samewhile  in the public key cryptosystem,  the encryption  key and the
+decryption  key are different,  depending  on whether  the encryption  key and the decryption  key are the same.
+@® Cryptographic  protocols
+Cryptographic  protocols  refer to the protocols  that use cryptographic  techniques.  As a protocol  means a series
+of finite phases  where more than 2 persons  participate  to achieve  a certain purpose,  the cryptographic  protocol
+should prevent  repudiation  by a participant,  or a third party, to ensure a certain purpose  of the concerned
+cryptographic  protocol  (authentication,  confidentiality,  integrity,  non-repudiation,  etc.), as well as the meaning
+of each message.
+D) Digital signature
+A digital signature  is the method  of providing  both data integrity  and signature  authentication,  by performing
+a hash operation  on a specific document,  using the signature’s  private key. Signing  the entire message  is very
+inefficient  because  the public key operation  should be performed  on all message  blocks repetitively.  Therefore,
+an electronic  signature  can be efficiently  generated  by calculating  a hash value for the message,  then signing
+on that value. Although  the signature  is on the hash value, instead  of on the message  itself, it is recognized  as
+a genuine  signature  for the message  because  finding  another  message  with the same hash value is difficult.
+E) Hash function
+A hash function,  or hash algorithm,  is a mathematical  function that converts  a random string of various  sizes
+into a short hash value (hash code) of fixed length, then outputs  it. That is, the function compresses  an input
+string of a random length into a string with a fixed, short length.
+Unlike an encryption  algorithm,  the hash function  does not use a key, therefore  providing  the same output  for
+the same input. Thanks to this property,  the hash function  can be used for integrity  verification,  which can
+detect an erroneous  or altered input message.
+F) Malware
+Malware  is an abbreviation of malicious  software  and refers to software  designed  to perform  malicious  actions
+M4 Understanding  Information  Security  15

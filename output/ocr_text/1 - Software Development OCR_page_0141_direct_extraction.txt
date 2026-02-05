@@ -1,0 +1,10 @@
+ESSENCE
+Docker can create a virtualization  environment  that is much lighter than hypervisor-based  virtualization,
+supports  server virtualization,  and enables  the user to develop  an application  regardless  of the development
+language  or tool.
++ Key features  of Docker
+- Makes it easy to package,  distribute,  and manage  an application  developed  using a container.
+- Files and set values needed  for container  execution  are included  using an image.
+- Allows simple and fast development  configuration  regardless  of the infrastructure  requirements.
+- Supports  multiple  cloud platforms.
+140 TOPCIT  ESSENCE

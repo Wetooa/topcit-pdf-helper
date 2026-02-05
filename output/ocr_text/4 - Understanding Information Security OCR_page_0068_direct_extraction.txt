@@ -1,0 +1,39 @@
+ESSENCE
+1.1 Laying  the foundation  of the
+management  system 1.2 Risk management
+1
+1.4 Checking  and improving  the  \ Establishing  and operating
+management  system the management  systems 1.3 Operating  the management
+(16)
+y
+Protective  measures  requirements  (64)3
+Requirements  for each personal  information
+2.1 Policy, organization, handling  phase (22)
+asset maniagement 2.7 Encryption  application
+= 3.1 Protective  measures  when collecting personal information28 Security for information  system PI
+introduction  and development
+2.9 System  and service
+operation  management
+2.10 System  and service
+security  management2.2 Personnel  security
+32 Protective  measures  when holding  and using personal  information
+2.3 Outsider  security
+3.3 Protective  measures  when providing  personal  information
+2.4 Physical  security
+3.4 Protective  measures  when destroying personal  information2.5 Authentication  and Ing Pp
+right management2.11 Incident  prevention  and
+response :
+3.5 Protecting  information  owner's  rights
+2.6 Access  control 2.12 Disaster  recovery
+[Figure 32] Composition  of ISMS-P
+(Source:  https://isms-p.kisa.or.kr)
+02 Personal  information  protection
+A) Privacy  policy
+@® Reflecting  the method  of obtaining  consent  when collecting  personal  information
+When obtaining  consent  to personal  information  collection,  consent  details should be presented  before the
+user enters personal  information,  and the user should be able to accept  or reject.
+When obtaining  consent  to information  collection,  the purpose  of collecting  and using personal information,
+the items of personal  information  to be collected,  the period of personal  information  retention  and use, and the
+disadvantages  in case of rejection  should be presented  to the users.
+@ Reflecting  the method  of personal  information  destruction
+68 TOPCIT  ESSENCE

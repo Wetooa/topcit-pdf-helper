@@ -1,0 +1,213 @@
+LEARNING GUIDE: Pages 226-230
+Generated: 2025-12-05 14:15:46
+PDF: 5 - Understanding the IT Business and Ethics OCR
+
+================================================================================
+LEARNING GUIDE
+================================================================================
+
+Here is a simplified, easy-to-read learning guide based on the provided text:
+
+---
+
+## IT Business and Ethics: Learning Guide
+
+This guide covers key ethical considerations and practical guidelines for Big Data De-identification, Autonomous Vehicles, Drones, the Trolley Dilemma, and Cloud Computing.
+
+---
+
+### 1. Data De-identification for Big Data Utilization
+
+**Purpose:** To enable the safe use of personal data for big data analysis by making individuals unidentifiable, while ensuring legal compliance and security.
+
+**Procedure for De-identification:**
+
+1.  **Preliminary Review:**
+    *   **Action:** Verify if data is personal data.
+    *   **Outcome:** If *not* personal data, it can be used freely.
+
+2.  **De-identification:**
+    *   **Action:** Apply measures to make individuals unidentifiable (e.g., delete or replace identifying elements from the dataset).
+    *   **Principle:** Delete attributes unrelated to the data's intended use.
+
+3.  **Adequacy Assessment:**
+    *   **Action:** A "De-identification Adequacy Assessment Panel" evaluates if the de-identified data can still be easily linked back to an individual using other data.
+
+4.  **Follow-up Management:**
+    *   **Action:** Implement safety measures and monitor for potential re-identification.
+
+**Safety Measures for De-identified Data:**
+
+*   **Managerial:**
+    *   Designate a person in charge.
+    *   Prohibit sharing of de-identification data.
+    *   Destroy data once its purpose is fulfilled.
+*   **Technical:**
+    *   Restrict access to files.
+    *   Manage access records.
+    *   Install and operate security programs.
+
+**Protective Measures (if de-identified data is leaked):**
+
+*   Analyze the cause of leakage.
+*   Implement both managerial and technical safety measures to prevent more leaks.
+*   Withdraw and destroy leaked data.
+
+---
+
+### 2. Ethical Issues of Autonomous Vehicles (Self-Driving Cars)
+
+Autonomous vehicles (AVs) integrate sensors, communication tech, and advanced algorithms to optimize routes and improve safety. However, they introduce several ethical challenges.
+
+**Key Ethical Issues:**
+
+*   **Ethical Dilemma:** How to program AVs to make decisions in unavoidable accident scenarios (e.g., who to protect – occupants or pedestrians).
+*   **Safety Issues:**
+    *   Reliable detection and reaction to pedestrians and obstacles.
+    *   Occupant protection during incidents.
+*   **Hacking & Cyber Threats:**
+    *   Remote control attacks by hackers.
+    *   Information leakage due to malicious software.
+    *   Threat of property loss or danger to life from hacking.
+*   **Privacy Invasion:**
+    *   Leakage of personal information (travel routes, addresses) collected by in-vehicle sensors.
+    *   Potential for AVs to be misused as surveillance tools.
+
+---
+
+### 3. Ethical Issues Related to Drones
+
+Drones are increasingly used in industries (delivery, monitoring) and for leisure. Their widespread use brings a rise in accidents and ethical concerns.
+
+**Common Accidents & Concerns:**
+
+*   Crashes, collisions with buildings, flying in no-fly zones.
+*   Hacking (e.g., disrupting remote control, stealing imagery).
+*   Privacy invasion (illegal filming of private life, collection of personal location data).
+*   Potential for malicious use (weapons, terrorism, spy cameras).
+
+**Ethical Guidelines for Drone Use:**
+
+*   **Accident Prevention:** Minimize collision risks and damage.
+*   **Hacking Prevention & Security:** Ensure drones have security functions to prevent information leaks and interference.
+*   **Prohibition of Malicious Use:** Do not use drones as weapons, for terrorism, or as "spy cameras."
+*   **Prevention of Privacy Invasion:** Do not arbitrarily collect/transmit information about others' public or private lives. Prohibit filming to identify individuals without consent or collecting personal location data.
+*   **Prevention of Theft:** Secure drones to prevent data leakage if stolen.
+*   **Policy Understanding & Compliance:** Know and follow drone policies specific to each country/region.
+*   **Operation & Safety Education:** Receive training on drone control, safety, and accident response.
+
+**Global Drone Operation Policies (Examples):**
+
+| Classification | Key Drone Operation Policy Points                                                                                                                                                                                                                                                                                           |
+| :------------- | :------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
+| **South Korea**  | *   Daylight-only flights. <br/> *   Max altitude: 150m. <br/> *   Prohibition of dropping objects. <br/> *   Weight limit: 25kg (55 lbs).                                                                                                                                                                                      |
+| **US**           | *   Daylight-only flights, within sight. <br/> *   Max altitude: 152m (500 ft). <br/> *   Max speed: 100 mph (87 knots). <br/> *   Minimum pilot age: 16 years.                                                                                                                                                                |
+| **EU**           | *   No unified regulation, varies by member state. <br/> *   Mandatory electronic registration for all drones (from 2019). <br/> *   Region-wide weight limit: 136kg (330 lbs). <br/> *   **France:** Rules based on location/purpose, 25kg weight threshold. <br/> *   **Germany:** 25kg limit, public disclosure of drone photos prohibited. <br/> *   **Austria:** Drone images of identifiable individuals prohibited. |
+| **Southeast Asia** | *   **General:** Strong regulation for privacy, safety, military info; pre-registration common. <br/> *   **Thailand:** Within sight, max 90m altitude, daytime only. Drones over 2kg need permission. <br/> *   **Philippines:** Daytime only. Drones over 7kg need permission. <br/> *   **Vietnam:** Extremely stringent, requires Ministry of Defense approval. |
+
+---
+
+### 4. The Trolley Dilemma
+
+**Concept:** A thought experiment in ethics (by Philippa Foot) that explores moral choices in situations where sacrificing one person might save many others. It's often used to discuss programming ethics for autonomous systems.
+
+**How it relates to Tech:**
+
+*   **Combat Drones:** Soldiers operating drones might distance themselves from the ethical implications of lethal actions by claiming they just followed orders, avoiding the dilemma of direct responsibility.
+*   **Autonomous Vehicles:** In an unavoidable accident, an AV must "choose" between different harmful outcomes (e.g., saving the driver vs. saving multiple pedestrians). Programming an AV means deciding which lives take priority.
+
+---
+
+### 5. Ethical Issues of Cloud Computing
+
+Cloud service providers have responsibilities regarding user data protection and service delivery.
+
+**Guidance for Cloud Computing Service Providers:**
+
+*   **User Information Protection:** Strive to protect user data and provide reliable services.
+*   **Quality & Performance:** Continuously improve service quality, performance, and information protection.
+*   **Incident Notification:** Promptly notify users of data leaks, service interruptions, or infringement accidents.
+*   **Third-Party Sharing/Other Uses:** If providing user info to a third party or using it for non-service purposes, inform the user and obtain explicit consent.
+*   **Contract Termination:** Upon contract termination, return user information and destroy all possessed copies.
+*   **Business Closure:** Notify users of business closure, return user information before closure, and destroy all possessed copies.
+
+**Privacy Policy for Cloud Computing Service Providers:**
+
+*   **Transparency:** Clearly disclose server location, applicable privacy laws, and data processing policies to customers.
+*   **Access Control:** Implement robust access control functions.
+*   **Regular Audits:** Periodically verify privacy policy implementation via a trusted third party and share results with customers.
+*   **Justified Access:** If accessing customer data (beyond random access), provide clear reasons.
+*   **Internal Management:** Establish and implement internal plans and an organization for protecting personal and customer data.
+*   **Data Integrity:** Prevent unauthorized use, alteration, or damage of customer data.
+*   **Complete Deletion:** Fully delete customer data when they opt out of the service.
+*   **Dispute Resolution:** Provide contact information and procedures for personal data disputes.
+*   **Damage Relief:** Promptly address and relieve damage in case of a personal data dispute.
+
+---
+
+================================================================================
+ORIGINAL TEXT (First 5000 chars)
+================================================================================
+
+--- Page 226 ---
+ESSENCE
+Data’. This suggests  standards  on methods  of de-identification  for big data utilization  to ensure the safety of
+personal  data, and for businesses  who intend to use and provide  de-identified  personal  data.
+<Procedure  for de-identification  for big data utilization>
+@  (Preliminary  Review)  Verify whether  specific  data is personal  data or not. Data that is confirmed  to be non-personal
+data can be used as freely as possible  without  any legal restrictions.
+@ (De-identification)  Take measures  to make individuals  unidentifiable  by means of, for example,  deleting  or replacing
+all or some of the elements  from dataset.  If the attributor  included  in the dataset  is not related to the purpose  of
+data use, it is deleted  in principle.
+@(Adequacy  Assessment)  Assess whether  an individual  is identifiable  by easily combining  de-identified  data with
+other data by the “De-identification  Adequacy  Assessment  Panel”
+@ (Follow-up  Management)  Take necessary  measures  such as safety measures  for de-identified  data and monitoring
+likelihood  of re-identification  to prevent  re-identification  in the process  of using de-identified  data.
+Managerial Safety Measures:  Need to designate  a person in charge of de-identified  data files, prohibit  sharing  of
+data on de-identification,  and destroy  data once a purpose  of usage is achieved.
+Technical  Safety Measures:  Need to restrict access to de-identified  data files, manage  access records, and install
+and operate  security  programs.
++ Protective  measures  when de-identified  data is leaked: Analyze  cause of leakage,  and implement  both managerial
+and technical  safety measures  to prevent  additional  leakage,  Withdraw  and destroy  leaked de-identified  data
+@ Ethical Issues of Autonomous  Vehicles
+Self-driving  cars are integrated  with technology  that collects information  from the external  environment,
+communication  technology  among vehicles  and between  vehicles  and road infrastructure,  and advanced  information
+processing  technology  and excellent  algorithms.
+Self-driving  cars store information  gathered  from sensors in the cloud and analyze them with big data to find the
+optimal route. Since it reduces  the accident  rate from the user's point of view, it provides  stability  and saves users
+the time to concentrate  on driving, providing  convenience  and efficiency.
+However,  like the recent incident  on the Internet  where a company  hacks and remotely  controls  autonomous  vehicles,
+problems  such as remote control attacks  by hacking  and information  leakage due to malicious  code infection  are
+emerging  as related issues. The major ethical issues related  to self-driving  cars are as follows.
++ The ethical dilemma  of self-driving  cars (controversy  on how to deal with accidents  and who is the cause of the
+accident)
++ Safety issues of autonomous  vehicles (reaction  to detection  of pedestrians  and obstacles  in the vehicle path,
+occupant  protection  and safety)
++ Remote  control attack and availability  threat due to hacking
++ Threat  of life and property  loss due to hacking,  real-time  exposure  of user information
++ Privacy  invasion  due to leakage  of personal  information  collected  by in-vehicle  sensors  and computers  such as travel
+224 TOPCIT  ESSENCE
+
+
+--- Page 227 ---
+Understanding  the IT Business  and Ethics )
+route and address
++ The possibility  that self-driving  cars will be abused as unmanned  vehicles  that monitor  others and invade the
+privacy  of others
+@ Ethical Issues Related  to Drones
+As the drone-related industry  has recently  emerged  as a representative  field of the 4th industrial  revolution,  the
+investment  and research  on drones are actively being conducted.  Drones  are becoming  an issue in the education
+filed, with the rise of education  using drones  and training  for professional  drone pilots.
+Recently,  drones are not limited to a hobby or mere filming, but are also used for industrial  purposes  such as delivery,
+forest fire monitoring,  and distribution  of pesticides.  As drones can be used for real-time  command  systems,
+surveillance  systems,  high-definition  video recording  and sharing, and autonomous  driving, its use is expected  to
+spread to all industries.
+Along with the increased  use of drones, various accidents  such as drone crashes,  collisions  with buildings,  and flying in
+no-fly zones are also increasing.
+Major Drone Accident  Log
+* On May 10, 2012, a drone crashed  in Songdo,  Incheon  due to a cyber-attack  presumably  from North Korea
++ In August  2013, a drone appeared  above the submarine  manufacturing  plant of the British Navy
+* On October  5, 2014, a drone crashed  at 7 nuclear  power  plants in France
++ On January  26, 2015, a drone crashed  into the White House
+On April 22, 2015, a drone carrying  radioactive  material  crashes  at the Japanese  Prime Minister's  office
+On June 23, 2015, a drone cra...

@@ -1,0 +1,218 @@
+LEARNING GUIDE: Pages 52-56
+Generated: 2025-12-07 00:43:50
+PDF: 6 - Project Management & Technical Communication OCR
+
+================================================================================
+LEARNING GUIDE
+================================================================================
+
+Here is a simplified, easy-to-read learning guide based on the provided text:
+
+---
+
+## **Learning Guide: Technical Communication & Project Documentation**
+
+This guide provides essential information on key technical documents and effective communication strategies in project management.
+
+---
+
+### **1. Core Technical Documents in Software Development**
+
+#### **A) Analysis Document**
+*   **Purpose:** Specifies detailed requirements for designing/manufacturing software (SW) products. It defines the nature, scope, and constraints of SW requirements before development begins.
+*   **Key Contents:**
+    *   **General Information:** Product definition, overview, features, user characteristics, assumptions, and dependencies.
+    *   **General Technical Information:** **Functional requirements** (what the system *will do*), including its inputs, processing logic, and outputs.
+    *   **Detailed Information:** **Performance requirements** (how well it *must do* it), design limitations, and external interface requirements (user interface, hardware interface, software interface).
+*   **Writing Principles (for effective Analysis Documents):**
+    *   **Clarity:** Describe all system functions and constraints unambiguously.
+    *   **Conciseness:** Easy for both customers and developers to understand.
+    *   **Verifiability:** Requirements must be measurable and testable. Specify quality, importance, and verification methods.
+    *   **Design Independence:** Describe the system's external behavior, not its internal design or algorithms.
+    *   **Modifiability:** Organized hierarchically to allow for easy understanding and impact analysis of changes.
+    *   **Traceability/Prioritization:** Requirements are uniquely identified and prioritized based on importance.
+
+#### **B) Design Brief**
+*   **Purpose:** Translates the requirements from the Analysis document into detailed specifications for designing and manufacturing a SW product.
+*   **Key Contents:**
+    *   **General Information:** Definition and overview of the design.
+    *   **Structure Design:** Defines the SW components and their relationships (e.g., how programs connect).
+    *   **Program Design:** Details the algorithms for SW components and their input/output design.
+    *   **Interface Design:** Specifies interfaces between different SW components or systems.
+    *   **Material Design:** Overview and design of data storage.
+
+#### **C) Test Design Brief**
+*   **Purpose:** A document created specifically for testing. It defines what will be tested, how it will be tested (test cases), and the data to be used. It also clarifies expected results (both normal and exception cases).
+*   **Key Contents:**
+    *   **Test Item:**
+        *   **Types of Test:** e.g., Functionality, performance, usability.
+        *   **Test ID:** A unique identifier for each test.
+        *   **Test Item:** The specific part or function to be tested.
+    *   **Test Cases and Data:**
+        *   **Types of Test:** (e.g., functionality, performance, usability).
+        *   **Test ID:** Unique identifier for each test case.
+        *   **Input:** The content and data to be entered during the test.
+        *   **Expected Output:** The anticipated results or data from the test.
+
+#### **D) Manual**
+*   **Purpose:** An easy-to-understand document for customers/users, explaining a product's principles, features, and operation methods. Aims for accurate and easy understanding.
+*   **Key Contents:**
+    *   **General Information:** Product name, overview, key characteristics, strengths, and weaknesses of important functions.
+    *   **Usage & Installation:** Precautions, installation steps, how to use the product, and inspection methods.
+    *   **Maintenance & Problem-Solving:** How to manage the product, common problem symptoms, and their solutions.
+    *   **Other:** Index, warranty information, and After-Sales Service (A/S) procedures.
+
+#### **E) Project Completion Report**
+*   **Purpose:** Summarizes project performance, confirms project completion to stakeholders, and provides insights for future projects. It compares actual performance against goals and includes lessons learned.
+*   **Key Contents:**
+    *   **Summary of Project Results:**
+        *   **System Function:** Lists completed functions, deliverables, and installation status.
+        *   **Profit Assessment:** Qualitative and quantitative evaluation of project benefits.
+        *   **Actual Performance vs. Plan:** Comparison of budget, labor input, and project duration against initial plans.
+        *   **Satisfaction Evaluation:** User satisfaction and how well requirements were met.
+        *   **Future Support Plan:** Plans for maintenance and customer support.
+        *   **Follow-up Project Plan:** Any plans for subsequent projects.
+    *   **Lessons Learned:** What was learned, identified causes of problems, project outcomes, and plans for improvement.
+    *   **Statistics:** Relevant data points like item types, estimates, actual performance, and evaluations.
+
+---
+
+### **2. Effective Technical Document Writing**
+
+*   **Goal:** Experts and scientists must effectively communicate their ideas and research results to readers (including the general public).
+*   **Importance:** Clear, efficient communication is vital. Effective writing skills save time and effort and enhance the impact of research and achievements.
+
+#### **A) Key Checklist for *Writing* Technical Documents**
+*   **Main Point:** What is the core message? Clearly convey the target technology's essence to guide the document's direction and content.
+*   **Features & Differentiation:** Highlight the technology's advantages and acknowledge disadvantages compared to existing or competing technologies to emphasize its unique aspects.
+*   **Effective Communication:** Present the technology in a way that demonstrates its superior value to readers under specified conditions (e.g., budget, requirements, schedule).
+
+#### **B) Key Checklist for *Reviewing* Technical Documents**
+*   **Logical Consistency:** Check if the core logic flows consistently and if facts and grounds support the arguments.
+*   **Readability:** Ensure sentences are clear, concise, and easy to understand.
+*   **Supporting Materials:** Verify that examples, pictures, tables, and diagrams are appropriately placed to aid understanding and prevent misinterpretation.
+
+---
+
+### **3. Presentation Skills**
+
+*   **Critical Role:** Presentations significantly influence project success, including winning development projects, attracting investment, securing internal organizational decisions, and project termination. Often, success depends on the presentation.
+*   **Key Skill:** Presentation skills are as crucial as writing skills for gaining support and decision-making for projects.
+*   **Learning Objectives:**
+    1.  Understand the core principles and methods for creating effective presentation materials.
+    2.  Learn methods and techniques for delivering actual presentations effectively.
+
+---
+
+================================================================================
+ORIGINAL TEXT (First 5000 chars)
+================================================================================
+
+--- Page 52 ---
+Project Management  and Technical  Communication  )
+4. Implementation  and
+test output
+F) Analysis
+Analysis  is a document  specifying  detailed  conditions  required  when designing  or manufacturing  SW products.
+In other words, it is a document  to be made to understand  the requirements  for SW in order to develop  SW.
+It can be said to be a document  that understands  the nature and scope of the requirements  for software  and
+clearly  describes  the constraints.
+The analysis  document should include  the overall details of the implemented  SW including  the items to be ref-
+erenced  in the design.
+<Table 15> Composition  of Analysis  (example)
+Classification Content
+1. General  information Definition and overview .
+Product  features
+User characteristics
+Assumptions  and dependencies2. General  technical
+information.
+Functional  requirements
+Input
+« Processing
+« Output
+3. Detailed + Performance  requirements
+information + Design limitations
+External  interface  requirements
++ User interface
++ Hardware  interface
++ Software  interface
+<Table 16> Principles  for writing  analysis
+Classification Content
+Clarity * Clearly describe  all the functions  the system will perform and the constraints  that will affect
+the system.
+Conciseness * Specifications  are written  concisely  and easy to understand  for both customers  and developers.
++ All the stated requirements  are verifiable,  so the desired system quality, relative  importance,
+verneb  ity quality measurement  and verification  methods and standards  are specified,
+on fi + The requirements  specification  describes  the external behavior  of the system and should not
+Dear be designed  using a specific structure  or algorithm.
+en + It is organized  hierarchically  for participants  to understand  the function  of the system or toModifiability
+analyze  the impact  of changes.
+Availabilty + Requirements  are numbered  with a unique identifier  for easy reference  and prioritized  as not all
+requirements  are equivalent.
+M6 Project  Management  and Technical  Communication  51
+
+
+--- Page 53 ---
+ESSENCE
+G) Design brief
+The design brief is a document  that implements  the requirements  described  based on the analysis  specifying
+detailed  requirements  for designing  or manufacturing  a SW product.  Therefore,  it includes  structural  design to
+understand  the configuration  of SW and the relationship  between  programs,  interface  design between  mod-
+ules or systems,  design of data storage  to store data, design of program  algorithm,  and design of user inter-
+face,
+<Table 17> Composition  of Design Brief (example)
+Classification Content
+1. General  information + Definition and overview
+2. Structure  design« SW components
++ Relationship  between  SW components
+3. Program  design+ Algorithm  design of SW components
++ Input and output  design of SW components
+4. Interface  design+ Overview  of related SW components
++ Interface  between  SW components
+5. Material  design
+H) Test design brief+ Data storage  overview
++ Data storage  design
+In order to test an implemented  product,  it is necessary  to define test targets and clearly understand  the re-
+sult values such as normal results and exception  results during the test.
+The test design brief is a document  created to be used for testing by defining  test objects, test cases, and
+test data.
+<Table 18> Composition  of Test Design Brief (example)
+Classification Content
+1. Test itemTypes of test
++ Functionality,  performance,  usability,  etc.
+Test ID
++ Uniquely  define test items
+Test item
++ Define the item to be tested
+2. Test cases and data
+|) ManualTypes of test
++ Functionality,  performance,  usability,  etc.
+Test ID
++ Uniquely  define test items
+Input
+« Content  and data to be entered  for testing
+Expected  output
++ Expected  results  and data according  to the contents  put in for the test
+In order to use a new product  (or technology)  well, the user needs to know the principle,  features,  and opera-
+tion methods  of the product. It is a document  written in an easy-to-understand  manner  for customers  who do
+52 TOPCIT  ESSENCE
+
+
+--- Page 54 ---
+Project Management  and Technical  Communication  )
+not know about the product  so that readers can accurately  and easily understand  the object by interpreting
+the principle,  phenomenon,  knowledge  or information  of the product
+<Table 19> Composition  of Manual (example)
+Classification Content
+1. General  information | » Product  name, overview,  characteristics,  strengths  and weaknesses  of important  functions,  etc.
+2. How to use and
+install/check
+ee eePrecautions  for use
+Precautions  for installation
+How to use and install
+Inspection  method,  etc.
+3. Maintenance  and
+problem-solving+ How to manage,  symptoms  and solutions  of problems,  etc.
+4. Others
+J) Project  completion  reportIndex, warranty,  A/S procedure,  etc.
+It is a document  that summarizes  project performance  results and confirms  project completion  to use...

@@ -1,0 +1,43 @@
+ESSENCE
+01 Software  Architecture  Design
+A) Software  architecture  overview
+Software  architecture  can be regarded  as a blueprint  which is used to systematically  handle various factors
+that directly or indirectly  affect the development  of software  and increase  complexity.  The definition  of
+software  architecture  can be expressed  in various ways. Booch defined architecture  as “a set of important
+decision-making  rules about the software  structure’.  Myron Ahn[4] said that we can judge various things
+from software  architecture,  such as modules,  processes,  data, and their structure;  the relationships  between
+components;  the method  of extending  and modifying  these components  and relationships:  the components  of
+the technology  in use; and the method  of implementing  and modifying  the flexibility  and performance  of the
+system. When starting  a project, software  architecture  is used as a means of communication  and a decision-
+making tool, and is also considered  when determining  the overall system structure  and organization  of a
+development  project.
+Mission
+fulfills
+“a
+influences| has anEnvironment is System Architecture |
+described
+has byl
+. identifies
+is important 1 Architectural provides
+to Lt Stakeholder Rationaleee Description participates
+is addressed Jin
+has 1 organized \\
+hee identifies Selects byl.*
+Le
+ie
+Concem Viewpoint View
+conforms  to
+cover 1..* participates  in
+has source 1*
+0
+Library
+Viewpoint estabish methods for Model
+[Figure 17] Components  of software  architecture  (IEEE-1471)
+B) Software  architecture  design procedure
+Software  architecture  is designed  by the procedure  of requirements  analysis,  architecture  analysis  and design,
+and architecture  verification  and approval.
+Requirements  are specifically  identified through  request  for proposals,  interviews,  and meetings,  and functional
+and non-functional  requirements  are classified  and specified. During  the architecture  analysis  procedure,  quality
+factors should be identified and prioritized.  Then, architectural  styles and candidate  architectures  are identified
+and processed  when designing  architecture.  Architecture  selected  in this way is evaluated  and detailed,  and
+64 TOPCIT  ESSENCE

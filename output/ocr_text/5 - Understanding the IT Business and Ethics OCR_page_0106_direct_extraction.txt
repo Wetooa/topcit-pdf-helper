@@ -1,0 +1,45 @@
+Understanding  the IT Business  and Ethics )
+Area Process Key activities
+Reception  of incidents  and problems,
+Service  desk -processing  of inquiries.
+Management  and evaluation  of malfunction
+Incident  management
+level.
+Application  of emergency  measures  forProblem  management :
+solving  a problem.
+Service  Support
+Management  of service level, programChange  managementchanges.
+Configuration  management Management  of configuration  items.
+Management  of release  of products  approvedRelease  management for distribution,
+Besides  the two areas mentioned  above, there is also the Business  Perspective  area, which deals with business
+continuity  management  and partnership  outsourcing,  and ICT Infrastructure  Management,  which deals with network
+service  management  and operations  management,  computer  installation  and accessibility,  and system  management.
+@ The ITIL v3 process
+ITIL v3 was born as a business  value model from ITIL v2. It supports  IT governance  (lacking  in ITIL v2), and extends  IT
+service  management  to all areas of a business.
+(NOTE: In the box above, capitalization  of names is inconsistent,  e.g. Carnegie  Mellon University.)
+ITIL Version  3 |___Service  Strategy  _|
+* Generation,  Financial,
+Portfolio,  Demand
+Lifecycle  Approach
+= CONTINUAL  SERVICE  IMPROVEMENT  OF THE WHOLE REALM Service  Design
+* Value for Services [+ Catalogue,  Serice  Level, |: e + Catalogue,  Service Level,
+Service  Portfolio Availability,  Capacity,* Service  Design Cc 3
+* Service  Knowledge  Management pobruts Supplier
+Service  Transition
+* Change,  Asset  &Configuration,
+Release  and Deployment,  Test
+& Validate
+Service  Operation
++ Event, Incident,  Problem,
+Technology,  Access
+Fontinual Service improvement|
++ Sernice Lifecycle
+Improvement,  7StepsAccenture,  Carnegie  melon
+University,  TEMS Ltd, Fox IT
+ConnectSphere,  Guillernot  Rock
+Hewlett  Packard,  Pink Elephant
+[Fig. 42] Overview  of ITIL Version  3
+ITIL v3 strengthens  the service support  area and service  delivery  area of v2 and includes  the Requirement  Process  of
+ISO/IEC20000.  The goals of v3 are to formulate  strategies  for alignment  with business  through  a lifecycle  perspective
+M5 Understanding  the IT Business  and Ethics 105

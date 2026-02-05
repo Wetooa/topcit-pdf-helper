@@ -1,0 +1,23 @@
+01 Relational  Table Conversion  and Table Design 86
+A) Differences  between  the academic  world's and industry's  understanding  of
+physical  modeling 86
+B) Relational  table conversion 86
+C) Table design 87
+02 Data Type Design 88
+A) Character  data type 88
+B) Numeric  data type 88
+C) Binary data type 88
+D) Date data type 88
+03 Index Design 89
+A) Functions  of the index 89
+B) Index design procedure 89
+C) Types of index structures 89
+04 View Design 89
+A) Characteristics  of the database  view 89
+B) Creation  of the view 90
+C) Modifying  data with a view 90
+D) Other considerations 90
+05 Distributed  Database 91
+A) Characteristics  of the distriouted  database m1
+B) Data transparency 91
+M2 Database  11

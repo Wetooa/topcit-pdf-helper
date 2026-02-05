@@ -1,0 +1,182 @@
+LEARNING GUIDE: Pages 211-215
+Generated: 2025-12-07 01:13:47
+PDF: 3 - Overview of System Architecture OCR
+
+================================================================================
+LEARNING GUIDE
+================================================================================
+
+Here is a simplified, easy-to-read learning guide based on the provided text:
+
+---
+
+## Network Trends & IoT Learning Guide
+
+### 1. Introduction to Recent Network Trends
+
+Network technologies are rapidly evolving with new demands and innovations.
+
+*   **Key Drivers:** High-speed data, convergence technologies, IoT, AI, Cloud Computing.
+*   **Emerging Network Type:** **Software-Defined Networks (SDN)**.
+    *   A technology that standardizes software, detaching it from specific hardware manufacturers.
+    *   Enables flexible network services.
+    *   Core technology for **Software-Defined Data Centers (SDDC)**, alongside Cloud Computing.
+*   **Network Importance:** The performance of the network is critical for the performance of AI systems and other advanced technologies.
+*   **High-Performance Networks for AI:** AI networks often use **InfiniBand**.
+    *   Provides "infinite bandwidth."
+    *   Can handle simultaneous communication between multiple devices (unlike traditional Ethernet, which typically communicates with one device at a time).
+    *   Offers reliable operation even with equipment issues.
+
+### 2. IoT Network-Based Technology
+
+#### A. IoT Concept
+
+*   **IoT (Internet of Things):** A concept where everyday objects are embedded with sensors and communication functions, allowing them to connect to the Internet.
+*   **Functionality:** Enables objects to perform sensing, networking, and information processing through cooperation, largely without explicit human intervention.
+*   **Evolution From:**
+    *   **Ubiquitous Technology:** The idea of accessing information and networks anytime, anywhere.
+    *   **M2M (Machine-to-Machine) Technology:** Intelligent communication directly between objects.
+*   **Core Idea:** All "things" (people, objects, environments) can exchange information over the Internet, breaking traditional boundaries.
+
+#### B. IoT Standardization Trend
+
+*   **Early Standards:** 3GPP and ETSI established mobile communication-based IoT standards.
+*   **Current Leadership:** Since 2012, **oneM2M** (an international consultative body) leads IoT standardization.
+*   **Key Protocols:**
+    *   **LWM2M (Lightweight M2M):** Proposed by the Open Mobile Alliance (OMA) for server-client communication.
+    *   oneM2M has released LWM2M, which uses **CoAP (Constrained Application Protocol)** and HTTP for data transfer.
+
+#### C. Core IoT Technologies
+
+1.  **Sensing Technology**
+    *   **Purpose:** Collects information from objects and their surroundings.
+    *   **Types of Sensors:** Temperature, humidity, heat, gas, illuminance, ultrasonic waves, etc.
+    *   **Key Requirement:** Minimize power consumption for long-term operation.
+    *   **Evolution:** Physical sensors have become **smart sensors** with standardized interfaces and information processing capabilities. They include **virtual sensing** (extracting specific info from sensed data).
+    *   **Hardware Trend:** **Open-Source Hardware (OSHW)** platforms are evolving to easily connect, control, and communicate with various sensors.
+
+2.  **Wired/Wireless Communication and Network Infrastructure Technology**
+    *   **Wired Access:** Ethernet, Power Line Communication (PLC).
+    *   **Wireless Access (More Efficient for Mobility/Installation):**
+        *   **Short-range:** WLAN, Bluetooth, ZigBee, UWB.
+        *   **Mobile Communication:** 3G, LTE.
+    *   **Specific Wireless Technologies for IoT:**
+        *   **BLE (Bluetooth Low Energy) / Bluetooth Smart:** Low-power, short-range wireless communication. Compatible with Bluetooth 4.0, but not with older Bluetooth versions.
+        *   **Z-Wave:** A protocol for low-power, low-bandwidth devices. Uses intelligent mesh network topology and doesn't require a master node.
+
+3.  **IoT Services and Interface**
+    *   **Purpose:** To automatically analyze and share data collected from sensors.
+    *   **Key Technologies Used:**
+        *   **Ontology-based Semantic Web Technology:** For understanding and structuring data meanings.
+        *   **Cloud Computing:** For large-scale distributed data processing.
+        *   **Open API (Application Programming Interface):** For accessing various services and enabling data exchange.
+
+#### D. Main IoT Protocols
+
+IoT protocols must be lightweight, compatible, and scalable, especially for small devices connecting to the Internet.
+
+1.  **CoAP (Constrained Application Protocol)**
+    *   **Type:** Lightweight application layer protocol.
+    *   **Developed by:** IETF CORE Working Group for object-to-object communication.
+    *   **Transport Layer:** Uses **UDP** (User Datagram Protocol) over the IP layer.
+    *   **Key Features:**
+        *   Designed independently of lower layers, flexible for various networks/transport layers.
+        *   Reduced message size to minimize endpoint load.
+        *   Uses binary encoding for efficient encoding/decoding.
+    *   **Usage:** Often used for endpoints communicating via Zigbee rather than fast Ethernet or Wi-Fi.
+
+2.  **MQTT (Message Queue Telemetry Transport)**
+    *   **Type:** Publish-subscribe-based protocol.
+    *   **Purpose:** Delivers lightweight messages.
+    *   **Ideal for:** Low speed, high-latency, and unreliable networks.
+
+---
+
+================================================================================
+ORIGINAL TEXT (First 5000 chars)
+================================================================================
+
+--- Page 211 ---
+ESSENCE
+>p> Recent  trends and issues
+As high-speed  data transmission  becomes  possible  and various  convergence  technologies  emerge,  cutting-
+edge technologies  are also appearing  in the network  field. With the advent  of technologies  that guarantee
+traffic quality in Internet networks, multimedia  and Internet  telephony  services  have been launched.  In
+recent years, loT network-based  technologies  are expanding  together  with standardization  organizations
+and groups. Moreover,  software-based  networks,  differentiated  from the existing  network  structure,  are
+being introduced.  This chapter  discusses  the recent  network  trends and major issues.
+>> Learning  objectives
+1. ITo be able to explain loT network-based  technologies.
+To be able to explain  the concept  of software-based  networks,
+>> Keywords
+Lossless  compression,  lossy compression,  QoS, SIP H.323, RTP, RTCP. IMS, CSCF, HSS, 3GPP. SDN, Openflow,
+Control plane, Data plane, NFV, Virtualization  function,  MQTT, CoAP
+210 TOPCIT  ESSENCE
+
+
+--- Page 212 ---
+Overview  of System Architecture )
+# Practical  preview
+Network  technologies  are changing  with new technologies,  such as loT, artificial intelligence  (Al), and cloud
+computing.  The recent  topic of the new network  technology  is the software-defined network  (SDN). SDN
+is a technology  for standardizing  software  that is dependent  on existing  hardware  manufacturers  and
+providing  flexible network  services.  It is the core technology  of a software-defined  data center (SDDC).
+Cloud computing  is another  core technology  of SDDC. As such, the network  is the infrastructure  and core
+of new technologies.  Even in Al, the network  performance  determines  the Al performance.  Therefore,  the
+A\ network  uses InfiniBand,  which is a short word for infinite bandwidth.  The existing  network  Ethemet  can
+communicate  with one device at a time, but InfiniBand  can simultaneously  handle communication  between
+multiple  devices. It can reliably  operate,  even if there is a problem  with some equipment.  This section
+discusses  new network  technologies  that have recently  become  a hot topic.
+M3 Overview  of System  Architecture  211
+
+
+--- Page 213 ---
+ESSENCE
+01 loT Network-Based  Technology
+A) loT concept
+loT (Internet  of Things)  is a concept  that embeds  sensors  and communication  functions  in various  objects  to connect
+to the Intemet.  It refers to the technology  that can perform  sensing,  networking,  and information  processing,  through
+cooperation,  without  explicit human intervention.  At the same time, the ubiquitous  technology  that allows access
+to information  and communication  networks,  regardless  of time and place as a concept  that exists anywhere  at the
+same time and is ubiquitous  and the machine-to-machine  (M2M) technology  that enables  intelligent  communication
+between  objects  have evolved  further. As such, loT enables all things to exchange  information  through  the Internet,
+without  boundaries  between  people  and objects.
+Internet  of Things
+Doctor/Care Tae  Mei hy ese
+giver Rie  eee
+Policy  Makers Industrialists
+[Figure 146] loT Applications
+B) loT standardization  trend
+3GPP and ETSI have established  mobile communication-based  loT standards,  but since 2012, they have been led
+by an international  consultative  body called, oneM2M.  The Open Mobile  Alliance  (OMA) proposed  a communication
+method,  based on a server-client  structure,  by establishing  the Lightweight  M2M (LWM2M)  protocol.  oneM2M  has
+released  LWM2M,  which applies CoAP (Constrained  Application  Protocol)  and HTTP for data transfer,  as the latest
+standard.
+212 TOPCIT  ESSENCE
+
+
+--- Page 214 ---
+Overview  of System Architecture )
+[Figure 147] shows  the standard  scope of each standardization  organization  for protocol  layers.
+M2M Device / Gateway M2M Platform
+Application No}  oler-ii(ola)
+ETSI
+coca (oN) cocoa)
+1
+<— “ar i Network
+wer Aeros _ |
+1
+Core network
+(IP. network)
+Biaseoe a =
+[Figure 147] Standard  Scope  of Each loT Standardization  Organization  [10]
+C) Core loT technologies
+loT’s main technologies  are a sensing  technology,  a wired and wireless  communication  and network  infrastructure
+technology,  and an loT service  and interface  technology.
+@ Sensing  technology
+Sensors  collect object information.  Various sensors, such as temperature,  humidity,  heat, gas, illuminance,  and
+ultrasonic  waves, are installed  in the object  to obtain information  about  the surrounding  situation.  Sensors  are needed
+to minimize  power consumption  in order to operate  for a long time. Physical  sensors  have evolved  into smart sensors
+with a standardized  interface and information  processing  capability,  and they include  a virtual sensing  function  that
+extracts  specific information  from the sensed data. As the sensor layer's role has increased,  the hardware  platform
+market  is evolving  to facilitate  connec...

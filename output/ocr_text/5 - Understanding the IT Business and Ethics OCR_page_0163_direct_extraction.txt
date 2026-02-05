@@ -1,0 +1,57 @@
+ESSENCE
+Test data
++ Machine  learning
+Machine  learning  is the field of developing  algorithms  that machines  use for learning.  It could be defined as "science
+and technology  of studying  systems  that autonomously  improve  their performance  using empirical  data gathered
+through  interaction  with the environment."
+Machine  learning  can be generally  divided into @ supervised  learning  @ unsupervised  leaming  @ semi-supervised
+learning.Learning  Classifier
+RecognitionClassification/Recognition results
+[Fig.75] Pattern  recognition  process”
+<Table 83> Machine  learning  algorithm  classification
+Category
+Supervised
+learning
+Unsupervised
+learning
+Semi-
+supervised
+learningAlgorithm
+Regression  analysis
+Decision  making  tree
+Artificial  neural
+network
+Bayes  Theorem
+Support  Vector
+Machine
+Clustering
+Dimensionality
+reduction
+Prediction  and
+classification
+Expected  value
+maximizationDescription
+Regression  analysis  carries out the repeat process  of minimizing  the margin of error
+between  given data and the estimated  values and models  the relationship  between  the
+data.
+Generates  a tree-shaped  decision  learning  model based on the properties  of the data
+and derives  final decisions  on a given problem  through  iterations.
+Algorithms  that mimic the structure  and function  of a living entity's  neural network
+Consisting  of an input layer, an intermediate  connecting  layer, and result output  layer,
+the artificial  neural network  updates  the weighted  value of the interconnecting  nodes in
+each layer and outputs  the results.
+An algorithm  that extends/applies  Bayes theorem  assuming  independence  between
+characteristics  to solve clusters  and prediction  problems.
+Using margin, support  vector  machine  defines  the object  function  of learning  to find the
+best decision  boundary.
+Clustering  is a method  of classifying  data by creating  clusters  that maximize  the
+similarity  between  given data.
+While identifying  the eigen structure  of the data is similar  to clustering,  the objective  of
+dimensionality  reduction  is to summarize  or represent  data in a dimension  lower than
+the original information.
+Semi-supervised  learning,  supervised  learning  algorithm  are sometimes  combined  with
+clustering  algorithm.  (See clustering  algorithm)
+An iterative  algorithm  for finding  parameters  with maximum  possible  or maximum  post-
+probability  in probability  models  that rely on unobserved  latent variables.
+19 Source:“Pattern  Recognition  and Machine  Learning’,  Park Hye-young,  Lee Gwan-yong.
+162 TOPCIT  ESSENCE

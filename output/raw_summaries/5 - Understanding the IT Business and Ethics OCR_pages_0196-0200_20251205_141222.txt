@@ -1,0 +1,257 @@
+LEARNING GUIDE: Pages 196-200
+Generated: 2025-12-05 14:12:22
+PDF: 5 - Understanding the IT Business and Ethics OCR
+
+================================================================================
+LEARNING GUIDE
+================================================================================
+
+Here is a simplified, easy-to-read learning guide based on the provided text:
+
+---
+
+## IT Business and Ethics: Data Protection & Privacy
+
+### 1. General Data Protection Regulation (GDPR)
+
+The GDPR is the EU's data protection law, strengthening data subject rights.
+
+#### 1.1 GDPR Structure (Key Chapters)
+*   **Chapter 1:** General Provisions
+*   **Chapter 2:** Principles
+*   **Chapter 3:** Rights of the Data Subject
+*   **Chapter 4:** Controller and Processor
+*   **Chapter 5:** International Data Transfers
+*   **Chapter 6:** Independent Supervisory Authorities
+*   **Chapter 7:** Co-operation and Consistency
+*   **Chapter 8:** Remedies, Liability and Sanctions
+*   **Chapter 9:** Specific Data Processing Situations
+*   **Chapter 10:** Delegated Acts and Implementing Acts
+*   **Chapter 11:** Final Provisions
+
+#### 1.2 Key Rights of Data Subjects under GDPR
+The GDPR reinforces existing rights and introduces new ones:
+*   **Right to be Informed:** Know when and why data is collected.
+*   **Right of Access:** Obtain confirmation of processing and access personal data.
+*   **Right to Rectification:** Correct inaccurate personal data.
+*   **Right to Erasure (Right to be Forgotten):** Request deletion of personal data. (Renamed from previous draft)
+*   **Right to Restrict Processing:** Limit how data is used.
+*   **Right to Data Portability:** Receive personal data in a structured, commonly used, machine-readable format and transmit it to another controller. (Reinforced)
+*   **Right to Object:** Object to processing of personal data.
+*   **Rights in relation to Automated Decision Making and Profiling:**
+    *   Right to be notified when personal information (e.g., occupation, hobbies, location) is automatically collected and used for marketing or automated decision-making.
+    *   Right to decide whether their information will be used in such processes.
+
+#### 1.3 GDPR Penalty Calculation Criteria
+Administrative fines for GDPR infringements are based on:
+*   Nature, gravity, and duration of infringement.
+*   Intentional or negligent character.
+*   Actions taken by the controller/processor to mitigate damage.
+*   Degree of responsibility (considering technical/organizational measures).
+*   Any relevant previous infringements.
+*   Cooperation with the supervisory authority.
+*   Categories of personal data affected.
+*   Whether the infringement was notified.
+*   Prior supervisory authority measures on the same subject.
+*   Adherence to approved codes of conduct/certification.
+*   Financial benefits gained or losses avoided from the infringement.
+
+#### 1.4 GDPR Penalties
+*   **Maximum Fine:** Up to 20 million Euros.
+*   **For Undertakings:** Up to 4% of the total worldwide annual turnover of the preceding financial year.
+
+### 2. US Consumer Privacy Bill of Rights
+
+This framework outlines key principles for consumer data privacy:
+*   **Individual Control:** Right to control personal information.
+*   **Transparency:** Openness in information access.
+*   **Respect for Context:** Right to know the context and reason for data collection, use, and disclosure.
+*   **Security:** Strong security for personal information.
+*   **Access and Accuracy:** Right to access and ensure accuracy of personal information.
+*   **Focused Collection:** Right to control the personal information businesses collect and hold.
+*   **Accountability:** Data collecting agencies must comply with legislation and act accordingly.
+
+### 3. Personal Information Infringement: Response Methods
+
+#### 3.1 Proactive Measures for Personal Information Controllers
+
+**A) Technical/Administrative Protection of Personal Information**
+
+*   **Administrative Protection:**
+    *   Establish and implement an internal management plan for personal information processing.
+    *   Control personal information access (make it harder to access than general data).
+    *   Grant differential access rights to personal information.
+    *   Promptly change or cancel access authority to personal information processing systems if the controller changes (record details, keep for ≥ 3 years).
+*   **Technical Protection:**
+    *   Implement access control and security measures for networks.
+    *   Install and operate access control systems (intrusion prevention/detection/blocking).
+    *   Apply encryption to personal information databases (DB).
+    *   Store access records and prevent forgery/alteration.
+    *   Install and operate security programs.
+
+#### 3.2 Characteristics & Causes of Personal Information Infringement
+
+| Sector     | Characteristics                                            | Causes                                                      | Occurrence                                                                  |
+| :--------- | :--------------------------------------------------------- | :---------------------------------------------------------- | :-------------------------------------------------------------------------- |
+| **Individual** | - Recognizes personal info as assets/goods.              | - Desire to use others' info.                               | - Theft of personal info (e.g., resident registration number).              |
+|            | - Provision of info essential for cyber anonymity.       | - Increased public sharing (Web 2.0).                       | - Customer info hacking & voice transaction.                               |
+|            |                                                            |                                                             | - Personal info leakage in P2P.                                             |
+| **Business** | - Target marketing, CRM utilization.                     | - Negligence and carelessness.                              | - Exposure of personal info (e.g., resident registration number).           |
+|            | - Securing personal info is key to competitiveness.      | - Conventionalized collection of resident registration number.| - Leakage from internal employees/branches.                                 |
+|            | - Saturated communications market, overheated competition. | - Illegal collection and provision of personal information. |                                                                             |
+| **Public** | - Exposure of personal info through service enhancement. | - Negligence and carelessness.                              | - Exposure of personal information.                                         |
+|            | - Collection/use of personal info similar to private companies. | - Climate where unauthorized use of personal info is not an issue for service efficiency. | - Data spills by internal handlers. |
+
+### 4. De-identification Process of Personal Data
+
+**De-identification:** Processing personal information with alternative methods (e.g., pseudonymization, aggregation, deletion, categorization, data masking) to remove elements that can identify an individual, making it impossible to link data to a specific person. This is crucial for businesses wanting to process information for data analysis.
+
+#### 4.1 De-identification Standards
+
+*   **Identifiers:**
+    *   As a rule, identifiers in datasets should be deleted.
+    *   If absolutely needed for data use, they must be de-identified.
+*   **Attribute Values:**
+    *   Remove attribute values irrelevant to data use.
+    *   Strict de-identification for unique attributes (e.g., rare diseases, unique professional experiences) as they carry a high risk of re-identification.
+
+#### 4.2 De-identification Process Flow
+1.  **Personal Information:** Start with identifiable data.
+2.  **De-identification:** Apply de-identification methods.
+3.  **Evaluation:** Assess if the de-identification is adequate.
+4.  **Adequacy Check:**
+    *   **Yes (Adequate):** Information is deemed non-privacy, elements removed.
+    *   **No (Inadequate):** Re-identify, re-process, or block if identification of a particular individual (or easy combination with other info) is still possible.
+
+#### 4.3 Examples of Personal Information Identifiers
+
+**A) Attribute Values (General Characteristics)**
+*   **Personal:** Gender, age, nationality, hometown, city/county, zip code, military service, marital status, religion, hobbies, clubs, smoking, drinking, vegetarianism, concerns.
+*   **Physical:** Blood type, height, weight, waist circumference, blood pressure, eye color, medical examination results, disability type/level.
+*   **Credit:** Tax payment, credit rating, donation, health insurance premiums, income quintile, medical aid beneficiaries.
+*   **Educational/Career:** School name, department, grade, academic background, career, job type, company name, department, position, former workplace.
+*   **Electronic:** Cookie information, access/visit date, service use record, internet access records, mobile phone usage records, GPS data.
+*   **Family:** Spouse, children, parents, siblings, legal representative information.
+
+**B) Unique Identifiers (Directly Identifying Information)**
+*   **Unique Identification Info:** Resident registration number, passport number, alien registration number, driver's license number.
+*   **Name:** Chinese/English name, pen name.
+*   **Detailed Address:** Address up to the district (gu) unit.
+*   **Date Information:** Birthday (solar/lunar), anniversary (marriage, first birthday, sixtieth birthday), certificate dates.
+*   **Phone Number:** Mobile, home, company, fax numbers.
+*   **Medical/Health Info:** Medical record number, health insurance number, welfare recipient number.
+*   **Account/Card Number:** Account number, credit card number.
+*   **Qualifications/Licenses:** Various qualification and license numbers.
+*   **Vehicle/Device Numbers:** Vehicle number, registration number, serial number of various devices.
+*   **Photos:** Still photos, videos, CCTV footage.
+*   **Body Identification Info:** Fingerprint, voice, iris.
+*   **Email/Network Address:** Email address, IP address, Mac address, homepage URL.
+*   **Identification Code:** ID, employee number, customer number.
+*   **Other Unique Numbers:** Military serial number, business registration number (sole proprietorship).
+
+#### 4.4 Methods of De-identification
+Various methods can be used individually or combined. The choice depends on data usage purpose and method strengths/weaknesses.
+
+**Examples of De-identification Methods:**
+*   **Pseudonymization:** Replacing direct identifiers with artificial identifiers.
+    *   **Example:** "Hong Gil-dong, 35, Seoul, Korea University" -> "Lim Kkeokjeong, 30s, Seoul, International University".
+    *   **Technologies:** Heuristic pseudonymization, encryption, hashing, wrapping.
+*   **Aggregation:** Combining data to prevent individual identification.
+    *   **Example:** Individual heights (180cm, 170cm, 160cm, 150cm) -> "Sum of height among physics major students: 660cm, average height: 165cm."
+    *   **Technologies:** K-anonymity, L-diversity, T-closeness, micro-aggregation, rounding.
+*   **Data Reduction (Suppression/Deletion):** Removing or reducing parts of the data.
+    *   **Example:** Resident registration number "901206-71234567" -> "90's born, male."
+    *   **Example:** Date information (e.g., date of final pass) processed annually instead of specific dates.
+    *   **Technologies:** Rearrangement, identifier deletion (complete/partial), reducing records.
+
+---
+
+================================================================================
+ORIGINAL TEXT (First 5000 chars)
+================================================================================
+
+--- Page 196 ---
+Understanding  the IT Business  and Ethics )
+173 Recitals
++ Chapter  1. General  Provisions
++ Chapter  2. Principles
++ Chapter  3. Rights of the Data Subject
++ Chapter  4. Controller  and Processor
++ Chapter  5. Transfer  of Personal  Data to Third Counties  or
+International  Organizations
+payinia * Chapter  6. Independent  Supervisory  Authorities
++ Chapter  7. Co-operation  and Consistency
++ Chapter  8. Remedies,  Liability  and Sanctions
++ Chapter  9. Provisions  Relating  to Specific  Data Processing
+Situations
++ Chapter  10. Delegated  Acts and Implementing  Acts
++ Chapter  11. Final Provisions
+[Figure 82] GDPR system  diagram  *
+The EU's GDPR reinforces  the rights of data subjects  compared  to existing  data protection  guidelines  by newly
+guaranteeing  the right to be forgotten  and the right to transfer  data, and strictly restricts  the transfer  of data of EU
+citizens  abroad.
+The main items to guarantee  the rights of data subjects  in GDPR are as follows.
++ the right to be informed
++ the right of access
++ the right to rectification
++ the right to erasure
++ the right to restrict  processing
++ the right to data portability
++ the right to object
++ rights in relation to automated  decision  making  and profiling
+The right to erasure (right to request  erasure)  has been renamed  from the right to forgotten  in the previous  GDPR
+draft, and the right to erasure  and the right to data portability  are items that reinforce  the rights of data subjects.
+The rights in relation  to automated  decision  making  and profiling  refer to the right to notify the user who is the data
+subject  and to let them decide whether  their information  will be used or not, when an individual's  occupation,  hobbies,
+and location  are automatically  collected  and used as part of marketing.
+33 Korea Internet  & Security  Agency,  Guidance  on “General  Data Protection  Regulation”  for Korean Enterprises,  2017
+M5 Understanding  the IT Business  and Ethics 195
+
+
+--- Page 197 ---
+ESSENCE
+-The nature,  gravity  and duration  of the infringement
+-The intentional  or negligent  character  of the infringement
+-Any action taken by the controller  or processor  to mitigate  the damage  suffered  by data subjects
+-The degree  of responsibility  of the controller  or processor  taking into account  technical  and organizational
+measures
+-Any relevant  previous  infringements  by the controller  or processor
+-The degree  of cooperation  with the supervisory  authority,  in order to remedy  the infringement
+-The categories  of personal  data affected  by the infringement
+-Whether  the controller  or processor  notified  the infringement
+-Whether  measures  by supervisory  authority  have been ordered  with regard to the same subject-matter
+-Adherence  to approved  codes of conduct  or certification  mechanisms
+-Financial  benefits  gained,  or losses avoided,  directly  or indirectly,  from the infringement.
+*Infringements  of the GDPR provisions  shall be subject  to administrative  fines up to 20million,  or in the
+case of an undertaking,  up to 4 % of the total worldwide  annual tumover  of the preceding  financial  year,
+allen om aaa
+[Figure 83] GDPR penalty  calculation  criteria  *
+@® US Consumer  Privacy  Bill of Rights*®®
+* Individual  Control:  The right of the data subject  to control personal  information
++ Transparency:  Transparency  in access  to information
++ Respect  for Context:  The right to know the context  and reason for the act of collecting,  using, and disclosing
+information
++ Security:  Strengthen  the security  of personal  information
++ Access  and Accuracy:  The right to access  personal  information  as the data subject  and to its accuracy
++ Focused  Collection:  The right of the data subject  to personal  information  collected  and held by businesses
++ Accountability:  Data collecting  agency's  compliance  with legislation  and actions  taken accordingly
+O02 Ex Ante and Ex Post Response  Method  for Personal  Information
+Infringement
+A) Proactive  Measures  for Personal  Information  Controllers
+@ Technical/Administrative  Protection  of Personal  Information
+34 Korea Internet  & Security  Agency,  EU Privacy  Policy Status,  2018.
+35 US White House(www.whitehouse.gov),  “Consumer  Privacy  Bill of Rights”
+196 TOPCIT  ESSENCE
+
+
+--- Page 198 ---
+Understanding  the IT Business  and Ethics )
++ Establish  and implement  an internal  management  plan for processing  personal  information
++ Control  personal  information  to be more difficult  to access  than general  data
++ Differential  grant of the access right to personal  information
++ If the personal  information  controller  is changed,  the access  authority  of the personal  information
+processing  system  is changed  or canceled  without  delay (record  the details and keep it for at least
+3 years)Administrative
+Protection
++ Access  control and security  measures  through  network
++ Installation  and operation  of access  cont...

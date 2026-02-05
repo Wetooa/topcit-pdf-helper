@@ -1,0 +1,35 @@
+ESSENCE
+@ Information  system hardware  structure  (Physical  domain)
+A server is the most fundamental  component  required  when implementing  an information  system,  and devices,such
+as storage  and backup disks, are added and configured  as needed.  A server is a hardware  platform  that runs server
+application  programs  and is classified  in various  ways, according  to performance  and type as follows.
+* Classification  according  to performance
+Classification Description
+Entry serverAn entry server, typically  priced in millions  of won, is used by a webserver  or application  server.
+It usually refers to a server  that can mount  one or two CPUs per socket.
+Middle-range  serverA middle range server, typically  priced in tens of millions  of won, is used by a database  server  or
+enterprise  server.
+Servers  that can mount  four or more CPUs per socket,  and are not considered  high-end  servers,  are
+called the middle-range  server.
+High-end  serverA high-end  server  is a very expensive  server, typically  priced in hundreds  of millions  or billions of won. It is
+mostly  used by a database  server  or enterprise  server.
+It usually refers to a server  that can mount  tens of CPUs per socket.
+* Classification  according  to the configuration
+Classification
+Rack-mount  serverDescription
+A rack-mount  server  fits into a rack, which is a steel frame for storing  servers  or network  equipment.  It
+is used in places where multiple  server/network  equipment  is placed, such as in a data center  or server
+room. Rack-mount  server  sizes are standardized.  Standard  rack-mount  servers  are generally  1U, 2U, and
+AU sized installed  in a 19-inch  rack. Power, network,  and SAN switch are separately  connected.
+A tower server is installed  in an in-house  server room, an office, or a store. It is similar  to a general PC.
+Tower  server When a tower server  is installed  in a space where people reside or work, such as an office or a store, a
+low-noise  server, developed  for office installation,  may be a good option.
+A blade server  maximizes  capacity  while minimizing  the size, by plugging  several CPU blades into a
+Badeeenen frame. The server  and network  are reduced  and integrated  into a box, and the operating  system  is pre-
+installed.  The biggest  advantage  of blade servers  is their small size. A blade server  can be more densely
+integrated  than a rack-mount  server in the same space.
+Storage  is classified  into enterprise  or mid-range  storage,  according  to processing  capacity,  It provides  a large storage
+space, high performance,  and high availability,  compared  to general  disk arrays.
+[Figure 77] below shows an example  of an information  system hardware  configuration,  using a server  and various
+devices.  A system architecture  or technical  architecture  design describes  its details.
+112 TOPCIT  ESSENCE

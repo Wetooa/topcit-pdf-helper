@@ -1,0 +1,227 @@
+LEARNING GUIDE: Pages 70-74
+Generated: 2025-12-05 10:46:54
+PDF: 2 - Understanding and Using Data OCR
+
+================================================================================
+LEARNING GUIDE
+================================================================================
+
+Here's a simplified learning guide based on the provided text:
+
+---
+
+## Database Normalization & Anomalies Learning Guide
+
+### 1. Database Anomalies (Issues in Poorly Designed Databases)
+
+Anomalies occur in databases not designed with proper attribute relationships and dependencies.
+
+*   **Definition:** Problems arising during data processing (inserting, deleting, updating).
+*   **Goal of Normalization:** To prevent these anomalies by structuring tables correctly.
+
+**Types of Anomalies:**
+
+1.  **Insertion Anomaly**
+    *   **Definition:** Unintended information is inserted when adding new data.
+    *   **Problem:** If you try to add department information without a student, the primary key (Student ID) would be null, violating entity integrity. You're forced to add student info just to add department info.
+2.  **Deletion Anomaly**
+    *   **Definition:** Necessary information is also deleted when deleting certain data.
+    *   **Problem:** If the last student in a department is deleted, the entire department's information (e.g., department office location) might also be lost, even if it's still needed.
+3.  **Update Anomaly**
+    *   **Definition:** The same content must be updated multiple times across several records when modifying information.
+    *   **Problem:** If a department's office location changes, you'd have to update that information for *every student* belonging to that department.
+
+---
+
+### 2. Functional Dependency (FD) & Rules of Inference
+
+Functional dependency is a crucial concept for decomposing tables to prevent anomalies.
+
+#### A) Functional Dependency (X → Y)
+
+*   **Definition:** If for any two records, having the same value for attribute set X always means they have the same value for attribute set Y, then Y is **functionally dependent** on X.
+    *   X is the **determinant**.
+    *   Y is the **dependent**.
+*   **Expression:** `X → Y` (Y is functionally dependent on X).
+*   **Example:** `(Resident registration number) → (Name)` (A given ID determines a single name).
+
+**Types of Functional Dependency (Relevant for Normal Forms):**
+
+*   **Full Functional Dependency (2NF):** An attribute is fully functionally dependent on a composite key if it is dependent on the *entire* key, not just a part of it.
+*   **Partial Functional Dependency (2NF):** An attribute is partially dependent on a composite key if it depends on *only a subset* of the key. (This causes 2NF violations).
+*   **Transitive Dependency (3NF):** If `A → X` and `X → Y`, then `A → Y`. Y is transitively dependent on A through X. (This causes 3NF violations).
+*   **Boyce-Codd Normal Form (BCNF):** Requires that for every functional dependency `X → Y`, X must be a **candidate key**. (Violations occur if a non-candidate key determines another attribute).
+
+#### B) Armstrong's Axioms
+
+These are rules used to infer additional functional dependencies from existing ones.
+
+| Rule                   | Inference          | Contents                                 |
+| :--------------------- | :----------------- | :--------------------------------------- |
+| **Reflexivity Rule**   | If `Y ⊆ X`, then `X → Y`.       | A set of attributes determines any of its subsets. |
+| **Augmentation Rule**  | If `X → Y`, then `XZ → YZ`.    | Adding the same attributes to both sides of a dependency maintains it. |
+| **Transitivity Rule**  | If `X → Y` and `Y → Z`, then `X → Z`. | If X determines Y, and Y determines Z, then X determines Z. |
+| **Union Rule**         | If `X → Y` and `X → Z`, then `X → YZ`. | If X determines Y and X determines Z, then X determines YZ (the union of Y and Z). |
+| **Decomposition Rule** | If `X → YZ`, then `X → Y` and `X → Z`. | If X determines Y and Z, then X determines Y, and X determines Z individually. |
+| **Pseudo-Transitivity Rule** | If `X → Y` and `WY → Z`, then `XW → Z`. | A combination of augmentation and transitivity. |
+
+---
+
+### 3. Database Design with Normalization (1NF, 2NF, 3NF, BCNF)
+
+Normalization transforms tables into "normal form" tables to reduce data redundancy and improve data integrity.
+
+#### A) Normalization Process Overview
+
+1.  **Irregular Relation** (Un-normalized)
+2.  **1st Normal Form (1NF):** Decompose non-atomic domains.
+3.  **2nd Normal Form (2NF):** Remove partial functional dependency.
+4.  **3rd Normal Form (3NF):** Remove transitive functional dependency.
+5.  **Boyce-Codd Normal Form (BCNF):** Remove functional dependency where the determinant is not a candidate key.
+
+#### B) Examples of Normalization
+
+**1) First Normal Form (1NF)**
+
+*   **Problem:** Attributes contain non-atomic values (multiple values in a single cell).
+    *   *Example:* A "Courses" field listing "Database, Operating System" for one student.
+*   **Rule:** Each attribute must contain only atomic (single, indivisible) values.
+*   **Solution:** Decompose the attribute into separate rows or create a composite key.
+    *   *Example:* Split the student record into multiple rows, one for each course. If `Student ID` was the original key, the new primary key becomes `(Student ID, Course Name)`.
+
+**2) Second Normal Form (2NF)**
+
+*   **Prerequisite:** Must be in 1NF.
+*   **Problem:** Partial functional dependency exists (a non-key attribute depends on only *part* of a composite primary key).
+    *   *Example:* In a table with primary key `(Student ID, Course Code)`, if `Course Code → Course Name`. Here, `Course Name` depends only on `Course Code`, not the full `(Student ID, Course Code)` key.
+*   **Rule:** All non-key attributes must be fully functionally dependent on the *entire* primary key.
+*   **Solution:** Split the table into two or more tables to remove partial dependencies.
+    *   *Example:* Create a `Student Grades` table `(Student ID, Course Code, Grade)` and a `Course Details` table `(Course Code, Course Name)`.
+
+**3) Third Normal Form (3NF)**
+
+*   **Prerequisite:** Must be in 2NF.
+*   **Problem:** Transitive functional dependency exists (a non-key attribute depends on another non-key attribute).
+    *   *Example:* In a `Student` table with `Student ID` as primary key, if `Student ID → Department` and `Department → Department Office`. Here, `Department Office` transitively depends on `Student ID` via `Department`.
+*   **Rule:** There must be no transitive dependencies of non-key attributes on the primary key.
+*   **Solution:** Split the table into two or more tables to remove transitive dependencies.
+    *   *Example:* Create a `Student Department` table `(Student ID, Name, Department)` and a `Department Office` table `(Department, Department Office)`.
+
+**4) Boyce-Codd Normal Form (BCNF)**
+
+*   **Prerequisite:** Must be in 3NF.
+*   **Problem:** A determinant (attribute or set of attributes that determines another attribute) is *not* a candidate key. This often occurs when there are overlapping composite candidate keys.
+    *   *Example:* In a table with `(Professor, Course Name, Textbook Name)`, assume `(Professor, Course Name) → Textbook Name` and `Textbook Name → Course Name`. `Textbook Name` determines `Course Name`, but `Textbook Name` is not a candidate key for the original table.
+*   **Rule:** For every non-trivial functional dependency `X → Y`, `X` must be a **candidate key**.
+*   **Solution:** Decompose the table to ensure all determinants are candidate keys.
+    *   *Example:* Split into `(Professor, Textbook Name)` and `(Textbook Name, Course Name)`.
+
+---
+
+### 4. Fourth Normal Form (4NF)
+
+#### A) Concept
+
+*   **Goal:** Removes **multi-valued dependencies (MVDs)** when more than two occur in a relation.
+*   MVDs exist when an attribute in a table can have multiple values for a single value of another attribute, and these multiple values are independent of other attributes in the table.
+
+#### B) Characteristics
+
+*   **Semantic Association Constraint:** 4NF is applicable when there's a meaningful relationship between attributes.
+*   **Primary Identifiers:** Established when all attributes are part of the primary key.
+*   **Three or More Attributes:** MVDs typically arise when there are three or more associated attributes.
+*   **Semantic Association:** Focuses on normalization based on semantic relationships, not just functional dependencies.
+*   **Independent Relationships:** If attributes A, B, and C exist:
+    *   A and B are related.
+    *   A and C are related.
+    *   C and B are *not* related. (This independence can cause MVD issues if all are in one table).
+
+================================================================================
+ORIGINAL TEXT (First 5000 chars)
+================================================================================
+
+--- Page 70 ---
+Database )
+01 Normalization  and Anomalies
+Various anomalies  can occur when performing  data processing  operations  in a database  that has been poorly
+designed  without  strictly considering  the relationship  between  data attributes,  particularly  dependencies  between
+attributes.  Representative  anomalies  include an insertion  anomaly,  deletion  anomaly,  and update anomaly.  These
+anomalies  are explained  in <Table 25>.
+<Table 25> Table showing  mixed student  information  and department  information  (primary  key = “student  ID”)
+Student  ID Name Gender Department  name Department  office
+1111 Hong Gildong Male Computer  engineering Engineering  building
+2222 Ryu Gwansun Female Computer  engineering Engineering  building
+. Natural  science3333 Gang Gamchan Male Physics building
+A) Insertion  anomaly
+@ Definition:  An anomaly  in which unintended  information  is also inserted  when inserting  certain information.
+(Example)  When inserting  the information  (Department  name = “Management  information’,  Department  office =
+“Management  Building’)  into the table in <Table 25>.
++ Entity integrity  is lost if only the department  name and department  office values are inserted,  because  the primary
+key (“Student  ID”) becomes  null.
++ To maintain  entity integrity,  the department  name and department  office information  must be inserted  together
+with the student  ID of the student  belonging  to the Department  of Management  Information  Technology.
+B) Deletion  anomaly
+@ Definition:  An anomaly  in which necessary  information  is also deleted  when deleting  certain information.
+(Example)  When deleting  the information  of (Student  ID="3333’)  in <Table 25>.
++ If this student  is the only student  belonging  to the “Physics  Department’,  the information  that the department
+office of the “Physics  Department’  is in the “Natural  Science  Building’  is also deleted.
+C) Update  anomaly
+@  Definition:  An anomaly  in which the same content  should be updated  for several data repeatedly  when modifying
+certain information.
+(Example)  When the office of the “Department  of Computer  Science and Engineering”  is changed  to the “Future
+Building’  in <Table 25>.
++ Modification  operations  should be performed  as many times as the number  of students  belonging  to the “Department
+of Computer  Engineering”.
+M2 Database  69
+
+
+--- Page 71 ---
+ESSENCE
+O2 Concept  of Functional  Dependency  and Rule of Inference
+The anomalies  described above can be prevented  by decomposing  each table based on specific  criteria. Functional
+dependency  is one of the most useful criteria that can be applied when decomposing  a table in this way and is
+expressed  as the relationship  between  a determinant  and a dependent.  Additional  functional  dependency  can be
+inferred  based on the previously  discovered  functional  dependency.  At this time, Armstrong’s  Axioms  are used.
+A) Functional  dependency
+@ Definition:  There are the subsets X and Y of the field defined in the table R. At this time, if the values of X of the
+arbitrary  record pair t1 and t2 are the same, and the Y values of those two records  are always the same, Y is functionally
+dependent  on X.
+@ Expression:  X >Y (Dependent  Y is functionally  dependent  on determinant  X.)
++ (Example)  (Resident  registration  number)  — (Name)
++ If the resident  registration  numbers  of two records  are the same in the table about people, it means  that the names
+of these two records  are always the same.
+<Table 26> Types of functional  dependency
+Type Concept
+Full functional Full functional  dependency
+dependency There is no attribute  X that satisfies  X’<X and XY.
+Full functional  dependency
+There is no attribute  X that satisfies  X’CX and XY.a frags Ergoee ue st Empoee|q Employee  | Seat
+Partial functional *k name number
+dependency  (2NF) 1789 Park Jiseong 15 2000 / 07 / 12 Buidng ;
+1412 _ LeeVoungnyo 23 1999 / 02 / 19 Partial functional number > | Start date
+1789 Park  Jiseong 19 2000/05/24  | MRREZcIcicaall
+1412 Lee Youngpyo 32 2001 / 04/21 <Complete/Partial  functional  dependency  - Used in 2NF>
+Transitive  Dependence
+If attributes  A>X and X-Y in relation  R, then A-Y.
+Supplier  number Place of location Transport  distance | Supplier  number | Pace of location
+Transitive  dependence Sl Suwon 46
+(3NF) -S2 Daejeon 164
+$3 Daegu 302
+$4 Gwangju 329 <Transtive  functional dependency - Used in 3NF>>. | Tarsport  distance
+Boyce-Codd  normalization
+If the determinant  that is functionally  dependent  is not a candidate  key.
+That is, X is not a candidate  key in XY.Boyce-Codd  Normal
+Form (BCNF)
+70 TOPCIT  ESSENCE
+
+
+--- Page 72 ---
+Database )
+B) Armstrong’s  axioms
+<Table 27> Armstrong’s  axioms
+Item Inference Contents
+Reflexivity  rule IFY & X, then X = Y.
+Armstrong's  axioms  | Augmentation  rule If XY, then XZ > YZ.
+Transitivity  rule IfX = Y, and Y > Z, then X > Z.
+Union rule IfX >Y and Y > Z, then X > YZ.
+Other  derived  rules | ...

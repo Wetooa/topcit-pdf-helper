@@ -1,0 +1,28 @@
+Overview  of System Architecture )
+when it occurs.
+[Table 25] DR Center  Types
+Type Description RTO
+- Construction  of the same facility, IT devices,  and network  resources  as the main center  in a
+Mirrored  site remote  place Immediate
+- Real-time  simultaneous  services  in the active-active  state
+- Construction  of the same facility, IT devices,  and network  resources  as the main center  in a
+remote  place Within 4
+Hot site - Standby  state maintained  (Active-standby) hours
+- Switching  the remote  system into the active state at the time of a disaster  at the main center
+- Keeping  data up to date, through  synchronous  or asynchronous  real-time  mirroring
+- Placing  of only crucial IT resources  at the DR center bays-
+Warm site - Transferring  of critical components  in the main center  to the DR center  for operation  at the
+time of the disaster weeks
+- Only keeping  data in the remote  location,  but not IT resources,  for services  or only keeping
+Cold site minimal  resources,  such as power, communication,  and network Weeks  -
+- Replacing  the failed system by procuring  computer  components  and establish  a network  at months
+the time of disaster
+B) Disaster  recovery  goal
+The most important  factors  to consider  when implementing  a DR system are RTO and RPO. RTO represents  the time
+required  to return to normal operation,  when a disaster  or failure occurs in the operating  system.  RPO represents  an
+indicator  of tolerable  data loss, i.e, the amount  of data that can be lost.
+[Table 26] RTO and RPO
+Type RTO
+RPO Data loss converted  into time at the time of disaster
+RTO Maximum  time to allow downtime
+M3 Overview  of System  Architecture  127

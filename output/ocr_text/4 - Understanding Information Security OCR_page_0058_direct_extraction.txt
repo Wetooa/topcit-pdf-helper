@@ -1,0 +1,34 @@
+ESSENCE
+each service.
+B) Cloud security
+@® Overview  of cloud security
+Concerns  about cloud security  begin with the fact that the exact location  of the stored data cannot be easily
+understood,  and the data is accumulated,  due to the characteristics  of the cloud. In particular,  when using a
+public cloud, the question  of whether  storing sensitive  data on the cloud, which is an external  storage  space, is
+correct  in terms of reliability  and stability,  is becoming  an obstacle  to cloud adoption  and spread.
+@ Threats  of cloud security
++ Hypervisor  infection
+If the hypervisor  in the virtualization  system,  which is essential  to run the cloud service,  is vulnerable,  several
+virtual machines  (VMs) using the hypervisor  can be damaged  at the same time.
++ Attack against  the virtual machine
+As the users’ virtual machines  are interconnected,  there is an attack path from an internal  virtual machine  to
+another  virtual machine,  such as packet sniffing,  hacking,  DDoS attack, and malware  spread.
++ Attacker  tracking
+It is difficult for existing  network  security  equipment  (firewall,  IPS, IDS, etc.) to detect attacks and intrusions
+against  the inside of the virtualized  machine,  because  it is not easy to identify and trace an attacker  in the
+virtual environment.
++ Portability  of the virtual machine
+Since virtual machines  can be easily transported  between  physical platforms  in the virtualization,  there is a
+possibility  that malware  can spread easily, as the virtual machine  infected  with malware  is ported to another
+physical  platform.
+® Countermeasures  against  cloud security  threats
++ Protecting  incoming  and outgoing  data
+The confidentiality  of incoming  and outgoing  data should be maintained  by using TLS, SSH, VPN, etc. for
+security  issues that may occur when sending  user data to the cloud server through  the Internet.
++ Encrypting  data when storing  data
+Data should be encrypted  before storing it in the cloud storage,  and at least AES-256  and a secure
+cryptographic  algorithm  should be used.
++ Access  and authentication
+A secure access and authentication  mechanism  should be applied, the administrator  password  should be
+changed  periodically,  and access control policies,  such as 2-factor,  should be established  and observed.
+58 TOPCIT  ESSENCE

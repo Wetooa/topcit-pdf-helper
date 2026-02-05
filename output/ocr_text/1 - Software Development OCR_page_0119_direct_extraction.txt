@@ -1,0 +1,35 @@
+ESSENCE
++ Preview  for practical  business Do we have to manage  software
+configuration?
+The story of a development  team:
+A certain project was commenced  with a deadline  of about three months,  but its
+end was not visible even after two and a half months. Mr. Ko, the project manager,
+also in charge of the architecture,  became increasingly  anxious with every passing
+day. When the project was started, he thought  that three months  would be enough,
+given its scale. That is why he didn’t create a separate  management  system -
+because  four members  seemed few enough to engage in face-to-face  communication.
+However,  about a month later he began to feel that the project had gradually  got
+bogged down. Suddenly,  a team member  left the company  for health reasons and all
+his tasks were stopped.  Mr. Ko hastened  to look for a replacement  to fill the position.
+However,  the departed  member  had not created any proper documents,  so Mr. Ko
+had to select one member  of his small team to train the new recruit for three days.
+After that happened,  he hurriedly  began to list up the most immediate  requirements  and
+the design deliverables.  Of course, listing those deliverables  was not included  in the project
+period, so he had to work overnight  for almost a week to avoid delaying  the project.
+After that, the project seemed to go well to some degree. However,  more serious
+problems  occurred  after about two months.  After developing  the major functions  and
+frameworks,  Mr. Ko was busy preparing  for a demonstration  for customers  because  it was
+due soon. However,  his team was unlucky.  A team member's  computer  became infected
+with a virus, and all the source codes and various scripts were erased in an instant.
+The source of the calamity  was the method of deliverables  management.  That
+is, the deliverables  were not centrally  managed.  Instead, only documents  were
+managed  on the central file server, and the source code of each member  was
+stored in the team’s PCs during development.  Until that happened,  each developer
+was trusted to upload their source codes to the file server. The developer  who
+lost all his source codes due to  a virus infection  was the least diligent  of them.
+The team members  had to work overnight  again for couple of days to update
+the latest source code uploaded  to the file server. During that period, the
+customers’  trust was wearing  thinner and thinner. When the developed
+system began to be delivered  to the customers,  they made various requests,
+and the development  team began to modify the source code on demand.
+118 TOPCIT  ESSENCE

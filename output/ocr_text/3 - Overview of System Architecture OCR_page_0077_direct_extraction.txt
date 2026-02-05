@@ -1,0 +1,21 @@
+ESSENCE
++ Preview  for practical  business “Intel vs. NVIDIA vs. Google,  who will win
+the Al market?  - Targeting  based on parallel processing  capability  and
+market domination, Google looking  to improve  power efficiency  using
+TPU”, Monthly  Electronic  Parts News
+Competition  in parallel processing  technology  is intensifying  as Al has emerged  as a core technology  of the
+4th Industrial  Revolution.  While existing  programs  were implemented  by a CPU-based  serial (sequential)
+processing  method,  GPU-based  programs  use parallel processing  technology,  which simultaneously
+processes  multiple  instructions  and is used to implement  deep learning  of Al. Google is increasing  the
+parallel processing  capability  by adding  its own processor,  called TPU.
+(Source:  Monthly  Electronic  Components  News]
+01 Parallel  Processing  System
+A) Concept  of the parallel  processing  system
+Parallel processing  refers to one or more independent  operating  systems  managing  multiple processors  and
+performing  multiple  tasks. There are separate  programming  languages  and syntax for parallel processing.  Parallel
+processing  is very fast and can  share the memory  unit. Since several processors  operate it, the impact of failed
+hardware  parts on the entire system is small. It is widely used in the field of Al, consisting  of a lot of data and
+repetitive  complex  operations,  military equipment  that is needed to obtain accurate  results in a short time, and
+searching  services  that extract  results from a wide range of data in a short time. Flynn’s  taxonomy  and classification
+by memory  structure  are leading  examples  of parallel processing  system  classification.
+76 TOPCIT  ESSENCE

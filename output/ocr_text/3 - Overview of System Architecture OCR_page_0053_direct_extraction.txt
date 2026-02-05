@@ -1,0 +1,26 @@
+ESSENCE
+© Solving  the fragmentation  problem
+* Compaction  technique:
+The compaction  technique  merges small-sized  available  memory.  It is used to remove  the external  fragmentation
+that generated  in a variable-size  memory  partition  system, as shown in [Figure 24]. The technique  is not widely
+used because  it is complex  to implement,  and it causes  overload  as it requires  a long time.
+Operating  System Operating  System
+Compression
+In Use > In Use
+20K Unused Compression In Use
+In Use In Use
+10KB Unused Compression
+In Use 80KB Unused
+50KB Unused
+[Figure  24] Solving  Fragmentation  Problem  through  Compaction  Technique
+* Coalescing  technique:
+The coalescing  technique  merges  spaces  with adjacent  addresses  in the unused empty space list in order to create
+a larger space and to prevent  multiple  small spaces,  as shown in [Figure 25].
+Operating  System Operating  System Operating  System
+20KB Unused 20KB Unused 20KB Unused
+In Use In Use In Use
+10KB Unused 10KB Unused :
+25KB Unused | Ret F258 Unused [esis  a=, fe ese
+In Use In Use In Use
+[Figure  25] Solving  Fragmentation  Problem  through  Coalescing  Technique
+52 TOPCIT  ESSENCE

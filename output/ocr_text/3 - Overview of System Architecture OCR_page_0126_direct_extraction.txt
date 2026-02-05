@@ -1,0 +1,11 @@
+Overview  of System Architecture )
+@ Mutual  takeover  (Active-active)
+The mutual takeover  is the case of two or more systems  operating  with separate  servers. When  a server fails, its
+services  are switched  to the designated  server (takeover)  to continue  the services.  Each server must have sufficient
+system  capacity  in order to provide  services  for the two servers,  in preparation  for a fail-over  at the time of a failure.
+[Figure  92] Mutual Takeover  Configuration
+@® Concurrent  access
+It is a structure  in which multiple  systems  process  tasks in parallel in order to provide  availability.  All servers  operate
+in an active state. Even if a server  fails, the service  continuity  can be guaranteed  without  a fail-over.  In this structure,
+two or more servers  perform  load balancing,  using an L4 switch to perform  the same task.
+M3 Overview  of System  Architecture  125

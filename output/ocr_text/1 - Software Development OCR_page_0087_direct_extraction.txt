@@ -1,0 +1,32 @@
+ESSENCE
+01 User Interface  Overview
+The word “Interface”  refers to a device that faces each other between  two objects as the composition  of the
+word (“inter’+’face’)  implies. The user interface  refers to a device or software  that ensures  a smooth  exchange
+of information  between  user and system. It acts like a window for software.  For example,  if a user inputs/
+outputs  commands  or selects a menu using a keyboard  or mouse to use a specific software,  it belongs  to the
+user interface. The interface  should be designed  with a focus on the following  points.
+A) Consistency
+The user interface  should be created consistently.  However,  it is generally  difficult  to maintain  consistency
+when developing  a large system,  since several people design and implement  user interfaces.  User interface
+standards  should be established  before development  to make user interfaces  consistent,  and user interfaces
+should also be checked  after their development  to correct  any errors.
+B) User-centered  design
+The user interface  should be designed  with a focus on the user because  it is for the user, who should be able
+to control it effectively.  Therefore, it is essential  to design the user interface  in such a way that users can learn
+“input and output  language’  easily.
+C) Feedback
+The user interface  should provide meaningful  feedback.  When a user presses  a wrong button or tries to
+perform an operation  incorrectly,  the user interface  should enable the user to easily understand  his or her
+mistakes.
+D) Confirming  destructive  behavior
+When a user tries to delete data or files, the user interface  should confirm  it before executing  it. If possible,  the
+user interface  should be designed  in such a way that the user cannot  cause critical errors. The Undo function is
+also a useful method in this regard.
+O2 User Experience  Overview
+User experience  comprises  the ideas and actions of the designer  who tries to improve  the user’s environment.
+It refers to comprehensive  experience  such as experience,  emotion,  perception,  attitude,  and response  when
+a user wants to achieve a purpose by using a system or service. It is a process  of researching  a convenient
+screen design and environment  for the users.
+A) Differences  between  user experience  (UX) and user interface  (Ul)
+User experience  (UX) refers to the study of invisible  things, whereas  user interface  (UI) refers to the concrete
+86 TOPCIT  ESSENCE

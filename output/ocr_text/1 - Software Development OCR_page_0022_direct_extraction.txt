@@ -1,0 +1,35 @@
+Software  Development )
+because  far more diverse  issues arise than in other engineering  situations.
+02 Lifecycle  of Software  Development
+A) Definition
+The lifecycle  refers to the entire process  from understanding  the user environment  and problems  to operation
+and maintenance.  The general  software  life cycle is composed  of [Feasibility  review  — Development  planning  >
+Requirements  analysis Design  — Implementation  — Test — Operation  — Maintenance]  activities.
+B) Purposes
++ To calculate  the project  costs and draw up a development  plan, and to configure  the basic framework.
++ To standardize  the terms.
++ To manage  a project.
+C) Selecting  a software  lifecycle
++ This is an important  activity  for corporations  to tailor the development  process  of a project.
++ Selection  is based on the risk and uncertainty  of system development  and understanding  of it.
++ The selected  model should be able to minimize  the risks and uncertainties  associated  with a given project.
++The Waterfall  model, prototype  model, evolutionary  model, and incremental  model are the most
+representative  life cycle models.
+D) Types of software  lifecycle  models
+The lifecycle model does not explain all possible  lifecycle models  that could be applied to a project: rather,
+it is an example  of the most frequently  used lifecycle  model. In addition,  the lifecycle  model can be replaced
+according  to the characteristics  of the project.
+@® V model
+* This model clearly shows the activities  that should be performed  while implementing  the project  to project
+managers  and developers.  It also helps customers  who do not know much about this area to understand  the
+principles  of software  development.
++ An ideal lifecycle  model identifies  and clarifies  all system  requirements.
+* The V model can be used even when the requirements  are unclear. However, the estimation,  planning,  and
+confirmation  of a project are limited to the requirement  analysis  and identification  phase only. That is, the
+detailed plan to which the V model is applied is finally completed once all the requirements  have been
+identified  and clarified. If the requirements  are not clear, the initial project plan should specify the start/
+end dates expected  by the customer  and the estimated  date when major risks, assumptions,  dependencies,
+and requirements  have been identified  and clarified.  A project involving  the implementation  of a standard
+communication  protocol  is a typical example  of the type of project  to which the V model can be applied.  The V
+model has the following  characteristics.
+M1 Software  development  21

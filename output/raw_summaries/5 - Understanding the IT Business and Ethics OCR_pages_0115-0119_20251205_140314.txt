@@ -1,0 +1,282 @@
+LEARNING GUIDE: Pages 115-119
+Generated: 2025-12-05 14:03:14
+PDF: 5 - Understanding the IT Business and Ethics OCR
+
+================================================================================
+LEARNING GUIDE
+================================================================================
+
+Here is a simplified, easy-to-read learning guide based on the provided text:
+
+---
+
+## Learning Guide: Performance Evaluation Techniques
+
+This guide covers financial performance evaluation, the Balanced Score Card (BSC) technique, IT-BSC, Key Performance Indicators (KPIs), and Management by Objectives (MBO).
+
+---
+
+### 1. Financial Performance Evaluation Techniques
+
+These techniques assess investment feasibility and returns.
+
+*   **Return on Investment (ROI)**
+    *   **Definition:** Ratio of net financial effect to total cost.
+    *   **Use:** Assesses investment feasibility.
+    *   **Limitation:** Cannot estimate the time an investment needs to yield net income.
+
+*   **Net Present Value (NPV)**
+    *   **Definition:** Expresses the relationship between the cost and effect of a currency's present value, considering its discount rate.
+    *   **Reflects:** Accurate future net profits and monetary value over time.
+    *   **Note:** Risks associated with the payback period must be considered separately.
+
+*   **Internal Rate of Return (IRR)**
+    *   **Definition:** Revenues generated from investments against cash flows.
+    *   **Expresses:** Expected annual revenues to judge risk reduction.
+    *   **Limitation:** Does not consider investment size or payback period.
+
+*   **Payback Period (PP)**
+    *   **Definition:** The time it takes for cumulative effect to exceed cumulative cost and reach the break-even point.
+    *   **Expresses:** Point of transition to surplus or visible success.
+    *   **Shows:** *When* revenue is generated, but not *how much*.
+
+---
+
+### 2. Balanced Score Card (BSC) Technique
+
+A performance management system that evaluates both financial and non-financial performance.
+
+#### A) Overview of BSC
+
+*   **What it is:** A balanced performance evaluation technique.
+*   **Introduced by:** Robert Kaplan and David Norton in 1992.
+*   **Why it's needed:** Traditional systems relied too heavily on financial indicators, making strategy execution difficult. BSC addresses this by incorporating non-financial evaluations.
+*   **Purpose:** Balances indicators, concretizes and links strategies, and improves internal communication.
+
+#### B) Characteristics of BSC
+
+*   **Balance between indicators:**
+    *   Approaches performance from multiple perspectives (not just financial).
+    *   Balances short-term and long-term views.
+    *   Balances leading (predictive) and trailing (result-oriented) indicators.
+*   **Concreteness of strategy:**
+    *   Secures strategy clarity through Key Performance Indicators (KPIs).
+    *   Aims for company-wide optimization, not just partial.
+    *   Aligns strategies with correct business directions.
+*   **Connectivity of strategy:**
+    *   Establishes causal relationships between strategies.
+    *   Links core strategies after focused selection.
+*   **Internal communication tool:**
+    *   Builds executive capability using detailed KPIs.
+    *   Serves as a common language across the organization.
+
+#### C) Component Elements of BSC
+
+BSC evaluates performance from four perspectives and includes elements to manage and achieve enterprise goals.
+
+*   **Perspective:** The four viewpoints from which performance is evaluated (Finance, Customer, Process, Learning & Growth).
+*   **Critical Success Factor (CSF):** Factors essential for successfully realizing the enterprise's vision and strategy.
+*   **Strategy Map:** A visual representation showing the causal relationships among CSFs, illustrating how an organization creates value.
+*   **Key Performance Indicator (KPI):** An indicator to measure and manage the level and success of a CSF.
+
+#### D) Four Perspectives of BSC
+
+These perspectives are organically interconnected, managing both financial and non-financial views.
+
+1.  **Financial Perspective**
+    *   **Focus:** Shareholder value, financial evaluation.
+    *   **Key Items:** Revenue, net profits, cost reductions.
+    *   **Key Indicators:** Cash flow, inventory, bonds, operating profit ratio.
+    *   **Example:** Shareholder dividend income.
+
+2.  **Customer Perspective**
+    *   **Focus:** Customer satisfaction and loyalty.
+    *   **Key Items:** Increase customer loyalty, enhancement of customer satisfaction.
+    *   **Key Indicators:** Customer satisfaction, on-time supply rate.
+    *   **Example:** Customer satisfaction and delivery time compliance.
+
+3.  **Internal Process Perspective**
+    *   **Focus:** Optimization of internal processes, efficiency.
+    *   **Key Items:** Optimization of processes, removal of process bottlenecks.
+    *   **Key Indicators:** Process cycle time, product unit cost.
+    *   **Example:** Product quality and production efficiency improvements.
+
+4.  **Learning and Growth Perspective**
+    *   **Focus:** Employee development, innovation, organizational capacity.
+    *   **Key Items:** Employee learning efforts, measurement of performance gains by enhancing skill levels.
+    *   **Key Indicators:** Employee satisfaction, number of newly developed products.
+    *   **Example:** New product development.
+
+---
+
+### 3. Balanced IT Performance Evaluation Technique (IT-BSC)
+
+IT-BSC adapts the BSC concept to evaluate IT investment performance.
+
+#### A) Overview of IT-BSC
+
+*   **What it is:** A performance management tool to achieve enterprise goals by applying BSC concepts to IT investment evaluation.
+*   **Why it's needed:** Traditional finance-based techniques struggle to quantify intangible IT investments. IT-BSC provides a systematic way to evaluate IT's growing importance.
+
+#### B) Component Elements and BSC Link Structure
+
+IT-BSC has four perspectives, linked to the enterprise's overall BSC, providing a balanced view for IT performance.
+
+1.  **Business Value Perspective**
+    *   **Measurement:** Create enterprise value from IT investments.
+    *   **BSC Link:** Financial perspective.
+
+2.  **User Perspective**
+    *   **Measurement:** Maximize the value of IT service providers and users.
+    *   **BSC Link:** Customer perspective.
+
+3.  **Operational Process Perspective**
+    *   **Measurement:** Ensure efficient delivery of IT products and services.
+    *   **BSC Link:** Internal process perspective.
+
+4.  **Future-Oriented Perspective**
+    *   **Measurement:** Provide IT service and technology development support for continuous development.
+    *   **BSC Link:** Learning and growth perspective.
+
+---
+
+### 4. Management of Key Performance Indicators (KPIs)
+
+KPIs are quantifiable indicators derived from Critical Success Factors (CSFs) to measure goal achievement.
+
+#### A) Overview of KPI
+
+*   **What it is:** Key Performance Indicator (KPI) – a quantifiable indicator of an organization's Critical Success Factors (CSFs).
+*   **Purpose:** Measures the achievement of goals.
+*   **Characteristics:**
+    *   Must accurately reflect organizational goals.
+    *   Must be critical for realizing those goals.
+    *   Can be "means" (drivers of victory) or "ends" (results of strategy).
+    *   Influence employee behavior.
+*   **Importance:** Widely used in performance evaluations.
+
+#### B) KPI Establishment Procedure
+
+KPIs should align with vision, act as strategic drivers, and provide guidance for the entire organization.
+
+1.  **Definition of the KPI Area**
+    *   **Activities:** Specify characteristics of the organization/operational unit, select participants.
+    *   **Output:** KPI establishment plan, organizational chart.
+2.  **Collect Data**
+    *   **Activities:** Collect/review vital documents, develop interview questions, execute interview plan.
+    *   **Output:** Interview questionnaire, KPI portfolio.
+3.  **Analyze**
+    *   **Activities:** Create activity descriptions, analyze affinity, develop topics.
+    *   **Output:** Job-KPI affinity analysis chart.
+4.  **Derive KPIs**
+    *   **Activities:** Derive, refine, classify, and integrate KPIs.
+    *   **Output:** KPI list, KPI derivation.
+5.  **KPI Verification**
+    *   **Activities:** Establish comparison criteria, develop a comparison matrix, compare associative relations, set targets.
+    *   **Output:** KPI verification matrix.
+
+#### C) Precautions When Deriving KPIs
+
+1.  **Strategic Support of Top Management is Essential:** KPI management should be a top management responsibility to ensure KPIs reflect the organization's strategic vision. Avoid delegating solely to middle management.
+2.  **Use Reference Models, but Don't Imitate:** KPIs must be unique to an enterprise's specific goals and strategies. A great company's KPIs may not suit another.
+3.  **KPI Derivation is Continuous Improvement:** Start with a balanced set and evolve them gradually. KPIs must be modifiable to respond to changes in the business environment.
+
+---
+
+### 5. Goal Management System
+
+#### A) Key Perspectives of MBO
+
+*   **What it is:** Management by Objectives (MBO) – a system for managing organizational goals.
+*   **Purpose:** A business management technique for setting goals and controlling/managing the path to meet those goals, ultimately improving individual performance and capabilities.
+
+---
+
+================================================================================
+ORIGINAL TEXT (First 5000 chars)
+================================================================================
+
+--- Page 115 ---
+ESSENCE
+<Table 55> Types of financial  performance  evaluation  techniques
+Technique Description
++ Return  on Investment
++ Ratio of net effect to total cost
++ Use das assess  investment  feasibility.
++ The time needed  before an investment  yields net income  can never be estimated.ROI
++ Net present  value
++ Expresses  the relationship  between  the cost and effect of the present  value of a currency,  taking
+NPV into account  the discount  rate of the currency.
++ Reflects  the accurate  amount  of future net profits and the monetary  value over time.
++ The risks associated  with the payback  period should be considered  separately.
++ Internal  rate of return
++ Revenues  generated  from investments  against  cash flows
++ Expresses  the expected  annual revenues  for the purpose  of judging  the reduction  of risks.
++ The size of the investment  and the payback  period are not taken into account.IRR
++ Payback  period
++ The time it takes for the cumulative  effect to exceed the cumulative  cost and reach the break-
+PP even point.
++ Expresses  the point of transition  to surplus  or the point when visible success  can be seen.
++ Shows when revenue  is generated,  but not how much revenue  is generated
+03 Balanced  Score Card Technique
+A) Overview  of the BSC technique
+The balanced  performance  evaluation  technique  is referred  to as BSC (Balanced  Score Card). BSC is a technique  for
+managing  balanced  performance  by evaluating  not only financial  performances  but also non-financial  performances.
+It was introduced  to the world by Harvard  Business  School Professor  Robert Kaplan and consultant  David Norton in
+1992 in the Harvard  Business  Review.
++ The traditional  performance  management  system is so restricted  to financial  indicators  that enterprises  experience
+difficulties  in executing  their strategies  in a systematic  manner. This has raised the need to consider  non-financial
+evaluations.
++ BSC is utilized as a tool for maintaining  a balance  between  indicators,  for the concretization  and linking of strategies,
+and for communication  within the organization.
+<Table 56> Characteristics  of BSC
+Category Description
++ IT business  performance  evaluation  can be approached  from many different  perspectives,  in
+Balance  between addition  to the financial  perspective.
+indicators + Provides  a balance  between  the short-term  view and the long-term  view.
++ Provides  a balance  between  leading  and trailing  indicators.
+114 TOPCIT  ESSENCE
+
+
+--- Page 116 ---
+Understanding  the IT Business  and Ethics )
++ Secures  the concreteness  of a strategy  through  KPI.
+Concreteness  of strategy + Aims for company-wide  rather than partial optimization.
++ Aligns feasible  strategies  to correct  business  directions.
+Connectivity  of strategy + Establishes  causal relationships  between  strategies  and links core strategies  after focused
+selection.
+Internal  communication  | + Builds executive  capability  within the organization  by using detailed  KPI.
+tool + Serves as a common  language  in a horizontal/vertical  organization.
+B) Component  elements  of BSC
+In BSC, performance  is evaluated  from four different  perspectives.  It contains  elements  for managing  enterprise  goals
+and elements  for ensuring  that the goals are met. A balanced  performance  evaluation  is possible  with BSC
+<Table 57> Component  elements  of BSC
+Component  elements Description
+Perspective + Finance,  customer,  process,  learning  and growth perspective.
+CSF—— + Factors which are critical to successfully  realizing the vision and strategy  of an enterprise.
+Strategy  Map . fea that shows the causal relationships  among  CSF. It illustrates  how an organization  creates
+KPI
+a  tii + Anindicator  of how to measure and manage the level and success of a CSF.
+C) Four perspectives  of BSC
+The BSC is composed  of four perspectives:  Financial,  Customer,  Process,  and Learning  & Growth.  The BSC manages
+both financial  and non-financial  views.
+Finance Customer Process Learning/growth
+Perspective Perspective Perspective Perspective
+I I I I
+[ CSF, Critical Success  Factor
+[ KPI, Key Performance  Indicator |
+[Fig. 45] Four perspectives  of BSC
+The four perspectives  are managed  in organically  interconnected  relationships.  For example,  i) new product
+development  is managed  from a learning  and growth perspective:  (ii) product  quality and production  efficiency
+M5 Understanding  the IT Business  and Ethics 115
+
+
+--- Page 117 ---
+ESSENCE
+improvements  are managed  from an  internal process  perspective:  (iii) customer  satisfaction  and delivery  time
+compliance  are managed  from a customer  perspective;  and (iv) shareholder  dividend income is managed  from a
+financial  perspective.
+<Table 58> Description  of the 4 BSC perspectives
+Perspective Key Items Key Indicators
+. : . + Revenue,  net profits, cost reductions + Cash flow, inventory,  and bondsFinancial  perspective naan Sas
++ Finan...

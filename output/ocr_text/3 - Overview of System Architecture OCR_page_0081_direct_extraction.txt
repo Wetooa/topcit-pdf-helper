@@ -1,0 +1,28 @@
+ESSENCE
+processing  another  instruction  while still processing  an original instruction.  There are several types of pipelines:  a
+two-stage  instruction pipeline,  a four-stage  instruction pipeline,  and  a six-stage  instruction  pipeline.  The four-stage
+instruction  pipeline  is the most widely  used.
+Although  the instruction  set consists  of two stages in the four-stage  instruction  pipeline, the processing  time of the
+stages is divided into 4 in order to prevent  efficiency  degradation,  which occurs because  the processing  time of the
+pipeline  stages  is not the same.
+The stages of the four-stage  instruction  pipeline are instruction  fetching  (IF), instruction  decoding  (ID), operand
+fetching  (OF), and execution  (EX).
+Instruction Execution  Result
+@ >@
+1 9Clock Cycle | |
+: IF
+Instruction  1 |«<——>}
+Instruction  2 |<—>|
+Instfuction  3|<—>
+EX
+[Figure  49] Pipelining
+The IF stage is a process  that fetches instructions  from the memory  unit. It fetches  an instruction  from the program
+counter's  memory  unit address  and transfers  it to the register  The ID stage interprets  the fetched  instruction  using
+an instruction  decoder.  The OF stage fetches an operand  that becomes  a variable  or data, to be used in operation,
+from the memory  unit. The EX stage runs the operation  specified  by the instruction.
+@ Superscalar  process
+The Superscalar  process is a structure  that includes  a number  of instruction  pipelines  to speed up the central
+processing  unit. It can run instructions  out of order, since it independently  processes  instructions  using multiple
+pipelines.  The superscalar  process  has a basic configuration  in which several functional  units,that  are implemented  as
+superscalar  pipelines,  support  the parallel processing  of instructions.
+80 TOPCIT  ESSENCE

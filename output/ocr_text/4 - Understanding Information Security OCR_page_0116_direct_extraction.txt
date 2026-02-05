@@ -1,0 +1,34 @@
+ESSENCE
+the structure  of the TCP/IP protocol.  [Figure 59] shows security  protocols  by layer, based on the OS! 7-layer
+reference  model.
++ Security  protocols  related to the application  layer
+There are various  security  protocols  related to the application  layer, such as PGP and S/MIME that provide
+e-mail security  function,  Kerberos  that provides  authentication  functions,  and SSH (secure shell) that
+supports  secure  remote  access,  etc.
++ Security  protocols  related  to the transport  layer
+SSL (Secure Socket Layer)/TLS (Transport  Layer Security)  is a protocol  that acts above the transport  layer,
+which provides  the secure transport  layer services to the application  layer. TLS is the Internet Engineering
+Task Force (IETF) standard  for SSL, and it provides  end-to-end  security  and data integrity.
++ Security  protocols  related  to the Internet
+The IPSec (IP Security)  protocol  that acts above the Internet  layer, which provides  security  features,  such as
+authentication  and encryption,  to the Internet  layer. This protocol  is used to implement  VPN services.
+TCP/IP Protocol  structure Security  protocol
+Operation  layer PGP, S/MIME,  Kerberos,  SSH
+Transport  layer SSL/TLS
+Internet  layer IPSec
+[Figure 59] Security  protocols  by layer
+C) Types of network  attacks  and countermeasures
+@ DoS attack
+The DoS attack disturbs  the normal operation  of a specific server by causing  various types of load. It is an
+attack on availability,  one of the security services.  Typical DoS attacks include land attacks, ping of death
+attacks,  Syn flooding  attacks,  and Boink attacks.
++ Land attack
+An attack that sends a packet  to the target, by making  the IP address  of the source and destination  identical
+to the attacker's  IP address.  Server  operation  fails, due to serious  failure in the IP protocol  stack because  the
+host that receives  the packet  falls into an infinite loop of receiving  and sending  the packet.
+This attack can be responded  to by blocking  packets  whose source IP address  is the same as the server's  IP
+address,  among  the packets  flowing  into the network,  using a router or packet  filtering  tool.
++ Ping of death attack
+When an attacker  makes an ICMP packet that much larger than the normal  size and sends it, the packet is
+divided into many small fragments  and transmitted  to the attacking  network.  Accordingly,  the attack target
+116 TOPCIT  ESSENCE

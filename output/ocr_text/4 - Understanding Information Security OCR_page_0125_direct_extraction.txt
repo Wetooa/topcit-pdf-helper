@@ -1,0 +1,33 @@
+Information  security )
++ How to check SSL application
+<Table 39> describes  how to check the SSL installed  in the web server.
+<Table 39> Checking  SSL application
+Item Contents
+https:/, -* @ Displays  “https://”  and a padlock  icon in URL address  bar of the web browser.
+CEE ED Displays a security warning window  when the page is changed.8 nism anes pey yarn’ pee ene
+GecTrust  Fe) aev4 Displays  a security  certification  seal
+riSign
++ Consideration  on the load after SSL application
+Various  computing  tasks created  during the SSL handshake  process put a heavy workload  on the CPU. The
+SSL accelerator  is a solution  released  to solve such a heavy workload  on the CPU. The SSL accelerator  can
+be installed  on the server as a separate  PCI card or dedicated  equipment.  Recently,  since the web accelerator
+and L4 switch provide an SSL accelerator  as a separate  function,  only a separate  SSL accelerator  license
+needs to be purchased.
+The connection  URL and the URL included  in the web application  source should be changed  to “https://”  after
+applying  SSL. In addition,  the web application  response  speed can be improved  when the SSL load of the
+static content,  such as images,  JavaScript,  CSS (CascadingStyleSheets),  etc. is increased,  using an SSL web
+browser  cache or a web accelerator.
+03 WLAN security
+A) Characteristics  of the WLAN
+Since incoming  and outgoing  data is broadcast  in the air in the wireless LAN, using radio waves, the  data is
+exposed  to all wireless  LAN users while it is being transmitted.
+The use of wireless  LAN is increasing  rapidly because  it has various  advantages  and convenience.  However,
+security is more vulnerable  than wired LAN because  of the characteristic  of using radio waves as a
+communication  medium.  Therefore,  security  should be considered  more seriously.  In particular,  there is a high
+possibility  of various security  incidents  in the environment  that is opened to the public, like a public wireless
+LAN. Therefore,  security  should be taken into account.
+[Figure 66] shows the structure  of the general WLAN, defined by the IEEE 802.11. In this figure, the Basic
+Service  Set (BSS) is a unit composed  of stations  (STAs)  that compete  for access  to the same wireless  medium,
+while running  with the same MAC protocol.  And the extended  service set refers to an environment  in which
+multiple  basic service sets can be connected  to a distribution  system  in order to communicate  with each other.
+M4 Understanding  Information  Security  125

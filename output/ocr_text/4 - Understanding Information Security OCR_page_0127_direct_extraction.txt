@@ -1,0 +1,38 @@
+Information  security )
+® Technical  security  threats
++ There are various  types of attacks  in the technical  security  threat of the wireless  LAN, including  the leakage
+of important  user information  through radio wave collection,  illegal access, and man in the middle attack:
+jamming,  denial of service attack using large packet transmission,  and hacking  weak security  settings,  such
+as WEP (Wired Equivalent  Privacy)  to illegally  access  and infiltrate into the internal network.
++ Most technical  security  threats to wireless  LAN can be blocked by setting security  features  provided  by the
+wireless  AP (Access  Point), such as WPA2 (Wi-Fi Protected  Access2).  However,  when using a wireless  LAN in
+a place where important  information  is handled,  such as in a corporate  environment,  a professional  wireless
+security  system,  such as WIPS (Wireless  Intrusion  Prevention  System)  must be introduced.
+@ Administrative  security  threats
++ A strong security  technology  can be easily bypassed  if the threat is not properly  managed,  even though the
+technology  is applied to the wireless  LAN. Administrative  security  threats include insufficient  management
+of wireless LAN equipment  and devices, intrusion,  due to a lack of user security  awareness,  and allowing
+outsiders to  access internal APs and insiders to access external  Aps, due to insufficient  radio wave
+management.
++ To respond  to the administrative security  threat of wireless  LAN, management  plans for access devices and
+terminals,  such as Aps, should be established  and implemented,  user awareness  should be raised periodically,
+training  should be implemented,  and illegal internal  and external  accesses  should be checked.
+© Physical  security  threats
++ Most network  devices  in the wired LAN environment  are installed  and managed  in a place that is difficult  to
+access by general users. On the contrary,  most of the wireless  AP are exposed  and installed  outside  because
+radio waves should be transmitted.  In this case, the wireless  AP is exposed  to risks, such as theft and
+damage,  power shutdown,  LAN cable separation,  etc., so service  failure may occur. Also, if the wireless  device
+is lost and stored WLAN access information  and security  setting information  is leaked, unauthorized  persons
+can access  the wireless  LAN.
++ To prepare  for such a threat, it should be ensured  that the wireless  AP is not exposed  to the outside,  setting
+information  should be changed  periodically,  and a method of managing  devices that use the WLAN, along
+with a loss prevention  plan, should be devised.
+C) Wireless  LAN security
+@ IEEE 802.11i services
+WEP was developed  to reinforce  the security  functions  of IEEE 802.11 (wireless  LAN standard).
+However,  it is exposed  to various  attack techniques,  such as the brute force attack, due to insufficient  security
+features.  Accordingly,  the 802.111 working  group has developed  various  functions  to solve the security  problem
+of the wireless  LAN.
+To protect  wireless  LAN users, the IEEE 802.11i standard  defines user authentication,  key exchange,  and
+advanced  wireless  section encryption  algorithms.  It also satisfies  standardization  goals by implementing  IEEE
+M4 Understanding  Information  Security  127

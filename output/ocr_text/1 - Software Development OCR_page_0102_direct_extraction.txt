@@ -1,0 +1,37 @@
+Software  Development }
++ Preview  for practical  business The necessity  of software  testing  and
+the reality of enterprises
+In March 2005, bus companies  lost KRW 500 million won per day in free rides caused by faults or
+failures  of T-Money  bus terminal  software.
+In October  2007, Toyota Motors  paid with an operator  USD 1.6 billion in compensation  due to the
+sudden  unintended  acceleration  of the “Camry”  model’s  ECM firmware  fault.
+In August 2009, the launch of “Naro”, Korea’s  first space launch vehicle,  was delayed  due to a
+software  fault in the automatic  launch device software  related  to pressure  measurement.
+The abovementioned  incidents  are widely publicized  cases of software  faults. Software is ubiquitous
+and directly related to the existence  of companies  and the daily life of countless  individuals.  The
+most obvious  question  that springs to mind is why such faults even occur when software  is so
+important.  Everyone  thinks they know software  testing well. However,  when software  testing is
+actually  performed,  it is not performed  as well as expected due to various problems.  Currently,
+enterprises  are facing many problems  due to the irrationality  of the contract  itself, frequent  changes
+to the requirements  and the unreasonable  demands  of customers,  the limitations  of support at
+the organizational  level, impractical  procedures  and paperwork,  numerous  cases of reporting  and
+meetings,  and reports on such reporting  and meetings.  More specifically,  enterprises  have difficulty  in
+running  software  testing  due to the following  reasons.
++ It is a well-known  fact that anywhere  from 40% to 60% or more of the total development  cost is
+spent on software  testing, as testing  is very important.  However,  the reality is that those involved
+in software  development  are unable to pay sufficient  attention  to testing because  it is difficult  to
+perform  their own fixed tasks only, and that few developers  are actively  interested  in any testing
+other than unit testing.
++ As development  itself is conducted  with insufficient  personnel  and resources  for a period shorter
+than the actual schedule,  it is not easy to consider  investing  in testing.
++ Testers  who perform  testing  tasks sometimes  know too little about testing.
++ Testing  is performed  without  an accurate  understanding  of the testing  techniques.
++ Decision  makers or managers  do not fully recognize  the importance  of testing. Even though test
+engineers  with a sense of mission  try to run testing properly,  executives  sometimes  force them to
+stop testing  without  understanding  its importance.
+[Source: Factors  constraining  software  testing  http://eunguru.tistory.com/158]
+The reality is that the service operation  team and the development  team also perform  testing  tasks
+internally  in companies,  except for conglomerates.  While the number  of people remains limited, the
+number  of channels  and workloads  is increasing  continuously  and the test period is being shortened,
+resulting  in the release  of incomplete  services  and, consequently,  higher maintenance  costs.
+M1 Software  development  101

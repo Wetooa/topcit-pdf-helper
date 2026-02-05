@@ -1,0 +1,35 @@
+ESSENCE
+@ Understanding  ILM
+Information  life cycle management  (ILM) is a series of processes  for separating  and managing  storage media, which is
+necessitated  by ongoing  changes  in the value of data or information  throughout  its life cycle.
+As the volume of data increases,  so does the cost of managing  data. In contrast,  the value of data changes  as it
+goes through  its life cycle. Thus, enterprises  are tuning  to ILM in order to reduce their data management  costs and
+manage  data in a more systematic  way.
+| IT compliance | | IT governance | | Management  poy
+Regulations Regulations
+leanne Data management [4-------------* P
+: Usage
+co) (base | ~~
+[Fig. 24] Conceptual  diagram  of ILM
+The constituent  elements  of ILM belong to one of two categories,  ie. the management  policy category  or the
+technology  element  category.
+<Table 24> Constituent  elements  of ILM
+Category Element Role
+IT governance Provides  guidelines  on the generation,  storage  and disposal  of data.
+Management IT compliance Provides  legal, regulatory  and policy standards.
+policies Enterprise  dataEA's DA‘ system and data operation  policy,management  policy
+The utilization  rate of the storage  is high, and it must be used repeatedly:
+] : .st storage therefore,  only high-performance,  expensive  storage solutions  are used.
+2nd storage The utilization  rate and value are relatively  low: therefore  low-performance  low-
+Technology ei priced storage solutions  are used.
+elements
+A technology  that allows data to be archived  periodically  and processedData archiving automatically  by the system.
+Backup Store separately  using a tape library or an affordable  disk (backup  policy).
+@ Understanding  IRM
+The purpose  of information  resource  management  (IRM) is the efficient  and integrated  management  of IT resources.
+Here, efficient  and integrated  management  means preventing  redundant  investments  in IT resources  and increasing
+returns  on investments.  It also means managing  all types of IT resources  from HT resources  to IT equipment,  budgets
+and outputs.
+3 EA: Enterprise  Architecture.
+4 DA: As one of the component  elements  of the EA, the DA describes  the architecture  of data.
+70 TOPCIT  ESSENCE

@@ -1,0 +1,188 @@
+LEARNING GUIDE: Pages 28-32
+Generated: 2025-12-05 14:19:51
+PDF: 1 - Software Development OCR
+
+================================================================================
+LEARNING GUIDE
+================================================================================
+
+Here is a simplified, easy-to-read learning guide based on the provided text:
+
+---
+
+## Software Development Learning Guide
+
+### Section 1: eXtreme Programming (XP)
+
+**XP Core Concepts:**
+
+*   **User stories:** Brief descriptions of necessary functions, used for requirements gathering and communication.
+*   **Spike:** A simple program to explore difficult requirements or potential solutions, reducing technical risk and increasing user story reliability.
+*   **Release planning:** Establishes a project deployment plan, dividing iterations into 1-3 weeks and keeping them consistent.
+*   **Acceptance test:** Customer-performed test before release.
+*   **Smaller releases:** Frequent small-scale releases to provide early benefits to the customer.
+
+**XP Values:**
+XP emphasizes five core values:
+
+1.  **Communication:** Crucial for team-level software development. Solves problems and strengthens team building among customers, developers, and managers.
+2.  **Simplicity:** Always strive for the simplest possible solution. Keep designs clear by removing unnecessary complexity.
+3.  **Feedback:** Prioritize gradual improvement over perfection. Create and use quick feedback loops for continuous enhancement.
+4.  **Courage:** Actively cope with and reflect changes in requirements and technology quickly. This includes the courage for simplicity and presenting solutions.
+5.  **Respect:** The underlying value for the other four. Proper project implementation requires respect among team members.
+
+**XP Practices:**
+XP suggests twelve practices in addition to its values:
+
+*   **Simple design:** Design only for current requirements, keeping it as simple as possible.
+*   **Test-driven development (TDD):** Write test programs *before* writing code, then automate tests using tools.
+*   **Refactoring:** Redesign existing code to eliminate duplication and complexity.
+*   **Coding standard:** Establish consistent coding rules for effective communication.
+*   **Pair programming:** Two developers work together at one computer.
+*   **Collective code ownership:** All developers share responsibility for the source code and can modify it to improve it.
+*   **Continuous integration:** Integrate code frequently, often after every small change.
+*   **Planning game:** Establish and update project and cycle plans considering business and technical aspects, using feedback.
+*   **Small release:** Deploy executable modules quickly for frequent customer experience feedback.
+*   **Metaphor:** Express the system's overall look using easily understandable pictures and stories.
+*   **40 hours/week:** Limit work to 40 hours per week to maintain quality.
+*   **On-site customer:** Have the customer (actual user) stay at the development site.
+
+---
+
+### Section 2: Scrum
+
+**Scrum Overview:**
+
+*   **Definition:** An agile methodology for project management, known as an empirical management technique based on estimation and adjustment.
+*   **Origin:** Modeled after "The New Product Development Game" (1986); introduced for software by Ken Schwaber and Jeff Sutherland in 1995.
+
+**Scrum Units (Roles):**
+
+*   **Product Owner:** Manages the Product Backlog (product function list), adjusts priorities, and adds new items. Should be key in sprint planning but minimally involved in team operation once a sprint starts.
+*   **Scrum Master:** Removes impediments that disturb the team's work. Supports the development team while upholding Scrum principles and values.
+*   **Scrum Team:** Typically 5-9 members. Identifies functions to be developed during a sprint using user stories.
+
+**Scrum Process Components:**
+
+1.  **Sprint:** A repetitive development period, typically 1 to 4 weeks long.
+2.  **Three Meetings:**
+    *   **Sprint Planning:** Goals are set for the sprint, and items are selected from the Product Backlog. Tasks are defined, assigned, and planned.
+    *   **Daily Scrum:** A 15-minute daily meeting to share project progress. Team members discuss what they did, what they will do, and any issues.
+    *   **Sprint Review:** Checks work progress and deliverables against sprint goals. The Scrum team demonstrates completed work to attendees (including the customer) and receives feedback. A retrospective review identifies successes, disappointments, and areas for improvement.
+3.  **Three Deliverables:**
+    *   **Product Backlog:** A breakdown of all work to be done for the product. The Product Owner prioritizes items (called user stories). Workload is often estimated using 'story points'.
+    *   **Sprint Backlog:** A list of user stories and associated tasks to be developed during a specific sprint. Task sizes are estimated in hours.
+    *   **Burndown Chart:** Shows remaining work in the Sprint Backlog, typically for each iteration as story points.
+
+**Scrum Characteristics:**
+
+*   **Transparency:** Uses techniques like Scrum meetings, burndown charts, and sprint reviews to make project status, progress, and issues clear.
+*   **Timeboxing:** Limits the time for activities to maintain focus (e.g., 15-minute Daily Scrum, periodic Sprint Review).
+*   **Communication:** Fosters smooth communication among team members (e.g., daily problem sharing, planning poker for user story estimation).
+*   **Empirical model:** Emphasizes the experience of individuals, adapting to unique project situations rather than relying solely on standardized processes. Acknowledges that actual implementation may differ between teams.
+
+---
+
+### Section 3: Recent Trends & Issues
+
+**Software Reuse:**
+
+*   **Trend:** Increasingly common as businesses globalize.
+*   **Purpose:** Develop new features and maintain existing ones using proven knowledge from past projects.
+*   **Benefits:** Reduces costs, improves productivity, enhances quality, and enables faster reproduction of software. Enterprises aim to increase their reuse rate.
+
+**Keywords:**
+
+*   Reuse, reverse engineering
+*   Code reuse, software standardization
+*   Software maintenance
+
+---
+
+================================================================================
+ORIGINAL TEXT (First 5000 chars)
+================================================================================
+
+--- Page 28 ---
+Software  Development )
+Test scenario
+User story
+Customer
+approvalRequire New user story
+ments Project speedBug Latest
+version
+Release
+Structural figgit)olatelg plan NV iiaYolmAcceptance
+Italy
+Uncertain Reliable
+estimate estimateNext cycle
++ User stories: Refers to a tool for collecting  requirements  and communication.  User stories briefly describe
+necessary  matters  regarding  functions.
++ Spike: A simple program  that considers  difficult  requirements  or potential  solutions.  Spike aims to increase
+the reliability  of user stories while reducing  the risk of technical  problems.
++ Release planning:  Establishes  a deployment  plan for an entire project and divides one iteration  into one to
+three weeks,  and then keeps the iterations  evenly.
++ Acceptance  test: An acceptance  test performed  by the customer  before release.
++ Smaller  releases:  The final phase of the XP cycle. If frequently  released  on a small scale, several benefits  can
+be provided  to the customer  in the early stages.
+@ XP values
+Basically,  eXtreme  Programming  proposes  the following  five values.
+* Communication:  Communication  is the most important  thing in software  development  at the team level.
+Communication  errors are typically  found in failed projects.  Problems  should be solved, and team building
+should be strengthened  through  communication  between  customers,  developers  and managers.
++ Simplicity:  Always ask “What is the simplest  thing possible?”.  Keep the design simple and clear by removing
+unnecessary  complexity.
++ Feedback:  Gradual improvement  is more effective  than pursuing  perfection,  considering  the flow of changes
+which causes yesterday's  output or value to become  useless  today. Create as many feedback  as possible
+quickly  as long as they can be handled  by the team and use them for improvement.
++ Courage:  Cope with changes  to the requirements  and technology  to reflect them as quickly as possible
+and deliver to the customer.  The courage to actively  solve a problem entails simplicity,  and the courage  to
+present  the solution  concretely  reinforces  feedback.
++ Respect:  Respect  is the value that hides behind the first four. A person cannot implement  the project
+properly  without  respecting  the other members  of the team. (Source: Korea Developer's  Hope Report)
+M1 Software  development  27
+
+
+--- Page 29 ---
+ESSENCE
+@ Extreme  programming  practices
+XP suggests  using twelve practices  as described  in <Table 2>, in addition  to the aforementioned  five values.
+<Table  2> Basic XP practices
+Item Practice Description
+. . h ib Simple design Keep the design as simple as possible  to meet the current
+requirements.
+; Write the test programs  first before  writing  the code and automateTest-driven  developmentthem using the test tools.
+Refactoring Design  the existing  code by eliminating  code duplication  and
+complexity.
+Development Coding  standard Establish  coding standards  for effective  communication.
+A . Have two developers  sit in front of a computer  and work together
+Pair programming
+for development.
+Have all the developers  in the team  assume  joint responsibility  for
+Collective  code :
+- the source code so that everyone  can modify  the code to make itownership ,
+better  at any time.
+Continuous  integration Perform  integration  work until the work is finished.
+Establish  the entire project  plan and cycle plan by considering  the
+Planning  game business  and technical  aspects  and keep them updated  through
+execution  and feedback.
+Management Deploy  executable  modules  as quickly as possible  so that customersSmall release .can frequently  experience  how the software  works.
+Express  the overall look of the system using pictures  and storiesMetaphor
+that can be understood  easily.
+40 hours/week Do not work more than 40 hours per week to maintain  quality.
+Environment Have the customer  who actually  uses the system stay at theOn-site  customer .development  site.
+C) Scrum
+@ Scrum overview
+Scrum is one of the agile methodologies  designed  for project management  and is a representative  type
+of empirical  management  technique  based on estimation  and adjustment.  Scrum for software  was directly
+modeled  after “The New Product  Development  Game’ by Hirotaka Takeuchi  and Ikujiro Nonaka  published  in the
+Harvard Business  Review in 1986. This method was named “Scrum”  when it was introduced  by Ken Schwaber
+and Jeff Sutherland  for software  development  in 1995. Scrum consists  of three fundamental  units, as shown in
+<Table 3>.
+<Table 3> Type of Scrum units
+Roles Description
+The product  owner manages  the creation  of a product  backlog  corresponding  to the product
+function  list, priority  adjustment,  or new item addition.
+It is recommended  that the product  owner  should play a key role when setting  up a splint plan, but
+should be involved  in team operation  as little as possible  once the sprint starts.
+The Scrum master  ende...

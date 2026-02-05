@@ -1,0 +1,38 @@
+ESSENCE
+@ Electronic  signature  and encryption  in PKI
+{Figure 20] describes  the process  for user authentication  and message  confidentiality,  and <Table 11>
+describes  the main operation  steps of the sender and receiver  in the PKI environmentwhich  is when both the
+sender and the receiver  operate  the public certificate  encryption  system. The session key in [Figure 21] is a
+one-time  secret key, generated  by the sender, to apply the secret key system to the message.  The sender
+encrypts  this key, using the public key of the receiverto  safely transmit  it. This encrypted  session  key is called
+an electronic  envelope.
+©
+Sender's Sender's cone
+private key public key "a
+* A * aw Message i
+Digest Digest !=9 EE </: > 1B) YetaY7oLe(0)9 {
+ol Electronic i
+piece :
+cages(=) es
+Original Ori Fd Original Certification
+oe Ae text ony
+een > A a
+enonAN envelop am
+Sender's Sender's
+public key private key
+A
+[Figure  21] Electronic  signature  and encryption  processing  procedure  in the PKI
+<Table 11> Operation  steps of the sender  and receiver
+Item Order Description
+Phase 1 | Creating  a message  digest  by applying  a hash algorithm  to the original message
+Encrypting  the created  message  digest, with the sender's  private key, by applying  a public keyPhase 2 ; . -Sender cryptographic  algorithm  (generating  an electronic  signature)
+Phase 3_ | Encrypting  the original message,  with a session  key, by applying  the private key cryptographic  algorithm
+Phase 4 | Encrypting  the session  key used for encryption,  with the receiver's  public key (e-envelope)
+Generating  a message  digest, by decrypting  a document  that is electronically  signed with the sender's
+public key
+Phase 2 | Extracting  the session  key, by decrypting  the encrypted  session  key, with the receiver's  private  key
+Phase 3. | Decrypting  the encrypted  original  text using the extracted  session  key
+Phase 4 | Creating  a message  digest, by applying  a hash algorithm  to the decrypted  message
+Phase 5 | Comparing  the two generated  message  digestsPhase 1
+Receiver
+42. TOPCIT  ESSENCE

@@ -1,0 +1,39 @@
+ESSENCE
+/* File name: ResponseHandler.java  */
+package  obs;
+import  java.util.  Observable;
+import  java.util.  Observer;  /* This is the observer.  */
+public class ResponseHandler  implements  Observer
+{
+private String resp;
+public void update  (Observable  obj, Object  arg)
+{
+if (arg instanceof  String)
+{
+resp = (string)  arg;
+System.out,printIn(“WnReceived  Response:  “+ resp );
+}
+}
+/* File name: myapp.  java */
+/* The program  starts here, */
+package  obs;
+public class MyApp
+public static void main(String  args[ ])
+System.out.print  In(“Enter  Text >”);
+// The event issuing  agent is created.  - Receiving  a string from stdin.
+final Event Source evsrc = new Event Source(  );
+// The observer  is created,
+final ResponseHandler  respHandler  = new ResponseHandler(  );
+// Make the observer  subscribe  to the event published by  the issuing  subject.
+evSrc,addObserver(  respHandler  );
+// Beginning  of a thread that issues an event.
+Thread  thread = new Thread(evSrc);
+thread.start(  );
++ State pattern
+- Definition:  When a new state can be added to the internal state of a certain object continuously,  this
+method facilitates  the addition of a new state. When the state of an object, including  the added state,
+is changed,  the object state information  is defined and used as a class inheritance  structure  so that
+performance  can be changed  without  modifying  the existing  source code.
+- Advantages:  The sentence  that compares  state values inside the object is removed.  Helps maintain
+information  consistency.
+82 TOPCIT  ESSENCE

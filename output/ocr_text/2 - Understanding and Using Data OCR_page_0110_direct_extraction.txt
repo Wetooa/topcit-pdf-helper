@@ -1,0 +1,36 @@
+Database )
+<Table  44> Aggregate  DML operations
+Statement Description  and examples  of usage
+Used to output  the number  of rows.
+SELECT  COUNT(*)  FROM table name
+Used to output  the total excluding  the NULL value.
+SUM SELECT  column name 1, SUM (column  name 2) AS alias FROM table name
+GROUP  BY column  name 1
+Used to output  the average  excluding  the NULL value.
+AVG SELECT  column name 1, AVG (column  name 2) AS alias FROM table name
+GROUP  BY column  name 1COUNT
+Example  of calculation  of no. of employees  by department/total  employee  salary/average  salary from the
+Employee]  table below.
+Department  | Employee  number Name Agreed annual salary Job title Contact information
+Finance 01144 Hong Gildong 6000 Team leader | O10-XXXX-XXXX
+Legal affairs 04489 Lee Mongryong 5400 Assistant  manager  | 010-XXXX-XXXX
+HR 01122 Maeng  Saseong 5700 General manager  | 010-XXXX-XXXX
+General  affairs 07876 Ha Wongil 7700 General manager  | 010-XXXX-XXXX
+SELECT  department,  COUNT(*)  AS number  of employees,  SUM (agreed  annual salary)  AS total salary, AVG
+(agreed  annual salary)  AS average  salary
+[Figure  39] Utilization  of aggregate  operations
+C) Advanced  DML join operations
+@ NL (Nested  Loop) Join
+NL Join  performs  join operations  in a similar way to the nested loop statement  used in programming.  The table
+outside  the loop is called the “preceding  table” or the “outer  table”, and the table inside the loop is called the “following
+table’ or the ‘inner table”.
+NL Join first extracts the rows that meet the conditions  of the preceding  table and performs  a join operation
+while reading  the following  table. This operation is repeated  as many times as the number  of rows that meets the
+conditions  of the preceding  table. As the join operation  of the following  table is repeated  as many times as the
+number  of rows that meet the conditions  of the preceding  table, it is recommended  to select a table with fewer
+result rows as the preceding  table in consideration  of performance.  It is advantageous  to NL Join to have a narrow
+processing  range because  data are accessed  randomly.
+@ Sort Merge  Join
+Sort Merge Join performs  a join operation  by sorting  data based on the join column. Sort Merge Join is advantageous
+when processing  a wide range of data as it mainly reads data using the scan method,  unlike NL Join. However,
+M2 Database  109

@@ -1,0 +1,36 @@
+ESSENCE
+Snowflake  schema+ Amodeling  technique  for completely  normalizing  the dimension  table of the star schema.
++ Data duplication  is rare, and few storage  spaces  are used owing to the normalization  of the
+dimensional  table, but there is some concern  about performance  degradation  due to the
+greater  number  of  joins compared  to the star schema.
+Store 1 Period
+Region # Period #
+Region name M a 1 Sales y | Year
+Store MI Period # Month
+store.  name Store # Day
+Region # Products  # M
+M Employee #
+Sales unit price Product
+i Products  #Sales staff 1 Sales quantity ducer
+Employee  # Total sales Color 1 Product family
+M ive Employee  name Product ily # la Product family
+Gender Product  family name
+03 Concept  of ETL (Extraction,  Transformation,  Loading)
+ETL refers to the entire process by which data are extracted  from the source system and stored in the data
+warehouse  after cleansing  and conversion.  It plays the role of maintaining  data consistency  and integrity  among  the
+components  of the data warehouse,  and is also called ETT (Extraction  Transformation,  Transportation).
+<Table 63> Work of each phase in ETL
+Phase Main task
+Extraction+ The phase in which data are extracted  from the original  file or operating  system  database  and
+stored in the data warehouse.
++ In the past, data were extracted  on a daily or monthly  basis, but in some recent cases data
+were extracted  in real time using database  logs according  to the business  requirements.
+Transformation+ A phase in which extracted  data are cleaned  and converted  into a data format  suitable  for the
+data warehouse.
++ In the event of data quality problems,  data are cleansed  according  to the reference  data or
+business  rules.
++ The original data format is converted  into a data format  suitable  for the data warehouse.
+Loading
+140 TOPCIT  ESSENCE+ Aphase  in which converted  data are sent to the warehouse  for storage  and the necessary
+indexes  are generated.
++ Full and partial  update  techniques  are available.

@@ -1,0 +1,36 @@
+Information  security )
+* Cancel download/installation  when an app is installed  without  consent.
++ Delete illegal apps, using the app management  menu, if installed.
+* Check the mobile phone billing details if smishing  damage  is expected  (communication  service company  or
+payment  agency).
+E) Spear phishing
+@® Concept  of spear phishing
+An attacker  sets key personnel  working  in the company  (those who access confidential  data, critical systems,
+etc.) as an attack target, rather than the system or network  of an organization  with well-established
+information  security  systems.  The attacker  sends spear phishing  emails, based on the collected  information  on
+the target, in the attack preparation  stage. After acquiring  the device authority  of key personnel,  using social
+engineering  techniques,  the attacker  hijacks account  information  (ID, passwords,  etc.) by monitoring  the device
+for several months  or by control major systems  and networks  using remote control tools.
+@ Countermeasures  against  spear phishing
+Awareness  and response  training  on spear phishing  should be implemented  for key personnel,  such as
+security  managers,  web server operators,  end users, etc. In particular,  web server operators  should prepare
+countermeasures,  such as the detection  of malicious  code distribution,  operation  of the web firewall, and web
+server security  measures.  For application  programs  and operating  systems,  security  vulnerabilities  should be
+continuously  monitored,  and security  patches  should be periodically  applied.
+F) Cryptojacking
+@® Concept  of cryptojacking
+Cryptojacking  is a compound  word of cryptocurrency  and hijacking.  Hackers  mine virtual money using the users’
+PC. An attacker  infects a user's PC with malware  to mine cryptocurrency,  by consuming  the infected PC, or
+hacks and infiltrates  into a website  and inserts  a malicious  script (JavaScript)  to mine cryptocurrency.
+@ Countermeasures  against  cryptojacking
++ Keep the anti-virus  program  up-to-date  and check for malware  infection  on a regular  basis.
++ Use browser  extensions, such as AntiMiner,  NoCoin,  MinerBlock,  etc.
++ Block malicious  sites, such as coinhive.com,  using an IP firewall or writing detection  rule script in security
+equipment  (IDS/IPS).
+G) Ransomware
+@® Concept  of ransomware
+Ransomware  is a compound  of ransom and software.  Ransomware  disables  the system or encrypts  data
+to demand money, by taking said system or data hostage.  Ransomware  became popular since the first
+ransomware  AIDS in 1989. Ransomware  became  a serious  social issue after the distribution  of the Korean
+version of CryptoLocker  in 2015. If the attacker's  demand  is not accepted  within the specified  period, ransom
+M4 Understanding  Information  Security  53

@@ -1,0 +1,38 @@
+Software  Development )
+01 Object-Oriented  Analysis  and the Modeling  Concept
+Object orientation  takes a given problem area as a set of objects  that are present in the real world and
+represents  the interaction  between  those objects.  This can be understood  as a virtualization  process  that
+moves the problem  area to the computer  world in the same way as viewing  the real world. It has the advantage
+of increasing  the reusability  of an object and deepening  the understanding  of the participants.  The object-
+oriented  analysis  technique  identifies  an object required  by software  by applying  three viewpoints  (information,
+dynamic,  and functional  viewpoints),  and finding  the properties  and behavior  of the object. The object-oriented
+development  method has the advantage  of applying  the same methodology  and expression  technique  to the
+entire software  development  process,  ranging  from analysis  to design and programming.
+@® What is modeling?
+Modeling  is the process of simply diagraming  the performance  or operation  process  of the target system in
+order to analyze  it, or expressing  the characteristics  of the target system  mathematically.  We have to express
+the real world to understand  it, and modeling  enables  us to express  the real world.
+We should be able to  provide software  views from various perspectives  and understand  the requirements  of
+software.  Modeling  results become  the key part of the requirements  specification  and provide  the information
+needed to carry  out the next phase of the project. Modeling  results are used as a tool for dialogue  between
+users and developers,  and are of great help in identifying  the requirements  needed  when starting  a project  and
+in understanding  the system outline and frame that are needed in the development  stage (including  design,
+implementation,  and testing).
+@ Three viewpoints  of modeling
+The use of software  varies depending  on the view. The view of software  can be expressed  in the following
+three perspectives.
+<Table 18> Three viewpoints  of modeling
+View Contents
+The functional  model describes  a system from the viewpoint  of the functions
+Functional  viewpoint performed  by software.  The functional  model is a viewpoint  about the output  of the
+given input, and describes  the related  operations  and constraints.
+The dynamic  viewpoint  describes  the state of the system  and the causes  of changesOe  eo (event, time, etc.) in its state by focusing  on the operation  and control of software.
+The information  viewpoint  is used to understand  the static information  structure
+IIOHRa  LIOR Venecint of software.  It finds an information  object used by the system  and clarifies  the
+oe characteristics  of that object as well as the relations and associations  between
+objects.
+@ Use case
+If the use case technique,  which is well-known  in object-oriented  analysis,  is used, communication  between
+customers  and system developers  can be smooth and customer  requirements  can be effectively  understood.
+Use cases can provide many benefits  to the various stakeholders  of a given project, including  the customer,
+M1 Software  development  69

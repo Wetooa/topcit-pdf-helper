@@ -1,0 +1,35 @@
+Information  security )
+B) Access  control  policy
+The system security  policy is the high-level  instructions  for designing  and managingthe  access control system.
+In general, the policy is the expression  of the basic principles,  desired by the organization,  to protect  target
+system  resources.  That is, the access  control principle  defines  the subject  (who), time (when), location  (where),
+object (what), and behavior  (how) that can be accepted  or refused. The access  control principle,  which limits
+the scope of access,  can be divided into the following  two basic policies:
+@® Minimum  privilege  policy
+This policy is called the “need-to-know’  policy. System  subjects  should use the minimum  amount  of information
+that is needed for their activities.  This policy has the effect of applying  strong control over object access.
+However,  sometimes  this policy may impose  excessive  useless  limitations  on the legitimate  subject.
+@ Maximum  privilege  policy
+This policy is based on the principle  of maximum  availability  that is applied to increase  the benefits  of data
+sharing.  That is, this policy can be effectively  applied to the case when no special protection  is needed,  due to
+the high reliability  of data exchange  with the user.
+C) Types of access  control policies
+This policy is designed  to implement  an access control system that only allows authorized  users to access
+information  resources.
+Representative  access control policies include mandatory  access control, a discretionary  access control policy,
+and a role-based  access  control policy.
+@ Mandatory  Access  Control  (MAC)
+A security  level is given to the subject and a security label is given to the object. Then, it is determined
+whether  the subject in question  can access the object, according  to the predetermined  rule. This policy is
+mainly used for military purposes.  A strong security  system can be maintained,  but its management  efficiency
+is deteriorated,
+Security  Level Security  Label
+Top Secret Top Secret
+Secret Secret
+Confidential Confidential
+SBU
+Unclassified
+[Figure 23] Mandatory  access  control
+@ Discretionary  Access  Control  (DAC)
+Access to an object is controlled  by the identity  of the subject’s  account  or the account’s  belonging  group.
+M4 Understanding  Information  Security  45

@@ -1,0 +1,40 @@
+ESSENCE
+- SaaS(Software  as a Service)
+- PaaS(Platform  as a Service)
+- laaS(Infrastructure  as a Service)
+Saa& is a service that lets people use applications  through  the Internet  and web browser.  Saas is one of the top
+tier services  that cloud service companies  can provide and leading services  include Google’s  Gmail and MS Office
+365. PaaS is a service that lets companies  provide as a service, an environment  for developing  and running  web
+applications.  In order to provide this kind of service, the technologies  for app development  must be modularized  and
+standardized.  Leading  Paa include Salesforce.com's  Force.com and Google's  Google App Engine. laaS is principally
+an enterprise  service that provides  a virtualized  environment  of resources  like servers, storages,  and networks  to
+companies  who are permitted  to use the resources  whenever  needed. laaS service requires the ability to build and
+operate  servers for large data centers,  capital, and a very good electrical  grid environment.  Examples  of laaS include
+Amazon  EC2 and S3, as well as Gabia’s  cloud hosting  service.
+Cloud service  can be divided into one of the following  categories,  depending  on how it is configured.
+- Public Cloud
+- Private  Cloud
+- Hybrid Cloud
+A public cloud is a service shared by multiple  users over the Internet,  and a cloud service provider  provides the
+services  and has management  responsibilities.  A private cloud is an IT environment  that is exclusively  deployed  on
+a company’s  or an organization’s  intranet. It is controlled  by the company  or organization.  Hybrid cloud is a form of
+cloud service that has scalability  and combines  the best of public cloud services  and private cloud services,  It can be
+used in parallel  for special  purpose  applications.
+With cloud computing,  users can directly  purchase,  design and install without  the need for intervention  by an IT
+manager.  By sharing  IT resources  that could be used by everybody,  cloud computing  improves  efficiency  and the cost
+associated  with owning IT resources  could be avoided. Due to these advantages,  cloud computing  can be merged
+with different  types of services  and evolve into new business  models.
+© Virtualization
+Virtualization  is the abstraction  of computer  resources  on a computer  and it could be defined as "a technique  for
+hiding  the characteristics  of physical  computer  resources  from the method  other systems,  applications,  and end users
+use when they interact  with the resources” It is a technology  that can create multiple logical resources  from a single
+physical  resource  or create a single logical resource  from multiple  physical  resources.
++ Application  virtualization
++ Through  the virtualization  of applications  installed in individual  PCs, users gain immediate  access  to needed
+applications  without  having  to install them on their PCs every time.
++ Desktop  virtualization
+Server-side  desktop  virtualization  allows users to virtually own another  heterogeneous  desktop,  such as Windows
+Vista and Windows  7.
+Client-side  desktop  virtualization  enables  heterogeneous  virtual desktops  in PCs.
+Desktop  virtualization  allows the separation  of personal  and corporate  workspaces.
+148 TOPCIT  ESSENCE

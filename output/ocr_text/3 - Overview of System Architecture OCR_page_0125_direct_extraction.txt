@@ -1,0 +1,18 @@
+ESSENCE
++ A= Availability
++ MTBF: Mean Time between  System  Failures
++ MTTR: Time to RestoreA=__MIBF
+[Figure  89] Availability  Calculation  Formula
+MTBF
+Failure | Normal Equipment  Actuation  and Operation I Next Failure
+MTTR MTTF
+[Figure  90] Availability  Indicators
+B) HA configuration  type
+@ Hot standby  (Active-standby)
+Hot standby  is the simplest  structure  of HA clustering  implementation.  It consists  of an active server and a standby
+server  that are normally  in a standby  state. The standby  server is powered  on, and the operating  system is running.
+In some cases, a standby  server is used as a development  system.  If the active server  fails, due to hardware,  network,
+or process  problem,  the failure is detected  by the heartbeat  network,  and all HA service  operations  are automatically
+switched  to the standby  server, through  a fail-over  operation.
+[Figure  91] Hot Standby  Configuration
+124 TOPCIT  ESSENCE

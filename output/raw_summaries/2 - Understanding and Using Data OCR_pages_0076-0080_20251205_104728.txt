@@ -1,0 +1,215 @@
+LEARNING GUIDE: Pages 76-80
+Generated: 2025-12-05 10:47:28
+PDF: 2 - Understanding and Using Data OCR
+
+================================================================================
+LEARNING GUIDE
+================================================================================
+
+Here is a simplified, easy-to-read learning guide for Database Normalization (4NF, 5NF) and Denormalization, designed for study.
+
+---
+
+## Database Learning Guide: Normalization (4NF, 5NF) & Denormalization
+
+### 1. Fourth Normal Form (4NF)
+
+**Purpose:** To eliminate **multi-valued dependencies (MVDs)** and prevent associated anomalies.
+
+**Anomalies Prevented (even without 4NF):**
+*   **Input Error:** Entering redundant data for independent multi-valued attributes (e.g., re-entering a technology code for an employee supporting multiple projects).
+*   **Modification Error:** Changing data in multiple places when an independent multi-valued attribute is updated (e.g., changing a project code means updating all related technology entries for that employee).
+*   **Deletion Error:** Deleting one piece of information unintentionally removes other, unrelated information (e.g., deleting an employee's technology might also delete their project assignment history).
+
+**How to Perform 4NF:**
+1.  Identify tables where independent multi-valued attributes exist within the same table.
+2.  Decompose (split) the original table into new tables where each multi-valued dependency is represented in its own relation.
+3.  **Example Scenario:**
+    *   **Original problem:** An `Employee` has multiple `Holding Skills` and supports multiple `Projects`. `Holding Skills` and `Support Project` are independent multi-valued facts about an employee.
+    *   **Relationships:**
+        *   Employee supports a project (Employee ↔ Project)
+        *   Employee has a certain technology (Employee ↔ Technology)
+        *   **Crucially:** The technology used in a project is *not* directly tied to this specific employee's skill set or project support; these are independent facts about the employee.
+    *   **4NF Solution:**
+        *   Create an `Employee` table (Employee ID, Employee Name, Address).
+        *   Create an `Employee_Skills` table (Employee ID (FK), Technology Code (FK)).
+        *   Create an `Employee_Projects` table (Employee ID (FK), Project Code (FK)).
+        *   Create `Skill` table (Skill Code, Skill Name) and `Project` table (Project Code, Project Name) as needed.
+
+### 2. Fifth Normal Form (5NF) / Project-Join Normal Form (PJNF)
+
+**Concept:** A relation `R` is in 5NF if all **join dependencies** that exist in `R` can be satisfied by the candidate key(s) of `R`. This means `R` cannot be decomposed into smaller tables without losing information, where rejoining those smaller tables would yield the exact original table (no "spurious tuples").
+
+**Characteristics:**
+*   Normalization occurs based on the **primary key**.
+*   There are **join relationships between independent attributes** (e.g., A-B, A-C, B-C).
+*   The table is created by being **separated into associative relations**.
+*   It often applies when three or more attributes (A, B, C) have semantic relationships (A-B, A-C, B-C) but **no direct three-way relationship (A-B-C)** exists or is implied.
+
+**Anomalies Prevented (even without 5NF):**
+*   **Input Error:** Cannot input a new A-B association without considering/knowing A-C and B-C associations.
+*   **Modification Error:** Modifying an A-B association requires changing multiple records due to A-C and B-C associations.
+*   **Deletion Error:** Deleting an A-B association unintentionally deletes A-C and B-C association information.
+
+**How to Perform 5NF:**
+1.  Identify a table with three or more primary key attributes where there are direct binary (two-way) relationships between them, but no direct semantic multi-way relationship for all attributes together.
+2.  Decompose the table into separate tables, each representing one of the binary or ternary relationships that truly exists.
+3.  **Example Scenario:**
+    *   **Attributes:** Supplier (S), Part (P), Project (PN).
+    *   **Relationships:**
+        *   A supplier supplies a certain part (S ↔ P).
+        *   A supplier has supported a certain project (S ↔ PN).
+        *   A certain part has been used for a certain project (P ↔ PN).
+        *   **Crucially:** There is **no direct association** about *how* a specific supplier used a specific part for a specific project (S-P-PN). The three relationships are independent.
+    *   **Original problem:** Storing all S, P, PN in a single table without this direct S-P-PN relationship leads to redundancy and anomalies.
+    *   **5NF Solution:**
+        *   Decompose the single table into three separate tables, each representing one of the existing two-way relationships:
+            *   `Supplier_Part` table (Supplier ID (PK), Part ID (PK))
+            *   `Supplier_Project` table (Supplier ID (PK), Project ID (PK))
+            *   `Part_Project` table (Part ID (PK), Project ID (PK))
+        *   This ensures that no information is lost when rejoining, and anomalies are prevented.
+
+### 3. Denormalization
+
+**Definition:** The process of intentionally introducing redundancy or combining normalized data models (entities, attributes, relationships) to **improve system performance** and **simplify development/operations**.
+
+**Considerations:**
+*   Always prioritize **data consistency and integrity** over performance. Denormalization should be a calculated choice after normalization.
+
+**Procedure:**
+
+1.  **Investigate Denormalization Targets (When to consider it):**
+    *   **Frequent Range Processing:** Many processes access frequently used tables, and always search within a specific range.
+    *   **Wide Range Processing:** Large tables are frequently accessed across a wide data range, and performance is poor without reducing the processing range.
+    *   **Statistical Processes:** Statistical information is often required, leading to the creation of a separate statistics table.
+    *   **Too Many Table Joins:** Querying becomes technically difficult or slow due to an excessive number of joins.
+
+2.  **Consider Inducing Other Methods (Alternatives to Denormalization):**
+    *   **View Creation:** Use views to simplify complex queries involving many joins without changing the underlying data structure.
+    *   **Clustering Application:** Reorganize physical data storage based on a specific clustering key to improve query performance (suitable for query-oriented tables).
+    *   **Index Adjustment:** Optimize indexes to ensure sufficient performance without denormalization.
+    *   **Application Development:** Improve performance by changing the logic applied within the application itself.
+
+3.  **Apply Denormalization (If other methods are insufficient):**
+    *   **Table Denormalization:** Merging or splitting tables.
+    *   **Attribute Denormalization:** Adding redundant attributes.
+    *   **Relationship Denormalization:** Modifying relationships to reduce joins.
+
+**Actual Denormalization Techniques:**
+
+1.  **Table Denormalization:**
+    *   **Merging Tables:**
+        *   **Purpose:** Improve performance when there are many join operations.
+        *   **When to merge:**
+            *   1:1 relationship tables.
+            *   1:M relationship tables (if the "many" side is frequently accessed with the "one" side).
+            *   Super/sub-type relationship tables.
+    *   **Splitting Tables:**
+        *   **Purpose:** Reduce lockup and contention, and improve performance when only specific attributes are accessed frequently.
+        *   **Caution:** Performance might degrade for full table searches due to needing union operations.
+        *   **Types of Splitting:**
+            *   **Vertical Split:** Splitting columns when only specific attributes are frequently accessed together.
+                *   *Example:* A `Payment` table with many columns could be split into `Payment_Basic_Info` (frequently accessed) and `Payment_Audit_Info` (less frequently accessed).
+            *   **Horizontal Split:** Splitting rows when the schema is the same, but data values are used differently for different rows (e.g., querying history by year).
+                *   *Example:* A `Payment History` table could be split into `Payment_History_January`, `Payment_History_February`, etc., to allow faster access to monthly data.
+
+---
+
+================================================================================
+ORIGINAL TEXT (First 5000 chars)
+================================================================================
+
+--- Page 76 ---
+Database )
++ Input error, modification  error, and deletion  error can occur even without  performing  the fourth normalization.
+<Table 28> Classification  of anomalies
+Type Anomaly
+When an employee  is assigned  to a new project,  the technical  code should be entered  regardless
+Input error of the project.  At this time, if the employee  has supported  several projects,  the technology  code
+should be entered  as many times as the number.
+If the project  code experienced  by an employee  needs to be changed,  it should be changed  as
+many times as the number  of holding  technologies.
+When the technology  held by an employee  is deleted,  the project  to which the employee  was
+assigned  is also deleted,  making  the project  history unknown.  Also, when deleting  the holding
+technology,  the modification  should be made as many times as the number  of technologies  used
+for the project.Modification  error
+Delete  error
+D) Performing  the fourth normalization
+The fourth normalization  can be performed  as follows.
+Employee ee Project
+Employee  number Employee  ID (Fk) Project  code
+Employee  name +—_<<k  Project code (FK) ~>——+  Project name
+Address an
+Holding  skills Holding  skills Support  project
+Employee  number Technology  code Employee  number Project  code
+Employee  ID (Fk)
+Skill code (FK) |  ————>> 10 MODELING 10 SI
+10 DBA 10 00
+10) 20 DBA 10 PA
+20 XML PI
+Skill *0 ”
+Skill code
+Skill name |
+[Figure  34] Performing  the fourth normalization
+<Table  29> Association  rules
+Rule Association  rule Table
+1 An employee  supports  a project. (A and B are related.) Created
+2 An employee  has a certain  technology.  (A and  C are related.) Created
+3 The technology  used in the project  is not set. (B and C are not related.) Not created
+M2 Database  75
+
+
+--- Page 77 ---
+ESSENCE
+05 Database  Design to Which Normalization  is Applied - (Sth
+Normalization)
+A) Concept  of the fifth normalization
++ If all join dependencies  that exist in relation R can be satisfied  by the candidate  key of relation R, relation  R is called
+the fifth normal  form.
+B) Characteristics  of the fifth normalization
+@® Normalization  occurs in the primary  key.
+@ There should be a join relationship  between  independent  attributes.
+© Created  after being separated  into associative  relations.
+@ When there are three attributes,  A, B, and C, there is a semantic  relationship  as follows. However,  an anomaly  occurs
+when creating  a table using these attributes.
++ Relationship  between  A and B: A and  B are related.
++ Relationship  between  A and C: A and C are related.
++ Relationship  between  C and B: C and B are related.
++ Relationship  between  A, B, and C: There is no relationship  in which A, B, and C are all related.
+C) Performing  the fifth normalization
+@ When there is an attribute  that has the primary  of SN, CM, and PN, it can be created  as a table, as follows.
++ SN: ID of the supplier  (PK)
++ CN: ID of the part (PK)
++ PN: ID of the project  (PK)
+@ The association  preconditions  of each identifier  are as follows.
++ A supplier  has an association  in which a certain part is supplied.  (A and  B are related.)
++ There is an association  in which the supplier  has supported  a certain project.  (A and C are related.)
++ There is an association  in which a certain part has been used for a certain project.  (B and C are related.)
++ However,  there is no association  about how a certain supplier  has used a certain part for a certain project.  (A, B, and
+C are not related.)
++ Despite  the above constraints,  it is designed  as a single table, as follows.
++ If it is designed  as a single table despite  these preconditions,  input error, modification  error, and deletion  error can
+occur even without  performing  the fifth normalization.
+76 TOPCIT  ESSENCE
+
+
+--- Page 78 ---
+Database )
+<Table 30> Classification  of anomalies
+Type Anomaly
+If a supplier  wants to input new association  information  for a part, the supplier  should consider  the association
+between  the supplier  and project  and the association  between  the part and project.
+Modification  | To modify  the association  information  for a supplier  and a part, multiple  records  should be modified  because
+error other associations  should also be considered.
+If the association  information  for a supplier  and a part is deleted,  the association  information  for a supplier  and
+a project, as well as the association  information  for a part and a project,  are also deleted.
+D) Performing  the fifth normalization
++ As there is a precondition  of the four same semantic  associations,  it can be analyzed  so as to create the following
+table.Input error
+Delete error
+<Table 31> Association  rule table
+Rule Association  rule Table
+1 A supplier  handles  a certain part. (A and  B are related.) Created
+2 It can be known whether  a part has been used for a certain  project.  (A and C are Created
+related.)
+8 A supplier  supports  a certain project.  (B and C a...

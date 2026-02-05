@@ -1,0 +1,190 @@
+LEARNING GUIDE: Pages 184-188
+Generated: 2025-12-05 14:10:52
+PDF: 5 - Understanding the IT Business and Ethics OCR
+
+================================================================================
+LEARNING GUIDE
+================================================================================
+
+Here is a simplified, easy-to-read learning guide based on the provided text:
+
+---
+
+## Learning Guide: IT Business & Ethics - Understanding Personal Information
+
+This guide extracts essential information on professional ethics and the critical aspects of personal information in the IT business.
+
+---
+
+### Section 1: IT Professional Ethics Codes
+
+Ethical codes guide professionals in the IT field to maintain integrity, responsibility, and public trust.
+
+#### A. IEEE-CS/ACM Software Engineering Code of Ethics (Continued)
+
+*   **Management:** Promote and practice ethical software development and maintenance.
+*   **Profession:** Advance the integrity and reputation of the profession, aligning with public interest.
+*   **Colleagues:** Be fair and supportive of fellow professionals.
+*   **Self:** Commit to lifelong learning and ethical practice within the profession.
+
+#### B. ISACA (Information Systems Audit and Control Association) Code of Professional Ethics
+
+Professionals should:
+
+1.  **Support Standards:** Encourage compliance with standards for IT governance (audit, control, security, risk management).
+2.  **Professional Conduct:** Perform duties with objectivity, diligence, and professional care.
+3.  **Stakeholder Interest:** Act lawfully in stakeholders' interest, upholding high standards of conduct.
+4.  **Confidentiality:** Maintain privacy and confidentiality of information, unless legally required to disclose. Do not use for personal gain.
+5.  **Competency:** Stay competent in their field; only undertake tasks they can complete with necessary skills.
+6.  **Transparency:** Inform parties of work results, disclosing significant facts that could distort reporting if withheld.
+7.  **Education:** Support education for stakeholders to enhance their understanding of IT governance and management.
+
+#### C. The Korean Institute of Electrical Engineers (KIEE) Code of Professional Ethics
+
+KIEE members value electrical engineering's impact on life, harmony, and act with a high sense of ethics. They pledge:
+
+1.  **Social Responsibility:** Contribute to social development and make decisions prioritizing public safety and well-being.
+2.  **Principles of Faith:** Keep business/occupational information confidential and protect organizational trust, provided public interest is not harmed.
+3.  **Conflicts of Interest:** Disclose and objectively manage all interests that may affect judgment in business conflicts.
+4.  **Material Honesty:** Base conclusions on engineering data honestly, avoiding false data or plagiarism.
+5.  **Compliance:** Strictly follow laws, regulations, contracts, and standards; refuse all bribery.
+6.  **Intellectual Property Rights:** Respect others' IP (copyrights, patents) and fairly disclose achievements.
+7.  **Fairness (Self):** Accept fair technical assessments and correct errors promptly.
+8.  **Fairness (Others):** Reject prejudice and discrimination based on gender, race, age, background, or disability.
+9.  **Specialized Fields:** Develop professional knowledge to contribute to their specialty.
+10. **Eco-friendly Technologies:** Recognize and promote eco-friendly, sustainable technologies to preserve Earth's capacity.
+
+---
+
+### Section 2: Personal Information: Key Concepts and Importance
+
+**Recent Trends and Major Issues:**
+
+*   **Proliferation:** Various personal data (network, biometric, location) is widespread across industries.
+*   **Asset Shift:** Personal information is now a valuable asset for companies and countries.
+*   **High Risk:** Leakage is common due to unauthorized use, careless management, internal breaches, and hacking.
+*   **Severe Consequences:** Leaks damage corporate image, cause financial losses, and can even harm national branding.
+
+**Learning Objectives:**
+
+*   Understand the concept and types of personal information.
+*   Understand policies related to personal information.
+
+**Key Terms:**
+
+*   **Personal Information:** Any data that identifies a living individual.
+*   **De-identified Personal Information:** Data processed so that a specific individual cannot be identified without additional information.
+*   **GDPR (General Data Protection Regulation):** A key data protection law (EU-centric, but with global impact).
+
+---
+
+### Section 3: Real-World Impact: Personal Information Leaks
+
+**Case Study Example: Accommodation App Leak**
+
+*   **Incident:** A hacker infiltrated an accommodation app, leaking personal information from 8 companies.
+*   **Data Leaked:** Website IDs, names, dates of birth, emails, phone numbers, addresses, passport numbers, accommodation reservations.
+*   **Regulatory Action:** The Korea Communications Commission imposed significant penalties (fines, correction orders, disciplinary actions) for "severe violations" of personal information protection measures (e.g., access control, encryption) under the "Network Act."
+*   **Takeaway:** Data breaches are serious, frequent, and result in substantial penalties and reputational damage.
+
+**Past Leak Examples (Key Themes):**
+
+*   Numerous past incidents in domestic companies show recurring violations involving unauthorized access, hacking, and improper data provision to third parties.
+*   These incidents consistently lead to large numbers of victims and severe administrative sanctions (large fines, corrective orders).
+
+---
+
+### Section 4: Understanding Personal Information in Detail
+
+#### A. Concept of Personal Information
+
+**Definition (from Personal Information Protection Act, Article 2):**
+
+"Personal information" means any information relating to a **living individual** that:
+
+*   **Directly identifies** them (e.g., full name, resident registration number, image).
+*   **Can be easily combined with other information** to identify a particular individual, even if it doesn't identify them by itself.
+
+#### B. Types of Personal Information (Examples)
+
+<br>
+
+| Type                | Examples of Personal Information                                                                                                                                                                                               |
+| :------------------ | :----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| **Identification**  | Name, resident registration number, address, hometown, phone number, date/place of birth, email, family relations.                                                                                                            |
+| **Physical**        | **Biometrics:** Face, fingerprint, iris, voice, genetic info, height, weight. <br> **Medical/Health:** Health status, medical records, physical disability, medical history.                                                       |
+| **Mental**          | **Preferences:** Rental/purchase records, magazine subscriptions, website search history. <br> **Inner Secrets:** Thoughts, creeds, religion, values, political affiliations.                                                      |
+| **Property**        | **Financial:** Income, credit card number, bank account number, movable/immovable property holdings, savings details. <br> **Credit:** Credit rating, loan/collateral records, credit card records.                               |
+| **Social**          | **Educational:** Education, grades, attendance, certificates, reward/punishment records, school records. <br> **Legal:** Criminal records, trial records, penalty payment details. <br> **Labor:** Workplace, employer, work experience, job evaluation. <br> **Military:** Military service status, number, rank, unit. |
+
+---
+
+================================================================================
+ORIGINAL TEXT (First 5000 chars)
+================================================================================
+
+--- Page 184 ---
+Understanding  the IT Business  and Ethics )
+5.Management:  Software  engineering  managers  and leaders shall subscribe  to and promote  an ethical approach  to
+the management  of software  development  and maintenance.
+6. Profession:  Software  engineers  shall advance  the integrity  and reputation  of the profession  consistent  with the
+public interest.
+7. Colleagues:  Software  engineers  shall be fair to and supportive  of their colleagues.
+8.Self: Software  engineers  shall participate  in lifelong learning  regarding  the practice  of their profession  and shall
+promote  an ethical approach  to the practice  of the profession.
+@ ISACA\(Information  Systems  Audit and Control  Association)  Code of Professional  Ethics
+ISACA provides guidance  on professional  and personal  conduct  in relation to the information  systems  audit job,
+through  its Code of Professional  Ethics.”
+1. Support  the implementation  of, and encourage  compliance  with, appropriate  standards  and procedures  for the
+effective  governance  and management  of enterprise  information  systems  and technology,  including:  audit, control,
+security  and risk management.
+2. Perform  their duties with objectivity,  due diligence  and professional  care, in accordance  with professional  standards.
+3. Serve in the interest  of stakeholders  in a lawful manner,  while maintaining  high standards  of conduct  and character,
+and not discrediting  their profession  or the Association.
+4. Maintain  the privacy and confidentiality  of information  obtained  in the course of their activities  unless disclosure is
+required  by legal authority.  Such information  shall not be used for personal  benefit  or released  to inappropriate  parties.
+5. Maintain  competency  in their respective  fields and agree to undertake  only those activities  they can reasonably
+expect  to complete  with the necessary  skills, knowledge  and competence.
+6. Inform appropriate  parties  of the results of work performed  including  the disclosure  of all significant  facts known to
+them that, if not disclosed,  may distort  the reporting  of the results.
+7. Support  the professional  education  of stakeholders  in enhancing  their understanding  of the governance  and
+management  of enterprise  information  systems  and technology,  including:  audit, control, security  and risk
+management.
+© The Korean Institute  of Electrical  Engineers  (KIEE)'s Code of Professional  Ethics*°
+The Korean Institute  of Electrical  Engineers  is an institution  that promotes  and develops  academics  and technologies
+related to electrical  engineering,  and present  a code of ethics for professionals  in the electrical  engineering  technology
+field,
+{Full Text]
+Members  of the Korean Institute  of Electrical  Engineers  believe that electrical  engineering  technology  improves  the
+quality  of life and greatly  affects  the living environment  and value Korean  cultural traditions  that place importance  on
+a harmonious  life with our neighbors  and nature.  As a professional,  with a high sense of ethics, we act honestly  and fairly in
+order to uphold authority,  honor and dignity,  and treat the public with good faith. To this end, we pledge  as follows.
+29 ISACA, Code of Professional Ethics, https:  /www.isaca.org/Certification/Code-of-Professional-Ethics/Pages/default.aspx
+30 http:  /Awwwkiee.orkr/board/?_0000_method=view&ncode=a004&num=84&page=1
+M5 Understanding  the IT Business  and Ethics 183
+
+
+--- Page 185 ---
+ESSENCE
+1, Social Responsibility
+We contribute  to social development  and world peace with our professional  knowledge,  make decisions  in accordance
+with public safety and well-being,  and take social responsibility  for these decisions.
+2. Principles  of Faith
+As long as it does not harm the public interest,  we will keep the confidentiality  of information  obtained  in business  or
+occupation  and protect  the trust of our organization  or employer.
+3. Responding  to Conflicts  of Interest
+When a conflict of interest  arises in conducting  business,  all interests  that may affect business  judgment  are
+disclosed  and dealt with objectively.
+4. Material  Honesty
+We honestly  and faithfully  draw conclusions  or make arguments  based on engineering  data, and do not use false data
+or plagiarize.
+5. Compliance  with laws
+We strictly  abide by laws, regulations,  contracts,  and standards  related  to business,  and refuse any form of bribery.
+6. Respect  for intellectual  property  rights
+We respect  the intellectual  property  rights of others, such as copyrights  and patents,  and disclose  the achievements
+of others  fairly.
+7. Principle  of Fairness
+We accept  a fair assessment  of one's technical  performance  and corrects  any errors as soon as they are discovered.  We
+fairly evaluate  the technical  performance  of others.
+8. The principle  of fairness
+We reject prejudice  and discrimination  against  gender, race, age, geography  and...

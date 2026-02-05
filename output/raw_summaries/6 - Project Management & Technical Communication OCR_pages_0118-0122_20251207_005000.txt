@@ -1,0 +1,235 @@
+LEARNING GUIDE: Pages 118-122
+Generated: 2025-12-07 00:50:00
+PDF: 6 - Project Management & Technical Communication OCR
+
+================================================================================
+LEARNING GUIDE
+================================================================================
+
+Here is a simplified, easy-to-read learning guide based on the provided text.
+
+---
+
+## Project Quality Management Learning Guide
+
+Project Quality Management ensures that project results meet specified quality standards. It involves three main stages: Quality Planning, Quality Assurance, and Quality Control.
+
+### 1. The Quality Management Process
+
+The overall quality management process is divided into three key stages:
+
+*   **Quality Planning:** Establishes the overall process and plan for quality management.
+*   **Quality Assurance:** Manages quality throughout the project's business or manufacturing process.
+*   **Quality Control:** Checks the quality *before* the final product or service is delivered to the customer.
+
+### 2. Quality Planning
+
+**A) Concept of Quality Planning**
+*   **Definition:** Documenting a plan that identifies activities and methods the project team will use to achieve specific quality targets.
+*   **Timing:** Should be prepared *early* in the project, not just inspected afterwards.
+
+**B) Cost of Quality (CoQ)**
+*   **Concept:** Calculates all costs incurred by the project team to achieve a predetermined quality target.
+*   **Purpose:** To reduce **Failure Costs** by increasing **Prevention Costs** and **Appraisal Costs**.
+
+*   **Types of Cost of Quality:**
+    *   **Cost of Conformance (Doing it Right):** Costs to achieve quality.
+        *   **Prevention Costs:** Costs to prevent defects.
+            *   *Examples:* Education, training, documentation, equipment improvement, schedule improvements.
+        *   **Appraisal Costs:** Costs to check/verify product quality.
+            *   *Examples:* Tests, inspections, destructive testing costs, verification.
+    *   **Cost of Nonconformance (Doing it Wrong):** Costs due to failing quality.
+        *   **Internal Failure Costs:** Costs of correcting defects *before* product delivery.
+            *   *Examples:* Rework, wasted materials.
+        *   **External Failure Costs:** Costs of correcting defects found *after* delivery to customers.
+            *   *Examples:* Liability, defect repair, business loss.
+
+**C) Quality Plan Document**
+*   **Purpose:** A project management plan prepared at the beginning of the project to ensure the quality of the system while meeting schedule and cost constraints.
+*   **Sample Components:**
+    *   Overview Objective
+    *   Quality Requirement Specification
+    *   Role and Responsibility
+    *   Quality Objective Setting
+    *   Measurement and Evaluation
+    *   Verification and Confirmation Activity
+    *   Quality Assurance Activity
+    *   Quality Evaluation
+    *   Corrective Action Activity
+    *   Reporting, Attachments
+
+*   **Sample Quality Control Plan (Example Items):**
+    | Quality Feature    | Quality Requirement                      | Target  | Measurement Date          |
+    | :----------------- | :--------------------------------------- | :------ | :------------------------ |
+    | **Functionality**  | Accurate function reflection             | 100%    | Design stage completed    |
+    |                    | Accurate function implementation         | 0%      | Delivery test completed   |
+    | **Understandability** | Screens with user guidelines accurately described | 100%    | Delivery test completed   |
+    | **Credibility**    | System availability                      | 100%    | Integrated test completed |
+    | **Compliance**     | Web cross-browsing                       | 95%     | Unit test completed       |
+    |                    | Web accessibility                        | 95%     | Unit test completed       |
+    | **Others**         | Corrective action progress rate          | 100%    | Quality activity          |
+
+### 3. Quality Assurance
+
+**A) Concept of Quality Assurance**
+*   **Definition:** Techniques and activities that monitor quality requirements and the results of quality control to ensure that quality standards are being applied.
+
+**B) Comparison of Quality Control and Quality Assurance**
+
+| Feature      | Quality Control                               | Quality Assurance                               |
+| :----------- | :-------------------------------------------- | :---------------------------------------------- |
+| **Key Activity** | Inspection                                    | Quality Audits                                  |
+| **Target**   | Work result (product, process, performance)   | Overall quality management activities, project organization |
+| **Subject**  | Project team members                          | Professional review agency (internal/external) |
+| **Result**   | Product pass/failure, process adjustment      | Lessons learned, customer trust/authentication  |
+| **Commonality** | Quality improvement                           | Quality improvement                             |
+
+**C) Types of Quality Assurance Techniques**
+*   **Based on Timing of Activity:**
+    *   **Prevention:** Inspection performed to prevent errors in *intermediate* deliverables.
+    *   **Inspection:** Inspection for errors *before* delivery of project deliverables to the customer.
+*   **Based on Purpose:**
+    | Classification      | Technical Review                       | Software Inspection                 | Walkthrough                       |
+    | :------------------ | :------------------------------------- | :---------------------------------- | :-------------------------------- |
+    | **Purpose**         | Assess conformity to specifications/plans, ensure integrity of changes | Find defects, verify solutions      | Find defects, verify alternatives |
+    | **Participant**     | Developer                              | Developer                           | Developer                         |
+    | **Leadership**      | Senior Engineer                        | Moderator                           | Developer                         |
+    | **Data Volume**     | Big (depending on purpose)             | Relatively small                    | Relatively small                  |
+    | **Deliverable**     | Technology Review                      | Inspection Report & Defects List    | Review Report                     |
+
+**D) Project Quality Assurance Activities (Examples)**
+*   **Configuration Management:** Managing configuration items (e.g., program sources, deliverables) including identification, control, and audits. Establishing baselines.
+*   **Document Management:** Establishing procedures for document creation, storage, and distinguishing official client deliverables from internal work products.
+*   **Quality Record:** Documenting the establishment, execution, and results of the quality assurance plan (e.g., test results for unit, integrated, and system tests).
+*   **Joint Review:** Reviewing project progress at milestones, typically through weekly/monthly reports.
+*   **Verification and Validation:** Activities performed regularly at the end of each project stage (analysis, design, development, testing) and non-regularly for major events.
+*   **Corrective Action:** Implementing solutions and actions based on feedback from quality assurance results, addressing errors or improvements.
+*   **Risk Management:** Conducting activities to resolve realistic risks or restrictions that may hinder project activities.
+*   **Issue Management:** Analyzing and responding to issues such as changes in customer requirements or alternative development needs.
+
+### 4. Quality Control
+
+**A) Concept of Quality Control**
+*   **Definition:** Activities and procedures that record and monitor the results of quality activities to achieve quality targets.
+*   **Process:** Measures performance, schedule, and cost variances; analyzes quality nonconformity factors; and suggests corrective actions to verify that project results meet quality standards.
+
+**B) Quality Control Tools and Techniques**
+*   Quality control often uses statistical information extraction. The following are known as the **7 Basic Quality Tools (7QC tools)**, used to solve quality-related problems within the PDCA (Plan-Do-Check-Action) cycle:
+    1.  **Pareto Chart**
+    2.  **Cause and Effect Diagram** (also known as Fishbone Diagram or Ishikawa Diagram)
+    3.  **Control Chart**
+    4.  **Scatter Diagram**
+    5.  **Flowchart**
+    6.  **Check Sheet**
+    7.  **Histogram**
+
+---
+
+================================================================================
+ORIGINAL TEXT (First 5000 chars)
+================================================================================
+
+--- Page 118 ---
+Project Management  and Technical  Communication  )
+<Table 52> Three elements  of Project  Quality  Management
+Classification Concept Case
+Activities  to identify  activities  necessary  to achieve  the
+Quality Plan quality targets  given in the project  and to plan decisions Quality  Planning
+on how to perform  them
+Activities  to review  from the point of view of a third party
+whether  the user requirements  and the results performed  | Design review meeting  for
+by the project  team are consistent  (Review,  Inspection, wireframe
+Walk-through)
+Activities  to find and resolve  the cause when the project
+Quality  Control team's results do not meet the quality  targets  or conform  | Debugging  software  errors
+to the standardsQuality  Assurance
+O02 Quality  Management  Process
+Quality  Plan Quality  Assurance Quality  Control
++ Management Process + Product  Delivery
+Planning
+[Figure  40] Quality  Management  Process
+The quality management  process  can be largely divided into three stages: quality planning,  quality assurance,
+and quality  control. In other words, the quality planning  stage establishes  an overall process  and plan for quality
+management.  Quality  assurance  is the process  of managing  quality in the process  throughout  the business  or
+manufacturing  process.  Quality  control is the stage of checking  the quality before the final product  or service
+is delivered  to the customer.  Let's look at more details one by one below.
+A) Quality  plan
+@ Quality  Planning
+Quality planning  is the task of documenting  a plan that identifies  the activities  the project  team must perform
+to achieve a given quality target, and determines  how to perform it. The quality of the project should be
+planned  in advance  rather than inspected  afterwards, so a quality plan should be prepared  early in the project.
+@ Cost of Quality
+Cost of Quality is a concept  of calculating  the cost of all activities  of the project team to achieve a
+predetermined  quality target. The purpose  of quality cost management  is to reduce Failure cost of a project,
+and accordingly,  the cost (Prevention  cost) for activities  to prevent  defects and the cost (Appraisal  cost) for
+activities  to check/verify  the quality  of the product  relatively  get higher.
+M6 Project  Management  and Technical  Communication  117
+
+
+--- Page 119 ---
+ESSENCE
+<Table 53> Type of Cost of Quality
+Classification Concept Case
+Education,  training,
+Prevention  Costs Cost to prevent defects documentation,
+Cost of Conformanceequipment,  improvement
+schedule
+Appraisal  CostsverificationCost for product  quality  validation/ Test, inspection  and
+destruction  test cost
+Cost of Nonconformance
+® Quality  PlanInternal Failure Costsproduct  deliveryCost of correcting  defects  beforeRework
+Wasted  materials
+(Waste,  waste treatment)
+External  Failure Costs after delivery  products  andCost of correcting  defects  found
+services  to external  customersLiability,  defect  repair,
+business  loss
+Quality Plan is one of the project management  plans prepared  at the beginning  of the project to ensure the
+quality of the result (system)  built by the project  team while complying  with the schedule  (project  duration)  at
+a set cost.
+<Sample  quality control plan>
+Overview Objective
+Objective Quality  requirement  specification
+Role and Responsibility Quality  objective  setting
+Organizational  chart Measurement  and evaluation
+Responsibility  and role Verification  and confirmation  activity
+Quality  objective Quality  assurance  activity
+Quality  assurance  orientation Quality  evaluation
+Quality  activity Corrective  action activity
+Quality  activity  reporting Attachment
+<Sample  quality control plan>
+Quality  feature Quality  requirement Measurement  methodology Target Measurement  date
+Measurement  items of accurate
+function  reflection
+A: No. of function  design reflection
+(Requirements  Traceability  Matrix) .
+B: No. of requirements  on function for 100% At the point of the
+FunctionalityAccuracy  of functiontask comparison  matrix
+Measurement  formula  for accurate
+function  reflectiondesign stage completed
+implementation Measurement  items of function
+implementation
+A: No. of inaccurate  functionality
+requirements
+B: No. of requirements
+Measurement  formula  for inaccurate
+function  implementation0%At the point of delivery
+test completed
+118 TOPCIT  ESSENCE
+
+
+--- Page 120 ---
+Project Management  and Technical  Communication  )
+Portability PortabilityReplace  with service  accessibility
+compliance  in accordance  with the
+user's internet  environment
+Understandability UnderstandabilityMeasurement  items of understandability
+A: No. of screens  with user guidelines
+accurately  described
+B: No. of screens  with UI design(menu)
+Measurement  formula  for
+understandability100%At the point of delivery
+test completed
+Credibility System  availabilityMeasurement  items of system
+availability
+A: No. of message  notification  in the
+event of e...

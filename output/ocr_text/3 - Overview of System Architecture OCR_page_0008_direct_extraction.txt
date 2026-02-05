@@ -1,0 +1,21 @@
+A) Classification  according  to the service  type 130
+B) Classification  according  to the cloud operation  form 132
+03 Server  Virtualization  Technology 132
+A) Hypervisor 132
+B) Hypervisor  types 132
+C) Server  virtualization  methods 133
+04 Storage  and Network  Virtualization  Technologies 136
+A) Storage  virtualization 136
+B) Network  virtualization 136
+05 Cloud Platform 136
+A) Definition  of cloud platform 136
+B) Openstack 136
+C) CloudStack 137
+D) Kubernetes 137
+F) Mesos 137
+X. Big Data System 138
+01 Bid Data System  Structure 139
+A) Hadoop  ecosystem 139
+B) Hadoop’s  main technology  elements 140
+C) Hadoop  support  program 141
+M3 Overview  of System  Architecture  13

@@ -1,0 +1,31 @@
+ESSENCE
+06 Another  Type of ERD Notation:  The Crow’s  Foot Model
+Chen's ERD (described  above) is mainly used in the academic  world, whereas  information  engineering  notation,  also
+known as Crow’s Foot notation,  is mainly used in industry.
+A) Entity, attribute,  identifier
+© Specify  the entity name outside  the rectangle.
+@ Specify  the attribute  name inside the rectangle.
+© The rectangle  is divided into top/bottom.  Specify  the identifier  attribute  at the top and the general attributes  at the
+bottom.
+Student  ID (PK)
+Name
+Address
+Contact
+information
+Grade
+[Figure 17] Crow's Foot notation  of entity, property,  and identifier
+B) Characteristics  of the entity
+@ Information  must be required  by the work concerned  and should be the information  to be managed. (Example:
+Patient,  number  of times TOEIC exams are taken, etc.)
+@ An entity should be identifiable  by a unique identifier.
+@ Anentity  should be a set of instances  that exist permanently.
+(Not “one”, but “two or more’)
+@ Anentity  should be used by the work process.
+© Anentity  must have an attribute.
+© An entity should have at least one relationship  with other entities.
+C) Classification  of entities
+@ Classification  by tangible  and intangible  type - Generally,  entities  can be classified  into tangible  entities,  concept
+entities, and event entities  depending  on whether  they are tangible  or intangible.
+Classification  by the time of occurrence  - Entities can be classified  into fundamental  entities/key  entities, main
+entities, and active entities  depending  on the time of occurrence.
+58 TOPCIT  ESSENCE

@@ -1,0 +1,32 @@
+ESSENCE
+Item Sequential  data structure Linked data structure
+oe Data are stored consecutively  in order The physical sequence  does not change evenCharacteristics  of . . though  the logical sequence  changes  due
+: because  no empty  space is created  even if : : :operations to insert/delete  operation,  because  only link
+insert/delete  operation  is performed. . ;information  changes.
+Programming  technique  | Implementation  using an array. Implementation  using a pointer.
+C) Stack and queue
+@ Stack
+A stack is one of the linear lists. In this data structure,  data are saved in the storage space in order of data
+input, and the last input data are output first. That is, an element  stored in the stack can be accessed  only
+from the place designated  as the top, and an element  is inserted  at the top only and the inserted  element  is
+stacked  on the top and output  first.
+Access
+(insert/delete)
+LIFO(Last-In-First-Out)top Data input order—
+err se
+(oldest cet) Eee) Ee) Ls
+Stack
+[Figure  2] Conceptual  diagram  of the stack
+The types of stack operations  are as follows.
++ top(): Returns  the data value at the top of the stack.
++ push(): Inserts data on the stack.
++ pop(): Deletes  and returns  data from the stack.
++ isempty():  Returns ‘true’ if there is no element  on the stack or returns ‘false’ if there is an element  on the
+stack.
++ isfull(): Returns  ‘false’ if there is no element  on the stack or returns ‘true’ if there is an element  on the stack.
+@ Queue
+Like the stack, the location  of insertion  and deletion is limited. However,  unlike the stack, the place of data
+insertion  is different  from that of deletion.  The queue has a structure  in which an element  can be inserted  at
+the bottom  and deleted at the top only. Elements  are listed in order of insertion,  and the element  inserted  first
+is at the front and thus is deleted  first.
+40 TOPCIT  ESSENCE

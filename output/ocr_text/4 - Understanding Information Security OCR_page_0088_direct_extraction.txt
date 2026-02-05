@@ -1,0 +1,33 @@
+ESSENCE
+<Table 28> Database  security  threats
+Security  threat Description
+\llegal information  acquisition  by unauthorized  external users, using the SQL injection  attack or web
+Wabbssanilay  diets shell execution,  after uploading  a file
+Vulnerable  identification  | Making  repetitive  authentication  attempts  to obtain the legitimate  user's identity  or acquiring  the
+and authentication authorized  user's identity,  using social engineering  techniques,  etc.
+Data leakage Acquiring  illegal information  by stealing  unencrypted  data and by decrypting  the encrypted  data.
+Misuse  of cryptographic  | Decrypting  ciphertext,  using unreliable  cryptographic  modules  and an inappropriate  cryptographic
+modules mode.
+@ Countermeasures  against  database  security  threats
+There are access  controls,  views, and cryptographic  techniques  to cope with database  security  threats.
+<Table 29> Countermeasures  against  database  security  threats
+Item Details Case
+Ieeeeecontrals Allowing  only authorized  users to access  the database  and Account  management
+preventing  unauthorized  users from accessing  the database  itself. MAC, DAC, RBAC
+viene Limiting  access  to the permitted  data only among  the entire CREATE  VIEW
+database,  using views.
+Encryption Saving important  data after encrypting  with one-way  and two-way SEED, AES
+cipher  algorithms. SHA-256
+02 Database  access  control
+A) Database  access  control  policy
+@ Discretionary  access  control (DAC) policy
+A method  of controlling  access to objects, based on the subject or the identity  of the group to which the
+subject  belongs. On object owner determines  access  permission.
+e.g.,) The owner of the table can grant or revoke the privilege  to another  person.
+@ Mandatory  access  control (MAC) policy
+Access  to an object is controlled,  based on the owner's  rights to the confidential  object.
+e.g.) Allowing  only the database  administrator  to access  the system catalog.
+® Role-based  access control (RBAC) policy
+The central administrator  controls  the relationship  between  the subject and object, and decides  on access to
+the resource,  based on their roles in the organization.
+88 TOPCIT  ESSENCE

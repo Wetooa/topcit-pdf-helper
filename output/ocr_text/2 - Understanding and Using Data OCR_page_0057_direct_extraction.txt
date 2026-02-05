@@ -1,0 +1,31 @@
+ESSENCE
+Cardinality Expression  example
+1 1
+DepartmentSe Department One-to-one  (1:1) Student
+One-to-many  (1:N or N:1) Student Department
+Many to many (M:N) Student Subject ‘fife‘(ifs
+[Figure 14] Cardinality  of the relationship
+@ The relationship  connecting  the weak entity and the identifying  entity is called an “identifying  relationship”  and is
+distinguished  from the general  relationship  by marking  it with a two-line  diamond.
+C) Attribute
+@ An attribute  represents  the intrinsic  nature of an entity or relationship  and is represented  using an ellipse.
+@ Identifier  (key attribute)
++ Anidentifier  is represented  by underlining  the attribute’s  name.
++ An attribute  or a set of attributes  that always has a unique value in all entity sets (e.g. student ID, vehicle
+registration  number,  etc.)
++ When an identifier  is made by combining  several attributes,  the attributes  concerned  are combined  first to make a
+complex  attribute,  and are then marked  by underlining  it.
++ If there are multiple  attributes  that can be an identifier,  mark all of them by underlining  them.
+@ Weak entity separator  (partial key attribute)
+As a weak entity does not have an identifier,  it should be connected  to another  entity that plays the role of an
+identifying  entity, and the identifier  of the identifying  entity and some attributes  of the weak entity are combined  to be
+used as the identifier.  The attributes  of the weak entity used at this time are called separator  or partial key attributes.
+@ Multi-valued  attribute
+A multi-valued  attribute  can have multiple  values at the same time, which are distinguished  from general attributes
+(single-valued  attribute)  by marking  them with a two-line  ellipse
+© Derived  attribute
+A derived  attribute  refers to an attribute  that can be derived  from other stored data and is distinguished  from general
+attributes  (storage  attribute)  by marking  it with a dotted ellipse.
+Example)  The number  of people in each department  can be derived by counting  the number  of employees  in the
+department.
+56 TOPCIT  ESSENCE

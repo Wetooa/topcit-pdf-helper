@@ -1,0 +1,24 @@
+Information  security )
+© CL (Capability  List)
+Based on the subject,  the rights to access the object are managed  in a linked list format. The list corresponds
+to the row of the access  control matrix.
+@® SL (Security  Label)
+SL refers to a set of security  attribute  information  assigned  to an object.
+E) Access  control  models
+@ Bell-Lapadula  model
+The first mathematical  model that was designed,  with the support  of the U.S. Department  of Defense,  as an
+access control model (MAC policy) based on compulsory  policies.  This model emphasizes  confidentiality.  It puts
+emphasis  on secret leakage  prevention,  rather than illegal information  destruction  or alteration,  and it prevents
+information  from flowing  from the high level to the low level.
+@ Biba model
+A model designed  to guarantee  integrity,  which is the shortcoming  of the Bell-Lapadula  model (however,
+confidentiality  is not guaranteed).  This model deals with integrity  as an item that is accessed  by the subject.
+® Clark and Wilson model
+A model designed  for commercial  use with a focus on integrity.  This model assumes  that alteration  prevention
+can be more important  than secret disclosure  prevention,  depending  on the characteristics  of the information,
+when handling  the security  requirements  of the application.  In this model, only programs  can access  the object
+all the time.
+@ Chinese  wall model (Brewer-Nash)
+A model that blocks the flow of any information  that causes a conflict.  This model prevents  conflicts  of interest
+and applies  the concept  of task separation  to access control.
+M4 Understanding  Information  Security  47

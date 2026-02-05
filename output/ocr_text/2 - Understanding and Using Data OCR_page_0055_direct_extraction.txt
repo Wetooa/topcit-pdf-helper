@@ -1,0 +1,34 @@
+ESSENCE
+03 Types of ER Notations
+In 1976, Peter Chen created a form of notation for data models called an entity-relationship  model (ER model).
+This notation  uses a rectangle,  a diamond,  and an ellipse to represent  an entity, a relationship,  and an attribute
+respectively.  This notation  is widely used when learning  theories  about data modeling.  The main college courses  in
+Korea use Chen’s model of notation  when teaching  database  design. The following  section describes  the various
+notations  used to denote  entities, properties,  and relationships.
+Chen - Used with many college
+1 N teaching  materials.
+Team - Hardly used for practical
+business
+- Used by the US Ministry  of
+National  Defense.
+Team Bem Employee - Applied by ERWin.
+IE / Crow's Foot - Most frequently  used
+notation  that uses the Crow’s
+Include Foot shape.
+Team }________________<|_  Employee - Widely  used, including  ERWin,
+Belongs  to RStudio,  etc.IDEF1X
+Min-Max  / ISOa - A description  is written  for
+(Q)N) Include the relationshiap  name.Team Employee - Rarely used.
+(1,1)Belongs  to
+UML
+- Entities  are expressed  using
+stereotypes.
+<<Entity>> 1 _ Include employees <<Entity>> - Used for data modeling  by
+Team ON Employee expressing  it in UML.<<Relationship>>
+Case * Method
+- Partly different  (relationship
+description,  etc.) from
+] Crow's Foot when it is appliedTe wn manne  Ephsem tH O.N ie (Barker's Notation).
+~ DA#
+[Figure  11] Data model notation
+54 TOPCIT  ESSENCE

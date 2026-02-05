@@ -1,0 +1,21 @@
+ESSENCE
+>>> Subject
+Understanding  cryptography,  authentication  technique,  and access  control
+>>> Recent  trends and major issues
+The seriousness  of the problems  caused by the expansion  and development  of the cyber world
+are increasing  day by day. Even Windows  and anti-virus  patch programs  are sometimes  distributed
+after infection  with a virus or alteration.  From the viewpoint  of information  security,  various security
+threats can be actively  responded  to by ensuring  confidentiality  and integrity.  Confidentiality  is
+based on the concept  that data should be viewed only by authorized  and legitimate  users who hold
+the right to access the data, whereas  integrity  is based on the concept  that data should be the
+original data without  forgery  or alteration.  Therefore,  it is very important  to individually  or collectively
+ensure confidentiality  and integrity  in information  security,  by applying  them while considering  the
+characteristics  of each piece of data.
+To be able to explain the concept  of ciphers  and classical  ciphers  to support  confidentiality.
+To be able to explain private  key encryption  and public key encryption  algorithms.
+To be able to explain the hash function  to support  integrity.
+To be able to explain the hash function  to support  integrity.
+To be able to explain the electronic  signature  and public key infrastructure  (PKI) for secure
+transactions.
+To be able to explain authentication  techniques  and authentication  methods  to control access.
+22 TOPCIT  ESSENCE

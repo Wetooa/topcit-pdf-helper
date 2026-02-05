@@ -1,0 +1,36 @@
+ESSENCE
+C) Factors  that affect the virtual memory  unit performance
++ Locality:  A tendency  to intensively  refer to only some pages while a process  is running. It is divided into temporal
+locality  and spatial locality.
++ Working  Set: A set of frequently  referred  to page lists for a certain  period to execute  a process  efficiently.  It reduces
+page absence  and page replacement  by placing  the frequently  referred  to working  sets in the main memory.
++ Thrashing:  A phenomenon  in which the CPU utilization  rate decreases  because  page replacement  takes longer than
+the processing  time. The degree  of multi-programming  is reduced,  the CPU utilization  rate is increased,  or a working
+set is used to prevent  thrashing.
+0? File System
+A) Understanding  of file system
+A file system stores related data to find and access  the OS data and programs  quickly. It is a directory  structure  that
+provides  information  on an aggregation  of files and all files in the system.
+@® Concept  of file
+It is a set of data with a name and stored in an auxiliary  memory  unit, such as a disk or tape. The OS maps files
+to physical devices. In other words, when the OS writes a program  or data to a file, it is permanently  stored in a
+nonvolatile  physical  device.
+@ File attributes
+Files have several properties  to enable the ability to identify  and manage  them. The most common  is the file name,
+which is expressed  as a single string. A process  or user can independently  create and access  files using the file name
+attribute.  The types of file attributes  are described  as follows:
++ Name: Should be maintained  in a legible form by users.
++ Location:  Points to the device and location  of the file and includes  the directory  path.
++ Size: Includes  the current  file size (in bytes, words,  or blocks) and the maximum  allowable  size.
++ Protection:  Controls  who can read, write, or run the file.
++ Time, date, and user identification:  Include the data related to the creation  time, recent information,  and recent
+usage.
+B) Concept  of directory
+A directory  is a logical structure  to manage  tens of thousands  of files managed  by a file system,  and can be the total
+size of gigabytes  or terabytes.  It records  the information  about all files. The following  actions are performed  on a
+directory:
++ File search:  A user can search  a file from the directory  structure.
++ File creation:  A new file is created  and added to the directory.
++ File delete: Unneeded  files are removed  from the file.
++ Directory  list: Lists files in a directory  and shows the directory  item.
+56 TOPCIT  ESSENCE

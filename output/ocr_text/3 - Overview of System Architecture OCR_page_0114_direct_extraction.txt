@@ -1,0 +1,19 @@
+Overview  of System Architecture )
+Backup  Development AP Server System
+Server Server Management
+: Py Server
+SSO Server Portal Server
+Email Server
+Serverwk
+pa [EB
+[Figure  77] Information  System  Hardware  Configuration  (Example)
+@ Information  system  software  structure  (Program  domain)
++ OS: An OS is defined as system software  that operates  and manages  an application  platform  and that provides
+an interface  between  an application  program  and the platform.  The OS for the server includes  Linux, UNIX (BSD,
+Solaris, etc.), Windows,  and macOS.  The OS for the server  market  is quite different  from the desktop  market,  which
+is dominated  by Windows.  Linux and UNIX are the most widely used OS, followed  by Windows.  UNIX servers have
+replaced  most mainframes,  and they were followed  by Linux, which is a UNIX-like  OS.
++ Webserver:  A webserver  provides  media content,  such as HTML and text, images, and video, to web clients, like
+web browsers.  It provides  data through  the HTTP protocol  to enable a web browser  to present  information. Leading
+webserver  products  include  Apache,  Nginx, and IIS (see [Figure 78]).
+M3 Overview  of System  Architecture  113

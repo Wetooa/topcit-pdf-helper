@@ -1,0 +1,32 @@
+Database )
+01 Normalization  and Anomalies
+Various anomalies  can occur when performing  data processing  operations  in a database  that has been poorly
+designed  without  strictly considering  the relationship  between  data attributes,  particularly  dependencies  between
+attributes.  Representative  anomalies  include an insertion  anomaly,  deletion  anomaly,  and update anomaly.  These
+anomalies  are explained  in <Table 25>.
+<Table 25> Table showing  mixed student  information  and department  information  (primary  key = “student  ID”)
+Student  ID Name Gender Department  name Department  office
+1111 Hong Gildong Male Computer  engineering Engineering  building
+2222 Ryu Gwansun Female Computer  engineering Engineering  building
+. Natural  science3333 Gang Gamchan Male Physics building
+A) Insertion  anomaly
+@ Definition:  An anomaly  in which unintended  information  is also inserted  when inserting  certain information.
+(Example)  When inserting  the information  (Department  name = “Management  information’,  Department  office =
+“Management  Building’)  into the table in <Table 25>.
++ Entity integrity  is lost if only the department  name and department  office values are inserted,  because  the primary
+key (“Student  ID”) becomes  null.
++ To maintain  entity integrity,  the department  name and department  office information  must be inserted  together
+with the student  ID of the student  belonging  to the Department  of Management  Information  Technology.
+B) Deletion  anomaly
+@ Definition:  An anomaly  in which necessary  information  is also deleted  when deleting  certain information.
+(Example)  When deleting  the information  of (Student  ID="3333’)  in <Table 25>.
++ If this student  is the only student  belonging  to the “Physics  Department’,  the information  that the department
+office of the “Physics  Department’  is in the “Natural  Science  Building’  is also deleted.
+C) Update  anomaly
+@  Definition:  An anomaly  in which the same content  should be updated  for several data repeatedly  when modifying
+certain information.
+(Example)  When the office of the “Department  of Computer  Science and Engineering”  is changed  to the “Future
+Building’  in <Table 25>.
++ Modification  operations  should be performed  as many times as the number  of students  belonging  to the “Department
+of Computer  Engineering”.
+M2 Database  69

@@ -1,0 +1,22 @@
+C) CPU components 64
+D) Instruction  cycle 65
+E) Instruction  set structure,  CISC and RISC 66
+03 Memory 67
+A) Memory  unit’s hierarchical  structure 67
+B) Factors  for performance  evaluation  of memory  unit 68
+C) Type and characteristics  of the memory  unit 68
+D)Addressing  mode 68
+E) Locality 69
+04 I/O Device 69
+A) Concept  of I/O device 69
+B) I/O controller  structure  and addressing  methods 69
+C) DMA) 70
+05 Latest  Technologies  and Trends 72
+A) Neuromorphic  chip 72
+B) Quantum  computer 73
+V. Data Processing  Technology 75
+01 Parallel  Processing  System 76
+A) Concept  of the parallel processing  system 76
+B) Flynn’s classification  of parallel  processing  systems 77
+C) Classification  of parallel processing  systems,  according  to the memory  structure 78
+M3 Overview  of System  Architecture  9

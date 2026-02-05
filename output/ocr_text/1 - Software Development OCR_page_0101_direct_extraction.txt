@@ -1,0 +1,16 @@
+ESSENCE
+bs
+>> Recent  trends and major issues
+Recently,  the amount  of time, money and effort expended  on software  testing when developing
+software  has been rising steadily.  IT companies  also recognize  its importance  to such an extent  as to
+form a QA (Quality  Assurance)  team or department  specializing  in software  testing.
+>> Learning  objectives
+1. To be able to explain the concept  of testing  and compare  test case design methods.
+2. To be able to describe  test levels (types)  and purposes.
+3. To be able to explain  the concepts  of software  refactoring  and major refactoring  activities.
+>> Keywords
+- Testing  process,  testing  type
+- Specification-based  technique,  structure-based  technique,  experience-based  technique
+- White box testing,  black box testing
+- Software  code smell and refactoring
+100 TOPCIT  ESSENCE

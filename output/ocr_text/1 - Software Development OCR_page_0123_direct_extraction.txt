@@ -1,0 +1,38 @@
+ESSENCE
+<Table  42> Effects  of configuration  management
+Item Contents
++ Providing  the standard  for systematic  and effective  project  management.
+Administrator's  side + Ease of controlling  a project.
+(operator) + Securing  project  visibility  and guaranteeing  traceability.
++ Presenting  a baseline  for quality assurance.
++ Minimizing  the impact  of software  changes,  ease of management.
++ Software  quality  assurance  technique
++ Proper  management  of software  changes.
++ Improving  maintainability.Developer's  side
+C) Considerations  for configuration  management
+The following  matters  should be considered  to ensure efficient  configuration  management.
++ Form an appropriate  operation  organization,  using specialized  management  tools.
++ Continuous  management  and management  standards  are needed, along with a method of solving any
+accompanying  problems.
+* Tailor the level of configuration  management  properly  for small projects.
++ Set the configuration  management  items, and apply any changes  based on a formal agreement.
++ Change  software  that is in use very carefully.
+04 Configuration  Management  Tools
+Source code management  is one of the important  aspects  of software development.  A system is needed
+to save and manage the source codes for effective  history management  of the various versions,  change
+management,  and collaboration  between  the team members.  The system is called the VCS (Version  Control
+System)  or SCM (Source  Code Management)  system.
+Now let’s review the history of the software  configuration  management  system. At first, configuration
+management  consisted  of version  updates  using a shared folder in the local, based on a file system.  After that,
+distributed  management  became  popular  as the client/server  type management  system  based on the network
+began to be used. The table below shows the configuration  management  tool by type.
+A) Configuration  management  tools
+The table below describes  the types, applied technologies,  and features  of the representative  configuration
+management  tools. Subversion  and Git, representative  open-source  configuration  management  tools, and
+Microsoft’s  Team Foundation  Server  (TFS), a commercial  tool, will be described  in the next chapter.
+<Table  43> Configuration  management  tools
+Item Tool Remarks
+Folder  sharing RCS, SCCS
+Subversion  (SVN), CVS, Perforce,
+ClearCase,  TFSClient/server Central repository
+122 TOPCIT  ESSENCE

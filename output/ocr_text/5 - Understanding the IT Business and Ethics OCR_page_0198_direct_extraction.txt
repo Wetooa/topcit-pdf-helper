@@ -1,0 +1,60 @@
+Understanding  the IT Business  and Ethics )
++ Establish  and implement  an internal  management  plan for processing  personal  information
++ Control  personal  information  to be more difficult  to access  than general  data
++ Differential  grant of the access right to personal  information
++ If the personal  information  controller  is changed,  the access  authority  of the personal  information
+processing  system  is changed  or canceled  without  delay (record  the details and keep it for at least
+3 years)Administrative
+Protection
++ Access  control and security  measures  through  network
++ Installation  and operation  of access  control (intrusion  prevention/detection/blocking)  system
++ Application  of encryption  of personal  information  DB
++ Storage  of access records  and prevention  of forgery  and alteration
++ Security  program  installation  and operationTechnical  Protection
+Characteristics  of personal
+information
++ Provision  of personal
+information  is an essentialCauses  of personal
+information  infringement
++ Desire to use other
+people's  informationOccurrence  of personal
+information  infringement
++ Theft of personal
+information  such as
+requirement  for cyber (anonymity) resident  registration
+activities + Increased  public sharing number
+Individual»  Recognize  personal of information  due to the * Customer  information
+information  as assets and emergence  of Web 2.0 hacking  and voice
+goods (blog, UCC, P2P) transaction
++ Personal  information
+leakage  in P2P, etc.
++ Target marketing,  CRM + Negligence  and + Exposure  of personal
+utilization carelessness information  such as
++ Securing  personal + Conventionalized resident  registration
+information  is the key to collection  of the resident number
+Business competitiveness registration  number + Leakage  from internal
++ Saturated  communications
+market,  overheated
+market  competition
++ Increased  use of + Negligence  andemployees  and branches
++ Illegal collection  and
+provision  of personal
+information
++ Exposure  of personal
+information  through carelessness information
+service  enhancement + Aclimate  where + Data spills by internal
+Public + Collection  and use of unauthorized  use of handlers
+personal  information  is
+similar  to that of private
+companiespersonal  information  is not
+an issue for the sake of
+service  efficiency
+[Figure 84] Characteristics  and causes  of infringement  of personal  information  by individual,  company,  and public sector*®
+@ De-identification  Process  of Personal  Data
+Businesses,  who want to process  information  for data analysis,  etc., should de-identify  and manage  the information  if
+it is personal  information.
+De-identification  refers to de-identifying  elements  that can identify  an individual  so that a specific individual  cannot
+be identified  by processing  personal information  with alternative  methods  such as pseudonymization,  aggregate
+processing,  deletion,  categorization,  and data masking.
+36 US White House(www.whitehouse.gov),  “Consumer  Privacy  Bill of Rights”
+M5 Understanding  the IT Business  and Ethics 197

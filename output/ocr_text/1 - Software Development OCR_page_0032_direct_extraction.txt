@@ -1,0 +1,17 @@
+Software  Development
+>> Recent  trends and major issues
+We can see that enterprises  are increasingly  reusing their software  as their business  becomes
+globalized.  Software  is reused to develop  and maintain  new features  using knowledge  proven in the
+past. Many enterprises  are considering  how to increase  the reuse rate because  it is a highly  effective
+means of reducing  costs through productivity  and quality improvements  thanks to reproduction  of
+software  in a short period of time.
+>> Learning  objectives
+1. To understand  the concept,  purpose,  and target of software  reuse, the actual method  of
+application,  and its effects,  considerations,  etc.
+2. To understand  the concept  of reverse engineering,  the reason for its necessity,  strengths,  and
+considerations.
+>> Keywords
+- Reuse,  reverse  engineering
+- Code reuse, software  standardization
+- Software  maintenance
+M1 Software  development  31

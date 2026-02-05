@@ -1,0 +1,29 @@
+ESSENCE
+E) CIDR (Classless  Inter-Domain  Routing)
+@® Concept  of CIDR
+CIDR is a method  of combining  multiple  class C addresses  into a network.  It can reduce the size of the routing  table
+and use IP addresses  in various  subnet  formats.
+@ CIDR’s role
++ Provides  flexibility  in IP address  operation,  by allowing  users to  freely specify the range of network  identifiers
+without  classifying  the IP addresses  for each A, B, and C class.
++ The network  address  can be set freely, preventing  wasted IP addresses  and enabling  effective  network  configuration.
++ It is an address  allocation  technique  that enables  the effective  management  of IP addresses  used for routing
+between  domains.
+@ CIDR expression
+The subnet  part of an IP address  has an arbitrary  length with a format of a.b.c.d/x.  In the address  format, x refers to
+the subnet  of the address.
+host part
+<<
+0 00000000
+200.23.16.0  / 23
+[Figure 128] CIDR Notation
+F) Supernetting
+@® Concept  of supernetting
+Supernetting  is the opposite  concept  of subnetting,  referring  to the consolidation  of several small  networks  into one
+large network.  It is an address  allocation  technique  that allocates  consecutive  class address  blocks to an organization
+and enables  routing  from the outside,  as if it were one address  block [9].
+@ Supemetting  method
++ Grouping  multiple  class C addresses  into a network
++ Use of part of the network  identifier  as the host identifier
++ The number  of consolidated  class C addresses  must be a power  of 2 and must consist  of sequential  addresses.
+174 TOPCIT  ESSENCE

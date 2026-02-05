@@ -1,0 +1,227 @@
+LEARNING GUIDE: Pages 40-44
+Generated: 2025-12-05 14:36:30
+PDF: 4 - Understanding Information Security OCR
+
+================================================================================
+LEARNING GUIDE
+================================================================================
+
+Here is a simplified, easy-to-read learning guide based on the provided text, designed for efficient study.
+
+---
+
+# Digital Signatures, PKI, and Access Control: Learning Guide
+
+## 1. Digital Signatures
+
+### 1.1 Requirements for a Secure Digital Signature
+A robust digital signature algorithm must meet the following criteria:
+*   **Forgery Prevention:** Only the legitimate signer can create a valid signature.
+*   **User Authentication:** The signer's identity can be verified from the signature.
+*   **Non-Repudiation:** The signer cannot credibly deny having signed the document.
+*   **Alteration Prevention:** Any change to a signed document invalidates its signature.
+*   **Reuse Prevention:** A signature for one document cannot be validly applied to another.
+
+### 1.2 Operation of an Electronic (Digital) Signature
+The process of creating and verifying a digital signature involves six phases:
+
+**Sender's Actions:**
+1.  **Generate Message Digest:** The sender applies a **hash algorithm** (a mathematical function that converts input data into a fixed-size string) to the original message. This produces a unique, fixed-length string called a **message digest**.
+2.  **Create Digital Signature:** The sender **encrypts** the generated message digest using their **private key** (a secret key known only to the sender). The result is the digital signature.
+3.  **Send:** The sender transmits both the original message and the digital signature to the receiver.
+
+**Receiver's Actions:**
+4.  **Extract Sender's Message Digest:** The receiver **decrypts** the received digital signature using the sender's **public key** (a publicly available key mathematically linked to the sender's private key). This reveals the sender's original message digest.
+5.  **Generate Receiver's Message Digest:** The receiver applies the **same hash algorithm** to the received message to produce a new message digest from their end.
+6.  **Compare Digests:** The receiver compares the message digest obtained from the sender's signature (in step 4) with the message digest they just generated (in step 5).
+    *   **If they match:** The signature is legitimate, confirming the message's authenticity and integrity (it hasn't been altered, and it came from the expected sender).
+
+## 2. Public Key Infrastructure (PKI)
+
+### 2.1 Definition of PKI
+PKI is a comprehensive system designed to manage public keys and digital certificates. Its purpose is to enable secure digital transactions and communications by providing essential services like encryption, authentication, and non-repudiation.
+
+### 2.2 PKI Components
+A PKI ecosystem consists of several interacting entities and elements:
+*   **Policy Approval Authority (PAA):** Establishes the overarching policies and procedures for the entire PKI.
+*   **Policy Certification Authority (PCA):** Defines detailed policies that conform to the PAA's high-level policies.
+*   **Certification Authority (CA):** A trusted third party responsible for:
+    *   Issuing digital certificates that bind public keys to specific entities.
+    *   Managing and publishing Certificate Revocation Lists (CRLs).
+*   **Registration Authority (RA):** Acts as an intermediary, verifying the identity of certificate applicants before forwarding their requests to the CA.
+*   **Certificate Holder:** The individual or entity who owns a public key certificate and uses it for digital signing and encryption.
+*   **User:** An individual who uses and verifies certificates, typically relying on the CA's public key to confirm the authenticity of other certificates.
+*   **Public Key Certificate:** An electronic document (conforming to the X.509 standard) that cryptographically links a public key to an owner, verifying their identity.
+*   **CRL Repository:** A database that stores and provides access to the Certificate Revocation List.
+
+### 2.3 PKI Operation Workflow
+1.  **Application:** A user applies for a digital certificate at an RA branch and undergoes identity verification.
+2.  **Request:** The RA sends the verified certificate issuance request to the CA.
+3.  **Issuance:** The CA issues the certificate (containing the user's public key, digitally signed by the CA's private key).
+4.  **Distribution:** The CA publishes the certificate to a directory server and typically sends it to the user (often via the RA).
+5.  **Usage:** The user stores and uses the certificate for secure activities like financial transactions.
+6.  **Verification:** Other parties (e.g., financial institutions) verify the certificate's validity by contacting the public CA.
+
+### 2.4 Electronic Signature and Encryption in PKI (Combined Process for Confidentiality & Authenticity)
+This process ensures both confidentiality (message secrecy) and authenticity/integrity (message source and unalteration).
+
+*   **Session Key:** A temporary, symmetric secret key used by the sender to encrypt the actual message. Symmetric keys are faster for encrypting large amounts of data.
+*   **Electronic Envelope:** The session key itself, encrypted using the receiver's public key, ensuring only the intended receiver can decrypt it.
+
+**Sender's Steps:**
+1.  **Message Digest:** Generate a message digest from the original message (for authenticity).
+2.  **Digital Signature:** Encrypt the message digest with the **sender's private key** (this is the digital signature).
+3.  **Message Encryption:** Encrypt the original message using a randomly generated **session key** (for confidentiality).
+4.  **Electronic Envelope:** Encrypt the **session key** using the **receiver's public key** (to securely transmit the session key).
+5.  **Send:** Transmit the symmetrically encrypted message, the digital signature, and the electronic envelope.
+
+**Receiver's Steps:**
+1.  **Extract Session Key:** Decrypt the **electronic envelope** using the **receiver's private key** to retrieve the session key.
+2.  **Decrypt Message:** Decrypt the encrypted message using the extracted **session key**.
+3.  **Receiver's Digest:** Generate a new message digest from the newly decrypted message.
+4.  **Sender's Digest:** Decrypt the **digital signature** using the **sender's public key** to get the sender's original message digest.
+5.  **Compare Digests:** Compare the two message digests. If they match, the message is verified as authentic and unaltered.
+
+### 2.5 Public Key Certificate Details
+
+*   **Standard:** Public key certificates are issued by CAs and conform to the **X.509 standard**.
+*   **Types:**
+    *   **NPKI Certificates:** Used by the general public for financial and e-commerce transactions.
+    *   **GPKI Certificates:** Used by government administrative agencies for official work.
+*   **Evolution (Since 2011):**
+    *   **RSA Key Length:** Increased from 1,024 bits to **2,048 bits** for stronger encryption.
+    *   **Hash Function:** Upgraded from SHA-1 (producing a 160-bit value) to **SHA-256** (producing a 256-bit value) for enhanced security against collisions.
+
+*   **Main Contents of a Public Key Certificate:**
+    *   **Version:** Specifies the certificate format version.
+    *   **Serial Number:** A unique identifier assigned by the issuing CA.
+    *   **Algorithm Identifier:** Identifies the signature algorithm used to create the certificate.
+    *   **Issuer:** The Distinguished Name (DN) of the CA that issued the certificate.
+    *   **Period of Validity:** The start and expiration dates/times of the certificate's validity.
+    *   **Subject:** The Distinguished Name (DN) of the certificate owner.
+    *   **Public-key Information:** Contains the certificate owner's public key and the algorithm it uses.
+    *   **Signature:** The CA's digital signature, created using its private key, which validates the certificate itself.
+
+### 2.6 Verifying Certificate Validity
+Methods used to check if a certificate is still trustworthy:
+
+*   **CRL (Certificate Revocation List):**
+    *   **Concept:** A list, published by a CA, containing the serial numbers of certificates that have been revoked before their scheduled expiration.
+    *   **Operation:** Users periodically download this list and check if a certificate in question appears on it.
+    *   **Limitations:** Can be outdated if download cycles are too long, or create high overhead if cycles are too short.
+
+*   **OCSP (Online Certificate Status Protocol):**
+    *   **Concept:** A real-time protocol that addresses CRL's latency issues by allowing immediate status checks.
+    *   **Operation:** When a user needs to verify a certificate, an OCSP request is sent to an OCSP server (typically HTTP-based), which immediately responds with the certificate's current status (valid, revoked, unknown).
+
+## 3. Access Control Technology
+
+### 3.1 Overview of Access Control
+
+*   **Concept:** Access control is the process of regulating who (subjects) can interact with a system and what specific actions (tasks) they are permitted to perform on which resources (objects).
+*   **Three Core Parts:**
+    1.  **Identification:**
+        *   **Definition:** The system's process of recognizing a subject by a unique characteristic or token.
+        *   **Examples:** User ID, employee card, biometric scans.
+    2.  **Authentication:**
+        *   **Definition:** The subject's process of proving their claimed identity to the system.
+        *   **Examples:**
+            *   **Something you know:** Passwords, PINs.
+            *   **Something you have:** Certificates, One-Time Passwords (OTP) tokens.
+            *   **Something you are:** Biometrics (fingerprints, facial recognition, iris scans).
+    3.  **Authorization:**
+        *   **Definition:** After successful authentication, the system determines and enforces the specific permissions (what tasks/objects) the authenticated user is allowed to access or perform.
+        *   **Examples:** Mandatory Access Control (MAC), Discretionary Access Control (DAC), Role-Based Access Control (RBAC).
+
+### 3.2 Access Control Procedure
+Access to a system or resource follows a sequential process:
+1.  **Identification:** The user presents their identity.
+2.  **Authentication:** The user proves their identity.
+3.  **Authorization:** The system checks the authenticated user's permissions.
+4.  **Access:** If authorized, the user is granted access to the requested resources or functions.
+
+---
+
+================================================================================
+ORIGINAL TEXT (First 5000 chars)
+================================================================================
+
+--- Page 40 ---
+ESSENCE
+@ Requirements  for a secure digital signature  algorithm
++ Forgery  prevention:  Anyone  other than a legitimate  signer shouldn't  be able to forge the signature.
++ User authentication:  The signer should be identifiable  from the electronic  signature.
++ Non-repudiation:  The signer should not be able to deny that the signer has signed the document.
++ Alteration  prevention:  A signed document  should not be changeable.
++ Reuse prevention:  A signature  for one document  cannot  be reused as a signature  for another  document.
+© Operation  of the electronic  signature
+The operation  of the digital signature  consists  of six phases  as shown in <Table 9>.
+<Table  9> Operation  procedure  of the electronic  signature
+Order Description
+Phase 1 The sender  generates  a message  digest, a fixed-length  string, by applying  a hash algorithm  to the message
+to be sent.
+Phase 2 The sender  creates  an electronic  signature  by encrypting  the created message  digest using the sender's
+private key.
+Phase  3 The sender  sends a message  and digital signature  to the receiver.
+The receiver  extracts  the message  digest  generated  by the sender, by decrypting  the received  digitalPhase 4 : . : -
+signature  using the sender's  public key.
+Phase 5 The receiver  generates  a new message  digest by applying  the same hash algorithm  as the sender  to the
+received  message.
+Phase 6 The receiver  compares  the message  digest received  from the sender,  with the receiver's  message  digest. If
+they are the same, it is regarded  as the electronic  signature  of the legitimate  sender.
+E) PKI (Public Key Infrastructure)
+© Definition  of PKI
+PKI is an infrastructure  for managing  the public key, which is an essential  element  for encryption  and
+authentication  required  for secure transactions.  This infrastructure  safely distributes  encryption  and decryption
+keys, as well as certificates  that provide information  security  services.  PKI is a network  structure  of objects
+that sets up and provides  policies, means, and tools, which makes the use of certificates  and encrypted
+communication  easy in various application  fields that require secure communication,  such as information
+system  security  and electronic  commerce.
+@ PKI components
+As shown in <Table 10>, the PKI is composed  of the policy approval  authority  (PAA), policy certification
+authority  (PCA), certification authority  (CA), registration  authority  (RA), and public certificate.
+40 TOPCIT  ESSENCE
+
+
+--- Page 41 ---
+<Table 10> PKI componentsInformation  security )
+Composition Details
+Policy approval  authority  | Creating  and setting  up policies  and procedures  comprehensively  used for PKI (Ministry  of
+(PAA) Security  and Public Administration)
+Policy certification Establishing  detailed  policies  for the policy approved  by the PAA (Korea Internet  & Security
+authority  (PCA) Agency)
+tee . Issuing  user’s public key certificates  and managing  the list of revoked  certificates  (Koreaaie  ety Information  Certificate  Authority,  Koscom, Korea Financial Telecommunications  and Clearings
+Institute, Korea Electronic  Certification  Authority,  KTNET)
+Registration  authority  (RA) Doing  business  for certification  authorities  and receiving  public certificate  registration
+applications  (banks, securities  companies)
+Certificate  holder The owner  of the public key certificate  who receives  a certificate, and signs and encrypts
+electronic  documents.
+User Auser who verifies  the authentication  path and electronic  signature,  using the public key of the
+certification  authority.
+Public key certificate  and
+CRL repository
+@® Pk! operationUsing the certificate  standard  that complies  with the X.509 v3 standard.
+An electronic  file that proves the relationship  between  the electronic  signature  verification  key
+and the key owner.
+ACRL  repository  to manage  the list of revoked  certificates
+When the user requests  certificate  issuance  to the RA after applying  for subscription  and checking identity
+at the RA branch, the RA sends the issuance  and registration  request  information  to the CA. The CA issues a
+private key signed with the CA's private key, and posts it to the directory  serverthen  sends it to the user, via
+the RA. The user stores the issued certificate  in a hard disk or a removable  disk of a PC and uses it in financial
+transactions  and electronic  commerce.  At this point, financial  institutions  verify the certificate  by contacting
+the public CA. [Figure 20] shows the participants  of the PKI and the workflow  between  them.
+EE
+2 =a
+' Certificate  verified SS on Certificate  verified
+by the public = by the public
+: Certification & & & GB A ' certification
+v authority Se y authority
+LeU o) Cemecsl  aati  ceri a(0))
+authority authority
+Register  applicati
+information
+@ in-person  check
+@ Apply forVerify subscriber's
+certificate
+Qe Submit  electronic
+ICcreisi  nee]  oO la ey <c1  NTN cer...

@@ -1,0 +1,43 @@
+ESSENCE
+and number  of table joins.
++ Considering  inducing  other methods:  View creation,  clustering  application,  index adjustment,  and application
+development.
++ Applying  denormalization:  Denormalization  of tables, columns,  and relationships.
+<Table 32> Denormalization  procedure  and method
+Procedure Method Method
+Investigating  the range When there are many processes  that access frequently  used tables, and only a
+processing  frequency certain range is always searched.
+a When there are large amounts  of data in a table and a wide data range is
+Investigating  wide range1. rocessin frequently  accessed,  and performance  cannot be guaranteed  unless the
+Investigating p 6 processing  range is reduced to a certain extent.
+denormalization ; __ _ _
+targets Investigating  the A separate  statistics  table (denormalization)  is created  when statistical
+statistical process information  is required  by a statistics  process.
+Investigating  the number  | Consider  denormalization  if the table query  job is technically  difficult  because
+of table joins too  many joins are applied  to the tables.
+A view is used when the data query  job is technically  difficult  because  too manyView table ;
+joins are applied to the tables.
+2 Applying clusterin A method  of changing  the method  of storing  large amounts  of data based on a
+Considering PPYINE € specific clustering  fact (applicable  to query-oriented  tables only)
+inducing  other ; . a
+methods If sufficient  performance  can be ensured  using the index, avoid denormalizationApplying  the indexby adjusting  the index.
+Application Improving performance  by changing  the method  of applying  logic to the
+application.
+3. - Table denormalization
+Applying - Attribute  denormalization
+denormalization  | - Relationship  denormalization
+B) Actual denormalization
+<Table 33> Denormalization  technique
+Type ean Description
++ Table is merged  when it is more efficient  in improving  performance  because  there are many
+join operations.
+Merging  tables | + Merging  1:1 relationship  tables
++ Merging  1:M relationship  tables
+Table + Merging  super/sub-type  relationship  tables
+denormali- + Table is split when accessing  specific attributes  only in the table.
+zation + When split, access frequency,  lockup, and contention  are reduced, but performance  is
+Splitting  the degraded  because  the union operation  should be performed  when searching  the entire split
+table table.
++ Vertical  split: When only specific  attributes  are frequently  accessed,  a table is created  by
+splitting  the columns.
+78 TOPCIT  ESSENCE
