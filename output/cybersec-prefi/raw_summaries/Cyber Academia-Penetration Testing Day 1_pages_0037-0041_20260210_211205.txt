@@ -1,0 +1,110 @@
+LEARNING GUIDE: Pages 37-41
+Generated: 2026-02-10 21:12:05
+PDF: Cyber Academia-Penetration Testing Day 1
+
+================================================================================
+LEARNING GUIDE
+================================================================================
+
+Learning Guide:
+
+## OWASP ZAP (Zed Attack Proxy)
+
+### 1. Introduction
+*   **What it is:** An open-source web application security testing tool.
+
+### 2. Key Functions
+*   **Passive Scanning:** Analyzes web requests without actively sending new ones.
+*   **File/Folder Discovery:** Uses dictionaries to find hidden files and directories on web servers.
+*   **Site Structure Mapping:** Uses crawlers (spiders) to identify a site's structure and retrieve all links/URLs.
+*   **Request Interception:** Allows you to intercept, view, modify, and forward web requests between browsers and web applications.
+
+### 3. Installation
+*   **Availability:** Installers for Windows, Linux, and macOS. Docker images are also available.
+*   **Download:** [https://www.zaproxy.org/download/](https://www.zaproxy.org/download/)
+*   **System Requirement:** Requires **Java 8+** to run.
+*   **Important Note:** Always ensure you have explicit permission from the web application owner before performing any penetration testing.
+
+### 4. Initial Configuration: Quick Start Auto Scan
+*   **Purpose:** Quickly run an automated scan against a target URL.
+*   **Steps:**
+    1.  Start ZAP.
+    2.  Click the **Quick Launch** tab in the workspace window.
+    3.  Click the **Auto Scan** button.
+    4.  In the "Attack URL" text box, enter the full URL of the web application.
+    5.  Select either "Use traditional spider," "Use ajax spider," or both.
+    6.  Click **Attack**.
+
+---
+
+## TestSSL
+
+### 1. Introduction
+*   **What it is:** A command-line tool designed for testing the SSL/TLS security of web servers.
+
+### 2. Key Uses & Purpose
+*   **Vulnerability Identification:** Detects vulnerabilities in SSL/TLS configurations, such as:
+    *   Weak ciphers
+    *   Certificate issues
+    *   Protocol vulnerabilities
+*   **Compliance:** Helps ensure web servers comply with industry standards and regulations (e.g., PCI DSS, HIPAA, GDPR).
+
+================================================================================
+ORIGINAL TEXT (First 5000 chars)
+================================================================================
+
+--- Page 37 ---
+OWASP ZAP
+OWASP ZAP (Zed Attack Proxy) is an open -source web application 
+security testing tool.
+Key Functions of OWASP ZAP 
+•Passively scanning web request
+•Using dictionary list to search for files and folders on web 
+servers
+•Using crawlers to identify a site’s structure and retrieve all links 
+and URLs
+•Intercepting, displaying, modifying, and forwarding web 
+request between browsers and web applications 
+
+--- Page 38 ---
+OWASP ZAP: Installation
+ZAP has installer  for Windows  , Linux,  and 
+MAC  OS/X . There  are also Docker  images  
+available  on the download  site listed  
+below .  
+https ://www .zaproxy .org/download/
+Install  ZAP on the system  you intended  to 
+perform  pen testing  on
+Download  the appropriate  installer  from  the 
+download  page
+NOTE  that ZAP requires  Java  8+ in order  to 
+run.
+Before  proceeding,  ensure  you have  
+permission  from  web application  owner  to 
+perform  a penetration  test.
+
+
+--- Page 39 ---
+OWASP ZAP: Initial Configuration
+How to run a quick start auto scan?
+•Start ZAP and click the Quick Launch tab in the workspace 
+window
+•Click the Auto Scan button
+•In the Attack URL text box, enter the full URL of the web 
+application
+•Select either Use traditional spider, Use ajax spider or both
+•Click Attack
+
+
+--- Page 40 ---
+TestSSL
+
+
+--- Page 41 ---
+TestSSL
+➢A command -line tool used for testing SSL/TLS security of web servers
+➢Used to identify vulnerabilities in SSL/TLS configurations, including weak 
+ciphers, certificate issues, and protocol vulnerabilities.
+➢Used to ensure that web servers comply with industry standards and regulations, 
+such as PCI DSS, HIPAA, and GDPR What it is:
+

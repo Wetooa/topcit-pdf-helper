@@ -1,0 +1,154 @@
+LEARNING GUIDE: Pages 61-65
+Generated: 2026-02-10 21:13:25
+PDF: Cyber Academia-Penetration Testing Day 1
+
+================================================================================
+LEARNING GUIDE
+================================================================================
+
+Learning Guide: Burp Suite Configuration
+
+---
+
+### 1. Introduction: Burp Suite as a Proxy
+
+*   **Core Function:** Burp Suite acts as a **proxy** between your web browser and a target web server/API.
+*   **Capability:** This allows you to **view, intercept, and modify** all web requests and responses for testing purposes.
+*   **Settings Access:** All configuration options are found within the **Settings Menu**.
+
+### 2. Setting Your Scope
+
+*   **Definition:** **Scope** defines which web traffic Burp Suite should capture and process.
+*   **Importance:** It's crucial to set scope to ensure you only capture **relevant traffic** for your target application, ignoring unnecessary data.
+*   **Why Restrict Scope?**
+    *   **Focused Inspection:** Helps you concentrate on traffic specifically related to your target application, avoiding irrelevant requests (e.g., to other domains, external resources).
+    *   **Automated Tool Control:** Ensures automated scans and tools only target and send payloads to your intended hosts, preventing unintended actions.
+    *   **Efficiency:** Prevents Burp's spider and other features from getting lost in recursive site discovery or processing irrelevant data.
+*   **How to Set Scope:** You can restrict captured traffic based on:
+    *   Protocol (e.g., HTTP, HTTPS)
+    *   Port (e.g., 80, 443)
+    *   File
+    *   You can include multiple hosts within your defined scope.
+
+### 3. Connection Settings
+
+*   **Platform Authentication:** Burp Suite can be configured to automatically handle common platform authentication types:
+    *   Basic Authentication
+    *   NTLMv1
+    *   NTLMv2
+*   **Upstream Proxy Server:** You have the option to configure an **upstream proxy** server. This is useful when your traffic needs to pass through another proxy (e.g., for handling Kerberos authentication).
+
+### 4. Mutual Authentication Settings
+
+*   **Scenario:** Used when testing Web API Endpoints that require **Mutual Authentication** (where both client and server authenticate each other using certificates).
+*   **Configuration:** You can configure Burp to handle these requirements by adding the necessary **Client TLS Certificates**.
+*   **Functionality:** Burp will automatically include these client certificates in requests sent to the API endpoints.
+
+### 5. Burp Suite Extensions (BApps)
+
+*   **Purpose:** Extensions allow you to **extend Burp Suite's capabilities** beyond its core features, often automating tasks or adding specialized tools.
+*   **Source:** Developed by the community using the **PortSwigger API**.
+*   **Installation Methods:**
+    *   **Directly:** From within Burp Suite's User Interface (via the BApp Store).
+    *   **Manually:** Downloaded from PortSwigger's official website and then imported into your Burp installation.
+*   **Benefits:**
+    *   Automate and simplify complex testing procedures.
+    *   Save time and effort during vulnerability identification.
+*   **Important Note:** Extensions are community-built and rated. It is advisable to perform **further validation and testing** for some extensions before relying on them completely.
+
+================================================================================
+ORIGINAL TEXT (First 5000 chars)
+================================================================================
+
+--- Page 61 ---
+Burp Suite: Configuration
+Settings Menu:
+•One of Burp Suite’s main features is its capability as a proxy between a web browser 
+and the target web server/API endpoint which allows testers to view, intercept and 
+modify all requests and responses for testing.
+•All relevant settings can be accessed within the settings menu.
+
+
+--- Page 62 ---
+Burp Suite: Configuration
+Scope:
+•Once a tester has identified the targets of the web 
+application, it is of key importance to set these in 
+the scope to ensure that only the relevant traffic 
+needed for testing is captured by burp while 
+unnecessary traffic is ignored.
+oDue to the complexity of Web Applications, it is 
+beneficial to restrict the scope for several 
+reasons:
+oTo assist the tester in carrying out the 
+inspection of traffic sent between clients and 
+the server only otherwise Burp may capture all 
+traffic to other web applications or calls to 
+URLs that should not be tested.
+oTo ensure that automated scans only target 
+and send payloads to the intended targets.
+oTo help with focusing Burp’s automated spider 
+mapping features to prevent recursive site 
+discovery of a web application.
+•Scope can be set to restrict captured traffic to 
+multiple hosts based on Protocol, Port or File to 
+ensure no important traffic is missed during testing.
+
+
+--- Page 63 ---
+Burp Suite: Configuration
+Connection Settings:
+•When testing a Web Application which 
+requires Platform Authentication, Burp 
+can be configured to automatically 
+perform Basic, NTLMv1 and NTLMv2 
+Authentication for requests.
+•Additionally, testers are allowed the 
+option to set an upstream proxy server. 
+This can be useful when they require 
+traffic to be sent through to another 
+proxy such as in the case when 
+handling Kerberos authentication.
+
+
+--- Page 64 ---
+Burp Suite: Configuration
+Mutual Authentication Settings:
+•Testers may encounter test scenarios 
+wherein they must perform testing on 
+Web API Endpoints which generally 
+handle TLS/SSL authentication 
+differently
+•Burp can be configured to handle the 
+authentication requirements in order 
+to access these API endpoints if they 
+require Mutual Authentication
+•This can be configured by adding any 
+provided Client TLS certificates that 
+burp will automatically include in 
+requests to API endpoints
+
+
+--- Page 65 ---
+Burp Suite: Configuration
+Burp Suite Extensions:
+•PortSwigger  provides access to their API to enable 
+anyone to further extend its capabilities by building 
+their own extensions which can be added to your 
+Burp deployment.
+•These extensions can be found within BurpSuite  and 
+installed directly from the User Interface but can 
+alternatively be downloaded from PortSwigger’s  
+official site and imported manually into your Burp 
+installation.
+•There exists a wide range of extensions that serve 
+to assist testers in automating and simplifying their 
+tests to save on time and effort in identifying 
+vulnerabilities or points of interest on an application 
+throughout their test.
+•It should be noted that these are built and rated by 
+the community. As such, further validation and 
+testing may be required for some of these 
+extensions.
+
+

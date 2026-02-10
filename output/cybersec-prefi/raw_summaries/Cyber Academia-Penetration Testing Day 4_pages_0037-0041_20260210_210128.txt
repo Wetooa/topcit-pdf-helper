@@ -1,0 +1,101 @@
+LEARNING GUIDE: Pages 37-41
+Generated: 2026-02-10 21:01:28
+PDF: Cyber Academia-Penetration Testing Day 4
+
+================================================================================
+LEARNING GUIDE
+================================================================================
+
+Learning Guide:
+
+## CVSS Base Metrics: Key Concepts
+
+The CVSS (Common Vulnerability Scoring System) Base Metrics describe the fundamental characteristics of a vulnerability that are constant over time and user environments.
+
+---
+
+### 1. Attack Complexity (AC)
+
+*   **Definition:** Describes conditions *beyond the attacker's control* that must exist for a vulnerability to be successfully exploited.
+*   **Simply Put:** How difficult it is to set up the conditions for an attack.
+
+### 2. Privileges Required (PR)
+
+*   **Definition:** Describes the level of privileges an attacker must possess *before* successfully exploiting the vulnerability.
+*   **Simply Put:** What kind of access (e.g., none, low-level user, admin) the attacker needs to have on the system *before* launching the exploit.
+
+### 3. User Interaction (UI)
+
+*   **Definition:** Captures whether a human user (other than the attacker) must participate for the successful compromise of the vulnerable component.
+*   **Simply Put:** Does someone else need to click a link, open a file, or perform an action for the attack to work?
+
+### 4. Scope (S)
+
+*   **Definition:** Determines if a vulnerability in one component can impact resources in components *beyond its security scope*.
+*   **Simply Put:** Does exploiting a flaw in one part of a system affect other, separate parts of the system or network?
+    *   **Unchanged Scope:** The vulnerability only affects resources within the same security scope.
+    *   **Changed Scope:** The vulnerability allows an attacker to impact a component or resources outside the original security scope.
+
+### 5. Confidentiality (C)
+
+*   **Definition:** Measures the impact on the confidentiality of information resources managed by a software component, due to a successful exploit.
+*   **Confidentiality Explained:** The principle of limiting information access and disclosure only to authorized users, and preventing access or disclosure by unauthorized individuals.
+*   **Simply Put:** How much sensitive information could be revealed or accessed by an unauthorized party if the vulnerability is exploited.
+
+================================================================================
+ORIGINAL TEXT (First 5000 chars)
+================================================================================
+
+--- Page 37 ---
+CVSS Base Metrics 
+ –
+ 
+Attack Complexity
+Attack Complexity(AC ): This metric describes the conditions 
+beyond the attacker’s control that must exist in order to 
+exploit the vulnerability.
+
+
+--- Page 38 ---
+CVSS Base Metrics 
+ –
+ 
+Attack Complexity
+Privileges Required : This metric describes the level of 
+privileges an attacker must possess before successfully 
+exploiting the vulnerability
+
+
+--- Page 39 ---
+CVSS Base Metrics 
+ –
+ 
+User Interaction
+User Interaction : This metric captures the requirement for a 
+human user, other than the attacker, to participate in the 
+successful compromise of the vulnerable component.
+
+
+--- Page 40 ---
+CVSS Base Metrics 
+ –
+ 
+Scope
+Scope : The Scope metric captures whether a 
+vulnerability in one vulnerable component impacts 
+resources in components beyond its security scope.
+
+
+--- Page 41 ---
+CVSS Base Metrics 
+ –
+ 
+Confidentiality
+Confidentiality : This metric measures the impact to the 
+confidentiality of the information resources managed by a 
+software component due to a successfully exploited vulnerability. 
+Confidentiality refers to limiting information access and disclosure 
+to only authorized users, as well as preventing access by, or 
+disclosure to, unauthorized ones.
+
+

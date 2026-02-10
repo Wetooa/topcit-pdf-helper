@@ -1,0 +1,113 @@
+LEARNING GUIDE: Pages 7-11
+Generated: 2026-02-10 20:59:44
+PDF: Cyber Academia-Penetration Testing Day 4
+
+================================================================================
+LEARNING GUIDE
+================================================================================
+
+**Learning Guide: Post-Exploitation**
+
+This guide outlines the essential objectives, phases, and techniques involved in the post-exploitation stage of a cyber attack.
+
+---
+
+### 1. Post-Exploitation Overview & Goals
+
+**Definition:** Actions taken after an attacker has successfully gained initial access to a system.
+
+**Overall Objectives:** An attacker aims to achieve the following:
+*   **Maintain Persistence:** Ensure continued access to the system.
+*   **Escalate Privileges:** Gain higher levels of access (e.g., administrator, root).
+*   **Perform Reconnaissance:** Gather more information about the system and network.
+*   **Move Laterally:** Access other systems or parts of the network.
+*   **Exfiltrate Data:** Extract sensitive information from the system.
+*   **Cover Tracks:** Hide evidence of their presence and actions.
+*   **Utilize System:** Use the compromised system as a base for further attacks.
+
+---
+
+### 2. Post-Exploitation Phases
+
+These are the typical sequential steps an attacker takes after initial compromise:
+
+*   **Reconnaissance:**
+    *   **Goal:** Gather more information about the compromised system and its environment (e.g., network topology, connected systems, user accounts).
+*   **Privilege Escalation:**
+    *   **Goal:** Gain higher levels of access within the system (e.g., move from a standard user account to an administrator or root account).
+*   **Lateral Movement:**
+    *   **Goal:** Access other systems or parts of the network from the initially compromised host. This expands the attacker's foothold.
+*   **Data Exfiltration:**
+    *   **Goal:** Extract sensitive or valuable information from the compromised system or network.
+*   **Covering Tracks:**
+    *   **Goal:** Remove or alter logs, delete files, or use other methods to hide their activities and avoid detection by security teams.
+
+---
+
+### 3. Common Post-Exploitation Techniques
+
+These are the methods and tools attackers use to achieve their objectives and execute the post-exploitation phases:
+
+*   **Command and Control (C2) Channels:** Establishing a covert communication link between the compromised system and an attacker's server.
+*   **Privilege Escalation:** Exploiting vulnerabilities or misconfigurations to gain elevated access.
+*   **Lateral Movement:** Techniques to navigate and gain access to other systems on a network (e.g., using stolen credentials).
+*   **Data Exfiltration:** Methods to transfer data out of the compromised network.
+*   **Backdooring:** Installing persistent access points (backdoors) for future access.
+*   **Password Cracking:** Attempting to decrypt or guess user passwords, often using collected hashes.
+*   **Covering Tracks:** Actions to conceal malicious activities.
+*   **File System Manipulation:** Modifying, creating, or deleting files to achieve objectives or hide presence.
+*   **Network Traffic Manipulation:** Altering or intercepting network communications.
+*   **Anti-Forensics:** Techniques specifically designed to hinder forensic analysis of a compromised system.
+
+================================================================================
+ORIGINAL TEXT (First 5000 chars)
+================================================================================
+
+--- Page 7 ---
+Objectives
+Maintain Persistence
+Escalate Privileges
+Perform Reconnaissance
+Move Laterally
+Ex-filtrate Data
+Cover Their Tracks
+Use the compromised system as a platform for further attacks
+
+--- Page 8 ---
+Post
+-
+Exploitation
+Objectives / Phases
+
+--- Page 9 ---
+Phases
+Reconnaissance : The tester gathers information about the system and its 
+environment
+Privilege escalation : The tester attempts to gain higher levels of access to the 
+system
+Lateral movement : The tester moves laterally, attempting to gain access to other 
+parts of the network or other systems that are connected to the compromised 
+system. 
+Data exfiltration : The tester attempts to extract sensitive information from the 
+system
+Covering tracks : The tester attempts to cover their tracks to avoid detection by 
+system administrators or security teams.
+
+--- Page 10 ---
+Post
+-
+Exploitation
+Technique
+
+--- Page 11 ---
+Techniques
+Command and Control (C2) Channels
+Privilege Escalation
+Lateral Movement
+Data Exfiltration
+BackdooringPassword Cracking
+Covering Tracks
+File System Manipulation
+Network Traffic Manipulation
+Anti-Forensics
+

@@ -1,0 +1,161 @@
+LEARNING GUIDE: Pages 16-20
+Generated: 2026-02-10 21:10:50
+PDF: Cyber Academia-Penetration Testing Day 1
+
+================================================================================
+LEARNING GUIDE
+================================================================================
+
+Here is a simplified, easy-to-read learning guide based on the provided text:
+
+---
+
+# Learning Guide: Penetration Testing & OWASP Top 10
+
+## 1. Penetration Testing Standards
+
+**Purpose:**
+*   Guide ethical security testing methodologies.
+*   Ensure testing is consistent, safe, and repeatable.
+*   Help define testing scope, process, and reporting.
+*   Align security testing with industry best practices.
+
+## 2. The Penetration Testing Process
+
+A standard penetration test follows these steps:
+
+1.  **Planning & Scoping:** Define the test's objectives, rules of engagement, and specific systems (scope) to be tested.
+2.  **Reconnaissance:** Gather information about the target (e.g., IP addresses, open ports, software versions).
+3.  **Vulnerability Scanning:** Use tools to identify known weaknesses and vulnerabilities in the target systems.
+4.  **Exploitation:** Attempt to exploit identified vulnerabilities to gain access or demonstrate impact, either manually or using tools.
+5.  **Post-exploitation:** Assess the impact of the exploitation, determine the level of access gained, and identify potential further actions.
+6.  **Reporting:** Document all findings, including vulnerabilities, exploitation methods, and provide recommendations for remediation.
+
+## 3. OWASP Top 10
+
+The OWASP Top 10 (2025 version referenced) is a widely recognized list of the **most critical web application security risks.**
+
+### OWASP Top 10 List:
+
+*   **A01: Broken Access Control**
+*   **A02: Security Misconfiguration**
+*   **A03: Software Supply Chain Failures**
+*   **A04: Cryptographic Failure**
+*   **A05: Injection**
+*   **A06: Insecure Design**
+*   **A07: Authentication Failures**
+*   **A08: Software or Data Integrity Failures**
+*   **A09: Security Logging and Alerting Failures**
+*   **A10: Mishandling of Exceptional Conditions**
+
+### Detail: A01: Broken Access Control (2025)
+
+*   **What it is:** Occurs when users can access data or perform actions they are not authorized to.
+    *   **Cause:** Missing or weak **authorization checks** (the process of verifying if a user has permission for a specific action or resource).
+*   **Why it's #1:**
+    *   Still the most common and impactful web application risk.
+    *   Often leads to data exposure, **privilege escalation** (gaining higher access rights than intended), or full account takeover.
+*   **Examples:**
+    *   Accessing another user's private data by simply changing an ID number in a URL.
+    *   Performing administrator-level actions while logged in as a regular user.
+
+================================================================================
+ORIGINAL TEXT (First 5000 chars)
+================================================================================
+
+--- Page 16 ---
+Overview of Penetration Testing Standards
+Provide guidelines and methodologies for ethical testing
+Ensure testing is consistent, safe, and repeatable
+Help define scope, process, and reporting
+Used to align security testing with industry best practices
+
+--- Page 17 ---
+PENTESTING PROCESS:
+1.Planning & Scoping : Define scope, rules, 
+and objectives.
+2.Reconnaissance : Gather information (IPs, 
+ports, versions)
+3.Vulnerability Scanning : Identify known 
+weaknesses, vulnerabilities
+4.Exploitation : Exploit identified 
+vulnerabilities manually or with tools.
+5.Post -exploitation : Assess the impact and 
+potential access gained.
+6.Reporting : Document findings and 
+remediation recommendations.
+Overview of Penetration Testing Standards
+Plan
+Exploit
+Scan
+Report
+
+--- Page 18 ---
+OWASP TOP 10
+The OWASP  Top 10 (2025 ) is the latest  list of the most  critical  web 
+application  security  risks . 
+
+
+--- Page 19 ---
+A01
+ -
+ 
+Broken Access Control
+A02
+ -
+ 
+Security Misconfiguration
+A03
+ -
+ 
+Software Supply Chain Failures
+A04
+ -
+ 
+Cryptographic Failure
+A05
+ -
+ 
+Injection
+A06
+ -
+ 
+Insecure Design
+A07
+ -
+ 
+Authentication Failures
+A08
+ -
+ 
+Software 
+ or Data
+  
+Integrity Failures
+A09
+ -
+ 
+Security Logging and 
+ Alerting Failures
+A10
+ -
+ 
+Mishandling of Exceptional Conditions
+OWASP TOP 10
+
+
+--- Page 20 ---
+A01:2025 
+ –
+ 
+Broken Access Control
+•Happens when users canaccess data oractions they shouldn't
+•Caused bymissing orweak authorization checks
+What it is:
+Why it's #1
+•Still themost common andmost impactful web apprisk
+•Often leads todate exposure, privilege, escalation, orfullaccount takeover
+Examples:
+•Accessing another user's data bychanging anID
+•Performing admin actions asanormal user
+

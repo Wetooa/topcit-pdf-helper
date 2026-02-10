@@ -1,0 +1,108 @@
+LEARNING GUIDE: Pages 19-23
+Generated: 2026-02-10 21:00:28
+PDF: Cyber Academia-Penetration Testing Day 4
+
+================================================================================
+LEARNING GUIDE
+================================================================================
+
+Here's a simplified learning guide based on the provided text:
+
+---
+
+## Learning Guide: Penetration Testing - Reporting Phase
+
+### I. Rules of Engagement
+These define the boundaries and expectations for a penetration test.
+*   **Dos and Don’ts:** Specific guidelines for testers.
+*   **Protecting Yourself:** Measures for the tester's safety and legal protection.
+*   **Protecting The Client:** Ensuring the client's systems and data are handled responsibly.
+
+### II. Pentesting Phases: Phase 6 - Reporting
+*   **Reporting** is the final stage of a penetration test.
+
+### III. Pentest Report Structure
+A typical pentest report includes:
+*   **Pentest Overview:** High-level summary for management and non-technical stakeholders.
+*   **Pentest Technical Report:** Detailed findings, vulnerabilities, and technical remediation steps.
+*   **Appendices:** Supporting documentation, including test cases, severity ratings, and testing evidence.
+
+### IV. Pentest Overview Details
+This section provides a summary and context for the entire engagement.
+*   **Key Components:**
+    *   **Background / Executive Summary:** Explains the purpose and scope of the test.
+    *   **Tester and Application Details:** Information about the testing team and the systems/applications tested.
+    *   **Pentest Findings Overview:** A brief summary of the main discoveries.
+
+### V. Executive Summary (Background)
+This part of the report provides a high-level overview of the penetration test.
+*   **Purpose:** To explain why the test was conducted and what it aimed to achieve.
+*   **Key Information:**
+    *   **Contracting Party:** Who hired the penetration tester.
+    *   **Objective:** To determine the client's exposure to a targeted attack.
+    *   **Methodology:** Activities simulated a malicious actor conducting a targeted attack.
+    *   **Primary Goals:**
+        *   Identify if a remote attacker could penetrate the client's defenses.
+        *   Determine the impact of a security breach on:
+            *   Confidentiality of private company data.
+            *   Internal infrastructure and availability of information systems.
+    *   **Focus:** Identification and exploitation of weaknesses allowing unauthorized access to organizational data.
+    *   **Access Level:** Attacks were conducted with the same level of access as a general internet user (external perspective).
+    *   **Compliance:** The assessment adhered to recommended guidelines (e.g., OWASP, NIST) and was conducted under controlled conditions.
+
+---
+
+================================================================================
+ORIGINAL TEXT (First 5000 chars)
+================================================================================
+
+--- Page 19 ---
+Rules of Engagement
+Dos and Don’ts
+Protecting Yourself
+Protecting The Client
+
+--- Page 20 ---
+Phase 6
+Reporting
+
+--- Page 21 ---
+REPORTING: 
+Data to include in a Pentest Report
+Pentest Overview
+Pentest Technical Report
+Test cases, Severity Ratings, Testing Evidence (Appendices)
+
+--- Page 22 ---
+REPORTING: Pentest Overview
+The Pentest Overview is where you will find the information 
+about the structure of the report. In here you will find the 
+following details.
+Background
+Tester and Application Details
+Pentest Findings Overview
+
+--- Page 23 ---
+REPORTING: Background
+
+Executive Summary
+
+I ew "siw s was contracted by BeSETaE W to conduct a penetration test in order to
+determine its exposure to a targeted attack. All activities were conducted in a manner that simulated a
+malicious actor engaged in a targeted attack against ey = ‘= "ws with the goals of:
+
+o ldentifying if a remote attacker could penetrate s g ww - defenses
+o Determining the impact of a security breach on:
+o Confidentiality of the company’s private data
+
+o Internal infrastructure and availability of msg# =y - = y information systems
+
+Efforts were placed on the identification and exploitation of security weaknesses that could allow a
+remote attacker to gain unauthorized access to organizational data. The attacks were conducted with
+the level of access that a general Internet user would have. The assessment was conducted in
+accordance with the recommendations outlined in ™% == ¢ with all tests and actions being
+
+conducted under controlled conditions.
+
+
+

@@ -1,0 +1,98 @@
+LEARNING GUIDE: Pages 34-38
+Generated: 2026-02-10 21:11:55
+PDF: Cyber Academia-Penetration Testing Day 1
+
+================================================================================
+LEARNING GUIDE
+================================================================================
+
+## Learning Guide: Penetration Testing Tools
+
+This guide summarizes key penetration testing tools and their functions, derived from pages 34-38.
+
+---
+
+### **1. Introduction to Penetration Testing Tools**
+
+Penetration testing involves using specialized tools to identify vulnerabilities in systems and applications. This section covers some common examples.
+
+---
+
+### **2. Specific Tools**
+
+#### **2.1. testssl/testssl.sh**
+
+*   **Purpose:** Tests TLS/SSL encryption configurations.
+*   **Functionality:** Can be used to check TLS/SSL encryption on any port across various systems.
+
+#### **2.2. OWASP ZAP (Zed Attack Proxy)**
+
+*   **Definition:** An open-source tool specifically designed for **web application security testing**.
+*   **Key Functions:**
+    *   **Passive Scanning:** Automatically monitors and analyzes web requests.
+    *   **File & Folder Discovery:** Uses dictionary lists to search for hidden or exposed files and folders on web servers.
+    *   **Site Crawling:** Identifies a website's structure and retrieves all associated links (URLs).
+    *   **Request Interception & Modification:** Allows users to view, change, and forward web requests exchanged between browsers and web applications. This is crucial for manipulating requests to test for vulnerabilities.
+
+#### **2.3. OWASP ZAP: Installation**
+
+*   **Availability:** Installers are provided for Windows, Linux, and macOS. Docker images are also available.
+*   **Download:** Get the appropriate installer from `https://www.zaproxy.org/download/`.
+*   **Prerequisite:** ZAP requires **Java 8+** to run. Ensure Java is installed and updated on your system.
+*   **Important Ethical Note:** Before performing any penetration test, always obtain **explicit permission** from the web application owner. Unauthorized testing is illegal and unethical.
+
+================================================================================
+ORIGINAL TEXT (First 5000 chars)
+================================================================================
+
+--- Page 34 ---
+TOOLS
+ 0
+3
+
+
+--- Page 35 ---
+Common Penetration Testing Tools
+
+X
+
+testssl/testssl.sh
+Testing TLS/SSL encryption anywhere on any port * g O W |t n e S S
+
+
+
+--- Page 36 ---
+OWASP ZAP
+
+
+--- Page 37 ---
+OWASP ZAP
+OWASP ZAP (Zed Attack Proxy) is an open -source web application 
+security testing tool.
+Key Functions of OWASP ZAP 
+•Passively scanning web request
+•Using dictionary list to search for files and folders on web 
+servers
+•Using crawlers to identify a site’s structure and retrieve all links 
+and URLs
+•Intercepting, displaying, modifying, and forwarding web 
+request between browsers and web applications 
+
+--- Page 38 ---
+OWASP ZAP: Installation
+ZAP has installer  for Windows  , Linux,  and 
+MAC  OS/X . There  are also Docker  images  
+available  on the download  site listed  
+below .  
+https ://www .zaproxy .org/download/
+Install  ZAP on the system  you intended  to 
+perform  pen testing  on
+Download  the appropriate  installer  from  the 
+download  page
+NOTE  that ZAP requires  Java  8+ in order  to 
+run.
+Before  proceeding,  ensure  you have  
+permission  from  web application  owner  to 
+perform  a penetration  test.
+
+

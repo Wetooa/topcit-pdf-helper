@@ -1,0 +1,402 @@
+LEARNING GUIDE: Pages 28-32
+Generated: 2026-02-10 21:29:08
+PDF: Cyber Academia-Penetration Testing Day 3
+
+================================================================================
+LEARNING GUIDE
+================================================================================
+
+Here is a simplified, easy-to-read learning guide based on the provided text:
+
+---
+
+## Active Testing Learning Guide
+
+This guide outlines common active testing techniques for identifying vulnerabilities in applications, focusing on cryptography, business logic, and client-side security.
+
+---
+
+### **Section 1: Testing for Weak Cryptography**
+
+This section focuses on identifying vulnerabilities related to encryption and secure communication.
+
+*   **Transport Layer Security (TLS) Weaknesses**
+    *   **Goal:** Ensure secure communication channels are robust.
+    *   **Steps:**
+        *   Validate TLS service configuration.
+        *   Review the strength and validity of digital certificates.
+        *   Confirm TLS security is properly implemented and cannot be bypassed.
+*   **Padding Oracle Vulnerabilities**
+    *   **Goal:** Detect weaknesses in cryptographic padding schemes that can lead to decryption.
+    *   **Steps:**
+        *   Identify encrypted messages that use padding.
+        *   Attempt to manipulate padding and analyze error messages for clues.
+*   **Sensitive Data over Unencrypted Channels**
+    *   **Goal:** Prevent sensitive information leakage.
+    *   **Steps:**
+        *   Identify sensitive data transmitted through various communication channels.
+        *   Assess the privacy and security of these channels.
+*   **General Weak Encryption**
+    *   **Goal:** Identify and document weak encryption or hashing algorithms and their implementations.
+
+---
+
+### **Section 2: Business Logic Testing**
+
+This section focuses on testing the application's core functionality and rules for vulnerabilities.
+
+*   **Business Logic Data Validation**
+    *   **Goal:** Ensure all user input is properly validated, especially on the backend.
+    *   **Steps:**
+        *   Identify all points where data is injected into the application.
+        *   Verify that backend validation checks cannot be bypassed.
+        *   Attempt to submit malformed data to see how the application handles it.
+*   **Ability to Forge Requests**
+    *   **Goal:** Discover if attackers can craft requests to bypass intended workflows or access hidden functionality.
+    *   **Steps:**
+        *   Review documentation for guessable, predictable, or hidden fields/functions.
+        *   Insert logically valid but unexpected data to bypass normal business logic.
+*   **Integrity Checks**
+    *   **Goal:** Verify data integrity and access controls for critical data.
+    *   **Steps:**
+        *   Review documentation for components that move, store, or handle data.
+        *   Determine acceptable and unacceptable data types for each component.
+        *   Identify who should have permission to modify or read data.
+        *   Attempt to insert, update, or delete data values in ways that violate business logic.
+*   **Process Timing Issues**
+    *   **Goal:** Identify vulnerabilities related to the timing of operations (e.g., race conditions).
+    *   **Steps:**
+        *   Review documentation for any time-sensitive functionalities.
+        *   Develop and execute "misuse cases" that exploit timing.
+*   **Function Call Limits (Rate Limiting)**
+    *   **Goal:** Ensure functions with intended usage limits are enforced.
+    *   **Steps:**
+        *   Identify functions that should have limits on how many times they can be called.
+        *   Assess if logical limits are set and properly validated.
+*   **Circumvention of Workflows**
+    *   **Goal:** Prevent users from skipping or reordering application steps.
+    *   **Steps:**
+        *   Review documentation for potential ways to skip or alter the order of application steps.
+        *   Develop misuse cases to try and bypass every identified logic flow.
+*   **Defenses Against Application Misuse**
+    *   **Goal:** Evaluate the effectiveness of existing security defenses.
+    *   **Steps:**
+        *   Review results from all tests performed.
+        *   Identify cases where aggressive input led to different functionality.
+        *   Understand implemented defenses and verify their ability to prevent bypasses.
+*   **Upload of Unexpected File Types**
+    *   **Goal:** Prevent the upload of disallowed file types.
+    *   **Steps:**
+        *   Review documentation for file types the system rejects.
+        *   Verify that unexpected file types are rejected and handled safely.
+        *   Ensure batch file uploads are secure and prevent bypasses.
+*   **Upload of Malicious Files**
+    *   **Goal:** Prevent the upload and processing of harmful files (e.g., malware, scripts).
+    *   **Steps:**
+        *   Identify file upload functionalities.
+        *   Review documentation for acceptable vs. dangerous file types.
+        *   Attempt to upload a set of malicious files and check if they are accepted and processed.
+
+---
+
+### **Section 3: Client-Side Testing**
+
+This section focuses on vulnerabilities that occur or are exploited within the user's web browser.
+
+*   **DOM-Based Cross-Site Scripting (XSS)**
+    *   **Goal:** Find vulnerabilities where user input directly manipulates the Document Object Model (DOM) to execute malicious scripts.
+    *   **Steps:**
+        *   Identify **DOM sinks**: points in the browser's DOM where user-controlled data is written.
+        *   Create and test payloads for each sink type.
+*   **JavaScript Execution**
+    *   **Goal:** Identify points where malicious JavaScript can be injected and executed.
+    *   **Steps:**
+        *   Identify sinks and potential JavaScript injection points.
+*   **HTML Injection**
+    *   **Goal:** Find flaws where attackers can inject arbitrary HTML into a page.
+    *   **Steps:**
+        *   Identify HTML injection points.
+        *   Assess the severity of the injected content.
+*   **Client-Side URL Redirect**
+    *   **Goal:** Prevent attackers from forcing users to visit malicious external sites.
+    *   **Steps:**
+        *   Identify injection points that handle URLs or file paths.
+        *   Assess all possible locations the system can redirect to.
+*   **CSS Injection**
+    *   **Goal:** Identify flaws allowing attackers to inject malicious CSS, potentially for defacement or data exfiltration.
+    *   **Steps:**
+        *   Identify CSS injection points.
+        *   Assess the impact of successful injection.
+*   **Client-Side Resource Manipulation**
+    *   **Goal:** Find vulnerabilities where client-side resources (e.g., local storage data, cookies) can be manipulated.
+    *   **Steps:**
+        *   Identify sinks with weak input validation.
+        *   Assess the impact of resource manipulation.
+*   **Cross-Origin Resource Sharing (CORS)**
+    *   **Goal:** Ensure CORS policies are correctly configured to prevent unauthorized cross-origin requests.
+    *   **Steps:**
+        *   Identify endpoints that implement CORS.
+        *   Ensure the CORS configuration is secure and doesn't allow unintended access.
+*   **Cross-Site Flashing**
+    *   **Goal:** (Less common now, often related to Flash applications) Identify vulnerabilities allowing malicious Flash content to interact with other domains.
+    *   **Steps:**
+        *   Decompile and analyze application code (if Flash is used).
+        *   Assess sink inputs and usage of unsafe methods.
+*   **Clickjacking**
+    *   **Goal:** Prevent attackers from overlaying malicious content over legitimate elements to trick users into clicking.
+    *   **Steps:**
+        *   Understand existing security measures (e.g., X-Frame-Options, Content Security Policy).
+        *   Assess the strictness and bypassability of these measures.
+*   **Web Sockets**
+    *   **Goal:** Secure Web Socket communication, which allows persistent, full-duplex communication.
+    *   **Steps:**
+        *   Identify the usage of Web Sockets.
+        *   Assess their implementation using similar security tests as for normal HTTP channels.
+*   **Web Messaging (postMessage)**
+    *   **Goal:** Secure communication between windows/iframes using the `postMessage` API.
+    *   **Steps:**
+        *   Assess the security of the message's origin validation.
+        *   Validate that safe methods are used and input is properly validated.
+*   **Browser Storage (Client-Side Storage)**
+    *   **Goal:** Prevent sensitive data storage in the browser and injection vulnerabilities.
+    *   **Steps:**
+        *   Determine if sensitive data is stored in client-side storage (e.g., Local Storage, Session Storage, Cookies).
+        *   Examine the code handling storage objects for injection possibilities, invalid input, or vulnerable libraries.
+*   **Cloud Storage**
+    *   **Goal:** Identify and prevent the leakage of sensitive data stored in cloud services accessible from the client.
+    *   **Steps:**
+        *   Locate sensitive data across the system that might interact with cloud storage.
+        *   Assess potential leakage through various techniques (e.g., misconfigured APIs, public buckets).
+
+---
+
+================================================================================
+ORIGINAL TEXT (First 5000 chars)
+================================================================================
+
+--- Page 28 ---
+Active Testing : Testing for Weak Cryptography
+Testing for Weak Transport 
+Layer Security
+•Validate the service 
+configuration. 
+•Review the digital 
+certificate’s cryptographic 
+strength and validity. 
+•Ensure that the TLS 
+security is not bypassable  
+and is properly 
+implemented across the 
+application.
+Testing for Padding Oracle
+•Identify encrypted 
+messages that rely on 
+padding. 
+•Attempt to break the 
+padding of the encrypted 
+messages and analyze the 
+returned error messages 
+for further analysis.
+Testing for Sensitive 
+Information Sent via 
+Unencrypted Channels
+•Identify sensitive 
+information transmitted 
+through the various 
+channels. 
+•Assess the privacy and 
+security of the channels 
+used.
+Testing for Weak Encryption
+•Provide a guideline for the 
+identification weak 
+encryption or hashing uses 
+and implementations.
+
+--- Page 29 ---
+Active Testing: Business Logic Testing
+Test Business Logic 
+Data Validation
+•Identify data injection 
+points. 
+•Validate that all checks are 
+occurring on the back end 
+and can’t be bypassed.
+•Attempt to break the 
+format of the expected 
+data and analyze how the 
+application is handling it.
+Test Ability to Forge Requests
+•Review the project 
+documentation looking for 
+guessable, predictable, or 
+hidden functionality of 
+fields. 
+•Insert logically valid data in 
+order to bypass normal 
+business logic workflow.
+Test Integrity Checks
+•Review the project 
+documentation for 
+components of the system 
+that move, store, or handle 
+data. 
+•Determine what type of 
+data is logically acceptable 
+by the component and 
+what types the system 
+should guard against. 
+Determine who should be 
+allowed to modify or read 
+that data in each 
+component. 
+•Attempt to insert, update, 
+or delete data values  used 
+by each component that 
+should not be allowed per 
+the business logic 
+workflow.
+Test for Process Timing
+• Review the project 
+documentation for system 
+functionality that may be 
+impacted by time. 
+•Develop and execute 
+misuse cases.
+Test Number of Times A 
+Function Can Be Used Without 
+Limits
+•Identify functions that must 
+set limits to the times they 
+can be called. 
+•Assess if there is a logical 
+limit set on the functions and 
+if it is properly validated.
+
+--- Page 30 ---
+Active Testing: Business Logic Testing
+Testing for the Circumvention 
+of Workflows
+•Review the project 
+documentation for methods 
+to skip or go through steps in 
+the application process in a 
+different order from the 
+intended business logic flow. 
+•Develop a misuse case and 
+try to circumvent every logic 
+flow identified.
+Test Defenses Against 
+Application Misuse
+•Generate notes from all tests 
+conducted against the 
+system. 
+•Review which tests had a 
+different functionality based 
+on aggressive input.
+•Understand the defenses in 
+place and verify if they are 
+enough to protect the system 
+against bypassing 
+techniques.
+Test Upload of 
+Unexpected File Types
+•Review the project 
+documentation for file types 
+that are rejected by the 
+system. 
+•Verify that the unwelcomed 
+file types are rejected and 
+handled safely. 
+• Verify that file batch uploads 
+are secure and do not allow 
+any bypass against the set 
+security measures.
+ Test Upload of 
+Malicious Files
+•Identify  the file upload  
+functionality . Review  the project  
+documentation  to identify  what  
+file types  are considered  
+acceptable,  and what  types  
+would  be considered  dangerous  
+or malicious . Obtain  or create  a 
+set of malicious  files for testing . 
+Try to upload  the malicious  files 
+to the application  and 
+determine  whether  it is 
+accepted  and processed .
+
+--- Page 31 ---
+Active Testing: Client
+ -
+Side Testing
+Testing for DOM
+ -
+Based Cross 
+Site Scripting
+•Identify DOM sinks
+•Build payloads that pertain 
+to every sink type
+Testing for 
+ Javascript
+  
+Execution
+•Identify sinks and possible 
+JavaScript injection point
+Testing for HTML Injection
+•Identify HTML injection 
+points and assess severity 
+of the injected content
+Testing for Client
+ -
+Side URL 
+Redirect
+•Identify injection points 
+that handle URLs or paths
+•Assess the  locations that 
+the system can redirect to
+Testing for CSS Injection
+•Identify CSS Injection 
+points
+•Assess the impact of 
+injection
+Testing for Client
+ -
+Side 
+Resource Manipulation
+•Identify sinks with weak 
+input validation
+•Assess the impact of the 
+resource manipulation
+Testing Cross Origin Resource 
+Sharing
+•Identify endpoints that 
+implement CORS
+•Ensure that the CORS 
+configuration is secure or 
+harmless
+Testing for Cross Site Flashing
+•Decompile and analyze the 
+application’s code
+•Assess sink inputs and 
+unsafe method usages
+
+--- Page 32 ---
+Active Testing : Client
+ -
+Side Testing
+Testing for Clickjacking
+•Understand security 
+measures in place
+•Assess how strict the 
+security measures are and 
+if they are bypassable
+Testing Web Sockets
+•Identify the usage of Web 
+Sockets
+•Assess its implementation 
+by using the same tests on 
+normal HTTP channels
+Test Web Messaging
+•Assess the...

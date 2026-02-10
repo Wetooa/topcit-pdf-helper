@@ -1,0 +1,105 @@
+LEARNING GUIDE: Pages 7-11
+Generated: 2026-02-10 21:29:58
+PDF: Cyber Academia-Penetration Testing Day 2
+
+================================================================================
+LEARNING GUIDE
+================================================================================
+
+## Penetration Test Scoping: A Learning Guide
+
+This guide summarizes the essential information about the pre-engagement scoping phase of a penetration test.
+
+---
+
+### 1. Introduction to Scoping
+
+*   **Definition:** Scoping is the process of defining the boundaries and objectives of a penetration test.
+*   **Importance:** It is one of the most critical components of a penetration test, ensuring a clear understanding of what will be tested.
+
+---
+
+### 2. Scoping Phases
+
+The pre-engagement scoping process typically involves these steps:
+
+1.  **Set a Scoping Meeting:** Initial discussion with the client.
+2.  **Send Scoping Questionnaire:** A detailed form to gather necessary information.
+3.  **Generate a Pentest Information Sheet:** A document summarizing the agreed-upon scope.
+
+---
+
+### 3. Scoping Questionnaires
+
+*   **Purpose:**
+    *   To gain a clear understanding of the client's needs and objectives.
+    *   To accurately estimate the scope and effort required for the test.
+*   **Variability:** The questions asked depend on the specific type of application(s) or systems being tested (e.g., network, web, mobile).
+
+---
+
+### 4. Sample Scoping Questions
+
+Here are examples of questions asked during the scoping phase, categorized by test type:
+
+#### A. Network Penetration Test Scoping Questions
+
+*   How many **total IP addresses** are being tested?
+*   How many **internal IP addresses** (if applicable)?
+*   How many **external IP addresses** (if applicable)?
+
+#### B. Web Penetration Test Scoping Questions
+
+*   How many **web applications** are being assessed?
+*   How many **static pages** are being assessed (approximate)?
+*   How many **dynamic pages** are being assessed (approximate)?
+*   How many **user roles** does the application have?
+
+================================================================================
+ORIGINAL TEXT (First 5000 chars)
+================================================================================
+
+--- Page 7 ---
+PRE
+-
+ENGAGEMENT: Scoping
+Defining scope is arguably one of the most important 
+components of a penetration test
+
+--- Page 8 ---
+PRE
+-
+ENGAGEMENT: Scoping Phases
+Set a Scoping meeting
+Send Scoping Questionnaire
+Generate a Pentest Information Sheet
+
+--- Page 9 ---
+PRE
+-
+ENGAGEMENT: Scoping Questionnaires
+Designed to provide a better understanding of what the client 
+needs
+Requested to clients in order for the scope to be properly 
+estimated
+Varies depending on the type of application(s) to be tested
+
+--- Page 10 ---
+PRE
+-
+ENGAGEMENT: Sample Scoping Questions 
+for Network Pentest
+How many total IP addresses are being tested?
+How many internal IP addresses, if applicable?
+How many external IP addresses, if applicable?
+
+--- Page 11 ---
+PRE
+-
+ENGAGEMENT: Sample Scoping Questions 
+for Web Pentest
+How many web applications are being assessed?
+How many static pages are being assessed (approximate)?
+How many dynamic pages are being assessed (approximate)?
+How many user roles does the application have?
+

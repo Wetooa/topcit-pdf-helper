@@ -1,0 +1,362 @@
+LEARNING GUIDE: Pages 22-26
+Generated: 2026-02-10 21:28:35
+PDF: Cyber Academia-Penetration Testing Day 3
+
+================================================================================
+LEARNING GUIDE
+================================================================================
+
+Here is a simplified, easy-to-read learning guide based on the provided text:
+
+---
+
+## Active Testing Learning Guide
+
+This guide focuses on essential testing methodologies across Authorization, Session Management, and Input Validation.
+
+---
+
+### Section 1: Authorization Testing
+
+**Goal:** To ensure users can only access resources and perform actions for which they are explicitly authorized.
+
+1.  **Directory Traversal**
+    *   **Purpose:** Test for access to restricted files/directories.
+    *   **How to Test:**
+        *   Identify path traversal injection points (e.g., in URLs, file paths).
+        *   Attempt to bypass security measures to determine the extent of access.
+
+2.  **Bypassing Authorization Schema**
+    *   **Purpose:** Discover if horizontal or vertical access is possible without proper authorization.
+    *   **How to Test:**
+        *   **Horizontal Access:** Try to access data or functions of another user at the *same* privilege level.
+        *   **Vertical Access:** Try to access data or functions restricted to *higher* privilege levels.
+
+3.  **Privilege Escalation**
+    *   **Purpose:** Identify ways to gain higher privileges than intended.
+    *   **How to Test:**
+        *   Identify injection points related to privilege manipulation.
+        *   Fuzz (send varied, unexpected inputs) or attempt to bypass security measures that control privileges.
+
+4.  **Insecure Direct Object References (IDOR)**
+    *   **Purpose:** Determine if direct references to objects (like user IDs, file names) can be manipulated to gain unauthorized access.
+    *   **How to Test:**
+        *   Identify points where object references occur (e.g., `user?id=123`, `file?name=report.pdf`).
+        *   Assess whether modifying these references allows access to unauthorized objects.
+
+---
+
+### Section 2: Session Management Testing
+
+**Goal:** To ensure user sessions are securely managed, preventing hijacking, fixation, and unauthorized manipulation.
+
+1.  **Session Management Schema**
+    *   **Purpose:** Evaluate the randomness and security of session tokens.
+    *   **How to Test:**
+        *   Gather session tokens for the same user and different users.
+        *   Analyze tokens for sufficient randomness to prevent guessing and session forging attacks.
+        *   Modify unsigned cookies containing potentially manipulable information.
+
+2.  **Cookie Attributes**
+    *   **Purpose:** Verify secure configuration of cookies.
+    *   **How to Test:**
+        *   Ensure proper security flags are set (e.g., `HttpOnly` to prevent client-side script access, `Secure` for HTTPS-only transmission).
+
+3.  **Session Fixation**
+    *   **Purpose:** Determine if an attacker can "fixate" a user's session ID (force them to use a known session ID).
+    *   **How to Test:**
+        *   Analyze the authentication flow.
+        *   Attempt to force a specific session cookie on a user and assess if they can log in with it, thus fixating their session.
+
+4.  **Exposed Session Variables**
+    *   **Purpose:** Prevent sensitive session data from being exposed.
+    *   **How to Test:**
+        *   Ensure proper encryption is implemented for session variables.
+        *   Review caching configurations to prevent session data leakage.
+        *   Assess the security of communication channels and methods transmitting session data.
+
+5.  **Cross-Site Request Forgery (CSRF)**
+    *   **Purpose:** Determine if requests can be initiated on a user's behalf without their knowledge.
+    *   **How to Test:**
+        *   Attempt to craft requests that a logged-in user's browser would automatically execute (e.g., form submissions, state-changing actions) when visiting a malicious site.
+
+6.  **Logout Functionality**
+    *   **Purpose:** Ensure proper session termination upon logout.
+    *   **How to Test:**
+        *   Assess the logout user interface (UI) and process.
+        *   Verify that the session is properly killed/invalidated server-side after logout.
+
+7.  **Session Timeout**
+    *   **Purpose:** Confirm a mandatory session expiration.
+    *   **How to Test:**
+        *   Validate the existence and effectiveness of a hard (absolute) session timeout.
+
+8.  **Session Hijacking**
+    *   **Purpose:** Assess the risk of an attacker taking over a valid user session.
+    *   **How to Test:**
+        *   Identify and attempt to hijack vulnerable session cookies (e.g., via network sniffing, XSS).
+        *   Assess the risk level if hijacking is successful.
+
+9.  **Session Puzzling**
+    *   **Purpose:** Identify and manipulate complex session logic or variables.
+    *   **How to Test:**
+        *   Identify all session variables.
+        *   Attempt to break the logical flow of session generation or management by manipulating these variables.
+
+---
+
+### Section 3: Input Validation Testing
+
+**Goal:** To ensure all user-supplied input is properly sanitized and validated before processing, preventing injection attacks.
+
+1.  **Reflected Cross-Site Scripting (XSS)**
+    *   **Purpose:** Detect scripts executing when user input is immediately reflected in the response (e.g., error messages).
+    *   **How to Test:**
+        *   Identify variables reflected in HTTP responses.
+        *   Assess what input they accept and any encoding applied upon return to the user's browser.
+
+2.  **Stored Cross-Site Scripting (XSS)**
+    *   **Purpose:** Detect scripts executing from user input that is stored (e.g., in a database) and later retrieved and displayed to other users.
+    *   **How to Test:**
+        *   Identify stored input (e.g., comments, profiles) reflected on the client-side.
+        *   Assess input acceptance and any encoding applied when the stored data is displayed.
+
+3.  **HTTP Parameter Pollution (HPP)**
+    *   **Purpose:** Manipulate application logic by sending multiple HTTP parameters with the same name.
+    *   **How to Test:**
+        *   Identify the backend server and its parameter parsing method.
+        *   Assess injection points and try to bypass input filters by duplicating parameters.
+
+4.  **SQL Injection**
+    *   **Purpose:** Inject malicious SQL queries into user-controlled input to bypass authentication, extract data, or modify databases.
+    *   **How to Test:**
+        *   Identify SQL injection points (e.g., search fields, login forms).
+        *   Assess the injection's severity and potential access level.
+
+5.  **LDAP Injection**
+    *   **Purpose:** Inject malicious LDAP queries (similar to SQL injection but for LDAP directories).
+    *   **How to Test:**
+        *   Identify LDAP injection points.
+        *   Assess the injection's severity and potential impact on directory services.
+
+6.  **XML Injection**
+    *   **Purpose:** Inject malicious XML code to manipulate XML parsers or extract data.
+    *   **How to Test:**
+        *   Identify XML injection points.
+        *   Assess the types of exploits (e.g., XML External Entity - XXE) that can be achieved and their severities.
+
+7.  **SSI Injection**
+    *   **Purpose:** Inject Server-Side Include (SSI) directives to execute commands or access files on the server.
+    *   **How to Test:**
+        *   Identify SSI injection points.
+        *   Assess the injection's severity.
+
+8.  **XPath Injection**
+    *   **Purpose:** Inject malicious XPath queries to bypass authentication or extract data from XML documents.
+    *   **How to Test:**
+        *   Identify XPath injection points.
+
+9.  **IMAP/SMTP Injection**
+    *   **Purpose:** Inject malicious commands into email protocols (IMAP or SMTP).
+    *   **How to Test:**
+        *   Identify IMAP/SMTP injection points.
+        *   Understand the system's data flow and deployment structure.
+        *   Assess the potential impacts of successful injection.
+
+10. **Code Injection**
+    *   **Purpose:** Inject arbitrary code (e.g., PHP, Python, Java) into the application for execution.
+    *   **How to Test:**
+        *   Identify injection points where user input is directly evaluated or executed as code.
+        *   Assess the injection's severity.
+
+11. **Command Injection**
+    *   **Purpose:** Execute arbitrary operating system commands via user-supplied input.
+    *   **How to Test:**
+        *   Identify and assess command injection points (e.g., functions that execute system commands with user input).
+
+12. **Format String Injection**
+    *   **Purpose:** Inject format string specifiers (e.g., `%x`, `%n`) into user-controlled fields to read/write memory or crash the application.
+    *   **How to Test:**
+        *   Determine if injecting format string conversion specifiers causes undesired behavior from the application.
+
+---
+
+================================================================================
+ORIGINAL TEXT (First 5000 chars)
+================================================================================
+
+--- Page 22 ---
+Active Testing : Authorization Testing
+Testing Directory Traversal 
+File Include
+•Identify injection points 
+that pertain to path 
+traversal. 
+•Assess bypassing 
+techniques and identify the 
+extent of path traversal
+Testing for Bypassing 
+Authorization Schema
+•Assess if horizontal or 
+vertical access is possible.
+Testing for Privilege 
+Escalation
+•Identify injection points 
+related to privilege 
+manipulation. 
+•Fuzz  or otherwise  attempt  
+to bypass  security  
+measures .
+Testing for Insecure Direct 
+Object References
+•Identify points where 
+object references may 
+occur. 
+•Assess the access control 
+measures and if they’re 
+vulnerable to IDOR.
+
+--- Page 23 ---
+Active Testing : Session Management Testing
+Testing for Session 
+Management Schema
+•Gather session tokens, for 
+the same user and for 
+different users where 
+possible. 
+•Analyze and ensure that 
+enough randomness exists 
+to stop session forging 
+attacks. 
+•Modify cookies that are not 
+signed and contain 
+information that can be 
+manipulated.
+Testing for Cookie Attributes
+•Ensure that the proper 
+security configuration is set 
+for cookies.
+Testing for Session Fixation
+•Analyze the authentication 
+mechanism and its flow. 
+•Force cookies and assess 
+the impact.
+Testing for Exposed Session 
+Variables
+•Ensure  that proper  
+encryption  is implemented . 
+•Review  the caching  
+configuration . 
+•Assess  the channel  and 
+methods’  security .
+Testing for Cross Site Request 
+Forgery
+•Determine  whether  it is 
+possible  to initiate  requests  
+on a user’s  behalf  that are 
+not initiated  by the user.
+
+--- Page 24 ---
+Active Testing : Session Management Testing
+Testing for Logout 
+Functionality
+•Assess the logout UI. 
+•Analyze the session 
+timeout and if the session 
+is properly killed after 
+logout.
+Testing Session Timeout
+•Validate that a hard session 
+timeout exists.
+Testing for Session Hijacking
+•Identify  vulnerable  session  
+cookies . Hijack  vulnerable  
+cookies  and assess  the risk 
+level .
+Testing for Session Puzzling
+•Identify all session 
+variables. 
+•Break the logical flow of 
+session generation.
+
+--- Page 25 ---
+Active Testing : Input Validation Testing
+Testing for Reflected Cross 
+Site Scripting
+•Identify variables that are 
+reflected in responses. 
+•Assess the input they 
+accept and the encoding 
+that gets applied on return 
+(if any).
+Testing for Stored Cross Site 
+Scripting
+•Identify stored input that is 
+reflected on the client -side. 
+•Assess the input they 
+accept and the encoding 
+that gets applied on return 
+(if any).
+Testing for HTTP Parameter 
+Pollution
+•Identify the backend and 
+the parsing method used. 
+•Assess injection points and 
+try bypassing input filters 
+using HPP.
+Testing for SQL Injection
+•Identify SQL injection 
+points. 
+•Assess the severity of the 
+injection and the level of 
+access that can be achieved 
+through it.
+Testing for LDAP Injection
+•Identify LDAP injection 
+points. 
+•Assess the severity of the 
+injection.
+Testing for XML Injection
+•Identify XML injection 
+points. 
+•Assess the types of exploits 
+that can be attained and 
+their severities.
+
+--- Page 26 ---
+Active Testing : Input Validation Testing
+Testing for SSI Injection
+•Identify SSI injection 
+points. 
+•Assess the severity of the 
+injection.
+Testing for XPath Injection
+•Identify XPATH injection 
+points.
+Testing for IMAP SMTP 
+Injection
+•Identify IMAP/SMTP 
+injection points. 
+•Understand the data flow 
+and deployment structure 
+of the system. 
+•Assess the injection 
+impacts.
+Testing for Code Injection
+•Identify injection points 
+where you can inject code 
+into the application. Assess 
+the injection severity.
+Testing for Command 
+Injection
+•Identify and assess the 
+command injection points.
+Testing for Format String 
+Injection
+•Assess whether injecting 
+format string conversion 
+specifiers into user -
+controlled fields causes 
+undesired behavior from 
+the application.
+

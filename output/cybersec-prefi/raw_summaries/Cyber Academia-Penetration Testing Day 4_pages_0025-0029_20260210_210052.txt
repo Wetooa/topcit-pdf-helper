@@ -1,0 +1,216 @@
+LEARNING GUIDE: Pages 25-29
+Generated: 2026-02-10 21:00:52
+PDF: Cyber Academia-Penetration Testing Day 4
+
+================================================================================
+LEARNING GUIDE
+================================================================================
+
+Here is a simplified, easy-to-read learning guide based on the provided text:
+
+---
+
+## Pentest Findings: Simplified Learning Guide
+
+This guide condenses information from a Pentest (Penetration Test) report, focusing on key concepts and a detailed example of a common vulnerability.
+
+---
+
+### Section 1: Understanding Pentest Technical Reports
+
+A **Pentest Technical Report** details vulnerabilities found by a tester in a target application. Each vulnerability entry typically includes:
+
+*   **Vulnerability Name:** A concise title for the issue.
+*   **Vulnerability Description:** Explains the flaw, its root cause, and how it was identified.
+*   **Exploitability and Impact:** Describes how easily the vulnerability can be exploited and its potential consequences.
+*   **Steps to Reproduce:** Detailed instructions on how to replicate the vulnerability.
+*   **Recommendation:** Advice on how to fix the vulnerability.
+
+---
+
+### Section 2: Overview of Pentest Findings (Examples)
+
+Pentest reports often begin with an overview of findings, categorizing them by severity and status. Here are examples of common vulnerability types:
+
+*   **Command Injection (Install Scripts):**
+    *   **Class:** Injection Flaws
+    *   **Severity:** Medium
+    *   **Status:** Closed (meaning it has been fixed)
+*   **Insecure Default Connection:**
+    *   **Class:** Cryptography - Missing Authentication
+    *   **Severity:** Low
+    *   **Status:** Open (meaning it still needs to be fixed)
+*   **Session Management - Missing Session Invalidation (Tele Logout):**
+    *   **Class:** User and Session Management
+    *   **Severity:** Low
+    *   **Status:** Open
+*   **Insecure Design (Signature Verification Bypass):**
+    *   **Class:** Application Insecure Design
+    *   **Severity:** High
+    *   **Status:** Open
+*   **Decompress Injection (Application Bundles):**
+    *   **Class:** Injection Flaws
+    *   **Severity:** High
+    *   **Status:** Closed
+*   **Information Exposure (Password Reset Token Leakage):**
+    *   **Class:** Authentication
+    *   **Severity:** Low
+    *   **Status:** Closed
+*   **Session Management - Missing Session Expiration (Password Reset):**
+    *   **Class:** User and Session Management
+    *   **Severity:** Low
+    *   **Status:** Open
+
+---
+
+### Section 3: Deep Dive - Vulnerability Example: Install Scripts Command Injection
+
+This section details a specific vulnerability to illustrate how they are reported and understood.
+
+*   **Vulnerability Name:** Install Scripts Command Injection
+*   **Severity:** Medium
+*   **Vulnerability Class:** Injection Flaws
+*   **Status:** Closed (Fixed)
+
+**Description:**
+
+1.  **Vulnerability:** The application dynamically generates installation scripts for a client based on a `version` parameter provided in the URL.
+2.  **Root Cause:** The `version` parameter, taken from the URL, is parsed and directly inserted into the bash script template *without proper sanitization*.
+    *   **Sanitization:** The process of cleaning user input to prevent malicious data from being processed by the system.
+3.  **Impact:** An attacker can craft a URL containing arbitrary commands. When this URL is used, these commands are embedded into the installation script. If the victim then executes this script (e.g., by piping it to `bash`), the attacker's commands run on their workstation.
+4.  **Related Issue:** A similar problem exists in another endpoint (`GetSiteInstructions()`) where the `serverProfile` parameter is reflected into a script without sanitization, also leading to command injection.
+
+**How to Reproduce (Reproduction Steps):**
+
+This issue can be verified with unauthenticated HTTP requests.
+
+1.  **For Install Scripts:**
+    *   Send an HTTP request (e.g., using `curl`) to the install endpoint, injecting a URL-encoded command into the version path.
+    *   **Example:**
+        ```bash
+        $ curl "https://example.com/install/1.01-%24%7Btouch%20grav%7D"
+        ```
+        *   `%24%7Btouch%20grav%7D` decodes to `${touch grav}`.
+    *   **Result:** The generated script will contain `touch grav`. If this script is executed, the `touch grav` command runs on the victim's system, creating a file named `grav`.
+
+2.  **For Join Cluster Scripts (Similar Issue):**
+    *   Send an HTTP request to the cluster join endpoint, injecting a URL-encoded command into the `serverProfile` parameter.
+    *   **Example:**
+        ```bash
+        $ curl "https://example.com/joincluster?serverProfile=%24%28sleep%2010%29"
+        ```
+        *   `%24%28sleep%2010%29` decodes to `$(sleep 10)`.
+    *   **Result:** The generated script will contain `sleep 10`. When executed, this command will cause a 10-second delay, demonstrating command execution.
+
+**Key Takeaway:** Always sanitize or validate all user-supplied input before using it in commands, scripts, or database queries to prevent injection attacks.
+
+================================================================================
+ORIGINAL TEXT (First 5000 chars)
+================================================================================
+
+--- Page 25 ---
+REPORTING: Pentest Findings Overview
+
+Vulnerability Class Severity Status
+Install Scripts Command Injection Injection Flaws Medium Closed
+Insecure Default Connection During Package  Cryptography -
+Upload and Upgrade Missing Low Open
+Authentication
+Tele Logout Does not Invalidate SSH User and Session
+Keys and Session Token Management - Low Open
+Missing
+Missing SlgnatureB\:jer:':jfl'l:satlon |rh\ppllcat|on Insecure Design High Open
+Application Bundles Insecure Decompress Injection Flaws High Closed
+. Information
+Password Reset Token Leakage Via Referer Exposure Low Closed
+Authentication
+Password Reset Does Not Expire Current and Session
+Sessions Management - Low Open
+Missing
+
+
+
+--- Page 26 ---
+REPORTING: Pentest Technical Report
+The Pentest Technical Report section is where you will find the 
+vulnerabilities and found by the tester in the target application. It 
+includes the following:
+Vulnerability Name
+Vulnerability Description
+Exploitability and Impact
+Steps to Reproduce
+Recommendation
+
+--- Page 27 ---
+1. Install Scripts Command Injection
+
+Severity Medium
+
+Vulnerability Class Injection Flaws
+
+Component
+
+Status Closed
+
+
+
+--- Page 28 ---
+REPORTING: Pentest Technical Report
+
+Description
+To install Fe sy client the user documentation recommends to execute the following command:
+b B Al a p Lol Sl Colll WG - bl B
+
+The installation script is dynamically generated by the g === to include details for the version
+requested by the user.
+
+During testing, we discovered that the version taken from the URL path is parsed using © . r and
+included within the template bash script with no sanitization.
+
+#!/bin/bash
+# This script downloads the [lversionl! build of t »e and installs it on the target machine
+
+As a result, an attacker can craft a URL that will include arbitrary commands within the installation script.
+Please note that other injection points exist within the same script.
+
+A similar problem occurs in the endpoint used to join a cluster. The GetSitelnstructions() function does
+not sanitize the serverProfile parameter which is reflected in the following script:
+
+s T FEI | b * LB el BS ) B o S
+--token=95 ic \
+
+--advertise-addr- \
+
+--role-fi i
+
+--cloud-provider \
+
+--operation-id-
+
+
+
+--- Page 29 ---
+REPORTING: Pentest Technical
+
+Reproduction Steps
+
+This issue can be verified with a simple unauthenticated HTTP request:
+
+$Scurll s r w ok e nstall/1.01-
+
+- mos
+
+aaan24% ~ - 3%29
+
+Where the URL encoded path contains ${touch grav). Such command will be included in the resulting
+script. Piping the script to bash leads to system command execution on the victim's workstation.
+
+The second issue can be verified using the following unauthenticated request:
+
+$CUI’[httpS://FIIJLI - = - i . - L
+%24% %29
+
+Where the URL encoded path contains S(sleep 10).
+
+
+

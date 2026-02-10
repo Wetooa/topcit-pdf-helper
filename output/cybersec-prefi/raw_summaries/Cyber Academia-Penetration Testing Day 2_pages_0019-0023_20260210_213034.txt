@@ -1,0 +1,63 @@
+LEARNING GUIDE: Pages 19-23
+Generated: 2026-02-10 21:30:34
+PDF: Cyber Academia-Penetration Testing Day 2
+
+================================================================================
+LEARNING GUIDE
+================================================================================
+
+Here's your simplified learning guide based on the provided text:
+
+---
+
+## Learning Guide: Information Gathering & OSINT
+
+### 1. Information Gathering
+
+*   **Definition:** A phase in penetration testing (pentest) focused on collecting information about the target. This includes both publicly available data and internal information.
+*   **Purpose & Importance:**
+    *   Identifies potential **attack vectors**.
+    *   Helps assess the target's **security posture**.
+    *   Gathers valuable **intelligence** about the target.
+
+### 2. Open-Source Intelligence (OSINT)
+
+*   **Definition:** A method of intelligence collection that involves:
+    *   Finding, selecting, and acquiring information solely from **publicly available sources**.
+    *   Analyzing this information to produce **actionable intelligence**.
+
+---
+
+================================================================================
+ORIGINAL TEXT (First 5000 chars)
+================================================================================
+
+--- Page 19 ---
+Information Gathering
+Pentest phase where publicly -available information or 
+internal information about the target is collected.
+
+--- Page 20 ---
+Information Gathering
+Helps in identifying potential attack vectors
+Helps the tester assess the security posture of the target
+Helps collect valuable intelligence about the target
+
+--- Page 21 ---
+Open
+ -
+Source Intelligence 
+ (OSINT)
+
+--- Page 22 ---
+Open
+ -
+Source Intelligence (OSINT)
+A form of intelligence collection management that involves 
+finding, selecting, and acquiring information from publicly 
+available sources and analyzing it to produce actionable 
+intelligence.
+
+--- Page 23 ---
+OUTPUT
+

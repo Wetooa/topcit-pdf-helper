@@ -1,0 +1,473 @@
+LEARNING GUIDE: Pages 52-56
+Generated: 2026-02-10 21:12:48
+PDF: Cyber Academia-Penetration Testing Day 1
+
+================================================================================
+LEARNING GUIDE
+================================================================================
+
+Here is a simplified, easy-to-read learning guide based on the provided text:
+
+---
+
+# Cybersecurity Tool Learning Guide
+
+This guide covers essential information on Nmap and GoWitness, focusing on their basic usage, purpose, and key output.
+
+---
+
+## 1. Nmap (Network Mapper)
+
+**Purpose:**
+*   A powerful tool used for network discovery and security auditing.
+*   Helps identify live hosts, open ports, and services running on a target system.
+
+**Basic Usage:**
+*   To scan a single IP address:
+    ```bash
+    nmap <IP address>
+    ```
+
+**Key Information from Nmap Scan Output:**
+
+*   **Host Status:** Indicates if the target host is `up` and shows network `latency` (delay in communication).
+*   **Port Scan Results (`PORT STATE SERVICE` table):**
+    *   **PORT:** The number of the port (e.g., `80`, `443`).
+    *   **STATE:** Indicates if the port is `open` (meaning a service is actively listening on it). Closed ports are typically filtered out unless specified.
+    *   **SERVICE:** The common service associated with that port (e.g., `http` for port 80, `https` for port 443, `msrpc`, `netbios-ssn`, `microsoft-ds`).
+*   **MAC Address:** Physical address of the network interface card.
+*   **Host Script Results:** Can show results from specific Nmap scripts run against the target. For example, `http-enum` is a script that enumerates details about web servers.
+*   **Scan Summary:** Provides details like the number of IP addresses scanned and the total time taken.
+
+**Example Output Insight:**
+*   An `open` port signifies a potential entry point or a running service that could be further investigated for vulnerabilities.
+
+---
+
+## 2. GoWitness
+
+**Definition:**
+*   A specialized tool designed for **visual inspection** of websites across numerous hosts.
+
+**Purpose:**
+*   To quickly gain an **overview of the HTTP-based attack surface**.
+    *   *HTTP-based attack surface*: Refers to all web applications, services, and endpoints exposed via HTTP/HTTPS that could potentially be targeted in an attack.
+*   Helps in visually assessing the appearance and status of web services without manual browsing.
+
+**Installation (Kali Linux):**
+*   GoWitness can be installed via Kali's package manager:
+    ```bash
+    apt install gowitness
+    ```
+
+**Key Functionality and Output (Based on Screenshots):**
+
+*   **Screenshot Capture:** Takes visual snapshots of target websites.
+*   **Dashboard & Gallery:** Provides a graphical interface to view captured screenshots and scan results.
+*   **Status Codes:** Displays HTTP response codes for each scanned URL (e.g., `200` for OK, `403` for Forbidden, `500` for Internal Server Error).
+*   **URL Listing:** Shows a list of scanned URLs, their corresponding status codes, and the size of the web page.
+*   **Filtering Options:** Allows users to filter results by status code (e.g., show only `200` responses or `Failed` probes).
+*   **Visual Aid:** Helps identify live web applications, their content, and any immediate visual indicators of issues or interesting services.
+
+**Practical Use:**
+*   Ideal for quickly assessing a large number of web servers to prioritize targets for further, more in-depth web application security testing.
+
+---
+
+================================================================================
+ORIGINAL TEXT (First 5000 chars)
+================================================================================
+
+--- Page 52 ---
+NMARP: Usage
+
+» Usage: nmap <IP address>
+
+Nmap scan report for
+Host is up (©0.0028s latency).
+Not shown: 987 closed tcp ports (reset)
+PORT STATE SERVICE
+" open s
+
+open
+p open
+p open
+L p open
+cCp open
+Cp open
+Ccp open
+Cp open
+cp open
+Ccp open
+Cp open
+Ccp open
+MAC Address: 0@ 1 (VMware)
+
+—r
+
+-
+<
+¢
+-
+
+-
+
+LI I B B R S
+
+ssn
+t-ds
+
+LA
+
+Lt
+
+A
+
+(il o — I O, TR VO — I — . O |
+
+M A Im Py RY ALY Y
+
+Host script results:
+| ° " eq: Incremental!
+
+Nmap done: 1 IP address (1 host up) scanned in 2.14 seconds
+
+
+
+--- Page 53 ---
+GoWitness
+
+
+--- Page 54 ---
+GoWitness
+GoWitness  is a tool for visual  inspection  of websites  across  
+numerous  hosts  and is convenient  for quickly  gaining  an overview  
+of HTTP -based  attack  surface .
+GoWitness  can be installed  in Kali Linux  through  its package  
+manager :
+oapt install  gowitness
+
+--- Page 55 ---
+e +
+o 5 New Probe
+
+gowitness, v3 25 Dashboard &3 Gallery E8 Overview
+
+Y 1selected © 200 o 403 © 500 & Group by Similar O Show Failed
+
+200
+
+Happening now i y: 3 Get your next
+
+Join today.
+
+Less social media. More Snapchat.
+
+https://snapchat.com:44
+
+X. It's what's happening /| X Reddit - Dive into anything Pinterest
+
+8 minutes ag:
+
+RGBLOX
+
+Let’s build from here
+
+
+
+--- Page 56 ---
+report Llist -
+
+=
+i3
+
+..ait/aowitness (-zsh)
+
+Failed
+
+Code
+
+Input
+
+URL
+
+~Size
+
+[m1]
+[m1]
+
+oo
+o
+
+[m1}
+o
+
+[m1]
+
+o
+AU N SR S
+
+o
+
+(1}
+W oM
+
+oo
+o
+
+o
+
+o
+@™o mm
+
+W wm
+m
+o
+
+m
+=
+
+[m1]
+B i = At O S8 L N L TN R N L
+
+1y}
+m
+
+o
+
+1]
+TTTT
+
+o
+
+o=
+
+w
+M M
+o
+o
+
+o
+
+o
+o
+
+onoonoonoonoon
+
+1y}
+M
+
+TT T T T
+
+100
+1]
+o
+=
+
+o
+I =
+
+o
+=
+w
+
+o
+
+N
+
+=
+D
+
+o
+=
+M
+
+o
+on
+[y}
+
+https:
+https:
+https:
+https:
+https:
+https:
+https:
+https:
+https:
+https:
+https:
+https:
+https:
+https:
+https:
+1/ /Fl
+https:
+https:
+https:
+1/ /d
+https:
+https:
+https:
+2/l
+https:
+https:
+https:
+2/ /e
+https:
+https:
+https:
+https:
+https:
+
+https
+
+https
+
+https
+
+https
+
+/g
+/g
+//F
+//a)
+/i
+/g
+At
+/ic
+/g
+fit
+I7as
+/7ol
+/yt
+/g
+/an
+
+//a:
+7R
+/iw
+
+/b
+/gt
+/g0
+
+lg
+/7 F
+Pt
+
+£ wl
+/7y
+//at
+lp
+/st
+
+143
+
+13
+
+13
+143
+1443
+
+~.com:443
+
+13
+1443
+
+1t.com: 443
+n.com:443
+13
+
+13
+143
+
+1
+
+gn up
+
+Produ. ..
+1
+
+ild Eve...
+g /...
+
+n Up
+
+1
+
+gn up
+
+s | Mic...
+erly Ho...
+& Analy...
+/1
+LatForm...
+m her...
+
+e inter...
+Watch T...
+eliable...
+hoo Fam. ..
+
+ing and...
+
+Line - ...
+
+1khb
+1kh
+3kb
+Akh
+1kh
+Akb
+4kh
+Akb
+1kh
+4khb
+3khb
+1khb
+Akb
+Akh
+Akb
+]
+1kb
+Akh
+Akb
+Akb
+Zkb
+1kb
+1kh
+Akb
+4kh
+Akb
+1kb
+Akb
+3kb
+Akh
+1kb
+4kh
+Akb
+
+200KkBY . . . .. .. . . 00kB*?
+
+=
+1)
+-+
+
+[ <N
+
+W= s =0 s
+
+M) = =
+M~
+
+W W
+
+=
+
+= MR
+Wk =0 WO
+
+]
+
+

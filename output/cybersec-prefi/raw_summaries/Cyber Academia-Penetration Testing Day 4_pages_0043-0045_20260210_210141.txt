@@ -1,0 +1,61 @@
+LEARNING GUIDE: Pages 43-45
+Generated: 2026-02-10 21:01:41
+PDF: Cyber Academia-Penetration Testing Day 4
+
+================================================================================
+LEARNING GUIDE
+================================================================================
+
+Here is a simplified, easy-to-read learning guide based on the provided text:
+
+---
+
+### **Learning Guide: CVSS Base Metrics - Availability**
+
+This guide focuses on understanding the **Availability** metric within CVSS (Common Vulnerability Scoring System) Base Metrics.
+
+---
+
+#### **1. CVSS Base Metrics: Availability**
+
+*   **Definition:** Availability measures the impact on a system component's ability to function or be accessible after a vulnerability has been successfully exploited.
+*   **Core Focus:**
+    *   It assesses the loss of access or operational capability of the **component itself**.
+    *   This is about whether the service or system is *up and running* and *responsive*.
+*   **Key Distinction from Other Metrics:**
+    *   **Confidentiality & Integrity** metrics focus on the loss or corruption of **data** (e.g., files, information) used by a component.
+    *   **Availability** focuses solely on the **component's functionality and accessibility**, not the data it handles.
+*   **Examples of Impacted Components:**
+    *   Networked services such as web servers, database systems, or email services.
+    *   If a vulnerability makes a web server crash or unresponsive, that's an Availability impact.
+
+---
+
+**Note:** Pages 44 and 45 of the original text contained only titles ("Demo of Reporting") and closing remarks ("Thank you!! Next: Cyber Academia LAB"), and therefore did not provide additional substantive content for this learning guide.
+
+================================================================================
+ORIGINAL TEXT (First 5000 chars)
+================================================================================
+
+--- Page 43 ---
+CVSS Base Metrics 
+ –
+ 
+Availability
+Availability : This metric measures the impact to the availability of the 
+impacted component resulting from a successfully exploited 
+vulnerability. While the Confidentiality and Integrity impact metrics apply 
+to the loss of confidentiality or integrity of data (e.g., information, files) 
+used by the impacted component, this metric refers to the loss of 
+availability of the impacted component itself, such as a networked 
+service (e.g., web, database, email)
+
+
+--- Page 44 ---
+Demo of Reporting
+
+--- Page 45 ---
+Thank you!!
+Next: 
+Cyber Academia LAB
+

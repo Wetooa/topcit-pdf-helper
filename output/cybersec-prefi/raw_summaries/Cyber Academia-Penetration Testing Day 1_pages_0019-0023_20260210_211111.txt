@@ -1,0 +1,182 @@
+LEARNING GUIDE: Pages 19-23
+Generated: 2026-02-10 21:11:11
+PDF: Cyber Academia-Penetration Testing Day 1
+
+================================================================================
+LEARNING GUIDE
+================================================================================
+
+**Learning Guide: OWASP Top 10 (2025 Edition - A01 to A04)**
+
+This guide summarizes the top application security risks, focusing on the first four items of the OWASP Top 10 (2025).
+
+---
+
+### **Overview: OWASP Top 10**
+The OWASP Top 10 is a standard awareness document for developers and web application security. It represents a broad consensus about the most critical security risks to web applications.
+
+---
+
+### **A01: Broken Access Control (2025)**
+
+*   **What it is:** Users can access data or perform actions they aren't authorized to. This happens due to missing or weak authorization checks.
+*   **Why it's #1:** It remains the most common and impactful web application risk.
+*   **Impact:** Often leads to data exposure, privilege escalation, or full account takeovers.
+*   **Examples:**
+    *   Accessing another user's private data by simply changing an ID in a URL.
+    *   Performing administrative functions as a regular user.
+
+---
+
+### **A02: Security Misconfiguration (2025)**
+
+*   **What it is:** Systems are configured incorrectly, or insecure default settings are left in place. This includes exposed services or a lack of security hardening.
+*   **Why it moved up to #2:**
+    *   More prevalent in modern applications due to increased complexity (cloud, containers, CI/CD pipelines).
+    *   Small configuration errors can expose entire systems or sensitive data.
+*   **Examples:**
+    *   Leaving administrative consoles publicly accessible.
+    *   Publicly exposed cloud storage buckets.
+    *   Using default credentials that are easily guessable or publicly known.
+
+---
+
+### **A03: Software Supply Chain Failures (2025)**
+
+*   **What it is:** Risks introduced through third-party components like libraries, dependencies, build tools, or CI/CD pipelines. This means trusting code that has been compromised.
+*   **Why it's #3:**
+    *   Modern applications heavily rely on external dependencies.
+    *   A single compromised component can affect thousands of applications.
+    *   While incidents are fewer, their impact is typically very high.
+*   **Examples:**
+    *   Using a compromised open-source library that contains malicious code.
+    *   Malicious updates injected into build pipelines during software development.
+
+---
+
+### **A04: Cryptographic Failures (2025)**
+
+*   **What it is:** Issues arising from missing, weak, or improperly implemented cryptography. This also includes poor encryption practices and exposed or mismanaged cryptographic keys.
+*   **Common Causes:**
+    *   Using weak or outdated encryption algorithms.
+    *   Insufficient randomness (poor entropy) in cryptographic operations.
+    *   Predictable or broken random number generators.
+*   **Examples:**
+    *   Storing passwords without proper hashing.
+    *   Using weak custom encryption instead of industry-standard algorithms.
+    *   Poorly configured TLS/SSL (e.g., outdated protocols, weak cipher suites).
+
+================================================================================
+ORIGINAL TEXT (First 5000 chars)
+================================================================================
+
+--- Page 19 ---
+A01
+ -
+ 
+Broken Access Control
+A02
+ -
+ 
+Security Misconfiguration
+A03
+ -
+ 
+Software Supply Chain Failures
+A04
+ -
+ 
+Cryptographic Failure
+A05
+ -
+ 
+Injection
+A06
+ -
+ 
+Insecure Design
+A07
+ -
+ 
+Authentication Failures
+A08
+ -
+ 
+Software 
+ or Data
+  
+Integrity Failures
+A09
+ -
+ 
+Security Logging and 
+ Alerting Failures
+A10
+ -
+ 
+Mishandling of Exceptional Conditions
+OWASP TOP 10
+
+
+--- Page 20 ---
+A01:2025 
+ –
+ 
+Broken Access Control
+•Happens when users canaccess data oractions they shouldn't
+•Caused bymissing orweak authorization checks
+What it is:
+Why it's #1
+•Still themost common andmost impactful web apprisk
+•Often leads todate exposure, privilege, escalation, orfullaccount takeover
+Examples:
+•Accessing another user's data bychanging anID
+•Performing admin actions asanormal user
+
+--- Page 21 ---
+A02:2025 
+ –
+ 
+Security Misconfiguration
+•Happens when systems areconfigured incorrectly orleftinsecure bydefault
+•Often caused bydefault settings, exposed services, ormissing hardeningWhat it is:
+Why it moved up to #2:
+•Misconfigurations aremore common inmodern apps
+•Cloud containers, andCI/CD increase configuration complexity
+•Small mistakes canexpose entire systems orsensitive data
+Examples:
+•Open admin consoles
+•Public cloud storage
+•Default credentials
+
+--- Page 22 ---
+A03:2025 
+ –
+ 
+Software Supply Chain Failures
+•Risks introduced through third -party libraries, dependencies, build tools, orCI/CD pipelines
+•Youtrust thecode, butthecode wascompromisedWhat it is:
+Why it's #3
+•Apps rely onexternal dependencies
+•One compromised component canaffect thousands ofapplications
+•Fewer incidents, butvery high impact when ithappens
+Examples:
+•Compromised open -source libraries
+•Malicious updates inbuild pipelines
+
+--- Page 23 ---
+A04:2025 
+ –
+ 
+Cryptographic Failures
+•Failures related tomissing, weak, orimproperly implemented cryptography
+•Includes poor encryption practices anexposed ormismanaged cryptographic keysWhat it is:
+Common Causes:
+•Weak oroutdated encryption algorithms
+•Insufficient randomness (poor entropy)
+•Predictable orbroken random generators
+Examples:
+•Storing passwords without hashing
+•Using weak encryption orcustom crypto
+•Poor TLS/SSL configuration  
+

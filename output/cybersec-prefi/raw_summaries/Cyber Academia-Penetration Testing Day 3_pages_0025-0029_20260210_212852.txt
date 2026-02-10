@@ -1,0 +1,457 @@
+LEARNING GUIDE: Pages 25-29
+Generated: 2026-02-10 21:28:52
+PDF: Cyber Academia-Penetration Testing Day 3
+
+================================================================================
+LEARNING GUIDE
+================================================================================
+
+Here is a simplified, easy-to-read learning guide based on the provided text, designed for efficient studying.
+
+---
+
+# Cybersecurity Testing Guide: Active Testing
+
+This guide covers active testing methodologies for identifying common web application vulnerabilities.
+
+---
+
+## Section 1: Input Validation Testing
+
+This section focuses on finding vulnerabilities related to how an application processes and validates user input.
+
+### 1.1 Cross-Site Scripting (XSS)
+
+**Goal:** Detect if malicious scripts can be injected into web pages viewed by other users.
+
+*   **Reflected XSS:**
+    *   Find variables that echo back in the response.
+    *   Test what input they accept and observe any encoding applied.
+*   **Stored XSS:**
+    *   Find user-supplied input stored by the application and later displayed on the client-side.
+    *   Test what input they accept and observe any encoding applied.
+
+### 1.2 HTTP Parameter Pollution (HPP)
+
+**Goal:** Determine if conflicting HTTP parameters can manipulate application logic.
+
+*   Identify the backend system and its method for parsing HTTP parameters.
+*   Find injection points and try to bypass input filters using HPP techniques.
+
+### 1.3 SQL Injection
+
+**Goal:** Discover if malicious SQL code can be injected to compromise the database.
+
+*   Locate potential SQL injection points.
+*   Assess the vulnerability's severity and the level of database access achievable.
+
+### 1.4 LDAP Injection
+
+**Goal:** Check if malicious LDAP queries can be injected to compromise directory services.
+
+*   Locate potential LDAP injection points.
+*   Assess the vulnerability's severity.
+
+### 1.5 XML Injection
+
+**Goal:** Identify if malicious XML can be injected to manipulate XML-based applications.
+
+*   Locate potential XML injection points.
+*   Assess the types and severities of possible exploits.
+
+### 1.6 Server-Side Includes (SSI) Injection
+
+**Goal:** Detect if server-side commands can be injected and executed.
+
+*   Locate potential SSI injection points.
+*   Assess the vulnerability's severity.
+
+### 1.7 XPath Injection
+
+**Goal:** Determine if malicious XPath queries can be injected to access or manipulate XML data.
+
+*   Locate potential XPath injection points.
+
+### 1.8 IMAP/SMTP Injection
+
+**Goal:** Check if malicious commands can be injected into email protocols.
+
+*   Locate potential IMAP/SMTP injection points.
+*   Understand the system's data flow and deployment.
+*   Assess the potential impacts of the injection.
+
+### 1.9 Code Injection
+
+**Goal:** Find points where arbitrary code can be injected and executed within the application.
+
+*   Locate injection points where code can be inserted.
+*   Assess the injection's severity.
+
+### 1.10 Command Injection
+
+**Goal:** Identify if operating system commands can be injected and executed.
+
+*   Locate and assess command injection points.
+
+### 1.11 Format String Injection
+
+**Goal:** Determine if format string specifiers can cause application issues.
+
+*   Inject format string conversion specifiers (e.g., `%x`, `%s`) into user-controlled fields.
+*   Observe if the application exhibits undesired behavior (e.g., crashes, memory leaks).
+
+### 1.12 Incubated Vulnerability
+
+**Goal:** Detect vulnerabilities that are stored but require a separate "recall" action to trigger.
+
+*   Find stored injections that need a subsequent step to activate.
+*   Understand how a recall step might naturally occur.
+*   Set up listeners or activate the recall step if possible.
+
+### 1.13 HTTP Splitting & Smuggling
+
+**Goal:** Identify if HTTP responses can be manipulated (splitting) or if requests can be misinterpreted (smuggling).
+
+*   **Splitting:** Assess if the application is vulnerable to HTTP response splitting and identify potential attacks.
+*   **Smuggling:** Assess if the communication chain is vulnerable to HTTP request smuggling and identify potential attacks.
+
+### 1.14 HTTP Incoming Requests Monitoring
+
+**Goal:** Inspect incoming and outgoing HTTP traffic for suspicious patterns.
+
+*   Monitor all HTTP requests to and from the web server for anomalies.
+*   Observe HTTP traffic without altering the end-user's browser proxy or client-side application.
+
+### 1.15 Host Header Injection
+
+**Goal:** Check if the `Host` header can be manipulated to redirect requests or bypass security.
+
+*   Assess if the application dynamically parses the `Host` header.
+*   Attempt to bypass security controls that rely on the `Host` header.
+
+### 1.16 Server-Side Template Injection (SSTI)
+
+**Goal:** Detect if user input can be processed by a server-side template engine, leading to code execution.
+
+*   Find points where template injection vulnerabilities exist.
+*   Identify the specific templating engine being used.
+*   Construct and build an exploit for the identified engine.
+
+### 1.17 Server-Side Request Forgery (SSRF)
+
+**Goal:** Determine if the server can be tricked into making requests to internal or external resources on an attacker's behalf.
+
+*   Locate potential SSRF injection points.
+*   Test if these injection points are exploitable.
+*   Assess the vulnerability's severity.
+
+---
+
+## Section 2: Testing for Weak Cryptography
+
+This section focuses on identifying insecure implementations of encryption and communication protocols.
+
+### 2.1 Weak Transport Layer Security (TLS)
+
+**Goal:** Verify the strength and proper implementation of SSL/TLS.
+
+*   Validate the service's TLS configuration (e.g., supported cipher suites, protocols).
+*   Review the digital certificate's cryptographic strength and validity period.
+*   Ensure that TLS security cannot be bypassed and is correctly applied across the application.
+
+### 2.2 Padding Oracle Attack
+
+**Goal:** Detect if error messages leak information about encrypted data padding.
+
+*   Identify encrypted messages that use padding.
+*   Attempt to manipulate the padding of encrypted messages.
+*   Analyze returned error messages for clues that could lead to decryption.
+
+### 2.3 Sensitive Information via Unencrypted Channels
+
+**Goal:** Discover if sensitive data is transmitted insecurely.
+
+*   Identify sensitive information transmitted through various communication channels (e.g., HTTP, email, logs).
+*   Assess the privacy and security of these channels.
+
+### 2.4 Weak Encryption/Hashing
+
+**Goal:** Identify the use of outdated or insecure cryptographic algorithms.
+
+*   Identify instances where weak encryption or hashing algorithms are used or improperly implemented.
+
+---
+
+## Section 3: Business Logic Testing
+
+This section explores vulnerabilities arising from flaws in the application's core business processes and logic.
+
+### 3.1 Business Logic Data Validation
+
+**Goal:** Ensure that critical data validation occurs securely on the backend.
+
+*   Identify all data input points.
+*   Verify that all validation checks happen on the backend and cannot be bypassed client-side.
+*   Attempt to send malformed data and analyze how the application handles it.
+
+### 3.2 Ability to Forge Requests
+
+**Goal:** Check if requests can be crafted to bypass intended workflows or access hidden functionality.
+
+*   Review project documentation for fields that might be guessable, predictable, or represent hidden functionality.
+*   Insert logically valid but unexpected data to bypass normal business logic workflows.
+
+### 3.3 Integrity Checks
+
+**Goal:** Validate that data integrity is maintained throughout the system.
+
+*   Review documentation for all components that move, store, or handle data.
+*   Determine what data types are logically acceptable by each component and what types should be prevented.
+*   Identify who should be allowed to modify or read data in each component.
+*   Attempt to insert, update, or delete data values that should be disallowed based on business logic.
+
+### 3.4 Process Timing
+
+**Goal:** Identify vulnerabilities related to the timing of operations.
+
+*   Review documentation for functionalities sensitive to time (e.g., multi-step processes, race conditions).
+*   Develop and execute misuse cases that exploit timing issues.
+
+### 3.5 Function Call Limits
+
+**Goal:** Verify that functions with intended usage limits are properly enforced.
+
+*   Identify functions that should have limits on how many times they can be called (e.g., password reset, voting).
+*   Assess if a logical limit is set and if it is properly validated and enforced by the application.
+
+---
+
+================================================================================
+ORIGINAL TEXT (First 5000 chars)
+================================================================================
+
+--- Page 25 ---
+Active Testing : Input Validation Testing
+Testing for Reflected Cross 
+Site Scripting
+•Identify variables that are 
+reflected in responses. 
+•Assess the input they 
+accept and the encoding 
+that gets applied on return 
+(if any).
+Testing for Stored Cross Site 
+Scripting
+•Identify stored input that is 
+reflected on the client -side. 
+•Assess the input they 
+accept and the encoding 
+that gets applied on return 
+(if any).
+Testing for HTTP Parameter 
+Pollution
+•Identify the backend and 
+the parsing method used. 
+•Assess injection points and 
+try bypassing input filters 
+using HPP.
+Testing for SQL Injection
+•Identify SQL injection 
+points. 
+•Assess the severity of the 
+injection and the level of 
+access that can be achieved 
+through it.
+Testing for LDAP Injection
+•Identify LDAP injection 
+points. 
+•Assess the severity of the 
+injection.
+Testing for XML Injection
+•Identify XML injection 
+points. 
+•Assess the types of exploits 
+that can be attained and 
+their severities.
+
+--- Page 26 ---
+Active Testing : Input Validation Testing
+Testing for SSI Injection
+•Identify SSI injection 
+points. 
+•Assess the severity of the 
+injection.
+Testing for XPath Injection
+•Identify XPATH injection 
+points.
+Testing for IMAP SMTP 
+Injection
+•Identify IMAP/SMTP 
+injection points. 
+•Understand the data flow 
+and deployment structure 
+of the system. 
+•Assess the injection 
+impacts.
+Testing for Code Injection
+•Identify injection points 
+where you can inject code 
+into the application. Assess 
+the injection severity.
+Testing for Command 
+Injection
+•Identify and assess the 
+command injection points.
+Testing for Format String 
+Injection
+•Assess whether injecting 
+format string conversion 
+specifiers into user -
+controlled fields causes 
+undesired behavior from 
+the application.
+
+--- Page 27 ---
+Active Testing : Input Validation Testing
+Testing for Incubated 
+Vulnerability
+•Identify injections that are 
+stored and require a recall 
+step to the stored injection. 
+•Understand how a recall 
+step could occur. 
+•Set listeners or activate the 
+recall step if possible.
+Testing for HTTP Splitting 
+Smuggling
+•Assess if the application is 
+vulnerable to splitting, 
+identifying what possible 
+attacks are achievable. 
+•Assess if the chain of 
+communication is 
+vulnerable to smuggling, 
+identifying what possible 
+attacks are achievable.
+Testing for HTTP Incoming 
+Requests
+•Monitor all incoming and 
+outgoing HTTP requests to 
+the Web Server to inspect 
+any suspicious requests. 
+•Monitor HTTP traffic 
+without changes of end 
+user Browser proxy or 
+client -side application.
+Testing for Host Header 
+Injection
+•Assess if the Host header is 
+being parsed dynamically in 
+the application. Bypass 
+security controls that rely 
+on the header.
+Testing for Server
+ -
+Side 
+Template Injection
+•Detect template injection 
+vulnerability points.
+•Identify the templating 
+engine. 
+•Build the exploit.
+Testing for Server
+ -
+Side 
+Request Forgery
+•Identify SSRF injection 
+points. 
+•Test if the injection points 
+are exploitable. 
+•Asses the severity of the 
+vulnerability.
+
+--- Page 28 ---
+Active Testing : Testing for Weak Cryptography
+Testing for Weak Transport 
+Layer Security
+•Validate the service 
+configuration. 
+•Review the digital 
+certificate’s cryptographic 
+strength and validity. 
+•Ensure that the TLS 
+security is not bypassable  
+and is properly 
+implemented across the 
+application.
+Testing for Padding Oracle
+•Identify encrypted 
+messages that rely on 
+padding. 
+•Attempt to break the 
+padding of the encrypted 
+messages and analyze the 
+returned error messages 
+for further analysis.
+Testing for Sensitive 
+Information Sent via 
+Unencrypted Channels
+•Identify sensitive 
+information transmitted 
+through the various 
+channels. 
+•Assess the privacy and 
+security of the channels 
+used.
+Testing for Weak Encryption
+•Provide a guideline for the 
+identification weak 
+encryption or hashing uses 
+and implementations.
+
+--- Page 29 ---
+Active Testing: Business Logic Testing
+Test Business Logic 
+Data Validation
+•Identify data injection 
+points. 
+•Validate that all checks are 
+occurring on the back end 
+and can’t be bypassed.
+•Attempt to break the 
+format of the expected 
+data and analyze how the 
+application is handling it.
+Test Ability to Forge Requests
+•Review the project 
+documentation looking for 
+guessable, predictable, or 
+hidden functionality of 
+fields. 
+•Insert logically valid data in 
+order to bypass normal 
+business logic workflow.
+Test Integrity Checks
+•Review the project 
+documentation for 
+components of the system 
+that move, store, or handle 
+data. 
+•Determine what type of 
+data is logically acceptable 
+by the component and 
+what types the system 
+should guard against. 
+Determine who should be 
+allowed to modify or read 
+that data in each 
+component. 
+•Attempt to insert, update, 
+or delete data values  used 
+by each component that 
+should not be allowed per 
+the business logic 
+workflow.
+Test for Process Timing
+• Review the project 
+documentation for syste...

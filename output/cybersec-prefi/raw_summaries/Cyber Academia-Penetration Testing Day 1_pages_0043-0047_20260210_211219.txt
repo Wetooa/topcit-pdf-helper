@@ -1,0 +1,153 @@
+LEARNING GUIDE: Pages 43-47
+Generated: 2026-02-10 21:12:19
+PDF: Cyber Academia-Penetration Testing Day 1
+
+================================================================================
+LEARNING GUIDE
+================================================================================
+
+# Learning Guide: Penetration Testing Tools
+
+This guide provides a concise overview of `TestSSL` and `SQLMap`, focusing on their purpose, usage, and installation.
+
+---
+
+## 1. TestSSL
+
+`TestSSL` is a tool used for checking the security of TLS/SSL configurations.
+
+### 1.1 Sample Command and Flags
+
+To perform a basic security check on a domain using `TestSSL`:
+
+```bash
+testssl -p -s -S -U <domain>
+```
+
+**Flags Explained:**
+*   `-p`: Checks for supported TLS/SSL protocols (e.g., TLSv1.2, TLSv1.3).
+*   `-s`: Checks the strength and security of cipher suites used by the server.
+*   `-S`: Checks server defaults and configurations for security best practices.
+*   `-U`: Checks for common TLS-related vulnerabilities.
+
+---
+
+## 2. SQLMap
+
+`SQLMap` is an open-source penetration testing tool designed to automate the detection and exploitation of SQL injection vulnerabilities.
+
+### 2.1 What is SQLMap?
+
+*   An automated tool for detecting and exploiting SQL injection flaws in databases.
+*   **Key Capabilities:**
+    *   Detects and exploits SQL injection vulnerabilities.
+    *   Enumerates databases, tables, and columns.
+    *   Can access the underlying operating system.
+    *   Detects and cracks password hashes.
+*   Highly customizable with various configuration options.
+*   **Important:** Effective use of `SQLMap` requires a good understanding of SQL injection vulnerabilities and SQL databases.
+
+### 2.2 Installation
+
+#### Kali Linux
+*   `SQLMap` usually comes **pre-installed** on Kali Linux. No separate installation is typically needed.
+
+#### Windows
+1.  **Download:** Get the latest version from the official GitHub repository: `https://github.com/sqlmapproject/sqlmap`.
+2.  **Extract:** Unzip the downloaded file to a directory of your choice.
+3.  **Navigate:** Open a command prompt and go to the directory where you extracted `SQLMap`.
+4.  **Verify:** Run `python sqlmap.py --version` to confirm it's working. The version number should be displayed.
+
+#### macOS
+1.  **Install Homebrew:** Open your terminal and run:
+    ```bash
+    /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
+    ```
+2.  **Install Python:** Using Homebrew, install Python:
+    ```bash
+    brew install python
+    ```
+3.  **Install SQLMap:** Use pip to install `SQLMap`:
+    ```bash
+    pip install sqlmap
+    ```
+
+### 2.3 Sample Commands & Basic Usage
+
+Here's a basic command to test a URL for SQL injection vulnerabilities:
+
+```bash
+sqlmap -u "http://example.com/page?id=1" --dbs -p id
+```
+
+**Flags Explained:**
+*   `-u "url"`: Specifies the target URL to test for vulnerabilities.
+*   `--dbs`: If a parameter is vulnerable, this option will display a list of available databases on the server.
+*   `-p <parameter>`: Specifies which specific parameter (e.g., `id`, `username`) in the URL to test for injection.
+
+================================================================================
+ORIGINAL TEXT (First 5000 chars)
+================================================================================
+
+--- Page 43 ---
+TestSSL
+Sample command that you can use in  testssl  for penetration testing:
+•Testssl  –p –s –S –U <domain>
+-p : Check for TLS protocols
+-s : Check for cipher suites strength
+-S : Check for server defaults
+-U : Check for TLS -related vulnerabilities
+
+--- Page 44 ---
+SQLMap
+
+
+--- Page 45 ---
+SQLMap
+SQLMap  is an open -source 
+penetration testing tool.
+It automates the process of detecting 
+and exploiting SQL injection flaws in 
+a database.
+It can detect and exploit SQL 
+injection vulnerabilities, enumerate 
+databases, tables, and columns, and 
+access the operating system
+It can also detect and crack password 
+hashes.
+It is highly customizable and has a 
+variety of configuration options and 
+settings.
+SQLMap  requires knowledge of SQL 
+injection vulnerabilities and SQL 
+databases to be used effectively.
+
+
+--- Page 46 ---
+SQLMap
+ : Installation
+KALI LINUX
+•Kali Linux ( SQLMap  usually comes pre -installed on Kali Linux, so you don't need to install it separately.) 
+WINDOWS
+•Download the latest version of SQLMap  from the official GitHub repository: 
+https://github.com/sqlmapproject/sqlmap.
+•Extract the downloaded zip file to a directory of your choice.
+•Open a command prompt and navigate to the directory where you extracted SQLMap .
+•To verify that SQLMap  is working correctly, run the command: `python sqlmap.py –version`
+•If SQLMap  is working correctly, you should see the version number displayed in the command prompt.
+MAC OS
+•Install Homebrew by running the command: `/usr/bin/ruby -e "$(curl -fsSL  
+https://raw.githubusercontent.com/Homebrew/install/master/install)“`
+•Install Python by running the command: brew `install python`
+•Install SQLMap  by running the command: `pip install sqlmap `
+
+--- Page 47 ---
+SQLMap
+Sample commands that you can use in SQLmap  for penetration testing:
+•Basic usage: This command will test the URL for SQL injection vulnerabilities
+•`sqlmap  –u “url" --dbs -p username `
+o-u : URL that we will be testing. 
+o--dbs : will display a list of database available on the server if a parameter is 
+vulnerable
+o-p : Specify which parameter to test
+

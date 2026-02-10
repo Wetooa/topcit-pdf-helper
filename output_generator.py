@@ -141,7 +141,7 @@ class OutputGenerator:
         # Convert Markdown to HTML
         html_content = markdown.markdown(
             md_content,
-            extensions=['toc', 'tables', 'fenced_code']
+            extensions=['toc', 'tables', 'fenced_code', 'attr_list']
         )
         
         # Wrap in full HTML document with styling
@@ -234,27 +234,108 @@ class OutputGenerator:
                     "but with default fonts."
                 )
             raise RuntimeError(error_msg) from e
-    
+
+    def compile_summaries_folder_to_pdf(
+        self,
+        output_filename: str = "compiled.pdf",
+        title: Optional[str] = None,
+    ) -> Optional[Path]:
+        """
+        Compile all summary Markdown files in the summaries directory into a
+        single PDF. Uses whatever is on disk so that re-runs include every
+        summary that exists, not only those from the current run.
+
+        Args:
+            output_filename: Name for the output PDF file.
+            title: Optional title for the compiled document (e.g. group name).
+
+        Returns:
+            Path to the compiled PDF, or None if no summary files exist.
+        """
+        summary_files = sorted(self.summaries_dir.glob("*_summary.md"))
+        if not summary_files:
+            logger.warning("No summary markdown files found; skipping compiled PDF.")
+            return None
+
+        logger.info(f"Compiling {len(summary_files)} summaries from folder into: {output_filename}")
+        heading = f"# {title}\n" if title else "# PDF Learning Guides\n"
+        content = []
+        content.append(heading)
+        content.append(f"\n*Compiled on {datetime.now().strftime('%Y-%m-%d %H:%M:%S')}*\n")
+        content.append(f"\n*Total documents: {len(summary_files)}*\n")
+        content.append("\n*These are simplified learning guides. Use these for studying instead of the lengthy originals.*\n")
+        content.append("\n---\n")
+        content.append("\n## Table of Contents\n\n")
+
+        toc_entries = []
+        file_contents = []
+        for md_file in summary_files:
+            text = md_file.read_text(encoding="utf-8")
+            lines = text.split("\n")
+            first_line = lines[0] if lines else ""
+            if first_line.startswith("# "):
+                doc_title = first_line[2:].strip()
+            else:
+                doc_title = md_file.stem.replace("_summary", "").replace("_", " ")
+            anchor = (
+                sanitize_filename(md_file.stem.replace("_summary", ""))
+                .replace("_", "-")
+                .replace(" ", "-")
+                .lower()
+            )
+            toc_entries.append((doc_title, anchor))
+            if first_line.startswith("# ") and "{" not in first_line:
+                lines[0] = f"{first_line} {{#{anchor}}}"
+            file_contents.append("\n".join(lines))
+
+        for doc_title, anchor in toc_entries:
+            content.append(f"- [{doc_title}](#{anchor})\n")
+        content.append("\n---\n")
+
+        for block in file_contents:
+            content.append(block)
+            content.append("\n---\n")
+
+        combined_md = self.summaries_dir / "_combined.md"
+        combined_md.write_text("\n".join(content), encoding="utf-8")
+        output_pdf = self.output_dir / output_filename
+        try:
+            self.compile_markdown_to_pdf(combined_md, output_pdf)
+            logger.info(f"Combined PDF created: {output_pdf}")
+            return output_pdf
+        except Exception as e:
+            logger.error(f"Failed to compile combined PDF: {e}")
+            raise
+        finally:
+            try:
+                if combined_md.exists():
+                    combined_md.unlink()
+            except Exception as cleanup_error:
+                logger.warning(f"Failed to clean up temporary file {combined_md}: {cleanup_error}")
+
     def compile_all_to_single_pdf(
         self,
         pdf_summaries: Dict[str, Dict[Tuple[int, int], str]],
-        output_filename: str = "compiled.pdf"
+        output_filename: str = "compiled.pdf",
+        title: Optional[str] = None
     ) -> Path:
         """
         Compile all PDF summaries into a single combined PDF.
-        
+
         Args:
             pdf_summaries: Dictionary mapping PDF names to their summaries
             output_filename: Name for the output PDF file
-        
+            title: Optional title for the compiled document (e.g. group name).
+                   Defaults to "PDF Learning Guides".
+
         Returns:
             Path to the compiled PDF
         """
         logger.info(f"Compiling all summaries into single PDF: {output_filename}")
-        
-        # Build combined Markdown content
+
+        heading = f"# {title}\n" if title else "# PDF Learning Guides\n"
         content = []
-        content.append("# TOPCIT PDF Learning Guides\n")
+        content.append(heading)
         content.append(f"\n*Compiled on {datetime.now().strftime('%Y-%m-%d %H:%M:%S')}*\n")
         content.append(f"\n*Total PDFs: {len(pdf_summaries)}*\n")
         content.append("\n*These are simplified learning guides created from the original PDFs. Use these for studying instead of reading the lengthy original text.*\n")

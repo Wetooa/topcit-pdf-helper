@@ -1,0 +1,88 @@
+LEARNING GUIDE: Pages 34-38
+Generated: 2026-02-10 21:29:25
+PDF: Cyber Academia-Penetration Testing Day 3
+
+================================================================================
+LEARNING GUIDE
+================================================================================
+
+Learning Guide:
+
+---
+
+## Phase 4: Exploitation
+
+### 1. What is Exploitation?
+The **Exploitation phase** occurs after vulnerabilities have been identified. Its primary purpose is to:
+*   Attempt to gain access to the target system.
+*   Actively exploit the discovered vulnerabilities.
+*   Simulate a real-world attack using specific tools.
+*   Identify main entry points and high-value assets within the target.
+
+### 2. Key Principles During Exploitation
+*   **Scope Adherence:** All attacks executed must strictly stay within the predefined scope of the engagement.
+
+### 3. Common Web Application Exploits
+Pen testers often use these techniques against web applications:
+*   **SQL Injection:** Used to extract sensitive information from databases.
+*   **Cross-site Scripting (XSS):** Injects malicious scripts into web pages viewed by other users.
+*   **Code Injection:** Inserts and executes malicious code on the server.
+*   **Session Hijacking:** Gains unauthorized access by stealing a user's session.
+*   **Directory Traversal:** Accesses restricted directories and retrieves sensitive files.
+
+### 4. Important Considerations for Exploitation
+*   **Exploit Compatibility:** Not all exploits work on all systems. Testers must be familiar with specific exploits for different target types.
+*   **Exploit Effectiveness:** Some exploits are more effective than others. Choose the most appropriate one for the situation (e.g., XSS for web apps over Buffer Overflow).
+*   **Setup Requirements:** Some exploits may require additional setup (e.g., changing firewall rules). Be aware of these requirements beforehand.
+*   **Vulnerability Limitations:** Not every identified vulnerability can be successfully exploited against a target. Understand what each vulnerability *can* achieve (e.g., read common files vs. execute code).
+
+================================================================================
+ORIGINAL TEXT (First 5000 chars)
+================================================================================
+
+--- Page 34 ---
+Phase 4:
+Exploitation
+
+--- Page 35 ---
+Exploitation phase comes after the vulnerabilities have been identified.
+•In this phase, the pen tester attempts to access the target system and 
+exploit the identified vulnerabilities.
+•Testers use specific tools to simulate a real -world attack.
+•The tester identifies the main entry point into the target to identify high 
+value assets.
+Exploitation
+
+--- Page 36 ---
+Exploitation
+In any scenario, the attacks  should be based  on the scenario  
+that is within  scope  of the engagement.
+
+--- Page 37 ---
+Attack against Web Applications:
+•SQL Injection to extract sensitive information
+•Cross -site Scripting to run malicious scripts
+•Code Injection to run malicious code
+•Session Hijacking to gain access to the target
+•Directory Traversal to retrieve sensitive files
+Exploitation
+
+--- Page 38 ---
+Things to remember in Exploitation
+Not all exploits work on all systems
+•Not every exploit will work on every system.
+•Testers need to be familiar with the different types of exploits for specific targets.
+Some exploits are more effective than others
+•Testers should use the most appropriate one for the situation.
+•For example, if you’re exploiting a web application, it’s more appropriate to use XSS 
+exploit instead of Buffer Overflow.
+Some exploits require more setup than others
+•Some exploits may require additional setup to work properly (e.g., changing firewall 
+rules).
+•Testers should be aware of these requirements before attempting any exploit.
+Not all identified vulnerabilities can be exploited against the target
+•Testers need to be familiar with the different types of vulnerabilities and what they can 
+do.
+•For example, some vulnerabilities may only allow an attacker to read common files, while 
+others may allow an attacker to execute code on a system.
+

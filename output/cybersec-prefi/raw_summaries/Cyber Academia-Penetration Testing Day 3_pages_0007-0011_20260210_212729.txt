@@ -1,0 +1,83 @@
+LEARNING GUIDE: Pages 7-11
+Generated: 2026-02-10 21:27:29
+PDF: Cyber Academia-Penetration Testing Day 3
+
+================================================================================
+LEARNING GUIDE
+================================================================================
+
+Here is a simplified, easy-to-read learning guide based on the provided text:
+
+---
+
+## Learning Guide: Vulnerability Scanning Basics
+
+### 1. What is a Vulnerability Scanner?
+
+A vulnerability scanner is a tool used to identify weaknesses and security flaws in systems and applications.
+
+### 2. How Does a Vulnerability Scanner Work?
+
+Vulnerability scanners use several methods to find security issues:
+
+*   **Application Spidering and Crawling:** Explores web applications to map out all pages, links, and content, much like a search engine.
+*   **Discovery of Default and Common Content:** Checks for default configurations, common files, and known content that might indicate vulnerabilities.
+*   **Probing for Common Vulnerabilities:** Actively tests for well-known security weaknesses (e.g., outdated software, weak passwords, misconfigurations).
+
+#### Types of Vulnerability Scans:
+
+*   **Passive Scan:**
+    *   **Method:** Non-intrusive checks.
+    *   **Goal:** Observes targets to determine if they are vulnerable without directly interacting in a harmful way.
+*   **Active Scan:**
+    *   **Method:** A simulated attack on the target.
+    *   **Goal:** Assesses vulnerabilities from an outsider's perspective to see how they would appear during a real attack.
+
+### 3. Web Application Security Testing
+
+*   **Focus:** Specifically evaluates the security of a **web application**.
+*   **Process:** Involves an active analysis to find any weaknesses, technical flaws, or vulnerabilities unique to web applications.
+
+### 4. Vulnerability Scanning: Output & Results
+
+The output of a vulnerability scan typically includes:
+
+*   A list of detected vulnerabilities (e.g., misconfigurations, outdated software, security flaws).
+*   Sample results and evidence for each identified vulnerability.
+
+---
+
+================================================================================
+ORIGINAL TEXT (First 5000 chars)
+================================================================================
+
+--- Page 7 ---
+How does a Vulnerability Scanner work?
+Application Spidering and Crawling
+Discovery of Default and common content
+Probing for common vulnerabilities
+
+--- Page 8 ---
+How does a Vulnerability Scanner work?
+A passive scan performs non -intrusive checks, simply looking 
+at targets to determine if they are vulnerable.
+An active scan is a simulated attack on the target to assess 
+vulnerabilities as they would appear to an outsider.
+
+--- Page 9 ---
+Web Application Security Testing
+A web application security test focuses only on evaluating the 
+security of a web application. 
+The process involves an active analysis of the application for 
+any weaknesses, technical flaws, or vulnerabilities.
+
+--- Page 10 ---
+Vulnerability Scanning: Output
+Common vulnerabilities detected by scanning:
+
+
+--- Page 11 ---
+Vulnerability Scanning: Output
+Vulnerability Scanner sample results
+
+

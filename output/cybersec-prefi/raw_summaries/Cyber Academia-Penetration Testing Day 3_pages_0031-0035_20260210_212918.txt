@@ -1,0 +1,261 @@
+LEARNING GUIDE: Pages 31-35
+Generated: 2026-02-10 21:29:18
+PDF: Cyber Academia-Penetration Testing Day 3
+
+================================================================================
+LEARNING GUIDE
+================================================================================
+
+Here's a simplified, easy-to-read learning guide based on the provided text:
+
+---
+
+## Learning Guide: Active Testing & Exploitation Phases
+
+This guide covers key aspects of active testing, focusing on client-side vulnerabilities, error handling, API testing, and the subsequent exploitation phase in penetration testing.
+
+---
+
+### **Section 1: Active Testing – Client-Side Vulnerabilities**
+
+This section details various client-side tests performed during active penetration testing.
+
+**1. DOM-Based Cross-Site Scripting (XSS)**
+*   **Goal:** Find XSS vulnerabilities rooted in the Document Object Model (DOM).
+*   **How to Test:**
+    *   Identify DOM sinks (places where user input is processed by JavaScript).
+    *   Build and inject payloads specific to each identified sink type.
+
+**2. JavaScript Execution**
+*   **Goal:** Identify points where malicious JavaScript can be executed.
+*   **How to Test:**
+    *   Identify sinks (code locations) and potential JavaScript injection points.
+
+**3. HTML Injection**
+*   **Goal:** Discover where attackers can inject malicious HTML.
+*   **How to Test:**
+    *   Identify HTML injection points.
+    *   Assess the severity and impact of the injected content.
+
+**4. Client-Side URL Redirect**
+*   **Goal:** Find vulnerabilities allowing an attacker to force a user to an arbitrary URL.
+*   **How to Test:**
+    *   Identify injection points that handle URLs or file paths.
+    *   Assess all possible locations the system can redirect to.
+
+**5. CSS Injection**
+*   **Goal:** Detect points where malicious CSS can be injected.
+*   **How to Test:**
+    *   Identify CSS injection points.
+    *   Assess the potential impact of such an injection.
+
+**6. Client-Side Resource Manipulation**
+*   **Goal:** Find ways to manipulate client-side resources through weak input validation.
+*   **How to Test:**
+    *   Identify sinks with weak input validation.
+    *   Assess the impact of potential resource manipulation.
+
+**7. Cross-Origin Resource Sharing (CORS)**
+*   **Goal:** Ensure CORS configurations are secure and do not expose sensitive data.
+*   **How to Test:**
+    *   Identify endpoints that implement CORS.
+    *   Verify that the CORS configuration is secure or harmless.
+
+**8. Cross-Site Flashing**
+*   **Goal:** Identify vulnerabilities in Flash applications that could lead to cross-site issues.
+*   **How to Test:**
+    *   Decompile and analyze the application's Flash code.
+    *   Assess sink inputs and usage of unsafe methods within the code.
+
+**9. Clickjacking**
+*   **Goal:** Determine if an attacker can trick users into clicking on hidden UI elements.
+*   **How to Test:**
+    *   Understand the existing security measures (e.g., X-Frame-Options, Content Security Policy).
+    *   Assess the strictness of these measures and if they can be bypassed.
+
+**10. Web Sockets**
+*   **Goal:** Evaluate the security of WebSocket implementations.
+*   **How to Test:**
+    *   Identify if Web Sockets are used in the application.
+    *   Assess their implementation using the same testing methodologies applied to normal HTTP channels.
+
+**11. Web Messaging**
+*   **Goal:** Secure communication between different origins using `postMessage()`.
+*   **How to Test:**
+    *   Assess the security of the message's origin validation.
+    *   Validate that safe methods are used and input is properly validated.
+
+**12. Browser Storage**
+*   **Goal:** Check for sensitive data storage in client-side mechanisms (e.g., Local Storage, Session Storage) and potential injection points.
+*   **How to Test:**
+    *   Determine if sensitive data is stored in client-side storage.
+    *   Examine code handling storage objects for injection possibilities (e.g., using invalidated input, vulnerable libraries).
+
+**13. Cloud Storage**
+*   **Goal:** Identify and assess potential leakage of sensitive data stored in cloud services accessible by the client.
+*   **How to Test:**
+    *   Locate sensitive data across the system.
+    *   Assess the leakage of this data using various techniques.
+
+---
+
+### **Section 2: Active Testing – Error Handling & API Testing**
+
+This section covers testing for proper error handling and specific considerations for API testing, particularly GraphQL.
+
+**1. Testing for Improper Error Handling**
+*   **Goal:** Identify if error messages reveal sensitive information or create exploitable conditions.
+*   **How to Test:**
+    *   Identify existing error output messages.
+    *   Analyze the different types of output returned by the system during errors.
+
+**2. API Testing: GraphQL**
+*   **Goal:** Ensure GraphQL APIs are securely configured and protected against common attacks.
+*   **How to Test:**
+    *   Verify that a secure, production-ready configuration is deployed.
+    *   Validate all input fields against generic attacks (e.g., injection, DoS).
+    *   Ensure proper access controls are applied to all API operations and data.
+
+---
+
+### **Section 3: Phase 4: Exploitation**
+
+This section describes the "Exploitation" phase in penetration testing.
+
+*   **When it Occurs:** This phase begins **after** vulnerabilities have been successfully identified in previous testing stages.
+*   **Pen Tester's Goal:** To gain access to the target system by leveraging the identified vulnerabilities.
+*   **Methodology:**
+    *   Testers use specific tools and techniques to simulate real-world attacks.
+    *   The primary objective is to identify the main entry point into the target system.
+    *   Focus is placed on reaching and compromising high-value assets within the system.
+
+---
+
+================================================================================
+ORIGINAL TEXT (First 5000 chars)
+================================================================================
+
+--- Page 31 ---
+Active Testing: Client
+ -
+Side Testing
+Testing for DOM
+ -
+Based Cross 
+Site Scripting
+•Identify DOM sinks
+•Build payloads that pertain 
+to every sink type
+Testing for 
+ Javascript
+  
+Execution
+•Identify sinks and possible 
+JavaScript injection point
+Testing for HTML Injection
+•Identify HTML injection 
+points and assess severity 
+of the injected content
+Testing for Client
+ -
+Side URL 
+Redirect
+•Identify injection points 
+that handle URLs or paths
+•Assess the  locations that 
+the system can redirect to
+Testing for CSS Injection
+•Identify CSS Injection 
+points
+•Assess the impact of 
+injection
+Testing for Client
+ -
+Side 
+Resource Manipulation
+•Identify sinks with weak 
+input validation
+•Assess the impact of the 
+resource manipulation
+Testing Cross Origin Resource 
+Sharing
+•Identify endpoints that 
+implement CORS
+•Ensure that the CORS 
+configuration is secure or 
+harmless
+Testing for Cross Site Flashing
+•Decompile and analyze the 
+application’s code
+•Assess sink inputs and 
+unsafe method usages
+
+--- Page 32 ---
+Active Testing : Client
+ -
+Side Testing
+Testing for Clickjacking
+•Understand security 
+measures in place
+•Assess how strict the 
+security measures are and 
+if they are bypassable
+Testing Web Sockets
+•Identify the usage of Web 
+Sockets
+•Assess its implementation 
+by using the same tests on 
+normal HTTP channels
+Test Web Messaging
+•Assess the security of the 
+message’s origin
+•Validate that it’s using safe 
+methods and validating its 
+input
+Test Browser Storage
+•Determine whether the 
+website is storing sensitive 
+data in client -side storage
+•The code handling of the 
+storage objects should be 
+examined for possibilities 
+of injection attacks, such as 
+utilizing invalidated input 
+or vulnerable libraries
+Test Cloud Storage
+•Locate sensitive data 
+across the system
+•Assess the leakage of 
+sensitive data through 
+various techniques
+
+--- Page 33 ---
+Active Testing
+TESTING FOR ERROR HANDLING
+Testing  for Improper  Error  Handling :
+•Identify  existing  error  output
+•Analyze  the different  output  
+returned
+API TESTING
+Testing  GraphQL :
+•Assess  that a secure  and 
+production -ready  configuration  is 
+deployed . 
+•Validate  all input  fields  against  
+generic  attacks .
+•Ensure  that proper  access  controls  
+are applied .
+
+--- Page 34 ---
+Phase 4:
+Exploitation
+
+--- Page 35 ---
+Exploitation phase comes after the vulnerabilities have been identified.
+•In this phase, the pen tester attempts to access the target system and 
+exploit the identified vulnerabilities.
+•Testers use specific tools to simulate a real -world attack.
+•The tester identifies the main entry point into the target to identify high 
+value assets.
+Exploitation
+

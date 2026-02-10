@@ -1,0 +1,102 @@
+LEARNING GUIDE: Pages 4-8
+Generated: 2026-02-10 21:29:51
+PDF: Cyber Academia-Penetration Testing Day 2
+
+================================================================================
+LEARNING GUIDE
+================================================================================
+
+Here is a simplified, easy-to-read learning guide based on the provided text:
+
+---
+
+## Pentest Engagement Phases: A Learning Guide
+
+This guide breaks down the typical stages of a penetration testing engagement, focusing on the crucial initial steps.
+
+---
+
+### 1. Overview of Pentest Engagement Phases
+
+A penetration test typically follows these sequential phases:
+
+*   **Pre-engagement:** Initial interactions, planning, and scope definition.
+*   **Information Gathering:** Collecting data about the target.
+*   **Vulnerability Analysis:** Identifying weaknesses in the target systems.
+*   **Exploitation:** Attempting to compromise identified vulnerabilities.
+*   **Post-Exploitation:** Actions taken after gaining access, such as maintaining access or escalating privileges.
+*   **Reporting:** Documenting findings, vulnerabilities, and recommendations.
+
+---
+
+### 2. Phase 1: Pre-Engagement Interactions
+
+This foundational phase sets the stage for the entire penetration test. It involves:
+
+*   **Scoping:** Defining the exact boundaries and details of the test.
+*   **Establishing Lines of Communication:** Setting up formal channels for interaction.
+*   **Rules of Communication:** Defining how and when to communicate during the test.
+
+#### 2.1. Scoping
+
+**Definition:** Scoping is the process of precisely defining what will and will not be included in the penetration test.
+
+**Importance:** It is one of the most critical components of a penetration test, ensuring all parties agree on the test's boundaries, objectives, and limitations.
+
+**Scoping Process Steps:**
+
+1.  **Set a Scoping Meeting:** Schedule a discussion with the client to understand their needs and systems.
+2.  **Send Scoping Questionnaire:** Provide a detailed questionnaire to gather essential information about the target environment.
+3.  **Generate a Pentest Information Sheet:** Create a summary document outlining all agreed-upon scope details based on the meeting and questionnaire.
+
+---
+
+================================================================================
+ORIGINAL TEXT (First 5000 chars)
+================================================================================
+
+--- Page 4 ---
+PHASES OF A PENTEST ENGAGEMENT
+Reporting
+Pre
+-
+engagement
+Interactions
+Information
+Gathering
+Vulnerability
+Analysis
+Exploitation
+ Post
+Exploitation
+
+--- Page 5 ---
+Phase 1:
+Pre
+-
+Engagement Interactions
+
+--- Page 6 ---
+PRE
+-
+ENGAGEMENT
+SCOPING ESTABLISHING 
+LINES OF 
+COMMUNICATIONRULES OF 
+COMMUNICATION
+
+--- Page 7 ---
+PRE
+-
+ENGAGEMENT: Scoping
+Defining scope is arguably one of the most important 
+components of a penetration test
+
+--- Page 8 ---
+PRE
+-
+ENGAGEMENT: Scoping Phases
+Set a Scoping meeting
+Send Scoping Questionnaire
+Generate a Pentest Information Sheet
+

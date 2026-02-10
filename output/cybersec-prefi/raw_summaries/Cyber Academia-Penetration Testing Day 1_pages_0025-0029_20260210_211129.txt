@@ -1,0 +1,173 @@
+LEARNING GUIDE: Pages 25-29
+Generated: 2026-02-10 21:11:29
+PDF: Cyber Academia-Penetration Testing Day 1
+
+================================================================================
+LEARNING GUIDE
+================================================================================
+
+Here is a simplified, easy-to-read learning guide based on the provided text:
+
+---
+
+## Learning Guide: Top Web Application Security Risks
+
+This guide covers common web application security vulnerabilities, detailing what they are, common issues, and why they matter.
+
+---
+
+### A06:2025 – Insecure Design
+
+*   **What it is:** Security weaknesses caused by poor design or architecture. Occurs when security is not considered early in the development process.
+*   **Common Issues:**
+    *   Missing threat modeling
+    *   Weak or absent business logic controls
+    *   Poor privilege management
+*   **Why it Matters:**
+    *   Design flaws are difficult and costly to fix later in the development cycle.
+    *   Even secure code can be vulnerable if the overall system design is insecure.
+    *   Often leads to system-wide vulnerabilities, not just isolated bugs.
+
+---
+
+### A07:2025 – Authentication Failures
+
+*   **What it is:** Weaknesses in how applications verify user identity, potentially allowing attackers to log in as other users.
+*   **Common Issues:**
+    *   Weak or reused passwords
+    *   Missing or poorly implemented Multi-Factor Authentication (MFA)
+    *   Session fixation or broken session handling mechanisms
+*   **Why it Matters:**
+    *   Directly leads to account takeover.
+    *   Often the initial step toward data breaches or privilege escalation.
+    *   Easily exploited by automated attacks like credential stuffing.
+
+---
+
+### A08:2025 – Software or Data Integrity Failures
+
+*   **What it is:** Occurs when applications trust software updates, code, or data without verifying their integrity. The system assumes data or software is safe when it is not.
+*   **Common Issues:**
+    *   Untrusted software updates or plugins
+    *   Insecure Continuous Integration/Continuous Deployment (CI/CD) pipelines
+    *   Deserializing untrusted data without integrity or signature checks
+*   **Why it Matters:**
+    *   Attackers can silently modify code or data.
+    *   Can lead to malware injection, backdoors, or data tampering.
+    *   Often affects multiple systems simultaneously.
+
+---
+
+### A09:2025 – Security Logging and Alerting Failures
+
+*   **What it is:** Failures in logging, monitoring, or alerting on security-relevant events. Attacks can happen without anyone noticing in time.
+*   **Common Issues:**
+    *   Logs are unclear, incomplete, or inconsistent.
+    *   Lack of real-time monitoring and alerts.
+    *   Sensitive data is written directly into logs.
+*   **Why it Matters:**
+    *   Attacks can go undetected for extended periods.
+    *   Delayed response increases the scope of damage and data loss.
+    *   Makes incident response and forensic investigations difficult or impossible.
+
+---
+
+### A10:2025 – Mishandling of Exceptional Conditions
+
+*   **What it is:** Happens when applications do not properly handle errors or unexpected situations.
+*   **Common Issues:**
+    *   Error messages that expose sensitive system data.
+    *   Applications crashing or behaving unpredictably during errors.
+    *   Systems failing "open" (granting access/functionality) instead of "securely" (denying access/functionality) when an error occurs.
+    *   Missing or improper error handling logic.
+*   **Examples:**
+    *   Displaying stack traces directly to users.
+    *   Application crashing when required input is missing.
+    *   Granting access to resources when an internal error occurs.
+
+---
+
+================================================================================
+ORIGINAL TEXT (First 5000 chars)
+================================================================================
+
+--- Page 25 ---
+A06:2025 
+ –
+ 
+Insecure Design
+•Security weaknesses caused bypoor design orarchitecture
+•Happens when security isnotconsidered early inthedevelopment processWhat it is:
+Common Issues:
+•Missing threat modeling
+•Weak ormissing business logic controls
+•Poor privilege management
+Why it matters:
+•Design flaws arehard tofixlater
+•Even secure code canfailiftheoverall design isinsecure
+•Often leads tosystem -wide vulnerabilities, notjustisolated bugs
+
+--- Page 26 ---
+A07:2025 
+ –
+ 
+Authentication Failures
+•Weaknesses inhow applications verify user identity
+•Allows attackers tologinassomeone elseWhat it is:
+Common Issues:
+•Weak orreused passwords
+•Missing orpoorly implemented MFA
+•Session fixation orbroken session handling
+Why it matters:
+•Leads toaccount takeover
+•Often thefirst step todata breaches orprivilege escalation
+•Automated attacks likecredential stuffing make itthiseasy toexploit
+
+--- Page 27 ---
+A08:2025 
+ –
+ 
+Software or Data Integrity Failures
+•Happens when applications trust software updates, code, ordata without verifying integrity
+•Thesystem assumes something issafe when itisntWhat it is:
+Common Issues:
+•Untrusted software updates orplugins
+•Insecure CI/CD pipelines
+•Deserializing untrusted data, nointegrity orsignature checks
+Why it matters:
+•Attackers canmodify code ordata silently
+•Leads tomalware injection, backdoors, ordata tampering
+•Often affects multiple systems atonce
+
+--- Page 28 ---
+A09:2025 
+ –
+ 
+Security Logging and Alerting Failures
+•Failures inlogging, monitoring, oralerting security -relevant events
+•Attacks happen, butnoonenotices intimeWhat it is:
+Common Issues:
+•Logs areunclear, incomplete, inconsistent
+•Noreal-time monitoring alerts
+•Sensitive data written directly tologs
+Why it matters:
+•Attacks goundetected forlong periods
+•Delayed response increase damage anddata loss
+•Makes incident response andforensics difficult orimpossible
+
+--- Page 29 ---
+A10:2025 
+ –
+ 
+Mishandling of Exceptional Conditions
+•Happens when applications don’t handle errors orunexpected situations properlyWhat it is:
+Common Issues:
+•Error messages that expose sensitive data
+•Applications that crash orbehave unpredictably
+•Systems that failopen instead offailing securely
+•Missing orimproper error handling logic
+Examples:
+•Stack traces shown tousers
+•App crashes when input ismissing
+•Access granted when error occurs
+

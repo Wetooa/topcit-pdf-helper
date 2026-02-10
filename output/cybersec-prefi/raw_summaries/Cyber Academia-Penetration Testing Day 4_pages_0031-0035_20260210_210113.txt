@@ -1,0 +1,123 @@
+LEARNING GUIDE: Pages 31-35
+Generated: 2026-02-10 21:01:13
+PDF: Cyber Academia-Penetration Testing Day 4
+
+================================================================================
+LEARNING GUIDE
+================================================================================
+
+Here is a simplified, easy-to-read learning guide based on the provided text:
+
+---
+
+### Learning Guide: Vulnerability Reporting and Testing
+
+---
+
+#### 1. Common Vulnerability Scoring System (CVSS)
+
+The **Common Vulnerability Scoring System (CVSS)** is a standard system used to assess the impact and severity of vulnerabilities. It provides a numerical score reflecting a vulnerability's severity.
+
+*   **Purpose:** To capture the principal characteristics of a vulnerability and produce a numerical score indicating its severity.
+
+*   **Severity Levels and Base Scores:**
+    *   **Low:** 0.1 – 3.9
+    *   **Medium:** 4.0 – 6.9
+    *   **High:** 7.0 – 8.9
+    *   **Critical:** 9.0 – 10.0
+
+---
+
+#### 2. Test Cases
+
+**Test Cases** are a list of attacks used to test the security of an application and find vulnerabilities. They are also used to test the functional requirements of an application.
+
+*   **Purpose:** To systematically test application security and functionality to identify weaknesses and vulnerabilities.
+
+*   **Common Security Test Case Categories (Examples of Vulnerabilities/Attacks):**
+    *   **Authentication and Session Management:** Checking for incorrect or missing controls.
+    *   **Authorization:** Checking for incorrect or missing access controls.
+    *   **Components with known vulnerabilities:** Identifying outdated or insecure third-party components.
+    *   **Covert Channel:** Detecting hidden communication paths (e.g., Timing Attacks).
+    *   **Cross-Site Request Forgery (CSRF):** Exploiting unauthorized commands from a trusted user.
+    *   **Cross-Site Scripting (XSS):** Injecting malicious scripts into web pages.
+    *   **Server-Side Request Forgery (SSRF):** Forcing a server to make requests to an arbitrary domain.
+    *   **Unrestricted File Uploads:** Allowing dangerous file types to be uploaded.
+    *   **Unvalidated Redirects and Forwards:** Manipulating redirects to malicious sites.
+    *   **Cryptography:** Checking for incorrect or missing encryption implementations.
+    *   **Denial of Service (DoS):** Testing the application's resilience to attacks that disrupt service.
+    *   **Information Exposure:** Identifying unintended disclosure of sensitive data.
+    *   **Injection Flaws:** Exploiting vulnerabilities where untrusted data is sent to an interpreter (e.g., SQL, XML, Command, Path Injection).
+    *   **Insecure Design:** Identifying fundamental flaws in the application's architecture.
+    *   **Insecure Direct Object References:** Accessing objects directly without authorization checks.
+    *   **Memory Corruption:** Exploiting memory management errors (e.g., Buffer Overflows, Integer Overflows, Format String bugs).
+    *   **Race Conditions:** Exploiting flaws in the timing or ordering of operations.
+    *   **Security Misconfiguration:** Identifying improperly configured security settings.
+    *   **User Privacy:** Ensuring sensitive user data is handled securely and according to policy.
+
+---
+
+================================================================================
+ORIGINAL TEXT (First 5000 chars)
+================================================================================
+
+--- Page 31 ---
+REPORTING: Common Vulnerability 
+Scoring System (CVSS)
+The Common Vulnerability Scoring System(CVSS) is used 
+to assess the impact of vulnerabilities. There are 4 types 
+of Severity as shown in the table below
+Severity Base Score
+Low 0.1 – 3.9 
+Medium 4.0 - 6.9
+High 7.0 – 8.9
+Critical 9.0 – 10.0
+
+--- Page 32 ---
+REPORTING: Common Vulnerability 
+Scoring System (CVSS)
+
+
+--- Page 33 ---
+REPORTING: Test Cases
+Test Cases are used to test the functional requirement of the 
+application. They are a list of attacks that are used to test the 
+security of an application and find vulnerabilities.
+
+--- Page 34 ---
+REPORTING: Test Cases
+
+Authentication and Session Management — Incorrect
+Authentication and Session Management — Missing
+Authorization — Incorrect
+Authorization — Missing
+Components with known vulnerabilities
+Covert Channel (Timing Attacks, etc.)
+
+Cross Site Request Forgery (CSRF)
+
+Cross Site Scripting (XSS)
+Server-Side Request Forgery (SSRF)
+Unrestricted File Uploads
+Unvalidated Redirects and Forwards
+Cryptography — Incorrect
+Cryptography — Missing
+Denial of Service (DoS)
+Information Exposure
+Injection Flaws (SQL, XML, Command, Path, etc)
+Insecure Design
+Insecure Direct Object References
+Memory Corruption (Buffer and Integer Overflows, Format String, etc)
+Race Conditions
+Security Misconfiguration
+User Privacy
+
+
+
+--- Page 35 ---
+Common Vulnerability Scoring System (CVSS)
+The Common Vulnerability Scoring System(CVSS) provides a 
+way to capture the principal characteristics of a vulnerability 
+and produce a numerical score reflecting its severity.
+
+

@@ -1,0 +1,138 @@
+LEARNING GUIDE: Pages 10-14
+Generated: 2026-02-10 21:10:36
+PDF: Cyber Academia-Penetration Testing Day 1
+
+================================================================================
+LEARNING GUIDE
+================================================================================
+
+Here's your simplified learning guide based on the provided text:
+
+---
+
+## Penetration Testing: Types & Ethical Guidelines
+
+This guide covers different types of penetration tests and the crucial legal and ethical considerations involved.
+
+---
+
+### 1. Web Application Penetration Testing
+
+*   **What it is:** Audits for security vulnerabilities stemming from the insecure design, development, or coding of web applications.
+*   **Focus:** Identifying weaknesses specific to how web apps are built and function.
+
+---
+
+### 2. Client-Side Penetration Testing
+
+*   **What it is:** Audits for security weaknesses within client-side applications. These are programs that run directly on a user's device.
+*   **Common Client-Side Applications & Targets:**
+    *   Putty (SSH client)
+    *   Email Clients (e.g., Outlook, Thunderbird)
+    *   Web Browsers (e.g., Chrome, Firefox)
+    *   Third-party plugins and libraries used by these applications.
+
+---
+
+### 3. Social Engineering Penetration Testing
+
+*   **What it is:** Tests how effectively attackers can trick *people* (rather than exploiting system vulnerabilities) into revealing sensitive information or granting unauthorized access.
+*   **Common Social Engineering Attack Types:**
+    *   **Digital:**
+        *   **Phishing:** Deceptive emails or messages to obtain sensitive information (e.g., login credentials).
+        *   **Smishing:** Phishing via SMS (text messages).
+        *   **Vishing:** Phishing via voice calls (phone calls).
+    *   **Physical:**
+        *   **Tailgating:** Following an authorized person into a restricted area without permission.
+        *   **Eavesdropping:** Secretly listening to private conversations to gather information.
+        *   **Dumpster Diving:** Searching through discarded trash for sensitive documents or information.
+    *   **Psychological:**
+        *   **Impersonation:** Pretending to be someone else (e.g., an IT technician, a senior manager) to gain trust or access.
+        *   **Pretexting:** Creating a fabricated scenario (pretext) to manipulate a target into divulging information or performing an action.
+        *   **Name Dropping:** Using familiar or influential names to establish credibility or falsely imply authority.
+
+---
+
+### 4. Legal & Ethical Rules of Engagement
+
+These rules are critical for any penetration testing activity to be legitimate and legal.
+
+*   **Authorization:** Testing must be **EXPLICITLY authorized** by the client.
+*   **Written Permission:** **No testing** should occur without **written permission**. Without it, the activity is considered hacking, not testing.
+*   **Scope Definition:** The scope of the testing must be clearly defined and agreed upon before any work begins.
+*   **Confidentiality:** All sensitive data encountered during testing must be handled with strict confidentiality.
+*   **Governance:** All activities are governed by contractual agreements and applicable laws.
+
+---
+
+### 5. Legal & Ethical Data Protection & Responsibility
+
+Key principles for handling data during penetration testing to ensure legality and ethical conduct.
+
+*   **Data Protection & Minimization:** Personal data must be protected and kept to an absolute minimum required for testing.
+*   **Authorized Data Access:** Only data explicitly authorized for access during testing should be touched.
+*   **Anonymized Reporting:** Reports generated from testing must use anonymized or redacted data to protect privacy.
+*   **No Misuse of Data:** Client data must never be stored, altered, or misused in any way by the testers.
+*   **Contractual Compliance:** All testing activities must strictly follow contractual agreements.
+*   **Core Principle:** "Access does not mean permission to misuse." Always remember that gaining access to a system or data during a test does not grant permission to do anything beyond the agreed-upon scope or misuse that access.
+
+---
+
+================================================================================
+ORIGINAL TEXT (First 5000 chars)
+================================================================================
+
+--- Page 10 ---
+•Browsers
+•Websites
+•Web Applications
+•Plugins
+Web Application Penetration Testing
+What it is:
+This type of test audits for security problems associated with the insecure 
+design, development, or coding of a web app
+What it focuses on:
+
+--- Page 11 ---
+This type of test audits for security weaknesses in 
+client -side applications. 
+Client
+ -
+Side Penetration Testing
+What it is:
+Client -side applications examples: 
+•Putty
+•Email Clients
+•Web Browsers
+•Third -party plugins and librariesCommon Targets:
+
+--- Page 12 ---
+Social Engineering Penetration Testing
+Testing how attackers can  trick people , not systems, 
+into giving access or sensitive info.What it is:
+Common social engineering attacks:
+DIGITAL: Phishing, Smishing, Vishing
+PHYISICAL: Tailgating, Eavesdropping, Dumpster Diving
+PSYCHOLOGICAL: Impersonation, Pretexting, Name Dropping
+
+
+--- Page 13 ---
+Testing must be EXPLICITLY authorized
+Scope must be clearly defined before testing
+Sensitive data must be handled confidentially
+Activate governed by contracts & laws
+No testing without WRITTEN PERMISSION
+Without permission, it's hacking not testing
+Rules of Engagement (Legal & Ethical)
+
+
+--- Page 14 ---
+Legal and Ethical Considerations 
+(Data Protection & Responsibility)
+Personal data must be protected and minimized
+ONLY authorized data is accessed during testing
+Reports must use anonymized or redacted data
+No storing, altering, or misusing client data
+Activities must follow contractual agreementsKey principles:
+"Access does not mean permission to misuse."
+

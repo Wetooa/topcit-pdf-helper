@@ -1,0 +1,227 @@
+LEARNING GUIDE: Pages 22-26
+Generated: 2026-02-10 21:00:37
+PDF: Cyber Academia-Penetration Testing Day 4
+
+================================================================================
+LEARNING GUIDE
+================================================================================
+
+Here is a simplified, easy-to-read learning guide based on the provided text:
+
+---
+
+## Learning Guide: Penetration Test Report Structure
+
+This guide breaks down the essential sections of a Penetration Test (Pentest) Report, explaining what information each part contains.
+
+---
+
+### 1. Pentest Overview
+
+This section provides an introduction to the report's structure and contents. It typically includes:
+
+*   **Background:** The purpose and scope of the pentest.
+*   **Tester and Application Details:** Information about the testing engagement and the target application.
+*   **Pentest Findings Overview:** A summary of the vulnerabilities found.
+*   **Pentest Technical Report:** Detailed information on each vulnerability.
+
+---
+
+### 2. Background: Executive Summary
+
+This part explains why the pentest was conducted and what it aimed to achieve.
+
+*   **Purpose:** To determine the target's (e.g., "siw s") exposure to a targeted attack.
+*   **Methodology:** Activities simulated a malicious attacker engaged in a targeted attack.
+*   **Goals:**
+    *   Identify if a remote attacker could penetrate defenses.
+    *   Determine the impact of a security breach on:
+        *   Confidentiality of private data.
+        *   Internal infrastructure and availability of information systems.
+*   **Focus:** Identifying and exploiting weaknesses allowing unauthorized access to data.
+*   **Access Level:** Attacks were conducted with the same access as a general Internet user.
+*   **Compliance:** Assessment followed industry recommendations (e.g., "™% == ¢") under controlled conditions.
+
+---
+
+### 3. Application Details
+
+This section provides specific metadata about the target(s) and the pentest engagement.
+
+#### A. Target Metadata
+
+*   **Name:** The official name of the application or system tested.
+*   **Type:** General classification (e.g., Protocol Specification and Implementation).
+*   **Platforms:** The technologies or environments the target runs on (e.g., "I o").
+
+#### B. Engagement Data
+
+*   **Type:** The nature of the assessment (e.g., Specification and Implementation Review).
+*   **Method:** Specific testing approach (e.g., "sl A0 B e -").
+*   **Dates:** The start and end dates of the penetration test (e.g., June 1, 2020, to August 14, 2020).
+*   **Consultants:** Number of security consultants involved.
+*   **Level of Effort:** Total work invested (e.g., 16 person-days).
+
+#### C. Targets
+
+*   **Specific URLs/Implementations:** A list of the exact systems, applications, or codebases that were tested.
+    *   Examples: `https://fia='p-0214`, `https://github.com/s w ams s 14560`
+
+#### D. Finding Breakdown
+
+*   A summary of issues found, categorized by severity:
+    *   Critical issues
+    *   High issues
+    *   Medium issues
+    *   Low issues
+    *   Informational issues
+    *   Total issues
+
+---
+
+### 4. Pentest Findings Overview
+
+This section provides a high-level summary of the vulnerabilities discovered during the pentest. It typically lists:
+
+*   **Vulnerability Class:** The general category of the weakness (e.g., Injection Flaws, Cryptography Missing).
+*   **Severity:** The impact level of the vulnerability (e.g., Critical, High, Medium, Low, Informational).
+*   **Status:** The current state of the vulnerability (e.g., Open, Closed).
+    *   **Open:** The vulnerability still exists or needs to be addressed.
+    *   **Closed:** The vulnerability has been fixed or remediated.
+
+**Examples:**
+*   **Install Scripts Command Injection:** Medium Severity, Closed (Injection Flaws)
+*   **Insecure Default Connection During Package Upload and Upgrade:** Low Severity, Open (Cryptography Missing Authentication)
+*   **Application Bundles Insecure Decompress:** High Severity, Closed (Injection Flaws)
+
+---
+
+### 5. Pentest Technical Report
+
+This section provides the detailed documentation for each individual vulnerability found by the tester in the target application. For each vulnerability, you will find:
+
+*   **Vulnerability Name:** A concise title for the specific weakness.
+*   **Vulnerability Description:** A detailed explanation of the vulnerability, how it works, and why it's a security risk.
+*   **Exploitability and Impact:** Information on how easily the vulnerability could be exploited and the potential consequences if exploited.
+*   **Steps to Reproduce:** A clear, step-by-step guide on how the tester identified and confirmed the vulnerability. This allows others to replicate the finding.
+*   **Recommendation:** Specific advice and actions for how to fix or mitigate the vulnerability.
+
+---
+
+================================================================================
+ORIGINAL TEXT (First 5000 chars)
+================================================================================
+
+--- Page 22 ---
+REPORTING: Pentest Overview
+The Pentest Overview is where you will find the information 
+about the structure of the report. In here you will find the 
+following details.
+Background
+Tester and Application Details
+Pentest Findings Overview
+
+--- Page 23 ---
+REPORTING: Background
+
+Executive Summary
+
+I ew "siw s was contracted by BeSETaE W to conduct a penetration test in order to
+determine its exposure to a targeted attack. All activities were conducted in a manner that simulated a
+malicious actor engaged in a targeted attack against ey = ‘= "ws with the goals of:
+
+o ldentifying if a remote attacker could penetrate s g ww - defenses
+o Determining the impact of a security breach on:
+o Confidentiality of the company’s private data
+
+o Internal infrastructure and availability of msg# =y - = y information systems
+
+Efforts were placed on the identification and exploitation of security weaknesses that could allow a
+remote attacker to gain unauthorized access to organizational data. The attacks were conducted with
+the level of access that a general Internet user would have. The assessment was conducted in
+accordance with the recommendations outlined in ™% == ¢ with all tests and actions being
+
+conducted under controlled conditions.
+
+
+
+--- Page 24 ---
+REPORTING: Application Details
+
+Target Metadata Engagement Data
+Name . B Type Specification and Implementation
+Review
+Type Protocol Specification and Method sl A0 B e -
+Implementation
+
+Platforms I o Dates 2020-06-01 to 2020-68-14
+Consultants 3
+Level of Effort 16 person-days
+
+Targets
+
+i ] https:/fia= 'p-0214
+
+- e https:// 5= ip-0207
+
+= https:// " p-0251
+
+e https:/# §Sp-0211
+
+(=_2g o https:/# §Rp-0212
+
+S https:/Am 1 i 8 =mp-0215
+
+Implementation of I/l FET wodl /90 (74 https://github.coms s w ams s 14560
+Implementation of I i1 https://github.com: == w4487
+Implementation of F# [71 https://github.com: == w4489
+Implementation of rmr rus https://github.coms == = = 4578
+Changes to [l sl S 0 5 https://github.com: & * + h/pull/258
+Implementation of % 111 https://github.com: & * =/74581
+Changes to ed25519-zebra for S & % https://github.comd® =58 e Ba . il = wnow/pull/24
+
+Finding Breakdown
+Critical issues
+High issues
+
+Medium issues
+
+Low issues
+Informational issues
+Total issues
+
+
+
+--- Page 25 ---
+REPORTING: Pentest Findings Overview
+
+Vulnerability Class Severity Status
+Install Scripts Command Injection Injection Flaws Medium Closed
+Insecure Default Connection During Package  Cryptography -
+Upload and Upgrade Missing Low Open
+Authentication
+Tele Logout Does not Invalidate SSH User and Session
+Keys and Session Token Management - Low Open
+Missing
+Missing SlgnatureB\:jer:':jfl'l:satlon |rh\ppllcat|on Insecure Design High Open
+Application Bundles Insecure Decompress Injection Flaws High Closed
+. Information
+Password Reset Token Leakage Via Referer Exposure Low Closed
+Authentication
+Password Reset Does Not Expire Current and Session
+Sessions Management - Low Open
+Missing
+
+
+
+--- Page 26 ---
+REPORTING: Pentest Technical Report
+The Pentest Technical Report section is where you will find the 
+vulnerabilities and found by the tester in the target application. It 
+includes the following:
+Vulnerability Name
+Vulnerability Description
+Exploitability and Impact
+Steps to Reproduce
+Recommendation
+

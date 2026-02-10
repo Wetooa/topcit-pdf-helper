@@ -21,7 +21,8 @@ class Config:
     PAGES_PER_GROUP = 5
     DEFAULT_OVERLAP = 2
     
-    # Output configuration
+    # Input/Output configuration
+    DEFAULT_INPUT_DIR = "./input"
     DEFAULT_OUTPUT_DIR = "./output"
     SUMMARIES_SUBDIR = "summaries"
     OCR_TEXT_SUBDIR = "ocr_text"  # Folder for OCR extracted text files

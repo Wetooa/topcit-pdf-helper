@@ -1,0 +1,162 @@
+LEARNING GUIDE: Pages 22-26
+Generated: 2026-02-10 21:11:20
+PDF: Cyber Academia-Penetration Testing Day 1
+
+================================================================================
+LEARNING GUIDE
+================================================================================
+
+Learning Guide:
+
+---
+
+### **A03:2025 – Software Supply Chain Failures**
+
+*   **What it is:** Risks introduced through third-party libraries, dependencies, build tools, or CI/CD pipelines. This means you trust the code, but the code itself was compromised.
+*   **Why it's Critical:**
+    *   Applications heavily rely on external components.
+    *   One compromised component can affect thousands of applications.
+    *   Fewer incidents, but extremely high impact when they occur.
+*   **Examples:**
+    *   Compromised open-source libraries.
+    *   Malicious updates injected into build pipelines.
+
+---
+
+### **A04:2025 – Cryptographic Failures**
+
+*   **What it is:** Problems related to missing, weak, or improperly implemented cryptography. This includes poor encryption practices or exposed/mismanaged cryptographic keys.
+*   **Common Causes:**
+    *   Weak or outdated encryption algorithms.
+    *   Insufficient randomness (poor entropy) for cryptographic operations.
+    *   Predictable or broken random number generators.
+*   **Examples:**
+    *   Storing passwords without proper hashing.
+    *   Using weak custom encryption instead of standard, tested algorithms.
+    *   Poor TLS/SSL configuration leading to insecure communication.
+
+---
+
+### **A05:2025 – Injection**
+
+*   **What it is:** Occurs when untrusted user input is sent directly to an interpreter without proper validation, causing the application to execute attacker-controlled commands.
+*   **Common Injection Types:**
+    *   **SQL Injection:** Manipulating database queries.
+    *   **Cross-Site Scripting (XSS):** Injecting malicious scripts into web pages viewed by other users.
+    *   **Command Injection:** Executing arbitrary system commands.
+*   **Why it's a Top Risk:**
+    *   Very common and widely exploited.
+    *   Often easy to exploit if input validation is missing.
+    *   Can lead to data theft, account takeover, or full system compromise.
+
+---
+
+### **A06:2025 – Insecure Design**
+
+*   **What it is:** Security weaknesses caused by fundamental flaws in the application's design or architecture, typically because security wasn't considered early in the development process.
+*   **Common Issues:**
+    *   Missing or inadequate threat modeling during design.
+    *   Weak or absent business logic controls.
+    *   Poor privilege management within the application.
+*   **Why it's Critical:**
+    *   Design flaws are significantly harder and more costly to fix later in the development cycle.
+    *   Even securely written code can be vulnerable if the overall design is insecure.
+    *   Often leads to system-wide vulnerabilities rather than isolated bugs.
+
+---
+
+### **A07:2025 – Authentication Failures**
+
+*   **What it is:** Weaknesses in how applications verify user identity, allowing attackers to bypass authentication and log in as another user.
+*   **Common Issues:**
+    *   Weak or reused passwords.
+    *   Missing or poorly implemented Multi-Factor Authentication (MFA).
+    *   Session fixation or broken session handling.
+*   **Impact:**
+    *   Directly leads to account takeover.
+    *   Often the first step towards data breaches or privilege escalation.
+    *   Easily exploited by automated attacks like credential stuffing.
+
+================================================================================
+ORIGINAL TEXT (First 5000 chars)
+================================================================================
+
+--- Page 22 ---
+A03:2025 
+ –
+ 
+Software Supply Chain Failures
+•Risks introduced through third -party libraries, dependencies, build tools, orCI/CD pipelines
+•Youtrust thecode, butthecode wascompromisedWhat it is:
+Why it's #3
+•Apps rely onexternal dependencies
+•One compromised component canaffect thousands ofapplications
+•Fewer incidents, butvery high impact when ithappens
+Examples:
+•Compromised open -source libraries
+•Malicious updates inbuild pipelines
+
+--- Page 23 ---
+A04:2025 
+ –
+ 
+Cryptographic Failures
+•Failures related tomissing, weak, orimproperly implemented cryptography
+•Includes poor encryption practices anexposed ormismanaged cryptographic keysWhat it is:
+Common Causes:
+•Weak oroutdated encryption algorithms
+•Insufficient randomness (poor entropy)
+•Predictable orbroken random generators
+Examples:
+•Storing passwords without hashing
+•Using weak encryption orcustom crypto
+•Poor TLS/SSL configuration  
+
+--- Page 24 ---
+A05:2025 
+ –
+ 
+Injection
+•Happens when untrusted user input issent directly toaninterpreter
+•Theapplication ends upexecuting attacked -controlled commandsWhat it is:
+Common Injection Types:
+•SQL Injection
+•Cross -Site Scripting (XSS)
+•Command Injection
+Why it's still in the Top 5:
+•Injection isvery common andwidely tested
+•Often easy toexploit ifinput validation ismissing
+•Canlead todata theft, account takeover, orfullsystem compromise
+
+--- Page 25 ---
+A06:2025 
+ –
+ 
+Insecure Design
+•Security weaknesses caused bypoor design orarchitecture
+•Happens when security isnotconsidered early inthedevelopment processWhat it is:
+Common Issues:
+•Missing threat modeling
+•Weak ormissing business logic controls
+•Poor privilege management
+Why it matters:
+•Design flaws arehard tofixlater
+•Even secure code canfailiftheoverall design isinsecure
+•Often leads tosystem -wide vulnerabilities, notjustisolated bugs
+
+--- Page 26 ---
+A07:2025 
+ –
+ 
+Authentication Failures
+•Weaknesses inhow applications verify user identity
+•Allows attackers tologinassomeone elseWhat it is:
+Common Issues:
+•Weak orreused passwords
+•Missing orpoorly implemented MFA
+•Session fixation orbroken session handling
+Why it matters:
+•Leads toaccount takeover
+•Often thefirst step todata breaches orprivilege escalation
+•Automated attacks likecredential stuffing make itthiseasy toexploit
+

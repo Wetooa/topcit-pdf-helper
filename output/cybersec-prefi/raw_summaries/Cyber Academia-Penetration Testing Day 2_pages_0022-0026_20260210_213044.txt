@@ -1,0 +1,144 @@
+LEARNING GUIDE: Pages 22-26
+Generated: 2026-02-10 21:30:44
+PDF: Cyber Academia-Penetration Testing Day 2
+
+================================================================================
+LEARNING GUIDE
+================================================================================
+
+## OSINT Fundamentals: A Learning Guide
+
+This guide condenses essential information on Open-Source Intelligence (OSINT) and common tools, providing a clear, concise overview for study.
+
+---
+
+### 1. Open-Source Intelligence (OSINT)
+
+*   **Definition:** The process of gathering and analyzing information from publicly available sources to produce actionable intelligence.
+*   **Purpose:** To find, select, acquire, and analyze data that is openly accessible.
+
+---
+
+### 2. Key Information to Gather (OSINT Output Focus)
+
+When performing OSINT on a target, focus on identifying:
+
+*   **Running Services:** What applications or functionalities are active on the target's servers.
+*   **Technology Stack:** The underlying technologies, frameworks, and software used (e.g., web server, database, programming languages).
+*   **Core Functionalities/Use Cases:** The primary purposes and capabilities of the target system or application.
+*   **Protection Mechanisms:** Any security measures or defenses in place (e.g., firewalls, WAFs, specific authentication methods).
+
+---
+
+### 3. Essential OSINT Tools & Techniques
+
+#### 3.1. Shodan.io
+
+*   **What it is:** A search engine for internet-connected devices. Unlike Google, which searches websites, Shodan searches for servers, webcams, printers, routers, and more that are directly connected to the internet.
+*   **What it reveals:**
+    *   **Exposed Services & Ports:** Identifies open ports and the services running on them (e.g., HTTPS 8443, HTTP 8080).
+    *   **Geographical Location:** Shows the country and sometimes city where devices are located.
+    *   **SSL Certificate Details:** Provides information about SSL/TLS certificates, including:
+        *   **Issued By:** The Certificate Authority (CA) that issued the certificate.
+        *   **Common Name:** The domain name(s) the certificate is issued for (e.g., `bi.pl`, `wle.pl`).
+        *   **Organization:** The organization associated with the certificate.
+        *   **Supported SSL/TLS Versions:** Lists the cryptographic protocols supported (e.g., SSLv2, SSLv3, TLSv1). *Note: SSLv2/v3 are outdated and insecure, while TLSv1.2/1.3 are current best practices.*
+
+#### 3.2. Nmap (Network Mapper)
+
+*   **What it is:** A free and open-source utility for network discovery and security auditing. It's primarily used for port scanning.
+*   **What an Nmap scan report shows:**
+    *   **Host Status:** Whether the target host is `up` (online) or `down` (offline).
+    *   **Latency:** The response time from the host.
+    *   **Open Ports:** Lists ports that are actively listening for connections.
+    *   **Port State:** Indicates if a port is `open`, `closed`, or `filtered`.
+        *   `open`: An application is actively accepting TCP connections or UDP datagrams on this port.
+        *   `filtered`: A firewall, filter, or other network obstacle is blocking the port, preventing Nmap from determining if it's open.
+    *   **Service Name:** Identifies the common service running on an open port (e.g., `http` on port 80, `https` on port 443, `ssh` on port 22).
+    *   **Nmap Version & Scan Time:** Provides details about the scan execution.
+
+---
+
+================================================================================
+ORIGINAL TEXT (First 5000 chars)
+================================================================================
+
+--- Page 22 ---
+Open
+ -
+Source Intelligence (OSINT)
+A form of intelligence collection management that involves 
+finding, selecting, and acquiring information from publicly 
+available sources and analyzing it to produce actionable 
+intelligence.
+
+--- Page 23 ---
+OUTPUT
+
+--- Page 24 ---
+OUTPUT
+Services running in the server hosting the target
+Technology stack used by the target
+Important functionalities / use cases of the target
+Protection mechanisms in place
+
+--- Page 25 ---
+DUTPUT
+
+@& https://www.shodan.io/
+
+%% Exploits % Maps & Download Results &l Create Report
+
+Mic ess
+
+& SSL Certificate
+GTS .
+- 15.12 1 Issued By:
+Poland - Common Name: bi pl
+Details - Organization: St - Pz
+0.0.
+Issued To
+- " - Common Name: w le.pl
+China ? - Organization
+United States 1
+Russian Federation 1 Supported SSL Versions
+Pakistan 1 SSLv2, SSLv3, TLSv1
+b Mi 'ess
+HTTPS (8443) 13 & SSL Certificate
+HTTP (8080) 3 e _.___ ._1bec Issued By
+444 3 - Common Name; ! 1
+HTTP (81) 1 S— Y Primary Intermediate Server CA
+
+Details
+- Organization; S
+
+
+
+--- Page 26 ---
+Startin g
+Nmap scan report for I (XX XX XX . XX)
+Host is up (0.15s latency).
+Not shown: 89 filtered ports
+PORT STATE SERVICE
+“'tcp open {1
+open ¢
+open
+Opeﬂ
+open
+open
+open
+open
+open
+open
+open
+
+Nmap 7.90 ( https://nmap.org ) at year-mo-day hh:mm EDT
+
+&
+'O
+d
+
+Nmap done:
+
+
+

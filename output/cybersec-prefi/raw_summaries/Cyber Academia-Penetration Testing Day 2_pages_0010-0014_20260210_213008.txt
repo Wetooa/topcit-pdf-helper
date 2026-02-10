@@ -1,0 +1,196 @@
+LEARNING GUIDE: Pages 10-14
+Generated: 2026-02-10 21:30:08
+PDF: Cyber Academia-Penetration Testing Day 2
+
+================================================================================
+LEARNING GUIDE
+================================================================================
+
+Here's a simplified learning guide based on the provided text:
+
+---
+
+## Learning Guide: Pre-Engagement & Scope Definition for Penetration Testing
+
+This guide summarizes key steps and information gathering essential before starting a penetration test.
+
+### I. Pre-Engagement: Information Gathering
+
+Before a penetration test begins, specific information must be collected to define the scope and execution plan.
+
+#### A. Sample Scoping Questions: Network Pentest
+
+When scoping a network penetration test, identify the following details about the target IP addresses:
+*   **Total IP addresses** to be tested.
+*   **Internal IP addresses** (if applicable).
+*   **External IP addresses** (if applicable).
+
+#### B. Sample Scoping Questions: Web Pentest
+
+When scoping a web application penetration test, gather information about the applications:
+*   **Number of web applications** to be assessed.
+*   **Approximate number of static pages**.
+*   **Approximate number of dynamic pages**.
+*   **Number of user roles** within the application.
+
+#### C. Pentest Information Sheet Essentials
+
+A comprehensive Pentest Information Sheet should include:
+*   **Target(s) to be tested:** Specific systems, applications, or networks.
+*   **Test Schedule:** Start and end dates for the engagement.
+*   **Test Credentials:** Any necessary login details or access keys.
+*   **Specific Access Instructions:** Important notes or reminders for accessing the application/environment.
+*   **Security Test Cases:** (If applicable) Any specific scenarios or tests requested.
+
+Additionally, this sheet often includes:
+*   **Target Metadata:** Details about the targets, such as their type, protocol specifications, implementation specifics, and underlying platforms.
+*   **Engagement Data:** Administrative details like review type, specific engagement dates, names of consultants involved, and the estimated level of effort (e.g., person-days).
+
+### II. Scope Definition
+
+Defining the scope is a critical step in any penetration testing engagement.
+
+#### A. Importance of a Clearly Defined Pen-testing Scope
+
+*   A clear scope is **fundamental** for a successful and effective penetration test.
+*   It ensures all parties understand **what is included and excluded** from the assessment.
+*   Helps manage **expectations** and prevent misunderstandings.
+*   Minimizes **risks** by clearly outlining authorized activities.
+
+#### B. Key Considerations When Defining Scope
+
+When defining the scope, consider:
+*   **What assets** are in scope (e.g., specific IPs, applications, networks, systems).
+*   **What assets** are explicitly out of scope.
+*   **Types of tests** allowed (e.g., network, web, mobile, social engineering).
+*   **Testing methodologies** to be used.
+*   **Timeframes and schedules**.
+*   **Authorized attack vectors** and prohibited actions.
+*   **Reporting requirements**.
+*   **Rules of Engagement** (see below).
+
+#### C. Rules of Engagement
+
+The Rules of Engagement (RoE) are a crucial part of scope definition, detailing the guidelines and boundaries for the penetration test. These specify how the test will be conducted, what is permissible, and what is not.
+
+================================================================================
+ORIGINAL TEXT (First 5000 chars)
+================================================================================
+
+--- Page 10 ---
+PRE
+-
+ENGAGEMENT: Sample Scoping Questions 
+for Network Pentest
+How many total IP addresses are being tested?
+How many internal IP addresses, if applicable?
+How many external IP addresses, if applicable?
+
+--- Page 11 ---
+PRE
+-
+ENGAGEMENT: Sample Scoping Questions 
+for Web Pentest
+How many web applications are being assessed?
+How many static pages are being assessed (approximate)?
+How many dynamic pages are being assessed (approximate)?
+How many user roles does the application have?
+
+--- Page 12 ---
+PRE
+-
+ENGAGEMENT: Pentest Information Sheet
+The target(s) to be tested
+The schedule of the test (Start date and End date)
+Test Credentials
+Specific Instructions to access the application, Important 
+notes and reminders
+Security Test cases (if applicable)
+
+--- Page 13 ---
+Target Metadata
+Name v
+
+Type Protocol Specification and
+Implementation
+
+Platforms I
+
+Targets
+
+P I-
+
+b
+
+-
+
+o= e
+
+=Y
+
+o
+
+Implementation of W JIT ol ' (746
+Implementation of [ 11
+Implementation of [ |11
+Implementation of fw 111
+
+Changes to M i iui s . & o
+Implementation of 1% 11
+
+Changes to ed25519-zebra for Ja* » %
+
+Engagement Data
+
+PRE-ENGAGEMENT: Pentest Informatio
+
+Type Specification and Implementation
+
+Review
+
+Dates
+Consultants 3
+Level of Effort 16 person-days
+
+https:/Aus 4p-0214
+p-0207
+1p-0251
+p-0211
+https:/! §AID-0212
+
+https//ry 1 i R p-0215
+
+https:// s
+https://%
+https://
+
+https://github.comimarsrm s st 4560
+
+https://github.comi st mammamt 4487
+
+https://github.comumassr masmimi* 4489
+https://github.comms S i 4578
+https://github.comi g s
+w4581
+
+https://github.comi™ w88 e is -l
+
+https://github.com s *
+
++ h/pull/258
+
+L
+
+2020-06-01 to 2020-08-14
+
+«wpull/24
+
+
+
+--- Page 14 ---
+SCOPE DEFINITION
+Importance of a Clearly Defined Pen -testing Scope
+What to Consider When Defining Scope?
+Scope and the Rules of Engagement
+
+

@@ -1,0 +1,68 @@
+LEARNING GUIDE: Pages 4-8
+Generated: 2026-02-10 20:59:34
+PDF: Cyber Academia-Penetration Testing Day 4
+
+================================================================================
+LEARNING GUIDE
+================================================================================
+
+# Post-Exploitation Learning Guide
+
+## 1. What is Post-Exploitation?
+*   This phase occurs **after** an attacker has successfully gained initial access to a system or network.
+*   It involves all subsequent actions taken by the attacker once inside.
+
+## 2. Key Objectives & Activities
+
+During the post-exploitation phase, attackers primarily aim to:
+
+*   **Maintain Persistence:** Secure ongoing access to the system, even after reboots or credential changes.
+*   **Escalate Privileges:** Gain higher access rights (e.g., move from a standard user to an administrator).
+*   **Perform Reconnaissance:** Gather more information about the compromised system and the wider network (e.g., user accounts, shared drives, network structure).
+*   **Move Laterally:** Spread from the initially compromised system to other systems within the network.
+*   **Ex-filtrate Data:** Steal sensitive information by transferring it out of the compromised network.
+*   **Cover Their Tracks:** Eliminate evidence of their presence and activities to avoid detection.
+*   **Use as a Platform:** Utilize the compromised system as a base for launching further attacks on other targets or systems.
+
+================================================================================
+ORIGINAL TEXT (First 5000 chars)
+================================================================================
+
+--- Page 4 ---
+Post
+-
+Exploitation
+Post -exploitation refers to the phase of a cyber attack that 
+occurs after an attacker has successfully gained access to a 
+system or network. 
+
+--- Page 5 ---
+Post
+-
+Exploitation
+During this phase, the attacker attempts to maintain persistent access, 
+escalate their privileges, and gather sensitive information or perform 
+malicious activities .
+
+--- Page 6 ---
+Post
+-
+Exploitation
+Objectives
+
+--- Page 7 ---
+Objectives
+Maintain Persistence
+Escalate Privileges
+Perform Reconnaissance
+Move Laterally
+Ex-filtrate Data
+Cover Their Tracks
+Use the compromised system as a platform for further attacks
+
+--- Page 8 ---
+Post
+-
+Exploitation
+Objectives / Phases
+

@@ -1,0 +1,320 @@
+LEARNING GUIDE: Pages 16-20
+Generated: 2026-02-10 21:28:05
+PDF: Cyber Academia-Penetration Testing Day 3
+
+================================================================================
+LEARNING GUIDE
+================================================================================
+
+Here is a simplified, easy-to-read learning guide based on the provided text, designed for quick study and understanding.
+
+---
+
+## Web Application Security Testing: Active Testing Guide
+
+This guide outlines various active testing techniques used to identify vulnerabilities in web applications. Active testing involves directly interacting with the application to discover weaknesses.
+
+---
+
+### **Section 1: Information Gathering**
+
+This phase focuses on understanding the application's structure and components.
+
+*   **Identify Application Entry Points:**
+    *   Analyze requests and responses to find all possible places where data can be input into or output from the application. These are potential injection points for attacks.
+*   **Map Execution Paths:**
+    *   Understand the main workflows and how users interact with the application from start to finish.
+*   **Fingerprint Web Application Framework:**
+    *   Identify the underlying technologies, frameworks (e.g., React, Angular, Django), and server components used by the application.
+*   **Map Application Architecture:**
+    *   Create a logical diagram or understanding of the application's overall structure based on your research.
+
+---
+
+### **Section 2: Configuration and Deployment Management Testing**
+
+This section covers testing for misconfigurations in the application's environment and deployment.
+
+*   **Test Network Infrastructure Configuration:**
+    *   Review network settings to ensure they are secure and not vulnerable.
+    *   Verify that all used frameworks and systems are updated, secure, and do not use default settings or credentials.
+*   **Test Application Platform Configuration:**
+    *   Ensure default files, example code, and known vulnerable files have been removed from the production environment.
+    *   Validate that no debugging code or extensions are present in production.
+    *   Review application logging mechanisms for completeness and security.
+*   **Review Old Backup & Unreferenced Files:**
+    *   Search for and analyze hidden or forgotten files (e.g., old backups, temporary files) that might contain sensitive information.
+*   **Test File Extension Handling:**
+    *   **Dirbust:** Use tools to discover sensitive file extensions or files that might contain raw data (e.g., scripts, credentials).
+    *   Validate that system framework rules cannot be bypassed to access these files.
+*   **Enumerate Admin Interfaces:**
+    *   Identify hidden administrator panels or functionalities.
+*   **Test HTTP Strict Transport Security (HSTS):**
+    *   **HSTS:** A security mechanism that forces browsers to interact with a website only over HTTPS.
+    *   Review the HSTS header implementation and its validity.
+*   **Test File Permissions:**
+    *   Identify any insecure or "rogue" file permissions that could grant unauthorized access.
+*   **Test Cloud Storage:**
+    *   Assess that access control configurations for cloud storage services (e.g., AWS S3, Azure Blob Storage) are properly secured.
+*   **Test HTTP Methods:**
+    *   Enumerate all supported HTTP methods (GET, POST, PUT, DELETE, etc.).
+    *   Test for access control bypass vulnerabilities using different methods.
+    *   Test for **Cross-Site Scripting (XSS)** vulnerabilities (where malicious scripts are injected into web pages).
+    *   Test for HTTP method overriding techniques.
+*   **Test RIA Cross-Domain Policy:**
+    *   **RIA (Rich Internet Application):** Web applications with desktop-like features.
+    *   Review and validate policy files that allow RIAs to make requests across different domains, ensuring they are not overly permissive.
+*   **Test for Subdomain Takeover:**
+    *   Enumerate all possible domains (current and historical) to identify forgotten or misconfigured subdomains that an attacker could take over.
+
+---
+
+### **Section 3: Identity Management Testing**
+
+This section focuses on how user identities, roles, and accounts are handled.
+
+*   **Test Role Definitions:**
+    *   Identify and document all user roles within the application (e.g., Admin, User, Guest).
+    *   Attempt to switch to or access functionality of another role without proper authorization.
+    *   Review the granularity of permissions assigned to each role.
+*   **Test User Registration Process:**
+    *   Verify that identity requirements during registration align with security policies.
+    *   Validate the entire registration workflow for weaknesses.
+*   **Test Account Provisioning Process:**
+    *   Determine which accounts have the authority to create other accounts and what types of accounts they can create.
+*   **Test for Account Enumeration & Guessable User Accounts:**
+    *   **Account Enumeration:** The ability to discover valid usernames or accounts.
+    *   Review processes like registration and login.
+    *   Analyze application responses (e.g., error messages) to see if they reveal whether a username exists or not.
+*   **Test for Weak/Unenforced Username Policy:**
+    *   Determine if a consistent account naming structure makes it easy for attackers to guess usernames.
+    *   Check if error messages during login or password reset can be exploited for account enumeration.
+
+---
+
+### **Section 4: Authentication Testing**
+
+This section covers testing the mechanisms used to verify user identities.
+
+*   **Test for Credentials Transported Over Encrypted Channels:**
+    *   Ensure that user credentials are *always* transmitted over an encrypted channel (like HTTPS) and never in plain text.
+*   **Test for Default Credentials:**
+    *   Check if the application or any of its components are still using default usernames and passwords.
+    *   Review the creation of new user accounts for predictable patterns or default credentials.
+*   **Test for Weak Lockout Mechanism:**
+    *   Evaluate how effectively the account lockout mechanism prevents **brute-force attacks** (repeated guessing of passwords).
+    *   Assess the security of the account unlock mechanism against unauthorized unlocking.
+*   **Test for Bypassing Authentication Schema:**
+    *   Ensure that authentication is strictly enforced across all services and functionalities that require it, preventing unauthorized access.
+*   **Test for Vulnerable "Remember Password" Functionality:**
+    *   Validate that "remember me" or similar features securely manage user sessions and do not expose credentials or session tokens to risk.
+*   **Test for Browser Cache Weaknesses:**
+    *   Review if the application stores sensitive information insecurely on the **client-side** (in the user's browser cache).
+    *   Verify that cached sensitive data cannot be accessed without proper authorization.
+
+---
+
+================================================================================
+ORIGINAL TEXT (First 5000 chars)
+================================================================================
+
+--- Page 16 ---
+Active Testing : Information Gathering
+Identify Application Entry 
+Points
+•Identify possible entry and 
+injection points through 
+request and response 
+analysis.
+Map Execution Paths Through 
+Application
+•Map the target application 
+and understand the 
+principal workflows.
+Fingerprint Web Application 
+Framework
+•Fingerprint the 
+components being used by 
+the web applications.
+Map Application Architecture
+•Generate a map of the 
+application at hand based 
+on the research conducted.
+
+--- Page 17 ---
+Active Testing : Configuration and Deployment 
+Management Testing
+Test Network Infrastructure 
+Configuration
+•Review  the applications’  
+configurations  set across  the 
+network  and validate  that they  
+are not vulnerable . 
+•Validate  that used  frameworks  
+and systems  are secure  and not 
+susceptible  to known  
+vulnerabilities  due to 
+unmaintained  software  or 
+default  settings  and credentials .
+Test Application Platform 
+Configuration
+•Ensure  that defaults  and known  
+files have  been  removed . 
+•Validate  that no debugging  
+code  or extensions  are left in 
+the production  environments . 
+•Review  the logging  mechanisms  
+set in place  for the application .
+Review Old Backup and 
+Unreferenced Files for 
+Sensitive Information
+•Find and analyse  unreferenced  
+files that might  contain  
+sensitive  information .
+Test File Extensions Handling 
+for Sensitive Information
+•Dirbust  sensitive  file extensions,  
+or extensions  that might  
+contain  raw data  (e.g. scripts,  
+raw data,  credentials,  etc.). 
+•Validate  that no system  
+framework  bypasses  exist  on 
+the rules  set.
+
+--- Page 18 ---
+Active Testing : Configuration and Deployment 
+Management Testing
+Enumerate Infrastructure and 
+Application Admin Interfaces
+•Identify  hidden  
+administrator  interfaces  
+and faunctionality .
+Test HTTP Strict Transport 
+Security
+•Review  the HSTS  header  
+and its validity .
+Test File Permission
+•Review  and Identify  any 
+rogue  file permissions
+Test Cloud Storage
+•Assess  that the access  
+control  configuration  for 
+the storage  services  is 
+properly  in place
+ Test HTTP Methods
+•Enumerate  supported  HTTP  
+methods . 
+•Test for access  control  
+bypass . 
+•Test XSS vulnerabilities . 
+•Test HTTP  method  overriding  
+techniques .
+Test RIA Cross Domain Policy
+•Review  and validate  the 
+policy  files.
+Test for Subdomain Takeover
+•Enumerate  all possible  
+domains  (previous  and 
+current)
+•Identify  forgotten  or 
+misconfigured  domains
+
+--- Page 19 ---
+Active Testing : Identity Management Testing
+Test Role Definitions
+•Identify and document 
+roles used by the 
+application
+•Attempt to switch, change, 
+or access another role
+•Review the granularity of 
+the roles and the needs 
+behind the permissions 
+given
+Test User Registration 
+Process
+•Verify that the identity 
+requirements for user 
+registration are aligned 
+with business and security 
+requirements.
+•Validate the registration 
+process
+Test Account Provisioning 
+Process
+•Verify which accounts may 
+provision other accounts 
+and of what type
+Testing for Account 
+Enumeration and Guessable 
+User Account
+•Review  processes  that 
+pertain  to user  
+identification  (e.g. 
+registration,  login,  etc.)
+•Enumerate  users  where  
+possible  through  response  
+analysis
+Testing for Weak of 
+Unenforced 
+Username Policy
+•Determine  whether  a 
+consistent  account  name  
+structure  renders  the 
+application  vulnerable  to 
+account  enumeration
+•Determine  whether  the 
+application’s  error  messages  
+permit  account  enumeration
+
+--- Page 20 ---
+Active Testing : Authentication Testing
+Testing for Credentials 
+Transported over an 
+Encrypted Channel
+•Assess whether any use 
+case of the web site or 
+application causes the 
+server or the client to 
+exchange credentials 
+without encryption.
+Testing for Default 
+Credentials
+•Enumerate the applications 
+for default credentials and 
+validate if they still exist.
+•Review and assess new 
+user accounts and if they 
+are created with any 
+defaults or identifiable 
+patterns.
+Testing for Weak Lock Out 
+Mechanism
+•Evaluate the account 
+lockout mechanism’s ability 
+to mitigate brute force 
+password guessing. 
+•Evaluate the unlock 
+mechanism’s resistance to 
+unauthorized account 
+unlocking.
+Testing for Bypassing 
+Authentication Schema
+•Ensure that authentication 
+is applied across all 
+services that require it.
+Testing for Vulnerable 
+Remember Password
+•Validate that the generated 
+session is managed 
+securely and do not put the 
+user’s credentials in 
+danger.
+Testing for Browser Cache 
+Weaknesses
+•Review if the application 
+stores sensitive information 
+on the client -side
+•Review if access can occur 
+without authorization
+

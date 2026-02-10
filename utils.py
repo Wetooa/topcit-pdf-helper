@@ -42,6 +42,42 @@ def get_pdf_files(path: str) -> List[str]:
         raise ValueError(f"Path does not exist: {path}")
 
 
+def normalize_folder_name(path: str) -> str:
+    """Return the last path component for use as output folder name."""
+    return Path(path).resolve().name
+
+
+def discover_pdf_folders(root_dir: str) -> List[Tuple[str, str]]:
+    """
+    Discover immediate subdirectories of root_dir that contain at least one PDF.
+
+    Args:
+        root_dir: Path to the input root directory.
+
+    Returns:
+        List of (folder_path, folder_name) for each subdir that has PDFs.
+        folder_name is the last path component (e.g. 'topcit' for 'input/topcit').
+
+    Raises:
+        ValueError: If root_dir does not exist or is not a directory.
+    """
+    root = Path(root_dir)
+    if not root.exists():
+        raise ValueError(f"Path does not exist: {root_dir}")
+    if not root.is_dir():
+        raise ValueError(f"Path is not a directory: {root_dir}")
+
+    result = []
+    for item in sorted(root.iterdir()):
+        if item.is_dir():
+            try:
+                get_pdf_files(str(item))
+                result.append((str(item.resolve()), normalize_folder_name(str(item))))
+            except ValueError:
+                continue
+    return result
+
+
 def sanitize_filename(filename: str) -> str:
     """Sanitize a filename for safe filesystem usage."""
     # Remove path separators and other problematic characters

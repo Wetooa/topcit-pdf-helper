@@ -1,0 +1,142 @@
+LEARNING GUIDE: Pages 34-38
+Generated: 2026-02-10 21:01:21
+PDF: Cyber Academia-Penetration Testing Day 4
+
+================================================================================
+LEARNING GUIDE
+================================================================================
+
+Here is a simplified, easy-to-read learning guide based on the provided text:
+
+---
+
+## Learning Guide: Vulnerability Reporting & Scoring
+
+### 1. Common Vulnerability Categories (Test Cases)
+
+When reporting security findings, vulnerabilities are typically categorized as follows:
+
+*   **Authentication & Session Management:**
+    *   Incorrect implementation (e.g., weak credentials, improper session handling)
+    *   Missing implementation (e.g., no authentication where required)
+*   **Authorization:**
+    *   Incorrect implementation (e.g., users accessing unauthorized resources)
+    *   Missing implementation (e.g., no authorization checks)
+*   **Components with Known Vulnerabilities:** Using outdated or vulnerable software/libraries.
+*   **Covert Channel:** Techniques like Timing Attacks that leak information indirectly.
+*   **Cross-Site Request Forgery (CSRF):** Forcing authenticated users to execute unwanted actions.
+*   **Cross-Site Scripting (XSS):** Injecting malicious scripts into web pages viewed by other users.
+*   **Server-Side Request Forgery (SSRF):** Forcing a server to make requests to internal or external systems.
+*   **Unrestricted File Uploads:** Allowing attackers to upload dangerous file types.
+*   **Unvalidated Redirects & Forwards:** Redirecting users to untrusted external sites.
+*   **Cryptography:**
+    *   Incorrect implementation (e.g., weak algorithms, improper key management)
+    *   Missing implementation (e.g., sensitive data transmitted unencrypted)
+*   **Denial of Service (DoS):** Attacks designed to make a service unavailable.
+*   **Information Exposure:** Leaking sensitive data (e.g., error messages revealing internal details).
+*   **Injection Flaws:** Injecting untrusted data into commands/queries (e.g., SQL, XML, Command, Path).
+*   **Insecure Design:** Fundamental design flaws leading to vulnerabilities.
+*   **Insecure Direct Object References:** Directly accessing objects without proper authorization checks.
+*   **Memory Corruption:** Issues like Buffer Overflows, Integer Overflows, or Format String bugs.
+*   **Race Conditions:** Exploiting timing differences in system operations.
+*   **Security Misconfiguration:** Improperly configured security settings on systems or applications.
+*   **User Privacy:** Issues related to the handling and protection of user data.
+
+---
+
+### 2. Common Vulnerability Scoring System (CVSS)
+
+*   **What it is:** A standardized system to objectively rate the severity of a vulnerability.
+*   **Purpose:** Captures key characteristics of a vulnerability and produces a numerical score.
+
+---
+
+### 3. CVSS Base Metrics
+
+These metrics describe the inherent characteristics of a vulnerability that are constant over time.
+
+*   **Attack Vector (AV):**
+    *   **Definition:** Describes *how* an attacker can exploit the vulnerability (e.g., network, adjacent network, local, physical access).
+    *   **Impact:** The more remote an attacker can be (logically or physically) to exploit the vulnerability, the higher the score.
+*   **Attack Complexity (AC):**
+    *   **Definition:** Describes conditions *beyond the attacker's control* that must exist for successful exploitation.
+    *   **Examples:** Specific system configurations, user interaction requirements, or certain network conditions.
+*   **Privileges Required (PR):**
+    *   **Definition:** Describes the level of privileges an attacker must possess *before* successfully exploiting the vulnerability.
+    *   **Examples:** None, Low, High (e.g., administrator access).
+
+---
+
+================================================================================
+ORIGINAL TEXT (First 5000 chars)
+================================================================================
+
+--- Page 34 ---
+REPORTING: Test Cases
+
+Authentication and Session Management — Incorrect
+Authentication and Session Management — Missing
+Authorization — Incorrect
+Authorization — Missing
+Components with known vulnerabilities
+Covert Channel (Timing Attacks, etc.)
+
+Cross Site Request Forgery (CSRF)
+
+Cross Site Scripting (XSS)
+Server-Side Request Forgery (SSRF)
+Unrestricted File Uploads
+Unvalidated Redirects and Forwards
+Cryptography — Incorrect
+Cryptography — Missing
+Denial of Service (DoS)
+Information Exposure
+Injection Flaws (SQL, XML, Command, Path, etc)
+Insecure Design
+Insecure Direct Object References
+Memory Corruption (Buffer and Integer Overflows, Format String, etc)
+Race Conditions
+Security Misconfiguration
+User Privacy
+
+
+
+--- Page 35 ---
+Common Vulnerability Scoring System (CVSS)
+The Common Vulnerability Scoring System(CVSS) provides a 
+way to capture the principal characteristics of a vulnerability 
+and produce a numerical score reflecting its severity.
+
+
+--- Page 36 ---
+CVSS Base Metrics 
+ –
+ 
+Attack Vector
+Attack Vector(AV) : This metric reflects the context by which 
+vulnerability exploitation is possible. This metric value (and 
+consequently the Base Score) will be larger the more remote 
+(logically, and physically) an attacker can be to exploit the 
+vulnerable component
+
+
+--- Page 37 ---
+CVSS Base Metrics 
+ –
+ 
+Attack Complexity
+Attack Complexity(AC ): This metric describes the conditions 
+beyond the attacker’s control that must exist in order to 
+exploit the vulnerability.
+
+
+--- Page 38 ---
+CVSS Base Metrics 
+ –
+ 
+Attack Complexity
+Privileges Required : This metric describes the level of 
+privileges an attacker must possess before successfully 
+exploiting the vulnerability
+
+

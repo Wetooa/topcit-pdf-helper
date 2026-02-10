@@ -1,0 +1,100 @@
+LEARNING GUIDE: Pages 4-8
+Generated: 2026-02-10 21:27:23
+PDF: Cyber Academia-Penetration Testing Day 3
+
+================================================================================
+LEARNING GUIDE
+================================================================================
+
+Learning Guide: **Pentest Engagement & Vulnerability Analysis**
+
+---
+
+### 1. Phases of a Pentest Engagement
+
+A penetration test (pentest) typically follows these stages:
+
+*   **Pre-engagement Interactions:** Initial planning and communication.
+*   **Information Gathering:** Collecting data about the target.
+*   **Vulnerability Analysis:** Identifying security weaknesses.
+*   **Exploitation:** Attempting to compromise identified vulnerabilities.
+*   **Post-Exploitation:** Maintaining access, escalating privileges, and achieving objectives.
+*   **Reporting:** Documenting findings and recommendations.
+
+### 2. Phase 3: Vulnerability Analysis
+
+This phase focuses on identifying potential security weaknesses. A key component of this phase is vulnerability scanning.
+
+### 3. Vulnerability Scanning
+
+**What it is:**
+*   Uses **automated tools** to check a target against a vast list of **known vulnerabilities**.
+*   Purpose: To **identify potential weaknesses** in an application's security.
+
+**Uses:**
+*   As a **standalone assessment**.
+*   As part of a **continuous security monitoring strategy**.
+
+### 4. How a Vulnerability Scanner Works
+
+Scanners use several techniques to find vulnerabilities:
+
+*   **Application Spidering and Crawling:** Explores the application's structure, links, and content to map out all accessible pages and functionalities.
+*   **Discovery of Default and Common Content:** Looks for default files, directories, or configurations that might indicate known vulnerabilities or misconfigurations (e.g., default login pages, common admin paths).
+*   **Probing for Common Vulnerabilities:** Actively tests specific points in the application for well-known security flaws (e.g., SQL injection, cross-site scripting, outdated software versions).
+
+#### Types of Scans:
+
+*   **Passive Scan:**
+    *   **Non-intrusive checks.**
+    *   Simply **observes targets** to determine if they are vulnerable, without directly interacting in an aggressive way.
+*   **Active Scan:**
+    *   Performs a **simulated attack** on the target.
+    *   **Assesses vulnerabilities** as they would appear to an outsider, actively testing for exploitability.
+
+================================================================================
+ORIGINAL TEXT (First 5000 chars)
+================================================================================
+
+--- Page 4 ---
+PHASES OF A PENTEST ENGAGEMENT
+Reporting
+Pre
+-
+engagement
+Interactions
+Information
+Gathering
+Vulnerability
+Analysis
+Exploitation
+ Post
+Exploitation
+
+--- Page 5 ---
+Phase 3:
+Vulnerability Analysis
+
+--- Page 6 ---
+What is Vulnerability Scanning?
+Vulnerability scanning is the phase where automated tools are 
+used to check a target against a huge list of known 
+vulnerabilities to identify potential weaknesses in the security 
+of the application.
+Vulnerability scanning can be used as part of a standalone 
+assessment, or as part of a continuous overall security 
+monitoring strategy
+
+--- Page 7 ---
+How does a Vulnerability Scanner work?
+Application Spidering and Crawling
+Discovery of Default and common content
+Probing for common vulnerabilities
+
+--- Page 8 ---
+How does a Vulnerability Scanner work?
+A passive scan performs non -intrusive checks, simply looking 
+at targets to determine if they are vulnerable.
+An active scan is a simulated attack on the target to assess 
+vulnerabilities as they would appear to an outsider.
+

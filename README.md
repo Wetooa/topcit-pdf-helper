@@ -42,45 +42,76 @@ export GEMINI_API_KEY=your_api_key_here
 
 ## Usage
 
-### Basic Usage
+The tool supports two modes:
+
+- **Flat mode**: When you pass PDF files (or a mix of files and directories), all PDFs are processed into a single output directory with one compiled PDF.
+- **Folder mode**: When you pass only directories, each directory is treated as a named group. Output is written to a matching subfolder under the output root, with one compiled PDF per group (e.g. for different lessons or semesters).
+
+### Flat mode (files or mixed)
 
 Process a single PDF:
 ```bash
 python main.py path/to/your/document.pdf
 ```
 
-Process multiple PDFs:
+Process multiple PDFs or a directory of PDFs (single output):
 ```bash
 python main.py pdf1.pdf pdf2.pdf pdf3.pdf
+python main.py /path/to/pdfs/
 ```
 
-Process all PDFs in a directory:
+### Folder mode (directories only)
+
+Put PDFs in named folders and get one output folder per input folder with the same name:
+
 ```bash
-python main.py /path/to/pdfs/
+# One folder
+python main.py input/topcit
+# -> output/topcit/summaries/, output/topcit/compiled.pdf, etc.
+
+# Multiple folders
+python main.py input/topcit input/semester2-math
+# -> output/topcit/ and output/semester2-math/
+```
+
+### Discover subfolders
+
+Process all subfolders of an input root that contain PDFs:
+
+```bash
+python main.py input/ --discover
+# Discovers input/topcit, input/semester2-math, ... and processes each to output/topcit/, output/semester2-math/, ...
 ```
 
 ### Options
 
-- `--output-dir` or `-o`: Specify output directory (default: `./output`)
+- `--output-dir` or `-o`: Output root directory (default: `./output`)
+- `--discover`: With a single directory argument, discover and process each subfolder that contains PDFs
 - `--dpi`: OCR DPI setting (default: 300, higher = more accurate but slower)
 - `--overlap`: Pages of overlap between groups (default: 2)
+- `--skip-compiled`: Skip generating the compiled PDF (only generate Markdown files)
 
 Example:
 ```bash
-python main.py documents.pdf -o ./summaries --dpi 400
+python main.py input/topcit -o ./output --dpi 400
+python main.py input/ --discover
 ```
 
 ## Output Structure
 
-The tool generates:
-- `output/summaries/`: Individual Markdown files per PDF containing learning guides
+**Flat mode** (single output dir):
+- `output/summaries/`: Individual Markdown files per PDF
 - `output/compiled.pdf`: Combined PDF with all learning guides
-- `output/ocr_text/`: Individual text files for each page's extracted text (for verification)
-  - Files named: `{pdf_name}_page_{page_num}_{source}.txt`
-  - Source can be: `direct_extraction` or `ocr`
-- `output/raw_summaries/`: Individual API response files (saved immediately as learning guides are generated)
-  - Files named: `{pdf_name}_pages_{start}-{end}_{timestamp}.txt`
-  - Contains both the learning guide and preview of original text
+- `output/ocr_text/`, `output/raw_summaries/`: Per-page OCR text and raw API responses
+
+**Folder mode** (one subfolder per input folder, same name):
+- `output/<folder_name>/summaries/`: Individual Markdown files for PDFs in that folder
+- `output/<folder_name>/compiled.pdf`: Combined PDF for that folder only
+- `output/<folder_name>/ocr_text/`, `output/<folder_name>/raw_summaries/`: Same as above, scoped to that folder
+
+File naming:
+- OCR text: `{pdf_name}_page_{page_num}_{source}.txt` (source: `direct_extraction` or `ocr`)
+- Raw summaries: `{pdf_name}_pages_{start}-{end}_{timestamp}.txt`
 
 ## How It Works
 

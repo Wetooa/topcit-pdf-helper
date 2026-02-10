@@ -1,0 +1,143 @@
+LEARNING GUIDE: Pages 7-11
+Generated: 2026-02-10 21:10:26
+PDF: Cyber Academia-Penetration Testing Day 1
+
+================================================================================
+LEARNING GUIDE
+================================================================================
+
+## Security Testing Learning Guide
+
+This guide summarizes key concepts in security testing, focusing on different types of penetration testing.
+
+---
+
+### 1. Security Testing Perspectives
+
+Security testing can be viewed through different lenses, often representing escalating levels of sophistication or scope:
+
+*   **Vulnerability Assessment:** Identifies potential security weaknesses.
+*   **Penetration Testing:** Simulates attacks to find exploitable vulnerabilities.
+*   **Red Teaming:** Conducts comprehensive, real-world adversary simulations against an organization.
+
+---
+
+### 2. Types of Penetration Testing
+
+Penetration testing is categorized by the specific area or system being tested:
+
+*   **Network Penetration Test**
+*   **Web Application Penetration Test**
+*   **Client-Side Penetration Test**
+*   **Social Engineering Penetration Test**
+
+---
+
+### 3. Network Penetration Testing
+
+**Purpose:** Audits a network environment to identify security vulnerabilities.
+
+**Types:**
+
+*   **External:** Simulates attacks originating from outside the organization (e.g., internet-facing systems).
+*   **Internal:** Simulates attacks from inside the network (e.g., by employees or a compromised internal device).
+
+**What is Tested:**
+
+*   Firewall Configuration
+*   Firewall Bypass Techniques
+*   Stateful Inspection Analysis
+*   Intrusion Prevention System (IPS) Deception
+*   DNS-Level Attacks
+
+---
+
+### 4. Web Application Penetration Testing
+
+**Purpose:** Audits web applications for security problems stemming from insecure design, development, or coding practices.
+
+**Focuses On:**
+
+*   Websites
+*   Web Applications
+*   Browsers
+*   Plugins
+
+---
+
+### 5. Client-Side Penetration Testing
+
+**Purpose:** Audits client-side applications for security weaknesses.
+
+**Common Targets/Examples:**
+
+*   Putty (SSH client)
+*   Email Clients
+*   Web Browsers
+*   Third-party plugins and libraries (used by client applications)
+
+================================================================================
+ORIGINAL TEXT (First 5000 chars)
+================================================================================
+
+--- Page 7 ---
+Security Testing Perspective 
+Vulnerability 
+Assessment
+Penetration 
+Testing
+Red 
+Teaming
+
+--- Page 8 ---
+
+Network Penetration Test
+
+Web Application Penetration Test
+
+Client
+ -
+Side Penetration Test
+
+Social Engineering Penetration Test
+Types Of Penetration Testing
+
+--- Page 9 ---
+•Firewall Configuration
+•Firewall Bypass Testing
+•Stateful Inspection Analysis
+•Intrusion Prevention System Deception
+•DNS-Level Attacks
+Network Penetration Testing
+What it is:
+Type of penetration test that audits a network environment for security 
+vulnerabilities
+Types:
+External – Attacks from outside the organization ( internet -facing )
+Internal – Attacks from inside the network (employees or compromised device)
+What is tested:
+
+--- Page 10 ---
+•Browsers
+•Websites
+•Web Applications
+•Plugins
+Web Application Penetration Testing
+What it is:
+This type of test audits for security problems associated with the insecure 
+design, development, or coding of a web app
+What it focuses on:
+
+--- Page 11 ---
+This type of test audits for security weaknesses in 
+client -side applications. 
+Client
+ -
+Side Penetration Testing
+What it is:
+Client -side applications examples: 
+•Putty
+•Email Clients
+•Web Browsers
+•Third -party plugins and librariesCommon Targets:
+

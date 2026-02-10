@@ -1,0 +1,330 @@
+LEARNING GUIDE: Pages 19-23
+Generated: 2026-02-10 21:28:14
+PDF: Cyber Academia-Penetration Testing Day 3
+
+================================================================================
+LEARNING GUIDE
+================================================================================
+
+Here is a simplified, easy-to-read learning guide based on the provided text:
+
+---
+
+## Learning Guide: Active Testing
+
+This guide focuses on essential security testing areas: Identity Management, Authentication, Authorization, and Session Management.
+
+---
+
+### 1. Identity Management Testing
+
+**Goal:** Ensure user identities, roles, and registration processes are secure and properly managed.
+
+*   **Test Role Definitions:**
+    *   Identify and document all application roles.
+    *   Attempt to switch, change, or access other roles.
+    *   Review role granularity and permission logic.
+*   **Test User Registration Process:**
+    *   Verify identity requirements align with business and security needs.
+    *   Validate the overall registration flow.
+*   **Test Account Provisioning Process:**
+    *   Determine which accounts can create other accounts and what types.
+*   **Test for Account Enumeration and Guessable User Accounts:**
+    *   Review processes like registration and login for user identification.
+    *   Attempt to enumerate (discover) users by analyzing application responses (e.g., error messages).
+*   **Test for Weak or Unenforced Username Policy:**
+    *   Check if a consistent account naming structure allows account enumeration.
+    *   Determine if error messages leak information that helps enumerate accounts.
+
+---
+
+### 2. Authentication Testing
+
+**Goal:** Verify the security of user login, credential handling, and password-related functions.
+
+*   **Test for Credentials Transported over an Encrypted Channel:**
+    *   Check if credentials are exchanged without encryption at any point.
+*   **Test for Default Credentials:**
+    *   Look for and validate the existence of default credentials.
+    *   Assess if new user accounts are created with defaults or predictable patterns.
+*   **Test for Weak Lockout Mechanism:**
+    *   Evaluate the account lockout mechanism's resistance to brute-force password guessing.
+    *   Assess the unlock mechanism's resistance to unauthorized unlocking.
+*   **Test for Bypassing Authentication Schema:**
+    *   Ensure authentication is applied consistently across all services that require it.
+*   **Test for Vulnerable "Remember Password" Functionality:**
+    *   Validate secure management of generated sessions, ensuring user credentials are not exposed.
+*   **Test for Browser Cache Weaknesses:**
+    *   Review if the application stores sensitive information client-side.
+    *   Check if cached information allows access without authorization.
+*   **Test for Weak Password Policy:**
+    *   Evaluate resistance to brute-force attacks (using dictionaries) by checking password length, complexity, reuse rules, and aging requirements.
+*   **Test for Weak Security Question Answers:**
+    *   Determine the complexity of security questions and assess if answers are easily guessable or brute-forceable.
+*   **Test for Weak Password Change or Reset Functionalities:**
+    *   Determine resistance to subverting the password change process (e.g., changing another user's password).
+    *   Assess resistance of password reset functionality to guessing or bypassing.
+*   **Test for Weaker Authentication in Alternative Channels:**
+    *   Identify alternative authentication methods (e.g., mobile apps, APIs).
+    *   Assess their security measures and look for bypasses.
+
+---
+
+### 3. Authorization Testing
+
+**Goal:** Ensure users can only access resources and functions they are explicitly permitted to use.
+
+*   **Testing Directory Traversal / File Include:**
+    *   Identify injection points where directory paths might be manipulated.
+    *   Attempt bypass techniques to access unauthorized files or directories.
+*   **Testing for Bypassing Authorization Schema:**
+    *   Assess if horizontal (accessing another user's data) or vertical (escalating privileges) access is possible.
+*   **Testing for Privilege Escalation:**
+    *   Identify points where privilege manipulation might occur.
+    *   Fuzz (send varied, unexpected inputs) or attempt to bypass security measures to gain higher privileges.
+*   **Testing for Insecure Direct Object References (IDOR):**
+    *   Identify direct object references (e.g., `user_id=123`, `doc_id=XYZ`) in URLs or parameters.
+    *   Assess if access controls are vulnerable to IDOR by changing these references to access unauthorized objects.
+
+---
+
+### 4. Session Management Testing
+
+**Goal:** Verify the security of user sessions, ensuring they cannot be easily hijacked or manipulated.
+
+*   **Testing for Session Management Schema:**
+    *   Gather session tokens for the same user and different users.
+    *   Analyze tokens for sufficient randomness to prevent session forging.
+    *   Attempt to modify unsigned cookies containing manipulable information.
+*   **Testing for Cookie Attributes:**
+    *   Ensure proper security attributes are set for cookies (e.g., `HttpOnly`, `Secure`, `SameSite`).
+*   **Testing for Session Fixation:**
+    *   Analyze the authentication flow.
+    *   Force a session cookie onto a user before they log in, then check if that same session ID is used post-authentication, allowing an attacker to hijack the session.
+*   **Testing for Exposed Session Variables:**
+    *   Ensure proper encryption of sensitive session data.
+    *   Review caching configurations for session-related information.
+    *   Assess the security of channels and methods used to transmit session variables.
+*   **Testing for Cross-Site Request Forgery (CSRF):**
+    *   Determine if it's possible to initiate requests on a user's behalf without their explicit consent (e.g., changing passwords or making purchases simply by visiting a malicious link).
+
+---
+
+================================================================================
+ORIGINAL TEXT (First 5000 chars)
+================================================================================
+
+--- Page 19 ---
+Active Testing : Identity Management Testing
+Test Role Definitions
+•Identify and document 
+roles used by the 
+application
+•Attempt to switch, change, 
+or access another role
+•Review the granularity of 
+the roles and the needs 
+behind the permissions 
+given
+Test User Registration 
+Process
+•Verify that the identity 
+requirements for user 
+registration are aligned 
+with business and security 
+requirements.
+•Validate the registration 
+process
+Test Account Provisioning 
+Process
+•Verify which accounts may 
+provision other accounts 
+and of what type
+Testing for Account 
+Enumeration and Guessable 
+User Account
+•Review  processes  that 
+pertain  to user  
+identification  (e.g. 
+registration,  login,  etc.)
+•Enumerate  users  where  
+possible  through  response  
+analysis
+Testing for Weak of 
+Unenforced 
+Username Policy
+•Determine  whether  a 
+consistent  account  name  
+structure  renders  the 
+application  vulnerable  to 
+account  enumeration
+•Determine  whether  the 
+application’s  error  messages  
+permit  account  enumeration
+
+--- Page 20 ---
+Active Testing : Authentication Testing
+Testing for Credentials 
+Transported over an 
+Encrypted Channel
+•Assess whether any use 
+case of the web site or 
+application causes the 
+server or the client to 
+exchange credentials 
+without encryption.
+Testing for Default 
+Credentials
+•Enumerate the applications 
+for default credentials and 
+validate if they still exist.
+•Review and assess new 
+user accounts and if they 
+are created with any 
+defaults or identifiable 
+patterns.
+Testing for Weak Lock Out 
+Mechanism
+•Evaluate the account 
+lockout mechanism’s ability 
+to mitigate brute force 
+password guessing. 
+•Evaluate the unlock 
+mechanism’s resistance to 
+unauthorized account 
+unlocking.
+Testing for Bypassing 
+Authentication Schema
+•Ensure that authentication 
+is applied across all 
+services that require it.
+Testing for Vulnerable 
+Remember Password
+•Validate that the generated 
+session is managed 
+securely and do not put the 
+user’s credentials in 
+danger.
+Testing for Browser Cache 
+Weaknesses
+•Review if the application 
+stores sensitive information 
+on the client -side
+•Review if access can occur 
+without authorization
+
+--- Page 21 ---
+Active Testing : Authentication Testing
+Testing for Weak Password 
+Policy
+•Determine the resistance of 
+the application against 
+brute force password 
+guessing using available 
+password dictionaries by 
+evaluating the length, 
+complexity, reuse, and 
+aging requirements of 
+passwords.
+Testing for Weak Security 
+Question Answer
+•Determine the complexity 
+and how straight -forward 
+the questions are. 
+•Assess possible user 
+answers and brute force 
+capabilities.
+Testing for Weak Password 
+Change or Reset 
+Functionalities
+•Determine the resistance of 
+the application to subversion 
+of the account change 
+process allowing someone to 
+change the password of an 
+account. 
+•Determine  the resistance  of 
+the passwords  reset  
+functionality  against  guessing  
+or bypassing .
+Testing for Weaker 
+Authentication in Alternative 
+Channel
+•Identify alternative 
+authentication channels. 
+•Assess the security 
+measures used and if any 
+bypasses exists on the 
+alternative channels.
+
+--- Page 22 ---
+Active Testing : Authorization Testing
+Testing Directory Traversal 
+File Include
+•Identify injection points 
+that pertain to path 
+traversal. 
+•Assess bypassing 
+techniques and identify the 
+extent of path traversal
+Testing for Bypassing 
+Authorization Schema
+•Assess if horizontal or 
+vertical access is possible.
+Testing for Privilege 
+Escalation
+•Identify injection points 
+related to privilege 
+manipulation. 
+•Fuzz  or otherwise  attempt  
+to bypass  security  
+measures .
+Testing for Insecure Direct 
+Object References
+•Identify points where 
+object references may 
+occur. 
+•Assess the access control 
+measures and if they’re 
+vulnerable to IDOR.
+
+--- Page 23 ---
+Active Testing : Session Management Testing
+Testing for Session 
+Management Schema
+•Gather session tokens, for 
+the same user and for 
+different users where 
+possible. 
+•Analyze and ensure that 
+enough randomness exists 
+to stop session forging 
+attacks. 
+•Modify cookies that are not 
+signed and contain 
+information that can be 
+manipulated.
+Testing for Cookie Attributes
+•Ensure that the proper 
+security configuration is set 
+for cookies.
+Testing for Session Fixation
+•Analyze the authentication 
+mechanism and its flow. 
+•Force cookies and assess 
+the impact.
+Testing for Exposed Session 
+Variables
+•Ensure  that proper  
+encryption  is implemented . 
+•Review  the caching  
+configuration . 
+•Assess  the channel  and 
+methods’  security .
+Testing for Cross Site Request 
+Forgery
+•Determine  whether  it is 
+possible  to initiate  requests  
+on a user’s  behalf  that are 
+not initiated  by the user.
+

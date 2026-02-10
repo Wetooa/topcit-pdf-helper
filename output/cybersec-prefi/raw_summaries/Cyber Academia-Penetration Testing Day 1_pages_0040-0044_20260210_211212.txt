@@ -1,0 +1,74 @@
+LEARNING GUIDE: Pages 40-44
+Generated: 2026-02-10 21:12:12
+PDF: Cyber Academia-Penetration Testing Day 1
+
+================================================================================
+LEARNING GUIDE
+================================================================================
+
+## TestSSL Learning Guide
+
+### 1. What is TestSSL?
+
+*   **Definition:** A command-line tool for testing the SSL/TLS security of web servers.
+*   **Purpose:**
+    *   Identifies vulnerabilities in SSL/TLS configurations (e.g., weak ciphers, certificate issues, protocol flaws).
+    *   Ensures web servers comply with industry standards and regulations (e.g., PCI DSS, HIPAA, GDPR).
+
+### 2. Installation
+
+*   **Kali Linux:** TestSSL is *not* included by default in Kali Linux.
+*   **Installation Command:**
+    ```bash
+    apt install testssl.sh
+    ```
+
+### 3. Key Usage & Commands
+
+*   **Sample Command Structure:**
+    ```bash
+    testssl -p -s -S -U <domain>
+    ```
+*   **Command Flags Explained:**
+    *   `-p`: Checks for supported TLS protocols.
+    *   `-s`: Checks the strength of cipher suites.
+    *   `-S`: Checks server defaults.
+    *   `-U`: Checks for TLS-related vulnerabilities.
+
+================================================================================
+ORIGINAL TEXT (First 5000 chars)
+================================================================================
+
+--- Page 40 ---
+TestSSL
+
+
+--- Page 41 ---
+TestSSL
+➢A command -line tool used for testing SSL/TLS security of web servers
+➢Used to identify vulnerabilities in SSL/TLS configurations, including weak 
+ciphers, certificate issues, and protocol vulnerabilities.
+➢Used to ensure that web servers comply with industry standards and regulations, 
+such as PCI DSS, HIPAA, and GDPR What it is:
+
+--- Page 42 ---
+TestSSL
+ : Installation
+TestSSL  is NOT included with the default installation of Kali Linux but is 
+easily installable through its package manager:
+oapt install testssl.sh
+
+
+--- Page 43 ---
+TestSSL
+Sample command that you can use in  testssl  for penetration testing:
+•Testssl  –p –s –S –U <domain>
+-p : Check for TLS protocols
+-s : Check for cipher suites strength
+-S : Check for server defaults
+-U : Check for TLS -related vulnerabilities
+
+--- Page 44 ---
+SQLMap
+
+

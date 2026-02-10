@@ -1,0 +1,135 @@
+LEARNING GUIDE: Pages 13-17
+Generated: 2026-02-10 21:10:42
+PDF: Cyber Academia-Penetration Testing Day 1
+
+================================================================================
+LEARNING GUIDE
+================================================================================
+
+Here's a simplified learning guide based on the provided text:
+
+---
+
+## Learning Guide: Penetration Testing Basics
+
+### 1. Rules of Engagement: Legal & Ethical Foundations
+
+Before any penetration testing (pentesting) begins, strict rules must be followed to ensure it's legal, ethical, and effective.
+
+*   **Explicit Authorization:** Testing must always be formally and clearly approved.
+*   **Defined Scope:** The exact boundaries and objectives of the test must be agreed upon beforehand.
+*   **Data Confidentiality:** All sensitive information encountered must be handled with the highest level of confidentiality.
+*   **Legal Compliance:** All activities must adhere to relevant contracts, laws, and regulations.
+*   **Written Permission is Mandatory:** No testing can occur without explicit, documented permission.
+    *   **Crucial Note:** Without written permission, any unauthorized testing is considered hacking, not legitimate security assessment.
+
+### 2. Legal & Ethical Considerations: Data Protection & Responsibility
+
+Protecting data and acting responsibly are paramount during pentesting.
+
+*   **Personal Data Protection:**
+    *   Minimize access to personal data.
+    *   Only access data explicitly authorized for the test.
+    *   Reports must use anonymized or redacted (edited to hide sensitive info) data.
+    *   **Never** store, alter, or misuse client data.
+*   **Contractual Adherence:** All testing activities must strictly follow agreed-upon contractual agreements.
+*   **Key Principle:** "Access does not mean permission to misuse."
+
+### 3. Penetration Testing Standards
+
+Penetration testing standards provide a framework for conducting security assessments.
+
+*   **Purpose:**
+    *   Offer guidelines and methodologies for ethical testing.
+    *   Ensure tests are consistent, safe, and can be repeated.
+    *   Help define the scope, process, and reporting methods.
+    *   Align security testing with established industry best practices.
+
+### 4. The Pentesting Process
+
+Penetration testing follows a structured, multi-step approach:
+
+1.  **Planning & Scoping:**
+    *   Define the test's scope (what will be tested).
+    *   Establish rules of engagement (how it will be tested).
+    *   Set clear objectives (what outcomes are expected).
+2.  **Reconnaissance (Information Gathering):**
+    *   Collect information about the target.
+    *   Examples: IP addresses, open ports, software versions, system architecture.
+3.  **Vulnerability Scanning:**
+    *   Identify known weaknesses and vulnerabilities in systems using automated tools.
+    *   This step finds potential entry points or flaws.
+4.  **Exploitation:**
+    *   Attempt to actively exploit (take advantage of) identified vulnerabilities.
+    *   This can be done manually or using specialized tools to gain unauthorized access or control.
+5.  **Post-Exploitation:**
+    *   After successful exploitation, assess the impact of the breach.
+    *   Determine what level of access was gained and what further actions could be performed (e.g., privilege escalation, data exfiltration).
+6.  **Reporting:**
+    *   Document all findings, including exploited vulnerabilities and their impact.
+    *   Provide clear, actionable recommendations for remediation (fixing the issues).
+
+================================================================================
+ORIGINAL TEXT (First 5000 chars)
+================================================================================
+
+--- Page 13 ---
+Testing must be EXPLICITLY authorized
+Scope must be clearly defined before testing
+Sensitive data must be handled confidentially
+Activate governed by contracts & laws
+No testing without WRITTEN PERMISSION
+Without permission, it's hacking not testing
+Rules of Engagement (Legal & Ethical)
+
+
+--- Page 14 ---
+Legal and Ethical Considerations 
+(Data Protection & Responsibility)
+Personal data must be protected and minimized
+ONLY authorized data is accessed during testing
+Reports must use anonymized or redacted data
+No storing, altering, or misusing client data
+Activities must follow contractual agreementsKey principles:
+"Access does not mean permission to misuse."
+
+--- Page 15 ---
+STANDARDS
+ 0
+2
+•
+Overview of Penetration Testing Standards
+•
+OWASP Top 10
+•
+Technical Assessment Techniques
+•
+Post Assessment Activities
+
+--- Page 16 ---
+Overview of Penetration Testing Standards
+Provide guidelines and methodologies for ethical testing
+Ensure testing is consistent, safe, and repeatable
+Help define scope, process, and reporting
+Used to align security testing with industry best practices
+
+--- Page 17 ---
+PENTESTING PROCESS:
+1.Planning & Scoping : Define scope, rules, 
+and objectives.
+2.Reconnaissance : Gather information (IPs, 
+ports, versions)
+3.Vulnerability Scanning : Identify known 
+weaknesses, vulnerabilities
+4.Exploitation : Exploit identified 
+vulnerabilities manually or with tools.
+5.Post -exploitation : Assess the impact and 
+potential access gained.
+6.Reporting : Document findings and 
+remediation recommendations.
+Overview of Penetration Testing Standards
+Plan
+Exploit
+Scan
+Report
+

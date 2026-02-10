@@ -1,0 +1,194 @@
+LEARNING GUIDE: Pages 25-27
+Generated: 2026-02-10 21:31:03
+PDF: Cyber Academia-Penetration Testing Day 2
+
+================================================================================
+LEARNING GUIDE
+================================================================================
+
+Here's a simplified learning guide based on the provided text:
+
+---
+
+### **Learning Guide: Network & Web Security Reconnaissance Tools**
+
+This guide outlines key outputs and functions of common tools used for network and web security reconnaissance.
+
+---
+
+### **1. Shodan: Internet-Connected Device Search Engine**
+
+**Purpose:** Shodan scans the internet to find devices and services based on various criteria (e.g., open ports, banners, geographical location). It helps identify an organization's publicly exposed assets.
+
+**Key Information from Shodan Output:**
+
+*   **SSL Certificate Details:** Information about the Secure Sockets Layer (SSL) certificates used by web services.
+    *   **Issued By:** Entity that issued the certificate (Common Name, Organization, Primary Intermediate Server CA).
+    *   **Issued To:** The entity for which the certificate was issued (Common Name, Organization).
+    *   **Supported SSL Versions:** Cryptographic protocols supported by the service.
+        *   `SSLv2`, `SSLv3`: Older, less secure versions of SSL.
+        *   `TLSv1`: A more secure, modern successor to SSL (though older than TLSv1.2/1.3).
+*   **Open Ports and Services:** Identifies services running on accessible ports.
+    *   `HTTPS (8443)`: Secure HTTP on port 8443.
+    *   `HTTP (8080)`: HTTP on port 8080.
+    *   `4443`: Unspecified port, often used for various services.
+    *   `HTTP (81)`: HTTP on port 81.
+*   **Geographical Distribution:** Shows the approximate location of identified hosts (e.g., Poland, China, United States, Russian Federation, Pakistan).
+
+---
+
+### **2. Nmap: Network Scanner**
+
+**Purpose:** Nmap (Network Mapper) is a utility used for network discovery and security auditing. It identifies active hosts and services on a network by analyzing packet responses.
+
+**Key Information from Nmap Scan Report:**
+
+*   **Host Status:** Indicates if the target system is online and responsive.
+    *   `Host is up`: The target system is active.
+    *   `Latency`: Measures the response time (e.g., `0.15s`).
+*   **Port States:** Describes the status of scanned ports.
+    *   `open`: An application is actively listening and accepting connections on this port.
+    *   `filtered`: A firewall or network device is blocking the port, preventing Nmap from determining its status.
+    *   `Not shown: 89 filtered ports`: Indicates many ports were blocked/unreachable.
+*   **Identified Services:** For `open` ports, Nmap identifies the running service.
+    *   `PORT STATE SERVICE`: Provides a clear mapping of port number, state, and service name.
+    *   **Common Services Identified:** `ftp`, `ssh`, `telnet`, `smtp`, `http`, `netbios-ssn`, `https`, `microsoft-ds`, `ms-wbt-server`, `http-proxy`.
+*   **Scan Details:** Includes Nmap version (`Nmap 7.90`) and the timestamp of the scan.
+
+---
+
+### **3. Burp Suite: Web Application Security Testing Platform**
+
+**Purpose:** Burp Suite is an integrated platform for comprehensive security testing of web applications. It provides various tools to intercept, analyze, and manipulate HTTP/S traffic.
+
+**Key Components (Tabs):**
+
+*   **Dashboard:** Project overview and general information.
+*   **Target:** Defines the scope of testing and maps the target application's structure.
+*   **Proxy:** Intercepts and allows modification of all HTTP/S traffic between the browser and the target server.
+*   **Intruder:** Automates customized attacks (e.g., brute-force, fuzzing).
+*   **Repeater:** Manually modifies and re-sends individual HTTP requests, viewing responses.
+*   **Sequencer:** Analyzes the randomness of session tokens.
+*   **Decoder:** Performs various data transformations (e.g., URL, HTML, Base64 encoding/decoding).
+*   **Comparer:** Performs a visual difference check between two data items.
+*   **Extender:** Manages Burp Suite extensions for added features.
+*   **Project:** Stores project-specific settings and data.
+
+**Proxy/Target Functionality & Output:**
+
+*   **Traffic History:** Displays a chronological list of all HTTP requests and responses.
+*   **Traffic Filtering:** Options to hide specific types of content to focus analysis (e.g., hiding CSS, images, 4xx error responses).
+*   **HTTP Request Details:** Shows the raw structure of an intercepted HTTP request.
+    *   **Method:** The action requested (e.g., `GET`).
+    *   **Path:** The specific resource on the server (e.g., `/robots.txt`).
+    *   **Protocol:** `HTTP/1.1`.
+    *   **Host Header:** Specifies the target server's domain (e.g., `example.net`).
+    *   **Headers:** Additional information about the request (e.g., `Upgrade-Insecure-Requests`, `Accept`).
+*   **Request/Response View:** Allows viewing full headers and body content of both the request and response in plain text or hexadecimal format.
+
+================================================================================
+ORIGINAL TEXT (First 5000 chars)
+================================================================================
+
+--- Page 25 ---
+DUTPUT
+
+@& https://www.shodan.io/
+
+%% Exploits % Maps & Download Results &l Create Report
+
+Mic ess
+
+& SSL Certificate
+GTS .
+- 15.12 1 Issued By:
+Poland - Common Name: bi pl
+Details - Organization: St - Pz
+0.0.
+Issued To
+- " - Common Name: w le.pl
+China ? - Organization
+United States 1
+Russian Federation 1 Supported SSL Versions
+Pakistan 1 SSLv2, SSLv3, TLSv1
+b Mi 'ess
+HTTPS (8443) 13 & SSL Certificate
+HTTP (8080) 3 e _.___ ._1bec Issued By
+444 3 - Common Name; ! 1
+HTTP (81) 1 S— Y Primary Intermediate Server CA
+
+Details
+- Organization; S
+
+
+
+--- Page 26 ---
+Startin g
+Nmap scan report for I (XX XX XX . XX)
+Host is up (0.15s latency).
+Not shown: 89 filtered ports
+PORT STATE SERVICE
+“'tcp open {1
+open ¢
+open
+Opeﬂ
+open
+open
+open
+open
+open
+open
+open
+
+Nmap 7.90 ( https://nmap.org ) at year-mo-day hh:mm EDT
+
+&
+'O
+d
+
+Nmap done:
+
+
+
+--- Page 27 ---
+OUTPUT
+
+N A
+
+[ Dashboard | Target | Proxy | intruder | Repeater | Sequencer | Decoder | Comparer | Extender | Project
+[sowmp [scope [wovesetotons |
+Filter: Hiding not found items; hiding CSS, image and general binary content; hiding 4xx responses; hiding e
+
+» 0 hups: |' contents
+> [ https://y
+D hups: -  hups:/ /y
+ey =
+%4 :: https:/ /¢
+[ csp ::::m
+@/ A
+
+; D¢ php https:/ /g
+
+» @ ¢ er.html https://y
+
+0 ¢ ahml Wflll ;
+
+D ) m ‘v‘ P 'lllﬂvv-vr----,-v -
+
+» @ ( php
+| Request [ Response _
+Headers | Hex
+
+1 GET /robots.txt HTTP/1.1
+2Host: . " " .net
+
+] Upgrade~Insecure~-Requests: 1
+w I maun Adam hacad vee 4 Accept: */*
+
+CRELEERELEE) |
+
+,_A
+3
+
+
+

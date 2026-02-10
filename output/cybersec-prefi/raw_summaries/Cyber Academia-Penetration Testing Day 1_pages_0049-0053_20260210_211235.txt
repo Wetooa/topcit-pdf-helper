@@ -1,0 +1,154 @@
+LEARNING GUIDE: Pages 49-53
+Generated: 2026-02-10 21:12:35
+PDF: Cyber Academia-Penetration Testing Day 1
+
+================================================================================
+LEARNING GUIDE
+================================================================================
+
+Here is a simplified, easy-to-read learning guide based on the provided text:
+
+---
+
+# Learning Guide: Network & Security Tools
+
+This guide covers essential information about SQLMap, Nmap, and GoWitness, extracted from pages 49-53.
+
+---
+
+## 1. SQLMap
+
+**Purpose:**
+*   An automated SQL injection tool.
+*   Reveals detailed server information.
+*   Lists available databases on a target system.
+
+---
+
+## 2. Nmap (Network Mapper)
+
+**Definition:**
+*   A popular, open-source tool used for network exploration and security auditing.
+
+**Key Features:**
+*   **Port Scanning:** Identifies open ports and the services running on them.
+*   **Host Discovery:** Finds active hosts on a network.
+*   **Service Detection:** Determines the software and version numbers of services.
+*   **OS Detection:** Identifies the operating system running on a host.
+*   **Scriptable Interaction:** Can be used with scripts to automate tasks and extend its capabilities.
+
+**Installation:**
+*   Pre-installed by default in Kali Linux.
+*   Also available for download from [nmap.org/download.html](https://nmap.org/download.html).
+
+**Basic Usage:**
+*   **Command Syntax:** `nmap <IP address>`
+*   **Example:** `nmap 192.168.1.1`
+
+**Interpreting Basic Scan Output:**
+A typical Nmap output for `nmap <IP address>` will show:
+*   **Host Status:** Indicates if the target host is "up" and its latency.
+*   **Port State Service:** A list of ports, their status (e.g., "open"), and the identified service running on that port (e.g., HTTP, SSH, DNS).
+*   **MAC Address:** Displays the MAC address of the host, often with the vendor name (e.g., VMware).
+*   **Scan Summary:** Provides details on how many IP addresses were scanned and the total time taken for the scan.
+
+---
+
+## 3. GoWitness
+
+*   (No descriptive information provided in the original text, only the tool name.)
+
+---
+
+================================================================================
+ORIGINAL TEXT (First 5000 chars)
+================================================================================
+
+--- Page 49 ---
+SQLMap
+Screenshot below shows that the detailed information about the server and also  the names 
+of available databases
+
+
+--- Page 50 ---
+NMAP
+
+
+--- Page 51 ---
+NMAP
+Nmap (Network Mapper) is a popular open -source tool used for network exploration and 
+security auditing.
+KEY FEATURES:
+•Port scanning : Nmap can scan a network to identify open ports and the services running 
+on them.
+•Host discovery : Nmap can identify active hosts on a network by sending packets and 
+analyzing the responses.
+•Service detection : Nmap can identify the software and version numbers of services 
+running on a network.
+•OS detection : Nmap can identify the operating system running on a host.
+•Scriptable interaction : Nmap can be used with scripts to automate tasks and extend its 
+capabilities.
+INSTALLATION:
+Nmap is installed in the default Kali Linux but is also available in 
+https://nmap.org/download.html
+
+--- Page 52 ---
+NMARP: Usage
+
+» Usage: nmap <IP address>
+
+Nmap scan report for
+Host is up (©0.0028s latency).
+Not shown: 987 closed tcp ports (reset)
+PORT STATE SERVICE
+" open s
+
+open
+p open
+p open
+L p open
+cCp open
+Cp open
+Ccp open
+Cp open
+cp open
+Ccp open
+Cp open
+Ccp open
+MAC Address: 0@ 1 (VMware)
+
+—r
+
+-
+<
+¢
+-
+
+-
+
+LI I B B R S
+
+ssn
+t-ds
+
+LA
+
+Lt
+
+A
+
+(il o — I O, TR VO — I — . O |
+
+M A Im Py RY ALY Y
+
+Host script results:
+| ° " eq: Incremental!
+
+Nmap done: 1 IP address (1 host up) scanned in 2.14 seconds
+
+
+
+--- Page 53 ---
+GoWitness
+
+

@@ -1,0 +1,173 @@
+LEARNING GUIDE: Pages 28-32
+Generated: 2026-02-10 21:11:39
+PDF: Cyber Academia-Penetration Testing Day 1
+
+================================================================================
+LEARNING GUIDE
+================================================================================
+
+## Cybersecurity Learning Guide: Key Vulnerabilities & Technical Assessment
+
+---
+
+### Part 1: Common Application Vulnerabilities (OWASP Top 10 - 2025 Draft)
+
+#### A09:2025 – Security Logging and Alerting Failures
+
+**What it is:**
+*   Occurs when security-related events are not properly logged, monitored, or alerted.
+*   Attacks happen, but no one notices them in time.
+
+**Common Issues:**
+*   Logs are unclear, incomplete, or inconsistent.
+*   Lack of real-time monitoring and alerts.
+*   Sensitive data is written directly into logs.
+
+**Why it matters:**
+*   Attacks go undetected for long periods.
+*   Delayed response increases damage and data loss.
+*   Makes incident response and forensic analysis difficult or impossible.
+
+---
+
+#### A10:2025 – Mishandling of Exceptional Conditions
+
+**What it is:**
+*   Happens when applications do not properly handle errors or unexpected situations.
+
+**Common Issues:**
+*   Error messages expose sensitive data (e.g., database errors, internal paths).
+*   Applications crash or behave unpredictably.
+*   Systems "fail open" (grant access) instead of "failing securely" (denying access) when errors occur.
+*   Missing or improper error handling logic.
+
+**Examples:**
+*   Stack traces (detailed error messages showing internal code) displayed to users.
+*   An app crashes when required input is missing.
+*   Access is granted due to an error during an authentication check.
+
+---
+
+### Part 2: Technical Assessment Techniques
+
+These techniques help identify weaknesses and potential attack vectors in systems.
+
+#### 1. Target Identification & Analysis Techniques
+
+**Purpose:** To discover what systems, ports, services, and vulnerabilities exist.
+**Think:** "What exists and what's exposed?"
+**How:** Typically uses automated tools, but can be done manually.
+
+| Technique                        | Capabilities                                                                                               |
+| :------------------------------- | :--------------------------------------------------------------------------------------------------------- |
+| **Network Discovery**            | • Identifies network devices using passive (examination) and active (testing) methods.                     |
+|                                  | • Maps communication paths and network architecture.                                                       |
+| **Network Port & Service Ident.** | • Uses a port scanner to identify open network ports, running services, and active devices.                |
+| **Vulnerability Scanning**       | • Identifies hosts, system attributes, and *known* vulnerabilities.                                        |
+|                                  | • Often produces a high number of false positives (flags issues that aren't actual vulnerabilities).     |
+| **Wireless Scanning**            | • Allows communication without physical connections.                                                       |
+|                                  | • Includes passive/active scanning for wireless networks.                                                  |
+|                                  | • Can track wireless device locations.                                                                     |
+|                                  | • Includes Bluetooth scanning.                                                                             |
+
+---
+
+#### 2. Target Vulnerability Validation Techniques
+
+**Purpose:** To confirm whether identified vulnerabilities can actually be exploited and abused.
+**Think:** "Can this actually be abused?"
+**How:** Can be performed manually or with automated tools, depending on the technique and team skills.
+
+| Technique                      | Capabilities                                                                           |
+| :----------------------------- | :------------------------------------------------------------------------------------- |
+| **Password Cracking**          | • Identifies weak passwords and poor password policies.                                |
+| **Penetration Testing (Pentest)** | • Simulates attacker methods and tools to test security.                               |
+|                                | • Verifies and demonstrates the exploitability of vulnerabilities to gain access.      |
+| **Social Engineering**         | • Tests human vulnerabilities, procedures, and user awareness (e.g., phishing tests).  |
+
+================================================================================
+ORIGINAL TEXT (First 5000 chars)
+================================================================================
+
+--- Page 28 ---
+A09:2025 
+ –
+ 
+Security Logging and Alerting Failures
+•Failures inlogging, monitoring, oralerting security -relevant events
+•Attacks happen, butnoonenotices intimeWhat it is:
+Common Issues:
+•Logs areunclear, incomplete, inconsistent
+•Noreal-time monitoring alerts
+•Sensitive data written directly tologs
+Why it matters:
+•Attacks goundetected forlong periods
+•Delayed response increase damage anddata loss
+•Makes incident response andforensics difficult orimpossible
+
+--- Page 29 ---
+A10:2025 
+ –
+ 
+Mishandling of Exceptional Conditions
+•Happens when applications don’t handle errors orunexpected situations properlyWhat it is:
+Common Issues:
+•Error messages that expose sensitive data
+•Applications that crash orbehave unpredictably
+•Systems that failopen instead offailing securely
+•Missing orimproper error handling logic
+Examples:
+•Stack traces shown tousers
+•App crashes when input ismissing
+•Access granted when error occurs
+
+--- Page 30 ---
+TECHNICAL ASSESSMENT TECHNIQUES
+Target Identification 
+ & 
+Analysis TechniquesThese techniques identify systems, ports, 
+services, and vulnerabilities, typically using 
+automated tools, though they can be performed 
+manually.
+Target Vulnerability 
+Validation TechniquesThese techniques confirm vulnerabilities and can 
+be performed manually or with automated tools, 
+depending on the technique and test team skills.
+ 
+THINK:  "What exists and what's exposed?"
+THINK:  "Can this actually be abused?"
+
+--- Page 31 ---
+TARGET IDENTIFICATION AND 
+ANALYSIS TECHNIQUES
+TECHNIQUE
+ CAPABILITIES
+Network Discovery •Uses passive (examination) and active (testing) 
+techniques to discover network devices
+•Identifies communication paths and helps 
+determine network architecture
+Network Port and Service 
+Identification•Uses a port scanner to identify network ports, 
+services, and active devices.
+Vulnerability Scanning •Identifies hosts, attributes, and known 
+vulnerabilities (with high false positives).
+Wireless Scanning •Enables devices to communicate wirelessly 
+without physical connections
+•Passive/Active Wireless Scanning
+•Wireless Device Location Tracking
+•Bluetooth Scanning
+
+
+--- Page 32 ---
+TARGET VULNERABILITY AND 
+VALIDATION TECHNIQUES
+TECHNIQUE
+ CAPABILITIES
+Password Cracking •Identifies weak password and password 
+policies.
+Penetration Testing •Tests security using attacker methods and 
+tools
+•Verifies and demonstrates exploitability of 
+vulnerabilities to gain access.
+Social Engineering •Tests procedures and user awareness.
+
