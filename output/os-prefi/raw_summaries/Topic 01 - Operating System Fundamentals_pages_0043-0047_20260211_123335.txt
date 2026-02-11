@@ -1,0 +1,143 @@
+LEARNING GUIDE: Pages 43-47
+Generated: 2026-02-11 12:33:35
+PDF: Topic 01 - Operating System Fundamentals
+
+================================================================================
+LEARNING GUIDE
+================================================================================
+
+## Operating System: A Learning Guide
+
+This guide summarizes key concepts about Operating Systems (OS) from the provided text, focusing on essential information for effective learning.
+
+---
+
+### 1. Operating System (OS)
+
+**Definition:**
+The OS is a fundamental software component that manages hardware resources and provides services.
+
+**Core Functions:**
+*   Enables multiple programs to execute efficiently and safely.
+*   Manages program execution (Processes, Threads).
+*   Manages system resources (CPU, Memory, I/O devices).
+*   Coordinates concurrent activities.
+*   Facilitates sharing the system among different users and programs.
+
+---
+
+### 2. Process
+
+**Definition:**
+A process is a self-contained execution environment.
+
+**Key Characteristics:**
+*   Each process has a complete and private set of basic runtime resources.
+*   It has its own dedicated memory space, isolating it from other processes.
+
+---
+
+### 3. Thread
+
+**Definition:**
+A thread is the smallest unit of CPU execution *within* a process.
+
+**Key Characteristics:**
+*   Threads within the same process share basic runtime resources (e.g., memory space, open files) of that process.
+*   A single-threaded process has only one thread of execution.
+*   A multi-threaded process has multiple threads running concurrently within its single process environment, sharing the process's resources while having their own independent execution paths (like separate stacks, program counters, and registers).
+
+---
+
+### 4. Interrupt
+
+**Definition:**
+An interrupt is a signal indicating that an event has occurred.
+
+**Key Information:**
+*   **Source:** Can originate from either hardware (e.g., I/O completion, timer expiration) or software (e.g., system calls, errors).
+*   **Requirement:** Requires immediate attention from the CPU.
+*   **Action:**
+    1.  Temporarily pauses the CPU's current task.
+    2.  Handles the event associated with the interrupt.
+    3.  Resumes the interrupted task afterward.
+
+---
+
+### 5. Types of Operating System
+
+*(This section is a placeholder as the original text only provided a heading on Page 47, indicating further content would follow.)*
+
+================================================================================
+ORIGINAL TEXT (First 5000 chars)
+================================================================================
+
+--- Page 43 ---
+Operating System
+
+--- Page 44 ---
+Operating System
+•structured to manage hardware resources and provide 
+services so multiple programs  can execute efficiently and 
+safely.
+•Managing execution (processes, threads)
+•Managing resources (CPU, memory, I/O)
+•Coordinating concurrent activities
+•Sharing the system among users and programs
+
+--- Page 45 ---
+Operating System
+•Process  
+•a self-contained execution 
+environment
+•has a complete, private set 
+of basic runtime resources 
+(has own memory space)
+•Thread
+•The smallest unit of CPU 
+execution within a process.
+•Threads within same 
+process share basic runtime 
+resources.1st Thread
+int i = 1;
+int n = 
+getNum();
+while(i < n):
+print(i);
+print(“Done!”)2nd Thread
+String s; 
+print(“Who u?”);
+S = getString();
+print(“Hello” + 
+s)Data FilesRegiste
+r
+Counte
+r
+StackRegiste
+r
+Counte
+r
+StackA process with 2 threads
+int x = getNum();
+int y = getNum();
+int result = x + 6;
+print(result)DataRegiste
+r
+Counte
+r
+StackSingle Threaded 
+Process
+
+--- Page 46 ---
+Operating System
+•Interrupt
+•Signals an occurrence of an event from either hardware  or 
+software . 
+•Requires immediate attention.
+•Temporarily pauses CPU task to handle the event, which will then 
+resume the interrupted task after .
+
+
+--- Page 47 ---
+Types of Operating System
+

@@ -1,0 +1,143 @@
+LEARNING GUIDE: Pages 10-14
+Generated: 2026-02-11 12:16:42
+PDF: Topic 02 - Operating System Structures
+
+================================================================================
+LEARNING GUIDE
+================================================================================
+
+Here is a simplified, easy-to-read learning guide based on the provided text:
+
+---
+
+## Learning Guide: Operating System Fundamentals
+
+### 1. System Calls
+
+System calls are the interface programs use to request services from the operating system.
+
+**Types of System Calls:**
+
+*   **Process Control:**
+    *   **Function:** Manages the creation, termination, and synchronization of processes.
+    *   **Examples:** `fork()` (create process), `exit()` (terminate process)
+*   **File Manipulation:**
+    *   **Function:** Handles operations on files.
+    *   **Examples:** `open()` (create/open file), `read()` (read from file), `write()` (write to file), `delete()`
+*   **Device Manipulation:**
+    *   **Function:** Manages interactions with hardware devices (e.g., printers, disks).
+    *   **Examples:** `ioctl()` (device I/O control), `read()`, `write()`
+*   **Information Maintenance:**
+    *   **Function:** Retrieves and modifies system data.
+    *   **Examples:** `getpid()` (get process ID), `settimeofday()` (set system time)
+*   **Communication:**
+    *   **Function:** Enables Inter-Process Communication (IPC) between different processes.
+    *   **Methods:** Message passing or shared memory.
+    *   **Examples:** `pipe()` (create a pipe for IPC), `socket()` (create a network socket)
+*   **Protection:**
+    *   **Function:** Controls access to system resources and enforces security policies.
+    *   **Examples:** `chmod()` (change file permissions), `setuid()` (set user ID for execution)
+
+### 2. Linux Systems & Virtualization
+
+To work with Linux commands and scripts, a Linux system is required. It's recommended to use a Virtual Machine to prevent potential damage to your main operating system.
+
+**Hypervisor (Virtual Machine Monitor / VMM):**
+*   A program that creates and runs **Virtual Machines (VMs)**.
+*   A VM is a virtualized computer system that runs its own operating system (Guest OS) and applications.
+
+**Types of Hypervisors:**
+
+*   **Type I (Bare-Metal Hypervisor):**
+    *   **Description:** Runs directly on the host hardware, acting like a lightweight operating system itself.
+    *   **Characteristics:** High performance, typically used in server environments.
+    *   **Analogy:** "I act like a lightweight OS."
+*   **Type II (Hosted Hypervisor):**
+    *   **Description:** Runs as a software application on top of an existing operating system (Host OS).
+    *   **Characteristics:** Relies on the host OS for hardware access and resource management.
+    *   **Analogy:** "I need to borrow resources from the HOST!"
+    *   **Examples:** VirtualBox, VMware Workstation, Parallels Desktop.
+
+### 3. The Shell and Shell Scripts
+
+**Shell:**
+*   The **outermost layer** of the Operating System (OS).
+*   A special user program that provides an **interface** for users to interact with OS services.
+*   Allows users to execute commands (e.g., `cd` for "change directory").
+
+**Shell Scripts:**
+*   A way to input multiple commands via a file.
+*   Essentially, a text file containing a sequence of commands that the shell can execute.
+*   Used to automate tasks.
+
+**Common Linux Shells:**
+*   **BASH** (Bourne Again SHell) - The most widely used shell in Linux.
+*   **CSH** (C SHell)
+*   **KSH** (Korn SHell)
+
+================================================================================
+ORIGINAL TEXT (First 5000 chars)
+================================================================================
+
+--- Page 10 ---
+1.Process  Control – Manages process creation, termination, and 
+synchronization (e.g., fork(), exit()).
+2.File Manipulation  – Handles file operations such as creation, reading, 
+writing, and deletion (e.g., open(), read(), write()).
+3.Device Manipulation  – Manages interactions with hardware devices like 
+printers and disks (e.g., ioctl(), read(), write()).
+4.Information  Maintenance  – Retrieves and modifies system data such as 
+time, process details, and system configuration (e.g., getpid(), 
+settimeofday()).
+5.Communication  – Enables inter-process communication (IPC) through 
+message passing or shared memory (e.g., pipe(), socket()).
+6.Protection  – Controls access to resources and enforces security policies 
+(e.g., chmod(), setuid()).Types of System Calls
+
+--- Page 11 ---
+Linux Shell Commands 
+& Scripts
+
+--- Page 12 ---
+We will be requiring a Linux 
+system from this point 
+onwards.
+Let’s use a Virtual Machine, since we might break some stuff!
+
+--- Page 13 ---
+Hypervisor
+•Also known as a virtual machine monitor or VMM.
+•Program that creates and runs virtual machine
+Can be of two types
+Host Windows Operating 
+SystemHypervisor
+CPU RAM DISK
+NETWORK I/OCPU RAM DISKHypervisorOther 
+Apps
+NETWORK I/OLINUX MacWindow
+sType II Type I
+I act like a 
+lightweight OSI need to 
+borrow 
+resources from 
+HOST!!LINUX Mac
+
+--- Page 14 ---
+Shell
+•The outermost layer 
+(Interfaces for the outside 
+to use) of the OS
+•A special user program 
+that provides an interface 
+for the user to use 
+operating system services.
+•Shell Scripts  – a way to 
+input commands via file.
+•For Linux Systems:
+•BASH (Bourne Again SHell)
+•CSH (C SHell) on the seashore…
+•KSG (Korn SHell)Shell
+OS
+Hardwarechange 
+directory…
+

@@ -1,0 +1,132 @@
+LEARNING GUIDE: Pages 16-20
+Generated: 2026-02-11 12:31:58
+PDF: Topic 01 - Operating System Fundamentals
+
+================================================================================
+LEARNING GUIDE
+================================================================================
+
+Here is a simplified, easy-to-read learning guide on Computer System Storage Structures:
+
+---
+
+## Computer System Storage Structures: Learning Guide
+
+This guide explains the different types of computer memory and storage, organized from fastest/most expensive to slowest/least expensive.
+
+### I. Core Storage Principles
+
+*   **Hierarchy:** Higher levels of storage are faster, but more expensive per bit.
+*   **Volatility:**
+    *   **Volatile:** Requires power to maintain stored information. Data is lost when power is off (e.g., Registers, Cache, RAM).
+    *   **Non-volatile:** Retains stored information even without power (e.g., SSD, HDD).
+
+---
+
+### II. Primary Storage (Volatile)
+
+These are faster memory types directly accessible by the CPU, primarily used for active data.
+
+#### 1. Registers
+
+*   **Location:** Inside the CPU core.
+*   **Speed:** Fastest possible memory in a computer.
+*   **Size:** Extremely small (bits or bytes).
+*   **Purpose:** Holds immediate data and instructions actively being processed by the CPU (e.g., numbers for calculations).
+*   **Volatility:** Volatile.
+*   **Examples:** RAX, RBX, RCX, RDX, RSP, RBP.
+
+#### 2. Cache (CPU Cache)
+
+*   **Purpose:** Stores frequently used instructions and data to reduce access time to main memory. It acts as a buffer.
+*   **Function:** When the CPU needs data, it first checks the cache.
+    *   **Cache Hit:** Data is found in cache, resulting in fast retrieval.
+    *   **Cache Miss:** Data is not in cache, so the CPU retrieves it from Main Memory, which is slower.
+*   **Levels & Typical Sizes (from fastest/smallest to slowest/largest):**
+    *   **L1 Cache:** Smallest (e.g., Kilobytes - KBs), fastest.
+    *   **L2 Cache:** Larger than L1 (e.g., KBs to Megabytes - MBs), slower than L1.
+    *   **L3 Cache:** Largest (e.g., MBs), slower than L2. Often shared among CPU cores.
+*   **Volatility:** Volatile.
+
+#### 3. Main Memory (RAM - Random Access Memory)
+
+*   **Size:** Much larger than cache (e.g., Gigabytes - GBs).
+*   **Speed:** Slower than cache, but significantly faster than secondary storage.
+*   **Purpose:** Holds all currently running programs, operating system data, and open files.
+*   **Volatility:** Volatile.
+
+---
+
+### III. Secondary Storage (Non-Volatile)
+
+These are slower, larger, and cheaper storage types used for long-term data retention.
+
+#### 1. Solid State Drive (SSD)
+
+*   **Mechanism:** Uses flash memory; has no moving parts.
+*   **Speed:** Fast due to electronic data access.
+*   **Cost:** More expensive per bit compared to HDDs.
+*   **Volatility:** Non-volatile.
+
+#### 2. Hard Disk Drive (HDD)
+
+*   **Mechanism:** Uses spinning magnetic platters and read/write heads to store and retrieve data.
+*   **Speed:** Slower than SSDs due to mechanical moving parts.
+*   **Cost:** Cheaper per bit compared to SSDs.
+*   **Volatility:** Non-volatile.
+
+---
+
+================================================================================
+ORIGINAL TEXT (First 5000 chars)
+================================================================================
+
+--- Page 16 ---
+Computer System Storage Structures
+•Higher == Faster
+•Faster == More expensive per bit
+•Volatile   - anything above SSD
+•Nonvolatile  – SSD and below
+
+--- Page 17 ---
+Computer System Storage Structures
+CPU CORE
+REGISTERS
+•Fastest possible memory in a computer
+•Extremely small , measuring only bits or bytes
+•Holds immediate data  (like 1 + 1)
+•VolatileRAX RBX
+RCX RDX
+RSP RBP
+•Located inside the CPU
+
+--- Page 18 ---
+Computer System Storage Structures
+CACHE
+L1
+smolL3
+~MBsL2
+~KBs
+•Stores frequently used  instructions and data
+•Acts as buffer between Register and Main Memory
+•Computer will try to locate needed instruction/data, and proceed to Main 
+Memory if it’s a Cache Miss.
+•Volatile
+
+--- Page 19 ---
+Computer System Storage Structures
+•So much more larger than caches (~GBs) but not as fast
+•Holds all currently running program  and open files .
+•VolatileMain Memory (RAM)
+
+--- Page 20 ---
+Computer System Storage Structures
+Solid State Drive
+No Moving Fast, Fast
+ExpensiveSSD HDDSecondary Memories
+or
+Hard Disk Drive
+Spinning magnetic platters, Slow
+Cheap
+Both are Non-volatile
+

@@ -1,0 +1,335 @@
+LEARNING GUIDE: Pages 28-32
+Generated: 2026-02-11 12:17:51
+PDF: Topic 02 - Operating System Structures
+
+================================================================================
+LEARNING GUIDE
+================================================================================
+
+## Learning Guide: Process Management & Shell Scripting Basics
+
+This guide provides essential information on process management and shell scripting, extracted and simplified for quick learning.
+
+---
+
+### 1. Process Management
+
+**Purpose:** Commands to monitor and terminate running programs (processes) on your system.
+
+*   **`ps aux`** – Lists active processes.
+    *   `a`: Show processes for all users.
+    *   `u`: Display detailed user information for each process.
+    *   `x`: Include processes not attached to a terminal (daemon processes).
+
+*   **`top`** – Shows real-time system statistics and processes.
+    *   **Navigation:**
+        *   `q`: Quit the `top` program.
+        *   `k`: Kill a selected process (you'll be prompted for the PID).
+        *   `M`: Sort processes by memory usage.
+
+*   **`kill <PID>`** – Stops a process using its Process ID (PID).
+    *   `-9`: **Force kill** (SIGKILL) – Immediately terminates the process; it cannot ignore this signal. Use with caution.
+    *   `-15`: **Graceful kill** (SIGTERM) – Requests the process to terminate gracefully, allowing it to save work and clean up before exiting. This is the default `kill` signal.
+
+---
+
+### 2. Shell Scripting Fundamentals
+
+**Definition:** A shell script is a text file containing a sequence of commands executed sequentially by a shell interpreter (e.g., Bash).
+
+#### Key Components of a Shell Script:
+
+1.  **Shebang (`#!`)**
+    *   **Purpose:** Specifies the interpreter to use for running the script (e.g., `#!/bin/bash` for Bash).
+    *   **Location:** Must be the very first line of the script.
+    *   **Importance:** Ensures the script executes correctly with the intended shell.
+
+2.  **Comments (`#`)**
+    *   **Purpose:** Lines starting with `#` are ignored by the shell and used to add explanations or documentation within the script.
+    *   **Example:** `# This is a comment.`
+
+3.  **Commands**
+    *   **Purpose:** Consist of standard Unix/Linux commands that the shell executes.
+    *   **Examples:** `echo`, `ls`, `mkdir`, `cd`.
+
+4.  **Variables**
+    *   **Purpose:** Store data, which can be system-defined (e.g., `PATH`, `HOME`) or user-defined.
+    *   **Assignment:** `name="Jefferson"` (No spaces around the `=` sign are crucial).
+        *   **Correct:** `name="Jefferson"`
+        *   **Incorrect:** `name = "Jefferson"`
+    *   **Usage:** Access a variable's value using a `$` prefix (e.g., `echo "Hello, $name!"`).
+
+5.  **Input and Output**
+    *   **Output:** `echo "Message"` – Prints text or variable values to the terminal.
+    *   **Input:** `read user_name` – Prompts the user for input and stores it in the `user_name` variable.
+
+6.  **Control Statements**
+    *   **`if`/`else`:** Executes code conditionally.
+        ```bash
+        if [ "$name" == "Jefferson" ]; then
+            echo "Welcome, $name!"
+        else
+            echo "Access Denied!"
+        fi
+        ```
+    *   **`for` loop:** Iterates over a list or a range.
+        ```bash
+        for i in {1..5}; do
+            echo "Iteration $i"
+        done
+        ```
+    *   **`while` loop:** Repeats commands as long as a condition is true.
+        ```bash
+        count=1 # Initialize count outside the loop
+        while [ "$count" -le 5 ]; do
+            echo "Count: $count"
+            count=$((count + 1)) # Increment count
+        done
+        ```
+
+7.  **Functions**
+    *   **Purpose:** Blocks of code that perform a specific task, reusable within the script.
+    *   **Definition:**
+        ```bash
+        greet() {
+            echo "Hello, $1!" # $1 refers to the first argument passed to the function
+        }
+        ```
+    *   **Calling:** `greet "Jefferson"`
+
+8.  **Exit Status (`$?`)**
+    *   **Purpose:** A special variable that holds the exit code of the **last executed command**.
+    *   **Value:**
+        *   `0`: Indicates successful execution.
+        *   Non-zero (e.g., `1`, `2`): Indicates an error or failure.
+    *   **Example:**
+        ```bash
+        mkdir test_dir
+        echo "Exit status: $?" # Prints 0 if mkdir was successful
+        ```
+
+================================================================================
+ORIGINAL TEXT (First 5000 chars)
+================================================================================
+
+--- Page 28 ---
+Process Management
+These commands allow you monitor and terminate processes
+•$ ps aux – Lists active processes.
+•a – Show all users' processes
+•u – Show detailed user info
+•x – Show processes without a terminal
+•$ top – Shows real-time system stats.
+•Navigation:
+•q – Quit.
+•k – Kill a process .
+•M – Sort by memory.
+•$ kill 1234 – Stops a process by PID.
+•-9 – Force kill.
+•-15 – Graceful kill.
+
+--- Page 29 ---
+Shell Script 
+Components
+Shell Script - a text file 
+containing a series of 
+commands that are 
+executed sequentially by a 
+shell interpreter .
+1.Shebang (#!) – 
+Specifies the interpreter
+•Ideally the first line of a 
+shell script
+•Without this, the script 
+may not execute 
+properly
+thescript.sh
+#!/bin/bash
+# COMMENTS
+# This script prints "Hello, World!"
+echo "Hello, World!"
+# COMMENDS
+echo "Listing files:"
+ls -l
+# VARIABLES
+name="Jefferson"
+echo "Hello, $name!"
+# INPUT AND OUTPUTS
+echo "Enter your name:"
+read user_name
+echo "Hello, $user_name!"
+# CONTROL STATEMENTS
+if [ "$name" == "Jefferson"  ]; then
+  echo "Welcome, $name!"
+else
+  echo "Access Denied!"
+fi
+for i in {1..5}; do
+  echo "Iteration $i"
+done
+while [ "$count"  -le 5 ]
+do
+    echo "Count: $count"
+    count=$((count + 1))
+done
+# FUNCTIONS
+greet() {
+  echo "Hello, $1!"
+}
+greet "Jefferson"
+# EXIT STATUS
+mkdir test_dir
+echo "Exit status: $?"  # Prints 0 if 
+successful
+
+--- Page 30 ---
+#!/bin/bash
+# COMMENTS
+# This script prints "Hello, World!"
+echo "Hello, World!"
+# COMMENDS
+echo "Listing files:"
+ls -l
+# VARIABLES
+name="Jefferson"
+echo "Hello, $name!"
+# INPUT AND OUTPUTS
+echo "Enter your name:"
+read user_name
+echo "Hello, $user_name!"
+# CONTROL STATEMENTS
+if [ "$name" == "Jefferson"  ]; then
+  echo "Welcome, $name!"
+else
+  echo "Access Denied!"
+fi
+for i in {1..5}; do
+  echo "Iteration $i"
+done
+while [ "$count"  -le 5 ]
+do
+    echo "Count: $count"
+    count=$((count + 1))
+done
+# FUNCTIONS
+greet() {
+  echo "Hello, $1!"
+}
+greet "Jefferson"
+# EXIT STATUS
+mkdir test_dir
+echo "Exit status: $?"  # Prints 0 if 
+successfulShell Script 
+Components
+Shell Script - a text file 
+containing a series of 
+commands that are 
+executed sequentially by a 
+shell interpreter .
+2.Comments (#) – 
+ignored by the shell and 
+are used to add 
+explanations.
+thescript.sh
+
+--- Page 31 ---
+#!/bin/bash
+# COMMENTS
+# This script prints "Hello, World!"
+echo "Hello, World!"
+# COMMENDS
+echo "Listing files:"
+ls -l
+# VARIABLES
+name="Jefferson"
+echo "Hello, $name!"
+# INPUT AND OUTPUTS
+echo "Enter your name:"
+read user_name
+echo "Hello, $user_name!"
+# CONTROL STATEMENTS
+if [ "$name" == "Jefferson"  ]; then
+  echo "Welcome, $name!"
+else
+  echo "Access Denied!"
+fi
+for i in {1..5}; do
+  echo "Iteration $i"
+done
+while [ "$count"  -le 5 ]
+do
+    echo "Count: $count"
+    count=$((count + 1))
+done
+# FUNCTIONS
+greet() {
+  echo "Hello, $1!"
+}
+greet "Jefferson"
+# EXIT STATUS
+mkdir test_dir
+echo "Exit status: $?"  # Prints 0 if 
+successfulShell Script 
+Components
+Shell Script - a text file 
+containing a series of 
+commands that are 
+executed sequentially by a 
+shell interpreter .
+3.Commands (ls, 
+echo,..) –  consist of 
+Unix/Linux commands
+thescript.sh
+
+--- Page 32 ---
+#!/bin/bash
+# COMMENTS
+# This script prints "Hello, World!"
+echo "Hello, World!"
+# COMMENDS
+echo "Listing files:"
+ls -l
+# VARIABLES
+name="Jefferson"
+echo "Hello, $name!"
+# INPUT AND OUTPUTS
+echo "Enter your name:"
+read user_name
+echo "Hello, $user_name!"
+# CONTROL STATEMENTS
+if [ "$name" == "Jefferson"  ]; then
+  echo "Welcome, $name!"
+else
+  echo "Access Denied!"
+fi
+for i in {1..5}; do
+  echo "Iteration $i"
+done
+while [ "$count"  -le 5 ]
+do
+    echo "Count: $count"
+    count=$((count + 1))
+done
+# FUNCTIONS
+greet() {
+  echo "Hello, $1!"
+}
+greet "Jefferson"
+# EXIT STATUS
+mkdir test_dir
+echo "Exit status: $?"  # Prints 0 if 
+successfulShell Script 
+Components
+Shell Script - a text file 
+containing a series of 
+commands that are 
+executed sequentially by a 
+shell interpreter .
+4.Variables  –   store 
+data and can be system-
+defined or user-defined.
+SPACING MATTERS
+•name = "Jefferson"  ❌
+•name="Jefferson"   ✅
+thescript.sh
+

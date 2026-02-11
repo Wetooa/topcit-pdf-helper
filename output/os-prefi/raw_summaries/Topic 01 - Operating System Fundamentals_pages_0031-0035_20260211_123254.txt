@@ -1,0 +1,141 @@
+LEARNING GUIDE: Pages 31-35
+Generated: 2026-02-11 12:32:54
+PDF: Topic 01 - Operating System Fundamentals
+
+================================================================================
+LEARNING GUIDE
+================================================================================
+
+## Computer System Architecture: Learning Guide
+
+This guide simplifies key concepts from Pages 31-35 for efficient learning.
+
+---
+
+### 1. Fault Handling
+
+**Fault handling** refers to how a computer system deals with errors or component failures to maintain operation.
+
+#### 1.1. Graceful Degradation
+*   **Definition:** The system continues to provide service, but its performance is reduced proportionally to the level of hardware still working.
+*   **Outcome:** System remains usable, but with decreased performance.
+*   **Analogy:** A car losing a cylinder can still drive, but slower and with less power.
+
+#### 1.2. Soft Failure
+*   **Definition:** The system can detect and isolate errors or faulty components without crashing entirely.
+*   **Outcome:** The system continues running, but the problematic component or process is quarantined or shut down.
+*   **Analogy:** A building's fire alarm system detecting a fire in one room and sealing off that room while the rest of the building remains operational.
+
+#### 1.3. Fault Tolerant
+*   **Definition:** The system can continue operating normally and fully even if a single component fails. It masks the failure from the user.
+*   **Outcome:** The system continues normal operation despite the component failure, as if nothing happened.
+*   **Analogy:** A plane with multiple engines; if one fails, the others compensate, and the flight continues normally.
+
+#### 1.4. Summary of Fault Handling Types
+
+| Type                  | Outcome                | Description                                         |
+| :-------------------- | :--------------------- | :-------------------------------------------------- |
+| **Graceful Degradation** | Capability is Reduced  | Service continues, but performance drops.           |
+| **Soft Failure**      | Error is Isolated      | System runs; faulty part is detected and contained. |
+| **Fault Tolerant**    | Failure is Hidden      | System operates normally despite failure.           |
+
+---
+
+### 2. Processor Architectures
+
+This section outlines different ways processors can be organized within a computer system.
+
+#### 2.1. Single-Processor Systems
+*   **Configuration:** Contain one main general-purpose processor.
+*   **Support:** May include additional special-purpose processors (e.g., for graphics, networking) but only one central CPU.
+
+#### 2.2. Multiprocessor Systems
+*   **Also known as:** Parallel or Multicore systems.
+*   **Configuration:** Feature multiple processors (cores) that are in close communication.
+*   **Types:**
+    *   **Asymmetric Multiprocessing:** Processors have specific roles (e.g., one master CPU, others perform specific tasks).
+    *   **Symmetric Multiprocessing (SMP):** All processors are identical and can perform any task, sharing resources equally.
+
+#### 2.3. Clustered Systems
+*   **Type:** A specific type of multiprocessor system.
+*   **Configuration:** Composed of multiple individual computer systems (nodes) that are loosely coupled (less tightly integrated than a single multiprocessor machine).
+*   **Purpose:** Primarily designed to provide **high-availability**, meaning they can continue operating even if one or more nodes fail. They achieve this by distributing workloads and having redundant components.
+
+================================================================================
+ORIGINAL TEXT (First 5000 chars)
+================================================================================
+
+--- Page 31 ---
+Computer System Architecture
+Fault Handling
+•Graceful Degradation  
+•the ability to continue providing service 
+proportional to the level of surviving hardware.
+DiscordRAM 
+3.8GB / 4.0 
+GB
+Chrom
+eSteam
+FILESDISK/DRIVE 
+124GB / 953 GB
+DiscordRAM 
+3.9GB / 4.0 
+GB
+SteamDISK/DRIVE 
+124GB / 953 GB
+FILESChrom
+e
+Chrom
+eGenshin 
+ImpactSystem remains usable, 
+but performance is 
+reduced
+
+--- Page 32 ---
+Computer System Architecture
+Fault Handling
+•Soft Failure
+• the ability to detect and isolate errors without a total 
+crash. 
+System continues running, 
+but the faulty component 
+or process is isolated
+
+--- Page 33 ---
+Computer System Architecture
+Fault Handling
+•Fault Tolerant
+•the ability be able to continue fully operating even if the 
+system suffers failure in any single component
+System continues normal 
+operation despite 
+component failure
+
+--- Page 34 ---
+Computer System Architecture
+Fault Handling
+Error is Isolated
+Failure is hidden  
+Capability is ReducedSoft Failure
+Fault Tolerant
+Graceful Degradation
+
+--- Page 35 ---
+Computer System Architecture
+Single-Processor
+One general-purpose 
+main processor with 
+special-purpose 
+processor .Multiprocessor
+Aka parallel or multicore  
+systems. Multiple 
+processors in close 
+communication that are 
+either asymmetric  or 
+symmetric .Clustered 
+Type of multiprocessor 
+that is loosely coupled, 
+meant to provide high-
+availability through 
+clustering .
+

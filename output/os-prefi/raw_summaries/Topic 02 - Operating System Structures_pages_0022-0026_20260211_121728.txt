@@ -1,0 +1,180 @@
+LEARNING GUIDE: Pages 22-26
+Generated: 2026-02-11 12:17:28
+PDF: Topic 02 - Operating System Structures
+
+================================================================================
+LEARNING GUIDE
+================================================================================
+
+Learning Guide: File & Directory Management
+
+---
+
+### **1. Understanding File Permissions (Long Format `ls -l`)**
+
+The `ls -l` command displays detailed information about files and directories. Here's how to interpret its output, like `-rwxrw-r-- 3 testuser usergroup 11K Feb 14 19:30 file.txt`:
+
+*   **1. File Type & Permissions (`-rwxrw-r--`)**
+    *   **First Character (File Type):**
+        *   `d`: Directory
+        *   `-`: Regular file
+    *   **Next 9 Characters (Permissions):** Divided into three sets of three characters (`rwx`).
+        *   **Owner Permissions (1st set):** `rwx` (read, write, execute)
+        *   **Group Permissions (2nd set):** `rw-` (read, write, no execute)
+        *   **Others Permissions (3rd set):** `r--` (read, no write, no execute)
+        *   **Key:**
+            *   `r`: Read permission
+            *   `w`: Write permission
+            *   `x`: Execute permission (for files) or permission to enter/list directory contents (for directories)
+            *   `-`: No permission
+
+*   **2. Hard Links (`3`)**
+    *   Number of direct links to the file's content (includes itself and parent directory for directories).
+
+*   **3. Owner (`testuser`)**
+    *   The username of the file or directory's owner.
+
+*   **4. Group (`usergroup`)**
+    *   The group that owns the file or directory.
+
+*   **5. File Size (`11K`)**
+    *   Size of the file (e.g., `11K` for 11 Kilobytes).
+
+*   **6. Date Modified (`Feb 14 19:30`)**
+    *   Date and time the file or directory was last modified.
+
+*   **7. Name (`file.txt`)**
+    *   The name of the file or directory.
+
+---
+
+### **2. Essential File & Directory Commands**
+
+These commands help you navigate, create, delete, copy, and move files and directories.
+
+*   **Change Directory:**
+    *   `cd <directory>`: Changes the current working directory to `<directory>`.
+    *   `cd ~`: Go to your home directory.
+    *   `cd /`: Go to the root directory.
+
+*   **Create Directory:**
+    *   `mkdir <directory_name>`: Creates a new directory.
+    *   `mkdir -p <parent_dir>/<new_dir>`: Creates parent directories if they don't exist.
+
+*   **Delete Directory:**
+    *   `rmdir <empty_directory>`: Deletes an *empty* directory.
+
+*   **Delete File or Directory:**
+    *   `rm <file_or_directory>`: Deletes files or directories.
+        *   `-r`: (Recursive) Deletes directories and their contents. Required for non-empty directories.
+        *   `-f`: (Force) Deletes without prompting for confirmation.
+        *   `-i`: (Interactive) Asks for confirmation before each deletion.
+        *   `-v`: (Verbose) Shows deleted files.
+
+*   **Copy Files/Directories:**
+    *   `cp <source> <destination>`: Copies files or directories.
+        *   `-r`: (Recursive) Copies directories and their contents.
+        *   `-i`: (Interactive) Prompts before overwriting an existing file.
+        *   `-u`: (Update) Copies only if the source is newer than the destination, or if the destination doesn't exist.
+        *   `-v`: (Verbose) Shows progress.
+
+*   **Move or Rename Files/Directories:**
+    *   `mv <source> <destination>`: Moves or renames files or directories.
+        *   `-i`: (Interactive) Asks before overwriting an existing file.
+        *   `-u`: (Update) Moves only if the source is newer than the destination, or if the destination doesn't exist.
+        *   `-v`: (Verbose) Shows progress.
+
+---
+
+### **3. File Viewing & Editing**
+
+These commands help you view and modify file contents.
+
+*   **View Entire File:**
+    *   `cat <file.txt>`: Displays the entire content of a file directly to the terminal.
+
+*   **View File with Scrolling:**
+    *   `less <file.txt>`: Displays file contents page by page, allowing scrolling.
+        *   **Navigation:**
+            *   `SPACE`: Scroll down one page.
+            *   `b`: Scroll up one page.
+            *   `/keyword`: Search for a specific `keyword`.
+            *   `q`: Quit `less`.
+
+*   **Edit Files (Nano Editor):**
+    *   `nano <file.txt>`: Opens a file in the Nano text editor.
+        *   **Shortcuts:**
+            *   `CTRL-X`: Exit (will prompt to save if changes were made).
+            *   `CTRL-O`: Save changes.
+            *   `CTRL-W`: Search for text within the file.
+
+================================================================================
+ORIGINAL TEXT (First 5000 chars)
+================================================================================
+
+--- Page 22 ---
+File and Directory Management
+Understanding the 
+-rwxrw-r--  3 testuser  usergroup  11K Feb 14 19:30  file.txtLong Format:
+File Type
+d is directory
+- is fileRead, Write, Execute 
+Permissions 
+(owner , group, others)
+- means noHard Links
+Number of direct 
+links inside, including 
+self  (.) and parent (..)
+
+--- Page 23 ---
+File and Directory Management
+Understanding the 
+-rwxrw-r--  3 testuser  usergroup  11K Feb 14 19:30  file.txtOwner of the file/directory
+Rights: rwx
+Group that owns the file/directory
+Rights: rw-File SizeLong Format:
+Date Modified
+
+--- Page 24 ---
+File and Directory Management
+These commands help manage files and directories efficiently.
+•$ cd dir – Moves working directory to dir.
+•You can also refer the special symbols ~ and / here to go to home or root
+•$ mkdir my_folder –  Creates a new directory my_folder .
+•-p – Creates parent folder if it does not exist
+•$ rmdir my_folder –    Deletes the empty directory my_folder .
+•$ rm dir – Deletes file or directory. Has common options:
+•-r – Remove directories and their contents recursively.
+•-f – Force delete without confirmation.
+•-i – Ask before each file deletion.
+•-v – Verbose, show deleted files.
+
+--- Page 25 ---
+File and Directory Management
+These commands help manage files and directories efficiently.
+•$ cp dir1 dir2 –  Copies files/directories dir1 to dir2.
+•-r – Copy recursively
+•-i – Prompt before overwriting
+•-u – Copy only if destination is folder
+•-v – Show Progress
+•$ mv dir1 dir2 –    Move or rename dir1 to dir2 .
+•-i – Ask before overwriting
+•-u – Move only if destination is folder
+•-v – Show progress
+
+--- Page 26 ---
+File Viewing and Editing
+These commands allow you to view and edit file contents.
+•$ cat file.txt –  Display file contents.
+•$ less file.txt –  Display file contents. Has scrolling mechanism.
+•Navigation:
+•SPACE – Scroll down
+•b – Scroll up
+•/keyword – Search for keyword
+•q – Quit. 
+•$ nano file.txt – Opens a file in the Nano editor .
+•Shortcuts:
+•CTRL-X – Exit.
+•CTRL-O – Save Changes
+•CTRL-W – Search
+

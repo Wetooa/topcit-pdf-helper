@@ -1,0 +1,92 @@
+LEARNING GUIDE: Pages 13-17
+Generated: 2026-02-11 12:31:47
+PDF: Topic 01 - Operating System Fundamentals
+
+================================================================================
+LEARNING GUIDE
+================================================================================
+
+Here's a simplified learning guide based on the provided text:
+
+---
+
+## Learning Guide: Computer System Fundamentals
+
+### 1. Computer System Booting Sequence
+
+The boot process is the sequence of operations that a computer performs when it is turned on. It involves loading essential software to get the system ready for use.
+
+*   **Bootstrap Program:** The initial program loaded when a computer starts. Its primary job is to locate and load the operating system's kernel into memory.
+*   **Kernel:** The core part of the operating system. It manages the system's resources (like memory and CPU) and provides an interface between hardware and software.
+*   **Daemon:** Background processes that run continuously, performing specific tasks without direct user interaction (e.g., managing network connections, printing services).
+
+### 2. Computer System Storage Structures
+
+Computer systems use a hierarchy of storage to balance speed, cost, and capacity.
+
+#### A. Storage Hierarchy Principles
+
+*   **CPU Storage:** The CPU needs incredibly fast access to data.
+*   **Speed Gap:** There's a challenge because very large storage is typically much slower than what the CPU needs, creating a "speed gap."
+*   **General Rules:**
+    *   **Higher levels in the hierarchy are faster.**
+    *   **Faster storage is more expensive per bit.**
+*   **Volatility:**
+    *   **Volatile Memory:** Requires power to maintain the stored information. Data is lost when power is removed (e.g., RAM).
+        *   Generally, anything above an SSD in the hierarchy (like CPU registers, cache, main memory) is volatile.
+    *   **Nonvolatile Memory:** Retains information even without power (e.g., hard drives, SSDs).
+        *   SSD and below in the hierarchy are nonvolatile.
+
+#### B. CPU CORE REGISTERS
+
+Registers are the fastest and smallest type of memory in a computer system.
+
+*   **Location:** Located directly inside the CPU core.
+*   **Speed:** The fastest possible memory available to the CPU.
+*   **Size:** Extremely small, measuring only in bits or bytes.
+*   **Purpose:** Hold immediate data that the CPU is actively processing (e.g., operands for calculations like "1 + 1").
+*   **Volatility:** Volatile (data is lost when power is removed).
+*   **Examples:** Common registers include RAX, RBX, RCX, RDX, RSP, RBP (these are general-purpose registers used for various operations).
+
+---
+
+================================================================================
+ORIGINAL TEXT (First 5000 chars)
+================================================================================
+
+--- Page 13 ---
+Computer System Booting up 
+Sequence
+Bootstrap Program
+Kernel
+Daemon
+
+--- Page 14 ---
+Computer System Storage 
+Structures
+
+--- Page 15 ---
+Computer System Storage Structures
+CPU STORAGE
+Incredibly Fast Must be large, but 
+large is slowSpeed Gap
+
+--- Page 16 ---
+Computer System Storage Structures
+•Higher == Faster
+•Faster == More expensive per bit
+•Volatile   - anything above SSD
+•Nonvolatile  – SSD and below
+
+--- Page 17 ---
+Computer System Storage Structures
+CPU CORE
+REGISTERS
+•Fastest possible memory in a computer
+•Extremely small , measuring only bits or bytes
+•Holds immediate data  (like 1 + 1)
+•VolatileRAX RBX
+RCX RDX
+RSP RBP
+•Located inside the CPU
+

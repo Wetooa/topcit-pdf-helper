@@ -1,0 +1,115 @@
+LEARNING GUIDE: Pages 46-50
+Generated: 2026-02-11 12:33:41
+PDF: Topic 01 - Operating System Fundamentals
+
+================================================================================
+LEARNING GUIDE
+================================================================================
+
+Here is a simplified learning guide based on the provided text:
+
+---
+
+## Operating System Learning Guide
+
+### 1. Interrupts
+
+*   **Definition:** A signal indicating an event has occurred (from hardware or software).
+*   **Purpose:** Requires immediate attention from the CPU.
+*   **Process:**
+    1.  CPU temporarily pauses its current task.
+    2.  Handles the interrupt event.
+    3.  Resumes the previously interrupted task.
+
+### 2. Types of Operating Systems
+
+#### A. Batch Operating Systems
+
+*   **Core Concept:** Processes similar jobs in groups (batches).
+*   **User Interaction:** No direct user interaction during job execution.
+*   **Key Innovation:** Introduced **Multiprogramming**.
+    *   **What is Multiprogramming?**
+        *   **Goal:** Maximize **CPU Utilization** (keep the CPU busy as much as possible).
+        *   **How it Works:**
+            *   Multiple processes (jobs, code, and data) are loaded into main memory simultaneously.
+            *   When one process needs to wait (e.g., for an I/O request like reading from disk), the OS switches the CPU to another ready process in memory.
+        *   **Benefit:** Prevents the CPU from sitting idle while one job waits.
+
+================================================================================
+ORIGINAL TEXT (First 5000 chars)
+================================================================================
+
+--- Page 46 ---
+Operating System
+•Interrupt
+•Signals an occurrence of an event from either hardware  or 
+software . 
+•Requires immediate attention.
+•Temporarily pauses CPU task to handle the event, which will then 
+resume the interrupted task after .
+
+
+--- Page 47 ---
+Types of Operating System
+
+--- Page 48 ---
+Types of Operating System
+Batch Operating Systems
+•Processes similar jobs in groups or batches without user interaction during 
+execution.
+Operating SystemMain Memory
+MAXSeconday MemoryJob PoolBatch
+Job 1
+Job 2
+Job 3
+Job 4
+Job 5
+Job 6COMPUTER
+LOADE
+DJob 1
+Job 2
+Job 3
+Job 4
+Job 5
+Job 6Process 1
+Process 2
+Process 3
+Process 4RUN
+
+--- Page 49 ---
+Types of Operating System
+Batch Operating Systems
+•Processes similar jobs in groups or batches without user interaction during execution.
+•Introduced Multiprogramming
+•Utilization of CPU by organizing jobs (code and data) so that the CPU is always 
+busy
+•multiple processes are kept in memory at the same time
+•Key defining feature:
+           Utilization
+Operating SystemMain Memory
+MAXProcess 1
+Process 2
+Process 3
+Process 4EXECUTINGI/O 
+RequestSwitches to another job to 
+avoid CPU idle
+
+--- Page 50 ---
+Types of Operating System
+Operating SystemMain Memory
+MAXProcess 1
+Process 2
+Process 3
+Process 4EXECUTINGI/O 
+Request
+I/O 
+RequestSwitches to another job to 
+avoid CPU idleBatch Operating Systems
+•Processes similar jobs in groups or batches without user interaction during execution.
+•Introduced Multiprogramming
+•Utilization of CPU by organizing jobs (code and data) so that the CPU is always 
+busy
+•multiple processes are kept in memory at the same time
+•Key defining feature:
+           Utilization
+

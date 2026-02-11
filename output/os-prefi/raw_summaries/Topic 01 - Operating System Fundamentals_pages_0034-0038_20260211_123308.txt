@@ -1,0 +1,139 @@
+LEARNING GUIDE: Pages 34-38
+Generated: 2026-02-11 12:33:08
+PDF: Topic 01 - Operating System Fundamentals
+
+================================================================================
+LEARNING GUIDE
+================================================================================
+
+Here is a simplified, easy-to-read learning guide based on the provided text:
+
+---
+
+### Learning Guide: Computer System Architecture
+
+This guide covers fundamental concepts in fault handling and different computer system architectures.
+
+---
+
+### Section 1: Fault Handling Concepts
+
+These terms describe how systems deal with errors and failures.
+
+*   **Error Isolation:** The process of containing an error to prevent it from spreading and causing further problems within the system.
+*   **Failure Hiding:** A system's ability to mask a fault or error from users or other system components, making it appear as if no failure occurred.
+*   **Capability Reduction:** When a system continues to operate but with diminished performance or fewer available features due to a fault.
+*   **Soft Failure:** A type of failure where a system continues to function, but at a reduced level of performance or functionality, rather than failing completely.
+*   **Fault Tolerant:** Describes a system's ability to continue operating correctly even when one or more of its components experience failure.
+*   **Graceful Degradation:** A characteristic of fault-tolerant systems, allowing them to continue operating with reduced functionality or performance instead of crashing completely when a part becomes unavailable.
+
+---
+
+### Section 2: Computer System Architectures
+
+Computer systems are designed in various ways, primarily differing in their use of processors.
+
+#### 1. Single-Processor Systems
+
+*   **Description:** Systems that contain only **one general-purpose Central Processing Unit (CPU)**.
+*   **Special-Purpose CPUs:** Can work alongside dedicated microprocessors for specific tasks, such as:
+    *   Disk microprocessors
+    *   Keyboard microprocessors
+    *   Graphics microprocessors
+
+#### 2. Multiprocessor Systems
+
+*   **Also Known As:** Parallel Systems, Multicore Systems.
+*   **Description:** Systems featuring **two or more general-purpose CPUs** that communicate closely with each other.
+*   **Memory Access Model:**
+    *   These systems typically change the memory access model from **Uniform Memory Access (UMA)** to **Non-Uniform Memory Access (NUMA)**.
+        *   **UMA:** All processors have equal and uniform access times to all memory locations.
+        *   **NUMA:** Processors have faster access to their local memory (memory directly attached to them) than to non-local memory (memory attached to other processors).
+*   **Key Advantages:**
+    *   **Increased Throughput:** More tasks can be completed simultaneously, boosting overall system performance.
+    *   **Economy of Scale:** Can be more cost-effective than deploying multiple single-processor systems to achieve similar processing power.
+    *   **Increased Reliability:** If one processor fails, the system can often continue operating using the remaining processors, enhancing resilience.
+*   **Types of Multiprocessing:**
+    *   **Asymmetric Multiprocessing:**
+        *   Involves a dedicated "boss" processor that controls the system and assigns tasks to other "worker" processors. This creates a master-slave or boss-worker relationship.
+    *   **Symmetric Multiprocessing (SMP):**
+        *   The most common type.
+        *   All processors are considered peers; any processor can perform any task within the operating system.
+
+#### 3. Clustered Systems
+
+*   **Description:** A specialized type of multiprocessor system where multiple independent computer systems (called nodes) are loosely connected.
+*   **Purpose:** Primarily designed to provide **high availability** by allowing other nodes to take over tasks if one node fails, ensuring continuous operation.
+
+---
+
+================================================================================
+ORIGINAL TEXT (First 5000 chars)
+================================================================================
+
+--- Page 34 ---
+Computer System Architecture
+Fault Handling
+Error is Isolated
+Failure is hidden  
+Capability is ReducedSoft Failure
+Fault Tolerant
+Graceful Degradation
+
+--- Page 35 ---
+Computer System Architecture
+Single-Processor
+One general-purpose 
+main processor with 
+special-purpose 
+processor .Multiprocessor
+Aka parallel or multicore  
+systems. Multiple 
+processors in close 
+communication that are 
+either asymmetric  or 
+symmetric .Clustered 
+Type of multiprocessor 
+that is loosely coupled, 
+meant to provide high-
+availability through 
+clustering .
+
+--- Page 36 ---
+Computer System Architecture
+Single-Processor Systems
+•There is only one general-purpose 
+CPU.
+•May work with special-purpose 
+CPU such as:
+•Disk microprocessor
+•Keyboard microprocessor
+•Graphics microprocessor
+
+
+--- Page 37 ---
+Computer System Architecture
+Multiprocessor Systems
+•Aka Parallel Systems  or Multicore 
+Systems
+•Has two or more general-purpose CPU.
+•Changes memory access model from 
+uniform memory access (UMA)  to 
+non-uniform memory access (NUMA)
+•Three main advantages:
+•Increased throughput
+•Economy of scale
+•Increased reliability
+
+
+--- Page 38 ---
+Computer System Architecture
+Multiprocessor Systems
+• Comes in two types:
+•Asymmetric multiprocessing – consists of a Boss processor that 
+controls the system. This scheme defines master-slave / boss-
+worker relationship. 
+•Symmetric multiprocessing (SMP) – the most common type. Each 
+processor , which are all peers, performs all task within the OS.
+
+

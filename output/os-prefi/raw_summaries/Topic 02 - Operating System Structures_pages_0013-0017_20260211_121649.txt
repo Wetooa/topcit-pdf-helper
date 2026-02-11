@@ -1,0 +1,108 @@
+LEARNING GUIDE: Pages 13-17
+Generated: 2026-02-11 12:16:49
+PDF: Topic 02 - Operating System Structures
+
+================================================================================
+LEARNING GUIDE
+================================================================================
+
+Learning Guide:
+
+## 1. Hypervisor
+
+*   **Definition:** Also known as a Virtual Machine Monitor (VMM), a hypervisor is a program that creates and runs virtual machines (VMs).
+*   **Function:** It allows multiple operating systems to share a single hardware host.
+*   **Types:**
+    *   **Type I (Bare-Metal Hypervisor):**
+        *   Runs directly on the host hardware.
+        *   Acts like a lightweight operating system.
+        *   Provides better performance and security.
+    *   **Type II (Hosted Hypervisor):**
+        *   Runs on top of an existing operating system (e.g., Windows, macOS, Linux).
+        *   Relies on the host OS for resource management.
+
+## 2. Shell
+
+*   **Definition:** The outermost layer of an Operating System (OS) and a special user program that provides an interface for the user to interact with OS services.
+*   **Function:** Allows users to input commands to the OS (e.g., navigating directories, running applications).
+*   **Shell Scripts:** Files containing a sequence of commands that can be executed automatically.
+*   **Examples (Common Linux Shells):**
+    *   BASH (Bourne Again SHell)
+    *   CSH (C SHell)
+    *   KSH (Korn SHell)
+
+## 3. Command Line Interface (CLI) Basics
+
+The Command Line Interface (CLI) or Command Interpreter (CI) is a text-based interface used to interact with the operating system.
+
+*   **Prompt Indicators:** These symbols indicate the current user's privilege level at the command prompt.
+    *   `$` : Indicates the current user is a **normal user**.
+    *   `#` : Indicates the current user is a **root user** (superuser with administrative privileges).
+*   **User and Hostname Indicator:**
+    *   `username@hostname` : Displays the current logged-in user (`username`) and the name of the device (`hostname`).
+*   **Special Directories:**
+    *   `~` (Tilde): Represents the current user's **home directory** (e.g., `/home/<username>/` on Linux).
+    *   `/` (Forward Slash): Represents the **root directory** of the file system.
+
+================================================================================
+ORIGINAL TEXT (First 5000 chars)
+================================================================================
+
+--- Page 13 ---
+Hypervisor
+•Also known as a virtual machine monitor or VMM.
+•Program that creates and runs virtual machine
+Can be of two types
+Host Windows Operating 
+SystemHypervisor
+CPU RAM DISK
+NETWORK I/OCPU RAM DISKHypervisorOther 
+Apps
+NETWORK I/OLINUX MacWindow
+sType II Type I
+I act like a 
+lightweight OSI need to 
+borrow 
+resources from 
+HOST!!LINUX Mac
+
+--- Page 14 ---
+Shell
+•The outermost layer 
+(Interfaces for the outside 
+to use) of the OS
+•A special user program 
+that provides an interface 
+for the user to use 
+operating system services.
+•Shell Scripts  – a way to 
+input commands via file.
+•For Linux Systems:
+•BASH (Bourne Again SHell)
+•CSH (C SHell) on the seashore…
+•KSG (Korn SHell)Shell
+OS
+Hardwarechange 
+directory…
+
+--- Page 15 ---
+Working with CLI/CI
+This is how our command line interface will look like.
+On prompts, there is always a preceding $ or a # symbol.
+$ - indicates the current user is a normal user
+# - indicates the current user is a root user (superuser)
+
+--- Page 16 ---
+Working with CLI/CI
+This is how our command line interface will look like.
+There is also the indicator of the current user on which 
+device.
+username@hostname
+
+--- Page 17 ---
+Working with CLI/CI
+This is how our command line interface will look like.
+There are also some special directory ~ and /
+~ - a user’s home directory ( /home/<username>/ )
+/ - root directory
+

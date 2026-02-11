@@ -1,0 +1,158 @@
+LEARNING GUIDE: Pages 4-8
+Generated: 2026-02-11 12:16:21
+PDF: Topic 02 - Operating System Structures
+
+================================================================================
+LEARNING GUIDE
+================================================================================
+
+Here is a simplified, easy-to-read learning guide based on the provided text:
+
+---
+
+# Operating System Basics: User Interfaces & System Calls
+
+## 1. User and OS Interface (UI)
+
+The User Interface (UI) is how users interact with the Operating System (OS).
+There are three main types:
+
+*   **Command Line Interface (CLI)**:
+    *   Also known as a **Command Interpreter (CI)**.
+    *   Users input text commands directly.
+*   **Graphical User Interface (GUI)**:
+    *   User-friendly interface using visual elements (icons, windows, menus).
+    *   Requires dedicated input/output devices (like a mouse and monitor) for selections and data input.
+*   **Batch Interface**:
+    *   Commands are pre-entered into files.
+    *   These files are then executed as a whole.
+
+## 2. Command Line Interface (CLI) / Command Interpreter (CI) Details
+
+The CLI takes direct text commands from the user.
+
+*   **Shells**: On systems with multiple Command Interpreters, these interpreters are called Shells (e.g., Bash, Zsh, PowerShell).
+*   **Shell Scripts**: A sequence of command-line steps saved in a file that can be run like a program.
+*   **Common Commands**: Many CLI commands are for file manipulation, such as:
+    *   Create, Delete, List, Print, Copy, Execute files, etc.
+
+### CLI Command Execution Approaches
+
+Commands in a CLI can be handled in two ways:
+
+1.  **Interpreter Implements Commands**:
+    *   The code for the command is built directly into the command interpreter.
+    *   **Example**: `cd myFolder` (change directory) in Windows Command Prompt. The `cd` logic is part of the interpreter.
+2.  **Program Implements Commands**:
+    *   The command is a separate executable file (program). The interpreter just runs this program.
+    *   **Example**: `rm file.txt` (remove file) in UNIX/Linux. The `rm` command is a separate program that the interpreter executes with `file.txt` as a parameter.
+
+## 3. System Calls
+
+**System Calls** are a mechanism for programs to request services directly from the Operating System (OS). They provide a controlled way for user-level programs to interact with the OS kernel.
+
+*   **Application Programming Interface (API)**:
+    *   A set of functions available for application programmers to use.
+    *   APIs provide a standardized way for programs to access OS features without needing to know the low-level details of system calls.
+    *   **Examples**:
+        *   Windows API
+        *   POSIX API (for UNIX, Linux, macOS)
+        *   Java API (for Java Virtual Machine)
+
+*   **System Call Interface**:
+    *   This acts as a bridge between the API calls made by an application and the actual system calls provided by the OS.
+    *   It intercepts API function calls (e.g., `open()`) and then invokes the necessary underlying system call from a table of available OS services.
+
+### How System Calls Work (User Mode vs. Kernel Mode)
+
+The OS operates in two main modes:
+
+*   **User Mode**: Where user applications run. They have restricted access to system resources.
+*   **Kernel Mode**: Where the OS kernel runs. It has full access to all hardware and system resources.
+
+Here's the typical flow for a system call:
+
+1.  A program in **User Mode** calls a function (e.g., `open()`) from an **API**.
+2.  The **System Call Interface** intercepts this API call.
+3.  The system transitions from **User Mode** to **Kernel Mode**.
+4.  The OS executes its specific **implementation of the system call** (e.g., the `open()` function within the OS kernel).
+5.  After the service is completed, the system returns to **User Mode**, and the result is passed back to the program.
+
+---
+
+================================================================================
+ORIGINAL TEXT (First 5000 chars)
+================================================================================
+
+--- Page 4 ---
+User and OS Interface
+•Almost all OS have a user interface (UI), which can be any of 
+the ff:
+•Command Line Interface (CLI)  – AKA command interpreter (CI) . 
+Uses command that are directly inputted.
+•Graphical User Interface (GUI)  – user friendly interface with 
+dedicated I/O devices to make selections and input data
+•Batch – commands are entered into files, then files are run.  
+
+--- Page 5 ---
+User and OS Interface: CLI / CI
+Uses command that are directly inputted .
+•On systems with multiple Command Interpreters to choose 
+from, the interpreters are known as  Shells.
+•Shell Scripts  – set of command line steps that can be run like 
+a program.
+•Many of the commands is for file manipulation:
+•Create, Delete, List, Print, Copy, Execute, 
+etc.
+
+--- Page 6 ---
+User and OS Interface: CLI / CI
+Has two approach:
+Interpreter implements 
+CommandsProgram implements 
+Commands
+cd myFolder
+windows command promptrm file.txt
+UNIX
+The code for cd (change working 
+directory) is stored in the 
+interpreter .The code for rm (remove) is stored 
+on a separate file, rm. Interpreter 
+executes rm with parameter 
+file.txt
+
+--- Page 7 ---
+System Calls
+A mechanism used by programs to request services from the 
+operating system (OS).
+•Application Programming Interface (API)  - specifies a set of 
+functions that are available to an application programmer .
+•Windows API
+•POSIX API (UNIX, Linux, MacOSX)
+•Java API (Java Virtual Machine)
+•System Call Interface – serves as link to the system calls that 
+are made available by the operating systems. Intercepts 
+function calls in the API and invokes the necessary system calls 
+(stored on a table).
+
+--- Page 8 ---
+user
+mode
+
+kernel
+mode
+
+open ()
+
+system call interface
+
+open ()
+
+Implementation
+of open ()
+system call
+
+return
+
+
+

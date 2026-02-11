@@ -1,0 +1,280 @@
+LEARNING GUIDE: Pages 25-29
+Generated: 2026-02-11 12:17:43
+PDF: Topic 02 - Operating System Structures
+
+================================================================================
+LEARNING GUIDE
+================================================================================
+
+Here's your simplified, easy-to-read learning guide based on the provided text:
+
+---
+
+## Linux Command Learning Guide
+
+This guide covers essential commands for managing files, processes, and basic shell scripting.
+
+---
+
+### 1. File & Directory Management
+
+Commands for organizing and manipulating files and folders.
+
+*   **`cp SOURCE DESTINATION`**: Copies files or directories.
+    *   `-r`: Copy recursively (required for directories).
+    *   `-i`: Prompt before overwriting an existing file.
+    *   `-u`: Copy only if SOURCE is newer than DESTINATION, or if DESTINATION doesn't exist.
+    *   `-v`: Show verbose output (progress).
+    *   *Example:* `cp -r mydir /backup/`
+*   **`mv SOURCE DESTINATION`**: Moves or renames files or directories.
+    *   `-i`: Ask before overwriting.
+    *   `-u`: Move only if SOURCE is newer than DESTINATION, or if DESTINATION doesn't exist.
+    *   `-v`: Show verbose output (progress).
+    *   *Example:* `mv oldname.txt newname.txt` (rename)
+    *   *Example:* `mv file.txt /new/location/` (move)
+
+---
+
+### 2. File Viewing & Editing
+
+Commands to inspect and modify file contents.
+
+*   **`cat FILE`**: Displays the entire content of a file to the terminal.
+    *   *Useful for short files.*
+*   **`less FILE`**: Displays file contents page by page, allowing scrolling.
+    *   **Navigation within `less`:**
+        *   `SPACE`: Scroll down one screen.
+        *   `b`: Scroll up one screen.
+        *   `/keyword`: Search for a specific keyword.
+        *   `q`: Quit `less`.
+*   **`nano FILE`**: Opens a file in the Nano text editor for editing.
+    *   **Nano Shortcuts:**
+        *   `CTRL-X`: Exit the editor. (Will prompt to save if changes are made).
+        *   `CTRL-O`: Save current changes to the file.
+        *   `CTRL-W`: Search for text within the file.
+
+---
+
+### 3. File Permissions & Ownership
+
+Commands to control who can read, write, or execute files.
+
+*   **`chmod PERMISSIONS FILE`**: Modify file permissions.
+    *   **Adding/Removing Permissions:**
+        *   `chmod +w script.sh`: Adds write permission for the current user (if no category specified, applies to owner).
+        *   `chmod -x script.sh`: Removes execute permission for the current user.
+        *   *Categories:* `u` (user/owner), `g` (group), `o` (others), `a` (all).
+            *   *Example:* `chmod u+x script.sh` (add execute for owner)
+            *   *Example:* `chmod go-w file.txt` (remove write for group and others)
+    *   **Octal Notation (`chmod 755 FILE`):**
+        *   Uses three digits (0-7) to set permissions for **Owner**, **Group**, and **Others**.
+        *   Each digit is a sum of:
+            *   **4** = Read (`r`)
+            *   **2** = Write (`w`)
+            *   **1** = Execute (`x`)
+            *   **0** = No permissions
+        *   **Example `755`:**
+            *   **7** (Owner): `rwx` (4+2+1)
+            *   **5** (Group): `rx` (4+1)
+            *   **5** (Others): `rx` (4+1)
+    *   *Example:* `chmod 755 myscript.sh` (Owner has full, Group and Others can read/execute)
+*   **`chown USER:GROUP FILE`**: Change the owner and/or group of a file.
+    *   *Example:* `chown john:devs report.txt` (changes owner to `john` and group to `devs`)
+    *   *Example:* `chown jane file.txt` (changes only the owner to `jane`)
+
+---
+
+### 4. Process Management
+
+Commands to monitor and control running programs.
+
+*   **`ps aux`**: Lists all active processes running on the system.
+    *   `a`: Show processes for all users.
+    *   `u`: Display detailed user information for each process.
+    *   `x`: Show processes not associated with a terminal.
+*   **`top`**: Displays real-time system statistics and a list of running processes, sorted by CPU usage by default.
+    *   **Navigation within `top`:**
+        *   `q`: Quit `top`.
+        *   `k`: Kill a process (prompts for PID).
+        *   `M`: Sort processes by memory usage.
+*   **`kill PID`**: Sends a signal to terminate a process by its Process ID (PID).
+    *   *To find PID, use `ps aux` or `top`.*
+    *   **`kill -9 PID`**: **Force kill** (SIGKILL). Immediately terminates the process; it cannot ignore this signal. Use as a last resort.
+    *   **`kill -15 PID`**: **Graceful kill** (SIGTERM). Asks the process to terminate gracefully, allowing it to save data or clean up before exiting. This is the preferred method.
+
+---
+
+### 5. Shell Script Components
+
+A shell script is a text file containing a sequence of commands for the shell to execute.
+
+*   **Shebang (`#!`)**:
+    *   The **first line** of a script, specifying the interpreter to use (e.g., `#!/bin/bash`).
+    *   Crucial for the script to execute properly.
+*   **Comments (`#`)**:
+    *   Lines starting with `#` are ignored by the shell interpreter.
+    *   Used to explain the script's logic or add notes.
+    *   *Example:* `# This script lists files`
+*   **Variables**:
+    *   Store data within the script.
+    *   **Assignment:** `variable_name="value"` (no spaces around `=`).
+    *   **Access:** Use `$` before the variable name (e.g., `echo "Hello, $variable_name!"`).
+*   **Input and Output**:
+    *   **`echo "TEXT"`**: Prints text or variable content to the terminal.
+    *   **`read VARIABLE_NAME`**: Reads user input from the terminal and stores it in the specified variable.
+*   **Control Statements**: Dictate the flow of execution.
+    *   **`if` / `else`**: Conditional execution.
+        ```bash
+        if [ "CONDITION" ]; then
+            # Commands if condition is true
+        else
+            # Commands if condition is false
+        fi
+        ```
+    *   **`for` loop**: Iterates over a list of items.
+        ```bash
+        for i in {1..5}; do
+            echo "Iteration $i"
+        done
+        ```
+    *   **`while` loop**: Repeats commands as long as a condition is true.
+        ```bash
+        count=1
+        while [ "$count" -le 5 ]; do
+            echo "Count: $count"
+            count=$((count + 1)) # Increment count
+        done
+        ```
+*   **Functions**: Reusable blocks of code.
+    ```bash
+    greet() {
+        echo "Hello, $1!" # $1 refers to the first argument passed to the function
+    }
+    greet "Alice" # Calls the function 'greet' with "Alice" as the argument
+    ```
+*   **Exit Status (`$?`)**:
+    *   A special variable holding the exit status of the **last executed command**.
+    *   **`0`**: Indicates successful execution.
+    *   **Non-zero (1-255)**: Indicates an error or failure.
+    *   *Example:*
+        ```bash
+        mkdir test_dir
+        echo "Exit status of mkdir: $?" # Prints 0 if successful, non-zero if it failed
+        ```
+
+---
+
+================================================================================
+ORIGINAL TEXT (First 5000 chars)
+================================================================================
+
+--- Page 25 ---
+File and Directory Management
+These commands help manage files and directories efficiently.
+•$ cp dir1 dir2 –  Copies files/directories dir1 to dir2.
+•-r – Copy recursively
+•-i – Prompt before overwriting
+•-u – Copy only if destination is folder
+•-v – Show Progress
+•$ mv dir1 dir2 –    Move or rename dir1 to dir2 .
+•-i – Ask before overwriting
+•-u – Move only if destination is folder
+•-v – Show progress
+
+--- Page 26 ---
+File Viewing and Editing
+These commands allow you to view and edit file contents.
+•$ cat file.txt –  Display file contents.
+•$ less file.txt –  Display file contents. Has scrolling mechanism.
+•Navigation:
+•SPACE – Scroll down
+•b – Scroll up
+•/keyword – Search for keyword
+•q – Quit. 
+•$ nano file.txt – Opens a file in the Nano editor .
+•Shortcuts:
+•CTRL-X – Exit.
+•CTRL-O – Save Changes
+•CTRL-W – Search
+
+--- Page 27 ---
+File Permissions & Ownership
+These commands allow you modify file permissions and ownerships
+•$ chmod 755 script.sh –  Modify file permission. Has the ff 
+options:
+•+w – adds execute command
+•-w – removes write permission
+•755 – Can also give 3 numbers ranging from 0 to 7. Each digit is binary 
+representation of RWX permission of Owner , Group, and Others
+•$ chwon user:group file.txt –  Change the file owner or group.
+
+--- Page 28 ---
+Process Management
+These commands allow you monitor and terminate processes
+•$ ps aux – Lists active processes.
+•a – Show all users' processes
+•u – Show detailed user info
+•x – Show processes without a terminal
+•$ top – Shows real-time system stats.
+•Navigation:
+•q – Quit.
+•k – Kill a process .
+•M – Sort by memory.
+•$ kill 1234 – Stops a process by PID.
+•-9 – Force kill.
+•-15 – Graceful kill.
+
+--- Page 29 ---
+Shell Script 
+Components
+Shell Script - a text file 
+containing a series of 
+commands that are 
+executed sequentially by a 
+shell interpreter .
+1.Shebang (#!) – 
+Specifies the interpreter
+•Ideally the first line of a 
+shell script
+•Without this, the script 
+may not execute 
+properly
+thescript.sh
+#!/bin/bash
+# COMMENTS
+# This script prints "Hello, World!"
+echo "Hello, World!"
+# COMMENDS
+echo "Listing files:"
+ls -l
+# VARIABLES
+name="Jefferson"
+echo "Hello, $name!"
+# INPUT AND OUTPUTS
+echo "Enter your name:"
+read user_name
+echo "Hello, $user_name!"
+# CONTROL STATEMENTS
+if [ "$name" == "Jefferson"  ]; then
+  echo "Welcome, $name!"
+else
+  echo "Access Denied!"
+fi
+for i in {1..5}; do
+  echo "Iteration $i"
+done
+while [ "$count"  -le 5 ]
+do
+    echo "Count: $count"
+    count=$((count + 1))
+done
+# FUNCTIONS
+greet() {
+  echo "Hello, $1!"
+}
+greet "Jefferson"
+# EXIT STATUS
+mkdir test_dir
+echo "Exit status: $?"  # Prints 0 if 
+successful
+

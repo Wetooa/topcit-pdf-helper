@@ -1,0 +1,143 @@
+LEARNING GUIDE: Pages 16-20
+Generated: 2026-02-11 12:16:58
+PDF: Topic 02 - Operating System Structures
+
+================================================================================
+LEARNING GUIDE
+================================================================================
+
+Here is your simplified learning guide:
+
+---
+
+## Command Line Interface (CLI) Basics
+
+### 1. The CLI Prompt
+*   **Structure:** `username@hostname`
+    *   Identifies the current user and the device they are on.
+
+### 2. Special Directories
+*   `~` (Tilde): Represents the **user's home directory** (e.g., `/home/<username>/`).
+*   `/` (Slash): Represents the **root directory**, the base of the entire file system.
+
+### 3. User Roles: Normal User vs. Root User
+
+#### Normal User
+*   **Access:** Can access and modify their own files within their home directory (`/home/username/`).
+*   **Software:** Can run software that does not require system-wide changes.
+*   **Password:** Can only change their own password.
+*   **Files:** Can create, modify, or delete files *only within their own home directory*.
+*   **Admin Tasks:** Can use `sudo` (if permitted) to execute specific commands with administrative rights temporarily.
+
+#### Root User
+*   **Access:** Has unrestricted access to *all* system resources.
+*   **System Files:** Has the ability to modify critical system files.
+
+### 4. Identifying Your Current User
+
+*   **To check your username:**
+    *   **Command:** `whoami`
+    *   **Output Example:**
+        ```
+        mario@host~$ whoami
+        mario
+        ```
+        ```
+        root@host~# whoami
+        root
+        ```
+
+*   **To check your User ID (UID):**
+    *   **Command:** `id -u`
+    *   **Key Fact:** The **Root User ID is always `0`**.
+    *   **Output Example:**
+        ```
+        mario@host~$ id -u
+        1000
+        ```
+        ```
+        root@host~# id -u
+        0
+        ```
+
+### 5. Understanding and Changing Your Shell
+
+*   **Identifying your current shell:**
+    *   **Command:** `which $SHELL`
+    *   **Purpose:** Shows the path of your current command-line shell (e.g., `/bin/bash`, `/bin/zsh`). This is useful for scripting.
+
+*   **Switching your shell (e.g., to Bash):**
+    *   **Method 1 (Interactive):**
+        *   **Command:** `chsh`
+        *   Prompts you to enter the path to the new shell.
+    *   **Method 2 (Directly specifying path):**
+        *   **Command:** `chsh -s /bin/bash`
+        *   Directly changes your default shell to Bash.
+    *   **Recommendation:** It's often recommended to use Bash as your shell due to its widespread use and features.
+
+---
+
+================================================================================
+ORIGINAL TEXT (First 5000 chars)
+================================================================================
+
+--- Page 16 ---
+Working with CLI/CI
+This is how our command line interface will look like.
+There is also the indicator of the current user on which 
+device.
+username@hostname
+
+--- Page 17 ---
+Working with CLI/CI
+This is how our command line interface will look like.
+There are also some special directory ~ and /
+~ - a user’s home directory ( /home/<username>/ )
+/ - root directory
+
+--- Page 18 ---
+Normal User vs Root User
+•Access and modify their own files 
+in /home/username/
+•Run software that doesn’t require 
+system-wide changes
+•Change only their own password
+•Create, modify, or delete files inside 
+their own home directory
+•Use sudo ( if allowed ) to run specific 
+commands with admin rightsNormal User Root User
+Unrestricted access to 
+all system resources  
+and having the ability to 
+modify critical system 
+files
+
+--- Page 19 ---
+Checking Current User
+Checking username:
+mario@host~$  
+whoami
+mario
+root@host~#  whoami
+root
+You can use the whoami  
+command to print the 
+current user’s usernameChecking username:
+mario@host~$  id -u
+1000
+root@host~#   id -u
+0
+You can also check the id via 
+ud –u. 
+Root ID is always 0
+
+--- Page 20 ---
+Identifying SHELL
+$ which $SHELL
+Shows the path of the current shell ( Will be used later on scripting ).
+Let’s use bash! If your device is not using bash, simply switch 
+via:
+$ chsh 
+or , to specify the path directly:
+$ chsh -s /bin/bash
+

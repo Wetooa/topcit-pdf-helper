@@ -1,0 +1,178 @@
+LEARNING GUIDE: Pages 7-11
+Generated: 2026-02-11 12:16:32
+PDF: Topic 02 - Operating System Structures
+
+================================================================================
+LEARNING GUIDE
+================================================================================
+
+Learning Guide: Operating System System Calls
+
+---
+
+### Section 1: Understanding System Calls
+
+*   **What are System Calls?**
+    *   A mechanism programs use to request services directly from the **Operating System (OS)**.
+    *   They act as a bridge between applications and the OS kernel, allowing applications to perform privileged operations (e.g., accessing hardware, managing processes).
+
+*   **Application Programming Interface (API)**
+    *   A set of pre-defined functions that programmers can use to interact with the OS.
+    *   **Examples:**
+        *   **Windows API:** For Windows OS.
+        *   **POSIX API:** For UNIX, Linux, and macOSX systems.
+        *   **Java API:** For programs running on the Java Virtual Machine.
+
+*   **System Call Interface**
+    *   Serves as the link between API function calls and the actual system calls provided by the OS.
+    *   It intercepts API function calls and then invokes the necessary underlying system calls, which are typically stored in a system call table.
+
+---
+
+### Section 2: How System Calls Work (Execution Flow)
+
+System calls involve a transition from **user mode** to **kernel mode** for security and resource protection.
+
+*   **User Mode:** The environment where application programs execute, with limited access to system resources.
+*   **Kernel Mode:** The privileged environment where the OS kernel runs, with full access to all system hardware and resources.
+
+**Simplified Flow:**
+1.  A program in **user mode** calls an API function (e.g., `open()`).
+2.  The **System Call Interface** intercepts this call.
+3.  It then invokes the corresponding system call function within the kernel. This transitions the CPU from user mode to **kernel mode**.
+4.  The OS executes the implementation of the system call (e.g., the actual `open()` system call code).
+5.  After completion, the OS returns control and data to the program, transitioning the CPU back to **user mode**.
+
+---
+
+### Section 3: Passing Parameters to the Operating System
+
+When a program makes a system call, it often needs to pass parameters to the OS. Three common methods are:
+
+1.  **Passing via Registers:**
+    *   Parameters are stored directly in CPU registers.
+    *   **Pros:** Very fast.
+    *   **Cons:** Limited number of registers, so this method works best for a small number of parameters.
+
+2.  **Passing via Address (Memory Block):**
+    *   Parameters are stored in a contiguous block of memory.
+    *   The starting **address** of this memory block is then passed to the OS via a register.
+    *   **Pros:** Allows passing many parameters.
+
+3.  **Passing via Stack:**
+    *   Parameters are pushed onto the calling process's **stack** by the program.
+    *   The operating system then pops these parameters off the stack.
+    *   **Pros:** Flexible, allows varying numbers of parameters.
+
+---
+
+### Section 4: Types of System Calls
+
+System calls are broadly categorized based on the services they provide:
+
+1.  **Process Control:**
+    *   Manages the lifecycle and synchronization of processes.
+    *   **Examples:** `fork()` (create new process), `exit()` (terminate process).
+
+2.  **File Manipulation:**
+    *   Handles operations on files and directories.
+    *   **Examples:** `open()` (access a file), `read()` (read from file), `write()` (write to file), `delete()` (remove file).
+
+3.  **Device Manipulation:**
+    *   Manages interactions with hardware devices (e.g., printers, disks, network cards).
+    *   **Examples:** `ioctl()` (device I/O control), `read()` (read from device), `write()` (write to device).
+
+4.  **Information Maintenance:**
+    *   Retrieves and modifies system data and information.
+    *   **Examples:** `getpid()` (get process ID), `settimeofday()` (set system time).
+
+5.  **Communication:**
+    *   Enables **Inter-Process Communication (IPC)**, allowing processes to exchange data.
+    *   Methods include message passing and shared memory.
+    *   **Examples:** `pipe()` (create a pipe for communication), `socket()` (create a network socket).
+
+6.  **Protection:**
+    *   Controls access to system resources and enforces security policies.
+    *   **Examples:** `chmod()` (change file permissions), `setuid()` (set user ID for execution).
+
+---
+
+### Section 5: Linux Shell Commands & Scripts
+
+*(Content for this section was not provided in the original text, only the heading.)*
+
+================================================================================
+ORIGINAL TEXT (First 5000 chars)
+================================================================================
+
+--- Page 7 ---
+System Calls
+A mechanism used by programs to request services from the 
+operating system (OS).
+•Application Programming Interface (API)  - specifies a set of 
+functions that are available to an application programmer .
+•Windows API
+•POSIX API (UNIX, Linux, MacOSX)
+•Java API (Java Virtual Machine)
+•System Call Interface – serves as link to the system calls that 
+are made available by the operating systems. Intercepts 
+function calls in the API and invokes the necessary system calls 
+(stored on a table).
+
+--- Page 8 ---
+user
+mode
+
+kernel
+mode
+
+open ()
+
+system call interface
+
+open ()
+
+Implementation
+of open ()
+system call
+
+return
+
+
+
+--- Page 9 ---
+System Calls: Passing Parameters to 
+OS?
+•Passing via Register  - Parameters 
+are stored in registers. However , 
+there may be more parameters 
+than registers.t
+•Passing via Address  - Parameters 
+are stored in a block of memory 
+and the address is passed via 
+Register .
+•Passing via Stack  - Parameters 
+are pushed in the Process Stack 
+by the program and popped off 
+by the operating system
+
+
+--- Page 10 ---
+1.Process  Control – Manages process creation, termination, and 
+synchronization (e.g., fork(), exit()).
+2.File Manipulation  – Handles file operations such as creation, reading, 
+writing, and deletion (e.g., open(), read(), write()).
+3.Device Manipulation  – Manages interactions with hardware devices like 
+printers and disks (e.g., ioctl(), read(), write()).
+4.Information  Maintenance  – Retrieves and modifies system data such as 
+time, process details, and system configuration (e.g., getpid(), 
+settimeofday()).
+5.Communication  – Enables inter-process communication (IPC) through 
+message passing or shared memory (e.g., pipe(), socket()).
+6.Protection  – Controls access to resources and enforces security policies 
+(e.g., chmod(), setuid()).Types of System Calls
+
+--- Page 11 ---
+Linux Shell Commands 
+& Scripts
+

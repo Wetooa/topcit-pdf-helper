@@ -1,0 +1,434 @@
+LEARNING GUIDE: Pages 34-38
+Generated: 2026-02-11 12:18:14
+PDF: Topic 02 - Operating System Structures
+
+================================================================================
+LEARNING GUIDE
+================================================================================
+
+Here is a simplified, easy-to-read learning guide based on the provided text:
+
+---
+
+# Shell Scripting Basics: A Quick Study Guide
+
+## 1. What is a Shell Script?
+
+A **Shell Script** is a text file containing a series of commands that are executed sequentially by a shell interpreter (like Bash). It's used to automate tasks.
+
+## 2. Essential Script Components
+
+### 2.1 Shebang Line `#!/bin/bash`
+*   The very first line in a script.
+*   Tells the system which interpreter to use for executing the script (in this case, Bash).
+
+### 2.2 Comments
+*   Used to explain parts of your script.
+*   Start with a `#` symbol. Anything after `#` on that line is ignored by the shell.
+    *   `# This is a comment`
+
+### 2.3 Printing Output (`echo`)
+*   Displays text or variable values to the terminal.
+    *   `echo "Hello, World!"`
+    *   `echo "Listing files:"`
+
+### 2.4 Variables
+*   Store data within a script.
+*   **Assignment**: `variable_name="value"` (no spaces around `=`).
+*   **Usage**: Access the value using `$variable_name`.
+    *   `name="Jefferson"`
+    *   `echo "Hello, $name!"`
+
+### 2.5 Input and Output
+*   **Output**: Use `echo` to prompt the user.
+*   **Input**: Use `read` to capture user input into a variable.
+    *   `echo "Enter your name:"`
+    *   `read user_name`
+    *   `echo "Hello, $user_name!"`
+
+### 2.6 Control Statements
+These allow your script to make decisions and perform repetitive tasks.
+
+#### 2.6.1 Conditional Statements (`if`/`else`/`fi`)
+*   Execute code blocks based on whether a condition is true or false.
+*   **Syntax**:
+    ```bash
+    if [ "condition" ]; then
+        # code if condition is true
+    else
+        # code if condition is false
+    fi
+    ```
+*   **Example**:
+    ```bash
+    if [ "$name" == "Jefferson" ]; then
+        echo "Welcome, $name!"
+    else
+        echo "Access Denied!"
+    fi
+    ```
+
+#### 2.6.2 `for` Loops
+*   Iterate over a list of items or a range.
+*   **Syntax**:
+    ```bash
+    for item in {list}; do
+        # code to execute for each item
+    done
+    ```
+*   **Example (range 1 to 5)**:
+    ```bash
+    for i in {1..5}; do
+        echo "Iteration $i"
+    done
+    ```
+
+#### 2.6.3 `while` Loops
+*   Repeat a block of code as long as a condition remains true.
+*   **Syntax**:
+    ```bash
+    while [ "condition" ]
+    do
+        # code to execute while condition is true
+    done
+    ```
+*   **Example**:
+    ```bash
+    count=1 # Initialize count before the loop
+    while [ "$count" -le 5 ]
+    do
+        echo "Count: $count"
+        count=$((count + 1)) # Increment count
+    done
+    ```
+
+### 2.7 Functions
+*   Group commands together to perform a specific task.
+*   Makes scripts more organized and reusable.
+*   **Definition**:
+    ```bash
+    function_name() {
+        # commands
+    }
+    ```
+*   **Arguments**: `$1`, `$2`, etc., refer to the first, second arguments passed to the function.
+*   **Calling**: `function_name "argument1"`
+*   **Example**:
+    ```bash
+    greet() {
+        echo "Hello, $1!"
+    }
+    greet "Jefferson" # Calls the function with "Jefferson" as $1
+    ```
+
+### 2.8 Exit Status (`$?`)
+*   Every command and script returns an **exit status** (or exit code).
+*   `0`: Indicates successful execution.
+*   Non-zero (typically 1-255): Indicates an error.
+*   `$?` holds the exit status of the *last executed command*.
+    *   `mkdir test_dir`
+    *   `echo "Exit status: $?"` (Prints `0` if `mkdir` was successful)
+
+## 3. Spacing and Line Rules
+
+*   **Keywords on New Lines**: `if`, `then`, `else`, `fi`, `for`, `do`, `done`, `while` should typically be on new lines.
+*   **Semicolon**: You can use a semicolon `;` to put multiple commands on a single line where a new line would normally be expected (e.g., `if [ "$name" == "Jefferson" ]; then echo "Welcome, $name!"; fi`).
+
+## 4. Checking Conditions
+
+Conditions are used in `if` statements and `while` loops.
+
+*   **`test` command**: A command used to evaluate conditions.
+    *   `test "$name" == "Jefferson"`
+*   **Bracket `[ ]` syntax**: A more common and convenient shorthand for the `test` command. **Note**: Spaces are crucial inside the brackets.
+    *   `[ "$name" == "Jefferson" ]`
+
+## 5. Comparison Operations
+
+### 5.1 For Numbers (within `[ ]` or `test`)
+*   `-eq`: Equal to (e.g., `[ "$num1" -eq "$num2" ]`)
+*   `-ne`: Not equal to
+*   `-gt`: Greater than
+*   `-lt`: Less than
+*   `-ge`: Greater than or equal to
+*   `-le`: Less than or equal to
+
+### 5.2 For Strings (within `[ ]` or `test`)
+*   `=`: Equal to (e.g., `[ "$str1" = "$str2" ]`)
+*   `!=`: Not equal to
+
+---
+
+================================================================================
+ORIGINAL TEXT (First 5000 chars)
+================================================================================
+
+--- Page 34 ---
+#!/bin/bash
+# COMMENTS
+# This script prints "Hello, World!"
+echo "Hello, World!"
+# COMMENDS
+echo "Listing files:"
+ls -l
+# VARIABLES
+name="Jefferson"
+echo "Hello, $name!"
+# INPUT AND OUTPUTS
+echo "Enter your name:"
+read user_name
+echo "Hello, $user_name!"
+# CONTROL STATEMENTS
+if [ "$name" == "Jefferson"  ]; then
+  echo "Welcome, $name!"
+else
+  echo "Access Denied!"
+fi
+for i in {1..5}; do
+  echo "Iteration $i"
+done
+while [ "$count"  -le 5 ]
+do
+    echo "Count: $count"
+    count=$((count + 1))
+done
+# FUNCTIONS
+greet() {
+  echo "Hello, $1!"
+}
+greet "Jefferson"
+# EXIT STATUS
+mkdir test_dir
+echo "Exit status: $?"  # Prints 0 if 
+successfulShell Script 
+Components
+Shell Script - a text file 
+containing a series of 
+commands that are 
+executed sequentially by a 
+shell interpreter .
+6.Control Statements  
+–    Well duuhh ~~
+thescript.sh
+
+
+--- Page 35 ---
+Shell Script 
+Components
+Shell Script - a text file 
+containing a series of 
+commands that are 
+executed sequentially by a 
+shell interpreter .
+6.Control Statements  
+–    Well duuhh ~~
+SPACING AND LINE 
+MATTERS
+•Should be in new 
+lines:
+•IF, THEN, ELSE, FI  
+•FOR, DO, DONE
+•Else, just write 
+semicolon to indicate 
+new line
+thescript.sh#!/bin/bash
+# COMMENTS
+# This script prints "Hello, World!"
+echo "Hello, World!"
+# COMMENDS
+echo "Listing files:"
+ls -l
+# VARIABLES
+name="Jefferson"
+echo "Hello, $name!"
+# INPUT AND OUTPUTS
+echo "Enter your name:"
+read user_name
+echo "Hello, $user_name!"
+# CONTROL STATEMENTS
+if [ "$name" == "Jefferson"  ]; then
+  echo "Welcome, $name!"
+else
+  echo "Access Denied!"
+fi
+for i in {1..5}; do
+  echo "Iteration $i"
+done
+while [ "$count"  -le 5 ]
+do
+    echo "Count: $count"
+    count=$((count + 1))
+done
+# FUNCTIONS
+greet() {
+  echo "Hello, $1!"
+}
+greet "Jefferson"
+# EXIT STATUS
+mkdir test_dir
+echo "Exit status: $?"  # Prints 0 if 
+successful
+
+--- Page 36 ---
+Shell Script 
+Components
+Shell Script - a text file 
+containing a series of 
+commands that are 
+executed sequentially by a 
+shell interpreter .
+6.Control Statements  
+–    Well duuhh ~~
+Checking Conditions
+•Can be done VIA test 
+command:
+•test "$name" == 
+"Jefferson"
+•[ "$name" == 
+"Jefferson" ]
+thescript.sh#!/bin/bash
+# COMMENTS
+# This script prints "Hello, World!"
+echo "Hello, World!"
+# COMMENDS
+echo "Listing files:"
+ls -l
+# VARIABLES
+name="Jefferson"
+echo "Hello, $name!"
+# INPUT AND OUTPUTS
+echo "Enter your name:"
+read user_name
+echo "Hello, $user_name!"
+# CONTROL STATEMENTS
+if [ "$name" == "Jefferson"  ]; then
+  echo "Welcome, $name!"
+else
+  echo "Access Denied!"
+fi
+for i in {1..5}; do
+  echo "Iteration $i"
+done
+while [ "$count"  -le 5 ]
+do
+    echo "Count: $count"
+    count=$((count + 1))
+done
+# FUNCTIONS
+greet() {
+  echo "Hello, $1!"
+}
+greet "Jefferson"
+# EXIT STATUS
+mkdir test_dir
+echo "Exit status: $?"  # Prints 0 if 
+successful
+
+--- Page 37 ---
+Shell Script 
+Components
+Shell Script - a text file 
+containing a series of 
+commands that are 
+executed sequentially by a 
+shell interpreter .
+6.Control Statements  
+–    Well duuhh ~~
+Comparison Operations
+•Numbers:
+•-eq  equal
+•-ne  not equal
+•-gt  greater than
+•-lt  less than
+•-ge  greater or equal
+•-le  less or equal
+thescript.sh#!/bin/bash
+# COMMENTS
+# This script prints "Hello, World!"
+echo "Hello, World!"
+# COMMENDS
+echo "Listing files:"
+ls -l
+# VARIABLES
+name="Jefferson"
+echo "Hello, $name!"
+# INPUT AND OUTPUTS
+echo "Enter your name:"
+read user_name
+echo "Hello, $user_name!"
+# CONTROL STATEMENTS
+if [ "$name" == "Jefferson"  ]; then
+  echo "Welcome, $name!"
+else
+  echo "Access Denied!"
+fi
+for i in {1..5}; do
+  echo "Iteration $i"
+done
+while [ "$count"  -le 5 ]
+do
+    echo "Count: $count"
+    count=$((count + 1))
+done
+# FUNCTIONS
+greet() {
+  echo "Hello, $1!"
+}
+greet "Jefferson"
+# EXIT STATUS
+mkdir test_dir
+echo "Exit status: $?"  # Prints 0 if 
+successful
+
+--- Page 38 ---
+Shell Script 
+Components
+Shell Script - a text file 
+containing a series of 
+commands that are 
+executed sequentially by a 
+shell interpreter .
+6.Control Statements  
+–    Well duuhh ~~
+Comparison Operations
+•Strings:
+•=    equal
+•!=   not equal
+thescript.sh#!/bin/bash
+# COMMENTS
+# This script prints "Hello, World!"
+echo "Hello, World!"
+# COMMENDS
+echo "Listing files:"
+ls -l
+# VARIABLES
+name="Jefferson"
+echo "Hello, $name!"
+# INPUT AND OUTPUTS
+echo "Enter your name:"
+read user_name
+echo "Hello, $user_name!"
+# CONTROL STATEMENTS
+if [ "$name" == "Jefferson"  ]; then
+  echo "Welcome, $name!"
+else
+  echo "Access Denied!"
+fi
+for i in {1..5}; do
+  echo "Iteration $i"
+done
+while [ "$count"  -le 5 ]
+do
+    echo "Count: $count"
+    count=$((count + 1))
+done
+# FUNCTIONS
+greet() {
+  echo "Hello, $1!"
+}
+greet "Jefferson"
+# EXIT STATUS
+mkdir test_dir
+echo "Exit status: $?"  # Prints 0 if 
+successful
+

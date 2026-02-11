@@ -1,0 +1,136 @@
+LEARNING GUIDE: Pages 37-41
+Generated: 2026-02-11 12:33:18
+PDF: Topic 01 - Operating System Fundamentals
+
+================================================================================
+LEARNING GUIDE
+================================================================================
+
+Here is a simplified, easy-to-read learning guide based on the provided text:
+
+---
+
+## Computer System Architecture: Learning Guide
+
+### I. Multiprocessor Systems
+
+**What they are:**
+*   Also known as **Parallel Systems** or **Multicore Systems**.
+*   Contain **two or more general-purpose Central Processing Units (CPUs)**.
+*   Change the memory access model from Uniform Memory Access (UMA) to **Non-Uniform Memory Access (NUMA)**.
+
+**Key Advantages:**
+1.  **Increased Throughput:** Can process more tasks simultaneously.
+2.  **Economy of Scale:** Often more cost-effective than multiple single-processor systems.
+3.  **Increased Reliability:** System can potentially continue operating if one processor fails.
+
+**Types of Multiprocessing:**
+
+1.  **Asymmetric Multiprocessing:**
+    *   One designated "Boss processor" controls the system.
+    *   Operates on a master-slave or boss-worker relationship.
+
+2.  **Symmetric Multiprocessing (SMP):**
+    *   The most common type.
+    *   All processors are considered **peers** and can perform any task within the operating system.
+
+**Multicore Chips:**
+*   Consist of **multiple computing cores on a single chip**.
+*   **Faster** than traditional multiprocessor systems (which might use multiple separate CPU chips).
+*   **Use less power** compared to an equivalent number of single-core chips.
+
+---
+
+### II. Clustered Systems
+
+**What they are:**
+*   A type of multiprocessor system that is **loosely coupled** (meaning components are more independent, typically connected over a network, rather than sharing memory directly).
+*   Composed of **two or more independent computer systems (nodes)** joined together.
+
+**Primary Goal:**
+*   **High-Availability:** Achieved through **redundancy**, ensuring continuous operation even if components fail.
+
+**How they handle failure:**
+*   Each node continuously monitors other nodes in the cluster.
+*   If a node fails, a monitoring node can automatically **take over its tasks and resources**.
+*   This allows the failed node to be restarted without causing significant downtime.
+
+**Types of Clustered Systems:**
+
+1.  **Symmetric Clustering:**
+    *   All machines (nodes) are actively running applications.
+    *   Requires systems capable of running multiple applications concurrently.
+
+2.  **Asymmetric Clustering:**
+    *   One machine (node) is in **hot-standby mode**, meaning it's idle but ready to immediately take over if an active node fails.
+
+**Performance:**
+*   Can provide **High-Performance Computing (HPC)** through parallelization.
+*   Often achieve **greater performance than SMP systems** for specific workloads.
+
+================================================================================
+ORIGINAL TEXT (First 5000 chars)
+================================================================================
+
+--- Page 37 ---
+Computer System Architecture
+Multiprocessor Systems
+•Aka Parallel Systems  or Multicore 
+Systems
+•Has two or more general-purpose CPU.
+•Changes memory access model from 
+uniform memory access (UMA)  to 
+non-uniform memory access (NUMA)
+•Three main advantages:
+•Increased throughput
+•Economy of scale
+•Increased reliability
+
+
+--- Page 38 ---
+Computer System Architecture
+Multiprocessor Systems
+• Comes in two types:
+•Asymmetric multiprocessing – consists of a Boss processor that 
+controls the system. This scheme defines master-slave / boss-
+worker relationship. 
+•Symmetric multiprocessing (SMP) – the most common type. Each 
+processor , which are all peers, performs all task within the OS.
+
+
+--- Page 39 ---
+Computer System Architecture
+Multiprocessor 
+Systems
+•Multicore  chips
+•Multiple computing 
+cores on a single 
+chip
+•Faster than the usual 
+multiprocessor .
+•Uses less power than 
+similar number of 
+single core chips.
+
+
+--- Page 40 ---
+Computer System Architecture
+Clustered Systems
+
+
+--- Page 41 ---
+Computer System Architecture
+Clustered Systems
+•A type of multiprocessor system that is loosely coupled .
+•Designed for high-availability , achieved through redundancy .
+•Composed of two or more nodes (computer system)  joined 
+together . 
+•Each node can monitor other nodes. If a node fails, a monitoring 
+node can take over the task and resources, allowing the former 
+node to restart Has two types:
+•Symmetric  – all machines are running applications, but requires to be 
+able to run more than one application in a system.
+•Asymmetric  - one machine is hot-standby mode ready to take cover
+•Can provide high-performance computing  (greater than SMP) 
+through parallelization .
+

@@ -1,0 +1,111 @@
+LEARNING GUIDE: Pages 10-14
+Generated: 2026-02-11 12:31:40
+PDF: Topic 01 - Operating System Fundamentals
+
+================================================================================
+LEARNING GUIDE
+================================================================================
+
+Here is a simplified, easy-to-read learning guide based on the provided text:
+
+---
+
+## Learning Guide: Computer System Fundamentals
+
+This guide covers the basic components of a computer system and the process it goes through to start up.
+
+---
+
+### Section 1: Computer System Components
+
+A computer system operates as a layered structure, enabling users to interact with hardware through various software layers.
+
+*   **User:** The individual interacting with the computer.
+*   **Application Programs:** Software designed for specific tasks that users directly interact with.
+    *   *Examples:* Text editors, web browsers, games (e.g., dota2.exe).
+*   **Operating System (OS):** The core system software that manages computer hardware and software resources. It provides common services for computer programs.
+    *   *Examples:* Windows, macOS, Linux.
+*   **Computer Hardware:** The physical components of the computer system.
+    *   *Examples:* CPU, memory, storage devices, input/output devices.
+
+**Hierarchy of Interaction:**
+User → Application Programs → Operating System → Computer Hardware
+
+---
+
+### Section 2: Computer System Booting Sequence
+
+The booting sequence is the process a computer undergoes when it starts up, initializing all necessary components to become operational. This process involves several key steps:
+
+1.  **Bootstrap Program**
+    *   **What it is:** The very first program executed when the computer powers on. It is stored in the computer hardware's **firmware** (non-volatile memory like **ROM** or **EEPROM**).
+    *   **What it does:** Initializes basic hardware components required to load and start the Operating System (OS).
+
+2.  **Kernel (Part of the OS)**
+    *   **What it is:** The core component of the Operating System.
+    *   **What it does:**
+        *   Acts as a crucial bridge between software applications and the computer hardware.
+        *   Initializes essential system resources, including:
+            *   **CPU Scheduler:** Manages how the CPU executes tasks.
+            *   **Memory Manager:** Handles memory allocation and deallocation.
+            *   **Device Drivers:** Software that allows the OS to interact with specific hardware devices (e.g., printer, graphics card).
+
+3.  **System Daemons (Part of the OS)**
+    *   **What they are:** Programs that run continuously in the background, without direct user interaction. They operate in **user space** (the memory area where user applications run).
+    *   **What they do:** Provide specific services required by the system, such as:
+        *   Networking services
+        *   Logging system events
+        *   Print services
+
+**Boot Completion:**
+Once the Bootstrap Program, Kernel, and System Daemons are initialized and set up, the Operating System is fully booted. The system is now ready and waits for user input or other events to occur.
+
+---
+
+================================================================================
+ORIGINAL TEXT (First 5000 chars)
+================================================================================
+
+--- Page 10 ---
+compiler   assembler   text-editor  ...  
+dota2.exe
+System and Application Programs
+Operating SystemComputer System Components
+Computer 
+HardwareUser User User
+
+--- Page 11 ---
+Computer System Booting up 
+Sequence
+
+--- Page 12 ---
+Computer System Booting up 
+Sequence
+•Bootstrap Program
+•the initial program that is stored within the computer hardware’s 
+firmware  (ROM or EEPROM).
+•initializes basic hardware needed to start up the OS. 
+•Kernel (Part of OS)
+•core part of the OS that bridge between software application and 
+hardware.
+•Initializes system resources (CPU scheduler , memory manager , device 
+drivers)
+•System Daemons (Part of OS)
+•Programs that are running in the background in all time. 
+•Runs in user space  and provides specific services (networking, logging, 
+etc.) without user interaction.
+•Usually 
+After all of this are initialized/set up, the Operating System is now 
+fully booted and waits for an event to occur .
+
+--- Page 13 ---
+Computer System Booting up 
+Sequence
+Bootstrap Program
+Kernel
+Daemon
+
+--- Page 14 ---
+Computer System Storage 
+Structures
+

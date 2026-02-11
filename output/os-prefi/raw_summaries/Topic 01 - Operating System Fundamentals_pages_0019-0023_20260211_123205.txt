@@ -1,0 +1,112 @@
+LEARNING GUIDE: Pages 19-23
+Generated: 2026-02-11 12:32:05
+PDF: Topic 01 - Operating System Fundamentals
+
+================================================================================
+LEARNING GUIDE
+================================================================================
+
+Here is a simplified learning guide based on the provided text:
+
+---
+
+### **Computer System Storage Structures: A Learning Guide**
+
+This guide outlines the main components where a computer stores and processes information.
+
+---
+
+### **1. Main Memory (RAM)**
+
+*   **What it is:** Random Access Memory (RAM) is the primary working memory of a computer.
+*   **Purpose:** Holds all currently running programs and open files.
+*   **Key Characteristics:**
+    *   **Size:** Much larger than caches (typically measured in Gigabytes - GBs).
+    *   **Speed:** Fast, but not as fast as CPU caches.
+    *   **Volatility:** **Volatile** – meaning all data is lost when the computer is turned off or loses power.
+
+---
+
+### **2. Secondary Memories**
+
+*   **What it is:** Long-term storage for programs and data.
+*   **Purpose:** Stores installed programs and user files permanently.
+*   **Key Characteristic:** **Non-Volatile** – meaning data is retained even when the computer is turned off.
+
+**Types of Secondary Memory:**
+
+*   **a. Solid State Drive (SSD)**
+    *   **Mechanism:** No moving parts; stores data electronically on flash memory chips.
+    *   **Speed:** Very fast.
+    *   **Cost:** More expensive than HDDs.
+
+*   **b. Hard Disk Drive (HDD)**
+    *   **Mechanism:** Uses spinning magnetic platters to store data.
+    *   **Speed:** Slower than SSDs.
+    *   **Cost:** Cheaper than SSDs.
+
+---
+
+### **3. Program Storage & Execution Flow**
+
+*   **Program Storage:** Installed programs are permanently stored on **Secondary Memories** (e.g., an HDD or SSD).
+*   **Program Execution:** When you run a program:
+    1.  A copy of the program is loaded from **Secondary Memory** (e.g., HDD/SSD)
+    2.  ...into **Main Memory (RAM)**. This allows the CPU to access it quickly.
+
+---
+
+### **4. Where Computation Happens**
+
+*   **CPU Core:** The actual processing (computations, calculations, instructions) is performed by the **CPU Core**.
+*   **Registers:** Within the CPU Core, specialized, ultra-fast memory locations called **Registers** (e.g., RAX, RBX, RCX, RDX, RSP, RBP) are used to hold data that the CPU is actively working on at that very moment.
+    *   While the program and data reside in RAM, the CPU loads small pieces into its registers for actual manipulation.
+
+---
+
+================================================================================
+ORIGINAL TEXT (First 5000 chars)
+================================================================================
+
+--- Page 19 ---
+Computer System Storage Structures
+•So much more larger than caches (~GBs) but not as fast
+•Holds all currently running program  and open files .
+•VolatileMain Memory (RAM)
+
+--- Page 20 ---
+Computer System Storage Structures
+Solid State Drive
+No Moving Fast, Fast
+ExpensiveSSD HDDSecondary Memories
+or
+Hard Disk Drive
+Spinning magnetic platters, Slow
+Cheap
+Both are Non-volatile
+
+--- Page 21 ---
+Computer System Storage Structures
+Installed programs are stored on…
+Secondary MemoriesHDD
+ HERE
+
+--- Page 22 ---
+Computer System Storage Structures
+When a program is run, it is copied over to…
+HDD
+Main Memory (RAM)
+HERE
+
+--- Page 23 ---
+Computer System Storage Structures
+When a damage is dealt, where is the computation 
+done?
+HDD
+CPU CORE
+REGISTERS
+RAX RBX
+RCX RDX
+RSP RBP
+HEREMain Memory (RAM)
+

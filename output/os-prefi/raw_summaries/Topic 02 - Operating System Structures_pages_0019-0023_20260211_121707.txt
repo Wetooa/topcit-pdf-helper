@@ -1,0 +1,186 @@
+LEARNING GUIDE: Pages 19-23
+Generated: 2026-02-11 12:17:07
+PDF: Topic 02 - Operating System Structures
+
+================================================================================
+LEARNING GUIDE
+================================================================================
+
+## Linux Basics: Essential Commands Learning Guide
+
+This guide covers fundamental Linux commands for user identification, shell management, and file/directory operations.
+
+---
+
+### 1. Checking Your Current User Information
+
+These commands help you identify who you are on the system.
+
+*   **`whoami`**
+    *   **Purpose:** Prints the username of the current user.
+    *   **Example:**
+        ```
+        mario@host~$ whoami
+        mario
+        ```
+
+*   **`id -u`**
+    *   **Purpose:** Prints the User ID (UID) of the current user.
+    *   **Key Fact:** The **root user** (administrator) always has a UID of `0`.
+    *   **Example:**
+        ```
+        mario@host~$ id -u
+        1000
+        root@host~# id -u
+        0
+        ```
+
+---
+
+### 2. Identifying and Changing Your SHELL
+
+The shell is a command-line interpreter that processes commands.
+
+*   **`which $SHELL`**
+    *   **Purpose:** Shows the full path of your current default shell. This is useful for scripting or understanding your environment.
+    *   **Example:**
+        ```
+        $ which $SHELL
+        /bin/bash
+        ```
+
+*   **Changing Your Shell to Bash**
+    *   **Purpose:** If your system uses a different shell, you can switch to `bash` (a common and powerful shell).
+    *   **Method 1 (Interactive):**
+        ```bash
+        $ chsh
+        ```
+        This command will prompt you to enter the new shell path.
+    *   **Method 2 (Direct):**
+        ```bash
+        $ chsh -s /bin/bash
+        ```
+        This directly sets `/bin/bash` as your default shell.
+
+---
+
+### 3. File and Directory Management
+
+These commands are crucial for navigating and manipulating the filesystem.
+
+*   **`pwd`**
+    *   **Purpose:** **P**rints **W**orking **D**irectory. Displays the absolute path of your current location in the filesystem.
+    *   **Example:**
+        ```bash
+        $ pwd
+        /home/mario/documents
+        ```
+
+*   **`ls`**
+    *   **Purpose:** **L**i**s**ts files and directories in the current directory (or a specified directory).
+
+    *   **Common Options:**
+        *   **`-l` (Long Format):** Shows detailed information including permissions, number of links, owner, group, size, and modification date.
+        *   **`-a` (All):** Shows all files, including hidden ones (those that start with a `.`).
+        *   **`-h` (Human Readable):** Displays file sizes in an easy-to-understand format (e.g., K for kilobytes, M for megabytes). Best used with `-l`.
+        *   **`-R` (Recursive):** Lists the contents of subdirectories as well.
+
+    *   **Combining Options:** You can combine multiple options, e.g., `ls -lah` for long format, all files, and human-readable sizes.
+
+    *   **Understanding `ls -l` Output Example:**
+        Consider the output: `-rwxrw-r-- 3 testuser usergroup 11K Feb 14 19:30 file.txt`
+
+        1.  **`-rwxrw-r--` (Permissions String):**
+            *   **First Character (File Type):**
+                *   `-`: Regular file
+                *   `d`: Directory
+            *   **Next 9 Characters (Permissions - `rwx` for Read, Write, Execute):** These are divided into three sets of three:
+                *   `rwx`: Permissions for the **Owner** of the file/directory.
+                *   `rw-`: Permissions for the **Group** that owns the file/directory.
+                *   `r--`: Permissions for **Others** (anyone else on the system).
+                *   `-`: Indicates that a specific permission (read, write, or execute) is *not* granted.
+
+        2.  **`3` (Hard Links):**
+            *   For files, this is the number of hard links pointing to the file.
+            *   For directories, it's the number of direct subdirectories, plus the directory itself (`.`) and its parent directory (`..`).
+
+        3.  **`testuser` (Owner):** The username of the owner of the file or directory.
+
+        4.  **`usergroup` (Group):** The group name that owns the file or directory.
+
+        5.  **`11K` (File Size):** The size of the file. (If `-h` is used, it's human-readable, e.g., `11K` for 11 kilobytes).
+
+        6.  **`Feb 14 19:30` (Date Modified):** The last date and time the file or directory was modified.
+
+        7.  **`file.txt` (Name):** The name of the file or directory.
+
+================================================================================
+ORIGINAL TEXT (First 5000 chars)
+================================================================================
+
+--- Page 19 ---
+Checking Current User
+Checking username:
+mario@host~$  
+whoami
+mario
+root@host~#  whoami
+root
+You can use the whoami  
+command to print the 
+current user’s usernameChecking username:
+mario@host~$  id -u
+1000
+root@host~#   id -u
+0
+You can also check the id via 
+ud –u. 
+Root ID is always 0
+
+--- Page 20 ---
+Identifying SHELL
+$ which $SHELL
+Shows the path of the current shell ( Will be used later on scripting ).
+Let’s use bash! If your device is not using bash, simply switch 
+via:
+$ chsh 
+or , to specify the path directly:
+$ chsh -s /bin/bash
+
+--- Page 21 ---
+File and Directory Management
+These commands help manage files and directories 
+efficiently.
+•$ pwd - Displays the current directory path.
+•$ ls - Displays files and directories. Has the following 
+options:
+•-l – Long format showing details (permissions, owner , size)
+•-a – Show all files, including those hidden (starts with .)
+•-h – Human readable format. 
+•-R – Recursive, lists contents of subdirectories.
+•You can use multiple options, e.g.: -lah
+-rwxrw-r-- 3 testuser usergroup 11K Feb 14 19:30 file.txtLong Format:
+
+--- Page 22 ---
+File and Directory Management
+Understanding the 
+-rwxrw-r--  3 testuser  usergroup  11K Feb 14 19:30  file.txtLong Format:
+File Type
+d is directory
+- is fileRead, Write, Execute 
+Permissions 
+(owner , group, others)
+- means noHard Links
+Number of direct 
+links inside, including 
+self  (.) and parent (..)
+
+--- Page 23 ---
+File and Directory Management
+Understanding the 
+-rwxrw-r--  3 testuser  usergroup  11K Feb 14 19:30  file.txtOwner of the file/directory
+Rights: rwx
+Group that owns the file/directory
+Rights: rw-File SizeLong Format:
+Date Modified
+

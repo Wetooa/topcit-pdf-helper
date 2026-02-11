@@ -1,0 +1,126 @@
+LEARNING GUIDE: Pages 1-5
+Generated: 2026-02-11 12:14:40
+PDF: Topic 02 - Operating System Structures
+
+================================================================================
+LEARNING GUIDE
+================================================================================
+
+## Operating System Structures & Shell Scripting: Learning Guide
+
+This guide summarizes essential concepts about Operating System (OS) structures and shell scripting.
+
+---
+
+### 1. Operating System Fundamentals
+
+The Operating System (OS) is responsible for managing system components, facilitating program execution, and providing various services to users and other system programs.
+
+**Key OS Services:**
+*   **Program Execution:** Running user programs and system processes.
+*   **File Management:** Creating, deleting, listing, printing, copying, and executing files.
+*   **Communication:** Enabling interaction between different processes and users.
+*   **Resource Management:** Managing system resources like CPU, memory, and I/O devices.
+
+---
+
+### 2. User and OS Interfaces
+
+Almost all OSs provide a User Interface (UI) for interaction. The main types include:
+
+1.  **Command Line Interface (CLI) / Command Interpreter (CI)**
+    *   Users input commands directly via text.
+    *   **Command Interpreter (CI):** Another name for the CLI, responsible for interpreting and executing commands.
+
+2.  **Graphical User Interface (GUI)**
+    *   User-friendly interface using visual elements (icons, windows, menus).
+    *   Relies on dedicated I/O devices (e.g., mouse, keyboard) for selections and data input.
+
+3.  **Batch Interface**
+    *   Commands are entered into files.
+    *   These command files are then executed as a batch.
+
+---
+
+### 3. Shells and Shell Scripting (CLI/CI Focus)
+
+On systems with a CLI, the command interpreters are often known as **Shells**.
+
+*   **Shells:** Specific command interpreters that users can choose from (e.g., Bash, Zsh in Linux). They process user commands.
+*   **Shell Scripts:**
+    *   A set of command-line steps (commands) saved in a file.
+    *   Can be executed like a program to automate tasks.
+
+**Common File Manipulation Commands (Examples):**
+Many shell commands are used for managing files:
+*   `Create` (e.g., `touch` for new files, `mkdir` for new directories)
+*   `Delete` (e.g., `rm` for files, `rmdir` for empty directories)
+*   `List` (e.g., `ls` to list contents of directories)
+*   `Print` (e.g., `cat` to display file content)
+*   `Copy` (e.g., `cp` to copy files or directories)
+*   `Execute` (e.g., `./script.sh` to run a script, or simply typing a program's name)
+
+================================================================================
+ORIGINAL TEXT (First 5000 chars)
+================================================================================
+
+--- Page 1 ---
+Operating System 
+Structures & Shell 
+Scripting
+Operating System Topic 02
+CS348
+
+--- Page 2 ---
+Intended Learning Outcomes
+•ILO1. Identify the different system components.
+•ILO2. Enumerate the responsibilities of the operating system 
+in connection with the different system components.
+•ILO3. Describe the various services provided by the operating 
+system.
+•ILO4. Manipulate the different Linux commands using shell 
+scripting.
+•ILO5. Explain what happens during system boot.
+•ILO6. Explain the concept of a process, its states, and 
+characteristics.
+
+--- Page 3 ---
+prograrm
+
+execunon
+
+operations systems
+
+user and other system pr
+
+e1h] batch | command line
+
+fim] file
+communication
+
+SEVICES
+aparatng sysiam
+
+
+
+--- Page 4 ---
+User and OS Interface
+•Almost all OS have a user interface (UI), which can be any of 
+the ff:
+•Command Line Interface (CLI)  – AKA command interpreter (CI) . 
+Uses command that are directly inputted.
+•Graphical User Interface (GUI)  – user friendly interface with 
+dedicated I/O devices to make selections and input data
+•Batch – commands are entered into files, then files are run.  
+
+--- Page 5 ---
+User and OS Interface: CLI / CI
+Uses command that are directly inputted .
+•On systems with multiple Command Interpreters to choose 
+from, the interpreters are known as  Shells.
+•Shell Scripts  – set of command line steps that can be run like 
+a program.
+•Many of the commands is for file manipulation:
+•Create, Delete, List, Print, Copy, Execute, 
+etc.
+

@@ -1,0 +1,98 @@
+LEARNING GUIDE: Pages 40-44
+Generated: 2026-02-11 12:33:28
+PDF: Topic 01 - Operating System Fundamentals
+
+================================================================================
+LEARNING GUIDE
+================================================================================
+
+Here's a simplified learning guide based on the provided text:
+
+---
+
+## Learning Guide: Computer System Architecture & Operating Systems
+
+### I. Computer System Architecture: Clustered Systems
+
+**Definition:**
+*   A type of **multiprocessor system** that is **loosely coupled**.
+*   Composed of two or more interconnected **nodes** (individual computer systems).
+
+**Primary Goals:**
+1.  **High-Availability:** Achieved through **redundancy** (having backup components).
+    *   Nodes monitor each other.
+    *   If a node fails, another monitoring node takes over its tasks and resources (**failover**).
+2.  **High-Performance Computing (HPC):** Achieved through **parallelization** (distributing tasks to run simultaneously across nodes).
+    *   Can offer greater performance than Symmetric Multiprocessing (SMP) systems for certain workloads.
+
+**How They Work (Monitoring & Failover):**
+*   Each node continuously checks the status of other nodes.
+*   Upon detecting a failure, a healthy node automatically assumes the responsibilities of the failed node.
+
+**Types of Clustered Systems:**
+1.  **Symmetric Clustering:**
+    *   All nodes actively run applications.
+    *   Each node must be capable of running multiple applications.
+    2.  **Asymmetric Clustering:**
+    *   One or more nodes are in a **hot-standby** mode.
+    *   A hot-standby node is inactive but ready to instantly take over if an active node fails.
+
+### II. Operating System (OS)
+
+**Definition:**
+*   Software designed to manage hardware resources and provide services.
+*   Enables multiple programs to execute efficiently and safely.
+
+**Core Functions of an Operating System:**
+*   **Managing Execution:** Controls processes (running programs) and threads (parts of a program).
+*   **Managing Resources:** Allocates and oversees essential hardware resources such as:
+    *   CPU (Central Processing Unit)
+    *   Memory (RAM)
+    *   I/O (Input/Output devices like disks, keyboards, screens)
+*   **Coordinating Concurrent Activities:** Ensures multiple programs or users can run simultaneously without interference.
+*   **Sharing the System:** Manages access to system resources among multiple users and programs.
+
+================================================================================
+ORIGINAL TEXT (First 5000 chars)
+================================================================================
+
+--- Page 40 ---
+Computer System Architecture
+Clustered Systems
+
+
+--- Page 41 ---
+Computer System Architecture
+Clustered Systems
+•A type of multiprocessor system that is loosely coupled .
+•Designed for high-availability , achieved through redundancy .
+•Composed of two or more nodes (computer system)  joined 
+together . 
+•Each node can monitor other nodes. If a node fails, a monitoring 
+node can take over the task and resources, allowing the former 
+node to restart Has two types:
+•Symmetric  – all machines are running applications, but requires to be 
+able to run more than one application in a system.
+•Asymmetric  - one machine is hot-standby mode ready to take cover
+•Can provide high-performance computing  (greater than SMP) 
+through parallelization .
+
+--- Page 42 ---
+interconnect Interconnect
+computer computer 1 computer
+
+
+
+--- Page 43 ---
+Operating System
+
+--- Page 44 ---
+Operating System
+•structured to manage hardware resources and provide 
+services so multiple programs  can execute efficiently and 
+safely.
+•Managing execution (processes, threads)
+•Managing resources (CPU, memory, I/O)
+•Coordinating concurrent activities
+•Sharing the system among users and programs
+

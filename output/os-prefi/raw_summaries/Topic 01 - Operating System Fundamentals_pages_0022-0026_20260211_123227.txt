@@ -1,0 +1,100 @@
+LEARNING GUIDE: Pages 22-26
+Generated: 2026-02-11 12:32:27
+PDF: Topic 01 - Operating System Fundamentals
+
+================================================================================
+LEARNING GUIDE
+================================================================================
+
+## Computer System Storage and Processing Basics
+
+This guide summarizes the essential components and processes involved in computer system storage and computation.
+
+---
+
+### 1. Program Execution & Memory Hierarchy
+
+When a computer program runs, its data and instructions move through various storage components:
+
+*   **Program Loading:**
+    *   A program (application or operating system code) is initially stored on the **Hard Disk Drive (HDD)**.
+    *   To run, the program is copied from the HDD into **Main Memory (RAM)**. The CPU directly accesses instructions and data from RAM during execution.
+
+*   **Actual Computation:**
+    *   The core processing and execution of instructions occur within the **CPU Core**.
+    *   The CPU uses small, very fast storage locations called **Registers** (e.g., RAX, RBX, RCX, RDX, RSP, RBP) to temporarily hold data and addresses critical for current operations. This is where active computation takes place.
+
+*   **Cache Memory (Speeding up CPU Access):**
+    *   To bridge the speed gap between the CPU and Main Memory (RAM), a faster, smaller memory called **Cache** is used.
+    *   When the CPU needs data, it first checks the Cache before going to Main Memory.
+    *   Cache acts as an "interceptor," holding frequently used data and instructions close to the CPU for quicker access.
+    *   **Cache Hierarchy:** Cache is typically organized into multiple levels, each with different speed and size characteristics:
+        *   **L1 Cache:** Smallest and fastest cache, often located directly on the CPU core. (e.g., "smol")
+        *   **L2 Cache:** Larger than L1, but slower. (e.g., ~KBs - Kilobytes)
+        *   **L3 Cache:** Largest among the cache levels, but slower than L1/L2. Often shared across multiple CPU cores. (e.g., ~MBs - Megabytes)
+
+---
+
+### 2. Computer System I/O Structure
+
+*(Note: Content for "Computer System I/O Structure" was not provided in the original text extract.)*
+
+================================================================================
+ORIGINAL TEXT (First 5000 chars)
+================================================================================
+
+--- Page 22 ---
+Computer System Storage Structures
+When a program is run, it is copied over to…
+HDD
+Main Memory (RAM)
+HERE
+
+--- Page 23 ---
+Computer System Storage Structures
+When a damage is dealt, where is the computation 
+done?
+HDD
+CPU CORE
+REGISTERS
+RAX RBX
+RCX RDX
+RSP RBP
+HEREMain Memory (RAM)
+
+--- Page 24 ---
+Computer System Storage Structures
+CPU fetch is always intercepted by …
+HDD
+Main Memory (RAM)
+CPU CORE
+REGISTERS
+RAX RBX
+RCX RDX
+RSP RBP
+THISCACHE
+L1
+smolL3
+~MBsL2
+~KBs
+
+
+--- Page 25 ---
+Computer System Storage Structures
+HDD
+Main Memory (RAM)
+CPU CORE
+REGISTERS
+RAX RBX
+RCX RDX
+RSP RBP
+THISCACHE
+L1
+smolL3
+~MBsL2
+~KBs
+
+
+--- Page 26 ---
+Computer System I/O Structure
+

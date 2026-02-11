@@ -1,0 +1,97 @@
+LEARNING GUIDE: Pages 7-11
+Generated: 2026-02-11 12:31:30
+PDF: Topic 01 - Operating System Fundamentals
+
+================================================================================
+LEARNING GUIDE
+================================================================================
+
+Here's a simplified, easy-to-read learning guide based on the provided text:
+
+---
+
+## Learning Guide: Computer System Fundamentals
+
+### 1. What is a Computer System?
+A computer system is a collection of interacting components designed to solve computing problems for users.
+
+### 2. Key Components of a Computer System
+A computer system is comprised of four essential components:
+
+1.  **Hardware:**
+    *   **Function:** Provides the basic physical computing resources.
+    *   **Examples:**
+        *   **CPU (Central Processing Unit):** The "brain" of the computer.
+        *   **Memory (RAM):** Stores data and programs currently in use.
+        *   **I/O Devices (Input/Output):** Devices for interacting with the computer (e.g., keyboard, monitor, mouse, printer).
+
+2.  **Operating System (OS):**
+    *   **Function:** Controls and coordinates how the hardware is used by various application programs and users. It acts as a manager.
+
+3.  **Application Programs:**
+    *   **Function:** Define specific ways system resources are used to solve users' computing problems.
+    *   **Examples:**
+        *   **Compilers:** Translate programming code into machine-readable instructions.
+        *   **Assemblers:** Translate assembly language into machine code.
+        *   **Text Editors:** Programs for creating and editing text files.
+        *   **Database Systems:** Software for managing data.
+        *   **Video Games:** (e.g., Dota2.exe)
+        *   **Business Programs:** Software for business operations.
+
+4.  **Users:**
+    *   **Function:** The entities interacting with the computer system.
+    *   **Examples:** People, other machines, or even other computers.
+
+### 3. How Components Interact (System Hierarchy)
+The components of a computer system work together in a layered fashion:
+
+*   **Users** interact with **Application Programs**.
+*   **Application Programs** request services from the **Operating System**.
+*   The **Operating System** directly manages and controls the **Computer Hardware**.
+
+This can be visualized as a stack:
+*   User
+*   Application Programs
+*   Operating System
+*   Computer Hardware
+
+### 4. Computer System Booting Up Sequence
+*(No specific content for this section was provided in the original text, only the title was present on Page 11.)*
+
+---
+
+================================================================================
+ORIGINAL TEXT (First 5000 chars)
+================================================================================
+
+--- Page 7 ---
+Computer System
+
+--- Page 8 ---
+Computer System Components
+
+--- Page 9 ---
+Computer System Components
+1. Hardware  – provides basic computing resources (CPU, 
+memory, I/O devices).
+2. Operating  system  – controls and coordinates the use of the 
+hardware among the various application programs for the 
+various users.
+3. Applications  programs  – define the ways in which the 
+system resources are used to solve the computing problems 
+of the users (compilers, database systems, video games, 
+business programs).
+4. Users (people, machines, other computers).
+
+--- Page 10 ---
+compiler   assembler   text-editor  ...  
+dota2.exe
+System and Application Programs
+Operating SystemComputer System Components
+Computer 
+HardwareUser User User
+
+--- Page 11 ---
+Computer System Booting up 
+Sequence
+
